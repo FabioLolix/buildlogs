@@ -1,0 +1,4 @@
+install -d /build/deadbeef-plugin-lyricbar-git/pkg/deadbeef-plugin-lyricbar-git/usr/lib/deadbeef
+install -d /build/deadbeef-plugin-lyricbar-git/pkg/deadbeef-plugin-lyricbar-git/usr/share/locale/ru/LC_MESSAGES
+install -m 0755 -D *.so /build/deadbeef-plugin-lyricbar-git/pkg/deadbeef-plugin-lyricbar-git/usr/lib/deadbeef
+msgfmt gettext/ru/deadbeef-lyricbar.po -o /build/deadbeef-plugin-lyricbar-git/pkg/deadbeef-plugin-lyricbar-git/usr/share/locale/ru/LC_MESSAGES/deadbeef-lyricbar.mo
