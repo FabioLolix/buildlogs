@@ -1,0 +1,202 @@
+make -f configure.make Makefile.config
+make[1]: Entering directory '/build/ocaml4-ocamlbuild/src/ocamlbuild-0.14.2'
+(echo "# This file was generated from configure.make"; \
+echo ;\
+echo "OCAML_PREFIX=/usr"; \
+echo "OCAML_BINDIR=/usr/bin"; \
+echo "OCAML_LIBDIR=/usr/lib/ocaml"; \
+echo "OCAML_MANDIR=/usr/share/man"; \
+echo ;\
+echo "EXT_OBJ=.o"; \
+echo "EXT_ASM=.s"; \
+echo "EXT_LIB=.a"; \
+echo "EXT_DLL=.so"; \
+echo "EXE="; \
+echo ;\
+echo "OCAML_NATIVE=true"; \
+echo "OCAML_NATIVE_TOOLS=true"; \
+echo "NATDYNLINK=true"; \
+echo "SUPPORT_SHARED_LIBRARIES=true"; \
+echo ;\
+echo "PREFIX=/usr"; \
+echo "BINDIR=/usr/bin"; \
+echo "LIBDIR=/usr/lib/ocaml"; \
+echo "MANDIR=/usr/share/man"; \
+) > Makefile.config
+make[1]: Leaving directory '/build/ocaml4-ocamlbuild/src/ocamlbuild-0.14.2'
+make -f configure.make all
+make[1]: Entering directory '/build/ocaml4-ocamlbuild/src/ocamlbuild-0.14.2'
+(echo "(* This file was generated from ../configure.make *)"; \
+echo ;\
+echo 'let bindir = "/usr/bin"'; \
+echo 'let libdir = "/usr/lib/ocaml"'; \
+echo 'let ocaml_libdir = "/usr/lib/ocaml"'; \
+echo 'let libdir_abs = "/usr/lib/ocaml"'; \
+echo 'let ocaml_native = true'; \
+echo 'let ocaml_native_tools = true'; \
+echo 'let supports_shared_libraries = true';\
+echo 'let a = "a"'; \
+echo 'let o = "o"'; \
+echo 'let so = "so"'; \
+echo 'let ext_dll = ".so"'; \
+echo 'let exe = ""'; \
+echo 'let version = "0.14.2"'; \
+) > src/ocamlbuild_config.ml
+make[1]: Leaving directory '/build/ocaml4-ocamlbuild/src/ocamlbuild-0.14.2'
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/const.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/loc.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/loc.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/discard_printf.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/discard_printf.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/signatures.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/my_std.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/my_std.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/my_unix.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/my_unix.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/tags.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/tags.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/display.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/display.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/log.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/log.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/shell.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/shell.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/bool.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/bool.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/glob_ast.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/glob_ast.ml
+ocamllex.opt src/glob_lexer.mll
+55 states, 419 transitions, table size 2006 bytes
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/glob_lexer.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/glob_lexer.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/glob.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/glob.ml
+ocamllex.opt src/lexers.mll
+251 states, 1051 transitions, table size 5710 bytes
+4334 additional bytes used for bindings
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/lexers.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/lexers.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/param_tags.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/param_tags.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/command.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/command.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocamlbuild_config.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocamlbuild_where.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocamlbuild_where.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/slurp.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/slurp.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/options.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/options.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/pathname.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/pathname.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/configuration.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/configuration.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/flags.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/flags.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/hygiene.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/hygiene.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/digest_cache.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/digest_cache.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/resource.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/resource.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/rule.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/rule.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/solver.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/solver.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/report.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/report.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/tools.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/tools.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/fda.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/fda.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/findlib.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/findlib.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_arch.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_arch.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_utils.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_utils.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_dependencies.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_dependencies.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_compiler.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_compiler.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_tools.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_tools.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_specific.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_specific.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/exit_codes.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/exit_codes.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/plugin.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/plugin.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/hooks.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/hooks.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/main.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/main.ml
+mkdir -p tmp
+ocamlc.opt -pack src/const.cmo src/loc.cmo src/discard_printf.cmo src/signatures.cmi src/my_std.cmo src/my_unix.cmo src/tags.cmo src/display.cmo src/log.cmo src/shell.cmo src/bool.cmo src/glob_ast.cmo src/glob_lexer.cmo src/glob.cmo src/lexers.cmo src/param_tags.cmo src/command.cmo src/ocamlbuild_config.cmo src/ocamlbuild_where.cmo src/slurp.cmo src/options.cmo src/pathname.cmo src/configuration.cmo src/flags.cmo src/hygiene.cmo src/digest_cache.cmo src/resource.cmo src/rule.cmo src/solver.cmo src/report.cmo src/tools.cmo src/fda.cmo src/findlib.cmo src/ocaml_arch.cmo src/ocaml_utils.cmo src/ocaml_dependencies.cmo src/ocaml_compiler.cmo src/ocaml_tools.cmo src/ocaml_specific.cmo src/exit_codes.cmo src/plugin.cmo src/hooks.cmo src/main.cmo -o tmp/ocamlbuild_pack.cmo
+mv tmp/ocamlbuild_pack.cmi src/ocamlbuild_pack.cmi
+mv tmp/ocamlbuild_pack.cmo src/ocamlbuild_pack.cmo
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c plugin-lib/ocamlbuild_plugin.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c plugin-lib/ocamlbuild_plugin.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c plugin-lib/ocamlbuild_executor.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c plugin-lib/ocamlbuild_executor.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c plugin-lib/ocamlbuild_unix_plugin.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c plugin-lib/ocamlbuild_unix_plugin.ml
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c bin/ocamlbuild.mli
+ocamlc.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c bin/ocamlbuild.ml
+ocamlc.opt -I +unix -I src -o ocamlbuild.byte unix.cma src/ocamlbuild_pack.cmo plugin-lib/ocamlbuild_plugin.cmo plugin-lib/ocamlbuild_executor.cmo plugin-lib/ocamlbuild_unix_plugin.cmo bin/ocamlbuild.cmo
+ocamlc.opt -a -o plugin-lib/ocamlbuildlib.cma src/ocamlbuild_pack.cmo plugin-lib/ocamlbuild_plugin.cmo plugin-lib/ocamlbuild_executor.cmo plugin-lib/ocamlbuild_unix_plugin.cmo
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/const.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/loc.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/discard_printf.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/my_std.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/my_unix.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/tags.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/display.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/log.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/shell.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/bool.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/glob_ast.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/glob_lexer.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/glob.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/lexers.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/param_tags.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/command.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocamlbuild_config.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocamlbuild_where.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/slurp.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/options.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/pathname.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/configuration.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/flags.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/hygiene.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/digest_cache.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/resource.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/rule.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/solver.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/report.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/tools.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/fda.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/findlib.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_arch.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_utils.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_dependencies.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_compiler.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_tools.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/ocaml_specific.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/exit_codes.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/plugin.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/hooks.ml
+ocamlopt.opt -for-pack Ocamlbuild_pack -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c src/main.ml
+mkdir -p tmp
+ocamlopt.opt -pack src/const.cmx src/loc.cmx src/discard_printf.cmx src/signatures.cmi src/my_std.cmx src/my_unix.cmx src/tags.cmx src/display.cmx src/log.cmx src/shell.cmx src/bool.cmx src/glob_ast.cmx src/glob_lexer.cmx src/glob.cmx src/lexers.cmx src/param_tags.cmx src/command.cmx src/ocamlbuild_config.cmx src/ocamlbuild_where.cmx src/slurp.cmx src/options.cmx src/pathname.cmx src/configuration.cmx src/flags.cmx src/hygiene.cmx src/digest_cache.cmx src/resource.cmx src/rule.cmx src/solver.cmx src/report.cmx src/tools.cmx src/fda.cmx src/findlib.cmx src/ocaml_arch.cmx src/ocaml_utils.cmx src/ocaml_dependencies.cmx src/ocaml_compiler.cmx src/ocaml_tools.cmx src/ocaml_specific.cmx src/exit_codes.cmx src/plugin.cmx src/hooks.cmx src/main.cmx -o tmp/ocamlbuild_pack.cmx
+mv tmp/ocamlbuild_pack.cmx src/ocamlbuild_pack.cmx
+mv tmp/ocamlbuild_pack.o src/ocamlbuild_pack.o
+ocamlopt.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c plugin-lib/ocamlbuild_plugin.ml
+ocamlopt.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c plugin-lib/ocamlbuild_executor.ml
+ocamlopt.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c plugin-lib/ocamlbuild_unix_plugin.ml
+ocamlopt.opt -w +L -w +R -w +Z -I src -I plugin-lib -I bin -I +unix -safe-string -bin-annot -strict-sequence -c bin/ocamlbuild.ml
+ocamlopt.opt -I +unix -I src -o ocamlbuild.native unix.cmxa src/ocamlbuild_pack.cmx plugin-lib/ocamlbuild_plugin.cmx plugin-lib/ocamlbuild_executor.cmx plugin-lib/ocamlbuild_unix_plugin.cmx bin/ocamlbuild.cmx
+ocamlopt.opt -a -o plugin-lib/ocamlbuildlib.cmxa src/ocamlbuild_pack.cmx plugin-lib/ocamlbuild_plugin.cmx plugin-lib/ocamlbuild_executor.cmx plugin-lib/ocamlbuild_unix_plugin.cmx
+ocamlc.opt src/ocamlbuild_pack.cmo -I src man/options_man.ml -o man/options_man.byte
+./man/options_man.byte > man/ocamlbuild.options.1
+cat man/ocamlbuild.header.1 man/ocamlbuild.options.1 man/ocamlbuild.footer.1 > man/ocamlbuild.1

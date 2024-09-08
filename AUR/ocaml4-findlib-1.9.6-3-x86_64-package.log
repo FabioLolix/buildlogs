@@ -1,0 +1,57 @@
+if [ "1" -eq 1 ]; then \
+    for x in camlp4 dbm graphics labltk num ocamlbuild; do \
+      if [ -f "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/$x/META" ]; then \
+        if ! grep -Fq '[distributed with Ocaml]' "/build/ocaml4-findlib/pkg/ocaml4-findlib//usr/lib/ocaml/$x/META"; then \
+          rm -f site-lib-src/$x/META; \
+        fi; \
+      fi; \
+    done; \
+    test -f "site-lib-src/num/META" || rm -f "site-lib-src/num-top/META"; \
+  fi
+echo 'SITELIB_META =' > Makefile.packages.in
+for x in `ls site-lib-src`; do test ! -f "site-lib-src/$x/META" || echo $x >> Makefile.packages.in; done
+tr '\n' ' ' < Makefile.packages.in > Makefile.packages
+rm Makefile.packages.in
+install -d "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/bin"
+install -d "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/share/man"
+make install-config
+make[1]: Entering directory '/build/ocaml4-findlib/src/findlib-1.9.6'
+install -d "`dirname \"/build/ocaml4-findlib/pkg/ocaml4-findlib/etc/findlib.conf\"`"
+test -f "/build/ocaml4-findlib/pkg/ocaml4-findlib/etc/findlib.conf" || install -c findlib.conf "/build/ocaml4-findlib/pkg/ocaml4-findlib/etc/findlib.conf"
+make[1]: Leaving directory '/build/ocaml4-findlib/src/findlib-1.9.6'
+for p in findlib; do ( cd src/$p; make install ); done
+make[1]: Entering directory '/build/ocaml4-findlib/src/findlib-1.9.6/src/findlib'
+install -d "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/findlib"
+install -d "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/bin"
+test 1 -eq 0 || install -d "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml"
+test 1 -eq 0 || install -c topfind "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/"
+files=` ../../tools/collect_files ../../Makefile.config \
+findlib.cmi findlib.mli findlib.cma findlib.cmxa findlib.a findlib.cmxs \
+findlib_config.cmi findlib_config.ml topfind.cmi topfind.mli \
+fl_args.cmi fl_lint.cmi fl_meta.cmi fl_split.cmi fl_topo.cmi ocaml_args.cmi \
+fl_package_base.mli fl_package_base.cmi fl_metascanner.mli fl_metascanner.cmi \
+fl_metatoken.cmi findlib_top.cma findlib_top.cmxa findlib_top.a findlib_top.cmxs \
+findlib_dynload.cma findlib_dynload.cmxa findlib_dynload.a findlib_dynload.cmxs fl_dynload.mli fl_dynload.cmi \
+META` && \
+install -c $files "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/findlib/"
+f="ocamlfind"; { test -f ocamlfind_opt && f="ocamlfind_opt"; }; \
+install -c $f "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/bin/ocamlfind"
+# the following "if" block is only needed for 4.00beta2
+if [ 1 -eq 0 -a -f "/usr/lib/ocaml/compiler-libs/topdirs.cmi" ]; then \
+    cd "/usr/lib/ocaml/compiler-libs/"; \
+    install -c topdirs.cmi toploop.cmi "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/findlib/"; \
+fi
+make[1]: Leaving directory '/build/ocaml4-findlib/src/findlib-1.9.6/src/findlib'
+make install-meta
+make[1]: Entering directory '/build/ocaml4-findlib/src/findlib-1.9.6'
+for x in bigarray bytes compiler-libs dynlink ocamldoc stdlib str threads unix ; do install -d "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/$x"; install -c site-lib-src/$x/META "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/$x/META.tmp" && mv "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/$x/META.tmp" "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/$x/META"; done
+install -d "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/findlib"; install -c Makefile.packages "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/lib/ocaml/findlib/Makefile.packages"
+make[1]: Leaving directory '/build/ocaml4-findlib/src/findlib-1.9.6'
+test ! -f 'site-lib-src/num-top/META' || { cd src/findlib; make install-num-top; }
+test ! -f 'site-lib-src/camlp4/META' ||	install -c tools/safe_camlp4 "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/bin"
+make install-doc
+make[1]: Entering directory '/build/ocaml4-findlib/src/findlib-1.9.6'
+install -d "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/share/man/man1" "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/share/man/man3" "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/share/man/man5"
+install -c doc/ref-man/ocamlfind.1 "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/share/man/man1"
+install -c doc/ref-man/META.5 doc/ref-man/site-lib.5 doc/ref-man/findlib.conf.5 "/build/ocaml4-findlib/pkg/ocaml4-findlib/usr/share/man/man5"
+make[1]: Leaving directory '/build/ocaml4-findlib/src/findlib-1.9.6'

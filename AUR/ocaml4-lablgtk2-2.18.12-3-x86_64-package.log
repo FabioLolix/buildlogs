@@ -1,0 +1,41 @@
+make -C src old-install
+make[1]: Entering directory '/build/ocaml4-lablgtk2/src/lablgtk-2.18.12/src'
+mkdir -p "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2" "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/bin" "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/stublibs"
+cp gaux.cmi gpointer.cmi gutf8.cmi glib.cmi gobject.cmi gdkEnums.cmi pangoEnums.cmi gtkEnums.cmi pango.cmi gdk.cmi gdkEvent.cmi gdkKeysyms.cmi gdkPixbuf.cmi gtk.cmi gtkSignal.cmi gtkStock.cmi gtkObject.cmi gtkBaseProps.cmi gtkBinProps.cmi gtkButtonProps.cmi gtkEditProps.cmi gtkListProps.cmi gtkMenuProps.cmi gtkMiscProps.cmi gtkPackProps.cmi gtkRangeProps.cmi gtkTextProps.cmi gtkTreeProps.cmi gtkFileProps.cmi gtkActionProps.cmi gtkBrokenProps.cmi gtkAssistantProps.cmi gtkData.cmi gtkBase.cmi gtkPack.cmi gtkButton.cmi gtkAssistant.cmi gtkMenu.cmi gtkMisc.cmi gtkWindow.cmi gtkList.cmi gtkBin.cmi gtkEdit.cmi gtkRange.cmi gtkText.cmi gtkTree.cmi gtkFile.cmi gtkMain.cmi gtkBroken.cmi gPango.cmi gDraw.cmi gObj.cmi ogtkBaseProps.cmi gData.cmi ogtkBaseProps.cmi ogtkBinProps.cmi ogtkButtonProps.cmi ogtkEditProps.cmi ogtkListProps.cmi ogtkMenuProps.cmi ogtkMiscProps.cmi ogtkPackProps.cmi ogtkRangeProps.cmi ogtkTextProps.cmi ogtkTreeProps.cmi ogtkFileProps.cmi ogtkActionProps.cmi ogtkBrokenProps.cmi ogtkAssistantProps.cmi gMain.cmi gContainer.cmi gPack.cmi gButton.cmi gText.cmi gMenu.cmi gMisc.cmi gTree.cmi gList.cmi gFile.cmi gWindow.cmi gAssistant.cmi gBin.cmi gEdit.cmi gRange.cmi gAction.cmi gBroken.cmi gUtil.cmi gToolbox.cmi rsvg.cmi gtkInit.cmi  "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+cp: warning: source file 'ogtkBaseProps.cmi' specified more than once
+cp -p ../META *.mli "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+cp -p gaux.ml gpointer.ml gutf8.ml glib.ml gobject.ml gdkEnums.ml pangoEnums.ml gtkEnums.ml pango.ml gdk.ml gdkEvent.ml gdkKeysyms.ml gdkPixbuf.ml gtk.ml gtkSignal.ml gtkStock.ml gtkObject.ml gtkBaseProps.ml gtkBinProps.ml gtkButtonProps.ml gtkEditProps.ml gtkListProps.ml gtkMenuProps.ml gtkMiscProps.ml gtkPackProps.ml gtkRangeProps.ml gtkTextProps.ml gtkTreeProps.ml gtkFileProps.ml gtkActionProps.ml gtkBrokenProps.ml gtkAssistantProps.ml gtkData.ml gtkBase.ml gtkPack.ml gtkButton.ml gtkAssistant.ml gtkMenu.ml gtkMisc.ml gtkWindow.ml gtkList.ml gtkBin.ml gtkEdit.ml gtkRange.ml gtkText.ml gtkTree.ml gtkFile.ml gtkMain.ml gtkBroken.ml gPango.ml gDraw.ml gObj.ml ogtkBaseProps.ml gData.ml ogtkBaseProps.ml ogtkBinProps.ml ogtkButtonProps.ml ogtkEditProps.ml ogtkListProps.ml ogtkMenuProps.ml ogtkMiscProps.ml ogtkPackProps.ml ogtkRangeProps.ml ogtkTextProps.ml ogtkTreeProps.ml ogtkFileProps.ml ogtkActionProps.ml ogtkBrokenProps.ml ogtkAssistantProps.ml gMain.ml gContainer.ml gPack.ml gButton.ml gText.ml gMenu.ml gMisc.ml gTree.ml gList.ml gFile.ml gWindow.ml gAssistant.ml gBin.ml gEdit.ml gRange.ml gAction.ml gBroken.ml gUtil.ml gToolbox.ml rsvg.ml gtkInit.ml gtkThread.ml gtkThInit.ml \
+       build.ml "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+cp: warning: source file 'ogtkBaseProps.ml' specified more than once
+cp  lablgtk.cma lablrsvg.cma gtkInit.cmo "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+cp liblablgtk2.a liblablrsvg.a "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+cd "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2" && ranlib liblablgtk2.a liblablrsvg.a
+cp varcc propcc "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+if test system != no; \
+   then cp gtkThread.cmo gtkThInit.cmo gtkThread.cmi gtkThInit.cmi "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"; \
+fi
+if test system = vm || test yes != yes; \
+   then cp lablgtktop "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"; \
+fi
+cp -p *.h "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+make[2]: Entering directory '/build/ocaml4-lablgtk2/src/lablgtk-2.18.12/src'
+cp lablgtk.cmxa lablrsvg.cmxa lablgtk.a lablrsvg.a   "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+cp lablgtk.cmxs lablrsvg.cmxs  "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+cd "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2" && ranlib lablgtk.a lablrsvg.a 
+cp gaux.cmx gpointer.cmx gutf8.cmx glib.cmx gobject.cmx gdkEnums.cmx pangoEnums.cmx gtkEnums.cmx pango.cmx gdk.cmx gdkEvent.cmx gdkKeysyms.cmx gdkPixbuf.cmx gtk.cmx gtkSignal.cmx gtkStock.cmx gtkObject.cmx gtkBaseProps.cmx gtkBinProps.cmx gtkButtonProps.cmx gtkEditProps.cmx gtkListProps.cmx gtkMenuProps.cmx gtkMiscProps.cmx gtkPackProps.cmx gtkRangeProps.cmx gtkTextProps.cmx gtkTreeProps.cmx gtkFileProps.cmx gtkActionProps.cmx gtkBrokenProps.cmx gtkAssistantProps.cmx gtkData.cmx gtkBase.cmx gtkPack.cmx gtkButton.cmx gtkAssistant.cmx gtkMenu.cmx gtkMisc.cmx gtkWindow.cmx gtkList.cmx gtkBin.cmx gtkEdit.cmx gtkRange.cmx gtkText.cmx gtkTree.cmx gtkFile.cmx gtkMain.cmx gtkBroken.cmx gPango.cmx gDraw.cmx gObj.cmx ogtkBaseProps.cmx gData.cmx ogtkBaseProps.cmx ogtkBinProps.cmx ogtkButtonProps.cmx ogtkEditProps.cmx ogtkListProps.cmx ogtkMenuProps.cmx ogtkMiscProps.cmx ogtkPackProps.cmx ogtkRangeProps.cmx ogtkTextProps.cmx ogtkTreeProps.cmx ogtkFileProps.cmx ogtkActionProps.cmx ogtkBrokenProps.cmx ogtkAssistantProps.cmx gMain.cmx gContainer.cmx gPack.cmx gButton.cmx gText.cmx gMenu.cmx gMisc.cmx gTree.cmx gList.cmx gFile.cmx gWindow.cmx gAssistant.cmx gBin.cmx gEdit.cmx gRange.cmx gAction.cmx gBroken.cmx gUtil.cmx gToolbox.cmx rsvg.cmx gtkInit.cmx  "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+cp: warning: source file 'ogtkBaseProps.cmx' specified more than once
+cp gtkInit.o "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"
+if test -f gtkThread.cmx; then \
+   cp gtkThread.cmx gtkThread.o "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"; fi
+make[2]: Leaving directory '/build/ocaml4-lablgtk2/src/lablgtk-2.18.12/src'
+make[2]: Entering directory '/build/ocaml4-lablgtk2/src/lablgtk-2.18.12/src'
+cp dlllablgtk2.so dlllablrsvg.so "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/stublibs" || \
+   echo "Couldn't install dlls in default location: /build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/stublibs"
+if test -f dlllablgtk2.a; then \
+  cp dlllablgtk2.a dlllablrsvg.a "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/lib/ocaml/lablgtk2"; fi
+make[2]: Leaving directory '/build/ocaml4-lablgtk2/src/lablgtk-2.18.12/src'
+cp lablgtk2 "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/bin"
+if test -f lablgladecc; then \
+   cp lablgladecc "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/bin/lablgladecc2"; fi
+cp gdk_pixbuf_mlsource "/build/ocaml4-lablgtk2/pkg/ocaml4-lablgtk2/usr/bin"
+make[1]: Leaving directory '/build/ocaml4-lablgtk2/src/lablgtk-2.18.12/src'

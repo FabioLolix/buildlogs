@@ -1,0 +1,17 @@
+mkdir -p /build/mldonkey/pkg/mldonkey/usr/bin
+if test -f mlnet; then \
+             rm -f /build/mldonkey/pkg/mldonkey/usr/bin/mlnet; cp -f mlnet /build/mldonkey/pkg/mldonkey/usr/bin/mlnet; \
+             for link in mlslsk mldonkey mlgnut mldc mlbt; do \
+               rm -f /build/mldonkey/pkg/mldonkey/usr/bin/$link; ln -s mlnet /build/mldonkey/pkg/mldonkey/usr/bin/$link; \
+             done; \
+         fi
+if test -f mlgui; then \
+             rm -f /build/mldonkey/pkg/mldonkey/usr/bin/mlgui; cp -f mlgui /build/mldonkey/pkg/mldonkey/usr/bin/mlgui; \
+             rm -f /build/mldonkey/pkg/mldonkey/usr/bin/mldonkey_gui; ln -s mlgui /build/mldonkey/pkg/mldonkey/usr/bin/mldonkey_gui; \
+         fi
+if test -f mlnet+gui; then \
+             rm -f /build/mldonkey/pkg/mldonkey/usr/bin/mlnet+gui; cp -f mlnet+gui /build/mldonkey/pkg/mldonkey/usr/bin/mlnet+gui; \
+             for link in mlslsk+gui mldonkey+gui mlgnut+gui mldc+gui mlbt+gui; do \
+               rm -f /build/mldonkey/pkg/mldonkey/usr/bin/$link; ln -s mlnet+gui /build/mldonkey/pkg/mldonkey/usr/bin/$link; \
+             done; \
+         fi

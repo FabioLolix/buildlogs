@@ -1,0 +1,382 @@
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/bin"
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/stublibs"
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/share/doc/ocaml"
+make -C runtime install
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/runtime'
+/usr/bin/install -c -p ocamlrun ocamlrund ocamlruni "/build/ocaml4/pkg/ocaml4/usr/bin"
+/usr/bin/install -c -p -m 644 ld.conf libcamlrun.a libcamlrund.a libcamlruni.a libcamlrun_pic.a "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p libcamlrun_shared.so "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/caml"
+/usr/bin/install -c -p -m 644 caml/domain_state.tbl caml/*.h "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/caml"
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/runtime'
+/usr/bin/install -c -p ocaml "/build/ocaml4/pkg/ocaml4/usr/bin"
+/usr/bin/install -c -p ocamlc "/build/ocaml4/pkg/ocaml4/usr/bin/ocamlc.byte"
+make -C stdlib install
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/stdlib'
+stale=""; \
+  if test -n "$stale" ; then \
+    echo "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml contains stale stdlib artefacts"; \
+    echo "Please rm /build/ocaml4/pkg/ocaml4/usr/lib/ocaml/stdlib__*.cm* and re-run make install"; \
+    exit 1; \
+  fi
+/usr/bin/install -c -p -m 644 \
+  stdlib.cma std_exit.cmo *.cmi camlheader_ur \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p -m 644 \
+  *.cmt *.cmti *.mli *.ml \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p -m 644 target_camlheader "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/camlheader"
+/usr/bin/install -c -p -m 644 target_camlheaderd "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/camlheaderd"
+/usr/bin/install -c -p -m 644 target_camlheaderi "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/camlheaderi"
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/stdlib'
+/usr/bin/install -c -p lex/ocamllex \
+  "/build/ocaml4/pkg/ocaml4/usr/bin/ocamllex.byte"
+/usr/bin/install -c -p yacc/ocamlyacc "/build/ocaml4/pkg/ocaml4/usr/bin"
+/usr/bin/install -c -p -m 644 \
+   utils/*.cmi \
+   parsing/*.cmi \
+   typing/*.cmi \
+   bytecomp/*.cmi \
+   file_formats/*.cmi \
+   lambda/*.cmi \
+   driver/*.cmi \
+   toplevel/*.cmi \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+   toplevel/byte/*.cmi \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+   utils/*.cmt utils/*.cmti utils/*.mli \
+   parsing/*.cmt parsing/*.cmti parsing/*.mli \
+   typing/*.cmt typing/*.cmti typing/*.mli \
+   file_formats/*.cmt file_formats/*.cmti file_formats/*.mli \
+   lambda/*.cmt lambda/*.cmti lambda/*.mli \
+   bytecomp/*.cmt bytecomp/*.cmti bytecomp/*.mli \
+   driver/*.cmt driver/*.cmti driver/*.mli \
+   toplevel/*.cmt toplevel/*.cmti toplevel/*.mli \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+   toplevel/byte/*.cmt \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+  compilerlibs/*.cma \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+   driver/main.cmo toplevel/topstart.cmo \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p expunge "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p -m 644 \
+   toplevel/topdirs.cmi \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p -m 644 \
+   toplevel/topdirs.cmt \
+   toplevel/topdirs.cmti toplevel/topdirs.mli \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+make -C tools install
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/tools'
+/usr/bin/install -c -p -m 644 \
+  profiling.cmi profiling.cmo \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p -m 644 \
+  profiling.cmt profiling.cmti \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+for i in ocamldep ocamlprof ocamlcp ocamloptp ocamlmklib ocamlmktop ocamlobjinfo; \
+do \
+  /usr/bin/install -c -p "$i" "/build/ocaml4/pkg/ocaml4/usr/bin/$i.byte"; \
+  if test -f "$i".opt; then \
+    /usr/bin/install -c -p "$i.opt" "/build/ocaml4/pkg/ocaml4/usr/bin" && \
+    (cd "/build/ocaml4/pkg/ocaml4/usr/bin" && ln -sf "$i.opt" "$i"); \
+  else \
+    (cd "/build/ocaml4/pkg/ocaml4/usr/bin" && ln -sf "$i.byte" "$i"); \
+  fi; \
+done
+if test -f ocamlcmt.opt; then \
+  /usr/bin/install -c -p\
+    ocamlcmt.opt "/build/ocaml4/pkg/ocaml4/usr/bin/ocamlcmt"; \
+else \
+  /usr/bin/install -c -p ocamlcmt "/build/ocaml4/pkg/ocaml4/usr/bin"; \
+fi
+/usr/bin/install -c -p -m 644 \
+  eventlog_metadata \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/tools'
+make -C man install
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/man'
+mkdir -p '/build/ocaml4/pkg/ocaml4/usr/share/man/man1'
+/usr/bin/install -c -p -m 644 ocaml.1 ocamlc.1 ocamlc.opt.1 ocamlcp.1 ocamldebug.1 ocamldep.1 ocamldoc.1 ocamllex.1 ocamlmktop.1 ocamlopt.1 ocamlopt.opt.1 ocamloptp.1 ocamlprof.1 ocamlrun.1 ocamlyacc.1 '/build/ocaml4/pkg/ocaml4/usr/share/man/man1'
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/man'
+for i in dynlink unix bigarray str systhreads; do \
+  make -C otherlibs/$i install || exit $?; \
+done
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/dynlink'
+/usr/bin/install -c -p -m 644 \
+  dynlink.cmi dynlink.cma \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p -m 644 \
+  dynlink.cmti dynlink.mli \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/dynlink'
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/unix'
+if test -f dllunix.so; then \
+  /usr/bin/install -c -p \
+    dllunix.so "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/stublibs"; \
+fi
+/usr/bin/install -c -p -m 644 libunix.a "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+/usr/bin/install -c -p -m 644 \
+  unix.cma unix.cmi unixLabels.cmi \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+/usr/bin/install -c -p -m 644 \
+  unix.mli unixLabels.mli \
+          unix.cmti unixLabels.cmti \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+if test -n "unixsupport.h socketaddr.h"; then \
+  /usr/bin/install -c -p -m 644 unixsupport.h socketaddr.h "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/caml/"; \
+fi
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/unix'
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/bigarray'
+if test -f dllbigarray.so; then \
+  /usr/bin/install -c -p \
+    dllbigarray.so "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/stublibs"; \
+fi
+/usr/bin/install -c -p -m 644 \
+  bigarray.cma bigarray.cmi \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+/usr/bin/install -c -p -m 644 \
+  bigarray.mli \
+          bigarray.cmti \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+if test -n ""; then \
+  /usr/bin/install -c -p -m 644  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/caml/"; \
+fi
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/bigarray'
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/str'
+if test -f dllcamlstr.so; then \
+  /usr/bin/install -c -p \
+    dllcamlstr.so "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/stublibs"; \
+fi
+/usr/bin/install -c -p -m 644 libcamlstr.a "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+/usr/bin/install -c -p -m 644 \
+  str.cma str.cmi \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+/usr/bin/install -c -p -m 644 \
+  str.mli \
+          str.cmti \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+if test -n ""; then \
+  /usr/bin/install -c -p -m 644  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/caml/"; \
+fi
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/str'
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/systhreads'
+if test -f dllthreads.so; then \
+  /usr/bin/install -c -p dllthreads.so "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/stublibs"; \
+fi
+/usr/bin/install -c -p -m 644 libthreads.a "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/threads"
+/usr/bin/install -c -p -m 644 \
+  thread.cmi mutex.cmi condition.cmi event.cmi threadUnix.cmi semaphore.cmi threads.cma \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/threads"
+/usr/bin/install -c -p -m 644 \
+  thread.cmti mutex.cmti condition.cmti event.cmti threadUnix.cmti semaphore.cmti \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/threads"
+/usr/bin/install -c -p -m 644 thread.mli mutex.mli condition.mli event.mli threadUnix.mli semaphore.mli "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/threads"
+/usr/bin/install -c -p -m 644 threads.h "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/caml"
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/systhreads'
+make -C ocamldoc install
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/ocamldoc'
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/bin"
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/ocamldoc"
+/usr/bin/install -c -p ../ocamldoc/ocamldoc "/build/ocaml4/pkg/ocaml4/usr/bin"
+/usr/bin/install -c -p -m 644 \
+  ocamldoc.hva *.cmi odoc_info.cma \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/ocamldoc"
+/usr/bin/install -c -p -m 644 \
+  odoc_info.cmi \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/ocamldoc"
+/usr/bin/install -c -p -m 644 \
+  odoc_info.mli odoc_info.cmt odoc_info.cmti \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/ocamldoc"
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/ocamldoc'
+make -C api_docgen install
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/api_docgen'
+make -C ocamldoc install
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/api_docgen/ocamldoc'
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/share/man/man3"
+if test -d build/man; then \
+  /usr/bin/install -c -p -m 644 build/man/*.3o "/build/ocaml4/pkg/ocaml4/usr/share/man/man3"; \
+fi
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/api_docgen/ocamldoc'
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/api_docgen'
+if test -n "ocamldebugger"; then \
+  make -C debugger install; \
+fi
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/debugger'
+/usr/bin/install -c -p ocamldebug "/build/ocaml4/pkg/ocaml4/usr/bin"
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/debugger'
+/usr/bin/install -c -p -m 644 Makefile.config "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p -m 644 Changes README.adoc README.win32.adoc LICENSE "/build/ocaml4/pkg/ocaml4/usr/share/doc/ocaml"
+if test -f ocamlopt; then make installopt; else \
+   cd "/build/ocaml4/pkg/ocaml4/usr/bin"; \
+   ln -sf ocamlc.byte ocamlc; \
+   ln -sf ocamllex.byte ocamllex; \
+   (test -f flexlink.byte && \
+      ln -sf flexlink.byte flexlink) || true; \
+fi
+make[1]: Entering directory '/build/ocaml4/src/ocaml-4.14.2'
+make -C runtime installopt
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/runtime'
+/usr/bin/install -c -p -m 644 libasmrun.a libasmrund.a libasmruni.a libasmrun_pic.a "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p libasmrun_shared.so "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/runtime'
+/usr/bin/install -c -p ocamlopt "/build/ocaml4/pkg/ocaml4/usr/bin/ocamlopt.byte"
+make -C stdlib installopt
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/stdlib'
+stale=""; \
+  if test -n "$stale" ; then \
+    echo "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml contains stale stdlib artefacts"; \
+    echo "Please rm /build/ocaml4/pkg/ocaml4/usr/lib/ocaml/stdlib__*.cmx and re-run make install"; \
+    exit 1; \
+  fi
+/usr/bin/install -c -p -m 644 \
+  stdlib.cmxa stdlib.a std_exit.o *.cmx \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/stdlib'
+/usr/bin/install -c -p -m 644 \
+    middle_end/*.cmi \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    middle_end/closure/*.cmi \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    middle_end/flambda/*.cmi \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    middle_end/flambda/base_types/*.cmi \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    asmcomp/*.cmi \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    middle_end/*.cmt middle_end/*.cmti \
+    middle_end/*.mli \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    middle_end/closure/*.cmt middle_end/closure/*.cmti \
+    middle_end/closure/*.mli \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    middle_end/flambda/*.cmt middle_end/flambda/*.cmti \
+    middle_end/flambda/*.mli \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    middle_end/flambda/base_types/*.cmt \
+            middle_end/flambda/base_types/*.cmti \
+    middle_end/flambda/base_types/*.mli \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    asmcomp/*.cmt asmcomp/*.cmti \
+    asmcomp/*.mli \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+    driver/optmain.cmo \
+    "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+make -C ocamldoc installopt
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/ocamldoc'
+if test -f ../ocamldoc/ocamldoc.opt; then make installopt_really ; fi
+make[3]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/ocamldoc'
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/bin"
+mkdir -p "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/ocamldoc"
+/usr/bin/install -c -p ../ocamldoc/ocamldoc.opt "/build/ocaml4/pkg/ocaml4/usr/bin"
+/usr/bin/install -c -p -m 644 \
+  odoc_info.cmi \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/ocamldoc"
+/usr/bin/install -c -p -m 644 \
+  odoc_info.mli odoc_info.cmt odoc_info.cmti \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/ocamldoc"
+/usr/bin/install -c -p -m 644 \
+  ocamldoc.hva *.cmx odoc_info.a odoc_info.cmxa \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/ocamldoc"
+make[3]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/ocamldoc'
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/ocamldoc'
+for i in dynlink unix bigarray str systhreads; do \
+  make -C otherlibs/$i installopt || exit $?; \
+done
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/dynlink'
+/usr/bin/install -c -p -m 644 \
+  native/dynlink_compilerlibs.cmx dynlink_types.cmx dynlink_platform_intf.cmx dynlink_common.cmx native/dynlink.cmx dynlink.cmxa dynlink.a \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/dynlink'
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/unix'
+/usr/bin/install -c -p -m 644 \
+   unix.cmx unixLabels.cmx unix.cmxa unix.a \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+if test -f unix.cmxs; then \
+  /usr/bin/install -c -p unix.cmxs "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"; \
+fi
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/unix'
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/bigarray'
+/usr/bin/install -c -p -m 644 \
+   bigarray.cmx bigarray.cmxa bigarray.a \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+if test -f bigarray.cmxs; then \
+  /usr/bin/install -c -p bigarray.cmxs "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"; \
+fi
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/bigarray'
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/str'
+/usr/bin/install -c -p -m 644 \
+   str.cmx str.cmxa str.a \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/"
+if test -f str.cmxs; then \
+  /usr/bin/install -c -p str.cmxs "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"; \
+fi
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/str'
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/systhreads'
+/usr/bin/install -c -p -m 644 libthreadsnat.a "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+/usr/bin/install -c -p -m 644 \
+  thread.cmx mutex.cmx condition.cmx event.cmx threadUnix.cmx semaphore.cmx threads.cmxa threads.a \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/threads"
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/otherlibs/systhreads'
+if test -f ocamlopt.opt; then make installoptopt; else \
+   cd "/build/ocaml4/pkg/ocaml4/usr/bin"; \
+   ln -sf ocamlc.byte ocamlc; \
+   ln -sf ocamlopt.byte ocamlopt; \
+   ln -sf ocamllex.byte ocamllex; \
+   (test -f flexlink.byte && \
+     ln -sf flexlink.byte flexlink) || true; \
+fi
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2'
+/usr/bin/install -c -p ocamlc.opt "/build/ocaml4/pkg/ocaml4/usr/bin"
+/usr/bin/install -c -p ocamlopt.opt "/build/ocaml4/pkg/ocaml4/usr/bin"
+/usr/bin/install -c -p lex/ocamllex.opt "/build/ocaml4/pkg/ocaml4/usr/bin"
+cd "/build/ocaml4/pkg/ocaml4/usr/bin"; \
+   ln -sf ocamlc.opt ocamlc; \
+   ln -sf ocamlopt.opt ocamlopt; \
+   ln -sf ocamllex.opt ocamllex
+/usr/bin/install -c -p -m 644 \
+   utils/*.cmx parsing/*.cmx typing/*.cmx bytecomp/*.cmx \
+   toplevel/*.cmx toplevel/native/*.cmx \
+   toplevel/native/tophooks.cmi \
+   file_formats/*.cmx \
+   lambda/*.cmx \
+   driver/*.cmx asmcomp/*.cmx middle_end/*.cmx \
+           middle_end/closure/*.cmx \
+           middle_end/flambda/*.cmx \
+           middle_end/flambda/base_types/*.cmx \
+          "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+   compilerlibs/*.cmxa compilerlibs/*.a \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+/usr/bin/install -c -p -m 644 \
+   driver/main.cmx driver/main.o \
+   driver/optmain.cmx driver/optmain.o \
+   toplevel/topstart.o \
+   "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml/compiler-libs"
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2'
+make -C tools installopt
+make[2]: Entering directory '/build/ocaml4/src/ocaml-4.14.2/tools'
+/usr/bin/install -c -p -m 644 \
+          profiling.cmx profiling.o \
+  "/build/ocaml4/pkg/ocaml4/usr/lib/ocaml"
+make[2]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2/tools'
+make[1]: Leaving directory '/build/ocaml4/src/ocaml-4.14.2'

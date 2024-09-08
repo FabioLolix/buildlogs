@@ -1,0 +1,274 @@
+Welcome to findlib version 1.9.6
+Configuring core...
+Checking for #remove_directory...
+Testing threading model...
+systhread_supported: true
+Testing DLLs...
+Testing whether ppxopt can be supported...
+Checking for ocamlc -opaque...
+Checking for ocamlopt -g...
+Querying installation: META list not found
+make install will double-check installed META files
+Configuring libraries...
+unix: found
+dynlink: found
+bigarray: found
+compiler-libs: found
+dbm: not present (normal since 4.00)
+graphics: not present (normal since 4.09)
+num: not present (normal since 4.06)
+ocamlbuild: not present (normal since 4.03)
+ocamldoc: found (in +ocamldoc)
+raw_spacetime: not present (normal since 4.12)
+threads: found (in +threads)
+str: found
+labltk: not present (normal since 4.02)
+native dynlink: found
+camlp4: not present (normal since OCaml-4.02)
+bytes: found, installing fake library
+Configuration for stdlib written to site-lib-src/stdlib/META
+Configuration for unix written to site-lib-src/unix/META
+Configuration for dynlink written to site-lib-src/dynlink/META
+Configuration for bigarray written to site-lib-src/bigarray/META
+Configuration for compiler-libs written to site-lib-src/compiler-libs/META
+Configuration for ocamldoc written to site-lib-src/ocamldoc/META
+Configuration for threads written to site-lib-src/threads/META
+Configuration for str written to site-lib-src/str/META
+Configuration for bytes written to site-lib-src/bytes/META
+Detecting compiler arguments: (extractor built) ok
+
+About the OCAML core installation:
+    Standard library:      /usr/lib/ocaml
+    Binaries:              /usr/bin
+    Manual pages:          /usr/local/man
+    Multi-threading type:  posix
+The directory of site-specific packages will be
+    site-lib:              /usr/lib/ocaml
+The configuration file is written to:
+    findlib config file:   /etc/findlib.conf
+Software will be installed:
+    Libraries:             in <site-lib>/findlib
+    Binaries:              /usr/bin
+    Manual pages:          /usr/share/man
+    topfind script:        /usr/lib/ocaml
+Topfind ppxopt support:    yes
+Toolbox:                   no
+Link custom runtime:       yes
+Need bytes compatibility:  no
+
+Configuration has been written to Makefile.config
+
+You can now do 'make all', and optionally 'make opt', to build ocamlfind.
+for p in findlib; do ( cd src/$p; make all ) || exit; done
+make[1]: Entering directory '/build/ocaml4-findlib/src/findlib-1.9.6/src/findlib'
+ocamllex fl_meta.mll
+22 states, 392 transitions, table size 1700 bytes
+USE_CYGPATH="0"; \
+export USE_CYGPATH; \
+cat findlib_config.mlp | \
+         ../../tools/patch '@CONFIGFILE@' '/etc/findlib.conf' | \
+         ../../tools/patch '@STDLIB@' '/usr/lib/ocaml' | \
+	sed -e 's;@AUTOLINK@;true;g' \
+	    -e 's;@SYSTEM@;linux;g' \
+	     >findlib_config.ml
+if [ "true" = "true" ]; then                 \
+	cp topfind.ml.in topfind.ml;                             \
+else                                                             \
+	sed -e '/PPXOPT_BEGIN/,/PPXOPT_END/ d' topfind.ml.in     \
+		> topfind.ml ;                                   \
+fi
+ocamldep *.ml *.mli >depend
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c findlib_config.ml
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c fl_split.ml
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c fl_metatoken.ml
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c fl_meta.ml
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -c fl_metascanner.mli
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c fl_metascanner.ml
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -c fl_topo.mli
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c fl_topo.ml
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -c fl_package_base.mli
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c fl_package_base.ml
+File "fl_package_base.ml", line 304, characters 22-40:
+304 | 	 let pkg_ancestors = query_requirements predlist pkg in
+      	                     ^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+File "fl_package_base.ml", line 350, characters 18-36:
+350 |   let ancestors = query_requirements predlist package_name in
+                        ^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+File "fl_package_base.ml", line 375, characters 23-41:
+375 | 	  let pkg_ancestors = query_requirements predlist pkg in
+      	                      ^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+File "fl_package_base.ml", line 510, characters 16-35:
+510 | 	     ( let c = package_definitions search_path pkg.package_name in
+      	               ^^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label search_path was omitted in the application of this function.
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -c findlib.mli
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c findlib.ml
+File "findlib.ml", line 390, characters 2-26:
+390 |   Fl_package_base.requires predlist pkg
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+File "findlib.ml", line 396, characters 2-33:
+396 |   Fl_package_base.requires_deeply predlist pkglist
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c fl_args.ml
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c fl_lint.ml
+ocamlc -I +compiler-libs -a -o findlib.cma findlib_config.cmo fl_split.cmo fl_metatoken.cmo fl_meta.cmo fl_metascanner.cmo fl_topo.cmo fl_package_base.cmo findlib.cmo fl_args.cmo fl_lint.cmo
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c ocaml_args.ml
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c frontend.ml
+File "frontend.ml", line 859, characters 10-39:
+859 |           Fl_package_base.package_users predicates1 packages1
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+ocamlc -I +compiler-libs -custom -o ocamlfind -g findlib.cma unix.cma \
+           -I +unix -I +dynlink ocaml_args.cmo frontend.cmo
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -c topfind.mli
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c topfind.ml
+File "topfind.ml", line 128, characters 40-63:
+128 |                      match Hashtbl.find Toploop.directive_table "ppx" with
+                                              ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 258, characters 4-27:
+258 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 268, characters 4-27:
+268 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 280, characters 4-27:
+280 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 293, characters 4-27:
+293 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 307, characters 4-27:
+307 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 319, characters 4-27:
+319 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+ocamlc -I +compiler-libs -a -o findlib_top.cma topfind.cmo
+USE_CYGPATH="0"; \
+export USE_CYGPATH; \
+cat topfind_rd1.p | \
+         ../../tools/patch '@SITELIB@' '/usr/lib/ocaml' \
+    	    >topfind
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -c fl_dynload.mli
+ocamlc -I +compiler-libs -opaque   -I +unix -I +dynlink -g -c fl_dynload.ml
+ocamlc -I +compiler-libs -a -o findlib_dynload.cma fl_dynload.cmo
+make[1]: Leaving directory '/build/ocaml4-findlib/src/findlib-1.9.6/src/findlib'
+make all-config
+make[1]: Entering directory '/build/ocaml4-findlib/src/findlib-1.9.6'
+USE_CYGPATH="0"; \
+export USE_CYGPATH; \
+cat findlib.conf.in | \
+     tools/patch '@SITELIB@' '/usr/lib/ocaml' | \
+		 tools/patch '@FINDLIB_PATH@' '/usr/lib/ocaml' -p >findlib.conf
+if ./tools/cmd_from_same_dir ocamlc; then \
+	echo 'ocamlc="ocamlc.opt"' >>findlib.conf; \
+fi
+if ./tools/cmd_from_same_dir ocamlopt; then \
+	echo 'ocamlopt="ocamlopt.opt"' >>findlib.conf; \
+fi
+if ./tools/cmd_from_same_dir ocamldep; then \
+	echo 'ocamldep="ocamldep.opt"' >>findlib.conf; \
+fi
+if ./tools/cmd_from_same_dir ocamldoc; then \
+	echo 'ocamldoc="ocamldoc.opt"' >>findlib.conf; \
+fi
+make[1]: Leaving directory '/build/ocaml4-findlib/src/findlib-1.9.6'
+for p in findlib; do ( cd src/$p; make opt ) || exit; done
+make[1]: Entering directory '/build/ocaml4-findlib/src/findlib-1.9.6/src/findlib'
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c findlib_config.ml
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c fl_split.ml
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c fl_metatoken.ml
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c fl_meta.ml
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c fl_metascanner.ml
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c fl_topo.ml
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c fl_package_base.ml
+File "fl_package_base.ml", line 304, characters 22-40:
+304 | 	 let pkg_ancestors = query_requirements predlist pkg in
+      	                     ^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+File "fl_package_base.ml", line 350, characters 18-36:
+350 |   let ancestors = query_requirements predlist package_name in
+                        ^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+File "fl_package_base.ml", line 375, characters 23-41:
+375 | 	  let pkg_ancestors = query_requirements predlist pkg in
+      	                      ^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+File "fl_package_base.ml", line 510, characters 16-35:
+510 | 	     ( let c = package_definitions search_path pkg.package_name in
+      	               ^^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label search_path was omitted in the application of this function.
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c findlib.ml
+File "findlib.ml", line 390, characters 2-26:
+390 |   Fl_package_base.requires predlist pkg
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+File "findlib.ml", line 396, characters 2-33:
+396 |   Fl_package_base.requires_deeply predlist pkglist
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c fl_args.ml
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c fl_lint.ml
+ocamlopt -I +compiler-libs -g -a -o findlib.cmxa findlib_config.cmx fl_split.cmx fl_metatoken.cmx fl_meta.cmx fl_metascanner.cmx fl_topo.cmx fl_package_base.cmx findlib.cmx fl_args.cmx fl_lint.cmx
+if [ 1 -gt 0 ]; then \
+    ocamlopt -I +compiler-libs -g -shared -o findlib.cmxs findlib_config.cmx fl_split.cmx fl_metatoken.cmx fl_meta.cmx fl_metascanner.cmx fl_topo.cmx fl_package_base.cmx findlib.cmx fl_args.cmx fl_lint.cmx; \
+fi
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c ocaml_args.ml
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c frontend.ml
+File "frontend.ml", line 859, characters 10-39:
+859 |           Fl_package_base.package_users predicates1 packages1
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning 6 [labels-omitted]: label preds was omitted in the application of this function.
+ocamlopt -I +compiler-libs -g -o ocamlfind_opt findlib.cmxa unix.cmxa \
+	   -I +unix -I +dynlink ocaml_args.cmx frontend.cmx
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c topfind.ml
+File "topfind.ml", line 128, characters 40-63:
+128 |                      match Hashtbl.find Toploop.directive_table "ppx" with
+                                              ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 258, characters 4-27:
+258 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 268, characters 4-27:
+268 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 280, characters 4-27:
+280 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 293, characters 4-27:
+293 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 307, characters 4-27:
+307 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+File "topfind.ml", line 319, characters 4-27:
+319 |     Toploop.directive_table
+          ^^^^^^^^^^^^^^^^^^^^^^^
+Alert deprecated: Toploop.directive_table
+ocamlopt -I +compiler-libs -g -a -o findlib_top.cmxa topfind.cmx
+if [ 1 -gt 0 ]; then \
+    ocamlopt -I +compiler-libs -g -shared -o findlib_top.cmxs topfind.cmx; \
+fi
+ocamlopt -I +compiler-libs -g -opaque  -I +unix -I +dynlink -c fl_dynload.ml
+ocamlopt -I +compiler-libs -g -a -o findlib_dynload.cmxa fl_dynload.cmx
+if [ 1 -gt 0 ]; then \
+    ocamlopt -I +compiler-libs -g -shared -o findlib_dynload.cmxs fl_dynload.cmx; \
+fi
+make[1]: Leaving directory '/build/ocaml4-findlib/src/findlib-1.9.6/src/findlib'

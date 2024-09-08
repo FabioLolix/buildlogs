@@ -1,0 +1,23 @@
+if test -d /usr/lib/ocaml/ocamlbuild; then\
+  >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+       "/usr/lib/ocaml/ocamlbuild";\
+  >&2 echo "Installation aborted; if you want to bypass this"\
+        "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+  exit 2;\
+fi
+make install-bin install-lib install-man
+make[1]: Entering directory '/build/ocaml4-ocamlbuild/src/ocamlbuild-0.14.2'
+mkdir -p /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/bin
+cp ocamlbuild.byte /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/bin/ocamlbuild.byte
+mkdir -p /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/bin
+cp ocamlbuild.native /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/bin/ocamlbuild
+cp ocamlbuild.native /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/bin/ocamlbuild.native
+mkdir -p /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/lib/ocaml/ocamlbuild
+cp META src/signatures.mli src/signatures.cmi src/signatures.cmti /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/lib/ocaml/ocamlbuild
+mkdir -p /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/lib/ocaml/ocamlbuild
+cp plugin-lib/ocamlbuildlib.cma bin/ocamlbuild.cmo src/ocamlbuild_pack.cmi plugin-lib/ocamlbuild_plugin.cmi plugin-lib/ocamlbuild_executor.cmi plugin-lib/ocamlbuild_unix_plugin.cmi /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/lib/ocaml/ocamlbuild
+mkdir -p /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/lib/ocaml/ocamlbuild
+cp plugin-lib/ocamlbuildlib.cmxa plugin-lib/ocamlbuildlib.a bin/ocamlbuild.cmx bin/ocamlbuild.o src/ocamlbuild_pack.cmx plugin-lib/ocamlbuild_plugin.cmx plugin-lib/ocamlbuild_executor.cmx plugin-lib/ocamlbuild_unix_plugin.cmx plugin-lib/ocamlbuild_plugin.o plugin-lib/ocamlbuild_executor.o plugin-lib/ocamlbuild_unix_plugin.o /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/lib/ocaml/ocamlbuild
+mkdir -p /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/share/man/man1
+cp man/ocamlbuild.1 /build/ocaml4-ocamlbuild/pkg/ocaml4-ocamlbuild/usr/share/man/man1/ocamlbuild.1
+make[1]: Leaving directory '/build/ocaml4-ocamlbuild/src/ocamlbuild-0.14.2'
