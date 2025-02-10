@@ -1,0 +1,11 @@
+install -d /build/quickemu-git/pkg/quickemu-git/usr/bin
+install -d /build/quickemu-git/pkg/quickemu-git/usr/share/man/man1
+install -m 755 ../quickget /build/quickemu-git/pkg/quickemu-git/usr/bin
+install -d /build/quickemu-git/pkg/quickemu-git/usr/share/man/man5
+install -m 755 ../quickemu /build/quickemu-git/pkg/quickemu-git/usr/bin
+install -m 644 quickget.1 /build/quickemu-git/pkg/quickemu-git/usr/share/man/man1
+install -m 755 ../quickreport /build/quickemu-git/pkg/quickemu-git/usr/bin
+install -m 644 quickemu.1 /build/quickemu-git/pkg/quickemu-git/usr/share/man/man1
+install -m 755 ../chunkcheck /build/quickemu-git/pkg/quickemu-git/usr/bin
+install -m 644 quickemu_conf.5 /build/quickemu-git/pkg/quickemu-git/usr/share/man/man5
+rm -f /build/quickemu-git/pkg/quickemu-git/usr/share/man/man1/quickemu_conf.1
