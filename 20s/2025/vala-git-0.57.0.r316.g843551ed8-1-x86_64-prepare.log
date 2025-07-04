@@ -1,0 +1,39 @@
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --install -I m4 ${ACLOCAL_FLAGS}
+aclocal: installing 'm4/ax_check_compile_flag.m4' from '/usr/share/aclocal/ax_check_compile_flag.m4'
+aclocal: installing 'm4/libtool.m4' from '/usr/share/aclocal/libtool.m4'
+aclocal: installing 'm4/ltoptions.m4' from '/usr/share/aclocal/ltoptions.m4'
+aclocal: installing 'm4/ltsugar.m4' from '/usr/share/aclocal/ltsugar.m4'
+aclocal: installing 'm4/ltversion.m4' from '/usr/share/aclocal/ltversion.m4'
+aclocal: installing 'm4/lt~obsolete.m4' from '/usr/share/aclocal/lt~obsolete.m4'
+aclocal: installing 'm4/pkg.m4' from '/usr/share/aclocal/pkg.m4'
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/ltmain.sh'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal --install -I m4 ${ACLOCAL_FLAGS}
+autoreconf: running: /usr/bin/autoconf
+configure.ac:63: warning: AC_PROG_LEX without either yywrap or noyywrap is obsolete
+./lib/autoconf/programs.m4:743: _AC_PROG_LEX is expanded from...
+./lib/autoconf/programs.m4:736: AC_PROG_LEX is expanded from...
+configure.ac:63: the top level
+autoreconf: running: /usr/bin/autoheader
+autoreconf: running: automake --add-missing --copy --no-force
+configure.ac:40: installing 'build-aux/compile'
+configure.ac:46: installing 'build-aux/config.guess'
+configure.ac:46: installing 'build-aux/config.sub'
+configure.ac:10: installing 'build-aux/install-sh'
+configure.ac:10: installing 'build-aux/missing'
+Makefile.am: installing './INSTALL'
+ccode/Makefile.am: installing 'build-aux/depcomp'
+doc/manual/Makefile.am:47: warning: .PHONY was already defined in condition HAVE_SPHINXBUILD, which includes condition HAVE_LATEXMK and HAVE_SPHINXBUILD ...
+doc/manual/Makefile.am:39: ... '.PHONY' previously defined here
+configure.ac: installing 'build-aux/ylwrap'
+tests/Makefile.am:1542: warning: wildcard $(srcdir: non-POSIX variable name
+tests/Makefile.am:1542: (probably a GNU make extension)
+parallel-tests: installing 'build-aux/test-driver'
+autoreconf: Leaving directory '.'
