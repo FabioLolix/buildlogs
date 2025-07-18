@@ -1,0 +1,400 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 build -D with-system-cli11=true -D with-system-concurrencpp=true -D with-system-glaze=true -D with-system-magic-enum=false -D with-system-spdlog=true -D with-system-toml11=true -D with-system-ztd=false --wrap-mode default
+The Meson build system
+Version: 1.8.2
+Source dir: /build/spacefm-thermitegod-git/src/spacefm-thermitegod
+Build dir: /build/spacefm-thermitegod-git/src/spacefm-thermitegod/build
+Build type: native build
+Project name: spacefm
+Project version: 3.0.0-dev
+C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250425")
+C linker for the host machine: cc ld.bfd 2.44.0
+C++ compiler for the host machine: c++ (gcc 15.1.1 "c++ (GCC) 15.1.1 20250425")
+C++ linker for the host machine: c++ ld.bfd 2.44.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program bash found: YES (/usr/bin/bash)
+Program python3 found: YES (/usr/bin/python3)
+Compiler for C++ supports arguments -fexceptions: YES 
+Compiler for C++ supports arguments -finput-charset=UTF-8: YES 
+Compiler for C++ supports arguments -fexec-charset=UTF-8: YES 
+Compiler for C++ supports arguments -fno-delete-null-pointer-checks: YES 
+Compiler for C++ supports arguments -fno-strict-aliasing: YES 
+Compiler for C++ supports arguments -fno-strict-overflow: YES 
+Compiler for C++ supports arguments -ftrivial-auto-var-init=zero: YES 
+Compiler for C++ supports arguments -fzero-init-padding-bits=all: YES 
+Compiler for C++ supports arguments -Wformat=2: YES 
+Compiler for C++ supports arguments -Wformat-overflow=2: YES 
+Compiler for C++ supports arguments -Wformat-truncation: YES 
+Compiler for C++ supports arguments -Werror=format-security: YES 
+Compiler for C++ supports arguments -fstack-protector-strong: YES 
+Compiler for C++ supports arguments -fstack-clash-protection: YES 
+Compiler for C++ supports arguments -fcf-protection=full: YES 
+Compiler for C++ supports arguments -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3: YES 
+Compiler for C++ supports arguments -Wp,-D_GLIBCXX_ASSERTIONS: YES 
+Compiler for C++ supports arguments -Walloca: YES 
+Compiler for C++ supports arguments -Walloc-zero: YES 
+Compiler for C++ supports arguments -Warray-bounds=2: YES 
+Compiler for C++ supports arguments -Warray-compare: YES 
+Compiler for C++ supports arguments -Wattribute-alias=2: YES 
+Compiler for C++ supports arguments -Wbidi-chars=any: YES 
+Compiler for C++ supports arguments -Wcast-align: YES 
+Compiler for C++ supports arguments -Wcast-qual: YES 
+Compiler for C++ supports arguments -Wchar-subscripts: YES 
+Compiler for C++ supports arguments -Wcomment: YES 
+Compiler for C++ supports arguments -Wconversion: YES 
+Compiler for C++ supports arguments -Wdate-time: YES 
+Compiler for C++ supports arguments -Wdisabled-optimization: YES 
+Compiler for C++ supports arguments -Wdouble-promotion: YES 
+Compiler for C++ supports arguments -Wduplicated-branches: YES 
+Compiler for C++ supports arguments -Wduplicated-cond: YES 
+Compiler for C++ supports arguments -Wfloat-equal: YES 
+Compiler for C++ supports arguments -Wignored-qualifiers: YES 
+Compiler for C++ supports arguments -Wimplicit-fallthrough: YES 
+Compiler for C++ supports arguments -Wimport: YES 
+Compiler for C++ supports arguments -Winit-self: YES 
+Compiler for C++ supports arguments -Wint-conversion: NO 
+Compiler for C++ supports arguments -Wmissing-field-initializers: YES 
+Compiler for C++ supports arguments -Wmissing-format-attribute: YES 
+Compiler for C++ supports arguments -Wmissing-include-dirs: YES 
+Compiler for C++ supports arguments -Wmissing-noreturn: YES 
+Compiler for C++ supports arguments -Wnon-virtual-dtor: YES 
+Compiler for C++ supports arguments -Wnull-dereference: YES 
+Compiler for C++ supports arguments -Woverloaded-virtual: YES 
+Compiler for C++ supports arguments -Wparentheses: YES 
+Compiler for C++ supports arguments -Wpointer-arith: YES 
+Compiler for C++ supports arguments -Wsequence-point: YES 
+Compiler for C++ supports arguments -Wshadow: YES 
+Compiler for C++ supports arguments -Wsign-compare: YES 
+Compiler for C++ supports arguments -Wsign-conversion: YES 
+Compiler for C++ supports arguments -Wstack-protector: YES 
+Compiler for C++ supports arguments -Wstrict-aliasing: YES 
+Compiler for C++ supports arguments -Wstring-compare: YES 
+Compiler for C++ supports arguments -Wswitch: YES 
+Compiler for C++ supports arguments -Wswitch-enum: YES 
+Compiler for C++ supports arguments -Wtrampolines: YES 
+Compiler for C++ supports arguments -Wtrigraphs: YES 
+Compiler for C++ supports arguments -Wundef: YES 
+Compiler for C++ supports arguments -Wuninitialized: YES 
+Compiler for C++ supports arguments -Wunknown-pragmas: YES 
+Compiler for C++ supports arguments -Wunreachable-code: YES 
+Compiler for C++ supports arguments -Wunused: YES 
+Compiler for C++ supports arguments -Wunused-function: YES 
+Compiler for C++ supports arguments -Wunused-label: YES 
+Compiler for C++ supports arguments -Wunused-macros: YES 
+Compiler for C++ supports arguments -Wunused-parameter: YES 
+Compiler for C++ supports arguments -Wunused-result: YES 
+Compiler for C++ supports arguments -Wunused-value: YES 
+Compiler for C++ supports arguments -Wunused-variable: YES 
+Compiler for C++ supports arguments -Wvariadic-macros: YES 
+Compiler for C++ supports arguments -Wvla: YES 
+Compiler for C++ supports arguments -Wwrite-strings: YES 
+Compiler for C++ supports arguments -Wzero-length-bounds: YES 
+Compiler for C++ supports arguments -Wno-cast-align: YES 
+Compiler for C++ supports arguments -Wno-double-promotion: YES 
+Compiler for C++ supports arguments -Wno-cast-function-type-mismatch: NO 
+Compiler for C++ supports arguments -Wno-cast-function-type: YES 
+Compiler for C++ supports arguments -Wno-cast-qual: YES 
+Compiler for C++ supports arguments -Wno-maybe-uninitialized: YES 
+Compiler for C++ supports arguments -Wno-shadow: YES 
+Compiler for C++ supports link arguments -Wl,-O1: YES 
+Compiler for C++ supports link arguments -Wl,--as-needed: YES 
+Compiler for C++ supports link arguments -Wl,--sort-common: YES 
+Compiler for C++ supports link arguments -Wl,-z,relro: YES 
+Compiler for C++ supports link arguments -Wl,-z,now: YES 
+Compiler for C++ supports link arguments -Wl,-z,pack-relative-relocs: YES 
+Compiler for C++ supports link arguments -Wl,-z,noexecstack: YES 
+Compiler for C++ supports link arguments -Wl,-z,defs: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency libudev found: YES 257
+Run-time dependency botan-3 found: YES 3.8.1
+Run-time dependency sigc++-3.0 found: YES 3.6.0
+Run-time dependency pugixml found: YES 1.15
+Run-time dependency gtkmm-3.0 found: YES 3.24.10
+Run-time dependency glibmm-2.4 found: YES 2.66.8
+Run-time dependency giomm-2.4 found: YES 2.66.8
+Run-time dependency gtkmm-4.0 found: YES 4.18.0
+Run-time dependency glibmm-2.68 found: YES 2.84.0
+Run-time dependency giomm-2.68 found: YES 2.84.0
+Run-time dependency exo-2 found: YES 4.20.0
+Run-time dependency cli11 found: YES 2.5.0
+Found CMake: /usr/bin/cmake (4.0.3)
+Run-time dependency concurrencpp found: YES 0.1.7
+Run-time dependency glaze found: YES 5.5.2
+
+Executing subproject magic_enum 
+
+magic_enum| Project name: magic_enum
+magic_enum| Project version: 0.9.7
+magic_enum| C++ compiler for the host machine: c++ (gcc 15.1.1 "c++ (GCC) 15.1.1 20250425")
+magic_enum| C++ linker for the host machine: c++ ld.bfd 2.44.0
+magic_enum| Build targets in project: 0
+magic_enum| Subproject magic_enum finished.
+
+Run-time dependency spdlog found: YES 1.15.3
+
+Executing subproject ztd 
+
+ztd| Project name: ztd
+ztd| Project version: 0.6.0-dev
+ztd| C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250425")
+ztd| C linker for the host machine: cc ld.bfd 2.44.0
+ztd| C++ compiler for the host machine: c++ (gcc 15.1.1 "c++ (GCC) 15.1.1 20250425")
+ztd| C++ linker for the host machine: c++ ld.bfd 2.44.0
+ztd| WARNING: Subproject 'magic_enum' did not override 'magic_enum' dependency and no variable name specified
+ztd| Dependency magic_enum from subproject subprojects/magic_enum found: NO
+ztd| Build targets in project: 0
+ztd| Subproject ztd finished.
+
+Run-time dependency cppzmq found: YES 4.10.0
+Run-time dependency libavcodec found: YES 61.19.101
+Run-time dependency libavformat found: YES 61.7.100
+Run-time dependency libavutil found: YES 59.39.100
+Run-time dependency gexiv2 found: YES 0.14.5
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.42.12
+Build targets in project: 16
+
+spacefm 3.0.0-dev
+
+  Subprojects
+    magic_enum              : YES
+    ztd                     : YES 1 warnings
+
+  User defined options
+    auto_features           : enabled
+    b_pie                   : true
+    buildtype               : plain
+    libexecdir              : lib
+    prefix                  : /usr
+    python.bytecompile      : 1
+    sbindir                 : bin
+    with-system-cli11       : true
+    with-system-concurrencpp: true
+    with-system-glaze       : true
+    with-system-magic-enum  : false
+    with-system-spdlog      : true
+    with-system-toml11      : true
+    with-system-ztd         : false
+    wrap_mode               : default
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/16 eta ?Generating targets:  19%|█▉        | 3/16 eta 00:00                                                   Writing build.ninja:   0%|          | 0/216 eta ?                                                 ninja: Entering directory `build'
+[1/192] Precompiling header ../pch/pch.hxx
+[2/192] Precompiling header ../pch/pch.hxx
+[3/192] Precompiling header ../pch/pch.hxx
+[4/192] Precompiling header ../pch/pch.hxx
+[5/192] Precompiling header ../pch/pch.hxx
+[6/192] Precompiling header ../pch/pch.hxx
+[7/192] Precompiling header ../pch/pch.hxx
+[8/192] Precompiling header ../pch/pch.hxx
+[9/192] Compiling C++ object spacefm.p/src_concurrency.cxx.o
+[10/192] Precompiling header ../pch/pch.hxx
+[11/192] Precompiling header ../pch/pch.hxx
+[12/192] Precompiling header ../pch/pch.hxx
+[13/192] Precompiling header ../pch/pch.hxx
+[14/192] Precompiling header ../pch/pch.hxx
+[15/192] Precompiling header ../pch/pch.hxx
+[16/192] Precompiling header ../pch/pch.hxx
+[17/192] Precompiling header ../pch/pch.hxx
+[18/192] Compiling C++ object spacefm.p/src_autosave.cxx.o
+FAILED: spacefm.p/src_autosave.cxx.o 
+c++ -Ispacefm.p -I. -I.. -I../src -I../subprojects/magic_enum/include -I../subprojects/ztd/include -I/usr/include/gtkmm-3.0 -I/usr/lib/gtkmm-3.0/include -I/usr/include/atkmm-1.6 -I/usr/lib/atkmm-1.6/include -I/usr/include/gtk-3.0/unix-print -I/usr/include/gdkmm-3.0 -I/usr/lib/gdkmm-3.0/include -I/usr/include/giomm-2.4 -I/usr/lib/giomm-2.4/include -I/usr/include/gtk-3.0 -I/usr/include/cloudproviders -I/usr/include/cairo -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/atk-1.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/pangomm-1.4 -I/usr/lib/pangomm-1.4/include -I/usr/include/glibmm-2.4 -I/usr/lib/glibmm-2.4/include -I/usr/include/cairomm-1.0 -I/usr/lib/cairomm-1.0/include -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/pango-1.0 -I/usr/include/pixman-1 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/sigc++-3.0 -I/usr/lib/sigc++-3.0/include -I/usr/include/botan-3 -I/usr/include/exo-2 -I/usr/include/xfce4 -I/usr/include/concurrencpp-0.1.7 -I/usr/include -I/usr/include/p11-kit-1 -I/usr/include/pgm-5.3 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -fpch-preprocess -include pch.hxx -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c++26 '-DPACKAGE_NAME="spacefm"' '-DPACKAGE_NAME_FANCY="SpaceFM"' '-DPACKAGE_VERSION="3.0.0-dev"' '-DPACKAGE_GITHUB="https://www.github.com/thermitegod/spacefm"' '-DPACKAGE_BUGREPORT="https://www.github.com/thermitegod/spacefm/issues"' '-DPACKAGE_ONLINE_DOCS="TODO"' '-DPACKAGE_BUILD_ROOT="/build/spacefm-thermitegod-git/src/spacefm-thermitegod/build"' '-DDIALOG_BUILD_ROOT="/build/spacefm-thermitegod-git/src/spacefm-thermitegod/build/dialog"' '-DPACKAGE_IMAGES="/usr/share/spacefm/images"' '-DPACKAGE_IMAGES_LOCAL="/build/spacefm-thermitegod-git/src/spacefm-thermitegod/data/images"' '-DDEV_SCRIPTS_PATH="/build/spacefm-thermitegod-git/src/spacefm-thermitegod/tools/scripts"' -DUSE_EXO -DHAVE_SOCKET '-DSOCKET_PORT="59172"' -DHAVE_MEDIA -fexceptions -finput-charset=UTF-8 -fexec-charset=UTF-8 -fno-delete-null-pointer-checks -fno-strict-aliasing -fno-strict-overflow -ftrivial-auto-var-init=zero -fzero-init-padding-bits=all -Wformat=2 -Wformat-overflow=2 -Wformat-truncation -Werror=format-security -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -Walloca -Walloc-zero -Warray-bounds=2 -Warray-compare -Wattribute-alias=2 -Wbidi-chars=any -Wcast-align -Wcast-qual -Wchar-subscripts -Wcomment -Wconversion -Wdate-time -Wdisabled-optimization -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wfloat-equal -Wignored-qualifiers -Wimplicit-fallthrough -Wimport -Winit-self -Wmissing-field-initializers -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wnon-virtual-dtor -Wnull-dereference -Woverloaded-virtual -Wparentheses -Wpointer-arith -Wsequence-point -Wshadow -Wsign-compare -Wsign-conversion -Wstack-protector -Wstrict-aliasing -Wstring-compare -Wswitch -Wswitch-enum -Wtrampolines -Wtrigraphs -Wundef -Wuninitialized -Wunknown-pragmas -Wunreachable-code -Wunused -Wunused-function -Wunused-label -Wunused-macros -Wunused-parameter -Wunused-result -Wunused-value -Wunused-variable -Wvariadic-macros -Wvla -Wwrite-strings -Wzero-length-bounds -Wno-cast-align -Wno-double-promotion -Wno-cast-function-type -Wno-cast-qual -Wno-maybe-uninitialized -Wno-shadow -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/spacefm-thermitegod-git/src=/usr/src/debug/spacefm-thermitegod-git -Wno-changes-meaning -fPIE -pthread -DZMQ_BUILD_DRAFT_API=1 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -Wno-missing-braces -MD -MQ spacefm.p/src_autosave.cxx.o -MF spacefm.p/src_autosave.cxx.o.d -o spacefm.p/src_autosave.cxx.o -c ../src/autosave.cxx
+In file included from /usr/include/spdlog/fmt/fmt.h:28,
+                 from /usr/include/spdlog/common.h:50,
+                 from /usr/include/spdlog/spdlog.h:12,
+                 from ../src/logger.hxx:23,
+                 from ../src/autosave.cxx:22:
+/usr/include/fmt/base.h: In instantiation of ‘constexpr fmt::v11::detail::value<Context>::value(const T&, fmt::v11::detail::custom_tag) [with T = ztd::integer<ztd::detail::i32>; typename std::enable_if<(! has_formatter<T, typename Context::char_type>()), int>::type <anonymous> = 0; Context = fmt::v11::context]’:
+/usr/include/fmt/base.h:2235:65:   required from ‘constexpr fmt::v11::detail::value<Context>::value(T&) [with T = ztd::integer<ztd::detail::i32>; typename std::enable_if<(std::integral_constant<bool, (((((((std::is_class<T>::value || std::is_enum<T>::value) || std::is_union<T>::value) || std::is_array<_Up>::value) && (! fmt::v11::detail::has_to_string_view<T, void>::value)) && (! fmt::v11::detail::is_named_arg<T>::value)) && (! fmt::v11::detail::use_format_as<T>::value)) && (! fmt::v11::detail::use_format_as_member<typename std::remove_const<_Tp>::type, std::integral_constant<bool, true> >::value))>::value || (!1)), int>::type <anonymous> = 0; Context = fmt::v11::context]’
+ 2235 |   FMT_CONSTEXPR20 FMT_INLINE value(T& x) : value(x, custom_tag()) {}
+      |                                                                 ^
+/usr/include/fmt/base.h:2808:20:   required from ‘constexpr fmt::v11::detail::format_arg_store<Context, NUM_ARGS, NUM_NAMED_ARGS, DESC> fmt::v11::make_format_args(T& ...) [with Context = context; T = {ztd::integer<ztd::detail::i32>}; int NUM_ARGS = 1; int NUM_NAMED_ARGS = 0; long long unsigned int DESC = 15]’
+ 2808 |   return {{args...}};
+      |                    ^
+/usr/include/spdlog/logger.h:328:75:   required from ‘void spdlog::logger::log_(spdlog::source_loc, spdlog::level::level_enum, spdlog::string_view_t, Args&& ...) [with Args = {ztd::integer<ztd::detail::i32>&}; spdlog::string_view_t = fmt::v11::basic_string_view<char>]’
+  328 |             fmt::vformat_to(fmt::appender(buf), fmt, fmt::make_format_args(args...));
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/usr/include/spdlog/logger.h:80:13:   required from ‘void spdlog::logger::log(spdlog::source_loc, spdlog::level::level_enum, fmt::v11::format_string<T ...>, Args&& ...) [with Args = {ztd::integer<ztd::detail::i32>&}; fmt::v11::format_string<T ...> = fmt::v11::fstring<ztd::integer<ztd::detail::i32>&>]’
+   80 |         log_(loc, lvl, details::to_string_view(fmt), std::forward<Args>(args)...);
+      |         ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/spdlog/logger.h:85:12:   required from ‘void spdlog::logger::log(spdlog::level::level_enum, fmt::v11::format_string<T ...>, Args&& ...) [with Args = {ztd::integer<ztd::detail::i32>&}; fmt::v11::format_string<T ...> = fmt::v11::fstring<ztd::integer<ztd::detail::i32>&>]’
+   85 |         log(source_loc{}, lvl, fmt, std::forward<Args>(args)...);
+      |         ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/spdlog/logger.h:130:12:   required from ‘void spdlog::logger::trace(fmt::v11::format_string<T ...>, Args&& ...) [with Args = {ztd::integer<ztd::detail::i32>&}; fmt::v11::format_string<T ...> = fmt::v11::fstring<ztd::integer<ztd::detail::i32>&>]’
+  130 |         log(level::trace, fmt, std::forward<Args>(args)...);
+      |         ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/logger.hxx:48:56:   required from ‘void logger::trace(fmt::v11::format_string<T ...>, Args&& ...) [with domain d = logger::domain::autosave; Args = {ztd::integer<ztd::detail::i32>&}; fmt::v11::format_string<T ...> = fmt::v11::fstring<ztd::integer<ztd::detail::i32>&>]’
+   48 |     spdlog::get(magic_enum::enum_name(d).data())->trace(fmt, std::forward<Args>(args)...);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/autosave.cxx:39:44:   required from here
+   39 |     logger::trace<logger::domain::autosave>("adding request, total {}", requests->total);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/fmt/base.h:2262:45: error: ‘fmt::v11::detail::type_is_unformattable_for<ztd::integer<ztd::detail::i32>, char> _’ has incomplete type
+ 2262 |     type_is_unformattable_for<T, char_type> _;
+      |                                             ^
+[19/192] Compiling C++ object spacefm.p/src_types.cxx.o
+[20/192] Compiling C++ object spacefm.p/src_compat_gtk4-porting.cxx.o
+[21/192] Compiling C++ object spacefm.p/src_logger.cxx.o
+[22/192] Compiling C++ object spacefm.p/src_xset_xset-lookup.cxx.o
+[23/192] Compiling C++ object spacefm.p/src_settings_settings.cxx.o
+[24/192] Compiling C++ object spacefm.p/src_settings_upgrade_config-upgrade.cxx.o
+[25/192] Compiling C++ object spacefm.p/src_xset_xset-context-menu.cxx.o
+In file included from ../subprojects/ztd/include/ztd/./detail/types.hxx:25,
+                 from ../subprojects/ztd/include/ztd/./detail/byte_size.hxx:26,
+                 from ../subprojects/ztd/include/ztd/ztd.hxx:20,
+                 from ../src/xset/xset-context-menu.cxx:27:
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u32]’:
+../src/xset/xset.hxx:205:18:   required from here
+  205 |         u32 key{0};                                     // saved
+      |                  ^
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u32>::integer_type’ {aka ‘unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u64]’:
+../src/vfs/dir.hxx:140:25:   required from here
+  140 |     u64 xhidden_count_{0};
+      |                         ^
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u64>::integer_type’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+[26/192] Compiling C++ object spacefm.p/src_settings.cxx.o
+In file included from ../subprojects/ztd/include/ztd/./detail/types.hxx:25,
+                 from ../subprojects/ztd/include/ztd/./detail/byte_size.hxx:26,
+                 from ../subprojects/ztd/include/ztd/ztd.hxx:20,
+                 from ../src/settings.cxx:29:
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u64]’:
+../src/settings/config.hxx:48:24:   required from here
+   48 | constexpr u64 version{4}; // 3.0.0-dev
+      |                        ^
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u64>::integer_type’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u32]’:
+../src/xset/xset.hxx:205:18:   required from here
+  205 |         u32 key{0};                                     // saved
+      |                  ^
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u32>::integer_type’ {aka ‘unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+[27/192] Compiling C++ object spacefm.p/src_main.cxx.o
+In file included from ../subprojects/ztd/include/ztd/./detail/types.hxx:25,
+                 from ../subprojects/ztd/include/ztd/./detail/byte_size.hxx:26,
+                 from ../subprojects/ztd/include/ztd/ztd.hxx:20,
+                 from ../src/main.cxx:28:
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u64]’:
+../src/settings/config.hxx:48:24:   required from here
+   48 | constexpr u64 version{4}; // 3.0.0-dev
+      |                        ^
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u64>::integer_type’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u32]’:
+../src/xset/xset.hxx:205:18:   required from here
+  205 |         u32 key{0};                                     // saved
+      |                  ^
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u32>::integer_type’ {aka ‘unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+[28/192] Compiling C++ object spacefm.p/src_xset_utils_xset-utils.cxx.o
+[29/192] Compiling C++ object spacefm.p/src_socket_server.cxx.o
+[30/192] Compiling C++ object spacefm.p/src_single-instance.cxx.o
+[31/192] Compiling C++ object spacefm.p/src_xset_xset.cxx.o
+In file included from ../subprojects/ztd/include/ztd/./detail/types.hxx:25,
+                 from ../subprojects/ztd/include/ztd/./detail/byte_size.hxx:26,
+                 from ../subprojects/ztd/include/ztd/ztd.hxx:20,
+                 from ../src/xset/xset.cxx:30:
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u32]’:
+../src/xset/xset.hxx:203:12:   required from here
+  203 |     struct keybinding_data
+      |            ^~~~~~~~~~~~~~~
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u32>::integer_type’ {aka ‘unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+../src/xset/xset.cxx: In constructor ‘xset::set::set(xset::name)’:
+../src/xset/xset.cxx:50:39: note: synthesized method ‘constexpr xset::set::keybinding_data::keybinding_data()’ first required here
+   50 | xset::set::set(const xset::name name) noexcept
+      |                                       ^~~~~~~~
+[32/192] Compiling C++ object spacefm.p/src_xset_xset-defaults.cxx.o
+In file included from ../subprojects/ztd/include/ztd/./detail/types.hxx:25,
+                 from ../subprojects/ztd/include/ztd/./detail/byte_size.hxx:26,
+                 from ../subprojects/ztd/include/ztd/ztd.hxx:20,
+                 from ../src/xset/xset-defaults.cxx:23:
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u32]’:
+../src/xset/xset-defaults.cxx:2632:44:   required from here
+   41 | #define GDK_KEY_Tab 0xff09
+      |                     ^~~~~~
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u32>::integer_type’ {aka ‘unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+[33/192] Compiling C++ object spacefm.p/src_settings_config-load.cxx.o
+In file included from ../subprojects/ztd/include/ztd/detail/types.hxx:25,
+                 from ../subprojects/ztd/include/ztd/extra/glaze.hxx:22,
+                 from ../src/settings/config-load.cxx:23:
+../subprojects/ztd/include/ztd/detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u64]’:
+../src/settings/config.hxx:48:24:   required from here
+   48 | constexpr u64 version{4}; // 3.0.0-dev
+      |                        ^
+../subprojects/ztd/include/ztd/detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u64>::integer_type’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+../subprojects/ztd/include/ztd/detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u32]’:
+../src/xset/xset.hxx:205:18:   required from here
+  205 |         u32 key{0};                                     // saved
+      |                  ^
+../subprojects/ztd/include/ztd/detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u32>::integer_type’ {aka ‘unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+[34/192] Compiling C++ object spacefm.p/src_settings_config-save.cxx.o
+In file included from ../subprojects/ztd/include/ztd/detail/types.hxx:25,
+                 from ../subprojects/ztd/include/ztd/extra/glaze.hxx:22,
+                 from ../src/settings/config-save.cxx:22:
+../subprojects/ztd/include/ztd/detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u64]’:
+../src/settings/config.hxx:48:24:   required from here
+   48 | constexpr u64 version{4}; // 3.0.0-dev
+      |                        ^
+../subprojects/ztd/include/ztd/detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u64>::integer_type’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+../subprojects/ztd/include/ztd/detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u32]’:
+../src/xset/xset.hxx:205:18:   required from here
+  205 |         u32 key{0};                                     // saved
+      |                  ^
+../subprojects/ztd/include/ztd/detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u32>::integer_type’ {aka ‘unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+[35/192] Compiling C++ object spacefm.p/src_commandline_socket_get-task_subcommands.cxx.o
+[36/192] Compiling C++ object spacefm.p/src_commandline_socket_subcommands.cxx.o
+[37/192] Compiling C++ object spacefm.p/src_commandline_socket_set-task_subcommands.cxx.o
+[38/192] Compiling C++ object spacefm.p/src_socket_commands.cxx.o
+In file included from ../subprojects/ztd/include/ztd/./detail/types.hxx:25,
+                 from ../subprojects/ztd/include/ztd/./detail/byte_size.hxx:26,
+                 from ../subprojects/ztd/include/ztd/ztd.hxx:20,
+                 from ../src/socket/commands.cxx:32:
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u32]’:
+../src/xset/xset.hxx:205:18:   required from here
+  205 |         u32 key{0};                                     // saved
+      |                  ^
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u32>::integer_type’ {aka ‘unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u64]’:
+../src/vfs/dir.hxx:140:25:   required from here
+  140 |     u64 xhidden_count_{0};
+      |                         ^
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion to ‘ztd::integer<ztd::detail::u64>::integer_type’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx: In instantiation of ‘constexpr ztd::integer<Tag>::integer(T) requires  is_integer<T> [with T = int; Tag = ztd::detail::u8]’:
+../src/gui/file-task.hxx:101:25:   required from here
+  101 |     u8 progress_count_{0};
+      |                         ^
+../subprojects/ztd/include/ztd/./detail/types/integer.hxx:82:18: warning: conversion from ‘int’ to ‘ztd::integer<ztd::detail::u8>::integer_type’ {aka ‘unsigned char’} may change value [-Wconversion]
+   82 |         : value_(rhs)
+      |                  ^~~
+[39/192] Compiling C++ object spacefm.p/src_commandline_socket_get_subcommands.cxx.o
+[40/192] Compiling C++ object spacefm.p/src_commandline_socket_set_subcommands.cxx.o
+[41/192] Compiling C++ object spacefm.p/src_commandline_socket_run-task_subcommands.cxx.o
+[42/192] Compiling C++ object spacefm.p/src_commandline_socket.cxx.o
+[43/192] Compiling C++ object spacefm.p/src_commandline_commandline.cxx.o
+ninja: build stopped: subcommand failed.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
