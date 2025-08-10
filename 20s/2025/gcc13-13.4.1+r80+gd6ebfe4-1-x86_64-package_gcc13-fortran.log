@@ -1,0 +1,51 @@
+make: Entering directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libgfortran'
+:
+:
+:
+ /usr/bin/mkdir -p '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1'
+ /usr/bin/mkdir -p '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/finclude'
+ /usr/bin/mkdir -p '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/include'
+ /usr/bin/mkdir -p '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libcaf_single.la '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1'
+ /usr/bin/install -c -m 644 ieee_arithmetic.mod ieee_exceptions.mod ieee_features.mod '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/finclude'
+ /usr/bin/install -c -m 644 libgfortran.spec '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1'
+ /usr/bin/install -c -m 644 /build/gcc13/src/gcc/libgfortran/ISO_Fortran_binding.h '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/include'
+libtool: install: /usr/bin/install -c .libs/libcaf_single.lai /build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/libcaf_single.la
+libtool: install: /usr/bin/install -c .libs/libcaf_single.a /build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/libcaf_single.a
+libtool: install: chmod 644 /build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/libcaf_single.a
+libtool: install: ranlib /build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/libcaf_single.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1'
+make: Leaving directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libgfortran'
+make: Entering directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libgomp'
+:
+:
+:
+ /usr/bin/mkdir -p '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/finclude'
+ /usr/bin/install -c -m 644 omp_lib.h omp_lib.f90 omp_lib.mod omp_lib_kinds.mod /build/gcc13/src/gcc/libgomp/openacc_lib.h /build/gcc13/src/gcc/libgomp/openacc.f90 openacc.mod openacc_kinds.mod '/build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/finclude'
+make: Leaving directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libgomp'
+make: Entering directory '/build/gcc13/src/gcc-build/gcc'
+/bin/sh /build/gcc13/src/gcc/gcc/../mkinstalldirs /build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1
+/bin/sh /build/gcc13/src/gcc/gcc/../mkinstalldirs /build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1
+/bin/sh /build/gcc13/src/gcc/gcc/../mkinstalldirs /build/gcc13/pkg/gcc13-fortran/usr/bin
+mkdir -p -- /build/gcc13/pkg/gcc13-fortran/usr/bin
+/bin/sh /build/gcc13/src/gcc/gcc/../mkinstalldirs /build/gcc13/pkg/gcc13-fortran/usr/include
+mkdir -p -- /build/gcc13/pkg/gcc13-fortran/usr/include
+/bin/sh /build/gcc13/src/gcc/gcc/../mkinstalldirs /build/gcc13/pkg/gcc13-fortran/usr/share/info
+mkdir -p -- /build/gcc13/pkg/gcc13-fortran/usr/share/info
+/bin/sh /build/gcc13/src/gcc/gcc/../mkinstalldirs /build/gcc13/pkg/gcc13-fortran/usr/share/man/man1
+mkdir -p -- /build/gcc13/pkg/gcc13-fortran/usr/share/man/man1
+/bin/sh /build/gcc13/src/gcc/gcc/../mkinstalldirs /build/gcc13/pkg/gcc13-fortran/usr/share/man/man7
+mkdir -p -- /build/gcc13/pkg/gcc13-fortran/usr/share/man/man7
+/bin/sh /build/gcc13/src/gcc/gcc/../mkinstalldirs -m 0755 /build/gcc13/pkg/gcc13-fortran/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/finclude
+if test "" != "yes" ; then \
+  if [ -f f951 ] ; then \
+    rm -f /build/gcc13/pkg/gcc13-fortran/usr/bin/gfortran-13; \
+    /usr/bin/install -c gfortran /build/gcc13/pkg/gcc13-fortran/usr/bin/gfortran-13; \
+    chmod a+x /build/gcc13/pkg/gcc13-fortran/usr/bin/gfortran-13; \
+    if [ ! -f gfortran-cross ] ; then \
+      rm -f /build/gcc13/pkg/gcc13-fortran/usr/bin/x86_64-pc-linux-gnu-gfortran-13; \
+      ln /build/gcc13/pkg/gcc13-fortran/usr/bin/gfortran-13 /build/gcc13/pkg/gcc13-fortran/usr/bin/x86_64-pc-linux-gnu-gfortran-13; \
+    fi ; \
+  fi; \
+fi
+make: Leaving directory '/build/gcc13/src/gcc-build/gcc'

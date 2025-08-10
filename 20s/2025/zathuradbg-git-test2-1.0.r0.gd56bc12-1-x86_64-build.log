@@ -1,0 +1,101 @@
+-- The C compiler identification is GNU 15.1.1
+-- The CXX compiler identification is GNU 15.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Linux
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'glfw3'
+--   Found glfw3, version 3.4.0
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/zathuradbg-git-test2/src/build
+[  5%] Building CXX object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/imgui/misc/cpp/imgui_stdlib.cpp.o
+[  5%] Building CXX object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/imgui/imgui_draw.cpp.o
+[  8%] Building CXX object CMakeFiles/Zathura.dir/main.cpp.o
+[ 11%] Building CXX object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/ImGuiColorTextEdit/TextEditor.cpp.o
+[ 13%] Building CXX object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/imgui/imgui.cpp.o
+[ 16%] Building CXX object CMakeFiles/Zathura.dir/app/menuBar.cpp.o
+[ 19%] Building CXX object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/imgui/imgui_widgets.cpp.o
+[ 22%] Building CXX object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/imgui/backends/imgui_impl_opengl3.cpp.o
+[ 25%] Building CXX object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/imgui/imgui_tables.cpp.o
+[ 27%] Building CXX object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/ImGuiColorTextEdit/LanguageDefinitions.cpp.o
+[ 30%] Building CXX object CMakeFiles/Zathura.dir/app/buttons.cpp.o
+[ 36%] Building CXX object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/imgui/backends/imgui_impl_glfw.cpp.o
+[ 36%] Building CXX object CMakeFiles/Zathura.dir/app/dialogs/fileDialogs.cpp.o
+[ 38%] Building CXX object CMakeFiles/Zathura.dir/app/shortcuts.cpp.o
+[ 44%] Building CXX object CMakeFiles/Zathura.dir/app/codeContextMenu.cpp.o
+[ 41%] Building CXX object CMakeFiles/Zathura.dir/app/app.cpp.o
+[ 47%] Building CXX object CMakeFiles/Zathura.dir/app/windows/consoleWindow.cpp.o
+[ 50%] Building CXX object CMakeFiles/Zathura.dir/app/windows/hexEditorWindow.cpp.o
+[ 52%] Building CXX object CMakeFiles/Zathura.dir/app/windows/registerWindow.cpp.o
+[ 55%] Building CXX object CMakeFiles/Zathura.dir/app/windows/stackWindow.cpp.o
+[ 58%] Building CXX object CMakeFiles/Zathura.dir/app/windows/memoryMapView.cpp.o
+[ 61%] Building CXX object CMakeFiles/Zathura.dir/app/arch/arch.cpp.o
+[ 63%] Building CXX object CMakeFiles/Zathura.dir/app/arch/arm.cpp.o
+[ 66%] Building CXX object CMakeFiles/Zathura.dir/app/arch/x86.cpp.o
+/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/ImGuiColorTextEdit/TextEditor.cpp: In member function ‘void TextEditor::Render(bool)’:
+/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/ImGuiColorTextEdit/TextEditor.cpp:2419:43: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘std::vector<std::vector<TextEditor::Glyph> >::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 2419 |         snprintf(lineNumberBuffer, 16, " %d ", mLines.size());
+      |                                          ~^    ~~~~~~~~~~~~~
+      |                                           |               |
+      |                                           int             std::vector<std::vector<TextEditor::Glyph> >::size_type {aka long unsigned int}
+      |                                          %ld
+[ 69%] Building CXX object CMakeFiles/Zathura.dir/app/integration/interpreter/interpreter.cpp.o
+[ 72%] Building CXX object CMakeFiles/Zathura.dir/app/integration/keystone/assembler.cpp.o
+[ 75%] Building CXX object CMakeFiles/Zathura.dir/utils/fonts.cpp.o
+[ 77%] Building CXX object CMakeFiles/Zathura.dir/utils/stringHelper.cpp.o
+[ 80%] Building CXX object CMakeFiles/Zathura.dir/utils/uiElements.cpp.o
+[ 83%] Building CXX object CMakeFiles/Zathura.dir/app/tasks/fileTasks.cpp.o
+[ 86%] Building CXX object CMakeFiles/Zathura.dir/app/tasks/editorTasks.cpp.o
+[ 88%] Building CXX object CMakeFiles/Zathura.dir/app/actions/actions.cpp.o
+[ 91%] Building C object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/tinyexpr/tinyexpr.c.o
+cc1: warning: command-line option ‘-std=c++23’ is valid for C++/ObjC++ but not for C
+[ 94%] Building C object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/whereami/src/whereami.c.o
+cc1: warning: command-line option ‘-std=c++23’ is valid for C++/ObjC++ but not for C
+[ 97%] Building C object CMakeFiles/Zathura.dir/build/zathuradbg-git-test2/src/ZathuraDbg/vendor/tinyfdialogue/tinyfiledialogs.c.o
+cc1: warning: command-line option ‘-std=c++23’ is valid for C++/ObjC++ but not for C
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/app/tasks/fileTasks.cpp: In function ‘bool serializeState()’:
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/app/tasks/fileTasks.cpp:111:91: warning: passing NULL to non-pointer argument 3 of ‘char* tinyfd_saveFileDialog(const char*, const char*, int, const char* const*, const char*)’ [-Wconversion-null]
+  111 |     const char* fileName = tinyfd_saveFileDialog("Select a file to serialize into", NULL, NULL, NULL, NULL);
+      |                                                                                           ^~~~
+In file included from /build/zathuradbg-git-test2/src/ZathuraDbg/src/app/tasks/../dialogs/dialogHeader.hpp:8,
+                 from /build/zathuradbg-git-test2/src/ZathuraDbg/src/app/tasks/fileTasks.hpp:4,
+                 from /build/zathuradbg-git-test2/src/ZathuraDbg/src/app/tasks/fileTasks.cpp:1:
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/../vendor/tinyfdialogue/tinyfiledialogs.h:157:13: note: declared here
+  157 |         int aNumOfFilterPatterns , /* 0  (1 in the following example) */
+      |         ~~~~^~~~~~~~~~~~~~~~~~~~
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/app/tasks/fileTasks.cpp: In function ‘bool deserializeState()’:
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/app/tasks/fileTasks.cpp:138:86: warning: passing NULL to non-pointer argument 3 of ‘char* tinyfd_openFileDialog(const char*, const char*, int, const char* const*, const char*, int)’ [-Wconversion-null]
+  138 |     const char* fileName = tinyfd_openFileDialog("Select file to deserialize", NULL, NULL, NULL, NULL, NULL);
+      |                                                                                      ^~~~
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/../vendor/tinyfdialogue/tinyfiledialogs.h:165:13: note: declared here
+  165 |         int aNumOfFilterPatterns , /* 0 (2 in the following example) */
+      |         ~~~~^~~~~~~~~~~~~~~~~~~~
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/app/tasks/fileTasks.cpp:138:104: warning: passing NULL to non-pointer argument 6 of ‘char* tinyfd_openFileDialog(const char*, const char*, int, const char* const*, const char*, int)’ [-Wconversion-null]
+  138 |     const char* fileName = tinyfd_openFileDialog("Select file to deserialize", NULL, NULL, NULL, NULL, NULL);
+      |                                                                                                        ^~~~
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/../vendor/tinyfdialogue/tinyfiledialogs.h:168:13: note: declared here
+  168 |         int aAllowMultipleSelects ) ; /* 0 or 1 */
+      |         ~~~~^~~~~~~~~~~~~~~~~~~~~
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/app/actions/actions.cpp: In function ‘void openBrowser(const std::string&)’:
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/app/actions/actions.cpp:22:11: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   22 |     system(command.c_str());
+      |     ~~~~~~^~~~~~~~~~~~~~~~~
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/app/actions/actions.cpp: In function ‘void runActions()’:
+/build/zathuradbg-git-test2/src/ZathuraDbg/src/app/actions/actions.cpp:575:18: warning: ignoring return value of ‘FILE* fopen(const char*, const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  575 |             fopen(s.c_str(), "w");
+      |             ~~~~~^~~~~~~~~~~~~~~~
+[100%] Linking CXX executable /build/zathuradbg-git-test2/src/ZathuraDbg/src/Zathura
+[100%] Built target Zathura

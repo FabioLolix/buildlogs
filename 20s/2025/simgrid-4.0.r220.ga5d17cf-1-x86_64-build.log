@@ -1,0 +1,361 @@
+-- Configuring SimGrid v4.0.1
+-- Cmake version 4.0.3
+-- The C compiler identification is GNU 15.1.1
+-- The CXX compiler identification is GNU 15.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- The Fortran compiler identification is GNU 15.1.1
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Check for working Fortran compiler: /usr/bin/gfortran - skipped
+-- Found Python3: /usr/bin/python3.13 (found version "3.13.5") found components: Interpreter
+-- System processor: x86_64 (x86_64, 64 bits)
+-- GNU libc detected.
+-- Looking for graphviz
+-- Looking for graphviz - found
+-- Found Eigen3: /usr/include/eigen3
+-- Found nlohmann_json: /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found suitable version "3.12.0", minimum required is "3.7")
+-- Found nlohmann_json: /usr/include
+-- C++23 stacks: found.
+-- Mandatory Boost components found. SimGrid is compilable.
+-- Looking for optional Boost components:
+--   stacktrace: found the std implementation. Activating human-readable stack traces.
+--   context: found. Activating Boost contexts.
+-- Found JNI: /usr/lib/jvm/default/include  found components: AWT JVM
+-- Found Java: /usr/bin/java (found suitable version "24.0.2", minimum required is "1.8") found components: Runtime Development
+-- Java version: 24.0.2
+-- Java compiler: /usr/bin/javac; Runtime: /usr/bin/java
+-- Java: JNI include dirs: /usr/lib/jvm/default/include;/usr/lib/jvm/default/include/linux;/usr/include
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - found
+-- Looking for pthread_setaffinity_np in pthread
+-- Looking for pthread_setaffinity_np in pthread - found
+-- Looking for pthread_np.h
+-- Looking for pthread_np.h - not found
+-- Looking for valgrind/valgrind.h
+-- Looking for valgrind/valgrind.h - not found
+-- Looking for linux/futex.h
+-- Looking for linux/futex.h - found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for vasprintf
+-- Looking for vasprintf - found
+-- Looking for sys/sendfile.h
+-- Looking for sys/sendfile.h - found
+-- Looking for sendfile
+-- Looking for sendfile - found
+-- Enabling the stateless model-checking as requested.
+-- Git version: a5d17cf0ee
+-- Relative source directory is "../simgrid".
+-- LTO seems usable.
+-- Add CFLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto" to CMAKE_C_FLAGS
+-- Add CXXFLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto" to CMAKE_CXX_FLAGS
+-- Add LDFLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto" to CMAKE_C_LINK_FLAGS
+-- Java: build a split libsimgrid-java library.
+-- [Java] simgrid-java includes: /build/simgrid/src/build/include;/build/simgrid/src/simgrid/include;/usr/include;/usr/include/graphviz;/usr/include/eigen3;/usr/include;/usr/lib/jvm/default/include;/usr/lib/jvm/default/include/linux;/usr/include;/build/simgrid/src/build;/build/simgrid/src/simgrid;/build/simgrid/src/simgrid/src/smpi/include;/usr/include/
+-- Found pybind11: /usr/include (found version "3.0.0")
+-- Pybind11 version: 3.0.0
+-- Found Python3: /usr/include/python3.13 (found version "3.13.5") found components: Development Development.Module Development.Embed
+-- Python bindings will be built.
+-- Found Python3: /usr/include/python3.13 (found version "3.13.5") found components: NumPy Interpreter Development.Module
+-- SMPI Python bindings will be built.
+-- Files to compile: /build/simgrid/src/simgrid/src/bindings/python/simgrid_python.cpp;/build/simgrid/src/simgrid/src/bindings/python/smpi_python.cpp
+-- Example network-ns3 disabled, thus not compiled.
+-- Example network-ns3-wifi disabled, thus not compiled.
+
+##########################################
+#### Content of src/internal_config.h ####
+##########################################
+   /* Non-standard header files */
+   /* <linux/futex.h> */
+   #define HAVE_FUTEX_H 1
+   /* <valgrind/valgrind.h> */
+   #define HAVE_VALGRIND_H 0
+   /* Address Sanitizer */
+   #define HAVE_SANITIZER_THREAD 0
+   #define HAVE_SANITIZER_THREAD_FIBER_SUPPORT 0
+   #define HAVE_SANITIZER_ADDRESS 0
+   #define HAVE_SANITIZER_ADDRESS_FIBER_SUPPORT 0
+   /* Time portability */
+   /* Function gettimeofday */
+   #define HAVE_GETTIMEOFDAY 1
+   /* Function clock_gettime */
+   #define HAVE_POSIX_GETTIME 1
+   /* Function nanosleep */
+   #define HAVE_NANOSLEEP 1
+   /* The usable context factories */
+   #define HAVE_BOOST_CONTEXTS 1
+   #define HAVE_RAW_CONTEXTS 1
+   /* Variables for the thread contexts (and parallel mode of raw contexts) */
+   /* pthread_setaffinity_np() is Linux and FreeBSD but not on Mac nor Windows */
+   #define HAVE_PTHREAD_SETAFFINITY 1
+   /* pthread_setaffinity_np() defined in pthread_np.h on FreeBSD but not Linux */
+   #define HAVE_PTHREAD_NP_H 0
+   /* Variables for the raw contexts (to select the right assembly code) */
+   #define SIMGRID_PROCESSOR_i686 0
+   #define SIMGRID_PROCESSOR_x86_64 1
+   #define SIMGRID_PROCESSOR_arm64 0
+   /* Variables for the SysV contexts */
+   /* Variable for SysV, raw and Boost contexts */
+   /* Does the stack growth upward, or downward? */
+   #define PTH_STACKGROWTH -1
+   /* MC variables */
+   /* Path to sthread library */
+   #define STHREAD_PATH "/usr/lib/libsthread.so"
+   /* SMPI variables */
+   /* SMPI enabled */
+   #define HAVE_SMPI 1
+   /* Fortran language is available for SMPI, and which one */
+   #define SMPI_FORTRAN 1
+   #define SMPI_GFORTRAN 1
+   #define SMPI_FLANG 0
+   #define SMPI_IFORT 0
+   /* We have mmap and objdump to handle privatization */
+   #define HAVE_PRIVATIZATION 1
+   /* We have PAPI to fine-grain trace execution time */
+   #define HAVE_PAPI 0
+   /* Non-standard libc on Linux */
+   #define SIMGRID_HAVE_MUSL 0
+   /* We have sendfile to efficiently copy files for dl-open privatization */
+   #define SG_HAVE_SENDFILE 1
+   /* Other function checks */
+   /* Function vasprintf */
+   #define HAVE_VASPRINTF 1
+   /* Other checks */
+   /* The graphviz library */
+   #define HAVE_GRAPHVIZ 1
+   /* The boost_stacktrace_backtrace library */
+   #define HAVE_STD_STACKTRACE /* from C++23, preferred */ 1
+   #define HAVE_BOOST_STACKTRACE_BACKTRACE /* preferred in older C++ */ 0
+   #define HAVE_BOOST_STACKTRACE_ADDR2LINE /* fallback */ 0
+##########################################
+####   Content of simgrid/config.h    ####
+##########################################
+   /* Were mallocators (object pools) compiled in? */
+   #define SIMGRID_HAVE_MALLOCATOR 1
+   /* Was the model-checking compiled in? */
+   #define SIMGRID_HAVE_MC 1
+   /* Was the ns-3 support compiled in? */
+   #define SIMGRID_HAVE_NS3 0
+   /* #undef NS3_MINOR_VERSION */
+   /* Was the Eigen3 support compiled in? */
+   #define SIMGRID_HAVE_EIGEN3 1
+   /* Was the JSON support compiled in? */
+   #define SIMGRID_HAVE_JSON 1
+##########################################
+####   End of configuration headers   ####
+##########################################
+
+Configuration of package `simgrid':
+        Home directory ..............: /build/simgrid/src/simgrid
+        Build Name ..................: UNIX
+        Cmake Generator .............: Unix Makefiles
+        Site ........................: Linux_6.15.7-arch1-1_x86_64
+        Install prefix ..............: /usr
+        sthread path ................: /usr/lib/libsthread.so
+        Release .....................: simgrid-4.0.1
+
+        Compiler: C .................: /usr/bin/cc (id: GNU)
+                version .............: 15.1.1
+                is gnu ..............: 1
+        Compiler: C++ ...............: /usr/bin/c++ (id: GNU)
+                version .............: 15.1.1
+        Compiler: Javac .............: /usr/bin/javac
+                version .............: 24.0.2
+                runtime .............: /usr/bin/java
+        Compiler: Fortran ...........: /usr/bin/gfortran (id: GNU)
+                version .............: 15.1.1
+        Linker: .....................: /usr/bin/ld
+                version .............: 2.44
+        Make program: ...............: /usr/bin/make
+
+        CFlags ......................:  -Wundef -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto -g3 -D_FORTIFY_SOURCE=2   -O3 -funroll-loops -fno-strict-aliasing  -finline-functions  -ffile-prefix-map="/build/simgrid/src/simgrid=../simgrid" -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto
+        CXXFlags ....................:  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto -g3 -D_FORTIFY_SOURCE=2 -Wundef -O3 -funroll-loops -fno-strict-aliasing  -finline-functions  -ffile-prefix-map="/build/simgrid/src/simgrid=../simgrid" -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto
+        LDFlags .....................:  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto
+        with LTO ....................: ON
+
+        Compile ns-3 ................: OFF  (hint: )
+        Compile Python bindings .....: ON
+          module ....................: simgrid.cpython-313-x86_64-linux-gnu.so
+          install path ..............: /usr/lib/python3.13/site-packages (force another value with -DSIMGRID_PYTHON_LIBDIR)
+          MPI bindings ..............: ON
+        Eigen3 library ..............: 3.4.0 in /usr/include/eigen3
+        JSON library ................: 3.12.0 in /usr/include
+        Compile Smpi ................: ON
+          Smpi fortran ..............: ON
+          MPICH3 testsuite ..........: OFF
+          MBI testsuite .............: OFF
+          Privatization .............: ON
+          PAPI support ..............: OFF
+        Compile Boost.Context support: ON
+
+        Model checking ..............: ON
+          MBI testsuite .............: OFF
+          McMini testsuite ..........: OFF
+
+        Maintainer mode .............: OFF
+        Documentation ...............: ON
+        Graphviz mode ...............: ON
+        Mallocators .................: ON
+
+        SimGrid dependencies ........: -lm -lcgraph /usr/lib/libdl.a -lrt -lgfortran   -Wl,--as-needed -latomic -Wl,--no-as-needed
+
+-- Configuring done (4.9s)
+-- Generating done (0.6s)
+-- Build files have been written to: /build/simgrid/src/build
+[  0%] Generating manpages
+[  0%] Install /build/simgrid/src/build/bin/simgrid_update_xml
+[  2%] Building Fortran object CMakeFiles/mpi.dir/src/smpi/mpif.f90.o
+[  2%] Install /build/simgrid/src/build/bin/simgrid_convert_TI_traces
+[  2%] Built target maintainer_files
+[  2%] Built target simgrid_update_xml
+[  2%] Built target simgrid_convert_TI_traces
+[  2%] Linking Fortran shared library lib/libmpi.so
+[  2%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Activity.cpp.o
+[  2%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_ActivitySet.cpp.o
+[  2%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Disk.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Barrier.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Exec.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_ConditionVariable.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Comm.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Actor.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Engine.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Link.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Mailbox.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Host.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Mess.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_MessageQueue.cpp.o
+[  4%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Netzone.cpp.o
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Mutex.cpp.o
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Io.cpp.o
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Semaphore.cpp.o
+[  6%] Built target mpi
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Task.cpp.o
+[  6%] Built target manpages
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_VirtualMachine.cpp.o
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/simgrid/Exception.cpp.o
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/simgrid/module.cpp.o
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/simgrid/sg_config.cpp.o
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/simgrid/sg_version.cpp.o
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_base.cpp.o
+[  6%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_client_api.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_config.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_global.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_record.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/mc/transition/Transition.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/mc/remote/Channel.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/EngineImpl.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/ActivityImpl.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/BarrierImpl.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/CommImpl.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/ConditionVariableImpl.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/ExecImpl.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/IoImpl.cpp.o
+[  8%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/MailboxImpl.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/MessImpl.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/MessageQueueImpl.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/MutexImpl.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/SemaphoreImpl.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/SleepImpl.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/ActorImpl.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/CommObserver.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/Simcall.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/SimcallObserver.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/SynchroObserver.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/WaitTestObserver.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/Context.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/ContextRaw.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/ContextSwapped.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/ContextThread.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/lmm/System.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/lmm/fair_bottleneck.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/lmm/maxmin.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/Action.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/CpuImpl.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/DiskImpl.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/FactorSet.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/HostImpl.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/Model.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/NetworkModel.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/NetworkModelFactors.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/SplitDuplexLinkImpl.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/StandardLinkImpl.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/VirtualMachineImpl.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/WifiLinkImpl.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/cpu_cas01.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/cpu_ti.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/disk_s19.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/host_clm03.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/network_cm02.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/network_constant.cpp.o
+[ 14%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/ptask_L07.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/profile/FutureEvtSet.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/profile/Profile.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/profile/ProfileBuilder.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/profile/StochasticDatedValue.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/ClusterZone.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/DijkstraZone.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/DragonflyZone.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/EmptyZone.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/FatTreeZone.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/FloydZone.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/FullZone.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/NetPoint.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/NetZoneImpl.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/RoutedZone.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/StarZone.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/TorusZone.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/VivaldiZone.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/WifiZone.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/timer/Timer.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/xml/sg_platf.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/xml/platf_sax_cb.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/lmm/bmf.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/ContextBoost.cpp.o
+[ 19%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_config.cpp.o
+[ 21%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_interface.cpp.o
+[ 21%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_paje_containers.cpp.o
+[ 21%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_paje_events.cpp.o
+[ 21%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_paje_header.cpp.o
+[ 21%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_paje_trace.cpp.o
+make[2]: *** Deleting file 'CMakeFiles/simgrid.dir/src/instr/instr_paje_trace.cpp.o'
+make[2]: *** Deleting file 'CMakeFiles/simgrid.dir/src/instr/instr_config.cpp.o'
+make[2]: *** Deleting file 'CMakeFiles/simgrid.dir/src/kernel/routing/VivaldiZone.cpp.o'
+make[2]: *** Deleting file 'CMakeFiles/simgrid.dir/src/kernel/routing/RoutedZone.cpp.o'
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1129: CMakeFiles/simgrid.dir/src/kernel/resource/models/ptask_L07.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1255: CMakeFiles/simgrid.dir/src/kernel/routing/FatTreeZone.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1269: CMakeFiles/simgrid.dir/src/kernel/routing/FloydZone.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1283: CMakeFiles/simgrid.dir/src/kernel/routing/FullZone.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1339: CMakeFiles/simgrid.dir/src/kernel/routing/StarZone.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1381: CMakeFiles/simgrid.dir/src/kernel/routing/WifiZone.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1409: CMakeFiles/simgrid.dir/src/kernel/xml/sg_platf.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1423: CMakeFiles/simgrid.dir/src/kernel/xml/platf_sax_cb.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1437: CMakeFiles/simgrid.dir/src/kernel/lmm/bmf.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1451: CMakeFiles/simgrid.dir/src/kernel/context/ContextBoost.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1479: CMakeFiles/simgrid.dir/src/instr/instr_interface.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1493: CMakeFiles/simgrid.dir/src/instr/instr_paje_containers.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1521: CMakeFiles/simgrid.dir/src/instr/instr_paje_header.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1353: CMakeFiles/simgrid.dir/src/kernel/routing/TorusZone.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1507: CMakeFiles/simgrid.dir/src/instr/instr_paje_events.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1535: CMakeFiles/simgrid.dir/src/instr/instr_paje_trace.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1311: CMakeFiles/simgrid.dir/src/kernel/routing/NetZoneImpl.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1325: CMakeFiles/simgrid.dir/src/kernel/routing/RoutedZone.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1367: CMakeFiles/simgrid.dir/src/kernel/routing/VivaldiZone.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/simgrid.dir/build.make:1465: CMakeFiles/simgrid.dir/src/instr/instr_config.cpp.o] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:2773: CMakeFiles/simgrid.dir/all] Interrupt
+
+make: *** [Makefile:166: all] Interrupt
+[1m[31m==> ERROR:(B[m[1m Aborted by user! Exiting...(B[m

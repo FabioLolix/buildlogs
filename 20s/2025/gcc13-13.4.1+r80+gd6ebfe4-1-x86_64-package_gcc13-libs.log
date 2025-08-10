@@ -1,0 +1,26 @@
+make: Entering directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libgcc'
+/bin/sh /build/gcc13/src/gcc/libgcc/../mkinstalldirs /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1
+mkdir -p -- /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1
+/usr/bin/install -c -m 644 libgcc_eh.a /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/
+chmod 644 /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/libgcc_eh.a
+ranlib /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/libgcc_eh.a
+/bin/sh /build/gcc13/src/gcc/libgcc/../mkinstalldirs /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/../lib; /usr/bin/install -c -m 644 ./libgcc_s.so.1 /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/../lib/libgcc_s.so.1; rm -f /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/../lib/libgcc_s.so; /usr/bin/install -c -m 644 ./libgcc_s.so /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/../lib/libgcc_s.so
+mkdir -p -- /build/gcc13/pkg/gcc13-libs/usr/lib/gcc/x86_64-pc-linux-gnu/13.4.1/../lib
+make: Leaving directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libgcc'
+make: Entering directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/po'
+make[1]: Entering directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/po'
+make[1]: Nothing to be done for 'install-exec-am'.
+/bin/sh /build/gcc13/src/gcc/libstdc++-v3/../mkinstalldirs /build/gcc13/pkg/gcc13-libs/usr/share/locale
+mkdir -p -- /build/gcc13/pkg/gcc13-libs/usr/share/locale
+catalogs='de.mo fr.mo'; \
+for cat in $catalogs; do \
+  cat=`basename $cat`; \
+  lang=`echo $cat | sed 's/\.mo$//'`; \
+  install_dir=/build/gcc13/pkg/gcc13-libs/usr/share/locale/$lang/LC_MESSAGES; \
+  /bin/sh /build/gcc13/src/gcc/libstdc++-v3/../mkinstalldirs $install_dir; \
+  /usr/bin/install -c -m 644 $cat $install_dir/libstdc++.mo; \
+done
+mkdir -p -- /build/gcc13/pkg/gcc13-libs/usr/share/locale/de/LC_MESSAGES
+mkdir -p -- /build/gcc13/pkg/gcc13-libs/usr/share/locale/fr/LC_MESSAGES
+make[1]: Leaving directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/po'
+make: Leaving directory '/build/gcc13/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/po'

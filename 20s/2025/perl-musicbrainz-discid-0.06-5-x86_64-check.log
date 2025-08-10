@@ -1,0 +1,8 @@
+"/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- DiscID.bs blib/arch/auto/MusicBrainz/DiscID/DiscID.bs 644
+PERL_DL_NONLAZY=1 "/usr/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00use.t ..... ok
+t/05pod.t ..... skipped: Test::Pod 1.00 required for testing POD
+t/10discid.t .. ok
+All tests successful.
+Files=3, Tests=56,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.06 cusr  0.02 csys =  0.10 CPU)
+Result: PASS

@@ -1,0 +1,625 @@
+-- Configuring SimGrid v4.0
+-- Cmake version 4.0.3
+-- The C compiler identification is GNU 15.1.1
+-- The CXX compiler identification is GNU 15.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- The Fortran compiler identification is GNU 15.1.1
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Check for working Fortran compiler: /usr/bin/gfortran - skipped
+-- Found Perl: /usr/bin/perl (found version "5.42.0")
+-- Found Python3: /usr/bin/python3.13 (found version "3.13.5") found components: Interpreter
+-- System processor: x86_64 (x86_64, 64 bits)
+-- GNU libc detected.
+-- Looking for graphviz
+-- Looking for graphviz - found
+-- Found Eigen3: /usr/include/eigen3
+-- Found nlohmann_json: /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found suitable version "3.12.0", minimum required is "3.7")
+-- Found nlohmann_json: /usr/include
+-- Mandatory components found. SimGrid is compilable.
+-- Looking for optional Boost components:
+--   stacktrace: found the std implementation. Activating human-readable stack traces.
+--   context: found. Activating Boost contexts.
+-- Could NOT find JNI (missing: JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2) 
+-- JNI not found, thus disabling Java.
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - found
+-- Looking for pthread_setaffinity_np in pthread
+-- Looking for pthread_setaffinity_np in pthread - found
+-- Looking for pthread_np.h
+-- Looking for pthread_np.h - not found
+-- Looking for valgrind/valgrind.h
+-- Looking for valgrind/valgrind.h - not found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for linux/futex.h
+-- Looking for linux/futex.h - found
+-- Looking for dlfunc
+-- Looking for dlfunc - not found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for sysconf
+-- Looking for sysconf - found
+-- Looking for process_vm_readv
+-- Looking for process_vm_readv - found
+-- Looking for mremap
+-- Looking for mremap - found
+-- Looking for vasprintf
+-- Looking for vasprintf - found
+-- Looking for sys/sendfile.h
+-- Looking for sys/sendfile.h - found
+-- Looking for sendfile
+-- Looking for sendfile - found
+-- Enabling the stateless model-checking as requested.
+-- Looking for ucontext.h
+-- Looking for ucontext.h - found
+-- Support for ucontext factory ok.
+-- Git version: none, release version
+-- Relative source directory is "../simgrid-v4.0".
+-- LTO seems usable.
+-- Add CFLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto" to CMAKE_C_FLAGS
+-- Add CXXFLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto" to CMAKE_CXX_FLAGS
+-- Add LDFLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto" to CMAKE_C_LINK_FLAGS
+-- Found pybind11: /usr/include (found version "3.0.0")
+-- Pybind11 version: 3.0.0
+-- Found Python3: /usr/include/python3.13 (found version "3.13.5") found components: Development Development.Module Development.Embed
+-- Python bindings will be built.
+-- Found Python3: /usr/include/python3.13 (found version "3.13.5") found components: NumPy Interpreter Development.Module
+-- SMPI Python bindings will be built.
+-- Files to compile: /build/simgrid/src/simgrid-v4.0/src/bindings/python/simgrid_python.cpp;/build/simgrid/src/simgrid-v4.0/src/bindings/python/smpi_python.cpp
+-- Example network-ns3 disabled, thus not compiled.
+-- Example network-ns3-wifi disabled, thus not compiled.
+
+##########################################
+#### Content of src/internal_config.h ####
+##########################################
+   /* Non-standard header files */
+   /* <linux/futex.h> */
+   #define HAVE_FUTEX_H 1
+   /* <unistd.h> */
+   #define HAVE_UNISTD_H 1
+   /* <ucontext.h> */
+   #define HAVE_UCONTEXT_H 1
+   /* <valgrind/valgrind.h> */
+   #define HAVE_VALGRIND_H 0
+   /* Address Sanitizer */
+   #define HAVE_SANITIZER_THREAD 0
+   #define HAVE_SANITIZER_THREAD_FIBER_SUPPORT 0
+   #define HAVE_SANITIZER_ADDRESS 0
+   #define HAVE_SANITIZER_ADDRESS_FIBER_SUPPORT 0
+   /* Time portability */
+   /* Function gettimeofday */
+   #define HAVE_GETTIMEOFDAY 1
+   /* Function clock_gettime */
+   #define HAVE_POSIX_GETTIME 1
+   /* Function nanosleep */
+   #define HAVE_NANOSLEEP 1
+   /* The usable context factories */
+   #define HAVE_BOOST_CONTEXTS 1
+   #define HAVE_RAW_CONTEXTS 1
+   #define HAVE_UCONTEXT_CONTEXTS 1
+   /* Variables for the thread contexts (and parallel mode of raw contexts) */
+   /* pthread_setaffinity_np() is Linux and FreeBSD but not on Mac nor Windows */
+   #define HAVE_PTHREAD_SETAFFINITY 1
+   /* pthread_setaffinity_np() defined in pthread_np.h on FreeBSD but not Linux */
+   #define HAVE_PTHREAD_NP_H 0
+   /* Variables for the raw contexts (to select the right assembly code) */
+   #define SIMGRID_PROCESSOR_i686 0
+   #define SIMGRID_PROCESSOR_x86_64 1
+   #define SIMGRID_PROCESSOR_arm64 0
+   /* Variables for the SysV contexts */
+   #define sg_makecontext_stack_addr(skaddr) ((skaddr))
+   #define sg_makecontext_stack_size(sksize) ((sksize))
+   /* Variable for SysV, raw and Boost contexts */
+   /* Does the stack growth upward, or downward? */
+   #define PTH_STACKGROWTH -1
+   /* MC variables */
+   /* process_vm_readv: transfer data between process address spaces */
+   #define HAVE_PROCESS_VM_READV 1
+   /* Path to sthread library */
+   #define STHREAD_PATH "/usr/lib/libsthread.so"
+   /* SMPI variables */
+   /* SMPI enabled */
+   #define HAVE_SMPI 1
+   /* Fortran language is available for SMPI, and which one */
+   #define SMPI_FORTRAN 1
+   #define SMPI_GFORTRAN 1
+   #define SMPI_FLANG 0
+   #define SMPI_IFORT 0
+   /* We have mmap and objdump to handle privatization */
+   #define HAVE_PRIVATIZATION 1
+   /* We have PAPI to fine-grain trace execution time */
+   #define HAVE_PAPI 0
+   /* Non-standard libc on Linux */
+   #define SIMGRID_HAVE_MUSL 0
+   /* We have sendfile to efficiently copy files for dl-open privatization */
+   #define SG_HAVE_SENDFILE 1
+   /* Other function checks */
+   /* Function dlfunc */
+   #define HAVE_DLFUNC 0
+   /* Function mremap */
+   #define HAVE_MREMAP 1
+   /* Function vasprintf */
+   #define HAVE_VASPRINTF 1
+   /* Other checks */
+   /* The graphviz library */
+   #define HAVE_GRAPHVIZ 1
+   /* The boost_stacktrace_backtrace library */
+   #define HAVE_STD_STACKTRACE /* from C++23, preferred */ 1
+   #define HAVE_BOOST_STACKTRACE_BACKTRACE /* preferred in older C++ */ 0
+   #define HAVE_BOOST_STACKTRACE_ADDR2LINE /* fallback */ 0
+   /* Whether the ns-3 library has GetNextEventTime */
+   #define SIMGRID_HAVE_NS3_GetNextEventTime 0
+##########################################
+####   Content of simgrid/config.h    ####
+##########################################
+   /* Were mallocators (object pools) compiled in? */
+   #define SIMGRID_HAVE_MALLOCATOR 1
+   /* Was the model-checking compiled in? */
+   #define SIMGRID_HAVE_MC 1
+   /* Was the ns-3 support compiled in? */
+   #define SIMGRID_HAVE_NS3 0
+   /* #undef NS3_MINOR_VERSION */
+   /* Was the Eigen3 support compiled in? */
+   #define SIMGRID_HAVE_EIGEN3 1
+   /* Was the JSON support compiled in? */
+   #define SIMGRID_HAVE_JSON 1
+##########################################
+####   End of configuration headers   ####
+##########################################
+
+Configuration of package `simgrid':
+        Home directory ..............: /build/simgrid/src/simgrid-v4.0
+        Build Name ..................: UNIX
+        Cmake Generator .............: Unix Makefiles
+        Site ........................: Linux_6.15.7-arch1-1_x86_64
+        Install prefix ..............: /usr
+        sthread path ................: /usr/lib/libsthread.so
+        Release .....................: simgrid-4.0
+
+        Compiler: C .................: /usr/bin/cc (id: GNU)
+                version .............: 15.1.1
+                is gnu ..............: 1
+        Compiler: C++ ...............: /usr/bin/c++ (id: GNU)
+                version .............: 15.1.1
+        Compiler: Javac .............: (java disabled or not found -- check the logs)
+        Compiler: Fortran ...........: /usr/bin/gfortran (id: GNU)
+                version .............: 15.1.1
+        Linker: .....................: /usr/bin/ld
+                version .............: 2.44
+        Make program: ...............: /usr/bin/make
+
+        CFlags ......................:  -Wundef -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto -g3 -D_FORTIFY_SOURCE=2   -O3 -funroll-loops -fno-strict-aliasing  -finline-functions  -ffile-prefix-map="/build/simgrid/src/simgrid-v4.0=../simgrid-v4.0" -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto
+        CXXFlags ....................:  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto -g3 -D_FORTIFY_SOURCE=2 -Wundef -O3 -funroll-loops -fno-strict-aliasing  -finline-functions  -ffile-prefix-map="/build/simgrid/src/simgrid-v4.0=../simgrid-v4.0" -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/simgrid/src=/usr/src/debug/simgrid -flto=auto
+        LDFlags .....................:  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto
+        with LTO ....................: ON
+
+        Compile ns-3 ................: OFF  (hint: )
+        Compile Python bindings .....: ON
+          module ....................: simgrid.cpython-313-x86_64-linux-gnu.so
+          install path ..............: /usr/lib/python3.13/site-packages (force another value with -DSIMGRID_PYTHON_LIBDIR)
+          MPI bindings ..............: ON
+        Eigen3 library ..............: 3.4.0 in /usr/include/eigen3
+        JSON library ................: 3.12.0 in /usr/include
+        Compile Smpi ................: ON
+          Smpi fortran ..............: ON
+          MPICH3 testsuite ..........: OFF
+          MBI testsuite .............: OFF
+          Privatization .............: ON
+          PAPI support ..............: OFF
+        Compile Boost.Context support: ON
+
+        Model checking ..............: ON
+          MBI testsuite .............: OFF
+          McMini testsuite ..........: OFF
+
+        Maintainer mode .............: OFF
+        Documentation ...............: ON
+        Graphviz mode ...............: ON
+        Mallocators .................: ON
+
+        SimGrid dependencies ........: -lm -lcgraph /usr/lib/libdl.a -lrt -lgfortran   -Wl,--as-needed -latomic -Wl,--no-as-needed
+
+-- Configuring done (5.4s)
+-- Generating done (0.6s)
+-- Build files have been written to: /build/simgrid/src/build
+[  2%] Install /build/simgrid/src/build/bin/simgrid_convert_TI_traces
+[  0%] Install /build/simgrid/src/build/bin/simgrid_update_xml
+[  2%] Generating manpages
+[  0%] Built target maintainer_files
+[  2%] Building Fortran object CMakeFiles/mpi.dir/src/smpi/mpif.f90.o
+[  2%] Built target simgrid_update_xml
+[  2%] Built target simgrid_convert_TI_traces
+[  5%] Linking Fortran shared library lib/libmpi.so
+[  5%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Disk.cpp.o
+[  5%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_ConditionVariable.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Barrier.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Activity.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Exec.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Actor.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_ActivitySet.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Comm.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Engine.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Host.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Io.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_MessageQueue.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Netzone.cpp.o
+[  7%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Mailbox.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Mess.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Mutex.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Link.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Semaphore.cpp.o
+[ 10%] Built target mpi
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_Task.cpp.o
+[ 10%] Built target manpages
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/s4u/s4u_VirtualMachine.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/simgrid/Exception.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/simgrid/module.cpp.o
+[ 10%] Building CXX object CMakeFiles/simgrid.dir/src/simgrid/sg_config.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/simgrid/sg_version.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_base.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_client_api.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_config.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_global.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/mc/mc_record.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/mc/transition/Transition.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/mc/remote/Channel.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/EngineImpl.cpp.o
+[ 12%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/ActivityImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/BarrierImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/CommImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/ConditionVariableImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/ExecImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/MailboxImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/IoImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/MessImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/MessageQueueImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/MutexImpl.cpp.o
+[ 15%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/SemaphoreImpl.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/activity/SleepImpl.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/ActorImpl.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/CommObserver.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/Simcall.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/SimcallObserver.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/SynchroObserver.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/actor/WaitTestObserver.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/Context.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/ContextRaw.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/ContextSwapped.cpp.o
+[ 17%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/ContextThread.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/lmm/System.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/lmm/fair_bottleneck.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/lmm/maxmin.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/Action.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/CpuImpl.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/DiskImpl.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/FactorSet.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/HostImpl.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/Model.cpp.o
+[ 20%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/NetworkModel.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/NetworkModelFactors.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/SplitDuplexLinkImpl.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/StandardLinkImpl.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/VirtualMachineImpl.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/WifiLinkImpl.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/cpu_cas01.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/cpu_ti.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/disk_s19.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/host_clm03.cpp.o
+[ 22%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/network_cm02.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/network_constant.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/ptask_L07.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/profile/FutureEvtSet.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/profile/Profile.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/profile/ProfileBuilder.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/profile/StochasticDatedValue.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/ClusterZone.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/DijkstraZone.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/DragonflyZone.cpp.o
+[ 25%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/EmptyZone.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/FatTreeZone.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/FloydZone.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/FullZone.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/NetPoint.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/NetZoneImpl.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/RoutedZone.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/StarZone.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/TorusZone.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/VivaldiZone.cpp.o
+[ 27%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/routing/WifiZone.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/timer/Timer.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/xml/sg_platf.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/xml/platf_sax_cb.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/lmm/bmf.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/ContextBoost.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/context/ContextUnix.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_config.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_interface.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_paje_containers.cpp.o
+[ 30%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_paje_events.cpp.o
+[ 32%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_paje_header.cpp.o
+[ 32%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_paje_trace.cpp.o
+[ 32%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_paje_types.cpp.o
+[ 32%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_platform.cpp.o
+[ 32%] Building CXX object CMakeFiles/simgrid.dir/src/instr/instr_resource_utilization.cpp.o
+[ 32%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/PropertyHolder.cpp.o
+[ 32%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/backtrace.cpp.o
+[ 32%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/config.cpp.o
+[ 32%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/dict.cpp.o
+[ 32%] Building C object CMakeFiles/simgrid.dir/src/xbt/dict_cursor.c.o
+[ 35%] Building C object CMakeFiles/simgrid.dir/src/xbt/dict_elm.c.o
+[ 35%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/dynar.cpp.o
+[ 35%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/exception.cpp.o
+[ 35%] Building C object CMakeFiles/simgrid.dir/src/xbt/graph.c.o
+[ 35%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/log.cpp.o
+[ 35%] Building C object CMakeFiles/simgrid.dir/src/xbt/mallocator.c.o
+[ 35%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/memory_map.cpp.o
+[ 35%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/parmap.cpp.o
+[ 35%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/random.cpp.o
+[ 35%] Building C object CMakeFiles/simgrid.dir/src/xbt/snprintf.c.o
+[ 37%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/string.cpp.o
+[ 37%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/xbt_log_appender_file.cpp.o
+[ 37%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/xbt_log_layout_format.cpp.o
+[ 37%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/xbt_log_layout_simple.cpp.o
+[ 37%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/xbt_misc.cpp.o
+[ 37%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/xbt_os_file.cpp.o
+[ 37%] Building C object CMakeFiles/simgrid.dir/src/xbt/xbt_os_time.c.o
+[ 37%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/xbt_parse_units.cpp.o
+[ 37%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/xbt_replay.cpp.o
+[ 37%] Building CXX object CMakeFiles/simgrid.dir/src/xbt/xbt_str.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/ProducerConsumer.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/chaos_monkey.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/file_system/s4u_FileSystem.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/host_dvfs.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/host_energy.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/host_load.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/jbod.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/link_energy.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/link_energy_wifi.cpp.o
+[ 40%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/link_load.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/vm/VmLiveMigration.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/vm/dirty_page_tracking.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/battery.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/chiller.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/plugins/solar_panel.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/dag/loaders.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_f77.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_f77_coll.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_f77_comm.cpp.o
+[ 42%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_f77_file.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_f77_request.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_f77_type.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_mpi.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_coll.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_comm.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_file.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_group.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_info.cpp.o
+[ 45%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_op.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_request.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_topo.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_type.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/bindings/smpi_pmpi_win.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-2dmesh.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-3dmesh.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-GB.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-NTSLR-NB.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-NTSLR.cpp.o
+[ 47%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-SMP-NTS.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-bruck.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-loosely-lr.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-mvapich-smp.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-ompi-neighborexchange.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-pair.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-rdb.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-rhv.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-ring.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-smp-simple.cpp.o
+[ 50%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgather/allgather-spreading-simple.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgatherv/allgatherv-GB.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgatherv/allgatherv-mpich-rdb.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgatherv/allgatherv-mpich-ring.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgatherv/allgatherv-ompi-bruck.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgatherv/allgatherv-ompi-neighborexchange.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgatherv/allgatherv-pair.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allgatherv/allgatherv-ring.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-lr.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-mvapich-two-level.cpp.o
+[ 52%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-mvapich-rs.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-ompi-ring-segmented.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-rab-rdb.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-rab1.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-rab2.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-rdb.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-redbcast.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-smp-binomial-pipeline.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-smp-binomial.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-smp-rdb.cpp.o
+[ 55%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-smp-rsag-lr.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-smp-rsag-rab.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/allreduce/allreduce-smp-rsag.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-2dmesh.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-3dmesh.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-basic-linear.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-bruck.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-mvapich-scatter-dest.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-pair-light-barrier.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-pair-mpi-barrier.cpp.o
+[ 57%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-pair-one-barrier.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-pair.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-rdb.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-ring-light-barrier.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-ring-mpi-barrier.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-ring-one-barrier.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoall/alltoall-ring.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-bruck.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-ompi-basic-linear.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-pair-light-barrier.cpp.o
+[ 60%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-pair-mpi-barrier.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-pair-one-barrier.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-pair.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-ring-light-barrier.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-ring-mpi-barrier.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-ring-one-barrier.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/alltoallv/alltoallv-ring.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/barrier/barrier-mvapich2-pair.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/barrier/barrier-mpich-smp.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/barrier/barrier-ompi.cpp.o
+[ 62%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-NTSB.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-NTSL-Isend.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-NTSL.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-SMP-binary.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-SMP-binomial.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-SMP-linear.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-arrival-pattern-aware-wait.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-arrival-pattern-aware.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-arrival-scatter.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-binomial-tree.cpp.o
+[ 65%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-flattree-pipeline.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-flattree.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-mvapich-smp.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-ompi-pipeline.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-ompi-split-bintree.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-scatter-LR-allgather.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/bcast/bcast-scatter-rdb-allgather.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/coll_tuned_topo.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/colls_global.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/gather/gather-mvapich.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/gather/gather-ompi.cpp.o
+[ 67%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce/reduce-NTSL.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce/reduce-arrival-pattern-aware.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce/reduce-binomial.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce/reduce-mvapich-knomial.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce/reduce-flat-tree.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce/reduce-mvapich-two-level.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce/reduce-ompi.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce/reduce-rab.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce/reduce-scatter-gather.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce_scatter/reduce_scatter-mpich.cpp.o
+[ 70%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/reduce_scatter/reduce_scatter-ompi.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/scatter/scatter-mvapich-two-level.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/scatter/scatter-ompi.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/smpi_automatic_selector.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/smpi_coll.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/smpi_default_selector.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/smpi_intel_mpi_selector.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/smpi_mpich_selector.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/smpi_mvapich2_selector.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/smpi_nbc_impl.cpp.o
+[ 72%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/colls/smpi_openmpi_selector.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/instr_smpi.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_actor.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_bench.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_config.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_deployment.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_global.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_host.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_memory.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_replay.cpp.o
+[ 75%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_shared.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/internals/smpi_utils.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_comm.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_datatype.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_datatype_derived.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_errhandler.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_f2c.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_file.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_group.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_info.cpp.o
+[ 77%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_keyvals.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_op.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_request.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_status.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_topo.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/mpi/smpi_win.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/plugins/ampi/ampi.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/smpi/plugins/ampi/instr_ampi.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/kernel/resource/models/network_ib.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/mc/api/ClockVector.cpp.o
+[ 80%] Building CXX object CMakeFiles/simgrid.dir/src/mc/api/RemoteApp.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/api/Strategy.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/CriticalTransitionExplorer.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/DFSExplorer.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/Exploration.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/CommunicationDeterminismChecker.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/ParallelizedExplorer.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/BeFSExplorer.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/UdporChecker.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/udpor/Configuration.cpp.o
+[ 82%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/udpor/EventSet.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/udpor/ExtensionSetCalculator.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/udpor/History.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/udpor/maximal_subsets_iterator.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/udpor/UnfoldingEvent.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/udpor/Unfolding.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/odpor/Execution.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/odpor/WakeupTree.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/remote/AppSide.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/remote/CheckerSide.cpp.o
+[ 85%] Building CXX object CMakeFiles/simgrid.dir/src/mc/api/states/BeFSWutState.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/api/states/SleepSetState.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/api/states/State.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/api/states/WutState.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/transition/TransitionActor.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/transition/TransitionAny.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/transition/TransitionComm.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/transition/TransitionObjectAccess.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/transition/TransitionRandom.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/transition/TransitionSynchro.cpp.o
+[ 87%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/reduction/BeFSODPOR.cpp.o
+[ 90%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/reduction/Reduction.cpp.o
+[ 90%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/reduction/DPOR.cpp.o
+[ 90%] Building CXX object CMakeFiles/simgrid.dir/src/mc/explo/reduction/ODPOR.cpp.o
+[ 90%] Linking CXX shared library lib/libsimgrid.so
+[ 90%] Built target simgrid
+[ 90%] Building CXX object CMakeFiles/smpireplaymain.dir/src/smpi/smpi_replay_main.cpp.o
+[ 92%] Building C object CMakeFiles/smpimain.dir/src/smpi/smpi_main.c.o
+[ 92%] Building CXX object CMakeFiles/python-bindings.dir/src/bindings/python/simgrid_python.cpp.o
+[ 92%] Building CXX object examples/platforms/CMakeFiles/supernode.dir/supernode.cpp.o
+[ 95%] Building CXX object examples/platforms/CMakeFiles/griffon.dir/griffon.cpp.o
+[ 95%] Building CXX object CMakeFiles/python-bindings.dir/src/bindings/python/smpi_python.cpp.o
+[ 95%] Building CXX object CMakeFiles/simgrid-mc.dir/src/mc/explo/simgrid_mc.cpp.o
+[ 95%] Building C object CMakeFiles/sthread.dir/src/sthread/sthread.c.o
+[ 97%] Building CXX object CMakeFiles/sthread.dir/src/sthread/sthread_impl.cpp.o
+[ 97%] Building CXX object examples/platforms/CMakeFiles/routing_cluster.dir/routing_cluster.cpp.o
+[ 95%] Building CXX object tools/graphicator/CMakeFiles/graphicator.dir/graphicator.cpp.o
+[100%] Building CXX object CMakeFiles/sthread.dir/src/sthread/ObjectAccess.cpp.o
+[100%] Building C object examples/smpi/CMakeFiles/smpi_simple-execute.dir/simple-execute/simple-execute.c.o
+[100%] Linking C executable lib/simgrid/smpimain
+[100%] Linking C executable simple-execute/smpi_simple-execute
+[100%] Built target smpimain
+[100%] Built target smpi_simple-execute
+[100%] Building CXX object examples/smpi/comm_dynamic_costs/CMakeFiles/smpi_comm-dynamic-cost.dir/comm-dynamic-cost.cpp.o
+[100%] Linking CXX shared library lib/libsthread.so
+[100%] Linking CXX executable ../../bin/graphicator
+[100%] Linking CXX executable bin/simgrid-mc
+[100%] Linking CXX shared library ../../lib/librouting_cluster.so
+[100%] Linking CXX shared library ../../lib/libsupernode.so
+[100%] Linking CXX shared library ../../lib/libgriffon.so
+[100%] Linking CXX executable lib/simgrid/smpireplaymain
+[100%] Built target graphicator
+[100%] Built target simgrid-mc
+[100%] Built target smpireplaymain
+[100%] Linking CXX shared library ../../../lib/libsmpi_comm-dynamic-cost.so
+[100%] Built target routing_cluster
+[100%] Built target supernode
+[100%] Built target griffon
+[100%] Built target smpi_comm-dynamic-cost
+[100%] Built target sthread
+[100%] Linking CXX shared module lib/simgrid.cpython-313-x86_64-linux-gnu.so
+[100%] Built target python-bindings
