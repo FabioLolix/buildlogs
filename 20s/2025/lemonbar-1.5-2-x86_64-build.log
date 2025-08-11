@@ -1,0 +1,10 @@
+cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/lemonbar/src=/usr/src/debug/lemonbar -flto=auto -Wall -std=c99 -Os -DVERSION="\"1.4\"" -D_GNU_SOURCE -o lemonbar.o -c lemonbar.c
+cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/lemonbar/src=/usr/src/debug/lemonbar -flto=auto -Wall -std=c99 -Os -DVERSION="\"1.4\"" -D_GNU_SOURCE -o utils.o -c utils.c
+lemonbar.c: In function ‘main’:
+lemonbar.c:1532:43: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1532 |                                     (void)write(STDOUT_FILENO, area->cmd, strlen(area->cmd));
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lemonbar.c:1533:43: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1533 |                                     (void)write(STDOUT_FILENO, "\n", 1);
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc -o lemonbar lemonbar.o utils.o -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -lxcb -lxcb-xinerama -lxcb-randr

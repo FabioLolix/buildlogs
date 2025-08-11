@@ -1,0 +1,18 @@
+(cd util; \
+    make -f Makefile.linux libNUtil.a)
+make[1]: Entering directory '/build/nedit/src/nedit-5.7/util'
+cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/nedit/src=/usr/src/debug/nedit -flto=auto -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/nedit/src=/usr/src/debug/nedit -flto=auto -DBUILD_UNTESTED_NEDIT   -c -o DialogF.o DialogF.c
+cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/nedit/src=/usr/src/debug/nedit -flto=auto -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/nedit/src=/usr/src/debug/nedit -flto=auto -DBUILD_UNTESTED_NEDIT   -c -o getfiles.o getfiles.c
+getfiles.c: In function ‘replacementDirSearchProc’:
+getfiles.c:1076:6: error: too many arguments to function ‘OrigDirSearchProc’; expected 0, have 2
+ 1076 |     (*OrigDirSearchProc)(w, searchData);
+      |     ~^~~~~~~~~~~~~~~~~~~ ~
+getfiles.c: In function ‘replacementFileSearchProc’:
+getfiles.c:1092:6: error: too many arguments to function ‘OrigFileSearchProc’; expected 0, have 2
+ 1092 |     (*OrigFileSearchProc)(w, searchData);
+      |     ~^~~~~~~~~~~~~~~~~~~~ ~
+make[1]: *** [<builtin>: getfiles.o] Error 1
+make[1]: Leaving directory '/build/nedit/src/nedit-5.7/util'
+make: *** [Makefile:25: linux] Error 2
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

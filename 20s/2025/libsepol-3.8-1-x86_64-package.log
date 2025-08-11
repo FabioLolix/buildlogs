@@ -1,0 +1,41 @@
+make -C include install
+make[1]: Entering directory '/build/libsepol/src/libsepol-3.8/include'
+test -d /build/libsepol/pkg/libsepol/usr/include/sepol || install -m 755 -d /build/libsepol/pkg/libsepol/usr/include/sepol
+test -d /build/libsepol/pkg/libsepol/usr/include/sepol/policydb || install -m 755 -d /build/libsepol/pkg/libsepol/usr/include/sepol/policydb
+test -d /build/libsepol/pkg/libsepol/usr/include/sepol/cil || install -m 755 -d /build/libsepol/pkg/libsepol/usr/include/sepol/cil
+install -m 644 sepol/boolean_record.h sepol/booleans.h sepol/context.h sepol/context_record.h sepol/debug.h sepol/errcodes.h sepol/handle.h sepol/ibendport_record.h sepol/ibendports.h sepol/ibpkey_record.h sepol/ibpkeys.h sepol/iface_record.h sepol/interfaces.h sepol/kernel_to_cil.h sepol/kernel_to_conf.h sepol/module.h sepol/module_to_cil.h sepol/node_record.h sepol/nodes.h sepol/policydb.h sepol/port_record.h sepol/ports.h sepol/sepol.h sepol/user_record.h sepol/users.h /build/libsepol/pkg/libsepol/usr/include/sepol
+install -m 644 sepol/policydb/avrule_block.h sepol/policydb/avtab.h sepol/policydb/conditional.h sepol/policydb/constraint.h sepol/policydb/context.h sepol/policydb/ebitmap.h sepol/policydb/expand.h sepol/policydb/flask_types.h sepol/policydb/hashtab.h sepol/policydb/hierarchy.h sepol/policydb/link.h sepol/policydb/mls_types.h sepol/policydb/module.h sepol/policydb/polcaps.h sepol/policydb/policydb.h sepol/policydb/services.h sepol/policydb/sidtab.h sepol/policydb/symtab.h sepol/policydb/util.h /build/libsepol/pkg/libsepol/usr/include/sepol/policydb
+install -m 644 ../cil/include/cil/cil.h /build/libsepol/pkg/libsepol/usr/include/sepol/cil
+make[1]: Leaving directory '/build/libsepol/src/libsepol-3.8/include'
+make -C src install
+make[1]: Entering directory '/build/libsepol/src/libsepol-3.8/src'
+test -d /build/libsepol/pkg/libsepol/usr/lib || install -m 755 -d /build/libsepol/pkg/libsepol/usr/lib
+install -m 644 libsepol.a  /build/libsepol/pkg/libsepol/usr/lib
+test -d /build/libsepol/pkg/libsepol/usr/lib || install -m 755 -d /build/libsepol/pkg/libsepol/usr/lib
+install -m 755 libsepol.so.2 /build/libsepol/pkg/libsepol/usr/lib
+test -d /build/libsepol/pkg/libsepol/usr/lib/pkgconfig || install -m 755 -d /build/libsepol/pkg/libsepol/usr/lib/pkgconfig
+install -m 644 libsepol.pc /build/libsepol/pkg/libsepol/usr/lib/pkgconfig
+ln -sf --relative /build/libsepol/pkg/libsepol/usr/lib/libsepol.so.2 /build/libsepol/pkg/libsepol/usr/lib/libsepol.so
+make[1]: Leaving directory '/build/libsepol/src/libsepol-3.8/src'
+make -C utils install
+make[1]: Entering directory '/build/libsepol/src/libsepol-3.8/utils'
+mkdir -p /build/libsepol/pkg/libsepol/usr/bin
+install -m 755 chkcon sepol_check_access sepol_compute_av sepol_compute_member sepol_compute_relabel sepol_validate_transition /build/libsepol/pkg/libsepol/usr/bin
+make[1]: Leaving directory '/build/libsepol/src/libsepol-3.8/utils'
+make -C man install
+make[1]: Entering directory '/build/libsepol/src/libsepol-3.8/man'
+mkdir -p /build/libsepol/pkg/libsepol/usr/share/man/man3
+mkdir -p /build/libsepol/pkg/libsepol/usr/share/man/man8
+install -m 644 man3/*.3 /build/libsepol/pkg/libsepol/usr/share/man/man3
+install -m 644 man8/*.8 /build/libsepol/pkg/libsepol/usr/share/man/man8
+for lang in  ; do \
+	if [ -e ${lang}/man3 ] ; then \
+		mkdir -p /build/libsepol/pkg/libsepol/usr/share/man/${lang}/man3 ; \
+		install -m 644 ${lang}/man3/*.3 /build/libsepol/pkg/libsepol/usr/share/man/${lang}/man3 ; \
+	fi ; \
+	if [ -e ${lang}/man8 ] ; then \
+		mkdir -p /build/libsepol/pkg/libsepol/usr/share/man/${lang}/man8 ; \
+		install -m 644 ${lang}/man8/*.8 /build/libsepol/pkg/libsepol/usr/share/man/${lang}/man8 ; \
+	fi ; \
+done
+make[1]: Leaving directory '/build/libsepol/src/libsepol-3.8/man'

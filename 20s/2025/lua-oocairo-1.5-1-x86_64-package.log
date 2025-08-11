@@ -1,0 +1,21 @@
+make[1]: Entering directory '/build/lua-oocairo/src/oocairo-1.5'
+ /usr/bin/mkdir -p '/build/lua-oocairo/pkg/lua-oocairo/usr/lib'
+ /usr/bin/mkdir -p '/build/lua-oocairo/pkg/lua-oocairo/usr/include'
+ /usr/bin/mkdir -p '/build/lua-oocairo/pkg/lua-oocairo/usr/lib/pkgconfig'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   liboocairo.la '/build/lua-oocairo/pkg/lua-oocairo/usr/lib'
+ /usr/bin/mkdir -p '/build/lua-oocairo/pkg/lua-oocairo/usr/share/man/man3'
+ /usr/bin/install -c -m 644 oocairo.h '/build/lua-oocairo/pkg/lua-oocairo/usr/include'
+ /usr/bin/install -c -m 644 oocairo.pc '/build/lua-oocairo/pkg/lua-oocairo/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 doc/lua-oocairo.3 doc/lua-oocairo-context.3 doc/lua-oocairo-fontface.3 doc/lua-oocairo-fontopt.3 doc/lua-oocairo-matrix.3 doc/lua-oocairo-path.3 doc/lua-oocairo-userfont.3 doc/lua-oocairo-pattern.3 doc/lua-oocairo-scaledfont.3 doc/lua-oocairo-surface.3 '/build/lua-oocairo/pkg/lua-oocairo/usr/share/man/man3'
+libtool: install: /usr/bin/install -c .libs/liboocairo.so.0.0.0 /build/lua-oocairo/pkg/lua-oocairo/usr/lib/liboocairo.so.0.0.0
+libtool: install: (cd /build/lua-oocairo/pkg/lua-oocairo/usr/lib && { ln -s -f liboocairo.so.0.0.0 liboocairo.so.0 || { rm -f liboocairo.so.0 && ln -s liboocairo.so.0.0.0 liboocairo.so.0; }; })
+libtool: install: (cd /build/lua-oocairo/pkg/lua-oocairo/usr/lib && { ln -s -f liboocairo.so.0.0.0 liboocairo.so || { rm -f liboocairo.so && ln -s liboocairo.so.0.0.0 liboocairo.so; }; })
+libtool: install: /usr/bin/install -c .libs/liboocairo.lai /build/lua-oocairo/pkg/lua-oocairo/usr/lib/liboocairo.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make  install-exec-hook
+make[2]: Entering directory '/build/lua-oocairo/src/oocairo-1.5'
+/usr/bin/mkdir -p /build/lua-oocairo/pkg/lua-oocairo/usr/lib/lua/5.4
+rm -f /build/lua-oocairo/pkg/lua-oocairo/usr/lib/lua/5.4/oocairo.so
+ln -s /usr/lib/liboocairo.so /build/lua-oocairo/pkg/lua-oocairo/usr/lib/lua/5.4/oocairo.so
+make[2]: Leaving directory '/build/lua-oocairo/src/oocairo-1.5'
+make[1]: Leaving directory '/build/lua-oocairo/src/oocairo-1.5'
