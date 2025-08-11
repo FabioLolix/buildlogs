@@ -1,0 +1,3110 @@
+Info: creating stash file /build/yacreader-poppler-git/src/yacreader/.qmake.stash
+cd YACReader/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /build/yacreader-poppler-git/src/yacreader/YACReader/YACReader.pro 'CONFIG+=poppler unarr server_standalone' ) && make -f Makefile 
+cd YACReaderLibraryServer/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /build/yacreader-poppler-git/src/yacreader/YACReaderLibraryServer/YACReaderLibraryServer.pro 'CONFIG+=poppler unarr server_standalone' ) && make -f Makefile 
+cd tests/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /build/yacreader-poppler-git/src/yacreader/tests/tests.pro 'CONFIG+=poppler unarr server_standalone' ) && make -f Makefile 
+Project MESSAGE: Using system provided installation of poppler-qt6 found by pkg-config.
+Project MESSAGE: Using system provided installation of poppler-qt6 found by pkg-config.
+Project MESSAGE: Using system provided unarr installation found by pkg-config.
+Project MESSAGE: Using system provided unarr installation found by pkg-config.
+make[1]: Entering directory '/build/yacreader-poppler-git/src/yacreader/tests'
+cd concurrent_queue_test/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /build/yacreader-poppler-git/src/yacreader/tests/concurrent_queue_test/concurrent_queue_test.pro 'CONFIG+=poppler unarr server_standalone' ) && make -f Makefile 
+make[2]: Entering directory '/build/yacreader-poppler-git/src/yacreader/tests/concurrent_queue_test'
+generating ./moc_predefs.h
+compiling ../../common/concurrent_queue.cpp
+moc concurrent_queue_test.cpp
+make[1]: Entering directory '/build/yacreader-poppler-git/src/yacreader/YACReader'
+lrelease yacreader_es.ts
+lrelease yacreader_fr.ts
+lrelease yacreader_ru.ts
+lrelease yacreader_pt.ts
+lrelease yacreader_nl.ts
+lrelease yacreader_tr.ts
+lrelease yacreader_de.ts
+lrelease yacreader_zh_CN.ts
+lrelease yacreader_zh_HK.ts
+lrelease yacreader_zh_TW.ts
+lrelease yacreader_it.ts
+lrelease yacreader_en.ts
+compiling main.cpp
+compiling ../common/comic.cpp
+compiling configuration.cpp
+compiling magnifying_glass.cpp
+compiling goto_dialog.cpp
+make[1]: Entering directory '/build/yacreader-poppler-git/src/yacreader/YACReaderLibraryServer'
+Updating '../release/languages/yacreader_tr.qm'...
+Updating '../release/languages/yacreader_es.qm'...
+    Generated 209 translation(s) (116 finished and 93 unfinished)
+    Ignored 8 untranslated source text(s)
+Updating '../release/languages/yacreader_pt.qm'...
+    Generated 196 translation(s) (196 finished and 0 unfinished)
+    Ignored 21 untranslated source text(s)
+    Generated 66 translation(s) (26 finished and 40 unfinished)
+    Ignored 151 untranslated source text(s)
+Updating '../release/languages/yacreader_fr.qm'...
+Updating '../release/languages/yacreader_ru.qm'...
+Updating '../release/languages/yacreader_nl.qm'...
+    Generated 183 translation(s) (91 finished and 92 unfinished)
+    Ignored 34 untranslated source text(s)
+Updating '../release/languages/yacreader_zh_CN.qm'...
+    Generated 118 translation(s) (69 finished and 49 unfinished)
+    Ignored 99 untranslated source text(s)
+    Generated 183 translation(s) (90 finished and 93 unfinished)
+    Ignored 34 untranslated source text(s)
+    Generated 216 translation(s) (216 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '../release/languages/yacreader_zh_HK.qm'...
+    Generated 213 translation(s) (213 finished and 0 unfinished)
+    Ignored 4 untranslated source text(s)
+Updating '../release/languages/yacreader_zh_TW.qm'...
+Updating '../release/languages/yacreader_en.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 217 untranslated source text(s)
+Updating '../release/languages/yacreader_it.qm'...
+Updating '../release/languages/yacreader_de.qm'...
+    Generated 213 translation(s) (213 finished and 0 unfinished)
+    Ignored 4 untranslated source text(s)
+    Generated 183 translation(s) (91 finished and 92 unfinished)
+    Ignored 34 untranslated source text(s)
+compiling ../third_party/QrCode/qrcodegen.cpp
+    Generated 207 translation(s) (116 finished and 91 unfinished)
+    Ignored 10 untranslated source text(s)
+compiling ../YACReaderLibrary/library_creator.cpp
+compiling main_window_viewer.cpp
+compiling ../YACReaderLibrary/package_manager.cpp
+compiling mouse_handler.cpp
+compiling ../YACReaderLibrary/bundle_creator.cpp
+compiling ../YACReaderLibrary/db_helper.cpp
+compiling ../YACReaderLibrary/db/data_base_management.cpp
+compiling viewer.cpp
+compiling ../YACReaderLibrary/db/reading_list.cpp
+compiling ../YACReaderLibrary/initial_comic_info_extractor.cpp
+compiling goto_flow.cpp
+compiling ../YACReaderLibrary/xml_info_parser.cpp
+compiling ../YACReaderLibrary/xml_info_library_scanner.cpp
+compiling concurrent_queue_test.cpp
+compiling options_dialog.cpp
+compiling ../common/comic_db.cpp
+goto_dialog.cpp: In member function ‘void GoToDialog::goTo()’:
+goto_dialog.cpp:63:27: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+   63 |     if (page >= 1 && page <= v->top()) {
+      |                      ~~~~~^~~~~~~~~~~
+compiling ../common/folder.cpp
+compiling ../common/library_item.cpp
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:95:40: warning: ‘Qt::AA_EnableHighDpiScaling’ is deprecated: High-DPI scaling is always enabled. This attribute no longer has any effect. [-Wdeprecated-declarations]
+   95 |         QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qbytearray.h:10,
+                 from /usr/include/qt6/QtCore/qstringview.h:10,
+                 from /usr/include/qt6/QtCore/qchar.h:728,
+                 from /usr/include/qt6/QtCore/qstring.h:15,
+                 from /usr/include/qt6/QtCore/qcoreapplication.h:8,
+                 from /usr/include/qt6/QtWidgets/qapplication.h:8,
+                 from /usr/include/qt6/QtWidgets/QApplication:1,
+                 from main.cpp:1:
+/usr/include/qt6/QtCore/qnamespace.h:459:9: note: declared here
+  459 |         AA_EnableHighDpiScaling Q_DECL_ENUMERATOR_DEPRECATED_X(
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:98:36: warning: ‘Qt::AA_UseHighDpiPixmaps’ is deprecated: High-DPI pixmaps are always enabled. This attribute no longer has any effect. [-Wdeprecated-declarations]
+   98 |     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
+      |                                    ^~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qnamespace.h:448:9: note: declared here
+  448 |         AA_UseHighDpiPixmaps Q_DECL_ENUMERATOR_DEPRECATED_X(
+      |         ^~~~~~~~~~~~~~~~~~~~
+main.cpp:182:20: warning: ignoring return value of ‘bool QTranslator::load(const QLocale&, const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  182 |     translator.load(QLocale(), "yacreader", "_", QString(DATADIR) + "/yacreader/languages");
+      |     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QTranslator:1,
+                 from main.cpp:3:
+/usr/include/qt6/QtCore/qtranslator.h:37:24: note: declared here
+   37 |     [[nodiscard]] bool load(const QLocale & locale,
+      |                        ^~~~
+compiling ../common/bookmarks.cpp
+compiling ../common/comic.cpp
+compiling bookmarks_dialog.cpp
+../YACReaderLibrary/db_helper.cpp: In static member function ‘static void DBHelper::update(ComicInfo*, QSqlDatabase&)’:
+../YACReaderLibrary/db_helper.cpp:771:57: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  771 |     updateComicInfo.bindValue(":brightness", comicInfo->brightness);
+      |                                                         ^~~~~~~~~~
+In file included from ../YACReaderLibrary/db_helper.cpp:20:
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/db_helper.cpp:771:57: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  771 |     updateComicInfo.bindValue(":brightness", comicInfo->brightness);
+      |                                                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/db_helper.cpp:771:57: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  771 |     updateComicInfo.bindValue(":brightness", comicInfo->brightness);
+      |                                                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/db_helper.cpp:772:55: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  772 |     updateComicInfo.bindValue(":contrast", comicInfo->contrast);
+      |                                                       ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../YACReaderLibrary/db_helper.cpp:772:55: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  772 |     updateComicInfo.bindValue(":contrast", comicInfo->contrast);
+      |                                                       ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../YACReaderLibrary/db_helper.cpp:772:55: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  772 |     updateComicInfo.bindValue(":contrast", comicInfo->contrast);
+      |                                                       ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../YACReaderLibrary/db_helper.cpp:773:52: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  773 |     updateComicInfo.bindValue(":gamma", comicInfo->gamma);
+      |                                                    ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../YACReaderLibrary/db_helper.cpp:773:52: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  773 |     updateComicInfo.bindValue(":gamma", comicInfo->gamma);
+      |                                                    ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../YACReaderLibrary/db_helper.cpp:773:52: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  773 |     updateComicInfo.bindValue(":gamma", comicInfo->gamma);
+      |                                                    ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In member function ‘QString ComicDB::toTXT()’:
+../common/comic_db.cpp:38:52: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+   38 |     txt.append(QString("contrast:%1\r\n").arg(info.contrast));
+      |                                                    ^~~~~~~~
+In file included from ../common/comic_db.cpp:1:
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:38:52: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+   38 |     txt.append(QString("contrast:%1\r\n").arg(info.contrast));
+      |                                                    ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:38:52: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+   38 |     txt.append(QString("contrast:%1\r\n").arg(info.contrast));
+      |                                                    ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp: In constructor ‘ComicInfo::ComicInfo()’:
+../common/comic_db.cpp:279:7: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  279 |       brightness(-1),
+      |       ^~~~~~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:279:7: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  279 |       brightness(-1),
+      |       ^~~~~~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:280:7: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  280 |       contrast(-1),
+      |       ^~~~~~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:280:7: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  280 |       contrast(-1),
+      |       ^~~~~~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:281:7: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  281 |       gamma(-1)
+      |       ^~~~~~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:281:7: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  281 |       gamma(-1)
+      |       ^~~~~~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In copy constructor ‘ComicInfo::ComicInfo(const ComicInfo&)’:
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In member function ‘ComicInfo& ComicInfo::operator=(const ComicInfo&)’:
+../common/comic_db.cpp:367:5: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:5: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:28: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |                            ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:28: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |                            ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:28: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |                            ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:368:5: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |     ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:5: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |     ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:26: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |                          ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:26: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |                          ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:26: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |                          ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:369:5: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |     ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:5: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |     ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:23: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |                       ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:23: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |                       ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:23: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |                       ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In function ‘QDataStream& operator<<(QDataStream&, const ComicInfo&)’:
+../common/comic_db.cpp:655:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  655 |     stream << comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:655:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  655 |     stream << comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:655:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  655 |     stream << comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:656:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  656 |     stream << comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:656:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  656 |     stream << comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:656:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  656 |     stream << comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:657:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  657 |     stream << comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:657:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  657 |     stream << comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:657:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  657 |     stream << comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In function ‘QDataStream& operator>>(QDataStream&, ComicInfo&)’:
+../common/comic_db.cpp:740:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  740 |     stream >> comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:740:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  740 |     stream >> comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:740:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  740 |     stream >> comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:741:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  741 |     stream >> comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:741:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  741 |     stream >> comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:741:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  741 |     stream >> comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:742:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  742 |     stream >> comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:742:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  742 |     stream >> comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:742:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  742 |     stream >> comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../YACReaderLibrary/db_helper.cpp: In static member function ‘static ComicInfo DBHelper::getComicInfoFromQuery(QSqlQuery&, const QString&)’:
+../YACReaderLibrary/db_helper.cpp:2014:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2014 |     comicInfo.brightness = query.value(brightness).toInt();
+      |               ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/db_helper.cpp:2014:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2014 |     comicInfo.brightness = query.value(brightness).toInt();
+      |               ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/db_helper.cpp:2014:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2014 |     comicInfo.brightness = query.value(brightness).toInt();
+      |               ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/db_helper.cpp:2015:15: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2015 |     comicInfo.contrast = query.value(contrast).toInt();
+      |               ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../YACReaderLibrary/db_helper.cpp:2015:15: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2015 |     comicInfo.contrast = query.value(contrast).toInt();
+      |               ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../YACReaderLibrary/db_helper.cpp:2015:15: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2015 |     comicInfo.contrast = query.value(contrast).toInt();
+      |               ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../YACReaderLibrary/db_helper.cpp:2016:15: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2016 |     comicInfo.gamma = query.value(gamma).toInt();
+      |               ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../YACReaderLibrary/db_helper.cpp:2016:15: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2016 |     comicInfo.gamma = query.value(gamma).toInt();
+      |               ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../YACReaderLibrary/db_helper.cpp:2016:15: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2016 |     comicInfo.gamma = query.value(gamma).toInt();
+      |               ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+compiling ../common/bookmarks.cpp
+compiling render.cpp
+../YACReaderLibrary/db_helper.cpp: In static member function ‘static QString DBHelper::getLibraryInfo(QUuid)’:
+../YACReaderLibrary/db_helper.cpp:2140:36: warning: ‘QSqlQuery QSqlDatabase::exec(const QString&) const’ is deprecated: Use QSqlQuery::exec() instead. [-Wdeprecated-declarations]
+ 2140 |         auto foldersQuery = db.exec("SELECT COUNT(*) FROM folder WHERE id <> 1");
+      |                             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtSql/QSqlDatabase:1,
+                 from ../YACReaderLibrary/db_helper.cpp:11:
+/usr/include/qt6/QtSql/qsqldatabase.h:60:15: note: declared here
+   60 |     QSqlQuery exec(const QString& query = QString()) const;
+      |               ^~~~
+../YACReaderLibrary/db_helper.cpp:2146:35: warning: ‘QSqlQuery QSqlDatabase::exec(const QString&) const’ is deprecated: Use QSqlQuery::exec() instead. [-Wdeprecated-declarations]
+ 2146 |         auto comicsQuery = db.exec("SELECT COUNT(*) FROM comic");
+      |                            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtSql/qsqldatabase.h:60:15: note: declared here
+   60 |     QSqlQuery exec(const QString& query = QString()) const;
+      |               ^~~~
+../YACReaderLibrary/db_helper.cpp:2152:39: warning: ‘QSqlQuery QSqlDatabase::exec(const QString&) const’ is deprecated: Use QSqlQuery::exec() instead. [-Wdeprecated-declarations]
+ 2152 |         auto readComicsQuery = db.exec("SELECT count(*) FROM comic c INNER JOIN comic_info ci ON c.comicInfoId = ci.id WHERE ci.read = 1");
+      |                                ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtSql/qsqldatabase.h:60:15: note: declared here
+   60 |     QSqlQuery exec(const QString& query = QString()) const;
+      |               ^~~~
+compiling ../common/qnaturalsorting.cpp
+compiling translator.cpp
+linking concurrent_queue_test
+main_window_viewer.cpp: In member function ‘void YACReader::MainWindowViewer::open(QString, ComicDB&, QList<ComicDB>&)’:
+main_window_viewer.cpp:835:51: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  835 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                   ^~~~~~~~~~
+In file included from main_window_viewer.h:17,
+                 from main_window_viewer.cpp:1:
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+main_window_viewer.cpp:835:51: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  835 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                   ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+main_window_viewer.cpp:835:51: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  835 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                   ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+main_window_viewer.cpp:835:83: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  835 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+main_window_viewer.cpp:835:83: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  835 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+main_window_viewer.cpp:835:83: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  835 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+main_window_viewer.cpp:835:113: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  835 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                                                 ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+main_window_viewer.cpp:835:113: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  835 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                                                 ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+main_window_viewer.cpp:835:113: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  835 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                                                 ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+main_window_viewer.cpp: In member function ‘void YACReader::MainWindowViewer::open(QString, qint64, qint64, YACReader::OpenComicSource)’:
+main_window_viewer.cpp:863:51: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  863 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                   ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+main_window_viewer.cpp:863:51: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  863 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                   ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+main_window_viewer.cpp:863:51: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  863 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                   ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+main_window_viewer.cpp:863:83: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  863 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+main_window_viewer.cpp:863:83: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  863 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+main_window_viewer.cpp:863:83: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  863 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+main_window_viewer.cpp:863:113: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  863 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                                                 ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+main_window_viewer.cpp:863:113: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  863 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                                                 ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+main_window_viewer.cpp:863:113: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  863 |     optionsDialog->setFilters(currentComicDB.info.brightness, currentComicDB.info.contrast, currentComicDB.info.gamma);
+      |                                                                                                                 ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+compiling ../common/cover_utils.cpp
+../YACReaderLibrary/library_creator.cpp: In member function ‘void LibraryCreator::update(QDir)’:
+../YACReaderLibrary/library_creator.cpp:668:78: warning: comparison of integer expressions of different signedness: ‘qulonglong’ {aka ‘long long unsigned int’} and ‘qint64’ {aka ‘long long int’} [-Wsign-compare]
+  668 |                                 auto sizeHasChanged = comicDB->getFileSize() != fileInfoS.size();
+      |                                                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+../YACReaderLibrary/library_creator.cpp:669:75: warning: comparison of integer expressions of different signedness: ‘long long unsigned int’ and ‘long long int’ [-Wsign-compare]
+  669 |                                 auto hasBeenModified = added > 0 && added < lastModified && checkModifiedDatesOnUpdate;
+      |                                                                     ~~~~~~^~~~~~~~~~~~~~
+viewer.cpp: In member function ‘void Viewer::updateComic(ComicDB&)’:
+viewer.cpp:1229:43: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1229 |         if (brightness != 0 || comic.info.brightness != -1)
+      |                                           ^~~~~~~~~~
+In file included from viewer.cpp:16:
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+viewer.cpp:1229:43: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1229 |         if (brightness != 0 || comic.info.brightness != -1)
+      |                                           ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/xml_info_library_scanner.cpp: In member function ‘void YACReader::XMLInfoLibraryScanner::scanFolder(const QString&, const QString&, const QString&, const QModelIndex&)’:
+../YACReaderLibrary/xml_info_library_scanner.cpp:32:101: warning: unused parameter ‘folder’ [-Wunused-parameter]
+   32 | void XMLInfoLibraryScanner::scanFolder(const QString &source, const QString &target, const QString &folder, const QModelIndex &dest)
+      |                                                                                      ~~~~~~~~~~~~~~~^~~~~~
+viewer.cpp:1229:43: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1229 |         if (brightness != 0 || comic.info.brightness != -1)
+      |                                           ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+viewer.cpp:1230:24: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1230 |             comic.info.brightness = brightness;
+      |                        ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+viewer.cpp:1230:24: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1230 |             comic.info.brightness = brightness;
+      |                        ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+viewer.cpp:1230:24: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1230 |             comic.info.brightness = brightness;
+      |                        ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+viewer.cpp:1231:43: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1231 |         if (contrast != 100 || comic.info.contrast != -1)
+      |                                           ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+viewer.cpp:1231:43: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1231 |         if (contrast != 100 || comic.info.contrast != -1)
+      |                                           ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+viewer.cpp:1231:43: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1231 |         if (contrast != 100 || comic.info.contrast != -1)
+      |                                           ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+viewer.cpp:1232:24: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1232 |             comic.info.contrast = contrast;
+      |                        ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+viewer.cpp:1232:24: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1232 |             comic.info.contrast = contrast;
+      |                        ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+viewer.cpp:1232:24: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1232 |             comic.info.contrast = contrast;
+      |                        ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+viewer.cpp:1233:40: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1233 |         if (gamma != 100 || comic.info.gamma != -1)
+      |                                        ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+viewer.cpp:1233:40: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1233 |         if (gamma != 100 || comic.info.gamma != -1)
+      |                                        ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+viewer.cpp:1233:40: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1233 |         if (gamma != 100 || comic.info.gamma != -1)
+      |                                        ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+viewer.cpp:1234:24: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1234 |             comic.info.gamma = gamma;
+      |                        ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+viewer.cpp:1234:24: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1234 |             comic.info.gamma = gamma;
+      |                        ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+viewer.cpp:1234:24: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 1234 |             comic.info.gamma = gamma;
+      |                        ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../YACReaderLibrary/xml_info_library_scanner.cpp: In member function ‘void YACReader::XMLInfoLibraryScanner::updateFromSQLQuery(QSqlDatabase&, QSqlQuery&)’:
+../YACReaderLibrary/xml_info_library_scanner.cpp:108:9: warning: unused variable ‘id’ [-Wunused-variable]
+  108 |     int id = record.indexOf("id");
+      |         ^~
+compiling goto_flow_widget.cpp
+compiling ../YACReaderLibrary/yacreader_local_server.cpp
+compiling page_label_widget.cpp
+compiling goto_flow_toolbar.cpp
+compiling ../YACReaderLibrary/comics_remover.cpp
+compiling ../common/http_worker.cpp
+compiling width_slider.cpp
+compiling notifications_label_widget.cpp
+compiling ../common/yacreader_global.cpp
+compiling ../YACReaderLibrary/yacreader_libraries.cpp
+compiling ../common/pictureflow.cpp
+compiling ../YACReaderLibrary/comic_files_manager.cpp
+translator.cpp: In member function ‘virtual void TranslationLoader::run()’:
+translator.cpp:354:42: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+  354 |             utf8 = utf8.remove(utf8.count() - 1, 1);
+      |                                ~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtCore/qurl.h:11,
+                 from /usr/include/qt6/QtCore/QUrl:1,
+                 from translator.cpp:1:
+/usr/include/qt6/QtCore/qstring.h:239:22: note: declared here
+  239 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+translator.cpp: In member function ‘virtual void TextToSpeachLoader::run()’:
+translator.cpp:397:42: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+  397 |             utf8 = utf8.remove(utf8.count() - 1, 1);
+      |                                ~~~~~~~~~~^~
+/usr/include/qt6/QtCore/qstring.h:239:22: note: declared here
+  239 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+compiling ../common/custom_widgets.cpp
+compiling console_ui_library_creator.cpp
+make[2]: Leaving directory '/build/yacreader-poppler-git/src/yacreader/tests/concurrent_queue_test'
+make[1]: Leaving directory '/build/yacreader-poppler-git/src/yacreader/tests'
+compiling main.cpp
+compiling libraries_updater.cpp
+compiling ../common/check_new_version.cpp
+compiling ../common/qnaturalsorting.cpp
+compiling ../common/comic_db.cpp
+compiling ../common/folder.cpp
+compiling ../YACReaderLibrary/ip_config_helper.cpp
+compiling ../YACReaderLibrary/db/query_lexer.cpp
+compiling ../YACReaderLibrary/db/query_parser.cpp
+compiling ../common/library_item.cpp
+../common/pictureflow.cpp: In member function ‘void PictureFlow::mousePressEvent(QMouseEvent*, int)’:
+../common/pictureflow.cpp:1264:18: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1264 |     if ((event->x() > (width() + slideWidth) / 2 && !(d->state->flowRightToLeft)) || (event->x() < (width() - slideWidth) / 2 && d->state->flowRightToLeft))
+      |          ~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/QKeyEvent:1,
+                 from ../common/pictureflow.cpp:47:
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/pictureflow.cpp:1264:95: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1264 |     if ((event->x() > (width() + slideWidth) / 2 && !(d->state->flowRightToLeft)) || (event->x() < (width() - slideWidth) / 2 && d->state->flowRightToLeft))
+      |                                                                                       ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/pictureflow.cpp:1266:23: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1266 |     else if ((event->x() < (width() - slideWidth) / 2 && !(d->state->flowRightToLeft)) || (event->x() > (width() + slideWidth) / 2 && d->state->flowRightToLeft))
+      |               ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/pictureflow.cpp:1266:100: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1266 |     else if ((event->x() < (width() - slideWidth) / 2 && !(d->state->flowRightToLeft)) || (event->x() > (width() + slideWidth) / 2 && d->state->flowRightToLeft))
+      |                                                                                            ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+compiling ../YACReaderLibrary/db/search_query.cpp
+render.cpp: In member function ‘void Render::load(const QString&, const ComicDB&)’:
+render.cpp:667:30: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  667 |             if (comicDB.info.brightness == -1)
+      |                              ^~~~~~~~~~
+In file included from render.cpp:12:
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+render.cpp:667:30: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  667 |             if (comicDB.info.brightness == -1)
+      |                              ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+render.cpp:667:30: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  667 |             if (comicDB.info.brightness == -1)
+      |                              ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+render.cpp:670:51: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  670 |                 filters[i]->setLevel(comicDB.info.brightness);
+      |                                                   ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+render.cpp:670:51: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  670 |                 filters[i]->setLevel(comicDB.info.brightness);
+      |                                                   ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+render.cpp:670:51: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  670 |                 filters[i]->setLevel(comicDB.info.brightness);
+      |                                                   ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+render.cpp:673:30: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  673 |             if (comicDB.info.contrast == -1)
+      |                              ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+render.cpp:673:30: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  673 |             if (comicDB.info.contrast == -1)
+      |                              ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+render.cpp:673:30: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  673 |             if (comicDB.info.contrast == -1)
+      |                              ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+render.cpp:676:51: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  676 |                 filters[i]->setLevel(comicDB.info.contrast);
+      |                                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+render.cpp:676:51: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  676 |                 filters[i]->setLevel(comicDB.info.contrast);
+      |                                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+render.cpp:676:51: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  676 |                 filters[i]->setLevel(comicDB.info.contrast);
+      |                                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+render.cpp:679:30: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  679 |             if (comicDB.info.gamma == -1)
+      |                              ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+render.cpp:679:30: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  679 |             if (comicDB.info.gamma == -1)
+      |                              ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+render.cpp:679:30: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  679 |             if (comicDB.info.gamma == -1)
+      |                              ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+render.cpp:682:51: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  682 |                 filters[i]->setLevel(comicDB.info.gamma);
+      |                                                   ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+render.cpp:682:51: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  682 |                 filters[i]->setLevel(comicDB.info.gamma);
+      |                                                   ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+render.cpp:682:51: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  682 |                 filters[i]->setLevel(comicDB.info.gamma);
+      |                                                   ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+compiling yacreader_local_client.cpp
+compiling ../YACReaderLibrary/libraries_update_coordinator.cpp
+../common/comic_db.cpp: In member function ‘QString ComicDB::toTXT()’:
+../common/comic_db.cpp:38:52: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+   38 |     txt.append(QString("contrast:%1\r\n").arg(info.contrast));
+      |                                                    ^~~~~~~~
+In file included from ../common/comic_db.cpp:1:
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:38:52: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+   38 |     txt.append(QString("contrast:%1\r\n").arg(info.contrast));
+      |                                                    ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:38:52: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+   38 |     txt.append(QString("contrast:%1\r\n").arg(info.contrast));
+      |                                                    ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp: In constructor ‘ComicInfo::ComicInfo()’:
+../common/comic_db.cpp:279:7: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  279 |       brightness(-1),
+      |       ^~~~~~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:279:7: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  279 |       brightness(-1),
+      |       ^~~~~~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:280:7: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  280 |       contrast(-1),
+      |       ^~~~~~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:280:7: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  280 |       contrast(-1),
+      |       ^~~~~~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:281:7: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  281 |       gamma(-1)
+      |       ^~~~~~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:281:7: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  281 |       gamma(-1)
+      |       ^~~~~~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In copy constructor ‘ComicInfo::ComicInfo(const ComicInfo&)’:
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In member function ‘ComicInfo& ComicInfo::operator=(const ComicInfo&)’:
+../common/comic_db.cpp:367:5: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:5: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:28: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |                            ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:28: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |                            ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:28: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |                            ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:368:5: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |     ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:5: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |     ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:26: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |                          ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:26: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |                          ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:26: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |                          ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:369:5: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |     ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:5: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |     ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:23: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |                       ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:23: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |                       ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:23: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |                       ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In function ‘QDataStream& operator<<(QDataStream&, const ComicInfo&)’:
+../common/comic_db.cpp:655:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  655 |     stream << comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:655:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  655 |     stream << comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:655:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  655 |     stream << comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:656:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  656 |     stream << comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:656:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  656 |     stream << comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:656:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  656 |     stream << comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:657:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  657 |     stream << comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:657:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  657 |     stream << comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:657:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  657 |     stream << comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In function ‘QDataStream& operator>>(QDataStream&, ComicInfo&)’:
+../common/comic_db.cpp:740:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  740 |     stream >> comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:740:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  740 |     stream >> comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:740:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  740 |     stream >> comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:741:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  741 |     stream >> comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:741:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  741 |     stream >> comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:741:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  741 |     stream >> comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:742:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  742 |     stream >> comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:742:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  742 |     stream >> comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:742:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  742 |     stream >> comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+compiling ../common/http_worker.cpp
+compiling ../common/yacreader_global.cpp
+../YACReaderLibrary/db/query_parser.cpp: In function ‘std::string parseDate(const std::string&, const std::string&)’:
+../YACReaderLibrary/db/query_parser.cpp:33:73: warning: unused parameter ‘expOperator’ [-Wunused-parameter]
+   33 | std::string parseDate(const std::string &dateString, const std::string &expOperator)
+      |                                                      ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+compiling ../common/yacreader_global_gui.cpp
+compiling ../common/global_info_provider.cpp
+compiling ../common/exit_check.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/foldermetadatacontroller_v2.cpp
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:75:20: warning: ignoring return value of ‘bool QTranslator::load(const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   75 |     translator.load(QString(DATADIR) + "/yacreader/languages/yacreaderlibrary_" + sufix);
+      |     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QtCore:294,
+                 from ../YACReaderLibrary/db/data_base_management.h:4,
+                 from main.cpp:8:
+/usr/include/qt6/QtCore/qtranslator.h:33:24: note: declared here
+   33 |     [[nodiscard]] bool load(const QString & filename,
+      |                        ^~~~
+main.cpp: In function ‘int start(QCoreApplication&, QCommandLineParser&, const QStringList&, QSettings*, QTextStream&)’:
+main.cpp:181:20: warning: ignoring return value of ‘bool QTranslator::load(const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  181 |     translator.load(QString(DATADIR) + "/yacreader/languages/yacreaderlibrary_" + sufix);
+      |     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qtranslator.h:33:24: note: declared here
+   33 |     [[nodiscard]] bool load(const QString & filename,
+      |                        ^~~~
+main.cpp:189:26: warning: ignoring return value of ‘bool QTranslator::load(const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  189 |     viewerTranslator.load(QString(DATADIR) + "/yacreader/languages/yacreader_" + sufix);
+      |     ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qtranslator.h:33:24: note: declared here
+   33 |     [[nodiscard]] bool load(const QString & filename,
+      |                        ^~~~
+main.cpp:145:81: warning: unused parameter ‘args’ [-Wunused-parameter]
+  145 | int start(QCoreApplication &app, QCommandLineParser &parser, const QStringList &args, QSettings *settings, QTextStream &qout)
+      |                                                              ~~~~~~~~~~~~~~~~~~~^~~~
+compiling ../common/scroll_management.cpp
+compiling ../common/opengl_checker.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/searchcontroller_v2.cpp
+goto_flow_toolbar.cpp: In member function ‘void GoToFlowToolBar::goTo()’:
+goto_flow_toolbar.cpp:114:27: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+  114 |     if (page >= 1 && page <= v->top()) {
+      |                      ~~~~~^~~~~~~~~~~
+compiling ../common/global_info_provider.cpp
+compiling ../YACReaderLibrary/server/static.cpp
+compiling ../common/gl/yacreader_flow_gl.cpp
+compiling goto_flow_gl.cpp
+compiling ../custom_widgets/help_about_dialog.cpp
+compiling ../YACReaderLibrary/server/requestmapper.cpp
+compiling ../custom_widgets/yacreader_field_edit.cpp
+compiling ../custom_widgets/yacreader_field_plain_text_edit.cpp
+compiling ../custom_widgets/yacreader_flow.cpp
+compiling ../custom_widgets/yacreader_flow_config_widget.cpp
+compiling ../YACReaderLibrary/server/yacreader_http_server.cpp
+compiling ../custom_widgets/yacreader_options_dialog.cpp
+compiling ../YACReaderLibrary/server/yacreader_http_session.cpp
+compiling ../custom_widgets/yacreader_spin_slider_widget.cpp
+compiling ../custom_widgets/yacreader_tool_bar_stretch.cpp
+compiling ../YACReaderLibrary/server/yacreader_http_session_store.cpp
+compiling ../YACReaderLibrary/server/yacreader_server_data_helper.cpp
+compiling ../custom_widgets/yacreader_busy_widget.cpp
+compiling ../YACReaderLibrary/server/controllers/versioncontroller.cpp
+compiling ../YACReaderLibrary/server/controllers/v1/comiccontroller.cpp
+compiling ../custom_widgets/rounded_corners_dialog.cpp
+../custom_widgets/yacreader_flow.cpp: In member function ‘virtual void YACReaderFlow::mouseDoubleClickEvent(QMouseEvent*)’:
+../custom_widgets/yacreader_flow.cpp:15:18: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+   15 |     if ((event->x() > (width() - slideSize().width()) / 2) && (event->x() < (width() + slideSize().width()) / 2))
+      |          ~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/QMouseEvent:1,
+                 from ../custom_widgets/yacreader_flow.cpp:3:
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../custom_widgets/yacreader_flow.cpp:15:72: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+   15 |     if ((event->x() > (width() - slideSize().width()) / 2) && (event->x() < (width() + slideSize().width()) / 2))
+      |                                                                ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+compiling ../YACReaderLibrary/server/controllers/v1/errorcontroller.cpp
+compiling ../custom_widgets/whats_new_dialog.cpp
+compiling ../YACReaderLibrary/server/controllers/v1/foldercontroller.cpp
+compiling ../custom_widgets/whats_new_controller.cpp
+compiling ../YACReaderLibrary/server/controllers/v1/folderinfocontroller.cpp
+compiling ../custom_widgets/yacreader_gl_flow_config_widget.cpp
+compiling ../YACReaderLibrary/server/controllers/v1/librariescontroller.cpp
+compiling ../compressed_archive/unarr/compressed_archive.cpp
+compiling ../shortcuts_management/edit_shortcuts_dialog.cpp
+compiling ../YACReaderLibrary/server/controllers/v1/pagecontroller.cpp
+../common/gl/yacreader_flow_gl.cpp: In member function ‘virtual void YACReaderFlowGL::mousePressEvent(QMouseEvent*)’:
+../common/gl/yacreader_flow_gl.cpp:1075:63: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1075 |         QVector3D intersection = getPlaneIntersection(event->x(), event->y(), images[currentSelected]);
+      |                                                       ~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/qtextlayout.h:7,
+                 from /usr/include/qt6/QtGui/qabstracttextdocumentlayout.h:9,
+                 from /usr/include/qt6/QtGui/QtGui:6,
+                 from /usr/include/qt6/QtWidgets/QtWidgetsDepends:4,
+                 from /usr/include/qt6/QtWidgets/QtWidgets:3,
+                 from ../common/gl/yacreader_flow_gl.h:16,
+                 from ../common/gl/yacreader_flow_gl.cpp:1:
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/gl/yacreader_flow_gl.cpp:1075:75: warning: ‘int QMouseEvent::y() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1075 |         QVector3D intersection = getPlaneIntersection(event->x(), event->y(), images[currentSelected]);
+      |                                                                   ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:229:16: note: declared here
+  229 |     inline int y() const { return qRound(position().y()); }
+      |                ^
+../common/gl/yacreader_flow_gl.cpp: In member function ‘virtual void YACReaderFlowGL::mouseDoubleClickEvent(QMouseEvent*)’:
+../common/gl/yacreader_flow_gl.cpp:1089:59: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1089 |     QVector3D intersection = getPlaneIntersection(event->x(), event->y(), images[currentSelected]);
+      |                                                   ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/gl/yacreader_flow_gl.cpp:1089:71: warning: ‘int QMouseEvent::y() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1089 |     QVector3D intersection = getPlaneIntersection(event->x(), event->y(), images[currentSelected]);
+      |                                                               ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:229:16: note: declared here
+  229 |     inline int y() const { return qRound(position().y()); }
+      |                ^
+compiling ../shortcuts_management/actions_groups_model.cpp
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp: In static member function ‘static QJsonObject YACReaderServerDataHelper::fullComicToJSON(qulonglong, QUuid, const ComicDB&)’:
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp:170:37: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  170 |     json["brightness"] = comic.info.brightness;
+      |                                     ^~~~~~~~~~
+In file included from ../YACReaderLibrary/server/yacreader_server_data_helper.h:6,
+                 from ../YACReaderLibrary/server/yacreader_server_data_helper.cpp:1:
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp:170:37: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  170 |     json["brightness"] = comic.info.brightness;
+      |                                     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp:170:37: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  170 |     json["brightness"] = comic.info.brightness;
+      |                                     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp:171:35: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  171 |     json["contrast"] = comic.info.contrast;
+      |                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp:171:35: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  171 |     json["contrast"] = comic.info.contrast;
+      |                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp:171:35: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  171 |     json["contrast"] = comic.info.contrast;
+      |                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp:172:32: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  172 |     json["gamma"] = comic.info.gamma;
+      |                                ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp:172:32: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  172 |     json["gamma"] = comic.info.gamma;
+      |                                ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../YACReaderLibrary/server/yacreader_server_data_helper.cpp:172:32: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  172 |     json["gamma"] = comic.info.gamma;
+      |                                ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../custom_widgets/yacreader_options_dialog.cpp: In constructor ‘YACReaderOptionsDialog::YACReaderOptionsDialog(QWidget*)’:
+../custom_widgets/yacreader_options_dialog.cpp:47:32: warning: ‘void QCheckBox::stateChanged(int)’ is deprecated: Use checkStateChanged() instead [-Wdeprecated-declarations]
+   47 |     connect(useGL, &QCheckBox::stateChanged, this, &YACReaderOptionsDialog::saveUseGL);
+      |                                ^~~~~~~~~~~~
+In file included from /usr/include/qt6/QtWidgets/QtWidgets:33,
+                 from ../common/gl/yacreader_flow_gl.h:16,
+                 from ../custom_widgets/yacreader_gl_flow_config_widget.h:4,
+                 from ../custom_widgets/yacreader_options_dialog.cpp:5:
+/usr/include/qt6/QtWidgets/qcheckbox.h:41:10: note: declared here
+   41 |     void stateChanged(int);
+      |          ^~~~~~~~~~~~
+../custom_widgets/yacreader_options_dialog.cpp:106:41: warning: ‘void QCheckBox::stateChanged(int)’ is deprecated: Use checkStateChanged() instead [-Wdeprecated-declarations]
+  106 |     connect(gl->vSyncCheck, &QCheckBox::stateChanged, this, &YACReaderOptionsDialog::saveUseVSync);
+      |                                         ^~~~~~~~~~~~
+/usr/include/qt6/QtWidgets/qcheckbox.h:41:10: note: declared here
+   41 |     void stateChanged(int);
+      |          ^~~~~~~~~~~~
+compiling ../YACReaderLibrary/server/controllers/v1/covercontroller.cpp
+compiling ../shortcuts_management/actions_shortcuts_model.cpp
+compiling ../YACReaderLibrary/server/controllers/v1/updatecomiccontroller.cpp
+compiling ../shortcuts_management/edit_shortcut_item_delegate.cpp
+compiling ../YACReaderLibrary/server/controllers/v1/comicdownloadinfocontroller.cpp
+compiling ../shortcuts_management/shortcuts_manager.cpp
+compiling ../YACReaderLibrary/server/controllers/v1/synccontroller.cpp
+compiling ../third_party/QsLog/QsLogDest.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/comiccontroller_v2.cpp
+compiling ../third_party/QsLog/QsLog.cpp
+compiling ../third_party/QsLog/QsLogDestConsole.cpp
+compiling ../third_party/QsLog/QsLogDestFile.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/errorcontroller_v2.cpp
+compiling ../third_party/QsLog/QsLogDestFunctor.cpp
+../YACReaderLibrary/server/controllers/v1/synccontroller.cpp: In member function ‘virtual void SyncController::service(stefanfrings::HttpRequest&, stefanfrings::HttpResponse&)’:
+../YACReaderLibrary/server/controllers/v1/synccontroller.cpp:50:49: warning: ‘static void DBHelper::updateFromRemoteClient(qulonglong, const ComicInfo&)’ is deprecated: Server v1 [-Wdeprecated-declarations]
+   50 |                 DBHelper::updateFromRemoteClient(libraryId, info);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from ../YACReaderLibrary/server/controllers/v1/synccontroller.cpp:7:
+../YACReaderLibrary/db_helper.h:77:45: note: declared here
+   77 |     [[deprecated("Server v1")]] static void updateFromRemoteClient(qulonglong libraryId, const ComicInfo &comicInfo);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~
+compiling ../YACReaderLibrary/server/controllers/v2/folderinfocontroller_v2.cpp
+compiling ../third_party/QsLog/QsLogMessage.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/librariescontroller_v2.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/pagecontroller_v2.cpp
+compiling ../third_party/QsLog/QsLogLevel.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/covercontroller_v2.cpp
+rcc yacreader_images.qrc
+rcc yacreader_files.qrc
+generating ./moc_predefs.h
+compiling ../YACReaderLibrary/server/controllers/v2/updatecomiccontroller_v2.cpp
+compiling qrc_yacreader_images.cpp
+compiling qrc_yacreader_files.cpp
+moc ../common/comic.h
+moc configuration.h
+moc goto_dialog.h
+moc magnifying_glass.h
+compiling ../YACReaderLibrary/server/controllers/v2/comicdownloadinfocontroller_v2.cpp
+moc main_window_viewer.h
+compiling ../YACReaderLibrary/server/controllers/v2/synccontroller_v2.cpp
+moc viewer.h
+compiling ../YACReaderLibrary/server/controllers/v2/foldercontentcontroller_v2.cpp
+moc goto_flow.h
+compiling ../YACReaderLibrary/server/controllers/v2/tagscontroller_v2.cpp
+moc options_dialog.h
+moc ../common/bookmarks.h
+compiling ../YACReaderLibrary/server/controllers/v2/tagcontentcontroller_v2.cpp
+moc bookmarks_dialog.h
+moc render.h
+compiling ../YACReaderLibrary/server/controllers/v2/favoritescontroller_v2.cpp
+moc translator.h
+compiling ../YACReaderLibrary/server/controllers/v2/readingcomicscontroller_v2.cpp
+moc goto_flow_widget.h
+compiling ../YACReaderLibrary/server/controllers/v2/readinglistscontroller_v2.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/readinglistcontentcontroller_v2.cpp
+moc page_label_widget.h
+compiling ../YACReaderLibrary/server/controllers/v2/comicfullinfocontroller_v2.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/readinglistinfocontroller_v2.cpp
+compiling ../YACReaderLibrary/server/controllers/v2/taginfocontroller_v2.cpp
+moc goto_flow_toolbar.h
+compiling ../YACReaderLibrary/server/controllers/v2/comiccontrollerinreadinglist_v2.cpp
+moc width_slider.h
+compiling ../YACReaderLibrary/server/controllers/webui/statuspagecontroller.cpp
+moc notifications_label_widget.h
+compiling ../third_party/QtWebApp/httpserver/httpglobal.cpp
+moc ../common/pictureflow.h
+compiling ../third_party/QtWebApp/httpserver/httplistener.cpp
+compiling ../third_party/QtWebApp/httpserver/httpconnectionhandler.cpp
+moc ../common/check_new_version.h
+moc ../common/comic_db.h
+moc ../common/library_item.h
+compiling ../third_party/QtWebApp/httpserver/httpconnectionhandlerpool.cpp
+moc yacreader_local_client.h
+compiling ../third_party/QtWebApp/httpserver/httprequest.cpp
+moc ../common/http_worker.h
+compiling ../third_party/QtWebApp/httpserver/httpresponse.cpp
+moc ../common/gl/yacreader_flow_gl.h
+compiling ../third_party/QtWebApp/httpserver/httpcookie.cpp
+compiling ../third_party/QtWebApp/httpserver/httprequesthandler.cpp
+moc goto_flow_gl.h
+moc ../custom_widgets/help_about_dialog.h
+compiling ../third_party/QtWebApp/httpserver/httpsession.cpp
+moc ../custom_widgets/yacreader_field_edit.h
+compiling ../third_party/QtWebApp/httpserver/httpsessionstore.cpp
+compiling ../third_party/QtWebApp/httpserver/staticfilecontroller.cpp
+moc ../custom_widgets/yacreader_field_plain_text_edit.h
+compiling ../third_party/QtWebApp/templateengine/template.cpp
+moc ../custom_widgets/yacreader_flow.h
+moc ../custom_widgets/yacreader_flow_config_widget.h
+compiling ../third_party/QtWebApp/templateengine/templateloader.cpp
+moc ../custom_widgets/yacreader_options_dialog.h
+compiling ../third_party/QtWebApp/templateengine/templatecache.cpp
+compiling ../compressed_archive/unarr/compressed_archive.cpp
+moc ../custom_widgets/yacreader_spin_slider_widget.h
+moc ../custom_widgets/yacreader_busy_widget.h
+compiling ../third_party/QsLog/QsLogDest.cpp
+compiling ../third_party/QsLog/QsLog.cpp
+moc ../custom_widgets/rounded_corners_dialog.h
+moc ../custom_widgets/whats_new_dialog.h
+compiling ../third_party/QsLog/QsLogDestConsole.cpp
+moc ../custom_widgets/yacreader_gl_flow_config_widget.h
+compiling ../third_party/QsLog/QsLogDestFile.cpp
+compiling ../third_party/QsLog/QsLogDestFunctor.cpp
+moc ../compressed_archive/unarr/compressed_archive.h
+moc ../shortcuts_management/edit_shortcuts_dialog.h
+moc ../shortcuts_management/actions_groups_model.h
+moc ../shortcuts_management/actions_shortcuts_model.h
+compiling ../third_party/QsLog/QsLogMessage.cpp
+moc ../shortcuts_management/edit_shortcut_item_delegate.h
+compiling ../third_party/QsLog/QsLogLevel.cpp
+moc ../third_party/QsLog/QsLogDestFunctor.h
+compiling moc_comic.cpp
+rcc images.qrc
+generating ./moc_predefs.h
+compiling qrc_images.cpp
+compiling moc_configuration.cpp
+moc ../YACReaderLibrary/library_creator.h
+compiling moc_goto_dialog.cpp
+moc ../YACReaderLibrary/package_manager.h
+compiling moc_magnifying_glass.cpp
+moc ../YACReaderLibrary/bundle_creator.h
+compiling moc_main_window_viewer.cpp
+moc ../YACReaderLibrary/db/data_base_management.h
+compiling moc_viewer.cpp
+moc ../YACReaderLibrary/initial_comic_info_extractor.h
+moc ../YACReaderLibrary/xml_info_library_scanner.h
+moc ../common/comic_db.h
+compiling moc_goto_flow.cpp
+compiling moc_options_dialog.cpp
+moc ../common/library_item.h
+moc ../common/comic.h
+moc ../common/bookmarks.h
+moc ../YACReaderLibrary/yacreader_local_server.h
+moc ../YACReaderLibrary/comics_remover.h
+moc ../common/http_worker.h
+compiling moc_bookmarks.cpp
+compiling moc_bookmarks_dialog.cpp
+moc ../YACReaderLibrary/yacreader_libraries.h
+moc ../YACReaderLibrary/comic_files_manager.h
+moc console_ui_library_creator.h
+moc ../YACReaderLibrary/libraries_update_coordinator.h
+compiling moc_render.cpp
+moc ../YACReaderLibrary/server/controllers/v2/foldermetadatacontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/searchcontroller_v2.h
+moc ../YACReaderLibrary/server/requestmapper.h
+compiling moc_translator.cpp
+compiling moc_goto_flow_widget.cpp
+compiling moc_page_label_widget.cpp
+compiling moc_goto_flow_toolbar.cpp
+compiling moc_width_slider.cpp
+compiling moc_notifications_label_widget.cpp
+compiling moc_pictureflow.cpp
+moc ../YACReaderLibrary/server/yacreader_http_server.h
+moc ../YACReaderLibrary/server/yacreader_http_session.h
+compiling moc_check_new_version.cpp
+moc ../YACReaderLibrary/server/yacreader_http_session_store.h
+compiling moc_comic_db.cpp
+moc ../YACReaderLibrary/server/controllers/versioncontroller.h
+moc ../YACReaderLibrary/server/controllers/v1/comiccontroller.h
+compiling moc_library_item.cpp
+moc ../YACReaderLibrary/server/controllers/v1/errorcontroller.h
+moc ../YACReaderLibrary/server/controllers/v1/foldercontroller.h
+compiling moc_yacreader_local_client.cpp
+moc ../YACReaderLibrary/server/controllers/v1/folderinfocontroller.h
+moc ../YACReaderLibrary/server/controllers/v1/librariescontroller.h
+moc ../YACReaderLibrary/server/controllers/v1/pagecontroller.h
+compiling moc_http_worker.cpp
+moc ../YACReaderLibrary/server/controllers/v1/covercontroller.h
+compiling moc_yacreader_flow_gl.cpp
+moc ../YACReaderLibrary/server/controllers/v1/updatecomiccontroller.h
+compiling moc_goto_flow_gl.cpp
+moc ../YACReaderLibrary/server/controllers/v1/comicdownloadinfocontroller.h
+moc ../YACReaderLibrary/server/controllers/v1/synccontroller.h
+compiling moc_help_about_dialog.cpp
+moc ../YACReaderLibrary/server/controllers/v2/comiccontroller_v2.h
+compiling moc_yacreader_field_edit.cpp
+moc ../YACReaderLibrary/server/controllers/v2/errorcontroller_v2.h
+compiling moc_yacreader_field_plain_text_edit.cpp
+moc ../YACReaderLibrary/server/controllers/v2/folderinfocontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/librariescontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/pagecontroller_v2.h
+compiling moc_yacreader_flow.cpp
+moc ../YACReaderLibrary/server/controllers/v2/covercontroller_v2.h
+compiling moc_yacreader_flow_config_widget.cpp
+compiling moc_yacreader_options_dialog.cpp
+moc ../YACReaderLibrary/server/controllers/v2/updatecomiccontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/comicdownloadinfocontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/synccontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/foldercontentcontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/tagscontroller_v2.h
+compiling moc_yacreader_spin_slider_widget.cpp
+moc ../YACReaderLibrary/server/controllers/v2/tagcontentcontroller_v2.h
+compiling moc_yacreader_busy_widget.cpp
+moc ../YACReaderLibrary/server/controllers/v2/favoritescontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/readingcomicscontroller_v2.h
+compiling moc_rounded_corners_dialog.cpp
+moc ../YACReaderLibrary/server/controllers/v2/readinglistscontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/readinglistcontentcontroller_v2.h
+compiling moc_whats_new_dialog.cpp
+moc ../YACReaderLibrary/server/controllers/v2/comicfullinfocontroller_v2.h
+moc ../YACReaderLibrary/server/controllers/v2/readinglistinfocontroller_v2.h
+compiling moc_yacreader_gl_flow_config_widget.cpp
+compiling moc_compressed_archive.cpp
+compiling moc_edit_shortcuts_dialog.cpp
+moc ../YACReaderLibrary/server/controllers/v2/taginfocontroller_v2.h
+compiling moc_actions_groups_model.cpp
+moc ../YACReaderLibrary/server/controllers/v2/comiccontrollerinreadinglist_v2.h
+moc ../YACReaderLibrary/server/controllers/webui/statuspagecontroller.h
+compiling moc_actions_shortcuts_model.cpp
+compiling moc_edit_shortcut_item_delegate.cpp
+moc ../third_party/QtWebApp/httpserver/httplistener.h
+moc ../third_party/QtWebApp/httpserver/httpconnectionhandler.h
+compiling moc_QsLogDestFunctor.cpp
+moc ../third_party/QtWebApp/httpserver/httpconnectionhandlerpool.h
+moc ../third_party/QtWebApp/httpserver/httprequesthandler.h
+moc ../third_party/QtWebApp/httpserver/httpsessionstore.h
+moc ../third_party/QtWebApp/httpserver/staticfilecontroller.h
+moc ../third_party/QtWebApp/templateengine/templateloader.h
+moc ../third_party/QtWebApp/templateengine/templatecache.h
+moc ../compressed_archive/unarr/compressed_archive.h
+moc ../third_party/QsLog/QsLogDestFunctor.h
+compiling moc_library_creator.cpp
+compiling moc_package_manager.cpp
+compiling moc_bundle_creator.cpp
+compiling moc_data_base_management.cpp
+compiling moc_initial_comic_info_extractor.cpp
+compiling moc_xml_info_library_scanner.cpp
+compiling moc_comic_db.cpp
+compiling moc_library_item.cpp
+compiling moc_comic.cpp
+compiling moc_bookmarks.cpp
+compiling moc_yacreader_local_server.cpp
+compiling moc_comics_remover.cpp
+compiling moc_http_worker.cpp
+compiling moc_yacreader_libraries.cpp
+compiling moc_comic_files_manager.cpp
+compiling moc_console_ui_library_creator.cpp
+compiling moc_libraries_update_coordinator.cpp
+compiling moc_foldermetadatacontroller_v2.cpp
+compiling moc_searchcontroller_v2.cpp
+compiling moc_requestmapper.cpp
+compiling moc_yacreader_http_server.cpp
+compiling moc_yacreader_http_session.cpp
+compiling moc_yacreader_http_session_store.cpp
+compiling moc_versioncontroller.cpp
+compiling moc_comiccontroller.cpp
+compiling moc_errorcontroller.cpp
+compiling moc_foldercontroller.cpp
+compiling moc_folderinfocontroller.cpp
+compiling moc_librariescontroller.cpp
+compiling moc_pagecontroller.cpp
+compiling moc_covercontroller.cpp
+compiling moc_updatecomiccontroller.cpp
+compiling moc_comicdownloadinfocontroller.cpp
+compiling moc_synccontroller.cpp
+compiling moc_comiccontroller_v2.cpp
+compiling moc_errorcontroller_v2.cpp
+compiling moc_folderinfocontroller_v2.cpp
+compiling moc_librariescontroller_v2.cpp
+compiling moc_pagecontroller_v2.cpp
+linking YACReader
+compiling moc_covercontroller_v2.cpp
+compiling moc_updatecomiccontroller_v2.cpp
+compiling moc_comicdownloadinfocontroller_v2.cpp
+compiling moc_synccontroller_v2.cpp
+compiling moc_foldercontentcontroller_v2.cpp
+compiling moc_tagscontroller_v2.cpp
+compiling moc_tagcontentcontroller_v2.cpp
+compiling moc_favoritescontroller_v2.cpp
+compiling moc_readingcomicscontroller_v2.cpp
+compiling moc_readinglistscontroller_v2.cpp
+compiling moc_readinglistcontentcontroller_v2.cpp
+compiling moc_comicfullinfocontroller_v2.cpp
+compiling moc_readinglistinfocontroller_v2.cpp
+compiling moc_taginfocontroller_v2.cpp
+compiling moc_comiccontrollerinreadinglist_v2.cpp
+compiling moc_statuspagecontroller.cpp
+compiling moc_httplistener.cpp
+compiling moc_httpconnectionhandler.cpp
+compiling moc_httpconnectionhandlerpool.cpp
+compiling moc_httprequesthandler.cpp
+compiling moc_httpsessionstore.cpp
+compiling moc_staticfilecontroller.cpp
+compiling moc_templateloader.cpp
+compiling moc_templatecache.cpp
+compiling moc_compressed_archive.cpp
+compiling moc_QsLogDestFunctor.cpp
+linking YACReaderLibraryServer
+make[1]: Leaving directory '/build/yacreader-poppler-git/src/yacreader/YACReader'
+cd YACReaderLibrary/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /build/yacreader-poppler-git/src/yacreader/YACReaderLibrary/YACReaderLibrary.pro 'CONFIG+=poppler unarr server_standalone' ) && make -f Makefile 
+Project MESSAGE: Using system provided installation of poppler-qt6 found by pkg-config.
+Project MESSAGE: Using system provided unarr installation found by pkg-config.
+make[1]: Entering directory '/build/yacreader-poppler-git/src/yacreader/YACReaderLibrary'
+lrelease yacreaderlibrary_es.ts
+Updating '../release/languages/yacreaderlibrary_es.qm'...
+    Generated 478 translation(s) (397 finished and 81 unfinished)
+    Ignored 22 untranslated source text(s)
+lrelease yacreaderlibrary_ru.ts
+Updating '../release/languages/yacreaderlibrary_ru.qm'...
+    Generated 366 translation(s) (303 finished and 63 unfinished)
+    Ignored 134 untranslated source text(s)
+lrelease yacreaderlibrary_pt.ts
+Updating '../release/languages/yacreaderlibrary_pt.qm'...
+    Generated 60 translation(s) (46 finished and 14 unfinished)
+    Ignored 440 untranslated source text(s)
+lrelease yacreaderlibrary_fr.ts
+Updating '../release/languages/yacreaderlibrary_fr.qm'...
+    Generated 282 translation(s) (232 finished and 50 unfinished)
+    Ignored 218 untranslated source text(s)
+lrelease yacreaderlibrary_nl.ts
+Updating '../release/languages/yacreaderlibrary_nl.qm'...
+    Generated 201 translation(s) (171 finished and 30 unfinished)
+    Ignored 299 untranslated source text(s)
+lrelease yacreaderlibrary_tr.ts
+Updating '../release/languages/yacreaderlibrary_tr.qm'...
+    Generated 413 translation(s) (349 finished and 64 unfinished)
+    Ignored 87 untranslated source text(s)
+lrelease yacreaderlibrary_de.ts
+Updating '../release/languages/yacreaderlibrary_de.qm'...
+    Generated 415 translation(s) (351 finished and 64 unfinished)
+    Ignored 85 untranslated source text(s)
+lrelease yacreaderlibrary_zh_CN.ts
+Updating '../release/languages/yacreaderlibrary_zh_CN.qm'...
+    Generated 492 translation(s) (410 finished and 82 unfinished)
+    Ignored 8 untranslated source text(s)
+lrelease yacreaderlibrary_zh_TW.ts
+Updating '../release/languages/yacreaderlibrary_zh_TW.qm'...
+    Generated 417 translation(s) (345 finished and 72 unfinished)
+    Ignored 83 untranslated source text(s)
+lrelease yacreaderlibrary_zh_HK.ts
+Updating '../release/languages/yacreaderlibrary_zh_HK.qm'...
+    Generated 417 translation(s) (345 finished and 72 unfinished)
+    Ignored 83 untranslated source text(s)
+lrelease yacreaderlibrary_it.ts
+Updating '../release/languages/yacreaderlibrary_it.qm'...
+    Generated 365 translation(s) (302 finished and 63 unfinished)
+    Ignored 135 untranslated source text(s)
+lrelease yacreaderlibrary_en.ts
+Updating '../release/languages/yacreaderlibrary_en.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 500 untranslated source text(s)
+compiling comic_flow.cpp
+compiling ../common/concurrent_queue.cpp
+compiling ../common/cover_utils.cpp
+compiling create_library_dialog.cpp
+compiling db/comic_query_result_processor.cpp
+compiling db/folder_query_result_processor.cpp
+compiling db/query_lexer.cpp
+compiling db/search_query.cpp
+compiling folder_content_view.cpp
+compiling initial_comic_info_extractor.cpp
+compiling libraries_update_coordinator.cpp
+compiling library_comic_opener.cpp
+compiling library_creator.cpp
+compiling library_window.cpp
+compiling library_window_actions.cpp
+compiling main.cpp
+compiling add_library_dialog.cpp
+compiling recent_visibility_coordinator.cpp
+compiling rename_library_dialog.cpp
+compiling properties_dialog.cpp
+compiling options_dialog.cpp
+compiling export_library_dialog.cpp
+make[1]: Leaving directory '/build/yacreader-poppler-git/src/yacreader/YACReaderLibraryServer'
+compiling import_library_dialog.cpp
+compiling package_manager.cpp
+In file included from /usr/include/qt6/QtWidgets/QDialog:1,
+                 from create_library_dialog.h:6,
+                 from create_library_dialog.cpp:1:
+/usr/include/qt6/QtWidgets/qdialog.h:52:18: warning: ‘virtual void QDialog::open()’ was hidden [-Woverloaded-virtual=]
+   52 |     virtual void open();
+      |                  ^~~~
+create_library_dialog.h:38:10: note:   by ‘void CreateLibraryDialog::open(const YACReaderLibraries&)’
+   38 |     void open(const YACReaderLibraries &libraries);
+      |          ^~~~
+compiling bundle_creator.cpp
+compiling export_comics_info_dialog.cpp
+compiling import_comics_info_dialog.cpp
+compiling server_config_dialog.cpp
+compiling comic_flow_widget.cpp
+compiling db_helper.cpp
+library_creator.cpp: In member function ‘void LibraryCreator::update(QDir)’:
+library_creator.cpp:668:78: warning: comparison of integer expressions of different signedness: ‘qulonglong’ {aka ‘long long unsigned int’} and ‘qint64’ {aka ‘long long int’} [-Wsign-compare]
+  668 |                                 auto sizeHasChanged = comicDB->getFileSize() != fileInfoS.size();
+      |                                                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+library_creator.cpp:669:75: warning: comparison of integer expressions of different signedness: ‘long long unsigned int’ and ‘long long int’ [-Wsign-compare]
+  669 |                                 auto hasBeenModified = added > 0 && added < lastModified && checkModifiedDatesOnUpdate;
+      |                                                                     ~~~~~~^~~~~~~~~~~~~~
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:137:40: warning: ‘Qt::AA_EnableHighDpiScaling’ is deprecated: High-DPI scaling is always enabled. This attribute no longer has any effect. [-Wdeprecated-declarations]
+  137 |         QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qobjectdefs.h:12,
+                 from /usr/include/qt6/QtGui/qwindowdefs.h:8,
+                 from /usr/include/qt6/QtWidgets/qwidget.h:8,
+                 from /usr/include/qt6/QtWidgets/qmainwindow.h:8,
+                 from /usr/include/qt6/QtWidgets/QMainWindow:1,
+                 from library_window.h:4,
+                 from main.cpp:1:
+/usr/include/qt6/QtCore/qnamespace.h:459:9: note: declared here
+  459 |         AA_EnableHighDpiScaling Q_DECL_ENUMERATOR_DEPRECATED_X(
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:140:36: warning: ‘Qt::AA_UseHighDpiPixmaps’ is deprecated: High-DPI pixmaps are always enabled. This attribute no longer has any effect. [-Wdeprecated-declarations]
+  140 |     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
+      |                                    ^~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qnamespace.h:448:9: note: declared here
+  448 |         AA_UseHighDpiPixmaps Q_DECL_ENUMERATOR_DEPRECATED_X(
+      |         ^~~~~~~~~~~~~~~~~~~~
+main.cpp:182:20: warning: ignoring return value of ‘bool QTranslator::load(const QLocale&, const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  182 |     translator.load(QLocale(), "yacreaderlibrary", "_", QString(DATADIR) + "/yacreader/languages");
+      |     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QtCore:294,
+                 from yacreader_libraries.h:4,
+                 from library_window.h:12:
+/usr/include/qt6/QtCore/qtranslator.h:37:24: note: declared here
+   37 |     [[nodiscard]] bool load(const QLocale & locale,
+      |                        ^~~~
+folder_content_view.cpp: In member function ‘bool FolderContentView::canDropFormats(const QString&)’:
+folder_content_view.cpp:319:55: warning: unused parameter ‘formats’ [-Wunused-parameter]
+  319 | bool FolderContentView::canDropFormats(const QString &formats)
+      |                                        ~~~~~~~~~~~~~~~^~~~~~~
+In file included from /usr/include/qt6/QtWidgets/qfiledialog.h:11,
+                 from /usr/include/qt6/QtWidgets/QFileDialog:1,
+                 from library_window.cpp:13:
+/usr/include/qt6/QtWidgets/qdialog.h:52:18: warning: ‘virtual void QDialog::open()’ was hidden [-Woverloaded-virtual=]
+   52 |     virtual void open();
+      |                  ^~~~
+In file included from library_window.cpp:32:
+create_library_dialog.h:38:10: note:   by ‘void CreateLibraryDialog::open(const YACReaderLibraries&)’
+   38 |     void open(const YACReaderLibraries &libraries);
+      |          ^~~~
+/usr/include/qt6/QtWidgets/qdialog.h:52:18: warning: ‘virtual void QDialog::open()’ was hidden [-Woverloaded-virtual=]
+   52 |     virtual void open();
+      |                  ^~~~
+In file included from library_window.cpp:36:
+import_library_dialog.h:40:10: note:   by ‘void ImportLibraryDialog::open(const YACReaderLibraries&)’
+   40 |     void open(const YACReaderLibraries &libs);
+      |          ^~~~
+compiling db/data_base_management.cpp
+compiling db/folder_item.cpp
+library_window.cpp: In member function ‘void LibraryWindow::removeLibrary()’:
+library_window.cpp:1876:209: warning: ‘QMessageBox::QMessageBox(const QString&, const QString&, Icon, int, int, int, QWidget*, Qt::WindowFlags)’ is deprecated: Use the overload taking StandardButtons instead. [-Wdeprecated-declarations]
+ 1876 |     QMessageBox *messageBox = new QMessageBox(tr("Are you sure?"), tr("Do you want remove ") + currentLibrary + tr(" library?"), QMessageBox::Question, QMessageBox::Yes, QMessageBox::YesToAll, QMessageBox::No);
+      |                                                                                                                                                                                                                 ^
+In file included from /usr/include/qt6/QtWidgets/QtWidgets:186,
+                 from import_widget.h:4,
+                 from library_window.cpp:25:
+/usr/include/qt6/QtWidgets/qmessagebox.h:214:5: note: declared here
+  214 |     QMessageBox(const QString &title, const QString &text, Icon icon,
+      |     ^~~~~~~~~~~
+compiling db/folder_model.cpp
+compiling db/comic_model.cpp
+compiling db/comic_item.cpp
+compiling ../common/comic_db.cpp
+compiling ../common/folder.cpp
+server_config_dialog.cpp: In constructor ‘ServerConfigDialog::ServerConfigDialog(QWidget*)’:
+server_config_dialog.cpp:107:32: warning: ‘void QCheckBox::stateChanged(int)’ is deprecated: Use checkStateChanged() instead [-Wdeprecated-declarations]
+  107 |     connect(check, &QCheckBox::stateChanged, this, &ServerConfigDialog::enableServer);
+      |                                ^~~~~~~~~~~~
+In file included from /usr/include/qt6/QtWidgets/QCheckBox:1,
+                 from server_config_dialog.h:9,
+                 from server_config_dialog.cpp:8:
+/usr/include/qt6/QtWidgets/qcheckbox.h:41:10: note: declared here
+   41 |     void stateChanged(int);
+      |          ^~~~~~~~~~~~
+server_config_dialog.cpp: In member function ‘void ServerConfigDialog::generateQR(const QString&)’:
+server_config_dialog.cpp:176:62: warning: ‘QBitmap& QBitmap::operator=(const QPixmap&)’ is deprecated: Use fromPixmap instead. [-Wdeprecated-declarations]
+  176 |     image = image.scaled(qrCode->size() * devicePixelRatioF());
+      |                                                              ^
+In file included from /usr/include/qt6/QtGui/QBitmap:1,
+                 from server_config_dialog.cpp:4:
+/usr/include/qt6/QtGui/qbitmap.h:28:69: note: declared here
+   28 |     QT_DEPRECATED_VERSION_X_6_0("Use fromPixmap instead.") QBitmap &operator=(const QPixmap &);
+      |                                                                     ^~~~~~~~
+In file included from /usr/include/qt6/QtWidgets/QDialog:1,
+                 from import_library_dialog.h:5,
+                 from import_library_dialog.cpp:1:
+/usr/include/qt6/QtWidgets/qdialog.h:52:18: warning: ‘virtual void QDialog::open()’ was hidden [-Woverloaded-virtual=]
+   52 |     virtual void open();
+      |                  ^~~~
+import_library_dialog.h:40:10: note:   by ‘void ImportLibraryDialog::open(const YACReaderLibraries&)’
+   40 |     void open(const YACReaderLibraries &libs);
+      |          ^~~~
+compiling ../common/library_item.cpp
+compiling ../common/comic.cpp
+compiling ../common/bookmarks.cpp
+compiling ../common/pictureflow.cpp
+compiling ../common/custom_widgets.cpp
+compiling ../common/qnaturalsorting.cpp
+compiling no_libraries_widget.cpp
+compiling import_widget.cpp
+compiling trayicon_controller.cpp
+compiling xml_info_library_scanner.cpp
+compiling xml_info_parser.cpp
+compiling yacreader_content_views_manager.cpp
+compiling yacreader_local_server.cpp
+compiling yacreader_main_toolbar.cpp
+../common/comic_db.cpp: In member function ‘QString ComicDB::toTXT()’:
+../common/comic_db.cpp:38:52: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+   38 |     txt.append(QString("contrast:%1\r\n").arg(info.contrast));
+      |                                                    ^~~~~~~~
+In file included from ../common/comic_db.cpp:1:
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:38:52: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+   38 |     txt.append(QString("contrast:%1\r\n").arg(info.contrast));
+      |                                                    ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:38:52: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+   38 |     txt.append(QString("contrast:%1\r\n").arg(info.contrast));
+      |                                                    ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp: In constructor ‘ComicInfo::ComicInfo()’:
+../common/comic_db.cpp:279:7: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  279 |       brightness(-1),
+      |       ^~~~~~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:279:7: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  279 |       brightness(-1),
+      |       ^~~~~~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:280:7: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  280 |       contrast(-1),
+      |       ^~~~~~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:280:7: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  280 |       contrast(-1),
+      |       ^~~~~~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:281:7: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  281 |       gamma(-1)
+      |       ^~~~~~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:281:7: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  281 |       gamma(-1)
+      |       ^~~~~~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In copy constructor ‘ComicInfo::ComicInfo(const ComicInfo&)’:
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:286:15: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  286 |     : QObject()
+      |               ^
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In member function ‘ComicInfo& ComicInfo::operator=(const ComicInfo&)’:
+../common/comic_db.cpp:367:5: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:5: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:28: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |                            ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:28: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |                            ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:367:28: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  367 |     brightness = comicInfo.brightness;
+      |                            ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:368:5: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |     ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:5: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |     ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:26: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |                          ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:26: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |                          ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:368:26: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  368 |     contrast = comicInfo.contrast;
+      |                          ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:369:5: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |     ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:5: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |     ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:23: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |                       ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:23: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |                       ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:369:23: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  369 |     gamma = comicInfo.gamma;
+      |                       ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In function ‘QDataStream& operator<<(QDataStream&, const ComicInfo&)’:
+../common/comic_db.cpp:655:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  655 |     stream << comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:655:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  655 |     stream << comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:655:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  655 |     stream << comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:656:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  656 |     stream << comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:656:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  656 |     stream << comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:656:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  656 |     stream << comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:657:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  657 |     stream << comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:657:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  657 |     stream << comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:657:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  657 |     stream << comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp: In function ‘QDataStream& operator>>(QDataStream&, ComicInfo&)’:
+../common/comic_db.cpp:740:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  740 |     stream >> comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:740:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  740 |     stream >> comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:740:25: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  740 |     stream >> comicInfo.brightness;
+      |                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+../common/comic_db.cpp:741:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  741 |     stream >> comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:741:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  741 |     stream >> comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:741:25: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  741 |     stream >> comicInfo.contrast;
+      |                         ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+../common/comic_db.cpp:742:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  742 |     stream >> comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:742:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  742 |     stream >> comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+../common/comic_db.cpp:742:25: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  742 |     stream >> comicInfo.gamma;
+      |                         ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+db_helper.cpp: In static member function ‘static void DBHelper::update(ComicInfo*, QSqlDatabase&)’:
+db_helper.cpp:771:57: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  771 |     updateComicInfo.bindValue(":brightness", comicInfo->brightness);
+      |                                                         ^~~~~~~~~~
+In file included from db_helper.cpp:20:
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+db_helper.cpp:771:57: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  771 |     updateComicInfo.bindValue(":brightness", comicInfo->brightness);
+      |                                                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+db_helper.cpp:771:57: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  771 |     updateComicInfo.bindValue(":brightness", comicInfo->brightness);
+      |                                                         ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+db_helper.cpp:772:55: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  772 |     updateComicInfo.bindValue(":contrast", comicInfo->contrast);
+      |                                                       ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+db_helper.cpp:772:55: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  772 |     updateComicInfo.bindValue(":contrast", comicInfo->contrast);
+      |                                                       ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+db_helper.cpp:772:55: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  772 |     updateComicInfo.bindValue(":contrast", comicInfo->contrast);
+      |                                                       ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+db_helper.cpp:773:52: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  773 |     updateComicInfo.bindValue(":gamma", comicInfo->gamma);
+      |                                                    ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+db_helper.cpp:773:52: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  773 |     updateComicInfo.bindValue(":gamma", comicInfo->gamma);
+      |                                                    ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+db_helper.cpp:773:52: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  773 |     updateComicInfo.bindValue(":gamma", comicInfo->gamma);
+      |                                                    ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+db_helper.cpp: In static member function ‘static ComicInfo DBHelper::getComicInfoFromQuery(QSqlQuery&, const QString&)’:
+db_helper.cpp:2014:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2014 |     comicInfo.brightness = query.value(brightness).toInt();
+      |               ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+db_helper.cpp:2014:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2014 |     comicInfo.brightness = query.value(brightness).toInt();
+      |               ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+db_helper.cpp:2014:15: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2014 |     comicInfo.brightness = query.value(brightness).toInt();
+      |               ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+db_helper.cpp:2015:15: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2015 |     comicInfo.contrast = query.value(contrast).toInt();
+      |               ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+db_helper.cpp:2015:15: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2015 |     comicInfo.contrast = query.value(contrast).toInt();
+      |               ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+db_helper.cpp:2015:15: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2015 |     comicInfo.contrast = query.value(contrast).toInt();
+      |               ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+db_helper.cpp:2016:15: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2016 |     comicInfo.gamma = query.value(gamma).toInt();
+      |               ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+db_helper.cpp:2016:15: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2016 |     comicInfo.gamma = query.value(gamma).toInt();
+      |               ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+db_helper.cpp:2016:15: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+ 2016 |     comicInfo.gamma = query.value(gamma).toInt();
+      |               ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+compiling comics_remover.cpp
+db_helper.cpp: In static member function ‘static QString DBHelper::getLibraryInfo(QUuid)’:
+db_helper.cpp:2140:36: warning: ‘QSqlQuery QSqlDatabase::exec(const QString&) const’ is deprecated: Use QSqlQuery::exec() instead. [-Wdeprecated-declarations]
+ 2140 |         auto foldersQuery = db.exec("SELECT COUNT(*) FROM folder WHERE id <> 1");
+      |                             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtSql/QSqlDatabase:1,
+                 from db_helper.cpp:11:
+/usr/include/qt6/QtSql/qsqldatabase.h:60:15: note: declared here
+   60 |     QSqlQuery exec(const QString& query = QString()) const;
+      |               ^~~~
+db_helper.cpp:2146:35: warning: ‘QSqlQuery QSqlDatabase::exec(const QString&) const’ is deprecated: Use QSqlQuery::exec() instead. [-Wdeprecated-declarations]
+ 2146 |         auto comicsQuery = db.exec("SELECT COUNT(*) FROM comic");
+      |                            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtSql/qsqldatabase.h:60:15: note: declared here
+   60 |     QSqlQuery exec(const QString& query = QString()) const;
+      |               ^~~~
+db_helper.cpp:2152:39: warning: ‘QSqlQuery QSqlDatabase::exec(const QString&) const’ is deprecated: Use QSqlQuery::exec() instead. [-Wdeprecated-declarations]
+ 2152 |         auto readComicsQuery = db.exec("SELECT count(*) FROM comic c INNER JOIN comic_info ci ON c.comicInfoId = ci.id WHERE ci.read = 1");
+      |                                ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtSql/qsqldatabase.h:60:15: note: declared here
+   60 |     QSqlQuery exec(const QString& query = QString()) const;
+      |               ^~~~
+compiling ../common/http_worker.cpp
+compiling ../common/yacreader_global.cpp
+compiling ../common/yacreader_global_gui.cpp
+compiling yacreader_libraries.cpp
+../common/pictureflow.cpp: In member function ‘void PictureFlow::mousePressEvent(QMouseEvent*, int)’:
+../common/pictureflow.cpp:1264:18: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1264 |     if ((event->x() > (width() + slideWidth) / 2 && !(d->state->flowRightToLeft)) || (event->x() < (width() - slideWidth) / 2 && d->state->flowRightToLeft))
+      |          ~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/QKeyEvent:1,
+                 from ../common/pictureflow.cpp:47:
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/pictureflow.cpp:1264:95: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1264 |     if ((event->x() > (width() + slideWidth) / 2 && !(d->state->flowRightToLeft)) || (event->x() < (width() - slideWidth) / 2 && d->state->flowRightToLeft))
+      |                                                                                       ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/pictureflow.cpp:1266:23: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1266 |     else if ((event->x() < (width() - slideWidth) / 2 && !(d->state->flowRightToLeft)) || (event->x() > (width() + slideWidth) / 2 && d->state->flowRightToLeft))
+      |               ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/pictureflow.cpp:1266:100: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1266 |     else if ((event->x() < (width() - slideWidth) / 2 && !(d->state->flowRightToLeft)) || (event->x() > (width() + slideWidth) / 2 && d->state->flowRightToLeft))
+      |                                                                                            ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+compiling ../common/exit_check.cpp
+compiling comics_view.cpp
+compiling classic_comics_view.cpp
+compiling empty_folder_widget.cpp
+db/folder_model.cpp: In member function ‘void FolderModel::reload(const QModelIndex&)’:
+db/folder_model.cpp:318:45: warning: unused parameter ‘index’ [-Wunused-parameter]
+  318 | void FolderModel::reload(const QModelIndex &index)
+      |                          ~~~~~~~~~~~~~~~~~~~^~~~~
+compiling no_search_results_widget.cpp
+compiling comic_files_manager.cpp
+compiling db/reading_list_model.cpp
+compiling db/reading_list_item.cpp
+compiling yacreader_folders_view.cpp
+compiling yacreader_reading_lists_view.cpp
+compiling add_label_dialog.cpp
+xml_info_library_scanner.cpp: In member function ‘void YACReader::XMLInfoLibraryScanner::scanFolder(const QString&, const QString&, const QString&, const QModelIndex&)’:
+xml_info_library_scanner.cpp:32:101: warning: unused parameter ‘folder’ [-Wunused-parameter]
+   32 | void XMLInfoLibraryScanner::scanFolder(const QString &source, const QString &target, const QString &folder, const QModelIndex &dest)
+      |                                                                                      ~~~~~~~~~~~~~~~^~~~~~
+xml_info_library_scanner.cpp: In member function ‘void YACReader::XMLInfoLibraryScanner::updateFromSQLQuery(QSqlDatabase&, QSqlQuery&)’:
+xml_info_library_scanner.cpp:108:9: warning: unused variable ‘id’ [-Wunused-variable]
+  108 |     int id = record.indexOf("id");
+      |         ^~
+compiling yacreader_history_controller.cpp
+compiling yacreader_navigation_controller.cpp
+compiling empty_label_widget.cpp
+compiling empty_container_info.cpp
+compiling empty_special_list.cpp
+compiling empty_reading_list_widget.cpp
+compiling ../common/scroll_management.cpp
+compiling ../common/opengl_checker.cpp
+compiling info_comics_view.cpp
+compiling yacreader_comics_selection_helper.cpp
+compiling yacreader_comic_info_helper.cpp
+compiling db/reading_list.cpp
+compiling current_comic_view_helper.cpp
+compiling db/query_parser.cpp
+compiling ip_config_helper.cpp
+compiling ../common/global_info_provider.cpp
+compiling ../common/gl/yacreader_flow_gl.cpp
+compiling server/controllers/v2/foldermetadatacontroller_v2.cpp
+yacreader_reading_lists_view.cpp: In member function ‘virtual void YACReaderReadingListsView::dragMoveEvent(QDragMoveEvent*)’:
+yacreader_reading_lists_view.cpp:28:54: warning: ‘QPoint QDropEvent::pos() const’ is deprecated: Use position().toPoint() [-Wdeprecated-declarations]
+   28 |     QModelIndex destinationIndex = indexAt(event->pos());
+      |                                            ~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/qtextlayout.h:7,
+                 from /usr/include/qt6/QtGui/qabstracttextdocumentlayout.h:9,
+                 from /usr/include/qt6/QtGui/QtGui:6,
+                 from /usr/include/qt6/QtWidgets/QtWidgetsDepends:4,
+                 from /usr/include/qt6/QtWidgets/QtWidgets:3,
+                 from ../custom_widgets/yacreader_treeview.h:4,
+                 from yacreader_reading_lists_view.h:4,
+                 from yacreader_reading_lists_view.cpp:1:
+/usr/include/qt6/QtGui/qevent.h:715:19: note: declared here
+  715 |     inline QPoint pos() const { return position().toPoint(); }
+      |                   ^~~
+db/query_parser.cpp: In function ‘std::string parseDate(const std::string&, const std::string&)’:
+db/query_parser.cpp:33:73: warning: unused parameter ‘expOperator’ [-Wunused-parameter]
+   33 | std::string parseDate(const std::string &dateString, const std::string &expOperator)
+      |                                                      ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+compiling server/controllers/v2/searchcontroller_v2.cpp
+compiling server/static.cpp
+yacreader_folders_view.cpp: In member function ‘virtual void YACReaderFoldersView::dropEvent(QDropEvent*)’:
+yacreader_folders_view.cpp:60:58: warning: ‘QPoint QDropEvent::pos() const’ is deprecated: Use position().toPoint() [-Wdeprecated-declarations]
+   60 |         QModelIndex destinationIndex = indexAt(event->pos());
+      |                                                ~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/qtextlayout.h:7,
+                 from /usr/include/qt6/QtGui/qabstracttextdocumentlayout.h:9,
+                 from /usr/include/qt6/QtGui/QtGui:6,
+                 from /usr/include/qt6/QtWidgets/QtWidgetsDepends:4,
+                 from /usr/include/qt6/QtWidgets/QtWidgets:3,
+                 from ../custom_widgets/yacreader_treeview.h:4,
+                 from yacreader_folders_view.h:4,
+                 from yacreader_folders_view.cpp:1:
+/usr/include/qt6/QtGui/qevent.h:715:19: note: declared here
+  715 |     inline QPoint pos() const { return position().toPoint(); }
+      |                   ^~~
+compiling server/requestmapper.cpp
+compiling server/yacreader_http_server.cpp
+compiling server/yacreader_http_session.cpp
+compiling server/yacreader_http_session_store.cpp
+compiling server/yacreader_server_data_helper.cpp
+compiling server/controllers/versioncontroller.cpp
+compiling server/controllers/v1/comiccontroller.cpp
+compiling server/controllers/v1/errorcontroller.cpp
+compiling server/controllers/v1/foldercontroller.cpp
+compiling server/controllers/v1/folderinfocontroller.cpp
+compiling server/controllers/v1/librariescontroller.cpp
+compiling server/controllers/v1/pagecontroller.cpp
+compiling server/controllers/v1/covercontroller.cpp
+compiling server/controllers/v1/updatecomiccontroller.cpp
+compiling server/controllers/v1/comicdownloadinfocontroller.cpp
+compiling server/controllers/v1/synccontroller.cpp
+compiling server/controllers/v2/comiccontroller_v2.cpp
+compiling server/controllers/v2/errorcontroller_v2.cpp
+compiling server/controllers/v2/folderinfocontroller_v2.cpp
+server/yacreader_server_data_helper.cpp: In static member function ‘static QJsonObject YACReaderServerDataHelper::fullComicToJSON(qulonglong, QUuid, const ComicDB&)’:
+server/yacreader_server_data_helper.cpp:170:37: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  170 |     json["brightness"] = comic.info.brightness;
+      |                                     ^~~~~~~~~~
+In file included from server/yacreader_server_data_helper.h:6,
+                 from server/yacreader_server_data_helper.cpp:1:
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+server/yacreader_server_data_helper.cpp:170:37: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  170 |     json["brightness"] = comic.info.brightness;
+      |                                     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+server/yacreader_server_data_helper.cpp:170:37: warning: ‘ComicInfo::brightness’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  170 |     json["brightness"] = comic.info.brightness;
+      |                                     ^~~~~~~~~~
+../common/comic_db.h:42:48: note: declared here
+   42 |     [[deprecated("Use imageFiltersJson")]] int brightness;
+      |                                                ^~~~~~~~~~
+server/yacreader_server_data_helper.cpp:171:35: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  171 |     json["contrast"] = comic.info.contrast;
+      |                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+server/yacreader_server_data_helper.cpp:171:35: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  171 |     json["contrast"] = comic.info.contrast;
+      |                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+server/yacreader_server_data_helper.cpp:171:35: warning: ‘ComicInfo::contrast’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  171 |     json["contrast"] = comic.info.contrast;
+      |                                   ^~~~~~~~
+../common/comic_db.h:43:48: note: declared here
+   43 |     [[deprecated("Use imageFiltersJson")]] int contrast;
+      |                                                ^~~~~~~~
+server/yacreader_server_data_helper.cpp:172:32: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  172 |     json["gamma"] = comic.info.gamma;
+      |                                ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+server/yacreader_server_data_helper.cpp:172:32: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  172 |     json["gamma"] = comic.info.gamma;
+      |                                ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+server/yacreader_server_data_helper.cpp:172:32: warning: ‘ComicInfo::gamma’ is deprecated: Use imageFiltersJson [-Wdeprecated-declarations]
+  172 |     json["gamma"] = comic.info.gamma;
+      |                                ^~~~~
+../common/comic_db.h:44:48: note: declared here
+   44 |     [[deprecated("Use imageFiltersJson")]] int gamma;
+      |                                                ^~~~~
+compiling server/controllers/v2/librariescontroller_v2.cpp
+compiling server/controllers/v2/pagecontroller_v2.cpp
+../common/gl/yacreader_flow_gl.cpp: In member function ‘virtual void YACReaderFlowGL::mousePressEvent(QMouseEvent*)’:
+../common/gl/yacreader_flow_gl.cpp:1075:63: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1075 |         QVector3D intersection = getPlaneIntersection(event->x(), event->y(), images[currentSelected]);
+      |                                                       ~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/qtextlayout.h:7,
+                 from /usr/include/qt6/QtGui/qabstracttextdocumentlayout.h:9,
+                 from /usr/include/qt6/QtGui/QtGui:6,
+                 from /usr/include/qt6/QtWidgets/QtWidgetsDepends:4,
+                 from /usr/include/qt6/QtWidgets/QtWidgets:3,
+                 from ../common/gl/yacreader_flow_gl.h:16,
+                 from ../common/gl/yacreader_flow_gl.cpp:1:
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/gl/yacreader_flow_gl.cpp:1075:75: warning: ‘int QMouseEvent::y() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1075 |         QVector3D intersection = getPlaneIntersection(event->x(), event->y(), images[currentSelected]);
+      |                                                                   ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:229:16: note: declared here
+  229 |     inline int y() const { return qRound(position().y()); }
+      |                ^
+../common/gl/yacreader_flow_gl.cpp: In member function ‘virtual void YACReaderFlowGL::mouseDoubleClickEvent(QMouseEvent*)’:
+../common/gl/yacreader_flow_gl.cpp:1089:59: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1089 |     QVector3D intersection = getPlaneIntersection(event->x(), event->y(), images[currentSelected]);
+      |                                                   ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../common/gl/yacreader_flow_gl.cpp:1089:71: warning: ‘int QMouseEvent::y() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+ 1089 |     QVector3D intersection = getPlaneIntersection(event->x(), event->y(), images[currentSelected]);
+      |                                                               ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:229:16: note: declared here
+  229 |     inline int y() const { return qRound(position().y()); }
+      |                ^
+compiling server/controllers/v2/covercontroller_v2.cpp
+compiling server/controllers/v2/updatecomiccontroller_v2.cpp
+server/controllers/v1/synccontroller.cpp: In member function ‘virtual void SyncController::service(stefanfrings::HttpRequest&, stefanfrings::HttpResponse&)’:
+server/controllers/v1/synccontroller.cpp:50:49: warning: ‘static void DBHelper::updateFromRemoteClient(qulonglong, const ComicInfo&)’ is deprecated: Server v1 [-Wdeprecated-declarations]
+   50 |                 DBHelper::updateFromRemoteClient(libraryId, info);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from server/controllers/v1/synccontroller.cpp:7:
+./db_helper.h:77:45: note: declared here
+   77 |     [[deprecated("Server v1")]] static void updateFromRemoteClient(qulonglong libraryId, const ComicInfo &comicInfo);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~
+compiling server/controllers/v2/comicdownloadinfocontroller_v2.cpp
+compiling server/controllers/v2/synccontroller_v2.cpp
+compiling server/controllers/v2/foldercontentcontroller_v2.cpp
+compiling server/controllers/v2/tagscontroller_v2.cpp
+compiling server/controllers/v2/tagcontentcontroller_v2.cpp
+compiling server/controllers/v2/favoritescontroller_v2.cpp
+compiling server/controllers/v2/readingcomicscontroller_v2.cpp
+compiling server/controllers/v2/readinglistscontroller_v2.cpp
+compiling server/controllers/v2/readinglistcontentcontroller_v2.cpp
+compiling server/controllers/v2/comicfullinfocontroller_v2.cpp
+compiling server/controllers/v2/readinglistinfocontroller_v2.cpp
+compiling server/controllers/v2/taginfocontroller_v2.cpp
+compiling server/controllers/v2/comiccontrollerinreadinglist_v2.cpp
+compiling server/controllers/webui/statuspagecontroller.cpp
+compiling ../third_party/QtWebApp/httpserver/httpglobal.cpp
+compiling ../third_party/QtWebApp/httpserver/httplistener.cpp
+compiling ../third_party/QtWebApp/httpserver/httpconnectionhandler.cpp
+compiling ../third_party/QtWebApp/httpserver/httpconnectionhandlerpool.cpp
+compiling ../third_party/QtWebApp/httpserver/httprequest.cpp
+compiling ../third_party/QtWebApp/httpserver/httpresponse.cpp
+compiling ../third_party/QtWebApp/httpserver/httpcookie.cpp
+compiling ../third_party/QtWebApp/httpserver/httprequesthandler.cpp
+compiling ../third_party/QtWebApp/httpserver/httpsession.cpp
+compiling ../third_party/QtWebApp/httpserver/httpsessionstore.cpp
+compiling ../third_party/QtWebApp/httpserver/staticfilecontroller.cpp
+compiling ../third_party/QtWebApp/templateengine/template.cpp
+compiling ../third_party/QtWebApp/templateengine/templateloader.cpp
+compiling ../third_party/QtWebApp/templateengine/templatecache.cpp
+compiling ../custom_widgets/help_about_dialog.cpp
+compiling ../custom_widgets/rounded_corners_dialog.cpp
+compiling ../custom_widgets/whats_new_dialog.cpp
+compiling ../custom_widgets/whats_new_controller.cpp
+compiling ../custom_widgets/yacreader_field_edit.cpp
+compiling ../custom_widgets/yacreader_field_plain_text_edit.cpp
+compiling ../custom_widgets/yacreader_flow.cpp
+compiling ../custom_widgets/yacreader_flow_config_widget.cpp
+compiling ../custom_widgets/yacreader_options_dialog.cpp
+compiling ../custom_widgets/yacreader_search_line_edit.cpp
+compiling ../custom_widgets/yacreader_spin_slider_widget.cpp
+compiling ../custom_widgets/yacreader_tool_bar_stretch.cpp
+compiling ../custom_widgets/yacreader_titled_toolbar.cpp
+compiling ../custom_widgets/yacreader_deleting_progress.cpp
+compiling ../custom_widgets/yacreader_table_view.cpp
+compiling ../custom_widgets/yacreader_sidebar.cpp
+compiling ../custom_widgets/yacreader_library_item_widget.cpp
+compiling ../custom_widgets/yacreader_library_list_widget.cpp
+compiling ../custom_widgets/yacreader_treeview.cpp
+compiling ../custom_widgets/yacreader_busy_widget.cpp
+compiling ../custom_widgets/yacreader_cover_label.cpp
+compiling ../custom_widgets/yacreader_gl_flow_config_widget.cpp
+../custom_widgets/yacreader_flow.cpp: In member function ‘virtual void YACReaderFlow::mouseDoubleClickEvent(QMouseEvent*)’:
+../custom_widgets/yacreader_flow.cpp:15:18: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+   15 |     if ((event->x() > (width() - slideSize().width()) / 2) && (event->x() < (width() + slideSize().width()) / 2))
+      |          ~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/QMouseEvent:1,
+                 from ../custom_widgets/yacreader_flow.cpp:3:
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+../custom_widgets/yacreader_flow.cpp:15:72: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+   15 |     if ((event->x() > (width() - slideSize().width()) / 2) && (event->x() < (width() + slideSize().width()) / 2))
+      |                                                                ~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+compiling ../compressed_archive/unarr/compressed_archive.cpp
+compiling comic_vine/comic_vine_json_parser.cpp
+compiling comic_vine/scraper_checkbox.cpp
+compiling comic_vine/comic_vine_dialog.cpp
+compiling comic_vine/comic_vine_client.cpp
+compiling comic_vine/scraper_lineedit.cpp
+../custom_widgets/yacreader_table_view.cpp: In member function ‘virtual void StarEditor::mousePressEvent(QMouseEvent*)’:
+../custom_widgets/yacreader_table_view.cpp:457:43: warning: ‘int QMouseEvent::x() const’ is deprecated: Use position() [-Wdeprecated-declarations]
+  457 |         int star = starAtPosition(event->x());
+      |                                   ~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/QResizeEvent:1,
+                 from ../custom_widgets/yacreader_table_view.cpp:7:
+/usr/include/qt6/QtGui/qevent.h:227:16: note: declared here
+  227 |     inline int x() const { return qRound(position().x()); }
+      |                ^
+compiling comic_vine/title_header.cpp
+compiling comic_vine/series_question.cpp
+compiling comic_vine/search_single_comic.cpp
+compiling comic_vine/search_volume.cpp
+compiling comic_vine/select_comic.cpp
+compiling comic_vine/select_volume.cpp
+compiling comic_vine/model/volumes_model.cpp
+compiling comic_vine/model/comics_model.cpp
+compiling comic_vine/model/json_model.cpp
+compiling comic_vine/model/response_parser.cpp
+compiling comic_vine/scraper_tableview.cpp
+compiling comic_vine/sort_volume_comics.cpp
+compiling comic_vine/model/local_comic_list_model.cpp
+compiling comic_vine/model/volume_comics_model.cpp
+compiling comic_vine/scraper_scroll_label.cpp
+compiling comic_vine/scraper_results_paginator.cpp
+../custom_widgets/yacreader_options_dialog.cpp: In constructor ‘YACReaderOptionsDialog::YACReaderOptionsDialog(QWidget*)’:
+../custom_widgets/yacreader_options_dialog.cpp:47:32: warning: ‘void QCheckBox::stateChanged(int)’ is deprecated: Use checkStateChanged() instead [-Wdeprecated-declarations]
+   47 |     connect(useGL, &QCheckBox::stateChanged, this, &YACReaderOptionsDialog::saveUseGL);
+      |                                ^~~~~~~~~~~~
+In file included from /usr/include/qt6/QtWidgets/QtWidgets:33,
+                 from ../common/gl/yacreader_flow_gl.h:16,
+                 from ../custom_widgets/yacreader_gl_flow_config_widget.h:4,
+                 from ../custom_widgets/yacreader_options_dialog.cpp:5:
+/usr/include/qt6/QtWidgets/qcheckbox.h:41:10: note: declared here
+   41 |     void stateChanged(int);
+      |          ^~~~~~~~~~~~
+../custom_widgets/yacreader_options_dialog.cpp:106:41: warning: ‘void QCheckBox::stateChanged(int)’ is deprecated: Use checkStateChanged() instead [-Wdeprecated-declarations]
+  106 |     connect(gl->vSyncCheck, &QCheckBox::stateChanged, this, &YACReaderOptionsDialog::saveUseVSync);
+      |                                         ^~~~~~~~~~~~
+/usr/include/qt6/QtWidgets/qcheckbox.h:41:10: note: declared here
+   41 |     void stateChanged(int);
+      |          ^~~~~~~~~~~~
+compiling comic_vine/api_key_dialog.cpp
+compiling comic_vine/comic_vine_all_volume_comics_retriever.cpp
+compiling ../third_party/QsLog/QsLogDest.cpp
+compiling ../third_party/QsLog/QsLog.cpp
+compiling ../third_party/QsLog/QsLogDestConsole.cpp
+../custom_widgets/yacreader_treeview.cpp: In member function ‘virtual void YACReaderTreeView::dragMoveEvent(QDragMoveEvent*)’:
+../custom_widgets/yacreader_treeview.cpp:99:48: warning: ‘QPoint QDropEvent::pos() const’ is deprecated: Use position().toPoint() [-Wdeprecated-declarations]
+   99 |     QModelIndex underMouse = indexAt(event->pos());
+      |                                      ~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtGui/qtextlayout.h:7,
+                 from /usr/include/qt6/QtGui/qabstracttextdocumentlayout.h:9,
+                 from /usr/include/qt6/QtGui/QtGui:6,
+                 from /usr/include/qt6/QtWidgets/QtWidgetsDepends:4,
+                 from /usr/include/qt6/QtWidgets/QtWidgets:3,
+                 from ../custom_widgets/yacreader_treeview.h:4,
+                 from ../custom_widgets/yacreader_treeview.cpp:1:
+/usr/include/qt6/QtGui/qevent.h:715:19: note: declared here
+  715 |     inline QPoint pos() const { return position().toPoint(); }
+      |                   ^~~
+../custom_widgets/yacreader_treeview.cpp:101:31: warning: ‘QPoint QDropEvent::pos() const’ is deprecated: Use position().toPoint() [-Wdeprecated-declarations]
+  101 |         expandPos = event->pos();
+      |                     ~~~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:715:19: note: declared here
+  715 |     inline QPoint pos() const { return position().toPoint(); }
+      |                   ^~~
+compiling ../third_party/QsLog/QsLogDestFile.cpp
+compiling ../third_party/QsLog/QsLogDestFunctor.cpp
+comic_vine/comic_vine_dialog.cpp: In member function ‘void ComicVineDialog::goNext()’:
+comic_vine/comic_vine_dialog.cpp:160:26: warning: ignoring return value of ‘auto QtConcurrent::run(Function&&, Args&& ...) [with Function = void (ComicVineDialog::*)(QList<std::pair<ComicDB, QString> >, const SelectedVolumeInfo&); Args = {ComicVineDialog*, QList<std::pair<ComicDB, QString> >&, SelectedVolumeInfo&}]’, declared with attribute ‘nodiscard’: ‘Use QThreadPool::start(Callable&&) if you don't need the returned QFuture’ [-Wunused-result]
+  160 |         QtConcurrent::run(&ComicVineDialog::getComicsInfo, this, matchingInfo, volumeInfo);
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtConcurrent/QtConcurrentRun:1,
+                 from comic_vine/comic_vine_dialog.cpp:11:
+/usr/include/qt6/QtConcurrent/qtconcurrentrun.h:62:6: note: declared here
+   62 | auto run(Function &&f, Args &&...args)
+      |      ^~~
+comic_vine/comic_vine_dialog.cpp:171:26: warning: ignoring return value of ‘auto QtConcurrent::run(Function&&, Args&& ...) [with Function = void (ComicVineDialog::*)(const QString&, const SelectedVolumeInfo&); Args = {ComicVineDialog*, QString&, SelectedVolumeInfo&}]’, declared with attribute ‘nodiscard’: ‘Use QThreadPool::start(Callable&&) if you don't need the returned QFuture’ [-Wunused-result]
+  171 |         QtConcurrent::run(&ComicVineDialog::getComicInfo, this, comicId, volumeInfo);
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtConcurrent/qtconcurrentrun.h:62:6: note: declared here
+   62 | auto run(Function &&f, Args &&...args)
+      |      ^~~
+compiling ../third_party/QsLog/QsLogMessage.cpp
+compiling ../third_party/QsLog/QsLogLevel.cpp
+compiling ../shortcuts_management/edit_shortcuts_dialog.cpp
+compiling ../shortcuts_management/actions_groups_model.cpp
+compiling ../shortcuts_management/actions_shortcuts_model.cpp
+compiling ../shortcuts_management/edit_shortcut_item_delegate.cpp
+compiling ../shortcuts_management/shortcuts_manager.cpp
+compiling ../third_party/QrCode/qrcodegen.cpp
+compiling ../third_party/KDToolBox/KDSignalThrottler.cpp
+In file included from /usr/include/qt6/QtCore/qglobal.h:55,
+                 from /usr/include/qt6/QtCore/qnamespace.h:12,
+                 from /usr/include/qt6/QtCore/qobjectdefs.h:12,
+                 from /usr/include/qt6/QtCore/qobject.h:10,
+                 from /usr/include/qt6/QtCore/QObject:1,
+                 from comic_vine/comic_vine_all_volume_comics_retriever.h:4,
+                 from comic_vine/comic_vine_all_volume_comics_retriever.cpp:1:
+/usr/include/qt6/QtCore/qforeach.h: In instantiation of ‘QtPrivate::QForeachContainer<typename std::decay<_Tp>::type> QtPrivate::qMakeForeachContainer(T&&) [with T = QJsonArray&; typename std::decay<_Tp>::type = QJsonArray]’:
+comic_vine/comic_vine_all_volume_comics_retriever.cpp:76:13:   required from here
+   60 |     for (auto name = QtPrivate::qMakeForeachContainer(container); name.i != name.e; ++name.i) \
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/usr/include/qt6/QtCore/qforeach.h:51:61: warning: ‘void QtPrivate::warnIfContainerIsNotShared(...) [with T = QJsonArray]’ is deprecated: Do not use foreach/Q_FOREACH with containers which are not implicitly shared. Prefer using a range-based for loop with these containers: `for (const auto &it : container)`, keeping in mind that range-based for doesn't copy the container as Q_FOREACH does [-Wdeprecated-declarations]
+   51 |     warnIfContainerIsNotShared<typename std::decay<T>::type>(0);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/qt6/QtCore/qforeach.h:45:13: note: declared here
+   45 | inline void warnIfContainerIsNotShared(...) {}
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling grid_comics_view.cpp
+compiling comics_view_transition.cpp
+rcc images.qrc
+rcc files.qrc
+rcc images_win.qrc
+rcc qml6.qrc
+rcc qml_win.qrc
+generating ./moc_predefs.h
+compiling qrc_images.cpp
+compiling qrc_files.cpp
+compiling qrc_images_win.cpp
+compiling qrc_qml6.cpp
+compiling qrc_qml_win.cpp
+moc comic_flow.h
+moc create_library_dialog.h
+moc db/comic_query_result_processor.h
+moc db/folder_query_result_processor.h
+moc folder_content_view.h
+moc initial_comic_info_extractor.h
+moc libraries_update_coordinator.h
+moc library_creator.h
+moc library_window.h
+moc add_library_dialog.h
+moc recent_visibility_coordinator.h
+moc rename_library_dialog.h
+moc properties_dialog.h
+moc options_dialog.h
+moc export_library_dialog.h
+moc import_library_dialog.h
+moc package_manager.h
+moc bundle_creator.h
+moc export_comics_info_dialog.h
+moc import_comics_info_dialog.h
+moc comic_flow_widget.h
+moc server_config_dialog.h
+moc db/folder_model.h
+moc db/data_base_management.h
+moc db/comic_model.h
+moc ../common/comic_db.h
+moc db/comic_item.h
+moc ../common/library_item.h
+moc ../common/comic.h
+moc ../common/bookmarks.h
+moc ../common/pictureflow.h
+moc no_libraries_widget.h
+moc import_widget.h
+moc xml_info_library_scanner.h
+moc trayicon_controller.h
+moc yacreader_content_views_manager.h
+moc yacreader_local_server.h
+moc yacreader_main_toolbar.h
+moc comics_remover.h
+moc ../common/http_worker.h
+moc yacreader_libraries.h
+moc comics_view.h
+moc classic_comics_view.h
+moc empty_folder_widget.h
+moc no_search_results_widget.h
+moc comic_files_manager.h
+moc db/reading_list_model.h
+moc yacreader_folders_view.h
+moc yacreader_reading_lists_view.h
+moc add_label_dialog.h
+moc yacreader_history_controller.h
+moc yacreader_navigation_controller.h
+moc empty_label_widget.h
+moc empty_container_info.h
+moc info_comics_view.h
+moc yacreader_comics_selection_helper.h
+moc yacreader_comic_info_helper.h
+moc ../common/gl/yacreader_flow_gl.h
+moc server/controllers/v2/foldermetadatacontroller_v2.h
+moc server/controllers/v2/searchcontroller_v2.h
+moc server/requestmapper.h
+moc server/yacreader_http_server.h
+moc server/yacreader_http_session.h
+moc server/yacreader_http_session_store.h
+moc server/controllers/versioncontroller.h
+moc server/controllers/v1/comiccontroller.h
+moc server/controllers/v1/errorcontroller.h
+moc server/controllers/v1/foldercontroller.h
+moc server/controllers/v1/folderinfocontroller.h
+moc server/controllers/v1/librariescontroller.h
+moc server/controllers/v1/pagecontroller.h
+moc server/controllers/v1/covercontroller.h
+moc server/controllers/v1/updatecomiccontroller.h
+moc server/controllers/v1/comicdownloadinfocontroller.h
+moc server/controllers/v1/synccontroller.h
+moc server/controllers/v2/comiccontroller_v2.h
+moc server/controllers/v2/folderinfocontroller_v2.h
+moc server/controllers/v2/errorcontroller_v2.h
+moc server/controllers/v2/librariescontroller_v2.h
+moc server/controllers/v2/pagecontroller_v2.h
+moc server/controllers/v2/covercontroller_v2.h
+moc server/controllers/v2/updatecomiccontroller_v2.h
+moc server/controllers/v2/comicdownloadinfocontroller_v2.h
+moc server/controllers/v2/synccontroller_v2.h
+moc server/controllers/v2/foldercontentcontroller_v2.h
+moc server/controllers/v2/tagcontentcontroller_v2.h
+moc server/controllers/v2/tagscontroller_v2.h
+moc server/controllers/v2/favoritescontroller_v2.h
+moc server/controllers/v2/readingcomicscontroller_v2.h
+moc server/controllers/v2/readinglistscontroller_v2.h
+moc server/controllers/v2/comicfullinfocontroller_v2.h
+moc server/controllers/v2/readinglistcontentcontroller_v2.h
+moc server/controllers/v2/taginfocontroller_v2.h
+moc server/controllers/v2/readinglistinfocontroller_v2.h
+moc server/controllers/v2/comiccontrollerinreadinglist_v2.h
+moc server/controllers/webui/statuspagecontroller.h
+moc ../third_party/QtWebApp/httpserver/httplistener.h
+moc ../third_party/QtWebApp/httpserver/httpconnectionhandler.h
+moc ../third_party/QtWebApp/httpserver/httpconnectionhandlerpool.h
+moc ../third_party/QtWebApp/httpserver/httprequesthandler.h
+moc ../third_party/QtWebApp/httpserver/httpsessionstore.h
+moc ../third_party/QtWebApp/httpserver/staticfilecontroller.h
+moc ../third_party/QtWebApp/templateengine/templateloader.h
+moc ../third_party/QtWebApp/templateengine/templatecache.h
+moc ../custom_widgets/help_about_dialog.h
+moc ../custom_widgets/rounded_corners_dialog.h
+moc ../custom_widgets/yacreader_field_edit.h
+moc ../custom_widgets/whats_new_dialog.h
+moc ../custom_widgets/yacreader_field_plain_text_edit.h
+moc ../custom_widgets/yacreader_flow.h
+moc ../custom_widgets/yacreader_flow_config_widget.h
+moc ../custom_widgets/yacreader_options_dialog.h
+moc ../custom_widgets/yacreader_search_line_edit.h
+moc ../custom_widgets/yacreader_spin_slider_widget.h
+moc ../custom_widgets/yacreader_titled_toolbar.h
+moc ../custom_widgets/yacreader_deleting_progress.h
+moc ../custom_widgets/yacreader_table_view.h
+moc ../custom_widgets/yacreader_sidebar.h
+moc ../custom_widgets/yacreader_library_list_widget.h
+moc ../custom_widgets/yacreader_library_item_widget.h
+moc ../custom_widgets/yacreader_treeview.h
+moc ../custom_widgets/yacreader_busy_widget.h
+moc ../custom_widgets/yacreader_cover_label.h
+moc ../custom_widgets/yacreader_gl_flow_config_widget.h
+moc ../compressed_archive/unarr/compressed_archive.h
+moc comic_vine/comic_vine_dialog.h
+moc comic_vine/comic_vine_client.h
+moc comic_vine/scraper_lineedit.h
+moc comic_vine/title_header.h
+moc comic_vine/series_question.h
+moc comic_vine/search_single_comic.h
+moc comic_vine/search_volume.h
+moc comic_vine/select_comic.h
+moc comic_vine/select_volume.h
+moc comic_vine/model/volumes_model.h
+moc comic_vine/model/comics_model.h
+moc comic_vine/model/json_model.h
+moc comic_vine/model/response_parser.h
+moc comic_vine/scraper_tableview.h
+moc comic_vine/sort_volume_comics.h
+moc comic_vine/model/local_comic_list_model.h
+moc comic_vine/model/volume_comics_model.h
+moc comic_vine/scraper_scroll_label.h
+moc comic_vine/scraper_results_paginator.h
+moc comic_vine/api_key_dialog.h
+moc comic_vine/comic_vine_all_volume_comics_retriever.h
+moc ../third_party/QsLog/QsLogDestFunctor.h
+moc ../shortcuts_management/edit_shortcuts_dialog.h
+moc ../shortcuts_management/actions_groups_model.h
+moc ../shortcuts_management/actions_shortcuts_model.h
+moc ../shortcuts_management/edit_shortcut_item_delegate.h
+moc ../third_party/KDToolBox/KDSignalThrottler.h
+moc grid_comics_view.h
+moc comics_view_transition.h
+compiling moc_comic_flow.cpp
+compiling moc_create_library_dialog.cpp
+compiling moc_comic_query_result_processor.cpp
+compiling moc_folder_query_result_processor.cpp
+compiling moc_folder_content_view.cpp
+compiling moc_initial_comic_info_extractor.cpp
+compiling moc_libraries_update_coordinator.cpp
+compiling moc_library_creator.cpp
+compiling moc_library_window.cpp
+compiling moc_add_library_dialog.cpp
+compiling moc_recent_visibility_coordinator.cpp
+compiling moc_rename_library_dialog.cpp
+compiling moc_properties_dialog.cpp
+compiling moc_options_dialog.cpp
+compiling moc_export_library_dialog.cpp
+compiling moc_import_library_dialog.cpp
+compiling moc_package_manager.cpp
+compiling moc_bundle_creator.cpp
+compiling moc_export_comics_info_dialog.cpp
+compiling moc_import_comics_info_dialog.cpp
+compiling moc_server_config_dialog.cpp
+compiling moc_comic_flow_widget.cpp
+compiling moc_data_base_management.cpp
+compiling moc_folder_model.cpp
+compiling moc_comic_model.cpp
+compiling moc_comic_item.cpp
+compiling moc_comic_db.cpp
+compiling moc_library_item.cpp
+compiling moc_comic.cpp
+In file included from /usr/include/qt6/QtWidgets/QDialog:1,
+                 from create_library_dialog.h:6,
+                 from moc_create_library_dialog.cpp:9:
+/usr/include/qt6/QtWidgets/qdialog.h:52:18: warning: ‘virtual void QDialog::open()’ was hidden [-Woverloaded-virtual=]
+   52 |     virtual void open();
+      |                  ^~~~
+create_library_dialog.h:38:10: note:   by ‘void CreateLibraryDialog::open(const YACReaderLibraries&)’
+   38 |     void open(const YACReaderLibraries &libraries);
+      |          ^~~~
+compiling moc_bookmarks.cpp
+compiling moc_pictureflow.cpp
+compiling moc_no_libraries_widget.cpp
+In file included from /usr/include/qt6/QtWidgets/QDialog:1,
+                 from import_library_dialog.h:5,
+                 from moc_import_library_dialog.cpp:9:
+/usr/include/qt6/QtWidgets/qdialog.h:52:18: warning: ‘virtual void QDialog::open()’ was hidden [-Woverloaded-virtual=]
+   52 |     virtual void open();
+      |                  ^~~~
+import_library_dialog.h:40:10: note:   by ‘void ImportLibraryDialog::open(const YACReaderLibraries&)’
+   40 |     void open(const YACReaderLibraries &libs);
+      |          ^~~~
+compiling moc_import_widget.cpp
+compiling moc_trayicon_controller.cpp
+compiling moc_xml_info_library_scanner.cpp
+compiling moc_yacreader_content_views_manager.cpp
+compiling moc_yacreader_local_server.cpp
+compiling moc_yacreader_main_toolbar.cpp
+compiling moc_comics_remover.cpp
+compiling moc_http_worker.cpp
+compiling moc_yacreader_libraries.cpp
+compiling moc_comics_view.cpp
+compiling moc_classic_comics_view.cpp
+compiling moc_empty_folder_widget.cpp
+compiling moc_no_search_results_widget.cpp
+compiling moc_comic_files_manager.cpp
+compiling moc_reading_list_model.cpp
+compiling moc_yacreader_folders_view.cpp
+compiling moc_yacreader_reading_lists_view.cpp
+compiling moc_add_label_dialog.cpp
+compiling moc_yacreader_history_controller.cpp
+compiling moc_yacreader_navigation_controller.cpp
+compiling moc_empty_label_widget.cpp
+compiling moc_empty_container_info.cpp
+compiling moc_info_comics_view.cpp
+compiling moc_yacreader_comics_selection_helper.cpp
+compiling moc_yacreader_comic_info_helper.cpp
+compiling moc_yacreader_flow_gl.cpp
+compiling moc_foldermetadatacontroller_v2.cpp
+compiling moc_searchcontroller_v2.cpp
+compiling moc_requestmapper.cpp
+compiling moc_yacreader_http_server.cpp
+compiling moc_yacreader_http_session.cpp
+compiling moc_yacreader_http_session_store.cpp
+compiling moc_versioncontroller.cpp
+compiling moc_comiccontroller.cpp
+compiling moc_errorcontroller.cpp
+compiling moc_foldercontroller.cpp
+compiling moc_folderinfocontroller.cpp
+compiling moc_librariescontroller.cpp
+compiling moc_pagecontroller.cpp
+compiling moc_covercontroller.cpp
+compiling moc_updatecomiccontroller.cpp
+compiling moc_comicdownloadinfocontroller.cpp
+compiling moc_synccontroller.cpp
+compiling moc_comiccontroller_v2.cpp
+compiling moc_errorcontroller_v2.cpp
+compiling moc_folderinfocontroller_v2.cpp
+compiling moc_librariescontroller_v2.cpp
+compiling moc_pagecontroller_v2.cpp
+compiling moc_covercontroller_v2.cpp
+compiling moc_updatecomiccontroller_v2.cpp
+compiling moc_comicdownloadinfocontroller_v2.cpp
+compiling moc_synccontroller_v2.cpp
+compiling moc_foldercontentcontroller_v2.cpp
+compiling moc_tagscontroller_v2.cpp
+compiling moc_tagcontentcontroller_v2.cpp
+compiling moc_favoritescontroller_v2.cpp
+compiling moc_readingcomicscontroller_v2.cpp
+compiling moc_readinglistscontroller_v2.cpp
+compiling moc_readinglistcontentcontroller_v2.cpp
+compiling moc_comicfullinfocontroller_v2.cpp
+compiling moc_readinglistinfocontroller_v2.cpp
+compiling moc_taginfocontroller_v2.cpp
+compiling moc_comiccontrollerinreadinglist_v2.cpp
+compiling moc_statuspagecontroller.cpp
+compiling moc_httplistener.cpp
+compiling moc_httpconnectionhandler.cpp
+compiling moc_httpconnectionhandlerpool.cpp
+compiling moc_httprequesthandler.cpp
+compiling moc_httpsessionstore.cpp
+compiling moc_staticfilecontroller.cpp
+compiling moc_templateloader.cpp
+compiling moc_templatecache.cpp
+compiling moc_help_about_dialog.cpp
+compiling moc_rounded_corners_dialog.cpp
+compiling moc_whats_new_dialog.cpp
+compiling moc_yacreader_field_edit.cpp
+compiling moc_yacreader_field_plain_text_edit.cpp
+compiling moc_yacreader_flow.cpp
+compiling moc_yacreader_flow_config_widget.cpp
+compiling moc_yacreader_options_dialog.cpp
+compiling moc_yacreader_search_line_edit.cpp
+compiling moc_yacreader_spin_slider_widget.cpp
+compiling moc_yacreader_titled_toolbar.cpp
+compiling moc_yacreader_deleting_progress.cpp
+compiling moc_yacreader_table_view.cpp
+compiling moc_yacreader_sidebar.cpp
+compiling moc_yacreader_library_list_widget.cpp
+compiling moc_yacreader_library_item_widget.cpp
+compiling moc_yacreader_treeview.cpp
+compiling moc_yacreader_busy_widget.cpp
+compiling moc_yacreader_cover_label.cpp
+compiling moc_yacreader_gl_flow_config_widget.cpp
+compiling moc_compressed_archive.cpp
+compiling moc_comic_vine_dialog.cpp
+compiling moc_comic_vine_client.cpp
+compiling moc_scraper_lineedit.cpp
+compiling moc_title_header.cpp
+compiling moc_series_question.cpp
+compiling moc_search_single_comic.cpp
+compiling moc_search_volume.cpp
+compiling moc_select_comic.cpp
+compiling moc_select_volume.cpp
+compiling moc_volumes_model.cpp
+compiling moc_comics_model.cpp
+compiling moc_json_model.cpp
+compiling moc_response_parser.cpp
+compiling moc_scraper_tableview.cpp
+compiling moc_sort_volume_comics.cpp
+compiling moc_local_comic_list_model.cpp
+compiling moc_volume_comics_model.cpp
+compiling moc_scraper_scroll_label.cpp
+compiling moc_scraper_results_paginator.cpp
+compiling moc_api_key_dialog.cpp
+compiling moc_comic_vine_all_volume_comics_retriever.cpp
+compiling moc_QsLogDestFunctor.cpp
+compiling moc_edit_shortcuts_dialog.cpp
+compiling moc_actions_groups_model.cpp
+compiling moc_actions_shortcuts_model.cpp
+compiling moc_edit_shortcut_item_delegate.cpp
+compiling moc_KDSignalThrottler.cpp
+compiling moc_grid_comics_view.cpp
+compiling moc_comics_view_transition.cpp
+linking YACReaderLibrary
+make[1]: Leaving directory '/build/yacreader-poppler-git/src/yacreader/YACReaderLibrary'

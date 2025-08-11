@@ -1,0 +1,15 @@
+make[1]: Entering directory '/build/gource-git/src/gource'
+ /usr/bin/mkdir -p '/build/gource-git/pkg/gource-git/usr/bin'
+ /usr/bin/mkdir -p '/build/gource-git/pkg/gource-git/usr/share/gource/fonts'
+ /usr/bin/mkdir -p '/build/gource-git/pkg/gource-git/usr/share/gource'
+ /usr/bin/mkdir -p '/build/gource-git/pkg/gource-git/usr/share/gource/shaders'
+  /usr/bin/install -c gource '/build/gource-git/pkg/gource-git/usr/bin'
+ /usr/bin/install -c -m 644 data/fonts/README data/fonts/FreeSans.ttf '/build/gource-git/pkg/gource-git/usr/share/gource/fonts'
+ /usr/bin/install -c -m 644 data/beam.png data/bloom.tga data/bloom_alpha.tga data/file.png data/user.png data/gource.style '/build/gource-git/pkg/gource-git/usr/share/gource'
+ /usr/bin/install -c -m 644 data/shaders/shadow.vert data/shaders/shadow.frag data/shaders/bloom.vert data/shaders/bloom.frag data/shaders/text.vert data/shaders/text.frag '/build/gource-git/pkg/gource-git/usr/share/gource/shaders'
+make  install-data-hook
+make[2]: Entering directory '/build/gource-git/src/gource'
+/usr/bin/mkdir -p /build/gource-git/pkg/gource-git/usr/share/man/man1
+gzip -cf9 ./data/gource.1 > /build/gource-git/pkg/gource-git/usr/share/man/man1/gource.1.gz
+make[2]: Leaving directory '/build/gource-git/src/gource'
+make[1]: Leaving directory '/build/gource-git/src/gource'

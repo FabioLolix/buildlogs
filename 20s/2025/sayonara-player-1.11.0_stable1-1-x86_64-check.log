@@ -1,0 +1,1141 @@
+Test project /build/sayonara-player/src/build
+      Start  1: AudioConverterTest
+ 1/96 Test  #1: AudioConverterTest ...............   Passed    0.02 sec
+      Start  2: BookmarkStorageTest
+ 2/96 Test  #2: BookmarkStorageTest ..............   Passed    0.02 sec
+      Start  3: FileSystemMockTest
+ 3/96 Test  #3: FileSystemMockTest ...............   Passed    0.02 sec
+      Start  4: LibraryDatabaseProviderTest
+ 4/96 Test  #4: LibraryDatabaseProviderTest ......   Passed    0.03 sec
+      Start  5: AudioscrobblerTest
+ 5/96 Test  #5: AudioscrobblerTest ...............   Passed    0.02 sec
+      Start  6: CoverFetchManagerTest
+ 6/96 Test  #6: CoverFetchManagerTest ............   Passed    0.02 sec
+      Start  7: CoverLocationTest
+ 7/96 Test  #7: CoverLocationTest ................   Passed    0.13 sec
+      Start  8: AlbumTest
+ 8/96 Test  #8: AlbumTest ........................   Passed    0.05 sec
+      Start  9: ArtistTest
+ 9/96 Test  #9: ArtistTest .......................   Passed    0.03 sec
+      Start 10: BasicQueryTest
+10/96 Test #10: BasicQueryTest ...................   Passed    0.02 sec
+      Start 11: FixesTest
+11/96 Test #11: FixesTest ........................   Passed    0.02 sec
+      Start 12: LibraryDatabaseTest
+12/96 Test #12: LibraryDatabaseTest ..............   Passed    0.04 sec
+      Start 13: PlaylistDatabaseTest
+13/96 Test #13: PlaylistDatabaseTest .............   Passed    0.02 sec
+      Start 14: PodcastTest
+14/96 Test #14: PodcastTest ......................   Passed    0.02 sec
+      Start 15: TracksTest
+15/96 Test #15: TracksTest .......................   Passed    0.04 sec
+      Start 16: DirectorySelectionHandlerTest
+16/96 Test #16: DirectorySelectionHandlerTest ....   Passed    0.02 sec
+      Start 17: ArtistMatchTest
+17/96 Test #17: ArtistMatchTest ..................   Passed    0.02 sec
+      Start 18: DynamicPlaybackHandlerTest
+18/96 Test #18: DynamicPlaybackHandlerTest .......   Passed    5.81 sec
+      Start 19: LfmSimilarArtistFetcherTest
+19/96 Test #19: LfmSimilarArtistFetcherTest ......   Passed    0.02 sec
+      Start 20: LfmSimilarArtistParserTest
+20/96 Test #20: LfmSimilarArtistParserTest .......   Passed    0.02 sec
+      Start 21: BroadcastTest
+21/96 Test #21: BroadcastTest ....................   Passed    0.25 sec
+      Start 22: CallbackTest
+22/96 Test #22: CallbackTest .....................   Passed    0.21 sec
+      Start 23: EngineUtilsTest
+23/96 Test #23: EngineUtilsTest ..................   Passed    0.21 sec
+      Start 24: EqualizerTest
+24/96 Test #24: EqualizerTest ....................   Passed    0.02 sec
+      Start 25: HistoryTest
+25/96 Test #25: HistoryTest ......................   Passed    0.03 sec
+      Start 26: ScrobbleTest
+26/96 Test #26: ScrobbleTest .....................   Passed    1.08 sec
+      Start 27: CacheThreadTest
+27/96 Test #27: CacheThreadTest ..................   Passed    0.02 sec
+      Start 28: CopyThreadTest
+28/96 Test #28: CopyThreadTest ...................   Passed    0.02 sec
+      Start 29: GenreFetcherTest
+29/96 Test #29: GenreFetcherTest .................   Passed    0.03 sec
+      Start 30: GenreTreeBuilderTest
+30/96 Test #30: GenreTreeBuilderTest .............   Passed    0.02 sec
+      Start 31: ImportCacheTest
+31/96 Test #31: ImportCacheTest ..................   Passed    0.02 sec
+      Start 32: LibraryImporterTest
+32/96 Test #32: LibraryImporterTest ..............   Passed    0.23 sec
+      Start 33: LibraryManagerTest
+33/96 Test #33: LibraryManagerTest ...............   Passed    0.06 sec
+      Start 34: LocalLibraryTest
+34/96 Test #34: LocalLibraryTest .................   Passed    0.03 sec
+      Start 35: ReloadThreadTest
+35/96 Test #35: ReloadThreadTest .................***Failed    0.13 sec
+[22:47:07] [32mInfo: [0m[34mDB::Base: [0mDatabase not existent. Creating database...
+[22:47:07] [32mInfo: [0m[34mDB::Base: [0mDatabase /tmp/sayonara/ReloadThreadTest/player.db not existent yet
+[22:47:07] [32mInfo: [0m[34mDB::Base: [0mCopy :/Database/player.db to /tmp/sayonara/ReloadThreadTest/player.db
+[22:47:07] [32mInfo: [0m[34mDB::Base: [0mDB file has been copied to /tmp/sayonara/ReloadThreadTest/player.db
+[22:47:07] [32mInfo: [0m[34mDB::StandardConnectorFixes: [0mDatabase Version:  40. Latest Version: 41
+[22:47:07] [32mInfo: [0m[34mDB::StandardConnectorFixes: [0mApply fixes
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection /tmp/sayonara/ReloadThreadTest/player.db-0
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: : 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mNo query Unable to fetch row
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mUnable to fetch row
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mNo query
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+SELECT
+podcastTitle 
+FROM OnlineTracks;
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection /tmp/sayonara/ReloadThreadTest/player.db-0
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: : 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mNo query Unable to fetch row
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mUnable to fetch row
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mNo query
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+SELECT
+podcastArtist 
+FROM OnlineTracks;
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection /tmp/sayonara/ReloadThreadTest/player.db-0
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: : 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mNo query Unable to fetch row
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mUnable to fetch row
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mNo query
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+SELECT
+podcastAlbumArtist 
+FROM OnlineTracks;
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection /tmp/sayonara/ReloadThreadTest/player.db-0
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: : 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mNo query Unable to fetch row
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mUnable to fetch row
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mNo query
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+SELECT
+podcastAlbum 
+FROM OnlineTracks;
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835169661520)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist0/album0/title0.mp3/path/to/artist0/album0/title0.mp30 (/path/to/artist0/album0/title0.mp3): 1
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist0/album0/title0.mp3 (/path/to/artist0/album0/title0.mp3): 1
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist1/album1/title1.mp3/path/to/artist1/album1/title1.mp30 (/path/to/artist1/album1/title1.mp3): 2
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist1/album1/title1.mp3 (/path/to/artist1/album1/title1.mp3): 2
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist2/album2/title2.mp3/path/to/artist2/album2/title2.mp30 (/path/to/artist2/album2/title2.mp3): 3
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist2/album2/title2.mp3 (/path/to/artist2/album2/title2.mp3): 3
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist3/album3/title3.mp3/path/to/artist3/album3/title3.mp30 (/path/to/artist3/album3/title3.mp3): 4
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist3/album3/title3.mp3 (/path/to/artist3/album3/title3.mp3): 4
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist4/album4/title4.mp3/path/to/artist4/album4/title4.mp30 (/path/to/artist4/album4/title4.mp3): 5
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist4/album4/title4.mp3 (/path/to/artist4/album4/title4.mp3): 5
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist5/album5/title5.mp3/path/to/artist5/album5/title5.mp30 (/path/to/artist5/album5/title5.mp3): 6
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist5/album5/title5.mp3 (/path/to/artist5/album5/title5.mp3): 6
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist6/album6/title6.mp3/path/to/artist6/album6/title6.mp30 (/path/to/artist6/album6/title6.mp3): 7
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist6/album6/title6.mp3 (/path/to/artist6/album6/title6.mp3): 7
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist7/album7/title7.mp3/path/to/artist7/album7/title7.mp30 (/path/to/artist7/album7/title7.mp3): 8
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist7/album7/title7.mp3 (/path/to/artist7/album7/title7.mp3): 8
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist8/album8/title8.mp3/path/to/artist8/album8/title8.mp30 (/path/to/artist8/album8/title8.mp3): 9
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist8/album8/title8.mp3 (/path/to/artist8/album8/title8.mp3): 9
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist9/album9/title9.mp3/path/to/artist9/album9/title9.mp30 (/path/to/artist9/album9/title9.mp3): 10
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist9/album9/title9.mp3 (/path/to/artist9/album9/title9.mp3): 10
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist10/album10/title10.mp3/path/to/artist10/album10/title10.mp30 (/path/to/artist10/album10/title10.mp3): 11
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist10/album10/title10.mp3 (/path/to/artist10/album10/title10.mp3): 11
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist11/album11/title11.mp3/path/to/artist11/album11/title11.mp30 (/path/to/artist11/album11/title11.mp3): 12
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist11/album11/title11.mp3 (/path/to/artist11/album11/title11.mp3): 12
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist12/album12/title12.mp3/path/to/artist12/album12/title12.mp30 (/path/to/artist12/album12/title12.mp3): 13
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist12/album12/title12.mp3 (/path/to/artist12/album12/title12.mp3): 13
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist13/album13/title13.mp3/path/to/artist13/album13/title13.mp30 (/path/to/artist13/album13/title13.mp3): 14
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist13/album13/title13.mp3 (/path/to/artist13/album13/title13.mp3): 14
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist14/album14/title14.mp3/path/to/artist14/album14/title14.mp30 (/path/to/artist14/album14/title14.mp3): 15
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist14/album14/title14.mp3 (/path/to/artist14/album14/title14.mp3): 15
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist15/album15/title15.mp3/path/to/artist15/album15/title15.mp30 (/path/to/artist15/album15/title15.mp3): 16
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist15/album15/title15.mp3 (/path/to/artist15/album15/title15.mp3): 16
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist16/album16/title16.mp3/path/to/artist16/album16/title16.mp30 (/path/to/artist16/album16/title16.mp3): 17
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist16/album16/title16.mp3 (/path/to/artist16/album16/title16.mp3): 17
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist17/album17/title17.mp3/path/to/artist17/album17/title17.mp30 (/path/to/artist17/album17/title17.mp3): 18
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist17/album17/title17.mp3 (/path/to/artist17/album17/title17.mp3): 18
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist18/album18/title18.mp3/path/to/artist18/album18/title18.mp30 (/path/to/artist18/album18/title18.mp3): 19
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist18/album18/title18.mp3 (/path/to/artist18/album18/title18.mp3): 19
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist19/album19/title19.mp3/path/to/artist19/album19/title19.mp30 (/path/to/artist19/album19/title19.mp3): 20
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist19/album19/title19.mp3 (/path/to/artist19/album19/title19.mp3): 20
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist20/album20/title20.mp3/path/to/artist20/album20/title20.mp30 (/path/to/artist20/album20/title20.mp3): 21
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist20/album20/title20.mp3 (/path/to/artist20/album20/title20.mp3): 21
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist21/album21/title21.mp3/path/to/artist21/album21/title21.mp30 (/path/to/artist21/album21/title21.mp3): 22
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist21/album21/title21.mp3 (/path/to/artist21/album21/title21.mp3): 22
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist22/album22/title22.mp3/path/to/artist22/album22/title22.mp30 (/path/to/artist22/album22/title22.mp3): 23
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist22/album22/title22.mp3 (/path/to/artist22/album22/title22.mp3): 23
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist23/album23/title23.mp3/path/to/artist23/album23/title23.mp30 (/path/to/artist23/album23/title23.mp3): 24
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist23/album23/title23.mp3 (/path/to/artist23/album23/title23.mp3): 24
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist24/album24/title24.mp3/path/to/artist24/album24/title24.mp30 (/path/to/artist24/album24/title24.mp3): 25
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist24/album24/title24.mp3 (/path/to/artist24/album24/title24.mp3): 25
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist25/album25/title25.mp3/path/to/artist25/album25/title25.mp30 (/path/to/artist25/album25/title25.mp3): 26
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist25/album25/title25.mp3 (/path/to/artist25/album25/title25.mp3): 26
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist26/album26/title26.mp3/path/to/artist26/album26/title26.mp30 (/path/to/artist26/album26/title26.mp3): 27
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist26/album26/title26.mp3 (/path/to/artist26/album26/title26.mp3): 27
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist27/album27/title27.mp3/path/to/artist27/album27/title27.mp30 (/path/to/artist27/album27/title27.mp3): 28
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist27/album27/title27.mp3 (/path/to/artist27/album27/title27.mp3): 28
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist28/album28/title28.mp3/path/to/artist28/album28/title28.mp30 (/path/to/artist28/album28/title28.mp3): 29
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist28/album28/title28.mp3 (/path/to/artist28/album28/title28.mp3): 29
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist29/album29/title29.mp3/path/to/artist29/album29/title29.mp30 (/path/to/artist29/album29/title29.mp3): 30
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist29/album29/title29.mp3 (/path/to/artist29/album29/title29.mp3): 30
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist30/album30/title30.mp3/path/to/artist30/album30/title30.mp30 (/path/to/artist30/album30/title30.mp3): 31
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist30/album30/title30.mp3 (/path/to/artist30/album30/title30.mp3): 31
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist31/album31/title31.mp3/path/to/artist31/album31/title31.mp30 (/path/to/artist31/album31/title31.mp3): 32
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist31/album31/title31.mp3 (/path/to/artist31/album31/title31.mp3): 32
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist32/album32/title32.mp3/path/to/artist32/album32/title32.mp30 (/path/to/artist32/album32/title32.mp3): 33
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist32/album32/title32.mp3 (/path/to/artist32/album32/title32.mp3): 33
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist33/album33/title33.mp3/path/to/artist33/album33/title33.mp30 (/path/to/artist33/album33/title33.mp3): 34
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist33/album33/title33.mp3 (/path/to/artist33/album33/title33.mp3): 34
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist34/album34/title34.mp3/path/to/artist34/album34/title34.mp30 (/path/to/artist34/album34/title34.mp3): 35
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist34/album34/title34.mp3 (/path/to/artist34/album34/title34.mp3): 35
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist35/album35/title35.mp3/path/to/artist35/album35/title35.mp30 (/path/to/artist35/album35/title35.mp3): 36
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist35/album35/title35.mp3 (/path/to/artist35/album35/title35.mp3): 36
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist36/album36/title36.mp3/path/to/artist36/album36/title36.mp30 (/path/to/artist36/album36/title36.mp3): 37
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist36/album36/title36.mp3 (/path/to/artist36/album36/title36.mp3): 37
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist37/album37/title37.mp3/path/to/artist37/album37/title37.mp30 (/path/to/artist37/album37/title37.mp3): 38
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist37/album37/title37.mp3 (/path/to/artist37/album37/title37.mp3): 38
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist38/album38/title38.mp3/path/to/artist38/album38/title38.mp30 (/path/to/artist38/album38/title38.mp3): 39
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist38/album38/title38.mp3 (/path/to/artist38/album38/title38.mp3): 39
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist39/album39/title39.mp3/path/to/artist39/album39/title39.mp30 (/path/to/artist39/album39/title39.mp3): 40
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist39/album39/title39.mp3 (/path/to/artist39/album39/title39.mp3): 40
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist40/album40/title40.mp3/path/to/artist40/album40/title40.mp30 (/path/to/artist40/album40/title40.mp3): 41
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist40/album40/title40.mp3 (/path/to/artist40/album40/title40.mp3): 41
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist41/album41/title41.mp3/path/to/artist41/album41/title41.mp30 (/path/to/artist41/album41/title41.mp3): 42
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist41/album41/title41.mp3 (/path/to/artist41/album41/title41.mp3): 42
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist42/album42/title42.mp3/path/to/artist42/album42/title42.mp30 (/path/to/artist42/album42/title42.mp3): 43
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist42/album42/title42.mp3 (/path/to/artist42/album42/title42.mp3): 43
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist43/album43/title43.mp3/path/to/artist43/album43/title43.mp30 (/path/to/artist43/album43/title43.mp3): 44
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist43/album43/title43.mp3 (/path/to/artist43/album43/title43.mp3): 44
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist44/album44/title44.mp3/path/to/artist44/album44/title44.mp30 (/path/to/artist44/album44/title44.mp3): 45
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist44/album44/title44.mp3 (/path/to/artist44/album44/title44.mp3): 45
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist45/album45/title45.mp3/path/to/artist45/album45/title45.mp30 (/path/to/artist45/album45/title45.mp3): 46
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist45/album45/title45.mp3 (/path/to/artist45/album45/title45.mp3): 46
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist46/album46/title46.mp3/path/to/artist46/album46/title46.mp30 (/path/to/artist46/album46/title46.mp3): 47
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist46/album46/title46.mp3 (/path/to/artist46/album46/title46.mp3): 47
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist47/album47/title47.mp3/path/to/artist47/album47/title47.mp30 (/path/to/artist47/album47/title47.mp3): 48
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist47/album47/title47.mp3 (/path/to/artist47/album47/title47.mp3): 48
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist48/album48/title48.mp3/path/to/artist48/album48/title48.mp30 (/path/to/artist48/album48/title48.mp3): 49
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist48/album48/title48.mp3 (/path/to/artist48/album48/title48.mp3): 49
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist49/album49/title49.mp3/path/to/artist49/album49/title49.mp30 (/path/to/artist49/album49/title49.mp3): 50
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist49/album49/title49.mp3 (/path/to/artist49/album49/title49.mp3): 50
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist50/album50/title50.mp3/path/to/artist50/album50/title50.mp30 (/path/to/artist50/album50/title50.mp3): 51
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist50/album50/title50.mp3 (/path/to/artist50/album50/title50.mp3): 51
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist51/album51/title51.mp3/path/to/artist51/album51/title51.mp30 (/path/to/artist51/album51/title51.mp3): 52
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist51/album51/title51.mp3 (/path/to/artist51/album51/title51.mp3): 52
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist52/album52/title52.mp3/path/to/artist52/album52/title52.mp30 (/path/to/artist52/album52/title52.mp3): 53
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist52/album52/title52.mp3 (/path/to/artist52/album52/title52.mp3): 53
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist53/album53/title53.mp3/path/to/artist53/album53/title53.mp30 (/path/to/artist53/album53/title53.mp3): 54
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist53/album53/title53.mp3 (/path/to/artist53/album53/title53.mp3): 54
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist54/album54/title54.mp3/path/to/artist54/album54/title54.mp30 (/path/to/artist54/album54/title54.mp3): 55
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist54/album54/title54.mp3 (/path/to/artist54/album54/title54.mp3): 55
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist55/album55/title55.mp3/path/to/artist55/album55/title55.mp30 (/path/to/artist55/album55/title55.mp3): 56
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist55/album55/title55.mp3 (/path/to/artist55/album55/title55.mp3): 56
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist56/album56/title56.mp3/path/to/artist56/album56/title56.mp30 (/path/to/artist56/album56/title56.mp3): 57
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist56/album56/title56.mp3 (/path/to/artist56/album56/title56.mp3): 57
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist57/album57/title57.mp3/path/to/artist57/album57/title57.mp30 (/path/to/artist57/album57/title57.mp3): 58
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist57/album57/title57.mp3 (/path/to/artist57/album57/title57.mp3): 58
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist58/album58/title58.mp3/path/to/artist58/album58/title58.mp30 (/path/to/artist58/album58/title58.mp3): 59
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist58/album58/title58.mp3 (/path/to/artist58/album58/title58.mp3): 59
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist59/album59/title59.mp3/path/to/artist59/album59/title59.mp30 (/path/to/artist59/album59/title59.mp3): 60
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist59/album59/title59.mp3 (/path/to/artist59/album59/title59.mp3): 60
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist60/album60/title60.mp3/path/to/artist60/album60/title60.mp30 (/path/to/artist60/album60/title60.mp3): 61
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist60/album60/title60.mp3 (/path/to/artist60/album60/title60.mp3): 61
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist61/album61/title61.mp3/path/to/artist61/album61/title61.mp30 (/path/to/artist61/album61/title61.mp3): 62
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist61/album61/title61.mp3 (/path/to/artist61/album61/title61.mp3): 62
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist62/album62/title62.mp3/path/to/artist62/album62/title62.mp30 (/path/to/artist62/album62/title62.mp3): 63
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist62/album62/title62.mp3 (/path/to/artist62/album62/title62.mp3): 63
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist63/album63/title63.mp3/path/to/artist63/album63/title63.mp30 (/path/to/artist63/album63/title63.mp3): 64
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist63/album63/title63.mp3 (/path/to/artist63/album63/title63.mp3): 64
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist64/album64/title64.mp3/path/to/artist64/album64/title64.mp30 (/path/to/artist64/album64/title64.mp3): 65
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist64/album64/title64.mp3 (/path/to/artist64/album64/title64.mp3): 65
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist65/album65/title65.mp3/path/to/artist65/album65/title65.mp30 (/path/to/artist65/album65/title65.mp3): 66
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist65/album65/title65.mp3 (/path/to/artist65/album65/title65.mp3): 66
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist66/album66/title66.mp3/path/to/artist66/album66/title66.mp30 (/path/to/artist66/album66/title66.mp3): 67
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist66/album66/title66.mp3 (/path/to/artist66/album66/title66.mp3): 67
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist67/album67/title67.mp3/path/to/artist67/album67/title67.mp30 (/path/to/artist67/album67/title67.mp3): 68
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist67/album67/title67.mp3 (/path/to/artist67/album67/title67.mp3): 68
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist68/album68/title68.mp3/path/to/artist68/album68/title68.mp30 (/path/to/artist68/album68/title68.mp3): 69
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist68/album68/title68.mp3 (/path/to/artist68/album68/title68.mp3): 69
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist69/album69/title69.mp3/path/to/artist69/album69/title69.mp30 (/path/to/artist69/album69/title69.mp3): 70
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist69/album69/title69.mp3 (/path/to/artist69/album69/title69.mp3): 70
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist70/album70/title70.mp3/path/to/artist70/album70/title70.mp30 (/path/to/artist70/album70/title70.mp3): 71
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist70/album70/title70.mp3 (/path/to/artist70/album70/title70.mp3): 71
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist71/album71/title71.mp3/path/to/artist71/album71/title71.mp30 (/path/to/artist71/album71/title71.mp3): 72
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist71/album71/title71.mp3 (/path/to/artist71/album71/title71.mp3): 72
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist72/album72/title72.mp3/path/to/artist72/album72/title72.mp30 (/path/to/artist72/album72/title72.mp3): 73
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist72/album72/title72.mp3 (/path/to/artist72/album72/title72.mp3): 73
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist73/album73/title73.mp3/path/to/artist73/album73/title73.mp30 (/path/to/artist73/album73/title73.mp3): 74
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist73/album73/title73.mp3 (/path/to/artist73/album73/title73.mp3): 74
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist74/album74/title74.mp3/path/to/artist74/album74/title74.mp30 (/path/to/artist74/album74/title74.mp3): 75
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist74/album74/title74.mp3 (/path/to/artist74/album74/title74.mp3): 75
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist75/album75/title75.mp3/path/to/artist75/album75/title75.mp30 (/path/to/artist75/album75/title75.mp3): 76
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist75/album75/title75.mp3 (/path/to/artist75/album75/title75.mp3): 76
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist76/album76/title76.mp3/path/to/artist76/album76/title76.mp30 (/path/to/artist76/album76/title76.mp3): 77
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist76/album76/title76.mp3 (/path/to/artist76/album76/title76.mp3): 77
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist77/album77/title77.mp3/path/to/artist77/album77/title77.mp30 (/path/to/artist77/album77/title77.mp3): 78
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist77/album77/title77.mp3 (/path/to/artist77/album77/title77.mp3): 78
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist78/album78/title78.mp3/path/to/artist78/album78/title78.mp30 (/path/to/artist78/album78/title78.mp3): 79
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist78/album78/title78.mp3 (/path/to/artist78/album78/title78.mp3): 79
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist79/album79/title79.mp3/path/to/artist79/album79/title79.mp30 (/path/to/artist79/album79/title79.mp3): 80
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist79/album79/title79.mp3 (/path/to/artist79/album79/title79.mp3): 80
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist80/album80/title80.mp3/path/to/artist80/album80/title80.mp30 (/path/to/artist80/album80/title80.mp3): 81
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist80/album80/title80.mp3 (/path/to/artist80/album80/title80.mp3): 81
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist81/album81/title81.mp3/path/to/artist81/album81/title81.mp30 (/path/to/artist81/album81/title81.mp3): 82
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist81/album81/title81.mp3 (/path/to/artist81/album81/title81.mp3): 82
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist82/album82/title82.mp3/path/to/artist82/album82/title82.mp30 (/path/to/artist82/album82/title82.mp3): 83
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist82/album82/title82.mp3 (/path/to/artist82/album82/title82.mp3): 83
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist83/album83/title83.mp3/path/to/artist83/album83/title83.mp30 (/path/to/artist83/album83/title83.mp3): 84
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist83/album83/title83.mp3 (/path/to/artist83/album83/title83.mp3): 84
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist84/album84/title84.mp3/path/to/artist84/album84/title84.mp30 (/path/to/artist84/album84/title84.mp3): 85
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist84/album84/title84.mp3 (/path/to/artist84/album84/title84.mp3): 85
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist85/album85/title85.mp3/path/to/artist85/album85/title85.mp30 (/path/to/artist85/album85/title85.mp3): 86
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist85/album85/title85.mp3 (/path/to/artist85/album85/title85.mp3): 86
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist86/album86/title86.mp3/path/to/artist86/album86/title86.mp30 (/path/to/artist86/album86/title86.mp3): 87
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist86/album86/title86.mp3 (/path/to/artist86/album86/title86.mp3): 87
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist87/album87/title87.mp3/path/to/artist87/album87/title87.mp30 (/path/to/artist87/album87/title87.mp3): 88
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist87/album87/title87.mp3 (/path/to/artist87/album87/title87.mp3): 88
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist88/album88/title88.mp3/path/to/artist88/album88/title88.mp30 (/path/to/artist88/album88/title88.mp3): 89
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist88/album88/title88.mp3 (/path/to/artist88/album88/title88.mp3): 89
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist89/album89/title89.mp3/path/to/artist89/album89/title89.mp30 (/path/to/artist89/album89/title89.mp3): 90
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist89/album89/title89.mp3 (/path/to/artist89/album89/title89.mp3): 90
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist90/album90/title90.mp3/path/to/artist90/album90/title90.mp30 (/path/to/artist90/album90/title90.mp3): 91
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist90/album90/title90.mp3 (/path/to/artist90/album90/title90.mp3): 91
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist91/album91/title91.mp3/path/to/artist91/album91/title91.mp30 (/path/to/artist91/album91/title91.mp3): 92
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist91/album91/title91.mp3 (/path/to/artist91/album91/title91.mp3): 92
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist92/album92/title92.mp3/path/to/artist92/album92/title92.mp30 (/path/to/artist92/album92/title92.mp3): 93
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist92/album92/title92.mp3 (/path/to/artist92/album92/title92.mp3): 93
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist93/album93/title93.mp3/path/to/artist93/album93/title93.mp30 (/path/to/artist93/album93/title93.mp3): 94
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist93/album93/title93.mp3 (/path/to/artist93/album93/title93.mp3): 94
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist94/album94/title94.mp3/path/to/artist94/album94/title94.mp30 (/path/to/artist94/album94/title94.mp3): 95
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist94/album94/title94.mp3 (/path/to/artist94/album94/title94.mp3): 95
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist95/album95/title95.mp3/path/to/artist95/album95/title95.mp30 (/path/to/artist95/album95/title95.mp3): 96
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist95/album95/title95.mp3 (/path/to/artist95/album95/title95.mp3): 96
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist96/album96/title96.mp3/path/to/artist96/album96/title96.mp30 (/path/to/artist96/album96/title96.mp3): 97
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist96/album96/title96.mp3 (/path/to/artist96/album96/title96.mp3): 97
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist97/album97/title97.mp3/path/to/artist97/album97/title97.mp30 (/path/to/artist97/album97/title97.mp3): 98
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist97/album97/title97.mp3 (/path/to/artist97/album97/title97.mp3): 98
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist98/album98/title98.mp3/path/to/artist98/album98/title98.mp30 (/path/to/artist98/album98/title98.mp3): 99
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist98/album98/title98.mp3 (/path/to/artist98/album98/title98.mp3): 99
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /path/to/artist99/album99/title99.mp3/path/to/artist99/album99/title99.mp30 (/path/to/artist99/album99/title99.mp3): 100
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /path/to/artist99/album99/title99.mp3 (/path/to/artist99/album99/title99.mp3): 100
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 100 tracks to database
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album solar system2000 (Solar System): 101
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist  (): 101
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album asia riversasia2000 (Asia Rivers): 102
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist Earth feat. Asia (Earth feat. Asia): 102
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist Asia (Asia): 103
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album europe mountainseurope2000 (Europe Mountains): 103
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist Earth feat. Europe (Earth feat. Europe): 104
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist Europe (Europe): 105
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album african countriesafrica2000 (African Countries): 104
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist Earth feat. Africa (Earth feat. Africa): 106
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist Africa (Africa): 107
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 20 tracks to database
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835169650144)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m20 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album solar system2000 (Solar System): 105
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album asia riversasia2000 (Asia Rivers): 106
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 10 tracks to database
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835169573408)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m5 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m5 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album solar system2000 (Solar System): 107
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 5 tracks to database
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835169595840)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m5 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/saturn.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/saturn.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3): 108
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3): 108
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/neptune.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/neptune.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3): 109
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3): 109
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/uranus.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/uranus.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3): 110
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3): 110
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/yang tse.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/yang tse.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3): 111
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3): 111
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/mekong.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/mekong.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3): 112
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3): 112
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 5 tracks to database
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album solar system2000 (Solar System): 113
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album asia riversasia2000 (Asia Rivers): 114
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album europe mountainseurope2000 (Europe Mountains): 115
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album african countriesafrica2000 (African Countries): 116
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 20 tracks to database
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835170282928)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m20 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album solar system2000 (Solar System): 117
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album asia riversasia2000 (Asia Rivers): 118
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album europe mountainseurope2000 (Europe Mountains): 119
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album african countriesafrica2000 (African Countries): 120
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 20 tracks to database
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835169807088)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m20 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835169722256)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/mercury.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/mercury.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3): 121
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3): 113
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/venus.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/venus.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3): 122
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3): 114
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/earth.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/earth.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3): 123
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3): 115
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/mars.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/mars.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3): 124
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3): 116
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/jupiter.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/jupiter.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3): 125
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3): 117
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/saturn.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/saturn.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3): 126
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/neptune.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/neptune.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3): 127
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/uranus.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/uranus.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3): 128
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/yang tse.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/yang tse.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3): 129
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/mekong.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/mekong.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3): 130
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/shinano.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/shinano.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Shinano.mp3): 131
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Shinano.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Shinano.mp3): 118
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/zugspitze.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/zugspitze.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Zugspitze.mp3): 132
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Zugspitze.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Zugspitze.mp3): 119
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/mont blanc.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/mont blanc.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Mont Blanc.mp3): 133
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Mont Blanc.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Mont Blanc.mp3): 120
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/seine.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/seine.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Seine.mp3): 134
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Seine.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Seine.mp3): 121
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/matterhorn.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/matterhorn.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Matterhorn.mp3): 135
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Matterhorn.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Matterhorn.mp3): 122
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/algeria.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/algeria.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Algeria.mp3): 136
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Algeria.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Algeria.mp3): 123
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/mosambique.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/mosambique.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Mosambique.mp3): 137
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Mosambique.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Mosambique.mp3): 124
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/ivory coast.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/ivory coast.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Ivory Coast.mp3): 138
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Ivory Coast.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Ivory Coast.mp3): 125
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/kenia.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/kenia.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Kenia.mp3): 139
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Kenia.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Kenia.mp3): 126
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/nigeria.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/nigeria.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Nigeria.mp3): 140
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Nigeria.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Nigeria.mp3): 127
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 20 tracks to database
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835169796624)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/mercury.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/mercury.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3): 141
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/venus.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/venus.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3): 142
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/earth.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/earth.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3): 143
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/mars.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/mars.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3): 144
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/jupiter.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/jupiter.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3): 145
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/saturn.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/saturn.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3): 146
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/neptune.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/neptune.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3): 147
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/uranus.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/uranus.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3): 148
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/yang tse.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/yang tse.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3): 149
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/mekong.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/mekong.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3): 150
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/shinano.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/shinano.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Shinano.mp3): 151
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/zugspitze.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/zugspitze.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Zugspitze.mp3): 152
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/mont blanc.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/mont blanc.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Mont Blanc.mp3): 153
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/seine.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/seine.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Seine.mp3): 154
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/matterhorn.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. europe/europe mountains/matterhorn.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Europe/Europe Mountains/Matterhorn.mp3): 155
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/algeria.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/algeria.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Algeria.mp3): 156
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/mosambique.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/mosambique.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Mosambique.mp3): 157
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/ivory coast.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/ivory coast.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Ivory Coast.mp3): 158
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/kenia.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/kenia.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Kenia.mp3): 159
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/nigeria.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. africa/african countries/nigeria.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Africa/African Countries/Nigeria.mp3): 160
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 20 tracks to database
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album solar system2000 (Solar System): 161
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album asia riversasia2000 (Asia Rivers): 162
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 10 tracks to database
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835170396256)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m5 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m5 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album solar system2000 (Solar System): 163
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album asia riversasia2000 (Asia Rivers): 164
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 10 tracks to database
+[22:47:07] [33mDev: [0m[34mDB::Module: [0mCreate new connection to /tmp/sayonara/ReloadThreadTest/player.db (/tmp/sayonara/ReloadThreadTest/player.db-93835169713888)
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m5 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m5 of them are not on disk anymore
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mDeleting 0 tracks
+[22:47:07] [33mDebug: [0m[34mDB::Tracks: [0mdelete tracks: 1
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/mercury.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/mercury.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3): 165
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/venus.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/venus.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3): 166
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/earth.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/earth.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3): 167
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/mars.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/mars.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3): 168
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/jupiter.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/jupiter.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3): 169
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 5 tracks to database
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album solar system2000 (Solar System): 170
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 5 tracks to database
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch tracks from database: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 tracks already in library
+[22:47:07] [33mDebug: [0m[34mLibrary::ReloadThread: [0m0 of them are not on disk anymore
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch tracks from database: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Tracks: [0mCannot get tracks from db
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0m Search for already known albums and artists.
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Could not get all albums from database: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Could not get all artists from database: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch tracks from database: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/mercury.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/mercury.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/venus.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/venus.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/earth.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/earth.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/mars.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/mars.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/jupiter.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/jupiter.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/saturn.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/saturn.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/neptune.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/neptune.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/solar system/uranus.mp3/tmp/sayonara/reloadthreadtest/path/to/solar system/uranus.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/yang tse.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/yang tse.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: 2. Cannot insert album /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new album /tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/mekong.mp3/tmp/sayonara/reloadthreadtest/path/to/earth feat. asia/asia rivers/mekong.mp30 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3): -1
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch artistID for artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot insert artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDebug: [0m[34mDB::LibraryDatabase: [0mInsert new artist /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3 (/tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3): -1
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mercury.mp3
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Venus.mp3
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Earth.mp3
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Mars.mp3
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Jupiter.mp3
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Saturn.mp3
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Neptune.mp3
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Solar System/Uranus.mp3
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Yang Tse.mp3
+[22:47:07] [31mWarning: [0m[34mDB::LibraryDatabase: [0mCannot insert artist or album of /tmp/sayonara/ReloadThreadTest/path/to/Earth feat. Asia/Asia Rivers/Mekong.mp3
+[22:47:07] [33mDev: [0m[34mDB::LibraryDatabase: [0mCommit 10 tracks to database
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot delete orphaned albums: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot fetch all hashes: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mUpdating album artists... 
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot add album artists: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mCreate indexes... 
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot drop index album_search: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot drop index artist_search: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot drop index track_search: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot create index album_search: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot create index artist_search: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [31mError: [0m[34mDB::Module: [0mQuery error to connection 
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: Cannot create index track_search: 1
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded Driver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0mDriver not loaded
+[22:47:07] [31mError: [0m[34mSqlQuery: [0m
+
+[22:47:07] [33mDev: [0m[34mLibrary::ReloadThread: [0mClean up... 
+[22:47:07] [33mDev: [0m[34mUtil::File: [0mI will delete /tmp/sayonara/ReloadThreadTest
+
+      Start 36: LibraryPluginHandlerTest
+36/96 Test #36: LibraryPluginHandlerTest .........   Passed    0.02 sec
+      Start 37: LyricsLogicTest
+37/96 Test #37: LyricsLogicTest ..................   Passed    0.02 sec
+      Start 38: LyricsServerProviderTest
+38/96 Test #38: LyricsServerProviderTest .........   Passed    0.02 sec
+      Start 39: PlayManagerTest
+39/96 Test #39: PlayManagerTest ..................   Passed    0.02 sec
+      Start 40: LibraryPlaylistInteractorTest
+40/96 Test #40: LibraryPlaylistInteractorTest ....   Passed    0.48 sec
+      Start 41: LocalPathPlaylistCreatorTest
+41/96 Test #41: LocalPathPlaylistCreatorTest .....   Passed    0.02 sec
+      Start 42: LocalPathProcessorTest
+42/96 Test #42: LocalPathProcessorTest ...........   Passed    0.03 sec
+      Start 43: PlaylistDbInterfaceTest
+43/96 Test #43: PlaylistDbInterfaceTest ..........   Passed    0.02 sec
+      Start 44: PlaylistFileTest
+44/96 Test #44: PlaylistFileTest .................   Passed    0.02 sec
+      Start 45: PlaylistHandlerTest
+45/96 Test #45: PlaylistHandlerTest ..............   Passed    0.08 sec
+      Start 46: PlaylistLoaderTest
+46/96 Test #46: PlaylistLoaderTest ...............   Passed    0.06 sec
+      Start 47: PlaylistShuffleTest
+47/96 Test #47: PlaylistShuffleTest ..............   Passed    0.02 sec
+      Start 48: PlaylistTest
+48/96 Test #48: PlaylistTest .....................   Passed    0.02 sec
+      Start 49: PlaylistTrackModifyTest
+49/96 Test #49: PlaylistTrackModifyTest ..........   Passed    0.02 sec
+      Start 50: RepeatTest
+50/96 Test #50: RepeatTest .......................   Passed    0.02 sec
+      Start 51: StopBehaviorTest
+51/96 Test #51: StopBehaviorTest .................   Passed    0.02 sec
+      Start 52: SettingConverterTest
+52/96 Test #52: SettingConverterTest .............   Passed    0.02 sec
+      Start 53: SettingsNotifierTest
+53/96 Test #53: SettingsNotifierTest .............   Passed    0.02 sec
+      Start 54: ConverterTest
+54/96 Test #54: ConverterTest ....................   Passed    0.02 sec
+      Start 55: ListeningDateTest
+55/96 Test #55: ListeningDateTest ................   Passed    0.02 sec
+      Start 56: SmartPlaylistManagerTest
+56/96 Test #56: SmartPlaylistManagerTest .........   Passed    0.02 sec
+      Start 57: StreamRecorderTest
+57/96 Test #57: StreamRecorderTest ...............   Passed    0.02 sec
+      Start 58: StreamRecorderUtilsTest
+58/96 Test #58: StreamRecorderUtilsTest ..........   Passed    0.02 sec
+      Start 59: RadioBrowserParserTest
+59/96 Test #59: RadioBrowserParserTest ...........   Passed    0.02 sec
+      Start 60: RadioStationParserTest
+60/96 Test #60: RadioStationParserTest ...........   Passed    0.02 sec
+      Start 61: StreamHandlerTest
+61/96 Test #61: StreamHandlerTest ................   Passed    0.02 sec
+      Start 62: AlbumArtistTest
+62/96 Test #62: AlbumArtistTest ..................   Passed    0.02 sec
+      Start 63: CoverEditTest
+63/96 Test #63: CoverEditTest ....................   Passed    1.40 sec
+      Start 64: CoverTest
+64/96 Test #64: CoverTest ........................   Passed    0.17 sec
+      Start 65: DiscnumberTest
+65/96 Test #65: DiscnumberTest ...................   Passed    0.02 sec
+      Start 66: EditorTest
+66/96 Test #66: EditorTest .......................   Passed    0.26 sec
+      Start 67: LyricsTest
+67/96 Test #67: LyricsTest .......................   Passed    0.02 sec
+      Start 68: RatingTest
+68/96 Test #68: RatingTest .......................   Passed    0.03 sec
+      Start 69: TagFromPathTest
+69/96 Test #69: TagFromPathTest ..................   Passed    0.02 sec
+      Start 70: TaggingTest
+70/96 Test #70: TaggingTest ......................   Passed    0.03 sec
+      Start 71: ASXParserTest
+71/96 Test #71: ASXParserTest ....................   Passed    0.02 sec
+      Start 72: AlbumClassTest
+72/96 Test #72: AlbumClassTest ...................   Passed    0.02 sec
+      Start 73: AsyncWebAccessTest
+73/96 Test #73: AsyncWebAccessTest ...............   Passed    5.51 sec
+      Start 74: CissearchTest
+74/96 Test #74: CissearchTest ....................   Passed    0.03 sec
+      Start 75: CryptTest
+75/96 Test #75: CryptTest ........................   Passed    0.02 sec
+      Start 76: DirectoryReaderTest
+76/96 Test #76: DirectoryReaderTest ..............   Passed    0.02 sec
+      Start 77: FileHelperTest
+77/96 Test #77: FileHelperTest ...................   Passed    0.02 sec
+      Start 78: LanguageKeyTest
+78/96 Test #78: LanguageKeyTest ..................   Passed    0.01 sec
+      Start 79: LanguageUtilTest
+79/96 Test #79: LanguageUtilTest .................   Passed    0.02 sec
+      Start 80: LibraryFilterTest
+80/96 Test #80: LibraryFilterTest ................   Passed    0.02 sec
+      Start 81: M3UParserTest
+81/96 Test #81: M3UParserTest ....................   Passed    0.02 sec
+      Start 82: MetaDataListTest
+82/96 Test #82: MetaDataListTest .................   Passed    0.09 sec
+      Start 83: MetaDataSortingTest
+83/96 Test #83: MetaDataSortingTest ..............   Passed    0.02 sec
+      Start 84: MetaDataTest
+84/96 Test #84: MetaDataTest .....................   Passed    0.02 sec
+      Start 85: MimeDataTest
+85/96 Test #85: MimeDataTest .....................   Passed    0.02 sec
+      Start 86: PlaylistModeTest
+86/96 Test #86: PlaylistModeTest .................   Passed    0.02 sec
+      Start 87: PlsParserTest
+87/96 Test #87: PlsParserTest ....................   Passed    0.02 sec
+      Start 88: PodcastParserTest
+88/96 Test #88: PodcastParserTest ................   Passed    0.03 sec
+      Start 89: Ranges
+89/96 Test #89: Ranges ...........................   Passed    0.02 sec
+      Start 90: SetTest
+90/96 Test #90: SetTest ..........................   Passed    0.01 sec
+      Start 91: SettingsTest
+91/96 Test #91: SettingsTest .....................   Passed    0.02 sec
+      Start 92: SortingTest
+92/96 Test #92: SortingTest ......................   Passed    0.02 sec
+      Start 93: StandardPathTest
+93/96 Test #93: StandardPathTest .................   Passed    0.02 sec
+      Start 94: StreamParserTest
+94/96 Test #94: StreamParserTest .................   Passed    0.31 sec
+      Start 95: TreeTest
+95/96 Test #95: TreeTest .........................   Passed    0.02 sec
+      Start 96: UtilTest
+96/96 Test #96: UtilTest .........................   Passed    0.02 sec
+
+99% tests passed, 1 tests failed out of 96
+
+Total Test time (real) =  18.13 sec
+
+The following tests FAILED:
+	 35 - ReloadThreadTest (Failed)
+Errors while running CTest
+[1m[31m==> ERROR:(B[m[1m A failure occurred in check().(B[m
+[1m    Aborting...(B[m

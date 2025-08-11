@@ -1,0 +1,41 @@
+cd src; make install
+make[1]: Entering directory '/build/polo-git/src/polo/src'
+/bin/bash: line 1: lsb_release: command not found
+/bin/bash: line 1: lsb_release: command not found
+mkdir -p "/build/polo-git/pkg/polo-git/usr/bin"
+mkdir -p "/build/polo-git/pkg/polo-git/usr/share"
+mkdir -p "/build/polo-git/pkg/polo-git/usr/share/man"
+mkdir -p "/build/polo-git/pkg/polo-git/usr/share/man/man1"
+mkdir -p "/build/polo-git/pkg/polo-git/usr/share/applications"
+mkdir -p "/build/polo-git/pkg/polo-git/usr/share/polo"
+mkdir -p "/build/polo-git/pkg/polo-git/usr/share/pixmaps"
+mkdir -p "/build/polo-git/pkg/polo-git/usr/share/appdata"
+mkdir -p "/build/polo-git/pkg/polo-git/var/log/polo"
+#binary
+install -m 0755 polo-gtk "/build/polo-git/pkg/polo-git/usr/bin"
+install -m 0755 polo-gtk3-helper "/build/polo-git/pkg/polo-git/usr/bin"
+install -m 0755 polo-disk "/build/polo-git/pkg/polo-git/usr/bin"
+install -m 0755 polo-uninstall "/build/polo-git/pkg/polo-git/usr/bin"
+#shared files
+cp -dpr --no-preserve=ownership -t "/build/polo-git/pkg/polo-git/usr/share/polo" ./share/polo/*
+chmod --recursive 0755 /build/polo-git/pkg/polo-git/usr/share/polo/*
+chmod a+x /build/polo-git/pkg/polo-git/usr/share/polo/files/gtk-theme/install-gtk-theme
+#launcher
+install -m 0644 polo-gtk.desktop "/build/polo-git/pkg/polo-git/usr/share/applications"
+#app icon
+install -m 0755 ./share/pixmaps/polo.png "/build/polo-git/pkg/polo-git/usr/share/pixmaps/"
+# appdata
+install -m 0755 ../debian/polo-gtk.appdata.xml "/build/polo-git/pkg/polo-git/usr/share/appdata"
+# translations
+for lang in de fr nl sv tr ; do \
+	mkdir -p "/build/polo-git/pkg/polo-git/usr/share/locale/$lang/LC_MESSAGES"; \
+	msgfmt --check --verbose -o "/build/polo-git/pkg/polo-git/usr/share/locale/$lang/LC_MESSAGES/polo.mo" ../po/polo-$lang.po ; \
+done
+767 translated messages, 100 fuzzy translations, 180 untranslated messages.
+../po/polo-fr.po:1533: number of format specifications in 'msgid' and 'msgstr' does not match
+msgfmt: found 1 fatal error
+947 translated messages, 97 fuzzy translations, 3 untranslated messages.
+880 translated messages, 76 fuzzy translations, 91 untranslated messages.
+1040 translated messages, 4 fuzzy translations, 3 untranslated messages.
+1039 translated messages, 4 fuzzy translations, 4 untranslated messages.
+make[1]: Leaving directory '/build/polo-git/src/polo/src'

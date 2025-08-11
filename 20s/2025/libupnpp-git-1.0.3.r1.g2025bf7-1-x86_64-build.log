@@ -1,0 +1,74 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 libupnpp build
+The Meson build system
+Version: 1.8.3
+Source dir: /build/libupnpp-git/src/libupnpp
+Build dir: /build/libupnpp-git/src/build
+Build type: native build
+Project name: libupnpp
+Project version: 1.0.3
+C++ compiler for the host machine: c++ (gcc 15.1.1 "c++ (GCC) 15.1.1 20250729")
+C++ linker for the host machine: c++ ld.bfd 2.45.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Run-time dependency threads found: YES
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency libnpupnp found: YES 6.2.1
+Run-time dependency libcurl found: YES 8.15.0
+Run-time dependency expat found: YES 2.7.1
+Compiler for C++ supports arguments -Wno-deprecated-declarations: YES 
+Compiler for C++ supports arguments /D_CRT_SECURE_NO_WARNINGS: NO 
+Compiler for C++ supports arguments /wd4251: NO 
+Configuring config.h using configuration
+Build targets in project: 2
+
+libupnpp 1.0.3
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/2 eta ?                                              Writing build.ninja:   0%|          | 0/61 eta ?                                                ninja: Entering directory `/build/libupnpp-git/src/build'
+[1/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_base64.cxx.o
+[2/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_httpdownload.cxx.o
+[3/35] Compiling C++ object libupnpputil.a.p/libupnpp_log.cpp.o
+[4/35] Linking static target libupnpputil.a
+[5/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_ohreceiver.cxx.o
+[6/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_device_devservice.cxx.o
+[7/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_ohsender.cxx.o
+[8/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_ohtime.cxx.o
+[9/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_avlastchg.cxx.o
+[10/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_conman.cxx.o
+[11/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_ohinfo.cxx.o
+[12/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_ohvolume.cxx.o
+[13/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_md5.cpp.o
+[14/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_device.cxx.o
+[15/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_ohproduct.cxx.o
+[16/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_avtransport.cxx.o
+[17/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_mediaserver.cxx.o
+[18/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_ohplaylist.cxx.o
+[19/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_renderingcontrol.cxx.o
+[20/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_service.cxx.o
+[21/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_description.cxx.o
+[22/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_ohradio.cxx.o
+[23/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_typedservice.cxx.o
+[24/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_cdirectory.cxx.o
+[25/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_cdircontent.cxx.o
+[26/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_linnsongcast.cxx.o
+[27/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_device_vdir.cxx.o
+[28/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_mediarenderer.cxx.o
+[29/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_control_discovery.cxx.o
+[30/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_soaphelp.cxx.o
+[31/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_upnpavutils.cxx.o
+[32/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_device_devdevice.cxx.o
+[33/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_upnpplib.cxx.o
+[34/35] Compiling C++ object libupnpp.so.1.0.3.p/libupnpp_smallut.cpp.o
+[35/35] Linking target libupnpp.so.1.0.3
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/libupnpp-git/src/build

@@ -1,0 +1,66 @@
+-- The C compiler identification is GNU 15.1.1
+-- The CXX compiler identification is GNU 15.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.50.1")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- CPM: Adding package KDDockWidgets@1.7.0 (v1.7.0)
+-- The following OPTIONAL packages have been found:
+
+ * Qt6WidgetsTools (required version >= 6.9.1)
+ * Qt6CorePrivate (required version == 6.9.1)
+ * OpenGL
+ * Qt6GuiTools (required version >= 6.9.1)
+ * Qt6CoreTools (required version >= 6.9.1)
+ * Qt6DBusTools (required version >= 6.9.1)
+ * Qt6DBusPrivate (required version == 6.9.1)
+ * PkgConfig
+ * Qt6GuiPrivate (required version == 6.9.1)
+ * Qt6WidgetsPrivate (required version == 6.9.1)
+ * Qt6Widgets
+ * Git
+ * Qt6TestPrivate (required version == 6.9.1)
+ * Qt6Test (required version >= 6.2.0)
+
+-- The following REQUIRED packages have been found:
+
+ * Qt6 (required version >= 6.2.0)
+
+-- The following OPTIONAL packages have not been found:
+
+ * Vulkan
+ * WrapVulkanHeaders
+
+-- CPM: Adding package spdlog@1.9.2 (v1.9.2)
+-- Build spdlog: 1.9.2
+-- Build type: None
+-- CPM: Adding package json@3.10.5 (v3.10.5)
+CMake Error at /build/redasm-git/src/build/_deps/json-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 has been removed from CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+  Or, add -DCMAKE_POLICY_VERSION_MINIMUM=3.5 to try configuring anyway.
+
+
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

@@ -1,0 +1,131 @@
+
+
+ ___  ______ _______ _______ ___
+|  _)/ _____|_______|_______|_  |
+| | ( (____  _____      _     | |    ___  ____  _____ ____  _____  ____ _____
+| |  \____ \|  ___)    | |    | |   / _ \|  _ \| ___ |  _ \(____ |/ _  | ___ |
+| |_ _____) ) |        | |   _| |  | |_| | |_| | ____| | | / ___ ( (_| | ____|
+|___|______/|_|        |_|  (___|   \___/|  __/|_____)_| |_\_____|\___ |_____)
+                                         |_|                     (_____|
+
+Welcome to the SFT technologies computer-aided openage build system!
+
+You have chosen, or been chosen, to attempt the daring task of building openage.
+If you have installed all the dependencies that are conveniently listed in
+[doc/building.md], this _might_ just work!
+
+If it doesn't, consider reporting the issue, or ask for help:
+  * GitHub: https://github.com/SFTtech/openage
+  * Matrix: #sfttech:matrix.org
+
+-- The CXX compiler identification is GNU 15.1.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_REQUIRED_CXX20_SUPPORT
+-- Performing Test HAVE_REQUIRED_CXX20_SUPPORT - Success
+-- Found Python3: /usr/bin/python3.13 (found suitable exact version "3.13.5") found components: Interpreter Development NumPy Development.Module Development.Embed
+-- Found Python: /usr/bin/python3.13 (Required is at least version "3.9")
+-- Found Cython: /usr/bin/python3.13 -m cython (found suitable version "3.1.2", minimum required is "3.0.10")
+PYTHON_LIBRARIES: /usr/lib/libpython3.13.so
+-- Checking python3 module PIL.Image - Success
+-- Checking python3 module PIL.ImageDraw - Success
+-- Checking python3 module numpy - Success
+-- Checking python3 module pygments - Success
+-- Checking python3 module mako.template - Success
+-- Checking python3 module toml - Success
+-- Checking python3 module lz4 - Success
+-- Set PROJECT_VERSION from git.
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- The C compiler identification is GNU 15.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+CMake Warning at buildsystem/doxygen.cmake:50 (message):
+  doxygen couldn't be found, you won't be able to generate docs
+Call Stack (most recent call first):
+  CMakeLists.txt:223 (doxygen_configure)
+
+
+-- Found Freetype: /usr/lib/libfreetype.so (found version "2.13.3")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Found PNG: /usr/lib/libpng.so (found version "1.6.50")
+-- Found Opusfile: /usr/lib/libopusfile.so
+-- Found Epoxy: /usr/lib/libepoxy.so
+-- Found HarfBuzz: /usr/lib/libharfbuzz.so (found suitable version "11.3.3", minimum required is "1.0.0")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Could NOT find GCCBacktrace (missing: GCCBacktrace_LIBRARIES GCCBacktrace_INCLUDE_DIRS) 
+-- optional dependency is unavailable: backtrace
+-- Found GPerfTools: /lib/libtcmalloc_and_profiler.so
+-- Found Inotify: /usr/include
+-- Looking for wsyncup in /usr/lib/libcurses.so
+-- Looking for wsyncup in /usr/lib/libcurses.so - found
+-- Found Curses: /usr/lib/libncursesw.so
+-- Found Vulkan: /lib/libvulkan.so (found version "1.4.321") found components: glslc glslangValidator
+
+cython module
+	run                                                 [embedded interpreter] [noinstall]
+	openage.cython_check
+	openage.cabextract.lzxd
+	openage.cabextract.cabchecksum
+	openage.convert.processor.export.terrain_merge
+	openage.convert.processor.export.texture_merge
+	openage.convert.service.export.interface.visgrep
+-- Found Ogg: /usr/lib/libogg.so
+	openage.convert.service.export.opus.opusenc
+	openage.convert.service.export.png.binpack
+	openage.convert.service.export.png.png_create
+	openage.convert.value_object.read.media.sld
+	openage.convert.value_object.read.media.slp
+	openage.convert.value_object.read.media.smp
+	openage.convert.value_object.read.media.smx
+	openage.cppinterface.exctranslate
+	openage.cppinterface.exctranslate_tests
+	openage.cppinterface.pyobject
+	openage.cppinterface.setup_checker
+	openage.cvar.cvar
+	openage.event.demo
+	openage.game.main_cpp
+	openage.gamestate.tests
+	openage.log.log_cpp
+	openage.main.main_cpp
+	openage.main.tests
+	openage.pathfinding.tests
+	openage.renderer.renderer_cpp
+	openage.renderer.tests
+	openage.testing.cpp_testing
+	openage.testing.misc_cpp
+	openage.util.filelike.cpp
+	openage.util.fslike.cpp
+	openage.versions.versions
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/build/openage-git/src/build/openage/__main__.py", line 178, in <module>
+    multiprocessing.set_start_method('spawn')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/context.py", line 247, in set_start_method
+    raise RuntimeError('context has already been set')
+RuntimeError: context has already been set
+CMake Error at buildsystem/codegen.cmake:32 (message):
+  failed to get target list from codegen invocation
+Call Stack (most recent call first):
+  buildsystem/python.cmake:495 (codegen_run)
+  CMakeLists.txt:261 (python_finalize)
+
+
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

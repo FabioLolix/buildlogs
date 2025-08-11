@@ -1,0 +1,178 @@
+ninja: Entering directory `build'
+[1/10] Generating resources/hello-resources_h with a custom command
+[2/10] Generating resources/hello-resources_c with a custom command
+[3/10] Compiling C object src/launchar.p/meson-generated_.._.._resources_hello-resources.c.o
+[4/10] Compiling Vala source ../src/main.vala ../src/window.vala ../src/app_entry.vala ../src/config.vala
+../src/window.vala:21.5-21.29: warning: [GtkChild] fields must be declared as `unowned'
+   21 |     Gtk.Grid application_grid;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~ 
+../src/window.vala:24.5-24.41: warning: [GtkChild] fields must be declared as `unowned'
+   24 |     Gtk.ScrolledWindow application_scroll;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../src/window.vala:27.5-27.31: warning: [GtkChild] fields must be declared as `unowned'
+   27 |     Gtk.SearchEntry search_apps;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../src/window.vala:30.5-30.25: warning: [GtkChild] fields must be declared as `unowned'
+   30 |     Gtk.Label search_desc;
+      |     ^~~~~~~~~~~~~~~~~~~~~ 
+Compilation succeeded - 4 warning(s)
+[5/10] Compiling C object src/launchar.p/meson-generated_config.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from src/launchar.p/config.c:22:
+config.c: In function ‘config_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+config.c:211:6: note: in expansion of macro ‘g_once_init_enter’
+config.c: In function ‘command_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+config.c:498:6: note: in expansion of macro ‘g_once_init_enter’
+config.c: In function ‘load_commands’:
+config.c:959:9: warning: unused variable ‘_group_collection_size_’ [-Wunused-variable]
+config.c:929:8: warning: variable ‘_groups_size_’ set but not used [-Wunused-but-set-variable]
+[6/10] Compiling C object src/launchar.p/meson-generated_main.c.o
+[7/10] Compiling C object src/launchar.p/meson-generated_window.c.o
+../src/window.vala: In function ‘launchar_window_setup_applications’:
+../src/window.vala:70:18: warning: assignment to ‘gchar **’ {aka ‘char **’} from incompatible pointer type ‘const gchar * const*’ {aka ‘const char * const*’} [-Wincompatible-pointer-types]
+   70 |         string[] dirs = Environment.get_system_data_dirs ();
+      |                  ^
+window.c: In function ‘__lambda12_’:
+window.c:708:8: warning: variable ‘_tmp10__length1’ set but not used [-Wunused-but-set-variable]
+window.c:664:10: warning: variable ‘_tmp9_’ set but not used [-Wunused-but-set-variable]
+window.c:661:7: warning: variable ‘_tmp6__length1’ set but not used [-Wunused-but-set-variable]
+window.c:658:7: warning: variable ‘_str_size_’ set but not used [-Wunused-but-set-variable]
+window.c: In function ‘launchar_window_auto_scroll’:
+window.c:857:8: warning: variable ‘x’ set but not used [-Wunused-but-set-variable]
+window.c: In function ‘__lambda1_’:
+window.c:1157:13: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+window.c: In function ‘___lambda1__gcompare_data_func’:
+window.c:1174:29: warning: passing argument 2 of ‘__lambda1_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+window.c:1154:29: note: expected ‘const void ***’ but argument is of type ‘gconstpointer’ {aka ‘const void *’}
+window.c:1174:32: warning: passing argument 3 of ‘__lambda1_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+window.c:1155:29: note: expected ‘const void ***’ but argument is of type ‘gconstpointer’ {aka ‘const void *’}
+window.c: In function ‘___lambda11_’:
+window.c:1370:10: warning: variable ‘_tmp46__length1’ set but not used [-Wunused-but-set-variable]
+window.c:1366:10: warning: variable ‘_tmp43__length1’ set but not used [-Wunused-but-set-variable]
+window.c:1361:10: warning: variable ‘_tmp38__length1’ set but not used [-Wunused-but-set-variable]
+window.c:1357:10: warning: variable ‘_tmp35__length1’ set but not used [-Wunused-but-set-variable]
+window.c:1352:10: warning: variable ‘_tmp30__length1’ set but not used [-Wunused-but-set-variable]
+window.c:1347:10: warning: variable ‘_tmp27__length1’ set but not used [-Wunused-but-set-variable]
+window.c:1343:13: warning: variable ‘_tmp26_’ set but not used [-Wunused-but-set-variable]
+window.c:1240:7: warning: variable ‘_str_size_’ set but not used [-Wunused-but-set-variable]
+window.c:1212:18: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+window.c: In function ‘launchar_window_filter_grid’:
+window.c:1692:10: warning: variable ‘_tmp8__length1’ set but not used [-Wunused-but-set-variable]
+window.c:1688:16: warning: variable ‘_tmp7_’ set but not used [-Wunused-but-set-variable]
+../src/window.vala:216:18: warning: assignment to ‘AppEntry **’ {aka ‘struct _AppEntry **’} from incompatible pointer type ‘void **’ [-Wincompatible-pointer-types]
+  216 |         foreach (AppEntry app in matches.data) {
+      |                  ^
+window.c:1892:8: warning: unused variable ‘_app_collection_size_’ [-Wunused-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from src/launchar.p/window.c:20:
+window.c: In function ‘launchar_window_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+window.c:2133:6: note: in expansion of macro ‘g_once_init_enter’
+window.c: At top level:
+window.c:1124:1: warning: ‘block4_data_ref’ defined but not used [-Wunused-function]
+window.c:1043:1: warning: ‘block3_data_ref’ defined but not used [-Wunused-function]
+src/launchar.p/window.c:87:20: warning: ‘launchar_window_properties’ defined but not used [-Wunused-variable]
+   87 | static GParamSpec* launchar_window_properties[LAUNCHAR_WINDOW_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[8/10] Compiling C object src/launchar.p/meson-generated_app_entry.c.o
+app_entry.c: In function ‘app_entry_wrap_text’:
+app_entry.c:735:8: warning: unused variable ‘_s_collection_size_’ [-Wunused-variable]
+app_entry.c:689:7: warning: variable ‘_str_size_’ set but not used [-Wunused-but-set-variable]
+app_entry.c: In function ‘app_entry_load_desktop_file’:
+app_entry.c:1381:11: warning: unused variable ‘_l_collection_size_’ [-Wunused-variable]
+app_entry.c:1329:10: warning: variable ‘_list_size_’ set but not used [-Wunused-but-set-variable]
+app_entry.c:1540:12: warning: unused variable ‘_l_collection_size_’ [-Wunused-variable]
+app_entry.c:1488:11: warning: variable ‘_list_size_’ set but not used [-Wunused-but-set-variable]
+app_entry.c:1822:8: warning: unused variable ‘_code_collection_size_’ [-Wunused-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from src/launchar.p/app_entry.c:20:
+app_entry.c: In function ‘app_entry_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+app_entry.c:2927:6: note: in expansion of macro ‘g_once_init_enter’
+app_entry.c: In function ‘__lambda1_’:
+app_entry.c:3004:13: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+app_entry.c: In function ‘___lambda1__gcompare_data_func’:
+app_entry.c:3021:29: warning: passing argument 2 of ‘__lambda1_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+app_entry.c:3001:29: note: expected ‘const void ***’ but argument is of type ‘gconstpointer’ {aka ‘const void *’}
+app_entry.c:3021:32: warning: passing argument 3 of ‘__lambda1_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+app_entry.c:3002:29: note: expected ‘const void ***’ but argument is of type ‘gconstpointer’ {aka ‘const void *’}
+app_entry.c: In function ‘get_application_buttons’:
+app_entry.c:3171:8: warning: unused variable ‘_dir_collection_size_’ [-Wunused-variable]
+../src/app_entry.vala:237:50: warning: passing argument 1 of ‘_vala_array_dup2’ from incompatible pointer type [-Wincompatible-pointer-types]
+  237 |     return apps.data;
+      |                                                  ^      
+      |                                                  |
+      |                                                  void **
+app_entry.c:3117:30: note: expected ‘AppEntry **’ {aka ‘struct _AppEntry **’} but argument is of type ‘void **’
+../src/app_entry.vala:237:76: warning: pointer type mismatch in conditional expression [-Wincompatible-pointer-types]
+  237 |     return apps.data;
+      |                                                                            ^
+../src/app_entry.vala:237:32: note: first expression has type ‘AppEntry **’ {aka ‘struct _AppEntry **’}
+  237 |     return apps.data;
+      |                                ^                                          
+../src/app_entry.vala:237:78: note: second expression has type ‘void **’
+  237 |     return apps.data;
+      |                                                                              ^      
+app_entry.c: In function ‘launch_app’:
+app_entry.c:3599:7: warning: variable ‘_args_size_’ set but not used [-Wunused-but-set-variable]
+../src/app_entry.vala: In function ‘get_term’:
+../src/app_entry.vala:288:16: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  288 |     foreach (Terminal t in terms) {
+      |                ^
+app_entry.c:3781:8: warning: unused variable ‘_t_collection_size_’ [-Wunused-variable]
+app_entry.c: In function ‘terminal_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+app_entry.c:3917:6: note: in expansion of macro ‘g_once_init_enter’
+app_entry.c: In function ‘button_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+app_entry.c:3997:6: note: in expansion of macro ‘g_once_init_enter’
+app_entry.c: At top level:
+app_entry.c:2971:1: warning: ‘block4_data_ref’ defined but not used [-Wunused-function]
+src/launchar.p/app_entry.c:106:20: warning: ‘button_properties’ defined but not used [-Wunused-variable]
+  106 | static GParamSpec* button_properties[BUTTON_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~
+[9/10] Linking target src/launchar
+[9/10] Installing files
+Installing src/launchar to /build/launchar-git/pkg/launchar-git/usr/bin
+Installing /build/launchar-git/src/launchar-git/data/com.gitlab.abiosoft.launchar.desktop to /build/launchar-git/pkg/launchar-git/usr/share/applications

@@ -1,0 +1,135 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for dotnet... /usr/bin/dotnet
+configure: Found dotnet 9.0.108
+configure: Using target framework net9.0
+checking whether NLS is requested... yes
+checking for intltool >= 0.35.0... 0.51.0 found
+checking for intltool-update... /usr/bin/intltool-update
+checking for intltool-merge... /usr/bin/intltool-merge
+checking for intltool-extract... /usr/bin/intltool-extract
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for perl... /usr/bin/perl
+checking for perl >= 5.8.1... 5.42.0
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for libintl.h... yes
+checking for ngettext in libc... yes
+checking for dgettext in libc... yes
+checking for bind_textdomain_codeset... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for dcgettext... yes
+checking if msgfmt accepts -c... yes
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for catalogs to be installed...  af ar ast az be bg bn br bs ca cs da de dv el en_AU en_CA en_GB eo es et eu fa fi fil fo fr ga gl he hi hr hu hy id ie it ja ka kab ko la lt lv ms my nb nl nn oc pl pt pt_BR ro ru si sk sl sq sr sv ta th tr uk vi zh_CN zh_HK zh_TW
+checking for libadwaita-1 >= 1.7... yes
+checking for gtk4 >= 4.18... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating installer/linux/pinta
+config.status: creating pinta.pc
+config.status: creating po/Makefile.in
+config.status: creating xdg/Makefile
+config.status: executing depfiles commands
+config.status: executing default-1 commands
+config.status: executing po/stamp-it commands
+
+pinta-3.1
+
+  Build Environment
+    Install Prefix:     	/usr
+    .NET Runtime:       	/usr/bin/dotnet
+    .NET Target Framework:      net9.0
+    Launch Script:	        /usr/bin/pinta
+    Installation Directory: /usr/lib/pinta/
+
+cd . && env TargetFramework=net9.0 /usr/bin/dotnet publish Pinta/Pinta.csproj --configuration Release -p:BuildTranslations=true --self-contained false -p:PublishDir=/build/pinta-git/src/Pinta/publish
+Making all in xdg
+make[1]: Entering directory '/build/pinta-git/src/Pinta/xdg'
+LC_ALL=C /usr/bin/intltool-merge  -x -u -c ../po/.intltool-merge-cache ../po pinta.appdata.xml.in pinta.appdata.xml
+LC_ALL=C /usr/bin/intltool-merge  -d -u -c ../po/.intltool-merge-cache ../po pinta.desktop.in pinta.desktop
+
+Welcome to .NET 9.0!
+---------------------
+SDK Version: 9.0.108
+
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate, run 'dotnet dev-certs https --trust'
+Learn about HTTPS: https://aka.ms/dotnet-https
+
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+An issue was encountered verifying workloads. For more information, run "dotnet workload update".
+Found cached translation database
+Merging translations into pinta.desktop.
+Generating and caching the translation database
+Merging translations into pinta.appdata.xml.
+CREATED pinta.appdata.xml
+make[1]: Leaving directory '/build/pinta-git/src/Pinta/xdg'
+make[1]: Entering directory '/build/pinta-git/src/Pinta'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/build/pinta-git/src/Pinta'
+  Determining projects to restore...
+  Restored /build/pinta-git/src/Pinta/Pinta.Resources/Pinta.Resources.csproj (in 6.43 sec).
+  Restored /build/pinta-git/src/Pinta/Pinta.Core/Pinta.Core.csproj (in 6.43 sec).
+  Restored /build/pinta-git/src/Pinta/Pinta.Tools/Pinta.Tools.csproj (in 6.43 sec).
+  Restored /build/pinta-git/src/Pinta/Pinta.Docking/Pinta.Docking.csproj (in 6.43 sec).
+  Restored /build/pinta-git/src/Pinta/Pinta.Effects/Pinta.Effects.csproj (in 9.03 sec).
+  Restored /build/pinta-git/src/Pinta/Pinta.Gui.Widgets/Pinta.Gui.Widgets.csproj (in 9.03 sec).
+  Restored /build/pinta-git/src/Pinta/Pinta.Gui.Addins/Pinta.Gui.Addins.csproj (in 9.06 sec).
+  Restored /build/pinta-git/src/Pinta/Pinta/Pinta.csproj (in 9.09 sec).
+  Pinta.Resources -> /build/pinta-git/src/Pinta/Pinta.Resources/bin/Release/net9.0/Pinta.Resources.dll
+  Pinta.Core -> /build/pinta-git/src/Pinta/Pinta.Core/bin/Release/net9.0/Pinta.Core.dll
+  Pinta.Docking -> /build/pinta-git/src/Pinta/Pinta.Docking/bin/Release/net9.0/Pinta.Docking.dll
+  Pinta.Gui.Addins -> /build/pinta-git/src/Pinta/Pinta.Gui.Addins/bin/Release/net9.0/Pinta.Gui.Addins.dll
+  Pinta.Tools -> /build/pinta-git/src/Pinta/Pinta.Tools/bin/Release/net9.0/Pinta.Tools.dll
+  Pinta.Gui.Widgets -> /build/pinta-git/src/Pinta/Pinta.Gui.Widgets/bin/Release/net9.0/Pinta.Gui.Widgets.dll
+  Pinta.Effects -> /build/pinta-git/src/Pinta/Pinta.Effects/bin/Release/net9.0/Pinta.Effects.dll
+  Pinta -> /build/pinta-git/src/Pinta/build/bin/Pinta.dll
+  Pinta -> /build/pinta-git/src/Pinta/publish/

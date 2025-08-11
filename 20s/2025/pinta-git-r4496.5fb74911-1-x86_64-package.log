@@ -1,0 +1,21 @@
+Making install in xdg
+make[1]: Entering directory '/build/pinta-git/src/Pinta/xdg'
+make[2]: Entering directory '/build/pinta-git/src/Pinta/xdg'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/pinta-git/pkg/pinta-git/usr/share/metainfo'
+ /usr/bin/mkdir -p '/build/pinta-git/pkg/pinta-git/usr/share/applications'
+ /usr/bin/mkdir -p '/build/pinta-git/pkg/pinta-git/usr/share/man/man1'
+ /usr/bin/install -c -m 644 pinta.appdata.xml '/build/pinta-git/pkg/pinta-git/usr/share/metainfo'
+ /usr/bin/install -c -m 644 pinta.desktop '/build/pinta-git/pkg/pinta-git/usr/share/applications'
+ /usr/bin/install -c -m 644 pinta.1 '/build/pinta-git/pkg/pinta-git/usr/share/man/man1'
+make[2]: Leaving directory '/build/pinta-git/src/Pinta/xdg'
+make[1]: Leaving directory '/build/pinta-git/src/Pinta/xdg'
+make[1]: Entering directory '/build/pinta-git/src/Pinta'
+make[2]: Entering directory '/build/pinta-git/src/Pinta'
+env TargetFramework=net9.0 /usr/bin/dotnet msbuild installer/linux/install.proj -target:Install -p:SourceDir=/build/pinta-git/src/Pinta -p:PublishDir=/build/pinta-git/src/Pinta/publish -p:InstallPrefix=/build/pinta-git/pkg/pinta-git/usr -p:InstallBinDir=/build/pinta-git/pkg/pinta-git/usr/bin -p:InstallLibDir=/build/pinta-git/pkg/pinta-git/usr/lib -p:InstallDataRootDir=/build/pinta-git/pkg/pinta-git/usr/share -p:InstallManDir=/build/pinta-git/pkg/pinta-git/usr/share/man -p:InstallLocaleDir=/build/pinta-git/pkg/pinta-git/usr/share/locale
+ /usr/bin/mkdir -p '/build/pinta-git/pkg/pinta-git/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 ./pinta.pc '/build/pinta-git/pkg/pinta-git/usr/lib/pkgconfig'
+MSBuild version 17.12.39+2d8506e0f for .NET
+/usr/bin/install -c installer/linux/pinta /build/pinta-git/pkg/pinta-git/usr/bin/pinta
+make[2]: Leaving directory '/build/pinta-git/src/Pinta'
+make[1]: Leaving directory '/build/pinta-git/src/Pinta'

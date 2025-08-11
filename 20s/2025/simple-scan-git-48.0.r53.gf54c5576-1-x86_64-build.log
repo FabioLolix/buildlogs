@@ -1,0 +1,2333 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 simple-scan-git build
+The Meson build system
+Version: 1.8.3
+Source dir: /build/simple-scan-git/src/simple-scan-git
+Build dir: /build/simple-scan-git/src/build
+Build type: native build
+Project name: simple-scan
+Project version: 48.1
+C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250729")
+C linker for the host machine: cc ld.bfd 2.45.0
+Vala compiler for the host machine: valac (valac 0.56.18-dirty)
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency glib-2.0 found: YES 2.84.3
+Run-time dependency gtk4 found: YES 4.18.6
+Run-time dependency gmodule-export-2.0 found: YES 2.84.3
+Run-time dependency gthread-2.0 found: YES 2.84.3
+Run-time dependency libadwaita-1 found: YES 1.7.6
+Run-time dependency zlib found: YES 1.3.1
+Run-time dependency cairo found: YES 1.18.4
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.42.12
+Run-time dependency gusb found: YES 0.4.9
+Run-time dependency colord found: YES 1.4.8
+Did not find CMake 'cmake'
+Found CMake: NO
+Run-time dependency packagekit-glib2 found: NO (tried pkgconfig and cmake)
+Run-time dependency libwebp found: YES 1.6.0
+Run-time dependency libwebpmux found: YES 1.6.0
+Run-time dependency sane-backends found: YES 1.4.0
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program itstool found: YES (/usr/bin/itstool)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Build-time dependency gio-2.0 found: YES 2.84.3
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program itstool found: YES (/usr/bin/itstool)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Build targets in project: 191
+
+simple-scan 48.1
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/191 eta ?                                                Writing build.ninja:   0%|          | 0/270 eta ?                                                 ninja: Entering directory `build'
+[1/170] Generating yelp doc help/bg/help-simple-scan-bg-gmo
+[2/170] Generating yelp doc help/ar/help-simple-scan-ar-gmo
+[3/170] Generating yelp doc help/cs/help-simple-scan-cs-gmo
+[4/170] Generating yelp doc help/el/help-simple-scan-el-gmo
+[5/170] Generating yelp doc help/ca/help-simple-scan-ca-gmo
+[6/170] Generating yelp doc help/da/help-simple-scan-da-gmo
+[7/170] Generating yelp doc help/de/help-simple-scan-de-gmo
+[8/170] Generating yelp doc help/en_GB/help-simple-scan-en_GB-gmo
+[9/170] Generating yelp doc help/eu/help-simple-scan-eu-gmo
+[10/170] Generating yelp doc help/fi/help-simple-scan-fi-gmo
+[11/170] Generating yelp doc help/es/help-simple-scan-es-gmo
+[12/170] Generating yelp doc help/fr/help-simple-scan-fr-gmo
+[13/170] Generating yelp doc help/gl/help-simple-scan-gl-gmo
+[14/170] Generating yelp doc help/hr/help-simple-scan-hr-gmo
+[15/170] Generating yelp doc help/hu/help-simple-scan-hu-gmo
+[16/170] Generating yelp doc help/ia/help-simple-scan-ia-gmo
+[17/170] Generating yelp doc help/id/help-simple-scan-id-gmo
+[18/170] Generating yelp doc help/ja/help-simple-scan-ja-gmo
+[19/170] Generating yelp doc help/ku/help-simple-scan-ku-gmo
+[20/170] Generating yelp doc help/it/help-simple-scan-it-gmo
+[21/170] Generating yelp doc help/nb/help-simple-scan-nb-gmo
+[22/170] Generating yelp doc help/nl/help-simple-scan-nl-gmo
+[23/170] Generating yelp doc help/pl/help-simple-scan-pl-gmo
+[24/170] Generating yelp doc help/pt_BR/help-simple-scan-pt_BR-gmo
+[25/170] Generating yelp doc help/sk/help-simple-scan-sk-gmo
+[26/170] Generating yelp doc help/sl/help-simple-scan-sl-gmo
+[27/170] Generating yelp doc help/ro/help-simple-scan-ro-gmo
+[28/170] Generating yelp doc help/ru/help-simple-scan-ru-gmo
+[29/170] Generating yelp doc help/sr/help-simple-scan-sr-gmo
+[30/170] Generating yelp doc help/tr/help-simple-scan-tr-gmo
+[31/170] Generating yelp doc help/sv/help-simple-scan-sv-gmo
+[32/170] Generating yelp doc help/uk/help-simple-scan-uk-gmo
+[33/170] Generating yelp doc help/zh_TW/help-simple-scan-zh_TW-gmo
+[34/170] Building translation po/ab/LC_MESSAGES/simple-scan-ab.mo
+[35/170] Building translation po/ast/LC_MESSAGES/simple-scan-ast.mo
+[36/170] Building translation po/az/LC_MESSAGES/simple-scan-az.mo
+[37/170] Building translation po/af/LC_MESSAGES/simple-scan-af.mo
+[38/170] Building translation po/am/LC_MESSAGES/simple-scan-am.mo
+[39/170] Building translation po/ar/LC_MESSAGES/simple-scan-ar.mo
+[40/170] Building translation po/be/LC_MESSAGES/simple-scan-be.mo
+[41/170] Building translation po/bg/LC_MESSAGES/simple-scan-bg.mo
+[42/170] Building translation po/bo/LC_MESSAGES/simple-scan-bo.mo
+[43/170] Building translation po/bn/LC_MESSAGES/simple-scan-bn.mo
+[44/170] Building translation po/ca/LC_MESSAGES/simple-scan-ca.mo
+[45/170] Building translation po/cs/LC_MESSAGES/simple-scan-cs.mo
+[46/170] Building translation po/ca@valencia/LC_MESSAGES/simple-scan-ca@valencia.mo
+[47/170] Building translation po/da/LC_MESSAGES/simple-scan-da.mo
+[48/170] Building translation po/de/LC_MESSAGES/simple-scan-de.mo
+[49/170] Building translation po/el/LC_MESSAGES/simple-scan-el.mo
+[50/170] Building translation po/eo/LC_MESSAGES/simple-scan-eo.mo
+[51/170] Building translation po/et/LC_MESSAGES/simple-scan-et.mo
+[52/170] Building translation po/en_GB/LC_MESSAGES/simple-scan-en_GB.mo
+[53/170] Building translation po/es/LC_MESSAGES/simple-scan-es.mo
+[54/170] Building translation po/eu/LC_MESSAGES/simple-scan-eu.mo
+[55/170] Building translation po/fa/LC_MESSAGES/simple-scan-fa.mo
+[56/170] Building translation po/fi/LC_MESSAGES/simple-scan-fi.mo
+[57/170] Building translation po/fr/LC_MESSAGES/simple-scan-fr.mo
+[58/170] Building translation po/gl/LC_MESSAGES/simple-scan-gl.mo
+[59/170] Building translation po/fur/LC_MESSAGES/simple-scan-fur.mo
+[60/170] Building translation po/gd/LC_MESSAGES/simple-scan-gd.mo
+[61/170] Building translation po/he/LC_MESSAGES/simple-scan-he.mo
+[62/170] Building translation po/hi/LC_MESSAGES/simple-scan-hi.mo
+[63/170] Building translation po/hy/LC_MESSAGES/simple-scan-hy.mo
+[64/170] Building translation po/hr/LC_MESSAGES/simple-scan-hr.mo
+[65/170] Building translation po/hu/LC_MESSAGES/simple-scan-hu.mo
+[66/170] Building translation po/id/LC_MESSAGES/simple-scan-id.mo
+[67/170] Building translation po/it/LC_MESSAGES/simple-scan-it.mo
+[68/170] Building translation po/ja/LC_MESSAGES/simple-scan-ja.mo
+[69/170] Building translation po/ie/LC_MESSAGES/simple-scan-ie.mo
+[70/170] Building translation po/is/LC_MESSAGES/simple-scan-is.mo
+[71/170] Building translation po/ka/LC_MESSAGES/simple-scan-ka.mo
+[72/170] Building translation po/kab/LC_MESSAGES/simple-scan-kab.mo
+[73/170] Building translation po/kk/LC_MESSAGES/simple-scan-kk.mo
+[74/170] Building translation po/km/LC_MESSAGES/simple-scan-km.mo
+[75/170] Building translation po/ko/LC_MESSAGES/simple-scan-ko.mo
+[76/170] Building translation po/ku/LC_MESSAGES/simple-scan-ku.mo
+[77/170] Building translation po/ky/LC_MESSAGES/simple-scan-ky.mo
+[78/170] Building translation po/mhr/LC_MESSAGES/simple-scan-mhr.mo
+[79/170] Building translation po/lt/LC_MESSAGES/simple-scan-lt.mo
+[80/170] Building translation po/mjw/LC_MESSAGES/simple-scan-mjw.mo
+[81/170] Building translation po/lv/LC_MESSAGES/simple-scan-lv.mo
+[82/170] Building translation po/ml/LC_MESSAGES/simple-scan-ml.mo
+[83/170] Building translation po/ms/LC_MESSAGES/simple-scan-ms.mo
+[84/170] Building translation po/my/LC_MESSAGES/simple-scan-my.mo
+[85/170] Building translation po/nb/LC_MESSAGES/simple-scan-nb.mo
+[86/170] Building translation po/ne/LC_MESSAGES/simple-scan-ne.mo
+[87/170] Building translation po/nl/LC_MESSAGES/simple-scan-nl.mo
+[88/170] Building translation po/oc/LC_MESSAGES/simple-scan-oc.mo
+[89/170] Building translation po/pl/LC_MESSAGES/simple-scan-pl.mo
+[90/170] Building translation po/pa/LC_MESSAGES/simple-scan-pa.mo
+[91/170] Building translation po/ro/LC_MESSAGES/simple-scan-ro.mo
+[92/170] Building translation po/ru/LC_MESSAGES/simple-scan-ru.mo
+[93/170] Building translation po/sd/LC_MESSAGES/simple-scan-sd.mo
+[94/170] Building translation po/se/LC_MESSAGES/simple-scan-se.mo
+[95/170] Building translation po/shn/LC_MESSAGES/simple-scan-shn.mo
+[96/170] Building translation po/pt_BR/LC_MESSAGES/simple-scan-pt_BR.mo
+[97/170] Building translation po/pt/LC_MESSAGES/simple-scan-pt.mo
+[98/170] Building translation po/sl/LC_MESSAGES/simple-scan-sl.mo
+[99/170] Building translation po/sk/LC_MESSAGES/simple-scan-sk.mo
+[100/170] Building translation po/sq/LC_MESSAGES/simple-scan-sq.mo
+[101/170] Building translation po/sr/LC_MESSAGES/simple-scan-sr.mo
+[102/170] Building translation po/sv/LC_MESSAGES/simple-scan-sv.mo
+[103/170] Building translation po/ta/LC_MESSAGES/simple-scan-ta.mo
+[104/170] Building translation po/sr@latin/LC_MESSAGES/simple-scan-sr@latin.mo
+[105/170] Building translation po/te/LC_MESSAGES/simple-scan-te.mo
+[106/170] Building translation po/tr/LC_MESSAGES/simple-scan-tr.mo
+[107/170] Building translation po/ug/LC_MESSAGES/simple-scan-ug.mo
+[108/170] Building translation po/th/LC_MESSAGES/simple-scan-th.mo
+[109/170] Building translation po/uk/LC_MESSAGES/simple-scan-uk.mo
+[110/170] Building translation po/ur/LC_MESSAGES/simple-scan-ur.mo
+[111/170] Building translation po/uz/LC_MESSAGES/simple-scan-uz.mo
+[112/170] Building translation po/vi/LC_MESSAGES/simple-scan-vi.mo
+[113/170] Building translation po/zh_CN/LC_MESSAGES/simple-scan-zh_CN.mo
+[114/170] Building translation po/zh_HK/LC_MESSAGES/simple-scan-zh_HK.mo
+[115/170] Building translation po/zh_TW/LC_MESSAGES/simple-scan-zh_TW.mo
+[116/170] Generating data/resources_h with a custom command
+[117/170] Generating data/resources_c with a custom command
+[118/170] Generating yelp doc help/fi/help-simple-scan-fi
+[119/170] Generating yelp doc help/el/help-simple-scan-el
+[120/170] Generating yelp doc help/ar/help-simple-scan-ar
+[121/170] Generating yelp doc help/ca/help-simple-scan-ca
+[122/170] Generating yelp doc help/bg/help-simple-scan-bg
+[123/170] Generating yelp doc help/hr/help-simple-scan-hr
+[124/170] Generating yelp doc help/eu/help-simple-scan-eu
+[125/170] Generating yelp doc help/fr/help-simple-scan-fr
+[126/170] Generating yelp doc help/ja/help-simple-scan-ja
+[127/170] Generating yelp doc help/da/help-simple-scan-da
+[128/170] Generating yelp doc help/ia/help-simple-scan-ia
+[129/170] Generating yelp doc help/gl/help-simple-scan-gl
+[130/170] Generating yelp doc help/cs/help-simple-scan-cs
+[131/170] Generating yelp doc help/en_GB/help-simple-scan-en_GB
+[132/170] Generating yelp doc help/de/help-simple-scan-de
+[133/170] Generating yelp doc help/id/help-simple-scan-id
+[134/170] Generating yelp doc help/es/help-simple-scan-es
+[135/170] Generating yelp doc help/hu/help-simple-scan-hu
+[136/170] Generating yelp doc help/it/help-simple-scan-it
+[137/170] Generating yelp doc help/pl/help-simple-scan-pl
+[138/170] Generating yelp doc help/nb/help-simple-scan-nb
+[139/170] Generating yelp doc help/nl/help-simple-scan-nl
+[140/170] Generating yelp doc help/ku/help-simple-scan-ku
+[141/170] Generating yelp doc help/sl/help-simple-scan-sl
+[142/170] Generating yelp doc help/sk/help-simple-scan-sk
+[143/170] Generating yelp doc help/zh_TW/help-simple-scan-zh_TW
+[144/170] Generating yelp doc help/pt_BR/help-simple-scan-pt_BR
+[145/170] Generating yelp doc help/uk/help-simple-scan-uk
+[146/170] Merging translations for data/org.gnome.SimpleScan.desktop
+[147/170] Generating yelp doc help/ru/help-simple-scan-ru
+[148/170] Generating yelp doc help/tr/help-simple-scan-tr
+[149/170] Merging translations for data/org.gnome.SimpleScan.metainfo.xml
+[150/170] Generating yelp doc help/ro/help-simple-scan-ro
+[151/170] Generating yelp doc help/sr/help-simple-scan-sr
+[152/170] Compiling C object src/simple-scan.p/meson-generated_.._.._data_resources.c.o
+[153/170] Generating yelp doc help/sv/help-simple-scan-sv
+[154/170] Compiling Vala source ../simple-scan-git/src/config.vapi ../simple-scan-git/src/app-window.vala ../simple-scan-git/src/authorize-dialog.vala ../simple-scan-git/src/book.vala ../simple-scan-git/src/book-view.vala ../simple-scan-git/src/drivers-dialog.vala ../simple-scan-git/src/page.vala ../simple-scan-git/src/page-texture.vala ../simple-scan-git/src/page-view.vala ../simple-scan-git/src/postprocessor.vala ../simple-scan-git/src/preferences-dialog.vala ../simple-scan-git/src/reorder-pages-dialog.vala ../simple-scan-git/src/simple-scan.vala ../simple-scan-git/src/scanner.vala ../simple-scan-git/src/screensaver.vala ../simple-scan-git/src/autosave-manager.vala
+../simple-scan-git/src/book-view.vala:262.9-262.35: warning: `Gtk.Widget.get_allocation' has been deprecated since 4.12
+  262 |         drawing_area.get_allocation (out allocation);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~                  
+../simple-scan-git/src/book-view.vala:424.9-424.35: warning: `Gtk.Widget.get_allocation' has been deprecated since 4.12
+  424 |         drawing_area.get_allocation(out allocation);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~                 
+../simple-scan-git/src/book-view.vala:426.9-426.22: warning: `Gtk.Widget.get_allocation' has been deprecated since 4.12
+  426 |         get_allocation(out box_allocation);
+      |         ^~~~~~~~~~~~~~                     
+../simple-scan-git/src/book-view.vala:487.27-487.43: warning: `Gtk.Widget.get_style_context' has been deprecated since 4.10
+  487 |         var ruler_color = get_style_context ().get_color ();
+      |                           ^~~~~~~~~~~~~~~~~                 
+../simple-scan-git/src/book-view.vala:507.17-507.46: warning: `Gtk.Widget.get_style_context' has been deprecated since 4.10
+  507 |                 drawing_area.get_style_context ().render_focus (context,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                          
+../simple-scan-git/src/app-window.vala:383.25-383.104: warning: unhandled error `GLib.ConvertError'
+  383 |             directory = GLib.Filename.to_uri(Environment.get_user_special_dir (UserDirectory.DOCUMENTS));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../simple-scan-git/src/app-window.vala:1037.9-1037.34: warning: `Gtk.Widget.translate_coordinates' has been deprecated since 4.12
+ 1037 |         from.translate_coordinates(this, x, y, out tx, out ty);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~                             
+../simple-scan-git/src/drivers-dialog.vala:16.5-16.48: warning: Field `DriversDialog.header_revealer' never used
+   16 |     private unowned Gtk.Revealer header_revealer;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../simple-scan-git/src/drivers-dialog.vala:24.5-24.50: warning: Field `DriversDialog.progress_revealer' never used
+   24 |     private unowned Gtk.Revealer progress_revealer;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../simple-scan-git/src/drivers-dialog.vala:29.5-29.42: warning: Field `DriversDialog.result_label' never used
+   29 |     private unowned Gtk.Label result_label;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../simple-scan-git/src/drivers-dialog.vala:31.5-31.45: warning: Field `DriversDialog.result_sublabel' never used
+   31 |     private unowned Gtk.Label result_sublabel;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../simple-scan-git/src/drivers-dialog.vala:33.5-33.41: warning: Field `DriversDialog.result_icon' never used
+   33 |     private unowned Gtk.Image result_icon;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../simple-scan-git/src/drivers-dialog.vala:36.5-36.35: warning: Field `DriversDialog.stack' never used
+   36 |     private unowned Gtk.Stack stack;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../simple-scan-git/src/drivers-dialog.vala:51.5-51.28: warning: Method `DriversDialog.pulse_start' never used
+   51 |     private void pulse_start ()
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~   
+sane-backends.vapi:239.33-239.37: warning: Argument `null_terminated' never used
+  239 |     public Status get_devices ([CCode (array_length = false, null_terminated = true)] out unowned Device[] device_list, bool local_only);
+      |                                 ^~~~~                                                                                                    
+Compilation succeeded - 15 warning(s)
+[155/170] Compiling C object src/simple-scan.p/meson-generated_postprocessor.c.o
+src/simple-scan.p/postprocessor.c: In function ‘postprocessor_process’:
+src/simple-scan.p/postprocessor.c:142:14: warning: variable ‘_spawn_env_size_’ set but not used [-Wunused-but-set-variable]
+  142 |         gint _spawn_env_size_;
+      |              ^~~~~~~~~~~~~~~~
+src/simple-scan.p/postprocessor.c:137:14: warning: variable ‘_spawn_args_size_’ set but not used [-Wunused-but-set-variable]
+  137 |         gint _spawn_args_size_;
+      |              ^~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from src/simple-scan.p/postprocessor.c:16:
+src/simple-scan.p/postprocessor.c: In function ‘postprocessor_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/postprocessor.c:379:13: note: in expansion of macro ‘g_once_init_enter’
+  379 |         if (g_once_init_enter (&postprocessor_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+[156/170] Compiling C object src/simple-scan.p/meson-generated_screensaver.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from src/simple-scan.p/screensaver.c:15:
+src/simple-scan.p/screensaver.c: In function ‘freedesktop_screensaver_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/screensaver.c:215:13: note: in expansion of macro ‘g_once_init_enter’
+  215 |         if (g_once_init_enter (&freedesktop_screensaver_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/screensaver.c: In function ‘freedesktop_screensaver_dbus_interface_get_property’:
+src/simple-scan.p/screensaver.c:421:18: warning: variable ‘object’ set but not used [-Wunused-but-set-variable]
+  421 |         gpointer object;
+      |                  ^~~~~~
+src/simple-scan.p/screensaver.c: In function ‘freedesktop_screensaver_dbus_interface_set_property’:
+src/simple-scan.p/screensaver.c:438:18: warning: variable ‘object’ set but not used [-Wunused-but-set-variable]
+  438 |         gpointer object;
+      |                  ^~~~~~
+[157/170] Compiling C object src/simple-scan.p/meson-generated_autosave-manager.c.o
+src/simple-scan.p/autosave-manager.c: In function ‘autosave_manager_load’:
+src/simple-scan.p/autosave-manager.c:607:86: warning: passing argument 3 of ‘g_file_load_contents’ from incompatible pointer type [-Wincompatible-pointer-types]
+  607 |                                                 g_file_load_contents (_tmp63_, NULL, &_tmp64_, &_tmp65_, NULL, &_inner_error0_);
+      |                                                                                      ^~~~~~~~
+      |                                                                                      |
+      |                                                                                      guint8 ** {aka unsigned char **}
+In file included from /usr/include/glib-2.0/gio/gio.h:81,
+                 from src/simple-scan.p/autosave-manager.c:20:
+/usr/include/glib-2.0/gio/gfile.h:1284:71: note: expected ‘char **’ but argument is of type ‘guint8 **’ {aka ‘unsigned char **’}
+ 1284 |                                               char                  **contents,
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+src/simple-scan.p/autosave-manager.c:462:38: warning: variable ‘_pixels_size_’ set but not used [-Wunused-but-set-variable]
+  462 |                                 gint _pixels_size_;
+      |                                      ^~~~~~~~~~~~~
+src/simple-scan.p/autosave-manager.c:390:22: warning: unused variable ‘_page_name_collection_size_’ [-Wunused-variable]
+  390 |                 gint _page_name_collection_size_ = 0;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from src/simple-scan.p/autosave-manager.c:16:
+src/simple-scan.p/autosave-manager.c: In function ‘autosave_manager_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/autosave-manager.c:1774:13: note: in expansion of macro ‘g_once_init_enter’
+ 1774 |         if (g_once_init_enter (&autosave_manager_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+[158/170] Compiling C object src/simple-scan.p/meson-generated_page-view.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from src/simple-scan.p/page-view.c:15:
+src/simple-scan.p/page-view.c: In function ‘crop_location_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-view.c:290:13: note: in expansion of macro ‘g_once_init_enter’
+  290 |         if (g_once_init_enter (&crop_location_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-view.c: In function ‘page_view_set_cursor’:
+src/simple-scan.p/page-view.c:1622:19: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1622 |         old_value = page_view_get_cursor (self);
+      |                   ^
+src/simple-scan.p/page-view.c: In function ‘page_view_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-view.c:1812:13: note: in expansion of macro ‘g_once_init_enter’
+ 1812 |         if (g_once_init_enter (&page_view_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+[159/170] Compiling C object src/simple-scan.p/meson-generated_reorder-pages-dialog.c.o
+src/simple-scan.p/reorder-pages-dialog.c: In function ‘reorder_pages_item_finalize’:
+src/simple-scan.p/reorder-pages-dialog.c:263:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  263 |         ReorderPagesItem * self;
+      |                            ^~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-4.0/gtk/css/gtkcss.h:29,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:29,
+                 from src/simple-scan.p/reorder-pages-dialog.c:15:
+src/simple-scan.p/reorder-pages-dialog.c: In function ‘reorder_pages_item_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/reorder-pages-dialog.c:282:13: note: in expansion of macro ‘g_once_init_enter’
+  282 |         if (g_once_init_enter (&reorder_pages_item_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/reorder-pages-dialog.c: In function ‘reorder_pages_dialog_finalize’:
+src/simple-scan.p/reorder-pages-dialog.c:382:30: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  382 |         ReorderPagesDialog * self;
+      |                              ^~~~
+src/simple-scan.p/reorder-pages-dialog.c: In function ‘reorder_pages_dialog_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/reorder-pages-dialog.c:400:13: note: in expansion of macro ‘g_once_init_enter’
+  400 |         if (g_once_init_enter (&reorder_pages_dialog_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/reorder-pages-dialog.c: At top level:
+src/simple-scan.p/reorder-pages-dialog.c:73:20: warning: ‘reorder_pages_dialog_properties’ defined but not used [-Wunused-variable]
+   73 | static GParamSpec* reorder_pages_dialog_properties[REORDER_PAGES_DIALOG_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[160/170] Compiling C object src/simple-scan.p/meson-generated_book.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from src/simple-scan.p/book.c:15:
+src/simple-scan.p/book.c: In function ‘flip_every_second_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:737:13: note: in expansion of macro ‘g_once_init_enter’
+  737 |         if (g_once_init_enter (&flip_every_second_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘vala_g_list_remove_full’:
+src/simple-scan.p/book.c:888:31: warning: passing argument 1 of ‘func’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  888 |                         func (_tmp6_);
+      |                               ^~~~~~
+src/simple-scan.p/book.c:888:31: note: expected ‘gpointer’ {aka ‘void *’} but argument is of type ‘gconstpointer’ {aka ‘const void *’}
+src/simple-scan.p/book.c: In function ‘book_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:1506:13: note: in expansion of macro ‘g_once_init_enter’
+ 1506 |         if (g_once_init_enter (&book_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘book_saver_encode_png’:
+src/simple-scan.p/book.c:2173:22: warning: variable ‘_tmp23__length1’ set but not used [-Wunused-but-set-variable]
+ 2173 |                 gint _tmp23__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2194:54: warning: passing argument 2 of ‘gdk_pixbuf_save_to_bufferv’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 2194 |                 gdk_pixbuf_save_to_bufferv (_tmp24_, &_tmp28_, &_tmp29_, "png", _tmp26_, _tmp27_, &_inner_error0_);
+      |                                                      ^~~~~~~~
+      |                                                      |
+      |                                                      guint8 ** {aka unsigned char **}
+In file included from /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h:34,
+                 from src/simple-scan.p/book.c:22:
+/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h:401:54: note: expected ‘gchar **’ {aka ‘char **’} but argument is of type ‘guint8 **’ {aka ‘unsigned char **’}
+  401 |                                          gchar     **buffer,
+      |                                          ~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/book.c:2185:22: warning: variable ‘_tmp27__length1’ set but not used [-Wunused-but-set-variable]
+ 2185 |                 gint _tmp27__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2183:22: warning: variable ‘_tmp26__length1’ set but not used [-Wunused-but-set-variable]
+ 2183 |                 gint _tmp26__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2122:14: warning: variable ‘_values_size_’ set but not used [-Wunused-but-set-variable]
+ 2122 |         gint _values_size_;
+      |              ^~~~~~~~~~~~~
+src/simple-scan.p/book.c:2108:14: warning: variable ‘_keys_size_’ set but not used [-Wunused-but-set-variable]
+ 2108 |         gint _keys_size_;
+      |              ^~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘book_saver_encode_jpeg’:
+src/simple-scan.p/book.c:2340:22: warning: variable ‘_tmp25__length1’ set but not used [-Wunused-but-set-variable]
+ 2340 |                 gint _tmp25__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2361:54: warning: passing argument 2 of ‘gdk_pixbuf_save_to_bufferv’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 2361 |                 gdk_pixbuf_save_to_bufferv (_tmp26_, &_tmp30_, &_tmp31_, "jpeg", _tmp28_, _tmp29_, &_inner_error0_);
+      |                                                      ^~~~~~~~
+      |                                                      |
+      |                                                      guint8 ** {aka unsigned char **}
+/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h:401:54: note: expected ‘gchar **’ {aka ‘char **’} but argument is of type ‘guint8 **’ {aka ‘unsigned char **’}
+  401 |                                          gchar     **buffer,
+      |                                          ~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/book.c:2352:22: warning: variable ‘_tmp29__length1’ set but not used [-Wunused-but-set-variable]
+ 2352 |                 gint _tmp29__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2350:22: warning: variable ‘_tmp28__length1’ set but not used [-Wunused-but-set-variable]
+ 2350 |                 gint _tmp28__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2285:14: warning: variable ‘_values_size_’ set but not used [-Wunused-but-set-variable]
+ 2285 |         gint _values_size_;
+      |              ^~~~~~~~~~~~~
+src/simple-scan.p/book.c:2270:14: warning: variable ‘_keys_size_’ set but not used [-Wunused-but-set-variable]
+ 2270 |         gint _keys_size_;
+      |              ^~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘vala_encode_rgb’:
+src/simple-scan.p/book.c:2426:14: warning: variable ‘_output_size_’ set but not used [-Wunused-but-set-variable]
+ 2426 |         gint _output_size_ = 0;
+      |              ^~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘vala_set_image’:
+src/simple-scan.p/book.c:2465:11: warning: statement with no effect [-Wunused-value]
+ 2465 |          (&data);
+      |          ~^~~~~~
+src/simple-scan.p/book.c: In function ‘vala_set_chunk’:
+src/simple-scan.p/book.c:2511:41: warning: pointer targets in passing argument 2 of ‘WebPMuxSetChunk’ differ in signedness [-Wpointer-sign]
+ 2511 |         result = WebPMuxSetChunk (self, (guchar*) fourcc, &_tmp3_, copy_data);
+      |                                         ^~~~~~~~~~~~~~~~
+      |                                         |
+      |                                         guchar * {aka unsigned char *}
+In file included from src/simple-scan.p/book.c:24:
+/usr/include/webp/mux.h:170:30: note: expected ‘const char *’ but argument is of type ‘guchar *’ {aka ‘unsigned char *’}
+  170 |     WebPMux* mux, const char fourcc[4], const WebPData* chunk_data,
+      |                   ~~~~~~~~~~~^~~~~~~~~
+src/simple-scan.p/book.c:2512:11: warning: statement with no effect [-Wunused-value]
+ 2512 |          (&data);
+      |          ~^~~~~~
+src/simple-scan.p/book.c: In function ‘string_get_data’:
+src/simple-scan.p/book.c:2523:14: warning: variable ‘_res_size_’ set but not used [-Wunused-but-set-variable]
+ 2523 |         gint _res_size_;
+      |              ^~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘vala_assemble’:
+src/simple-scan.p/book.c:2577:11: warning: statement with no effect [-Wunused-value]
+ 2577 |          (&data);
+      |          ~^~~~~~
+src/simple-scan.p/book.c:2581:16: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2581 |         _tmp3_ = _tmp2_.bytes;
+      |                ^
+src/simple-scan.p/book.c:2594:11: warning: statement with no effect [-Wunused-value]
+ 2594 |          (&data);
+      |          ~^~~~~~
+src/simple-scan.p/book.c:2565:14: warning: variable ‘_out_array_size_’ set but not used [-Wunused-but-set-variable]
+ 2565 |         gint _out_array_size_ = 0;
+      |              ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘book_saver_encode_webp’:
+src/simple-scan.p/book.c:2636:14: warning: variable ‘_output_size_’ set but not used [-Wunused-but-set-variable]
+ 2636 |         gint _output_size_ = 0;
+      |              ^~~~~~~~~~~~~
+src/simple-scan.p/book.c:2630:14: warning: variable ‘_webp_data_size_’ set but not used [-Wunused-but-set-variable]
+ 2630 |         gint _webp_data_size_;
+      |              ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘book_saver_encode_pdf’:
+src/simple-scan.p/book.c:2943:70: warning: variable ‘_tmp32__length1’ set but not used [-Wunused-but-set-variable]
+ 2943 |                                                                 gint _tmp32__length1;
+      |                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2941:70: warning: variable ‘_tmp31__length1’ set but not used [-Wunused-but-set-variable]
+ 2941 |                                                                 gint _tmp31__length1;
+      |                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2938:70: warning: variable ‘_tmp29__length1’ set but not used [-Wunused-but-set-variable]
+ 2938 |                                                                 gint _tmp29__length1;
+      |                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2936:70: warning: variable ‘_tmp28__length1’ set but not used [-Wunused-but-set-variable]
+ 2936 |                                                                 gint _tmp28__length1;
+      |                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2933:70: warning: variable ‘_tmp26__length1’ set but not used [-Wunused-but-set-variable]
+ 2933 |                                                                 gint _tmp26__length1;
+      |                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2931:70: warning: variable ‘_tmp25__length1’ set but not used [-Wunused-but-set-variable]
+ 2931 |                                                                 gint _tmp25__length1;
+      |                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3057:86: warning: variable ‘_tmp47__length1’ set but not used [-Wunused-but-set-variable]
+ 3057 |                                                                                 gint _tmp47__length1;
+      |                                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3068:86: warning: variable ‘_tmp50__length1’ set but not used [-Wunused-but-set-variable]
+ 3068 |                                                                                 gint _tmp50__length1;
+      |                                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3075:94: warning: variable ‘_tmp51__length1’ set but not used [-Wunused-but-set-variable]
+ 3075 |                                                                                         gint _tmp51__length1;
+      |                                                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3082:102: warning: variable ‘_tmp52__length1’ set but not used [-Wunused-but-set-variable]
+ 3082 |                                                                                                 gint _tmp52__length1;
+      |                                                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3044:78: warning: variable ‘_tmp48__length1’ set but not used [-Wunused-but-set-variable]
+ 3044 |                                                                         gint _tmp48__length1;
+      |                                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3179:94: warning: variable ‘_tmp67__length1’ set but not used [-Wunused-but-set-variable]
+ 3179 |                                                                                         gint _tmp67__length1;
+      |                                                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3189:94: warning: variable ‘_tmp70__length1’ set but not used [-Wunused-but-set-variable]
+ 3189 |                                                                                         gint _tmp70__length1;
+      |                                                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3166:86: warning: variable ‘_tmp68__length1’ set but not used [-Wunused-but-set-variable]
+ 3166 |                                                                                 gint _tmp68__length1;
+      |                                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3257:86: warning: variable ‘_tmp82__length1’ set but not used [-Wunused-but-set-variable]
+ 3257 |                                                                                 gint _tmp82__length1;
+      |                                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3255:86: warning: variable ‘_tmp81__length1’ set but not used [-Wunused-but-set-variable]
+ 3255 |                                                                                 gint _tmp81__length1;
+      |                                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3297:22: warning: variable ‘__tmp85__size_’ set but not used [-Wunused-but-set-variable]
+ 3297 |                 gint __tmp85__size_;
+      |                      ^~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2838:14: warning: variable ‘_tmp99__length1’ set but not used [-Wunused-but-set-variable]
+ 2838 |         gint _tmp99__length1;
+      |              ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2836:14: warning: variable ‘_zlib_data_size_’ set but not used [-Wunused-but-set-variable]
+ 2836 |         gint _zlib_data_size_;
+      |              ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2831:17: warning: variable ‘_tmp96_’ set but not used [-Wunused-but-set-variable]
+ 2831 |         guint8* _tmp96_;
+      |                 ^~~~~~~
+src/simple-scan.p/book.c:2827:14: warning: variable ‘_jpeg_data_size_’ set but not used [-Wunused-but-set-variable]
+ 2827 |         gint _jpeg_data_size_;
+      |              ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:2819:14: warning: variable ‘_data_size_’ set but not used [-Wunused-but-set-variable]
+ 2819 |         gint _data_size_ = 0;
+      |              ^~~~~~~~~~~
+src/simple-scan.p/book.c:2812:14: warning: variable ‘_pixels_size_’ set but not used [-Wunused-but-set-variable]
+ 2812 |         gint _pixels_size_;
+      |              ^~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘book_saver_write_pdf’:
+src/simple-scan.p/book.c:3863:38: warning: variable ‘_tmp26__length1’ set but not used [-Wunused-but-set-variable]
+ 3863 |                                 gint _tmp26__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3860:38: warning: variable ‘_tmp24__length1’ set but not used [-Wunused-but-set-variable]
+ 3860 |                                 gint _tmp24__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3857:38: warning: variable ‘_tmp22__length1’ set but not used [-Wunused-but-set-variable]
+ 3857 |                                 gint _tmp22__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4015:38: warning: variable ‘_tmp91__length1’ set but not used [-Wunused-but-set-variable]
+ 4015 |                                 gint _tmp91__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4191:38: warning: variable ‘_tmp232__length1’ set but not used [-Wunused-but-set-variable]
+ 4191 |                                 gint _tmp232__length1;
+      |                                      ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4187:38: warning: variable ‘_tmp229__length1’ set but not used [-Wunused-but-set-variable]
+ 4187 |                                 gint _tmp229__length1;
+      |                                      ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4152:41: warning: variable ‘_tmp195_’ set but not used [-Wunused-but-set-variable]
+ 4152 |                                 guint8* _tmp195_;
+      |                                         ^~~~~~~~
+src/simple-scan.p/book.c:4126:38: warning: variable ‘_tmp169__length1’ set but not used [-Wunused-but-set-variable]
+ 4126 |                                 gint _tmp169__length1;
+      |                                      ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4122:38: warning: variable ‘_tmp166__length1’ set but not used [-Wunused-but-set-variable]
+ 4122 |                                 gint _tmp166__length1;
+      |                                      ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4113:38: warning: variable ‘_tmp158__length1’ set but not used [-Wunused-but-set-variable]
+ 4113 |                                 gint _tmp158__length1;
+      |                                      ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4098:38: warning: variable ‘_tmp146__length1’ set but not used [-Wunused-but-set-variable]
+ 4098 |                                 gint _tmp146__length1;
+      |                                      ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4087:38: warning: variable ‘_tmp136__length1’ set but not used [-Wunused-but-set-variable]
+ 4087 |                                 gint _tmp136__length1;
+      |                                      ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4083:38: warning: variable ‘_tmp133__length1’ set but not used [-Wunused-but-set-variable]
+ 4083 |                                 gint _tmp133__length1;
+      |                                      ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4079:38: warning: variable ‘_height_buffer_size_’ set but not used [-Wunused-but-set-variable]
+ 4079 |                                 gint _height_buffer_size_;
+      |                                      ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4075:38: warning: variable ‘_width_buffer_size_’ set but not used [-Wunused-but-set-variable]
+ 4075 |                                 gint _width_buffer_size_;
+      |                                      ^~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4611:46: warning: variable ‘_tmp286__length1’ set but not used [-Wunused-but-set-variable]
+ 4611 |                                         gint _tmp286__length1;
+      |                                              ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4578:38: warning: variable ‘_tmp278__length1’ set but not used [-Wunused-but-set-variable]
+ 4578 |                                 gint _tmp278__length1;
+      |                                      ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:4574:40: warning: variable ‘_tmp276_’ set but not used [-Wunused-but-set-variable]
+ 4574 |                                 guint* _tmp276_;
+      |                                        ^~~~~~~~
+src/simple-scan.p/book.c:3732:16: warning: variable ‘_tmp295_’ set but not used [-Wunused-but-set-variable]
+ 3732 |         guint* _tmp295_;
+      |                ^~~~~~~~
+src/simple-scan.p/book.c:3719:16: warning: variable ‘_tmp266_’ set but not used [-Wunused-but-set-variable]
+ 3719 |         guint* _tmp266_;
+      |                ^~~~~~~~
+src/simple-scan.p/book.c:3629:14: warning: variable ‘_page_content_numbers_size_’ set but not used [-Wunused-but-set-variable]
+ 3629 |         gint _page_content_numbers_size_;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3625:14: warning: variable ‘_page_image_numbers_size_’ set but not used [-Wunused-but-set-variable]
+ 3625 |         gint _page_image_numbers_size_;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:3621:14: warning: variable ‘_page_numbers_size_’ set but not used [-Wunused-but-set-variable]
+ 3621 |         gint _page_numbers_size_;
+      |              ^~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘book_saver_compress_zlib’:
+src/simple-scan.p/book.c:4773:17: warning: variable ‘_tmp6_’ set but not used [-Wunused-but-set-variable]
+ 4773 |         guint8* _tmp6_;
+      |                 ^~~~~~
+src/simple-scan.p/book.c:4769:14: warning: variable ‘_out_data_size_’ set but not used [-Wunused-but-set-variable]
+ 4769 |         gint _out_data_size_;
+      |              ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘book_saver_compress_jpeg’:
+src/simple-scan.p/book.c:4898:44: warning: passing argument 2 of ‘gdk_pixbuf_save_to_bufferv’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 4898 |         gdk_pixbuf_save_to_bufferv (image, &_tmp8_, &_tmp9_, "jpeg", keys, values, &_inner_error0_);
+      |                                            ^~~~~~~
+      |                                            |
+      |                                            guint8 ** {aka unsigned char **}
+/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h:401:54: note: expected ‘gchar **’ {aka ‘char **’} but argument is of type ‘guint8 **’ {aka ‘unsigned char **’}
+  401 |                                          gchar     **buffer,
+      |                                          ~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/book.c:4868:14: warning: variable ‘_values_size_’ set but not used [-Wunused-but-set-variable]
+ 4868 |         gint _values_size_;
+      |              ^~~~~~~~~~~~~
+src/simple-scan.p/book.c:4861:14: warning: variable ‘_keys_size_’ set but not used [-Wunused-but-set-variable]
+ 4861 |         gint _keys_size_;
+      |              ^~~~~~~~~~~
+src/simple-scan.p/book.c:4854:14: warning: variable ‘_jpeg_data_size_’ set but not used [-Wunused-but-set-variable]
+ 4854 |         gint _jpeg_data_size_ = 0;
+      |              ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘book_saver_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:5122:13: note: in expansion of macro ‘g_once_init_enter’
+ 5122 |         if (g_once_init_enter (&book_saver_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘encode_task_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:5336:13: note: in expansion of macro ‘g_once_init_enter’
+ 5336 |         if (g_once_init_enter (&encode_task_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘write_task_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:5551:13: note: in expansion of macro ‘g_once_init_enter’
+ 5551 |         if (g_once_init_enter (&write_task_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘write_task_pdf_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:5630:13: note: in expansion of macro ‘g_once_init_enter’
+ 5630 |         if (g_once_init_enter (&write_task_pdf_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘string_to_utf8’:
+src/simple-scan.p/book.c:5717:14: warning: variable ‘__result__size_’ set but not used [-Wunused-but-set-variable]
+ 5717 |         gint __result__size_;
+      |              ^~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘pdf_writer_write_string’:
+src/simple-scan.p/book.c:5749:14: warning: variable ‘_tmp2__length1’ set but not used [-Wunused-but-set-variable]
+ 5749 |         gint _tmp2__length1;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘pdf_writer_add_object’:
+src/simple-scan.p/book.c:5769:14: warning: variable ‘_tmp3__length1’ set but not used [-Wunused-but-set-variable]
+ 5769 |         gint _tmp3__length1;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/book.c:5766:16: warning: variable ‘_tmp2_’ set but not used [-Wunused-but-set-variable]
+ 5766 |         guint* _tmp2_;
+      |                ^~~~~~
+src/simple-scan.p/book.c:5762:16: warning: variable ‘_tmp0_’ set but not used [-Wunused-but-set-variable]
+ 5762 |         guint* _tmp0_;
+      |                ^~~~~~
+src/simple-scan.p/book.c: In function ‘pdf_writer_start_object’:
+src/simple-scan.p/book.c:5794:14: warning: variable ‘_tmp0__length1’ set but not used [-Wunused-but-set-variable]
+ 5794 |         gint _tmp0__length1;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/book.c: In function ‘pdf_writer_next_empty_object’:
+src/simple-scan.p/book.c:5817:38: warning: variable ‘_tmp3__length1’ set but not used [-Wunused-but-set-variable]
+ 5817 |                                 gint _tmp3__length1;
+      |                                      ^~~~~~~~~~~~~~
+src/simple-scan.p/book.c:5814:40: warning: variable ‘_tmp2_’ set but not used [-Wunused-but-set-variable]
+ 5814 |                                 guint* _tmp2_;
+      |                                        ^~~~~~
+src/simple-scan.p/book.c: In function ‘pdf_writer_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:6021:13: note: in expansion of macro ‘g_once_init_enter’
+ 6021 |         if (g_once_init_enter (&pdf_writer_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c: At top level:
+src/simple-scan.p/book.c:6282:1: warning: ‘_vala_clear_GCond’ defined but not used [-Wunused-function]
+ 6282 | _vala_clear_GCond (GCond * mutex)
+      | ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:6272:1: warning: ‘_vala_clear_GRWLock’ defined but not used [-Wunused-function]
+ 6272 | _vala_clear_GRWLock (GRWLock * mutex)
+      | ^~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book.c:6262:1: warning: ‘_vala_clear_GRecMutex’ defined but not used [-Wunused-function]
+ 6262 | _vala_clear_GRecMutex (GRecMutex * mutex)
+      | ^~~~~~~~~~~~~~~~~~~~~
+[161/170] Compiling C object src/simple-scan.p/meson-generated_drivers-dialog.c.o
+src/simple-scan.p/drivers-dialog.c: In function ‘drivers_dialog_open_finish’:
+src/simple-scan.p/drivers-dialog.c:262:32: warning: variable ‘_data_’ set but not used [-Wunused-but-set-variable]
+  262 |         DriversDialogOpenData* _data_;
+      |                                ^~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-4.0/gtk/css/gtkcss.h:29,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:29,
+                 from src/simple-scan.p/drivers-dialog.c:15:
+src/simple-scan.p/drivers-dialog.c: In function ‘drivers_dialog_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/drivers-dialog.c:650:13: note: in expansion of macro ‘g_once_init_enter’
+  650 |         if (g_once_init_enter (&drivers_dialog_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/drivers-dialog.c: At top level:
+src/simple-scan.p/drivers-dialog.c:213:1: warning: ‘drivers_dialog_pulse_start’ defined but not used [-Wunused-function]
+  213 | drivers_dialog_pulse_start (DriversDialog* self)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/drivers-dialog.c:55:20: warning: ‘drivers_dialog_properties’ defined but not used [-Wunused-variable]
+   55 | static GParamSpec* drivers_dialog_properties[DRIVERS_DIALOG_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+[162/170] Compiling C object src/simple-scan.p/meson-generated_scanner.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from src/simple-scan.p/scanner.c:16:
+src/simple-scan.p/scanner.c: In function ‘scan_device_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1116:13: note: in expansion of macro ‘g_once_init_enter’
+ 1116 |         if (g_once_init_enter (&scan_device_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scan_page_info_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1174:13: note: in expansion of macro ‘g_once_init_enter’
+ 1174 |         if (g_once_init_enter (&scan_page_info_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scan_line_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1232:13: note: in expansion of macro ‘g_once_init_enter’
+ 1232 |         if (g_once_init_enter (&scan_line_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scan_mode_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1253:13: note: in expansion of macro ‘g_once_init_enter’
+ 1253 |         if (g_once_init_enter (&scan_mode_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scan_type_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1274:13: note: in expansion of macro ‘g_once_init_enter’
+ 1274 |         if (g_once_init_enter (&scan_type_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scan_side_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1295:13: note: in expansion of macro ‘g_once_init_enter’
+ 1295 |         if (g_once_init_enter (&scan_side_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scan_options_finalize’:
+src/simple-scan.p/scanner.c:1334:23: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 1334 |         ScanOptions * self;
+      |                       ^~~~
+src/simple-scan.p/scanner.c: In function ‘scan_options_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1352:13: note: in expansion of macro ‘g_once_init_enter’
+ 1352 |         if (g_once_init_enter (&scan_options_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scan_job_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1410:13: note: in expansion of macro ‘g_once_init_enter’
+ 1410 |         if (g_once_init_enter (&scan_job_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘request_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1603:13: note: in expansion of macro ‘g_once_init_enter’
+ 1603 |         if (g_once_init_enter (&request_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘request_redetect_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1671:13: note: in expansion of macro ‘g_once_init_enter’
+ 1671 |         if (g_once_init_enter (&request_redetect_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘request_cancel_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1719:13: note: in expansion of macro ‘g_once_init_enter’
+ 1719 |         if (g_once_init_enter (&request_cancel_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘request_start_scan_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1777:13: note: in expansion of macro ‘g_once_init_enter’
+ 1777 |         if (g_once_init_enter (&request_start_scan_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘request_quit_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1825:13: note: in expansion of macro ‘g_once_init_enter’
+ 1825 |         if (g_once_init_enter (&request_quit_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘credentials_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2020:13: note: in expansion of macro ‘g_once_init_enter’
+ 2020 |         if (g_once_init_enter (&credentials_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scan_state_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2061:13: note: in expansion of macro ‘g_once_init_enter’
+ 2061 |         if (g_once_init_enter (&scan_state_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2274:13: note: in expansion of macro ‘g_once_init_enter’
+ 2274 |         if (g_once_init_enter (&notify_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_scanning_changed_real_run’:
+src/simple-scan.p/scanner.c:2306:33: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 2306 |         NotifyScanningChanged * self;
+      |                                 ^~~~
+src/simple-scan.p/scanner.c: In function ‘notify_scanning_changed_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2353:13: note: in expansion of macro ‘g_once_init_enter’
+ 2353 |         if (g_once_init_enter (&notify_scanning_changed_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_update_devices_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2452:13: note: in expansion of macro ‘g_once_init_enter’
+ 2452 |         if (g_once_init_enter (&notify_update_devices_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_request_authorization_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2538:13: note: in expansion of macro ‘g_once_init_enter’
+ 2538 |         if (g_once_init_enter (&notify_request_authorization_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_scan_failed_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2627:13: note: in expansion of macro ‘g_once_init_enter’
+ 2627 |         if (g_once_init_enter (&notify_scan_failed_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_document_done_real_run’:
+src/simple-scan.p/scanner.c:2639:30: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 2639 |         NotifyDocumentDone * self;
+      |                              ^~~~
+src/simple-scan.p/scanner.c: In function ‘notify_document_done_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2686:13: note: in expansion of macro ‘g_once_init_enter’
+ 2686 |         if (g_once_init_enter (&notify_document_done_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_expect_page_real_run’:
+src/simple-scan.p/scanner.c:2698:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 2698 |         NotifyExpectPage * self;
+      |                            ^~~~
+src/simple-scan.p/scanner.c: In function ‘notify_expect_page_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2745:13: note: in expansion of macro ‘g_once_init_enter’
+ 2745 |         if (g_once_init_enter (&notify_expect_page_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_got_page_info_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2848:13: note: in expansion of macro ‘g_once_init_enter’
+ 2848 |         if (g_once_init_enter (&notify_got_page_info_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_page_done_finalize’:
+src/simple-scan.p/scanner.c:2916:26: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 2916 |         NotifyPageDone * self;
+      |                          ^~~~
+src/simple-scan.p/scanner.c: In function ‘notify_page_done_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:2935:13: note: in expansion of macro ‘g_once_init_enter’
+ 2935 |         if (g_once_init_enter (&notify_page_done_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘notify_got_line_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3032:13: note: in expansion of macro ‘g_once_init_enter’
+ 3032 |         if (g_once_init_enter (&notify_got_line_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_do_redetect’:
+src/simple-scan.p/scanner.c:3469:36: warning: passing argument 1 of ‘sane_get_devices’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 3469 |         _tmp1_ = sane_get_devices (&_tmp0_, FALSE);
+      |                                    ^~~~~~~
+      |                                    |
+      |                                    SANE_Device ***
+In file included from src/simple-scan.p/scanner.c:23:
+/usr/include/sane/sane.h:221:60: note: expected ‘const SANE_Device ***’ but argument is of type ‘SANE_Device ***’
+  221 | extern SANE_Status sane_get_devices (const SANE_Device *** device_list,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+src/simple-scan.p/scanner.c:3531:46: warning: variable ‘_tmp22__length1’ set but not used [-Wunused-but-set-variable]
+ 3531 |                                         gint _tmp22__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3525:46: warning: variable ‘_tmp17__length1’ set but not used [-Wunused-but-set-variable]
+ 3525 |                                         gint _tmp17__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3551:46: warning: variable ‘_tmp27__length1’ set but not used [-Wunused-but-set-variable]
+ 3551 |                                         gint _tmp27__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3502:38: warning: variable ‘_tmp13__length1’ set but not used [-Wunused-but-set-variable]
+ 3502 |                                 gint _tmp13__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3498:38: warning: variable ‘_tmp10__length1’ set but not used [-Wunused-but-set-variable]
+ 3498 |                                 gint _tmp10__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3709:46: warning: variable ‘_tmp72__length1’ set but not used [-Wunused-but-set-variable]
+ 3709 |                                         gint _tmp72__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3725:46: warning: variable ‘_tmp78__length1’ set but not used [-Wunused-but-set-variable]
+ 3725 |                                         gint _tmp78__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3756:46: warning: variable ‘_tmp94__length1’ set but not used [-Wunused-but-set-variable]
+ 3756 |                                         gint _tmp94__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3628:38: warning: variable ‘_tmp87__length1’ set but not used [-Wunused-but-set-variable]
+ 3628 |                                 gint _tmp87__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3613:38: warning: variable ‘_tmp62__length1’ set but not used [-Wunused-but-set-variable]
+ 3613 |                                 gint _tmp62__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3607:38: warning: variable ‘_tmp56__length1’ set but not used [-Wunused-but-set-variable]
+ 3607 |                                 gint _tmp56__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3601:38: warning: variable ‘_tmp52__length1’ set but not used [-Wunused-but-set-variable]
+ 3601 |                                 gint _tmp52__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3594:38: warning: variable ‘_tmp47__length1’ set but not used [-Wunused-but-set-variable]
+ 3594 |                                 gint _tmp47__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3590:38: warning: variable ‘_tmp44__length1’ set but not used [-Wunused-but-set-variable]
+ 3590 |                                 gint _tmp44__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3586:38: warning: variable ‘_tmp41__length1’ set but not used [-Wunused-but-set-variable]
+ 3586 |                                 gint _tmp41__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3582:38: warning: variable ‘_tmp38__length1’ set but not used [-Wunused-but-set-variable]
+ 3582 |                                 gint _tmp38__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3578:38: warning: variable ‘_tmp35__length1’ set but not used [-Wunused-but-set-variable]
+ 3578 |                                 gint _tmp35__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3575:38: warning: variable ‘_tmp33__length1’ set but not used [-Wunused-but-set-variable]
+ 3575 |                                 gint _tmp33__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:3450:14: warning: variable ‘_device_list_size_’ set but not used [-Wunused-but-set-variable]
+ 3450 |         gint _device_list_size_;
+      |              ^~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_scale_fixed’:
+src/simple-scan.p/scanner.c:3832:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3832 |                 _tmp1_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3833:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3833 |                 _tmp2_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3845:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3845 |                 _tmp3_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3846:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3846 |                 _tmp4_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3849:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3849 |                 _tmp5_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3851:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3851 |                 _tmp6_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3852:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3852 |                 _tmp7_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c: In function ‘scanner_scale_int’:
+src/simple-scan.p/scanner.c:3877:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3877 |                 _tmp1_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3878:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3878 |                 _tmp2_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3890:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3890 |                 _tmp3_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3891:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3891 |                 _tmp4_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3894:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3894 |                 _tmp5_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3896:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3896 |                 _tmp6_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:3897:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 3897 |                 _tmp7_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c: In function ‘scanner_set_int_option’:
+src/simple-scan.p/scanner.c:4005:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4005 |                 _tmp0_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:4008:32: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4008 |                         _tmp1_ = option->constraint.range;
+      |                                ^
+src/simple-scan.p/scanner.c:4011:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4011 |                 _tmp2_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:4014:32: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4014 |                         _tmp3_ = option->constraint.range;
+      |                                ^
+src/simple-scan.p/scanner.c:4017:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4017 |                 _tmp4_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:4020:32: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4020 |                         _tmp5_ = option->constraint.range;
+      |                                ^
+src/simple-scan.p/scanner.c:4050:56: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4050 |                                                 _tmp8_ = option->constraint.word_list;
+      |                                                        ^
+src/simple-scan.p/scanner.c:4056:57: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4056 |                                                 _tmp10_ = option->constraint.word_list;
+      |                                                         ^
+src/simple-scan.p/scanner.c:4041:54: warning: variable ‘_tmp10__length1’ set but not used [-Wunused-but-set-variable]
+ 4041 |                                                 gint _tmp10__length1;
+      |                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4037:54: warning: variable ‘_tmp8__length1’ set but not used [-Wunused-but-set-variable]
+ 4037 |                                                 gint _tmp8__length1;
+      |                                                      ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_set_fixed_option’:
+src/simple-scan.p/scanner.c:4109:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4109 |                 _tmp0_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:4111:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4111 |                 _tmp1_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:4145:56: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4145 |                                                 _tmp4_ = option->constraint.word_list;
+      |                                                        ^
+src/simple-scan.p/scanner.c:4151:56: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4151 |                                                 _tmp6_ = option->constraint.word_list;
+      |                                                        ^
+src/simple-scan.p/scanner.c:4137:54: warning: variable ‘_tmp6__length1’ set but not used [-Wunused-but-set-variable]
+ 4137 |                                                 gint _tmp6__length1;
+      |                                                      ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4133:54: warning: variable ‘_tmp4__length1’ set but not used [-Wunused-but-set-variable]
+ 4133 |                                                 gint _tmp4__length1;
+      |                                                      ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_set_option_to_max’:
+src/simple-scan.p/scanner.c:4224:16: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4224 |         _tmp0_ = option->constraint.range;
+      |                ^
+src/simple-scan.p/scanner.c:4232:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4232 |                 _tmp2_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c:4244:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4244 |                 _tmp6_ = option->constraint.range;
+      |                        ^
+src/simple-scan.p/scanner.c: In function ‘scanner_set_string_option’:
+src/simple-scan.p/scanner.c:4311:30: warning: variable ‘_tmp5__length1’ set but not used [-Wunused-but-set-variable]
+ 4311 |                         gint _tmp5__length1;
+      |                              ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4286:14: warning: variable ‘_tmp8__length1’ set but not used [-Wunused-but-set-variable]
+ 4286 |         gint _tmp8__length1;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4284:14: warning: variable ‘_tmp7__length1’ set but not used [-Wunused-but-set-variable]
+ 4284 |         gint _tmp7__length1;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4281:14: warning: variable ‘_tmp6__length1’ set but not used [-Wunused-but-set-variable]
+ 4281 |         gint _tmp6__length1;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4278:14: warning: variable ‘_s_size_’ set but not used [-Wunused-but-set-variable]
+ 4278 |         gint _s_size_;
+      |              ^~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_set_constrained_string_option’:
+src/simple-scan.p/scanner.c:4415:56: warning: assignment to ‘gchar **’ {aka ‘char **’} from incompatible pointer type ‘const SANE_Char * const*’ {aka ‘const char * const*’} [-Wincompatible-pointer-types]
+ 4415 |                                                 _tmp5_ = option->constraint.string_list;
+      |                                                        ^
+src/simple-scan.p/scanner.c:4416:104: warning: passing argument 1 of ‘_vala_array_length’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4416 |                                                 _tmp5__length1 = _vala_array_length (option->constraint.string_list);
+      |                                                                                      ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1061:44: note: expected ‘gpointer’ {aka ‘void *’} but argument is of type ‘const SANE_Char * const*’ {aka ‘const char * const*’}
+ 1061 | static gssize _vala_array_length (gpointer array);
+      |                                   ~~~~~~~~~^~~~~
+src/simple-scan.p/scanner.c:4422:56: warning: assignment to ‘gchar **’ {aka ‘char **’} from incompatible pointer type ‘const SANE_Char * const*’ {aka ‘const char * const*’} [-Wincompatible-pointer-types]
+ 4422 |                                                 _tmp8_ = option->constraint.string_list;
+      |                                                        ^
+src/simple-scan.p/scanner.c:4423:104: warning: passing argument 1 of ‘_vala_array_length’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4423 |                                                 _tmp8__length1 = _vala_array_length (option->constraint.string_list);
+      |                                                                                      ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1061:44: note: expected ‘gpointer’ {aka ‘void *’} but argument is of type ‘const SANE_Char * const*’ {aka ‘const char * const*’}
+ 1061 | static gssize _vala_array_length (gpointer array);
+      |                                   ~~~~~~~~~^~~~~
+src/simple-scan.p/scanner.c:4407:54: warning: variable ‘_tmp8__length1’ set but not used [-Wunused-but-set-variable]
+ 4407 |                                                 gint _tmp8__length1;
+      |                                                      ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4403:54: warning: variable ‘_tmp5__length1’ set but not used [-Wunused-but-set-variable]
+ 4403 |                                                 gint _tmp5__length1;
+      |                                                      ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4430:41: warning: assignment to ‘gchar **’ {aka ‘char **’} from incompatible pointer type ‘const SANE_Char * const*’ {aka ‘const char * const*’} [-Wincompatible-pointer-types]
+ 4430 |                                 _tmp10_ = option->constraint.string_list;
+      |                                         ^
+src/simple-scan.p/scanner.c:4431:89: warning: passing argument 1 of ‘_vala_array_length’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4431 |                                 _tmp10__length1 = _vala_array_length (option->constraint.string_list);
+      |                                                                       ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1061:44: note: expected ‘gpointer’ {aka ‘void *’} but argument is of type ‘const SANE_Char * const*’ {aka ‘const char * const*’}
+ 1061 | static gssize _vala_array_length (gpointer array);
+      |                                   ~~~~~~~~~^~~~~
+src/simple-scan.p/scanner.c:4385:38: warning: variable ‘_tmp10__length1’ set but not used [-Wunused-but-set-variable]
+ 4385 |                                 gint _tmp10__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_log_option’:
+src/simple-scan.p/scanner.c:4685:33: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4685 |                         _tmp49_ = option->constraint.range;
+      |                                 ^
+src/simple-scan.p/scanner.c:4696:49: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4696 |                                         _tmp51_ = option->constraint.range;
+      |                                                 ^
+src/simple-scan.p/scanner.c:4697:49: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4697 |                                         _tmp52_ = option->constraint.range;
+      |                                                 ^
+src/simple-scan.p/scanner.c:4698:49: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4698 |                                         _tmp53_ = option->constraint.range;
+      |                                                 ^
+src/simple-scan.p/scanner.c:4714:49: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4714 |                                         _tmp58_ = option->constraint.range;
+      |                                                 ^
+src/simple-scan.p/scanner.c:4715:49: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4715 |                                         _tmp59_ = option->constraint.range;
+      |                                                 ^
+src/simple-scan.p/scanner.c:4716:49: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4716 |                                         _tmp60_ = option->constraint.range;
+      |                                                 ^
+src/simple-scan.p/scanner.c:4753:57: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4753 |                                                 _tmp68_ = option->constraint.word_list;
+      |                                                         ^
+src/simple-scan.p/scanner.c:4776:65: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4776 |                                                         _tmp73_ = option->constraint.word_list;
+      |                                                                 ^
+src/simple-scan.p/scanner.c:4770:62: warning: variable ‘_tmp73__length1’ set but not used [-Wunused-but-set-variable]
+ 4770 |                                                         gint _tmp73__length1;
+      |                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4794:65: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4794 |                                                         _tmp79_ = option->constraint.word_list;
+      |                                                                 ^
+src/simple-scan.p/scanner.c:4788:62: warning: variable ‘_tmp79__length1’ set but not used [-Wunused-but-set-variable]
+ 4788 |                                                         gint _tmp79__length1;
+      |                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4745:54: warning: variable ‘_tmp68__length1’ set but not used [-Wunused-but-set-variable]
+ 4745 |                                                 gint _tmp68__length1;
+      |                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4825:33: warning: assignment to ‘gchar **’ {aka ‘char **’} from incompatible pointer type ‘const SANE_Char * const*’ {aka ‘const char * const*’} [-Wincompatible-pointer-types]
+ 4825 |                         _tmp88_ = option->constraint.string_list;
+      |                                 ^
+src/simple-scan.p/scanner.c:4826:81: warning: passing argument 1 of ‘_vala_array_length’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4826 |                         _tmp88__length1 = _vala_array_length (option->constraint.string_list);
+      |                                                               ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1061:44: note: expected ‘gpointer’ {aka ‘void *’} but argument is of type ‘const SANE_Char * const*’ {aka ‘const char * const*’}
+ 1061 | static gssize _vala_array_length (gpointer array);
+      |                                   ~~~~~~~~~^~~~~
+src/simple-scan.p/scanner.c:4851:65: warning: assignment to ‘gchar **’ {aka ‘char **’} from incompatible pointer type ‘const SANE_Char * const*’ {aka ‘const char * const*’} [-Wincompatible-pointer-types]
+ 4851 |                                                         _tmp91_ = option->constraint.string_list;
+      |                                                                 ^
+src/simple-scan.p/scanner.c:4852:113: warning: passing argument 1 of ‘_vala_array_length’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4852 |                                                         _tmp91__length1 = _vala_array_length (option->constraint.string_list);
+      |                                                                                               ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1061:44: note: expected ‘gpointer’ {aka ‘void *’} but argument is of type ‘const SANE_Char * const*’ {aka ‘const char * const*’}
+ 1061 | static gssize _vala_array_length (gpointer array);
+      |                                   ~~~~~~~~~^~~~~
+src/simple-scan.p/scanner.c:4866:65: warning: assignment to ‘gchar **’ {aka ‘char **’} from incompatible pointer type ‘const SANE_Char * const*’ {aka ‘const char * const*’} [-Wincompatible-pointer-types]
+ 4866 |                                                         _tmp96_ = option->constraint.string_list;
+      |                                                                 ^
+src/simple-scan.p/scanner.c:4867:113: warning: passing argument 1 of ‘_vala_array_length’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4867 |                                                         _tmp96__length1 = _vala_array_length (option->constraint.string_list);
+      |                                                                                               ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+src/simple-scan.p/scanner.c:1061:44: note: expected ‘gpointer’ {aka ‘void *’} but argument is of type ‘const SANE_Char * const*’ {aka ‘const char * const*’}
+ 1061 | static gssize _vala_array_length (gpointer array);
+      |                                   ~~~~~~~~~^~~~~
+src/simple-scan.p/scanner.c:4840:62: warning: variable ‘_tmp96__length1’ set but not used [-Wunused-but-set-variable]
+ 4840 |                                                         gint _tmp96__length1;
+      |                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4836:62: warning: variable ‘_tmp91__length1’ set but not used [-Wunused-but-set-variable]
+ 4836 |                                                         gint _tmp91__length1;
+      |                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:4818:30: warning: variable ‘_tmp88__length1’ set but not used [-Wunused-but-set-variable]
+ 4818 |                         gint _tmp88__length1;
+      |                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_set_adf’:
+src/simple-scan.p/scanner.c:5498:14: warning: variable ‘_adf_duplex_sources_size_’ set but not used [-Wunused-but-set-variable]
+ 5498 |         gint _adf_duplex_sources_size_;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:5485:14: warning: variable ‘_adf_back_sources_size_’ set but not used [-Wunused-but-set-variable]
+ 5485 |         gint _adf_back_sources_size_;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:5478:14: warning: variable ‘_adf_front_sources_size_’ set but not used [-Wunused-but-set-variable]
+ 5478 |         gint _adf_front_sources_size_;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:5471:14: warning: variable ‘_adf_sources_size_’ set but not used [-Wunused-but-set-variable]
+ 5471 |         gint _adf_sources_size_;
+      |              ^~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_do_get_option’:
+src/simple-scan.p/scanner.c:5638:16: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 5638 |         _tmp3_ = sane_get_option_descriptor (self->priv->handle, self->priv->option_index);
+      |                ^
+src/simple-scan.p/scanner.c:5732:30: warning: variable ‘_flatbed_sources_size_’ set but not used [-Wunused-but-set-variable]
+ 5732 |                         gint _flatbed_sources_size_;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:5857:30: warning: variable ‘_lineart_scan_modes_size_’ set but not used [-Wunused-but-set-variable]
+ 5857 |                         gint _lineart_scan_modes_size_;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:5829:30: warning: variable ‘_gray_scan_modes_size_’ set but not used [-Wunused-but-set-variable]
+ 5829 |                         gint _gray_scan_modes_size_;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:5816:30: warning: variable ‘_color_scan_modes_size_’ set but not used [-Wunused-but-set-variable]
+ 5816 |                         gint _color_scan_modes_size_;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:6039:30: warning: variable ‘_adf_duplex_modes_size_’ set but not used [-Wunused-but-set-variable]
+ 6039 |                         gint _adf_duplex_modes_size_;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:6034:30: warning: variable ‘_adf_simplex_modes_size_’ set but not used [-Wunused-but-set-variable]
+ 6034 |                         gint _adf_simplex_modes_size_;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_get_option_by_name’:
+src/simple-scan.p/scanner.c:6518:16: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 6518 |         _tmp2_ = sane_get_option_descriptor (handle, (SANE_Int) _vala_index);
+      |                ^
+src/simple-scan.p/scanner.c: In function ‘scanner_do_read’:
+src/simple-scan.p/scanner.c:6954:25: warning: variable ‘_tmp16_’ set but not used [-Wunused-but-set-variable]
+ 6954 |                 guchar* _tmp16_;
+      |                         ^~~~~~~
+src/simple-scan.p/scanner.c:7095:46: warning: variable ‘_tmp47__length1’ set but not used [-Wunused-but-set-variable]
+ 7095 |                                         gint _tmp47__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:7092:46: warning: variable ‘_tmp45__length1’ set but not used [-Wunused-but-set-variable]
+ 7092 |                                         gint _tmp45__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:7222:86: warning: variable ‘_tmp70__length1’ set but not used [-Wunused-but-set-variable]
+ 7222 |                                                                                 gint _tmp70__length1;
+      |                                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:7187:78: warning: variable ‘_tmp67__length1’ set but not used [-Wunused-but-set-variable]
+ 7187 |                                                                         gint _tmp67__length1;
+      |                                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:7241:62: warning: variable ‘_tmp73__length1’ set but not used [-Wunused-but-set-variable]
+ 7241 |                                                         gint _tmp73__length1;
+      |                                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:6986:25: warning: variable ‘_tmp38_’ set but not used [-Wunused-but-set-variable]
+ 6986 |                 guchar* _tmp38_;
+      |                         ^~~~~~~
+src/simple-scan.p/scanner.c:6884:14: warning: variable ‘_tmp4__length1’ set but not used [-Wunused-but-set-variable]
+ 6884 |         gint _tmp4__length1;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:6879:17: warning: variable ‘_tmp3_’ set but not used [-Wunused-but-set-variable]
+ 6879 |         guchar* _tmp3_;
+      |                 ^~~~~~
+src/simple-scan.p/scanner.c: In function ‘scanner_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:7854:13: note: in expansion of macro ‘g_once_init_enter’
+ 7854 |         if (g_once_init_enter (&scanner_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c: At top level:
+src/simple-scan.p/scanner.c:353:20: warning: ‘scanner_properties’ defined but not used [-Wunused-variable]
+  353 | static GParamSpec* scanner_properties[SCANNER_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:146:20: warning: ‘scan_job_properties’ defined but not used [-Wunused-variable]
+  146 | static GParamSpec* scan_job_properties[SCAN_JOB_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:130:20: warning: ‘scan_options_properties’ defined but not used [-Wunused-variable]
+  130 | static GParamSpec* scan_options_properties[SCAN_OPTIONS_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:92:20: warning: ‘scan_line_properties’ defined but not used [-Wunused-variable]
+   92 | static GParamSpec* scan_line_properties[SCAN_LINE_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:76:20: warning: ‘scan_page_info_properties’ defined but not used [-Wunused-variable]
+   76 | static GParamSpec* scan_page_info_properties[SCAN_PAGE_INFO_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/scanner.c:59:20: warning: ‘scan_device_properties’ defined but not used [-Wunused-variable]
+   59 | static GParamSpec* scan_device_properties[SCAN_DEVICE_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+[163/170] Compiling C object src/simple-scan.p/meson-generated_page-texture.c.o
+src/simple-scan.p/page-texture.c: In function ‘page_to_pixbuf_get_pixel’:
+src/simple-scan.p/page-texture.c:518:22: warning: variable ‘_tmp23__length1’ set but not used [-Wunused-but-set-variable]
+  518 |                 gint _tmp23__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:515:22: warning: variable ‘_tmp21__length1’ set but not used [-Wunused-but-set-variable]
+  515 |                 gint _tmp21__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:512:22: warning: variable ‘_tmp19__length1’ set but not used [-Wunused-but-set-variable]
+  512 |                 gint _tmp19__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:543:30: warning: variable ‘_tmp26__length1’ set but not used [-Wunused-but-set-variable]
+  543 |                         gint _tmp26__length1;
+      |                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:563:38: warning: variable ‘_tmp30__length1’ set but not used [-Wunused-but-set-variable]
+  563 |                                 gint _tmp30__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:591:46: warning: variable ‘_tmp34__length1’ set but not used [-Wunused-but-set-variable]
+  591 |                                         gint _tmp34__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:431:14: warning: variable ‘_pixels_size_’ set but not used [-Wunused-but-set-variable]
+  431 |         gint _pixels_size_;
+      |              ^~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c: In function ‘page_to_pixbuf_update_preview’:
+src/simple-scan.p/page-texture.c:1195:70: warning: variable ‘_tmp24__length1’ set but not used [-Wunused-but-set-variable]
+ 1195 |                                                                 gint _tmp24__length1;
+      |                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:1193:70: warning: variable ‘_tmp23__length1’ set but not used [-Wunused-but-set-variable]
+ 1193 |                                                                 gint _tmp23__length1;
+      |                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:1191:70: warning: variable ‘_tmp22__length1’ set but not used [-Wunused-but-set-variable]
+ 1191 |                                                                 gint _tmp22__length1;
+      |                                                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:1055:14: warning: variable ‘_output_size_’ set but not used [-Wunused-but-set-variable]
+ 1055 |         gint _output_size_;
+      |              ^~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from src/simple-scan.p/page-texture.c:16:
+src/simple-scan.p/page-texture.c: In function ‘page_to_pixbuf_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:1386:13: note: in expansion of macro ‘g_once_init_enter’
+ 1386 |         if (g_once_init_enter (&page_to_pixbuf_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c: In function ‘texture_update_task_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:1601:13: note: in expansion of macro ‘g_once_init_enter’
+ 1601 |         if (g_once_init_enter (&texture_update_task_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c: In function ‘texture_resize_task_finalize’:
+src/simple-scan.p/page-texture.c:1707:29: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 1707 |         TextureResizeTask * self;
+      |                             ^~~~
+src/simple-scan.p/page-texture.c: In function ‘texture_resize_task_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:1729:13: note: in expansion of macro ‘g_once_init_enter’
+ 1729 |         if (g_once_init_enter (&texture_resize_task_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c: In function ‘page_view_texture_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:2086:13: note: in expansion of macro ‘g_once_init_enter’
+ 2086 |         if (g_once_init_enter (&page_view_texture_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c: In function ‘page_paintable_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c:2426:13: note: in expansion of macro ‘g_once_init_enter’
+ 2426 |         if (g_once_init_enter (&page_paintable_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/page-texture.c: At top level:
+src/simple-scan.p/page-texture.c:144:20: warning: ‘page_paintable_properties’ defined but not used [-Wunused-variable]
+  144 | static GParamSpec* page_paintable_properties[PAGE_PAINTABLE_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+[164/170] Compiling C object src/simple-scan.p/meson-generated_book-view.c.o
+src/simple-scan.p/book-view.c: In function ‘book_view_show_page_view’:
+src/simple-scan.p/book-view.c:1046:9: warning: ‘gtk_widget_get_allocation’ is deprecated: Use 'gtk_widget_compute_bounds' instead [-Wdeprecated-declarations]
+ 1046 |         gtk_widget_get_allocation ((GtkWidget*) _tmp2_, &_tmp3_);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-4.0/gtk/gtkapplication.h:26,
+                 from /usr/include/gtk-4.0/gtk/gtkwindow.h:32,
+                 from /usr/include/gtk-4.0/gtk/gtkaboutdialog.h:29,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:33,
+                 from src/simple-scan.p/book-view.c:17:
+/usr/include/gtk-4.0/gtk/gtkwidget.h:482:23: note: declared here
+  482 | void                  gtk_widget_get_allocation         (GtkWidget     *widget,
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book-view.c: In function ‘book_view_layout’:
+src/simple-scan.p/book-view.c:1535:9: warning: ‘gtk_widget_get_allocation’ is deprecated: Use 'gtk_widget_compute_bounds' instead [-Wdeprecated-declarations]
+ 1535 |         gtk_widget_get_allocation ((GtkWidget*) _tmp0_, &_tmp1_);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/gtkwidget.h:482:23: note: declared here
+  482 | void                  gtk_widget_get_allocation         (GtkWidget     *widget,
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book-view.c:1537:9: warning: ‘gtk_widget_get_allocation’ is deprecated: Use 'gtk_widget_compute_bounds' instead [-Wdeprecated-declarations]
+ 1537 |         gtk_widget_get_allocation ((GtkWidget*) self, &_tmp2_);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/gtkwidget.h:482:23: note: declared here
+  482 | void                  gtk_widget_get_allocation         (GtkWidget     *widget,
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book-view.c:1525:14: warning: variable ‘book_height’ set but not used [-Wunused-but-set-variable]
+ 1525 |         gint book_height = 0;
+      |              ^~~~~~~~~~~
+src/simple-scan.p/book-view.c: In function ‘book_view_draw_cb’:
+src/simple-scan.p/book-view.c:1683:9: warning: ‘gtk_widget_get_style_context’ is deprecated [-Wdeprecated-declarations]
+ 1683 |         _tmp10_ = gtk_widget_get_style_context ((GtkWidget*) self);
+      |         ^~~~~~~
+/usr/include/gtk-4.0/gtk/gtkwidget.h:713:19: note: declared here
+  713 | GtkStyleContext * gtk_widget_get_style_context (GtkWidget *widget);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book-view.c:1684:9: warning: ‘gtk_style_context_get_color’ is deprecated [-Wdeprecated-declarations]
+ 1684 |         gtk_style_context_get_color (_tmp10_, &_tmp11_);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-4.0/gtk/gtk.h:267:
+/usr/include/gtk-4.0/gtk/deprecated/gtkstylecontext.h:112:6: note: declared here
+  112 | void gtk_style_context_get_color            (GtkStyleContext *context,
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book-view.c:1785:41: warning: ‘gtk_widget_get_style_context’ is deprecated [-Wdeprecated-declarations]
+ 1785 |                                         _tmp40_ = gtk_widget_get_style_context ((GtkWidget*) drawing_area);
+      |                                         ^~~~~~~
+/usr/include/gtk-4.0/gtk/gtkwidget.h:713:19: note: declared here
+  713 | GtkStyleContext * gtk_widget_get_style_context (GtkWidget *widget);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book-view.c:1800:41: warning: ‘gtk_render_focus’ is deprecated [-Wdeprecated-declarations]
+ 1800 |                                         gtk_render_focus (_tmp40_, context, (gdouble) (_tmp43_ - _tmp45_), (gdouble) _tmp48_, (gdouble) _tmp51_, (gdouble) _tmp54_);
+      |                                         ^~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-4.0/gtk/gtk.h:223:
+/usr/include/gtk-4.0/gtk/deprecated/gtkrender.h:78:13: note: declared here
+   78 | void        gtk_render_focus       (GtkStyleContext     *context,
+      |             ^~~~~~~~~~~~~~~~
+src/simple-scan.p/book-view.c:1633:17: warning: variable ‘bottom’ set but not used [-Wunused-but-set-variable]
+ 1633 |         gdouble bottom = 0.0;
+      |                 ^~~~~~
+src/simple-scan.p/book-view.c:1631:17: warning: variable ‘top’ set but not used [-Wunused-but-set-variable]
+ 1631 |         gdouble top = 0.0;
+      |                 ^~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-4.0/gtk/css/gtkcss.h:29,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:29:
+src/simple-scan.p/book-view.c: In function ‘book_view_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/book-view.c:2608:13: note: in expansion of macro ‘g_once_init_enter’
+ 2608 |         if (g_once_init_enter (&book_view_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+[165/170] Compiling C object src/simple-scan.p/meson-generated_authorize-dialog.c.o
+src/simple-scan.p/authorize-dialog.c: In function ‘__lambda42_’:
+src/simple-scan.p/authorize-dialog.c:357:26: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  357 |         AuthorizeDialog* self;
+      |                          ^~~~
+src/simple-scan.p/authorize-dialog.c: In function ‘authorize_dialog_finalize’:
+src/simple-scan.p/authorize-dialog.c:451:27: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  451 |         AuthorizeDialog * self;
+      |                           ^~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-4.0/gtk/css/gtkcss.h:29,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:29,
+                 from src/simple-scan.p/authorize-dialog.c:16:
+src/simple-scan.p/authorize-dialog.c: In function ‘authorize_dialog_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/authorize-dialog.c:470:13: note: in expansion of macro ‘g_once_init_enter’
+  470 |         if (g_once_init_enter (&authorize_dialog_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/authorize-dialog.c: In function ‘authorize_dialog_response_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/authorize-dialog.c:564:13: note: in expansion of macro ‘g_once_init_enter’
+  564 |         if (g_once_init_enter (&authorize_dialog_response_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/authorize-dialog.c: At top level:
+src/simple-scan.p/authorize-dialog.c:56:20: warning: ‘authorize_dialog_properties’ defined but not used [-Wunused-variable]
+   56 | static GParamSpec* authorize_dialog_properties[AUTHORIZE_DIALOG_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[166/170] Compiling C object src/simple-scan.p/meson-generated_page.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from src/simple-scan.p/page.c:15:
+src/simple-scan.p/page.c: In function ‘scan_direction_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:396:13: note: in expansion of macro ‘g_once_init_enter’
+  396 |         if (g_once_init_enter (&scan_direction_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/page.c: In function ‘page_set_page_info’:
+src/simple-scan.p/page.c:632:22: warning: variable ‘_tmp10__length1’ set but not used [-Wunused-but-set-variable]
+  632 |                 gint _tmp10__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:642:22: warning: variable ‘_tmp13__length1’ set but not used [-Wunused-but-set-variable]
+  642 |                 gint _tmp13__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:599:14: warning: variable ‘_tmp8__length1’ set but not used [-Wunused-but-set-variable]
+  599 |         gint _tmp8__length1;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/page.c: In function ‘page_parse_line’:
+src/simple-scan.p/page.c:719:38: warning: variable ‘_tmp11__length1’ set but not used [-Wunused-but-set-variable]
+  719 |                                 gint _tmp11__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:717:38: warning: variable ‘_tmp10__length1’ set but not used [-Wunused-but-set-variable]
+  717 |                                 gint _tmp10__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c: In function ‘page_get_pixel’:
+src/simple-scan.p/page.c:1311:22: warning: variable ‘_tmp15__length1’ set but not used [-Wunused-but-set-variable]
+ 1311 |                 gint _tmp15__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:1308:22: warning: variable ‘_tmp13__length1’ set but not used [-Wunused-but-set-variable]
+ 1308 |                 gint _tmp13__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:1305:22: warning: variable ‘_tmp11__length1’ set but not used [-Wunused-but-set-variable]
+ 1305 |                 gint _tmp11__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:1342:30: warning: variable ‘_tmp20__length1’ set but not used [-Wunused-but-set-variable]
+ 1342 |                         gint _tmp20__length1;
+      |                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:1366:38: warning: variable ‘_tmp25__length1’ set but not used [-Wunused-but-set-variable]
+ 1366 |                                 gint _tmp25__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:1398:46: warning: variable ‘_tmp32__length1’ set but not used [-Wunused-but-set-variable]
+ 1398 |                                         gint _tmp32__length1;
+      |                                              ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c: In function ‘page_get_image’:
+src/simple-scan.p/page.c:1454:14: warning: variable ‘_image_pixels_size_’ set but not used [-Wunused-but-set-variable]
+ 1454 |         gint _image_pixels_size_;
+      |              ^~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page.c: In function ‘string_to_utf8’:
+src/simple-scan.p/page.c:1587:14: warning: variable ‘__result__size_’ set but not used [-Wunused-but-set-variable]
+ 1587 |         gint __result__size_;
+      |              ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c: In function ‘page_get_icc_data_encoded’:
+src/simple-scan.p/page.c:1621:14: warning: variable ‘_tmp8__length1’ set but not used [-Wunused-but-set-variable]
+ 1621 |         gint _tmp8__length1;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/page.c: In function ‘__lambda4_’:
+src/simple-scan.p/page.c:1736:15: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 1736 |         Page* self;
+      |               ^~~~
+src/simple-scan.p/page.c: In function ‘page_save_png’:
+src/simple-scan.p/page.c:1849:22: warning: variable ‘_tmp16__length1’ set but not used [-Wunused-but-set-variable]
+ 1849 |                 gint _tmp16__length1;
+      |                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:1860:48: warning: passing argument 2 of ‘gdk_pixbuf_save_to_callbackv’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 1860 |         gdk_pixbuf_save_to_callbackv (_tmp17_, ___lambda4__gdk_pixbuf_save_func, _data9_, "png", _tmp18_, _tmp19_, &_inner_error0_);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                |
+      |                                                gboolean (*)(guint8 *, gsize,  GError **, void *) {aka int (*)(unsigned char *, long unsigned int,  struct _GError **, void *)}
+In file included from /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h:34,
+                 from src/simple-scan.p/page.c:21:
+/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h:382:60: note: expected ‘GdkPixbufSaveFunc’ {aka ‘int (*)(const char *, long unsigned int,  struct _GError **, void *)’} but argument is of type ‘gboolean (*)(guint8 *, gsize,  GError **, void *)’ {aka ‘int (*)(unsigned char *, long unsigned int,  struct _GError **, void *)’}
+  382 |                                          GdkPixbufSaveFunc save_func,
+      |                                          ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+src/simple-scan.p/page.c:1753:1: note: ‘___lambda4__gdk_pixbuf_save_func’ declared here
+ 1753 | ___lambda4__gdk_pixbuf_save_func (guint8* buf,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h:367:20: note: ‘GdkPixbufSaveFunc’ declared here
+  367 | typedef gboolean (*GdkPixbufSaveFunc)   (const gchar *buf,
+      |                    ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:1796:14: warning: variable ‘_tmp19__length1’ set but not used [-Wunused-but-set-variable]
+ 1796 |         gint _tmp19__length1;
+      |              ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:1794:14: warning: variable ‘_tmp18__length1’ set but not used [-Wunused-but-set-variable]
+ 1794 |         gint _tmp18__length1;
+      |              ^~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:1790:14: warning: variable ‘_values_size_’ set but not used [-Wunused-but-set-variable]
+ 1790 |         gint _values_size_;
+      |              ^~~~~~~~~~~~~
+src/simple-scan.p/page.c:1780:14: warning: variable ‘_keys_size_’ set but not used [-Wunused-but-set-variable]
+ 1780 |         gint _keys_size_;
+      |              ^~~~~~~~~~~
+src/simple-scan.p/page.c: In function ‘page_set_color_profile’:
+src/simple-scan.p/page.c:2021:19: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2021 |         old_value = page_get_color_profile (self);
+      |                   ^
+src/simple-scan.p/page.c: In function ‘page_set_crop_name’:
+src/simple-scan.p/page.c:2355:19: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2355 |         old_value = page_get_crop_name (self);
+      |                   ^
+src/simple-scan.p/page.c: In function ‘page_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/page.c:2524:13: note: in expansion of macro ‘g_once_init_enter’
+ 2524 |         if (g_once_init_enter (&page_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/page.c: At top level:
+src/simple-scan.p/page.c:1710:1: warning: ‘block9_data_ref’ defined but not used [-Wunused-function]
+ 1710 | block9_data_ref (Block9Data* _data9_)
+      | ^~~~~~~~~~~~~~~
+[167/170] Compiling C object src/simple-scan.p/meson-generated_simple-scan.c.o
+src/simple-scan.p/simple-scan.c: In function ‘simple_scan_suggest_driver’:
+src/simple-scan.p/simple-scan.c:1007:48: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1007 |         simple_scan_add_devices (self, _tmp4_, SIMPLE_SCAN_brscan_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_brscan_devices), "brscan");
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1009:48: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1009 |         simple_scan_add_devices (self, _tmp5_, SIMPLE_SCAN_brscan2_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_brscan2_devices), "brscan2");
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1011:48: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1011 |         simple_scan_add_devices (self, _tmp6_, SIMPLE_SCAN_brscan3_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_brscan3_devices), "brscan3");
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1013:48: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1013 |         simple_scan_add_devices (self, _tmp7_, SIMPLE_SCAN_brscan4_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_brscan4_devices), "brscan4");
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1015:48: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1015 |         simple_scan_add_devices (self, _tmp8_, SIMPLE_SCAN_pixma_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_pixma_devices), "pixma");
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1017:48: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1017 |         simple_scan_add_devices (self, _tmp9_, SIMPLE_SCAN_samsung_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_samsung_devices), "samsung");
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1019:49: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1019 |         simple_scan_add_devices (self, _tmp10_, SIMPLE_SCAN_smfp_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_smfp_devices), "smfp");
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1021:49: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1021 |         simple_scan_add_devices (self, _tmp11_, SIMPLE_SCAN_hpaio_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_hpaio_devices), "hpaio");
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1023:49: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1023 |         simple_scan_add_devices (self, _tmp12_, SIMPLE_SCAN_epkowa_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_epkowa_devices), "epkowa");
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1025:49: warning: passing argument 3 of ‘simple_scan_add_devices’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1025 |         simple_scan_add_devices (self, _tmp13_, SIMPLE_SCAN_lexmark_nscan_devices, (gint) G_N_ELEMENTS (SIMPLE_SCAN_lexmark_nscan_devices), "lexmark_nscan");
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:422:40: note: expected ‘guint32 *’ {aka ‘unsigned int *’} but argument is of type ‘const guint32 *’ {aka ‘const unsigned int *’}
+  422 |                               guint32* devices,
+      |                               ~~~~~~~~~^~~~~~~
+src/simple-scan.p/simple-scan.c:1042:38: warning: variable ‘_tmp22__length1’ set but not used [-Wunused-but-set-variable]
+ 1042 |                                 gint _tmp22__length1;
+      |                                      ^~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c: In function ‘simple_scan_fix_pdf’:
+src/simple-scan.p/simple-scan.c:2038:14: warning: variable ‘_data_size_’ set but not used [-Wunused-but-set-variable]
+ 2038 |         gint _data_size_ = 0;
+      |              ^~~~~~~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-4.0/gtk/css/gtkcss.h:29,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:29,
+                 from /usr/include/libadwaita-1/adwaita.h:9,
+                 from src/simple-scan.p/simple-scan.c:15:
+src/simple-scan.p/simple-scan.c: In function ‘simple_scan_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:2597:13: note: in expansion of macro ‘g_once_init_enter’
+ 2597 |         if (g_once_init_enter (&simple_scan_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c: In function ‘simple_scan_get_profile_for_device’:
+src/simple-scan.p/simple-scan.c:1435:17: warning: ignoring return value of ‘cd_client_connect_sync’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1435 |                 cd_client_connect_sync (_tmp2_, NULL, &_inner_error0_);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:1514:17: warning: ignoring return value of ‘cd_device_connect_sync’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1514 |                 cd_device_connect_sync (_tmp12_, NULL, &_inner_error0_);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c:1562:17: warning: ignoring return value of ‘cd_profile_connect_sync’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1562 |                 cd_profile_connect_sync (_tmp18_, NULL, &_inner_error0_);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/simple-scan.c: At top level:
+src/simple-scan.p/simple-scan.c:125:20: warning: ‘simple_scan_properties’ defined but not used [-Wunused-variable]
+  125 | static GParamSpec* simple_scan_properties[SIMPLE_SCAN_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+[168/170] Compiling C object src/simple-scan.p/meson-generated_preferences-dialog.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from src/simple-scan.p/preferences-dialog.c:16:
+src/simple-scan.p/preferences-dialog.c: In function ‘dpi_item_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c:366:13: note: in expansion of macro ‘g_once_init_enter’
+  366 |         if (g_once_init_enter (&dpi_item_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘paper_size_item_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c:436:13: note: in expansion of macro ‘g_once_init_enter’
+  436 |         if (g_once_init_enter (&paper_size_item_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘__lambda12_’:
+src/simple-scan.p/preferences-dialog.c:539:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  539 |         PreferencesDialog* self;
+      |                            ^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘__lambda13_’:
+src/simple-scan.p/preferences-dialog.c:562:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  562 |         PreferencesDialog* self;
+      |                            ^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘__lambda14_’:
+src/simple-scan.p/preferences-dialog.c:585:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  585 |         PreferencesDialog* self;
+      |                            ^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘__lambda19_’:
+src/simple-scan.p/preferences-dialog.c:683:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  683 |         PreferencesDialog* self;
+      |                            ^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘__lambda20_’:
+src/simple-scan.p/preferences-dialog.c:706:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  706 |         PreferencesDialog* self;
+      |                            ^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘__lambda21_’:
+src/simple-scan.p/preferences-dialog.c:729:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  729 |         PreferencesDialog* self;
+      |                            ^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘__lambda22_’:
+src/simple-scan.p/preferences-dialog.c:752:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  752 |         PreferencesDialog* self;
+      |                            ^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘__lambda23_’:
+src/simple-scan.p/preferences-dialog.c:775:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  775 |         PreferencesDialog* self;
+      |                            ^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘__lambda27_’:
+src/simple-scan.p/preferences-dialog.c:859:28: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+  859 |         PreferencesDialog* self;
+      |                            ^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘preferences_dialog_construct’:
+src/simple-scan.p/preferences-dialog.c:1024:33: warning: passing argument 1 of ‘gtk_expression_unref’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 1024 |         _gtk_expression_unref0 (_tmp5_);
+      |                                 ^~~~~~
+      |                                 |
+      |                                 GtkCClosureExpression * {aka struct _GtkCClosureExpression *}
+src/simple-scan.p/preferences-dialog.c:97:91: note: in definition of macro ‘_gtk_expression_unref0’
+   97 | #define _gtk_expression_unref0(var) ((var == NULL) ? NULL : (var = (gtk_expression_unref (var), NULL)))
+      |                                                                                           ^~~
+In file included from /usr/include/gtk-4.0/gtk/gtkboolfilter.h:26,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:54,
+                 from /usr/include/libadwaita-1/adwaita.h:9,
+                 from src/simple-scan.p/preferences-dialog.c:20:
+/usr/include/gtk-4.0/gtk/gtkexpression.h:51:98: note: expected ‘GtkExpression *’ {aka ‘struct _GtkExpression *’} but argument is of type ‘GtkCClosureExpression *’ {aka ‘struct _GtkCClosureExpression *’}
+   51 | void                    gtk_expression_unref                    (GtkExpression                  *self);
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/simple-scan.p/preferences-dialog.c:1076:33: warning: passing argument 1 of ‘gtk_expression_unref’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 1076 |         _gtk_expression_unref0 (_tmp36_);
+      |                                 ^~~~~~~
+      |                                 |
+      |                                 GtkCClosureExpression * {aka struct _GtkCClosureExpression *}
+src/simple-scan.p/preferences-dialog.c:97:91: note: in definition of macro ‘_gtk_expression_unref0’
+   97 | #define _gtk_expression_unref0(var) ((var == NULL) ? NULL : (var = (gtk_expression_unref (var), NULL)))
+      |                                                                                           ^~~
+/usr/include/gtk-4.0/gtk/gtkexpression.h:51:98: note: expected ‘GtkExpression *’ {aka ‘struct _GtkExpression *’} but argument is of type ‘GtkCClosureExpression *’ {aka ‘struct _GtkCClosureExpression *’}
+   51 | void                    gtk_expression_unref                    (GtkExpression                  *self);
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/simple-scan.p/preferences-dialog.c:1088:33: warning: passing argument 1 of ‘gtk_expression_unref’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 1088 |         _gtk_expression_unref0 (_tmp43_);
+      |                                 ^~~~~~~
+      |                                 |
+      |                                 GtkCClosureExpression * {aka struct _GtkCClosureExpression *}
+src/simple-scan.p/preferences-dialog.c:97:91: note: in definition of macro ‘_gtk_expression_unref0’
+   97 | #define _gtk_expression_unref0(var) ((var == NULL) ? NULL : (var = (gtk_expression_unref (var), NULL)))
+      |                                                                                           ^~~
+/usr/include/gtk-4.0/gtk/gtkexpression.h:51:98: note: expected ‘GtkExpression *’ {aka ‘struct _GtkExpression *’} but argument is of type ‘GtkCClosureExpression *’ {aka ‘struct _GtkCClosureExpression *’}
+   51 | void                    gtk_expression_unref                    (GtkExpression                  *self);
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘preferences_dialog_set_dpi_combo’:
+src/simple-scan.p/preferences-dialog.c:1724:38: warning: variable ‘_tmp7__length1’ set but not used [-Wunused-but-set-variable]
+ 1724 |                                 gint _tmp7__length1;
+      |                                      ^~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c:1720:39: warning: variable ‘_tmp6_’ set but not used [-Wunused-but-set-variable]
+ 1720 |                                 gint* _tmp6_;
+      |                                       ^~~~~~
+src/simple-scan.p/preferences-dialog.c:1695:14: warning: variable ‘_scan_resolutions_size_’ set but not used [-Wunused-but-set-variable]
+ 1695 |         gint _scan_resolutions_size_;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c: In function ‘preferences_dialog_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c:1853:13: note: in expansion of macro ‘g_once_init_enter’
+ 1853 |         if (g_once_init_enter (&preferences_dialog_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c: At top level:
+src/simple-scan.p/preferences-dialog.c:94:20: warning: ‘preferences_dialog_properties’ defined but not used [-Wunused-variable]
+   94 | static GParamSpec* preferences_dialog_properties[PREFERENCES_DIALOG_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c:78:20: warning: ‘paper_size_item_properties’ defined but not used [-Wunused-variable]
+   78 | static GParamSpec* paper_size_item_properties[PAPER_SIZE_ITEM_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/preferences-dialog.c:61:20: warning: ‘dpi_item_properties’ defined but not used [-Wunused-variable]
+   61 | static GParamSpec* dpi_item_properties[DPI_ITEM_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~
+[169/170] Compiling C object src/simple-scan.p/meson-generated_app-window.c.o
+src/simple-scan.p/app-window.c: In function ‘app_window_construct’:
+src/simple-scan.p/app-window.c:1790:33: warning: passing argument 1 of ‘gtk_expression_unref’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 1790 |         _gtk_expression_unref0 (_tmp7_);
+      |                                 ^~~~~~
+      |                                 |
+      |                                 GtkCClosureExpression * {aka struct _GtkCClosureExpression *}
+src/simple-scan.p/app-window.c:156:91: note: in definition of macro ‘_gtk_expression_unref0’
+  156 | #define _gtk_expression_unref0(var) ((var == NULL) ? NULL : (var = (gtk_expression_unref (var), NULL)))
+      |                                                                                           ^~~
+In file included from /usr/include/gtk-4.0/gtk/gtkboolfilter.h:26,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:54,
+                 from /usr/include/libadwaita-1/adwaita.h:9,
+                 from src/simple-scan.p/app-window.c:17:
+/usr/include/gtk-4.0/gtk/gtkexpression.h:51:98: note: expected ‘GtkExpression *’ {aka ‘struct _GtkExpression *’} but argument is of type ‘GtkCClosureExpression *’ {aka ‘struct _GtkCClosureExpression *’}
+   51 | void                    gtk_expression_unref                    (GtkExpression                  *self);
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/simple-scan.p/app-window.c: In function ‘__lambda43_’:
+src/simple-scan.p/app-window.c:2176:20: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 2176 |         AppWindow* self;
+      |                    ^~~~
+src/simple-scan.p/app-window.c: In function ‘____lambda30_’:
+src/simple-scan.p/app-window.c:3041:20: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 3041 |         AppWindow* self;
+      |                    ^~~~
+src/simple-scan.p/app-window.c: In function ‘___lambda33_’:
+src/simple-scan.p/app-window.c:3417:20: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 3417 |         AppWindow* self;
+      |                    ^~~~
+src/simple-scan.p/app-window.c: In function ‘__lambda29_’:
+src/simple-scan.p/app-window.c:3716:20: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+ 3716 |         AppWindow* self;
+      |                    ^~~~
+src/simple-scan.p/app-window.c: In function ‘_app_window_scan_button_clicked_cb_gtk_button_clicked’:
+src/simple-scan.p/app-window.c:4654:63: warning: passing argument 2 of ‘app_window_scan_button_clicked_cb’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 4654 |         app_window_scan_button_clicked_cb ((AppWindow*) self, _sender);
+      |                                                               ^~~~~~~
+      |                                                               |
+      |                                                               GtkButton * {aka struct _GtkButton *}
+src/simple-scan.p/app-window.c:4631:47: note: expected ‘GtkWidget *’ {aka ‘struct _GtkWidget *’} but argument is of type ‘GtkButton *’ {aka ‘struct _GtkButton *’}
+ 4631 |                                    GtkWidget* widget)
+      |                                    ~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c: In function ‘_app_window_stop_scan_button_clicked_cb_gtk_button_clicked’:
+src/simple-scan.p/app-window.c:4676:68: warning: passing argument 2 of ‘app_window_stop_scan_button_clicked_cb’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 4676 |         app_window_stop_scan_button_clicked_cb ((AppWindow*) self, _sender);
+      |                                                                    ^~~~~~~
+      |                                                                    |
+      |                                                                    GtkButton * {aka struct _GtkButton *}
+src/simple-scan.p/app-window.c:4659:52: note: expected ‘GtkWidget *’ {aka ‘struct _GtkWidget *’} but argument is of type ‘GtkButton *’ {aka ‘struct _GtkButton *’}
+ 4659 |                                         GtkWidget* widget)
+      |                                         ~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c: In function ‘app_window_show_page_menu_cb’:
+src/simple-scan.p/app-window.c:4855:9: warning: ‘gtk_widget_translate_coordinates’ is deprecated: Use 'gtk_widget_compute_point' instead [-Wdeprecated-declarations]
+ 4855 |         gtk_widget_translate_coordinates (from, (GtkWidget*) self, x, y, &_tmp0_, &_tmp1_);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-4.0/gtk/gtkapplication.h:26,
+                 from /usr/include/gtk-4.0/gtk/gtkwindow.h:32,
+                 from /usr/include/gtk-4.0/gtk/gtkaboutdialog.h:29,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:33:
+/usr/include/gtk-4.0/gtk/gtkwidget.h:614:14: note: declared here
+  614 | gboolean     gtk_widget_translate_coordinates (GtkWidget  *src_widget,
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c: In function ‘app_window_email_document_finish’:
+src/simple-scan.p/app-window.c:5254:42: warning: variable ‘_data_’ set but not used [-Wunused-but-set-variable]
+ 5254 |         AppWindowEmailDocumentAsyncData* _data_;
+      |                                          ^~~~~~
+src/simple-scan.p/app-window.c: In function ‘app_window_show_about’:
+src/simple-scan.p/app-window.c:5594:51: warning: passing argument 2 of ‘adw_about_dialog_set_developers’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 5594 |         adw_about_dialog_set_developers (_tmp10_, _tmp2_);
+      |                                                   ^~~~~~
+      |                                                   |
+      |                                                   gchar ** {aka char **}
+In file included from /usr/include/libadwaita-1/adwaita.h:24:
+/usr/include/libadwaita-1/adw-about-dialog.h:115:71: note: expected ‘const char **’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  115 |                                                      const char     **developers);
+      |                                                      ~~~~~~~~~~~~~~~~~^~~~~~~~~~
+src/simple-scan.p/app-window.c:5565:14: warning: variable ‘_authors_size_’ set but not used [-Wunused-but-set-variable]
+ 5565 |         gint _authors_size_;
+      |              ^~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c: In function ‘app_window_load’:
+src/simple-scan.p/app-window.c:5993:77: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 5993 |         gtk_application_set_accels_for_action (_tmp24_, "app.new_document", _tmp27_);
+      |                                                                             ^~~~~~~
+      |                                                                             |
+      |                                                                             gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6001:76: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6001 |         gtk_application_set_accels_for_action (_tmp28_, "app.scan_single", _tmp31_);
+      |                                                                            ^~~~~~~
+      |                                                                            |
+      |                                                                            gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6009:73: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6009 |         gtk_application_set_accels_for_action (_tmp32_, "app.scan_adf", _tmp35_);
+      |                                                                         ^~~~~~~
+      |                                                                         |
+      |                                                                         gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6017:75: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6017 |         gtk_application_set_accels_for_action (_tmp36_, "app.scan_batch", _tmp39_);
+      |                                                                           ^~~~~~~
+      |                                                                           |
+      |                                                                           gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6025:74: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6025 |         gtk_application_set_accels_for_action (_tmp40_, "app.scan_stop", _tmp43_);
+      |                                                                          ^~~~~~~
+      |                                                                          |
+      |                                                                          gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6033:76: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6033 |         gtk_application_set_accels_for_action (_tmp44_, "app.rotate_left", _tmp47_);
+      |                                                                            ^~~~~~~
+      |                                                                            |
+      |                                                                            gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6041:77: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6041 |         gtk_application_set_accels_for_action (_tmp48_, "app.rotate_right", _tmp51_);
+      |                                                                             ^~~~~~~
+      |                                                                             |
+      |                                                                             gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6049:74: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6049 |         gtk_application_set_accels_for_action (_tmp52_, "app.move_left", _tmp55_);
+      |                                                                          ^~~~~~~
+      |                                                                          |
+      |                                                                          gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6057:75: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6057 |         gtk_application_set_accels_for_action (_tmp56_, "app.move_right", _tmp59_);
+      |                                                                           ^~~~~~~
+      |                                                                           |
+      |                                                                           gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6065:74: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6065 |         gtk_application_set_accels_for_action (_tmp60_, "app.copy_page", _tmp63_);
+      |                                                                          ^~~~~~~
+      |                                                                          |
+      |                                                                          gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6073:76: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6073 |         gtk_application_set_accels_for_action (_tmp64_, "app.delete_page", _tmp67_);
+      |                                                                            ^~~~~~~
+      |                                                                            |
+      |                                                                            gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6081:69: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6081 |         gtk_application_set_accels_for_action (_tmp68_, "app.save", _tmp71_);
+      |                                                                     ^~~~~~~
+      |                                                                     |
+      |                                                                     gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6089:70: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6089 |         gtk_application_set_accels_for_action (_tmp72_, "app.email", _tmp75_);
+      |                                                                      ^~~~~~~
+      |                                                                      |
+      |                                                                      gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6097:70: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6097 |         gtk_application_set_accels_for_action (_tmp76_, "app.print", _tmp79_);
+      |                                                                      ^~~~~~~
+      |                                                                      |
+      |                                                                      gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6105:69: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6105 |         gtk_application_set_accels_for_action (_tmp80_, "app.help", _tmp83_);
+      |                                                                     ^~~~~~~
+      |                                                                     |
+      |                                                                     gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6113:69: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6113 |         gtk_application_set_accels_for_action (_tmp84_, "app.quit", _tmp87_);
+      |                                                                     ^~~~~~~
+      |                                                                     |
+      |                                                                     gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6121:76: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6121 |         gtk_application_set_accels_for_action (_tmp88_, "app.preferences", _tmp91_);
+      |                                                                            ^~~~~~~
+      |                                                                            |
+      |                                                                            gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+src/simple-scan.p/app-window.c:6129:82: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 6129 |         gtk_application_set_accels_for_action (_tmp92_, "win.show-help-overlay", _tmp95_);
+      |                                                                                  ^~~~~~~
+      |                                                                                  |
+      |                                                                                  gchar ** {aka char **}
+/usr/include/gtk-4.0/gtk/gtkapplication.h:131:88: note: expected ‘const char * const*’ but argument is of type ‘gchar **’ {aka ‘char **’}
+  131 |                                                                   const char * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from src/simple-scan.p/app-window.c:16:
+src/simple-scan.p/app-window.c: In function ‘app_window_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c:6885:13: note: in expansion of macro ‘g_once_init_enter’
+ 6885 |         if (g_once_init_enter (&app_window_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c: In function ‘cancellable_progress_bar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c:7176:13: note: in expansion of macro ‘g_once_init_enter’
+ 7176 |         if (g_once_init_enter (&cancellable_progress_bar_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c: In function ‘crop_actions_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c:7484:13: note: in expansion of macro ‘g_once_init_enter’
+ 7484 |         if (g_once_init_enter (&crop_actions_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c: At top level:
+src/simple-scan.p/app-window.c:5251:1: warning: ‘app_window_email_document_finish’ defined but not used [-Wunused-function]
+ 5251 | app_window_email_document_finish (AppWindow* self,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c:3381:1: warning: ‘block3_data_ref’ defined but not used [-Wunused-function]
+ 3381 | block3_data_ref (Block3Data* _data3_)
+      | ^~~~~~~~~~~~~~~
+src/simple-scan.p/app-window.c:272:20: warning: ‘cancellable_progress_bar_properties’ defined but not used [-Wunused-variable]
+  272 | static GParamSpec* cancellable_progress_bar_properties[CANCELLABLE_PROGRESS_BAR_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[170/170] Linking target src/simple-scan

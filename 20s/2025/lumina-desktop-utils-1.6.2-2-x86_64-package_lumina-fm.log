@@ -1,0 +1,691 @@
+Info: creating stash file /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.qmake.stash
+Project MESSAGE: Build OS Info: Linux, x86_64, #1 SMP PREEMPT_DYNAMIC Tue, 29 Jul 2025 15:05:00 +0000
+Project MESSAGE:  - Detected Qt Version: 5.15.17
+Project MESSAGE: Build Settings Loaded: Linux -
+/usr/bin/uic MainUI.ui -o .build/ui/ui_MainUI.h
+/usr/bin/uic FODialog.ui -o .build/ui/ui_FODialog.h
+/usr/bin/uic BMMDialog.ui -o .build/ui/ui_BMMDialog.h
+/usr/bin/uic widgets/MultimediaWidget.ui -o .build/ui/ui_MultimediaWidget.h
+/usr/bin/uic widgets/SlideshowWidget.ui -o .build/ui/ui_SlideshowWidget.h
+/usr/bin/uic widgets/DirWidget2.ui -o .build/ui/ui_DirWidget2.h
+/usr/bin/uic gitWizard.ui -o .build/ui/ui_gitWizard.h
+/usr/bin/uic OPWidget.ui -o .build/ui/ui_OPWidget.h
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LDesktopUtils.o ../../core/libLumina/LDesktopUtils.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LuminaOS-Linux.o ../../core/libLumina/LuminaOS-Linux.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LUtils.o ../../core/libLumina/LUtils.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LuminaThemes.o ../../core/libLumina/LuminaThemes.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LuminaXDG.o ../../core/libLumina/LuminaXDG.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LFileInfo.o ../../core/libLumina/LFileInfo.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LuminaSingleApplication.o ../../core/libLumina/LuminaSingleApplication.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/XDGMime.o ../../core/libLumina/XDGMime.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LVideoLabel.o ../../core/libLumina/LVideoLabel.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LVideoSurface.o ../../core/libLumina/LVideoSurface.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/LVideoWidget.o ../../core/libLumina/LVideoWidget.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/main.o main.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/MainUI.o MainUI.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/FODialog.o FODialog.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/BMMDialog.o BMMDialog.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/MultimediaWidget.o widgets/MultimediaWidget.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/SlideshowWidget.o widgets/SlideshowWidget.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/DirWidget2.o widgets/DirWidget2.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/gitCompat.o gitCompat.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/gitWizard.o gitWizard.cpp
+../../core/libLumina/XDGMime.cpp: In static member function ‘static QStringList XDGMime::findAvailableAppsForMime(QString)’:
+../../core/libLumina/XDGMime.cpp:279:62: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  279 |         QStringList files = matches[j].section("=",1,1).split(";",QString::SkipEmptyParts);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt/QtCore/qobject.h:47,
+                 from /usr/include/qt/QtCore/qiodevice.h:45,
+                 from /usr/include/qt/QtCore/qfiledevice.h:43,
+                 from /usr/include/qt/QtCore/qfile.h:44,
+                 from /usr/include/qt/QtCore/QFile:1,
+                 from ../../core/libLumina/XDGMime.h:16,
+                 from ../../core/libLumina/XDGMime.cpp:7:
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+BMMDialog.cpp: In member function ‘void BMMDialog::RenameItem()’:
+BMMDialog.cpp:59:22: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = Qt::WindowType; Zero = int QFlags<Qt::WindowType>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+   59 |                 &ok, 0, Qt::ImhFormattedNumbersOnly | Qt::ImhUppercaseOnly | Qt::ImhLowercaseOnly);
+      |                      ^
+In file included from /usr/include/qt/QtCore/qglobal.h:1307,
+                 from /usr/include/qt/QtGui/qtguiglobal.h:43,
+                 from /usr/include/qt/QtWidgets/qtwidgetsglobal.h:43,
+                 from /usr/include/qt/QtWidgets/qdialog.h:43,
+                 from /usr/include/qt/QtWidgets/QDialog:1,
+                 from BMMDialog.h:13,
+                 from BMMDialog.cpp:7:
+/usr/include/qt/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/Browser.o Browser.cpp
+../../core/libLumina/LuminaOS-Linux.cpp: In static member function ‘static void LOS::startMixerUtility()’:
+../../core/libLumina/LuminaOS-Linux.cpp:134:26: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  134 |   QProcess::startDetached(LOS::AppPrefix() + "bin/pavucontrol");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt/QtCore/QProcess:1,
+                 from ../../core/libLumina/LuminaOS.h:17,
+                 from ../../core/libLumina/LuminaOS-Linux.cpp:9:
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+../../core/libLumina/LuminaOS-Linux.cpp: In static member function ‘static void LOS::systemShutdown(bool)’:
+../../core/libLumina/LuminaOS-Linux.cpp:155:26: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  155 |   QProcess::startDetached("shutdown -P -h now");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+../../core/libLumina/LuminaOS-Linux.cpp: In static member function ‘static void LOS::systemRestart(bool)’:
+../../core/libLumina/LuminaOS-Linux.cpp:161:26: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  161 |   QProcess::startDetached("shutdown -r now");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+../../core/libLumina/LFileInfo.cpp: In member function ‘void LFileInfo::getZfsDataset()’:
+../../core/libLumina/LFileInfo.cpp:103:80: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  103 |         if(!gplist.isEmpty()){ gplist = gplist.first().replace("\t", " ").split(" ",QString::SkipEmptyParts); gplist.removeAll("groups"); }
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt/QtCore/qobject.h:47,
+                 from /usr/include/qt/QtCore/qiodevice.h:45,
+                 from /usr/include/qt/QtCore/qfiledevice.h:43,
+                 from /usr/include/qt/QtCore/qfile.h:44,
+                 from /usr/include/qt/QtCore/QFile:1,
+                 from ../../core/libLumina/LuminaXDG.h:18,
+                 from ../../core/libLumina/LFileInfo.h:13,
+                 from ../../core/libLumina/LFileInfo.cpp:7:
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LFileInfo.cpp:107:84: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  107 |           zfs_perms << tmp.first().section(" ",2,2,QString::SectionSkipEmpty).split(",",QString::SkipEmptyParts);
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LVideoLabel.cpp: In constructor ‘LVideoLabel::LVideoLabel(QString, bool, QWidget*)’:
+../../core/libLumina/LVideoLabel.cpp:12:27: warning: ‘int qrand()’ is deprecated: use QRandomGenerator instead [-Wdeprecated-declarations]
+   12 |   QTimer::singleShot(qrand()%10, this, SLOT(initializeBackend()) );
+      |                      ~~~~~^~
+In file included from /usr/include/qt/QtGui/qtguiglobal.h:43,
+                 from /usr/include/qt/QtWidgets/qtwidgetsglobal.h:43,
+                 from /usr/include/qt/QtWidgets/qlabel.h:43,
+                 from /usr/include/qt/QtWidgets/QLabel:1,
+                 from ../../core/libLumina/LVideoLabel.h:4,
+                 from ../../core/libLumina/LVideoLabel.cpp:1:
+/usr/include/qt/QtCore/qglobal.h:1282:80: note: declared here
+ 1282 | Q_CORE_EXPORT QT_DEPRECATED_VERSION_X_5_15("use QRandomGenerator instead") int qrand();
+      |                                                                                ^~~~~
+../../core/libLumina/LVideoLabel.cpp: In member function ‘void LVideoLabel::stateChanged(QMediaPlayer::State)’:
+../../core/libLumina/LVideoLabel.cpp:63:52: warning: unused parameter ‘state’ [-Wunused-parameter]
+   63 | void LVideoLabel::stateChanged(QMediaPlayer::State state) {
+      |                                ~~~~~~~~~~~~~~~~~~~~^~~~~
+../../core/libLumina/LVideoLabel.cpp: In member function ‘void LVideoLabel::setDuration(QMediaPlayer::MediaStatus)’:
+../../core/libLumina/LVideoLabel.cpp:77:29: warning: ‘int qrand()’ is deprecated: use QRandomGenerator instead [-Wdeprecated-declarations]
+   77 |     QTimer::singleShot(qrand()%100, mediaPlayer, SLOT(play())); //mediaPlayer->play();
+      |                        ~~~~~^~
+/usr/include/qt/QtCore/qglobal.h:1282:80: note: declared here
+ 1282 | Q_CORE_EXPORT QT_DEPRECATED_VERSION_X_5_15("use QRandomGenerator instead") int qrand();
+      |                                                                                ^~~~~
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/BrowserWidget.o BrowserWidget.cpp
+../../core/libLumina/LuminaXDG.cpp: In member function ‘void XDGDesktop::sync()’:
+../../core/libLumina/LuminaXDG.cpp:117:65: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  117 |     else if(var=="Categories" && insection){ catList = val.split(";",QString::SkipEmptyParts); }
+      |                                                        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt/QtCore/qobject.h:47,
+                 from /usr/include/qt/QtCore/qiodevice.h:45,
+                 from /usr/include/qt/QtCore/qfiledevice.h:43,
+                 from /usr/include/qt/QtCore/qfile.h:44,
+                 from /usr/include/qt/QtCore/QFile:1,
+                 from ../../core/libLumina/LuminaXDG.h:18,
+                 from ../../core/libLumina/LuminaXDG.cpp:7:
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LuminaXDG.cpp:118:68: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  118 |     else if(var=="OnlyShowIn" && insection){ showInList = val.split(";",QString::SkipEmptyParts); }
+      |                                                           ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LuminaXDG.cpp:119:70: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  119 |     else if(var=="NotShowIn" && insection){ notShowInList = val.split(";",QString::SkipEmptyParts); }
+      |                                                             ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LuminaXDG.cpp:121:65: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  121 |     else if(var=="Actions" && insection){ actionList = val.split(";",QString::SkipEmptyParts); }
+      |                                                        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LuminaXDG.cpp:122:64: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  122 |     else if(var=="MimeType" && insection){ mimeList = val.split(";",QString::SkipEmptyParts); }
+      |                                                       ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LuminaXDG.cpp:124:66: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  124 |       if(keyList.isEmpty() && loc.isEmpty()){ keyList = val.split(";",QString::SkipEmptyParts); }
+      |                                                         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LuminaXDG.cpp:125:48: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  125 |       else if(loc == lang){ keyList = val.split(";",QString::SkipEmptyParts); }
+      |                                       ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LDesktopUtils.cpp: In static member function ‘static void LDesktopUtils::LoadSystemDefaults(bool)’:
+../../core/libLumina/LDesktopUtils.cpp:405:70: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+  405 |     else if(var=="theme_styles"){ LTHEME::setCurrentStyles( val.split(",",QString::SkipEmptyParts) ); }
+      |                                                             ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt/QtCore/QString:1,
+                 from ../../core/libLumina/LDesktopUtils.h:10,
+                 from ../../core/libLumina/LDesktopUtils.cpp:7:
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LDesktopUtils.cpp:474:24: warning: ‘static int QProcess::execute(const QString&)’ is deprecated: Use QProcess::execute(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  474 |       QProcess::execute(val);
+      |       ~~~~~~~~~~~~~~~~~^~~~~
+In file included from /usr/include/qt/QtCore/QProcess:1,
+                 from ../../core/libLumina/LUtils.h:11,
+                 from ../../core/libLumina/LDesktopUtils.h:18:
+/usr/include/qt/QtCore/qprocess.h:265:16: note: declared here
+  265 |     static int execute(const QString &command);
+      |                ^~~~~~~
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/TrayUI.o TrayUI.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/OPWidget.o OPWidget.cpp
+widgets/MultimediaWidget.cpp: In member function ‘void MultimediaWidget::playerError()’:
+widgets/MultimediaWidget.cpp:158:55: warning: ‘QUrl QMediaContent::canonicalUrl() const’ is deprecated: Use QMediaContent::request().url() [-Wdeprecated-declarations]
+  158 |   msg = msg.arg( mediaObj->currentMedia().canonicalUrl().fileName() );
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/qt/QtMultimedia/qmediaplayer.h:45,
+                 from /usr/include/qt/QtMultimedia/QMediaPlayer:1,
+                 from widgets/MultimediaWidget.h:14,
+                 from widgets/MultimediaWidget.cpp:7:
+/usr/include/qt/QtMultimedia/qmediacontent.h:78:64: note: declared here
+   78 |     QT_DEPRECATED_X("Use QMediaContent::request().url()") QUrl canonicalUrl() const;
+      |                                                                ^~~~~~~~~~~~
+widgets/MultimediaWidget.cpp: In member function ‘void MultimediaWidget::on_tool_player_play_clicked()’:
+widgets/MultimediaWidget.cpp:174:47: warning: ‘QUrl QMediaContent::canonicalUrl() const’ is deprecated: Use QMediaContent::request().url() [-Wdeprecated-declarations]
+  174 |       && mediaObj->currentMedia().canonicalUrl().fileName()==ui->combo_player_list->currentText() ){
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/usr/include/qt/QtMultimedia/qmediacontent.h:78:64: note: declared here
+   78 |     QT_DEPRECATED_X("Use QMediaContent::request().url()") QUrl canonicalUrl() const;
+      |                                                                ^~~~~~~~~~~~
+../../core/libLumina/LuminaXDG.cpp: In static member function ‘static QStringList LXDG::getIconThemeDepChain(QString, QStringList)’:
+../../core/libLumina/LuminaXDG.cpp:1042:52: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+ 1042 |         deps = deps.first().section("=",1,-1).split(";",QString::SkipEmptyParts);
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+../../core/libLumina/LuminaXDG.cpp: In static member function ‘static QStringList LXDG::findAvailableAppsForMime(QString)’:
+../../core/libLumina/LuminaXDG.cpp:1310:62: warning: ‘QStringList QString::split(const QString&, SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use split(const QString &sep, Qt::SplitBehavior ...) variant instead [-Wdeprecated-declarations]
+ 1310 |         QStringList files = matches[j].section("=",1,1).split(";",QString::SkipEmptyParts);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qstring.h:606:17: note: declared here
+  606 |     QStringList split(const QString &sep, SplitBehavior behavior,
+      |                 ^~~~~
+g++ -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -dM -E -o .build/moc/moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
+gitWizard.cpp: In member function ‘void GitWizard::procFinished(int)’:
+gitWizard.cpp:135:34: warning: unused parameter ‘retcode’ [-Wunused-parameter]
+  135 | void GitWizard::procFinished(int retcode){
+      |                              ~~~~^~~~~~~
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include ../../core/libLumina/LuminaThemes.h -o .build/moc/moc_LuminaThemes.cpp
+../../core/libLumina/LDesktopUtils.cpp: In static member function ‘static bool LDesktopUtils::checkUserFiles(QString, QString)’:
+../../core/libLumina/LDesktopUtils.cpp:517:58: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  517 |     if( oldversion < 100000 && nversion>=100000 ){ system("rm -rf ~/.lumina"); qDebug() << "Current desktop settings obsolete: Re-implementing defaults"; }
+      |                                                    ~~~~~~^~~~~~~~~~~~~~~~~~~~
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include ../../core/libLumina/LuminaXDG.h -o .build/moc/moc_LuminaXDG.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include ../../core/libLumina/LuminaSingleApplication.h -o .build/moc/moc_LuminaSingleApplication.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include ../../core/libLumina/ExternalProcess.h -o .build/moc/moc_ExternalProcess.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include ../../core/libLumina/LVideoLabel.h -o .build/moc/moc_LVideoLabel.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include ../../core/libLumina/LVideoSurface.h -o .build/moc/moc_LVideoSurface.cpp
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:19:11: warning: ‘void qsrand(uint)’ is deprecated: use QRandomGenerator instead [-Wdeprecated-declarations]
+   19 |     qsrand(QDateTime::currentMSecsSinceEpoch());
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt/QtGui/qtguiglobal.h:43,
+                 from /usr/include/qt/QtWidgets/qtwidgetsglobal.h:43,
+                 from /usr/include/qt/QtWidgets/qapplication.h:43,
+                 from /usr/include/qt/QtWidgets/QApplication:1,
+                 from main.cpp:1:
+/usr/include/qt/QtCore/qglobal.h:1281:81: note: declared here
+ 1281 | Q_CORE_EXPORT QT_DEPRECATED_VERSION_X_5_15("use QRandomGenerator instead") void qsrand(uint seed);
+      |                                                                                 ^~~~~~
+In file included from MainUI.cpp:17:
+../../core/libLumina/ExternalProcess.h: In static member function ‘static void ExternalProcess::launch(QString, QStringList, bool)’:
+../../core/libLumina/ExternalProcess.h:84:41: warning: ‘void QProcess::start(const QString&, QIODevice::OpenMode)’ is deprecated: Use QProcess::start(const QString &program, const QStringList &arguments,OpenMode mode = ReadWrite) instead [-Wdeprecated-declarations]
+   84 |           if(args.isEmpty()){ tmp->start(program); }
+      |                               ~~~~~~~~~~^~~~~~~~~
+In file included from /usr/include/qt/QtCore/QProcess:1,
+                 from MainUI.h:19,
+                 from MainUI.cpp:7:
+/usr/include/qt/QtCore/qprocess.h:168:10: note: declared here
+  168 |     void start(const QString &command, OpenMode mode = ReadWrite);
+      |          ^~~~~
+../../core/libLumina/LUtils.cpp: In static member function ‘static QString LUtils::runCommand(bool&, QString, QStringList, QString, QStringList)’:
+../../core/libLumina/LUtils.cpp:130:38: warning: ‘void QProcess::start(const QString&, QIODevice::OpenMode)’ is deprecated: Use QProcess::start(const QString &program, const QStringList &arguments,OpenMode mode = ReadWrite) instead [-Wdeprecated-declarations]
+  130 |   if(arguments.isEmpty()){ proc.start(command); }
+      |                            ~~~~~~~~~~^~~~~~~~~
+In file included from /usr/include/qt/QtCore/QProcess:1,
+                 from ../../core/libLumina/LUtils.h:11,
+                 from ../../core/libLumina/LUtils.cpp:7:
+/usr/include/qt/QtCore/qprocess.h:168:10: note: declared here
+  168 |     void start(const QString &command, OpenMode mode = ReadWrite);
+      |          ^~~~~
+MainUI.cpp: In member function ‘void MainUI::on_actionNew_Window_triggered()’:
+MainUI.cpp:484:26: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  484 |   QProcess::startDetached("lumina-fm -new-instance");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+MainUI.cpp: In member function ‘void MainUI::on_actionSearch_triggered()’:
+MainUI.cpp:494:26: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  494 |   QProcess::startDetached("lumina-search -dir \""+dir->currentDir()+"\"");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+MainUI.cpp: In member function ‘void MainUI::sortModeName(bool)’:
+MainUI.cpp:618:8: warning: unused variable ‘sortbyName’ [-Wunused-variable]
+  618 |   bool sortbyName = radio_sort_name->isChecked();
+      |        ^~~~~~~~~~
+MainUI.cpp: In member function ‘void MainUI::sortModeSize(bool)’:
+MainUI.cpp:628:8: warning: unused variable ‘sortbySize’ [-Wunused-variable]
+  628 |   bool sortbySize = radio_sort_size->isChecked();
+      |        ^~~~~~~~~~
+MainUI.cpp: In member function ‘void MainUI::sortModeType(bool)’:
+MainUI.cpp:638:8: warning: unused variable ‘sortbyType’ [-Wunused-variable]
+  638 |   bool sortbyType = radio_sort_type->isChecked();
+      |        ^~~~~~~~~~
+MainUI.cpp: In member function ‘void MainUI::sortModeDateM(bool)’:
+MainUI.cpp:648:8: warning: unused variable ‘sortbyDateM’ [-Wunused-variable]
+  648 |   bool sortbyDateM = radio_sort_datemod->isChecked();
+      |        ^~~~~~~~~~~
+MainUI.cpp: In member function ‘void MainUI::sortModeDateC(bool)’:
+MainUI.cpp:658:8: warning: unused variable ‘sortbyDateC’ [-Wunused-variable]
+  658 |   bool sortbyDateC = radio_sort_datecre->isChecked();
+      |        ^~~~~~~~~~~
+MainUI.cpp: In member function ‘void MainUI::CreateBookMark()’:
+MainUI.cpp:725:14: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = Qt::WindowType; Zero = int QFlags<Qt::WindowType>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+  725 |         &ok, 0, Qt::ImhFormattedNumbersOnly | Qt::ImhUppercaseOnly | Qt::ImhLowercaseOnly);
+      |              ^
+In file included from /usr/include/qt/QtCore/qglobal.h:1307,
+                 from /usr/include/qt/QtGui/qtguiglobal.h:43,
+                 from /usr/include/qt/QtWidgets/qtwidgetsglobal.h:43,
+                 from /usr/include/qt/QtWidgets/qmainwindow.h:43,
+                 from /usr/include/qt/QtWidgets/QMainWindow:1,
+                 from MainUI.h:12:
+/usr/include/qt/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+MainUI.cpp: In member function ‘void MainUI::OpenTerminal(QString)’:
+MainUI.cpp:879:26: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  879 |   QProcess::startDetached(cmd);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include ../../core/libLumina/LVideoWidget.h -o .build/moc/moc_LVideoWidget.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include MainUI.h -o .build/moc/moc_MainUI.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include FODialog.h -o .build/moc/moc_FODialog.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include BMMDialog.h -o .build/moc/moc_BMMDialog.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include ScrollDialog.h -o .build/moc/moc_ScrollDialog.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include DirData.h -o .build/moc/moc_DirData.cpp
+In file included from widgets/DirWidget2.cpp:25:
+../../core/libLumina/ExternalProcess.h: In static member function ‘static void ExternalProcess::launch(QString, QStringList, bool)’:
+../../core/libLumina/ExternalProcess.h:84:41: warning: ‘void QProcess::start(const QString&, QIODevice::OpenMode)’ is deprecated: Use QProcess::start(const QString &program, const QStringList &arguments,OpenMode mode = ReadWrite) instead [-Wdeprecated-declarations]
+   84 |           if(args.isEmpty()){ tmp->start(program); }
+      |                               ~~~~~~~~~~^~~~~~~~~
+In file included from /usr/include/qt/QtCore/QProcess:1,
+                 from ../../core/libLumina/LUtils.h:11,
+                 from widgets/../widgets/DDListWidgets.h:28,
+                 from widgets/../BrowserWidget.h:19,
+                 from widgets/DirWidget2.h:22,
+                 from widgets/DirWidget2.cpp:7:
+/usr/include/qt/QtCore/qprocess.h:168:10: note: declared here
+  168 |     void start(const QString &command, OpenMode mode = ReadWrite);
+      |          ^~~~~
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include widgets/DDListWidgets.h -o .build/moc/moc_DDListWidgets.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include widgets/MultimediaWidget.h -o .build/moc/moc_MultimediaWidget.cpp
+widgets/DirWidget2.cpp: In member function ‘void DirWidget::on_actionUp_triggered()’:
+widgets/DirWidget2.cpp:450:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  450 |   if(dir.isEmpty())
+      |   ^~
+widgets/DirWidget2.cpp:453:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  453 |    while(!QFile::exists(dir) && !dir.isEmpty()){
+      |    ^~~~~
+widgets/DirWidget2.cpp: In member function ‘void DirWidget::fileProperties()’:
+widgets/DirWidget2.cpp:542:28: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  542 |     QProcess::startDetached("lumina-fileinfo \""+sel[i]+"\""); //use absolute paths
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include widgets/SlideshowWidget.h -o .build/moc/moc_SlideshowWidget.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include widgets/DirWidget2.h -o .build/moc/moc_DirWidget2.cpp
+widgets/DirWidget2.cpp: In member function ‘void DirWidget::createNewFile()’:
+widgets/DirWidget2.cpp:721:14: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = Qt::WindowType; Zero = int QFlags<Qt::WindowType>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+  721 |         &ok, 0, Qt::ImhFormattedNumbersOnly | Qt::ImhUppercaseOnly | Qt::ImhLowercaseOnly);
+      |              ^
+In file included from /usr/include/qt/QtCore/qglobal.h:1307,
+                 from /usr/include/qt/QtCore/qalgorithms.h:43,
+                 from /usr/include/qt/QtCore/qlist.h:43,
+                 from /usr/include/qt/QtCore/QList:1,
+                 from widgets/DirWidget2.h:10:
+/usr/include/qt/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+widgets/DirWidget2.cpp: In static member function ‘static void DirWidget::createNewFolder(QWidget*, BrowserWidget*)’:
+widgets/DirWidget2.cpp:747:16: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = Qt::WindowType; Zero = int QFlags<Qt::WindowType>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+  747 |           &ok, 0, Qt::ImhFormattedNumbersOnly | Qt::ImhUppercaseOnly | Qt::ImhLowercaseOnly);
+      |                ^
+/usr/include/qt/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+widgets/DirWidget2.cpp: In member function ‘void DirWidget::createNewXDGEntry()’:
+widgets/DirWidget2.cpp:775:14: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = Qt::WindowType; Zero = int QFlags<Qt::WindowType>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+  775 |         &ok, 0, Qt::ImhFormattedNumbersOnly | Qt::ImhUppercaseOnly | Qt::ImhLowercaseOnly);
+      |              ^
+/usr/include/qt/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+widgets/DirWidget2.cpp:787:26: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  787 |   QProcess::startDetached("lumina-fileinfo -application \""+full+newdocument+"\"");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+widgets/DirWidget2.cpp: In member function ‘void DirWidget::runFiles()’:
+widgets/DirWidget2.cpp:843:30: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  843 |       QProcess::startDetached("lumina-open \""+sel[i]+"\"");
+      |       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+widgets/DirWidget2.cpp: In member function ‘void DirWidget::runWithFiles()’:
+widgets/DirWidget2.cpp:863:30: warning: ‘static bool QProcess::startDetached(const QString&)’ is deprecated: Use QProcess::startDetached(const QString &program, const QStringList &arguments) instead [-Wdeprecated-declarations]
+  863 |       QProcess::startDetached("lumina-open -select \""+sel[i]+"\"");
+      |       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qprocess.h:280:17: note: declared here
+  280 |     static bool startDetached(const QString &command);
+      |                 ^~~~~~~~~~~~~
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include gitCompat.h -o .build/moc/moc_gitCompat.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include gitWizard.h -o .build/moc/moc_gitWizard.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include Browser.h -o .build/moc/moc_Browser.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include BrowserWidget.h -o .build/moc/moc_BrowserWidget.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include TrayUI.h -o .build/moc/moc_TrayUI.cpp
+/usr/bin/moc -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB --include /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/.build/moc/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I'/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm//build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm' -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I/usr/include/c++/15.1.1 -I/usr/include/c++/15.1.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.1.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed -I/usr/include OPWidget.h -o .build/moc/moc_OPWidget.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_LuminaThemes.o .build/moc/moc_LuminaThemes.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_LuminaXDG.o .build/moc/moc_LuminaXDG.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_LuminaSingleApplication.o .build/moc/moc_LuminaSingleApplication.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_ExternalProcess.o .build/moc/moc_ExternalProcess.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_LVideoLabel.o .build/moc/moc_LVideoLabel.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_LVideoSurface.o .build/moc/moc_LVideoSurface.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_LVideoWidget.o .build/moc/moc_LVideoWidget.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_FODialog.o .build/moc/moc_FODialog.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_BMMDialog.o .build/moc/moc_BMMDialog.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_ScrollDialog.o .build/moc/moc_ScrollDialog.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_DirData.o .build/moc/moc_DirData.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_DDListWidgets.o .build/moc/moc_DDListWidgets.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_MultimediaWidget.o .build/moc/moc_MultimediaWidget.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_SlideshowWidget.o .build/moc/moc_SlideshowWidget.cpp
+BrowserWidget.cpp: In member function ‘void BrowserWidget::showThumbnails(bool)’:
+BrowserWidget.cpp:138:41: warning: ‘QList<T> QMap<K, V>::uniqueKeys() const [with Key = QString; T = QPair<QTreeWidgetItem*, LVideoWidget*>]’ is deprecated: Use QMultiMap for maps storing multiple values with the same key. [-Wdeprecated-declarations]
+  138 |   for(QString file : videoMap.uniqueKeys()) {
+      |                      ~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/qt/QtMultimedia/qmediaresource.h:43,
+                 from /usr/include/qt/QtMultimedia/qmediacontent.h:46,
+                 from /usr/include/qt/QtMultimedia/qmediaplayer.h:45,
+                 from /usr/include/qt/QtMultimedia/QMediaPlayer:1,
+                 from ../../core/libLumina/LVideoLabel.h:5,
+                 from ../../core/libLumina/LVideoWidget.h:4,
+                 from BrowserWidget.h:15,
+                 from BrowserWidget.cpp:7:
+/usr/include/qt/QtCore/qmap.h:1354:12: note: declared here
+ 1354 | QList<Key> QMap<Key, T>::uniqueKeys() const
+      |            ^~~~~~~~~~~~
+BrowserWidget.cpp: In member function ‘void BrowserWidget::setThumbnailSize(int)’:
+BrowserWidget.cpp:165:41: warning: ‘QList<T> QMap<K, V>::uniqueKeys() const [with Key = QString; T = QPair<QTreeWidgetItem*, LVideoWidget*>]’ is deprecated: Use QMultiMap for maps storing multiple values with the same key. [-Wdeprecated-declarations]
+  165 |   for(QString file : videoMap.uniqueKeys()) {
+      |                      ~~~~~~~~~~~~~~~~~~~^~
+/usr/include/qt/QtCore/qmap.h:1354:12: note: declared here
+ 1354 | QList<Key> QMap<Key, T>::uniqueKeys() const
+      |            ^~~~~~~~~~~~
+BrowserWidget.cpp: In member function ‘QStringList BrowserWidget::currentItems(int)’:
+BrowserWidget.cpp:233:45: warning: unused parameter ‘type’ [-Wunused-parameter]
+  233 | QStringList BrowserWidget::currentItems(int type){
+      |                                         ~~~~^~~~
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_DirWidget2.o .build/moc/moc_DirWidget2.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_gitCompat.o .build/moc/moc_gitCompat.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_gitWizard.o .build/moc/moc_gitWizard.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_Browser.o .build/moc/moc_Browser.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_BrowserWidget.o .build/moc/moc_BrowserWidget.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_TrayUI.o .build/moc/moc_TrayUI.cpp
+In file included from .build/moc/moc_ExternalProcess.cpp:10:
+.build/moc/../../../../core/libLumina/ExternalProcess.h: In static member function ‘static void ExternalProcess::launch(QString, QStringList, bool)’:
+.build/moc/../../../../core/libLumina/ExternalProcess.h:84:41: warning: ‘void QProcess::start(const QString&, QIODevice::OpenMode)’ is deprecated: Use QProcess::start(const QString &program, const QStringList &arguments,OpenMode mode = ReadWrite) instead [-Wdeprecated-declarations]
+   84 |           if(args.isEmpty()){ tmp->start(program); }
+      |                               ~~~~~~~~~~^~~~~~~~~
+In file included from /usr/include/qt/QtCore/QProcess:1,
+                 from .build/moc/../../../../core/libLumina/ExternalProcess.h:14:
+/usr/include/qt/QtCore/qprocess.h:168:10: note: declared here
+  168 |     void start(const QString &command, OpenMode mode = ReadWrite);
+      |          ^~~~~
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_OPWidget.o .build/moc/moc_OPWidget.cpp
+g++ -c -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DPREFIX=QString\(\"/usr\"\) -DL_ETCDIR=QString\(\"/etc\"\) -DL_SHAREDIR=QString\(\"/usr/share\"\) -DGIT_VERSION="\"92360ecb\"" -DQT_NO_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_X11EXTRAS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -I. -I../../core/libLumina -I/usr/include/qt -I/usr -I/usr/include -I/build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm -I/usr/include/qt/QtMultimediaWidgets -I/usr/include/qt/QtSvg -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtMultimedia -I/usr/include/qt/QtX11Extras -I/usr/include/qt/QtGui -I/usr/include/qt/QtNetwork -I/usr/include/qt/QtConcurrent -I/usr/include/qt/QtCore -I.build/moc -I.build/ui -I/usr/lib/qt/mkspecs/linux-g++ -o .build/obj/moc_MainUI.o .build/moc/moc_MainUI.cpp
+g++ -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -pipe -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/lumina-desktop-utils/src=/usr/src/debug/lumina-desktop-utils -flto=auto -std=gnu++11 -flto=24 -fno-fat-lto-objects -fuse-linker-plugin -Wl,-rpath-link,/usr/lib -fPIC -o lumina-fm .build/obj/LDesktopUtils.o .build/obj/LuminaOS-Linux.o .build/obj/LUtils.o .build/obj/LuminaThemes.o .build/obj/LuminaXDG.o .build/obj/LFileInfo.o .build/obj/LuminaSingleApplication.o .build/obj/XDGMime.o .build/obj/LVideoLabel.o .build/obj/LVideoSurface.o .build/obj/LVideoWidget.o .build/obj/main.o .build/obj/MainUI.o .build/obj/FODialog.o .build/obj/BMMDialog.o .build/obj/MultimediaWidget.o .build/obj/SlideshowWidget.o .build/obj/DirWidget2.o .build/obj/gitCompat.o .build/obj/gitWizard.o .build/obj/Browser.o .build/obj/BrowserWidget.o .build/obj/TrayUI.o .build/obj/OPWidget.o .build/obj/moc_LuminaThemes.o .build/obj/moc_LuminaXDG.o .build/obj/moc_LuminaSingleApplication.o .build/obj/moc_ExternalProcess.o .build/obj/moc_LVideoLabel.o .build/obj/moc_LVideoSurface.o .build/obj/moc_LVideoWidget.o .build/obj/moc_MainUI.o .build/obj/moc_FODialog.o .build/obj/moc_BMMDialog.o .build/obj/moc_ScrollDialog.o .build/obj/moc_DirData.o .build/obj/moc_DDListWidgets.o .build/obj/moc_MultimediaWidget.o .build/obj/moc_SlideshowWidget.o .build/obj/moc_DirWidget2.o .build/obj/moc_gitCompat.o .build/obj/moc_gitWizard.o .build/obj/moc_Browser.o .build/obj/moc_BrowserWidget.o .build/obj/moc_TrayUI.o .build/obj/moc_OPWidget.o   -L/build/lumina-desktop-utils/src/lumina/src-qt5/core/libLumina -L/usr/lib -L/usr/lib/qt5 -L/usr/local/lib -L/lib /usr/lib/libQt5MultimediaWidgets.so /usr/lib/libQt5Svg.so /usr/lib/libQt5Widgets.so /usr/lib/libQt5Multimedia.so /usr/lib/libQt5X11Extras.so /usr/lib/libQt5Gui.so /usr/lib/libQt5Network.so /usr/lib/libQt5Concurrent.so /usr/lib/libQt5Core.so -lGL -lpthread   
+/usr/bin/qmake -install qinstall -exe lumina-fm /build/lumina-desktop-utils/pkg/lumina-fm/usr/bin/lumina-fm
+/usr/bin/qmake -install qinstall /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/lumina-fm.desktop /build/lumina-desktop-utils/pkg/lumina-fm/usr/share/applications/lumina-fm.desktop
+/usr/bin/qmake -install qinstall /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/Insight-FileManager.svg /build/lumina-desktop-utils/pkg/lumina-fm/usr/share/icons/hicolor/scalable/apps/Insight-FileManager.svg
+gzip -c /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/lumina-fm.1 > /build/lumina-desktop-utils/pkg/lumina-fm/usr/share/man/man1/lumina-fm.1.gz
+cd /build/lumina-desktop-utils/src/lumina/src-qt5/desktop-utils/lumina-fm/i18n && /usr/bin/lrelease -nounfinished *.ts && cp *.qm /build/lumina-desktop-utils/pkg/lumina-fm/usr/share/lumina-desktop/i18n/
+Updating 'lumina-fm_af.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_ar.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_az.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_bg.qm'...
+    Generated 143 translation(s) (143 finished and 0 unfinished)
+    Ignored 106 untranslated source text(s)
+Updating 'lumina-fm_bn.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_bs.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_ca.qm'...
+    Generated 224 translation(s) (224 finished and 0 unfinished)
+    Ignored 37 untranslated source text(s)
+Updating 'lumina-fm_cs.qm'...
+    Generated 224 translation(s) (224 finished and 0 unfinished)
+    Ignored 37 untranslated source text(s)
+Updating 'lumina-fm_cy.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_da.qm'...
+    Generated 224 translation(s) (224 finished and 0 unfinished)
+    Ignored 37 untranslated source text(s)
+Updating 'lumina-fm_de.qm'...
+    Generated 211 translation(s) (211 finished and 0 unfinished)
+    Ignored 49 untranslated source text(s)
+Updating 'lumina-fm_el.qm'...
+    Generated 11 translation(s) (11 finished and 0 unfinished)
+    Ignored 241 untranslated source text(s)
+Updating 'lumina-fm_en_AU.qm'...
+    Generated 143 translation(s) (143 finished and 0 unfinished)
+    Ignored 106 untranslated source text(s)
+Updating 'lumina-fm_en_GB.qm'...
+    Generated 143 translation(s) (143 finished and 0 unfinished)
+    Ignored 106 untranslated source text(s)
+Updating 'lumina-fm_en_ZA.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_es.qm'...
+    Generated 184 translation(s) (184 finished and 0 unfinished)
+    Ignored 67 untranslated source text(s)
+Updating 'lumina-fm_et.qm'...
+    Generated 79 translation(s) (79 finished and 0 unfinished)
+    Ignored 158 untranslated source text(s)
+Updating 'lumina-fm_eu.qm'...
+    Generated 18 translation(s) (18 finished and 0 unfinished)
+    Ignored 235 untranslated source text(s)
+Updating 'lumina-fm_fa.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_fi.qm'...
+    Generated 143 translation(s) (143 finished and 0 unfinished)
+    Ignored 106 untranslated source text(s)
+Updating 'lumina-fm_fr.qm'...
+    Generated 162 translation(s) (162 finished and 0 unfinished)
+    Ignored 98 untranslated source text(s)
+Updating 'lumina-fm_fr_CA.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_fur.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 187 untranslated source text(s)
+Updating 'lumina-fm_gl.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_he.qm'...
+    Generated 29 translation(s) (29 finished and 0 unfinished)
+    Ignored 213 untranslated source text(s)
+Updating 'lumina-fm_hi.qm'...
+    Generated 142 translation(s) (142 finished and 0 unfinished)
+    Ignored 107 untranslated source text(s)
+Updating 'lumina-fm_hr.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_hu.qm'...
+    Generated 112 translation(s) (112 finished and 0 unfinished)
+    Ignored 131 untranslated source text(s)
+Updating 'lumina-fm_id.qm'...
+    Generated 135 translation(s) (135 finished and 0 unfinished)
+    Ignored 107 untranslated source text(s)
+Updating 'lumina-fm_is.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_it.qm'...
+    Generated 209 translation(s) (209 finished and 0 unfinished)
+    Ignored 48 untranslated source text(s)
+Updating 'lumina-fm_ja.qm'...
+    Generated 213 translation(s) (213 finished and 0 unfinished)
+    Ignored 48 untranslated source text(s)
+Updating 'lumina-fm_ka.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_ko.qm'...
+    Generated 130 translation(s) (130 finished and 0 unfinished)
+    Ignored 114 untranslated source text(s)
+Updating 'lumina-fm_lt.qm'...
+    Generated 224 translation(s) (224 finished and 0 unfinished)
+    Ignored 37 untranslated source text(s)
+Updating 'lumina-fm_lv.qm'...
+    Generated 143 translation(s) (143 finished and 0 unfinished)
+    Ignored 106 untranslated source text(s)
+Updating 'lumina-fm_mk.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_mn.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_ms.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_mt.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_nb.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_ne.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 187 untranslated source text(s)
+Updating 'lumina-fm_nl.qm'...
+    Generated 144 translation(s) (144 finished and 0 unfinished)
+    Ignored 105 untranslated source text(s)
+Updating 'lumina-fm_pa.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_pl.qm'...
+    Generated 211 translation(s) (211 finished and 0 unfinished)
+    Ignored 48 untranslated source text(s)
+Updating 'lumina-fm_pt.qm'...
+    Generated 252 translation(s) (252 finished and 0 unfinished)
+    Ignored 10 untranslated source text(s)
+Updating 'lumina-fm_pt_BR.qm'...
+    Generated 214 translation(s) (214 finished and 0 unfinished)
+    Ignored 47 untranslated source text(s)
+Updating 'lumina-fm_ro.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_ru.qm'...
+    Generated 214 translation(s) (214 finished and 0 unfinished)
+    Ignored 47 untranslated source text(s)
+Updating 'lumina-fm_sa.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 187 untranslated source text(s)
+Updating 'lumina-fm_sk.qm'...
+    Generated 130 translation(s) (130 finished and 0 unfinished)
+    Ignored 116 untranslated source text(s)
+Updating 'lumina-fm_sl.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_sr.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_sv.qm'...
+    Generated 184 translation(s) (184 finished and 0 unfinished)
+    Ignored 76 untranslated source text(s)
+Updating 'lumina-fm_sw.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_ta.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_tg.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_th.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_tr.qm'...
+    Generated 252 translation(s) (252 finished and 0 unfinished)
+    Ignored 10 untranslated source text(s)
+Updating 'lumina-fm_uk.qm'...
+    Generated 142 translation(s) (142 finished and 0 unfinished)
+    Ignored 107 untranslated source text(s)
+Updating 'lumina-fm_ur.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 187 untranslated source text(s)
+Updating 'lumina-fm_uz.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_vi.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_zh_CN.qm'...
+    Generated 214 translation(s) (214 finished and 0 unfinished)
+    Ignored 47 untranslated source text(s)
+Updating 'lumina-fm_zh_HK.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_zh_TW.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating 'lumina-fm_zu.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 262 untranslated source text(s)

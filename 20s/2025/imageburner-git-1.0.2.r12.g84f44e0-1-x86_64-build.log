@@ -1,0 +1,195 @@
+The Meson build system
+Version: 1.8.3
+Source dir: /build/imageburner-git/src/imageburner
+Build dir: /build/imageburner-git/src/imageburner/build
+Build type: native build
+Project name: com.github.artemanufrij.imageburner
+Project version: undefined
+C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250729")
+C linker for the host machine: cc ld.bfd 2.45.0
+Vala compiler for the host machine: valac (valac 0.56.18-dirty)
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+po/meson.build:3: WARNING: Project does not target a minimum version but uses feature deprecated since '0.56.0': meson.source_root. use meson.project_source_root() or meson.global_source_root() instead.
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+po/extra/meson.build:3: WARNING: Project does not target a minimum version but uses feature deprecated since '0.56.0': meson.source_root. use meson.project_source_root() or meson.global_source_root() instead.
+data/meson.build:28: WARNING: Project does not target a minimum version but uses feature deprecated since '0.56.0': meson.source_root. use meson.project_source_root() or meson.global_source_root() instead.
+data/meson.build:37: WARNING: Project does not target a minimum version but uses feature deprecated since '0.56.0': meson.source_root. use meson.project_source_root() or meson.global_source_root() instead.
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency gtk+-3.0 found: YES 3.24.50
+Run-time dependency granite found: YES 6.2.0
+Build targets in project: 29
+WARNING: Deprecated features used:
+ * 0.56.0: {'meson.source_root'}
+
+com.github.artemanufrij.imageburner undefined
+
+  User defined options
+    prefix: /usr
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/29 eta ?                                               Writing build.ninja:   0%|          | 0/65 eta ?                                                WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+ninja: Entering directory `build'
+[1/23] Building translation po/lt/LC_MESSAGES/com.github.artemanufrij.imageburner-lt.mo
+[2/23] Building translation po/ca/LC_MESSAGES/com.github.artemanufrij.imageburner-ca.mo
+[3/23] Building translation po/de/LC_MESSAGES/com.github.artemanufrij.imageburner-de.mo
+[4/23] Building translation po/es/LC_MESSAGES/com.github.artemanufrij.imageburner-es.mo
+[5/23] Building translation po/ko/LC_MESSAGES/com.github.artemanufrij.imageburner-ko.mo
+[6/23] Building translation po/pt_BR/LC_MESSAGES/com.github.artemanufrij.imageburner-pt_BR.mo
+[7/23] Building translation po/fr/LC_MESSAGES/com.github.artemanufrij.imageburner-fr.mo
+[8/23] Building translation po/ja/LC_MESSAGES/com.github.artemanufrij.imageburner-ja.mo
+[9/23] Building translation po/nl/LC_MESSAGES/com.github.artemanufrij.imageburner-nl.mo
+[10/23] Building translation po/pl/LC_MESSAGES/com.github.artemanufrij.imageburner-pl.mo
+[11/23] Building translation po/tr/LC_MESSAGES/com.github.artemanufrij.imageburner-tr.mo
+[12/23] Building translation po/ru/LC_MESSAGES/com.github.artemanufrij.imageburner-ru.mo
+[13/23] Building translation po/ta/LC_MESSAGES/com.github.artemanufrij.imageburner-ta.mo
+[14/23] Building translation po/zh/LC_MESSAGES/com.github.artemanufrij.imageburner-zh.mo
+[15/23] Merging translations for data/com.github.artemanufrij.imageburner.desktop
+[16/23] Merging translations for data/com.github.artemanufrij.imageburner.appdata.xml
+[17/23] Compiling Vala source ../src/Widgets/Device.vala ../src/Manager/DeviceManager.vala ../src/Objects/DiskBurner.vala ../src/MainWindow.vala ../src/Application.vala
+../src/MainWindow.vala:446.13-446.29: warning: delegates with scope="async" must be owned
+  446 |             ThreadFunc<void*> run = () => {
+      |             ^~~~~~~~~~~~~~~~~              
+../src/MainWindow.vala:355.40-355.73: warning: Access to possible `null'. Perform a check or use an unsafe cast.
+  355 |                 debug ("Selected: %s", (item as Imageburner.Device).drive.get_name ());
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+../src/MainWindow.vala:368.21-368.49: warning: Access to possible `null'. Perform a check or use an unsafe cast.
+  368 |                 if ((child as Device).unix_device == drive.get_identifier ("unix-device")) {
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                           
+../src/MainWindow.vala:384.21-384.43: warning: Access to possible `null'. Perform a check or use an unsafe cast.
+  384 |                 if ((child as Device).drive == drive) {
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~            
+Compilation succeeded - 4 warning(s)
+[18/23] Compiling C object com.github.artemanufrij.imageburner.p/meson-generated_src_Objects_DiskBurner.c.o
+DiskBurner.c: In function ‘__lambda8_’:
+DiskBurner.c:243:7: warning: variable ‘_spawn_env_size_’ set but not used [-Wunused-but-set-variable]
+DiskBurner.c:238:7: warning: variable ‘_spawn_args_size_’ set but not used [-Wunused-but-set-variable]
+DiskBurner.c: In function ‘imageburner_disk_burner_finalize’:
+DiskBurner.c:610:26: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from com.github.artemanufrij.imageburner.p/src/Objects/DiskBurner.c:31:
+DiskBurner.c: In function ‘imageburner_disk_burner_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+DiskBurner.c:632:6: note: in expansion of macro ‘g_once_init_enter’
+[19/23] Compiling C object com.github.artemanufrij.imageburner.p/meson-generated_src_Manager_DeviceManager.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from com.github.artemanufrij.imageburner.p/src/Manager/DeviceManager.c:31:
+DeviceManager.c: In function ‘imageburner_device_manager_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+DeviceManager.c:665:6: note: in expansion of macro ‘g_once_init_enter’
+DeviceManager.c: In function ‘_vala_imageburner_device_manager_get_property’:
+DeviceManager.c:679:29: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+com.github.artemanufrij.imageburner.p/src/Manager/DeviceManager.c: At top level:
+com.github.artemanufrij.imageburner.p/src/Manager/DeviceManager.c:70:20: warning: ‘imageburner_device_manager_properties’ defined but not used [-Wunused-variable]
+   70 | static GParamSpec* imageburner_device_manager_properties[IMAGEBURNER_DEVICE_MANAGER_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[20/23] Compiling C object com.github.artemanufrij.imageburner.p/meson-generated_src_Widgets_Device.c.o
+../src/Widgets/Device.vala: In function ‘imageburner_device_set_unix_device’:
+../src/Widgets/Device.vala:36:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   36 |         public string unix_device { get; private set; }
+      |            ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.artemanufrij.imageburner.p/src/Widgets/Device.c:31:
+Device.c: In function ‘imageburner_device_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Device.c:645:6: note: in expansion of macro ‘g_once_init_enter’
+[21/23] Compiling C object com.github.artemanufrij.imageburner.p/meson-generated_src_Application.c.o
+In file included from com.github.artemanufrij.imageburner.p/src/Application.c:31:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from /usr/include/granite/granite.h:6:
+Application.c: In function ‘imageburner_imageburner_app_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Application.c:367:6: note: in expansion of macro ‘g_once_init_enter’
+Application.c: In function ‘_vala_imageburner_imageburner_app_get_property’:
+Application.c:381:30: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+com.github.artemanufrij.imageburner.p/src/Application.c: At top level:
+com.github.artemanufrij.imageburner.p/src/Application.c:81:20: warning: ‘imageburner_imageburner_app_properties’ defined but not used [-Wunused-variable]
+   81 | static GParamSpec* imageburner_imageburner_app_properties[IMAGEBURNER_IMAGEBURNER_APP_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[22/23] Compiling C object com.github.artemanufrij.imageburner.p/meson-generated_src_MainWindow.c.o
+In file included from com.github.artemanufrij.imageburner.p/src/MainWindow.c:33:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+MainWindow.c: In function ‘imageburner_main_window_get_checksum_finish’:
+MainWindow.c:2129:40: warning: variable ‘_data_’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.artemanufrij.imageburner.p/src/MainWindow.c:31:
+MainWindow.c: In function ‘imageburner_main_window_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+MainWindow.c:3034:6: note: in expansion of macro ‘g_once_init_enter’
+MainWindow.c: At top level:
+MainWindow.c:2126:1: warning: ‘imageburner_main_window_get_checksum_finish’ defined but not used [-Wunused-function]
+[23/23] Linking target com.github.artemanufrij.imageburner

@@ -1,0 +1,75 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 upmpdcli build
+The Meson build system
+Version: 1.8.3
+Source dir: /build/upmpdcli-git/src/upmpdcli
+Build dir: /build/upmpdcli-git/src/build
+Build type: native build
+Project name: upmpdcli
+Project version: 1.9.6
+C++ compiler for the host machine: c++ (gcc 15.1.1 "c++ (GCC) 15.1.1 20250729")
+C++ linker for the host machine: c++ ld.bfd 2.45.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency libupnpp found: YES 1.0.3
+Run-time dependency libcurl found: YES 8.15.0
+Run-time dependency libmicrohttpd found: YES 1.0.2
+Run-time dependency jsoncpp found: YES 1.9.6
+Run-time dependency libmpdclient found: YES 2.23
+Run-time dependency threads found: YES
+Configuring config.h using configuration
+Build targets in project: 1
+
+upmpdcli 1.9.6
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/1 eta ?                                              Writing build.ninja:   0%|          | 0/61 eta ?                                                ninja: Entering directory `/build/upmpdcli-git/src/build'
+[1/37] Compiling C++ object upmpdcli.p/src_closefrom.cpp.o
+[2/37] Compiling C++ object upmpdcli.p/src_chrono.cpp.o
+[3/37] Compiling C++ object upmpdcli.p/src_mediaserver_cdplugins_netfetch.cpp.o
+[4/37] Compiling C++ object upmpdcli.p/src_conman.cxx.o
+[5/37] Compiling C++ object upmpdcli.p/src_ohservice.cxx.o
+[6/37] Compiling C++ object upmpdcli.p/src_mediaserver_mediaserver.cxx.o
+[7/37] Compiling C++ object upmpdcli.p/src_ohtime.cxx.o
+[8/37] Compiling C++ object upmpdcli.p/src_mediaserver_cdplugins_cmdtalk.cpp.o
+[9/37] Compiling C++ object upmpdcli.p/src_ohinfo.cxx.o
+[10/37] Compiling C++ object upmpdcli.p/src_netcon.cpp.o
+[11/37] Compiling C++ object upmpdcli.p/src_ohsndrcv.cxx.o
+[12/37] Compiling C++ object upmpdcli.p/src_mediaserver_cdplugins_streamproxy.cpp.o
+[13/37] Compiling C++ object upmpdcli.p/src_ohmetacache.cxx.o
+[14/37] Compiling C++ object upmpdcli.p/src_mediaserver_cdplugins_curlfetch.cpp.o
+[15/37] Compiling C++ object upmpdcli.p/src_pathut.cpp.o
+[16/37] Compiling C++ object upmpdcli.p/src_execmd.cpp.o
+[17/37] Compiling C++ object upmpdcli.p/src_ohproduct.cxx.o
+[18/37] Compiling C++ object upmpdcli.p/src_ohreceiver.cxx.o
+[19/37] Compiling C++ object upmpdcli.p/src_ohvolume.cxx.o
+[20/37] Compiling C++ object upmpdcli.p/src_mediaserver_contentdirectory.cxx.o
+[21/37] Compiling C++ object upmpdcli.p/src_conftree.cpp.o
+[22/37] Compiling C++ object upmpdcli.p/src_main.cxx.o
+[23/37] Compiling C++ object upmpdcli.p/src_readfile.cpp.o
+[24/37] Compiling C++ object upmpdcli.p/src_protocolinfo.cxx.o
+[25/37] Compiling C++ object upmpdcli.p/src_avtransport.cxx.o
+[26/37] Compiling C++ object upmpdcli.p/src_sysvshm.cpp.o
+[27/37] Compiling C++ object upmpdcli.p/src_ohcredentials.cxx.o
+[28/37] Compiling C++ object upmpdcli.p/src_mpdcli.cxx.o
+[29/37] Compiling C++ object upmpdcli.p/src_ohradio.cxx.o
+[30/37] Compiling C++ object upmpdcli.p/src_ohplaylist.cxx.o
+[31/37] Compiling C++ object upmpdcli.p/src_renderctl.cxx.o
+[32/37] Compiling C++ object upmpdcli.p/src_mediaserver_cdplugins_plgwithslave.cxx.o
+[33/37] Compiling C++ object upmpdcli.p/src_upmpd.cxx.o
+[34/37] Compiling C++ object upmpdcli.p/src_smallut.cpp.o
+[35/37] Compiling C++ object upmpdcli.p/src_upmpdutils.cxx.o
+[36/37] Compiling C++ object upmpdcli.p/src_urlmorph.cxx.o
+[37/37] Linking target upmpdcli
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/upmpdcli-git/src/build

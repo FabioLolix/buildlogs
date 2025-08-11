@@ -1,0 +1,37 @@
+The Meson build system
+Version: 1.8.3
+Source dir: /build/viewnior-git/src/viewnior-git
+Build dir: /build/viewnior-git/src/viewnior-git/builddir
+Build type: native build
+Project name: viewnior
+Project version: 1.8
+C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250729")
+C linker for the host machine: cc ld.bfd 2.45.0
+C++ compiler for the host machine: c++ (gcc 15.1.1 "c++ (GCC) 15.1.1 20250729")
+C++ linker for the host machine: c++ ld.bfd 2.45.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency gtk+-2.0 found: YES 2.24.33
+Run-time dependency glib-2.0 found: YES 2.84.3
+Run-time dependency gio-2.0 found: YES 2.84.3
+Run-time dependency shared-mime-info found: YES 2.4
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.42.12
+Run-time dependency exiv2 found: YES 0.28.5
+Configuring config.h using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-genmarshal found: NO
+
+src/meson.build:25:26: ERROR: Dependency 'glib-2.0' tool variable 'glib_genmarshal' contains erroneous value: '/usr/bin/glib-genmarshal'
+
+This is a distributor issue -- please report it to your glib-2.0 provider.
+
+A full log can be found at /build/viewnior-git/src/viewnior-git/builddir/meson-logs/meson-log.txt
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

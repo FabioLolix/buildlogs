@@ -1,0 +1,1085 @@
+The Meson build system
+Version: 1.8.3
+Source dir: /build/spreadsheet-git/src/spreadsheet
+Build dir: /build/spreadsheet-git/src/spreadsheet/build
+Build type: native build
+Project name: io.github.elework.spreadsheet
+Project version: 0.1.0
+C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250729")
+C linker for the host machine: cc ld.bfd 2.45.0
+Vala compiler for the host machine: valac (valac 0.56.18-dirty)
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Configuring Config.vala using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Build-time dependency gio-2.0 found: YES 2.84.3
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Run-time dependency gee-0.8 found: YES 0.20.8
+Run-time dependency glib-2.0 found: YES 2.84.3
+Run-time dependency gobject-2.0 found: YES 2.84.3
+Run-time dependency granite found: YES 6.2.0
+Run-time dependency gtk+-3.0 found: YES 3.24.50
+Run-time dependency libhandy-1 found: YES 1.8.3
+Run-time dependency pango found: YES 1.56.4
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Build targets in project: 15
+
+io.github.elework.spreadsheet 0.1.0
+
+  User defined options
+    prefix: /usr
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/15 eta ?                                               Writing build.ninja:   0%|          | 0/83 eta ?                                                WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+ninja: Entering directory `build'
+[1/45] Generating as-resources_h with a custom command
+[2/45] Generating as-resources_c with a custom command
+[3/45] Building translation po/fr/LC_MESSAGES/io.github.elework.spreadsheet-fr.mo
+[4/45] Building translation po/nl/LC_MESSAGES/io.github.elework.spreadsheet-nl.mo
+[5/45] Merging translations for data/io.github.elework.spreadsheet.desktop
+[6/45] Merging translations for data/io.github.elework.spreadsheet.appdata.xml
+[7/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_.._as-resources.c.o
+[8/45] Compiling Vala source Config.vala ../src/AlphabetGenerator.vala ../src/App.vala ../src/Functions/Basic.vala ../src/Functions/Geometry.vala ../src/Models/Cell.vala ../src/Models/CellStyle.vala ../src/Models/FontStyle.vala ../src/Models/Function.vala ../src/Models/FunctionManager.vala ../src/Models/HistoryAction.vala ../src/Models/Page.vala ../src/Models/Spreadsheet.vala ../src/Services/CSV/CSVGrammar.vala ../src/Services/CSV/CSVParser.vala ../src/Services/CSV/CSVWriter.vala ../src/Services/Formula/AST/CallExpression.vala ../src/Services/Formula/AST/CellReference.vala ../src/Services/Formula/AST/Expression.vala ../src/Services/Formula/AST/NumberExpression.vala ../src/Services/Formula/AST/TextExpression.vala ../src/Services/Formula/FormulaGrammar.vala ../src/Services/Formula/FormulaParser.vala ../src/Services/Parsing/Evaluator.vala ../src/Services/Parsing/Grammar.vala ../src/Services/Parsing/Lexer.vala ../src/Services/Parsing/Parser.vala ../src/Services/Parsing/Token.vala ../src/Services/FuncSearchList.vala ../src/Services/HistoryManager.vala ../src/UI/MainWindow.vala ../src/UI/TitleBar.vala ../src/Widgets/ActionBar.vala ../src/Widgets/FunctionListRow.vala ../src/Widgets/Sheet.vala ../src/Widgets/StyleModal.vala
+[9/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_build_Config.c.o
+[10/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Formula_AST_Expression.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Formula/AST/Expression.c:4:
+Expression.c: In function ‘spreadsheet_services_formula_ast_expression_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Expression.c:147:6: note: in expansion of macro ‘g_once_init_enter’
+io.github.elework.spreadsheet.p/src/Services/Formula/AST/Expression.c: At top level:
+io.github.elework.spreadsheet.p/src/Services/Formula/AST/Expression.c:49:20: warning: ‘spreadsheet_services_formula_ast_expression_properties’ defined but not used [-Wunused-variable]
+   49 | static GParamSpec* spreadsheet_services_formula_ast_expression_properties[SPREADSHEET_SERVICES_FORMULA_AST_EXPRESSION_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[11/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Models_Function.c.o
+../src/Models/Function.vala: In function ‘spreadsheet_models_function_set_name’:
+../src/Models/Function.vala:2:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    2 |     public string name { get; construct; }
+      |            ^
+../src/Models/Function.vala: In function ‘spreadsheet_models_function_set_doc’:
+../src/Models/Function.vala:4:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    4 |     public string doc { get; construct; }
+      |            ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Models/Function.c:4:
+Function.c: In function ‘spreadsheet_models_function_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Function.c:312:6: note: in expansion of macro ‘g_once_init_enter’
+[12/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Formula_AST_TextExpression.c.o
+../src/Services/Formula/AST/TextExpression.vala: In function ‘spreadsheet_services_formula_ast_text_expression_set_text’:
+../src/Services/Formula/AST/TextExpression.vala:4:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    4 |     public string text { get; construct; }
+      |            ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Formula/AST/TextExpression.c:4:
+TextExpression.c: In function ‘spreadsheet_services_formula_ast_text_expression_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+TextExpression.c:272:6: note: in expansion of macro ‘g_once_init_enter’
+[13/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Models_HistoryAction.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Models/HistoryAction.c:4:
+HistoryAction.c: In function ‘spreadsheet_models_state_change_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+HistoryAction.c:309:6: note: in expansion of macro ‘g_once_init_enter’
+../src/Models/HistoryAction.vala: In function ‘spreadsheet_models_history_action_set_description’:
+../src/Models/HistoryAction.vala:20:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   20 |     public string description { get; set; }
+      |            ^
+HistoryAction.c: In function ‘spreadsheet_models_history_action_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+HistoryAction.c:721:6: note: in expansion of macro ‘g_once_init_enter’
+io.github.elework.spreadsheet.p/src/Models/HistoryAction.c: At top level:
+io.github.elework.spreadsheet.p/src/Models/HistoryAction.c:44:20: warning: ‘spreadsheet_models_state_change_properties’ defined but not used [-Wunused-variable]
+   44 | static GParamSpec* spreadsheet_models_state_change_properties[SPREADSHEET_MODELS_STATE_CHANGE_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[14/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Functions_Basic.c.o
+Basic.c: In function ‘spreadsheet_functions_sum’:
+Basic.c:144:8: warning: unused variable ‘_num_collection_size_’ [-Wunused-variable]
+Basic.c: In function ‘spreadsheet_functions_sub’:
+Basic.c:212:8: warning: unused variable ‘_num_collection_size_’ [-Wunused-variable]
+Basic.c: In function ‘spreadsheet_functions_mul’:
+Basic.c:280:8: warning: unused variable ‘_num_collection_size_’ [-Wunused-variable]
+Basic.c: In function ‘spreadsheet_functions_div’:
+Basic.c:348:8: warning: unused variable ‘_num_collection_size_’ [-Wunused-variable]
+Basic.c: In function ‘spreadsheet_functions_mod’:
+Basic.c:416:8: warning: unused variable ‘_num_collection_size_’ [-Wunused-variable]
+Basic.c: In function ‘spreadsheet_functions_min’:
+Basic.c:567:8: warning: unused variable ‘_arg_collection_size_’ [-Wunused-variable]
+Basic.c: In function ‘spreadsheet_functions_max’:
+Basic.c:642:8: warning: unused variable ‘_arg_collection_size_’ [-Wunused-variable]
+[15/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Formula_AST_NumberExpression.c.o
+NumberExpression.c: In function ‘spreadsheet_services_formula_ast_number_expression_finalize’:
+NumberExpression.c:236:50: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Formula/AST/NumberExpression.c:4:
+NumberExpression.c: In function ‘spreadsheet_services_formula_ast_number_expression_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+NumberExpression.c:258:6: note: in expansion of macro ‘g_once_init_enter’
+[16/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Parsing_Evaluator.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Parsing/Evaluator.c:4:
+../src/Services/Parsing/Evaluator.vala: In function ‘_thread_safe_regex_init’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+../src/Services/Parsing/Evaluator.vala:14:6: note: in expansion of macro ‘g_once_init_enter’
+   14 |         Regex re = /./;
+      |      ^  ~~~~~~~~~~~~~~
+Evaluator.c: In function ‘spreadsheet_services_parsing_evaluator_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Evaluator.c:697:6: note: in expansion of macro ‘g_once_init_enter’
+[17/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Models_FunctionManager.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Models/FunctionManager.c:4:
+FunctionManager.c: In function ‘spreadsheet_models_function_manager_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+FunctionManager.c:794:6: note: in expansion of macro ‘g_once_init_enter’
+[18/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Functions_Geometry.c.o
+[19/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Models_Page.c.o
+../src/Models/Page.vala: In function ‘spreadsheet_models_page_set_title’:
+../src/Models/Page.vala:6:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    6 |     public string title { get; set; }
+      |            ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Models/Page.c:4:
+Page.c: In function ‘spreadsheet_models_page_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Page.c:623:6: note: in expansion of macro ‘g_once_init_enter’
+[20/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Parsing_Grammar.c.o
+Grammar.c: In function ‘__lambda6_’:
+Grammar.c:183:37: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Parsing/Grammar.c:4:
+Grammar.c: In function ‘spreadsheet_services_parsing_grammar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Grammar.c:432:6: note: in expansion of macro ‘g_once_init_enter’
+[21/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_CSV_CSVGrammar.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/CSV/CSVGrammar.c:4:
+../src/Services/CSV/CSVGrammar.vala: In function ‘_thread_safe_regex_init’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+../src/Services/CSV/CSVGrammar.vala:10:6: note: in expansion of macro ‘g_once_init_enter’
+   10 |         return new Gee.ArrayList<Evaluator>.wrap ({
+      |      ^  ~~~~~~~~~~~~~~
+../src/Services/CSV/CSVGrammar.vala: In function ‘spreadsheet_services_csv_csv_grammar_root_rules’:
+../src/Services/CSV/CSVGrammar.vala:10:146: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   10 |         return new Gee.ArrayList<Evaluator>.wrap ({
+      |                                                                                                                                                  ^      
+      |                                                                                                                                                  |
+      |                                                                                                                                                  SpreadsheetServicesParsingEvaluator ** {aka struct _SpreadsheetServicesParsingEvaluator **}
+In file included from io.github.elework.spreadsheet.p/src/Services/CSV/CSVGrammar.c:5:
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘SpreadsheetServicesParsingEvaluator **’ {aka ‘struct _SpreadsheetServicesParsingEvaluator **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+../src/Services/CSV/CSVGrammar.vala: In function ‘spreadsheet_services_csv_csv_grammar_text_rules’:
+../src/Services/CSV/CSVGrammar.vala:19:146: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   19 |         return new Gee.ArrayList<Evaluator>.wrap ({
+      |                                                                                                                                                  ^      
+      |                                                                                                                                                  |
+      |                                                                                                                                                  SpreadsheetServicesParsingEvaluator ** {aka struct _SpreadsheetServicesParsingEvaluator **}
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘SpreadsheetServicesParsingEvaluator **’ {aka ‘struct _SpreadsheetServicesParsingEvaluator **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+CSVGrammar.c: In function ‘spreadsheet_services_csv_csv_grammar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+CSVGrammar.c:538:6: note: in expansion of macro ‘g_once_init_enter’
+io.github.elework.spreadsheet.p/src/Services/CSV/CSVGrammar.c: At top level:
+io.github.elework.spreadsheet.p/src/Services/CSV/CSVGrammar.c:53:20: warning: ‘spreadsheet_services_csv_csv_grammar_properties’ defined but not used [-Wunused-variable]
+   53 | static GParamSpec* spreadsheet_services_csv_csv_grammar_properties[SPREADSHEET_SERVICES_CSV_CSV_GRAMMAR_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[22/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_CSV_CSVWriter.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/CSV/CSVWriter.c:4:
+CSVWriter.c: In function ‘spreadsheet_services_csv_csv_writer_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+CSVWriter.c:771:6: note: in expansion of macro ‘g_once_init_enter’
+[23/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Parsing_Lexer.c.o
+../src/Services/Parsing/Lexer.vala: In function ‘spreadsheet_services_parsing_lexer_tokenize’:
+../src/Services/Parsing/Lexer.vala:35:110: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   35 |                             stack.add_all (new ArrayList<string>.wrap (eval.push));
+      |                                                                                                              ^      
+      |                                                                                                              |
+      |                                                                                                              gchar ** {aka char **}
+In file included from io.github.elework.spreadsheet.p/src/Services/Parsing/Lexer.c:8:
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘gchar **’ {aka ‘char **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+Lexer.c:509:12: warning: variable ‘_tmp41__length1’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Parsing/Lexer.c:4:
+Lexer.c: In function ‘spreadsheet_services_parsing_lexer_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Lexer.c:798:6: note: in expansion of macro ‘g_once_init_enter’
+[24/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_AlphabetGenerator.c.o
+AlphabetGenerator.c: In function ‘string_to_utf8’:
+AlphabetGenerator.c:170:7: warning: variable ‘__result__size_’ set but not used [-Wunused-but-set-variable]
+../src/AlphabetGenerator.vala: In function ‘spreadsheet_alphabet_generator_index_of’:
+../src/AlphabetGenerator.vala:49:32: warning: passing argument 1 of ‘_vala_array_dup1’ from incompatible pointer type [-Wincompatible-pointer-types]
+   49 |             int index_in_alphabet = new ArrayList<string>.wrap (ALPHABET).index_of (letter.to_string ());
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                const gchar ** {aka const char **}
+AlphabetGenerator.c:215:27: note: expected ‘gchar **’ {aka ‘char **’} but argument is of type ‘const gchar **’ {aka ‘const char **’}
+../src/AlphabetGenerator.vala:49:106: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   49 |             int index_in_alphabet = new ArrayList<string>.wrap (ALPHABET).index_of (letter.to_string ());
+      |                                                                                                          ^     
+      |                                                                                                          |
+      |                                                                                                          gchar ** {aka char **}
+In file included from io.github.elework.spreadsheet.p/src/AlphabetGenerator.c:8:
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘gchar **’ {aka ‘char **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+AlphabetGenerator.c:267:8: warning: unused variable ‘_letter_collection_size_’ [-Wunused-variable]
+AlphabetGenerator.c: In function ‘spreadsheet_alphabet_generator_finalize’:
+AlphabetGenerator.c:543:33: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/AlphabetGenerator.c:4:
+AlphabetGenerator.c: In function ‘spreadsheet_alphabet_generator_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+AlphabetGenerator.c:579:6: note: in expansion of macro ‘g_once_init_enter’
+[25/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_CSV_CSVParser.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/CSV/CSVParser.c:4:
+CSVParser.c: In function ‘spreadsheet_services_csv_csv_parser_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+CSVParser.c:933:6: note: in expansion of macro ‘g_once_init_enter’
+CSVParser.c: In function ‘_vala_spreadsheet_services_csv_csv_parser_get_property’:
+CSVParser.c:947:36: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+CSVParser.c: In function ‘_vala_spreadsheet_services_csv_csv_parser_set_property’:
+CSVParser.c:967:36: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+CSVParser.c: At top level:
+CSVParser.c:849:1: warning: ‘spreadsheet_services_csv_csv_parser_get_path’ defined but not used [-Wunused-function]
+io.github.elework.spreadsheet.p/src/Services/CSV/CSVParser.c:54:20: warning: ‘spreadsheet_services_csv_csv_parser_properties’ defined but not used [-Wunused-variable]
+   54 | static GParamSpec* spreadsheet_services_csv_csv_parser_properties[SPREADSHEET_SERVICES_CSV_CSV_PARSER_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[26/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Models_Spreadsheet.c.o
+../src/Models/Spreadsheet.vala: In function ‘spreadsheet_models_spread_sheet_set_title’:
+../src/Models/Spreadsheet.vala:5:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    5 |     public string title { get; set; }
+      |            ^
+../src/Models/Spreadsheet.vala: In function ‘spreadsheet_models_spread_sheet_set_file_path’:
+../src/Models/Spreadsheet.vala:6:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    6 |     public string file_path { get; set; }
+      |            ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Models/Spreadsheet.c:4:
+Spreadsheet.c: In function ‘spreadsheet_models_spread_sheet_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Spreadsheet.c:352:6: note: in expansion of macro ‘g_once_init_enter’
+[27/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Formula_AST_CallExpression.c.o
+../src/Services/Formula/AST/CallExpression.vala: In function ‘spreadsheet_services_formula_ast_call_expression_set_function’:
+../src/Services/Formula/AST/CallExpression.vala:4:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    4 |     public string function { get; construct; }
+      |            ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Formula/AST/CallExpression.c:4:
+CallExpression.c: In function ‘spreadsheet_services_formula_ast_call_expression_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+CallExpression.c:600:6: note: in expansion of macro ‘g_once_init_enter’
+[28/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_HistoryManager.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/HistoryManager.c:4:
+HistoryManager.c: In function ‘spreadsheet_services_history_manager_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+HistoryManager.c:481:6: note: in expansion of macro ‘g_once_init_enter’
+io.github.elework.spreadsheet.p/src/Services/HistoryManager.c: At top level:
+io.github.elework.spreadsheet.p/src/Services/HistoryManager.c:50:20: warning: ‘spreadsheet_services_history_manager_properties’ defined but not used [-Wunused-variable]
+   50 | static GParamSpec* spreadsheet_services_history_manager_properties[SPREADSHEET_SERVICES_HISTORY_MANAGER_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[29/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Parsing_Token.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Parsing/Token.c:4:
+Token.c: In function ‘spreadsheet_services_parsing_token_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Token.c:373:6: note: in expansion of macro ‘g_once_init_enter’
+[30/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Formula_AST_CellReference.c.o
+../src/Services/Formula/AST/CellReference.vala: In function ‘spreadsheet_services_formula_ast_cell_reference_real_eval’:
+../src/Services/Formula/AST/CellReference.vala:11:14: warning: passing argument 1 of ‘g_strcanon’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   11 |         letters.canon ("ABCDEFGHIJKLMNOPQRSTUVWXYZ", '?');
+      |              ^~~~~~
+In file included from /usr/include/glib-2.0/glib/gstring.h:37,
+                 from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Formula/AST/CellReference.c:4:
+/usr/include/glib-2.0/glib/gstrfuncs.h:113:55: note: expected ‘gchar *’ {aka ‘char *’} but argument is of type ‘const gchar *’ {aka ‘const char *’}
+  113 | gchar*                g_strcanon       (gchar        *string,
+      |                                         ~~~~~~~~~~~~~~^~~~~~
+../src/Services/Formula/AST/CellReference.vala:13:14: warning: passing argument 1 of ‘g_strcanon’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   13 |         _num.canon ("0123456789", '?');
+      |              ^~~~~~
+/usr/include/glib-2.0/glib/gstrfuncs.h:113:55: note: expected ‘gchar *’ {aka ‘char *’} but argument is of type ‘const gchar *’ {aka ‘const char *’}
+  113 | gchar*                g_strcanon       (gchar        *string,
+      |                                         ~~~~~~~~~~~~~~^~~~~~
+../src/Services/Formula/AST/CellReference.vala: In function ‘spreadsheet_services_formula_ast_cell_reference_set_cell_name’:
+../src/Services/Formula/AST/CellReference.vala:4:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    4 |     public string cell_name { get; set; }
+      |            ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34:
+CellReference.c: In function ‘spreadsheet_services_formula_ast_cell_reference_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+CellReference.c:623:6: note: in expansion of macro ‘g_once_init_enter’
+[31/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Models_Cell.c.o
+../src/Models/Cell.vala: In function ‘spreadsheet_models_cell_set_display_content’:
+../src/Models/Cell.vala:9:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    9 |     public string display_content { get; set; default = ""; }
+      |            ^
+Cell.c: In function ‘double_to_string’:
+Cell.c:466:7: warning: variable ‘_tmp1__length1’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Models/Cell.c:4:
+Cell.c: In function ‘spreadsheet_models_cell_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Cell.c:895:6: note: in expansion of macro ‘g_once_init_enter’
+[32/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Formula_FormulaGrammar.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Formula/FormulaGrammar.c:4:
+../src/Services/Formula/FormulaGrammar.vala: In function ‘_thread_safe_regex_init’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+../src/Services/Formula/FormulaGrammar.vala:26:6: note: in expansion of macro ‘g_once_init_enter’
+   26 |         return new Gee.ArrayList<Evaluator>.wrap ({
+      |      ^  ~~~~~~~~~~~~~~
+../src/Services/Formula/FormulaGrammar.vala: In function ‘spreadsheet_services_formula_formula_grammar_root_rules’:
+../src/Services/Formula/FormulaGrammar.vala:26:147: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   26 |         return new Gee.ArrayList<Evaluator>.wrap ({
+      |                                                                                                                                                   ^       
+      |                                                                                                                                                   |
+      |                                                                                                                                                   SpreadsheetServicesParsingEvaluator ** {aka struct _SpreadsheetServicesParsingEvaluator **}
+In file included from io.github.elework.spreadsheet.p/src/Services/Formula/FormulaGrammar.c:8:
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘SpreadsheetServicesParsingEvaluator **’ {aka ‘struct _SpreadsheetServicesParsingEvaluator **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+FormulaGrammar.c: In function ‘spreadsheet_services_formula_formula_grammar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+FormulaGrammar.c:1268:6: note: in expansion of macro ‘g_once_init_enter’
+io.github.elework.spreadsheet.p/src/Services/Formula/FormulaGrammar.c: At top level:
+io.github.elework.spreadsheet.p/src/Services/Formula/FormulaGrammar.c:53:20: warning: ‘spreadsheet_services_formula_formula_grammar_properties’ defined but not used [-Wunused-variable]
+   53 | static GParamSpec* spreadsheet_services_formula_formula_grammar_properties[SPREADSHEET_SERVICES_FORMULA_FORMULA_GRAMMAR_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[33/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Models_CellStyle.c.o
+../src/Models/CellStyle.vala: In function ‘spreadsheet_cell_style_reset_background_color’:
+../src/Models/CellStyle.vala:24:45: warning: passing argument 2 of ‘spreadsheet_cell_style_set_bg_color’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   24 |         bg_color = BG_COLOR_DEFAULT;
+      |                                             ^                                       
+io.github.elework.spreadsheet.p/src/Models/CellStyle.c:75:53: note: expected ‘GdkRGBA *’ {aka ‘struct _GdkRGBA *’} but argument is of type ‘const GdkRGBA *’ {aka ‘const struct _GdkRGBA *’}
+   75 |                                           GdkRGBA * value);
+      |                                           ~~~~~~~~~~^~~~~
+../src/Models/CellStyle.vala: In function ‘spreadsheet_cell_style_reset_stroke_color’:
+../src/Models/CellStyle.vala:28:49: warning: passing argument 2 of ‘spreadsheet_cell_style_set_stroke_color’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   28 |         stroke_color = STROKE_COLOR_DEFAULT;
+      |                                                 ^                                           
+io.github.elework.spreadsheet.p/src/Models/CellStyle.c:78:57: note: expected ‘GdkRGBA *’ {aka ‘struct _GdkRGBA *’} but argument is of type ‘const GdkRGBA *’ {aka ‘const struct _GdkRGBA *’}
+   78 |                                               GdkRGBA * value);
+      |                                               ~~~~~~~~~~^~~~~
+CellStyle.c: In function ‘spreadsheet_cell_style_finalize’:
+CellStyle.c:354:25: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Models/CellStyle.c:4:
+CellStyle.c: In function ‘spreadsheet_cell_style_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+CellStyle.c:376:6: note: in expansion of macro ‘g_once_init_enter’
+[34/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_FuncSearchList.c.o
+../src/Services/FuncSearchList.vala: In function ‘spreadsheet_services_func_search_list_set_funcsearchlist_item’:
+../src/Services/FuncSearchList.vala:2:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+    2 |     public string funcsearchlist_item { get; set; }
+      |            ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/FuncSearchList.c:4:
+FuncSearchList.c: In function ‘spreadsheet_services_func_search_list_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+FuncSearchList.c:220:6: note: in expansion of macro ‘g_once_init_enter’
+[35/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Models_FontStyle.c.o
+../src/Models/FontStyle.vala: In function ‘spreadsheet_font_style_reset_color’:
+../src/Models/FontStyle.vala:21:47: warning: passing argument 2 of ‘spreadsheet_font_style_set_font_color’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   21 |         font_color = FONT_COLOR_DEFAULT;
+      |                                               ^                                         
+io.github.elework.spreadsheet.p/src/Models/FontStyle.c:75:55: note: expected ‘GdkRGBA *’ {aka ‘struct _GdkRGBA *’} but argument is of type ‘const GdkRGBA *’ {aka ‘const struct _GdkRGBA *’}
+   75 |                                             GdkRGBA * value);
+      |                                             ~~~~~~~~~~^~~~~
+FontStyle.c: In function ‘spreadsheet_font_style_finalize’:
+FontStyle.c:397:25: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Models/FontStyle.c:4:
+FontStyle.c: In function ‘spreadsheet_font_style_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+FontStyle.c:419:6: note: in expansion of macro ‘g_once_init_enter’
+[36/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Parsing_Parser.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from io.github.elework.spreadsheet.p/src/Services/Parsing/Parser.c:4:
+io.github.elework.spreadsheet.p/src/Services/Parsing/Parser.c: In function ‘spreadsheet_services_parsing_parser_error_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+io.github.elework.spreadsheet.p/src/Services/Parsing/Parser.c:167:13: note: in expansion of macro ‘g_once_init_enter’
+  167 |         if (g_once_init_enter (&spreadsheet_services_parsing_parser_error_type_id__once)) {
+      |             ^~~~~~~~~~~~~~~~~
+Parser.c: In function ‘spreadsheet_services_parsing_parser_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Parser.c:668:6: note: in expansion of macro ‘g_once_init_enter’
+[37/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Services_Formula_FormulaParser.c.o
+../src/Services/Formula/FormulaParser.vala: In function ‘spreadsheet_services_formula_formula_parser_parse_exponent’:
+../src/Services/Formula/FormulaParser.vala:73:151: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   73 |             left = new CallExpression ("pow", new ArrayList<Expression>.wrap ({ left, right }));
+      |                                                                                                                                                       ^     
+      |                                                                                                                                                       |
+      |                                                                                                                                                       SpreadsheetServicesFormulaASTExpression ** {aka struct _SpreadsheetServicesFormulaASTExpression **}
+In file included from io.github.elework.spreadsheet.p/src/Services/Formula/FormulaParser.c:6:
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘SpreadsheetServicesFormulaASTExpression **’ {aka ‘struct _SpreadsheetServicesFormulaASTExpression **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+../src/Services/Formula/FormulaParser.vala: In function ‘spreadsheet_services_formula_formula_parser_parse_multiplication’:
+../src/Services/Formula/FormulaParser.vala:82:151: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   82 |             left = new CallExpression ("mul", new ArrayList<Expression>.wrap ({ left, right }));
+      |                                                                                                                                                       ^     
+      |                                                                                                                                                       |
+      |                                                                                                                                                       SpreadsheetServicesFormulaASTExpression ** {aka struct _SpreadsheetServicesFormulaASTExpression **}
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘SpreadsheetServicesFormulaASTExpression **’ {aka ‘struct _SpreadsheetServicesFormulaASTExpression **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+../src/Services/Formula/FormulaParser.vala: In function ‘spreadsheet_services_formula_formula_parser_parse_division’:
+../src/Services/Formula/FormulaParser.vala:91:151: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   91 |             left = new CallExpression ("div", new ArrayList<Expression>.wrap ({ left, right }));
+      |                                                                                                                                                       ^     
+      |                                                                                                                                                       |
+      |                                                                                                                                                       SpreadsheetServicesFormulaASTExpression ** {aka struct _SpreadsheetServicesFormulaASTExpression **}
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘SpreadsheetServicesFormulaASTExpression **’ {aka ‘struct _SpreadsheetServicesFormulaASTExpression **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+../src/Services/Formula/FormulaParser.vala: In function ‘spreadsheet_services_formula_formula_parser_parse_modulo’:
+../src/Services/Formula/FormulaParser.vala:100:151: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |             left = new CallExpression ("mod", new ArrayList<Expression>.wrap ({ left, right }));
+      |                                                                                                                                                       ^     
+      |                                                                                                                                                       |
+      |                                                                                                                                                       SpreadsheetServicesFormulaASTExpression ** {aka struct _SpreadsheetServicesFormulaASTExpression **}
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘SpreadsheetServicesFormulaASTExpression **’ {aka ‘struct _SpreadsheetServicesFormulaASTExpression **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+../src/Services/Formula/FormulaParser.vala: In function ‘spreadsheet_services_formula_formula_parser_parse_substraction’:
+../src/Services/Formula/FormulaParser.vala:109:151: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+  109 |             left = new CallExpression ("sub", new ArrayList<Expression>.wrap ({ left, right }));
+      |                                                                                                                                                       ^     
+      |                                                                                                                                                       |
+      |                                                                                                                                                       SpreadsheetServicesFormulaASTExpression ** {aka struct _SpreadsheetServicesFormulaASTExpression **}
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘SpreadsheetServicesFormulaASTExpression **’ {aka ‘struct _SpreadsheetServicesFormulaASTExpression **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+../src/Services/Formula/FormulaParser.vala: In function ‘spreadsheet_services_formula_formula_parser_parse_addition’:
+../src/Services/Formula/FormulaParser.vala:118:151: warning: passing argument 4 of ‘gee_array_list_new_wrap’ from incompatible pointer type [-Wincompatible-pointer-types]
+  118 |             left = new CallExpression ("sum", new ArrayList<Expression>.wrap ({ left, right }));
+      |                                                                                                                                                       ^     
+      |                                                                                                                                                       |
+      |                                                                                                                                                       SpreadsheetServicesFormulaASTExpression ** {aka struct _SpreadsheetServicesFormulaASTExpression **}
+/usr/include/gee-0.8/gee.h:1668:50: note: expected ‘void **’ but argument is of type ‘SpreadsheetServicesFormulaASTExpression **’ {aka ‘struct _SpreadsheetServicesFormulaASTExpression **’}
+ 1668 |                                        gpointer* items,
+      |                                        ~~~~~~~~~~^~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from io.github.elework.spreadsheet.p/src/Services/Formula/FormulaParser.c:4:
+FormulaParser.c: In function ‘spreadsheet_services_formula_formula_parser_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+FormulaParser.c:2269:6: note: in expansion of macro ‘g_once_init_enter’
+io.github.elework.spreadsheet.p/src/Services/Formula/FormulaParser.c: At top level:
+io.github.elework.spreadsheet.p/src/Services/Formula/FormulaParser.c:55:20: warning: ‘spreadsheet_services_formula_formula_parser_properties’ defined but not used [-Wunused-variable]
+   55 | static GParamSpec* spreadsheet_services_formula_formula_parser_properties[SPREADSHEET_SERVICES_FORMULA_FORMULA_PARSER_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[38/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_App.c.o
+In file included from io.github.elework.spreadsheet.p/src/App.c:12:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+../src/App.vala: In function ‘spreadsheet_app_real_startup’:
+../src/App.vala:42:249: warning: the comparison will always evaluate as ‘false’ for the address of ‘___lambda44__gbinding_transform_func’ will never be NULL [-Waddress]
+   42 |         granite_settings.bind_property ("prefers-color-scheme", gtk_settings, "gtk-application-prefer-dark-theme",
+      |                                                                                                                                                                                                                                                         ^ 
+App.c:288:1: note: ‘___lambda44__gbinding_transform_func’ declared here
+../src/App.vala:51:128: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+   51 |         set_accels_for_action (ACTION_PREFIX + ACTION_NAME_NEW, { "<Control>n" });
+      |                                                                                                                                ^     
+      |                                                                                                                                |
+      |                                                                                                                                gchar ** {aka char **}
+In file included from /usr/include/gtk-3.0/gtk/gtkwindow.h:33,
+                 from /usr/include/gtk-3.0/gtk/gtkdialog.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtkaboutdialog.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:31,
+                 from io.github.elework.spreadsheet.p/src/App.c:4:
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/App.vala:52:129: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |         set_accels_for_action (ACTION_PREFIX + ACTION_NAME_QUIT, { "<Control>q" });
+      |                                                                                                                                 ^     
+      |                                                                                                                                 |
+      |                                                                                                                                 gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+App.c: In function ‘spreadsheet_app_real_open’:
+App.c:387:8: warning: unused variable ‘_csv_file_collection_size_’ [-Wunused-variable]
+App.c: In function ‘spreadsheet_app_finalize’:
+App.c:749:19: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30:
+App.c: In function ‘spreadsheet_app_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+App.c:770:6: note: in expansion of macro ‘g_once_init_enter’
+io.github.elework.spreadsheet.p/src/App.c: At top level:
+io.github.elework.spreadsheet.p/src/App.c:51:20: warning: ‘spreadsheet_app_properties’ defined but not used [-Wunused-variable]
+   51 | static GParamSpec* spreadsheet_app_properties[SPREADSHEET_APP_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[39/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Widgets_ActionBar.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from io.github.elework.spreadsheet.p/src/Widgets/ActionBar.c:4:
+ActionBar.c: In function ‘spreadsheet_widgets_action_bar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+ActionBar.c:499:6: note: in expansion of macro ‘g_once_init_enter’
+[40/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_UI_TitleBar.c.o
+In file included from io.github.elework.spreadsheet.p/src/UI/TitleBar.c:9:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from io.github.elework.spreadsheet.p/src/UI/TitleBar.c:4:
+TitleBar.c: In function ‘spreadsheet_ui_title_bar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+TitleBar.c:830:6: note: in expansion of macro ‘g_once_init_enter’
+[41/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Widgets_FunctionListRow.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from io.github.elework.spreadsheet.p/src/Widgets/FunctionListRow.c:4:
+FunctionListRow.c: In function ‘spreadsheet_widgets_function_list_row_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+FunctionListRow.c:379:6: note: in expansion of macro ‘g_once_init_enter’
+[42/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Widgets_StyleModal.c.o
+In file included from io.github.elework.spreadsheet.p/src/Widgets/StyleModal.c:8:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+StyleModal.c: In function ‘__lambda18_’:
+StyleModal.c:344:25: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+../src/Widgets/StyleModal.vala: In function ‘spreadsheet_style_modal_create_fonts_grid’:
+../src/Widgets/StyleModal.vala:101:224: warning: the comparison will always evaluate as ‘false’ for the address of ‘___lambda17__gbinding_transform_func’ will never be NULL [-Waddress]
+  101 |         font_style.bind_property ("font_color",
+      |                                                                                                                                                                                                                                ^ 
+StyleModal.c:329:1: note: ‘___lambda17__gbinding_transform_func’ declared here
+StyleModal.c: In function ‘__lambda22_’:
+StyleModal.c:860:25: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+StyleModal.c: In function ‘__lambda23_’:
+StyleModal.c:880:25: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+../src/Widgets/StyleModal.vala: In function ‘spreadsheet_style_modal_create_cells_grid’:
+../src/Widgets/StyleModal.vala:173:219: warning: the comparison will always evaluate as ‘false’ for the address of ‘___lambda19__gbinding_transform_func’ will never be NULL [-Waddress]
+  173 |         cell_style.bind_property ("bg_color",
+      |                                                                                                                                                                                                                           ^ 
+StyleModal.c:741:1: note: ‘___lambda19__gbinding_transform_func’ declared here
+../src/Widgets/StyleModal.vala:180:227: warning: the comparison will always evaluate as ‘false’ for the address of ‘___lambda20__gbinding_transform_func’ will never be NULL [-Waddress]
+  180 |         cell_style.bind_property ("stroke_color",
+      |                                                                                                                                                                                                                                   ^ 
+StyleModal.c:793:1: note: ‘___lambda20__gbinding_transform_func’ declared here
+../src/Widgets/StyleModal.vala:187:225: warning: the comparison will always evaluate as ‘false’ for the address of ‘___lambda21__gbinding_transform_func’ will never be NULL [-Waddress]
+  187 |         cell_style.bind_property ("stroke_color",
+      |                                                                                                                                                                                                                                 ^ 
+StyleModal.c:845:1: note: ‘___lambda21__gbinding_transform_func’ declared here
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from io.github.elework.spreadsheet.p/src/Widgets/StyleModal.c:4:
+StyleModal.c: In function ‘spreadsheet_style_modal_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+StyleModal.c:1118:6: note: in expansion of macro ‘g_once_init_enter’
+io.github.elework.spreadsheet.p/src/Widgets/StyleModal.c: At top level:
+io.github.elework.spreadsheet.p/src/Widgets/StyleModal.c:50:20: warning: ‘spreadsheet_style_modal_properties’ defined but not used [-Wunused-variable]
+   50 | static GParamSpec* spreadsheet_style_modal_properties[SPREADSHEET_STYLE_MODAL_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[43/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_Widgets_Sheet.c.o
+Sheet.c: In function ‘__lambda15_’:
+Sheet.c:460:34: warning: variable ‘_tmp1_’ set but not used [-Wunused-but-set-variable]
+Sheet.c:490:34: warning: variable ‘_tmp7_’ set but not used [-Wunused-but-set-variable]
+Sheet.c: In function ‘spreadsheet_widgets_sheet_real_scroll_event’:
+Sheet.c:850:34: warning: variable ‘_tmp2_’ set but not used [-Wunused-but-set-variable]
+Sheet.c:884:34: warning: variable ‘_tmp10_’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from io.github.elework.spreadsheet.p/src/Widgets/Sheet.c:4:
+Sheet.c: In function ‘spreadsheet_widgets_sheet_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Sheet.c:2615:6: note: in expansion of macro ‘g_once_init_enter’
+[44/45] Compiling C object io.github.elework.spreadsheet.p/meson-generated_src_UI_MainWindow.c.o
+In file included from io.github.elework.spreadsheet.p/src/UI/MainWindow.c:12:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+MainWindow.c: In function ‘spreadsheet_ui_main_window_update_listview’:
+MainWindow.c:1385:8: warning: unused variable ‘_file_name_collection_size_’ [-Wunused-variable]
+../src/UI/MainWindow.vala:253:48: warning: passing argument 3 of ‘g_settings_set_strv’ from incompatible pointer type [-Wincompatible-pointer-types]
+  253 |         Spreadsheet.App.settings.set_strv ("recent-files", new_recent_files);
+      |                                                ^~~~~~~
+      |                                                |
+      |                                                gchar ** {aka char **}
+In file included from /usr/include/glib-2.0/gio/gio.h:137,
+                 from /usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h:28,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from io.github.elework.spreadsheet.p/src/UI/MainWindow.c:4:
+/usr/include/glib-2.0/gio/gsettings.h:191:94: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  191 |                                                                          const gchar *const *value);
+      |                                                                          ~~~~~~~~~~~~~~~~~~~~^~~~~
+MainWindow.c:1328:7: warning: variable ‘_tmp33__length1’ set but not used [-Wunused-but-set-variable]
+MainWindow.c:1320:7: warning: variable ‘_recent_files_size_’ set but not used [-Wunused-but-set-variable]
+MainWindow.c: In function ‘string_get_data’:
+MainWindow.c:1600:7: warning: variable ‘_res_size_’ set but not used [-Wunused-but-set-variable]
+MainWindow.c: In function ‘__lambda36_’:
+MainWindow.c:1642:12: warning: variable ‘_tmp1_’ set but not used [-Wunused-but-set-variable]
+MainWindow.c: In function ‘__lambda39_’:
+MainWindow.c:1754:27: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+MainWindow.c: In function ‘__lambda40_’:
+MainWindow.c:1823:27: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+MainWindow.c: In function ‘__lambda41_’:
+MainWindow.c:1885:20: warning: variable ‘_tmp6_’ set but not used [-Wunused-but-set-variable]
+MainWindow.c: In function ‘spreadsheet_ui_main_window_add_recents’:
+MainWindow.c:3434:8: warning: unused variable ‘_recent_collection_size_’ [-Wunused-variable]
+../src/UI/MainWindow.vala:574:10: warning: assignment to ‘void **’ from incompatible pointer type ‘gchar *’ {aka ‘char *’} [-Wincompatible-pointer-types]
+  574 |         Spreadsheet.App.settings.set_strv ("recent-files", new_recents.data);
+      |          ^
+../src/UI/MainWindow.vala:574:48: warning: passing argument 3 of ‘g_settings_set_strv’ from incompatible pointer type [-Wincompatible-pointer-types]
+  574 |         Spreadsheet.App.settings.set_strv ("recent-files", new_recents.data);
+      |                                                ^~~~~~~
+      |                                                |
+      |                                                void **
+/usr/include/glib-2.0/gio/gsettings.h:191:94: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘void **’
+  191 |                                                                          const gchar *const *value);
+      |                                                                          ~~~~~~~~~~~~~~~~~~~~^~~~~
+MainWindow.c:3399:7: warning: variable ‘_tmp15__length1’ set but not used [-Wunused-but-set-variable]
+MainWindow.c:3386:7: warning: variable ‘_recents_size_’ set but not used [-Wunused-but-set-variable]
+MainWindow.c: In function ‘_spreadsheet_ui_main_window_file_____lambda26_’:
+MainWindow.c:4613:13: warning: variable ‘_tmp0_’ set but not used [-Wunused-but-set-variable]
+../src/UI/MainWindow.vala: In function ‘spreadsheet_ui_main_window_constructor’:
+../src/UI/MainWindow.vala:158:157: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  158 |         app.set_accels_for_action (ACTION_PREFIX + ACTION_NAME_WELCOME, { "<Alt>Home" });
+      |                                                                                                                                                             ^      
+      |                                                                                                                                                             |
+      |                                                                                                                                                             gchar ** {aka char **}
+In file included from /usr/include/gtk-3.0/gtk/gtkwindow.h:33,
+                 from /usr/include/gtk-3.0/gtk/gtkdialog.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtkaboutdialog.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:31:
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/UI/MainWindow.vala:159:154: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  159 |         app.set_accels_for_action (ACTION_PREFIX + ACTION_NAME_OPEN, { "<Control>o" });
+      |                                                                                                                                                          ^      
+      |                                                                                                                                                          |
+      |                                                                                                                                                          gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/UI/MainWindow.vala:160:154: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  160 |         app.set_accels_for_action (ACTION_PREFIX + ACTION_NAME_SAVE, { "<Control>s" });
+      |                                                                                                                                                          ^      
+      |                                                                                                                                                          |
+      |                                                                                                                                                          gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/UI/MainWindow.vala:161:157: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  161 |         app.set_accels_for_action (ACTION_PREFIX + ACTION_NAME_SAVE_AS, { "<Control><Shift>s" });
+      |                                                                                                                                                             ^      
+      |                                                                                                                                                             |
+      |                                                                                                                                                             gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/UI/MainWindow.vala:162:154: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  162 |         app.set_accels_for_action (ACTION_PREFIX + ACTION_NAME_UNDO, { "<Control>z" });
+      |                                                                                                                                                          ^      
+      |                                                                                                                                                          |
+      |                                                                                                                                                          gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/UI/MainWindow.vala:163:154: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  163 |         app.set_accels_for_action (ACTION_PREFIX + ACTION_NAME_REDO, { "<Control><Shift>z" });
+      |                                                                                                                                                          ^      
+      |                                                                                                                                                          |
+      |                                                                                                                                                          gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/UI/MainWindow.vala:164:166: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  164 |         app.set_accels_for_action (ACTION_PREFIX + ACTION_NAME_FOCUS_EXPRESSION, { "F2" });
+      |                                                                                                                                                                      ^      
+      |                                                                                                                                                                      |
+      |                                                                                                                                                                      gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/UI/MainWindow.vala:165:168: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  165 |         app.set_accels_for_action (ACTION_PREFIX + ACTION_NAME_UNFOCUS_EXPRESSION, { "Escape" });
+      |                                                                                                                                                                        ^      
+      |                                                                                                                                                                        |
+      |                                                                                                                                                                        gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30:
+MainWindow.c: In function ‘spreadsheet_ui_main_window_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+MainWindow.c:5487:6: note: in expansion of macro ‘g_once_init_enter’
+[45/45] Linking target io.github.elework.spreadsheet

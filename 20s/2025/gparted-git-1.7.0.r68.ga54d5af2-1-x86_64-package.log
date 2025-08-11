@@ -1,0 +1,218 @@
+Making install in data
+make[1]: Entering directory '/build/gparted-git/src/gparted/data'
+Making install in icons
+make[2]: Entering directory '/build/gparted-git/src/gparted/data/icons'
+make[3]: Entering directory '/build/gparted-git/src/gparted/data/icons'
+make[3]: Nothing to be done for 'install-exec-am'.
+for icon in hicolor_apps_16x16_gparted.png hicolor_apps_22x22_gparted.png hicolor_apps_24x24_gparted.png hicolor_apps_32x32_gparted.png hicolor_apps_48x48_gparted.png hicolor_apps_scalable_gparted.svg ; do \
+	THEME=`echo $icon | cut -d_ -f1`; \
+	CONTEXT=`echo $icon | cut -d_ -f2`; \
+	SIZE=`echo $icon | cut -d_ -f3`; \
+	ICONFILE=`echo $icon | cut -d_ -f4`; \
+	mkdir -p /build/gparted-git/pkg/gparted-git/usr/share/icons/$THEME/$SIZE/$CONTEXT; \
+	/usr/bin/install -c -m 644 ./$icon /build/gparted-git/pkg/gparted-git/usr/share/icons/$THEME/$SIZE/$CONTEXT/$ICONFILE; \
+done; \
+for icon in ; do \
+	THEME=`echo $icon | cut -d_ -f1`; \
+	CONTEXT=`echo $icon | cut -d_ -f2`; \
+	SIZE=`echo $icon | cut -d_ -f3`; \
+	ICONFILE=`echo $icon | cut -d_ -f4`; \
+	mkdir -p /build/gparted-git/pkg/gparted-git/usr/share/gparted/icons/$THEME/$SIZE/$CONTEXT; \
+	/usr/bin/install -c -m 644 ./$icon /build/gparted-git/pkg/gparted-git/usr/share/gparted/icons/$THEME/$SIZE/$CONTEXT/$ICONFILE; \
+done
+*** Icon cache not updated.  After (un)install, run this:
+***   gtk-update-icon-cache -f -t /usr/share/icons/hicolor
+make[3]: Leaving directory '/build/gparted-git/src/gparted/data/icons'
+make[2]: Leaving directory '/build/gparted-git/src/gparted/data/icons'
+make[2]: Entering directory '/build/gparted-git/src/gparted/data'
+make[3]: Entering directory '/build/gparted-git/src/gparted/data'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gparted-git/src/gparted/data'
+make[2]: Leaving directory '/build/gparted-git/src/gparted/data'
+make[1]: Leaving directory '/build/gparted-git/src/gparted/data'
+Making install in doc
+make[1]: Entering directory '/build/gparted-git/src/gparted/doc'
+make[2]: Entering directory '/build/gparted-git/src/gparted/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gparted-git/pkg/gparted-git/usr/share/man/man8'
+ /usr/bin/install -c -m 644 gparted.8 '/build/gparted-git/pkg/gparted-git/usr/share/man/man8'
+make[2]: Leaving directory '/build/gparted-git/src/gparted/doc'
+make[1]: Leaving directory '/build/gparted-git/src/gparted/doc'
+Making install in include
+make[1]: Entering directory '/build/gparted-git/src/gparted/include'
+make[2]: Entering directory '/build/gparted-git/src/gparted/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gparted-git/src/gparted/include'
+make[1]: Leaving directory '/build/gparted-git/src/gparted/include'
+Making install in lib
+make[1]: Entering directory '/build/gparted-git/src/gparted/lib'
+Making install in gtest
+make[2]: Entering directory '/build/gparted-git/src/gparted/lib/gtest'
+make[3]: Entering directory '/build/gparted-git/src/gparted/lib/gtest'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gparted-git/src/gparted/lib/gtest'
+make[2]: Leaving directory '/build/gparted-git/src/gparted/lib/gtest'
+make[2]: Entering directory '/build/gparted-git/src/gparted/lib'
+make[3]: Entering directory '/build/gparted-git/src/gparted/lib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gparted-git/src/gparted/lib'
+make[2]: Leaving directory '/build/gparted-git/src/gparted/lib'
+make[1]: Leaving directory '/build/gparted-git/src/gparted/lib'
+Making install in po
+make[1]: Entering directory '/build/gparted-git/src/gparted/po'
+installing ar.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ar/LC_MESSAGES/gparted.mo
+installing be.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/be/LC_MESSAGES/gparted.mo
+installing bg.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/bg/LC_MESSAGES/gparted.mo
+installing br.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/br/LC_MESSAGES/gparted.mo
+installing bs.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/bs/LC_MESSAGES/gparted.mo
+installing ca.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ca/LC_MESSAGES/gparted.mo
+installing ca@valencia.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ca@valencia/LC_MESSAGES/gparted.mo
+installing cs.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/cs/LC_MESSAGES/gparted.mo
+installing da.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/da/LC_MESSAGES/gparted.mo
+installing de.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/de/LC_MESSAGES/gparted.mo
+installing dz.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/dz/LC_MESSAGES/gparted.mo
+installing el.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/el/LC_MESSAGES/gparted.mo
+installing en_CA.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/en_CA/LC_MESSAGES/gparted.mo
+installing en_GB.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/en_GB/LC_MESSAGES/gparted.mo
+installing eo.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/eo/LC_MESSAGES/gparted.mo
+installing es.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/es/LC_MESSAGES/gparted.mo
+installing et.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/et/LC_MESSAGES/gparted.mo
+installing eu.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/eu/LC_MESSAGES/gparted.mo
+installing fa.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/fa/LC_MESSAGES/gparted.mo
+installing fi.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/fi/LC_MESSAGES/gparted.mo
+installing fr.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/fr/LC_MESSAGES/gparted.mo
+installing fur.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/fur/LC_MESSAGES/gparted.mo
+installing gd.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/gd/LC_MESSAGES/gparted.mo
+installing gl.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/gl/LC_MESSAGES/gparted.mo
+installing gu.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/gu/LC_MESSAGES/gparted.mo
+installing he.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/he/LC_MESSAGES/gparted.mo
+installing hi.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/hi/LC_MESSAGES/gparted.mo
+installing hr.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/hr/LC_MESSAGES/gparted.mo
+installing hu.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/hu/LC_MESSAGES/gparted.mo
+installing id.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/id/LC_MESSAGES/gparted.mo
+installing ie.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ie/LC_MESSAGES/gparted.mo
+installing is.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/is/LC_MESSAGES/gparted.mo
+installing it.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/it/LC_MESSAGES/gparted.mo
+installing ja.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ja/LC_MESSAGES/gparted.mo
+installing ka.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ka/LC_MESSAGES/gparted.mo
+installing kk.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/kk/LC_MESSAGES/gparted.mo
+installing ko.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ko/LC_MESSAGES/gparted.mo
+installing lt.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/lt/LC_MESSAGES/gparted.mo
+installing lv.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/lv/LC_MESSAGES/gparted.mo
+installing mk.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/mk/LC_MESSAGES/gparted.mo
+installing ml.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ml/LC_MESSAGES/gparted.mo
+installing nb.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/nb/LC_MESSAGES/gparted.mo
+installing ne.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ne/LC_MESSAGES/gparted.mo
+installing nl.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/nl/LC_MESSAGES/gparted.mo
+installing nn.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/nn/LC_MESSAGES/gparted.mo
+installing oc.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/oc/LC_MESSAGES/gparted.mo
+installing pa.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/pa/LC_MESSAGES/gparted.mo
+installing pl.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/pl/LC_MESSAGES/gparted.mo
+installing pt.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/pt/LC_MESSAGES/gparted.mo
+installing pt_BR.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/pt_BR/LC_MESSAGES/gparted.mo
+installing ro.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ro/LC_MESSAGES/gparted.mo
+installing ru.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/ru/LC_MESSAGES/gparted.mo
+installing rw.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/rw/LC_MESSAGES/gparted.mo
+installing si.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/si/LC_MESSAGES/gparted.mo
+installing sk.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/sk/LC_MESSAGES/gparted.mo
+installing sl.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/sl/LC_MESSAGES/gparted.mo
+installing sr.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/sr/LC_MESSAGES/gparted.mo
+installing sr@latin.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/sr@latin/LC_MESSAGES/gparted.mo
+installing sv.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/sv/LC_MESSAGES/gparted.mo
+installing te.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/te/LC_MESSAGES/gparted.mo
+installing th.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/th/LC_MESSAGES/gparted.mo
+installing tr.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/tr/LC_MESSAGES/gparted.mo
+installing uk.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/uk/LC_MESSAGES/gparted.mo
+installing vi.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/vi/LC_MESSAGES/gparted.mo
+installing zh_CN.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/zh_CN/LC_MESSAGES/gparted.mo
+installing zh_HK.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/zh_HK/LC_MESSAGES/gparted.mo
+installing zh_TW.gmo as /build/gparted-git/pkg/gparted-git/usr/share/locale/zh_TW/LC_MESSAGES/gparted.mo
+if test "gparted" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /build/gparted-git/pkg/gparted-git/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /build/gparted-git/pkg/gparted-git/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /build/gparted-git/pkg/gparted-git/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/build/gparted-git/src/gparted/po'
+Making install in src
+make[1]: Entering directory '/build/gparted-git/src/gparted/src'
+make[2]: Entering directory '/build/gparted-git/src/gparted/src'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/build/gparted-git/pkg/gparted-git/usr/lib/gparted'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c gpartedbin '/build/gparted-git/pkg/gparted-git/usr/lib/gparted'
+libtool: install: /usr/bin/install -c gpartedbin /build/gparted-git/pkg/gparted-git/usr/lib/gparted/gpartedbin
+make[2]: Leaving directory '/build/gparted-git/src/gparted/src'
+make[1]: Leaving directory '/build/gparted-git/src/gparted/src'
+Making install in tests
+make[1]: Entering directory '/build/gparted-git/src/gparted/tests'
+make[2]: Entering directory '/build/gparted-git/src/gparted/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gparted-git/src/gparted/tests'
+make[1]: Leaving directory '/build/gparted-git/src/gparted/tests'
+Making install in help
+make[1]: Entering directory '/build/gparted-git/src/gparted/help'
+make[2]: Entering directory '/build/gparted-git/src/gparted/help'
+make[2]: Nothing to be done for 'install-exec-am'.
+/usr/bin/install -c -m 644 C/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/C/gparted/index.docbook
+/usr/bin/install -c -m 644 cs/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/cs/gparted/index.docbook
+/usr/bin/install -c -m 644 de/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/de/gparted/index.docbook
+/usr/bin/install -c -m 644 el/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/el/gparted/index.docbook
+/usr/bin/install -c -m 644 es/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/es/gparted/index.docbook
+/usr/bin/install -c -m 644 fr/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/fr/gparted/index.docbook
+/usr/bin/install -c -m 644 gd/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/gd/gparted/index.docbook
+/usr/bin/install -c -m 644 id/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/id/gparted/index.docbook
+/usr/bin/install -c -m 644 it/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/it/gparted/index.docbook
+/usr/bin/install -c -m 644 pt_BR/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/pt_BR/gparted/index.docbook
+/usr/bin/install -c -m 644 ro/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/ro/gparted/index.docbook
+/usr/bin/install -c -m 644 ru/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/ru/gparted/index.docbook
+/usr/bin/install -c -m 644 sl/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/sl/gparted/index.docbook
+/usr/bin/install -c -m 644 sr/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/sr/gparted/index.docbook
+/usr/bin/install -c -m 644 sr@latin/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/sr@latin/gparted/index.docbook
+/usr/bin/install -c -m 644 sv/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/sv/gparted/index.docbook
+/usr/bin/install -c -m 644 te/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/te/gparted/index.docbook
+/usr/bin/install -c -m 644 th/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/th/gparted/index.docbook
+/usr/bin/install -c -m 644 uk/index.docbook /build/gparted-git/pkg/gparted-git/usr/share/help/uk/gparted/index.docbook
+/usr/bin/install -c -m 644 ./C/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/C/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./cs/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/cs/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./de/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/de/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./el/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/el/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./es/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/es/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./fr/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/fr/gparted/figures/gparted_window.png
+ln -s -f /usr/share/help/C/gparted/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/gd/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./id/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/id/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./it/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/it/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./pt_BR/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/pt_BR/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./ro/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/ro/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./ru/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/ru/gparted/figures/gparted_window.png
+ln -s -f /usr/share/help/C/gparted/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/sl/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./sr/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/sr/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./sr@latin/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/sr@latin/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./sv/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/sv/gparted/figures/gparted_window.png
+ln -s -f /usr/share/help/C/gparted/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/te/gparted/figures/gparted_window.png
+ln -s -f /usr/share/help/C/gparted/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/th/gparted/figures/gparted_window.png
+/usr/bin/install -c -m 644 ./uk/figures/gparted_window.png /build/gparted-git/pkg/gparted-git/usr/share/help/uk/gparted/figures/gparted_window.png
+make[2]: Leaving directory '/build/gparted-git/src/gparted/help'
+make[1]: Leaving directory '/build/gparted-git/src/gparted/help'
+make[1]: Entering directory '/build/gparted-git/src/gparted'
+make[2]: Entering directory '/build/gparted-git/src/gparted'
+ /usr/bin/mkdir -p '/build/gparted-git/pkg/gparted-git/usr/bin'
+ /usr/bin/mkdir -p '/build/gparted-git/pkg/gparted-git/usr/share/metainfo'
+ /usr/bin/mkdir -p '/build/gparted-git/pkg/gparted-git/usr/share/polkit-1/actions'
+ /usr/bin/mkdir -p '/build/gparted-git/pkg/gparted-git/usr/share/applications'
+ /usr/bin/install -c gparted '/build/gparted-git/pkg/gparted-git/usr/bin'
+ /usr/bin/install -c -m 644 gparted.desktop '/build/gparted-git/pkg/gparted-git/usr/share/applications'
+ /usr/bin/install -c -m 644 gparted.appdata.xml '/build/gparted-git/pkg/gparted-git/usr/share/metainfo'
+ /usr/bin/install -c -m 644 org.gnome.gparted.policy '/build/gparted-git/pkg/gparted-git/usr/share/polkit-1/actions'
+make[2]: Leaving directory '/build/gparted-git/src/gparted'
+make[1]: Leaving directory '/build/gparted-git/src/gparted'

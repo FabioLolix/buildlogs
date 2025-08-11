@@ -1,0 +1,530 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 --libexecdir=lib/nemo-git nemo build
+The Meson build system
+Version: 1.8.3
+Source dir: /build/nemo-git/src/nemo
+Build dir: /build/nemo-git/src/build
+Build type: native build
+Project name: nemo
+Project version: 6.4.5
+C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250729")
+C linker for the host machine: cc ld.bfd 2.45.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Has header "malloc.h" : YES 
+Has header "sys/mount.h" : YES 
+Has header "sys/param.h" : YES 
+Has header "sys/vfs.h" : YES 
+Has header "X11/XF86keysym.h" : YES 
+Checking for function "mallopt" : YES 
+Library m found: YES
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency gtk+-3.0 found: YES 3.24.50
+Run-time dependency gio-2.0 found: YES 2.84.3
+Run-time dependency gio-unix-2.0 found: YES 2.84.3
+Run-time dependency glib-2.0 found: YES 2.84.3
+Run-time dependency gmodule-no-export-2.0 found: YES 2.84.3
+Run-time dependency gobject-2.0 found: YES 2.84.3
+Run-time dependency gobject-introspection-1.0 found: YES 1.84.0
+Run-time dependency json-glib-1.0 found: YES 1.10.6
+Run-time dependency cinnamon-desktop found: YES 6.4.1
+Run-time dependency gail-3.0 found: YES 3.24.50
+Run-time dependency x11 found: YES 1.8.12
+Run-time dependency xapp found: YES 2.8.9
+Run-time dependency libexif found: YES 0.6.25
+Run-time dependency exempi-2.0 found: YES 2.6.6
+Run-time dependency pango found: YES 1.56.4
+Dependency pango found: YES 1.56.4 (cached)
+Has header "libintl.h" : YES 
+Has header "locale.h" : YES 
+Configuring config.h using configuration
+Configuring nemo-autorun-software.desktop using configuration
+Configuring nemo-autostart.desktop using configuration
+Configuring nemo.desktop using configuration
+Configuring nemo.service using configuration
+Configuring nemo.FileManager1.service using configuration
+Configuring org.nemo.root.policy using configuration
+Message: Copying ./files structure
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Run-time dependency libgsf-1 found: YES 1.14.53
+Configuring leconfig.py using configuration
+Configuring nemo-action-layout-editor using configuration
+Has header "gdk/gdkwayland.h" with dependency gtk+-3.0: YES 
+Message: 
+        nemo-6.4.5
+
+    prefix:                 /usr
+    source code location:   /build/nemo-git/src/nemo
+    compiler:               gcc
+    libexif support:        true
+    exempi  support:        true
+    Tracker support:        false
+    Wayland support:        true
+
+    nemo-extension documentation: false
+    nemo-extension introspection: true
+
+    debugging support:      plain
+    perf profiling support: false
+
+Build targets in project: 28
+NOTICE: Future-deprecated features used:
+ * 0.60.0: {'install_subdir with empty directory'}
+
+nemo 6.4.5
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib/nemo-git
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/28 eta ?                                               Writing build.ninja:   0%|          | 0/299 eta ?                                                 samu: entering directory 'build'
+[1/272] Compiling C object test/test-nemo-copy.p/test.c.o
+[2/272] Compiling C object test/test-nemo-copy.p/test-copy.c.o
+[3/272] Compiling C object test/test-nemo-directory-async.p/test-nemo-directory-async.c.o
+[4/272] Compiling C object test/test-nemo-search-engine.p/test-nemo-search-engine.c.o
+[5/272] Compiling C object search-helpers/nemo-ppt-to-txt.p/nemo-ppt-to-txt.c.o
+[6/272] Compiling C object search-helpers/nemo-mso-to-txt.p/nemo-mso-to-txt.c.o
+[7/272] Compiling C object src/nemo-extensions-list.p/nemo-extensions-list.c.o
+[8/272] Compiling C object src/nemo-open-with.p/nemo-open-with-main.c.o
+[9/272] Compiling C object src/nemo-connect-server.p/nemo-connect-server-operation.c.o
+[10/272] Compiling C object src/nemo-connect-server.p/nemo-connect-server-dialog-main.c.o
+[11/272] Compiling C object src/nemo-connect-server.p/nemo-connect-server-dialog.c.o
+[12/272] Compiling C object src/nemo-connect-server.p/nemo-bookmark-list.c.o
+[13/272] Compiling C object src/nemo-autorun-software.p/nemo-autorun-software.c.o
+[14/272] Generating gdbus header src/nemo-cinnamon-dbus.h
+[15/272] Generating gdbus source src/nemo-cinnamon-dbus.c
+[16/272] Generating gdbus header src/nemo-freedesktop-generated.h
+[17/272] Generating gdbus source src/nemo-freedesktop-generated.c
+[18/272] Generating gdbus header libnemo-private/nemo-generated.h
+[19/272] Generating gdbus source libnemo-private/nemo-generated.c
+[20/272] Generating gresources/nemo-action-layout-editor-resources_gresource with a custom command
+[21/272] Generating gresources/nemo-resources_h with a custom command
+[22/272] Generating gresources/nemo-resources_c with a custom command
+[23/272] Compiling C object eel/check-program.p/check-program.c.o
+[24/272] Compiling C object eel/libeel.a.p/eel-vfs-extensions.c.o
+[25/272] Compiling C object eel/libeel.a.p/eel-string.c.o
+[26/272] Compiling C object eel/libeel.a.p/eel-stock-dialogs.c.o
+[27/272] Compiling C object eel/libeel.a.p/eel-self-checks.c.o
+[28/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-simple-button.c.o
+[29/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-menu.c.o
+[30/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-property-page.c.o
+[31/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-property-page-provider.c.o
+[32/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-name-and-desc-provider.c.o
+[33/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/meson-generated_.._.._gresources_nemo-resources.c.o
+[34/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-widget-menu-item.c.o
+[35/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-widget-action.c.o
+[36/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-vfs-file.c.o
+[37/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-vfs-directory.c.o
+[38/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-undo.c.o
+[39/272] Linking target search-helpers/nemo-ppt-to-txt
+[40/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-undo-transaction.c.o
+[01m[K../nemo/search-helpers/nemo-mso-to-txt.c:[m[K In function ‘[01m[Kprocess_file[m[K’:
+[01m[K../nemo/search-helpers/nemo-mso-to-txt.c:64:19:[m[K [01;35m[Kwarning: [m[Kthe comparison will always evaluate as ‘[01m[Ktrue[m[K’ for the address of ‘[01m[Kchunk[m[K’ will never be NULL [[01;35m[K-Waddress[m[K]
+   64 |         if (chunk [01;35m[K!=[m[K NULL)
+      |                   [01;35m[K^~[m[K
+[01m[K../nemo/search-helpers/nemo-mso-to-txt.c:60:16:[m[K [01;36m[Knote: [m[K‘[01m[Kchunk[m[K’ declared here
+   60 |         guint8 [01;36m[Kchunk[m[K[size];
+      |                [01;36m[K^~~~~[m[K
+[41/272] Linking target search-helpers/nemo-mso-to-txt
+[42/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-undo-signal-handlers.c.o
+[43/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-undo-manager.c.o
+[44/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-ui-utilities.c.o
+[45/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-tree-view-drag-dest.c.o
+[46/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-trash-monitor.c.o
+[47/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-thumbnails.c.o
+[48/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-signaller.c.o
+[49/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-separator-action.c.o
+[50/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-selection-canvas-item.c.o
+[51/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-search-engine.c.o
+[52/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-search-engine-advanced.c.o
+[53/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-search-directory.c.o
+[54/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-search-directory-file.c.o
+[55/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-recent.c.o
+[56/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-query.c.o
+[57/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-progress-info.c.o
+[58/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-progress-info-manager.c.o
+[59/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-program-choosing.c.o
+[60/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-places-tree-view.c.o
+[61/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-placement-grid.c.o
+[62/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-monitor.c.o
+[63/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-module.c.o
+[64/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-mime-application-chooser.c.o
+[65/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-metadata.c.o
+[66/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-merged-directory.c.o
+[67/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-link.c.o
+[68/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-lib-self-check-functions.c.o
+[69/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-job-queue.c.o
+[70/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-icon-info.c.o
+[71/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-icon-dnd.c.o
+[72/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-icon-container.c.o
+[73/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-icon-canvas-item.c.o
+[74/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-global-preferences.c.o
+[75/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-file.c.o
+[76/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-file-utilities.c.o
+[77/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-file-undo-operations.c.o
+[78/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-file-undo-manager.c.o
+[79/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-file-queue.c.o
+[80/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-file-operations.c.o
+[81/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-file-dnd.c.o
+[01m[K../nemo/libnemo-private/nemo-search-engine-advanced.c:[m[K In function ‘[01m[Kload_contents[m[K’:
+[01m[K../nemo/libnemo-private/nemo-search-engine-advanced.c:768:19:[m[K [01;35m[Kwarning: [m[Kthe comparison will always evaluate as ‘[01m[Ktrue[m[K’ for the address of ‘[01m[Kchunk[m[K’ will never be NULL [[01;35m[K-Waddress[m[K]
+  768 |         if (chunk [01;35m[K!=[m[K NULL) {
+      |                   [01;35m[K^~[m[K
+[01m[K../nemo/libnemo-private/nemo-search-engine-advanced.c:761:15:[m[K [01;36m[Knote: [m[K‘[01m[Kchunk[m[K’ declared here
+  761 |         gchar [01;36m[Kchunk[m[K[4096];
+      |               [01;36m[K^~~~~[m[K
+[82/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-file-conflict-dialog.c.o
+[83/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-file-changes-queue.c.o
+[84/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-entry.c.o
+[85/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-dnd.c.o
+[86/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-directory.c.o
+[87/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-directory-async.c.o
+[88/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-desktop-utils.c.o
+[89/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-desktop-metadata.c.o
+[90/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-desktop-link.c.o
+[91/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-desktop-link-monitor.c.o
+[92/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-desktop-icon-file.c.o
+[93/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-desktop-directory.c.o
+[94/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-desktop-directory-file.c.o
+[95/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-default-file-icon.c.o
+[96/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-debug.c.o
+[97/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-dbus-manager.c.o
+[98/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-column-utilities.c.o
+[99/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-column-chooser.c.o
+[100/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-clipboard.c.o
+[101/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-clipboard-monitor.c.o
+[102/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-centered-placement-grid.c.o
+[103/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-cell-renderer-disk.c.o
+[104/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-bookmark.c.o
+[105/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-action.c.o
+[106/272] Compiling C object libnemo-private/libnemo-private.a.p/nemo-action-manager.c.o
+[107/272] Compiling C object libnemo-private/libnemo-private.a.p/meson-generated_.._nemo-generated.c.o
+[108/272] Compiling C object src/nemo-desktop.p/nemo-desktop-main.c.o
+[109/272] Compiling C object src/nemo-desktop.p/nemo-desktop-icon-view.c.o
+[110/272] Compiling C object src/nemo-desktop.p/nemo-desktop-application.c.o
+[111/272] Compiling C object src/nemo-desktop.p/nemo-x-content-bar.c.o
+[112/272] Compiling C object src/nemo-desktop.p/nemo-window.c.o
+[113/272] Compiling C object src/nemo-desktop.p/nemo-window-slot.c.o
+[114/272] Compiling C object src/nemo-desktop.p/nemo-window-slot-dnd.c.o
+[115/272] Compiling C object src/nemo-desktop.p/nemo-window-pane.c.o
+[116/272] Compiling C object src/nemo-desktop.p/nemo-window-menus.c.o
+[117/272] Compiling C object src/nemo-desktop.p/nemo-window-manage-views.c.o
+[118/272] Compiling C object src/nemo-desktop.p/nemo-window-bookmarks.c.o
+[119/272] Compiling C object src/nemo-desktop.p/nemo-view.c.o
+[120/272] Compiling C object src/nemo-desktop.p/nemo-view-factory.c.o
+[01m[K../nemo/libnemo-private/nemo-file-operations.c:[m[K In function ‘[01m[Kshorten_utf8_string[m[K’:
+[01m[K../nemo/libnemo-private/nemo-file-operations.c:344:22:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  344 |                 next [01;35m[K=[m[K g_utf8_next_char (p);
+      |                      [01;35m[K^[m[K
+[121/272] Compiling C object src/nemo-desktop.p/nemo-view-dnd.c.o
+[122/272] Compiling C object src/nemo-desktop.p/nemo-tree-sidebar.c.o
+[123/272] Compiling C object src/nemo-desktop.p/nemo-tree-sidebar-model.c.o
+[124/272] Compiling C object src/nemo-desktop.p/nemo-trash-bar.c.o
+[125/272] Compiling C object src/nemo-desktop.p/nemo-toolbar.c.o
+[126/272] Compiling C object src/nemo-desktop.p/nemo-thumbnail-problem-bar.c.o
+[127/272] Compiling C object src/nemo-desktop.p/nemo-statusbar.c.o
+[01m[K../nemo/libnemo-private/nemo-file.c:5074:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Knemo_date_type_to_string[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ 5074 | [01;35m[Knemo_date_type_to_string[m[K (NemoDateType type)
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[128/272] Compiling C object src/nemo-desktop.p/nemo-self-check-functions.c.o
+[129/272] Compiling C object src/nemo-desktop.p/nemo-template-config-widget.c.o
+[130/272] Compiling C object src/nemo-desktop.p/nemo-query-editor.c.o
+[131/272] Compiling C object src/nemo-desktop.p/nemo-properties-window.c.o
+[132/272] Compiling C object src/nemo-desktop.p/nemo-progress-ui-handler.c.o
+[133/272] Compiling C object src/nemo-desktop.p/nemo-progress-info-widget.c.o
+[134/272] Compiling C object src/nemo-desktop.p/nemo-previewer.c.o
+[135/272] Compiling C object src/nemo-desktop.p/nemo-plugin-manager.c.o
+[136/272] Compiling C object src/nemo-desktop.p/nemo-places-sidebar.c.o
+[137/272] Compiling C object src/nemo-desktop.p/nemo-pathbar.c.o
+[138/272] Compiling C object src/nemo-desktop.p/nemo-notebook.c.o
+In file included from [01m[K/usr/include/glib-2.0/glib/giochannel.h:36[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:56[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gdk/gdkconfig.h:8[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gdk/gdk.h:30[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gtk/gtk.h:30[m[K,
+                 from [01m[K../nemo/libnemo-private/nemo-action.h:23[m[K,
+                 from [01m[K../nemo/libnemo-private/nemo-action.c:20[m[K:
+[01m[K../nemo/libnemo-private/nemo-action.c:[m[K In function ‘[01m[Kget_insertion_string[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gstring.h:76:5:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kg_string_free_and_steal[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K-Wunused-result[m[K]
+   72 |   [01;35m[K(__builtin_constant_p (free_segment) ?        \[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;35m[K    ((free_segment) ?                           \[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   74 | [01;35m[K      (g_string_free) ((str), (free_segment)) : \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   75 | [01;35m[K      g_string_free_and_steal (str))            \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   76 | [01;35m[K    :                                           \[m[K
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   77 | [01;35m[K    (g_string_free) ((str), (free_segment)))[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../nemo/libnemo-private/nemo-action.c:1436:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_string_free[m[K’
+ 1436 |     [01;36m[Kg_string_free[m[K (str, FALSE);
+      |     [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../nemo/libnemo-private/nemo-action.c:[m[K In function ‘[01m[Kget_final_label[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gstring.h:76:5:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kg_string_free_and_steal[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K-Wunused-result[m[K]
+   72 |   [01;35m[K(__builtin_constant_p (free_segment) ?        \[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;35m[K    ((free_segment) ?                           \[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   74 | [01;35m[K      (g_string_free) ((str), (free_segment)) : \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   75 | [01;35m[K      g_string_free_and_steal (str))            \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   76 | [01;35m[K    :                                           \[m[K
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   77 | [01;35m[K    (g_string_free) ((str), (free_segment)))[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../nemo/libnemo-private/nemo-action.c:1595:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_string_free[m[K’
+ 1595 |     [01;36m[Kg_string_free[m[K (str, FALSE);
+      |     [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../nemo/libnemo-private/nemo-action.c:[m[K In function ‘[01m[Kget_final_tt[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gstring.h:76:5:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kg_string_free_and_steal[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K-Wunused-result[m[K]
+   72 |   [01;35m[K(__builtin_constant_p (free_segment) ?        \[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;35m[K    ((free_segment) ?                           \[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   74 | [01;35m[K      (g_string_free) ((str), (free_segment)) : \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   75 | [01;35m[K      g_string_free_and_steal (str))            \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   76 | [01;35m[K    :                                           \[m[K
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   77 | [01;35m[K    (g_string_free) ((str), (free_segment)))[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../nemo/libnemo-private/nemo-action.c:1620:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_string_free[m[K’
+ 1620 |     [01;36m[Kg_string_free[m[K (str, FALSE);
+      |     [01;36m[K^~~~~~~~~~~~~[m[K
+[139/272] Linking static target libnemo-private/libnemo-private.a
+[140/272] Compiling C object src/nemo-desktop.p/nemo-navigation-state.c.o
+[141/272] Compiling C object src/nemo-desktop.p/nemo-navigation-action.c.o
+[142/272] Compiling C object src/nemo-desktop.p/nemo-mime-actions.c.o
+[143/272] Compiling C object src/nemo-desktop.p/nemo-location-entry.c.o
+[144/272] Compiling C object src/nemo-desktop.p/nemo-location-bar.c.o
+[145/272] Compiling C object src/nemo-desktop.p/nemo-list-view.c.o
+[146/272] Compiling C object src/nemo-desktop.p/nemo-list-model.c.o
+[147/272] Compiling C object src/nemo-desktop.p/nemo-interesting-folder-bar.c.o
+[148/272] Compiling C object src/nemo-desktop.p/nemo-image-properties-page.c.o
+[149/272] Compiling C object src/nemo-desktop.p/nemo-icon-view.c.o
+[150/272] Compiling C object src/nemo-desktop.p/nemo-icon-view-grid-container.c.o
+[151/272] Compiling C object src/nemo-desktop.p/nemo-icon-view-container.c.o
+[152/272] Compiling C object src/nemo-desktop.p/nemo-freedesktop-dbus.c.o
+[153/272] Compiling C object src/nemo-desktop.p/nemo-floating-bar.c.o
+[154/272] Compiling C object src/nemo-desktop.p/nemo-file-management-properties.c.o
+[155/272] Compiling C object src/nemo-desktop.p/nemo-extension-config-widget.c.o
+[156/272] Compiling C object src/nemo-desktop.p/nemo-error-reporting.c.o
+[157/272] Compiling C object src/nemo-desktop.p/nemo-desktop-window.c.o
+[158/272] Compiling C object src/nemo-desktop.p/nemo-desktop-overlay.c.o
+[159/272] Compiling C object src/nemo-desktop.p/nemo-desktop-manager.c.o
+[160/272] Compiling C object src/nemo-desktop.p/nemo-desktop-item-properties.c.o
+[161/272] Compiling C object src/nemo-desktop.p/nemo-desktop-icon-grid-view.c.o
+[162/272] Compiling C object src/nemo-desktop.p/nemo-connect-server-operation.c.o
+[163/272] Compiling C object src/nemo-desktop.p/nemo-connect-server-dialog.c.o
+[164/272] Compiling C object src/nemo-desktop.p/nemo-connect-server-dialog-nonmain.c.o
+[165/272] Compiling C object src/nemo-desktop.p/nemo-config-base-widget.c.o
+[166/272] Compiling C object src/nemo-desktop.p/nemo-bookmarks-window.c.o
+[167/272] Compiling C object src/nemo-desktop.p/nemo-bookmark-list.c.o
+[168/272] Compiling C object src/nemo-desktop.p/nemo-blank-desktop-window.c.o
+[169/272] Compiling C object src/nemo-desktop.p/nemo-application.c.o
+[170/272] Compiling C object src/nemo-desktop.p/nemo-action-config-widget.c.o
+[171/272] Compiling C object src/nemo-desktop.p/meson-generated_.._nemo-cinnamon-dbus.c.o
+[172/272] Compiling C object src/nemo-desktop.p/meson-generated_.._nemo-freedesktop-generated.c.o
+[01m[K../nemo/src/nemo-view.c:[m[K In function ‘[01m[Kfiles_added_callback[m[K’:
+[01m[K../nemo/src/nemo-view.c:4043:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kwindow[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+ 4043 |         GtkWindow *[01;35m[Kwindow[m[K;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K../nemo/src/nemo-view.c:[m[K In function ‘[01m[Kfiles_changed_callback[m[K’:
+[01m[K../nemo/src/nemo-view.c:4068:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kwindow[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+ 4068 |         GtkWindow *[01;35m[Kwindow[m[K;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K../nemo/src/nemo-view.c:[m[K In function ‘[01m[Knemo_view_notify_selection_changed[m[K’:
+[01m[K../nemo/src/nemo-view.c:10347:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kwindow[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+10347 |         GtkWindow *[01;35m[Kwindow[m[K;
+      |                    [01;35m[K^~~~~~[m[K
+[173/272] Compiling C object src/nemo.p/nemo-main.c.o
+[174/272] Compiling C object src/nemo.p/nemo-main-application.c.o
+[175/272] Compiling C object src/nemo.p/nemo-x-content-bar.c.o
+[176/272] Compiling C object src/nemo.p/nemo-window.c.o
+In file included from [01m[K/usr/include/glib-2.0/glib/giochannel.h:36[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:56[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gdk/gdkconfig.h:8[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gdk/gdk.h:30[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gtk/gtk.h:30[m[K,
+                 from [01m[K../nemo/src/nemo-properties-window.h:29[m[K,
+                 from [01m[K../nemo/src/nemo-properties-window.c:27[m[K:
+[01m[K../nemo/src/nemo-properties-window.c:[m[K In function ‘[01m[Kget_pending_key[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gstring.h:76:5:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kg_string_free_and_steal[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K-Wunused-result[m[K]
+   72 |   [01;35m[K(__builtin_constant_p (free_segment) ?        \[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;35m[K    ((free_segment) ?                           \[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   74 | [01;35m[K      (g_string_free) ((str), (free_segment)) : \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   75 | [01;35m[K      g_string_free_and_steal (str))            \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   76 | [01;35m[K    :                                           \[m[K
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   77 | [01;35m[K    (g_string_free) ((str), (free_segment)))[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../nemo/src/nemo-properties-window.c:4739:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_string_free[m[K’
+ 4739 |         [01;36m[Kg_string_free[m[K (key, FALSE);
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[177/272] Compiling C object src/nemo.p/nemo-window-slot.c.o
+[178/272] Compiling C object src/nemo.p/nemo-window-slot-dnd.c.o
+[179/272] Compiling C object src/nemo.p/nemo-window-pane.c.o
+[180/272] Compiling C object src/nemo.p/nemo-window-menus.c.o
+[181/272] Compiling C object src/nemo.p/nemo-window-manage-views.c.o
+[182/272] Compiling C object src/nemo.p/nemo-window-bookmarks.c.o
+[183/272] Compiling C object src/nemo.p/nemo-view.c.o
+[01m[K../nemo/src/nemo-desktop-manager.c:82:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Krun_state_str[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+   82 | [01;35m[Krun_state_str[m[K (RunState state)
+      | [01;35m[K^~~~~~~~~~~~~[m[K
+[184/272] Compiling C object src/nemo.p/nemo-view-factory.c.o
+[185/272] Compiling C object src/nemo.p/nemo-view-dnd.c.o
+[186/272] Compiling C object src/nemo.p/nemo-tree-sidebar.c.o
+[187/272] Compiling C object src/nemo.p/nemo-tree-sidebar-model.c.o
+[188/272] Compiling C object src/nemo.p/nemo-trash-bar.c.o
+[189/272] Compiling C object src/nemo.p/nemo-toolbar.c.o
+[190/272] Compiling C object src/nemo.p/nemo-thumbnail-problem-bar.c.o
+[191/272] Compiling C object src/nemo.p/nemo-statusbar.c.o
+[192/272] Compiling C object src/nemo.p/nemo-self-check-functions.c.o
+[193/272] Compiling C object src/nemo.p/nemo-template-config-widget.c.o
+[194/272] Compiling C object src/nemo.p/nemo-query-editor.c.o
+[195/272] Compiling C object src/nemo.p/nemo-properties-window.c.o
+[196/272] Compiling C object src/nemo.p/nemo-progress-ui-handler.c.o
+[197/272] Compiling C object src/nemo.p/nemo-progress-info-widget.c.o
+[198/272] Compiling C object src/nemo.p/nemo-previewer.c.o
+[199/272] Compiling C object src/nemo.p/nemo-plugin-manager.c.o
+[200/272] Compiling C object src/nemo.p/nemo-places-sidebar.c.o
+[201/272] Compiling C object src/nemo.p/nemo-pathbar.c.o
+[202/272] Compiling C object src/nemo.p/nemo-notebook.c.o
+[203/272] Compiling C object src/nemo.p/nemo-navigation-state.c.o
+[204/272] Compiling C object src/nemo.p/nemo-navigation-action.c.o
+[205/272] Compiling C object src/nemo.p/nemo-mime-actions.c.o
+[206/272] Compiling C object src/nemo.p/nemo-location-entry.c.o
+[207/272] Compiling C object src/nemo.p/nemo-location-bar.c.o
+[208/272] Compiling C object src/nemo.p/nemo-list-view.c.o
+[209/272] Compiling C object src/nemo.p/nemo-list-model.c.o
+[210/272] Compiling C object src/nemo.p/nemo-interesting-folder-bar.c.o
+[211/272] Compiling C object src/nemo.p/nemo-image-properties-page.c.o
+[212/272] Compiling C object src/nemo.p/nemo-icon-view.c.o
+[213/272] Compiling C object src/nemo.p/nemo-icon-view-grid-container.c.o
+[214/272] Compiling C object src/nemo.p/nemo-icon-view-container.c.o
+[215/272] Compiling C object src/nemo.p/nemo-freedesktop-dbus.c.o
+[216/272] Compiling C object src/nemo.p/nemo-floating-bar.c.o
+[217/272] Compiling C object src/nemo.p/nemo-file-management-properties.c.o
+[218/272] Compiling C object src/nemo.p/nemo-extension-config-widget.c.o
+[219/272] Compiling C object src/nemo.p/nemo-error-reporting.c.o
+[220/272] Compiling C object src/nemo.p/nemo-desktop-window.c.o
+[221/272] Compiling C object src/nemo.p/nemo-desktop-overlay.c.o
+[222/272] Compiling C object src/nemo.p/nemo-desktop-manager.c.o
+[223/272] Compiling C object src/nemo.p/nemo-desktop-item-properties.c.o
+[224/272] Compiling C object src/nemo.p/nemo-desktop-icon-grid-view.c.o
+[225/272] Compiling C object src/nemo.p/nemo-connect-server-operation.c.o
+[226/272] Compiling C object src/nemo.p/nemo-connect-server-dialog.c.o
+[227/272] Compiling C object src/nemo.p/nemo-connect-server-dialog-nonmain.c.o
+In file included from [01m[K/usr/include/glib-2.0/glib/giochannel.h:36[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:56[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gdk/gdkconfig.h:8[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gdk/gdk.h:30[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gtk/gtk.h:30[m[K,
+                 from [01m[K../nemo/src/nemo-properties-window.h:29[m[K,
+                 from [01m[K../nemo/src/nemo-properties-window.c:27[m[K:
+[01m[K../nemo/src/nemo-properties-window.c:[m[K In function ‘[01m[Kget_pending_key[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gstring.h:76:5:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kg_string_free_and_steal[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K-Wunused-result[m[K]
+   72 |   [01;35m[K(__builtin_constant_p (free_segment) ?        \[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;35m[K    ((free_segment) ?                           \[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   74 | [01;35m[K      (g_string_free) ((str), (free_segment)) : \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   75 | [01;35m[K      g_string_free_and_steal (str))            \[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   76 | [01;35m[K    :                                           \[m[K
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   77 | [01;35m[K    (g_string_free) ((str), (free_segment)))[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../nemo/src/nemo-properties-window.c:4739:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_string_free[m[K’
+ 4739 |         [01;36m[Kg_string_free[m[K (key, FALSE);
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[228/272] Compiling C object src/nemo.p/nemo-config-base-widget.c.o
+[229/272] Compiling C object src/nemo.p/nemo-bookmarks-window.c.o
+[230/272] Compiling C object src/nemo.p/nemo-bookmark-list.c.o
+[231/272] Compiling C object src/nemo.p/nemo-blank-desktop-window.c.o
+[232/272] Compiling C object src/nemo.p/nemo-application.c.o
+[233/272] Compiling C object src/nemo.p/nemo-action-config-widget.c.o
+[234/272] Compiling C object src/nemo.p/meson-generated_.._nemo-cinnamon-dbus.c.o
+[235/272] Compiling C object src/nemo.p/meson-generated_.._nemo-freedesktop-generated.c.o
+[236/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-menu-provider.c.o
+[237/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-menu-item.c.o
+[01m[K../nemo/src/nemo-view.c:[m[K In function ‘[01m[Kfiles_added_callback[m[K’:
+[01m[K../nemo/src/nemo-view.c:4043:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kwindow[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+ 4043 |         GtkWindow *[01;35m[Kwindow[m[K;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K../nemo/src/nemo-view.c:[m[K In function ‘[01m[Kfiles_changed_callback[m[K’:
+[01m[K../nemo/src/nemo-view.c:4068:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kwindow[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+ 4068 |         GtkWindow *[01;35m[Kwindow[m[K;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K../nemo/src/nemo-view.c:[m[K In function ‘[01m[Knemo_view_notify_selection_changed[m[K’:
+[01m[K../nemo/src/nemo-view.c:10347:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kwindow[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+10347 |         GtkWindow *[01;35m[Kwindow[m[K;
+      |                    [01;35m[K^~~~~~[m[K
+[238/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-location-widget-provider.c.o
+[239/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-info-provider.c.o
+[240/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-file-info.c.o
+[241/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-desktop-preferences.c.o
+[242/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-column.c.o
+[243/272] Compiling C object libnemo-extension/libnemo-extension.so.1.4.0.p/nemo-column-provider.c.o
+[244/272] Compiling C object eel/libeel.a.p/eel-lib-self-check-functions.c.o
+[245/272] Compiling C object eel/libeel.a.p/eel-gtk-extensions.c.o
+[246/272] Compiling C object eel/libeel.a.p/eel-graphic-effects.c.o
+[247/272] Compiling C object eel/libeel.a.p/eel-gnome-extensions.c.o
+[248/272] Compiling C object eel/libeel.a.p/eel-glib-extensions.c.o
+[249/272] Compiling C object eel/libeel.a.p/eel-gdk-extensions.c.o
+[250/272] Compiling C object eel/libeel.a.p/eel-editable-label.c.o
+[251/272] Compiling C object eel/libeel.a.p/eel-debug.c.o
+[252/272] Compiling C object eel/libeel.a.p/eel-canvas.c.o
+[253/272] Compiling C object eel/libeel.a.p/eel-art-extensions.c.o
+[254/272] Compiling C object eel/libeel.a.p/eel-accessibility.c.o
+[255/272] Generating data/nemo.xml with a custom command
+[01m[K../nemo/src/nemo-desktop-manager.c:82:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Krun_state_str[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+   82 | [01;35m[Krun_state_str[m[K (RunState state)
+      | [01;35m[K^~~~~~~~~~~~~[m[K
+[256/272] Compiling C object cut-n-paste-code/libegg/libegg.a.p/eggtreemultidnd.c.o
+[257/272] Linking target libnemo-extension/libnemo-extension.so.1.4.0
+[258/272] Linking static target cut-n-paste-code/libegg/libegg.a
+[259/272] Linking static target eel/libeel.a
+[260/272] Linking target eel/check-program
+[261/272] Generating libnemo-extension/Nemo-3.0.gir with a custom command (wrapped by meson to set env)
+[262/272] Generating symbol file libnemo-extension/libnemo-extension.so.1.4.0.p/libnemo-extension.so.1.4.0.symbols
+[263/272] Linking target test/test-nemo-copy
+[264/272] Linking target test/test-nemo-directory-async
+[265/272] Linking target test/test-nemo-search-engine
+[266/272] Linking target src/nemo-extensions-list
+[267/272] Linking target src/nemo-open-with
+[268/272] Linking target src/nemo-connect-server
+[269/272] Linking target src/nemo-autorun-software
+[270/272] Linking target src/nemo-desktop
+[271/272] Linking target src/nemo
+<unknown>:: Warning: Nemo: (Interface)FileInfo: Couldn't find associated structure for 'FileInfo'
+[272/272] Generating libnemo-extension/Nemo-3.0.typelib with a custom command

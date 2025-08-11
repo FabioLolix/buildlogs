@@ -1,0 +1,68 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 libnpupnp build
+The Meson build system
+Version: 1.8.3
+Source dir: /build/libnpupnp-git/src/libnpupnp
+Build dir: /build/libnpupnp-git/src/build
+Build type: native build
+Project name: libnpupnp
+Project version: 6.2.1
+C++ compiler for the host machine: c++ (gcc 15.1.1 "c++ (GCC) 15.1.1 20250729")
+C++ linker for the host machine: c++ ld.bfd 2.45.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Run-time dependency threads found: YES
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency libcurl found: YES 8.15.0
+Run-time dependency libmicrohttpd found: YES 1.0.2
+Run-time dependency expat found: YES 2.7.1
+Compiler for C++ supports arguments -Wno-deprecated-declarations: YES 
+Compiler for C++ supports arguments /D_CRT_SECURE_NO_WARNINGS: NO 
+Compiler for C++ supports arguments /wd4251: NO 
+Configuring autoconfig.h using configuration
+Configuring upnpconfig.h using configuration
+Build targets in project: 1
+
+libnpupnp 6.2.1
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/1 eta ?                                              Writing build.ninja:   0%|          | 0/54 eta ?                                                ninja: Entering directory `/build/libnpupnp-git/src/build'
+[1/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_ssdp_ssdpparser.cpp.o
+[2/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_utils_md5.cpp.o
+[3/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_threadutil_TimerThread.cpp.o
+[4/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_utils_genut.cpp.o
+[5/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_utils_statcodes.cpp.o
+[6/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_gena_gena_callback2.cpp.o
+[7/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_utils_utf8iter.cpp.o
+[8/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_api_upnpdebug.cpp.o
+[9/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_gena_gena_sids.cpp.o
+[10/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_threadutil_ThreadPool.cpp.o
+[11/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_gena_service_table.cpp.o
+[12/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_utils_description.cpp.o
+[13/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_api_upnptools.cpp.o
+[14/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_utils_uri.cpp.o
+[15/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_utils_netif.cpp.o
+[16/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_utils_httputils.cpp.o
+[17/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_dispatcher_miniserver.cpp.o
+[18/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_utils_smallut.cpp.o
+[19/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_ssdp_ssdp_ctrlpt.cpp.o
+[20/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_ssdp_ssdp_server.cpp.o
+[21/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_gena_gena_device.cpp.o
+[22/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_soap_soap_ctrlpt.cpp.o
+[23/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_soap_soap_device.cpp.o
+[24/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_ssdp_ssdp_device.cpp.o
+[25/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_gena_gena_ctrlpt.cpp.o
+[26/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_api_upnpapi.cpp.o
+[27/28] Compiling C++ object libnpupnp.so.13.3.1.p/src_webserver_webserver.cpp.o
+[28/28] Linking target libnpupnp.so.13.3.1
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/libnpupnp-git/src/build

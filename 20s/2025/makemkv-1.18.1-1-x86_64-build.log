@@ -1,0 +1,527 @@
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for -objcopy... no
+checking for objcopy... objcopy
+checking for -ld... /usr/bin/ld -m elf_x86_64
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether g++ supports C++11 features with -std=c++11... yes
+checking for zlib.h... yes
+checking for compress2 in -lz... yes
+checking for openssl/opensslconf.h... yes
+checking for AES_encrypt in -lcrypto... yes
+checking for expat.h... yes
+checking for XML_ParserCreate in -lexpat... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libavcodec libavutil... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether LIBAVCODEC_VERSION_MAJOR is declared... yes
+checking LIBAVCODEC_VERSION_MAJOR... 61
+checking whether avcodec_send_frame is declared... yes
+checking for struct AVChannelLayout... yes
+checking for av_log_format_line... yes
+checking for AVCodecParserContext.duration... yes
+checking for av_codec_iterate... yes
+checking for Qt5Core Qt5Gui Qt5Widgets Qt5DBus... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libffabi/src/ffabicfg.h
+config.status: executing libtool commands
+mkdir -p out
+g++ -std=c++11 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_ -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -D_REENTRANT -shared -Wl,-z,defs -oout/libdriveio.so.0.full -I./libdriveio/inc libdriveio/src/infolist.cpp libdriveio/src/scsihlp.cpp libdriveio/src/srlist.cpp libdriveio/src/stdquery.cpp libdriveio/src/tipclient.cpp libdriveio/src/tipcommon.cpp libdriveio/src/tipserver.cpp \
+-fPIC -Xlinker -dy -Xlinker --version-script=libdriveio/src/libdriveio.vers \
+-Xlinker -soname=libdriveio.so.0 -lc -lstdc++
+mkdir -p tmp
+mkdir -p tmp/libabi/src/
+mkdir -p tmp/libabi/src/
+mkdir -p tmp/libabi/src/
+mkdir -p tmp/libabi/src/
+mkdir -p tmp/libabi/src/
+mkdir -p tmp/libabi/src/
+mkdir -p tmp/libffabi/src/
+mkdir -p tmp/libffabi/src/
+echo "#define BUILDINFO_ARCH_NAME \"x86_64-pc-linux-gnu\"" >> tmp/gen_buildinfo.h
+mkdir -p tmp/libffabi/src/
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libabi/src/ossl_aes.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libabi/src/ossl_aes.c
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libabi/src/ossl_sha.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libabi/src/ossl_sha.c
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libabi/src/ossl_ec.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libabi/src/ossl_ec.c
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libabi/src/zlib.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libabi/src/zlib.c
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libabi/src/xpat.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libabi/src/xpat.c
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libabi/src/libm.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libabi/src/libm.c
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libffabi/src/ffabi.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libffabi/src/ffabi.c
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libffabi/src/mlp.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libffabi/src/mlp.c
+mkdir -p tmp/libffabi/src/
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libffabi/src/log.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libffabi/src/log.c
+mkdir -p tmp/libffabi/src/
+echo "#define BUILDINFO_BUILD_DATE \"Sun Aug 10 22:15:23 UTC 2025\"" >> tmp/gen_buildinfo.h
+mkdir -p tmp/libffabi/src/
+mkdir -p tmp
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libffabi/src/audio_convert.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libffabi/src/audio_convert.c
+mkdir -p tmp
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libffabi/src/audio_mix.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libffabi/src/audio_mix.c
+gcc -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_  -D_GNU_SOURCE -D_REENTRANT -otmp/libffabi/src/audio_mix_matrix.c.o -I./libabi/inc -I./libffabi/inc \
+-DHAVE_BUILDINFO_H -Itmp  -fPIC libffabi/src/audio_mix_matrix.c
+mkdir -p tmp
+/usr/bin/moc -o tmp/moc_mainwnd.cpp makemkvgui/src/mainwnd.h
+/usr/bin/moc -o tmp/moc_logtext.cpp makemkvgui/src/logtext.h
+mkdir -p tmp
+mkdir -p tmp
+mkdir -p tmp
+mkdir -p tmp
+/usr/bin/moc -o tmp/moc_dirselectbox.cpp makemkvgui/src/dirselectbox.h
+/usr/bin/moc -o tmp/moc_aboutbox.cpp makemkvgui/src/aboutbox.h
+/usr/bin/moc -o tmp/moc_settingdlg.cpp makemkvgui/src/settingdlg.h
+mkdir -p tmp
+/usr/bin/moc -o tmp/moc_backupdlg.cpp makemkvgui/src/backupdlg.h
+/usr/bin/moc -o tmp/moc_lineeditk.cpp makemkvgui/src/lineeditk.h
+mkdir -p tmp
+mkdir -p tmp
+mkdir -p tmp
+/usr/bin/moc -o tmp/moc_dvdbox.cpp makemkvgui/src/dvdbox.h
+/usr/bin/moc -o tmp/moc_drivebox.cpp makemkvgui/src/drivebox.h
+mkdir -p tmp
+/usr/bin/moc -o tmp/moc_toolbuttonp.cpp makemkvgui/src/toolbuttonp.h
+mkdir -p out
+/usr/bin/moc -o tmp/moc_regbox.cpp makemkvgui/src/regbox.h
+mkdir -p out
+/usr/bin/ld -m elf_x86_64 -r -b binary -z noexecstack -o tmp/image_data.o makemkvgui/bin/image_data.bin
+libabi/src/ossl_aes.c: In function ‘OSSL_AES_set_encrypt_key’:
+g++ -std=c++11 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_ -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -D_REENTRANT -shared -Wl,-z,defs -oout/libmmbd.so.0.full -I./makemkvgui/inc -I./libmmbd/inc -I./libdriveio/inc \
+-I./libmakemkv/inc -I./sstring/inc -I./libabi/inc makemkvgui/src/client.cpp makemkvgui/src/clt_pipe.cpp makemkvgui/src/clt_std.cpp makemkvgui/src/utf8.cpp makemkvgui/src/marshall.cpp libmmbd/src/marmmbd.cpp libmmbd/src/nstring.cpp libmmbd/src/mmbd.cpp libmmbd/src/mmconn.cpp libmmbd/src/mmbdipc.cpp libmmbd/src/aacs.cpp libmmbd/src/bdplus.cpp libmmbd/src/crypto_ossl.cpp libmmbd/src/aacslog.cpp makemkvgui/src/api_posix.cpp makemkvgui/src/api_linux.cpp makemkvgui/src/sem_posix.cpp makemkvgui/src/spawn_posix.cpp sstring/src/sstring.cpp \
+libdriveio/src/srlist.cpp \
+-fPIC -Xlinker -dy -Xlinker --version-script=libmmbd/src/libmmbd.vers \
+-Xlinker -soname=libmmbd.so.0 -lc -lstdc++ -lrt -lpthread -lcrypto -ldl
+libabi/src/ossl_aes.c:34:5: warning: ‘AES_set_encrypt_key’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   34 |     return AES_set_encrypt_key(userKey,bits,(AES_KEY*)key);
+      |     ^~~~~~
+In file included from libabi/src/ossl_aes.c:22:
+/usr/include/openssl/aes.h:51:5: note: declared here
+   51 | int AES_set_encrypt_key(const unsigned char *userKey, const int bits,
+      |     ^~~~~~~~~~~~~~~~~~~
+libabi/src/ossl_aes.c: In function ‘OSSL_AES_set_decrypt_key’:
+libabi/src/ossl_aes.c:40:5: warning: ‘AES_set_decrypt_key’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   40 |     return AES_set_decrypt_key(userKey,bits,(AES_KEY*)key);
+      |     ^~~~~~
+/usr/include/openssl/aes.h:54:5: note: declared here
+   54 | int AES_set_decrypt_key(const unsigned char *userKey, const int bits,
+      |     ^~~~~~~~~~~~~~~~~~~
+libabi/src/ossl_aes.c: In function ‘OSSL_AES_encrypt’:
+libabi/src/ossl_aes.c:46:5: warning: ‘AES_encrypt’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   46 |     AES_encrypt(in,out,(AES_KEY*)key);
+      |     ^~~~~~~~~~~
+/usr/include/openssl/aes.h:57:6: note: declared here
+   57 | void AES_encrypt(const unsigned char *in, unsigned char *out,
+      |      ^~~~~~~~~~~
+mkdir -p out
+libabi/src/ossl_aes.c: In function ‘OSSL_AES_decrypt’:
+libabi/src/ossl_aes.c:52:5: warning: ‘AES_decrypt’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   52 |     AES_decrypt(in,out,(AES_KEY*)key);
+      |     ^~~~~~~~~~~
+/usr/include/openssl/aes.h:60:6: note: declared here
+   60 | void AES_decrypt(const unsigned char *in, unsigned char *out,
+      |      ^~~~~~~~~~~
+libabi/src/ossl_aes.c: In function ‘OSSL_AES_cbc_decrypt’:
+libabi/src/ossl_aes.c:59:5: warning: ‘AES_cbc_encrypt’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   59 |     AES_cbc_encrypt(in,out,length,(AES_KEY*)key,ivec,AES_DECRYPT);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/openssl/aes.h:66:6: note: declared here
+   66 | void AES_cbc_encrypt(const unsigned char *in, unsigned char *out,
+      |      ^~~~~~~~~~~~~~~
+gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_ -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -DMMCCXTR=1  -DHAVE_BUILDINFO_H -Itmp -D_GNU_SOURCE -oout/mmccextr.full mmccextr/ccextractor.c mmccextr/lib_ccx/activity.c mmccextr/lib_ccx/ccx_common_char_encoding.c mmccextr/lib_ccx/ccx_common_common.c mmccextr/lib_ccx/ccx_common_constants.c mmccextr/lib_ccx/ccx_common_option.c mmccextr/lib_ccx/ccx_common_timing.c mmccextr/lib_ccx/ccx_decoders_608.c mmccextr/lib_ccx/ccx_decoders_common.c mmccextr/lib_ccx/ccx_demuxer.c mmccextr/lib_ccx/ccx_encoders_common.c mmccextr/lib_ccx/ccx_encoders_helpers.c mmccextr/lib_ccx/ccx_encoders_srt.c mmccextr/lib_ccx/file_functions.c mmccextr/lib_ccx/general_loop.c mmccextr/lib_ccx/lib_ccx.c mmccextr/lib_ccx/output.c mmccextr/lib_ccx/params.c mmccextr/lib_ccx/params_dump.c mmccextr/lib_ccx/sequencing.c mmccextr/lib_ccx/utility.c -lc \
+-ffunction-sections -Wl,--gc-sections -Wl,-z,defs
+libabi/src/ossl_sha.c: In function ‘OSSL_SHA1_Init’:
+libabi/src/ossl_sha.c:33:5: warning: ‘SHA1_Init’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   33 |     return SHA1_Init((SHA_CTX*)c);
+      |     ^~~~~~
+In file included from libabi/src/ossl_sha.c:22:
+/usr/include/openssl/sha.h:49:27: note: declared here
+   49 | OSSL_DEPRECATEDIN_3_0 int SHA1_Init(SHA_CTX *c);
+      |                           ^~~~~~~~~
+libabi/src/ossl_sha.c: In function ‘OSSL_SHA1_Update’:
+libabi/src/ossl_sha.c:38:5: warning: ‘SHA1_Update’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   38 |     return SHA1_Update((SHA_CTX*)c,data,len);
+      |     ^~~~~~
+/usr/include/openssl/sha.h:50:27: note: declared here
+   50 | OSSL_DEPRECATEDIN_3_0 int SHA1_Update(SHA_CTX *c, const void *data, size_t len);
+      |                           ^~~~~~~~~~~
+libabi/src/ossl_sha.c: In function ‘OSSL_SHA1_Final’:
+libabi/src/ossl_sha.c:43:5: warning: ‘SHA1_Final’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   43 |     return SHA1_Final(md,(SHA_CTX*)c);
+      |     ^~~~~~
+/usr/include/openssl/sha.h:51:27: note: declared here
+   51 | OSSL_DEPRECATEDIN_3_0 int SHA1_Final(unsigned char *md, SHA_CTX *c);
+      |                           ^~~~~~~~~~
+libabi/src/ossl_sha.c: In function ‘OSSL_SHA256_Init’:
+libabi/src/ossl_sha.c:53:5: warning: ‘SHA256_Init’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   53 |     return SHA256_Init((SHA256_CTX*)c);
+      |     ^~~~~~
+/usr/include/openssl/sha.h:73:27: note: declared here
+   73 | OSSL_DEPRECATEDIN_3_0 int SHA256_Init(SHA256_CTX *c);
+      |                           ^~~~~~~~~~~
+libabi/src/ossl_sha.c: In function ‘OSSL_SHA256_Update’:
+libabi/src/ossl_sha.c:58:5: warning: ‘SHA256_Update’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   58 |     return SHA256_Update((SHA256_CTX*)c, data, len);
+      |     ^~~~~~
+/usr/include/openssl/sha.h:74:27: note: declared here
+   74 | OSSL_DEPRECATEDIN_3_0 int SHA256_Update(SHA256_CTX *c,
+      |                           ^~~~~~~~~~~~~
+libabi/src/ossl_sha.c: In function ‘OSSL_SHA256_Final’:
+libabi/src/ossl_sha.c:63:5: warning: ‘SHA256_Final’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   63 |     return SHA256_Final(md, (SHA256_CTX*)c);
+      |     ^~~~~~
+/usr/include/openssl/sha.h:76:27: note: declared here
+   76 | OSSL_DEPRECATEDIN_3_0 int SHA256_Final(unsigned char *md, SHA256_CTX *c);
+      |                           ^~~~~~~~~~~~
+gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_ -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -I./mmgpl -I./mmgpl/dvdnav -I./mmgpl/dvdread -I./makemkvgui/inc -I./libmakemkv/inc \
+-I./libdriveio/inc -I./libabi/inc -DLOG_DEBUG=1 -DTRACE=1 -DDVDNAV_NO_CACHE=1 -DDVDNAV_NO_LOCKING=1 -DDVDNAV_NO_TXTDT=1 -DDVDNAV_NO_ERRSTR=1 -D_GNU_SOURCE -Dstl=std -oout/mmgplsrv.full mmgpl/mmgpl.cpp mmgpl/dvdnavsrv.cpp mmgpl/dvdread.cpp mmgpl/navapi.cpp makemkvgui/src/clt_pipe.cpp mmgpl/dvdread/bitreader.c mmgpl/dvdread/ifo_read.c mmgpl/dvdread/logger.c mmgpl/dvdread/nav_read.c mmgpl/dvdnav/dvdnav.c mmgpl/dvdnav/highlight.c mmgpl/dvdnav/logger.c mmgpl/dvdnav/navigation.c mmgpl/dvdnav/settings.c mmgpl/dvdnav/vm/decoder.c mmgpl/dvdnav/vm/getset.c mmgpl/dvdnav/vm/play.c mmgpl/dvdnav/vm/rand.cpp mmgpl/dvdnav/vm/vm.c mmgpl/dvdnav/vm/vmcmd.c mmgpl/dvdnav/vm/vmget.c  makemkvgui/src/api_posix.cpp makemkvgui/src/api_linux.cpp -lc -lstdc++ \
+-ffunction-sections -Wl,--gc-sections -Wl,-z,defs
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_GROUP_set_generator’:
+libabi/src/ossl_ec.c:125:9: warning: ‘EC_GROUP_precompute_mult’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  125 |         EC_GROUP_precompute_mult((EC_GROUP *)grp,NULL);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from libabi/src/ossl_ec.c:41:
+/usr/include/openssl/ec.h:902:27: note: declared here
+  902 | OSSL_DEPRECATEDIN_3_0 int EC_GROUP_precompute_mult(EC_GROUP *group, BN_CTX *ctx);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_GROUP_new_curve_GFp’:
+libabi/src/ossl_ec.c:140:5: warning: ‘EC_GFp_mont_method’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  140 |     meth = EC_GFp_mont_method();
+      |     ^~~~
+/usr/include/openssl/ec.h:129:40: note: declared here
+  129 | OSSL_DEPRECATEDIN_3_0 const EC_METHOD *EC_GFp_mont_method(void);
+      |                                        ^~~~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c:143:5: warning: ‘EC_GROUP_new’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  143 |     grp = EC_GROUP_new(meth);
+      |     ^~~
+/usr/include/openssl/ec.h:174:33: note: declared here
+  174 | OSSL_DEPRECATEDIN_3_0 EC_GROUP *EC_GROUP_new(const EC_METHOD *meth);
+      |                                 ^~~~~~~~~~~~
+libabi/src/ossl_ec.c:146:5: warning: ‘EC_GROUP_set_curve_GFp’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  146 |     if (!EC_GROUP_set_curve_GFp(grp, (const BIGNUM *)p, (const BIGNUM *)a, (const BIGNUM *)b, (BN_CTX *)ctx))
+      |     ^~
+/usr/include/openssl/ec.h:342:27: note: declared here
+  342 | OSSL_DEPRECATEDIN_3_0 int EC_GROUP_set_curve_GFp(EC_GROUP *group,
+      |                           ^~~~~~~~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c:148:9: warning: ‘EC_GROUP_clear_free’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  148 |         EC_GROUP_clear_free(grp);
+      |         ^~~~~~~~~~~~~~~~~~~
+/usr/include/openssl/ec.h:179:28: note: declared here
+  179 | OSSL_DEPRECATEDIN_3_0 void EC_GROUP_clear_free(EC_GROUP *group);
+      |                            ^~~~~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_POINT_set_affine_coordinates_GFp’:
+libabi/src/ossl_ec.c:183:5: warning: ‘EC_POINT_set_affine_coordinates_GFp’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  183 |     return EC_POINT_set_affine_coordinates_GFp((const EC_GROUP *)grp, (EC_POINT *)point,
+      |     ^~~~~~
+/usr/include/openssl/ec.h:665:27: note: declared here
+  665 | OSSL_DEPRECATEDIN_3_0 int EC_POINT_set_affine_coordinates_GFp
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_POINT_get_affine_coordinates_GFp’:
+libabi/src/ossl_ec.c:190:5: warning: ‘EC_POINT_get_affine_coordinates_GFp’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  190 |     return EC_POINT_get_affine_coordinates_GFp((const EC_GROUP *)grp, (const EC_POINT *)point,
+      |     ^~~~~~
+/usr/include/openssl/ec.h:678:27: note: declared here
+  678 | OSSL_DEPRECATEDIN_3_0 int EC_POINT_get_affine_coordinates_GFp
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_KEY_new’:
+libabi/src/ossl_ec.c:196:5: warning: ‘EC_KEY_new’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  196 |     return (OSSL_EC_KEY *)EC_KEY_new();
+      |     ^~~~~~
+/usr/include/openssl/ec.h:987:31: note: declared here
+  987 | OSSL_DEPRECATEDIN_3_0 EC_KEY *EC_KEY_new(void);
+      |                               ^~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_KEY_free’:
+libabi/src/ossl_ec.c:201:5: warning: ‘EC_KEY_free’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  201 |     EC_KEY_free((EC_KEY *)key);
+      |     ^~~~~~~~~~~
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_KEY_get0_group’:
+libabi/src/ossl_ec.c:206:5: warning: ‘EC_KEY_get0_group’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  206 |     return (const OSSL_EC_GROUP *)EC_KEY_get0_group((const EC_KEY *)key);
+      |     ^~~~~~
+/usr/include/openssl/ec.h:1053:39: note: declared here
+ 1053 | OSSL_DEPRECATEDIN_3_0 const EC_GROUP *EC_KEY_get0_group(const EC_KEY *key);
+      |                                       ^~~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_KEY_set_group’:
+libabi/src/ossl_ec.c:211:5: warning: ‘EC_KEY_set_group’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  211 |     return EC_KEY_set_group((EC_KEY *)key, (const EC_GROUP *)grp);
+      |     ^~~~~~
+/usr/include/openssl/ec.h:1061:27: note: declared here
+ 1061 | OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_group(EC_KEY *key, const EC_GROUP *group);
+      |                           ^~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_KEY_set_public_key’:
+libabi/src/ossl_ec.c:216:5: warning: ‘EC_KEY_set_public_key’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  216 |     return EC_KEY_set_public_key((EC_KEY *)key, (const EC_POINT *)point);
+      |     ^~~~~~
+/usr/include/openssl/ec.h:1089:27: note: declared here
+ 1089 | OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_public_key(EC_KEY *key, const EC_POINT *pub);
+      |                           ^~~~~~~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_EC_KEY_set_private_key’:
+libabi/src/ossl_ec.c:221:5: warning: ‘EC_KEY_set_private_key’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  221 |     return EC_KEY_set_private_key((EC_KEY *)key, (const BIGNUM *)a);
+      |     ^~~~~~
+/usr/include/openssl/ec.h:1075:27: note: declared here
+ 1075 | OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_private_key(EC_KEY *key, const BIGNUM *prv);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_ECDSA_do_verify_rs’:
+libabi/src/ossl_ec.c:246:13: warning: ‘ECDSA_do_verify’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  246 |             r = ECDSA_do_verify(dgst,dgst_len,sig,(EC_KEY*) eckey);
+      |             ^
+/usr/include/openssl/ec.h:1410:27: note: declared here
+ 1410 | OSSL_DEPRECATEDIN_3_0 int ECDSA_do_verify(const unsigned char *dgst, int dgst_len,
+      |                           ^~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_ECDSA_sign_setup’:
+libabi/src/ossl_ec.c:290:5: warning: ‘ECDSA_sign_setup’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  290 |     return ECDSA_sign_setup( (EC_KEY *)eckey , NULL, (BIGNUM**) kinv, (BIGNUM**) rp);
+      |     ^~~~~~
+/usr/include/openssl/ec.h:1420:27: note: declared here
+ 1420 | OSSL_DEPRECATEDIN_3_0 int ECDSA_sign_setup(EC_KEY *eckey, BN_CTX *ctx,
+      |                           ^~~~~~~~~~~~~~~~
+libabi/src/ossl_ec.c: In function ‘OSSL_ECDSA_do_sign_ex’:
+libabi/src/ossl_ec.c:295:5: warning: ‘ECDSA_do_sign_ex’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  295 |     return (OSSL_ECDSA_SIG *)ECDSA_do_sign_ex(dgst,dgstlen,(const BIGNUM *)kinv, (const BIGNUM *)rp, (EC_KEY *)eckey);
+      |     ^~~~~~
+/usr/include/openssl/ec.h:1397:34: note: declared here
+ 1397 | OSSL_DEPRECATEDIN_3_0 ECDSA_SIG *ECDSA_do_sign_ex(const unsigned char *dgst,
+      |                                  ^~~~~~~~~~~~~~~~
+mkdir -p out
+g++ -std=c++11 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_ -fPIC -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -oout/makemkv.full -I./makemkvgui/inc -I./libmakemkv/inc -I./sstring/inc \
+-I./libdriveio/inc -I./libabi/inc makemkvgui/src/aboutbox.cpp makemkvgui/src/client.cpp makemkvgui/src/clt_pipe.cpp makemkvgui/src/clt_shm.cpp makemkvgui/src/clt_std.cpp makemkvgui/src/utf8.cpp makemkvgui/src/dirselectbox.cpp makemkvgui/src/regbox.cpp makemkvgui/src/logic.cpp makemkvgui/src/logtext.cpp makemkvgui/src/main.cpp makemkvgui/src/mainwnd.cpp makemkvgui/src/marshall.cpp makemkvgui/src/progress.cpp makemkvgui/src/scsiinfo.cpp makemkvgui/src/settingdlg.cpp makemkvgui/src/uisync.cpp makemkvgui/src/viteminfo.cpp makemkvgui/src/margui.cpp makemkvgui/src/backupdlg.cpp makemkvgui/src/lstring.cpp makemkvgui/src/notify.cpp makemkvgui/src/image.cpp makemkvgui/src/abutton.cpp makemkvgui/src/lineeditk.cpp makemkvgui/src/dvdbox.cpp makemkvgui/src/drivebox.cpp makemkvgui/src/toolbuttonp.cpp makemkvgui/src/api_posix.cpp makemkvgui/src/api_linux.cpp makemkvgui/src/sem_posix.cpp makemkvgui/src/spawn_posix.cpp makemkvgui/src/logic_posix.cpp libabi/src/sys_linux.cpp makemkvgui/src/api_posix_shm.cpp makemkvgui/src/notify_linux.cpp makemkvgui/src/image_linux.cpp tmp/image_data.o tmp/moc_mainwnd.cpp tmp/moc_logtext.cpp tmp/moc_dirselectbox.cpp tmp/moc_aboutbox.cpp tmp/moc_settingdlg.cpp tmp/moc_backupdlg.cpp tmp/moc_lineeditk.cpp tmp/moc_dvdbox.cpp tmp/moc_drivebox.cpp tmp/moc_toolbuttonp.cpp tmp/moc_regbox.cpp \
+sstring/src/sstring.cpp libdriveio/src/srlist.cpp \
+-DHAVE_BUILDINFO_H -Itmp \
+-DQT_WIDGETS_LIB -I/usr/include/qt/QtWidgets -I/usr/include/qt -DQT_GUI_LIB -I/usr/include/qt/QtGui -DQT_DBUS_LIB -I/usr/include/qt/QtDBus -DQT_CORE_LIB -I/usr/include/qt/QtCore -lc -lstdc++ \
+-lQt5Widgets -lQt5Gui -lQt5DBus -lQt5Core -lpthread -lz -lrt
+libffabi/src/ffabi.c: In function ‘ffm_audio_decode_close’:
+libffabi/src/ffabi.c:214:9: warning: ‘avcodec_close’ is deprecated [-Wdeprecated-declarations]
+  214 |         avcodec_close(ctx->avctx);
+      |         ^~~~~~~~~~~~~
+In file included from libffabi/src/ffabi.c:22:
+/usr/include/libavcodec/avcodec.h:2398:5: note: declared here
+ 2398 | int avcodec_close(AVCodecContext *avctx);
+      |     ^~~~~~~~~~~~~
+libffabi/src/ffabi.c: In function ‘ffm_audio_encode_close’:
+libffabi/src/ffabi.c:423:9: warning: ‘avcodec_close’ is deprecated [-Wdeprecated-declarations]
+  423 |         avcodec_close(ctx->avctx);
+      |         ^~~~~~~~~~~~~
+/usr/include/libavcodec/avcodec.h:2398:5: note: declared here
+ 2398 | int avcodec_close(AVCodecContext *avctx);
+      |     ^~~~~~~~~~~~~
+libffabi/src/ffabi.c: In function ‘set_codec_info_extended’:
+libffabi/src/ffabi.c:544:5: warning: ‘ch_layouts’ is deprecated [-Wdeprecated-declarations]
+  544 |     if (NULL != codec->ch_layouts) {
+      |     ^~
+In file included from /usr/include/libavcodec/avcodec.h:41:
+/usr/include/libavcodec/codec.h:241:28: note: declared here
+  241 |     const AVChannelLayout *ch_layouts;
+      |                            ^~~~~~~~~~
+libffabi/src/ffabi.c:545:9: warning: ‘ch_layouts’ is deprecated [-Wdeprecated-declarations]
+  545 |         while (0 != codec->ch_layouts[count_ch_layouts_in].nb_channels)
+      |         ^~~~~
+/usr/include/libavcodec/codec.h:241:28: note: declared here
+  241 |     const AVChannelLayout *ch_layouts;
+      |                            ^~~~~~~~~~
+libffabi/src/ffabi.c:563:9: warning: ‘ch_layouts’ is deprecated [-Wdeprecated-declarations]
+  563 |         if (AV_CHANNEL_ORDER_NATIVE != codec->ch_layouts[i].order) continue;
+      |         ^~
+/usr/include/libavcodec/codec.h:241:28: note: declared here
+  241 |     const AVChannelLayout *ch_layouts;
+      |                            ^~~~~~~~~~
+libffabi/src/ffabi.c:564:9: warning: ‘ch_layouts’ is deprecated [-Wdeprecated-declarations]
+  564 |         channel_layouts[count_ch_layouts_out++] = codec->ch_layouts[i].u.mask;
+      |         ^~~~~~~~~~~~~~~
+/usr/include/libavcodec/codec.h:241:28: note: declared here
+  241 |     const AVChannelLayout *ch_layouts;
+      |                            ^~~~~~~~~~
+libffabi/src/ffabi.c: In function ‘ffm_audio_get_codec_information’:
+libffabi/src/ffabi.c:591:5: warning: ‘supported_samplerates’ is deprecated [-Wdeprecated-declarations]
+  591 |     info->sample_rates = codec->supported_samplerates;
+      |     ^~~~
+/usr/include/libavcodec/codec.h:217:16: note: declared here
+  217 |     const int *supported_samplerates;       ///< @deprecated use avcodec_get_supported_config()
+      |                ^~~~~~~~~~~~~~~~~~~~~
+libffabi/src/ffabi.c:595:5: warning: ‘ch_layouts’ is deprecated [-Wdeprecated-declarations]
+  595 |     if (NULL == codec->ch_layouts) {
+      |     ^~
+/usr/include/libavcodec/codec.h:241:28: note: declared here
+  241 |     const AVChannelLayout *ch_layouts;
+      |                            ^~~~~~~~~~
+libffabi/src/ffabi.c:614:5: warning: ‘sample_fmts’ is deprecated [-Wdeprecated-declarations]
+  614 |     if (codec->sample_fmts) {
+      |     ^~
+/usr/include/libavcodec/codec.h:219:32: note: declared here
+  219 |     const enum AVSampleFormat *sample_fmts; ///< @deprecated use avcodec_get_supported_config()
+      |                                ^~~~~~~~~~~
+libffabi/src/ffabi.c:616:13: warning: ‘sample_fmts’ is deprecated [-Wdeprecated-declarations]
+  616 |             if (codec->sample_fmts[i]==AV_SAMPLE_FMT_NONE)
+      |             ^~
+/usr/include/libavcodec/codec.h:219:32: note: declared here
+  219 |     const enum AVSampleFormat *sample_fmts; ///< @deprecated use avcodec_get_supported_config()
+      |                                ^~~~~~~~~~~
+libffabi/src/ffabi.c:618:13: warning: ‘sample_fmts’ is deprecated [-Wdeprecated-declarations]
+  618 |             info->sample_formats[i]=(uint8_t)back_translate_sample_fmt(codec->sample_fmts[i]);
+      |             ^~~~
+/usr/include/libavcodec/codec.h:219:32: note: declared here
+  219 |     const enum AVSampleFormat *sample_fmts; ///< @deprecated use avcodec_get_supported_config()
+      |                                ^~~~~~~~~~~
+libffabi/src/ffabi.c: In function ‘ffm_mlp_read_syncframe’:
+libffabi/src/ffabi.c:698:9: warning: ‘avcodec_close’ is deprecated [-Wdeprecated-declarations]
+  698 |         avcodec_close(avctx);
+      |         ^~~~~~~~~~~~~
+/usr/include/libavcodec/avcodec.h:2398:5: note: declared here
+ 2398 | int avcodec_close(AVCodecContext *avctx);
+      |     ^~~~~~~~~~~~~
+mkdir -p out
+g++ -std=c++11 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/makemkv/src=/usr/src/debug/makemkv -flto=auto -D_linux_ -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -D_GNU_SOURCE -D_REENTRANT -shared -Wl,-z,defs -oout/libmakemkv.so.1.full -I./libebml/inc -DEBML_NO_READ -DEBML_STRICT_API -DEBML_DEBUG \
+-I./libmatroska/inc -I./libmakemkv/inc -I./sstring/inc -I./makemkvgui/inc -I./libabi/inc \
+-I./libffabi/inc libebml/src/EbmlBinary.cpp libebml/src/EbmlContexts.cpp libebml/src/EbmlCrc32.cpp libebml/src/EbmlDate.cpp libebml/src/EbmlDummy.cpp libebml/src/EbmlElement.cpp libebml/src/EbmlFloat.cpp libebml/src/EbmlHead.cpp libebml/src/EbmlMaster.cpp libebml/src/EbmlSInteger.cpp libebml/src/EbmlString.cpp libebml/src/EbmlSubHead.cpp libebml/src/EbmlUInteger.cpp libebml/src/EbmlUnicodeString.cpp libebml/src/EbmlVersion.cpp libebml/src/EbmlVoid.cpp libebml/src/IOCallback.cpp libebml/src/MemIOCallback.cpp  libmatroska/src/FileKax.cpp libmatroska/src/KaxAttached.cpp libmatroska/src/KaxAttachments.cpp libmatroska/src/KaxBlock.cpp libmatroska/src/KaxBlockData.cpp libmatroska/src/KaxCluster.cpp libmatroska/src/KaxContexts.cpp libmatroska/src/KaxCues.cpp libmatroska/src/KaxCuesData.cpp libmatroska/src/KaxInfoData.cpp libmatroska/src/KaxSeekHead.cpp libmatroska/src/KaxSegment.cpp libmatroska/src/KaxTracks.cpp libmatroska/src/KaxVersion.cpp libmatroska/src/KaxSemantic.cpp libmakemkv/src/ebmlwrite.cpp libmakemkv/src/libmkv.cpp libmakemkv/src/version.cpp libmakemkv/src/world.cpp libmakemkv/src/stdstring.cpp sstring/src/sstring.cpp makemkvgui/src/api_linux.cpp libabi/src/sys_linux.cpp makemkvgui/src/spawn_posix.cpp \
+tmp/libabi/src/ossl_aes.c.o tmp/libabi/src/ossl_sha.c.o tmp/libabi/src/ossl_ec.c.o tmp/libabi/src/zlib.c.o tmp/libabi/src/xpat.c.o tmp/libabi/src/libm.c.o tmp/libffabi/src/ffabi.c.o tmp/libffabi/src/mlp.c.o tmp/libffabi/src/log.c.o tmp/libffabi/src/audio_convert.c.o tmp/libffabi/src/audio_mix.c.o tmp/libffabi/src/audio_mix_matrix.c.o \
+-DHAVE_BUILDINFO_H -Itmp \
+-fPIC -Xlinker -dy -Xlinker --version-script=libmakemkv/src/libmakemkv.vers \
+-Xlinker -soname=libmakemkv.so.1 -lc -lstdc++ -lcrypto -lz -lexpat -lavcodec -lavutil -lrt -lm -lrt
+objcopy --strip-all --strip-debug --strip-unneeded --discard-all out/libdriveio.so.0.full out/libdriveio.so.0
+mmgpl/dvdread/ifo_read.c: In function ‘ifoRead_PGCIT_internal’:
+mmgpl/dvdread/ifo_read.c:1943:21: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1943 |         ifoFree_PGC(&pgcit->pgci_srp[j].pgc);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~
+mmgpl/dvdread/ifo_read.c: In function ‘ifoFree_PGCIT_internal’:
+mmgpl/dvdread/ifo_read.c:1969:19: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1969 |       ifoFree_PGC(&(*pgcit)->pgci_srp[i].pgc);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mmgpl/dvdread/ifo_read.c: In function ‘ifoRead_PGCI_UT’:
+mmgpl/dvdread/ifo_read.c:2101:32: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 2101 |         ifoFree_PGCIT_internal(&pgci_ut->lu[j].pgcit);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+mmgpl/dvdread/ifo_read.c:2114:32: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 2114 |         ifoFree_PGCIT_internal(&pgci_ut->lu[j].pgcit);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+mmgpl/dvdread/ifo_read.c: In function ‘ifoFree_PGCI_UT’:
+mmgpl/dvdread/ifo_read.c:2137:30: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 2137 |       ifoFree_PGCIT_internal(&ifofile->pgci_ut->lu[i].pgcit);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libmmbd/src/crypto_ossl.cpp: In function ‘void aes_cbcd_ossl(const uint8_t*, const uint8_t*, uint8_t*, unsigned int)’:
+libmmbd/src/crypto_ossl.cpp:31:24: warning: ‘int AES_set_decrypt_key(const unsigned char*, int, AES_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   31 |     AES_set_decrypt_key(key,128,&akey);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from libmmbd/src/crypto_ossl.cpp:22:
+/usr/include/openssl/aes.h:54:5: note: declared here
+   54 | int AES_set_decrypt_key(const unsigned char *userKey, const int bits,
+      |     ^~~~~~~~~~~~~~~~~~~
+libmmbd/src/crypto_ossl.cpp:33:20: warning: ‘void AES_cbc_encrypt(const unsigned char*, unsigned char*, size_t, const AES_KEY*, unsigned char*, int)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   33 |     AES_cbc_encrypt(data,data,size,&akey,ivec,0);
+      |     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/openssl/aes.h:66:6: note: declared here
+   66 | void AES_cbc_encrypt(const unsigned char *in, unsigned char *out,
+      |      ^~~~~~~~~~~~~~~
+objcopy --strip-all --strip-debug --strip-unneeded --discard-all out/mmccextr.full out/mmccextr
+objcopy --strip-all --strip-debug --strip-unneeded --discard-all out/libmmbd.so.0.full out/libmmbd.so.0
+objcopy --strip-all --strip-debug --strip-unneeded --discard-all out/mmgplsrv.full out/mmgplsrv
+makemkvgui/src/mainwnd.cpp:38:5: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = Qt::WindowType; Zero = int QFlags<Qt::WindowType>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+   38 |     0;
+      |     ^
+In file included from /usr/include/qt/QtCore/qglobal.h:1307,
+                 from makemkvgui/src/qtgui.h:18,
+                 from makemkvgui/src/mainwnd.cpp:15:
+/usr/include/qt/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+objcopy --strip-all --strip-debug --strip-unneeded --discard-all out/libmakemkv.so.1.full out/libmakemkv.so.1
+objcopy --strip-all --strip-debug --strip-unneeded --discard-all out/makemkv.full out/makemkv
+type "sudo make install" to install

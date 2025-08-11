@@ -1,0 +1,69 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating doc/src/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+make  all-recursive
+make[1]: Entering directory '/build/gnuclad-git/src/gnuclad'
+Making all in src
+make[2]: Entering directory '/build/gnuclad-git/src/gnuclad/src'
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT gnuclad-gnuclad-portability.o -MD -MP -MF .deps/gnuclad-gnuclad-portability.Tpo -c -o gnuclad-gnuclad-portability.o `test -f 'gnuclad-portability.cpp' || echo './'`gnuclad-portability.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT gnuclad-gnuclad.o -MD -MP -MF .deps/gnuclad-gnuclad.Tpo -c -o gnuclad-gnuclad.o `test -f 'gnuclad.cpp' || echo './'`gnuclad.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT gnuclad-gnuclad-cladogram.o -MD -MP -MF .deps/gnuclad-gnuclad-cladogram.Tpo -c -o gnuclad-gnuclad-cladogram.o `test -f 'gnuclad-cladogram.cpp' || echo './'`gnuclad-cladogram.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT gnuclad-gnuclad-helpers.o -MD -MP -MF .deps/gnuclad-gnuclad-helpers.Tpo -c -o gnuclad-gnuclad-helpers.o `test -f 'gnuclad-helpers.cpp' || echo './'`gnuclad-helpers.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT parser/gnuclad-csv.o -MD -MP -MF parser/.deps/gnuclad-csv.Tpo -c -o parser/gnuclad-csv.o `test -f 'parser/csv.cpp' || echo './'`parser/csv.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT parser/gnuclad-dir.o -MD -MP -MF parser/.deps/gnuclad-dir.Tpo -c -o parser/gnuclad-dir.o `test -f 'parser/dir.cpp' || echo './'`parser/dir.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT generator/gnuclad-csv.o -MD -MP -MF generator/.deps/gnuclad-csv.Tpo -c -o generator/gnuclad-csv.o `test -f 'generator/csv.cpp' || echo './'`generator/csv.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT generator/gnuclad-svg.o -MD -MP -MF generator/.deps/gnuclad-svg.Tpo -c -o generator/gnuclad-svg.o `test -f 'generator/svg.cpp' || echo './'`generator/svg.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT generator/gnuclad-conf.o -MD -MP -MF generator/.deps/gnuclad-conf.Tpo -c -o generator/gnuclad-conf.o `test -f 'generator/conf.cpp' || echo './'`generator/conf.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -Wall -Wextra -Werror -pedantic-errors -ansi -O2   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto -MT generator/gnuclad-png.o -MD -MP -MF generator/.deps/gnuclad-png.Tpo -c -o generator/gnuclad-png.o `test -f 'generator/png.cpp' || echo './'`generator/png.cpp
+mv -f .deps/gnuclad-gnuclad-portability.Tpo .deps/gnuclad-gnuclad-portability.Po
+mv -f generator/.deps/gnuclad-png.Tpo generator/.deps/gnuclad-png.Po
+mv -f generator/.deps/gnuclad-conf.Tpo generator/.deps/gnuclad-conf.Po
+mv -f generator/.deps/gnuclad-csv.Tpo generator/.deps/gnuclad-csv.Po
+mv -f parser/.deps/gnuclad-csv.Tpo parser/.deps/gnuclad-csv.Po
+mv -f parser/.deps/gnuclad-dir.Tpo parser/.deps/gnuclad-dir.Po
+mv -f .deps/gnuclad-gnuclad-helpers.Tpo .deps/gnuclad-gnuclad-helpers.Po
+mv -f .deps/gnuclad-gnuclad.Tpo .deps/gnuclad-gnuclad.Po
+mv -f generator/.deps/gnuclad-svg.Tpo generator/.deps/gnuclad-svg.Po
+mv -f .deps/gnuclad-gnuclad-cladogram.Tpo .deps/gnuclad-gnuclad-cladogram.Po
+g++  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/gnuclad-git/src=/usr/src/debug/gnuclad-git -flto=auto  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o gnuclad gnuclad-gnuclad-portability.o gnuclad-gnuclad.o gnuclad-gnuclad-cladogram.o gnuclad-gnuclad-helpers.o parser/gnuclad-csv.o parser/gnuclad-dir.o generator/gnuclad-csv.o generator/gnuclad-svg.o generator/gnuclad-conf.o generator/gnuclad-png.o  
+make[2]: Leaving directory '/build/gnuclad-git/src/gnuclad/src'
+Making all in doc/src
+make[2]: Entering directory '/build/gnuclad-git/src/gnuclad/doc/src'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/gnuclad-git/src/gnuclad/doc/src'
+make[2]: Entering directory '/build/gnuclad-git/src/gnuclad'
+make[2]: Leaving directory '/build/gnuclad-git/src/gnuclad'
+make[1]: Leaving directory '/build/gnuclad-git/src/gnuclad'

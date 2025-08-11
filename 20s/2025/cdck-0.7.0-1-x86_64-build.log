@@ -1,0 +1,277 @@
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets ${MAKE}... yes
+checking whether build environment is sane... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for style of include used by make... fgrep: warning: fgrep is obsolescent; using grep -F
+GNU
+checking for gcc... /usr/bin/gcc-9
+checking for C compiler default output... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/gcc-9 accepts -g... yes
+checking dependency style of /usr/bin/gcc-9... gcc3
+checking for strerror in -lcposix... no
+checking for gcc... (cached) /usr/bin/gcc-9
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether /usr/bin/gcc-9 accepts -g... (cached) yes
+checking dependency style of /usr/bin/gcc-9... (cached) gcc3
+checking whether we are using the GNU C++ compiler... yes
+checking whether /usr/bin/g++-9 accepts -g... yes
+checking dependency style of /usr/bin/g++-9... gcc3
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for _LARGE_FILES value needed for large files... no
+checking for ld used by GCC... egrep: warning: egrep is obsolescent; using grep -E
+/usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... egrep: warning: egrep is obsolescent; using grep -E
+yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... egrep: warning: egrep is obsolescent; using grep -E
+/usr/bin/nm -B
+checking for a sed that does not truncate output... egrep: warning: egrep is obsolescent; using grep -E
+/usr/bin/sed
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking command to parse /usr/bin/nm -B output... egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+failed
+checking how to run the C preprocessor... egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+/usr/bin/gcc-9 -E
+egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+checking for ANSI C header files... egrep: warning: egrep is obsolescent; using grep -E
+yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... egrep: warning: egrep is obsolescent; using grep -E
+yes
+checking for dlfcn.h... yes
+checking for ranlib... ranlib
+checking for strip... strip
+checking for objdir... .libs
+checking for /usr/bin/gcc-9 option to produce PIC... -fPIC
+checking if /usr/bin/gcc-9 PIC flag -fPIC works... yes
+checking if /usr/bin/gcc-9 static flag -static works... yes
+checking if /usr/bin/gcc-9 supports -c -o file.o... yes
+checking if /usr/bin/gcc-9 supports -c -o file.lo... yes
+checking if /usr/bin/gcc-9 supports -fno-rtti -fno-exceptions... yes
+checking whether the linker (/usr/bin/ld) supports shared libraries... egrep: warning: egrep is obsolescent; using grep -E
+egrep: warning: egrep is obsolescent; using grep -E
+yes
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+creating libtool
+checking perl version ... ok
+checking version of /usr/bin/gcc-9 ... 9.5.0 - ok, good enough
+checking for ANSI C header files... (cached) yes
+checking for strerror in -lcposix... (cached) no
+checking for ANSI C header files... (cached) yes
+checking stdio.h usability... yes
+checking stdio.h presence... egrep: warning: egrep is obsolescent; using grep -E
+yes
+checking for stdio.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating src/config.h
+egrep: warning: egrep is obsolescent; using grep -E
+config.status: executing depfiles commands
+Making all in src
+make[1]: Entering directory '/build/cdck/src/cdck-0.7.0/src'
+make  all-am
+make[2]: Entering directory '/build/cdck/src/cdck-0.7.0/src'
+source='lib_main.cpp' object='lib_main.o' libtool=no \
+depfile='.deps/lib_main.Po' tmpdepfile='.deps/lib_main.TPo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/usr/bin/g++-9 -DHAVE_CONFIG_H -I. -I. -I.     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -export-dynamic  -c -o lib_main.o `test -f 'lib_main.cpp' || echo './'`lib_main.cpp
+source='lib_time.c' object='lib_time.o' libtool=no \
+depfile='.deps/lib_time.Po' tmpdepfile='.deps/lib_time.TPo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/usr/bin/gcc-9 -DHAVE_CONFIG_H -I. -I. -I.     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -DBUILD=\"x86_64-unknown-linux-gnu\" -DDATE=\""`date`"\" -c `test -f 'lib_time.c' || echo './'`lib_time.c
+source='lib_cdinfo.cpp' object='lib_cdinfo.o' libtool=no \
+depfile='.deps/lib_cdinfo.Po' tmpdepfile='.deps/lib_cdinfo.TPo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/usr/bin/g++-9 -DHAVE_CONFIG_H -I. -I. -I.     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -export-dynamic  -c -o lib_cdinfo.o `test -f 'lib_cdinfo.cpp' || echo './'`lib_cdinfo.cpp
+source='lib_main.cpp' object='lib_main.lo' libtool=yes \
+depfile='.deps/lib_main.Plo' tmpdepfile='.deps/lib_main.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile /usr/bin/g++-9 -DHAVE_CONFIG_H -I. -I. -I.     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -export-dynamic  -c -o lib_main.lo `test -f 'lib_main.cpp' || echo './'`lib_main.cpp
+source='lib_time.c' object='lib_time.lo' libtool=yes \
+depfile='.deps/lib_time.Plo' tmpdepfile='.deps/lib_time.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile /usr/bin/gcc-9 -DHAVE_CONFIG_H -I. -I. -I.     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -DBUILD=\"x86_64-unknown-linux-gnu\" -DDATE=\""`date`"\" -c -o lib_time.lo `test -f 'lib_time.c' || echo './'`lib_time.c
+source='lib_cdinfo.cpp' object='lib_cdinfo.lo' libtool=yes \
+depfile='.deps/lib_cdinfo.Plo' tmpdepfile='.deps/lib_cdinfo.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile /usr/bin/g++-9 -DHAVE_CONFIG_H -I. -I. -I.     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -export-dynamic  -c -o lib_cdinfo.lo `test -f 'lib_cdinfo.cpp' || echo './'`lib_cdinfo.cpp
+source='cdck_main.cpp' object='cdck_main.o' libtool=no \
+depfile='.deps/cdck_main.Po' tmpdepfile='.deps/cdck_main.TPo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/usr/bin/g++-9 -DHAVE_CONFIG_H -I. -I. -I.     -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -export-dynamic  -c -o cdck_main.o `test -f 'cdck_main.cpp' || echo './'`cdck_main.cpp
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:28,
+                 from lib_main.cpp:11:
+/usr/include/features.h:447:5: warning: #warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform [-Wcpp]
+  447 | #   warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform
+      |     ^~~~~~~
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:28,
+                 from cdck_main.cpp:11:
+/usr/include/features.h:447:5: warning: #warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform [-Wcpp]
+  447 | #   warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform
+      |     ^~~~~~~
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:28,
+                 from lib_cdinfo.cpp:17:
+/usr/include/features.h:447:5: warning: #warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform [-Wcpp]
+  447 | #   warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform
+      |     ^~~~~~~
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:28,
+                 from lib_time.c:12:
+/usr/include/features.h:447:5: warning: #warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform [-Wcpp]
+  447 | #   warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform
+      |     ^~~~~~~
+In file included from lib_time.c:20:
+cdck_main.h:14:13: warning: ‘print_help’ declared ‘static’ but never defined [-Wunused-function]
+   14 | static void print_help (char *program_name);
+      |             ^~~~~~~~~~
+cdck_main.h:15:13: warning: ‘print_ver’ declared ‘static’ but never defined [-Wunused-function]
+   15 | static void print_ver (void);
+      |             ^~~~~~~~~
+lib_cdinfo.cpp: In member function ‘void Ccdrom::read_creation_data()’:
+lib_cdinfo.cpp:70:7: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+   70 |  read (fd, buffer6, 2048);
+      |  ~~~~~^~~~~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function ‘void Ccdrom::read_super(int)’:
+lib_cdinfo.cpp:86:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+   86 |     read(fd,buffer,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function ‘void Ccdrom::read_super2(int)’:
+lib_cdinfo.cpp:94:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+   94 |     read(fd,buffer2,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function ‘void Ccdrom::read_super3(int)’:
+lib_cdinfo.cpp:102:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+  102 |     read(fd,buffer3,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function ‘void Ccdrom::read_super4(int)’:
+lib_cdinfo.cpp:110:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+  110 |     read(fd,buffer4,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function ‘void Ccdrom::read_super5(int)’:
+lib_cdinfo.cpp:119:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+  119 |     read(fd,buffer5,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~~
+lib_main.cpp: In member function ‘int Ccdrom::ReadCD()’:
+lib_main.cpp:458:9: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+  458 |    read (fd, buf,  SECTOR_SIZE);
+      |    ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/gcc-9 -DHAVE_CONFIG_H -I. -I. -I. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -DBUILD=\"x86_64-unknown-linux-gnu\" "-DDATE=\"Sun Aug 10 21:04:44 UTC 2025\"" -c lib_time.c -MT lib_time.lo -MD -MP -MF .deps/lib_time.TPlo -o lib_time.o
+/usr/bin/g++-9 -DHAVE_CONFIG_H -I. -I. -I. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -export-dynamic -c lib_cdinfo.cpp -MT lib_cdinfo.lo -MD -MP -MF .deps/lib_cdinfo.TPlo -o lib_cdinfo.o
+/usr/bin/g++-9 -DHAVE_CONFIG_H -I. -I. -I. -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -export-dynamic -c lib_main.cpp -MT lib_main.lo -MD -MP -MF .deps/lib_main.TPlo -o lib_main.o
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:28,
+                 from lib_time.c:12:
+/usr/include/features.h:447:5: warning: #warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform [-Wcpp]
+  447 | #   warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform
+      |     ^~~~~~~
+rm -f libcdck.a
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:28,
+                 from lib_cdinfo.cpp:17:
+/usr/include/features.h:447:5: warning: #warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform [-Wcpp]
+  447 | #   warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform
+      |     ^~~~~~~
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:28,
+                 from lib_main.cpp:11:
+/usr/include/features.h:447:5: warning: #warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform [-Wcpp]
+  447 | #   warning _FORTIFY_SOURCE > 2 is treated like 2 on this platform
+      |     ^~~~~~~
+ar cru libcdck.a lib_main.o lib_time.o lib_cdinfo.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libcdck.a
+In file included from lib_time.c:20:
+cdck_main.h:14:13: warning: 'print_help' declared 'static' but never defined [-Wunused-function]
+   14 | static void print_help (char *program_name);
+      |             ^~~~~~~~~~
+cdck_main.h:15:13: warning: 'print_ver' declared 'static' but never defined [-Wunused-function]
+   15 | static void print_ver (void);
+      |             ^~~~~~~~~
+echo timestamp > lib_time.lo
+lib_cdinfo.cpp: In member function 'void Ccdrom::read_creation_data()':
+lib_cdinfo.cpp:70:7: warning: ignoring return value of 'ssize_t read(int, void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+   70 |  read (fd, buffer6, 2048);
+      |  ~~~~~^~~~~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function 'void Ccdrom::read_super(int)':
+lib_cdinfo.cpp:86:9: warning: ignoring return value of 'ssize_t read(int, void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+   86 |     read(fd,buffer,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function 'void Ccdrom::read_super2(int)':
+lib_cdinfo.cpp:94:9: warning: ignoring return value of 'ssize_t read(int, void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+   94 |     read(fd,buffer2,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function 'void Ccdrom::read_super3(int)':
+lib_cdinfo.cpp:102:9: warning: ignoring return value of 'ssize_t read(int, void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+  102 |     read(fd,buffer3,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function 'void Ccdrom::read_super4(int)':
+lib_cdinfo.cpp:110:9: warning: ignoring return value of 'ssize_t read(int, void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+  110 |     read(fd,buffer4,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~~
+lib_cdinfo.cpp: In member function 'void Ccdrom::read_super5(int)':
+lib_cdinfo.cpp:119:9: warning: ignoring return value of 'ssize_t read(int, void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+  119 |     read(fd,buffer5,2048);
+      |     ~~~~^~~~~~~~~~~~~~~~~
+lib_main.cpp: In member function 'int Ccdrom::ReadCD()':
+lib_main.cpp:458:9: warning: ignoring return value of 'ssize_t read(int, void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+  458 |    read (fd, buf,  SECTOR_SIZE);
+      |    ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+echo timestamp > lib_cdinfo.lo
+echo timestamp > lib_main.lo
+/bin/sh ../libtool --mode=link /usr/bin/gcc-9  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -export-dynamic   -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o libcdck.la -rpath /usr/lib  lib_main.lo lib_time.lo lib_cdinfo.lo  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libsupc++.a 
+mkdir .libs
+
+*** Warning: Linking the shared library libcdck.la against the
+*** static library /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libsupc++.a is not portable!
+rm -fr .libs/libcdck.la .libs/libcdck.* .libs/libcdck.*
+ar cru .libs/libcdck.a /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libsupc++.a  lib_main.o lib_time.o lib_cdinfo.o  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libsupc++.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib .libs/libcdck.a
+creating libcdck.la
+(cd .libs && rm -f libcdck.la && ln -s ../libcdck.la libcdck.la)
+/bin/sh ../libtool --mode=link /usr/bin/gcc-9  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -export-dynamic   -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -o cdck  cdck_main.o libcdck.la /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libsupc++.a 
+/usr/bin/gcc-9 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/cdck/src=/usr/src/debug/cdck -flto=auto -Wall -Wwrite-strings -Woverloaded-virtual -fno-exceptions -fno-rtti -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -o cdck cdck_main.o -Wl,--export-dynamic  ./.libs/libcdck.a /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libsupc++.a
+make[2]: Leaving directory '/build/cdck/src/cdck-0.7.0/src'
+make[1]: Leaving directory '/build/cdck/src/cdck-0.7.0/src'
+Making all in man
+make[1]: Entering directory '/build/cdck/src/cdck-0.7.0/man'
+pod2man --section=cdck.1 --verbose cdck_man.in > cdck.1
+make[1]: Leaving directory '/build/cdck/src/cdck-0.7.0/man'
+make[1]: Entering directory '/build/cdck/src/cdck-0.7.0'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/build/cdck/src/cdck-0.7.0'

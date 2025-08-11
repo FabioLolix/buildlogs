@@ -1,0 +1,104 @@
+The Meson build system
+Version: 1.8.3
+Source dir: /build/playmyvideos-git/src/playmyvideos-git
+Build dir: /build/playmyvideos-git/src/playmyvideos-git/build
+Build type: native build
+Project name: com.github.artemanufrij.playmyvideos
+Project version: 1.0.0
+C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250729")
+C linker for the host machine: cc ld.bfd 2.45.0
+Vala compiler for the host machine: valac (valac 0.56.18-dirty)
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Configuring config.h using configuration
+data/meson.build:4: WARNING: Project does not target a minimum version but uses feature deprecated since '0.56.0': meson.source_root. use meson.project_source_root() or meson.global_source_root() instead.
+Program msgfmt found: YES (/usr/bin/msgfmt)
+data/meson.build:13: WARNING: Project does not target a minimum version but uses feature deprecated since '0.56.0': meson.source_root. use meson.project_source_root() or meson.global_source_root() instead.
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Program appstreamcli appstream-util found: NO
+po/meson.build:3: WARNING: Project does not target a minimum version but uses feature deprecated since '0.56.0': meson.source_root. use meson.project_source_root() or meson.global_source_root() instead.
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+po/extra/meson.build:3: WARNING: Project does not target a minimum version but uses feature deprecated since '0.56.0': meson.source_root. use meson.project_source_root() or meson.global_source_root() instead.
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency gio-2.0 found: YES 2.84.3
+Run-time dependency gobject-2.0 found: YES 2.84.3
+Run-time dependency glib-2.0 found: YES 2.84.3
+Run-time dependency gtk+-3.0 found: YES 3.24.50
+Run-time dependency libsoup-2.4 found: YES 2.74.3
+Run-time dependency granite found: YES 6.2.0
+Run-time dependency sqlite3 found: YES 3.50.4
+Run-time dependency clutter-gtk-1.0 found: YES 1.8.4
+Run-time dependency clutter-gst-3.0 found: YES 3.0.27
+Build targets in project: 29
+WARNING: Deprecated features used:
+ * 0.56.0: {'meson.source_root'}
+
+com.github.artemanufrij.playmyvideos 1.0.0
+
+  User defined options
+    prefix: /usr
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/29 eta ?                                               Writing build.ninja:   0%|          | 0/86 eta ?                                                WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+ninja: Entering directory `build'
+[1/40] Building translation po/de/LC_MESSAGES/com.github.artemanufrij.playmyvideos-de.mo
+[2/40] Building translation po/es/LC_MESSAGES/com.github.artemanufrij.playmyvideos-es.mo
+[3/40] Building translation po/fr/LC_MESSAGES/com.github.artemanufrij.playmyvideos-fr.mo
+[4/40] Building translation po/nb/LC_MESSAGES/com.github.artemanufrij.playmyvideos-nb.mo
+[5/40] Building translation po/it/LC_MESSAGES/com.github.artemanufrij.playmyvideos-it.mo
+[6/40] Building translation po/nl/LC_MESSAGES/com.github.artemanufrij.playmyvideos-nl.mo
+[7/40] Building translation po/pt/LC_MESSAGES/com.github.artemanufrij.playmyvideos-pt.mo
+[8/40] Building translation po/ru/LC_MESSAGES/com.github.artemanufrij.playmyvideos-ru.mo
+[9/40] Building translation po/pt_BR/LC_MESSAGES/com.github.artemanufrij.playmyvideos-pt_BR.mo
+[10/40] Building translation po/tr/LC_MESSAGES/com.github.artemanufrij.playmyvideos-tr.mo
+[11/40] Merging translations for data/com.github.artemanufrij.playmyvideos.desktop
+[12/40] Merging translations for data/com.github.artemanufrij.playmyvideos.appdata.xml
+[13/40] Compiling Vala source ../src/Objects/Box.vala ../src/Objects/Video.vala ../src/Services/DataBaseManager.vala ../src/Services/LocalFilesManager.vala ../src/Services/LibraryManager.vala ../src/Services/MovieDatabaseManager.vala ../src/Interfaces/Inhibitor.vala ../src/Interfaces/MediaKeys.vala ../src/Interfaces/Thubnailer.vala ../src/Widgets/Box.vala ../src/Widgets/SubTitleRow.vala ../src/Widgets/Video.vala ../src/Widgets/Playlist.vala ../src/Widgets/VideoTimeLine.vala ../src/Widgets/PreviewPopover.vala ../src/Widgets/Views/Welcome.vala ../src/Widgets/Views/BoxesView.vala ../src/Widgets/Views/BoxView.vala ../src/Widgets/Views/PlayerView.vala ../src/Utils/Utils.vala ../src/Utils/Pixbuf.vala ../src/Utils/MovieDatabase.vala ../src/Dialogs/Preferences.vala ../src/Settings.vala ../src/MainWindow.vala ../src/Application.vala
+../src/Widgets/Views/BoxView.vala:132.33-132.69: warning: Access to possible `null'. Perform a check or use an unsafe cast.
+  132 |                 video_selected ((selected_row as Widgets.Video).video);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+../src/Widgets/Views/BoxesView.vala:184.23-184.48: warning: Access to possible `null'. Perform a check or use an unsafe cast.
+  184 |             var box = (child as Widgets.Box).box;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../src/Widgets/Views/BoxesView.vala:159.23-159.47: warning: Access to possible `null'. Perform a check or use an unsafe cast.
+  159 |             var box = (item as Widgets.Box).box;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~ 
+../src/Widgets/VideoTimeLine.vala:206.35-206.58: warning: Access to possible `null'. Perform a check or use an unsafe cast.
+  206 |                         var uri = (row as SubTitleRow).uri;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~ 
+../src/Widgets/Playlist.vala:108.21-108.49: warning: Access to possible `null'. Perform a check or use an unsafe cast.
+  108 |                 if ((item as Widgets.Video).video.ID == video.ID) {
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~                  
+../src/Widgets/Playlist.vala:98.35-98.71: warning: Access to possible `null'. Perform a check or use an unsafe cast.
+   98 |                 player_view.play ((selected_row as Widgets.Video).video);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+Compilation succeeded - 6 warning(s)
+[14/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Utils_MovieDatabase.c.o
+[15/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Utils_Utils.c.o
+[16/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Utils_Pixbuf.c.o
+[17/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Services_LocalFilesManager.c.o
+[18/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Interfaces_Inhibitor.c.o
+[19/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Interfaces_Thubnailer.c.o
+[20/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Objects_Video.c.o
+[21/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_Playlist.c.o
+[22/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_SubTitleRow.c.o
+[23/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_Box.c.o
+[24/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_Views_Welcome.c.o
+[25/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_Video.c.o
+[26/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_Views_BoxView.c.o
+[27/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Interfaces_MediaKeys.c.o
+[28/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Services_DataBaseManager.c.o
+[29/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Services_MovieDatabaseManager.c.o
+[30/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Services_LibraryManager.c.o
+[31/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_Views_BoxesView.c.o
+[32/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Objects_Box.c.o
+[33/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Settings.c.o
+[34/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Dialogs_Preferences.c.o
+[35/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_Views_PlayerView.c.o
+[36/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_VideoTimeLine.c.o
+[37/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Widgets_PreviewPopover.c.o
+[38/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_Application.c.o
+[39/40] Compiling C object src/com.github.artemanufrij.playmyvideos.p/meson-generated_MainWindow.c.o
+[40/40] Linking target src/com.github.artemanufrij.playmyvideos

@@ -1,0 +1,112 @@
+
+
+       ▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄
+      █░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░█
+      █░▒▒▒▒▒▒▒▒▒▒▄▀▀▄▒▒▒░░█▄▀▀▄
+ ▄▄   █░▒▒▒▒▒▒▒▒▒▒█▓▓▓▀▄▄▄▄▀▓▓▓█      ▄ ▄▄   ▄   ▄   ▄▄▄   ▄ ▄▄
+█▓▓█▄▄█░▒▒▒▒▒▒▒▒▒▄▀▓▓▓▓▓▓▓▓▓▓▓▓▀▄     █▀  █  ▀▄ ▄▀  ▀   █  █▀  █
+ ▀▄▄▓▓█░▒▒▒▒▒▒▒▒▒█▓▓▓▄█▓▓▓▄▓▄█▓▓█     █   █   █▄█   ▄▀▀▀█  █   █
+    ▀▀█░▒▒▒▒▒▒▒▒▒█▓▒▒▓▄▓▓▄▓▓▄▓▒▒█     █   █   ▀█    ▀▄▄▀█  █   █
+     ▄█░░▒▒▒▒▒▒▒▒▒▀▄▓▓▀▀▀▀▀▀▀▓▄▀              ▄▀
+   ▄▀▓▀█▄▄▄▄▄▄▄▄▄▄▄▄██████▀█▀▀               ▀▀
+   █▄▄▀ █▄▄▀       █▄▄▀ ▀▄▄█
+
+
+For information about building, look at [doc/building.md].
+
+If you encounter problems you can't fix yourself,
+report problems at https://github.com/SFTtech/nyan
+
+Contact: #sfttech:matrix.org
+
+-- The CXX compiler identification is Clang 20.1.8
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_REQUIRED_CXX17_SUPPORT
+-- Performing Test HAVE_REQUIRED_CXX17_SUPPORT - Success
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+CMake Warning at buildsystem/doxygen.cmake:50 (message):
+  doxygen couldn't be found, you won't be able to generate docs
+Call Stack (most recent call first):
+  CMakeLists.txt:90 (doxygen_configure)
+
+
+-- Found FLEX: /usr/bin/flex (found suitable version "2.6.4", minimum required is "2.6")
+-- registering nyan in the cmake user package registry (~/.cmake/package/nyan)...
+
+          project | nyan
+          version | 0.3.0
+         compiler | Clang 20.1.8
+       build type | RelWithDebInfo
+         cxxflags | -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nyan-lang-git_clang/src=/usr/src/debug/nyan-lang-git_clang -flto=auto -Wall -Wextra -pedantic
+ build type flags | -O2 -g -DNDEBUG
+        build dir | /build/nyan-lang-git_clang/src/build
+   install prefix | /usr
+
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/nyan-lang-git_clang/src/build
+[  1%] [flex] Generating scanner with flex 2.6.4
+[  3%] Building CXX object nyan/CMakeFiles/nyan.dir/change_tracker.cpp.o
+[  4%] Building CXX object nyan/CMakeFiles/nyan.dir/ast.cpp.o
+[  6%] Building CXX object nyan/CMakeFiles/nyan.dir/config.cpp.o
+[  8%] Building CXX object nyan/CMakeFiles/nyan.dir/id_token.cpp.o
+[  9%] Building CXX object nyan/CMakeFiles/nyan.dir/basic_type.cpp.o
+[ 11%] Building CXX object nyan/CMakeFiles/nyan.dir/api_error.cpp.o
+[ 13%] Building CXX object nyan/CMakeFiles/nyan.dir/database.cpp.o
+[ 14%] Building CXX object nyan/CMakeFiles/nyan.dir/file.cpp.o
+[ 18%] Building CXX object nyan/CMakeFiles/nyan.dir/curve.cpp.o
+[ 18%] Building CXX object nyan/CMakeFiles/nyan.dir/c3.cpp.o
+[ 19%] Building CXX object nyan/CMakeFiles/nyan.dir/datastructure/orderedset.cpp.o
+[ 21%] Building CXX object nyan/CMakeFiles/nyan.dir/error.cpp.o
+[ 24%] Building CXX object nyan/CMakeFiles/nyan.dir/flex.gen.cpp.o
+[ 24%] Building CXX object nyan/CMakeFiles/nyan.dir/inheritance_change.cpp.o
+[ 26%] Building CXX object nyan/CMakeFiles/nyan.dir/lang_error.cpp.o
+[ 29%] Building CXX object nyan/CMakeFiles/nyan.dir/lexer/bracket.cpp.o
+[ 31%] Building CXX object nyan/CMakeFiles/nyan.dir/lexer/lexer.cpp.o
+[ 29%] Building CXX object nyan/CMakeFiles/nyan.dir/lexer/impl.cpp.o
+[ 32%] Building CXX object nyan/CMakeFiles/nyan.dir/location.cpp.o
+[ 34%] Building CXX object nyan/CMakeFiles/nyan.dir/member.cpp.o
+[ 36%] Building CXX object nyan/CMakeFiles/nyan.dir/member_info.cpp.o
+[ 37%] Building CXX object nyan/CMakeFiles/nyan.dir/meta_info.cpp.o
+[ 39%] Building CXX object nyan/CMakeFiles/nyan.dir/namespace.cpp.o
+[ 40%] Building CXX object nyan/CMakeFiles/nyan.dir/namespace_finder.cpp.o
+[ 42%] Building CXX object nyan/CMakeFiles/nyan.dir/object.cpp.o
+[ 44%] Building CXX object nyan/CMakeFiles/nyan.dir/object_history.cpp.o
+[ 45%] Building CXX object nyan/CMakeFiles/nyan.dir/object_info.cpp.o
+[ 47%] Building CXX object nyan/CMakeFiles/nyan.dir/object_notifier.cpp.o
+[ 49%] Building CXX object nyan/CMakeFiles/nyan.dir/object_notifier_types.cpp.o
+[ 50%] Building CXX object nyan/CMakeFiles/nyan.dir/object_state.cpp.o
+[ 52%] Building CXX object nyan/CMakeFiles/nyan.dir/ops.cpp.o
+[ 54%] Building CXX object nyan/CMakeFiles/nyan.dir/parser.cpp.o
+[ 55%] Building CXX object nyan/CMakeFiles/nyan.dir/patch_info.cpp.o
+[ 57%] Building CXX object nyan/CMakeFiles/nyan.dir/state.cpp.o
+[ 59%] Building CXX object nyan/CMakeFiles/nyan.dir/state_history.cpp.o
+[ 60%] Building CXX object nyan/CMakeFiles/nyan.dir/token.cpp.o
+[ 62%] Building CXX object nyan/CMakeFiles/nyan.dir/token_stream.cpp.o
+[ 63%] Building CXX object nyan/CMakeFiles/nyan.dir/transaction.cpp.o
+[ 65%] Building CXX object nyan/CMakeFiles/nyan.dir/type.cpp.o
+[ 67%] Building CXX object nyan/CMakeFiles/nyan.dir/util.cpp.o
+[ 68%] Building CXX object nyan/CMakeFiles/nyan.dir/util/flags.cpp.o
+[ 70%] Building CXX object nyan/CMakeFiles/nyan.dir/value_token.cpp.o
+[ 72%] Building CXX object nyan/CMakeFiles/nyan.dir/value/boolean.cpp.o
+[ 73%] Building CXX object nyan/CMakeFiles/nyan.dir/value/container_types.cpp.o
+[ 75%] Building CXX object nyan/CMakeFiles/nyan.dir/value/container.cpp.o
+[ 77%] Building CXX object nyan/CMakeFiles/nyan.dir/value/dict.cpp.o
+[ 78%] Building CXX object nyan/CMakeFiles/nyan.dir/value/file.cpp.o
+[ 80%] Building CXX object nyan/CMakeFiles/nyan.dir/value/none.cpp.o
+[ 81%] Building CXX object nyan/CMakeFiles/nyan.dir/value/number.cpp.o
+[ 83%] Building CXX object nyan/CMakeFiles/nyan.dir/value/object.cpp.o
+[ 85%] Building CXX object nyan/CMakeFiles/nyan.dir/value/orderedset.cpp.o
+[ 86%] Building CXX object nyan/CMakeFiles/nyan.dir/value/set.cpp.o
+[ 88%] Building CXX object nyan/CMakeFiles/nyan.dir/value/set_base.cpp.o
+[ 90%] Building CXX object nyan/CMakeFiles/nyan.dir/value/text.cpp.o
+[ 91%] Building CXX object nyan/CMakeFiles/nyan.dir/value/value.cpp.o
+[ 93%] Building CXX object nyan/CMakeFiles/nyan.dir/value/value_holder.cpp.o
+[ 95%] Building CXX object nyan/CMakeFiles/nyan.dir/view.cpp.o
+[ 96%] Linking CXX shared library libnyan.so
+[ 98%] Building CXX object nyan/CMakeFiles/nyancat.dir/nyan_tool.cpp.o
+[100%] Linking CXX executable nyancat

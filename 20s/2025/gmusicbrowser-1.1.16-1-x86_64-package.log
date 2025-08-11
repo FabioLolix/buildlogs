@@ -1,0 +1,42 @@
+mkdir -p "/build/gmusicbrowser/pkg/gmusicbrowser//usr/bin"
+mkdir -p "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/"
+mkdir -p "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/doc/gmusicbrowser-1.1.16"
+mkdir -p "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/man/man1/"
+install -pm 644 AUTHORS COPYING README NEWS INSTALL layout_doc.html "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/doc/gmusicbrowser-1.1.16"
+install -pm 644 gmusicbrowser.man "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/man/man1/gmusicbrowser.1"
+install -d "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/"
+install -d "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/elementary/"
+install -d "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/gnome-classic/"
+install -d "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/tango/"
+install -d "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/oxygen/"
+install -d "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/plugins/"
+install -d "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/layouts/"
+install -pDm 755 gmusicbrowser.pl "/build/gmusicbrowser/pkg/gmusicbrowser//usr/bin/gmusicbrowser"
+install -pm 755 iceserver.pl      "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/iceserver.pl"
+install -pm 644 *.pm		  "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/"
+install -pm 644 gmbrc.default     "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/"
+install -pm 644 layouts/*.layout  "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/layouts/"
+install -pm 644 plugins/*.pm      "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/plugins/"
+install -pm 644 pix/*.png         "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/"
+install -pm 644 pix/elementary/*    "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/elementary/"
+install -pm 644 pix/gnome-classic/*    "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/gnome-classic/"
+install -pm 644 pix/tango/*            "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/tango/"
+install -pm 644 pix/oxygen/*           "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/gmusicbrowser/pix/oxygen/"
+install -pDm 644 gmusicbrowser.desktop "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/applications/gmusicbrowser.desktop"
+install -pDm 644 org.gmusicbrowser.metainfo.xml "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/metainfo/org.gmusicbrowser.metainfo.xml"
+install -pDm 644 pix/gmusicbrowser.svg      "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/icons/hicolor/scalable/apps/gmusicbrowser.svg"
+install -pDm 644 pix/gmusicbrowser16x16.png "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/icons/hicolor/16x16/apps/gmusicbrowser.png"
+install -pDm 644 pix/trayicon.png           "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/icons/hicolor/20x20/apps/gmusicbrowser.png"
+install -pDm 644 pix/gmusicbrowser32x32.png "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/icons/hicolor/32x32/apps/gmusicbrowser.png"
+install -pDm 644 pix/gmusicbrowser48x48.png "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/icons/hicolor/48x48/apps/gmusicbrowser.png"
+install -pDm 644 pix/gmusicbrowser64x64.png "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/icons/hicolor/64x64/apps/gmusicbrowser.png"
+for lang in cs de el es et fi fr hu it ja ko lt ms_MY nl pl pt pt_BR ru sr sv tr_TR zh_CN zh_TW ; \
+do \
+	install -pd "/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/locale/$lang/LC_MESSAGES/"; \
+	install -pm 644 locale/$lang/LC_MESSAGES/gmusicbrowser.mo	"/build/gmusicbrowser/pkg/gmusicbrowser//usr/share/locale/$lang/LC_MESSAGES/"; \
+done
+make update-icon-cache
+make[1]: Entering directory '/build/gmusicbrowser/src/gmusicbrowser-1.1.16'
+*** Icon cache not updated. After (un)install, run this:
+***  gtk-update-icon-cache -f -t /build/gmusicbrowser/pkg/gmusicbrowser//usr/share/icons/hicolor
+make[1]: Leaving directory '/build/gmusicbrowser/src/gmusicbrowser-1.1.16'

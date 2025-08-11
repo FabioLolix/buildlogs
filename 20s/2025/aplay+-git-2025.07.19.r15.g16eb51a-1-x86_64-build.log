@@ -1,0 +1,8 @@
+which: no icc in (/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+clang -O3 -ffunction-sections -fdata-sections -funroll-loops -finline-functions -ftree-vectorize -c aplay+.c -o aplay+.o
+In file included from aplay+.c:26:
+./stb_vorbis.h:1404:75: warning: pointer comparison always evaluates to false [-Wtautological-compare]
+ 1404 |       if (f->stream_start + loc >= f->stream_end || f->stream_start + loc < f->stream_start) {
+      |                                                                           ^
+1 warning generated.
+clang aplay+.o -o aplay+ -lasound -lm -Wl,-s -Wl,--gc-sections

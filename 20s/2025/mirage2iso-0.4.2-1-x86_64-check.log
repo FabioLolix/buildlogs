@@ -1,0 +1,53 @@
+Making check in tests
+make[1]: Entering directory '/build/mirage2iso/src/mirage2iso-0.4.2/tests'
+make  check-TESTS
+make[2]: Entering directory '/build/mirage2iso/src/mirage2iso-0.4.2/tests'
+make[3]: Entering directory '/build/mirage2iso/src/mirage2iso-0.4.2/tests'
+FAIL: 01_poweriso_bin.toc
+PASS: 01_ecm.iso.ecm
+PASS: 00_input.iso
+PASS: 01_poweriso_bin.bin
+PASS: 01_poweriso_bin.cue
+PASS: 20_hdiutil_udco.dmg
+PASS: 01_ultraiso-9.6.6.3300.img
+PASS: 03_nerolinux-4.0.0.nrg
+PASS: 01_ultraiso-9.6.6.3300.ccd
+PASS: 01_gburner-4.3.gbi
+PASS: 20_ultraiso-9.6.6.3300.isz
+PASS: 02_poweriso-4.6-split1.part01.daa
+PASS: 02_poweriso-4.6-split3.daa
+PASS: 02_poweriso-4.6-split2.part001.daa
+PASS: 02_poweriso-4.6-encrypted.daa
+PASS: 01_psp.cso
+PASS: 04_nerolinux-4.0.0-multisession.nrg
+PASS: 02_poweriso-4.6-bestcompression.daa
+PASS: 04_alcohol120_2.0.0.1331.mds
+PASS: 20_hdiutil_udzo.dmg
+PASS: 20_hdiutil_udbz.dmg
+============================================================================
+Testsuite summary for mirage2iso 0.4.2
+============================================================================
+# TOTAL: 21
+# PASS:  20
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  1
+# XPASS: 0
+# ERROR: 0
+============================================================================
+See tests/test-suite.log
+============================================================================
+make[3]: *** [Makefile:526: test-suite.log] Error 1
+make[3]: Leaving directory '/build/mirage2iso/src/mirage2iso-0.4.2/tests'
+make[2]: *** [Makefile:634: check-TESTS] Error 2
+make[2]: Leaving directory '/build/mirage2iso/src/mirage2iso-0.4.2/tests'
+make[1]: *** [Makefile:844: check-am] Error 2
+make[1]: Target 'check' not remade because of errors.
+make[1]: Leaving directory '/build/mirage2iso/src/mirage2iso-0.4.2/tests'
+make[1]: Entering directory '/build/mirage2iso/src/mirage2iso-0.4.2'
+make[1]: Nothing to be done for 'check-am'.
+make[1]: Leaving directory '/build/mirage2iso/src/mirage2iso-0.4.2'
+make: *** [Makefile:494: check-recursive] Error 1
+make: Target 'check' not remade because of errors.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in check().(B[m
+[1m    Aborting...(B[m

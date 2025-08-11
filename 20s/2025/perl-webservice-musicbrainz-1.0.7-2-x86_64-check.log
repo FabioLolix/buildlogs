@@ -1,0 +1,23 @@
+PERL_DL_NONLAZY=1 "/usr/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/Area.t ....... ok
+t/Artist.t ..... ok
+t/Label.t ...... ok
+
+#   Failed test at t/Recording.t line 25.
+# Looks like you failed 1 test of 4.
+t/Recording.t .. 
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/4 subtests 
+t/Release.t .... ok
+
+Test Summary Report
+-------------------
+t/Recording.t (Wstat: 256 (exited 1) Tests: 4 Failed: 1)
+  Failed test:  3
+  Non-zero exit status: 1
+Files=5, Tests=85, 35 wallclock secs ( 0.01 usr  0.02 sys +  1.16 cusr  0.16 csys =  1.35 CPU)
+Result: FAIL
+Failed 1/5 test programs. 1/85 subtests failed.
+make: *** [Makefile:849: test_dynamic] Error 255
+[1m[31m==> ERROR:(B[m[1m A failure occurred in check().(B[m
+[1m    Aborting...(B[m

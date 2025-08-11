@@ -1,0 +1,241 @@
+Making install in po
+make[1]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/po'
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+linguas="bs ca cs da de el es fr gl hu id it nb pa pl pt pt_BR ro ru sl sr sr@latin sv tr zh_CN "; \
+for lang in $linguas; do \
+  dir=/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/$lang/LC_MESSAGES; \
+  /bin/sh /build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/install-sh -d $dir; \
+  if test -r $lang.gmo; then \
+    /usr/bin/install -c -m 644 $lang.gmo $dir/gnome-video-arcade.mo; \
+    echo "installing $lang.gmo as $dir/gnome-video-arcade.mo"; \
+  else \
+    /usr/bin/install -c -m 644 ./$lang.gmo $dir/gnome-video-arcade.mo; \
+    echo "installing ./$lang.gmo as" \
+	 "$dir/gnome-video-arcade.mo"; \
+  fi; \
+  if test -r $lang.gmo.m; then \
+    /usr/bin/install -c -m 644 $lang.gmo.m $dir/gnome-video-arcade.mo.m; \
+    echo "installing $lang.gmo.m as $dir/gnome-video-arcade.mo.m"; \
+  else \
+    if test -r ./$lang.gmo.m ; then \
+      /usr/bin/install -c -m 644 ./$lang.gmo.m \
+	$dir/gnome-video-arcade.mo.m; \
+      echo "installing ./$lang.gmo.m as" \
+	   "$dir/gnome-video-arcade.mo.m"; \
+    else \
+      true; \
+    fi; \
+  fi; \
+done
+installing bs.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/bs/LC_MESSAGES/gnome-video-arcade.mo
+installing ca.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/ca/LC_MESSAGES/gnome-video-arcade.mo
+installing cs.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/cs/LC_MESSAGES/gnome-video-arcade.mo
+installing da.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/da/LC_MESSAGES/gnome-video-arcade.mo
+installing de.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/de/LC_MESSAGES/gnome-video-arcade.mo
+installing el.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/el/LC_MESSAGES/gnome-video-arcade.mo
+installing es.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/es/LC_MESSAGES/gnome-video-arcade.mo
+installing fr.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/fr/LC_MESSAGES/gnome-video-arcade.mo
+installing gl.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/gl/LC_MESSAGES/gnome-video-arcade.mo
+installing hu.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/hu/LC_MESSAGES/gnome-video-arcade.mo
+installing id.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/id/LC_MESSAGES/gnome-video-arcade.mo
+installing it.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/it/LC_MESSAGES/gnome-video-arcade.mo
+installing nb.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/nb/LC_MESSAGES/gnome-video-arcade.mo
+installing pa.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/pa/LC_MESSAGES/gnome-video-arcade.mo
+installing pl.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/pl/LC_MESSAGES/gnome-video-arcade.mo
+installing pt.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/pt/LC_MESSAGES/gnome-video-arcade.mo
+installing pt_BR.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/pt_BR/LC_MESSAGES/gnome-video-arcade.mo
+installing ro.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/ro/LC_MESSAGES/gnome-video-arcade.mo
+installing ru.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/ru/LC_MESSAGES/gnome-video-arcade.mo
+installing sl.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/sl/LC_MESSAGES/gnome-video-arcade.mo
+installing sr.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/sr/LC_MESSAGES/gnome-video-arcade.mo
+installing sr@latin.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/sr@latin/LC_MESSAGES/gnome-video-arcade.mo
+installing sv.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/sv/LC_MESSAGES/gnome-video-arcade.mo
+installing tr.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/tr/LC_MESSAGES/gnome-video-arcade.mo
+installing zh_CN.gmo as /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/locale/zh_CN/LC_MESSAGES/gnome-video-arcade.mo
+make[1]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/po'
+Making install in data
+make[1]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/data'
+make[2]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/data'
+make[2]: Nothing to be done for 'install-exec-am'.
+if test -n "org.gnome.VideoArcade.gschema.xml"; then \
+	test -z "/usr/share/glib-2.0/schemas" || /usr/bin/mkdir -p "/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/glib-2.0/schemas"; \
+	/usr/bin/install -c -m 644 org.gnome.VideoArcade.gschema.xml "/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/glib-2.0/schemas"; \
+	test -n "/build/gnome-video-arcade/pkg/gnome-video-arcade" || /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas; \
+fi
+ /usr/bin/mkdir -p '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/applications'
+ /usr/bin/mkdir -p '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/GConf/gsettings'
+ /usr/bin/mkdir -p '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/icons/hicolor/scalable/apps'
+ /usr/bin/mkdir -p '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/gnome-video-arcade'
+ /usr/bin/install -c -m 644 gnome-video-arcade.desktop '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/applications'
+ /usr/bin/install -c -m 644 gnome-video-arcade.convert '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/GConf/gsettings'
+ /usr/bin/install -c -m 644 gnome-video-arcade.svg '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/icons/hicolor/scalable/apps'
+ /usr/bin/install -c -m 644 gnome-video-arcade.builder gnome-video-arcade.ui '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/gnome-video-arcade'
+make  install-data-hook
+make[3]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/data'
+*** Icon cache not updated.  After (un)install, run this:
+***   gtk-update-icon-cache -f -t /usr/share/icons/hicolor
+make[3]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/data'
+make[2]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/data'
+make[1]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/data'
+Making install in src
+make[1]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/src'
+make[2]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/src'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c gnome-video-arcade '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/bin'
+libtool: install: /usr/bin/install -c gnome-video-arcade /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/bin/gnome-video-arcade
+make[2]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/src'
+make[1]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/src'
+Making install in docs
+make[1]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs'
+Making install in reference
+make[2]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs/reference'
+make[3]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs/reference'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/install -c -m 644 ./html/GvaCellRendererPixbuf.html
+ /usr/bin/install -c -m 644 ./html/GvaColumnManager.html
+ /usr/bin/install -c -m 644 ./html/GvaGameStore.html
+ /usr/bin/install -c -m 644 ./html/GvaInputFile.html
+ /usr/bin/install -c -m 644 ./html/GvaMameProcess.html
+ /usr/bin/install -c -m 644 ./html/GvaMuteButton.html
+ /usr/bin/install -c -m 644 ./html/GvaProcess.html
+ /usr/bin/install -c -m 644 ./html/GvaScreenSaver.html
+ /usr/bin/install -c -m 644 ./html/api-index-full.html
+ /usr/bin/install -c -m 644 ./html/ch01.html
+ /usr/bin/install -c -m 644 ./html/ch02.html
+ /usr/bin/install -c -m 644 ./html/ch03.html
+ /usr/bin/install -c -m 644 ./html/database-schema.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-audit.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-categories.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-columns.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-db.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-error.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-favorites.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-history.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-main.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-mame.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-nplayers.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-play-back.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-preferences.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-properties.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-time.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-tree-view.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-ui.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-util.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade-gva-wnck.html
+ /usr/bin/install -c -m 644 ./html/gnome-video-arcade.devhelp2
+ /usr/bin/install -c -m 644 ./html/home.png
+ /usr/bin/install -c -m 644 ./html/index.html
+ /usr/bin/install -c -m 644 ./html/left-insensitive.png
+ /usr/bin/install -c -m 644 ./html/left.png
+ /usr/bin/install -c -m 644 ./html/right-insensitive.png
+ /usr/bin/install -c -m 644 ./html/right.png
+ /usr/bin/install -c -m 644 ./html/style.css
+ /usr/bin/install -c -m 644 ./html/up-insensitive.png
+ /usr/bin/install -c -m 644 ./html/up.png
+make[3]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs/reference'
+make[2]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs/reference'
+make[2]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs'
+make[3]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/man/man1'
+ /usr/bin/install -c -m 644 gnome-video-arcade.1 '/build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/man/man1'
+make[3]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs'
+make[2]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs'
+make[1]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/docs'
+Making install in help
+make[1]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/help'
+make[2]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/help'
+make[2]: Nothing to be done for 'install-exec-am'.
+/usr/bin/install -c -m 644 C/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/C/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 C/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/C/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 cs/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/cs/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 cs/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/cs/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 da/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/da/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 da/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/da/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 de/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/de/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 de/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/de/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 el/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/el/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 el/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/el/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 es/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/es/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 es/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/es/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 fr/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/fr/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 fr/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/fr/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 it/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/it/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 it/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/it/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 sl/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sl/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 sl/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sl/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 sv/index.docbook /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sv/gnome-video-arcade/index.docbook
+/usr/bin/install -c -m 644 sv/legal.xml /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sv/gnome-video-arcade/legal.xml
+/usr/bin/install -c -m 644 ./C/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/C/gnome-video-arcade/figures/gva_building_database.png
+/usr/bin/install -c -m 644 ./cs/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/cs/gnome-video-arcade/figures/gva_building_database.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/da/gnome-video-arcade/figures/gva_building_database.png
+/usr/bin/install -c -m 644 ./de/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/de/gnome-video-arcade/figures/gva_building_database.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/el/gnome-video-arcade/figures/gva_building_database.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/es/gnome-video-arcade/figures/gva_building_database.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/fr/gnome-video-arcade/figures/gva_building_database.png
+/usr/bin/install -c -m 644 ./it/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/it/gnome-video-arcade/figures/gva_building_database.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sl/gnome-video-arcade/figures/gva_building_database.png
+/usr/bin/install -c -m 644 ./sv/figures/gva_building_database.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sv/gnome-video-arcade/figures/gva_building_database.png
+/usr/bin/install -c -m 644 ./C/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/C/gnome-video-arcade/figures/gva_column_preferences.png
+/usr/bin/install -c -m 644 ./cs/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/cs/gnome-video-arcade/figures/gva_column_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/da/gnome-video-arcade/figures/gva_column_preferences.png
+/usr/bin/install -c -m 644 ./de/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/de/gnome-video-arcade/figures/gva_column_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/el/gnome-video-arcade/figures/gva_column_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/es/gnome-video-arcade/figures/gva_column_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/fr/gnome-video-arcade/figures/gva_column_preferences.png
+/usr/bin/install -c -m 644 ./it/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/it/gnome-video-arcade/figures/gva_column_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sl/gnome-video-arcade/figures/gva_column_preferences.png
+/usr/bin/install -c -m 644 ./sv/figures/gva_column_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sv/gnome-video-arcade/figures/gva_column_preferences.png
+/usr/bin/install -c -m 644 ./C/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/C/gnome-video-arcade/figures/gva_general_preferences.png
+/usr/bin/install -c -m 644 ./cs/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/cs/gnome-video-arcade/figures/gva_general_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/da/gnome-video-arcade/figures/gva_general_preferences.png
+/usr/bin/install -c -m 644 ./de/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/de/gnome-video-arcade/figures/gva_general_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/el/gnome-video-arcade/figures/gva_general_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/es/gnome-video-arcade/figures/gva_general_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/fr/gnome-video-arcade/figures/gva_general_preferences.png
+/usr/bin/install -c -m 644 ./it/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/it/gnome-video-arcade/figures/gva_general_preferences.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sl/gnome-video-arcade/figures/gva_general_preferences.png
+/usr/bin/install -c -m 644 ./sv/figures/gva_general_preferences.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sv/gnome-video-arcade/figures/gva_general_preferences.png
+/usr/bin/install -c -m 644 ./C/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/C/gnome-video-arcade/figures/gva_main_window.png
+/usr/bin/install -c -m 644 ./cs/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/cs/gnome-video-arcade/figures/gva_main_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/da/gnome-video-arcade/figures/gva_main_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/de/gnome-video-arcade/figures/gva_main_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/el/gnome-video-arcade/figures/gva_main_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/es/gnome-video-arcade/figures/gva_main_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/fr/gnome-video-arcade/figures/gva_main_window.png
+/usr/bin/install -c -m 644 ./it/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/it/gnome-video-arcade/figures/gva_main_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sl/gnome-video-arcade/figures/gva_main_window.png
+/usr/bin/install -c -m 644 ./sv/figures/gva_main_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sv/gnome-video-arcade/figures/gva_main_window.png
+/usr/bin/install -c -m 644 ./C/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/C/gnome-video-arcade/figures/gva_recorded_games.png
+/usr/bin/install -c -m 644 ./cs/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/cs/gnome-video-arcade/figures/gva_recorded_games.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/da/gnome-video-arcade/figures/gva_recorded_games.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/de/gnome-video-arcade/figures/gva_recorded_games.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/el/gnome-video-arcade/figures/gva_recorded_games.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/es/gnome-video-arcade/figures/gva_recorded_games.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/fr/gnome-video-arcade/figures/gva_recorded_games.png
+/usr/bin/install -c -m 644 ./it/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/it/gnome-video-arcade/figures/gva_recorded_games.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sl/gnome-video-arcade/figures/gva_recorded_games.png
+/usr/bin/install -c -m 644 ./sv/figures/gva_recorded_games.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sv/gnome-video-arcade/figures/gva_recorded_games.png
+/usr/bin/install -c -m 644 ./C/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/C/gnome-video-arcade/figures/gva_search_window.png
+/usr/bin/install -c -m 644 ./cs/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/cs/gnome-video-arcade/figures/gva_search_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/da/gnome-video-arcade/figures/gva_search_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/de/gnome-video-arcade/figures/gva_search_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/el/gnome-video-arcade/figures/gva_search_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/es/gnome-video-arcade/figures/gva_search_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/fr/gnome-video-arcade/figures/gva_search_window.png
+/usr/bin/install -c -m 644 ./it/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/it/gnome-video-arcade/figures/gva_search_window.png
+ln -s -f /usr/share/help/C/gnome-video-arcade/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sl/gnome-video-arcade/figures/gva_search_window.png
+/usr/bin/install -c -m 644 ./sv/figures/gva_search_window.png /build/gnome-video-arcade/pkg/gnome-video-arcade/usr/share/help/sv/gnome-video-arcade/figures/gva_search_window.png
+make[2]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/help'
+make[1]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8/help'
+make[1]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8'
+make[2]: Entering directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8'
+make[1]: Leaving directory '/build/gnome-video-arcade/src/gnome-video-arcade-0.8.8'

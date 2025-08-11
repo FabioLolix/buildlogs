@@ -1,0 +1,99 @@
+-- The C compiler identification is GNU 15.1.1
+-- The CXX compiler identification is GNU 15.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Strawberry Version:
+-- Display:  1.2.11-78-g183aba418
+-- Package:  1.2.11.78.g183aba418
+-- RPM:      1.2.11-2.78.g183aba418
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for backtrace
+-- Looking for backtrace - found
+-- backtrace facility detected in default set of libraries
+-- Found Backtrace: /usr/include
+-- Found ICU: /usr/include (found version "76.1") found components: uc i18n
+-- Found ALSA: /usr/lib/libasound.so (found version "1.2.14")
+-- Found X11: /usr/include  found components: X11_xcb
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Checking for module 'glib-2.0'
+--   Found glib-2.0, version 2.84.3
+-- Checking for module 'gobject-2.0'
+--   Found gobject-2.0, version 2.84.3
+-- Checking for module 'gio-2.0'
+--   Found gio-2.0, version 2.84.3
+-- Checking for module 'gio-unix-2.0'
+--   Found gio-unix-2.0, version 2.84.3
+-- Checking for module 'libcdio'
+--   Package 'libcdio' not found
+-- Checking for module 'gstreamer-1.0'
+--   Found gstreamer-1.0, version 1.26.5
+-- Checking for module 'gstreamer-base-1.0'
+--   Found gstreamer-base-1.0, version 1.26.5
+-- Checking for module 'gstreamer-audio-1.0'
+--   Found gstreamer-audio-1.0, version 1.26.5
+-- Checking for module 'gstreamer-app-1.0'
+--   Found gstreamer-app-1.0, version 1.26.5
+-- Checking for module 'gstreamer-tag-1.0'
+--   Found gstreamer-tag-1.0, version 1.26.5
+-- Checking for module 'gstreamer-pbutils-1.0'
+--   Found gstreamer-pbutils-1.0, version 1.26.5
+-- Checking for module 'sqlite3>=3.9'
+--   Found sqlite3, version 3.50.4
+-- Checking for module 'libpulse'
+--   Found libpulse, version 17.0-43-g3e2bb
+-- Checking for module 'libchromaprint>=1.4'
+--   Found libchromaprint, version 1.5.1
+-- Checking for module 'fftw3'
+--   Found fftw3, version 3.3.10
+-- Checking for module 'libebur128'
+--   Package 'libebur128' not found
+-- Checking for module 'libgpod-1.0>=0.7.92'
+--   Package 'libgpod-1.0' not found
+-- Checking for module 'libmtp>=1.0'
+--   Package 'libmtp' not found
+-- Checking for module 'gdk-pixbuf-2.0'
+--   Found gdk-pixbuf-2.0, version 2.42.12
+-- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY) 
+-- Checking for module 'libsparsehash'
+--   Package 'libsparsehash' not found
+-- RapidJSON found. Headers: /usr/include
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Performing Test HAVE_QX11APPLICATION
+-- Performing Test HAVE_QX11APPLICATION - Success
+CMake Error at cmake/OptionalComponent.cmake:84 (message):
+  Devices: Audio CD support (missing libcdio), to disable this optional
+  feature, pass -DENABLE_AUDIOCD=OFF to CMake
+Call Stack (most recent call first):
+  CMakeLists.txt:319 (optional_component)
+
+
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

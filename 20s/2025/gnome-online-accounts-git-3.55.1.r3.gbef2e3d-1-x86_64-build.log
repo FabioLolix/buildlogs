@@ -1,0 +1,304 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 gnome-online-accounts build -D documentation=true -D man=true
+The Meson build system
+Version: 1.8.3
+Source dir: /build/gnome-online-accounts-git/src/gnome-online-accounts
+Build dir: /build/gnome-online-accounts-git/src/build
+Build type: native build
+Project name: gnome-online-accounts
+Project version: 3.55.1
+C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250729")
+C linker for the host machine: cc ld.bfd 2.45.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency gio-2.0 found: YES 2.84.3
+Run-time dependency gio-unix-2.0 found: YES 2.84.3
+Run-time dependency glib-2.0 found: YES 2.84.3
+Run-time dependency dbus-1 found: YES 1.16.2
+Run-time dependency gobject-introspection-1.0 found: YES 1.84.0
+Run-time dependency json-glib-1.0 found: YES 1.10.6
+Run-time dependency libsecret-1 found: YES 0.21.7
+Run-time dependency libsoup-3.0 found: YES 3.6.5
+Run-time dependency libxml-2.0 found: YES 2.14.5
+Run-time dependency gtk4 found: YES 4.18.6
+Run-time dependency libadwaita-1 found: YES 1.7.6
+Run-time dependency rest-1.0 found: YES 0.10.2
+Run-time dependency gcr-4 found: YES 4.4.0.1
+Run-time dependency krb5 found: YES 1.21.3
+Run-time dependency libkeyutils found: YES 1.6.3
+Checking if "timerfd support" compiles: YES 
+Checking if "timerfd cancel-on-set support" compiles: YES 
+Checking for function "pipe2" : YES 
+Configuring config.h using configuration
+Configuring org.gnome.OnlineAccounts.service using configuration
+Configuring org.gnome.Identity.service using configuration
+Configuring org.gnome.OnlineAccounts.OAuth2.desktop using configuration
+Configuring goaconfig.h using configuration
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Program gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Program gi-docgen found: YES (/usr/bin/gi-docgen)
+Configuring goa.toml using configuration
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Build targets in project: 110
+
+gnome-online-accounts 3.55.1
+
+  Directories
+    prefix               : /usr
+    libdir               : /usr/lib
+    libexecdir           : /usr/lib
+    datadir              : /usr/share
+
+  Options
+    Backend              : YES
+    Introspection        : YES
+    Template tile        : 
+    Vala support         : YES
+    API docs             : YES
+    Man pages            : YES
+
+  Providers
+    Fedora Account System: NO
+    Google               : YES
+    IMAP/SMTP            : YES
+    Kerberos             : YES
+    Microsoft Exchange   : YES
+    ownCloud             : YES
+    WebDAV               : YES
+    Microsoft 365        : YES
+
+  Google Provider OAuth 2.0
+    id                   : 44438659992-7kgjeitenc16ssihbtdjbgguch7ju55s.apps.googleusercontent.com
+    secret               : -gMLuQyDiI0XrQS_vx_mhuYF
+
+  Microsoft 365 Provider OAuth 2.0
+    id                   : 8ef61e06-9fd5-49af-9b63-6983aede4213
+
+  User defined options
+    auto_features        : enabled
+    b_pie                : true
+    buildtype            : plain
+    documentation        : true
+    libexecdir           : lib
+    man                  : true
+    prefix               : /usr
+    python.bytecompile   : 1
+    sbindir              : bin
+    wrap_mode            : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/110 eta ?                                                Writing build.ninja:   0%|          | 0/195 eta ?                                                 ninja: Entering directory `build'
+[1/163] Building translation po/ast/LC_MESSAGES/gnome-online-accounts-ast.mo
+[2/163] Building translation po/ab/LC_MESSAGES/gnome-online-accounts-ab.mo
+[3/163] Building translation po/ar/LC_MESSAGES/gnome-online-accounts-ar.mo
+[4/163] Building translation po/an/LC_MESSAGES/gnome-online-accounts-an.mo
+[5/163] Building translation po/be/LC_MESSAGES/gnome-online-accounts-be.mo
+[6/163] Building translation po/bg/LC_MESSAGES/gnome-online-accounts-bg.mo
+[7/163] Building translation po/af/LC_MESSAGES/gnome-online-accounts-af.mo
+[8/163] Building translation po/as/LC_MESSAGES/gnome-online-accounts-as.mo
+[9/163] Building translation po/bn_IN/LC_MESSAGES/gnome-online-accounts-bn_IN.mo
+[10/163] Building translation po/bs/LC_MESSAGES/gnome-online-accounts-bs.mo
+[11/163] Building translation po/ca/LC_MESSAGES/gnome-online-accounts-ca.mo
+[12/163] Building translation po/ca@valencia/LC_MESSAGES/gnome-online-accounts-ca@valencia.mo
+[13/163] Building translation po/ckb/LC_MESSAGES/gnome-online-accounts-ckb.mo
+[14/163] Building translation po/cs/LC_MESSAGES/gnome-online-accounts-cs.mo
+[15/163] Building translation po/da/LC_MESSAGES/gnome-online-accounts-da.mo
+[16/163] Building translation po/de/LC_MESSAGES/gnome-online-accounts-de.mo
+[17/163] Building translation po/en_GB/LC_MESSAGES/gnome-online-accounts-en_GB.mo
+[18/163] Building translation po/eo/LC_MESSAGES/gnome-online-accounts-eo.mo
+[19/163] Building translation po/et/LC_MESSAGES/gnome-online-accounts-et.mo
+[20/163] Building translation po/eu/LC_MESSAGES/gnome-online-accounts-eu.mo
+[21/163] Building translation po/fa/LC_MESSAGES/gnome-online-accounts-fa.mo
+[22/163] Building translation po/fi/LC_MESSAGES/gnome-online-accounts-fi.mo
+[23/163] Building translation po/fr/LC_MESSAGES/gnome-online-accounts-fr.mo
+[24/163] Building translation po/fur/LC_MESSAGES/gnome-online-accounts-fur.mo
+[25/163] Building translation po/ga/LC_MESSAGES/gnome-online-accounts-ga.mo
+[26/163] Building translation po/el/LC_MESSAGES/gnome-online-accounts-el.mo
+[27/163] Building translation po/es/LC_MESSAGES/gnome-online-accounts-es.mo
+[28/163] Building translation po/gl/LC_MESSAGES/gnome-online-accounts-gl.mo
+[29/163] Building translation po/gd/LC_MESSAGES/gnome-online-accounts-gd.mo
+[30/163] Building translation po/gu/LC_MESSAGES/gnome-online-accounts-gu.mo
+[31/163] Building translation po/he/LC_MESSAGES/gnome-online-accounts-he.mo
+[32/163] Building translation po/hr/LC_MESSAGES/gnome-online-accounts-hr.mo
+[33/163] Building translation po/hi/LC_MESSAGES/gnome-online-accounts-hi.mo
+[34/163] Building translation po/hu/LC_MESSAGES/gnome-online-accounts-hu.mo
+[35/163] Building translation po/id/LC_MESSAGES/gnome-online-accounts-id.mo
+[36/163] Building translation po/ie/LC_MESSAGES/gnome-online-accounts-ie.mo
+[37/163] Building translation po/is/LC_MESSAGES/gnome-online-accounts-is.mo
+[38/163] Building translation po/it/LC_MESSAGES/gnome-online-accounts-it.mo
+[39/163] Generating gdbus source src/goaidentity/org.gnome.Identity.c
+[40/163] Building translation po/ja/LC_MESSAGES/gnome-online-accounts-ja.mo
+[41/163] Building translation po/ka/LC_MESSAGES/gnome-online-accounts-ka.mo
+[42/163] Generating gdbus docbook src/goa/goa-generated-docbook
+[43/163] Building translation po/kk/LC_MESSAGES/gnome-online-accounts-kk.mo
+[44/163] Building translation po/kn/LC_MESSAGES/gnome-online-accounts-kn.mo
+[45/163] Building translation po/kab/LC_MESSAGES/gnome-online-accounts-kab.mo
+[46/163] Building translation po/km/LC_MESSAGES/gnome-online-accounts-km.mo
+[47/163] Building translation po/lt/LC_MESSAGES/gnome-online-accounts-lt.mo
+[48/163] Generating gdbus header src/goaidentity/org.gnome.Identity.h
+[49/163] Building translation po/ko/LC_MESSAGES/gnome-online-accounts-ko.mo
+[50/163] Building translation po/mk/LC_MESSAGES/gnome-online-accounts-mk.mo
+[51/163] Generating doc/dbus-md with a custom command
+[52/163] Building translation po/lv/LC_MESSAGES/gnome-online-accounts-lv.mo
+[53/163] Building translation po/mjw/LC_MESSAGES/gnome-online-accounts-mjw.mo
+[54/163] Building translation po/ml/LC_MESSAGES/gnome-online-accounts-ml.mo
+[55/163] Generating gdbus header src/goa/goa-generated.h
+[56/163] Building translation po/mr/LC_MESSAGES/gnome-online-accounts-mr.mo
+[57/163] Building translation po/ms/LC_MESSAGES/gnome-online-accounts-ms.mo
+[58/163] Building translation po/nb/LC_MESSAGES/gnome-online-accounts-nb.mo
+[59/163] Building translation po/ne/LC_MESSAGES/gnome-online-accounts-ne.mo
+[60/163] Generating gdbus source src/goa/goa-generated.c
+[61/163] Building translation po/nl/LC_MESSAGES/gnome-online-accounts-nl.mo
+[62/163] Building translation po/oc/LC_MESSAGES/gnome-online-accounts-oc.mo
+[63/163] Building translation po/or/LC_MESSAGES/gnome-online-accounts-or.mo
+[64/163] Building translation po/pl/LC_MESSAGES/gnome-online-accounts-pl.mo
+[65/163] Building translation po/pt/LC_MESSAGES/gnome-online-accounts-pt.mo
+[66/163] Building translation po/pt_BR/LC_MESSAGES/gnome-online-accounts-pt_BR.mo
+[67/163] Building translation po/ro/LC_MESSAGES/gnome-online-accounts-ro.mo
+[68/163] Building translation po/pa/LC_MESSAGES/gnome-online-accounts-pa.mo
+[69/163] Building translation po/ru/LC_MESSAGES/gnome-online-accounts-ru.mo
+[70/163] Building translation po/sk/LC_MESSAGES/gnome-online-accounts-sk.mo
+[71/163] Building translation po/sl/LC_MESSAGES/gnome-online-accounts-sl.mo
+[72/163] Building translation po/sr/LC_MESSAGES/gnome-online-accounts-sr.mo
+[73/163] Building translation po/sv/LC_MESSAGES/gnome-online-accounts-sv.mo
+[74/163] Building translation po/sr@latin/LC_MESSAGES/gnome-online-accounts-sr@latin.mo
+[75/163] Building translation po/ta/LC_MESSAGES/gnome-online-accounts-ta.mo
+[76/163] Building translation po/tr/LC_MESSAGES/gnome-online-accounts-tr.mo
+[77/163] Building translation po/te/LC_MESSAGES/gnome-online-accounts-te.mo
+[78/163] Building translation po/th/LC_MESSAGES/gnome-online-accounts-th.mo
+[79/163] Building translation po/tg/LC_MESSAGES/gnome-online-accounts-tg.mo
+[80/163] Building translation po/ug/LC_MESSAGES/gnome-online-accounts-ug.mo
+[81/163] Building translation po/uk/LC_MESSAGES/gnome-online-accounts-uk.mo
+[82/163] Building translation po/uz/LC_MESSAGES/gnome-online-accounts-uz.mo
+[83/163] Building translation po/zh_TW/LC_MESSAGES/gnome-online-accounts-zh_TW.mo
+[84/163] Building translation po/zh_CN/LC_MESSAGES/gnome-online-accounts-zh_CN.mo
+[85/163] Building translation po/vi/LC_MESSAGES/gnome-online-accounts-vi.mo
+[86/163] Building translation po/zh_HK/LC_MESSAGES/gnome-online-accounts-zh_HK.mo
+[87/163] Generating GObject enum file src/goa/goaenumtypes.h (wrapped by meson to capture output)
+[88/163] Generating GObject enum file src/goabackend/goabackendenumtypes-priv.h (wrapped by meson because command contains newlines, to capture output)
+[89/163] Generating GObject enum file src/goabackend/goabackendenumtypes.h (wrapped by meson to capture output)
+[90/163] Generating GObject enum file src/goabackend/goabackendenumtypes-priv.c (wrapped by meson because command contains newlines, to capture output)
+[91/163] Generating GObject enum file src/goaidentity/goaidentityenumtypes.h (wrapped by meson to capture output)
+[92/163] Generating doc/goa-daemon.8 with a custom command
+[93/163] Compiling C object src/goabackend/goa-oauth2-handler.p/goaoauth2handler.c.o
+[94/163] Compiling C object src/goa/libgoa-1.0.so.0.0.0.p/goaversion.c.o
+[95/163] Generating GObject enum file src/goa/goaenumtypes.c (wrapped by meson to capture output)
+[96/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goabackendinit.c.o
+[97/163] Generating GObject enum file src/goabackend/goabackendenumtypes.c (wrapped by meson to capture output)
+[98/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goamailconfig.c.o
+[99/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goadavconfig.c.o
+[100/163] Compiling C object src/goa/libgoa-1.0.so.0.0.0.p/goaerror.c.o
+[101/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaobjectskeletonutils.c.o
+[102/163] Compiling C object src/goa/libgoa-1.0.so.0.0.0.p/meson-generated_.._goaenumtypes.c.o
+[103/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/meson-generated_.._goabackendenumtypes.c.o
+[104/163] Compiling C object src/goa/libgoa-1.0.so.0.0.0.p/goaclient.c.o
+[105/163] Compiling C object src/examples/list-accounts.p/list-accounts.c.o
+[106/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goamailauth.c.o
+[107/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaserviceconfig.c.o
+[108/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/meson-generated_.._.._goaidentity_org.gnome.Identity.c.o
+[109/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goarestproxy.c.o
+[110/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goasouplogger.c.o
+[111/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/.._goaidentity_goaidentitymanagererror.c.o
+[112/163] Compiling C object src/goaidentity/goa-identity-service.p/goaidentitymanagererror.c.o
+[113/163] Compiling C object src/goaidentity/goa-identity-service.p/goaidentity.c.o
+[114/163] Generating GObject enum file src/goaidentity/goaidentityenumtypes.c (wrapped by meson to capture output)
+[115/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goamailclient.c.o
+../gnome-online-accounts/src/goabackend/goamailclient.c: In function ‘mail_client_check_event_cb’:
+../gnome-online-accounts/src/goabackend/goamailclient.c:146:5: warning: ‘g_tls_client_connection_set_validation_flags’ is deprecated [-Wdeprecated-declarations]
+  146 |     g_tls_client_connection_set_validation_flags (G_TLS_CLIENT_CONNECTION (data->tls_conn), 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gio/gio.h:165,
+                 from /usr/include/libsoup-3.0/libsoup/soup-types.h:9,
+                 from /usr/include/libsoup-3.0/libsoup/soup-auth.h:8,
+                 from /usr/include/libsoup-3.0/libsoup/soup.h:11,
+                 from ../gnome-online-accounts/src/goabackend/goasouplogger.h:26,
+                 from ../gnome-online-accounts/src/goabackend/goamailclient.c:25:
+/usr/include/glib-2.0/gio/gtlsclientconnection.h:67:23: note: declared here
+   67 | void                  g_tls_client_connection_set_validation_flags (GTlsClientConnection    *conn,
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-online-accounts/src/goabackend/goamailclient.c: In function ‘mail_client_check_auth_starttls_cb’:
+../gnome-online-accounts/src/goabackend/goamailclient.c:293:5: warning: ‘g_tls_client_connection_set_validation_flags’ is deprecated [-Wdeprecated-declarations]
+  293 |     g_tls_client_connection_set_validation_flags (G_TLS_CLIENT_CONNECTION (data->tls_conn), 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gio/gtlsclientconnection.h:67:23: note: declared here
+   67 | void                  g_tls_client_connection_set_validation_flags (GTlsClientConnection    *conn,
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[116/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaewsclient.c.o
+[117/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaauthflowbutton.c.o
+[118/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goagoogleprovider.c.o
+[119/163] Compiling C object src/goaidentity/goa-identity-service.p/goaalarm.c.o
+[120/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaimapauthlogin.c.o
+[121/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/meson-generated_.._goabackendenumtypes-priv.c.o
+[122/163] Compiling C object src/goaidentity/goa-identity-service.p/meson-generated_.._org.gnome.Identity.c.o
+[123/163] Compiling C object src/goaidentity/goa-identity-service.p/meson-generated_.._goaidentityenumtypes.c.o
+[124/163] Compiling C object src/goaidentity/goa-identity-service.p/goaidentitymanager.c.o
+[125/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaexchangeprovider.c.o
+[126/163] Compiling C object src/goaidentity/goa-identity-service.p/goaidentityinquiry.c.o
+[127/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaowncloudprovider.c.o
+[128/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goamsgraphprovider.c.o
+[129/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaproviderdialog.c.o
+[130/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaimapsmtpprovider.c.o
+[131/163] Compiling C object src/goaidentity/goa-identity-service.p/goaidentityutils.c.o
+[132/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goadavclient.c.o
+[133/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goasmtpauth.c.o
+[134/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaprovider.c.o
+[135/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goautils.c.o
+[136/163] Compiling C object src/goaidentity/goa-identity-service.p/goaidentityservice.c.o
+[137/163] Compiling C object src/goaidentity/goa-identity-service.p/main.c.o
+[138/163] Compiling C object src/goaidentity/goa-identity-service.p/goakerberosidentityinquiry.c.o
+[139/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goaoauth2provider.c.o
+[140/163] Compiling C object src/goaidentity/goa-identity-service.p/goalinuxnotificationstream.c.o
+[141/163] Linking target src/goabackend/goa-oauth2-handler
+[142/163] Compiling C object src/daemon/goa-daemon.p/main.c.o
+[143/163] Compiling C object src/goaidentity/goa-identity-service.p/goakerberosidentity.c.o
+[144/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goakerberosprovider.c.o
+[145/163] Compiling C object src/goaidentity/goa-identity-service.p/goakerberosidentitymanager.c.o
+[146/163] Compiling C object src/goabackend/libgoa-backend-1.0.so.2.0.0.p/goawebdavprovider.c.o
+[147/163] Compiling C object src/examples/list-providers.p/list-providers.c.o
+[148/163] Compiling C object src/examples/introspect-providers.p/introspect-providers.c.o
+[149/163] Compiling C object src/daemon/goa-daemon.p/goadaemon.c.o
+[150/163] Compiling C object src/goa/libgoa-1.0.so.0.0.0.p/meson-generated_.._goa-generated.c.o
+[151/163] Linking target src/goa/libgoa-1.0.so.0.0.0
+[152/163] Generating symbol file src/goa/libgoa-1.0.so.0.0.0.p/libgoa-1.0.so.0.0.0.symbols
+[153/163] Linking target src/examples/list-accounts
+[154/163] Generating src/goa/Goa-1.0.gir with a custom command (wrapped by meson to set env)
+[155/163] Generating src/goa/goa-1.0.vapi with a custom command
+warning: empty metadata
+[156/163] Linking target src/goabackend/libgoa-backend-1.0.so.2.0.0
+[157/163] Generating src/goa/Goa-1.0.typelib with a custom command
+[158/163] Linking target src/goaidentity/goa-identity-service
+[159/163] Generating symbol file src/goabackend/libgoa-backend-1.0.so.2.0.0.p/libgoa-backend-1.0.so.2.0.0.symbols
+[160/163] Linking target src/examples/list-providers
+[161/163] Linking target src/examples/introspect-providers
+[162/163] Linking target src/daemon/goa-daemon
+[163/163] Generating doc/goa-doc with a custom command

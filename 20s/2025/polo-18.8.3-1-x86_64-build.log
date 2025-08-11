@@ -1,0 +1,144 @@
+cd src; make all
+make[1]: Entering directory '/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src'
+/bin/bash: line 1: test: 80.3: integer expected
+#polo-gtk
+# update translation template
+valac --Xcc="-lm" -X -D'GETTEXT_PACKAGE="polo"' \
+	"polo-disk.vala" Console/*.vala --Xcc="-O3" -o polo-disk --pkg posix --pkg gio-unix-2.0 --pkg gee-0.8
+valac "polo-gtk3-helper.vala" --Xcc="-O3" -o polo-gtk3-helper --pkg gtk+-3.0
+valac -X -D'GETTEXT_PACKAGE="polo"' \
+	--Xcc="-lm" -D VTE_291 -D GTK3_18 --Xcc="-O3" --thread \
+	Common/Main.vala \
+	Gtk/*.vala \
+	Utility/*.vala \
+	Utility/Gtk/*.vala \
+	-o "polo-gtk" \
+	--target-glib 2.32 --pkg glib-2.0 \
+	--pkg gio-unix-2.0 --pkg posix --pkg gtk+-3.0 \
+	--pkg gee-0.8 --pkg json-glib-1.0 --pkg libxml-2.0 \
+	--pkg vte-2.91 \
+	--pkg gdk-x11-3.0
+xgettext --language=C --keyword=_ \
+	--copyright-holder='Tony George (teejeetech@gmail.com)' \
+	--package-name='polo' \
+	--package-version='1.6' \
+	--msgid-bugs-address='teejeetech@gmail.com' \
+	--escape \
+	--sort-output \
+	--from-code=UTF-8 \
+	-o ../polo.pot \
+	Common/*.vala \
+	Gtk/*.vala \
+	Utility/*.vala \
+	Utility/Gtk/*.vala
+xgettext: The option '--sort-output' is deprecated.
+Utility/LicenseText.vala:2: warning: unterminated string literal
+Utility/LicenseText.vala:18: warning: unterminated character constant
+Utility/LicenseText.vala:45: warning: unterminated character constant
+Utility/LicenseText.vala:50: warning: unterminated character constant
+Utility/LicenseText.vala:56: warning: unterminated character constant
+Utility/LicenseText.vala:81: warning: unterminated character constant
+Utility/LicenseText.vala:195: warning: unterminated character constant
+Utility/LicenseText.vala:245: warning: unterminated string literal
+Utility/LicenseText.vala:246: warning: unterminated string literal
+Utility/LicenseText.vala:295: warning: unterminated character constant
+Utility/LicenseText.vala:318: warning: unterminated character constant
+Utility/LicenseText.vala:320: warning: unterminated character constant
+Utility/LicenseText.vala:332: warning: unterminated character constant
+Utility/LicenseText.vala:342: warning: unterminated string literal
+# update translation files
+for lang in de nl fr; do \
+	msgmerge --update -v ../po/polo-$lang.po ../polo.pot ; \
+done
+...............................................................................................................................................................................................
+Read 1 old + 1 reference, merged 1041, fuzzied 3, missing 4, obsolete 120.
+......................................................................................................................................................................................
+Read 1 old + 1 reference, merged 1041, fuzzied 3, missing 4, obsolete 159.
+Console/TeeJee.Process.vala:88.31-88.49: warning: use of possibly unassigned parameter `std_err'
+		out string? std_out = null, out string? std_err = null,
+		                            ^^^^^^^^^^^^^^^^^^^
+Console/TeeJee.Process.vala:88.3-88.21: warning: use of possibly unassigned parameter `std_out'
+		out string? std_out = null, out string? std_err = null,
+		^^^^^^^^^^^^^^^^^^^
+Console/TeeJee.Process.vala:88.31-88.49: warning: use of possibly unassigned parameter `std_err'
+		out string? std_out = null, out string? std_err = null,
+		                            ^^^^^^^^^^^^^^^^^^^
+Console/TeeJee.Process.vala:88.3-88.21: warning: use of possibly unassigned parameter `std_out'
+		out string? std_out = null, out string? std_err = null,
+		^^^^^^^^^^^^^^^^^^^
+..................................................................................................................................................................................
+Read 1 old + 1 reference, merged 1041, fuzzied 2, missing 5, obsolete 98.
+# am ar az bg ca cs da de el en_GB es et eu fr he hi hr hu ia id is it ko lt nb ne nl pl pt pt_BR ro ru sk sr sv tr uk vi zh_CN
+vte-2.91.vapi:240.10-240.17: error: `GLib.Uri' is not a type
+		public GLib.Uri? ref_termprop_uri (string prop);
+		       ^^^^^^^^
+vte-2.91.vapi:242.10-242.17: error: `GLib.Uri' is not a type
+		public GLib.Uri? ref_termprop_uri_by_id (int prop);
+		       ^^^^^^^^
+Command-line option `--thread` is deprecated and will be ignored
+Compilation failed: 2 error(s), 0 warning(s)
+make[1]: *** [makefile:45: app-gtk] Error 1
+make[1]: *** Waiting for unfinished jobs....
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/Device.vala.c:28:
+/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/Device.vala.c: In function ‘device_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/Device.vala.c:5952:13: note: in expansion of macro ‘g_once_init_enter’
+ 5952 |         if (g_once_init_enter (&device_type_id__volatile)) {
+      |             ^~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/MountEntry.vala.c:4:
+/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/MountEntry.vala.c: In function ‘mount_entry_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/MountEntry.vala.c:362:13: note: in expansion of macro ‘g_once_init_enter’
+  362 |         if (g_once_init_enter (&mount_entry_type_id__volatile)) {
+      |             ^~~~~~~~~~~~~~~~~
+/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/TeeJee.FileSystem.vala.c: In function ‘tee_jee_file_system_file_get_modified_date’:
+/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/TeeJee.FileSystem.vala.c:1382:25: warning: ‘GTimeVal’ is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+ 1382 |                         GTimeVal _tmp10_ = {0};
+      |                         ^~~~~~~~
+In file included from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/TeeJee.FileSystem.vala.c:27:
+/usr/include/glib-2.0/glib/gtypes.h:580:8: note: declared here
+  580 | struct _GTimeVal
+      |        ^~~~~~~~~
+/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/TeeJee.FileSystem.vala.c:1404:25: warning: ‘g_file_info_get_modification_time’ is deprecated: Use 'g_file_info_get_modification_date_time' instead [-Wdeprecated-declarations]
+ 1404 |                         g_file_info_get_modification_time (_tmp9_, &_tmp10_);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gio/gio.h:85,
+                 from /build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/TeeJee.FileSystem.vala.c:30:
+/usr/include/glib-2.0/gio/gfileinfo.h:1438:19: note: declared here
+ 1438 | void              g_file_info_get_modification_time  (GFileInfo         *info,
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src/Console/TeeJee.FileSystem.vala.c:1405:25: warning: ‘g_date_time_new_from_timeval_utc’ is deprecated: Use 'g_date_time_new_from_unix_utc' instead [-Wdeprecated-declarations]
+ 1405 |                         _tmp11_ = g_date_time_new_from_timeval_utc (&_tmp10_);
+      |                         ^~~~~~~
+In file included from /usr/include/glib-2.0/glib/gbookmarkfile.h:28,
+                 from /usr/include/glib-2.0/glib.h:39:
+/usr/include/glib-2.0/glib/gdatetime.h:150:25: note: declared here
+  150 | GDateTime *             g_date_time_new_from_timeval_utc                (const GTimeVal *tv);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compilation succeeded - 4 warning(s)
+make[1]: Leaving directory '/build/polo/src/polo-538be6950d9394c90aa90be3973a3c8d9a27b999/src'
+make: *** [makefile:2: all] Error 2
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

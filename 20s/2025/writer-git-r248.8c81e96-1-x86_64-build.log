@@ -1,0 +1,588 @@
+The Meson build system
+Version: 1.8.3
+Source dir: /build/writer-git/src/writer
+Build dir: /build/writer-git/src/writer/build
+Build type: native build
+Project name: com.github.ryonakano.writer
+Project version: 0.1.0
+C compiler for the host machine: cc (gcc 15.1.1 "cc (GCC) 15.1.1 20250729")
+C linker for the host machine: cc ld.bfd 2.45.0
+Vala compiler for the host machine: valac (valac 0.56.18-dirty)
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Build-time dependency gio-2.0 found: YES 2.84.3
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Configuring config.vala using configuration
+Run-time dependency gee-0.8 found: YES 0.20.8
+Run-time dependency glib-2.0 found: YES 2.84.3
+Run-time dependency granite found: YES 6.2.0
+Run-time dependency gtk+-3.0 found: YES 3.24.50
+Run-time dependency gtksourceview-4 found: YES 4.8.4
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Build targets in project: 17
+
+com.github.ryonakano.writer 0.1.0
+
+  User defined options
+    prefix: /usr
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/17 eta ?                                               Writing build.ninja:   0%|          | 0/67 eta ?                                                WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+ninja: Entering directory `build'
+[1/28] Generating as-resources_c with a custom command
+[2/28] Generating as-resources_h with a custom command
+[3/28] Building translation po/nl/LC_MESSAGES/com.github.ryonakano.writer-nl.mo
+[4/28] Building translation po/fr/LC_MESSAGES/com.github.ryonakano.writer-fr.mo
+[5/28] Building translation po/pt_BR/LC_MESSAGES/com.github.ryonakano.writer-pt_BR.mo
+[6/28] Merging translations for data/com.github.ryonakano.writer.desktop
+[7/28] Merging translations for data/com.github.ryonakano.writer.appdata.xml
+[8/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_.._as-resources.c.o
+[9/28] Compiling Vala source config.vala ../src/Utils/RTFParser.vala ../src/Utils/RTFWriter.vala ../src/Utils/TextEditor.vala ../src/Utils/TextRange.vala ../src/Views/EditorView.vala ../src/Views/WelcomeView.vala ../src/Widgets/Choosers/TableChooser.vala ../src/Widgets/ToolBars/ImageToolBar.vala ../src/Widgets/ToolBars/TableToolBar.vala ../src/Widgets/ToolBars/TextToolBar.vala ../src/Widgets/ToolBars/ToolBarImage.vala ../src/Widgets/ActionBar.vala ../src/Widgets/PreferenceDialog.vala ../src/Widgets/TitleBar.vala ../src/Widgets/ToolBar.vala ../src/Application.vala ../src/MainWindow.vala
+[10/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_build_config.c.o
+[11/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Utils_RTFParser.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from com.github.ryonakano.writer.p/src/Utils/RTFParser.c:21:
+RTFParser.c: In function ‘writer_utils_rtf_parser_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+RTFParser.c:365:6: note: in expansion of macro ‘g_once_init_enter’
+com.github.ryonakano.writer.p/src/Utils/RTFParser.c: At top level:
+com.github.ryonakano.writer.p/src/Utils/RTFParser.c:59:20: warning: ‘writer_utils_rtf_parser_properties’ defined but not used [-Wunused-variable]
+   59 | static GParamSpec* writer_utils_rtf_parser_properties[WRITER_UTILS_RTF_PARSER_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[12/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Utils_RTFWriter.c.o
+RTFWriter.c: In function ‘writer_utils_rtf_writer_finalize’:
+RTFWriter.c:288:25: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from com.github.ryonakano.writer.p/src/Utils/RTFWriter.c:21:
+RTFWriter.c: In function ‘writer_utils_rtf_writer_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+RTFWriter.c:309:6: note: in expansion of macro ‘g_once_init_enter’
+com.github.ryonakano.writer.p/src/Utils/RTFWriter.c: At top level:
+com.github.ryonakano.writer.p/src/Utils/RTFWriter.c:59:20: warning: ‘writer_utils_rtf_writer_properties’ defined but not used [-Wunused-variable]
+   59 | static GParamSpec* writer_utils_rtf_writer_properties[WRITER_UTILS_RTF_WRITER_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[13/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Widgets_ToolBar.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.ryonakano.writer.p/src/Widgets/ToolBar.c:21:
+ToolBar.c: In function ‘writer_widgets_tool_bar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+ToolBar.c:397:6: note: in expansion of macro ‘g_once_init_enter’
+[14/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Widgets_ActionBar.c.o
+ActionBar.c: In function ‘__lambda30_’:
+ActionBar.c:417:1: warning: no return statement in function returning non-void [-Wreturn-type]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.ryonakano.writer.p/src/Widgets/ActionBar.c:21:
+ActionBar.c: In function ‘writer_widgets_action_bar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+ActionBar.c:545:6: note: in expansion of macro ‘g_once_init_enter’
+[15/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Views_EditorView.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.ryonakano.writer.p/src/Views/EditorView.c:24:
+EditorView.c: In function ‘writer_views_editor_view_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+EditorView.c:589:6: note: in expansion of macro ‘g_once_init_enter’
+[16/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Widgets_ToolBars_TableToolBar.c.o
+In file included from com.github.ryonakano.writer.p/src/Widgets/ToolBars/TableToolBar.c:27:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+TableToolBar.c: In function ‘_writer_widgets_table_tool_bar___lambda39_’:
+TableToolBar.c:355:29: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+../src/Widgets/ToolBars/TableToolBar.vala: In function ‘writer_widgets_table_tool_bar_constructor’:
+../src/Widgets/ToolBars/TableToolBar.vala:48:2: warning: ‘gtk_color_button_set_use_alpha’ is deprecated: Use 'gtk_color_chooser_set_use_alpha' instead [-Wdeprecated-declarations]
+   48 |         font_color_button.use_alpha = false;
+      |  ^      ~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:74,
+                 from com.github.ryonakano.writer.p/src/Widgets/ToolBars/TableToolBar.c:21:
+/usr/include/gtk-3.0/gtk/gtkcolorbutton.h:100:14: note: declared here
+  100 | void         gtk_color_button_set_use_alpha (GtkColorButton *button,
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30:
+TableToolBar.c: In function ‘writer_widgets_table_tool_bar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+TableToolBar.c:1155:6: note: in expansion of macro ‘g_once_init_enter’
+[17/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_MainWindow.c.o
+In file included from com.github.ryonakano.writer.p/src/MainWindow.c:30:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+MainWindow.c: In function ‘_writer_main_window___lambda15_’:
+MainWindow.c:666:20: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.ryonakano.writer.p/src/MainWindow.c:21:
+MainWindow.c: In function ‘writer_main_window_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+MainWindow.c:959:6: note: in expansion of macro ‘g_once_init_enter’
+[18/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Widgets_TitleBar.c.o
+In file included from com.github.ryonakano.writer.p/src/Widgets/TitleBar.c:25:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.ryonakano.writer.p/src/Widgets/TitleBar.c:21:
+TitleBar.c: In function ‘writer_widgets_title_bar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+TitleBar.c:947:6: note: in expansion of macro ‘g_once_init_enter’
+[19/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Widgets_ToolBars_ImageToolBar.c.o
+In file included from com.github.ryonakano.writer.p/src/Widgets/ToolBars/ImageToolBar.c:27:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.ryonakano.writer.p/src/Widgets/ToolBars/ImageToolBar.c:21:
+ImageToolBar.c: In function ‘writer_widgets_image_tool_bar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+ImageToolBar.c:665:6: note: in expansion of macro ‘g_once_init_enter’
+[20/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Widgets_ToolBars_TextToolBar.c.o
+In file included from com.github.ryonakano.writer.p/src/Widgets/ToolBars/TextToolBar.c:23:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+../src/Widgets/ToolBars/TextToolBar.vala: In function ‘writer_widgets_text_tool_bar_constructor’:
+../src/Widgets/ToolBars/TextToolBar.vala:64:2: warning: ‘gtk_color_button_set_use_alpha’ is deprecated: Use 'gtk_color_chooser_set_use_alpha' instead [-Wdeprecated-declarations]
+   64 |         font_color_button.use_alpha = false;
+      |  ^      ~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:74,
+                 from com.github.ryonakano.writer.p/src/Widgets/ToolBars/TextToolBar.c:21:
+/usr/include/gtk-3.0/gtk/gtkcolorbutton.h:100:14: note: declared here
+  100 | void         gtk_color_button_set_use_alpha (GtkColorButton *button,
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30:
+TextToolBar.c: In function ‘writer_widgets_text_tool_bar_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+TextToolBar.c:1453:6: note: in expansion of macro ‘g_once_init_enter’
+[21/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Utils_TextRange.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from com.github.ryonakano.writer.p/src/Utils/TextRange.c:21:
+TextRange.c: In function ‘writer_utils_text_range_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+TextRange.c:1517:6: note: in expansion of macro ‘g_once_init_enter’
+[22/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Widgets_Choosers_TableChooser.c.o
+TableChooser.c: In function ‘writer_widgets_table_chooser_finalize’:
+TableChooser.c:387:30: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.ryonakano.writer.p/src/Widgets/Choosers/TableChooser.c:21:
+TableChooser.c: In function ‘writer_widgets_table_chooser_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+TableChooser.c:408:6: note: in expansion of macro ‘g_once_init_enter’
+com.github.ryonakano.writer.p/src/Widgets/Choosers/TableChooser.c: At top level:
+com.github.ryonakano.writer.p/src/Widgets/Choosers/TableChooser.c:60:20: warning: ‘writer_widgets_table_chooser_properties’ defined but not used [-Wunused-variable]
+   60 | static GParamSpec* writer_widgets_table_chooser_properties[WRITER_WIDGETS_TABLE_CHOOSER_NUM_PROPERTIES];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[23/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Widgets_ToolBars_ToolBarImage.c.o
+In file included from com.github.ryonakano.writer.p/src/Widgets/ToolBars/ToolBarImage.c:26:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+../src/Widgets/ToolBars/ToolBarImage.vala: In function ‘writer_widgets_tool_bar_image_set_tooltip’:
+../src/Widgets/ToolBars/ToolBarImage.vala:19:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   19 |     public string tooltip { get; construct; }
+      |            ^
+../src/Widgets/ToolBars/ToolBarImage.vala: In function ‘writer_widgets_tool_bar_image_set_markup_key’:
+../src/Widgets/ToolBars/ToolBarImage.vala:20:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   20 |     public string markup_key { get; construct; }
+      |            ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.ryonakano.writer.p/src/Widgets/ToolBars/ToolBarImage.c:21:
+ToolBarImage.c: In function ‘writer_widgets_tool_bar_image_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+ToolBarImage.c:360:6: note: in expansion of macro ‘g_once_init_enter’
+[24/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Application.c.o
+In file included from com.github.ryonakano.writer.p/src/Application.c:29:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+../src/Application.vala: In function ‘writer_application_construct’:
+../src/Application.vala:30:2: warning: ‘G_APPLICATION_FLAGS_NONE’ is deprecated: Use 'G_APPLICATION_DEFAULT_FLAGS' instead [-Wdeprecated-declarations]
+   30 |         Object (
+      |  ^   
+In file included from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from /usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h:28,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from com.github.ryonakano.writer.p/src/Application.c:21:
+/usr/include/glib-2.0/gio/gioenums.h:1556:3: note: declared here
+ 1556 |   G_APPLICATION_FLAGS_NONE GIO_DEPRECATED_ENUMERATOR_IN_2_74_FOR(G_APPLICATION_DEFAULT_FLAGS),
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+Application.c: In function ‘___lambda22_’:
+Application.c:499:21: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+../src/Application.vala: In function ‘writer_application_real_activate’:
+../src/Application.vala:95:77: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+   95 |         set_accels_for_action ("app.open", {"<Control>o"});
+      |                                                                             ^      
+      |                                                                             |
+      |                                                                             gchar ** {aka char **}
+In file included from /usr/include/gtk-3.0/gtk/gtkwindow.h:33,
+                 from /usr/include/gtk-3.0/gtk/gtkdialog.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtkaboutdialog.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:31:
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/Application.vala:104:77: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  104 |         set_accels_for_action ("app.save", {"<Control>s"});
+      |                                                                             ^      
+      |                                                                             |
+      |                                                                             gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/Application.vala:113:80: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  113 |         set_accels_for_action ("app.save_as", {"<Control><Shift>s"});
+      |                                                                                ^      
+      |                                                                                |
+      |                                                                                gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/Application.vala:124:79: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  124 |         set_accels_for_action ("app.revert", {"<Control><Shift>o"});
+      |                                                                               ^      
+      |                                                                               |
+      |                                                                               gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/Application.vala:139:78: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  139 |         set_accels_for_action ("app.close", {"<Control>w"});
+      |                                                                              ^      
+      |                                                                              |
+      |                                                                              gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/Application.vala:148:77: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  148 |         set_accels_for_action ("app.quit", {"<Control>q"});
+      |                                                                             ^      
+      |                                                                             |
+      |                                                                             gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/Application.vala:157:77: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  157 |         set_accels_for_action ("app.bold", {"<Control>b"});
+      |                                                                             ^      
+      |                                                                             |
+      |                                                                             gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/Application.vala:166:79: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |         set_accels_for_action ("app.italic", {"<Control>i"});
+      |                                                                               ^      
+      |                                                                               |
+      |                                                                               gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/Application.vala:175:82: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  175 |         set_accels_for_action ("app.underline", {"<Control>u"});
+      |                                                                                  ^      
+      |                                                                                  |
+      |                                                                                  gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/Application.vala:184:86: warning: passing argument 3 of ‘gtk_application_set_accels_for_action’ from incompatible pointer type [-Wincompatible-pointer-types]
+  184 |         set_accels_for_action ("app.strikethrough", {"<Control>h"});
+      |                                                                                      ^      
+      |                                                                                      |
+      |                                                                                      gchar ** {aka char **}
+/usr/include/gtk-3.0/gtk/gtkapplication.h:156:89: note: expected ‘const gchar * const*’ {aka ‘const char * const*’} but argument is of type ‘gchar **’ {aka ‘char **’}
+  156 |                                                                   const gchar * const  *accels);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30:
+Application.c: In function ‘writer_application_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+Application.c:2563:6: note: in expansion of macro ‘g_once_init_enter’
+[25/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Views_WelcomeView.c.o
+In file included from com.github.ryonakano.writer.p/src/Views/WelcomeView.c:21:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from /usr/include/granite/granite.h:6:
+WelcomeView.c: In function ‘writer_views_welcome_view_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+WelcomeView.c:312:6: note: in expansion of macro ‘g_once_init_enter’
+[26/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Widgets_PreferenceDialog.c.o
+In file included from com.github.ryonakano.writer.p/src/Widgets/PreferenceDialog.c:21:
+/usr/include/granite/granite.h:2118:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2118 | VALA_EXTERN gchar* granite_text_style_get_stylesheet (GraniteTextStyle self,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+/usr/include/granite/granite.h:2138:1: warning: ‘GraniteTextStyle’ is deprecated [-Wdeprecated-declarations]
+ 2138 | VALA_EXTERN void granite_widgets_utils_apply_text_style_to_label (GraniteTextStyle text_style,
+      | ^~~~~~~~~~~
+/usr/include/granite/granite.h:632:15: note: declared here
+  632 | typedef enum  {
+      |               ^
+PreferenceDialog.c: In function ‘_writer_widgets_preference_dialog___lambda12_’:
+PreferenceDialog.c:325:33: warning: variable ‘self’ set but not used [-Wunused-but-set-variable]
+../src/Widgets/PreferenceDialog.vala: In function ‘writer_widgets_preference_dialog_constructor’:
+../src/Widgets/PreferenceDialog.vala:61:10: warning: assignment to ‘GtkBox *’ {aka ‘struct _GtkBox *’} from incompatible pointer type ‘GtkWidget *’ {aka ‘struct _GtkWidget *’} [-Wincompatible-pointer-types]
+   61 |         var content = (Gtk.Box) get_content_area ();
+      |          ^
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from /usr/include/granite/granite.h:6:
+PreferenceDialog.c: In function ‘writer_widgets_preference_dialog_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+PreferenceDialog.c:626:6: note: in expansion of macro ‘g_once_init_enter’
+[27/28] Compiling C object com.github.ryonakano.writer.p/meson-generated_src_Utils_TextEditor.c.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from /usr/include/gtksourceview-4/gtksourceview/gtksourcecompletionprovider.h:29,
+                 from /usr/include/gtksourceview-4/gtksourceview/completion-providers/words/gtksourcecompletionwords.h:28,
+                 from /usr/include/gtksourceview-4/gtksourceview/gtksource.h:23,
+                 from com.github.ryonakano.writer.p/src/Utils/TextEditor.c:21:
+TextEditor.c: In function ‘writer_text_editor_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+TextEditor.c:1870:6: note: in expansion of macro ‘g_once_init_enter’
+[28/28] Linking target com.github.ryonakano.writer

@@ -1,0 +1,12 @@
+# bin
+mkdir -p /build/bluraybackup-git/pkg/bluraybackup-git/usr/bin
+cp -f bluraybackup /build/bluraybackup-git/pkg/bluraybackup-git/usr/bin
+chmod 755 /build/bluraybackup-git/pkg/bluraybackup-git/usr/bin/bluraybackup
+# doc
+mkdir -p /build/bluraybackup-git/pkg/bluraybackup-git/usr/share/doc/bluraybackup
+cp -f README /build/bluraybackup-git/pkg/bluraybackup-git/usr/share/doc/bluraybackup
+chmod 644 /build/bluraybackup-git/pkg/bluraybackup-git/usr/share/doc/bluraybackup/README
+# man page
+mkdir -p /build/bluraybackup-git/pkg/bluraybackup-git/usr/share/man/man1
+sed 's/VERSION/2.0/' < bluraybackup.1 > /build/bluraybackup-git/pkg/bluraybackup-git/usr/share/man/man1/bluraybackup.1
+chmod 644 /build/bluraybackup-git/pkg/bluraybackup-git/usr/share/man/man1/bluraybackup.1
