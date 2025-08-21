@@ -1,0 +1,101 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 Upscaler build
+The Meson build system
+Version: 1.8.4
+Source dir: /build/upscaler-git/src/Upscaler
+Build dir: /build/upscaler-git/src/build
+Build type: native build
+Project name: upscaler
+Project version: 1.6.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Configuring io.gitlab.theevilskeleton.Upscaler.desktop.in using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Configuring io.gitlab.theevilskeleton.Upscaler.metainfo.xml.in using configuration
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program blueprint-compiler found: YES (/usr/bin/blueprint-compiler)
+Program python3 found: YES (/usr/bin/python3)
+Configuring upscaler using configuration
+Configuring __init__.py using configuration
+Configuring upscaler.gresource.xml using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Build-time dependency gio-2.0 found: YES 2.84.4
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 20
+
+upscaler 1.6.0
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/20 eta ?                                               Writing build.ninja:   0%|          | 0/48 eta ?                                                ninja: Entering directory `/build/upscaler-git/src/build'
+[1/17] Building translation po/bg/LC_MESSAGES/upscaler-bg.mo
+[2/17] Building translation po/fa_IR/LC_MESSAGES/upscaler-fa_IR.mo
+[3/17] Building translation po/fr/LC_MESSAGES/upscaler-fr.mo
+[4/17] Building translation po/de/LC_MESSAGES/upscaler-de.mo
+[5/17] Building translation po/es/LC_MESSAGES/upscaler-es.mo
+[6/17] Building translation po/id/LC_MESSAGES/upscaler-id.mo
+[7/17] Building translation po/it/LC_MESSAGES/upscaler-it.mo
+[8/17] Building translation po/pt_BR/LC_MESSAGES/upscaler-pt_BR.mo
+[9/17] Building translation po/nl/LC_MESSAGES/upscaler-nl.mo
+[10/17] Building translation po/ru/LC_MESSAGES/upscaler-ru.mo
+[11/17] Building translation po/tr/LC_MESSAGES/upscaler-tr.mo
+[12/17] Building translation po/sv/LC_MESSAGES/upscaler-sv.mo
+[13/17] Building translation po/uk/LC_MESSAGES/upscaler-uk.mo
+[14/17] Merging translations for data/io.gitlab.theevilskeleton.Upscaler.desktop
+[15/17] Merging translations for data/io.gitlab.theevilskeleton.Upscaler.metainfo.xml
+[16/17] Generating upscaler/blueprints with a custom command
+warning: Gtk.ShortcutsWindow is deprecated
+at ../Upscaler/upscaler/gtk/help-overlay.blp line 3 column 1:
+   3 |ShortcutsWindow help_overlay {
+     |^^^^^^^^^^^^^^^
+
+warning: Gtk.ShortcutsSection is deprecated
+at ../Upscaler/upscaler/gtk/help-overlay.blp line 6 column 3:
+   6 |  ShortcutsSection {
+     |  ^^^^^^^^^^^^^^^^
+
+warning: Gtk.ShortcutsGroup is deprecated
+at ../Upscaler/upscaler/gtk/help-overlay.blp line 10 column 5:
+  10 |    ShortcutsGroup {
+     |    ^^^^^^^^^^^^^^
+
+warning: Gtk.ShortcutsShortcut is deprecated
+at ../Upscaler/upscaler/gtk/help-overlay.blp line 13 column 7:
+  13 |      ShortcutsShortcut {
+     |      ^^^^^^^^^^^^^^^^^
+
+warning: Gtk.ShortcutsShortcut is deprecated
+at ../Upscaler/upscaler/gtk/help-overlay.blp line 18 column 7:
+  18 |      ShortcutsShortcut {
+     |      ^^^^^^^^^^^^^^^^^
+
+warning: Gtk.ShortcutsShortcut is deprecated
+at ../Upscaler/upscaler/gtk/help-overlay.blp line 23 column 7:
+  23 |      ShortcutsShortcut {
+     |      ^^^^^^^^^^^^^^^^^
+
+warning: Gtk.ShortcutsShortcut is deprecated
+at ../Upscaler/upscaler/gtk/help-overlay.blp line 28 column 7:
+  28 |      ShortcutsShortcut {
+     |      ^^^^^^^^^^^^^^^^^
+
+[17/17] Generating upscaler/upscaler_gresource with a custom command
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/upscaler-git/src/build
