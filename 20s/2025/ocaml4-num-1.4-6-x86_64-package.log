@@ -1,0 +1,47 @@
+make -C src findlib-install
+make[1]: Entering directory '/build/ocaml4-num/src/num-1.4/src'
+sed -e '/\^/d' -e 's/%%VERSION%%/1.4/g' META.in > META
+ocamlfind install num META nums.cma libnums.a big_int.cmi nat.cmi num.cmi ratio.cmi arith_status.cmi big_int.mli nat.mli num.mli ratio.mli arith_status.mli big_int.cmti nat.cmti num.cmti ratio.cmti arith_status.cmti nums.cmxa nums.a int_misc.cmx nat.cmx big_int.cmx arith_flags.cmx ratio.cmx num.cmx arith_status.cmx nums.cmxs dllnums.so
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/nums.cmxs
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/arith_status.cmx
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/num.cmx
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/ratio.cmx
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/arith_flags.cmx
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/big_int.cmx
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/nat.cmx
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/int_misc.cmx
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/nums.a
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/nums.cmxa
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/arith_status.cmti
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/ratio.cmti
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/num.cmti
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/nat.cmti
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/big_int.cmti
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/arith_status.mli
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/ratio.mli
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/num.mli
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/nat.mli
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/big_int.mli
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/arith_status.cmi
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/ratio.cmi
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/num.cmi
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/nat.cmi
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/big_int.cmi
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/libnums.a
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/nums.cma
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/stublibs/dllnums.so
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/stublibs/dllnums.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/stublibs is not mentioned in ld.conf
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num/META
+rm -f META
+make[1]: Leaving directory '/build/ocaml4-num/src/num-1.4/src'
+make -C toplevel install
+make[1]: Entering directory '/build/ocaml4-num/src/num-1.4/toplevel'
+sed -e 's/%%VERSION%%/1.4/g' META.in > META
+ocamlfind install num-top META num_top.cma num_top.cmi num_top_printers.cmi
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num-top/num_top_printers.cmi
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num-top/num_top.cmi
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num-top/num_top.cma
+Installed /build/ocaml4-num/pkg/ocaml4-num/usr/lib/ocaml/num-top/META
+rm -f META
+make[1]: Leaving directory '/build/ocaml4-num/src/num-1.4/toplevel'

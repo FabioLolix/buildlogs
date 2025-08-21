@@ -1,0 +1,38 @@
+make -C src all
+make[1]: Entering directory '/build/ocaml4-num/src/num-1.4/src'
+ocamlc -ccopt -DBNG_ARCH_amd64 -c bng.c
+ocamlc -ccopt -DBNG_ARCH_amd64 -c nat_stubs.c
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c int_misc.mli
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c nat.mli
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c arith_flags.mli
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c arith_status.mli
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c arith_flags.ml
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c int_misc.ml
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c arith_status.ml
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c nat.ml
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c big_int.mli
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c big_int.ml
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c ratio.mli
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c ratio.ml
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c num.mli
+ocamlc -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c num.ml
+ocamlmklib -o nums -oc nums -linkall int_misc.cmo nat.cmo big_int.cmo arith_flags.cmo ratio.cmo num.cmo arith_status.cmo
+ocamlmklib -oc nums bng.o nat_stubs.o
+ocamlopt -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c int_misc.ml
+ocamlopt -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c arith_flags.ml
+ocamlopt -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c arith_status.ml
+ocamlopt -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c nat.ml
+ocamlopt -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c big_int.ml
+ocamlopt -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c ratio.ml
+ocamlopt -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -c num.ml
+ocamlmklib -o nums -oc nums -linkall int_misc.cmx nat.cmx big_int.cmx arith_flags.cmx ratio.cmx num.cmx arith_status.cmx
+ocamlopt -w +a-4-9-41-42-44-45-48 -warn-error A -bin-annot -g -safe-string -strict-sequence -strict-formats -I . -shared -o nums.cmxs nums.cmxa
+make[1]: Leaving directory '/build/ocaml4-num/src/num-1.4/src'
+make -C toplevel all
+make[1]: Entering directory '/build/ocaml4-num/src/num-1.4/toplevel'
+ocamlc -I ../src -I +compiler-libs -w +a-4-9-41-42-44-45-48 -warn-error A -safe-string -strict-sequence -strict-formats -c num_top_printers.mli
+ocamlc -I ../src -I +compiler-libs -w +a-4-9-41-42-44-45-48 -warn-error A -safe-string -strict-sequence -strict-formats -c num_top.mli
+ocamlc -I ../src -I +compiler-libs -w +a-4-9-41-42-44-45-48 -warn-error A -safe-string -strict-sequence -strict-formats -c num_top.ml
+ocamlc -I ../src -I +compiler-libs -w +a-4-9-41-42-44-45-48 -warn-error A -safe-string -strict-sequence -strict-formats -c num_top_printers.ml
+ocamlc -I ../src -I +compiler-libs -w +a-4-9-41-42-44-45-48 -warn-error A -safe-string -strict-sequence -strict-formats -a -o num_top.cma num_top_printers.cmo num_top.cmo
+make[1]: Leaving directory '/build/ocaml4-num/src/num-1.4/toplevel'

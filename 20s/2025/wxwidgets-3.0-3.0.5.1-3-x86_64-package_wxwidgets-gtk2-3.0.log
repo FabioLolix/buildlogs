@@ -1,7 +1,6 @@
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-/usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_baseu-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_baseu-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_baseu-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_baseu_net-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_baseu_net-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
@@ -12,43 +11,51 @@ mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_media-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-/usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_html-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_media-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_html-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_baseu-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_webview-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_media-3.0.so libwx_gtk2u_media-3.0.so.0; ln -s libwx_gtk2u_media-3.0.so.0.5.0 libwx_gtk2u_media-3.0.so.0; ln -s libwx_gtk2u_media-3.0.so.0 libwx_gtk2u_media-3.0.so)
+mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_adv-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_html-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_webview-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_qa-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_baseu_xml-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_html-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_media-3.0.so libwx_gtk2u_media-3.0.so.0; ln -s libwx_gtk2u_media-3.0.so.0.5.0 libwx_gtk2u_media-3.0.so.0; ln -s libwx_gtk2u_media-3.0.so.0 libwx_gtk2u_media-3.0.so)
 /usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_baseu_xml-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_webview-3.0.so libwx_gtk2u_webview-3.0.so.0; ln -s libwx_gtk2u_webview-3.0.so.0.5.0 libwx_gtk2u_webview-3.0.so.0; ln -s libwx_gtk2u_webview-3.0.so.0 libwx_gtk2u_webview-3.0.so)
 /usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_qa-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_xrc-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_baseu-3.0.so libwx_baseu-3.0.so.0; ln -s libwx_baseu-3.0.so.0.5.0 libwx_baseu-3.0.so.0; ln -s libwx_baseu-3.0.so.0 libwx_baseu-3.0.so)
-/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_adv-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 (cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_baseu_xml-3.0.so libwx_baseu_xml-3.0.so.0; ln -s libwx_baseu_xml-3.0.so.0.5.0 libwx_baseu_xml-3.0.so.0; ln -s libwx_baseu_xml-3.0.so.0 libwx_baseu_xml-3.0.so)
-(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_qa-3.0.so libwx_gtk2u_qa-3.0.so.0; ln -s libwx_gtk2u_qa-3.0.so.0.5.0 libwx_gtk2u_qa-3.0.so.0; ln -s libwx_gtk2u_qa-3.0.so.0 libwx_gtk2u_qa-3.0.so)
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_aui-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_qa-3.0.so libwx_gtk2u_qa-3.0.so.0; ln -s libwx_gtk2u_qa-3.0.so.0.5.0 libwx_gtk2u_qa-3.0.so.0; ln -s libwx_gtk2u_qa-3.0.so.0 libwx_gtk2u_qa-3.0.so)
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_ribbon-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 (cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_html-3.0.so libwx_gtk2u_html-3.0.so.0; ln -s libwx_gtk2u_html-3.0.so.0.5.0 libwx_gtk2u_html-3.0.so.0; ln -s libwx_gtk2u_html-3.0.so.0 libwx_gtk2u_html-3.0.so)
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_propgrid-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_aui-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_baseu-3.0.so libwx_baseu-3.0.so.0; ln -s libwx_baseu-3.0.so.0.5.0 libwx_baseu-3.0.so.0; ln -s libwx_baseu-3.0.so.0 libwx_baseu-3.0.so)
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_ribbon-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_richtext-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_ribbon-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_adv-3.0.so libwx_gtk2u_adv-3.0.so.0; ln -s libwx_gtk2u_adv-3.0.so.0.5.0 libwx_gtk2u_adv-3.0.so.0; ln -s libwx_gtk2u_adv-3.0.so.0 libwx_gtk2u_adv-3.0.so)
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_stc-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 (if test -f utils/wxrc/Makefile ; then cd utils/wxrc && make all ; fi)
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/bin
-/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_xrc-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_aui-3.0.so libwx_gtk2u_aui-3.0.so.0; ln -s libwx_gtk2u_aui-3.0.so.0.5.0 libwx_gtk2u_aui-3.0.so.0; ln -s libwx_gtk2u_aui-3.0.so.0 libwx_gtk2u_aui-3.0.so)
+mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale
 /usr/bin/install -c -m 644 /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_gl-3.0.so /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale
-mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib/wx/config
+mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_xrc-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_propgrid-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 for l in ca cs da de el es fi fr hu id it ja nl pl ru sl sv tr uk zh zh_CN zh_TW ; do \
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale/$l ; \
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale/$l/LC_MESSAGES ; \
@@ -56,7 +63,8 @@ if test -f ./locale/$l.mo ; then \
 /usr/bin/install -c -m 644 ./locale/$l.mo /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale/$l/LC_MESSAGES/wxstd.mo ; \
 fi ; \
 done
-(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_aui-3.0.so libwx_gtk2u_aui-3.0.so.0; ln -s libwx_gtk2u_aui-3.0.so.0.5.0 libwx_gtk2u_aui-3.0.so.0; ln -s libwx_gtk2u_aui-3.0.so.0 libwx_gtk2u_aui-3.0.so)
+(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_ribbon-3.0.so libwx_gtk2u_ribbon-3.0.so.0; ln -s libwx_gtk2u_ribbon-3.0.so.0.5.0 libwx_gtk2u_ribbon-3.0.so.0; ln -s libwx_gtk2u_ribbon-3.0.so.0 libwx_gtk2u_ribbon-3.0.so)
+/usr/bin/install -c lib/wx/config/gtk2-unicode-3.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib/wx/config
 for l in it ; do \
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale/$l ; \
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale/$l/LC_MESSAGES ; \
@@ -64,27 +72,23 @@ if test -f ./locale/msw/$l.mo ; then \
 /usr/bin/install -c -m 644 ./locale/msw/$l.mo /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/share/locale/$l/LC_MESSAGES/wxmsw.mo ; \
 fi ; \
 done
-/usr/bin/install -c lib/wx/config/gtk2-unicode-3.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib/wx/config
-/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_propgrid-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_gl-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
-(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_ribbon-3.0.so libwx_gtk2u_ribbon-3.0.so.0; ln -s libwx_gtk2u_ribbon-3.0.so.0.5.0 libwx_gtk2u_ribbon-3.0.so.0; ln -s libwx_gtk2u_ribbon-3.0.so.0 libwx_gtk2u_ribbon-3.0.so)
 (cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/bin && rm -f wx-config && ln -s /opt/wxgtk-3.0/lib/wx/config/gtk2-unicode-3.0 wx-config || cp -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib/wx/config/gtk2-unicode-3.0 wx-config)
-(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_adv-3.0.so libwx_gtk2u_adv-3.0.so.0; ln -s libwx_gtk2u_adv-3.0.so.0.5.0 libwx_gtk2u_adv-3.0.so.0; ln -s libwx_gtk2u_adv-3.0.so.0 libwx_gtk2u_adv-3.0.so)
 (cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_gl-3.0.so libwx_gtk2u_gl-3.0.so.0; ln -s libwx_gtk2u_gl-3.0.so.0.5.0 libwx_gtk2u_gl-3.0.so.0; ln -s libwx_gtk2u_gl-3.0.so.0 libwx_gtk2u_gl-3.0.so)
-/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_stc-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 (cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_propgrid-3.0.so libwx_gtk2u_propgrid-3.0.so.0; ln -s libwx_gtk2u_propgrid-3.0.so.0.5.0 libwx_gtk2u_propgrid-3.0.so.0; ln -s libwx_gtk2u_propgrid-3.0.so.0 libwx_gtk2u_propgrid-3.0.so)
 make[1]: Entering directory '/build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/utils/wxrc'
 make[1]: Nothing to be done for 'all'.
 make[1]: Leaving directory '/build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/utils/wxrc'
-/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_richtext-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_stc-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 (if test -f utils/wxrc/Makefile ; then cd utils/wxrc && make install ; fi)
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_richtext-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
+/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_core-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 (cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_xrc-3.0.so libwx_gtk2u_xrc-3.0.so.0; ln -s libwx_gtk2u_xrc-3.0.so.0.5.0 libwx_gtk2u_xrc-3.0.so.0; ln -s libwx_gtk2u_xrc-3.0.so.0 libwx_gtk2u_xrc-3.0.so)
+(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_stc-3.0.so libwx_gtk2u_stc-3.0.so.0; ln -s libwx_gtk2u_stc-3.0.so.0.5.0 libwx_gtk2u_stc-3.0.so.0; ln -s libwx_gtk2u_stc-3.0.so.0 libwx_gtk2u_stc-3.0.so)
 make[1]: Entering directory '/build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/utils/wxrc'
 mkdir -p /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/bin
 /usr/bin/install -c wxrc /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/bin
-(cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_stc-3.0.so libwx_gtk2u_stc-3.0.so.0; ln -s libwx_gtk2u_stc-3.0.so.0.5.0 libwx_gtk2u_stc-3.0.so.0; ln -s libwx_gtk2u_stc-3.0.so.0 libwx_gtk2u_stc-3.0.so)
 rm -f /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/bin/wxrc /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/bin/wxrc-3.0
-/usr/bin/install -c /build/wxwidgets-3.0/src/wxWidgets-3.0.5.1/lib/libwx_gtk2u_core-3.0.so.0.5.0 /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib
 /usr/bin/install -c wxrc /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/bin
 (cd /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/lib ; rm -f libwx_gtk2u_richtext-3.0.so libwx_gtk2u_richtext-3.0.so.0; ln -s libwx_gtk2u_richtext-3.0.so.0.5.0 libwx_gtk2u_richtext-3.0.so.0; ln -s libwx_gtk2u_richtext-3.0.so.0 libwx_gtk2u_richtext-3.0.so)
 mv -f /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/bin/wxrc /build/wxwidgets-3.0/pkg/wxwidgets-gtk2-3.0/opt/wxgtk-3.0/bin/wxrc-3.0

@@ -1,0 +1,434 @@
+
+CalcPeakLevel
+  Given sox is installed
+    should report 93.75 percent if the peak level db from sox is -6.00
+    should report 100% if the peak level db from sox is 0
+
+Codecs::Main
+  Given mp3 is chosen as preferred codec
+    should return the command to replaygain a track
+    should return the command to replaygain an album
+    When calculating the command for encoding a track
+      should be able to generate the basic command
+      should add the various artist tag if relevant
+      should add the discid if available
+      should add the discnumber if available
+  Given vorbis is chosen as preferred codec
+    should return the command to replaygain a track
+    should return the command to replaygain an album
+    should calculate the command for encoding
+  Given flac is chosen as preferred codec
+    should return the command to replaygain a track
+    should return the command to replaygain an album
+    should calculate the command for encoding a track
+    should save the cuesheet file if available for image rips
+  Given wav is chosen as preferred codec
+    should return the command to replaygain a track
+    should return the command to replaygain an album
+    should calculate the command for encoding
+  Given Nero aac is chosen as preferred codec
+    should return the command to replaygain a track
+    should return the command to replaygain an album
+    should calculate the command for encoding and tagging
+  Given wavpack is chosen as preferred codec
+    should return the command  the replaygain a track
+    should return the command to replaygain an album
+    should calculate the command for encoding an image rip
+  Given opus is chosen as preferred codec
+    should calculate the command for encoding
+  Given other is chosen as preferred codec
+    should ignore replaygain on track
+    should ignore replaygain on album
+    should ignore setTagsAfterEncoding
+    should return the command for encoding
+
+RipStrategy
+  When no special attributes are there
+    should be able to create a new instance
+    should be able to show the cdparanoia parameters for a normal 1-track disc
+  When hidden track info is available
+    should be able to detect a hidden track when bigger than minimum length preference
+    should be able to detect a hidden track when equal to minimum length preference
+    should not detect a hidden track when smaller than minimum length preference
+    should ignore hidden track if ripHiddenAudio is disabled in preferences
+
+Cuesheet
+  should show all relevant disc data at the top
+  When printing the track info for image rips
+    should handle the default case for a disc correctly
+    should write the ISRC for tracks where the info is found without quotes
+    should write a zero index if hidden audio before track 1 is ripped
+    should write a pregap tag if hidden audio before track 1 is not ripped
+    should write a zero index for tracks > 1 with a pregap
+  When printing the track info for prepend based track ripping
+    should handle the default case for a disc correctly
+    should set the pre-emphasis flag if the preference is marking in cuesheet
+    should skip the pre-emphasis flag if the preference is decoding with sox
+    should prepend the gap to the track
+  When printing the track info for append based track ripping
+    should handle the default case for a disc correctly
+    should set the pre-emphasis flag if the preference is marking in cuesheet
+    should skip the pre-emphasis flag if the preference is decoding with sox
+    should append the gaps to previous track for last track
+    should append the gaps to track 1 for second track
+  When printing the info for 1st track with hidden sectors
+    should mark a pregap if the sectors are not ripped
+    should prepend to track 1 if hidden sectors are < seconds than preference
+    should use a pregap if hidden sectors are >= seconds than preference
+
+Disc
+  When a disc is requested to be scanned
+    should send the scan command to cdparanoia
+    should trigger the metadata class if a disc is found
+    should not trigger the metadata if no disc is found
+  When a toc analyzer is requested for calculating the disc id
+    should first refer to the cd-info scanner if it is installed
+    should then refer to the cdcontrol scanner if it is installed
+    should fall back to cdparanoia if nothing better is available
+  When methods need to be forwarded
+    should forward the freedbstring method to the calcFreedbID object
+    should forward the freedb discid method to the calcFreedbID object
+    should forward the musicbrainzlookuppath method to the calcMusicbrainzID object
+    should forward the musicbrainzdiscid method to the calcMusicbrainzID object
+    should pass any other command to cdparanoia
+
+CalcFreedbID
+  When a help program for creating a freedbstring exists
+    should first try to use discid
+    should then try to use cd-discid
+  When the platform is DARWIN (a.k.a. OS X)
+    should unmount the disc properly and mount it afterwards
+  When no help program exists, try to calculate it manually
+    should use the provided toc scanner to calculate the disc
+
+CalcMusicbrainzID
+  Try to calculate MusicBrainz DiscID manually
+    should use the provided toc scanner to calculate the disc
+
+ScanDiscCdcontrol
+  When a queryresult is not a valid response
+    should detect if cdcontrol is not installed
+    should detect if the drive is not valid
+    should detect a problem with parameters
+    should detect if there is no disc inserted
+  When a query is a valid response
+    should detect the startsector for each track
+    should detect the length in sectors for each track
+    should detect the length in mm:ss for each track
+    should detect the total amount of sectors for the disc
+    should detect the playtime in mm:ss for the disc
+    should detect the amount of audiotracks
+    should detect the first audio track
+    should detect if there are no data tracks on the disc
+    should detect the data tracks on the disc
+
+ScanDiscCdinfo
+  When a queryresult is not a valid response
+    should detect if cd-info is not installed
+    should detect if the drive is not valid
+    should detect a problem with parameters
+    should detect if there is no disc inserted
+  When a query is a valid response
+    should detect the cd-info version
+    should detect the discmode of the drive
+    should detect the devicename for the drive
+    should detect the startsector for each track
+    should detect the length in sectors for each track
+    should detect the length in mm:ss for each track
+    should detect the total amount of sectors for the disc
+    should detect the playtime in mm:ss for the disc
+    should detect the amount of audiotracks
+    should detect the first audio track
+    should detect if there are no data tracks on the disc
+    should detect the data tracks on the disc
+
+ScanDiscCdparanoia
+  Before scanning any disc
+    shouldn't set default values
+    should raise an error when a function other than scan() is called
+  When trying to scan a disc
+    should abort when cdparanoia is not installed
+    should abort when cdparanoia is unable to open the disc
+    should have one retry without the drive parameter when cdparanoia doesn't recognize it
+    should abort when the disc drive is not found
+  When a disc is found
+    should set the status to ok
+    should save the playtime in minutes:seconds
+    should save the amount of audiotracks
+    should detect the devicename
+    should detect the first track
+    should return the startsector for a track
+    should return the amount of sectors for a track
+    should return the length in mm:ss for a track
+    should return the filesize in bytes for a track
+    should serve image ripping as well
+    should detect the total sectors of the disc
+
+ScanDiscCdrdao
+  In case cdrdao exits with an error
+    should detect cdrdao is not installed
+    should detect if there is no disc in the drive
+    should detect if there is a parameter problem
+    should detect if the drive is not recognized
+    should not give a warning with correct results
+  When parsing the file
+    should detect if the disc starts with a silence
+    should detect if a track has a pregap
+    should detect if a track has pre-emphasis
+    should detect if a track has a ISRC code
+    should detect data tracks
+    should detect the type of the disc
+    should detect the highest track number
+  When there is cd-text on the disc
+    should detect the artist and album
+    should detect the tracknames
+    should detect the various artists
+
+Metadata::Data
+  When metadata for standard album is compared for equality
+    should return true if equal
+    should return false if artist is not equal
+    should return false if album is not equal
+    should return false if genre is not equal
+    should return false if year is not equal
+    should return false if discid is not equal
+    should return false if track count is not equal
+    should return false if track1 is not equal
+    should return false if track2 is not equal
+  When metadata for various artists album is compared for equality
+    should return true if equal
+    should return false if album is not equal
+    should return false if genre is not equal
+    should return false if year is not equal
+    should return false if discid is not equal
+    should return false if track count is not equal
+    should return false if artist1 is not equal
+    should return false if track1 is not equal
+    should return false if artist2 is not equal
+    should return false if track2 is not equal
+  When metadata for various artists album is compared for equality with standard album
+    should return false
+
+Metadata::FilterAll
+  The filter should return all values of metadata
+    should remove a backquote and replace it with a single quote
+    should replace UTF-8 single quote with ASCII single quote
+    should replace UTF-8 double quote with ASCII double quote
+    should strip extra spaces
+    should be able to combine this logic
+
+Metadata::FilterDirs
+  When determining the dirname it should be valid in a FAT filesystem
+    should replace the dollar sign $
+    should remove colons :
+    should remove asterixes *
+    should remove question marks ?
+    should remove smaller than signs <
+    should remove bigger than signs >
+    should remove the pipe character |
+    should remove backslashes \
+    should remove double quotes "
+    should be able to combine all logic for filterDirs + filterAll
+  Replace any characters that are not wished by the user
+    should replace all spaces to underscores if wished for
+    should not replace spaces to underscores if not wished for
+    should not replace underscores with spaces if noSpaces setting  == false
+    should downsize all letters if wished for
+    should not downsize all letters if not wished for
+
+Metadata::FilterFiles
+  When determining the filename it has to be valid
+    should replace the slash sign /
+    should remove starting dots from filenames .
+    should keep other dots however .
+    should be able to combine all logic for filterFiles + filterDirs + filterAll
+
+Metadata::FilterTags
+  When determining the tag it should be valid when passing the command
+    should always return any tag with quotes around it to cover spaces
+    should escape the double quote
+    should be able to combine all logic for filterTags + filterAll
+
+FreedbRecordGenerator
+  When freedb record generation is requested
+    should generate correct freedb record
+    should generate correct freedb record for various artists album
+
+FreedbRecordParser
+  Before parsing the disc
+    should set some default values
+  When the string is not an UTF-8 encoded string
+    should detect if it has no valid encoding and abort
+    should detect if the encoding is not UTF-8 and abort
+  When parsing a valid freedb metadata file
+    should ignore the commented lines
+    should parse all standard info
+    should parse extra disc info
+    should recognize a trackname of two lines and correctly concatenate them
+    should recognize the album if the title has two lines
+    should recognize the artist if it spins two lines as well
+    should parse revision value
+    should ignore invalid revision value
+    should ignore non number revision value
+    When a various artist disc is expected
+      should recognize a various artist disc separated by a '/'
+      should recognize a various artist disc separated by a '-'
+      should recognize a various artist disc separated by a ':'
+      should recognize a various artist disc separated by different splitters
+      should allow to revert to the old tracknames before splitting
+      should allow to redo the various artist splitting
+
+GetFreedbRecord
+  Given there is only an empty instance
+    should not crash if there are no choices but the caller still chooses
+  After firing a query for a disc to the gnudb server
+    should handle the response in case no disc is reported
+    should handle the error message when the database is corrupt
+    should handle an unknown reply message
+    should handle the response in case 1 record is reported
+    should get the first response if multiple close matches are reported when firstHit preference is true
+    should get the first response if multiple exact matches are reported when firstHit preference is true
+    when multiple records are reported and the user wishes to choose
+      should allow choosing the first disc
+      should allow choosing the second disc
+      should allow choosing an invalid choice without crashing
+    When requesting a specific disc and an error is returned
+      should handle the response when the disc is not found
+      should handle an unknown response code
+      should handle a server (402) error response on the server
+      should handle a database (403) error response on the server
+
+LoadFreedbRecord
+  When no local records are found
+    should set the status and contents accordingly
+  When one record is found
+    should load the file and set the status to ok
+  When two records or more are found
+    should load the first file when 2 records are found
+  When the record is not encoded in UTF-8
+    should first try to read the input as a ISO-8859-1 file
+    should then try to read the input as a GB18030 file
+  When the conversion failed
+    should set the status accordingly and return nothing
+
+SaveFreedbRecord
+  should save the provided record in a file at the right location
+  shouldn't overwrite existing files but still save the filename
+  should overwrite existing files if requested
+
+Freedb
+  When save is requested
+    should generate gnudb record and save it
+
+Metadata::Main
+  When the metadata for a disc is requested
+    should use Musicbrainz if that is the preference
+    should use Gnudb if that is the preference
+    should skip both providers if that is the preference
+    Given the preference is set to musicbrainz
+      should first fall back to Gnudb if Musicbrainz fails
+      should fall back to none if Gnudb fails as well
+    Given the preference is set to gnudb
+      should first fall back to Musicbrainz if Gnudb fails
+      should fall back to none if Musicbrainz fails as well
+
+GetMusicBrainzRelease
+  Given some existing inclusion parameters in the lookup path
+    should not remove the existing parameters
+    should not duplicate any existing parameters
+    should add the release-groups parameter if useEarliestDate is set
+    should not duplicate the release-groups parameter if useEarliestDate is set
+  Given there is only an empty instance
+    should not crash if there are no choices but the caller still chooses
+  After firing a query for a disc to the MusicBrainz web service
+    should handle the response in case no disc is reported
+    should handle the response in case 1 release is reported
+    should adhere to country preferences for multiple results if specified
+    should adhere to date preferences for multiple results if specified
+    should adhere to both preferences for multiple results if specified together
+    when multiple records are reported and preferences cannot pick a 'best'
+      should allow choosing the first disc
+      should allow choosing the second disc
+      should allow choosing an invalid choice without crashing
+    when multiple records are reported for country preference and some records are missing the date or country element
+      should not crash if date element is not found
+      should not crash if country element is not found
+    when multiple records are reported for date preference and some records are missing the date or country element
+      should not crash if date element is not found
+      should not crash if country element is not found
+
+MusicBrainzReleaseParser
+  Before parsing the disc
+    should set some default values
+  When parsing a MusicBrainz release XML element
+    should parse all standard info
+    should not crash when parsing incomplete standard info
+    should pick the correct disc of a multi-disc release
+    should use the earliest release date is useEarliestDate is set
+    should not crash if set to use the earliest release date but data is incomplete
+    should never behave like a various artists disc if there is only one (non-Various Artists) album artist
+    when guessing the genre
+      should guess the most popular artist tag which is also an ID3 genre name
+      should prefer release-group tags for genre over artist tags
+      should leave the default genre (Unknown) if no good tag is found
+      should map certain non-ID3-genre tags to ID3 genres
+    when a various artists release is encountered
+      should correctly know the artist for each track
+      should automatically join artist splits according to the joinphrase
+      should automatically join artist splits with ' / ' if there's no joinphrase
+      should rely on the track artists to pick the genre
+    When a split artist release is encountered
+      should automatically join album artist splits according to the joinphrase
+      should automatically join album artist splits with ' / ' if there's no joinphrase
+      should behave like a various artists disc
+      should never behave like a various artists disc if all tracks have the same artist
+      should rely on the album artists to pick the genre
+
+NoProvider
+  When the metadata for a disc is requested
+    should fill metadata tracklist with default track names
+  When save is requested
+    should generate freedb record and save it
+
+Dependency
+  When searching for the disc drive on freebsd
+    should query the device on /dev/cd# for existence
+    should query the device on /dev/acd# for existence
+    should detect a drive on /dev/cd0
+    should detect a drive on /dev/cd9
+    should detect a drive on /dev/acd0
+    should detect a drive on /dev/acd9
+  When searching for the disc drive on linux
+    should detect a drive on /dev/cdrom
+    should detect a drive on /dev/dvdrom
+    should query the device on /dev/sr# for existence
+    should detect a drive on /dev/sr0
+    should detect a drive on /dev/sr9
+
+Network
+  When setting up a CGI connection
+    should be able to do so without a proxy
+    should be able to do so with a proxy with no password
+  When setting up a CGI query
+    should correctly setup User-Agent header field
+
+WaveFile
+  with a valid wave file as input
+    should read individual sectors correctly
+    should return all of its data with audioData
+    should know how many sectors it has
+    with a positive offset
+      should trim samples from the start and pad the end
+      should correct the wave file sizes on save! when padMissingSamples false
+      should not correct wave file sizes on save! when padMissingSamples true
+    with a negative offset
+      should trim samples from the end and pad the start
+      should correct the wave file sizes on save! when padMissingSamples false
+      should not correct wave file sizes on save! when padMissingSamples true
+    when splicing
+      should replace with the data of another WaveFile object
+      should replace the offset sector with the data
+
+Finished in 0.85151 seconds (files took 0.1906 seconds to load)
+292 examples, 0 failures
+

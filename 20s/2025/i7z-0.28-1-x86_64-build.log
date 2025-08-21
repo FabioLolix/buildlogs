@@ -1,0 +1,63 @@
+clang -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/i7z/src=/usr/src/debug/i7z -flto=auto -D_GNU_SOURCE   -c -o src/helper_functions.o src/helper_functions.c
+clang -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/i7z/src=/usr/src/debug/i7z -flto=auto -D_GNU_SOURCE   -c -o src/i7z.o src/i7z.c
+clang -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/i7z/src=/usr/src/debug/i7z -flto=auto -D_GNU_SOURCE   -c -o src/i7z_Dual_Socket.o src/i7z_Dual_Socket.c
+clang -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/i7z/src=/usr/src/debug/i7z -flto=auto -D_GNU_SOURCE   -c -o src/i7z_Single_Socket.o src/i7z_Single_Socket.c
+clang -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/i7z/src=/usr/src/debug/i7z -flto=auto -D_GNU_SOURCE   -c -o src/log.o src/log.c
+src/i7z.c:35:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+   35 |     system("stty sane");
+      |     ^~~~~~ ~~~~~~~~~~~
+src/i7z.c:40:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+   40 |     system("modprobe msr");
+      |     ^~~~~~ ~~~~~~~~~~~~~~
+2 warnings generated.
+src/helper_functions.c:360:13: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  360 |             system ("msr_major=202; \
+      |             ^~~~~~  ~~~~~~~~~~~~~~~~~
+src/helper_functions.c:371:13: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  371 |             system ("modprobe msr");
+      |             ^~~~~~  ~~~~~~~~~~~~~~
+src/helper_functions.c:384:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  384 |     system
+      |     ^~~~~~
+  385 |     ("cat /proc/cpuinfo |grep MHz|sed 's/cpu\\sMHz\\s*:\\s//'|tail -n 1 > /tmp/cpufreq.txt");
+      |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/helper_functions.c:392:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  392 |     fgets (tmp_str, 30, tmp_file);
+      |     ^~~~~  ~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+clang -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/i7z/src=/usr/src/debug/i7z -flto=auto -D_GNU_SOURCE -o i7z src/helper_functions.o src/i7z.o src/i7z_Dual_Socket.o src/i7z_Single_Socket.o src/log.o -lncurses -lpthread -lrt -lm 
+Info: creating stash file /build/i7z/src/i7z/src/GUI/.qmake.stash
+g++ -pipe -g -Wall -Wextra -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
+gcc -c -pipe -g -Wall -Wextra -D_REENTRANT -fPIC -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o log.o ../log.c
+/usr/bin/moc -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /build/i7z/src/i7z/src/GUI/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/build/i7z/src/i7z/src/GUI -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include i7z_GUI.cpp -o i7z_GUI.moc
+g++ -c -pipe -g -Wall -Wextra -D_REENTRANT -fPIC -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o i7z_GUI.o i7z_GUI.cpp
+In file included from i7z_GUI.cpp:37:
+../helper_functions.c: In function ‘void Print_Information_Processor(bool*, bool*, bool*, bool*)’:
+../helper_functions.c:319:31: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  319 |     debug(prog_options.quiet, "msr = Model Specific Register");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../helper_functions.c:332:15: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  332 |         error("Unknown, possibly pre i7 processor detected.");
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+i7z_GUI.cpp: In member function ‘virtual void MyThread::run()’:
+i7z_GUI.cpp:213:10: warning: variable ‘HT_ON’ set but not used [-Wunused-but-set-variable]
+  213 |     bool HT_ON;
+      |          ^~~~~
+i7z_GUI.cpp:238:9: warning: variable ‘IA32_PERF_GLOBAL_CTRL_Value’ set but not used [-Wunused-but-set-variable]
+  238 |     int IA32_PERF_GLOBAL_CTRL_Value =
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+i7z_GUI.cpp:241:9: warning: variable ‘IA32_FIXED_CTR_CTL_Value’ set but not used [-Wunused-but-set-variable]
+  241 |     int IA32_FIXED_CTR_CTL_Value =
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+../helper_functions.c: In function ‘void print_socket_information(cpu_socket_info*)’:
+../helper_functions.c:516:38: warning: ‘,’ directive writing 1 byte into a region of size between 0 and 199 [-Wformat-overflow=]
+  516 |             sprintf(socket_list,"%s%d,",socket_list,socket->processor_num[i]);
+      |                                      ^
+../helper_functions.c:516:20: note: ‘sprintf’ output between 3 and 212 bytes into a destination of size 200
+  516 |             sprintf(socket_list,"%s%d,",socket_list,socket->processor_num[i]);
+      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../helper_functions.c:516:20: warning: ‘sprintf’ argument 3 overlaps destination object ‘socket_list’ [-Wrestrict]
+../helper_functions.c:511:10: note: destination object referenced by ‘restrict’-qualified argument 1 was declared here
+  511 |     char socket_list[200]="";
+      |          ^~~~~~~~~~~
+g++ -fPIC -o i7z_GUI i7z_GUI.o log.o   -lncurses /usr/lib/libQt5Widgets.so /usr/lib/libQt5Gui.so /usr/lib/libQt5Core.so -lGL -lpthread   

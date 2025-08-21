@@ -1,0 +1,361 @@
+TARGET: x86_64-pc-linux-gnu
+mkdir -p obj/x86_64-pc-linux-gnu/ffplay
+make -C angelscript/angelscript/projects/gnuc/ static
+g++ -c -o obj/x86_64-pc-linux-gnu/NymphCastServer.o NymphCastServer.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/bytebauble.o bytebauble.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+mkdir -p obj/x86_64-pc-linux-gnu/angelscript/add_on/scriptstdstring
+g++ -c -o obj/x86_64-pc-linux-gnu/chronotrigger.o chronotrigger.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/config_parser.o config_parser.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/databuffer.o databuffer.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+mkdir -p obj/x86_64-pc-linux-gnu/angelscript/add_on/scriptbuilder
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplaydummy.o ffplaydummy.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+make[1]: Entering directory '/build/nymphcast-server-git/src/NymphCast/src/server/angelscript/angelscript/projects/gnuc'
+g++ -c -o obj/x86_64-pc-linux-gnu/gui.o gui.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/gui_event.o gui_event.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/mimetype.o mimetype.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+mkdir -p obj/x86_64-pc-linux-gnu/angelscript/add_on/scriptarray
+g++ -c -o obj/x86_64-pc-linux-gnu/nc_apps.o nc_apps.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/sarge.o sarge.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/screensaver.o screensaver.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+mkdir -p obj/x86_64-pc-linux-gnu/angelscript/add_on/scriptdictionary
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplay/audio_renderer.o ffplay/audio_renderer.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplay/clock.o ffplay/clock.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplay/decoder.o ffplay/decoder.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+mkdir -p obj/x86_64-pc-linux-gnu/angelscript/json
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplay/ffplay.o ffplay/ffplay.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+awk: cmd. line:1: warning: regexp escape sequence `\#' is not a known regexp operator
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplay/frame_queue.o ffplay/frame_queue.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplay/packet_queue.o ffplay/packet_queue.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+mkdir -p obj/x86_64-pc-linux-gnu/angelscript/regexp
+mkdir -p obj/x86_64-pc-linux-gnu/gui/core/animations
+GCC ARCH: x86_64-pc-linux-gnu
+mkdir -p obj/x86_64-pc-linux-gnu/gui/core/components
+mkdir -p "../../lib-x86_64-pc-linux-gnu"
+mkdir -p obj/x86_64-pc-linux-gnu/gui/core/guis
+mkdir -p obj/x86_64-pc-linux-gnu/gui/core/math
+mkdir -p "obj-x86_64-pc-linux-gnu"
+mkdir -p obj/x86_64-pc-linux-gnu/gui/core/renderers
+mkdir -p obj/x86_64-pc-linux-gnu/gui/core/resources
+mkdir -p obj/x86_64-pc-linux-gnu/gui/core/utils
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_atomic.o -c ../../source/as_atomic.cpp
+mkdir -p obj/x86_64-pc-linux-gnu/gui/core/nanosvg/src
+mkdir -p obj/x86_64-pc-linux-gnu/gui/app/components
+mkdir -p obj/x86_64-pc-linux-gnu/gui/app/guis
+mkdir -p obj/x86_64-pc-linux-gnu/gui/app/scrapers
+mkdir -p obj/x86_64-pc-linux-gnu/gui/app/views/gamelist
+mkdir -p obj/x86_64-pc-linux-gnu/gui/app/pugixml/src
+mkdir -p obj/x86_64-pc-linux-gnu/lcdapi/api
+mkdir -p obj/x86_64-pc-linux-gnu/lcdapi/sensors
+mkdir -p bin/x86_64-pc-linux-gnu
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplay/player.o ffplay/player.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_builder.o -c ../../source/as_builder.cpp
+In file included from ../../source/as_builder.h:43,
+                 from ../../source/as_builder.cpp:40:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+In file included from sarge.cpp:17:
+sarge.h:54:30: error: ‘uint32_t’ has not been declared
+   54 |         bool getTextArgument(uint32_t index, std::string &value);
+      |                              ^~~~~~~~
+sarge.h:22:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+   21 | #include <memory>
+  +++ |+#include <cstdint>
+   22 | 
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplay/sdl_renderer.o ffplay/sdl_renderer.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+sarge.cpp:167:6: error: ‘bool Sarge::getTextArgument’ is not a static data member of ‘class Sarge’
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |      ^~~~~
+sarge.cpp:167:29: error: ‘uint32_t’ was not declared in this scope
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                             ^~~~~~~~
+sarge.cpp:20:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+   19 | #include <iostream>
+  +++ |+#include <cstdint>
+   20 | 
+sarge.cpp:167:57: error: expected primary-expression before ‘&’ token
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                                                         ^
+g++ -c -o obj/x86_64-pc-linux-gnu/ffplay/stream_handler.o ffplay/stream_handler.cpp -ffunction-sections -fdata-sections -g3 -O0  -DPOCO_DATA_NO_SQL_PARSER -I . -I ffplay -I angelscript/angelscript/include -I angelscript/add_on -I angelscript/json -I angelscript/regexp -I gui/core -I gui/core/animations  -I gui/core/components  -I gui/core/guis -I gui/core/math  -I gui/core/renderers  -I gui/core/resources  -I gui/core/utils -I gui/app -I gui/app/animations -I gui/app/components -I gui/app/guis -I gui/app/scrapers -I gui/app/views -I gui/app/gamelist -I gui/core/nanosvg `sdl2-config --cflags` `pkg-config --cflags freetype2` -std=c++17 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -D__VERSION="\"v0.2-alpha0.20241108\"" -fext-numeric-literals -DUSE_OPENGL_14
+sarge.cpp:167:58: error: ‘value’ was not declared in this scope
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                                                          ^~~~~
+sarge.cpp:167:63: error: expression list treated as compound expression in initializer [-fpermissive]
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                                                               ^
+make: *** [Makefile:210: obj/x86_64-pc-linux-gnu/sarge.o] Error 1
+make: *** Waiting for unfinished jobs....
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_bytecode.o -c ../../source/as_bytecode.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc.o -c ../../source/as_callfunc.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_bytecode.cpp:48:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_arm.o -c ../../source/as_callfunc_arm.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_callfunc.cpp:42:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+../../source/as_callfunc.cpp: In function ‘int DetectCallingConvention(bool, const asSFuncPtr&, int, void*, asSSystemFunctionInterface*)’:
+../../source/as_callfunc.cpp:58:15: warning: ‘void* memset(void*, int, size_t)’ clearing an object of type ‘struct asSSystemFunctionInterface’ with no trivial copy-assignment; use assignment or value-initialization instead [-Wclass-memaccess]
+   58 |         memset(internal, 0, sizeof(asSSystemFunctionInterface));
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../source/as_callfunc.cpp:41:
+../../source/as_callfunc.h:98:8: note: ‘struct asSSystemFunctionInterface’ declared here
+   98 | struct asSSystemFunctionInterface
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_arm64.o -c ../../source/as_callfunc_arm64.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_mips.o -c ../../source/as_callfunc_mips.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_ppc.o -c ../../source/as_callfunc_ppc.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_ppc_64.o -c ../../source/as_callfunc_ppc_64.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_sh4.o -c ../../source/as_callfunc_sh4.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_x86.o -c ../../source/as_callfunc_x86.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_x64_gcc.o -c ../../source/as_callfunc_x64_gcc.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_x64_mingw.o -c ../../source/as_callfunc_x64_mingw.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_compiler.o -c ../../source/as_compiler.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_context.o -c ../../source/as_context.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_configgroup.o -c ../../source/as_configgroup.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_callfunc_x64_gcc.cpp:50:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_datatype.o -c ../../source/as_datatype.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_configgroup.h:46,
+                 from ../../source/as_configgroup.cpp:41:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_generic.o -c ../../source/as_generic.cpp
+In file included from ../../source/as_builder.h:43,
+                 from ../../source/as_compiler.h:47,
+                 from ../../source/as_compiler.cpp:44:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_datatype.cpp:42:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_gc.o -c ../../source/as_gc.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_context.h:46,
+                 from ../../source/as_context.cpp:41:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_generic.cpp:40:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_globalproperty.o -c ../../source/as_globalproperty.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_memory.o -c ../../source/as_memory.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_module.o -c ../../source/as_module.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_gc.cpp:42:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_objecttype.o -c ../../source/as_objecttype.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_globalproperty.cpp:35:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_outputbuffer.o -c ../../source/as_outputbuffer.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_parser.o -c ../../source/as_parser.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_restore.o -c ../../source/as_restore.cpp
+In file included from ../../source/as_module.h:43,
+                 from ../../source/as_module.cpp:40:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_objecttype.cpp:42:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_scriptcode.o -c ../../source/as_scriptcode.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_outputbuffer.cpp:44:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+ffplay/packet_queue.cpp: In static member function ‘static int PacketQueueC::packet_queue_put_nullpacket(PacketQueue*, int)’:
+ffplay/packet_queue.cpp:51:19: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+   51 |     av_init_packet(pkt);
+      |     ~~~~~~~~~~~~~~^~~~~
+In file included from /usr/include/libavcodec/codec_par.h:33,
+                 from /usr/include/libavformat/avformat.h:312,
+                 from ffplay/types.h:30,
+                 from ffplay/packet_queue.h:7,
+                 from ffplay/packet_queue.cpp:3:
+/usr/include/libavcodec/packet.h:670:6: note: declared here
+  670 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+In file included from ../../source/as_builder.h:43,
+                 from ../../source/as_parser.h:45,
+                 from ../../source/as_parser.cpp:53:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_scriptengine.o -c ../../source/as_scriptengine.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_restore.h:42,
+                 from ../../source/as_restore.cpp:39:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_scriptfunction.o -c ../../source/as_scriptfunction.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_scriptnode.o -c ../../source/as_scriptnode.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_scriptobject.o -c ../../source/as_scriptobject.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_scriptengine.cpp:42:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_scriptfunction.cpp:43:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_string.o -c ../../source/as_string.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_string_util.o -c ../../source/as_string_util.cpp
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_scriptobject.cpp:34:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_scriptnode.cpp:41:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_thread.o -c ../../source/as_thread.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_tokenizer.o -c ../../source/as_tokenizer.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_typeinfo.o -c ../../source/as_typeinfo.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_variablescope.o -c ../../source/as_variablescope.cpp
+g++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphcast-server-git/src=/usr/src/debug/nymphcast-server-git -flto=auto -Wall -fPIC -fno-strict-aliasing -ffunction-sections -fdata-sections  -o obj-x86_64-pc-linux-gnu/as_callfunc_arm_gcc.o -c ../../source/as_callfunc_arm_gcc.S
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_tokenizer.cpp:39:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+In file included from ../../source/as_property.h:47,
+                 from ../../source/as_objecttype.h:44,
+                 from ../../source/as_scriptengine.h:48,
+                 from ../../source/as_typeinfo.cpp:39:
+../../source/as_symboltable.h:89:39: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   89 |         asCSymbolTableIterator<T, T2>(asCSymbolTable<T> *table);
+      |                                       ^~~~~~~~~~~~~~~~~
+../../source/as_symboltable.h:89:39: note: remove the ‘< >’
+ffplay/stream_handler.cpp: In function ‘void stream_component_close(VideoState*, int)’:
+ffplay/stream_handler.cpp:430:24: warning: ‘void av_rdft_end(RDFTContext*)’ is deprecated [-Wdeprecated-declarations]
+  430 |             av_rdft_end(is->rdft);
+      |             ~~~~~~~~~~~^~~~~~~~~~
+In file included from ffplay/types.h:34,
+                 from ffplay/frame_queue.h:7,
+                 from ffplay/stream_handler.cpp:3:
+/usr/include/libavcodec/avfft.h:112:6: note: declared here
+  112 | void av_rdft_end(RDFTContext *s);
+      |      ^~~~~~~~~~~
+ffplay/stream_handler.cpp: In static member function ‘static int StreamHandler::read_thread(void*)’:
+ffplay/stream_handler.cpp:663:59: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 5 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  663 |         av_log(NULL, AV_LOG_INFO, "Format %s, duration %lld us", ic->iformat->long_name, ic->duration);
+      |                                                        ~~~^                              ~~~~~~~~~~~~
+      |                                                           |                                  |
+      |                                                           long long int                      int64_t {aka long int}
+      |                                                        %ld
+ffplay/stream_handler.cpp:893:67: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  893 |                         av_log(NULL, AV_LOG_INFO, "Seek request: %d, target: %d\n", is->seek_rel, is->seek_pos);
+      |                                                                  ~^                 ~~~~~~~~~~~~
+      |                                                                   |                     |
+      |                                                                   int                   int64_t {aka long int}
+      |                                                                  %ld
+ffplay/stream_handler.cpp:893:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  893 |                         av_log(NULL, AV_LOG_INFO, "Seek request: %d, target: %d\n", is->seek_rel, is->seek_pos);
+      |                                                                              ~^                   ~~~~~~~~~~~~
+      |                                                                               |                       |
+      |                                                                               int                     int64_t {aka long int}
+      |                                                                              %ld
+ffplay/sdl_renderer.cpp: In static member function ‘static void SdlRenderer::video_audio_display(VideoState*)’:
+ffplay/sdl_renderer.cpp:757:36: warning: ‘void av_rdft_end(RDFTContext*)’ is deprecated [-Wdeprecated-declarations]
+  757 |                         av_rdft_end(s->rdft);
+      |                         ~~~~~~~~~~~^~~~~~~~~
+In file included from ffplay/types.h:34,
+                 from ffplay/sdl_renderer.h:6,
+                 from ffplay/sdl_renderer.cpp:6:
+/usr/include/libavcodec/avfft.h:112:6: note: declared here
+  112 | void av_rdft_end(RDFTContext *s);
+      |      ^~~~~~~~~~~
+ffplay/sdl_renderer.cpp:759:47: warning: ‘RDFTContext* av_rdft_init(int, RDFTransformType)’ is deprecated [-Wdeprecated-declarations]
+  759 |                         s->rdft = av_rdft_init(rdft_bits, DFT_R2C);
+      |                                   ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/usr/include/libavcodec/avfft.h:108:14: note: declared here
+  108 | RDFTContext *av_rdft_init(int nbits, enum RDFTransformType trans);
+      |              ^~~~~~~~~~~~
+ffplay/sdl_renderer.cpp:781:45: warning: ‘void av_rdft_calc(RDFTContext*, FFTSample*)’ is deprecated [-Wdeprecated-declarations]
+  781 |                                 av_rdft_calc(s->rdft, data[ch]);
+      |                                 ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/usr/include/libavcodec/avfft.h:110:6: note: declared here
+  110 | void av_rdft_calc(RDFTContext *s, FFTSample *data);
+      |      ^~~~~~~~~~~~
+ar r "../../lib-x86_64-pc-linux-gnu"/libangelscript.a obj-x86_64-pc-linux-gnu/as_atomic.o obj-x86_64-pc-linux-gnu/as_builder.o obj-x86_64-pc-linux-gnu/as_bytecode.o obj-x86_64-pc-linux-gnu/as_callfunc.o obj-x86_64-pc-linux-gnu/as_callfunc_arm.o obj-x86_64-pc-linux-gnu/as_callfunc_arm64.o obj-x86_64-pc-linux-gnu/as_callfunc_mips.o obj-x86_64-pc-linux-gnu/as_callfunc_ppc.o obj-x86_64-pc-linux-gnu/as_callfunc_ppc_64.o obj-x86_64-pc-linux-gnu/as_callfunc_sh4.o obj-x86_64-pc-linux-gnu/as_callfunc_x86.o obj-x86_64-pc-linux-gnu/as_callfunc_x64_gcc.o obj-x86_64-pc-linux-gnu/as_callfunc_x64_mingw.o obj-x86_64-pc-linux-gnu/as_compiler.o obj-x86_64-pc-linux-gnu/as_context.o obj-x86_64-pc-linux-gnu/as_configgroup.o obj-x86_64-pc-linux-gnu/as_datatype.o obj-x86_64-pc-linux-gnu/as_generic.o obj-x86_64-pc-linux-gnu/as_gc.o obj-x86_64-pc-linux-gnu/as_globalproperty.o obj-x86_64-pc-linux-gnu/as_memory.o obj-x86_64-pc-linux-gnu/as_module.o obj-x86_64-pc-linux-gnu/as_objecttype.o obj-x86_64-pc-linux-gnu/as_outputbuffer.o obj-x86_64-pc-linux-gnu/as_parser.o obj-x86_64-pc-linux-gnu/as_restore.o obj-x86_64-pc-linux-gnu/as_scriptcode.o obj-x86_64-pc-linux-gnu/as_scriptengine.o obj-x86_64-pc-linux-gnu/as_scriptfunction.o obj-x86_64-pc-linux-gnu/as_scriptnode.o obj-x86_64-pc-linux-gnu/as_scriptobject.o obj-x86_64-pc-linux-gnu/as_string.o obj-x86_64-pc-linux-gnu/as_string_util.o obj-x86_64-pc-linux-gnu/as_thread.o obj-x86_64-pc-linux-gnu/as_tokenizer.o obj-x86_64-pc-linux-gnu/as_typeinfo.o obj-x86_64-pc-linux-gnu/as_variablescope.o obj-x86_64-pc-linux-gnu/as_callfunc_arm_gcc.o
+ar: creating ../../lib-x86_64-pc-linux-gnu/libangelscript.a
+ranlib "../../lib-x86_64-pc-linux-gnu"/libangelscript.a
+make[1]: Leaving directory '/build/nymphcast-server-git/src/NymphCast/src/server/angelscript/angelscript/projects/gnuc'
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

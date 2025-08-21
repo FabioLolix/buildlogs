@@ -1,0 +1,716 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 libadwaita build -D gtk_doc=true
+The Meson build system
+Version: 1.8.4
+Source dir: /build/libadwaita-git/src/libadwaita
+Build dir: /build/libadwaita-git/src/build
+Build type: native build
+DEPRECATION: Option "gtk_doc" is replaced by 'documentation'
+Project name: libadwaita
+Project version: 1.8.rc
+C compiler for the host machine: cc (gcc 15.2.1 "cc (GCC) 15.2.1 20250813")
+C linker for the host machine: cc ld.bfd 2.45.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency glib-2.0 found: YES 2.84.4
+Run-time dependency gio-2.0 found: YES 2.84.4
+Run-time dependency gtk4 found: YES 4.19.5
+Run-time dependency fribidi found: YES 1.0.16
+Run-time dependency appstream found: YES 1.0.5
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wdate-time: YES 
+Compiler for C supports arguments -Werror=format-security -Werror=format=2: YES 
+Compiler for C supports arguments -Wendif-labels: YES 
+Compiler for C supports arguments -Werror=incompatible-pointer-types: YES 
+Compiler for C supports arguments -Werror=missing-declarations: YES 
+Compiler for C supports arguments -Werror=overflow: YES 
+Compiler for C supports arguments -Werror=return-type: YES 
+Compiler for C supports arguments -Werror=shift-count-overflow: YES 
+Compiler for C supports arguments -Werror=shift-overflow=2: YES 
+Compiler for C supports arguments -Werror=implicit-fallthrough=3: YES 
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Compiler for C supports arguments -Wformat-security: YES 
+Compiler for C supports arguments -Winit-self: YES 
+Compiler for C supports arguments -Wmaybe-uninitialized: YES 
+Compiler for C supports arguments -Wmissing-field-initializers: YES 
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-sign-compare: YES 
+Compiler for C supports arguments -Wno-strict-aliasing: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wredundant-decls: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wswitch-default: YES 
+Compiler for C supports arguments -Wswitch-enum: YES 
+Compiler for C supports arguments -Wtype-limits: YES 
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Wunused-function: YES 
+Compiler for C supports arguments -Wfloat-equal: YES 
+Program sassc found: YES (/usr/bin/sassc)
+Dependency gio-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Configuring adw-version.h using configuration
+Dependency glib-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-genmarshal found: YES (/usr/bin/glib-genmarshal)
+Program gen-public-types.py found: YES (/usr/bin/python /build/libadwaita-git/src/libadwaita/src/gen-public-types.py)
+Library m found: YES
+Configuring config.h using configuration
+Checking if "ld_supports_version_script" links: YES 
+Run-time dependency gobject-introspection-1.0 found: YES 1.84.0
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program desktop-file-validate found: NO
+Program date found: YES (/usr/bin/date)
+Program sh found: YES (/usr/bin/sh)
+Configuring org.gnome.Adwaita1.Demo.metainfo.xml.in using configuration
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Configuring config.h.in using configuration
+Found git repository at /build/libadwaita-git/src/libadwaita
+Dependency gio-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gtk4 found: YES 4.19.5 (cached)
+Dependency libadwaita-1 found: YES 1.8.rc (overridden)
+Dependency gio-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Configuring libadwaita.toml using configuration
+Build-time dependency gi-docgen found: YES 2025.4
+Program gi-docgen found: YES (/usr/bin/gi-docgen)
+Configuring run using configuration
+Build targets in project: 163
+
+libadwaita 1.8.rc
+
+  Options
+    Tests             : true
+    Examples          : true
+    Documentation     : true
+    Introspection     : true
+    Vapi              : true
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    gtk_doc           : true
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/163 eta ?Generating targets:  73%|███████▎  | 119/163 eta 00:00                                                      Writing build.ninja:   0%|          | 0/614 eta ?                                                 ninja: Entering directory `/build/libadwaita-git/src/build'
+[1/582] Generating tests/adwaita-test-resources_c with a custom command
+[2/582] Generating tests/adwaita-test-resources_h with a custom command
+[3/582] Building translation po/ab/LC_MESSAGES/libadwaita-ab.mo
+[4/582] Building translation po/be/LC_MESSAGES/libadwaita-be.mo
+[5/582] Generating doc/tools/screenshot-resources_c with a custom command
+[6/582] Generating doc/tools/screenshot-resources_h with a custom command
+[7/582] Building translation po/bg/LC_MESSAGES/libadwaita-bg.mo
+[8/582] Building translation po/ca/LC_MESSAGES/libadwaita-ca.mo
+[9/582] Building translation po/cs/LC_MESSAGES/libadwaita-cs.mo
+[10/582] Building translation po/da/LC_MESSAGES/libadwaita-da.mo
+[11/582] Generating tests/manual/adwaita-manual-test-resources_h with a custom command
+[12/582] Building translation po/de/LC_MESSAGES/libadwaita-de.mo
+[13/582] Generating tests/manual/adwaita-manual-test-resources_c with a custom command
+[14/582] Building translation po/el/LC_MESSAGES/libadwaita-el.mo
+[15/582] Building translation po/en_GB/LC_MESSAGES/libadwaita-en_GB.mo
+[16/582] Building translation po/eo/LC_MESSAGES/libadwaita-eo.mo
+[17/582] Building translation po/es/LC_MESSAGES/libadwaita-es.mo
+[18/582] Building translation po/eu/LC_MESSAGES/libadwaita-eu.mo
+[19/582] Building translation po/fa/LC_MESSAGES/libadwaita-fa.mo
+[20/582] Building translation po/fil/LC_MESSAGES/libadwaita-fil.mo
+[21/582] Building translation po/fr/LC_MESSAGES/libadwaita-fr.mo
+[22/582] Building translation po/fi/LC_MESSAGES/libadwaita-fi.mo
+[23/582] Building translation po/fur/LC_MESSAGES/libadwaita-fur.mo
+[24/582] Building translation po/gl/LC_MESSAGES/libadwaita-gl.mo
+[25/582] Building translation po/he/LC_MESSAGES/libadwaita-he.mo
+[26/582] Building translation po/hi/LC_MESSAGES/libadwaita-hi.mo
+[27/582] Building translation po/hr/LC_MESSAGES/libadwaita-hr.mo
+[28/582] Building translation po/hu/LC_MESSAGES/libadwaita-hu.mo
+[29/582] Building translation po/ia/LC_MESSAGES/libadwaita-ia.mo
+[30/582] Building translation po/id/LC_MESSAGES/libadwaita-id.mo
+[31/582] Building translation po/it/LC_MESSAGES/libadwaita-it.mo
+[32/582] Building translation po/ka/LC_MESSAGES/libadwaita-ka.mo
+[33/582] Building translation po/kab/LC_MESSAGES/libadwaita-kab.mo
+[34/582] Building translation po/ja/LC_MESSAGES/libadwaita-ja.mo
+[35/582] Building translation po/kk/LC_MESSAGES/libadwaita-kk.mo
+[36/582] Building translation po/ko/LC_MESSAGES/libadwaita-ko.mo
+[37/582] Building translation po/lt/LC_MESSAGES/libadwaita-lt.mo
+[38/582] Building translation po/lv/LC_MESSAGES/libadwaita-lv.mo
+[39/582] Building translation po/nb/LC_MESSAGES/libadwaita-nb.mo
+[40/582] Building translation po/nl/LC_MESSAGES/libadwaita-nl.mo
+[41/582] Building translation po/ne/LC_MESSAGES/libadwaita-ne.mo
+[42/582] Building translation po/oc/LC_MESSAGES/libadwaita-oc.mo
+[43/582] Building translation po/pa/LC_MESSAGES/libadwaita-pa.mo
+[44/582] Building translation po/pl/LC_MESSAGES/libadwaita-pl.mo
+[45/582] Building translation po/pt/LC_MESSAGES/libadwaita-pt.mo
+[46/582] Building translation po/ro/LC_MESSAGES/libadwaita-ro.mo
+[47/582] Building translation po/sk/LC_MESSAGES/libadwaita-sk.mo
+[48/582] Building translation po/sl/LC_MESSAGES/libadwaita-sl.mo
+[49/582] Building translation po/sr/LC_MESSAGES/libadwaita-sr.mo
+[50/582] Building translation po/pt_BR/LC_MESSAGES/libadwaita-pt_BR.mo
+[51/582] Building translation po/th/LC_MESSAGES/libadwaita-th.mo
+[52/582] Building translation po/vi/LC_MESSAGES/libadwaita-vi.mo
+[53/582] Building translation po/ru/LC_MESSAGES/libadwaita-ru.mo
+[54/582] Building translation po/zh_TW/LC_MESSAGES/libadwaita-zh_TW.mo
+[55/582] Building translation po/zh_CN/LC_MESSAGES/libadwaita-zh_CN.mo
+[56/582] Building translation po/tr/LC_MESSAGES/libadwaita-tr.mo
+[57/582] Building translation po/uk/LC_MESSAGES/libadwaita-uk.mo
+[58/582] Generating glib marshaller header src/adw-marshalers_h
+[59/582] Building translation po/sv/LC_MESSAGES/libadwaita-sv.mo
+[60/582] Generating glib marshaller source src/adw-marshalers_c
+[61/582] Generating GObject enum file src/adw-enums-private.c (wrapped by meson because command contains newlines, to capture output)
+[62/582] Generating GObject enum file src/adw-enums-private.h (wrapped by meson because command contains newlines, to capture output)
+[63/582] Generating demo/config.h with a custom command
+[64/582] Generating GObject enum file src/adw-enums.h (wrapped by meson because command contains newlines, to capture output)
+[65/582] Generating GObject enum file src/adw-enums.c (wrapped by meson because command contains newlines, to capture output)
+[66/582] Merging translations for demo/data/org.gnome.Adwaita1.Demo.metainfo.xml
+[67/582] Generating src/adw-resources_c with a custom command
+[68/582] Generating src/adw-resources_h with a custom command
+[69/582] Merging translations for demo/data/org.gnome.Adwaita1.Demo.desktop
+[70/582] Generating src/stylesheet/default.scss with a custom command
+[71/582] Generating src/stylesheet/high-contrast.scss with a custom command
+[72/582] Generating src/adw-public-types.c with a custom command (wrapped by meson to capture output)
+[73/582] Generating src/stylesheet/adwaita-stylesheet-resources_h with a custom command
+[74/582] Compiling C object tests/manual/test-breakpoints.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[75/582] Compiling C object tests/manual/test-navigation.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[76/582] Compiling C object tests/manual/test-split-views.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[77/582] Compiling C object tests/manual/test-shortcuts-dialogs.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[78/582] Compiling C object tests/manual/test-toggle-groups.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[79/582] Compiling C object tests/manual/test-button-states.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[80/582] Compiling C object tests/manual/test-alert-dialogs.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[81/582] Generating src/stylesheet/adwaita-stylesheet-resources_c with a custom command
+[82/582] Compiling C object tests/manual/test-shortcut-labels.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[83/582] Compiling C object tests/manual/test-toolbars.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[84/582] Compiling C object tests/manual/test-avatar-colors.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[85/582] Compiling C object tests/manual/test-view-switcher-bars.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[86/582] Compiling C object src/libadwaita-1.so.0.p/meson-generated_.._adw-marshalers.c.o
+[87/582] Compiling C object src/libadwaita-1.so.0.p/meson-generated_.._adw-resources.c.o
+[88/582] Compiling C object src/libadwaita-1.so.0.p/meson-generated_.._stylesheet_adwaita-stylesheet-resources.c.o
+[89/582] Compiling C object examples/hello-world/hello.p/hello.c.o
+[90/582] Compiling C object tests/manual/test-shortcut-labels.p/test-shortcut-labels.c.o
+[91/582] Compiling C object tests/manual/test-button-states.p/test-button-states.c.o
+[92/582] Compiling C object tests/manual/test-toggle-groups.p/test-toggle-groups.c.o
+[93/582] Compiling C object tests/manual/test-shortcuts-dialogs.p/test-shortcuts-dialogs.c.o
+[94/582] Generating demo/adwaita-demo-resources_c with a custom command
+[95/582] Compiling C object tests/manual/test-avatar-colors.p/test-avatar-colors.c.o
+[96/582] Compiling C object tests/manual/test-alert-dialogs.p/test-alert-dialogs.c.o
+[97/582] Compiling C object tests/manual/test-navigation.p/test-navigation.c.o
+[98/582] Generating demo/adwaita-demo-resources_h with a custom command
+[99/582] Compiling C object tests/manual/test-breakpoints.p/test-breakpoints.c.o
+[100/582] Compiling C object tests/manual/test-split-views.p/test-split-views.c.o
+[101/582] Compiling C object tests/manual/test-toolbars.p/test-toolbars.c.o
+[102/582] Compiling C object src/libadwaita-1.so.0.p/adw-accent-color.c.o
+[103/582] Compiling C object src/libadwaita-1.so.0.p/meson-generated_.._adw-enums.c.o
+[104/582] Compiling C object src/libadwaita-1.so.0.p/meson-generated_.._adw-enums-private.c.o
+[105/582] Compiling C object src/libadwaita-1.so.0.p/meson-generated_.._adw-public-types.c.o
+[106/582] Compiling C object src/libadwaita-1.so.0.p/adw-action-row.c.o
+[107/582] Compiling C object src/libadwaita-1.so.0.p/adw-animation.c.o
+[108/582] Compiling C object src/libadwaita-1.so.0.p/adw-animation-target.c.o
+[109/582] Compiling C object src/libadwaita-1.so.0.p/adw-animation-util.c.o
+[110/582] Compiling C object src/libadwaita-1.so.0.p/adw-easing.c.o
+[111/582] Compiling C object src/libadwaita-1.so.0.p/adw-alert-dialog.c.o
+[112/582] Compiling C object src/libadwaita-1.so.0.p/adw-about-dialog.c.o
+[113/582] Compiling C object src/libadwaita-1.so.0.p/adw-application.c.o
+[114/582] Compiling C object src/libadwaita-1.so.0.p/adw-about-window.c.o
+[115/582] Compiling C object src/libadwaita-1.so.0.p/adw-fold-threshold-policy.c.o
+[116/582] Compiling C object src/libadwaita-1.so.0.p/adw-application-window.c.o
+[117/582] Compiling C object src/libadwaita-1.so.0.p/adw-banner.c.o
+[118/582] Compiling C object src/libadwaita-1.so.0.p/adw-bin.c.o
+[119/582] Compiling C object src/libadwaita-1.so.0.p/adw-button-content.c.o
+[120/582] Compiling C object src/libadwaita-1.so.0.p/adw-breakpoint-bin.c.o
+[121/582] Compiling C object src/libadwaita-1.so.0.p/adw-carousel-indicator-lines.c.o
+[122/582] Compiling C object src/libadwaita-1.so.0.p/adw-carousel-indicator-dots.c.o
+[123/582] Compiling C object src/libadwaita-1.so.0.p/adw-avatar.c.o
+[124/582] Compiling C object src/libadwaita-1.so.0.p/adw-clamp-layout.c.o
+[125/582] Compiling C object src/libadwaita-1.so.0.p/adw-clamp.c.o
+[126/582] Compiling C object src/libadwaita-1.so.0.p/adw-carousel.c.o
+[127/582] Compiling C object src/libadwaita-1.so.0.p/adw-breakpoint.c.o
+[128/582] Compiling C object src/libadwaita-1.so.0.p/adw-clamp-scrollable.c.o
+[129/582] Compiling C object src/libadwaita-1.so.0.p/adw-button-row.c.o
+[130/582] Compiling C object src/libadwaita-1.so.0.p/adw-navigation-direction.c.o
+[131/582] Compiling C object src/libadwaita-1.so.0.p/adw-bottom-sheet.c.o
+[132/582] Compiling C object src/libadwaita-1.so.0.p/adw-enum-list-model.c.o
+[133/582] Compiling C object src/libadwaita-1.so.0.p/adw-combo-row.c.o
+[134/582] Compiling C object src/libadwaita-1.so.0.p/adw-entry-row.c.o
+[135/582] Compiling C object src/libadwaita-1.so.0.p/adw-dialog.c.o
+[136/582] Compiling C object src/libadwaita-1.so.0.p/adw-expander-row.c.o
+[137/582] Compiling C object src/libadwaita-1.so.0.p/adw-layout.c.o
+[138/582] Compiling C object src/libadwaita-1.so.0.p/adw-inline-view-switcher.c.o
+[139/582] Compiling C object src/libadwaita-1.so.0.p/adw-header-bar.c.o
+[140/582] Compiling C object src/libadwaita-1.so.0.p/adw-flap.c.o
+[141/582] Compiling C object src/libadwaita-1.so.0.p/adw-main.c.o
+[142/582] Compiling C object src/libadwaita-1.so.0.p/adw-layout-slot.c.o
+[143/582] Compiling C object src/libadwaita-1.so.0.p/adw-length-unit.c.o
+[144/582] Compiling C object src/libadwaita-1.so.0.p/adw-spring-params.c.o
+[145/582] Compiling C object src/libadwaita-1.so.0.p/adw-multi-layout-view.c.o
+[146/582] Compiling C object src/libadwaita-1.so.0.p/adw-password-entry-row.c.o
+[147/582] Compiling C object src/libadwaita-1.so.0.p/adw-navigation-split-view.c.o
+[148/582] Compiling C object src/libadwaita-1.so.0.p/adw-overlay-split-view.c.o
+[149/582] Compiling C object src/libadwaita-1.so.0.p/adw-preferences-row.c.o
+[150/582] Compiling C object src/libadwaita-1.so.0.p/adw-shortcuts-dialog.c.o
+[151/582] Compiling C object src/libadwaita-1.so.0.p/adw-shortcut-label.c.o
+[152/582] Compiling C object src/libadwaita-1.so.0.p/adw-leaflet.c.o
+[153/582] Compiling C object src/libadwaita-1.so.0.p/adw-message-dialog.c.o
+[154/582] Compiling C object src/libadwaita-1.so.0.p/adw-preferences-dialog.c.o
+[155/582] Compiling C object src/libadwaita-1.so.0.p/adw-preferences-window.c.o
+[156/582] Compiling C object src/libadwaita-1.so.0.p/adw-preferences-group.c.o
+[157/582] Compiling C object src/libadwaita-1.so.0.p/adw-shortcuts-item.c.o
+[158/582] Compiling C object src/libadwaita-1.so.0.p/adw-shortcuts-section.c.o
+[159/582] Compiling C object src/libadwaita-1.so.0.p/adw-navigation-view.c.o
+[160/582] Compiling C object src/libadwaita-1.so.0.p/adw-version.c.o
+[161/582] Compiling C object src/libadwaita-1.so.0.p/adw-spinner.c.o
+[162/582] Compiling C object src/libadwaita-1.so.0.p/adw-preferences-page.c.o
+[163/582] Compiling C object src/libadwaita-1.so.0.p/adw-spinner-paintable.c.o
+[164/582] Compiling C object src/libadwaita-1.so.0.p/adw-spring-animation.c.o
+[165/582] Compiling C object src/libadwaita-1.so.0.p/adw-spin-row.c.o
+[166/582] Compiling C object src/libadwaita-1.so.0.p/adw-split-button.c.o
+[167/582] Compiling C object src/libadwaita-1.so.0.p/adw-squeezer.c.o
+[168/582] Compiling C object src/libadwaita-1.so.0.p/adw-swipe-tracker.c.o
+[169/582] Compiling C object src/libadwaita-1.so.0.p/adw-swipeable.c.o
+[170/582] Compiling C object src/libadwaita-1.so.0.p/adw-status-page.c.o
+[171/582] Compiling C object src/libadwaita-1.so.0.p/adw-style-manager.c.o
+[172/582] Compiling C object src/libadwaita-1.so.0.p/adw-switch-row.c.o
+[173/582] Compiling C object src/libadwaita-1.so.0.p/adw-bidi.c.o
+[174/582] Compiling C object src/libadwaita-1.so.0.p/adw-tab-bar.c.o
+[175/582] Compiling C object src/libadwaita-1.so.0.p/adw-timed-animation.c.o
+[176/582] Compiling C object src/libadwaita-1.so.0.p/adw-tab-button.c.o
+[177/582] Compiling C object src/libadwaita-1.so.0.p/adw-toast-overlay.c.o
+[178/582] Compiling C object src/libadwaita-1.so.0.p/adw-toolbar-view.c.o
+[179/582] Compiling C object src/libadwaita-1.so.0.p/adw-view-switcher.c.o
+[180/582] Compiling C object src/libadwaita-1.so.0.p/adw-toast.c.o
+[181/582] Compiling C object src/libadwaita-1.so.0.p/adw-view-switcher-title.c.o
+[182/582] Compiling C object src/libadwaita-1.so.0.p/adw-view-stack.c.o
+[183/582] Compiling C object src/libadwaita-1.so.0.p/adw-window.c.o
+[184/582] Compiling C object src/libadwaita-1.so.0.p/adw-tab-overview.c.o
+[185/582] Compiling C object src/libadwaita-1.so.0.p/adw-view-switcher-bar.c.o
+[186/582] Compiling C object src/libadwaita-1.so.0.p/adw-wrap-box.c.o
+[187/582] Compiling C object src/libadwaita-1.so.0.p/adw-toggle-group.c.o
+[188/582] Compiling C object src/libadwaita-1.so.0.p/adw-wrap-layout.c.o
+[189/582] Compiling C object src/libadwaita-1.so.0.p/adw-window-title.c.o
+[190/582] Compiling C object src/libadwaita-1.so.0.p/adw-tab-view.c.o
+[191/582] Compiling C object src/libadwaita-1.so.0.p/adw-back-button.c.o
+[192/582] Compiling C object src/libadwaita-1.so.0.p/adw-adaptive-preview.c.o
+[193/582] Compiling C object src/libadwaita-1.so.0.p/adw-color-utils.c.o
+[194/582] Compiling C object src/libadwaita-1.so.0.p/adw-floating-sheet.c.o
+[195/582] Compiling C object src/libadwaita-1.so.0.p/adw-fading-label.c.o
+[196/582] Compiling C object src/libadwaita-1.so.0.p/adw-dialog-host.c.o
+[197/582] Compiling C object src/libadwaita-1.so.0.p/adw-gizmo.c.o
+[198/582] Compiling C object src/libadwaita-1.so.0.p/adw-gtkbuilder-utils.c.o
+[199/582] Compiling C object src/libadwaita-1-internal.a.p/meson-generated_.._adw-marshalers.c.o
+[200/582] Compiling C object src/libadwaita-1-internal.a.p/meson-generated_.._adw-resources.c.o
+[201/582] Compiling C object src/libadwaita-1.so.0.p/adw-indicator-bin.c.o
+[202/582] Compiling C object src/libadwaita-1.so.0.p/adw-settings-impl-gsettings.c.o
+[203/582] Compiling C object src/libadwaita-1-internal.a.p/meson-generated_.._stylesheet_adwaita-stylesheet-resources.c.o
+[204/582] Compiling C object src/libadwaita-1.so.0.p/adw-settings-impl.c.o
+[205/582] Compiling C object src/libadwaita-1.so.0.p/adw-settings-impl-legacy.c.o
+[206/582] Compiling C object src/libadwaita-1.so.0.p/adw-inspector-page.c.o
+[207/582] Compiling C object src/libadwaita-1.so.0.p/adw-sheet-controls.c.o
+[208/582] Compiling C object src/libadwaita-1.so.0.p/adw-shadow-helper.c.o
+[209/582] Compiling C object src/libadwaita-1.so.0.p/adw-settings.c.o
+[210/582] Compiling C object src/libadwaita-1.so.0.p/adw-shortcut-row.c.o
+[211/582] Compiling C object src/libadwaita-1.so.0.p/adw-tab.c.o
+[212/582] Compiling C object src/libadwaita-1.so.0.p/adw-view-switcher-button.c.o
+[213/582] Compiling C object src/libadwaita-1.so.0.p/adw-tab-thumbnail.c.o
+[214/582] Compiling C object src/libadwaita-1.so.0.p/adw-toast-widget.c.o
+[215/582] Compiling C object src/libadwaita-1.so.0.p/adw-settings-impl-portal.c.o
+[216/582] Compiling C object src/libadwaita-1.so.0.p/adw-widget-utils.c.o
+[217/582] Compiling C object src/libadwaita-1-internal.a.p/meson-generated_.._adw-enums.c.o
+[218/582] Compiling C object src/libadwaita-1.so.0.p/adw-tab-grid.c.o
+[219/582] Compiling C object src/libadwaita-1-internal.a.p/meson-generated_.._adw-enums-private.c.o
+[220/582] Compiling C object src/libadwaita-1-internal.a.p/meson-generated_.._adw-public-types.c.o
+[221/582] Compiling C object src/libadwaita-1.so.0.p/adw-tab-box.c.o
+[222/582] Compiling C object src/libadwaita-1-internal.a.p/adw-accent-color.c.o
+[223/582] Compiling C object src/libadwaita-1-internal.a.p/adw-action-row.c.o
+[224/582] Compiling C object src/libadwaita-1-internal.a.p/adw-animation-util.c.o
+[225/582] Compiling C object src/libadwaita-1-internal.a.p/adw-animation.c.o
+[226/582] Compiling C object src/libadwaita-1-internal.a.p/adw-application.c.o
+[227/582] Compiling C object src/libadwaita-1-internal.a.p/adw-banner.c.o
+[228/582] Compiling C object src/libadwaita-1-internal.a.p/adw-about-dialog.c.o
+[229/582] Compiling C object src/libadwaita-1-internal.a.p/adw-about-window.c.o
+[230/582] Compiling C object src/libadwaita-1-internal.a.p/adw-application-window.c.o
+[231/582] Compiling C object src/libadwaita-1-internal.a.p/adw-bin.c.o
+[232/582] Compiling C object src/libadwaita-1-internal.a.p/adw-animation-target.c.o
+[233/582] Compiling C object src/libadwaita-1-internal.a.p/adw-alert-dialog.c.o
+[234/582] Compiling C object src/libadwaita-1-internal.a.p/adw-easing.c.o
+[235/582] Compiling C object src/libadwaita-1-internal.a.p/adw-breakpoint.c.o
+[236/582] Compiling C object src/libadwaita-1-internal.a.p/adw-avatar.c.o
+[237/582] Compiling C object src/libadwaita-1-internal.a.p/adw-button-content.c.o
+[238/582] Compiling C object src/libadwaita-1-internal.a.p/adw-fold-threshold-policy.c.o
+[239/582] Compiling C object src/libadwaita-1-internal.a.p/adw-bottom-sheet.c.o
+[240/582] Compiling C object src/libadwaita-1-internal.a.p/adw-button-row.c.o
+[241/582] Compiling C object src/libadwaita-1-internal.a.p/adw-breakpoint-bin.c.o
+[242/582] Compiling C object src/libadwaita-1-internal.a.p/adw-carousel-indicator-dots.c.o
+[243/582] Compiling C object src/libadwaita-1-internal.a.p/adw-clamp.c.o
+[244/582] Compiling C object src/libadwaita-1-internal.a.p/adw-carousel.c.o
+[245/582] Compiling C object src/libadwaita-1-internal.a.p/adw-carousel-indicator-lines.c.o
+[246/582] Compiling C object src/libadwaita-1-internal.a.p/adw-clamp-layout.c.o
+[247/582] Compiling C object src/libadwaita-1-internal.a.p/adw-clamp-scrollable.c.o
+[248/582] Compiling C object src/libadwaita-1-internal.a.p/adw-navigation-direction.c.o
+[249/582] Compiling C object src/libadwaita-1-internal.a.p/adw-combo-row.c.o
+[250/582] Compiling C object src/libadwaita-1-internal.a.p/adw-dialog.c.o
+[251/582] Compiling C object src/libadwaita-1-internal.a.p/adw-entry-row.c.o
+[252/582] Compiling C object src/libadwaita-1-internal.a.p/adw-enum-list-model.c.o
+[253/582] Compiling C object src/libadwaita-1-internal.a.p/adw-expander-row.c.o
+[254/582] Compiling C object src/libadwaita-1-internal.a.p/adw-layout.c.o
+[255/582] Compiling C object src/libadwaita-1-internal.a.p/adw-layout-slot.c.o
+[256/582] Compiling C object src/libadwaita-1-internal.a.p/adw-length-unit.c.o
+[257/582] Compiling C object src/libadwaita-1-internal.a.p/adw-inline-view-switcher.c.o
+[258/582] Compiling C object src/libadwaita-1-internal.a.p/adw-main.c.o
+[259/582] Compiling C object src/libadwaita-1-internal.a.p/adw-header-bar.c.o
+[260/582] Compiling C object src/libadwaita-1-internal.a.p/adw-flap.c.o
+[261/582] Compiling C object src/libadwaita-1-internal.a.p/adw-multi-layout-view.c.o
+[262/582] Compiling C object src/libadwaita-1-internal.a.p/adw-leaflet.c.o
+[263/582] Compiling C object src/libadwaita-1-internal.a.p/adw-spring-params.c.o
+[264/582] Compiling C object src/libadwaita-1-internal.a.p/adw-message-dialog.c.o
+[265/582] Compiling C object src/libadwaita-1-internal.a.p/adw-overlay-split-view.c.o
+[266/582] Compiling C object src/libadwaita-1-internal.a.p/adw-preferences-dialog.c.o
+[267/582] Compiling C object src/libadwaita-1-internal.a.p/adw-navigation-split-view.c.o
+[268/582] Compiling C object src/libadwaita-1-internal.a.p/adw-preferences-page.c.o
+[269/582] Compiling C object src/libadwaita-1-internal.a.p/adw-password-entry-row.c.o
+[270/582] Compiling C object src/libadwaita-1-internal.a.p/adw-preferences-group.c.o
+[271/582] Compiling C object src/libadwaita-1-internal.a.p/adw-shortcut-label.c.o
+[272/582] Compiling C object src/libadwaita-1-internal.a.p/adw-preferences-row.c.o
+[273/582] Compiling C object src/libadwaita-1-internal.a.p/adw-navigation-view.c.o
+[274/582] Compiling C object src/libadwaita-1-internal.a.p/adw-shortcuts-dialog.c.o
+[275/582] Compiling C object src/libadwaita-1-internal.a.p/adw-shortcuts-item.c.o
+[276/582] Compiling C object src/libadwaita-1-internal.a.p/adw-preferences-window.c.o
+[277/582] Compiling C object src/libadwaita-1-internal.a.p/adw-version.c.o
+[278/582] Compiling C object src/libadwaita-1-internal.a.p/adw-spin-row.c.o
+[279/582] Compiling C object src/libadwaita-1-internal.a.p/adw-spinner.c.o
+[280/582] Compiling C object src/libadwaita-1-internal.a.p/adw-shortcuts-section.c.o
+[281/582] Compiling C object src/libadwaita-1-internal.a.p/adw-split-button.c.o
+[282/582] Compiling C object src/libadwaita-1-internal.a.p/adw-switch-row.c.o
+[283/582] Compiling C object src/libadwaita-1-internal.a.p/adw-spring-animation.c.o
+[284/582] Compiling C object src/libadwaita-1-internal.a.p/adw-style-manager.c.o
+[285/582] Compiling C object src/libadwaita-1-internal.a.p/adw-spinner-paintable.c.o
+[286/582] Compiling C object src/libadwaita-1-internal.a.p/adw-squeezer.c.o
+[287/582] Compiling C object src/libadwaita-1-internal.a.p/adw-toast.c.o
+[288/582] Compiling C object src/libadwaita-1-internal.a.p/adw-tab-bar.c.o
+[289/582] Compiling C object src/libadwaita-1-internal.a.p/adw-bidi.c.o
+[290/582] Compiling C object src/libadwaita-1-internal.a.p/adw-swipe-tracker.c.o
+[291/582] Compiling C object src/libadwaita-1-internal.a.p/adw-status-page.c.o
+[292/582] Compiling C object src/libadwaita-1-internal.a.p/adw-toast-overlay.c.o
+[293/582] Compiling C object src/libadwaita-1-internal.a.p/adw-timed-animation.c.o
+[294/582] Compiling C object src/libadwaita-1-internal.a.p/adw-swipeable.c.o
+[295/582] Compiling C object src/libadwaita-1-internal.a.p/adw-view-switcher-bar.c.o
+[296/582] Compiling C object src/libadwaita-1-internal.a.p/adw-toggle-group.c.o
+[297/582] Compiling C object src/libadwaita-1-internal.a.p/adw-view-stack.c.o
+[298/582] Compiling C object src/libadwaita-1-internal.a.p/adw-window.c.o
+[299/582] Compiling C object src/libadwaita-1-internal.a.p/adw-view-switcher.c.o
+[300/582] Compiling C object src/libadwaita-1-internal.a.p/adw-tab-button.c.o
+[301/582] Compiling C object src/libadwaita-1-internal.a.p/adw-view-switcher-title.c.o
+[302/582] Compiling C object src/libadwaita-1-internal.a.p/adw-tab-view.c.o
+[303/582] Compiling C object src/libadwaita-1-internal.a.p/adw-wrap-box.c.o
+[304/582] Compiling C object src/libadwaita-1-internal.a.p/adw-toolbar-view.c.o
+[305/582] Compiling C object src/libadwaita-1-internal.a.p/adw-tab-overview.c.o
+[306/582] Compiling C object src/libadwaita-1-internal.a.p/adw-dialog-host.c.o
+[307/582] Compiling C object src/libadwaita-1-internal.a.p/adw-fading-label.c.o
+[308/582] Compiling C object src/libadwaita-1-internal.a.p/adw-window-title.c.o
+[309/582] Compiling C object src/libadwaita-1-internal.a.p/adw-adaptive-preview.c.o
+[310/582] Compiling C object src/libadwaita-1-internal.a.p/adw-wrap-layout.c.o
+[311/582] Compiling C object src/libadwaita-1-internal.a.p/adw-gtkbuilder-utils.c.o
+[312/582] Compiling C object src/libadwaita-1-internal.a.p/adw-indicator-bin.c.o
+[313/582] Compiling C object src/libadwaita-1-internal.a.p/adw-sheet-controls.c.o
+[314/582] Compiling C object demo/adwaita-1-demo.p/meson-generated_.._adwaita-demo-resources.c.o
+[315/582] Compiling C object src/libadwaita-1-internal.a.p/adw-inspector-page.c.o
+[316/582] Compiling C object src/libadwaita-1-internal.a.p/adw-color-utils.c.o
+[317/582] Compiling C object src/libadwaita-1-internal.a.p/adw-settings-impl.c.o
+[318/582] Compiling C object src/libadwaita-1-internal.a.p/adw-floating-sheet.c.o
+[319/582] Compiling C object src/libadwaita-1-internal.a.p/adw-settings-impl-legacy.c.o
+[320/582] Compiling C object src/libadwaita-1-internal.a.p/adw-settings-impl-gsettings.c.o
+[321/582] Compiling C object src/libadwaita-1-internal.a.p/adw-back-button.c.o
+[322/582] Compiling C object src/libadwaita-1-internal.a.p/adw-toast-widget.c.o
+[323/582] Compiling C object src/libadwaita-1-internal.a.p/adw-settings.c.o
+[324/582] Compiling C object src/libadwaita-1-internal.a.p/adw-settings-impl-portal.c.o
+[325/582] Compiling C object src/libadwaita-1-internal.a.p/adw-tab.c.o
+[326/582] Compiling C object demo/adwaita-1-demo.p/pages_about_adw-demo-page-about.c.o
+[327/582] Compiling C object src/libadwaita-1-internal.a.p/adw-gizmo.c.o
+[328/582] Compiling C object src/libadwaita-1-internal.a.p/adw-shortcut-row.c.o
+[329/582] Compiling C object src/libadwaita-1-internal.a.p/adw-widget-utils.c.o
+[330/582] Compiling C object src/libadwaita-1-internal.a.p/adw-tab-grid.c.o
+[331/582] Compiling C object src/libadwaita-1-internal.a.p/adw-shadow-helper.c.o
+[332/582] Compiling C object src/libadwaita-1-internal.a.p/adw-tab-box.c.o
+[333/582] Compiling C object src/libadwaita-1-internal.a.p/adw-view-switcher-button.c.o
+[334/582] Compiling C object demo/adwaita-1-demo.p/pages_banners_adw-demo-page-banners.c.o
+[335/582] Compiling C object demo/adwaita-1-demo.p/pages_animations_adw-demo-page-animations.c.o
+[336/582] Compiling C object src/libadwaita-1-internal.a.p/adw-tab-thumbnail.c.o
+[337/582] Compiling C object demo/adwaita-1-demo.p/pages_buttons_adw-demo-page-buttons.c.o
+[338/582] Compiling C object demo/adwaita-1-demo.p/pages_alerts_adw-demo-page-alerts.c.o
+[339/582] Linking static target src/libadwaita-1-internal.a
+[340/582] Compiling C object demo/adwaita-1-demo.p/pages_lists_adw-demo-page-lists.c.o
+[341/582] Compiling C object demo/adwaita-1-demo.p/pages_carousel_adw-demo-page-carousel.c.o
+[342/582] Compiling C object demo/adwaita-1-demo.p/pages_spinner_adw-demo-page-spinner.c.o
+[343/582] Compiling C object demo/adwaita-1-demo.p/pages_clamp_adw-demo-page-clamp.c.o
+[344/582] Compiling C object demo/adwaita-1-demo.p/pages_avatar_adw-demo-page-avatar.c.o
+[345/582] Compiling C object demo/adwaita-1-demo.p/pages_split-views_adw-navigation-split-view-demo-dialog.c.o
+[346/582] Compiling C object demo/adwaita-1-demo.p/pages_multi-layout_adw-demo-page-multi-layout.c.o
+[347/582] Compiling C object demo/adwaita-1-demo.p/pages_split-views_adw-demo-page-split-views.c.o
+[348/582] Compiling C object demo/adwaita-1-demo.p/pages_navigation-view_adw-demo-page-navigation-view.c.o
+[349/582] Compiling C object demo/adwaita-1-demo.p/pages_bottom-sheets_adw-demo-page-bottom-sheets.c.o
+[350/582] Compiling C object demo/adwaita-1-demo.p/pages_navigation-view_adw-navigation-view-demo-dialog.c.o
+[351/582] Compiling C object demo/adwaita-1-demo.p/pages_multi-layout_adw-multi-layout-demo-dialog.c.o
+[352/582] Compiling C object demo/adwaita-1-demo.p/pages_styles_adw-style-demo-dialog.c.o
+[353/582] Compiling C object tests/manual/test-view-switchers.p/meson-generated_.._adwaita-manual-test-resources.c.o
+[354/582] Compiling C object tests/test-about-dialog.p/meson-generated_.._adwaita-test-resources.c.o
+[355/582] Compiling C object demo/adwaita-1-demo.p/pages_styles_adw-demo-page-styles.c.o
+[356/582] Compiling C object tests/test-about-window.p/meson-generated_.._adwaita-test-resources.c.o
+[357/582] Compiling C object tests/test-accent-color.p/meson-generated_.._adwaita-test-resources.c.o
+[358/582] Compiling C object demo/adwaita-1-demo.p/pages_split-views_adw-overlay-split-view-demo-dialog.c.o
+[359/582] Compiling C object tests/test-action-row.p/meson-generated_.._adwaita-test-resources.c.o
+[360/582] Compiling C object demo/adwaita-1-demo.p/pages_view-switcher_adw-view-switcher-demo-dialog.c.o
+[361/582] Compiling C object demo/adwaita-1-demo.p/pages_toggles_adw-demo-page-toggles.c.o
+[362/582] Compiling C object demo/adwaita-1-demo.p/pages_wrap-box_adw-demo-page-wrap-box.c.o
+[363/582] Compiling C object demo/adwaita-1-demo.p/pages_tab-view_adw-tab-view-demo-window.c.o
+[364/582] Compiling C object demo/adwaita-1-demo.p/pages_tab-view_adw-tab-view-demo-page.c.o
+[365/582] Compiling C object demo/adwaita-1-demo.p/pages_welcome_adw-demo-page-welcome.c.o
+[366/582] Compiling C object tests/test-alert-dialog.p/meson-generated_.._adwaita-test-resources.c.o
+[367/582] Compiling C object demo/adwaita-1-demo.p/pages_tab-view_adw-demo-page-tab-view.c.o
+[368/582] Compiling C object tests/test-animation.p/meson-generated_.._adwaita-test-resources.c.o
+[369/582] Compiling C object demo/adwaita-1-demo.p/adwaita-demo.c.o
+[370/582] Compiling C object demo/adwaita-1-demo.p/pages_toasts_adw-demo-page-toasts.c.o
+[371/582] Compiling C object demo/adwaita-1-demo.p/adw-demo-window.c.o
+[372/582] Compiling C object demo/adwaita-1-demo.p/adw-demo-preferences-dialog.c.o
+[373/582] Compiling C object tests/test-animation-target.p/meson-generated_.._adwaita-test-resources.c.o
+[374/582] Compiling C object demo/adwaita-1-demo.p/adw-demo-debug-info.c.o
+[375/582] Compiling C object demo/adwaita-1-demo.p/pages_view-switcher_adw-demo-page-view-switcher.c.o
+[376/582] Compiling C object tests/manual/test-view-switcher-bars.p/test-view-switcher-bars.c.o
+[377/582] Compiling C object tests/test-application-window.p/meson-generated_.._adwaita-test-resources.c.o
+[378/582] Compiling C object tests/test-avatar.p/meson-generated_.._adwaita-test-resources.c.o
+[379/582] Compiling C object tests/test-banner.p/meson-generated_.._adwaita-test-resources.c.o
+[380/582] Compiling C object tests/test-back-button.p/meson-generated_.._adwaita-test-resources.c.o
+[381/582] Linking target src/libadwaita-1.so.0
+[382/582] Compiling C object tests/manual/test-view-switchers.p/test-view-switchers.c.o
+[383/582] Compiling C object tests/test-bin.p/meson-generated_.._adwaita-test-resources.c.o
+[384/582] Compiling C object tests/test-bottom-sheet.p/meson-generated_.._adwaita-test-resources.c.o
+[385/582] Compiling C object tests/test-about-dialog.p/test-about-dialog.c.o
+[386/582] Compiling C object tests/test-breakpoint.p/meson-generated_.._adwaita-test-resources.c.o
+[387/582] Compiling C object tests/test-about-window.p/test-about-window.c.o
+[388/582] Compiling C object tests/test-breakpoint-bin.p/meson-generated_.._adwaita-test-resources.c.o
+[389/582] Compiling C object tests/test-action-row.p/test-action-row.c.o
+[390/582] Compiling C object tests/test-button-content.p/meson-generated_.._adwaita-test-resources.c.o
+[391/582] Compiling C object tests/test-button-row.p/meson-generated_.._adwaita-test-resources.c.o
+[392/582] Compiling C object tests/test-carousel.p/meson-generated_.._adwaita-test-resources.c.o
+[393/582] Generating symbol file src/libadwaita-1.so.0.p/libadwaita-1.so.0.symbols
+[394/582] Compiling C object tests/test-alert-dialog.p/test-alert-dialog.c.o
+[395/582] Compiling C object tests/test-accent-color.p/test-accent-color.c.o
+[396/582] Compiling C object tests/test-carousel-indicator-dots.p/meson-generated_.._adwaita-test-resources.c.o
+[397/582] Compiling C object tests/test-carousel-indicator-lines.p/meson-generated_.._adwaita-test-resources.c.o
+[398/582] Compiling C object tests/test-animation-target.p/test-animation-target.c.o
+[399/582] Compiling C object tests/test-animation.p/test-animation.c.o
+[400/582] Compiling C object tests/test-application-window.p/test-application-window.c.o
+[401/582] Compiling C object tests/test-banner.p/test-banner.c.o
+[402/582] Compiling C object tests/test-avatar.p/test-avatar.c.o
+[403/582] Compiling C object tests/test-dialog.p/meson-generated_.._adwaita-test-resources.c.o
+[404/582] Compiling C object tests/test-easing.p/meson-generated_.._adwaita-test-resources.c.o
+[405/582] Compiling C object tests/test-back-button.p/test-back-button.c.o
+[406/582] Compiling C object tests/test-bin.p/test-bin.c.o
+[407/582] Compiling C object tests/test-entry-row.p/meson-generated_.._adwaita-test-resources.c.o
+[408/582] Compiling C object tests/test-combo-row.p/meson-generated_.._adwaita-test-resources.c.o
+[409/582] Compiling C object tests/test-expander-row.p/meson-generated_.._adwaita-test-resources.c.o
+[410/582] Compiling C object tests/test-button-content.p/test-button-content.c.o
+[411/582] Compiling C object tests/test-breakpoint.p/test-breakpoint.c.o
+[412/582] Compiling C object tests/test-flap.p/meson-generated_.._adwaita-test-resources.c.o
+[413/582] Compiling C object tests/test-header-bar.p/meson-generated_.._adwaita-test-resources.c.o
+[414/582] Compiling C object tests/test-breakpoint-bin.p/test-breakpoint-bin.c.o
+[415/582] Compiling C object tests/test-button-row.p/test-button-row.c.o
+[416/582] Compiling C object tests/test-bottom-sheet.p/test-bottom-sheet.c.o
+[417/582] Compiling C object tests/test-inline-view-switcher.p/meson-generated_.._adwaita-test-resources.c.o
+[418/582] Compiling C object tests/test-leaflet.p/meson-generated_.._adwaita-test-resources.c.o
+[419/582] Compiling C object tests/test-message-dialog.p/meson-generated_.._adwaita-test-resources.c.o
+[420/582] Compiling C object tests/test-multi-layout-view.p/meson-generated_.._adwaita-test-resources.c.o
+[421/582] Compiling C object tests/test-carousel-indicator-lines.p/test-carousel-indicator-lines.c.o
+[422/582] Compiling C object tests/test-carousel.p/test-carousel.c.o
+[423/582] Compiling C object tests/test-navigation-split-view.p/meson-generated_.._adwaita-test-resources.c.o
+[424/582] Compiling C object tests/test-navigation-view.p/meson-generated_.._adwaita-test-resources.c.o
+[425/582] Compiling C object tests/test-carousel-indicator-dots.p/test-carousel-indicator-dots.c.o
+[426/582] Compiling C object tests/test-overlay-split-view.p/meson-generated_.._adwaita-test-resources.c.o
+[427/582] Compiling C object tests/test-password-entry-row.p/meson-generated_.._adwaita-test-resources.c.o
+[428/582] Compiling C object tests/test-preferences-dialog.p/meson-generated_.._adwaita-test-resources.c.o
+[429/582] Compiling C object tests/test-entry-row.p/test-entry-row.c.o
+[430/582] Compiling C object tests/test-dialog.p/test-dialog.c.o
+[431/582] Compiling C object tests/test-easing.p/test-easing.c.o
+[432/582] Compiling C object tests/test-combo-row.p/test-combo-row.c.o
+[433/582] Compiling C object tests/test-preferences-page.p/meson-generated_.._adwaita-test-resources.c.o
+[434/582] Compiling C object tests/test-preferences-group.p/meson-generated_.._adwaita-test-resources.c.o
+[435/582] Compiling C object tests/test-preferences-row.p/meson-generated_.._adwaita-test-resources.c.o
+[436/582] Compiling C object tests/test-expander-row.p/test-expander-row.c.o
+[437/582] Compiling C object tests/test-flap.p/test-flap.c.o
+[438/582] Compiling C object tests/test-preferences-window.p/meson-generated_.._adwaita-test-resources.c.o
+[439/582] Compiling C object tests/test-shortcut-label.p/meson-generated_.._adwaita-test-resources.c.o
+[440/582] Compiling C object tests/test-header-bar.p/test-header-bar.c.o
+[441/582] Compiling C object tests/test-inline-view-switcher.p/test-inline-view-switcher.c.o
+[442/582] Compiling C object tests/test-spinner.p/meson-generated_.._adwaita-test-resources.c.o
+[443/582] Compiling C object tests/test-spinner-paintable.p/meson-generated_.._adwaita-test-resources.c.o
+[444/582] Compiling C object tests/test-spin-row.p/meson-generated_.._adwaita-test-resources.c.o
+[445/582] Compiling C object tests/test-message-dialog.p/test-message-dialog.c.o
+[446/582] Compiling C object tests/test-split-button.p/meson-generated_.._adwaita-test-resources.c.o
+[447/582] Compiling C object tests/test-leaflet.p/test-leaflet.c.o
+[448/582] Compiling C object tests/test-squeezer.p/meson-generated_.._adwaita-test-resources.c.o
+[449/582] Compiling C object tests/test-status-page.p/meson-generated_.._adwaita-test-resources.c.o
+[450/582] Compiling C object tests/test-multi-layout-view.p/test-multi-layout-view.c.o
+[451/582] Compiling C object tests/test-password-entry-row.p/test-password-entry-row.c.o
+[452/582] Compiling C object tests/test-overlay-split-view.p/test-overlay-split-view.c.o
+[453/582] Compiling C object tests/test-style-manager.p/meson-generated_.._adwaita-test-resources.c.o
+[454/582] Compiling C object tests/test-switch-row.p/meson-generated_.._adwaita-test-resources.c.o
+[455/582] Compiling C object tests/test-navigation-split-view.p/test-navigation-split-view.c.o
+[456/582] Compiling C object tests/test-navigation-view.p/test-navigation-view.c.o
+[457/582] Compiling C object tests/test-preferences-dialog.p/test-preferences-dialog.c.o
+[458/582] Compiling C object tests/test-tab-bar.p/meson-generated_.._adwaita-test-resources.c.o
+[459/582] Compiling C object tests/test-preferences-row.p/test-preferences-row.c.o
+[460/582] Compiling C object tests/test-preferences-group.p/test-preferences-group.c.o
+[461/582] Compiling C object tests/test-tab-button.p/meson-generated_.._adwaita-test-resources.c.o
+[462/582] Compiling C object tests/test-preferences-window.p/test-preferences-window.c.o
+[463/582] Compiling C object tests/test-preferences-page.p/test-preferences-page.c.o
+[464/582] Compiling C object tests/test-spinner.p/test-spinner.c.o
+[465/582] Compiling C object tests/test-tab-overview.p/meson-generated_.._adwaita-test-resources.c.o
+[466/582] Compiling C object tests/test-spinner-paintable.p/test-spinner-paintable.c.o
+[467/582] Compiling C object tests/test-shortcut-label.p/test-shortcut-label.c.o
+[468/582] Compiling C object tests/test-tab-view.p/meson-generated_.._adwaita-test-resources.c.o
+[469/582] Compiling C object tests/test-toast.p/meson-generated_.._adwaita-test-resources.c.o
+[470/582] Compiling C object tests/test-timed-animation.p/meson-generated_.._adwaita-test-resources.c.o
+[471/582] Compiling C object tests/test-toggle-group.p/meson-generated_.._adwaita-test-resources.c.o
+[472/582] Compiling C object tests/test-toast-overlay.p/meson-generated_.._adwaita-test-resources.c.o
+[473/582] Compiling C object tests/test-view-switcher.p/meson-generated_.._adwaita-test-resources.c.o
+[474/582] Compiling C object tests/test-spin-row.p/test-spin-row.c.o
+[475/582] Compiling C object tests/test-toolbar-view.p/meson-generated_.._adwaita-test-resources.c.o
+[476/582] Compiling C object tests/test-squeezer.p/test-squeezer.c.o
+[477/582] Compiling C object tests/test-split-button.p/test-split-button.c.o
+[478/582] Compiling C object tests/test-status-page.p/test-status-page.c.o
+[479/582] Compiling C object tests/test-window.p/meson-generated_.._adwaita-test-resources.c.o
+[480/582] Compiling C object tests/test-switch-row.p/test-switch-row.c.o
+[481/582] Compiling C object tests/test-window-title.p/meson-generated_.._adwaita-test-resources.c.o
+[482/582] Compiling C object tests/test-view-switcher-bar.p/meson-generated_.._adwaita-test-resources.c.o
+[483/582] Compiling C object doc/tools/screenshot.p/meson-generated_.._screenshot-resources.c.o
+[484/582] Compiling C object tests/test-wrap-layout.p/meson-generated_.._adwaita-test-resources.c.o
+[485/582] Compiling C object tests/test-tab-bar.p/test-tab-bar.c.o
+[486/582] Compiling C object tests/test-style-manager.p/test-style-manager.c.o
+[487/582] Compiling C object tests/test-tab-button.p/test-tab-button.c.o
+[488/582] Compiling C object tests/test-tab-overview.p/test-tab-overview.c.o
+[489/582] Compiling C object tests/test-timed-animation.p/test-timed-animation.c.o
+[490/582] Compiling C object tests/test-toast.p/test-toast.c.o
+[491/582] Compiling C object tests/test-toast-overlay.p/test-toast-overlay.c.o
+[492/582] Compiling C object tests/test-tab-view.p/test-tab-view.c.o
+[493/582] Compiling C object tests/test-view-switcher-bar.p/test-view-switcher-bar.c.o
+[494/582] Compiling C object tests/test-toolbar-view.p/test-toolbar-view.c.o
+[495/582] Compiling C object tests/test-toggle-group.p/test-toggle-group.c.o
+[496/582] Compiling C object tests/test-view-switcher.p/test-view-switcher.c.o
+[497/582] Compiling C object tests/test-window.p/test-window.c.o
+[498/582] Compiling C object tests/test-wrap-layout.p/test-wrap-layout.c.o
+[499/582] Compiling C object tests/test-window-title.p/test-window-title.c.o
+[500/582] Compiling C object doc/tools/screenshot.p/screenshot.c.o
+[501/582] Linking target examples/hello-world/hello
+[502/582] Linking target tests/manual/test-alert-dialogs
+[503/582] Linking target tests/manual/test-avatar-colors
+[504/582] Linking target tests/manual/test-breakpoints
+[505/582] Linking target tests/manual/test-button-states
+[506/582] Linking target tests/manual/test-shortcut-labels
+[507/582] Linking target tests/manual/test-navigation
+[508/582] Linking target tests/manual/test-toolbars
+[509/582] Linking target tests/manual/test-shortcuts-dialogs
+[510/582] Linking target tests/manual/test-split-views
+[511/582] Linking target tests/manual/test-toggle-groups
+[512/582] Linking target tests/manual/test-view-switcher-bars
+[513/582] Linking target tests/manual/test-view-switchers
+[514/582] Linking target demo/adwaita-1-demo
+[515/582] Generating src/Adw-1.gir with a custom command (wrapped by meson to set env)
+[516/582] Generating src/Adw-1.typelib with a custom command
+[517/582] Generating src/libadwaita-1.vapi with a custom command
+[518/582] Linking target tests/test-about-dialog
+[519/582] Linking target tests/test-back-button
+[520/582] Linking target tests/test-alert-dialog
+[521/582] Linking target tests/test-banner
+[522/582] Linking target tests/test-accent-color
+[523/582] Linking target tests/test-avatar
+[524/582] Linking target tests/test-application-window
+[525/582] Linking target tests/test-animation
+[526/582] Linking target tests/test-action-row
+[527/582] Linking target tests/test-breakpoint
+[528/582] Linking target tests/test-animation-target
+[529/582] Linking target tests/test-about-window
+[530/582] Linking target tests/test-breakpoint-bin
+[531/582] Linking target tests/test-carousel
+[532/582] Linking target tests/test-carousel-indicator-lines
+[533/582] Linking target tests/test-dialog
+[534/582] Linking target tests/test-easing
+[535/582] Linking target tests/test-combo-row
+[536/582] Linking target tests/test-bin
+[537/582] Linking target tests/test-button-content
+[538/582] Linking target tests/test-entry-row
+[539/582] Linking target tests/test-expander-row
+[540/582] Linking target tests/test-bottom-sheet
+[541/582] Linking target tests/test-button-row
+[542/582] Linking target tests/test-carousel-indicator-dots
+[543/582] Linking target tests/test-multi-layout-view
+[544/582] Linking target tests/test-inline-view-switcher
+[545/582] Linking target tests/test-leaflet
+[546/582] Linking target tests/test-flap
+[547/582] Linking target tests/test-message-dialog
+[548/582] Linking target tests/test-navigation-view
+[549/582] Linking target tests/test-navigation-split-view
+[550/582] Linking target tests/test-preferences-dialog
+[551/582] Linking target tests/test-header-bar
+[552/582] Linking target tests/test-password-entry-row
+[553/582] Linking target tests/test-preferences-window
+[554/582] Linking target tests/test-spinner
+[555/582] Linking target tests/test-preferences-page
+[556/582] Linking target tests/test-shortcut-label
+[557/582] Linking target tests/test-overlay-split-view
+[558/582] Linking target tests/test-spin-row
+[559/582] Linking target tests/test-status-page
+[560/582] Linking target tests/test-preferences-group
+[561/582] Linking target tests/test-split-button
+[562/582] Linking target tests/test-preferences-row
+[563/582] Linking target tests/test-style-manager
+[564/582] Linking target tests/test-spinner-paintable
+[565/582] Linking target doc/tools/screenshot
+[566/582] Linking target tests/test-squeezer
+[567/582] Linking target tests/test-tab-bar
+[568/582] Linking target tests/test-switch-row
+[569/582] Linking target tests/test-tab-button
+[570/582] Linking target tests/test-tab-overview
+[571/582] Linking target tests/test-toolbar-view
+[572/582] Linking target tests/test-timed-animation
+[573/582] Linking target tests/test-tab-view
+[574/582] Linking target tests/test-toast
+[575/582] Linking target tests/test-toast-overlay
+[576/582] Linking target tests/test-window
+[577/582] Linking target tests/test-view-switcher
+[578/582] Linking target tests/test-toggle-group
+[579/582] Linking target tests/test-view-switcher-bar
+[580/582] Linking target tests/test-wrap-layout
+[581/582] Linking target tests/test-window-title
+[582/582] Generating doc/libadwaita-doc with a custom command
+WARNING: Invalid property 'default-widget' for type 'Gtk.Widget'
+See [property@Gtk.Widget:default-widget].
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/libadwaita-git/src/build

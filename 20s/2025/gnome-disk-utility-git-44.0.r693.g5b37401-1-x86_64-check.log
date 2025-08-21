@@ -1,0 +1,25 @@
+ninja: Entering directory `/build/gnome-disk-utility-git/src/build'
+ninja: no work to do.
+1/2 validate-metainfo OK                0.01s
+2/2 cargo-test        FAIL              0.02s   exit status 101
+>>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MESON_TEST_ITERATION=1 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MALLOC_PERTURB_=98 /build/gnome-disk-utility-git/src/cargo test --manifest-path /build/gnome-disk-utility-git/src/gnome-disk-utility/Cargo.toml --target-dir /build/gnome-disk-utility-git/src/build/src --lib --features logind --release -- --test-threads=1
+――――――――――――――――――――――――――――――――――――― ✀  ―――――――――――――――――――――――――――――――――――――
+stderr:
+error: failed to acquire package cache lock
+
+Caused by:
+  failed to open: /dev/null/.cargo/.package-cache
+
+Caused by:
+  Not a directory (os error 20)
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+Summary of Failures:
+
+2/2 cargo-test        FAIL              0.02s   exit status 101
+
+Ok:                1   
+Fail:              1   
+
+Full log written to /build/gnome-disk-utility-git/src/build/meson-logs/testlog.txt

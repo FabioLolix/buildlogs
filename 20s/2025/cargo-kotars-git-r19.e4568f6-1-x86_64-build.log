@@ -1,0 +1,171 @@
+   Compiling proc-macro2 v1.0.78
+   Compiling unicode-ident v1.0.12
+   Compiling serde v1.0.197
+   Compiling serde_json v1.0.114
+   Compiling thiserror v1.0.57
+   Compiling libc v0.2.155
+   Compiling bytes v1.5.0
+   Compiling itoa v1.0.10
+   Compiling crossbeam-utils v0.8.20
+   Compiling memchr v2.7.1
+   Compiling utf8parse v0.2.1
+   Compiling ryu v1.0.17
+   Compiling anstyle v1.0.6
+   Compiling log v0.4.20
+   Compiling cesu8 v1.1.0
+   Compiling cfg-if v1.0.0
+   Compiling anstyle-query v1.0.2
+   Compiling jni-sys v0.3.0
+   Compiling colorchoice v1.0.0
+   Compiling clap_lex v0.7.0
+   Compiling bitflags v1.3.2
+   Compiling heck v0.4.1
+   Compiling anstyle-parse v0.2.3
+   Compiling same-file v1.0.6
+   Compiling strsim v0.11.0
+   Compiling walkdir v2.4.0
+   Compiling anstream v0.6.13
+   Compiling clap_builder v4.5.2
+   Compiling combine v4.6.6
+   Compiling quote v1.0.35
+   Compiling crossbeam-channel v0.5.13
+   Compiling syn v2.0.52
+   Compiling inotify-sys v0.1.5
+   Compiling filetime v0.2.23
+   Compiling mio v0.8.11
+   Compiling inotify v0.9.6
+   Compiling notify v6.1.1
+   Compiling serde_derive v1.0.197
+   Compiling thiserror-impl v1.0.57
+   Compiling clap_derive v4.5.0
+   Compiling jni v0.21.1
+   Compiling clap v4.5.2
+   Compiling kotars-common v0.1.0 (/build/cargo-kotars-git/src/kotars/kotars-common)
+warning: unused import: `std::fmt::format`
+ --> kotars-common/src/lib.rs:1:5
+  |
+1 | use std::fmt::format;
+  |     ^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: `kotars-common` (lib) generated 1 warning (run `cargo fix --lib -p kotars-common` to apply 1 suggestion)
+   Compiling kotars v0.1.0 (/build/cargo-kotars-git/src/kotars/kotars)
+warning: unused import: `std::fmt::format`
+ --> kotars/src/structs.rs:3:5
+  |
+3 | use std::fmt::format;
+  |     ^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unreachable expression
+   --> kotars/src/types_transformations.rs:116:13
+    |
+115 |               todo!("Idd2");
+    |               ------------- any code following this expression is unreachable
+116 | /             quote! {
+117 | |                 let #param: jni::objects::JObjectArray = {
+118 | |                     let mut env = rc_env.borrow_mut();
+119 | |                     let arr = env.new_object_array(#param.len(), "java/lang/String", "").unwrap();
+...   |
+127 | |                 };
+128 | |             }
+    | |_____________^ unreachable expression
+    |
+    = note: `#[warn(unreachable_code)]` on by default
+    = note: this warning originates in the macro `quote` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unused variable: `is_borrow`
+  --> kotars/src/functions.rs:37:17
+   |
+37 |                 is_borrow,
+   |                 ^^^^^^^^^ help: try ignoring the field: `is_borrow: _`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `is_mutable`
+  --> kotars/src/functions.rs:38:17
+   |
+38 |                 is_mutable
+   |                 ^^^^^^^^^^ help: try ignoring the field: `is_mutable: _`
+
+warning: unused variable: `is_borrow`
+  --> kotars/src/functions.rs:72:21
+   |
+72 |                     is_borrow,
+   |                     ^^^^^^^^^ help: try ignoring the field: `is_borrow: _`
+
+warning: unused variable: `is_mutable`
+  --> kotars/src/functions.rs:73:21
+   |
+73 |                     is_mutable
+   |                     ^^^^^^^^^^ help: try ignoring the field: `is_mutable: _`
+
+warning: unused variable: `ty`
+  --> kotars/src/types_transformations.rs:30:22
+   |
+30 |         JniType::Vec(ty) => todo!("ABDE_Vec2"), //transform_jarray_to_vec(param_name, ty),
+   |                      ^^ help: if this is intentional, prefix it with an underscore: `_ty`
+
+warning: unused variable: `individual_item_transformation`
+   --> kotars/src/types_transformations.rs:113:17
+    |
+113 |             let individual_item_transformation = transform_rust_to_jni_type(ty, "el", false, true);
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_individual_item_transformation`
+
+warning: unused variable: `param`
+   --> kotars/src/types_transformations.rs:114:17
+    |
+114 |             let param = syn::parse_str::<TokenStream2>(param_name).unwrap();
+    |                 ^^^^^ help: if this is intentional, prefix it with an underscore: `_param`
+
+warning: unused variable: `ty`
+   --> kotars/src/lib.rs:432:25
+    |
+432 |         JniType::Option(ty) => {
+    |                         ^^ help: if this is intentional, prefix it with an underscore: `_ty`
+
+warning: `kotars-common` (lib) generated 1 warning (1 duplicate)
+   Compiling cargo-kotars v0.1.0 (/build/cargo-kotars-git/src/kotars/cargo-kotars)
+warning: unused variable: `is_borrow`
+   --> cargo-kotars/src/main.rs:368:46
+    |
+368 |                 Parameter::Typed { name, ty, is_borrow, is_mutable } => {
+    |                                              ^^^^^^^^^ help: try ignoring the field: `is_borrow: _`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `is_mutable`
+   --> cargo-kotars/src/main.rs:368:57
+    |
+368 |                 Parameter::Typed { name, ty, is_borrow, is_mutable } => {
+    |                                                         ^^^^^^^^^^ help: try ignoring the field: `is_mutable: _`
+
+warning: `kotars` (lib) generated 10 warnings (run `cargo fix --lib -p kotars` to apply 1 suggestion)
+   Compiling example v0.1.0 (/build/cargo-kotars-git/src/kotars/example)
+Package name: ""
+warning: unused imports: `jni_data_class` and `jni_interface`
+ --> example/src/main.rs:1:25
+  |
+1 | use kotars::{jni_class, jni_data_class, jni_init, jni_interface, jni_struct_impl};
+  |                         ^^^^^^^^^^^^^^            ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `Config`, `ErrorKind`, `Error`, `Event`, `RecommendedWatcher`, and `RecursiveMode`
+ --> example/src/main.rs:2:14
+  |
+2 | use notify::{Config, Error, ErrorKind, Event, RecommendedWatcher, RecursiveMode, Watcher};
+  |              ^^^^^^  ^^^^^  ^^^^^^^^^  ^^^^^  ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^
+
+warning: unused import: `Watcher`
+ --> example/src/main.rs:2:82
+  |
+2 | use notify::{Config, Error, ErrorKind, Event, RecommendedWatcher, RecursiveMode, Watcher};
+  |                                                                                  ^^^^^^^
+
+warning: `example` (bin "example") generated 3 warnings (run `cargo fix --bin "example"` to apply 2 suggestions)
+warning: `cargo-kotars` (bin "cargo-kotars") generated 2 warnings
+warning: `kotars` (lib) generated 10 warnings (10 duplicates)
+    Finished `release` profile [optimized] target(s) in 11.39s

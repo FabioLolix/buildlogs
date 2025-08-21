@@ -1,0 +1,1233 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 gnome-disk-utility build
+The Meson build system
+Version: 1.8.4
+Source dir: /build/gnome-disk-utility-git/src/gnome-disk-utility
+Build dir: /build/gnome-disk-utility-git/src/build
+Build type: native build
+Project name: gnome-disk-utility
+Project version: 47.alpha
+C compiler for the host machine: cc (gcc 15.2.1 "cc (GCC) 15.2.1 20250813")
+C linker for the host machine: cc ld.bfd 2.45.0
+Rust compiler for the host machine: rustc -C linker=cc (rustc 1.89.0 "1.89.0")
+Rust linker for the host machine: rustc -C linker=cc ld.bfd 2.45.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency dvdread found: YES 6.1.3
+Run-time dependency gio-unix-2.0 found: YES 2.84.4
+Run-time dependency gmodule-2.0 found: YES 2.84.4
+Run-time dependency gtk4 found: YES 4.19.5
+Run-time dependency libadwaita-1 found: YES 1.8.rc
+Run-time dependency liblzma found: YES 5.8.1
+Run-time dependency libnotify found: YES 0.8.6
+Run-time dependency libsecret-1 found: YES 0.21.7
+Run-time dependency pwquality found: YES 1.4.5
+Run-time dependency udisks2 found: YES 2.10.1
+Library m found: YES
+Run-time dependency libsystemd found: YES 257
+Program cargo found: YES (/build/gnome-disk-utility-git/src/cargo)
+Configuring org.gnome.SettingsDaemon.DiskUtilityNotify.desktop using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Configuring org.gnome.DiskUtility.service using configuration
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Configuring config.h using configuration
+Build-time dependency glib-2.0 found: YES 2.84.4
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Configuring config.rs using configuration
+Message: Building in release mode
+Configuring config.rs using configuration
+Message: Building in release mode
+Build-time dependency gio-2.0 found: YES 2.84.4
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency glib-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Configuring config.rs using configuration
+Message: Building in release mode
+Dependency gio-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Message: 
+        gnome-disk-utility 47.alpha
+        =========================
+
+        prefix:                     /usr
+        bindir:                     bin
+        datadir:                    share
+        libexecdir:                 lib
+        localedir:                  share/locale
+        mandir:                     share/man
+        sysconfdir:                 /etc
+
+        Use logind:                 libsystemd
+        Build g-s-d plug-in:        true
+
+        compiler:                   gcc
+        cflags:                     
+
+        C buildtype:                plain
+
+        Rust profile:               release
+
+        (Change with: meson configure BUILDDIR -D profile=release|development -D logind=libsystemd|libelogind|none -D gsd_plugin=true|false)
+
+
+Build targets in project: 105
+
+gnome-disk-utility 47.alpha
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/105 eta ?                                                Writing build.ninja:   0%|          | 0/179 eta ?                                                 ninja: Entering directory `/build/gnome-disk-utility-git/src/build'
+[0/143] Generating src/disks/cargo-build with a custom command (wrapped by meson to set env)
+    Updating crates.io index
+    Updating git repository `https://github.com/FineFindus/udisks-rs.git`
+ Downloading crates ...
+  Downloaded anstyle v1.0.11
+  Downloaded anstyle-parse v0.2.7
+  Downloaded async-broadcast v0.7.2
+  Downloaded anstyle-query v1.1.3
+  Downloaded static_assertions v1.1.0
+  Downloaded anstream v0.6.19
+  Downloaded async-channel v1.9.0
+  Downloaded async-global-executor v2.4.1
+  Downloaded block-buffer v0.10.4
+  Downloaded atomic-waker v1.1.2
+  Downloaded pin-utils v0.1.0
+  Downloaded errno v0.3.13
+  Downloaded futures-io v0.3.31
+  Downloaded gdk-pixbuf-sys v0.19.8
+  Downloaded async-fs v2.1.3
+  Downloaded anyhow v1.0.98
+  Downloaded async-recursion v1.1.1
+  Downloaded async-trait v0.1.88
+  Downloaded async-task v4.7.1
+  Downloaded cfg_aliases v0.2.1
+  Downloaded endi v1.1.0
+  Downloaded equivalent v1.0.2
+  Downloaded async-executor v1.13.2
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded event-listener v2.5.3
+  Downloaded temp-dir v0.1.16
+  Downloaded kv-log-macro v1.0.7
+  Downloaded serde v1.0.219
+  Downloaded futures-macro v0.3.31
+  Downloaded fastrand v2.3.0
+  Downloaded gtk4-macros v0.8.2
+  Downloaded async-channel v2.5.0
+  Downloaded gobject-sys v0.19.8
+  Downloaded async-lock v3.4.0
+  Downloaded futures-channel v0.3.31
+  Downloaded zvariant_utils v2.1.0
+  Downloaded async-io v2.5.0
+  Downloaded is_terminal_polyfill v1.70.1
+  Downloaded autocfg v1.5.0
+  Downloaded gettext-rs v0.7.2
+  Downloaded futures-sink v0.3.31
+  Downloaded futures-core v0.3.31
+  Downloaded field-offset v0.3.6
+  Downloaded digest v0.10.7
+  Downloaded gsk4-sys v0.8.2
+  Downloaded libadwaita-sys v0.6.0
+  Downloaded locale_config v0.3.0
+  Downloaded generic-array v0.14.7
+  Downloaded xdg-home v1.3.0
+  Downloaded gdk-pixbuf v0.19.8
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded heck v0.5.0
+  Downloaded futures-task v0.3.31
+  Downloaded cairo-sys-rs v0.19.2
+  Downloaded hex v0.4.3
+  Downloaded enumflags2 v0.7.12
+  Downloaded graphene-sys v0.19.8
+  Downloaded version_check v0.9.5
+  Downloaded cfg-if v1.0.1
+  Downloaded either v1.15.0
+  Downloaded getrandom v0.2.16
+  Downloaded crypto-common v0.1.6
+  Downloaded cpufeatures v0.2.17
+  Downloaded futures-executor v0.3.31
+  Downloaded liblzma v0.4.2
+  Downloaded colorchoice v1.0.4
+  Downloaded bitflags v2.9.1
+  Downloaded env_filter v0.1.3
+  Downloaded lock_api v0.4.13
+  Downloaded jobserver v0.1.33
+  Downloaded lazy_static v1.5.0
+  Downloaded gsk4 v0.8.2
+  Downloaded env_logger v0.11.8
+  Downloaded rustc_version v0.4.1
+  Downloaded log v0.4.27
+  Downloaded futures v0.3.31
+  Downloaded bytes v1.10.1
+  Downloaded tokio-macros v2.5.0
+  Downloaded cfg-expr v0.15.8
+  Downloaded parking v2.2.1
+  Downloaded memoffset v0.9.1
+  Downloaded event-listener v5.4.0
+  Downloaded concurrent-queue v2.5.0
+  Downloaded toml_datetime v0.6.11
+  Downloaded crossbeam-utils v0.8.21
+  Downloaded gdk4-sys v0.8.2
+  Downloaded utf8parse v0.2.2
+  Downloaded piper v0.2.4
+  Downloaded slab v0.4.10
+  Downloaded futures-lite v2.6.0
+  Downloaded zbus_names v3.0.0
+  Downloaded version-compare v0.2.0
+  Downloaded gdk4 v0.8.2
+  Downloaded indexmap v2.10.0
+  Downloaded zvariant_derive v4.2.0
+  Downloaded serde_spanned v0.6.9
+  Downloaded serde_repr v0.1.20
+  Downloaded gtk4-sys v0.8.2
+  Downloaded cc v1.2.30
+  Downloaded scopeguard v1.2.0
+  Downloaded libadwaita v0.6.0
+  Downloaded rand_chacha v0.3.1
+  Downloaded proc-macro-crate v3.3.0
+  Downloaded aho-corasick v1.1.3
+  Downloaded ppv-lite86 v0.2.21
+  Downloaded signal-hook-registry v1.4.5
+  Downloaded futures-util v0.3.31
+  Downloaded thiserror-impl v1.0.69
+  Downloaded pkg-config v0.3.32
+  Downloaded hashbrown v0.15.4
+  Downloaded itertools v0.14.0
+  Downloaded rand_core v0.6.4
+  Downloaded shlex v1.3.0
+  Downloaded itertools v0.13.0
+  Downloaded thiserror v1.0.69
+  Downloaded semver v1.0.26
+  Downloaded async-std v1.13.1
+  Downloaded smallvec v1.15.1
+  Downloaded gio v0.19.8
+  Downloaded pin-project-lite v0.2.16
+  Downloaded parking_lot_core v0.9.11
+  Downloaded tracing-attributes v0.1.30
+  Downloaded system-deps v6.2.2
+  Downloaded target-lexicon v0.12.16
+  Downloaded zbus_macros v4.4.0
+  Downloaded sha1 v0.10.6
+  Downloaded quote v1.0.40
+  Downloaded graphene-rs v0.19.8
+  Downloaded ordered-stream v0.2.0
+  Downloaded glib-sys v0.19.8
+  Downloaded cairo-rs v0.19.4
+  Downloaded toml v0.8.23
+  Downloaded pango v0.19.8
+  Downloaded unicode-ident v1.0.18
+  Downloaded proc-macro2 v1.0.95
+  Downloaded polling v3.9.0
+  Downloaded glib-macros v0.19.9
+  Downloaded once_cell v1.21.3
+  Downloaded jiff v0.2.15
+  Downloaded serde_derive v1.0.219
+  Downloaded gio-sys v0.19.8
+  Downloaded value-bag v1.11.1
+  Downloaded parking_lot v0.12.4
+  Downloaded libc v0.2.174
+  Downloaded glib v0.19.9
+  Downloaded socket2 v0.6.0
+  Downloaded tracing-core v0.1.34
+  Downloaded typenum v1.18.0
+  Downloaded zvariant v4.2.0
+  Downloaded toml_edit v0.22.27
+  Downloaded rand v0.8.5
+  Downloaded gtk4 v0.8.2
+  Downloaded tracing v0.1.41
+  Downloaded mio v1.0.4
+  Downloaded memchr v2.7.5
+  Downloaded pango-sys v0.19.8
+  Downloaded liblzma-sys v0.4.4
+  Downloaded linux-raw-sys v0.9.4
+  Downloaded zbus v4.4.0
+  Downloaded quick-xml v0.31.0
+  Downloaded winnow v0.7.12
+  Downloaded zerocopy v0.8.26
+  Downloaded regex v1.11.1
+  Downloaded nix v0.29.0
+  Downloaded syn v2.0.104
+  Downloaded regex-syntax v0.8.5
+  Downloaded nix v0.30.1
+  Downloaded rustix v1.0.8
+  Downloaded regex-automata v0.4.9
+  Downloaded tokio v1.47.0
+  Downloaded gettext-sys v0.22.5
+  Downloaded blocking v1.6.2
+   Compiling serde v1.0.219
+   Compiling hashbrown v0.15.4
+   Compiling equivalent v1.0.2
+   Compiling winnow v0.7.12
+   Compiling pkg-config v0.3.32
+   Compiling target-lexicon v0.12.16
+   Compiling heck v0.5.0
+   Compiling smallvec v1.15.1
+   Compiling version-compare v0.2.0
+   Compiling proc-macro2 v1.0.95
+   Compiling libc v0.2.174
+   Compiling unicode-ident v1.0.18
+   Compiling pin-project-lite v0.2.16
+   Compiling futures-core v0.3.31
+   Compiling futures-io v0.3.31
+   Compiling memchr v2.7.5
+   Compiling bitflags v2.9.1
+   Compiling slab v0.4.10
+   Compiling crossbeam-utils v0.8.21
+   Compiling cfg-if v1.0.1
+   Compiling futures-sink v0.3.31
+   Compiling pin-utils v0.1.0
+   Compiling futures-task v0.3.31
+   Compiling parking v2.2.1
+   Compiling autocfg v1.5.0
+   Compiling thiserror v1.0.69
+   Compiling futures-channel v0.3.31
+   Compiling fastrand v2.3.0
+   Compiling shlex v1.3.0
+   Compiling typenum v1.18.0
+   Compiling version_check v0.9.5
+   Compiling semver v1.0.26
+   Compiling gio v0.19.8
+   Compiling cfg_aliases v0.2.1
+   Compiling rustix v1.0.8
+   Compiling zerocopy v0.8.26
+   Compiling async-task v4.7.1
+   Compiling linux-raw-sys v0.9.4
+   Compiling futures-lite v2.6.0
+   Compiling atomic-waker v1.1.2
+   Compiling regex-syntax v0.8.5
+   Compiling once_cell v1.21.3
+   Compiling piper v0.2.4
+   Compiling value-bag v1.11.1
+   Compiling indexmap v2.10.0
+   Compiling nix v0.29.0
+   Compiling generic-array v0.14.7
+   Compiling aho-corasick v1.1.3
+   Compiling temp-dir v0.1.16
+   Compiling memoffset v0.9.1
+   Compiling lock_api v0.4.13
+   Compiling cfg-expr v0.15.8
+   Compiling rustc_version v0.4.1
+   Compiling log v0.4.27
+   Compiling parking_lot_core v0.9.11
+   Compiling quote v1.0.40
+   Compiling concurrent-queue v2.5.0
+   Compiling static_assertions v1.1.0
+   Compiling endi v1.1.0
+   Compiling tracing-core v0.1.34
+   Compiling syn v2.0.104
+   Compiling cpufeatures v0.2.17
+   Compiling scopeguard v1.2.0
+   Compiling event-listener v5.4.0
+   Compiling utf8parse v0.2.2
+   Compiling field-offset v0.3.6
+   Compiling ordered-stream v0.2.0
+   Compiling anstyle-parse v0.2.7
+   Compiling anstyle v1.0.11
+   Compiling async-executor v1.13.2
+   Compiling hex v0.4.3
+   Compiling event-listener-strategy v0.5.4
+   Compiling anstyle-query v1.1.3
+   Compiling either v1.15.0
+   Compiling colorchoice v1.0.4
+   Compiling lazy_static v1.5.0
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling async-lock v3.4.0
+   Compiling async-channel v2.5.0
+   Compiling async-broadcast v0.7.2
+   Compiling jobserver v0.1.33
+   Compiling quick-xml v0.31.0
+   Compiling anstream v0.6.19
+   Compiling nix v0.30.1
+   Compiling event-listener v2.5.3
+   Compiling bytes v1.10.1
+   Compiling jiff v0.2.15
+   Compiling itertools v0.13.0
+   Compiling blocking v1.6.2
+   Compiling async-channel v1.9.0
+   Compiling cc v1.2.30
+   Compiling kv-log-macro v1.0.7
+   Compiling itertools v0.14.0
+   Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
+   Compiling async-fs v2.1.3
+   Compiling digest v0.10.7
+   Compiling sha1 v0.10.6
+   Compiling getrandom v0.2.16
+   Compiling xdg-home v1.3.0
+   Compiling socket2 v0.6.0
+   Compiling signal-hook-registry v1.4.5
+   Compiling mio v1.0.4
+   Compiling rand_core v0.6.4
+   Compiling parking_lot v0.12.4
+   Compiling ppv-lite86 v0.2.21
+   Compiling regex-automata v0.4.9
+   Compiling rand_chacha v0.3.1
+   Compiling toml_datetime v0.6.11
+   Compiling serde_spanned v0.6.9
+   Compiling gettext-sys v0.22.5
+   Compiling liblzma-sys v0.4.4
+   Compiling rand v0.8.5
+   Compiling toml_edit v0.22.27
+   Compiling liblzma v0.4.2
+   Compiling zvariant_utils v2.1.0
+   Compiling toml v0.8.23
+   Compiling proc-macro-crate v3.3.0
+   Compiling regex v1.11.1
+   Compiling system-deps v6.2.2
+   Compiling env_filter v0.1.3
+   Compiling locale_config v0.3.0
+   Compiling futures-macro v0.3.31
+   Compiling thiserror-impl v1.0.69
+   Compiling glib-macros v0.19.9
+   Compiling serde_derive v1.0.219
+   Compiling enumflags2_derive v0.7.12
+   Compiling zvariant_derive v4.2.0
+   Compiling tracing-attributes v0.1.30
+   Compiling serde_repr v0.1.20
+   Compiling gtk4-macros v0.8.2
+   Compiling async-trait v0.1.88
+   Compiling zbus_macros v4.4.0
+   Compiling tokio-macros v2.5.0
+   Compiling async-recursion v1.1.1
+   Compiling gettext-rs v0.7.2
+   Compiling polling v3.9.0
+   Compiling glib-sys v0.19.8
+   Compiling gobject-sys v0.19.8
+   Compiling gio-sys v0.19.8
+   Compiling gdk-pixbuf-sys v0.19.8
+   Compiling pango-sys v0.19.8
+   Compiling cairo-sys-rs v0.19.2
+   Compiling graphene-sys v0.19.8
+   Compiling gdk4-sys v0.8.2
+   Compiling gsk4-sys v0.8.2
+   Compiling gtk4-sys v0.8.2
+   Compiling async-io v2.5.0
+   Compiling libadwaita-sys v0.6.0
+   Compiling futures-util v0.3.31
+   Compiling tokio v1.47.0
+   Compiling env_logger v0.11.8
+   Compiling async-global-executor v2.4.1
+   Compiling async-std v1.13.1
+   Compiling tracing v0.1.41
+   Compiling futures-executor v0.3.31
+   Compiling glib v0.19.9
+   Compiling futures v0.3.31
+   Compiling enumflags2 v0.7.12
+   Compiling zvariant v4.2.0
+   Compiling zbus_names v3.0.0
+   Compiling zbus v4.4.0
+   Compiling cairo-rs v0.19.4
+   Compiling graphene-rs v0.19.8
+   Compiling udisks2 v0.1.0 (https://github.com/FineFindus/udisks-rs.git?rev=001e0c02830a4a229adb99207250b275c79261a2#001e0c02)
+   Compiling gdk-pixbuf v0.19.8
+   Compiling pango v0.19.8
+   Compiling gdk4 v0.8.2
+   Compiling gsk4 v0.8.2
+   Compiling gtk4 v0.8.2
+   Compiling libadwaita v0.6.0
+   Compiling libgdu v0.1.0 (/build/gnome-disk-utility-git/src/gnome-disk-utility/src/libgdu)
+   Compiling gnome-disks v0.1.0 (/build/gnome-disk-utility-git/src/gnome-disk-utility/src/disks)
+    Finished `release` profile [optimized] target(s) in 2m 02s
+[90/143] Generating doc/man/gnome-disks.1 with a custom command
+Note: meta manvol : no refentry/refmeta/manvolnum                  gnome-disks
+Note: meta manvol : see http://www.docbook.org/tdg5/en/html/manvo  gnome-disks
+Error: no ID for constraint linkend: "gnome-disk-image-mounter.1".
+Note: Writing gnome-disks.1
+[93/143] Generating doc/man/gnome-disk-image-mounter.1 with a custom command
+Note: meta manvol : no refentry/refmeta/manvolnum                  gnome-disk-image-mounter
+Note: meta manvol : see http://www.docbook.org/tdg5/en/html/manvo  gnome-disk-image-mounter
+Error: no ID for constraint linkend: "gnome-disks.1".
+Note: Writing gnome-disk-image-mounter.1
+[95/143] Compiling C object src/disks/gnome-disks.p/gdu-create-filesystem-page.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-create-filesystem-page.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-create-filesystem-page.c:13:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[96/143] Compiling C object src/disks/gnome-disks.p/gdu-create-partition-page.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-create-partition-page.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-create-partition-page.c:14:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[97/143] Compiling C object src/disks/gnome-disks.p/gdu-create-other-page.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-create-other-page.h:13,
+                 from ../gnome-disk-utility/src/disks/gdu-create-other-page.c:13:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[98/143] Compiling C object src/disks/gnome-disks.p/gdu-create-confirm-page.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-create-confirm-page.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-create-confirm-page.c:13:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[99/143] Compiling C object src/disks/gnome-disks.p/gdu-create-password-page.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-create-password-page.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-create-password-page.c:13:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[100/143] Compiling C object src/disks/gnome-disks.p/gdu-edit-filesystem-dialog.c.o
+In file included from ../gnome-disk-utility/src/disks/gdu-edit-filesystem-dialog.c:16:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[101/143] Compiling C object src/disks/gnome-disks.p/gdu-change-passphrase-dialog.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14,
+                 from ../gnome-disk-utility/src/disks/gdu-change-passphrase-dialog.c:15:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[102/143] Compiling C object src/disks/gnome-disks.p/gdu-encryption-options-dialog.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-encryption-options-dialog.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-encryption-options-dialog.c:18:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[103/143] Compiling C object src/disks/gnome-disks.p/gdu-benchmark-dialog.c.o
+../gnome-disk-utility/src/disks/gdu-benchmark-dialog.c: In function ‘on_drawing_area_draw’:
+../gnome-disk-utility/src/disks/gdu-benchmark-dialog.c:157:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  157 | }
+      | ^
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-benchmark-dialog.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-benchmark-dialog.c:16:
+../gnome-disk-utility/src/libgdu/gduutils.h: At top level:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[104/143] Compiling C object src/disks/gnome-disks.p/gdu-application.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14,
+                 from ../gnome-disk-utility/src/disks/gdu-application.c:19:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[106/143] Compiling C object src/disks/gnome-disks.p/gdu-format-disk-dialog.c.o
+../gnome-disk-utility/src/disks/gdu-format-disk-dialog.c:228:1: warning: ‘get_erase_duration_string’ defined but not used [-Wunused-function]
+  228 | get_erase_duration_string (gint minutes)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14,
+                 from ../gnome-disk-utility/src/disks/gdu-format-disk-dialog.c:18:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[107/143] Compiling C object src/disks/gnome-disks.p/gdu-ata-smart-dialog.c.o
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c: In function ‘update_attributes_list’:
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1066:3: warning: ‘gtk_tree_selection_get_selected’ is deprecated [-Wdeprecated-declarations]
+ 1066 |   if (gtk_tree_selection_get_selected (gtk_tree_view_get_selection (GTK_TREE_VIEW (data->attributes_treeview)),
+      |   ^~
+In file included from /usr/include/gtk-4.0/gtk/gtk.h:291,
+                 from /usr/include/libadwaita-1/adwaita.h:9,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:13:
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeselection.h:100:18: note: declared here
+  100 | gboolean         gtk_tree_selection_get_selected        (GtkTreeSelection            *selection,
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1066:3: warning: ‘gtk_tree_view_get_selection’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1066 |   if (gtk_tree_selection_get_selected (gtk_tree_view_get_selection (GTK_TREE_VIEW (data->attributes_treeview)),
+      |   ^~
+In file included from /usr/include/gtk-4.0/gtk/deprecated/gtkcombobox.h:26,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:94:
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:214:24: note: declared here
+  214 | GtkTreeSelection      *gtk_tree_view_get_selection                 (GtkTreeView               *tree_view);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1070:7: warning: ‘gtk_tree_model_get’ is deprecated: Use 'GListModel' instead [-Wdeprecated-declarations]
+ 1070 |       gtk_tree_model_get (GTK_TREE_MODEL (data->attributes_list),
+      |       ^~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-4.0/gtk/deprecated/gtkcellarea.h:30,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:64:
+/usr/include/gtk-4.0/gtk/deprecated/gtktreemodel.h:370:19: note: declared here
+  370 | void              gtk_tree_model_get             (GtkTreeModel *tree_model,
+      |                   ^~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1076:3: warning: ‘gtk_list_store_clear’ is deprecated: Use 'GListStore' instead [-Wdeprecated-declarations]
+ 1076 |   gtk_list_store_clear (data->attributes_list);
+      |   ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-4.0/gtk/deprecated/gtkentrycompletion.h:26,
+                 from /usr/include/gtk-4.0/gtk/gtkentry.h:39,
+                 from /usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:27:
+/usr/include/gtk-4.0/gtk/deprecated/gtkliststore.h:128:15: note: declared here
+  128 | void          gtk_list_store_clear            (GtkListStore *list_store);
+      |               ^~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1132:11: warning: ‘gtk_list_store_append’ is deprecated: Use 'GListStore' instead [-Wdeprecated-declarations]
+ 1132 |           gtk_list_store_append (data->attributes_list, &titer);
+      |           ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkliststore.h:125:15: note: declared here
+  125 | void          gtk_list_store_append           (GtkListStore *list_store,
+      |               ^~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1133:11: warning: ‘gtk_list_store_set’ is deprecated: Use 'GListStore' instead [-Wdeprecated-declarations]
+ 1133 |           gtk_list_store_set (data->attributes_list, &titer,
+      |           ^~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkliststore.h:81:15: note: declared here
+   81 | void          gtk_list_store_set              (GtkListStore *list_store,
+      |               ^~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1148:13: warning: ‘gtk_tree_iter_copy’ is deprecated: Use 'GListModel' instead [-Wdeprecated-declarations]
+ 1148 |             tree_iter_to_select = gtk_tree_iter_copy (&titer);
+      |             ^~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreemodel.h:298:19: note: declared here
+  298 | GtkTreeIter *     gtk_tree_iter_copy             (GtkTreeIter  *iter);
+      |                   ^~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1165:7: warning: ‘gtk_tree_selection_select_iter’ is deprecated [-Wdeprecated-declarations]
+ 1165 |       gtk_tree_selection_select_iter (gtk_tree_view_get_selection (GTK_TREE_VIEW (data->attributes_treeview)),
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeselection.h:119:18: note: declared here
+  119 | void             gtk_tree_selection_select_iter         (GtkTreeSelection            *selection,
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1165:7: warning: ‘gtk_tree_view_get_selection’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1165 |       gtk_tree_selection_select_iter (gtk_tree_view_get_selection (GTK_TREE_VIEW (data->attributes_treeview)),
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:214:24: note: declared here
+  214 | GtkTreeSelection      *gtk_tree_view_get_selection                 (GtkTreeView               *tree_view);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1167:7: warning: ‘gtk_tree_iter_free’ is deprecated: Use 'GListModel' instead [-Wdeprecated-declarations]
+ 1167 |       gtk_tree_iter_free (tree_iter_to_select);
+      |       ^~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreemodel.h:300:19: note: declared here
+  300 | void              gtk_tree_iter_free             (GtkTreeIter  *iter);
+      |                   ^~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1173:7: warning: ‘gtk_tree_model_get_iter_first’ is deprecated: Use 'GListModel' instead [-Wdeprecated-declarations]
+ 1173 |       if (gtk_tree_model_get_iter_first (GTK_TREE_MODEL (data->attributes_list), &titer))
+      |       ^~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreemodel.h:328:19: note: declared here
+  328 | gboolean          gtk_tree_model_get_iter_first  (GtkTreeModel *tree_model,
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1175:11: warning: ‘gtk_tree_selection_select_iter’ is deprecated [-Wdeprecated-declarations]
+ 1175 |           gtk_tree_selection_select_iter (gtk_tree_view_get_selection (GTK_TREE_VIEW (data->attributes_treeview)),
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeselection.h:119:18: note: declared here
+  119 | void             gtk_tree_selection_select_iter         (GtkTreeSelection            *selection,
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1175:11: warning: ‘gtk_tree_view_get_selection’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1175 |           gtk_tree_selection_select_iter (gtk_tree_view_get_selection (GTK_TREE_VIEW (data->attributes_treeview)),
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:214:24: note: declared here
+  214 | GtkTreeSelection      *gtk_tree_view_get_selection                 (GtkTreeView               *tree_view);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c: In function ‘gdu_ata_smart_dialog_show’:
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1541:3: warning: ‘gtk_list_store_new’ is deprecated: Use 'GListStore' instead [-Wdeprecated-declarations]
+ 1541 |   data->attributes_list = gtk_list_store_new (N_COLUMNS,
+      |   ^~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkliststore.h:63:15: note: declared here
+   63 | GtkListStore *gtk_list_store_new              (int           n_columns,
+      |               ^~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1553:3: warning: ‘gtk_tree_sortable_set_sort_column_id’ is deprecated [-Wdeprecated-declarations]
+ 1553 |   gtk_tree_sortable_set_sort_column_id (GTK_TREE_SORTABLE (data->attributes_list),
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:26,
+                 from /usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:26:
+/usr/include/gtk-4.0/gtk/deprecated/gtktreesortable.h:148:10: note: declared here
+  148 | void     gtk_tree_sortable_set_sort_column_id    (GtkTreeSortable        *sortable,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1556:3: warning: ‘gtk_tree_view_set_model’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1556 |   gtk_tree_view_set_model (GTK_TREE_VIEW (data->attributes_treeview),
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:211:24: note: declared here
+  211 | void                   gtk_tree_view_set_model                     (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1559:3: warning: ‘gtk_tree_view_set_tooltip_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1559 |   gtk_tree_view_set_tooltip_column (GTK_TREE_VIEW (data->attributes_treeview), LONG_DESC_COLUMN);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:547:15: note: declared here
+  547 | void          gtk_tree_view_set_tooltip_column (GtkTreeView       *tree_view,
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1561:3: warning: ‘gtk_tree_view_column_new’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1561 |   column = gtk_tree_view_column_new ();
+      |   ^~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:87:25: note: declared here
+   87 | GtkTreeViewColumn      *gtk_tree_view_column_new                 (void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1562:3: warning: ‘gtk_tree_view_append_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1562 |   gtk_tree_view_append_column (GTK_TREE_VIEW (data->attributes_treeview), column);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:236:24: note: declared here
+  236 | int                    gtk_tree_view_append_column                 (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1564:3: warning: ‘gtk_tree_view_column_set_title’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1564 |   gtk_tree_view_column_set_title (column, _("ID"));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:169:25: note: declared here
+  169 | void                    gtk_tree_view_column_set_title           (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1565:3: warning: ‘gtk_cell_renderer_text_new’ is deprecated [-Wdeprecated-declarations]
+ 1565 |   renderer = gtk_cell_renderer_text_new ();
+      |   ^~~~~~~~
+In file included from /usr/include/gtk-4.0/gtk/deprecated/gtkcellrendereraccel.h:24,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:70:
+/usr/include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h:62:18: note: declared here
+   62 | GtkCellRenderer *gtk_cell_renderer_text_new      (void);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1566:3: warning: ‘gtk_tree_view_column_pack_start’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1566 |   gtk_tree_view_column_pack_start (column, renderer, TRUE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:95:25: note: declared here
+   95 | void                    gtk_tree_view_column_pack_start          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1570:3: warning: ‘gtk_tree_view_column_set_attributes’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1570 |   gtk_tree_view_column_set_attributes (column, renderer,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:110:25: note: declared here
+  110 | void                    gtk_tree_view_column_set_attributes      (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1573:3: warning: ‘gtk_tree_view_column_new’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1573 |   column = gtk_tree_view_column_new ();
+      |   ^~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:87:25: note: declared here
+   87 | GtkTreeViewColumn      *gtk_tree_view_column_new                 (void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1574:3: warning: ‘gtk_tree_view_append_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1574 |   gtk_tree_view_append_column (GTK_TREE_VIEW (data->attributes_treeview), column);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:236:24: note: declared here
+  236 | int                    gtk_tree_view_append_column                 (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1576:3: warning: ‘gtk_tree_view_column_set_title’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1576 |   gtk_tree_view_column_set_title (column, _("Attribute"));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:169:25: note: declared here
+  169 | void                    gtk_tree_view_column_set_title           (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1577:3: warning: ‘gtk_tree_view_column_set_expand’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1577 |   gtk_tree_view_column_set_expand (column, TRUE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:174:25: note: declared here
+  174 | void                    gtk_tree_view_column_set_expand          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1578:3: warning: ‘gtk_cell_renderer_text_new’ is deprecated [-Wdeprecated-declarations]
+ 1578 |   renderer = gtk_cell_renderer_text_new ();
+      |   ^~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h:62:18: note: declared here
+   62 | GtkCellRenderer *gtk_cell_renderer_text_new      (void);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1583:3: warning: ‘gtk_tree_view_column_pack_start’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1583 |   gtk_tree_view_column_pack_start (column, renderer, TRUE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:95:25: note: declared here
+   95 | void                    gtk_tree_view_column_pack_start          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1584:3: warning: ‘gtk_tree_view_column_set_attributes’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1584 |   gtk_tree_view_column_set_attributes (column, renderer,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:110:25: note: declared here
+  110 | void                    gtk_tree_view_column_set_attributes      (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1587:3: warning: ‘gtk_tree_view_column_new’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1587 |   column = gtk_tree_view_column_new ();
+      |   ^~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:87:25: note: declared here
+   87 | GtkTreeViewColumn      *gtk_tree_view_column_new                 (void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1588:3: warning: ‘gtk_tree_view_append_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1588 |   gtk_tree_view_append_column (GTK_TREE_VIEW (data->attributes_treeview), column);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:236:24: note: declared here
+  236 | int                    gtk_tree_view_append_column                 (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1590:3: warning: ‘gtk_tree_view_column_set_title’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1590 |   gtk_tree_view_column_set_title (column, _("Value"));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:169:25: note: declared here
+  169 | void                    gtk_tree_view_column_set_title           (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1591:3: warning: ‘gtk_cell_renderer_text_new’ is deprecated [-Wdeprecated-declarations]
+ 1591 |   renderer = gtk_cell_renderer_text_new ();
+      |   ^~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h:62:18: note: declared here
+   62 | GtkCellRenderer *gtk_cell_renderer_text_new      (void);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1595:3: warning: ‘gtk_tree_view_column_pack_start’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1595 |   gtk_tree_view_column_pack_start (column, renderer, TRUE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:95:25: note: declared here
+   95 | void                    gtk_tree_view_column_pack_start          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1596:3: warning: ‘gtk_tree_view_column_set_attributes’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1596 |   gtk_tree_view_column_set_attributes (column, renderer,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:110:25: note: declared here
+  110 | void                    gtk_tree_view_column_set_attributes      (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1599:3: warning: ‘gtk_tree_view_column_new’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1599 |   column = gtk_tree_view_column_new ();
+      |   ^~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:87:25: note: declared here
+   87 | GtkTreeViewColumn      *gtk_tree_view_column_new                 (void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1600:3: warning: ‘gtk_tree_view_append_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1600 |   gtk_tree_view_append_column (GTK_TREE_VIEW (data->attributes_treeview), column);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:236:24: note: declared here
+  236 | int                    gtk_tree_view_append_column                 (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1602:3: warning: ‘gtk_tree_view_column_set_title’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1602 |   gtk_tree_view_column_set_title (column, _("Normalized"));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:169:25: note: declared here
+  169 | void                    gtk_tree_view_column_set_title           (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1603:3: warning: ‘gtk_cell_renderer_text_new’ is deprecated [-Wdeprecated-declarations]
+ 1603 |   renderer = gtk_cell_renderer_text_new ();
+      |   ^~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h:62:18: note: declared here
+   62 | GtkCellRenderer *gtk_cell_renderer_text_new      (void);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1607:3: warning: ‘gtk_tree_view_column_pack_start’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1607 |   gtk_tree_view_column_pack_start (column, renderer, TRUE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:95:25: note: declared here
+   95 | void                    gtk_tree_view_column_pack_start          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1608:3: warning: ‘gtk_tree_view_column_set_attributes’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1608 |   gtk_tree_view_column_set_attributes (column, renderer,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:110:25: note: declared here
+  110 | void                    gtk_tree_view_column_set_attributes      (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1611:3: warning: ‘gtk_tree_view_column_new’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1611 |   column = gtk_tree_view_column_new ();
+      |   ^~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:87:25: note: declared here
+   87 | GtkTreeViewColumn      *gtk_tree_view_column_new                 (void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1612:3: warning: ‘gtk_tree_view_append_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1612 |   gtk_tree_view_append_column (GTK_TREE_VIEW (data->attributes_treeview), column);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:236:24: note: declared here
+  236 | int                    gtk_tree_view_append_column                 (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1614:3: warning: ‘gtk_tree_view_column_set_title’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1614 |   gtk_tree_view_column_set_title (column, _("Threshold"));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:169:25: note: declared here
+  169 | void                    gtk_tree_view_column_set_title           (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1615:3: warning: ‘gtk_cell_renderer_text_new’ is deprecated [-Wdeprecated-declarations]
+ 1615 |   renderer = gtk_cell_renderer_text_new ();
+      |   ^~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h:62:18: note: declared here
+   62 | GtkCellRenderer *gtk_cell_renderer_text_new      (void);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1619:3: warning: ‘gtk_tree_view_column_pack_start’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1619 |   gtk_tree_view_column_pack_start (column, renderer, TRUE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:95:25: note: declared here
+   95 | void                    gtk_tree_view_column_pack_start          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1620:3: warning: ‘gtk_tree_view_column_set_attributes’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1620 |   gtk_tree_view_column_set_attributes (column, renderer,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:110:25: note: declared here
+  110 | void                    gtk_tree_view_column_set_attributes      (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1623:3: warning: ‘gtk_tree_view_column_new’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1623 |   column = gtk_tree_view_column_new ();
+      |   ^~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:87:25: note: declared here
+   87 | GtkTreeViewColumn      *gtk_tree_view_column_new                 (void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1624:3: warning: ‘gtk_tree_view_append_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1624 |   gtk_tree_view_append_column (GTK_TREE_VIEW (data->attributes_treeview), column);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:236:24: note: declared here
+  236 | int                    gtk_tree_view_append_column                 (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1626:3: warning: ‘gtk_tree_view_column_set_title’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1626 |   gtk_tree_view_column_set_title (column, _("Worst"));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:169:25: note: declared here
+  169 | void                    gtk_tree_view_column_set_title           (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1627:3: warning: ‘gtk_cell_renderer_text_new’ is deprecated [-Wdeprecated-declarations]
+ 1627 |   renderer = gtk_cell_renderer_text_new ();
+      |   ^~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h:62:18: note: declared here
+   62 | GtkCellRenderer *gtk_cell_renderer_text_new      (void);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1631:3: warning: ‘gtk_tree_view_column_pack_start’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1631 |   gtk_tree_view_column_pack_start (column, renderer, TRUE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:95:25: note: declared here
+   95 | void                    gtk_tree_view_column_pack_start          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1632:3: warning: ‘gtk_tree_view_column_set_attributes’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1632 |   gtk_tree_view_column_set_attributes (column, renderer,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:110:25: note: declared here
+  110 | void                    gtk_tree_view_column_set_attributes      (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1635:3: warning: ‘gtk_tree_view_column_new’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1635 |   column = gtk_tree_view_column_new ();
+      |   ^~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:87:25: note: declared here
+   87 | GtkTreeViewColumn      *gtk_tree_view_column_new                 (void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1636:3: warning: ‘gtk_tree_view_append_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1636 |   gtk_tree_view_append_column (GTK_TREE_VIEW (data->attributes_treeview), column);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:236:24: note: declared here
+  236 | int                    gtk_tree_view_append_column                 (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1638:3: warning: ‘gtk_tree_view_column_set_title’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1638 |   gtk_tree_view_column_set_title (column, _("Type"));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:169:25: note: declared here
+  169 | void                    gtk_tree_view_column_set_title           (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1639:3: warning: ‘gtk_cell_renderer_text_new’ is deprecated [-Wdeprecated-declarations]
+ 1639 |   renderer = gtk_cell_renderer_text_new ();
+      |   ^~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h:62:18: note: declared here
+   62 | GtkCellRenderer *gtk_cell_renderer_text_new      (void);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1643:3: warning: ‘gtk_tree_view_column_pack_start’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1643 |   gtk_tree_view_column_pack_start (column, renderer, TRUE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:95:25: note: declared here
+   95 | void                    gtk_tree_view_column_pack_start          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1644:3: warning: ‘gtk_tree_view_column_set_attributes’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1644 |   gtk_tree_view_column_set_attributes (column, renderer,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:110:25: note: declared here
+  110 | void                    gtk_tree_view_column_set_attributes      (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1647:3: warning: ‘gtk_tree_view_column_new’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1647 |   column = gtk_tree_view_column_new ();
+      |   ^~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:87:25: note: declared here
+   87 | GtkTreeViewColumn      *gtk_tree_view_column_new                 (void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1648:3: warning: ‘gtk_tree_view_append_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1648 |   gtk_tree_view_append_column (GTK_TREE_VIEW (data->attributes_treeview), column);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:236:24: note: declared here
+  236 | int                    gtk_tree_view_append_column                 (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1650:3: warning: ‘gtk_tree_view_column_set_title’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1650 |   gtk_tree_view_column_set_title (column, _("Updates"));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:169:25: note: declared here
+  169 | void                    gtk_tree_view_column_set_title           (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1651:3: warning: ‘gtk_cell_renderer_text_new’ is deprecated [-Wdeprecated-declarations]
+ 1651 |   renderer = gtk_cell_renderer_text_new ();
+      |   ^~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h:62:18: note: declared here
+   62 | GtkCellRenderer *gtk_cell_renderer_text_new      (void);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1655:3: warning: ‘gtk_tree_view_column_pack_start’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1655 |   gtk_tree_view_column_pack_start (column, renderer, TRUE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:95:25: note: declared here
+   95 | void                    gtk_tree_view_column_pack_start          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1656:3: warning: ‘gtk_tree_view_column_set_attributes’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1656 |   gtk_tree_view_column_set_attributes (column, renderer,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:110:25: note: declared here
+  110 | void                    gtk_tree_view_column_set_attributes      (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1659:3: warning: ‘gtk_tree_view_column_new’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1659 |   column = gtk_tree_view_column_new ();
+      |   ^~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:87:25: note: declared here
+   87 | GtkTreeViewColumn      *gtk_tree_view_column_new                 (void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1660:3: warning: ‘gtk_tree_view_append_column’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1660 |   gtk_tree_view_append_column (GTK_TREE_VIEW (data->attributes_treeview), column);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:236:24: note: declared here
+  236 | int                    gtk_tree_view_append_column                 (GtkTreeView               *tree_view,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1662:3: warning: ‘gtk_tree_view_column_set_title’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1662 |   gtk_tree_view_column_set_title (column, _("Assessment"));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:169:25: note: declared here
+  169 | void                    gtk_tree_view_column_set_title           (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1663:3: warning: ‘gtk_cell_renderer_text_new’ is deprecated [-Wdeprecated-declarations]
+ 1663 |   renderer = gtk_cell_renderer_text_new ();
+      |   ^~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h:62:18: note: declared here
+   62 | GtkCellRenderer *gtk_cell_renderer_text_new      (void);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1664:3: warning: ‘gtk_tree_view_column_pack_start’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1664 |   gtk_tree_view_column_pack_start (column, renderer, FALSE);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:95:25: note: declared here
+   95 | void                    gtk_tree_view_column_pack_start          (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1668:3: warning: ‘gtk_tree_view_column_set_attributes’ is deprecated: Use 'GtkColumnView and GtkColumnViewColumn' instead [-Wdeprecated-declarations]
+ 1668 |   gtk_tree_view_column_set_attributes (column, renderer,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h:110:25: note: declared here
+  110 | void                    gtk_tree_view_column_set_attributes      (GtkTreeViewColumn       *tree_column,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.c:1672:3: warning: ‘gtk_tree_view_get_selection’ is deprecated: Use 'GtkListView' instead [-Wdeprecated-declarations]
+ 1672 |   g_signal_connect (gtk_tree_view_get_selection (GTK_TREE_VIEW (data->attributes_treeview)),
+      |   ^~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtktreeview.h:214:24: note: declared here
+  214 | GtkTreeSelection      *gtk_tree_view_get_selection                 (GtkTreeView               *tree_view);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14:
+../gnome-disk-utility/src/libgdu/gduutils.h: At top level:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[108/143] Compiling C object src/disks/gnome-disks.p/gdu-format-volume-dialog.c.o
+In file included from ../gnome-disk-utility/src/disks/gdu-format-volume-dialog.c:25:
+../gnome-disk-utility/src/disks/gdu-create-password-page.h:86:1: warning: ‘pw_strength’ defined but not used [-Wunused-function]
+   86 | pw_strength (const gchar  *password,
+      | ^~~~~~~~~~~
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14,
+                 from ../gnome-disk-utility/src/disks/gdu-format-volume-dialog.c:20:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[110/143] Compiling C object src/disks/gnome-disks.p/gdu-create-disk-image-dialog.c.o
+../gnome-disk-utility/src/disks/gdu-create-disk-image-dialog.c: In function ‘play_read_error_sound’:
+../gnome-disk-utility/src/disks/gdu-create-disk-image-dialog.c:129:16: warning: variable ‘sound_message’ set but not used [-Wunused-but-set-variable]
+  129 |   const gchar *sound_message;
+      |                ^~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-create-disk-image-dialog.c: In function ‘play_complete_sound’:
+../gnome-disk-utility/src/disks/gdu-create-disk-image-dialog.c:237:16: warning: variable ‘sound_message’ set but not used [-Wunused-but-set-variable]
+  237 |   const gchar *sound_message;
+      |                ^~~~~~~~~~~~~
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14,
+                 from ../gnome-disk-utility/src/disks/gdu-create-disk-image-dialog.c:23:
+../gnome-disk-utility/src/libgdu/gduutils.h: At top level:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[111/143] Compiling C object src/disks/gnome-disks.p/gdu-edit-partition-dialog.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14,
+                 from ../gnome-disk-utility/src/disks/gdu-edit-partition-dialog.c:18:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[112/143] Compiling C object src/libgdu/libgdu.a.p/gduutils.c.o
+../gnome-disk-utility/src/libgdu/gduutils.c:634:1: warning: ‘response_cb’ defined but not used [-Wunused-function]
+  634 | response_cb (AdwMessageDialog *dialog,
+      | ^~~~~~~~~~~
+In file included from ../gnome-disk-utility/src/libgdu/gduutils.c:15:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[114/143] Compiling C object src/disks/gnome-disks.p/gdu-window.c.o
+In file included from ../gnome-disk-utility/src/disks/gdu-window.c:23:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[115/143] Compiling C object src/disks/gnome-disks.p/gdu-mount-options-dialog.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14,
+                 from ../gnome-disk-utility/src/disks/gdu-mount-options-dialog.c:13:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[117/143] Compiling C object src/disks/gnome-disks.p/gdu-new-disk-image-dialog.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-new-disk-image-dialog.h:13,
+                 from ../gnome-disk-utility/src/disks/gdu-new-disk-image-dialog.c:22:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[121/143] Compiling C object src/disks/gnome-disks.p/gdu-block.c.o
+In file included from ../gnome-disk-utility/src/disks/gdu-block.c:24:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[124/143] Compiling C object src/disks/gnome-disks.p/gdu-manager.c.o
+In file included from ../gnome-disk-utility/src/disks/gdu-manager.c:25:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[127/143] Compiling C object src/disks/gnome-disks.p/gdu-disk-settings-dialog.c.o
+../gnome-disk-utility/src/disks/gdu-disk-settings-dialog.c: In function ‘compute_configuration’:
+../gnome-disk-utility/src/disks/gdu-disk-settings-dialog.c:229:11: warning: ‘gtk_combo_box_get_active’ is deprecated: Use 'GtkDropDown' instead [-Wdeprecated-declarations]
+  229 |           if (gtk_combo_box_get_active (GTK_COMBO_BOX (data->write_cache_comboboxtext)) == 0)
+      |           ^~
+In file included from /usr/include/gtk-4.0/gtk/gtk.h:94,
+                 from /usr/include/libadwaita-1/adwaita.h:9,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-disk-settings-dialog.c:15:
+/usr/include/gtk-4.0/gtk/deprecated/gtkcombobox.h:84:15: note: declared here
+   84 | int           gtk_combo_box_get_active       (GtkComboBox     *combo_box);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-disk-settings-dialog.c: In function ‘gdu_disk_settings_dialog_show’:
+../gnome-disk-utility/src/disks/gdu-disk-settings-dialog.c:586:11: warning: ‘gtk_combo_box_set_active’ is deprecated: Use 'GtkDropDown' instead [-Wdeprecated-declarations]
+  586 |           gtk_combo_box_set_active (GTK_COMBO_BOX (data->write_cache_comboboxtext), 0);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcombobox.h:86:15: note: declared here
+   86 | void          gtk_combo_box_set_active       (GtkComboBox     *combo_box,
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+../gnome-disk-utility/src/disks/gdu-disk-settings-dialog.c:591:11: warning: ‘gtk_combo_box_set_active’ is deprecated: Use 'GtkDropDown' instead [-Wdeprecated-declarations]
+  591 |           gtk_combo_box_set_active (GTK_COMBO_BOX (data->write_cache_comboboxtext),
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/deprecated/gtkcombobox.h:86:15: note: declared here
+   86 | void          gtk_combo_box_set_active       (GtkComboBox     *combo_box,
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14:
+../gnome-disk-utility/src/libgdu/gduutils.h: At top level:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[128/143] Compiling C object src/disks/gnome-disks.p/gdu-space-allocation-bar.c.o
+In file included from ../gnome-disk-utility/src/disks/gdu-space-allocation-bar.c:26:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[129/143] Compiling C object src/disks/gnome-disks.p/gdu-block-row.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-mount-options-dialog.h:13,
+                 from ../gnome-disk-utility/src/disks/gdu-block-row.c:23:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[130/143] Compiling C object src/disks/gnome-disks.p/gdu-resize-volume-dialog.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-resize-volume-dialog.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-resize-volume-dialog.c:13:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[131/143] Compiling C object src/disks/gnome-disks.p/gdulocaljob.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdulocaljob.h:13,
+                 from ../gnome-disk-utility/src/disks/gdulocaljob.c:13:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[132/143] Compiling C object src/disks/gnome-disks.p/gduestimator.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gduestimator.h:13,
+                 from ../gnome-disk-utility/src/disks/gduestimator.c:17:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[133/143] Compiling C object src/disks/gnome-disks.p/gdudvdsupport.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdudvdsupport.h:13,
+                 from ../gnome-disk-utility/src/disks/gdudvdsupport.c:19:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[134/143] Compiling C object src/disks/gnome-disks.p/gdu-drive-view.c.o
+../gnome-disk-utility/src/disks/gdu-drive-view.c: In function ‘restore_disk_image_clicked_cb’:
+../gnome-disk-utility/src/disks/gdu-drive-view.c:200:15: warning: variable ‘manager’ set but not used [-Wunused-but-set-variable]
+  200 |   GduManager *manager;
+      |               ^~~~~~~
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-ata-smart-dialog.h:13,
+                 from ../gnome-disk-utility/src/disks/gdu-drive-view.c:21:
+../gnome-disk-utility/src/libgdu/gduutils.h: At top level:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[135/143] Compiling C object src/disks/gnome-disks.p/main.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-application.h:14,
+                 from ../gnome-disk-utility/src/disks/main.c:14:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[136/143] Compiling C object src/disks/gnome-disks.p/gduxzdecompressor.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gduxzdecompressor.h:15,
+                 from ../gnome-disk-utility/src/disks/gduxzdecompressor.c:16:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[137/143] Compiling C object src/disks/gnome-disks.p/gdu-unlock-dialog.c.o
+In file included from ../gnome-disk-utility/src/libgdu/libgdu.h:15,
+                 from ../gnome-disk-utility/src/disks/gdutypes.h:15,
+                 from ../gnome-disk-utility/src/disks/gdu-unlock-dialog.h:12,
+                 from ../gnome-disk-utility/src/disks/gdu-unlock-dialog.c:19:
+../gnome-disk-utility/src/libgdu/gduutils.h:170:21: warning: ‘partition_colors’ defined but not used [-Wunused-variable]
+  170 | static const char * partition_colors[NUM_PARTITION_COLORS] = {
+      |                     ^~~~~~~~~~~~~~~~
+[138/143] Generating src/disk-image-mounter/cargo-build with a custom command (wrapped by meson to set env)
+   Compiling anyhow v1.0.98
+   Compiling gnome-disk-image-mounter v0.1.0 (/build/gnome-disk-utility-git/src/gnome-disk-utility/src/disk-image-mounter)
+    Finished `release` profile [optimized] target(s) in 1m 34s
+[140/143] Linking target src/disks/gnome-disks
+[141/143] Generating src/libgdu/cargo-build with a custom command (wrapped by meson to set env)
+ Downloading crates ...
+  Downloaded foreign-types v0.5.0
+  Downloaded foreign-types-shared v0.3.1
+  Downloaded foreign-types-macros v0.2.3
+  Downloaded utf8-cstr v0.1.6
+  Downloaded libsystemd-sys v0.9.4
+  Downloaded systemd v0.10.1
+  Downloaded build-env v0.3.1
+  Downloaded cstr-argument v0.1.2
+   Compiling build-env v0.3.1
+   Compiling foreign-types-shared v0.3.1
+   Compiling foreign-types-macros v0.2.3
+   Compiling cstr-argument v0.1.2
+   Compiling utf8-cstr v0.1.6
+   Compiling libsystemd-sys v0.9.4
+   Compiling foreign-types v0.5.0
+   Compiling systemd v0.10.1
+   Compiling libgdu v0.1.0 (/build/gnome-disk-utility-git/src/gnome-disk-utility/src/libgdu)
+   Compiling gnome-disks v0.1.0 (/build/gnome-disk-utility-git/src/gnome-disk-utility/src/disks)
+    Finished `release` profile [optimized] target(s) in 40.60s
+[142/143] Generating src/disk-image-mounter/cp-binary with a custom command
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/gnome-disk-utility-git/src/build

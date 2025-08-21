@@ -1,0 +1,928 @@
+Running m4 to generate Makefile...
+Arguments to configure:  '--enable-option-checking=fatal' '--prefix=/usr' '--enable-gui=newgui2' '--enable-upnp-natpmp' '--disable-fasttrack' '--disable-gnutella' '--disable-gnutella2' 'CFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17' 'LDFLAGS=-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto' 'CXXFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto'
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking how to run the C preprocessor... gcc -E
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+
+--------------------------------
+     Checking system tools.
+--------------------------------
+checking for ranlib... ranlib
+checking for gmake... no
+checking for make... make
+checking if make is GNU make ... yes
+checking for bzip2... bzip2
+checking for gzip... (cached) bzip2
+checking for perl... /usr/bin/perl
+checking for rpmbuild... no
+checking for rpm... no
+checking for wget... wget
+----------------------------------------
+     Checking system tools finished.
+----------------------------------------
+
+--------------------------------
+     Checking OCaml compiler.
+--------------------------------
+checking for ocamlc.opt... /usr/bin/ocamlc.opt
+checking for ocamlc... /usr/bin/ocamlc.opt
+checking for camlp4... /usr/bin/camlp4
+checking for ocamlopt.opt... /usr/bin/ocamlopt.opt
+checking for ocamlopt... (cached) /usr/bin/ocamlopt.opt
+checking for ocamldep... /usr/bin/ocamldep
+checking for ocamllex.opt... /usr/bin/ocamllex.opt
+checking for ocamllex... (cached) /usr/bin/ocamllex.opt
+checking for ocamlyacc... /usr/bin/ocamlyacc
+checking for ocamldoc... /usr/bin/ocamldoc
+checking for ocamlmktop... /usr/bin/ocamlmktop
+checking for camlp4... (cached) /usr/bin/camlp4
+checking for camlp4of... /usr/bin/camlp4of
+-------------------------------------------
+     Checking OCaml 4.14.2 finished.
+-------------------------------------------
+checking ocaml num library... found -I +num
+
+----------------------------------
+     Checking system headers.
+----------------------------------
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking for setrlimit... yes
+checking for getrlimit... yes
+checking for strerror_r... yes
+checking for strerror... yes
+checking for posix_fallocate... yes
+checking for byteswap.h... yes
+checking for sys/utsname.h... yes
+checking for arpa/inet.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/time.h... yes
+checking for sys/resource.h... yes
+checking for netinet/in_systm.h... yes
+checking for netinet/in.h... yes
+checking for netinet/ip.h... yes
+checking for sys/poll.h... yes
+checking for poll... yes
+checking for sys/vfs.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/param.h... yes
+checking for sys/mount.h... yes
+-------------------------------------------
+     Checking system headers finished.
+-------------------------------------------
+
+-----------------------------------
+     Checking system libraries.
+-----------------------------------
+----- checking zlib (required)
+checking for inflate in -lz... yes
+checking for zlib.h... yes
+checking for zlibVersion in -lz... yes
+----- checking bzlib (optional)
+checking for bzlib.h... yes
+checking for BZ2_bzReadOpen in -lbz2... yes
+checking for BZ2_bzlibVersion in -lbz2... yes
+----- checking libminiupnpc >= 1.6 (optional)
+checking for miniupnpc/miniupnpc.h... yes
+checking for upnpDiscover in -lminiupnpc... yes
+----- checking libnatpmp >= 20110808 (optional)
+checking for natpmp.h... yes
+checking for initnatpmp in -lnatpmp... yes
+----- checking libmagic (GNU file) (optional)
+checking for gcc options needed to detect all undeclared functions... none needed
+checking for magic.h... yes
+checking for magic_file in -lmagic... yes
+checking whether MAGIC_ERROR is declared... yes
+----- checking gd (optional)
+checking for gdlib-config... no
+checking for gd.h... yes
+checking for gdImageCreate in -lgd... no
+configure: not found, trying another method
+checking for gdImageCreate in -lgd... yes
+checking for libpng-config... libpng-config
+checking for png_create_read_struct  in -lpng... yes
+checking for gdImagePng in -lgd... no
+configure: not found, trying another method
+checking for gdImagePng in -lgd... yes
+checking for png support in libgd... yes
+checking for png_access_version_number in -lpng... yes
+checking for jpeg_CreateCompress in -ljpeg... yes
+checking for gdImageJpeg in -lgd... no
+configure: not found, trying another method
+checking for gdImageJpeg in -lgd... yes
+checking for jpeg support in libgd... yes
+----- checking iconv (optional)
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for locale_charset... no
+configure: found nl_langinfo(CODESET)
+checking for locale_charset in -lcharset... no
+checking for libcharset.h... no
+checking for langinfo.h... yes
+checking for locale.h... yes
+----- checking thread support (optional, strongly advised)
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether gcc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+----- GNU C Library version
+checking for linux/limits.h... yes
+checking for gnu/libc-version.h... yes
+checking for GNU C Library version... 2.42
+---------------------------------------------
+     Checking system libraries finished.
+---------------------------------------------
+
+--------------------------------------
+     Checking activated networks.
+--------------------------------------
+checking eDonkey... yes
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking for g++... g++
+checking eMule SUI... yes
+checking whether C++ compiler accepts -fno-omit-frame-pointer... yes
+checking whether C++ compiler accepts -mno-omit-leaf-frame-pointer... yes
+checking BitTorrent... yes
+checking FileTP... yes
+checking DirectConnect... yes
+-----------------------------------------------
+     Checking activated networks finished.
+-----------------------------------------------
+---------------------------------------------------------
+Checking the libraries required to build the GTK GUI.
+---------------------------------------------------------
+checking for GTK+ - version >= 2.4.0... yes
+checking for librsvg - version >= 2.4.0... yes
+checking for native code lablgtk2... yes
+checking GToolbox.popup_menu args... val popup_menu : entries: menu_entry list -> button: int -> time: int32 -> unit
+new
+---------------------------------------------------------
+End of GTK GUI configuration.
+---------------------------------------------------------
+configure: creating ./config.status
+config.status: creating Makefile.config
+config.status: creating mldonkey.rc
+config.status: creating ../src/utils/lib/autoconf.ml.new
+config.status: creating ../src/utils/lib/gAutoconf.ml.new
+config.status: creating ../src/utils/bitstring/bitstring.ml
+config.status: creating ../src/utils/lib/magic.ml
+config.status: creating ../src/networks/donkey/donkeySui.ml
+config.status: creating ../src/daemon/driver/driverGraphics.ml
+config.status: creating ../packages/rpm/mldonkey.spec
+config.status: creating ../packages/rpm/Makefile
+config.status: creating ../packages/slackware/mldonkey.options
+config.status: creating config.h
+
+Building dependencies (if it blocks, try 'make depend' to see the problem)
+Building dependencies fails: try: 'make depend'
+
+Configuring MLDonkey 3.2.1 completed.
+
+Network modules:
+ - eDonkey           enabled (eMule SUI enabled)
+ - BitTorrent        enabled
+ - FileTP (aka wget) enabled
+ - Fasttrack                 disabled
+ - Gnutella                  disabled - unmaintained
+ - Gnutella2                 disabled - unmaintained
+ - Direct Connect    enabled
+ - Open Napster              disabled - currently not usable
+ - Soulseek                  disabled - currently not usable
+ - OpenFT                    disabled - currently not usable
+
+Core features:
+ - zlib (required)   enabled
+ - threads           enabled
+ - bzip2             enabled
+ - iconv             enabled
+ - libmagic          enabled
+ - upnp & natpmp     enabled
+ - graphical stats   enabled
+   - png support     enabled
+   - jpg support     enabled
+
+
+ - GUI support       GTK2 GUI
+
+Compilers:
+ - OCaml version     4.14.2 
+ - gcc version       15.2.1
+ - g++ version       15.2.1
+
+\nNow execute 'make' to start compiling. Good luck!
+
+To compile a static code execute:     make mlnet.static
+To produce a release tarball execute: make release.mlnet.static
+To clean the build directory execute: make maintainerclean
+
+Compiling CryptoPP.cc can take several minutes, on slow machines up to half an hour.
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -linkall -o ocamlpp.byte \
+     -custom bigarray.cma unix.cma str.cma -I +num nums.cma -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" \
+  \
+  \
+  \
+  \
+  \
+  \
+-I build         tools/ocamlpp.cmo  
+/usr/bin/ocamlopt.opt -inline 10 -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70    -I src/utils/extlib  -I src/utils/cdk  -I src/utils/bitstring  -I src/utils/lib  -I src/utils/ocamlrss  -I src/utils/xml-light  -I src/utils/net  -I tools  -I src/daemon/common  -I src/daemon/driver  -I src/utils/mp3tagui  -I src/config/unix  -I src/gtk2/gui  -I src/gtk2/gui/x11  -I src/gtk2/gui/win32  -I icons/rsvg  -I +lablgtk2  -I src/networks/direct_connect  -I src/networks/fileTP  -I src/networks/bittorrent  -I src/networks/donkey -I +camlp4 -I +num -c src/daemon/common/commonMain.ml
+/usr/bin/ocamlopt.opt -inline 10 -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70    -I src/utils/extlib  -I src/utils/cdk  -I src/utils/bitstring  -I src/utils/lib  -I src/utils/ocamlrss  -I src/utils/xml-light  -I src/utils/net  -I tools  -I src/daemon/common  -I src/daemon/driver  -I src/utils/mp3tagui  -I src/config/unix  -I src/gtk2/gui  -I src/gtk2/gui/x11  -I src/gtk2/gui/win32  -I icons/rsvg  -I +lablgtk2  -I src/networks/direct_connect  -I src/networks/fileTP  -I src/networks/bittorrent  -I src/networks/donkey -I +camlp4 -I +num -c src/utils/extlib/IO.ml
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/utils/cdk/zlibstubs.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/utils/cdk/zlibstubs.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/utils/cdk/bzip2stubs.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/utils/cdk/bzip2stubs.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread  -o src/utils/cdk/heap_c.o" -ccopt "" -c src/utils/cdk/heap_c.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/config/unix/os_stubs_c.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/config/unix/os_stubs_c.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/utils/lib/fst_hash.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/utils/lib/fst_hash.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -o src/utils/lib/md4_cc.o" -ccopt "" -c src/utils/lib/md4.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/utils/lib/md4_c.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/utils/lib/md4_c.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/utils/lib/charsetstubs.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/utils/lib/charsetstubs.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/utils/lib/md5_c.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/utils/lib/md5_c.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/utils/lib/sha1_c.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/utils/lib/sha1_c.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/utils/lib/tiger.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/utils/lib/tiger.c
+/usr/bin/ocamlc.opt -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70  -verbose -ccopt "-I /byterun -o src/utils/lib/stubs_c.o" -ccopt "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread" -ccopt "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto " -cclib "-lz  " -cclib -lbz2 -ccopt "-pthread" -cclib "-lpthread" -c src/utils/lib/stubs_c.c
+/usr/bin/ocamlopt.opt -inline 10 -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70    -I src/utils/extlib  -I src/utils/cdk  -I src/utils/bitstring  -I src/utils/lib  -I src/utils/ocamlrss  -I src/utils/xml-light  -I src/utils/net  -I tools  -I src/daemon/common  -I src/daemon/driver  -I src/utils/mp3tagui  -I src/config/unix  -I src/gtk2/gui  -I src/gtk2/gui/x11  -I src/gtk2/gui/win32  -I icons/rsvg  -I +lablgtk2  -I src/networks/direct_connect  -I src/networks/fileTP  -I src/networks/bittorrent  -I src/networks/donkey -I +camlp4 -I +num -c src/utils/cdk/bzlib.ml
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/utils/cdk/zlibstubs.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/utils/cdk/zlibstubs.c'
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/utils/cdk/bzip2stubs.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/utils/cdk/bzip2stubs.c'
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/utils/lib/fst_hash.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/utils/lib/fst_hash.c'
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/utils/lib/charsetstubs.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/utils/lib/charsetstubs.c'
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/utils/lib/md4_c.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/utils/lib/md4_c.c'
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/config/unix/os_stubs_c.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/config/unix/os_stubs_c.c'
+/usr/bin/ocamlopt.opt -inline 10 -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70    -I src/utils/extlib  -I src/utils/cdk  -I src/utils/bitstring  -I src/utils/lib  -I src/utils/ocamlrss  -I src/utils/xml-light  -I src/utils/net  -I tools  -I src/daemon/common  -I src/daemon/driver  -I src/utils/mp3tagui  -I src/config/unix  -I src/gtk2/gui  -I src/gtk2/gui/x11  -I src/gtk2/gui/win32  -I icons/rsvg  -I +lablgtk2  -I src/networks/direct_connect  -I src/networks/fileTP  -I src/networks/bittorrent  -I src/networks/donkey -I +camlp4 -I +num -c src/utils/cdk/bzip2.ml
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/utils/lib/sha1_c.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/utils/lib/sha1_c.c'
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/utils/lib/tiger.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/utils/lib/tiger.c'
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/utils/lib/stubs_c.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/utils/lib/stubs_c.c'
+File "src/daemon/common/commonMain.ml", line 20, characters 5-12:
+20 | open Printf2
+          ^^^^^^^
+Error: Unbound module Printf2/usr/bin/ocamlopt.opt -inline 10 -w +a-3-4-6-27-29-32-35-37-41-44-45-48-60-70    -I src/utils/extlib  -I src/utils/cdk  -I src/utils/bitstring  -I src/utils/lib  -I src/utils/ocamlrss  -I src/utils/xml-light  -I src/utils/net  -I tools  -I src/daemon/common  -I src/daemon/driver  -I src/utils/mp3tagui  -I src/config/unix  -I src/gtk2/gui  -I src/gtk2/gui/x11  -I src/gtk2/gui/win32  -I icons/rsvg  -I +lablgtk2  -I src/networks/direct_connect  -I src/networks/fileTP  -I src/networks/bittorrent  -I src/networks/donkey -I +camlp4 -I +num -c src/utils/cdk/zlib.ml
+
+Hint: Did you mean Printf?
++ gcc -O2 -fno-strict-aliasing -fwrapv -pthread -g  -fno-omit-frame-pointer -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ocaml4/src=/usr/src/debug/ocaml4 -flto=auto -ffat-lto-objects -D_FILE_OFFSET_BITS=64    -c  -I /byterun -o src/utils/lib/md5_c.o -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/mldonkey/src=/usr/src/debug/mldonkey -flto=auto -std=gnu17   -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6  -pthread -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -pthread  -I'/usr/lib/ocaml' 'src/utils/lib/md5_c.c'
+make: *** [Makefile:5440: src/daemon/common/commonMain.cmx] Error 2
+make: *** Waiting for unfinished jobs....
+File "src/utils/cdk/bzlib.ml", line 1:
+Error: Could not find the .cmi file for interface src/utils/cdk/bzlib.mli.
+make: *** [Makefile:5440: src/utils/cdk/bzlib.cmx] Error 2
+File "src/utils/cdk/bzip2.ml", line 14, characters 15-27:
+14 |     in_stream: Bzlib.stream;
+                    ^^^^^^^^^^^^
+Error: Unbound module Bzlib
+make: *** [Makefile:5440: src/utils/cdk/bzip2.cmx] Error 2
+File "src/utils/cdk/zlib.ml", line 1:
+Error: Could not find the .cmi file for interface src/utils/cdk/zlib.mli.
+make: *** [Makefile:5440: src/utils/cdk/zlib.cmx] Error 2
+File "src/utils/extlib/IO.ml", line 1:
+Error: Could not find the .cmi file for interface src/utils/extlib/IO.mli.
+make: *** [Makefile:5440: src/utils/extlib/IO.cmx] Error 2
+In file included from /usr/lib/ocaml/caml/mlvalues.h:23,
+                 from src/utils/cdk/bzip2stubs.c:24:
+src/utils/cdk/bzip2stubs.c: In function ‘camlzip_bzerror’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "invalid_argument" is deprecated: use "caml_invalid_argument" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:112:26: note: in expansion of macro ‘CAML_DEPRECATED’
+  112 | #define invalid_argument CAML_DEPRECATED("invalid_argument", "caml_invalid_argument") caml_invalid_argument
+      |                          ^~~~~~~~~~~~~~~
+src/utils/cdk/bzip2stubs.c:45:7: note: in expansion of macro ‘invalid_argument’
+   45 |       invalid_argument("Exception Bzlib.Error not initialized");
+      |       ^~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_string" is deprecated: use "caml_copy_string" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:51:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   51 | #define copy_string CAML_DEPRECATED("copy_string", "caml_copy_string") caml_copy_string
+      |                     ^~~~~~~~~~~~~~~
+src/utils/cdk/bzip2stubs.c:48:10: note: in expansion of macro ‘copy_string’
+   48 |     s1 = copy_string(fn);
+      |          ^~~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "alloc_small" is deprecated: use "caml_alloc_small" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:47:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   47 | #define alloc_small CAML_DEPRECATED("alloc_small", "caml_alloc_small") caml_alloc_small
+      |                     ^~~~~~~~~~~~~~~
+src/utils/cdk/bzip2stubs.c:71:14: note: in expansion of macro ‘alloc_small’
+   71 |     bucket = alloc_small(3, 0);
+      |              ^~~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "mlraise" is deprecated: use "caml_raise" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:107:17: note: in expansion of macro ‘CAML_DEPRECATED’
+  107 | #define mlraise CAML_DEPRECATED("mlraise", "caml_raise") caml_raise /*SP*/
+      |                 ^~~~~~~~~~~~~~~
+src/utils/cdk/bzip2stubs.c:76:3: note: in expansion of macro ‘mlraise’
+   76 |   mlraise(bucket);
+      |   ^~~~~~~
+src/utils/cdk/bzip2stubs.c: In function ‘camlzip_bzCompress’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "alloc_small" is deprecated: use "caml_alloc_small" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:47:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   47 | #define alloc_small CAML_DEPRECATED("alloc_small", "caml_alloc_small") caml_alloc_small
+      |                     ^~~~~~~~~~~~~~~
+src/utils/cdk/bzip2stubs.c:129:9: note: in expansion of macro ‘alloc_small’
+  129 |   res = alloc_small(3, 0);
+      |         ^~~~~~~~~~~
+src/utils/cdk/bzip2stubs.c: In function ‘camlzip_bzDecompress’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "alloc_small" is deprecated: use "caml_alloc_small" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:47:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   47 | #define alloc_small CAML_DEPRECATED("alloc_small", "caml_alloc_small") caml_alloc_small
+      |                     ^~~~~~~~~~~~~~~
+src/utils/cdk/bzip2stubs.c:190:9: note: in expansion of macro ‘alloc_small’
+  190 |   res = alloc_small(3, 0);
+      |         ^~~~~~~~~~~
+src/utils/cdk/bzip2stubs.c: In function ‘camlzip_bzlibversion’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_string" is deprecated: use "caml_copy_string" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:51:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   51 | #define copy_string CAML_DEPRECATED("copy_string", "caml_copy_string") caml_copy_string
+      |                     ^~~~~~~~~~~~~~~
+src/utils/cdk/bzip2stubs.c:223:7: note: in expansion of macro ‘copy_string’
+  223 |   v = copy_string (BZ2_bzlibVersion());
+      |       ^~~~~~~~~~~
+In file included from /usr/lib/ocaml/caml/mlvalues.h:23,
+                 from src/utils/lib/fst_hash.c:182:
+src/utils/lib/fst_hash.c: In function ‘fst_hash_file_ml’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "failwith" is deprecated: use "caml_failwith" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:111:18: note: in expansion of macro ‘CAML_DEPRECATED’
+  111 | #define failwith CAML_DEPRECATED("failwith", "caml_failwith") caml_failwith
+      |                  ^~~~~~~~~~~~~~~
+src/utils/lib/fst_hash.c:329:3: note: in expansion of macro ‘failwith’
+  329 |   failwith("Exception during FST computation");
+      |   ^~~~~~~~
+In file included from /usr/lib/ocaml/caml/mlvalues.h:23,
+                 from src/utils/cdk/zlibstubs.c:22:
+src/utils/cdk/zlibstubs.c: In function ‘camlzip_zlibversion’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_string" is deprecated: use "caml_copy_string" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:51:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   51 | #define copy_string CAML_DEPRECATED("copy_string", "caml_copy_string") caml_copy_string
+      |                     ^~~~~~~~~~~~~~~
+src/utils/cdk/zlibstubs.c:195:7: note: in expansion of macro ‘copy_string’
+  195 |   v = copy_string (zlibVersion());
+      |       ^~~~~~~~~~~
+src/utils/lib/charsetstubs.c: In function ‘raise_error’:
+src/utils/lib/charsetstubs.c:171:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  171 |     closure_f = caml_named_value("charset_error");
+      |               ^
+In file included from /usr/lib/ocaml/caml/mlvalues.h:23,
+                 from src/utils/lib/charsetstubs.c:93:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "raise_constant" is deprecated: use "caml_raise_constant" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:108:24: note: in expansion of macro ‘CAML_DEPRECATED’
+  108 | #define raise_constant CAML_DEPRECATED("raise_constant", "caml_raise_constant") caml_raise_constant
+      |                        ^~~~~~~~~~~~~~~
+src/utils/lib/charsetstubs.c:173:3: note: in expansion of macro ‘raise_constant’
+  173 |   raise_constant(*closure_f);
+      |   ^~~~~~~~~~~~~~
+src/utils/lib/charsetstubs.c: In function ‘ml_copy_string_len_and_free’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "alloc_string" is deprecated: use "caml_alloc_string" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:49:22: note: in expansion of macro ‘CAML_DEPRECATED’
+   49 | #define alloc_string CAML_DEPRECATED("alloc_string", "caml_alloc_string") caml_alloc_string
+      |                      ^~~~~~~~~~~~~~~
+src/utils/lib/charsetstubs.c:1339:7: note: in expansion of macro ‘alloc_string’
+ 1339 |   v = alloc_string (len);
+      |       ^~~~~~~~~~~~
+src/utils/lib/charsetstubs.c: In function ‘ml_convert_string’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "string_length" is deprecated: use "caml_string_length" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:289:23: note: in expansion of macro ‘CAML_DEPRECATED’
+  289 | #define string_length CAML_DEPRECATED("string_length", "caml_string_length") caml_string_length
+      |                       ^~~~~~~~~~~~~~~
+src/utils/lib/charsetstubs.c:1351:38: note: in expansion of macro ‘string_length’
+ 1351 |   c_res = ml_convert(String_val(str),string_length(str),
+      |                                      ^~~~~~~~~~~~~
+src/utils/lib/charsetstubs.c: In function ‘ml_utf8_validate’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "string_length" is deprecated: use "caml_string_length" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/mlvalues.h:75:47: note: in definition of macro ‘Val_long’
+   75 | #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+      |                                               ^
+/usr/lib/ocaml/caml/mlvalues.h:387:21: note: in expansion of macro ‘Val_int’
+  387 | #define Val_bool(x) Val_int((x) != 0)
+      |                     ^~~~~~~
+src/utils/lib/charsetstubs.c:1361:10: note: in expansion of macro ‘Val_bool’
+ 1361 |   return Val_bool(utf8_validate(SizedString_val(s),NULL));
+      |          ^~~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:289:23: note: in expansion of macro ‘CAML_DEPRECATED’
+  289 | #define string_length CAML_DEPRECATED("string_length", "caml_string_length") caml_string_length
+      |                       ^~~~~~~~~~~~~~~
+src/utils/lib/charsetstubs.c:102:43: note: in expansion of macro ‘string_length’
+  102 | #define SizedString_val(x) String_val(x), string_length(x)
+      |                                           ^~~~~~~~~~~~~
+src/utils/lib/charsetstubs.c:1361:33: note: in expansion of macro ‘SizedString_val’
+ 1361 |   return Val_bool(utf8_validate(SizedString_val(s),NULL));
+      |                                 ^~~~~~~~~~~~~~~
+src/utils/lib/charsetstubs.c: In function ‘ml_locale_charset’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_string" is deprecated: use "caml_copy_string" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:51:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   51 | #define copy_string CAML_DEPRECATED("copy_string", "caml_copy_string") caml_copy_string
+      |                     ^~~~~~~~~~~~~~~
+src/utils/lib/charsetstubs.c:1380:11: note: in expansion of macro ‘copy_string’
+ 1380 |   return (copy_string ((char*) str));
+      |           ^~~~~~~~~~~
+In file included from /usr/lib/ocaml/caml/signals.h:26,
+                 from src/config/unix/../../utils/lib/os_stubs.h:94,
+                 from src/config/unix/os_stubs_c.c:21:
+src/config/unix/os_stubs_c.c: In function ‘os_ftruncate’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "failwith" is deprecated: use "caml_failwith" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:111:18: note: in expansion of macro ‘CAML_DEPRECATED’
+  111 | #define failwith CAML_DEPRECATED("failwith", "caml_failwith") caml_failwith
+      |                  ^~~~~~~~~~~~~~~
+src/config/unix/os_stubs_c.c:70:11: note: in expansion of macro ‘failwith’
+   70 |   if(!fd) failwith("ftruncate32: file is closed");
+      |           ^~~~~~~~
+src/config/unix/os_stubs_c.c:86:39: warning: format ‘%Ld’ expects argument of type ‘long long int’, but argument 4 has type ‘OFF_T’ {aka ‘long int’} [-Wformat=]
+   86 |       fprintf(stderr, "ftruncate(%d,%Ld)\n", fd, len);
+      |                                     ~~^          ~~~
+      |                                       |          |
+      |                                       |          OFF_T {aka long int}
+      |                                       long long int
+      |                                     %ld
+src/config/unix/os_stubs_c.c: In function ‘glibc_version’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_string" is deprecated: use "caml_copy_string" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:51:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   51 | #define copy_string CAML_DEPRECATED("copy_string", "caml_copy_string") caml_copy_string
+      |                     ^~~~~~~~~~~~~~~
+src/config/unix/os_stubs_c.c:169:7: note: in expansion of macro ‘copy_string’
+  169 |   v = copy_string (gnu_get_libc_version());
+      |       ^~~~~~~~~~~
+src/config/unix/os_stubs_c.c: In function ‘os_ftruncate’:
+src/config/unix/os_stubs_c.c:83:5: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   83 |     write(fd, &zero, 1);
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/ocaml/caml/signals.h:26,
+                 from src/utils/lib/../../utils/lib/os_stubs.h:94,
+                 from src/utils/lib/stubs_c.c:20:
+src/utils/lib/stubs_c.c: In function ‘try_poll’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "enter_blocking_section" is deprecated: use "caml_enter_blocking_section" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:267:32: note: in expansion of macro ‘CAML_DEPRECATED’
+  267 | #define enter_blocking_section CAML_DEPRECATED("enter_blocking_section", "caml_enter_blocking_section") caml_enter_blocking_section
+      |                                ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:143:3: note: in expansion of macro ‘enter_blocking_section’
+  143 |   enter_blocking_section();
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "leave_blocking_section" is deprecated: use "caml_leave_blocking_section" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:268:32: note: in expansion of macro ‘CAML_DEPRECATED’
+  268 | #define leave_blocking_section CAML_DEPRECATED("leave_blocking_section", "caml_leave_blocking_section") caml_leave_blocking_section
+      |                                ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:145:3: note: in expansion of macro ‘leave_blocking_section’
+  145 |   leave_blocking_section();
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘try_select’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "enter_blocking_section" is deprecated: use "caml_enter_blocking_section" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:267:32: note: in expansion of macro ‘CAML_DEPRECATED’
+  267 | #define enter_blocking_section CAML_DEPRECATED("enter_blocking_section", "caml_enter_blocking_section") caml_enter_blocking_section
+      |                                ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:216:3: note: in expansion of macro ‘enter_blocking_section’
+  216 |   enter_blocking_section();
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "leave_blocking_section" is deprecated: use "caml_leave_blocking_section" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:268:32: note: in expansion of macro ‘CAML_DEPRECATED’
+  268 | #define leave_blocking_section CAML_DEPRECATED("leave_blocking_section", "caml_leave_blocking_section") caml_leave_blocking_section
+      |                                ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:218:3: note: in expansion of macro ‘leave_blocking_section’
+  218 |   leave_blocking_section();
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘ml_getsize64’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:375:10: note: in expansion of macro ‘copy_int64’
+  375 |   return copy_int64(os_getfilesize(String_val(path)));
+      |          ^~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘ml_getfdsize64’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:390:10: note: in expansion of macro ‘copy_int64’
+  390 |   return copy_int64(os_getfdsize(fd));
+      |          ^~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘ml_ints_of_string’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "raise_not_found" is deprecated: use "caml_raise_not_found" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:119:25: note: in expansion of macro ‘CAML_DEPRECATED’
+  119 | #define raise_not_found CAML_DEPRECATED("raise_not_found", "caml_raise_not_found") caml_raise_not_found
+      |                         ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:484:3: note: in expansion of macro ‘raise_not_found’
+  484 |   raise_not_found();
+      |   ^~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "alloc" is deprecated: use "caml_alloc" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:46:15: note: in expansion of macro ‘CAML_DEPRECATED’
+   46 | #define alloc CAML_DEPRECATED("alloc", "caml_alloc") caml_alloc /*SP*/
+      |               ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:488:9: note: in expansion of macro ‘alloc’
+  488 |   res = alloc(4,0);
+      |         ^~~~~
+src/utils/lib/stubs_c.c: In function ‘sha1_unsafe_file’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "raise_not_found" is deprecated: use "caml_raise_not_found" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:119:25: note: in expansion of macro ‘CAML_DEPRECATED’
+  119 | #define raise_not_found CAML_DEPRECATED("raise_not_found", "caml_raise_not_found") caml_raise_not_found
+      |                         ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:565:5: note: in expansion of macro ‘raise_not_found’
+  565 |     raise_not_found(); \
+      |     ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:583:1: note: in expansion of macro ‘ML_HASH’
+  583 | ML_HASH(sha1,SHA1_CTX,sha1_begin,sha1_hash, sha1_end)
+      | ^~~~~~~
+src/utils/lib/stubs_c.c: In function ‘md5_unsafe_file’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "raise_not_found" is deprecated: use "caml_raise_not_found" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:119:25: note: in expansion of macro ‘CAML_DEPRECATED’
+  119 | #define raise_not_found CAML_DEPRECATED("raise_not_found", "caml_raise_not_found") caml_raise_not_found
+      |                         ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:565:5: note: in expansion of macro ‘raise_not_found’
+  565 |     raise_not_found(); \
+      |     ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:584:1: note: in expansion of macro ‘ML_HASH’
+  584 | ML_HASH(md5,md5_state_t,md5_init,md5_append,md5_finish)
+      | ^~~~~~~
+src/utils/lib/stubs_c.c: In function ‘md4_unsafe_file’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "raise_not_found" is deprecated: use "caml_raise_not_found" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:119:25: note: in expansion of macro ‘CAML_DEPRECATED’
+  119 | #define raise_not_found CAML_DEPRECATED("raise_not_found", "caml_raise_not_found") caml_raise_not_found
+      |                         ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:565:5: note: in expansion of macro ‘raise_not_found’
+  565 |     raise_not_found(); \
+      |     ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:585:1: note: in expansion of macro ‘ML_HASH’
+  585 | ML_HASH(md4,MD4_CTX,MD4Init,MD4Update,md4_finish)
+      | ^~~~~~~
+lto1: fatal error: bytecode stream in file ‘/usr/lib/ocaml/num/libnums.a’ generated with LTO version 15.0 instead of the expected 15.1
+compilation terminated.
+lto-wrapper: fatal error: gcc returned 1 exit status
+compilation terminated.
+/usr/bin/ld: error: lto-wrapper failed
+collect2: error: ld returned 1 exit status
+File "_none_", line 1:
+Error: Error while building custom runtime system
+make: *** [Makefile:3819: ocamlpp.byte] Error 2
+src/utils/lib/stubs_c.c: In function ‘ml_gethostbyname’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "enter_blocking_section" is deprecated: use "caml_enter_blocking_section" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:267:32: note: in expansion of macro ‘CAML_DEPRECATED’
+  267 | #define enter_blocking_section CAML_DEPRECATED("enter_blocking_section", "caml_enter_blocking_section") caml_enter_blocking_section
+      |                                ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:733:5: note: in expansion of macro ‘enter_blocking_section’
+  733 |     enter_blocking_section();
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "leave_blocking_section" is deprecated: use "caml_leave_blocking_section" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:268:32: note: in expansion of macro ‘CAML_DEPRECATED’
+  268 | #define leave_blocking_section CAML_DEPRECATED("leave_blocking_section", "caml_leave_blocking_section") caml_leave_blocking_section
+      |                                ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:735:5: note: in expansion of macro ‘leave_blocking_section’
+  735 |     leave_blocking_section();
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘ml_ip_job_start’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "enter_blocking_section" is deprecated: use "caml_enter_blocking_section" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:267:32: note: in expansion of macro ‘CAML_DEPRECATED’
+  267 | #define enter_blocking_section CAML_DEPRECATED("enter_blocking_section", "caml_enter_blocking_section") caml_enter_blocking_section
+      |                                ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:909:3: note: in expansion of macro ‘enter_blocking_section’
+  909 |   enter_blocking_section();
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "leave_blocking_section" is deprecated: use "caml_leave_blocking_section" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:268:32: note: in expansion of macro ‘CAML_DEPRECATED’
+  268 | #define leave_blocking_section CAML_DEPRECATED("leave_blocking_section", "caml_leave_blocking_section") caml_leave_blocking_section
+      |                                ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:915:3: note: in expansion of macro ‘leave_blocking_section’
+  915 |   leave_blocking_section ();
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘copy_statfs’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1104:7: note: in expansion of macro ‘copy_int64’
+ 1104 |   v = copy_int64 (buf->f_type); caml_modify (&Field (bufv, 0), v);
+      |       ^~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1106:7: note: in expansion of macro ‘copy_int64’
+ 1106 |   v = copy_int64 (buf->f_bsize); caml_modify (&Field (bufv, 1), v);
+      |       ^~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1107:7: note: in expansion of macro ‘copy_int64’
+ 1107 |   v = copy_int64 (buf->f_blocks); caml_modify (&Field (bufv, 2), v);
+      |       ^~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1108:7: note: in expansion of macro ‘copy_int64’
+ 1108 |   v = copy_int64 (buf->f_bfree); caml_modify (&Field (bufv, 3), v);
+      |       ^~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1109:7: note: in expansion of macro ‘copy_int64’
+ 1109 |   v = copy_int64 (buf->f_bavail); caml_modify (&Field (bufv, 4), v);
+      |       ^~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1110:7: note: in expansion of macro ‘copy_int64’
+ 1110 |   v = copy_int64 (buf->f_files); caml_modify (&Field (bufv, 5), v);
+      |       ^~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1111:7: note: in expansion of macro ‘copy_int64’
+ 1111 |   v = copy_int64 (buf->f_ffree); caml_modify (&Field (bufv, 6), v);
+      |       ^~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1131:7: note: in expansion of macro ‘copy_int64’
+ 1131 |   v = copy_int64 (buf->f_namelen); caml_modify (&Field (bufv, 8), v);
+      |       ^~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_string" is deprecated: use "caml_copy_string" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:51:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   51 | #define copy_string CAML_DEPRECATED("copy_string", "caml_copy_string") caml_copy_string
+      |                     ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1132:7: note: in expansion of macro ‘copy_string’
+ 1132 |   v = copy_string ("-1"); caml_modify (&Field (bufv, 9), v);
+      |       ^~~~~~~~~~~
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_int64" is deprecated: use "caml_copy_int64" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:175:20: note: in expansion of macro ‘CAML_DEPRECATED’
+  175 | #define copy_int64 CAML_DEPRECATED("copy_int64", "caml_copy_int64") caml_copy_int64
+      |                    ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1135:7: note: in expansion of macro ‘copy_int64’
+ 1135 |   v = copy_int64 (-1); caml_modify (&Field (bufv, 10), v);
+      |       ^~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘statfs_statfs’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "raise_constant" is deprecated: use "caml_raise_constant" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:108:24: note: in expansion of macro ‘CAML_DEPRECATED’
+  108 | #define raise_constant CAML_DEPRECATED("raise_constant", "caml_raise_constant") caml_raise_constant
+      |                        ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1155:5: note: in expansion of macro ‘raise_constant’
+ 1155 |     raise_constant(*(value *)caml_named_value("error"));
+      |     ^~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘ml_check_endianness’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "copy_string" is deprecated: use "caml_copy_string" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:51:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   51 | #define copy_string CAML_DEPRECATED("copy_string", "caml_copy_string") caml_copy_string
+      |                     ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1266:7: note: in expansion of macro ‘copy_string’
+ 1266 |   v = copy_string ("little endian");
+      |       ^~~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘ml_getrlimit’:
+/usr/lib/ocaml/caml/misc.h:56:31: warning: "alloc_tuple" is deprecated: use "caml_alloc_tuple" instead
+   56 | #define CAML_PREPROWARNING(x) _Pragma(CAML_MAKEWARNING2(x))
+      |                               ^~~~~~~
+/usr/lib/ocaml/caml/misc.h:58:3: note: in expansion of macro ‘CAML_PREPROWARNING’
+   58 |   CAML_PREPROWARNING(name1 is deprecated: use name2 instead)
+      |   ^~~~~~~~~~~~~~~~~~
+/usr/lib/ocaml/caml/compatibility.h:48:21: note: in expansion of macro ‘CAML_DEPRECATED’
+   48 | #define alloc_tuple CAML_DEPRECATED("alloc_tuple", "caml_alloc_tuple") caml_alloc_tuple
+      |                     ^~~~~~~~~~~~~~~
+src/utils/lib/stubs_c.c:1370:12: note: in expansion of macro ‘alloc_tuple’
+ 1370 |   retval = alloc_tuple(2);
+      |            ^~~~~~~~~~~
+src/utils/lib/stubs_c.c: In function ‘dns_thread’:
+src/utils/lib/stubs_c.c:854:3: warning: ignoring return value of ‘nice’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  854 |   nice(19);
+      |   ^~~~~~~~
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
