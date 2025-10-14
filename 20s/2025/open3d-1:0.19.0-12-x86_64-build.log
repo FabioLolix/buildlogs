@@ -1,0 +1,892 @@
+-- CMAKE_BUILD_TYPE is set to Release.
+-- Downloading third-party dependencies to /build/open3d/src/open3d/3rdparty_downloads
+-- The C compiler identification is GNU 14.3.1
+-- The CXX compiler identification is GNU 14.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-14 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-14 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Open3D 0.19.0+4356c1727
+-- Found Python3: /usr/bin/python3.13 (found suitable version "3.13.7", minimum required is "3.6") found components: Interpreter Development Development.Module Development.Embed
+-- Fetching ISPC compiler
+-- Building with detected instruction sets
+-- Using ISPC instruction sets: avx2-i32x8
+-- The ISPC compiler identification is Intel 1.16.1
+-- Detecting ISPC compiler ABI info
+-- Detecting ISPC compiler ABI info - done
+-- Check for working ISPC compiler: /build/open3d/src/open3d/build/_deps/ext_ispc-src/bin/ispc - skipped
+-- Performing Test FLAG_fstack_protector_strong
+-- Performing Test FLAG_fstack_protector_strong - Success
+-- Performing Test FLAG_Wformat
+-- Performing Test FLAG_Wformat - Success
+-- Performing Test FLAG_Wformat_security
+-- Performing Test FLAG_Wformat_security - Success
+-- Performing Test FLAG_Wl__z_noexecstack
+-- Performing Test FLAG_Wl__z_noexecstack - Success
+-- Performing Test FLAG_Wl__z_relro__z_now
+-- Performing Test FLAG_Wl__z_relro__z_now - Success
+-- Performing Test FLAG_pie
+-- Performing Test FLAG_pie - Success
+-- Performing Test FLAG____CONFIG_Release__LINKER___strip_debug_
+-- Performing Test FLAG____CONFIG_Release__LINKER___strip_debug_ - Success
+-- Using security hardening compiler flags: $<$<COMPILE_LANGUAGE:CUDA>:-Xcompiler=-fstack-protector-strong,-Wformat,-Wformat-security>;$<$<COMPILE_LANGUAGE:CXX>:-fstack-protector-strong;-Wformat;-Wformat-security>
+-- Using security hardening linker flags: $<$<COMPILE_LANGUAGE:CUDA>:-Xcompiler=-Wl,-z,noexecstack,-Wl,-z,relro,-z,now,$<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:-pie>,$<$<CONFIG:Release>:LINKER:--strip-debug>>;$<$<COMPILE_LANGUAGE:CXX>:-Wl,-z,noexecstack;-Wl,-z,relro,-z,now;$<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:-pie>;$<$<CONFIG:Release>:LINKER:--strip-debug>>
+-- Using security hardening compiler definitions: _FORTIFY_SOURCE=2
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Using installed third-party library 3rdparty_threads 
+-- Using installed third-party library 3rdparty_assimp 6.0.2
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Using installed third-party library 3rdparty_openmp 
+-- Building with OpenMP
+-- Using installed third-party library 3rdparty_x11 
+-- Using installed third-party library 3rdparty_eigen3 3.4.0
+-- Using installed third-party library 3rdparty_nanoflann 1.7.1
+-- Found GLEW: /usr/include (found version "2.2.0")
+-- Using installed third-party library 3rdparty_glew 2.2.0
+-- Using installed third-party library 3rdparty_glfw 3.4.0
+-- Found JPEG: /usr/lib/libjpeg.so (found version "80")
+-- Using installed third-party library 3rdparty_jpeg 80
+-- Checking for one of the modules 'jsoncpp'
+-- Using installed third-party library 3rdparty_jsoncpp 
+-- Setting RPATH for 3rdparty_liblzf
+-- Checking for one of the modules 'libcurl'
+-- Using installed third-party library 3rdparty_curl 
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Found PNG: /usr/lib/libpng.so (found version "1.6.50")
+-- Using installed third-party library 3rdparty_png 
+-- Setting RPATH for 3rdparty_rply
+-- Setting RPATH for 3rdparty_tinyfiledialogs
+-- Using installed third-party library 3rdparty_qhullcpp 8.0.2
+-- Using installed third-party library 3rdparty_fmt 11.2.0
+-- Performing Test HAS_FLTO
+-- Performing Test HAS_FLTO - Success
+-- Found pybind11: /usr/include (found version "3.0.0")
+-- Checking for one of the modules 'minizip'
+-- Unable to find installed third-party library 3rdparty_minizip
+CMake Warning (dev) at /usr/share/cmake/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+  The BUILD_COMMAND keyword was followed by an empty string or no value at
+  all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset the
+  ARG_BUILD_COMMAND variable rather than setting it to an empty string.
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+  /usr/share/cmake/Modules/FetchContent.cmake:2145 (cmake_language)
+  /usr/share/cmake/Modules/FetchContent.cmake:2384 (__FetchContent_Populate)
+  3rdparty/imgui/imgui.cmake:15 (FetchContent_MakeAvailable)
+  3rdparty/find_dependencies.cmake:1193 (include)
+  CMakeLists.txt:534 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/cmake/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+  The CONFIGURE_COMMAND keyword was followed by an empty string or no value
+  at all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset
+  the ARG_CONFIGURE_COMMAND variable rather than setting it to an empty
+  string.
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+  /usr/share/cmake/Modules/FetchContent.cmake:2145 (cmake_language)
+  /usr/share/cmake/Modules/FetchContent.cmake:2384 (__FetchContent_Populate)
+  3rdparty/imgui/imgui.cmake:15 (FetchContent_MakeAvailable)
+  3rdparty/find_dependencies.cmake:1193 (include)
+  CMakeLists.txt:534 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/cmake/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+  The INSTALL_COMMAND keyword was followed by an empty string or no value at
+  all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset the
+  ARG_INSTALL_COMMAND variable rather than setting it to an empty string.
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+  /usr/share/cmake/Modules/FetchContent.cmake:2145 (cmake_language)
+  /usr/share/cmake/Modules/FetchContent.cmake:2384 (__FetchContent_Populate)
+  3rdparty/imgui/imgui.cmake:15 (FetchContent_MakeAvailable)
+  3rdparty/find_dependencies.cmake:1193 (include)
+  CMakeLists.txt:534 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Setting RPATH for 3rdparty_imgui
+-- Using prebuilt third-party library Filament
+-- GLIBC version 2.42 found: Using Open3D Filament binary.
+-- Filament is located at /build/open3d/src/open3d/build/filament/src/ext_filament
+-- Searching /usr/lib/llvm-[7..19]/lib/ for libc++ and libc++abi
+-- Clang C++ libraries not found. Searching other paths...
+-- Using CLANG_LIBDIR: /usr/lib
+-- Filament C++ libraries: /usr/lib/libc++.so.1 /usr/lib/libc++abi.so.1.0
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Using installed third-party library 3rdparty_opengl 
+-- Checking for one of the modules 'libzmq'
+-- Using installed third-party library 3rdparty_zeromq 
+CMake Warning at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:168 (find_package):
+  By not providing "FindCLI11.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "CLI11", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "CLI11" with any of
+  the following names:
+
+    CLI11Config.cmake
+    cli11-config.cmake
+
+  Add the installation prefix of "CLI11" to CMAKE_PREFIX_PATH or set
+  "CLI11_DIR" to a directory containing one of the above files.  If "CLI11"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+-- Could not find the VTK package due to a missing dependency: CLI11
+CMake Warning at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:215 (find_package):
+  By not providing "FindQt6.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt6", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt6" (requested
+  version 6.9) with any of the following names:
+
+    Qt6Config.cmake
+    qt6-config.cmake
+
+  Add the installation prefix of "Qt6" to CMAKE_PREFIX_PATH or set "Qt6_DIR"
+  to a directory containing one of the above files.  If "Qt6" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt6
+-- Found OpenVR: /usr/lib/libopenvr_api.so
+-- Could NOT find anari (missing: anari_DIR)
+-- Could not find the VTK package due to a missing dependency: anari
+-- Found Python3: /usr/bin/python3.13 (found version "3.13.7") found components: Interpreter
+-- Found mpi4py: /usr/lib/python3.13/site-packages/mpi4py/include
+CMake Warning (dev) at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:450 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find Boost (missing: Boost_INCLUDE_DIR) (Required is exact version "1.88.0")
+-- Could not find the VTK package due to a missing dependency: Boost
+-- Could NOT find THEORA (missing: THEORA_LIBRARY THEORA_dec_LIBRARY THEORA_enc_LIBRARY THEORA_INCLUDE_DIR) 
+-- Could not find the VTK package due to a missing dependency: THEORA
+-- Could NOT find OGG (missing: OGG_LIBRARY OGG_INCLUDE_DIR) 
+-- Could not find the VTK package due to a missing dependency: OGG
+CMake Warning at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:638 (find_package):
+  By not providing "FindADIOS2.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "ADIOS2", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "ADIOS2" with any
+  of the following names:
+
+    ADIOS2Config.cmake
+    adios2-config.cmake
+
+  Add the installation prefix of "ADIOS2" to CMAKE_PREFIX_PATH or set
+  "ADIOS2_DIR" to a directory containing one of the above files.  If "ADIOS2"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+-- Could not find the VTK package due to a missing dependency: ADIOS2
+-- Found LibXml2: /usr/lib/libxml2.so (found version "2.14.5")
+-- Could NOT find LibHaru (missing: LibHaru_LIBRARY LibHaru_INCLUDE_DIR) (Required is at least version "2.4.0")
+-- Could not find the VTK package due to a missing dependency: LibHaru
+-- Could NOT find GL2PS (missing: GL2PS_LIBRARY GL2PS_INCLUDE_DIR) (Required is at least version "1.4.2")
+-- Could not find the VTK package due to a missing dependency: GL2PS
+-- Could NOT find NetCDF (missing: NetCDF_LIBRARY NetCDF_INCLUDE_DIR) 
+-- Could not find the VTK package due to a missing dependency: NetCDF
+-- Could NOT find CGNS: Found unsuitable version "CGNS_VERSION-NOTFOUND", but required is at least "4.10" (found CGNS_INCLUDE_DIR-NOTFOUND)
+-- Could not find the VTK package due to a missing dependency: CGNS
+-- Found JsonCpp: /usr/lib/libjsoncpp.so (found suitable version "1.9.6", minimum required is "0.7.0")
+-- Found HDF5: hdf5-shared (found version "1.14.6") found components: C HL
+CMake Warning (dev) at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:1061 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find Boost (missing: Boost_INCLUDE_DIR) (Required is exact version "1.88.0")
+-- Could not find the VTK package due to a missing dependency: Boost
+CMake Warning (dev) at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:1108 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find Boost (missing: Boost_INCLUDE_DIR serialization) (Required is exact version "1.88.0")
+-- Could not find the VTK package due to a missing dependency: Boost
+CMake Warning at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:1155 (find_package):
+  By not providing "FindQt6.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt6", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt6" (requested
+  version 6.9) with any of the following names:
+
+    Qt6Config.cmake
+    qt6-config.cmake
+
+  Add the installation prefix of "Qt6" to CMAKE_PREFIX_PATH or set "Qt6_DIR"
+  to a directory containing one of the above files.  If "Qt6" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt6
+CMake Warning at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:1202 (find_package):
+  By not providing "FindQt6.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt6", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt6" (requested
+  version 6.9) with any of the following names:
+
+    Qt6Config.cmake
+    qt6-config.cmake
+
+  Add the installation prefix of "Qt6" to CMAKE_PREFIX_PATH or set "Qt6_DIR"
+  to a directory containing one of the above files.  If "Qt6" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt6
+CMake Warning at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:1249 (find_package):
+  By not providing "FindQt6.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt6", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt6" (requested
+  version 6.9) with any of the following names:
+
+    Qt6Config.cmake
+    qt6-config.cmake
+
+  Add the installation prefix of "Qt6" to CMAKE_PREFIX_PATH or set "Qt6_DIR"
+  to a directory containing one of the above files.  If "Qt6" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+-- Could not find the VTK package due to a missing dependency: Qt6
+-- Could NOT find LibPROJ (missing: LibPROJ_LIBRARY LibPROJ_INCLUDE_DIR) 
+-- Could not find the VTK package due to a missing dependency: LibPROJ
+-- Found SQLite3: /usr/include (found version "3.50.4")
+-- Found MPI_C: /usr/lib/libmpi.so (found version "3.1")
+-- Found MPI: TRUE (found version "3.1") found components: C
+-- Found X11: /usr/include
+-- Found Python3: /usr/bin/python3.13 (found suitable version "3.13.7", minimum required is "3.13") found components: Interpreter Development.Module Development.Embed
+-- Found EXPAT: /usr/lib/libexpat.so (found suitable version "2.7.1", minimum required is "2.5.0")
+-- Found LZMA: /usr/lib/liblzma.so (found version "5.8.1")
+-- Found LZ4: /usr/lib/liblz4.so (found version "1.10.0")
+-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0")
+-- Found TIFF: /usr/lib/libtiff.so (found version "4.7.0")
+-- Found utf8cpp: /usr/include/utf8cpp
+-- Could NOT find freetype (missing: freetype_DIR)
+-- Could NOT find Freetype (missing: FREETYPE_LIBRARY FREETYPE_INCLUDE_DIRS) 
+-- Could not find the VTK package due to a missing dependency: Freetype
+CMake Warning at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:2236 (find_package):
+  By not providing "FindViskores.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Viskores",
+  but CMake did not find one.
+
+  Could not find a package configuration file provided by "Viskores"
+  (requested version 1.0.0) with any of the following names:
+
+    ViskoresConfig.cmake
+    viskores-config.cmake
+
+  Add the installation prefix of "Viskores" to CMAKE_PREFIX_PATH or set
+  "Viskores_DIR" to a directory containing one of the above files.  If
+  "Viskores" provides a separate development package or SDK, be sure it has
+  been installed.
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+-- Could not find the VTK package due to a missing dependency: Viskores
+-- Found double-conversion: /usr/lib/libdouble-conversion.so
+CMake Warning at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:2413 (find_package):
+  By not providing "FindFastFloat.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "FastFloat", but CMake did not find one.
+
+  Could not find a package configuration file provided by "FastFloat"
+  (requested version 8.0.2) with any of the following names:
+
+    FastFloatConfig.cmake
+    fastfloat-config.cmake
+
+  Add the installation prefix of "FastFloat" to CMAKE_PREFIX_PATH or set
+  "FastFloat_DIR" to a directory containing one of the above files.  If
+  "FastFloat" provides a separate development package or SDK, be sure it has
+  been installed.
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+-- Could not find the VTK package due to a missing dependency: FastFloat
+CMake Warning at /usr/lib/cmake/vtk/VTK-vtk-module-find-packages.cmake:2460 (find_package):
+  By not providing "Findnlohmann_json.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "nlohmann_json", but CMake did not find one.
+
+  Could not find a package configuration file provided by "nlohmann_json"
+  with any of the following names:
+
+    nlohmann_jsonConfig.cmake
+    nlohmann_json-config.cmake
+
+  Add the installation prefix of "nlohmann_json" to CMAKE_PREFIX_PATH or set
+  "nlohmann_json_DIR" to a directory containing one of the above files.  If
+  "nlohmann_json" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:170 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+-- Could not find the VTK package due to a missing dependency: nlohmann_json
+-- Using installed third-party library 3rdparty_vtk 9.5.0
+-- Using MKL to support BLAS and LAPACK functionalities.
+-- Using installed third-party library 3rdparty_tbb 2022.2.0
+-- Using Intel IPP 2021.11.0.
+-- Using installed third-party library 3rdparty_embree 4.4.0
+-- Setting RPATH for camera
+-- open3d_sycl_target_sources(core): PRIVATE
+-- Setting RPATH for core
+-- Setting RPATH for core_impl
+-- Setting RPATH for data
+-- Setting RPATH for geometry
+-- Setting RPATH for io
+-- Setting RPATH for ml_contrib
+-- Setting RPATH for pipelines
+-- Setting RPATH for tgeometry_kernel
+-- Setting RPATH for tgeometry
+-- Setting RPATH for tio
+-- Setting RPATH for tpipelines_kernel
+-- Setting RPATH for tpipelines
+-- Setting RPATH for utility
+-- Setting RPATH for visualization
+-- Setting RPATH for visualization_impl
+-- Setting RPATH for GUI
+-- Setting RPATH for webrtc_server
+-- Copying /build/open3d/src/open3d/cpp/open3d/visualization/webrtc_server/html to /build/open3d/src/open3d/build/bin/resources.
+-- Setting RPATH for Open3D
+-- Setting RPATH for ManuallyAlignPointCloud
+-- Setting RPATH for ConvertPointCloud
+-- Setting RPATH for GLInfo
+-- Setting RPATH for ManuallyCropGeometry
+-- Setting RPATH for MergeMesh
+-- Setting RPATH for ViewGeometry
+-- Setting RPATH for Open3DViewer
+-- Setting RPATH for OfflineReconstruction
+-- Setting RPATH for pybind
+-- PYPI_PACKAGE_NAME: open3d
+-- Setting RPATH for CameraPoseTrajectory
+-- Setting RPATH for ColorMapOptimization
+-- Setting RPATH for DepthCapture
+-- Setting RPATH for EvaluatePCDMatch
+-- Setting RPATH for FileDialog
+-- Setting RPATH for FileSystem
+-- Setting RPATH for Flann
+-- Setting RPATH for Image
+-- Setting RPATH for IntegrateRGBD
+-- Setting RPATH for ISSKeypoints
+-- Setting RPATH for PlanarPatchDetection
+-- Setting RPATH for LineSet
+-- Setting RPATH for Log
+-- Setting RPATH for Octree
+-- Setting RPATH for OdometryRGBD
+-- Setting RPATH for OpenMP
+-- Setting RPATH for PCDFileFormat
+-- Setting RPATH for PointCloud
+-- Setting RPATH for PoseGraph
+-- Setting RPATH for ProgramOptions
+-- Setting RPATH for GeneralizedICP
+-- Setting RPATH for RegistrationColoredICP
+-- Setting RPATH for RegistrationDopplerICP
+-- Setting RPATH for RegistrationRANSAC
+-- Setting RPATH for RegistrationFGR
+-- Setting RPATH for RGBDOdometry
+-- Setting RPATH for SLAC
+-- Setting RPATH for SLACIntegrate
+-- Setting RPATH for TIntegrateRGBD
+-- Setting RPATH for TOdometryRGBD
+-- Setting RPATH for TriangleMesh
+-- Setting RPATH for TrimMeshBasedOnPointCloud
+-- Setting RPATH for ViewDistances
+-- Setting RPATH for ViewPCDMatch
+-- Setting RPATH for Visualizer
+-- Setting RPATH for Voxelization
+-- Setting RPATH for Draw
+-- Setting RPATH for GaussianSplat
+-- Setting RPATH for MultipleWindows
+-- Setting RPATH for OffscreenRendering
+-- Setting RPATH for TICPSequential
+-- Setting RPATH for TICP
+-- Setting RPATH for OfflineSLAM
+-- Setting RPATH for OnlineSLAMRGBD
+-- Setting RPATH for OnlineSLAMRealSense
+-- Setting RPATH for DrawWebRTC
+-- Setting RPATH for RealSenseBagReader
+-- Setting RPATH for RealSenseRecorder
+-- ================================================================================
+-- Open3D 0.19.0 Configuration Summary
+-- ================================================================================
+-- Enabled Features:
+--   OpenMP .................................. ON
+--   Headless Rendering ...................... OFF
+--   Azure Kinect Support .................... OFF
+--   Intel RealSense Support ................. ON
+--   CUDA Support ............................ OFF
+--   SYCL Support ............................ OFF
+--   ISPC Support ............................ ON
+--   Build GUI ............................... ON
+--   Build WebRTC visualizer ................. ON
+--   Build Shared Library .................... ON
+--   Build Unit Tests ........................ OFF
+--   Build Examples .......................... ON
+--   Build Python Module ..................... ON
+--   Build Jupyter Extension ................. OFF
+--   Build TensorFlow Ops .................... OFF
+--   Build PyTorch Ops ....................... OFF
+--   Build Benchmarks ........................ OFF
+--   Bundle Open3D-ML ........................ OFF
+--   Force GLIBCXX_USE_CXX11_ABI= ............ 1
+-- ================================================================================
+-- Third-Party Dependencies:
+--   Assimp .................................. yes (v6.0.2)
+--   BLAS .................................... yes (build from source)
+--   curl .................................... yes
+--   Eigen3 .................................. yes (v3.4.0)
+--   filament ................................ yes (build from source)
+--   fmt ..................................... yes (v11.2.0)
+--   GLEW .................................... yes (v2.2.0)
+--   GLFW .................................... yes (v3.4.0)
+--   googletest .............................. no
+--   imgui ................................... yes (build from source)
+--   ipp ..................................... yes (build from source)
+--   JPEG .................................... yes (v80)
+--   jsoncpp ................................. yes
+--   liblzf .................................. yes (build from source)
+--   msgpack ................................. yes (build from source)
+--   nanoflann ............................... yes (v1.7.1)
+--   OpenGL .................................. yes
+--   PNG ..................................... yes (v1.6.50)
+--   qhullcpp ................................ yes (v8.0.2)
+--   librealsense ............................ yes (build from source)
+--   TBB ..................................... yes (v2022.2.0)
+--   tinyfiledialogs ......................... yes (build from source)
+--   TinyGLTF ................................ yes (build from source)
+--   tinyobjloader ........................... yes (build from source)
+--   VTK ..................................... yes (v9.5.0)
+--   WebRTC .................................. yes (build from source)
+--   ZeroMQ .................................. yes
+-- ================================================================================
+-- Configuring done (14.3s)
+CMake Error at /usr/lib/cmake/vtk/VTK-targets.cmake:138 (set_target_properties):
+  The link interface of target "VTK::nlohmannjson" contains:
+
+    nlohmann_json::nlohmann_json
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk/vtk-config.cmake:147 (include)
+  3rdparty/find_dependencies.cmake:304 (find_package)
+  3rdparty/find_dependencies.cmake:1489 (open3d_find_package_3rdparty_library)
+  CMakeLists.txt:534 (include)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "Open3D" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/CMakeLists.txt:137 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "camera" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/camera/CMakeLists.txt:12 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "core" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/core/CMakeLists.txt:155 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "core_impl" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/core/CMakeLists.txt:160 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "data" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/data/CMakeLists.txt:55 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "geometry" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/geometry/CMakeLists.txt:43 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "io" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/io/CMakeLists.txt:66 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "ml_contrib" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/ml/contrib/CMakeLists.txt:18 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "pipelines" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/pipelines/CMakeLists.txt:36 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "tgeometry" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/t/geometry/CMakeLists.txt:31 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "tgeometry_kernel" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/t/geometry/kernel/CMakeLists.txt:42 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "tio" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/t/io/CMakeLists.txt:38 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "tpipelines" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/t/pipelines/CMakeLists.txt:28 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "tpipelines_kernel" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/t/pipelines/kernel/CMakeLists.txt:30 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "utility" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/utility/CMakeLists.txt:31 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "visualization" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/visualization/CMakeLists.txt:144 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "visualization_impl" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/visualization/CMakeLists.txt:149 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "GUI" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/visualization/gui/CMakeLists.txt:65 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "webrtc_server" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/open3d/visualization/webrtc_server/CMakeLists.txt:23 (open3d_link_3rdparty_libraries)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "Open3DViewer" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/apps/CMakeLists.txt:138 (open3d_link_3rdparty_libraries)
+  cpp/apps/CMakeLists.txt:144 (open3d_add_app_common)
+
+
+CMake Error at cmake/Open3DLink3rdpartyLibraries.cmake:7 (target_link_libraries):
+  Target "OfflineReconstruction" links to:
+
+    Open3D::3rdparty_minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  cpp/apps/CMakeLists.txt:138 (open3d_link_3rdparty_libraries)
+  cpp/apps/CMakeLists.txt:148 (open3d_add_app_common)
+
+
+-- Generating done (0.2s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    USE_SYSTEM_LZF
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

@@ -1,0 +1,31 @@
+patching file CMakeLists.txt
+patching file metis/CMakeLists.txt
+patching file libparmetis/CMakeLists.txt
+patching file metis/libmetis/CMakeLists.txt
+patching file CMakeLists.txt
+patching file libparmetis/CMakeLists.txt
+patching file programs/CMakeLists.txt
+rm -rf build/Linux-x86_64
+mkdir -p build/Linux-x86_64
+cd build/Linux-x86_64 && cmake /build/parmetis/src/parmetis-4.0.3 -DCMAKE_SHARED_LINKER_FLAGS=-lGKlib -Wl,-z,relro,-z,now -DCMAKE_EXE_LINKER_FLAGS=-lGKlib -Wl,-z,relro,-z,now -DCMAKE_SKIP_RPATH=ON -DGKLIB_PATH=/build/parmetis/src/parmetis-4.0.3/metis/GKlib -DMETIS_PATH=/build/parmetis/src/parmetis-4.0.3/metis -DCMAKE_INSTALL_PREFIX=/usr -DSHARED=1 -DCMAKE_C_COMPILER=mpicc -DCMAKE_CXX_COMPILER=mpicxx
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/mpicc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/mpicxx - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for execinfo.h
+-- Looking for execinfo.h - found
+-- Looking for getline
+-- Looking for getline - found
+-- checking for thread-local storage - found
+STATUS,Using already installed metis
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/parmetis/src/parmetis-4.0.3/build/Linux-x86_64

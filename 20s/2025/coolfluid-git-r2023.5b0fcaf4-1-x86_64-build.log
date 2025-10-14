@@ -1,0 +1,3582 @@
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The Fortran compiler identification is GNU 15.2.1
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Check for working Fortran compiler: /usr/bin/gfortran - skipped
+-- CMAKE_INSTALL_PREFIX [/usr]
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-- Checking compiler features:
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-- +++++  Checking sizes of types
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of void *
+-- Check size of void * - done
+-- Check size of char
+-- Check size of char - done
+-- Check size of short
+-- Check size of short - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of float
+-- Check size of float - done
+-- Check size of double
+-- Check size of double - done
+-- Check size of long double
+-- Check size of long double - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of long long
+-- Check size of long long - done
+-- +++++  Checking MPI support
+-- Performing Test CF_MPI_COMPILER_AVAILABLE
+-- Performing Test CF_MPI_COMPILER_AVAILABLE - Failed
+-- No MPI C++ compiler was set. Searching for MPI libraries...
+-- ## MPI TRIAL_INCLUDE_PATHS: []
+-- CF_MPI_AVAILABLE: [1]
+-- +++++  Checking C++ compiler has namespaces
+-- Performing Test CF_CXX_HAVE_NAMESPACES
+-- Performing Test CF_CXX_HAVE_NAMESPACES - Success
+-- +++++  Checking for __FUNCTION__ support
+-- Performing Test CF_HAVE_FUNCTION_DEF
+-- Performing Test CF_HAVE_FUNCTION_DEF - Success
+-- +++++  Checking support for C++ explicit template instantiation -- yes
+-- +++++  Checking for mmap support
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for munmap
+-- Looking for munmap - found
+-- Looking for mremap
+-- Looking for mremap - found
+-- +++++  Checking for vsnprintf function
+-- Looking for vsnprintf
+-- Looking for vsnprintf - found
+-- +++++  Checking for erfc function
+-- Performing Test CF_HAVE_MATH_ERFC
+-- Performing Test CF_HAVE_MATH_ERFC - Success
+-- +++++  Checking for asinh function
+-- Performing Test CF_HAVE_MATH_ASINH
+-- Performing Test CF_HAVE_MATH_ASINH - Success
+-- +++++  Checking for acosh function
+-- Performing Test CF_HAVE_MATH_ACOSH
+-- Performing Test CF_HAVE_MATH_ACOSH - Success
+-- +++++  Checking for atanh function
+-- Performing Test CF_HAVE_MATH_ATANH
+-- Performing Test CF_HAVE_MATH_ATANH - Success
+-- +++++  Checking for the POSIX unistd.h header
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- +++++  Checking for cxxabi
+-- Performing Test CF_HAVE_CXXABI_H
+-- Performing Test CF_HAVE_CXXABI_H - Success
+-- +++++  Checking for headers with time information
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for time.h
+-- Looking for time.h - found
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- +++++  Checking for the dlfcn.h header
+-- Looking for C++ include dlfcn.h
+-- Looking for C++ include dlfcn.h - found
+-- Performing Test C_FLAG_TEST_1
+-- Performing Test C_FLAG_TEST_1 - Success
+-- C FLAG [-pipe] added
+-- Performing Test CXX_FLAG_TEST_1
+-- Performing Test CXX_FLAG_TEST_1 - Success
+-- C++ FLAG [-pipe] added
+-- Performing Test C_FLAG_TEST_2
+-- Performing Test C_FLAG_TEST_2 - Success
+-- C FLAG [-ansi] added
+-- Performing Test CXX_FLAG_TEST_2
+-- Performing Test CXX_FLAG_TEST_2 - Success
+-- C++ FLAG [-std=c++98] added
+-- Performing Test CXX_FLAG_TEST_3
+-- Performing Test CXX_FLAG_TEST_3 - Success
+-- C++ FLAG [-fno-gnu-keywords] added
+-- Performing Test CXX_FLAG_TEST_4
+-- Performing Test CXX_FLAG_TEST_4 - Success
+-- C++ FLAG [-Wno-dev] added
+-- Performing Test C_FLAG_TEST_3
+-- Performing Test C_FLAG_TEST_3 - Success
+-- C FLAG [-fno-common] added
+-- Performing Test CXX_FLAG_TEST_5
+-- Performing Test CXX_FLAG_TEST_5 - Success
+-- C++ FLAG [-fno-common] added
+-- Performing Test CXX_FLAG_TEST_6
+-- Performing Test CXX_FLAG_TEST_6 - Success
+-- C++ FLAG [-Wall] added
+-- Performing Test CXX_FLAG_TEST_7
+-- Performing Test CXX_FLAG_TEST_7 - Success
+-- C++ FLAG [-Wno-unused-parameter] added
+-- Performing Test CXX_FLAG_TEST_8
+-- Performing Test CXX_FLAG_TEST_8 - Success
+-- C++ FLAG [-Wno-missing-field-initializers] added
+-- Performing Test CXX_FLAG_TEST_9
+-- Performing Test CXX_FLAG_TEST_9 - Success
+-- C++ FLAG [-Wno-enum-compare] added
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-- General Configuration 
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Boost version: 1.88.0
+-- Found the following Boost libraries:
+--   thread
+--   filesystem
+--   system
+-- Boost include path [/usr/include]
+-- Boost lib version  [1_88]
+-- Boost libraries    [/usr/lib/libboost_thread.so;/usr/lib/libboost_filesystem.so;/usr/lib/libboost_system.so]
+-- CF_HAVE_METIS: [1]
+CMake Error at cmake/FindParmetis.cmake:37 (FIND_LIBRARY):
+  FIND_LIBRARY called with incorrect number of arguments
+Call Stack (most recent call first):
+  CMakeLists.txt:341 (FIND_PACKAGE)
+
+
+CMake Error at cmake/FindParmetis.cmake:43 (FIND_LIBRARY):
+  FIND_LIBRARY called with incorrect number of arguments
+Call Stack (most recent call first):
+  CMakeLists.txt:341 (FIND_PACKAGE)
+
+
+-- CF_HAVE_PARMETIS: [0]
+-- CF_HAVE_VALGRIND: [0]
+-- CF_HAVE_GOOGLE_PERFTOOLS: [0]
+-- ## MPI TRIAL_INCLUDE_PATHS: []
+-- CF_MPI_AVAILABLE: [1]
+--   MPI_INCLUDE_DIR   : [/usr/include]
+--   MPI_LIBRARY        : [/lib/libmpi.so]
+--   MPICXX_LIBRARY     : [MPICXX_LIBRARY-NOTFOUND]
+--   MPI_EXTRA_LIBS     : []
+--   MPI_LIBRARIES      : [/lib/libmpi.so;/lib/libmpi.so]
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- ZLIB_FOUND: [TRUE]
+--   ZLIB_INCLUDE_DIRS: [/usr/include]
+--   ZLIB_LIBRARIES:    [/usr/lib/libz.so]
+-- Found BZip2: /usr/lib/libbz2.so (found version "1.0.8")
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- BZIP2_FOUND: [TRUE]
+--   BZIP2_INCLUDE_DIR:  [/usr/include]
+--   BZIP2_LIBRARIES:    [/usr/lib/libbz2.so]
+--   BZIP2_DEFINITIONS:  []
+--   BZIP2_NEED_PREFIX:  [1]
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-- Kernel Configuration 
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "logcpp".
+Call Stack (most recent call first):
+  cmake/macros/CFAddKernelLibrary.cmake:9 (CF_ADD_LIBRARY)
+  src/logcpp/CMakeLists.txt:80 (CF_ADD_KERNEL_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Common".
+Call Stack (most recent call first):
+  cmake/macros/CFAddKernelLibrary.cmake:9 (CF_ADD_LIBRARY)
+  src/Common/CMakeLists.txt:294 (CF_ADD_KERNEL_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Config".
+Call Stack (most recent call first):
+  cmake/macros/CFAddKernelLibrary.cmake:9 (CF_ADD_LIBRARY)
+  src/Config/CMakeLists.txt:57 (CF_ADD_KERNEL_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Environment".
+Call Stack (most recent call first):
+  cmake/macros/CFAddKernelLibrary.cmake:9 (CF_ADD_LIBRARY)
+  src/Environment/CMakeLists.txt:59 (CF_ADD_KERNEL_LIBRARY)
+
+
+-- Performing Test CF_HAVE_BOOST_ERFC
+-- Performing Test CF_HAVE_BOOST_ERFC - Failed
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MathTools".
+Call Stack (most recent call first):
+  cmake/macros/CFAddKernelLibrary.cmake:9 (CF_ADD_LIBRARY)
+  src/MathTools/CMakeLists.txt:74 (CF_ADD_KERNEL_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Framework".
+Call Stack (most recent call first):
+  cmake/macros/CFAddKernelLibrary.cmake:9 (CF_ADD_LIBRARY)
+  src/Framework/CMakeLists.txt:618 (CF_ADD_KERNEL_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ShapeFunctions".
+Call Stack (most recent call first):
+  cmake/macros/CFAddKernelLibrary.cmake:9 (CF_ADD_LIBRARY)
+  src/ShapeFunctions/CMakeLists.txt:213 (CF_ADD_KERNEL_LIBRARY)
+
+
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-- Plugin's Configuration 
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+###### coolfluid_solver_exe is /build/coolfluid-git/src/build/apps/Solver/coolfluid-solver
+-- CF_HAVE_BLITZ: [0]
+-- CF_HAVE_CBLAS: [1]
+-- CF_HAVE_FLENS: [0]
+-- CF_HAVE_TVMET: [0]
+-- CF_HAVE_CGNS: [0]
+-- CF_HAVE_GET: [0]
+-- CF_HAVE_LESMODELS: [0]
+-- CF_HAVE_PARALUTION: [0]
+-- CF_HAVE_PARDISO: [0]
+CMake Error at plugins/Petsc/FindPetsc.cmake:43 (FIND_LIBRARY):
+  FIND_LIBRARY called with incorrect number of arguments
+Call Stack (most recent call first):
+  plugins/CMakeLists.txt:34 (INCLUDE)
+
+
+-- CF_HAVE_PETSC: [0]
+-- CF_HAVE_SAMG: [0]
+-- CF_HAVE_TRILINOS: [0]
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ATDModel".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ATDModel/CMakeLists.txt:10 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AeroCoef".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:8 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AeroCoefFS".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:33 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AeroCoefFVM".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:56 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AeroCoefFVMNEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:69 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "DataProcessingHeat".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:82 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AeroCoefFR".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:96 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AeroCoefSpectralFD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:112 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AeroCoefDG".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:126 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AeroCoefSpectralFV".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:139 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AeroCoefFRNEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AeroCoef/CMakeLists.txt:152 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AnalyticalEE".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AnalyticalEE/CMakeLists.txt:22 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "AnalyticalModel".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/AnalyticalModel/CMakeLists.txt:9 (CF_ADD_PLUGIN_LIBRARY)
+
+
+--     APP : [test_analyticaldm]
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ArcJet".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ArcJet/CMakeLists.txt:38 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ArcJetSALTE".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ArcJet/CMakeLists.txt:51 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "BackwardEuler".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/BackwardEuler/CMakeLists.txt:17 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "BackwardEulerMHD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/BackwardEuler/CMakeLists.txt:35 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Burgers".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Burgers/CMakeLists.txt:18 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off (plugins/Burgers/testcases//burgersFS.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ForwardEuler THOR2CFmesh FluctSplit FluctSplitScalar Burgers
+  THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/Burgers/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off (plugins/Burgers/testcases//burgersFSCRD.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ForwardEuler THOR2CFmesh FluctSplit FluctSplitScalar Burgers
+  THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/Burgers/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/Burgers/testcases//burgersFSHOCRD_BT.CFcase) because the following
+  libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  ForwardEuler THOR2CFmesh FluctSplit Burgers THOR2CFmesh FluctSplitHO
+  FluctSplitScalar
+Call Stack (most recent call first):
+  plugins/Burgers/testcases/CMakeLists.txt:3 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off (plugins/Burgers/testcases//burgersFSQDPert.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ForwardEuler THOR2CFmesh FluctSplit FluctSplitScalar Burgers
+  THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/Burgers/testcases/CMakeLists.txt:4 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/Burgers/testcases//burgersFS_SpaceTime.CFcase) because the
+  following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NewtonMethod THOR2CFmesh FluctSplit FluctSplitScalar
+  FluctSplitSpaceTime Burgers
+Call Stack (most recent call first):
+  plugins/Burgers/testcases/CMakeLists.txt:5 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off (plugins/Burgers/testcases//burgersFVM.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ForwardEuler THOR2CFmesh FiniteVolume Burgers THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/Burgers/testcases/CMakeLists.txt:6 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/Burgers/testcases//burgersFVMQDPert.CFcase) because the following
+  libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  ForwardEuler THOR2CFmesh FiniteVolume Burgers THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/Burgers/testcases/CMakeLists.txt:7 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "CFmeshCellSplitter".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/CFmeshCellSplitter/CMakeLists.txt:21 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "CFmeshExtruder".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/CFmeshExtruder/CMakeLists.txt:23 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "CFmeshFileReader".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/CFmeshFileReader/CMakeLists.txt:63 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "CFmeshFileWriter".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/CFmeshFileWriter/CMakeLists.txt:42 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Catalycity".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Catalycity/CMakeLists.txt:8 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "CH4".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Chemistry/CH4/CMakeLists.txt:18 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ConcurrentCoupler".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ConcurrentCoupler/CMakeLists.txt:17 (CF_ADD_PLUGIN_LIBRARY)
+
+
+--     APP : [ConvertStructMesh]
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "DiscontGalerkin".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/DiscontGalerkin/CMakeLists.txt:57 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Dpl2CFmesh".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Dpl2CFmesh/CMakeLists.txt:10 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "EmptyConvergenceMethod".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/EmptyConvergenceMethod/CMakeLists.txt:14 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "EmptySpaceMethod".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/EmptySpaceMethod/CMakeLists.txt:20 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ExplicitFilters".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ExplicitFilters/CMakeLists.txt:42 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FAST2CFmesh".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FAST2CFmesh/CMakeLists.txt:8 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteElement".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteElement/CMakeLists.txt:129 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteElementHeat".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteElement/CMakeLists.txt:148 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteElementStructMech".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteElement/CMakeLists.txt:173 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteElementStructMechHeat".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteElement/CMakeLists.txt:194 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteElementChemistry".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteElement/CMakeLists.txt:207 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolume".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolume/CMakeLists.txt:399 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteVolumeAdvectionDiffusion".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeAdvectionDiffusion/CMakeLists.txt:9 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeArcJet".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeArcJet/CMakeLists.txt:27 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteVolumeCombustion".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeCombustion/CMakeLists.txt:13 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeGReKO".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeGReKO/CMakeLists.txt:29 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeICP".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeICP/CMakeLists.txt:48 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeICPNEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeICP/CMakeLists.txt:49 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeMHD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeMHD/CMakeLists.txt:128 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteVolumeMaxwell".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeMaxwell/CMakeLists.txt:86 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteVolumeMultiFluidMHD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeMultiFluidMHD/CMakeLists.txt:173 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeNEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeNEQ/CMakeLists.txt:106 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteVolumeNavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeNavierStokes/CMakeLists.txt:266 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeLTE".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeNavierStokes/CMakeLists.txt:278 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteVolumePoisson".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumePoisson/CMakeLists.txt:14 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FiniteVolumePoissonNEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumePoissonNEQ/CMakeLists.txt:17 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeTU".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeTU/CMakeLists.txt:12 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeSA".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeTurb/CMakeLists.txt:46 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FiniteVolumeKOmega".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FiniteVolumeTurb/CMakeLists.txt:47 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitMeta".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/MetaSchemes/CMakeLists.txt:33 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitLinEuler".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/LinEuler/CMakeLists.txt:117 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitRANS".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/RANS/CMakeLists.txt:32 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluctSplitNavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:155 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluctSplitAdvectionDiffusion".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:184 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluctSplitRotationDiffusion".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:201 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluctSplitSpaceTimeNavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:278 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitMHD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:333 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplit".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:541 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluctSplitSpaceTime".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:695 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitSystem".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:749 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitScalar".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:790 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitHO".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:836 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitLES".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:856 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitPoisson".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/CMakeLists.txt:868 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluctSplitHONavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplit/HONavierStokes/CMakeLists.txt:56 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "FluctSplitNEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluctSplitNEQ/CMakeLists.txt:34 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionHyperPoisson".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionHyperPoisson/CMakeLists.txt:14 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionMHD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionMHD/CMakeLists.txt:46 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionMethod".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionMethod/CMakeLists.txt:506 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionMultiFluidMHD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionMultiFluidMHD/CMakeLists.txt:59 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionNEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionNEQ/CMakeLists.txt:12 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionNavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionNavierStokes/CMakeLists.txt:95 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionPoisson".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionPoisson/CMakeLists.txt:18 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionSA".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionTurb/CMakeLists.txt:63 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionKOmega".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionTurb/CMakeLists.txt:64 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionGReKO".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionTurb/CMakeLists.txt:65 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "FluxReconstructionGammaAlpha".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/FluxReconstructionTurb/CMakeLists.txt:66 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ForwardEuler".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ForwardEuler/CMakeLists.txt:42 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "GReKO".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/GReKO/CMakeLists.txt:71 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off (plugins/GReKO/testcases/Cone/cone.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes GReKO FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeGReKO MeshTools MeshToolsFVM
+  Gambit2CFmesh PetscI AeroCoefFVM
+Call Stack (most recent call first):
+  plugins/GReKO/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Gambit2CFmesh".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Gambit2CFmesh/CMakeLists.txt:16 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "GammaAlpha".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/GammaAlpha/CMakeLists.txt:42 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Gmsh2CFmesh".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Gmsh2CFmesh/CMakeLists.txt:16 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Heat".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Heat/CMakeLists.txt:37 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "HessianEE".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/HessianEE/CMakeLists.txt:24 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "HyperPoisson".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/HyperPoisson/CMakeLists.txt:16 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/HyperPoisson/testcases/Dipole/HyperPoissonFRBwdEuler.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter TecplotWriter CGNSWriter HyperPoisson
+  FluxReconstructionMethod FluxReconstructionHyperPoisson BackwardEuler
+  PetscI NewtonMethod AnalyticalModel
+Call Stack (most recent call first):
+  plugins/HyperPoisson/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/HyperPoisson/testcases/Quadrupole/HyperPoissonFRBwdEuler.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter TecplotWriter CGNSWriter HyperPoisson
+  FluxReconstructionMethod FluxReconstructionHyperPoisson BackwardEuler
+  PetscI NewtonMethod AnalyticalModel
+Call Stack (most recent call first):
+  plugins/HyperPoisson/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/HyperPoisson/testcases/Map/HyperPoissonFRBwdEuler.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter TecplotWriter CGNSWriter HyperPoisson
+  FluxReconstructionMethod FluxReconstructionHyperPoisson BackwardEuler
+  PetscI NewtonMethod AnalyticalModel
+Call Stack (most recent call first):
+  plugins/HyperPoisson/testcases/CMakeLists.txt:3 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ICP".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ICP/CMakeLists.txt:24 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ICPNEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ICP/CMakeLists.txt:51 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/ICP_EQProbe_Step1_Torch_NoElectricField/ICP_EQProbe_Step1_Torch_NoElectricField.CFcase)
+  because the following libs are missing: ShapeFunctions PetscI TecplotWriter
+  ParaViewWriter NavierStokes Mutation MutationI MutationppI ICP LTE
+  FiniteVolume FiniteVolumeNavierStokes FiniteVolumeICP NewtonMethod
+  Gambit2CFmesh CFmeshFileReader CFmeshFileWriter AeroCoefFVM AeroCoefFVM
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/ICP_EQProbe_Step2_Torch_ElectricField/ICP_EQProbe_Step2_Torch_ElectricField.CFcase)
+  because the following libs are missing: ShapeFunctions PetscI TecplotWriter
+  ParaViewWriter NavierStokes Mutation MutationI MutationppI ICP LTE
+  FiniteVolume FiniteVolumeNavierStokes FiniteVolumeICP NewtonMethod
+  Gambit2CFmesh CFmeshFileReader CFmeshFileWriter AeroCoefFVM AeroCoefFVM
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/ICP_EQProbe_Step4_FullDomain_1stOrder/ICP_EQProbe_Step4_FullDomain_1stOrder.CFcase)
+  because the following libs are missing: ShapeFunctions PetscI TecplotWriter
+  ParaViewWriter NavierStokes Mutation MutationI MutationppI ICP LTE
+  FiniteVolume FiniteVolumeNavierStokes FiniteVolumeICP NewtonMethod
+  Gambit2CFmesh CFmeshFileReader CFmeshFileWriter AeroCoefFVM AeroCoefFVM
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:3 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/ICP_EQProbe_Step5_FullDomain_2ndOrder/ICP_EQProbe_Step5_FullDomain_2ndOrder.CFcase)
+  because the following libs are missing: ShapeFunctions PetscI TecplotWriter
+  ParaViewWriter NavierStokes Mutation MutationI MutationppI ICP LTE
+  FiniteVolume FiniteVolumeNavierStokes FiniteVolumeICP NewtonMethod
+  Gambit2CFmesh CFmeshFileReader CFmeshFileWriter AeroCoefFVM AeroCoefFVM
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:4 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/TorchNEQ/torch_air11_PLATO_2nd_Pivt.CFcase) because
+  the following libs are missing: PetscI TecplotWriter NavierStokes PlatoI
+  LTE NEQ ICP ICPNEQ FiniteVolume FiniteVolumeNavierStokes FiniteVolumeNEQ
+  FiniteVolumeICP FiniteVolumeICPNEQ NewtonMethod Gambit2CFmesh
+  CFmeshFileReader CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:5 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/TorchNEQ/torch_air11_PLATO.CFcase) because the
+  following libs are missing: PetscI TecplotWriter NavierStokes PlatoI LTE
+  NEQ ICP ICPNEQ FiniteVolume FiniteVolumeNavierStokes FiniteVolumeNEQ
+  FiniteVolumeICP FiniteVolumeICPNEQ NewtonMethod Gambit2CFmesh
+  CFmeshFileReader CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:6 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/TorchNEQ/torchDavidNEQparkair11_30000Pa_MPP_Pivt_1T.CFcase)
+  because the following libs are missing: PetscI TecplotWriter NavierStokes
+  MutationppI LTE NEQ ICP ICPNEQ FiniteVolume FiniteVolumeNavierStokes
+  FiniteVolumeNEQ FiniteVolumeICP FiniteVolumeICPNEQ NewtonMethod
+  Gambit2CFmesh CFmeshFileReader CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:7 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/TorchNEQ/torchDavidNEQparkair11_30000Pa_MPP_Pivt_2T.CFcase)
+  because the following libs are missing: PetscI TecplotWriter NavierStokes
+  MutationppI LTE NEQ ICP ICPNEQ FiniteVolume FiniteVolumeNavierStokes
+  FiniteVolumeNEQ FiniteVolumeICP FiniteVolumeICPNEQ NewtonMethod
+  Gambit2CFmesh CFmeshFileReader CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:8 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/Plasmatron/Chamber/restart_chamber_2ndOrder_Mutation++.CFcase)
+  because the following libs are missing: PetscI TecplotWriter NavierStokes
+  MutationppI LTE ICP FiniteVolume FiniteVolumeNavierStokes FiniteVolumeICP
+  NewtonMethod Gambit2CFmesh CFmeshFileReader CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:9 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/Plasmatron/Chamber/restart_chamber_2ndOrder_MUT2.CFcase)
+  because the following libs are missing: PetscI TecplotWriter NavierStokes
+  Mutation2OLD Mutation2OLDI LTE ICP FiniteVolume FiniteVolumeNavierStokes
+  FiniteVolumeICP NewtonMethod Gambit2CFmesh CFmeshFileReader
+  CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:10 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/Plasmatron/Chamber/restart_chamber_2ndOrder_MUT2_coupled.CFcase)
+  because the following libs are missing: PetscI TecplotWriter NavierStokes
+  Mutation2OLD Mutation2OLDI LTE ICP FiniteVolume FiniteVolumeNavierStokes
+  FiniteVolumeICP NewtonMethod Gambit2CFmesh CFmeshFileReader
+  CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:11 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/Plasmatron/Chamber/restart_chamber_2ndOrder_AUSM.CFcase)
+  because the following libs are missing: PetscI TecplotWriter NavierStokes
+  Mutation2OLD Mutation2OLDI LTE ICP FiniteVolume FiniteVolumeNavierStokes
+  FiniteVolumeICP NewtonMethod Gambit2CFmesh CFmeshFileReader
+  CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:12 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/ICP/testcases/Plasmatron/Chamber/restart_chamber_2ndOrder_AUSM_coupled.CFcase)
+  because the following libs are missing: PetscI TecplotWriter NavierStokes
+  Mutation2OLD Mutation2OLDI LTE ICP FiniteVolume FiniteVolumeNavierStokes
+  FiniteVolumeICP NewtonMethod Gambit2CFmesh CFmeshFileReader
+  CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/ICP/testcases/CMakeLists.txt:13 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "KOmega".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/KOmega/CMakeLists.txt:84 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/KOmega/testcases/FlatPlate/flatPlateFVMImplKOmegaBSL_dim_Re75e4.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes KOmega FiniteVolume
+  NewtonMethod FiniteVolumeNavierStokes FiniteVolumeKOmega AeroCoefFVM
+  MeshTools MeshToolsFVM SA FiniteVolumeSA THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/KOmega/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/KOmega/testcases/FlatPlate/flatPlateFVMImplKOmegaBSL_dim_Re75e4_decoupled.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes KOmega FiniteVolume
+  NewtonMethod FiniteVolumeNavierStokes FiniteVolumeKOmega AeroCoefFVM
+  MeshTools MeshToolsFVM SA FiniteVolumeSA THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/KOmega/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "LESvki".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/LESvki/CMakeLists.txt:42 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "LTE".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/LTE/CMakeLists.txt:57 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "LUSGSMethod".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/LUSGSMethod/CMakeLists.txt:52 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "LagrangianSolver".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/LagrangianSolver/CMakeLists.txt:18 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "LinEuler".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/LinEuler/CMakeLists.txt:33 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "LinearAdv".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/LinearAdv/CMakeLists.txt:40 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/Advect3D/cube2-coarse-tetra.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ForwardEuler THOR2CFmesh FluctSplit FluctSplitScalar
+  LinearAdv THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/Advect3D/cube2-coarse-tetraFVM.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter LinearAdv FiniteVolume ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/Advect3D/cube2-coarse-tetraFVMImpl.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter LinearAdv FiniteVolume BackwardEuler
+  THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:3 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/Advect3D/cube2-coarse-hybrid.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ForwardEuler THOR2CFmesh FluctSplit FluctSplitScalar
+  LinearAdv THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:4 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/Advect3D/cube2-coarse-hybridFVMImpl.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter LinearAdv FiniteVolume BackwardEuler
+  THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:5 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/AdvectSinusWave/advectSWFVM.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ForwardEuler THOR2CFmesh FiniteVolume LinearAdv THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:6 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/AdvectSinusWave/advectSWImpl_2meshdata.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter BackwardEuler FluctSplit FluctSplitScalar LinearAdv
+  THOR2CFmesh FiniteVolume PetscI NewtonMethod
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:7 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/AdvecDiff/advectdiffSWFSCRD.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ForwardEuler THOR2CFmesh FluctSplit FluctSplitScalar
+  LinearAdv FluctSplitAdvectionDiffusion
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:8 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/AdvecDiff/advectdiffSWFVM.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  ForwardEuler THOR2CFmesh FiniteVolume LinearAdv
+  FiniteVolumeAdvectionDiffusion THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:9 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/AdvecDiff/advectdiffSWFVMImpl.CFcase) because
+  the following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ParaViewWriter NewtonMethod THOR2CFmesh FiniteVolume
+  LinearAdv FiniteVolumeAdvectionDiffusion THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:10 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/LinearAdv/testcases/AdvecDiff/advectdiffSWFVMImplBDF2.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NewtonMethod THOR2CFmesh FiniteVolume
+  LinearAdv FiniteVolumeAdvectionDiffusion THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/LinearAdv/testcases/CMakeLists.txt:11 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "LinearAdvSys".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/LinearAdvSys/CMakeLists.txt:41 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MHD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MHD/CMakeLists.txt:164 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MHD/testcases/Nozzle/nozzleMHDProjFluctSplitCRD.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter MHD ForwardEuler FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime FluctSplitMHD THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/MHD/testcases/CMakeLists.txt:38 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MHD/testcases/Nozzle/nozzleFVMMHDPowell.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  MHD FiniteVolume FiniteVolumeMHD ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/MHD/testcases/CMakeLists.txt:39 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MHD/testcases/Nozzle/nozzleFVMMHDProjImpl.CFcase) because the
+  following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter MHD FiniteVolume FiniteVolumeMHD BackwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/MHD/testcases/CMakeLists.txt:42 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MHD/testcases/Nozzle/nozzleFVMMHDProjImplPRIM.CFcase) because the
+  following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter MHD FiniteVolume FiniteVolumeMHD NewtonMethod THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/MHD/testcases/CMakeLists.txt:43 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MHD/testcases/Wedge/wedgeFVMMHDProj.CFcase) because the following
+  libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter MHD
+  FiniteVolume FiniteVolumeMHD ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/MHD/testcases/CMakeLists.txt:74 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MHD/testcases/Wedge/wedgeFVMMHDProjImpl.CFcase) because the
+  following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter MHD FiniteVolume FiniteVolumeMHD BackwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/MHD/testcases/CMakeLists.txt:75 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MarcoTest".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MarcoTest/CMakeLists.txt:20 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "MatrixStabilityMethodWriter".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MatrixStabilityMethodWriter/CMakeLists.txt:18 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Maxwell".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Maxwell/CMakeLists.txt:75 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "MeshAdapterSpringAnalogy".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MeshAdapterSpringAnalogy/CMakeLists.txt:26 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MeshFEMMove".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MeshFEMMove/CMakeLists.txt:32 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MeshGenerator1D".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MeshGenerator1D/CMakeLists.txt:8 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "MeshLaplacianSmoothing".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MeshLaplacianSmoothing/CMakeLists.txt:18 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MeshRigidMove".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MeshRigidMove/CMakeLists.txt:30 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MeshTools".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MeshTools/CMakeLists.txt:23 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MeshToolsFVM".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MeshTools/CMakeLists.txt:42 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MeshToolsFR".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MeshTools/CMakeLists.txt:55 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "MultiFluidMHD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/MultiFluidMHD/CMakeLists.txt:84 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/1_HartmannFlow/hartmannRegressionTest.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter NavierStokes Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI TecplotWriter
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:4 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/2_MagneticReconnection/reconnectionPsi05RegressionTest.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter NavierStokes Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:5 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/3_Chromostrat/UNSTEADYCASE_KhMagneticFieldRegressionTest.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter NavierStokes Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:6 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/4_ChromostratExtended/UNSTEADYCASE_KhMagneticFieldRegressionTest.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter NavierStokes Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:7 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/5_GEMchallenge/GEM_2DHalf_test_PETSC_GPU.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD Gambit2CFmesh ForwardEuler
+  PetscI FiniteVolumeCUDA
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:9 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/5_GEMchallenge/GEM_2DHalf_test_PARALUTION_GPU.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD Gambit2CFmesh ForwardEuler
+  ParalutionI FiniteVolumeCUDAParalution
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:10 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/6_OrszagTang/OrszagTangBenchMark.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter NavierStokes Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:11 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/8_MHDRotor/RotorBenchMark_400x400.CFcase)
+  because the following libs are missing: ShapeFunctions CFmeshFileReader
+  CFmeshFileWriter TecplotWriter NavierStokes Maxwell MultiFluidMHD
+  FiniteVolume NewtonMethod FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:12 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/8_MHDRotor/RotorBenchMark_MeFiAlgo.CFcase)
+  because the following libs are missing: ShapeFunctions CFmeshFileReader
+  CFmeshFileWriter TecplotWriter NavierStokes Maxwell MultiFluidMHD
+  FiniteVolume NewtonMethod FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:13 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/9_VortexAccuracy/VortexBenchMark_25x25.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter NavierStokes Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:14 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/10_SodTube/1_SodTube.CFcase) because the
+  following libs are missing: CFmeshFileReader CFmeshFileWriter TecplotWriter
+  NavierStokes Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:15 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/14_Chromo_Waves_dynVisc_therm_Cond/Unsteady_Kh_dynVisc_reg_test.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter NavierStokes Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:17 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/13_TwoFluidShockTube/2_TwoFluidShock_Drift_PETSC_GPU.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD Gambit2CFmesh ForwardEuler
+  FiniteVolumeCUDA PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:18 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/13_TwoFluidShockTube/2_TwoFluidShock_Drift_PARALUTION_GPU.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD Gambit2CFmesh ForwardEuler
+  ParalutionI FiniteVolumeCUDAParalution
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:19 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/15_PolarizedWaves/circularPolarized_64x32.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter NavierStokes Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD
+  Gambit2CFmesh ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:20 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/MultiFluidMHD/testcases/15_PolarizedWaves/circularPolarized_64x32_PARALUTION.CFcase)
+  because the following libs are missing: CFmeshFileReader CFmeshFileWriter
+  TecplotWriter Maxwell MultiFluidMHD FiniteVolume NewtonMethod
+  FiniteVolumeMaxwell FiniteVolumeMultiFluidMHD Gambit2CFmesh ForwardEuler
+  ParalutionI FiniteVolumeCUDAParalution
+Call Stack (most recent call first):
+  plugins/MultiFluidMHD/testcases/CMakeLists.txt:21 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "NEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NEQ/CMakeLists.txt:142 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NEQ/testcases/TCNEQ/CateIXV/IXV_CATE_M25_air5_CNEQ.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes NEQ FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeNEQ Gambit2CFmesh PetscI Mutation2OLD
+  Mutation2OLDI AeroCoefFVM AeroCoefFVMNEQ
+Call Stack (most recent call first):
+  plugins/NEQ/testcases/CMakeLists.txt:5 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NEQ/testcases/TCNEQ/Hornung/hornung_FVM_NS_CNEQ.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes NEQ FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeNEQ Gambit2CFmesh PetscI Mutation2OLD
+  Mutation2OLDI AeroCoefFVM AeroCoefFVMNEQ MeshTools MeshToolsFVM
+Call Stack (most recent call first):
+  plugins/NEQ/testcases/CMakeLists.txt:6 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NEQ/testcases/TCNEQ/Hornung/hornung_FVM_NS_CNEQ_M++.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes NEQ FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeNEQ Gambit2CFmesh PetscI MutationppI
+  AeroCoefFVM AeroCoefFVMNEQ MeshTools MeshToolsFVM
+Call Stack (most recent call first):
+  plugins/NEQ/testcases/CMakeLists.txt:7 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NEQ/testcases/TCNEQ/Hornung/hornung_FVM_NS_TCNEQ.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes NEQ FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeNEQ Gambit2CFmesh PetscI Mutation2OLD
+  Mutation2OLDI AeroCoefFVM AeroCoefFVMNEQ MeshTools MeshToolsFVM
+Call Stack (most recent call first):
+  plugins/NEQ/testcases/CMakeLists.txt:8 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NEQ/testcases/TCNEQ/Hornung/hornung_FVM_NS_CNEQ_euler_M++.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes NEQ FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeNEQ Gambit2CFmesh PetscI MutationppI
+  AeroCoefFVM AeroCoefFVMNEQ MeshTools MeshToolsFVM
+Call Stack (most recent call first):
+  plugins/NEQ/testcases/CMakeLists.txt:9 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NEQ/testcases/CNEQ/SphereCO2Mach28/Mach38_FVM_NS_CNEQ_M++_interpolate.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  EmptyConvergenceMethod Tecplot2CFmesh TecplotWriter NavierStokes NEQ
+  FiniteVolume NewtonMethod FiniteVolumeNavierStokes FiniteVolumeNEQ
+  Gambit2CFmesh PetscI MutationppI AeroCoefFVM AeroCoefFVMNEQ MeshTools
+  MeshToolsFVM
+Call Stack (most recent call first):
+  plugins/NEQ/testcases/CMakeLists.txt:10 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "NEQKOmega".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NEQKOmega/CMakeLists.txt:20 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "NavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NavierStokes/CMakeLists.txt:229 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cavity/cavityAUSMPlusUpcp_Lref.CFcase)
+  because the following libs are missing: PetscI TecplotWriter NavierStokes
+  FiniteVolume FiniteVolumeNavierStokes NewtonMethod Gambit2CFmesh
+  CFmeshFileReader CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/CurvedPipe/pipeNS3D-sfdm-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter NavierStokes SpectralFD SpectralFDNavierStokes
+  BackwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cyl_Pg_M15_FVM_1st2nd.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes Tecplot2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:3 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cyl_Pg_M15_FVM_1st2nd_MeFiAlgo.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes Tecplot2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:4 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cyl3DFVMImplPuvt_Reynolds_40.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes Gambit2CFmesh ForwardEuler CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:5 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/DoubleEllipse/doubleEllipseRDS_NS_Pvt_adim.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FluctSplit FluctSplitSystem
+  NewtonMethod FluctSplitNavierStokes ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:6 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/DoubleEllipse/restartRDS_NS_Pvt.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FluctSplit FluctSplitSystem
+  NewtonMethod FluctSplitNavierStokes ForwardEuler Tecplot2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:7 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/FlatPlate/flatPlateFVMBlasius.CFcase)
+  because the following libs are missing: ForwardEuler PetscI
+  CFmeshFileWriter CFmeshFileReader TecplotWriter NavierStokes FiniteVolume
+  NewtonMethod FiniteVolumeNavierStokes THOR2CFmesh AeroCoefFVM
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:8 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/FlatPlate/flatPlate3DFVMBlasius.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter PetscI NavierStokes FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes ForwardEuler AeroCoefFVM CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:9 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Hemisphere/hemisphereN.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  BackwardEuler NavierStokes FluctSplit FluctSplitSystem
+  FluctSplitNavierStokes Tecplot2CFmesh PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:10 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Hemisphere/hemisphereN_pvt.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NewtonMethod NavierStokes FluctSplit FluctSplitSystem
+  FluctSplitNavierStokes Tecplot2CFmesh PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:11 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFVMImpl2Namespaces.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FiniteVolume
+  FiniteVolumeNavierStokes BackwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:12 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFVMImplConcurrent.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FiniteVolume BackwardEuler
+  THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:13 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFluctSplit.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime FluctSplitNavierStokes ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:14 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFluctSplitImpl.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime FluctSplitNavierStokes BackwardEuler THOR2CFmesh PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:15 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFVMImplLimiterIO.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FiniteVolume BackwardEuler
+  THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:16 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFVM_in.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  ParaViewWriter NavierStokes ForwardEuler FiniteVolume THOR2CFmesh
+  FiniteVolumeNavierStokes
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:17 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFVM_out.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes ForwardEuler FiniteVolume THOR2CFmesh FiniteVolumeNavierStokes
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:18 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFVMImpl.CFcase) because the
+  following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume FiniteVolumeNavierStokes
+  BackwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:19 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFVMImpl_point.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter ParaViewWriter NavierStokes FiniteVolume
+  FiniteVolumeNavierStokes NewtonMethod THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:20 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFVMImplAUSMAnalytic.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FiniteVolume
+  FiniteVolumeNavierStokes BackwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:21 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets2D/jets2DFVMImpl_MatFree.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:22 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets3D/jets3DFVM_in.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes FiniteVolume ForwardEuler FiniteVolumeNavierStokes THOR2CFmesh
+  CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:23 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets3D/jets3DFVM_out.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes FiniteVolume ForwardEuler FiniteVolumeNavierStokes THOR2CFmesh
+  CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:24 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets3D/jets3DFVMImpl.CFcase) because the
+  following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume BackwardEuler
+  FiniteVolumeNavierStokes THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:25 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets3D/jets3DFVMImplAUSMAnalytic.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FiniteVolume BackwardEuler
+  FiniteVolumeNavierStokes THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:26 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Jets3D/jets3DFluctSplitPrism.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitNavierStokes ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:27 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedgeFluctSplit.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime ForwardEuler FluctSplitNavierStokes THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:28 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedgeFluctSplitHOCRD_Bx_imp.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FluctSplit FluctSplitSystem FluctSplitHO
+  FluctSplitNavierStokes NewtonMethod PetscI FluctSplitHONavierStokes
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:29 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedgeFluctSplitHOCRD.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FluctSplit FluctSplitSystem FluctSplitHO
+  ForwardEuler FluctSplitNavierStokes THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:30 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedgeFluctSplitImpl.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter BackwardEuler NavierStokes FluctSplit FluctSplitScalar
+  FluctSplitSystem FluctSplitSpaceTime FluctSplitNavierStokes THOR2CFmesh
+  PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:31 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedgeFVM_MeFiAlgo.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes FiniteVolume FiniteVolumeNavierStokes ForwardEuler PetscI
+  THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:32 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedgeFVM_MeFiAlgoQuads.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume FiniteVolumeNavierStokes
+  ForwardEuler PetscI Gambit2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:33 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedge3dFVM_MeFiAlgoQuads.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume FiniteVolumeNavierStokes
+  ForwardEuler PetscI CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:34 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedgeFVMImpl_MeFiAlgo.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume FiniteVolumeNavierStokes
+  BackwardEuler PetscI THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:35 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedgeFS_SpaceTime.CFcase) because the
+  following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime FluctSplitSpaceTimeNavierStokes FluctSplitNavierStokes
+  NewtonMethod MeshRigidMove
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:36 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Wedge/wedgeFVM.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes FiniteVolume FiniteVolumeNavierStokes ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:37 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Naca0012/nacaFluctSplitImplHOCRD.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FluctSplit FluctSplitSystem
+  FluctSplitNavierStokes BackwardEuler THOR2CFmesh PetscI FluctSplitHO
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:38 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Naca0012/nacaFluctSplitImplviscousHOCRD.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FluctSplit FluctSplitSystem
+  FluctSplitNavierStokes BackwardEuler THOR2CFmesh PetscI NewtonMethod
+  FluctSplitHO FluctSplitHONavierStokes
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:39 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Naca0012/nacaFVMImpl_FEMMoveShock.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime NavierStokes THOR2CFmesh FiniteVolume
+  FiniteVolumeNavierStokes PetscI NewtonMethod MeshFEMMove FiniteElement
+  StructMech FiniteElementStructMech AeroCoefFVM MeshTools
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:40 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Naca0012/nacaFVMImpl_hybrid_euler.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  NavierStokes FiniteVolume FiniteVolumeNavierStokes NewtonMethod Dpl2CFmesh
+  TecplotWriter MeshTools PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:41 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Naca0012/nacaFVMImpl_hybrid_euler_Puvt.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  NavierStokes FiniteVolume FiniteVolumeNavierStokes NewtonMethod Dpl2CFmesh
+  TecplotWriter PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:42 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Naca0012/nacaFVMImpl_viscous.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader NavierStokes FiniteVolume FiniteVolumeNavierStokes
+  NewtonMethod FiniteVolumeNavierStokes Dpl2CFmesh TecplotWriter MeshTools
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:44 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Nozzle1D/shocktubeSOD.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes ForwardEuler FiniteVolume MeshGenerator1D
+  FiniteVolumeNavierStokes NewtonMethod PetscI RungeKutta
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:45 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Piston2D/piston2DFVMBDF2.CFcase) because
+  the following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes THOR2CFmesh MeshRigidMove
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:46 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Piston2D/piston2DFVMCN.CFcase) because the
+  following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes THOR2CFmesh MeshRigidMove
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:47 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bumpFVMTtPtAlpha.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume FiniteVolumeNavierStokes
+  ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:48 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bumpFluctSplitWeakImpl.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes FluctSplit FluctSplitScalar
+  FluctSplitSystem FluctSplitSpaceTime BackwardEuler FluctSplitNavierStokes
+  THOR2CFmesh PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:49 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bumpFluctSplitWeakImplHOCRD.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FluctSplit FluctSplitSystem BackwardEuler
+  FluctSplitNavierStokes PetscI FluctSplitHO
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:50 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump-sfdm-impl.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter NavierStokes SpectralFD SpectralFDNavierStokes
+  BackwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:51 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump-sfdm-implNewton.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter Gmsh2CFmesh ParaViewWriter NavierStokes SpectralFD
+  SpectralFDNavierStokes NewtonMethod PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:52 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump-sfdm-lusgs.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter NavierStokes SpectralFD SpectralFDNavierStokes
+  LUSGSMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:53 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump-sfdm-lusgs-computejacob.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter NavierStokes SpectralFD SpectralFDNavierStokes
+  LUSGSMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:54 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump3DCurved-sfdm-impl.CFcase)
+  because the following libs are missing: TecplotWriter CFmeshFileWriter
+  CFmeshFileReader Gmsh2CFmesh ParaViewWriter NavierStokes SpectralFD
+  SpectralFDNavierStokes BackwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:55 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump3DCurved-sfdm-lusgs.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter NavierStokes SpectralFD SpectralFDNavierStokes
+  LUSGSMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:56 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump3DCurved-sfdm-lusgs-freezejacob.CFcase)
+  because the following libs are missing: ShapeFunctions CFmeshFileWriter
+  CFmeshFileReader TecplotWriter Gmsh2CFmesh ParaViewWriter NavierStokes
+  SpectralFD SpectralFDNavierStokes LUSGSMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:57 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump3DCurved-sfdm-lusgs-computejacob.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter NavierStokes SpectralFD SpectralFDNavierStokes
+  LUSGSMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:58 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump3DCurved-sfdm-lusgs-computejacob-freezejacob.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter NavierStokes SpectralFD SpectralFDNavierStokes
+  LUSGSMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:59 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump2DFR.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader Gmsh2CFmesh
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes EmptyConvergenceMethod ForwardEuler PetscI
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:60 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump2DFRBwdEuler.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter TecplotWriter NavierStokes
+  FluxReconstructionMethod FluxReconstructionNavierStokes BackwardEuler
+  PetscI NewtonMethod AnalyticalModel
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:61 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump2DFRBwdEulerP0.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter TecplotWriter NavierStokes
+  FluxReconstructionMethod FluxReconstructionNavierStokes BackwardEuler
+  PetscI NewtonMethod AnalyticalModel
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:62 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump3DFR.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader Gmsh2CFmesh
+  ParaViewWriter NavierStokes FluxReconstructionMethod ForwardEuler PetscI
+  TecplotWriter FluxReconstructionNavierStokes
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:63 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump3DCurvedFR.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter NavierStokes FluxReconstructionMethod
+  ForwardEuler PetscI TecplotWriter FluxReconstructionNavierStokes
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:64 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump3DFR-impl.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader Gmsh2CFmesh
+  ParaViewWriter NavierStokes FluxReconstructionMethod BackwardEuler PetscI
+  TecplotWriter FluxReconstructionNavierStokes
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:65 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/SinusBump/bump3DCurvedFR-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  Gmsh2CFmesh ParaViewWriter NavierStokes FluxReconstructionMethod
+  BackwardEuler PetscI TecplotWriter FluxReconstructionNavierStokes
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:66 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderEuler2DFR.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:67 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderEuler2DFR-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:68 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderEuler2DFR-impl_P4.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:69 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderEuler2DFR-impl_P5.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:70 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderEuler2DFR-impl_P6.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:71 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderEuler2DFR-impl_P7.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:72 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderEuler2DFR-impl_P8.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:73 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR_P0.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:74 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR_P1.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:75 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR_P2.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:76 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:77 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR_P4.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:78 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR_P5.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:79 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR_P6.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:80 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR_P7.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:81 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR_P8.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:82 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR_P9.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:83 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR-impl_P0.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:84 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR-impl_P1.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:85 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR-impl_P2.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:86 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:87 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR-impl_P4.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:88 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR-impl_P5.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:89 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFR-impl_P6.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:90 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS2DFRPuvt-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  NewtonMethod ParaViewWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+  TecplotWriter
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:91 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/cylinderNS3DFR-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh
+  CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:92 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/gnoffoFR2DP0.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:93 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/gnoffoFR2DP1.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:94 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/gnoffoFR2DP2.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:95 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/gnoffoFR2DP3.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:96 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/gnoffoFR2DP4.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:97 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/gnoffoFR2DP1-impl.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  NewtonMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:98 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/gnoffoFR2DP2-impl.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  NewtonMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:99 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/Cylinder/gnoffoFR2DP3-impl.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  NewtonMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:100 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/RoundedCone/roundedConeFRP0.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  Gambit2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:101 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/RoundedCone/roundedConeFRP1.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  Gambit2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:102 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/RoundedCone/roundedConeFRP2.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  Gambit2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:103 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/RoundedCone/roundedConeFRP3.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  Gambit2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:104 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/RoundedCone/roundedConeFRP4.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes ForwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  Gambit2CFmesh
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:105 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/RoundedCone/roundedConeFRP0-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  NewtonMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:106 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/RoundedCone/roundedConeFRP1-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  NewtonMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:107 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/RoundedCone/roundedConeFRP2-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  NewtonMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:108 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/NavierStokes/testcases/RoundedCone/roundedConeFRP3-impl.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes BackwardEuler PetscI Gmsh2CFmesh AeroCoefFR
+  NewtonMethod
+Call Stack (most recent call first):
+  plugins/NavierStokes/testcases/CMakeLists.txt:109 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "NewtonMethod".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NewtonMethod/CMakeLists.txt:120 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "NewtonMethodFVM".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NewtonMethod/CMakeLists.txt:156 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "NewtonMethodFVMNavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NewtonMethod/CMakeLists.txt:180 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "NewtonMethodMHD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NewtonMethod/CMakeLists.txt:207 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "NitrogenNASA".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NitrogenNASA/CMakeLists.txt:11 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "NitrogenNASAI".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NitrogenNASAI/CMakeLists.txt:11 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "NonLinearAdv".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/NonLinearAdv/CMakeLists.txt:17 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ParadeI".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/PARADE/CMakeLists.txt:8 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ParMetisBalancer".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ParMetisBalancer/CMakeLists.txt:24 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "ParaViewWriter".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/ParaViewWriter/CMakeLists.txt:27 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "PhysicalModelDummy".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/PhysicalModelDummy/CMakeLists.txt:24 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Poisson".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Poisson/CMakeLists.txt:24 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "PoissonNEQ".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/PoissonNEQ/CMakeLists.txt:28 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "RKRD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/RKRD/CMakeLists.txt:25 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "RadiativeTransfer".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/RadiativeTransfer/CMakeLists.txt:132 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RadiativeTransfer/testcases/FireIIAxiMC/fire2.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes NEQ FiniteVolume NewtonMethod FiniteVolumeNavierStokes
+  FiniteVolumeNEQ Gmsh2CFmesh Gambit2CFmesh PetscI Mutation2OLD Mutation2OLDI
+  RadiativeTransfer AeroCoefFVM AeroCoefFVMNEQ
+Call Stack (most recent call first):
+  plugins/RadiativeTransfer/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RadiativeTransfer/testcases/cylinder3d/cylinder3d.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes Gambit2CFmesh PetscI RadiativeTransfer
+Call Stack (most recent call first):
+  plugins/RadiativeTransfer/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RadiativeTransfer/testcases/cylinderAxi/cylinderAxi.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter NavierStokes FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes Gambit2CFmesh PetscI RadiativeTransfer AeroCoefFVM
+  Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/RadiativeTransfer/testcases/CMakeLists.txt:3 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RadiativeTransfer/testcases/slab2d/slab2d.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes FiniteVolume NewtonMethod FiniteVolumeNavierStokes
+  Gambit2CFmesh PetscI RadiativeTransfer AeroCoefFVM Gmsh2CFmesh
+Call Stack (most recent call first):
+  plugins/RadiativeTransfer/testcases/CMakeLists.txt:4 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RadiativeTransfer/testcases/slab3d/slab3d.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  NavierStokes FiniteVolume NewtonMethod FiniteVolumeNavierStokes
+  Gambit2CFmesh PetscI RadiativeTransfer
+Call Stack (most recent call first):
+  plugins/RadiativeTransfer/testcases/CMakeLists.txt:5 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RadiativeTransfer/testcases/sphereAxi/sphereAxi.CFcase) because
+  the following libs are missing: ShapeFunctions AeroCoef AeroCoefFVM
+  CFmeshFileWriter CFmeshFileReader TecplotWriter NavierStokes FiniteVolume
+  NewtonMethod FiniteVolumeNavierStokes Gambit2CFmesh PetscI
+  RadiativeTransfer
+Call Stack (most recent call first):
+  plugins/RadiativeTransfer/testcases/CMakeLists.txt:6 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RadiativeTransfer/testcases/sphere3d/sphere3d.CFcase) because the
+  following libs are missing: ShapeFunctions AeroCoef AeroCoefFVM
+  CFmeshFileWriter Gmsh2CFmesh CFmeshFileReader TecplotWriter NavierStokes
+  FiniteVolume NewtonMethod FiniteVolumeNavierStokes Gambit2CFmesh PetscI
+  RadiativeTransfer
+Call Stack (most recent call first):
+  plugins/RadiativeTransfer/testcases/CMakeLists.txt:7 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RadiativeTransfer/testcases/Sphere3DFV/sphere_24Dirs_TestProfile.CFcase)
+  because the following libs are missing: TecplotWriter PhysicalModelDummy
+  FiniteVolume EmptyConvergenceMethod RadiativeTransfer Gambit2CFmesh
+  CFmeshFileReader CFmeshFileWriter
+Call Stack (most recent call first):
+  plugins/RadiativeTransfer/testcases/CMakeLists.txt:8 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "RemeshMeandr".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/RemeshMeandr/CMakeLists.txt:23 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "RotationAdv".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/RotationAdv/CMakeLists.txt:36 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off (plugins/RotationAdv/testcases//rotationFS.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter RotationAdv FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/RotationAdv/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RotationAdv/testcases//rotationFSCRD.CFcase) because the following
+  libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  RotationAdv FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/RotationAdv/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RotationAdv/testcases//rotationFS_SpaceTime2Layer.CFcase) because
+  the following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter RotationAdv FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime NewtonMethod MeshRigidMove THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/RotationAdv/testcases/CMakeLists.txt:3 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RotationAdv/testcases//rotationFS_SpaceTime2LayerExplMoving.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter RotationAdv FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime ForwardEuler MeshRigidMove THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/RotationAdv/testcases/CMakeLists.txt:4 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RotationAdv/testcases//rotationFS_SpaceTime2LayerMoving.CFcase)
+  because the following libs are missing: PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter RotationAdv FluctSplit FluctSplitScalar
+  FluctSplitSystem FluctSplitSpaceTime NewtonMethod MeshRigidMove THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/RotationAdv/testcases/CMakeLists.txt:5 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RotationAdv/testcases//rotationFS_SpaceTime.CFcase) because the
+  following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter RotationAdv FluctSplit FluctSplitScalar FluctSplitSystem
+  FluctSplitSpaceTime NewtonMethod MeshRigidMove THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/RotationAdv/testcases/CMakeLists.txt:6 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RotationAdv/testcases//rotationFS_STU_HOCRD_impl.CFcase) because
+  the following libs are missing: PetscI CFmeshFileWriter CFmeshFileReader
+  TecplotWriter RotationAdv FluctSplit FluctSplitScalar FluctSplitSpaceTime
+  NewtonMethod
+Call Stack (most recent call first):
+  plugins/RotationAdv/testcases/CMakeLists.txt:7 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/RotationAdv/testcases//rotationFS_STU_STKS.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  RotationAdv FluctSplit FluctSplitScalar FluctSplitSpaceTime THOR2CFmesh
+  ForwardEuler
+Call Stack (most recent call first):
+  plugins/RotationAdv/testcases/CMakeLists.txt:8 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off (plugins/RotationAdv/testcases//rotationFVM.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter RotationAdv FiniteVolume ForwardEuler THOR2CFmesh
+Call Stack (most recent call first):
+  plugins/RotationAdv/testcases/CMakeLists.txt:9 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "RotationAdvSys".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/RotationAdvSys/CMakeLists.txt:26 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "RungeKutta".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/RungeKutta/CMakeLists.txt:19 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "RungeKutta2".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/RungeKutta2/CMakeLists.txt:24 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "RungeKuttaLS".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/RungeKuttaLS/CMakeLists.txt:18 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "SA".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SA/CMakeLists.txt:38 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "SALTE".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SA/CMakeLists.txt:51 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/FlatPlate/flatPlateFRImplSA_Re1e7_P0.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes NewtonMethod PetscI Gmsh2CFmesh SA
+  FluxReconstructionSA AeroCoefFR MeshToolsFVM ForwardEuler MeshToolsFR
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/FlatPlate/flatPlateFRImplSA_Re1e7_P1.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes NewtonMethod PetscI Gmsh2CFmesh SA
+  FluxReconstructionSA AeroCoefFR MeshToolsFVM ForwardEuler MeshToolsFR
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/FlatPlate/flatPlateFRImplSA_Re1e7_P2.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes NewtonMethod PetscI Gmsh2CFmesh SA
+  FluxReconstructionSA AeroCoefFR MeshToolsFVM ForwardEuler MeshToolsFR
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:3 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/FlatPlate/flatPlateFRImplSA_Re1e7_P3.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes NewtonMethod PetscI Gmsh2CFmesh SA
+  FluxReconstructionSA AeroCoefFR MeshToolsFVM ForwardEuler MeshToolsFR
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:4 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/FlatPlate/flatPlateFRImplSA_Re1e7_P4.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  ParaViewWriter TecplotWriter NavierStokes FluxReconstructionMethod
+  FluxReconstructionNavierStokes NewtonMethod PetscI Gmsh2CFmesh SA
+  FluxReconstructionSA AeroCoefFR MeshToolsFVM ForwardEuler MeshToolsFR
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:5 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/Cylinder/cylinder2DSA_Re3900.CFcase) because the
+  following libs are missing: ShapeFunctions PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes SA FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeSA THOR2CFmesh AeroCoef AeroCoefFVM
+  MeshTools MeshToolsFVM CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:6 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/Cylinder/cylinder2DSA_Re3900_URANS.CFcase) because
+  the following libs are missing: ShapeFunctions PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes SA FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeSA THOR2CFmesh AeroCoef AeroCoefFVM
+  MeshTools MeshToolsFVM CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:7 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/Cylinder/cylinder3DSA_Re3900.CFcase) because the
+  following libs are missing: ShapeFunctions PetscI CFmeshFileWriter
+  CFmeshFileReader TecplotWriter NavierStokes SA FiniteVolume NewtonMethod
+  FiniteVolumeNavierStokes FiniteVolumeSA THOR2CFmesh AeroCoef AeroCoefFVM
+  MeshTools MeshToolsFVM CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:8 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/Cylinder/cylinder3DSA_Re3900_decoupled.CFcase)
+  because the following libs are missing: ShapeFunctions PetscI
+  CFmeshFileWriter CFmeshFileReader TecplotWriter NavierStokes SA
+  FiniteVolume NewtonMethod FiniteVolumeNavierStokes FiniteVolumeSA
+  THOR2CFmesh AeroCoef AeroCoefFVM MeshTools MeshToolsFVM CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:9 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/FlatPlate/flatPlateFVMImplSA_dim_Re75e4_fineMesh.CFcase)
+  because the following libs are missing: ShapeFunctions PetscI
+  CFmeshFileWriter CFmeshFileReader TecplotWriter NavierStokes SA
+  FiniteVolume NewtonMethod FiniteVolumeNavierStokes FiniteVolumeSA
+  THOR2CFmesh AeroCoef AeroCoefFVM MeshTools MeshToolsFVM
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:10 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/SA/testcases/FlatPlate/flatPlate3DFVMImplSA_dim_Re75e4_fineMesh.CFcase)
+  because the following libs are missing: ShapeFunctions PetscI
+  CFmeshFileWriter CFmeshFileReader TecplotWriter NavierStokes SA
+  FiniteVolume NewtonMethod FiniteVolumeNavierStokes FiniteVolumeSA
+  THOR2CFmesh AeroCoef AeroCoefFVM MeshTools MeshToolsFVM CFmeshExtruder
+Call Stack (most recent call first):
+  plugins/SA/testcases/CMakeLists.txt:11 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "SimpleGlobalMeshAdapter".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SimpleGlobalMeshAdapter/CMakeLists.txt:55 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "SpectralFD".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SpectralFD/CMakeLists.txt:273 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "SpectralFDLinEuler".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SpectralFDLinEuler/CMakeLists.txt:30 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "SpectralFDNavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SpectralFDNavierStokes/CMakeLists.txt:60 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "SpectralFV".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SpectralFV/CMakeLists.txt:168 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "SpectralFVNavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SpectralFVNavierStokes/CMakeLists.txt:48 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "StructMech".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/StructMech/CMakeLists.txt:60 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/StructMech/testcases/Beam3D/BendingBeam.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  FiniteElement StructMech NewtonMethod PetscI FiniteElementStructMech
+Call Stack (most recent call first):
+  plugins/StructMech/testcases/CMakeLists.txt:1 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/StructMech/testcases/PlaneStress/BendingBeamQD.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  FiniteElement StructMech NewtonMethod PetscI FiniteElementStructMech
+Call Stack (most recent call first):
+  plugins/StructMech/testcases/CMakeLists.txt:2 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/StructMech/testcases/PlaneStress/ClampedBeam.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  FiniteElement StructMech NewtonMethod FiniteElementStructMech PetscI
+Call Stack (most recent call first):
+  plugins/StructMech/testcases/CMakeLists.txt:3 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/StructMech/testcases/PlaneStress/GmshConversion.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter FiniteElement StructMech NewtonMethod Gmsh2CFmesh PetscI
+  FiniteElementStructMech
+Call Stack (most recent call first):
+  plugins/StructMech/testcases/CMakeLists.txt:4 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/StructMech/testcases/PlaneStress/UnsteadyBendingBeamImplicit_SubIter.CFcase)
+  because the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter FiniteElement StructMech NewtonMethod FiniteElementStructMech
+  PetscI
+Call Stack (most recent call first):
+  plugins/StructMech/testcases/CMakeLists.txt:9 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/StructMech/testcases/Plate/BendingPlate.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  FiniteElement StructMech NewtonMethod PetscI FiniteElementStructMech
+Call Stack (most recent call first):
+  plugins/StructMech/testcases/CMakeLists.txt:10 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/StructMech/testcases/StressCube/StressedCubeTetra.CFcase) because
+  the following libs are missing: CFmeshFileWriter CFmeshFileReader
+  TecplotWriter FiniteElement StructMech NewtonMethod PetscI
+  FiniteElementStructMech
+Call Stack (most recent call first):
+  plugins/StructMech/testcases/CMakeLists.txt:11 (cf_add_case)
+
+
+CMake Warning at cmake/macros/CFAddTestCase.cmake:190 (message):
+  Test case is turned off
+  (plugins/StructMech/testcases/Validation/ShearForce.CFcase) because the
+  following libs are missing: CFmeshFileWriter CFmeshFileReader TecplotWriter
+  FiniteElement StructMech NewtonMethod PetscI FiniteElementStructMech
+Call Stack (most recent call first):
+  plugins/StructMech/testcases/CMakeLists.txt:12 (cf_add_case)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "StructMechHeat".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/StructMechHeat/CMakeLists.txt:24 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "SubSystemCoupler".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SubSystemCoupler/CMakeLists.txt:63 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "SubSystemCouplerNavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SubSystemCoupler/CMakeLists.txt:100 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "SubSystemCouplerHeat".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/SubSystemCoupler/CMakeLists.txt:125 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "THOR2CFmesh".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/THOR2CFmesh/CMakeLists.txt:19 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "Tecplot2CFmesh".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/Tecplot2CFmesh/CMakeLists.txt:18 (CF_ADD_PLUGIN_LIBRARY)
+
+
+--     APP : [tecplot_merge_kopacek]
+--     APP : [tecplot_merge]
+--     APP : [coef_merge]
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target "TecplotWriter".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/TecplotWriter/CMakeLists.txt:54 (CF_ADD_PLUGIN_LIBRARY)
+
+
+CMake Error at cmake/macros/CFAddLibrary.cmake:153 (GET_TARGET_PROPERTY):
+  get_target_property() called with non-existent target
+  "TecplotWriterNavierStokes".
+Call Stack (most recent call first):
+  cmake/macros/CFAddPluginLibrary.cmake:6 (CF_ADD_LIBRARY)
+  plugins/TecplotWriterNavierStokes/CMakeLists.txt:10 (CF_ADD_PLUGIN_LIBRARY)
+
+
+--     APP : [xcfcase_converter]
+-- ---------------------------------------------------------
+-- coolfluid-solver_files is: coolfluid-solver.cxx
+-- CF_Boost_LIBRARIES are [/usr/lib/libboost_thread.so;/usr/lib/libboost_filesystem.so;/usr/lib/libboost_system.so]
+###### coolfluid-solver_libs are logcpp;Common;Config;Environment;MathTools;Framework;ShapeFunctions;/usr/lib/libboost_thread.so;/usr/lib/libboost_filesystem.so;/usr/lib/libboost_system.so
+###### coolfluid-solver_cflibs are 
+--     APP : [coolfluid-solver]
+-- 
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-- + COOLFluiD configuration summary 
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+--  COOLFluiD Release     : [2013.9]
+--  COOLFluiD Kernel      : [2.5.0]
+--  COOLFluiD SVN version : []
+-- ---------------------------------------------------------
+--  CMake Version         : [4.1.2]
+--  CMake Generator       : [Unix Makefiles]
+--  Build Type            : [None]
+--  Operating System      : [Linux-6.16.10-arch1-1]
+--  Memory address        : [64 bits]
+-- ---------------------------------------------------------
+--  C compiler            : [/usr/bin/cc]
+--  C flags               : [-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/coolfluid-git/src=/usr/src/debug/coolfluid-git -flto=auto -pipe -ansi -fno-common ]
+--  C++ compiler          : [/usr/bin/c++]
+--  C++ flags             : [-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/coolfluid-git/src=/usr/src/debug/coolfluid-git -flto=auto -pipe -std=c++98 -fno-gnu-keywords -Wno-dev -fno-common -Wall -Wno-unused-parameter -Wno-missing-field-initializers -Wno-enum-compare ]
+--  C++ link flags        : []
+--  Fortran compiler      : [/usr/bin/gfortran]
+--  Fortran flags         : [ ]
+--  Shared Linker flags   : [-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto]
+-- ---------------------------------------------------------
+--  MPI                   : [1]
+--     CF_MPIRUN_PROGRAM  : [/bin/mpirun]
+--     MPI_INCLUDE_DIR    : [/usr/include]
+--     MPI_LIBRARIES      : [/lib/libmpi.so;/lib/libmpi.so]
+-- ---------------------------------------------------------
+--  Check internal deps   : [ON]
+--  Log all               : [ON]
+--  Log debug             : [ON]
+--  Assertions            : [ON]
+--  Tracing               : [ON]
+--  Static libs           : [OFF]
+--  Profiling             : [OFF]
+--  long int              : [OFF]
+--  long long int         : [OFF]
+--  CURL enabled          : []
+--  CUDA enabled          : []
+--  BOOST libs            : [/usr/lib/libboost_thread.so;/usr/lib/libboost_filesystem.so;/usr/lib/libboost_system.so]
+--  Explicit Templates    : [ON]
+-- ---------------------------------------------------------
+--  Kernel libs           : [logcpp;Common;Config;Environment;MathTools;Framework;ShapeFunctions]
+--  Static plugin libs    : []
+-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-- 
+--  !!! WARNING !!! Orphan files were found during the configuration.
+--  !!! WARNING !!! Check full list in file /build/coolfluid-git/src/build/OrphanFiles.txt 
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

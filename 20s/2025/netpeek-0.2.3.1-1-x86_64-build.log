@@ -1,0 +1,49 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 build
+The Meson build system
+Version: 1.9.0
+Source dir: /build/netpeek/src/NetPeek
+Build dir: /build/netpeek/src/NetPeek/build
+Build type: native build
+Project name: netpeek
+Project version: 0.2.3.1
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Configuring io.github.zingytomato.netpeek.service using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Build-time dependency gio-2.0 found: YES 2.84.4
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program python3 found: YES (/usr/bin/python3)
+Configuring netpeek using configuration
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 found: YES 2.84.4 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 9
+
+netpeek 0.2.3.1
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/9 eta ?                                              Writing build.ninja:   0%|          | 0/37 eta ?                                                ninja: Entering directory `build'
+[1/6] Building translation po/es/LC_MESSAGES/netpeek-es.mo
+[2/6] Building translation po/nl/LC_MESSAGES/netpeek-nl.mo
+[3/6] Building translation po/ru/LC_MESSAGES/netpeek-ru.mo
+[4/6] Generating src/netpeek_gresource with a custom command
+[5/6] Merging translations for data/io.github.zingytomato.netpeek.desktop
+[6/6] Merging translations for data/io.github.zingytomato.netpeek.metainfo.xml

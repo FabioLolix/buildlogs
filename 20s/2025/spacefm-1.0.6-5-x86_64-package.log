@@ -1,0 +1,138 @@
+Making install in etc
+make[1]: Entering directory '/build/spacefm/src/spacefm-1.0.6/etc'
+make[2]: Entering directory '/build/spacefm/src/spacefm-1.0.6/etc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make  install-data-hook
+make[3]: Entering directory '/build/spacefm/src/spacefm-1.0.6/etc'
+test -d /build/spacefm/pkg/spacefm//etc/spacefm || mkdir -p -- \
+			/build/spacefm/pkg/spacefm//etc/spacefm
+test -f /build/spacefm/pkg/spacefm//etc/spacefm/spacefm.conf || /usr/bin/install -c -m 644 \
+			./spacefm.conf \
+			/build/spacefm/pkg/spacefm//etc/spacefm/spacefm.conf
+make[3]: Leaving directory '/build/spacefm/src/spacefm-1.0.6/etc'
+make[2]: Leaving directory '/build/spacefm/src/spacefm-1.0.6/etc'
+make[1]: Leaving directory '/build/spacefm/src/spacefm-1.0.6/etc'
+Making install in src
+make[1]: Entering directory '/build/spacefm/src/spacefm-1.0.6/src'
+make[2]: Entering directory '/build/spacefm/src/spacefm-1.0.6/src'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/bin'
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/bin'
+ /usr/bin/install -c spacefm-auth '/build/spacefm/pkg/spacefm/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c spacefm '/build/spacefm/pkg/spacefm/usr/bin'
+libtool: install: /usr/bin/install -c spacefm /build/spacefm/pkg/spacefm/usr/bin/spacefm
+make[2]: Leaving directory '/build/spacefm/src/spacefm-1.0.6/src'
+make[1]: Leaving directory '/build/spacefm/src/spacefm-1.0.6/src'
+Making install in data
+make[1]: Entering directory '/build/spacefm/src/spacefm-1.0.6/data'
+make[2]: Entering directory '/build/spacefm/src/spacefm-1.0.6/data'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/share/applications'
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/share/icons/Faenza/apps/48'
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/share/doc/spacefm'
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/share/icons/hicolor/128x128/apps'
+ /usr/bin/install -c -m 644 spacefm.desktop spacefm-find.desktop spacefm-folder-handler.desktop '/build/spacefm/pkg/spacefm/usr/share/applications'
+ /usr/bin/install -c -m 644 faenza/spacefm.png faenza/spacefm-root.png faenza/spacefm-find.png '/build/spacefm/pkg/spacefm/usr/share/icons/Faenza/apps/48'
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/share/icons/hicolor/48x48/apps'
+ /usr/bin/install -c -m 644 spacefm-manual-en.html '/build/spacefm/pkg/spacefm/usr/share/doc/spacefm'
+ /usr/bin/install -c -m 644 spacefm-128-cube-blue.png spacefm-128-cube-green.png spacefm-128-cube-red.png spacefm-128-pyramid-blue.png spacefm-128-pyramid-green.png spacefm-128-pyramid-red.png '/build/spacefm/pkg/spacefm/usr/share/icons/hicolor/128x128/apps'
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/share/spacefm/ui'
+ /usr/bin/install -c -m 644 spacefm.png spacefm-root.png spacefm-find.png spacefm-48-cube-blue.png spacefm-48-cube-green.png spacefm-48-cube-red.png spacefm-48-folder-blue.png spacefm-48-folder-red.png spacefm-48-pyramid-blue.png spacefm-48-pyramid-green.png spacefm-48-pyramid-red.png '/build/spacefm/pkg/spacefm/usr/share/icons/hicolor/48x48/apps'
+ /usr/bin/install -c -m 644 ui/prefdlg.ui ui/prefdlg2.ui ui/appchooserdlg.ui ui/file_properties.ui ui/about-dlg.ui ui/find-files.ui ui/find-files2.ui ui/godlg.ui '/build/spacefm/pkg/spacefm/usr/share/spacefm/ui'
+make[2]: Leaving directory '/build/spacefm/src/spacefm-1.0.6/data'
+make[1]: Leaving directory '/build/spacefm/src/spacefm-1.0.6/data'
+Making install in po
+make[1]: Entering directory '/build/spacefm/src/spacefm-1.0.6/po'
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+linguas="af ar bg bn_IN ca cs da de el es et eu fa fi fr gl he hr hu id it ja km ko lt ltg ml ms nb nl nn pl ps pt_BR pt ru sk sl sr sr@latin sv tr uk ur_PK ur vi zh_CN zh_TW "; \
+for lang in $linguas; do \
+  dir=/build/spacefm/pkg/spacefm/usr/share/locale/$lang/LC_MESSAGES; \
+  /bin/sh /build/spacefm/src/spacefm-1.0.6/install-sh -d $dir; \
+  if test -r $lang.gmo; then \
+    /usr/bin/install -c -m 644 $lang.gmo $dir/spacefm.mo; \
+    echo "installing $lang.gmo as $dir/spacefm.mo"; \
+  else \
+    /usr/bin/install -c -m 644 ./$lang.gmo $dir/spacefm.mo; \
+    echo "installing ./$lang.gmo as" \
+	 "$dir/spacefm.mo"; \
+  fi; \
+  if test -r $lang.gmo.m; then \
+    /usr/bin/install -c -m 644 $lang.gmo.m $dir/spacefm.mo.m; \
+    echo "installing $lang.gmo.m as $dir/spacefm.mo.m"; \
+  else \
+    if test -r ./$lang.gmo.m ; then \
+      /usr/bin/install -c -m 644 ./$lang.gmo.m \
+	$dir/spacefm.mo.m; \
+      echo "installing ./$lang.gmo.m as" \
+	   "$dir/spacefm.mo.m"; \
+    else \
+      true; \
+    fi; \
+  fi; \
+done
+installing af.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/af/LC_MESSAGES/spacefm.mo
+installing ar.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ar/LC_MESSAGES/spacefm.mo
+installing bg.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/bg/LC_MESSAGES/spacefm.mo
+installing bn_IN.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/bn_IN/LC_MESSAGES/spacefm.mo
+installing ca.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ca/LC_MESSAGES/spacefm.mo
+installing cs.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/cs/LC_MESSAGES/spacefm.mo
+installing da.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/da/LC_MESSAGES/spacefm.mo
+installing de.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/de/LC_MESSAGES/spacefm.mo
+installing el.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/el/LC_MESSAGES/spacefm.mo
+installing es.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/es/LC_MESSAGES/spacefm.mo
+installing et.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/et/LC_MESSAGES/spacefm.mo
+installing eu.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/eu/LC_MESSAGES/spacefm.mo
+installing fa.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/fa/LC_MESSAGES/spacefm.mo
+installing fi.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/fi/LC_MESSAGES/spacefm.mo
+installing fr.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/fr/LC_MESSAGES/spacefm.mo
+installing gl.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/gl/LC_MESSAGES/spacefm.mo
+installing he.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/he/LC_MESSAGES/spacefm.mo
+installing hr.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/hr/LC_MESSAGES/spacefm.mo
+installing hu.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/hu/LC_MESSAGES/spacefm.mo
+installing id.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/id/LC_MESSAGES/spacefm.mo
+installing it.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/it/LC_MESSAGES/spacefm.mo
+installing ja.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ja/LC_MESSAGES/spacefm.mo
+installing km.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/km/LC_MESSAGES/spacefm.mo
+installing ko.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ko/LC_MESSAGES/spacefm.mo
+installing lt.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/lt/LC_MESSAGES/spacefm.mo
+installing ltg.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ltg/LC_MESSAGES/spacefm.mo
+installing ml.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ml/LC_MESSAGES/spacefm.mo
+installing ms.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ms/LC_MESSAGES/spacefm.mo
+installing nb.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/nb/LC_MESSAGES/spacefm.mo
+installing nl.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/nl/LC_MESSAGES/spacefm.mo
+installing nn.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/nn/LC_MESSAGES/spacefm.mo
+installing pl.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/pl/LC_MESSAGES/spacefm.mo
+installing ps.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ps/LC_MESSAGES/spacefm.mo
+installing pt_BR.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/pt_BR/LC_MESSAGES/spacefm.mo
+installing pt.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/pt/LC_MESSAGES/spacefm.mo
+installing ru.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ru/LC_MESSAGES/spacefm.mo
+installing sk.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/sk/LC_MESSAGES/spacefm.mo
+installing sl.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/sl/LC_MESSAGES/spacefm.mo
+installing sr.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/sr/LC_MESSAGES/spacefm.mo
+installing sr@latin.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/sr@latin/LC_MESSAGES/spacefm.mo
+installing sv.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/sv/LC_MESSAGES/spacefm.mo
+installing tr.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/tr/LC_MESSAGES/spacefm.mo
+installing uk.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/uk/LC_MESSAGES/spacefm.mo
+installing ur_PK.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ur_PK/LC_MESSAGES/spacefm.mo
+installing ur.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/ur/LC_MESSAGES/spacefm.mo
+installing vi.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/vi/LC_MESSAGES/spacefm.mo
+installing zh_CN.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/zh_CN/LC_MESSAGES/spacefm.mo
+installing zh_TW.gmo as /build/spacefm/pkg/spacefm/usr/share/locale/zh_TW/LC_MESSAGES/spacefm.mo
+make[1]: Leaving directory '/build/spacefm/src/spacefm-1.0.6/po'
+make[1]: Entering directory '/build/spacefm/src/spacefm-1.0.6'
+
+IMPORTANT: After installation, run:
+           sudo gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
+           sudo gtk-update-icon-cache -q -t -f /usr/share/icons/Faenza
+
+make[2]: Entering directory '/build/spacefm/src/spacefm-1.0.6'
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/bin'
+ /usr/bin/mkdir -p '/build/spacefm/pkg/spacefm/usr/share/mime/packages'
+ /usr/bin/install -c -m 644 src/mime-type/spacefm-mime.xml '/build/spacefm/pkg/spacefm/usr/share/mime/packages'
+ /usr/bin/install -c spacefm-installer '/build/spacefm/pkg/spacefm/usr/bin'
+make[2]: Leaving directory '/build/spacefm/src/spacefm-1.0.6'
+make[1]: Leaving directory '/build/spacefm/src/spacefm-1.0.6'

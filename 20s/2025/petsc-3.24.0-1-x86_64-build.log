@@ -1,0 +1,2075 @@
+./configure --with-shared-libraries=1 --with-petsc4py=1 --with-mpi-f90module-visibility=0 --with-cmake=0 --with-mpi-dir=/usr --with-zfp=1 --with-netcdf=1 --with-libjpeg=1 --with-yaml=1 --with-fftw=1 --with-gsl=1 --with-zlib=1 --with-superlu-lib=-lsuperlu --with-superlu-include=/usr/include/superlu --with-suitesparse=1 --with-hdf5=1 --with-hdf5-fortran-bindings=1
+CFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto
+CXXFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto
+FFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -Wp,-D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc
+LDFLAGS=-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto
+MAKEFLAGS=-j20
+=============================================================================================
+                         Configuring PETSc to compile on your system
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  Found environment variable: CFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt
+  -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security
+  -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer
+  -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc
+  -flto=auto. Ignoring it, since it's also set on command line
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  Found environment variable: CXXFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt
+  -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security
+  -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer
+  -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g
+  -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto. Ignoring it, since
+  it's also set on command line
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  Found environment variable: FCFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt
+  -Wp,-D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection
+  -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g
+  -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc. Ignoring it! Use "./configure
+  FCFLAGS=$FCFLAGS" if you really want to use this value
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  Found environment variable: FFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt
+  -Wp,-D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection
+  -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g
+  -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc. Ignoring it, since it's also set
+  on command line
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  Found environment variable: LDFLAGS=-Wl,-O1 -Wl,--sort-common -Wl,--as-needed
+  -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto. Ignoring it,
+  since it's also set on command line
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  Found environment variable: MAKEFLAGS=-j20. Ignoring it, since it's also set on command
+  line
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  You are overwriting the standard PETSc compiler flags with CFLAGS="-march=x86-64
+  -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat
+  -Werror=format-security         -fstack-clash-protection -fcf-protection
+  -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g
+  -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto". Are you sure you
+  want to do this? Generally it is best to let PETSc ./configure determine the flags. You
+  can use CFLAGS+="-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions
+  -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection
+  -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g
+  -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto" to provide additional
+  compiler flags instead of overwriting those used by PETSc.
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  You are overwriting the standard PETSc compiler flags with CXXFLAGS="-march=x86-64
+  -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat
+  -Werror=format-security         -fstack-clash-protection -fcf-protection
+  -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g
+  -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto". Are you sure you
+  want to do this? Generally it is best to let PETSc ./configure determine the flags. You
+  can use CXXFLAGS+="-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions
+  -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection
+  -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer
+  -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc
+  -flto=auto" to provide additional compiler flags instead of overwriting those used by
+  PETSc.
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  You are overwriting the standard PETSc compiler flags with FFLAGS="-march=x86-64
+  -mtune=generic -O2 -pipe -fno-plt         -Wp,-D_FORTIFY_SOURCE=3
+  -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer
+  -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc".
+  Are you sure you want to do this? Generally it is best to let PETSc ./configure determine
+  the flags. You can use FFLAGS+="-march=x86-64 -mtune=generic -O2 -pipe -fno-plt
+  -Wp,-D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection
+  -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g
+  -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc" to provide additional compiler
+  flags instead of overwriting those used by PETSc.
+=============================================================================================
+=============================================================================================
+                                     ***** WARNING *****
+  Using version 4112 of package ZFP, PETSc is tested with 1.0. Suggest using --download-zfp
+  for a compatible zfp
+=============================================================================================
+=============================================================================================
+                                  Generating Fortran binding
+=============================================================================================
+Compilers:
+  C Compiler:  /usr/bin/mpicc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto -fPIC 
+    Version: gcc (GCC) 15.2.1 20250813
+  C++ Compiler:  /usr/bin/mpicxx -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto  -std=gnu++20 -fPIC 
+    Version: g++ (GCC) 15.2.1 20250813
+  Fortran Compiler:  /usr/bin/mpif90 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt         -Wp,-D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -fPIC  
+    Version: GNU Fortran (GCC) 15.2.1 20250813
+Linkers:
+  Shared linker:   /usr/bin/mpicc -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -shared -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto -fPIC
+  Dynamic linker:   /usr/bin/mpicc -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -shared -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto -fPIC
+  Libraries linked against:   -lquadmath 
+Intel instruction sets found on CPU:
+  AVX2
+Python:
+  Executable: /usr/bin/python3
+BlasLapack:
+  Libraries:  -llapack -lblas
+  Unknown if this uses OpenMP (try export OMP_NUM_THREADS=<1-4> yourprogram -log_view) 
+  uses 4 byte integers
+MPI:
+  Version:    3
+  Includes:   -I/usr/include
+  mpiexec: /usr/bin/mpiexec
+  Implementation: openmpi
+  OMPI_VERSION: 5.0.8
+pthread:
+zlib:
+  Version:    1.3.1
+  Libraries:  -lz
+HDF5:
+  Version:    1.14.6
+  Libraries:  -lhdf5_hl_fortran -lhdf5_fortran -lhdf5_hl_f90cstub -lhdf5_f90cstub -lhdf5_hl -lhdf5
+netCDF:
+  Version:    4.9.3
+  Libraries:  -lnetcdf
+SuiteSparse:
+  Version:    7.11.0
+  Includes:   -I/usr/include/suitesparse -I/usr/include
+  Libraries:  -lspqr -lumfpack -lklu -lcholmod -lamd
+Bison:
+  Version:    3.8
+  Executable: /usr/bin/bison
+petsc4py:
+  PYTHONPATH: /opt/petsc/linux-c-opt/lib
+fftw:
+  Libraries:  -lfftw3_mpi -lfftw3
+zfp:
+  Version:    4112
+  Libraries:  -lzfp
+SuperLU:
+  Version:    7.0.1
+  Includes:   -I/usr/include/superlu
+  Libraries:  -lsuperlu
+gsl:
+  Version:    2.8
+  Libraries:  -lgsl -lgslcblas
+libjpeg:
+  Libraries:  -ljpeg
+regex:
+yaml:
+  Libraries:  -lyaml
+PETSc:
+  Language used to compile PETSc: C
+  PETSC_ARCH: linux-c-opt
+  PETSC_DIR: /build/petsc/src/petsc-3.24.0
+  Prefix: /opt/petsc/linux-c-opt
+  Scalar type: real
+  Precision: double
+  Support for __float128
+  Integer size: 4 bytes
+  Single library: yes
+  Shared libraries: yes
+  Memory alignment from malloc(): 16 bytes
+  Using GNU make: /usr/bin/make
+xxx=======================================================================================xxx
+ Configure stage complete. Now build PETSc libraries with:
+   make PETSC_DIR=/build/petsc/src/petsc-3.24.0 PETSC_ARCH=linux-c-opt all
+xxx=======================================================================================xxx
+/usr/bin/python3 ./config/gmakegen.py --petsc-arch=linux-c-opt
+make[2]: Entering directory '/build/petsc/src/petsc-3.24.0'
+==========================================
+ 
+See documentation/faq.html and documentation/bugreporting.html
+for help with installation problems.  Please send EVERYTHING
+printed out below when reporting problems.  Please check the
+mailing list archives and consider subscribing.
+ 
+  https://petsc.org/release/community/mailing/
+ 
+==========================================
+/usr/bin/bash: line 1: hostname: command not found
+Starting make run on at Mon, 06 Oct 2025 19:36:13 +0000
+Machine characteristics: Linux arch-nspawn-51227 6.16.10-arch1-1 #1 SMP PREEMPT_DYNAMIC Thu, 02 Oct 2025 19:26:36 +0000 x86_64 GNU/Linux
+-----------------------------------------
+Using PETSc directory: /build/petsc/src/petsc-3.24.0
+Using PETSc arch: linux-c-opt
+-----------------------------------------
+PETSC_VERSION_RELEASE    1
+PETSC_VERSION_MAJOR      3
+PETSC_VERSION_MINOR      24
+PETSC_VERSION_SUBMINOR   0
+PETSC_VERSION_DATE       "Sep 29, 2025"
+PETSC_VERSION_GIT        "v3.24.0"
+PETSC_VERSION_DATE_GIT   "2025-09-29 13:17:25 -0500"
+-----------------------------------------
+Using configure Options: --prefix=/opt/petsc/linux-c-opt --with-shared-libraries=1 --with-petsc4py=1 --with-mpi-f90module-visibility=0 --with-cmake=0 --with-mpi-dir=/usr --with-zfp=1 --with-netcdf=1 --with-libjpeg=1 --with-yaml=1 --with-fftw=1 --with-gsl=1 --with-zlib=1 --with-superlu-lib=-lsuperlu --with-superlu-include=/usr/include/superlu --with-suitesparse=1 --with-hdf5=1 --with-hdf5-fortran-bindings=1 CFLAGS="-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto" CXXFLAGS="-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto" FFLAGS="-march=x86-64 -mtune=generic -O2 -pipe -fno-plt         -Wp,-D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc" LDFLAGS="-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto" MAKEFLAGS=-j20
+Using configuration flags:
+#define PETSC_ARCH ""
+#define PETSC_ATTRIBUTEALIGNED(size) __attribute((aligned(size)))
+#define PETSC_BLASLAPACK_UNDERSCORE 1
+#define PETSC_CLANGUAGE_C 1
+#define PETSC_CXX_RESTRICT __restrict
+#define PETSC_DEPRECATED_ENUM_BASE(string_literal_why) __attribute__((deprecated(string_literal_why)))
+#define PETSC_DEPRECATED_FUNCTION_BASE(string_literal_why) __attribute__((deprecated(string_literal_why)))
+#define PETSC_DEPRECATED_MACRO_BASE(string_literal_why) PETSC_DEPRECATED_MACRO_BASE_(GCC warning string_literal_why)
+#define PETSC_DEPRECATED_MACRO_BASE_(why) _Pragma(#why)
+#define PETSC_DEPRECATED_OBJECT_BASE(string_literal_why) __attribute__((deprecated(string_literal_why)))
+#define PETSC_DEPRECATED_TYPEDEF_BASE(string_literal_why) __attribute__((deprecated(string_literal_why)))
+#define PETSC_DIR "/opt/petsc/linux-c-opt"
+#define PETSC_DIR_SEPARATOR '/'
+#define PETSC_FORTRAN_CHARLEN_T size_t
+#define PETSC_FUNCTION_NAME_C __func__
+#define PETSC_FUNCTION_NAME_CXX __func__
+#define PETSC_HAVE_ACCESS 1
+#define PETSC_HAVE_ATOLL 1
+#define PETSC_HAVE_ATTRIBUTEALIGNED 1
+#define PETSC_HAVE_BUILTIN_EXPECT 1
+#define PETSC_HAVE_BZERO 1
+#define PETSC_HAVE_C99_COMPLEX 1
+#define PETSC_HAVE_CLOCK 1
+#define PETSC_HAVE_CXX 1
+#define PETSC_HAVE_CXX_ATOMIC 1
+#define PETSC_HAVE_CXX_COMPLEX 1
+#define PETSC_HAVE_CXX_COMPLEX_FIX 1
+#define PETSC_HAVE_CXX_DIALECT_CXX11 1
+#define PETSC_HAVE_CXX_DIALECT_CXX14 1
+#define PETSC_HAVE_CXX_DIALECT_CXX17 1
+#define PETSC_HAVE_CXX_DIALECT_CXX20 1
+#define PETSC_HAVE_DLADDR 1
+#define PETSC_HAVE_DLCLOSE 1
+#define PETSC_HAVE_DLERROR 1
+#define PETSC_HAVE_DLFCN_H 1
+#define PETSC_HAVE_DLOPEN 1
+#define PETSC_HAVE_DLSYM 1
+#define PETSC_HAVE_DOUBLE_ALIGN_MALLOC 1
+#define PETSC_HAVE_DRAND48 1
+#define PETSC_HAVE_DYNAMIC_LIBRARIES 1
+#define PETSC_HAVE_ERF 1
+#define PETSC_HAVE_EXECUTABLE_EXPORT 1
+#define PETSC_HAVE_FCNTL_H 1
+#define PETSC_HAVE_FENV_H 1
+#define PETSC_HAVE_FE_VALUES 1
+#define PETSC_HAVE_FFTW 1
+#define PETSC_HAVE_FLOAT_H 1
+#define PETSC_HAVE_FORK 1
+#define PETSC_HAVE_FORTRAN_FLUSH 1
+#define PETSC_HAVE_FORTRAN_FREE_LINE_LENGTH_NONE 1
+#define PETSC_HAVE_FORTRAN_TYPE_STAR 1
+#define PETSC_HAVE_FORTRAN_UNDERSCORE 1
+#define PETSC_HAVE_GETCWD 1
+#define PETSC_HAVE_GETDOMAINNAME 1
+#define PETSC_HAVE_GETHOSTBYNAME 1
+#define PETSC_HAVE_GETHOSTNAME 1
+#define PETSC_HAVE_GETPAGESIZE 1
+#define PETSC_HAVE_GETRUSAGE 1
+#define PETSC_HAVE_GSL 1
+#define PETSC_HAVE_HDF5 1
+#define PETSC_HAVE_IMMINTRIN_H 1
+#define PETSC_HAVE_INTTYPES_H 1
+#define PETSC_HAVE_ISINF 1
+#define PETSC_HAVE_ISNAN 1
+#define PETSC_HAVE_ISNORMAL 1
+#define PETSC_HAVE_LGAMMA 1
+#define PETSC_HAVE_LIBJPEG 1
+#define PETSC_HAVE_LINUX 1
+#define PETSC_HAVE_LOG2 1
+#define PETSC_HAVE_LSEEK 1
+#define PETSC_HAVE_MALLOC_H 1
+#define PETSC_HAVE_MEMMOVE 1
+#define PETSC_HAVE_MKSTEMP 1
+#define PETSC_HAVE_MPIEXEC_ENVIRONMENTAL_VARIABLE OMP
+#define PETSC_HAVE_MPIIO 1
+#define PETSC_HAVE_MPI_COMBINER_CONTIGUOUS 1
+#define PETSC_HAVE_MPI_COMBINER_DUP 1
+#define PETSC_HAVE_MPI_COMBINER_NAMED 1
+#define PETSC_HAVE_MPI_COUNT 1
+#define PETSC_HAVE_MPI_F90MODULE 1
+#define PETSC_HAVE_MPI_FEATURE_DYNAMIC_WINDOW 1
+#define PETSC_HAVE_MPI_GET_ACCUMULATE 1
+#define PETSC_HAVE_MPI_GET_LIBRARY_VERSION 1
+#define PETSC_HAVE_MPI_GPU_AWARE 1
+#define PETSC_HAVE_MPI_INIT_THREAD 1
+#define PETSC_HAVE_MPI_INT64_T 1
+#define PETSC_HAVE_MPI_LONG_DOUBLE 1
+#define PETSC_HAVE_MPI_NEIGHBORHOOD_COLLECTIVES 1
+#define PETSC_HAVE_MPI_NONBLOCKING_COLLECTIVES 1
+#define PETSC_HAVE_MPI_ONE_SIDED 1
+#define PETSC_HAVE_MPI_PERSISTENT_NEIGHBORHOOD_COLLECTIVES 1
+#define PETSC_HAVE_MPI_PROCESS_SHARED_MEMORY 1
+#define PETSC_HAVE_MPI_REDUCE_LOCAL 1
+#define PETSC_HAVE_MPI_REDUCE_SCATTER_BLOCK 1
+#define PETSC_HAVE_MPI_RGET 1
+#define PETSC_HAVE_MPI_WIN_CREATE 1
+#define PETSC_HAVE_NANOSLEEP 1
+#define PETSC_HAVE_NETCDF 1
+#define PETSC_HAVE_NETDB_H 1
+#define PETSC_HAVE_NETINET_IN_H 1
+#define PETSC_HAVE_NO_FINITE_MATH_ONLY 1
+#define PETSC_HAVE_OPENMPI 1
+#define PETSC_HAVE_PACKAGES ":amd:blaslapack:cholmod:fftw3:gsl:hdf5:klu:libjpeg:mathlib:mpi:netcdf:pthread:regex:spqr:superlu:umfpack:yaml:zfp:zlib:"
+#define PETSC_HAVE_PETSC4PY 1
+#define PETSC_HAVE_POPEN 1
+#define PETSC_HAVE_POSIX_MEMALIGN 1
+#define PETSC_HAVE_PTHREAD 1
+#define PETSC_HAVE_PTHREAD_MUTEX 1
+#define PETSC_HAVE_PWD_H 1
+#define PETSC_HAVE_RAND 1
+#define PETSC_HAVE_READLINK 1
+#define PETSC_HAVE_REALPATH 1
+#define PETSC_HAVE_REAL___FLOAT128 1
+#define PETSC_HAVE_REGEX 1
+#define PETSC_HAVE_RTLD_DEFAULT 1
+#define PETSC_HAVE_RTLD_GLOBAL 1
+#define PETSC_HAVE_RTLD_LAZY 1
+#define PETSC_HAVE_RTLD_LOCAL 1
+#define PETSC_HAVE_RTLD_NOW 1
+#define PETSC_HAVE_SETJMP_H 1
+#define PETSC_HAVE_SHMGET 1
+#define PETSC_HAVE_SLEEP 1
+#define PETSC_HAVE_SNPRINTF 1
+#define PETSC_HAVE_SOCKET 1
+#define PETSC_HAVE_SO_REUSEADDR 1
+#define PETSC_HAVE_STDATOMIC_H 1
+#define PETSC_HAVE_STDINT_H 1
+#define PETSC_HAVE_STRCASECMP 1
+#define PETSC_HAVE_STRINGS_H 1
+#define PETSC_HAVE_STRUCT_SIGACTION 1
+#define PETSC_HAVE_SUITESPARSE 1
+#define PETSC_HAVE_SUPERLU 1
+#define PETSC_HAVE_SYS_PARAM_H 1
+#define PETSC_HAVE_SYS_PROCFS_H 1
+#define PETSC_HAVE_SYS_RESOURCE_H 1
+#define PETSC_HAVE_SYS_SOCKET_H 1
+#define PETSC_HAVE_SYS_TIMES_H 1
+#define PETSC_HAVE_SYS_TIME_H 1
+#define PETSC_HAVE_SYS_TYPES_H 1
+#define PETSC_HAVE_SYS_UTSNAME_H 1
+#define PETSC_HAVE_SYS_WAIT_H 1
+#define PETSC_HAVE_TAU_PERFSTUBS 1
+#define PETSC_HAVE_TGAMMA 1
+#define PETSC_HAVE_TIME 1
+#define PETSC_HAVE_TIME_H 1
+#define PETSC_HAVE_UNAME 1
+#define PETSC_HAVE_UNISTD_H 1
+#define PETSC_HAVE_USLEEP 1
+#define PETSC_HAVE_VA_COPY 1
+#define PETSC_HAVE_VSNPRINTF 1
+#define PETSC_HAVE_XMMINTRIN_H 1
+#define PETSC_HAVE_YAML 1
+#define PETSC_HAVE_ZFP 1
+#define PETSC_HDF5_HAVE_PARALLEL 1
+#define PETSC_HDF5_HAVE_SZLIB 1
+#define PETSC_HDF5_HAVE_ZLIB 1
+#define PETSC_INTPTR_T intptr_t
+#define PETSC_INTPTR_T_FMT "#" PRIxPTR
+#define PETSC_IS_COLORING_MAX USHRT_MAX
+#define PETSC_IS_COLORING_VALUE_TYPE short
+#define PETSC_IS_COLORING_VALUE_TYPE_F integer2
+#define PETSC_LEVEL1_DCACHE_LINESIZE 64
+#define PETSC_LIB_DIR "/opt/petsc/linux-c-opt/lib"
+#define PETSC_LIB_NAME_SUFFIX ""
+#define PETSC_MAX_PATH_LEN 4096
+#define PETSC_MEMALIGN 16
+#define PETSC_MISSING_LAPACK_lsame 1
+#define PETSC_MPICC_SHOW "gcc -I/usr/include -Wl,-rpath -Wl,/usr/lib -Wl,--enable-new-dtags -lmpi"
+#define PETSC_MPIU_IS_COLORING_VALUE_TYPE MPI_UNSIGNED_SHORT
+#define PETSC_OMAKE "/usr/bin/make --no-print-directory"
+#define PETSC_PETSC4PY_INSTALL_PATH "/opt/petsc/linux-c-opt/lib"
+#define PETSC_PREFETCH_HINT_NTA _MM_HINT_NTA
+#define PETSC_PREFETCH_HINT_T0 _MM_HINT_T0
+#define PETSC_PREFETCH_HINT_T1 _MM_HINT_T1
+#define PETSC_PREFETCH_HINT_T2 _MM_HINT_T2
+#define PETSC_PYTHON_EXE "/usr/bin/python3"
+#define PETSC_Prefetch(a,b,c) _mm_prefetch((const char*)(a),(c))
+#define PETSC_REPLACE_DIR_SEPARATOR '\\'
+#define PETSC_SIGNAL_CAST  
+#define PETSC_SIZEOF_INT 4
+#define PETSC_SIZEOF_LONG 8
+#define PETSC_SIZEOF_LONG_LONG 8
+#define PETSC_SIZEOF_SIZE_T 8
+#define PETSC_SIZEOF_VOID_P 8
+#define PETSC_SLSUFFIX "so"
+#define PETSC_UINTPTR_T uintptr_t
+#define PETSC_UINTPTR_T_FMT "#" PRIxPTR
+#define PETSC_UNUSED __attribute((unused))
+#define PETSC_USE_AVX512_KERNELS 1
+#define PETSC_USE_CTABLE 1
+#define PETSC_USE_DEBUG 1
+#define PETSC_USE_DMLANDAU_2D 1
+#define PETSC_USE_FORTRAN_BINDINGS 1
+#define PETSC_USE_INFO 1
+#define PETSC_USE_ISATTY 1
+#define PETSC_USE_LOG 1
+#define PETSC_USE_PROC_FOR_SIZE 1
+#define PETSC_USE_REAL_DOUBLE 1
+#define PETSC_USE_SHARED_LIBRARIES 1
+#define PETSC_USE_SINGLE_LIBRARY 1
+#define PETSC_USE_SOCKET_VIEWER 1
+#define PETSC_USE_VISIBILITY_C 1
+#define PETSC_USE_VISIBILITY_CXX 1
+#define PETSC_USING_64BIT_PTR 1
+#define PETSC_USING_F2003 1
+#define PETSC_USING_F90FREEFORM 1
+#define PETSC__BSD_SOURCE 1
+#define PETSC__DEFAULT_SOURCE 1
+#define PETSC__GNU_SOURCE 1
+-----------------------------------------
+Using C compile: /usr/bin/mpicc -o gmakeinfo -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto -fPIC  
+C compiler version: gcc (GCC) 15.2.1 20250813
+Using C++ compile: /usr/bin/mpicxx -o gmakeinfo -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto  -std=gnu++20 -fPIC  -I/build/petsc/src/petsc-3.24.0/include -I/build/petsc/src/petsc-3.24.0/linux-c-opt/include -I/usr/include/suitesparse -I/usr/include -I/usr/include/superlu   
+C++ compiler version: g++ (GCC) 15.2.1 20250813
+Using Fortran compile: /usr/bin/mpif90 -o gmakeinfo -c -march=x86-64 -mtune=generic -O2 -pipe -fno-plt         -Wp,-D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -fPIC    -I/build/petsc/src/petsc-3.24.0/include -I/build/petsc/src/petsc-3.24.0/linux-c-opt/include -I/usr/include/suitesparse -I/usr/include -I/usr/include/superlu   
+Fortran compiler version: GNU Fortran (GCC) 15.2.1 20250813
+-----------------------------------------
+Using C/C++ linker: /usr/bin/mpicc
+Using C/C++ flags: -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -flto=auto -fPIC
+Using Fortran linker: /usr/bin/mpif90
+Using Fortran flags: -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt         -Wp,-D_FORTIFY_SOURCE=3 -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/petsc/src=/usr/src/debug/petsc -fPIC 
+-----------------------------------------
+Using system modules: 
+Using mpi.h: # 1 "/usr/include/mpi.h" 1 3 4
+-----------------------------------------
+Using libraries: -Wl,-rpath,/build/petsc/src/petsc-3.24.0/linux-c-opt/lib -L/build/petsc/src/petsc-3.24.0/linux-c-opt/lib -Wl,-rpath,/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -lpetsc -lspqr -lumfpack -lklu -lcholmod -lamd -lfftw3_mpi -lfftw3 -lsuperlu -llapack -lblas -lzfp -lnetcdf -lhdf5_hl_fortran -lhdf5_fortran -lhdf5_hl_f90cstub -lhdf5_f90cstub -lhdf5_hl -lhdf5 -lgsl -lgslcblas -lm -lz -ljpeg -lyaml -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lgfortran -lm -lgfortran -lm -lgcc_s -lquadmath
+------------------------------------------
+Using mpiexec: /usr/bin/mpiexec --oversubscribe
+------------------------------------------
+Using MAKE: /usr/bin/make
+Default MAKEFLAGS: MAKE_NP:18 MAKE_LOAD:24.0 MAKEFLAGS: -j20 --jobserver-auth=fifo:/tmp/GMfifo7078 --no-print-directory -- PETSC_ARCH=linux-c-opt PETSC_DIR=/build/petsc/src/petsc-3.24.0
+==========================================
+/usr/bin/make --print-directory -f gmakefile -l24.0 --output-sync=recurse V= libs
+make[3]: Entering directory '/build/petsc/src/petsc-3.24.0'
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/symtranspose.o
+         FC linux-c-opt/obj/src/sys/ftn-src/somefort.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dclearf.o
+         CC linux-c-opt/obj/ftn/sys/classes/bag/bagf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/impls/null/drawnullf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/impls/image/drawimagef.o
+         CC linux-c-opt/obj/ftn/sys/classes/bm/interfaces/bmf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dcoorf.o
+         FC linux-c-opt/obj/src/sys/ftn-src/f90_fwrap.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dellipsef.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dflushf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dlinef.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dmarkerf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dmousef.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dpausef.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dpointf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/drectf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/drawf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/drawregf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dsavef.o
+        CXX linux-c-opt/obj/src/sys/dll/cxx/demangle.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dtextf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dviewpf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/interface/dtrif.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/utils/cmapf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/utils/axiscf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/utils/dscatterf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/utils/barsf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/utils/histsf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/utils/lgf.o
+         CC linux-c-opt/obj/ftn/sys/classes/random/interface/dlregisrandf.o
+         CC linux-c-opt/obj/ftn/sys/classes/random/interface/randregf.o
+         CC linux-c-opt/obj/ftn/sys/classes/draw/utils/lgcf.o
+         CC linux-c-opt/obj/ftn/sys/classes/random/interface/randomcf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/ascii/filevf.o
+         CC linux-c-opt/obj/ftn/sys/classes/random/interface/randomf.o
+        CXX linux-c-opt/obj/ftn/sys/objects/device/interface/devicef.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/draw/draw/fdrawvf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/ascii/vcreateaf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/binary/binvf.o
+        CXX linux-c-opt/obj/ftn/sys/objects/device/interface/global_dcontextf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/glvis/glvisf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/draw/drawvf.o
+        CXX linux-c-opt/obj/ftn/sys/objects/device/interface/dcontextf.o
+        CXX linux-c-opt/obj/src/sys/objects/device/impls/host/hostcontext.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/string/stringvf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/socket/sendf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/python/pythonviewerf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/interface/duplf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/interface/dlregispetscf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/vu/petscvuf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/vtk/vtkvf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/impls/hdf5/hdf5vf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/interface/flushf.o
+        CXX linux-c-opt/obj/src/sys/objects/device/impls/host/hostdevice.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/interface/viewaf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/interface/viewersf.o
+         CC linux-c-opt/obj/ftn/sys/error/checkptrf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/interface/viewf.o
+         CC linux-c-opt/obj/ftn/sys/classes/viewer/interface/viewregf.o
+         CC linux-c-opt/obj/ftn/sys/dll/regf.o
+         CC linux-c-opt/obj/ftn/sys/dll/dlf.o
+         CC linux-c-opt/obj/ftn/sys/error/errtracef.o
+         CC linux-c-opt/obj/ftn/sys/error/fpf.o
+         CC linux-c-opt/obj/ftn/sys/error/adebugf.o
+         CC linux-c-opt/obj/ftn/sys/error/errf.o
+         CC linux-c-opt/obj/ftn/sys/error/signalf.o
+         CC linux-c-opt/obj/ftn/sys/fileio/fdirf.o
+         CC linux-c-opt/obj/ftn/sys/fileio/fretrievef.o
+         CC linux-c-opt/obj/ftn/sys/fileio/fpathf.o
+         CC linux-c-opt/obj/ftn/sys/fileio/ftestf.o
+         CC linux-c-opt/obj/ftn/sys/fileio/grpathf.o
+         CC linux-c-opt/obj/ftn/sys/fileio/fwdf.o
+         CC linux-c-opt/obj/ftn/sys/fileio/rpathf.o
+         CC linux-c-opt/obj/ftn/sys/fileio/mprintf.o
+        CXX linux-c-opt/obj/src/sys/objects/device/interface/global_dcontext.o
+         CC linux-c-opt/obj/ftn/sys/fileio/ghomef.o
+         CC linux-c-opt/obj/ftn/sys/fileio/mpiuopenf.o
+         CC linux-c-opt/obj/ftn/sys/info/verboseinfof.o
+         CC linux-c-opt/obj/ftn/sys/fileio/sysiof.o
+         CC linux-c-opt/obj/ftn/sys/logging/handler/interface/lhregf.o
+         CC linux-c-opt/obj/ftn/sys/logging/handler/interface/loghandlerf.o
+         CC linux-c-opt/obj/ftn/sys/memory/memf.o
+         CC linux-c-opt/obj/ftn/sys/memory/malf.o
+         CC linux-c-opt/obj/ftn/sys/logging/plogf.o
+         CC linux-c-opt/obj/ftn/sys/objects/finitf.o
+         CC linux-c-opt/obj/ftn/sys/objects/device/util/deviceregf.o
+         CC linux-c-opt/obj/ftn/sys/objects/device/util/memoryf.o
+        CXX linux-c-opt/obj/src/sys/objects/device/interface/device.o
+         CC linux-c-opt/obj/ftn/sys/objects/destroyf.o
+         CC linux-c-opt/obj/ftn/sys/memory/mtrf.o
+         CC linux-c-opt/obj/ftn/sys/objects/gtypef.o
+         CC linux-c-opt/obj/ftn/sys/logging/state/logstatef.o
+         CC linux-c-opt/obj/ftn/sys/objects/gcommf.o
+         CC linux-c-opt/obj/ftn/sys/objects/gcookief.o
+         CC linux-c-opt/obj/ftn/sys/objects/initf.o
+         CC linux-c-opt/obj/ftn/sys/objects/olistf.o
+         CC linux-c-opt/obj/ftn/sys/objects/packagef.o
+         CC linux-c-opt/obj/ftn/sys/objects/inheritf.o
+         CC linux-c-opt/obj/ftn/sys/objects/pgnamef.o
+         CC linux-c-opt/obj/ftn/sys/objects/subcommf.o
+         CC linux-c-opt/obj/ftn/sys/objects/optionsyamlf.o
+         CC linux-c-opt/obj/ftn/sys/objects/prefixf.o
+         CC linux-c-opt/obj/ftn/sys/objects/pinitf.o
+         CC linux-c-opt/obj/ftn/sys/objects/ptypef.o
+         CC linux-c-opt/obj/ftn/sys/objects/versionf.o
+         CC linux-c-opt/obj/ftn/sys/objects/statef.o
+         CC linux-c-opt/obj/ftn/sys/objects/pnamef.o
+         CC linux-c-opt/obj/ftn/sys/objects/tagmf.o
+         CC linux-c-opt/obj/ftn/sys/objects/optionsf.o
+         CC linux-c-opt/obj/ftn/sys/stubs/petsclogf.o
+         CC linux-c-opt/obj/ftn/sys/time/cputimef.o
+         CC linux-c-opt/obj/ftn/sys/utils/fhostf.o
+         CC linux-c-opt/obj/ftn/sys/python/pythonsysf.o
+         CC linux-c-opt/obj/ftn/sys/utils/archf.o
+         CC linux-c-opt/obj/ftn/sys/time/fdatef.o
+         CC linux-c-opt/obj/ftn/sys/stubs/petsctimef.o
+         CC linux-c-opt/obj/ftn/sys/utils/fuserf.o
+         CC linux-c-opt/obj/ftn/sys/utils/memcf.o
+         CC linux-c-opt/obj/ftn/sys/utils/mpishmf.o
+         CC linux-c-opt/obj/ftn/sys/utils/mathfitf.o
+         CC linux-c-opt/obj/ftn/sys/utils/mpimesgf.o
+         CC linux-c-opt/obj/ftn/sys/stubs/petscsysf.o
+         CC linux-c-opt/obj/ftn/sys/utils/mpitsf.o
+         CC linux-c-opt/obj/ftn/sys/utils/mpiuf.o
+         CC linux-c-opt/obj/ftn/sys/stubs/petscstringf.o
+         CC linux-c-opt/obj/ftn/sys/utils/pbarrierf.o
+         CC linux-c-opt/obj/ftn/sys/utils/psleepf.o
+         CC linux-c-opt/obj/ftn/sys/utils/serverf.o
+         CC linux-c-opt/obj/ftn/sys/utils/pdisplayf.o
+         CC linux-c-opt/obj/ftn/sys/utils/sortipf.o
+         CC linux-c-opt/obj/ftn/sys/utils/psplitf.o
+         CC linux-c-opt/obj/ftn/sys/utils/sortdf.o
+         CC linux-c-opt/obj/ftn/sys/utils/segbufferf.o
+         CC linux-c-opt/obj/ftn/sys/utils/sortsof.o
+         CC linux-c-opt/obj/ftn/sys/utils/strf.o
+        CXX linux-c-opt/obj/src/sys/objects/cxx/object_pool.o
+         CC linux-c-opt/obj/src/sys/classes/bag/ftn-custom/zbagf.o
+         CC linux-c-opt/obj/ftn/sys/utils/sortif.o
+        CXX linux-c-opt/obj/src/sys/objects/device/interface/memory.o
+         CC linux-c-opt/obj/src/sys/classes/bag/ftn-custom/zbagf90.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dcoor.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dclear.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dellipse.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dline.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dflush.o
+         CC linux-c-opt/obj/src/sys/classes/draw/impls/null/drawnull.o
+         CC linux-c-opt/obj/src/sys/classes/draw/impls/tikz/tikz.o
+         CC linux-c-opt/obj/src/sys/classes/bm/interfaces/bm.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dmarker.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dmouse.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/drawregall.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dpause.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dpoint.o
+         CC linux-c-opt/obj/src/sys/classes/draw/impls/image/drawimage.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/drect.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/draw.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/drawreg.o
+         CC linux-c-opt/obj/src/sys/classes/bag/bag.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dtext.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/ftn-custom/zzoomf.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/axis.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dtri.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dsave.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/cmap.o
+         CC linux-c-opt/obj/src/sys/classes/draw/interface/dviewp.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/bars.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/lg.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/zoom.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/image.o
+         CC linux-c-opt/obj/src/sys/classes/random/impls/rand/rand.o
+         CC linux-c-opt/obj/src/sys/classes/random/impls/rander48/rander48.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/dscatter.o
+         CC linux-c-opt/obj/src/sys/classes/random/interface/dlregisrand.o
+         CC linux-c-opt/obj/src/sys/classes/random/impls/rand48/rand48.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/axisc.o
+         CC linux-c-opt/obj/src/sys/classes/random/interface/randreg.o
+         CC linux-c-opt/obj/src/sys/classes/random/interface/random.o
+        CXX linux-c-opt/obj/src/sys/objects/device/interface/dcontext.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/hists.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/ascii/ftn-custom/zfilevf.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/ascii/ftn-custom/zvcreatef.o
+         CC linux-c-opt/obj/src/sys/classes/random/interface/randomc.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/binary/ftn-custom/zbinvf90.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/draw/ftn-custom/zdrawvf.o
+         CC linux-c-opt/obj/src/sys/classes/draw/utils/lgc.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/ascii/vcreatea.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/string/ftn-custom/zstringvf.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/pyvista/pyvistaviewer.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/draw/draw/fdrawv.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/python/pythonviewer.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/interface/dlregispetsc.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/hdf5/ftn-custom/zhdf5f.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/string/stringv.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/interface/ftn-custom/zviewaf.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/interface/flush.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/interface/dupl.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/socket/send.o
+        CXX linux-c-opt/obj/src/sys/objects/device/interface/mark_dcontext.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/vu/petscvu.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/vtk/vtkv.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/interface/viewa.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/interface/viewregall.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/utils/btview.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/interface/viewers.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/draw/drawv.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/ascii/filev.o
+         CC linux-c-opt/obj/src/sys/error/checkptr.o
+         CC linux-c-opt/obj/src/sys/dll/dlimpl.o
+         CC linux-c-opt/obj/src/sys/error/errabort.o
+         CC linux-c-opt/obj/src/sys/error/errstop.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/interface/view.o
+         CC linux-c-opt/obj/src/sys/error/pstack.o
+         CC linux-c-opt/obj/src/sys/error/ftn-custom/zerrf.o
+         CC linux-c-opt/obj/src/sys/dll/dl.o
+         CC linux-c-opt/obj/src/sys/error/signal.o
+         CC linux-c-opt/obj/src/sys/error/errtrace.o
+         CC linux-c-opt/obj/src/sys/error/adebug.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/glvis/glvis.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/interface/viewreg.o
+         CC linux-c-opt/obj/src/sys/fileio/fpath.o
+         CC linux-c-opt/obj/src/sys/error/fp.o
+         CC linux-c-opt/obj/src/sys/fileio/fdir.o
+         CC linux-c-opt/obj/src/sys/dll/reg.o
+         CC linux-c-opt/obj/src/sys/fileio/ftest.o
+         CC linux-c-opt/obj/src/sys/fileio/fwd.o
+         CC linux-c-opt/obj/src/sys/fileio/ftn-custom/zmpiuopenf.o
+         CC linux-c-opt/obj/src/sys/fileio/ftn-custom/zsysiof.o
+         CC linux-c-opt/obj/src/sys/error/err.o
+         CC linux-c-opt/obj/src/sys/fileio/ghome.o
+         CC linux-c-opt/obj/src/sys/fileio/ftn-custom/zmprintf.o
+         CC linux-c-opt/obj/src/sys/fileio/rpath.o
+         CC linux-c-opt/obj/src/sys/fileio/smatlab.o
+         FC linux-c-opt/obj/src/sys/ftn-mod/petscsysmod.o
+         CC linux-c-opt/obj/src/sys/fileio/grpath.o
+         CC linux-c-opt/obj/src/sys/fileio/fretrieve.o
+         CC linux-c-opt/obj/src/sys/fileio/mpiuopen.o
+         CC linux-c-opt/obj/src/sys/ftn-custom/zsys.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/binary/binv.o
+         CC linux-c-opt/obj/src/sys/ftn-custom/zsysf90.o
+         CC linux-c-opt/obj/src/sys/ftn-custom/zutils.o
+         CC linux-c-opt/obj/src/sys/info/ftn-custom/zverboseinfof.o
+         CC linux-c-opt/obj/src/sys/logging/ftn-custom/zplogf.o
+         CC linux-c-opt/obj/src/sys/ftn-custom/f90_cwrap.o
+         CC linux-c-opt/obj/src/sys/fileio/mprint.o
+         CC linux-c-opt/obj/src/sys/logging/handler/impls/legacy/loglegacy.o
+         CC linux-c-opt/obj/src/sys/classes/viewer/impls/hdf5/hdf5v.o
+         CC linux-c-opt/obj/src/sys/logging/handler/impls/trace/logtrace.o
+         CC linux-c-opt/obj/src/sys/logging/handler/interface/lhreg.o
+         CC linux-c-opt/obj/src/sys/memory/ftn-custom/zmtrf.o
+         CC linux-c-opt/obj/src/sys/logging/utils/stack.o
+         CC linux-c-opt/obj/src/sys/fileio/sysio.o
+         CC linux-c-opt/obj/src/sys/memory/mhbw.o
+         CC linux-c-opt/obj/src/sys/logging/handler/impls/perfstubs/logperfstubs.o
+         CC linux-c-opt/obj/src/sys/memory/mal.o
+         CC linux-c-opt/obj/src/sys/info/verboseinfo.o
+         CC linux-c-opt/obj/src/sys/memory/mem.o
+         CC linux-c-opt/obj/src/sys/logging/handler/interface/loghandler.o
+         CC linux-c-opt/obj/src/sys/objects/device/util/memory.o
+         CC linux-c-opt/obj/src/sys/logging/state/logstate.o
+         CC linux-c-opt/obj/src/sys/objects/finit.o
+         CC linux-c-opt/obj/src/sys/objects/device/util/devicereg.o
+         CC linux-c-opt/obj/src/sys/objects/ftn-custom/zgcommf.o
+         CC linux-c-opt/obj/src/sys/logging/handler/impls/nested/lognested.o
+         CC linux-c-opt/obj/src/sys/objects/ftn-custom/zstartf.o
+         CC linux-c-opt/obj/src/sys/objects/fcallback.o
+         CC linux-c-opt/obj/src/sys/objects/ftn-custom/zstart.o
+         CC linux-c-opt/obj/src/sys/objects/destroy.o
+         CC linux-c-opt/obj/src/sys/logging/handler/impls/nested/xmlviewer.o
+         CC linux-c-opt/obj/src/sys/objects/ftn-custom/zoptionsf.o
+         CC linux-c-opt/obj/src/sys/objects/gtype.o
+         CC linux-c-opt/obj/src/sys/objects/gcookie.o
+         CC linux-c-opt/obj/src/sys/objects/gcomm.o
+         CC linux-c-opt/obj/src/sys/logging/state/logregistry.o
+         CC linux-c-opt/obj/src/sys/objects/pgname.o
+         CC linux-c-opt/obj/src/sys/logging/plog.o
+         CC linux-c-opt/obj/src/sys/memory/mtr.o
+         CC linux-c-opt/obj/src/sys/objects/package.o
+         CC linux-c-opt/obj/src/sys/objects/olist.o
+         CC linux-c-opt/obj/src/sys/perfstubs/pstimer.o
+         CC linux-c-opt/obj/src/sys/objects/ptype.o
+         CC linux-c-opt/obj/src/sys/objects/pname.o
+         CC linux-c-opt/obj/src/sys/objects/prefix.o
+         CC linux-c-opt/obj/src/sys/objects/garbage.o
+         CC linux-c-opt/obj/src/sys/objects/version.o
+         CC linux-c-opt/obj/src/sys/objects/state.o
+         CC linux-c-opt/obj/src/sys/time/cputime.o
+         CC linux-c-opt/obj/src/sys/objects/optionsyaml.o
+         CC linux-c-opt/obj/src/sys/objects/aoptions.o
+         CC linux-c-opt/obj/src/sys/time/fdate.o
+         CC linux-c-opt/obj/src/sys/totalview/tv_data_display.o
+         CC linux-c-opt/obj/src/sys/python/pythonsys.o
+         CC linux-c-opt/obj/src/sys/utils/arch.o
+         CC linux-c-opt/obj/src/sys/objects/inherit.o
+         CC linux-c-opt/obj/src/sys/utils/ftn-custom/zsortsof.o
+         CC linux-c-opt/obj/src/sys/utils/fuser.o
+         CC linux-c-opt/obj/src/sys/utils/matheq.o
+         CC linux-c-opt/obj/src/sys/utils/ftn-custom/zstrf.o
+         CC linux-c-opt/obj/src/sys/objects/subcomm.o
+         CC linux-c-opt/obj/src/sys/objects/init.o
+         CC linux-c-opt/obj/src/sys/utils/mathclose.o
+         CC linux-c-opt/obj/src/sys/utils/mathinf.o
+         CC linux-c-opt/obj/src/sys/utils/memc.o
+         CC linux-c-opt/obj/src/sys/utils/fhost.o
+         CC linux-c-opt/obj/src/sys/utils/mathfit.o
+         CC linux-c-opt/obj/src/sys/objects/tagm.o
+         CC linux-c-opt/obj/src/sys/utils/pbarrier.o
+         CC linux-c-opt/obj/src/sys/utils/mpitr.o
+         CC linux-c-opt/obj/src/sys/utils/psleep.o
+         CC linux-c-opt/obj/src/sys/utils/segbuffer.o
+         CC linux-c-opt/obj/src/sys/utils/mpishm.o
+         CC linux-c-opt/obj/src/sys/utils/server.o
+         CC linux-c-opt/obj/src/sys/utils/pdisplay.o
+         CC linux-c-opt/obj/src/sys/utils/sortip.o
+         CC linux-c-opt/obj/src/sys/utils/sortd.o
+         CC linux-c-opt/obj/src/sys/utils/mpiu.o
+         CC linux-c-opt/obj/src/sys/utils/mpimesg.o
+         CC linux-c-opt/obj/ftn/vec/is/ao/impls/mapping/aomappingf.o
+         CC linux-c-opt/obj/ftn/vec/is/ao/impls/basic/aobasicf.o
+         CC linux-c-opt/obj/src/sys/utils/psplit.o
+         CC linux-c-opt/obj/ftn/vec/is/ao/impls/memscalable/aomemscalablef.o
+         CC linux-c-opt/obj/ftn/vec/is/is/impls/general/generalf.o
+         CC linux-c-opt/obj/ftn/vec/is/ao/interface/aof.o
+         CC linux-c-opt/obj/ftn/vec/is/is/impls/block/blockf.o
+         CC linux-c-opt/obj/ftn/vec/is/is/interface/isregallf.o
+         CC linux-c-opt/obj/ftn/vec/is/ao/interface/aoregf.o
+         CC linux-c-opt/obj/ftn/vec/is/is/interface/isregf.o
+         CC linux-c-opt/obj/src/sys/utils/str.o
+         CC linux-c-opt/obj/ftn/vec/is/is/impls/stride/stridef.o
+         CC linux-c-opt/obj/ftn/vec/is/is/interface/indexf.o
+         CC linux-c-opt/obj/src/sys/utils/mpits.o
+         CC linux-c-opt/obj/ftn/vec/is/is/utils/isblockf.o
+         CC linux-c-opt/obj/ftn/vec/is/is/utils/iscompf.o
+         CC linux-c-opt/obj/ftn/vec/is/is/utils/iscoloringf.o
+         CC linux-c-opt/obj/ftn/vec/is/is/utils/isdifff.o
+         CC linux-c-opt/obj/ftn/vec/is/sf/impls/window/sfwindowf.o
+         CC linux-c-opt/obj/src/sys/utils/sortso.o
+         CC linux-c-opt/obj/ftn/vec/is/sf/interface/dlregissff.o
+         CC linux-c-opt/obj/ftn/vec/is/utils/kdtreef.o
+         CC linux-c-opt/obj/ftn/vec/is/sf/utils/sfutilsf.o
+         CC linux-c-opt/obj/ftn/vec/is/sf/utils/sfcoordf.o
+         CC linux-c-opt/obj/src/sys/utils/sorti.o
+         CC linux-c-opt/obj/src/sys/objects/options.o
+         CC linux-c-opt/obj/src/sys/objects/pinit.o
+         CC linux-c-opt/obj/ftn/vec/is/utils/psortf.o
+         CC linux-c-opt/obj/ftn/vec/is/utils/hdf5/hdf5iof.o
+         CC linux-c-opt/obj/ftn/vec/is/utils/isltogf.o
+         CC linux-c-opt/obj/ftn/vec/pf/impls/string/cstringf.o
+         CC linux-c-opt/obj/ftn/vec/is/utils/pmapf.o
+         CC linux-c-opt/obj/ftn/vec/is/sf/interface/sff.o
+         CC linux-c-opt/obj/ftn/vec/pf/interface/pff.o
+         CC linux-c-opt/obj/ftn/vec/is/section/interface/sectionf.o
+         CC linux-c-opt/obj/ftn/vec/stubs/petscisf.o
+         CC linux-c-opt/obj/ftn/vec/vec/impls/mpi/commonmpvecf.o
+         CC linux-c-opt/obj/ftn/vec/stubs/petscsff.o
+         CC linux-c-opt/obj/ftn/vec/stubs/petscvecf.o
+         CC linux-c-opt/obj/ftn/vec/vec/impls/seq/bvec2f.o
+         CC linux-c-opt/obj/ftn/vec/vec/impls/seq/vseqcrf.o
+         CC linux-c-opt/obj/ftn/vec/vec/impls/mpi/vmpicrf.o
+         CC linux-c-opt/obj/ftn/vec/vec/interface/vecregallf.o
+         CC linux-c-opt/obj/ftn/vec/vec/impls/nest/vecnestf.o
+         CC linux-c-opt/obj/ftn/vec/vec/impls/shared/shvecf.o
+         CC linux-c-opt/obj/ftn/vec/vec/interface/dlregisvecf.o
+         CC linux-c-opt/obj/ftn/vec/vec/impls/mpi/pbvecf.o
+         CC linux-c-opt/obj/ftn/vec/vec/interface/veccreatef.o
+         CC linux-c-opt/obj/ftn/vec/vec/interface/vecregf.o
+         CC linux-c-opt/obj/ftn/vec/vec/interface/rvectorf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/tagger/impls/absolutef.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/combf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/tagger/impls/cdff.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/tagger/impls/andf.o
+         CC linux-c-opt/obj/ftn/vec/vec/interface/vectorf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/projectionf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/tagger/impls/orf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/veciof.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/tagger/impls/relativef.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/vecsf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/tagger/interface/dlregistaggerf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/tagger/interface/taggerregif.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/tagger/interface/taggerf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/vsectionf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/vinvf.o
+         CC linux-c-opt/obj/ftn/vec/vec/utils/vscatf.o
+         CC linux-c-opt/obj/src/vec/is/is/impls/ftn-custom/zblockf90.o
+         CC linux-c-opt/obj/src/vec/is/is/interface/ftn-custom/zindexf90.o
+         CC linux-c-opt/obj/src/vec/is/ao/interface/aoreg.o
+         CC linux-c-opt/obj/src/vec/is/ao/impls/mapping/aomapping.o
+         CC linux-c-opt/obj/src/vec/is/is/interface/isregall.o
+         CC linux-c-opt/obj/src/vec/is/is/interface/isreg.o
+         CC linux-c-opt/obj/src/vec/is/is/utils/ftn-custom/ziscoloringf90.o
+         CC linux-c-opt/obj/src/vec/is/section/interface/ftn-custom/zvsectionisf90.o
+         CC linux-c-opt/obj/src/vec/is/ao/impls/basic/aobasic.o
+         CC linux-c-opt/obj/src/vec/is/ao/interface/ao.o
+         CC linux-c-opt/obj/src/vec/is/is/utils/iscomp.o
+         CC linux-c-opt/obj/src/vec/is/is/impls/stride/stride.o
+         CC linux-c-opt/obj/src/vec/is/is/utils/isblock.o
+         CC linux-c-opt/obj/src/sys/logging/handler/impls/default/logdefault.o
+         CC linux-c-opt/obj/src/vec/is/is/impls/block/block.o
+         CC linux-c-opt/obj/src/vec/is/ao/impls/memscalable/aomemscalable.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/basic/allgather/sfallgather.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/basic/gather/sfgather.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/basic/gatherv/sfgatherv.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/basic/alltoall/sfalltoall.o
+         CC linux-c-opt/obj/src/vec/is/is/impls/general/general.o
+         CC linux-c-opt/obj/src/vec/is/sf/interface/dlregissf.o
+         CC linux-c-opt/obj/src/vec/is/section/interface/hdf5/sectionhdf5.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/basic/sfmpi.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/basic/neighbor/sfneighbor.o
+         CC linux-c-opt/obj/src/vec/is/sf/interface/ftn-custom/zsf.o
+         CC linux-c-opt/obj/src/vec/is/is/utils/isdiff.o
+         CC linux-c-opt/obj/src/vec/is/is/utils/iscoloring.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/basic/allgatherv/sfallgatherv.o
+         CC linux-c-opt/obj/src/vec/is/sf/utils/ftn-custom/zsfutilsf90.o
+         CC linux-c-opt/obj/src/vec/is/sf/interface/sfregi.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/basic/sfbasic.o
+         CC linux-c-opt/obj/src/vec/is/utils/ftn-custom/zisltogf90.o
+         CC linux-c-opt/obj/src/vec/is/utils/ftn-custom/zisltogf.o
+         CC linux-c-opt/obj/src/vec/is/utils/ftn-custom/zvsectionisf.o
+         CC linux-c-opt/obj/src/vec/is/sf/utils/sfcoord.o
+         CC linux-c-opt/obj/src/vec/is/sf/interface/sftype.o
+         CC linux-c-opt/obj/src/vec/is/utils/isio.o
+         CC linux-c-opt/obj/src/vec/pf/interface/pfall.o
+         CC linux-c-opt/obj/src/vec/pf/impls/constant/const.o
+         CC linux-c-opt/obj/src/vec/pf/impls/string/cstring.o
+         CC linux-c-opt/obj/src/vec/is/utils/pmap.o
+         CC linux-c-opt/obj/src/vec/is/utils/kdtree.o
+         CC linux-c-opt/obj/src/vec/vec/impls/mpi/commonmpvec.o
+         CC linux-c-opt/obj/src/vec/is/utils/hdf5/hdf5io.o
+         CC linux-c-opt/obj/src/vec/vec/impls/mpi/vmpicr.o
+         CC linux-c-opt/obj/src/vec/pf/interface/pf.o
+         CC linux-c-opt/obj/src/vec/is/is/interface/index.o
+         CC linux-c-opt/obj/src/vec/is/utils/psort.o
+         CC linux-c-opt/obj/src/vec/vec/impls/seq/vseqcr.o
+         CC linux-c-opt/obj/src/vec/vec/impls/seq/bvec3.o
+         CC linux-c-opt/obj/src/vec/vec/impls/mpi/pvec2.o
+         CC linux-c-opt/obj/src/vec/vec/impls/seq/bvec1.o
+         CC linux-c-opt/obj/src/vec/vec/impls/shared/shvec.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/window/sfwindow.o
+         CC linux-c-opt/obj/src/vec/vec/interface/ftn-custom/zvectorf90.o
+         CC linux-c-opt/obj/src/vec/vec/interface/ftn-custom/zvectorf.o
+         CC linux-c-opt/obj/src/vec/is/sf/utils/sfutils.o
+         CC linux-c-opt/obj/src/vec/vec/impls/mpi/pbvec.o
+         CC linux-c-opt/obj/src/vec/vec/interface/dlregisvec.o
+         CC linux-c-opt/obj/src/vec/vec/impls/seq/dvec2.o
+         CC linux-c-opt/obj/src/vec/vec/interface/vecregall.o
+         CC linux-c-opt/obj/src/vec/vec/interface/veccreate.o
+         CC linux-c-opt/obj/src/vec/is/utils/isltog.o
+         CC linux-c-opt/obj/src/vec/vec/utils/ftn-custom/zvsectionf90.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/impls/absolute.o
+         CC linux-c-opt/obj/src/vec/vec/interface/vecreg.o
+         CC linux-c-opt/obj/src/vec/vec/impls/seq/bvec2.o
+         CC linux-c-opt/obj/src/vec/vec/impls/mpi/pdvec.o
+         CC linux-c-opt/obj/src/vec/is/section/interface/section.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/impls/and.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/impls/or.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/interface/dlregistagger.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/impls/relative.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/impls/andor.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/impls/simple.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/interface/taggerregi.o
+         CC linux-c-opt/obj/src/vec/is/sf/interface/sf.o
+         CC linux-c-opt/obj/src/vec/vec/utils/comb.o
+         CC linux-c-opt/obj/src/vec/vec/impls/nest/vecnest.o
+         CC linux-c-opt/obj/src/vec/vec/utils/vecs.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/impls/cdf.o
+         CC linux-c-opt/obj/src/vec/vec/utils/tagger/interface/tagger.o
+         CC linux-c-opt/obj/src/vec/vec/utils/vecglvis.o
+         CC linux-c-opt/obj/ftn/mat/graphops/color/interface/matcoloringf.o
+         CC linux-c-opt/obj/ftn/mat/graphops/coarsen/impls/misk/miskf.o
+         CC linux-c-opt/obj/src/vec/vec/utils/vecio.o
+         CC linux-c-opt/obj/ftn/mat/graphops/coarsen/interface/coarsenf.o
+         CC linux-c-opt/obj/ftn/mat/graphops/color/utils/weightsf.o
+         CC linux-c-opt/obj/ftn/mat/graphops/order/sorderf.o
+         CC linux-c-opt/obj/src/vec/vec/utils/vecstash.o
+         CC linux-c-opt/obj/src/vec/vec/utils/vsection.o
+         CC linux-c-opt/obj/ftn/mat/graphops/order/spectralf.o
+         CC linux-c-opt/obj/ftn/mat/graphops/partition/impls/hierarchical/hierarchicalf.o
+         CC linux-c-opt/obj/ftn/mat/graphops/partition/partitionf.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/mpi/aijperm/mpiaijpermf.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/mpi/aijsell/mpiaijsellf.o
+         CC linux-c-opt/obj/ftn/mat/impls/adj/mpi/mpiadjf.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/mpi/fdmpiaijf.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/mpi/crl/mcrlf.o
+         CC linux-c-opt/obj/src/vec/vec/utils/projection.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/seq/aijf.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/seq/aijperm/aijpermf.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/mpi/mpiaijf.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/seq/aijsell/aijsellf.o
+         CC linux-c-opt/obj/src/vec/vec/interface/vector.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/seq/crl/crlf.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/seq/inodef.o
+         CC linux-c-opt/obj/ftn/mat/impls/aij/seq/superlu/superluf.o
+         CC linux-c-opt/obj/ftn/mat/impls/baij/mpi/mpibaijf.o
+         CC linux-c-opt/obj/ftn/mat/impls/blockmat/seq/blockmatf.o
+         CC linux-c-opt/obj/ftn/mat/impls/baij/seq/baijf.o
+         CC linux-c-opt/obj/ftn/mat/impls/cdiagonal/cdiagonalf.o
+         CC linux-c-opt/obj/ftn/mat/impls/centering/centeringf.o
+         CC linux-c-opt/obj/ftn/mat/impls/composite/mcompositef.o
+         CC linux-c-opt/obj/ftn/mat/impls/dense/mpi/mpidensef.o
+         CC linux-c-opt/obj/ftn/mat/impls/dense/seq/densef.o
+         CC linux-c-opt/obj/src/vec/vec/utils/vscat.o
+         CC linux-c-opt/obj/ftn/mat/impls/diagonal/diagonalf.o
+         CC linux-c-opt/obj/ftn/mat/impls/fft/fftw/fftwf.o
+         CC linux-c-opt/obj/ftn/mat/impls/fft/fftf.o
+         CC linux-c-opt/obj/ftn/mat/impls/is/matisf.o
+         CC linux-c-opt/obj/ftn/mat/impls/kaij/kaijf.o
+         CC linux-c-opt/obj/ftn/mat/impls/localref/mlocalreff.o
+         CC linux-c-opt/obj/ftn/mat/impls/mffd/mffddeff.o
+         CC linux-c-opt/obj/ftn/mat/impls/maij/maijf.o
+         CC linux-c-opt/obj/ftn/mat/impls/lrc/lrcf.o
+         CC linux-c-opt/obj/ftn/mat/impls/mffd/wpf.o
+         CC linux-c-opt/obj/ftn/mat/impls/normal/normmf.o
+         CC linux-c-opt/obj/ftn/mat/impls/mffd/mffdf.o
+         CC linux-c-opt/obj/ftn/mat/impls/preallocator/matpreallocatorf.o
+         CC linux-c-opt/obj/ftn/mat/impls/nest/matnestf.o
+         CC linux-c-opt/obj/ftn/mat/impls/normal/normmhf.o
+         CC linux-c-opt/obj/ftn/mat/impls/sbaij/mpi/mpisbaijf.o
+         FC linux-c-opt/obj/src/vec/ftn-mod/petscvecmod.o
+         CC linux-c-opt/obj/ftn/mat/impls/python/pythonmatf.o
+         CC linux-c-opt/obj/ftn/mat/impls/sbaij/seq/srof.o
+         CC linux-c-opt/obj/ftn/mat/impls/sbaij/seq/sbaijf.o
+         CC linux-c-opt/obj/ftn/mat/impls/scatter/mscatterf.o
+         CC linux-c-opt/obj/ftn/mat/impls/sell/seq/sellf.o
+         CC linux-c-opt/obj/ftn/mat/impls/submat/submatf.o
+         CC linux-c-opt/obj/ftn/mat/impls/transpose/htransmf.o
+         CC linux-c-opt/obj/ftn/mat/impls/transpose/transmf.o
+         CC linux-c-opt/obj/ftn/mat/impls/sell/mpi/mpisellf.o
+         CC linux-c-opt/obj/ftn/mat/impls/shell/shellf.o
+         CC linux-c-opt/obj/ftn/mat/interface/matnullf.o
+         CC linux-c-opt/obj/ftn/mat/interface/dlregismatf.o
+         CC linux-c-opt/obj/ftn/mat/interface/matproductf.o
+         CC linux-c-opt/obj/ftn/mat/interface/matregf.o
+         CC linux-c-opt/obj/ftn/mat/utils/bandwidthf.o
+         CC linux-c-opt/obj/ftn/mat/utils/axpyf.o
+         CC linux-c-opt/obj/ftn/mat/stubs/petscmatf.o
+         CC linux-c-opt/obj/ftn/mat/matfd/fdmatrixf.o
+         CC linux-c-opt/obj/src/vec/vec/utils/vinv.o
+         CC linux-c-opt/obj/ftn/mat/utils/veccreatematdensef.o
+         CC linux-c-opt/obj/ftn/mat/utils/gcreatef.o
+         CC linux-c-opt/obj/ftn/mat/utils/zerodiagf.o
+         CC linux-c-opt/obj/ftn/mat/utils/multequalf.o
+         CC linux-c-opt/obj/ftn/mat/utils/pheapf.o
+         CC linux-c-opt/obj/ftn/mat/utils/getcolvf.o
+         CC linux-c-opt/obj/src/vec/vec/interface/rvector.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/minpack/degr.o
+         CC linux-c-opt/obj/src/mat/graphops/coarsen/interface/scoarsen.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/minpack/seq.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/minpack/dsm.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/minpack/numsrt.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/minpack/ido.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/minpack/setr.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/minpack/color.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/minpack/slo.o
+         CC linux-c-opt/obj/ftn/mat/interface/matrixf.o
+         CC linux-c-opt/obj/src/mat/graphops/coarsen/impls/mis/mis.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/power/power.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/natural/natural.o
+         CC linux-c-opt/obj/src/mat/graphops/coarsen/impls/misk/misk.o
+         CC linux-c-opt/obj/src/mat/graphops/coarsen/interface/coarsen.o
+         CC linux-c-opt/obj/src/mat/graphops/color/interface/matcoloringregi.o
+         CC linux-c-opt/obj/src/mat/graphops/color/interface/matcoloring.o
+         CC linux-c-opt/obj/src/mat/graphops/order/degree.o
+         CC linux-c-opt/obj/src/mat/graphops/order/fn1wd.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/greedy/greedy.o
+         CC linux-c-opt/obj/src/mat/graphops/order/fnroot.o
+         CC linux-c-opt/obj/src/mat/graphops/color/utils/bipartite.o
+         CC linux-c-opt/obj/src/mat/graphops/order/amd/amd.o
+         CC linux-c-opt/obj/src/mat/graphops/order/fndsep.o
+         CC linux-c-opt/obj/src/mat/graphops/color/utils/valid.o
+         CC linux-c-opt/obj/src/mat/graphops/order/genqmd.o
+         CC linux-c-opt/obj/src/mat/graphops/order/gennd.o
+         CC linux-c-opt/obj/src/mat/graphops/order/gen1wd.o
+         CC linux-c-opt/obj/src/mat/graphops/color/impls/jp/jp.o
+         CC linux-c-opt/obj/src/mat/graphops/order/genrcm.o
+         CC linux-c-opt/obj/src/mat/graphops/order/qmdqt.o
+         CC linux-c-opt/obj/src/mat/graphops/order/qmdmrg.o
+         CC linux-c-opt/obj/src/mat/graphops/order/qmdrch.o
+         CC linux-c-opt/obj/src/mat/graphops/order/rcm.o
+         CC linux-c-opt/obj/src/mat/graphops/order/rootls.o
+         CC linux-c-opt/obj/src/mat/graphops/color/utils/weights.o
+         CC linux-c-opt/obj/src/mat/graphops/order/qmdupd.o
+         CC linux-c-opt/obj/src/mat/graphops/order/spnd.o
+         CC linux-c-opt/obj/src/mat/graphops/order/sp1wd.o
+         CC linux-c-opt/obj/src/mat/graphops/order/sprcm.o
+         CC linux-c-opt/obj/src/mat/graphops/order/spqmd.o
+         CC linux-c-opt/obj/src/mat/graphops/order/wbm.o
+         CC linux-c-opt/obj/src/mat/graphops/order/spectral.o
+         CC linux-c-opt/obj/src/mat/graphops/order/sregis.o
+         CC linux-c-opt/obj/src/mat/graphops/partition/spartition.o
+         CC linux-c-opt/obj/src/mat/graphops/partition/ftn-custom/zpartitionf.o
+         CC linux-c-opt/obj/src/mat/impls/adj/mpi/ftn-custom/zmpiadjf.o
+         CC linux-c-opt/obj/src/mat/graphops/coarsen/impls/hem/hem.o
+         CC linux-c-opt/obj/src/mat/graphops/order/sorder.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/aijperm/mpiaijperm.o
+         CC linux-c-opt/obj/src/mat/graphops/partition/partition.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/crl/mcrl.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/mpiaijpc.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/aijsell/mpiaijsell.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/mpb_aij.o
+         CC linux-c-opt/obj/src/mat/graphops/partition/impls/hierarchical/hierarchical.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/mpimattransposematmult.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/mpimatmatmatmult.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/mmaij.o
+         CC linux-c-opt/obj/src/mat/impls/adj/mpi/mpiadj.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/aijperm/aijperm.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/fdmpiaij.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/crl/crl.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/aijsell/aijsell.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/cholmod/aijcholmod.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/ij.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/hdf5/aijhdf5.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/inode2.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/bas/basfactor.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/bas/spbas.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/fdaij.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/klu/klu.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/matmatmatmult.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/matptap.o
+         CC linux-c-opt/obj/src/mat/impls/baij/mpi/ftn-custom/zmpibaijf.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/mattransposematmult.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/matrart.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/spqr/aijspqr.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/umfpack/umfpack.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/superlu/superlu.o
+         CC linux-c-opt/obj/src/mat/impls/baij/mpi/mpiaijbaij.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/aijfact.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/aijbaij.o
+         CC linux-c-opt/obj/src/mat/impls/baij/mpi/mmbaij.o
+         CC linux-c-opt/obj/src/mat/impls/baij/mpi/mpb_baij.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/mpiptap.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/inode.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/mpimatmatmult.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/matmatmult.o
+         CC linux-c-opt/obj/src/mat/impls/baij/mpi/baijov.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/mpiov.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijfact11.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijfact13.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijfact4.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijfact2.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijfact3.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat1.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijfact5.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijfact7.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijfact9.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat14.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baij2.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat11.o
+         CC linux-c-opt/obj/src/mat/impls/aij/seq/aij.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijfact.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat15.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat4.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat2.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolv.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat3.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat5.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat6.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvnat7.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtran3.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtran2.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtran1.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtran6.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/dgedi.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtran4.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/dgefa.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baij.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtran5.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtrannat1.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/dgefa3.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtran7.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/dgefa2.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/dgefa4.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtrannat5.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtrannat2.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtrannat4.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtrannat3.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/dgefa5.o
+         CC linux-c-opt/obj/src/mat/impls/baij/mpi/mpibaij.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/dgefa7.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtrann.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/dgefa6.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtrannat6.o
+         CC linux-c-opt/obj/src/mat/impls/baij/seq/baijsolvtrannat7.o
+         CC linux-c-opt/obj/src/mat/impls/centering/centering.o
+         CC linux-c-opt/obj/src/mat/impls/fft/fft.o
+         CC linux-c-opt/obj/src/mat/impls/mffd/ftn-custom/zmffdf.o
+         CC linux-c-opt/obj/src/mat/impls/cdiagonal/cdiagonal.o
+         CC linux-c-opt/obj/src/mat/impls/lrc/lrc.o
+         CC linux-c-opt/obj/src/mat/impls/dummy/matdummy.o
+         CC linux-c-opt/obj/src/mat/impls/dense/seq/hdf5/densehdf5.o
+         CC linux-c-opt/obj/src/mat/impls/dense/mpi/mmdense.o
+         CC linux-c-opt/obj/src/mat/impls/localref/mlocalref.o
+         CC linux-c-opt/obj/src/mat/impls/mffd/mfregis.o
+         CC linux-c-opt/obj/src/mat/impls/diagonal/diagonal.o
+         CC linux-c-opt/obj/src/mat/impls/mffd/wp.o
+         CC linux-c-opt/obj/src/mat/impls/composite/mcomposite.o
+         CC linux-c-opt/obj/src/mat/impls/fft/fftw/fftw.o
+         CC linux-c-opt/obj/src/mat/impls/mffd/mffddef.o
+         CC linux-c-opt/obj/src/mat/impls/nest/ftn-custom/zmatnestf.o
+         CC linux-c-opt/obj/src/mat/impls/aij/mpi/mpiaij.o
+         CC linux-c-opt/obj/src/mat/impls/python/pythonmat.o
+         CC linux-c-opt/obj/src/mat/impls/blockmat/seq/blockmat.o
+         CC linux-c-opt/obj/src/mat/impls/mffd/mffd.o
+         CC linux-c-opt/obj/src/mat/impls/normal/normmh.o
+         CC linux-c-opt/obj/src/mat/impls/preallocator/matpreallocator.o
+         CC linux-c-opt/obj/src/mat/impls/normal/normm.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/mpi/mpiaijsbaij.o
+         CC linux-c-opt/obj/src/mat/impls/kaij/kaij.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/mpi/mmsbaij.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/aijsbaij.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/mpi/sbaijov.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact10.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact12.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/cholmod/sbaijcholmod.o
+         CC linux-c-opt/obj/src/mat/impls/maij/maij.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact4.o
+         CC linux-c-opt/obj/src/mat/impls/dense/mpi/mpidense.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact5.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact11.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact3.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact6.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact.o
+         CC linux-c-opt/obj/src/mat/impls/nest/matnest.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaij2.o
+         CC linux-c-opt/obj/src/mat/impls/shell/ftn-custom/zshellf.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sro.o
+         CC linux-c-opt/obj/src/mat/impls/scatter/mscatter.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact7.o
+         CC linux-c-opt/obj/src/mat/impls/sell/mpi/mmsell.o
+         CC linux-c-opt/obj/src/mat/impls/sell/seq/fdsell.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact8.o
+         CC linux-c-opt/obj/src/mat/impls/dense/seq/dense.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact9.o
+         CC linux-c-opt/obj/src/mat/interface/ftn-custom/zmatnullf.o
+         CC linux-c-opt/obj/src/mat/impls/shell/shellcnv.o
+         CC linux-c-opt/obj/src/mat/impls/submat/submat.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaij.o
+         CC linux-c-opt/obj/src/mat/interface/ftn-custom/zmatrixf.o
+         CC linux-c-opt/obj/src/mat/interface/dlregismat.o
+         CC linux-c-opt/obj/src/mat/interface/ftn-custom/zmatrixf90.o
+         CC linux-c-opt/obj/src/mat/impls/transpose/transm.o
+         CC linux-c-opt/obj/src/mat/interface/matnull.o
+         CC linux-c-opt/obj/src/vec/is/sf/impls/basic/sfpack.o
+         CC linux-c-opt/obj/src/mat/impls/transpose/htransm.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/mpi/mpisbaij.o
+         CC linux-c-opt/obj/src/mat/impls/is/matis.o
+         CC linux-c-opt/obj/src/mat/interface/matregis.o
+         CC linux-c-opt/obj/src/mat/matfd/ftn-custom/zfdmatrixf.o
+         CC linux-c-opt/obj/src/mat/interface/matreg.o
+         CC linux-c-opt/obj/src/mat/utils/bandwidth.o
+         CC linux-c-opt/obj/src/mat/impls/sbaij/seq/sbaijfact2.o
+         CC linux-c-opt/obj/src/mat/impls/sell/seq/sell.o
+         CC linux-c-opt/obj/src/mat/utils/compressedrow.o
+         CC linux-c-opt/obj/src/mat/utils/freespace.o
+         CC linux-c-opt/obj/src/mat/utils/convert.o
+         CC linux-c-opt/obj/src/mat/utils/matstashspace.o
+         CC linux-c-opt/obj/src/mat/matfd/fdmatrix.o
+         CC linux-c-opt/obj/src/mat/utils/matio.o
+         CC linux-c-opt/obj/src/mat/interface/matproduct.o
+         CC linux-c-opt/obj/src/mat/impls/sell/mpi/mpisell.o
+         CC linux-c-opt/obj/src/mat/utils/getcolv.o
+         CC linux-c-opt/obj/src/mat/utils/axpy.o
+         CC linux-c-opt/obj/src/mat/utils/isltog.o
+         CC linux-c-opt/obj/src/mat/utils/veccreatematdense.o
+         CC linux-c-opt/obj/src/mat/utils/pheap.o
+         CC linux-c-opt/obj/src/mat/impls/shell/shell.o
+         CC linux-c-opt/obj/src/mat/utils/zerodiag.o
+         CC linux-c-opt/obj/ftn/dm/dt/dualspace/impls/simple/dspacesimplef.o
+         CC linux-c-opt/obj/ftn/dm/dt/dualspace/impls/refined/dualspacerefinedf.o
+         CC linux-c-opt/obj/src/mat/utils/zerorows.o
+         CC linux-c-opt/obj/src/mat/utils/overlapsplit.o
+         CC linux-c-opt/obj/ftn/dm/dt/dualspace/impls/lagrange/dspacelagrangef.o
+         CC linux-c-opt/obj/ftn/dm/dt/fe/impls/vector/fevectorf.o
+         CC linux-c-opt/obj/ftn/dm/dt/fe/interface/fegeomf.o
+         CC linux-c-opt/obj/ftn/dm/dt/dualspace/impls/sum/dualspacesumf.o
+         CC linux-c-opt/obj/src/mat/utils/multequal.o
+         CC linux-c-opt/obj/ftn/dm/dt/dualspace/interface/dualspacef.o
+         CC linux-c-opt/obj/ftn/dm/dt/fe/interface/fef.o
+         CC linux-c-opt/obj/ftn/dm/dt/space/impls/ptrimmed/spaceptrimmedf.o
+         CC linux-c-opt/obj/ftn/dm/dt/interface/dtaltvf.o
+         CC linux-c-opt/obj/ftn/dm/dt/fv/interface/fvf.o
+         CC linux-c-opt/obj/ftn/dm/dt/interface/dtf.o
+         CC linux-c-opt/obj/ftn/dm/dt/interface/dtweakformf.o
+         CC linux-c-opt/obj/src/mat/utils/gcreate.o
+         CC linux-c-opt/obj/ftn/dm/dt/space/impls/point/spacepointf.o
+         CC linux-c-opt/obj/src/mat/utils/matstash.o
+         CC linux-c-opt/obj/ftn/dm/dt/space/impls/poly/spacepolyf.o
+         CC linux-c-opt/obj/ftn/dm/dt/space/impls/subspace/spacesubspacef.o
+         CC linux-c-opt/obj/ftn/dm/dt/space/impls/sum/spacesumf.o
+         CC linux-c-opt/obj/ftn/dm/dt/space/impls/tensor/spacetensorf.o
+         CC linux-c-opt/obj/ftn/dm/dt/interface/dtdsf.o
+         CC linux-c-opt/obj/ftn/dm/field/impls/da/dmfielddaf.o
+         CC linux-c-opt/obj/ftn/dm/field/impls/ds/dmfielddsf.o
+         CC linux-c-opt/obj/ftn/dm/dt/space/interface/spacef.o
+         CC linux-c-opt/obj/ftn/dm/field/interface/dlregisdmfieldf.o
+         CC linux-c-opt/obj/ftn/dm/field/impls/shell/dmfieldshellf.o
+         CC linux-c-opt/obj/ftn/dm/field/interface/dmfieldf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/da1f.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dacreatef.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/da2f.o
+         CC linux-c-opt/obj/ftn/dm/impls/composite/packf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/da3f.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/daddf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dadistf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dacornf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dageometryf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/daf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dagetarrayf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dagtolf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/daghostf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dagetelemf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dagtonaf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/daindexf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dainterpf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dalocalf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dapff.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dascatterf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/gr1f.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dapreallocatef.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/dasubf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/fddaf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/daviewf.o
+         CC linux-c-opt/obj/ftn/dm/impls/da/grvtkf.o
+         CC linux-c-opt/obj/ftn/dm/impls/forest/forestf.o
+         CC linux-c-opt/obj/ftn/dm/impls/patch/patchcreatef.o
+         CC linux-c-opt/obj/ftn/dm/impls/patch/patchf.o
+         CC linux-c-opt/obj/ftn/dm/impls/network/networkf.o
+         CC linux-c-opt/obj/ftn/dm/impls/network/networkcreatef.o
+         CC linux-c-opt/obj/ftn/dm/impls/network/networkviewf.o
+         CC linux-c-opt/obj/ftn/dm/impls/network/networkmonitorf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/hdf5/plexhdf5f.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexcheckinterfacef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexexodusiif.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexextrudef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexcgnsf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexgeneratef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexfvmf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexcreatef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexdistributef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexfluentf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexfemf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexgmshf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexgeometryf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexindicesf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexmetricf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexorientf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexnaturalf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexinterpolatef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexpartitionf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexpreallocatef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexpointf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexplyf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexprojectf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexsfcf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexvtkf.o
+         CC linux-c-opt/obj/ftn/dm/impls/product/productutilsf.o
+         CC linux-c-opt/obj/ftn/dm/impls/shell/dmshellf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexreorderf.o
+         CC linux-c-opt/obj/ftn/dm/impls/redundant/dmredundantf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexsectionf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexrefinef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plextreef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/plexsubmeshf.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/pointqueuef.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/transform/impls/extrude/plextrcohesivef.o
+         CC linux-c-opt/obj/ftn/dm/impls/sliced/slicedf.o
+         CC linux-c-opt/obj/ftn/dm/impls/stag/stag1df.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/transform/impls/extrude/plextrextrudef.o
+         CC linux-c-opt/obj/ftn/dm/impls/stag/stag2df.o
+         CC linux-c-opt/obj/ftn/dm/impls/stag/stagmultif.o
+         CC linux-c-opt/obj/ftn/dm/impls/stag/stagdaf.o
+         CC linux-c-opt/obj/ftn/dm/impls/stag/stag3df.o
+         CC linux-c-opt/obj/ftn/dm/impls/plex/transform/interface/plextransformf.o
+         CC linux-c-opt/obj/ftn/dm/impls/swarm/data_bucketf.o
+         CC linux-c-opt/obj/ftn/dm/impls/swarm/swarm_migratef.o
+         CC linux-c-opt/obj/ftn/dm/impls/stag/stagstencilf.o
+         CC linux-c-opt/obj/ftn/dm/impls/swarm/swarmpic_sortf.o
+         CC linux-c-opt/obj/ftn/dm/interface/dlregisdmdmf.o
+         CC linux-c-opt/obj/ftn/dm/impls/swarm/swarmpic_viewf.o
+         CC linux-c-opt/obj/ftn/dm/interface/dmgeneratef.o
+         CC linux-c-opt/obj/ftn/dm/impls/stag/stagutilsf.o
+         CC linux-c-opt/obj/ftn/dm/interface/dmgeommodelf.o
+         CC linux-c-opt/obj/ftn/dm/impls/swarm/swarmpicf.o
+         CC linux-c-opt/obj/ftn/dm/interface/dmcoordinatesf.o
+         CC linux-c-opt/obj/ftn/dm/impls/swarm/swarmf.o
+         CC linux-c-opt/obj/ftn/dm/interface/dmgetf.o
+         CC linux-c-opt/obj/ftn/dm/partitioner/impls/matpart/partmatpartf.o
+         CC linux-c-opt/obj/ftn/dm/interface/dmif.o
+         CC linux-c-opt/obj/ftn/dm/interface/dmperiodicityf.o
+         CC linux-c-opt/obj/ftn/dm/partitioner/interface/partitionerregf.o
+         CC linux-c-opt/obj/ftn/dm/label/impls/ephemeral/dmlabelephf.o
+         CC linux-c-opt/obj/ftn/dm/partitioner/impls/shell/partshellf.o
+         CC linux-c-opt/obj/ftn/dm/label/dmlabelf.o
+         CC linux-c-opt/obj/ftn/dm/label/impls/ephemeral/plex/dmlabelephplexf.o
+         CC linux-c-opt/obj/ftn/dm/partitioner/interface/partitionerf.o
+         CC linux-c-opt/obj/ftn/dm/stubs/petscdtf.o
+         CC linux-c-opt/obj/ftn/dm/stubs/petscdmplexf.o
+         CC linux-c-opt/obj/ftn/dm/interface/dmf.o
+         CC linux-c-opt/obj/src/dm/dt/interface/ftn-custom/zdsf.o
+         CC linux-c-opt/obj/src/dm/dt/interface/ftn-custom/zdtdsf90.o
+         CC linux-c-opt/obj/src/dm/dt/interface/dtprob.o
+         CC linux-c-opt/obj/src/dm/dt/dualspace/impls/refined/dualspacerefined.o
+         CC linux-c-opt/obj/src/dm/dt/interface/ftn-custom/zdtf90.o
+         CC linux-c-opt/obj/src/dm/dt/interface/dtaltv.o
+         CC linux-c-opt/obj/src/dm/dt/dualspace/impls/simple/dspacesimple.o
+         CC linux-c-opt/obj/src/dm/dt/fe/interface/fegeom.o
+         CC linux-c-opt/obj/src/dm/dt/fe/impls/composite/fecomposite.o
+         CC linux-c-opt/obj/src/dm/dt/fe/impls/vector/fevector.o
+         CC linux-c-opt/obj/src/dm/dt/dualspace/impls/sum/dualspacesum.o
+         CC linux-c-opt/obj/src/dm/dt/space/impls/point/spacepoint.o
+         CC linux-c-opt/obj/src/dm/dt/interface/dtweakform.o
+         CC linux-c-opt/obj/src/dm/dt/space/impls/ptrimmed/spaceptrimmed.o
+         CC linux-c-opt/obj/src/dm/dt/space/impls/subspace/spacesubspace.o
+         CC linux-c-opt/obj/src/dm/dt/space/impls/tensor/spacetensor.o
+         CC linux-c-opt/obj/src/dm/dt/space/impls/poly/spacepoly.o
+         CC linux-c-opt/obj/src/dm/dt/fe/impls/basic/febasic.o
+         CC linux-c-opt/obj/src/dm/field/impls/da/dmfieldda.o
+         CC linux-c-opt/obj/src/dm/dt/space/impls/wxy/spacewxy.o
+         CC linux-c-opt/obj/src/dm/dt/dualspace/interface/dualspace.o
+         CC linux-c-opt/obj/src/dm/dt/space/impls/sum/spacesum.o
+         CC linux-c-opt/obj/src/dm/field/interface/dlregisdmfield.o
+         CC linux-c-opt/obj/src/dm/field/interface/dmfieldregi.o
+         CC linux-c-opt/obj/src/dm/field/impls/shell/dmfieldshell.o
+         CC linux-c-opt/obj/src/dm/dt/space/interface/space.o
+         CC linux-c-opt/obj/src/dm/impls/composite/ftn-custom/zfddaf.o
+         CC linux-c-opt/obj/src/dm/dt/fv/interface/fv.o
+         CC linux-c-opt/obj/src/dm/dt/fe/interface/fe.o
+         CC linux-c-opt/obj/src/dm/dt/dualspace/impls/lagrange/dspacelagrange.o
+         CC linux-c-opt/obj/src/dm/dt/interface/dt.o
+         CC linux-c-opt/obj/src/dm/impls/composite/packm.o
+         CC linux-c-opt/obj/src/dm/impls/da/dadestroy.o
+         CC linux-c-opt/obj/src/dm/impls/da/da1.o
+         CC linux-c-opt/obj/src/dm/impls/da/dadd.o
+         CC linux-c-opt/obj/src/dm/field/interface/dmfield.o
+         CC linux-c-opt/obj/src/dm/impls/da/dadist.o
+         CC linux-c-opt/obj/src/dm/impls/da/dageometry.o
+         CC linux-c-opt/obj/src/dm/impls/da/da2.o
+         CC linux-c-opt/obj/src/dm/impls/da/dacorn.o
+         CC linux-c-opt/obj/src/mat/interface/matrix.o
+         CC linux-c-opt/obj/src/dm/dt/interface/dtds.o
+         CC linux-c-opt/obj/src/dm/impls/da/dacreate.o
+         CC linux-c-opt/obj/src/dm/field/impls/ds/dmfieldds.o
+         CC linux-c-opt/obj/src/dm/impls/da/daghost.o
+         CC linux-c-opt/obj/src/dm/impls/da/dagetarray.o
+         CC linux-c-opt/obj/src/dm/impls/da/daindex.o
+         CC linux-c-opt/obj/src/dm/impls/da/dagtol.o
+         CC linux-c-opt/obj/src/dm/impls/da/dagetelem.o
+         CC linux-c-opt/obj/src/dm/impls/da/daltol.o
+         CC linux-c-opt/obj/src/dm/impls/da/da3.o
+         CC linux-c-opt/obj/src/dm/impls/composite/pack.o
+         CC linux-c-opt/obj/src/dm/impls/da/dagtona.o
+         CC linux-c-opt/obj/src/dm/impls/da/dapf.o
+         CC linux-c-opt/obj/src/dm/impls/da/ftn-custom/zda1f90.o
+         CC linux-c-opt/obj/src/dm/impls/da/ftn-custom/zdasubf.o
+         CC linux-c-opt/obj/src/dm/impls/da/dareg.o
+         CC linux-c-opt/obj/src/dm/impls/da/dapreallocate.o
+         CC linux-c-opt/obj/src/dm/impls/da/dascatter.o
+         CC linux-c-opt/obj/src/dm/impls/da/daview.o
+         CC linux-c-opt/obj/src/dm/impls/da/dalocal.o
+         CC linux-c-opt/obj/src/dm/impls/da/ftn-custom/zdaf.o
+         CC linux-c-opt/obj/src/dm/impls/da/dasub.o
+         CC linux-c-opt/obj/src/dm/impls/da/da.o
+         CC linux-c-opt/obj/src/dm/impls/network/networkmonitor.o
+         CC linux-c-opt/obj/src/dm/impls/da/dainterp.o
+         CC linux-c-opt/obj/src/dm/impls/plex/ftn-custom/zplexf90.o
+         CC linux-c-opt/obj/src/dm/impls/plex/ftn-custom/zplexfemf90.o
+         CC linux-c-opt/obj/src/dm/impls/da/gr1.o
+         CC linux-c-opt/obj/src/dm/impls/patch/patchcreate.o
+         CC linux-c-opt/obj/src/dm/impls/patch/patch.o
+         CC linux-c-opt/obj/src/dm/impls/da/grglvis.o
+         CC linux-c-opt/obj/src/dm/impls/da/grvtk.o
+         CC linux-c-opt/obj/src/dm/impls/network/networkcreate.o
+         CC linux-c-opt/obj/src/dm/impls/da/gr2.o
+         CC linux-c-opt/obj/src/dm/impls/plex/hdf5/plexhdf5xdmf.o
+         CC linux-c-opt/obj/src/dm/impls/network/networkview.o
+         CC linux-c-opt/obj/src/dm/impls/forest/forest.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexadapt.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexcgns.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexceed.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexcoarsen.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexcheckinterface.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexegads.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexexodusii.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexdd.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexextrude.o
+         CC linux-c-opt/obj/src/dm/impls/da/fdda.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexfvm.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexgenerate.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexindices.o
+         CC linux-c-opt/obj/src/dm/impls/network/network.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexfluent.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexnatural.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexpoint.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexply.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexglvis.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexmetric.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexrefine.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexorient.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexpreallocate.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexsection.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexreorder.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexinterpolate.o
+         CC linux-c-opt/obj/src/dm/impls/plex/hdf5/plexhdf5.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexgmsh.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexpartition.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexproject.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexdistribute.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexgeometry.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexvtk.o
+         CC linux-c-opt/obj/src/dm/impls/plex/pointqueue.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/impls/refine/tobox/plexreftobox.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/impls/extrude/plextrcohesive.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/impls/filter/plextrfilter.o
+         CC linux-c-opt/obj/src/dm/impls/product/product.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexvtu.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/impls/refine/alfeld/plexrefalfeld.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/impls/refine/1d/plexref1d.o
+         CC linux-c-opt/obj/src/dm/impls/product/productutils.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/impls/refine/regular/plexrefregular.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexsfc.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/impls/refine/sbr/plexrefsbr.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/impls/refine/bl/plexrefbl.o
+         CC linux-c-opt/obj/src/dm/impls/shell/ftn-custom/zdmshellf.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/impls/extrude/plextrextrude.o
+         CC linux-c-opt/obj/src/dm/impls/redundant/dmredundant.o
+         CC linux-c-opt/obj/src/dm/impls/sliced/sliced.o
+         CC linux-c-opt/obj/src/dm/impls/stag/stagintern.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/ftn-custom/zswarmf90.o
+         CC linux-c-opt/obj/src/dm/impls/stag/stag1d.o
+         CC linux-c-opt/obj/src/dm/impls/stag/stagstencil.o
+         CC linux-c-opt/obj/src/dm/impls/stag/stagda.o
+         CC linux-c-opt/obj/src/dm/impls/shell/dmshell.o
+         CC linux-c-opt/obj/src/dm/impls/stag/stag2d.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/data_ex.o
+         CC linux-c-opt/obj/src/dm/impls/stag/stag.o
+         CC linux-c-opt/obj/src/dm/impls/stag/stagmulti.o
+         CC linux-c-opt/obj/src/dm/impls/plex/transform/interface/plextransform.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/data_bucket.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/swarmpic_da.o
+         CC linux-c-opt/obj/src/dm/impls/stag/stagutils.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexcreate.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/swarm_migrate.o
+         CC linux-c-opt/obj/src/dm/interface/dmceed.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plextree.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/swarmpic_view.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/swarmpic_plex.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/swarmpic_sort.o
+         CC linux-c-opt/obj/src/dm/interface/dmgenerate.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexfem.o
+         CC linux-c-opt/obj/src/dm/impls/stag/stag3d.o
+         CC linux-c-opt/obj/src/dm/label/ftn-custom/zdmlabel.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plexsubmesh.o
+         CC linux-c-opt/obj/src/dm/interface/dmgeommodel.o
+         CC linux-c-opt/obj/src/dm/interface/dlregisdmdm.o
+         CC linux-c-opt/obj/src/dm/interface/ftn-custom/zdmf.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/swarmpic.o
+         CC linux-c-opt/obj/src/dm/partitioner/impls/gather/partgather.o
+         CC linux-c-opt/obj/src/dm/partitioner/impls/chaco/partchaco.o
+         CC linux-c-opt/obj/src/dm/label/impls/ephemeral/plex/dmlabelephplex.o
+         CC linux-c-opt/obj/src/dm/interface/dmglvis.o
+         CC linux-c-opt/obj/src/dm/interface/dmget.o
+         CC linux-c-opt/obj/src/dm/partitioner/impls/matpart/partmatpart.o
+         CC linux-c-opt/obj/src/dm/label/impls/ephemeral/dmlabeleph.o
+         CC linux-c-opt/obj/src/dm/partitioner/impls/parmetis/partparmetis.o
+         CC linux-c-opt/obj/src/dm/partitioner/impls/ptscotch/partptscotch.o
+         CC linux-c-opt/obj/src/dm/interface/dmregall.o
+         CC linux-c-opt/obj/src/dm/partitioner/interface/partitionerreg.o
+         CC linux-c-opt/obj/src/dm/interface/dmi.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/guess/impls/fischer/fischerf.o
+         CC linux-c-opt/obj/src/dm/interface/dmcoordinates.o
+         CC linux-c-opt/obj/src/dm/partitioner/impls/shell/partshell.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/bcgsl/bcgslf.o
+         CC linux-c-opt/obj/src/dm/partitioner/impls/simple/partsimple.o
+         CC linux-c-opt/obj/src/dm/interface/dmperiodicity.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/cg/cgtypef.o
+         CC linux-c-opt/obj/src/dm/partitioner/interface/partitioner.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/cheby/chebyf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/cg/gltr/gltrf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/fetidp/fetidpf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/gmres/borthog2f.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/fcg/pipefcg/pipefcgf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/fcg/fcgf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/gcr/pipegcr/pipegcrf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/gcr/gcrf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/gmres/borthogf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/gmres/fgmres/modpcff.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/gmres/gmpref.o
+         CC linux-c-opt/obj/src/dm/impls/plex/plex.o
+         CC linux-c-opt/obj/src/dm/impls/swarm/swarm.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/gmres/pipefgmres/pipefgmresf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/gmres/lgmres/lgmresf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/gmres/gmresf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/minres/minresf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/lsqr/lsqrf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/dlregiskspf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/rich/richscalef.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/python/pythonkspf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/dmkspf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/impls/qcg/qcgf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/iguessf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/eigef.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/itclf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/xmonf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/iterativf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/itfuncf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/itcreatef.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/interface/itresf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/bfgs/bfgsf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/brdn/badbrdnf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/dm/dmprojectf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/dfp/dfpf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/dense/denseqnf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/brdn/brdnf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/diagbrdn/diagbrdnf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/sr1/sr1f.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/lmvmimplf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/lmvmutilsf.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/symbrdn/symbadbrdnf.o
+        CXX linux-c-opt/obj/src/ksp/ksp/utils/lmvm/blas_cyclic/cupm/blas_cyclic_cupm.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/lmvm/symbrdn/symbrdnf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/bjacobi/bjacobif.o
+         CC linux-c-opt/obj/ftn/ksp/ksp/utils/schurm/schurmf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/bddc/bddcf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/asm/asmf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/factor/cholesky/choleskyf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/eisens/eisenf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/deflation/deflationf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/composite/compositef.o
+         CC linux-c-opt/obj/src/dm/partitioner/impls/multistage/mspart.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/factor/factorf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/galerkin/galerkinf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/gamg/aggf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/fieldsplit/fieldsplitf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/hmg/hmgf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/gasm/gasmf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/gamg/classicalf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/is/pcisf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/gamg/gamgf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/jacobi/jacobif.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/ksp/pckspf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/mat/pcmatf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/lmvm/lmvmpcf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/mg/mgf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/mpi/pcmpif.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/patch/pcpatchf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/redundant/redundantf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/mg/mgfuncf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/redistribute/redistributef.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/wb/wbf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/sor/sorf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/shell/shellpcf.o
+         CC linux-c-opt/obj/src/dm/label/dmlabel.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/python/pythonpcf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/interface/pcsetf.o
+         CC linux-c-opt/obj/ftn/ksp/pc/impls/telescope/telescopef.o
+         CC linux-c-opt/obj/ftn/ksp/pc/interface/preconf.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/bcgs/bcgs.o
+         CC linux-c-opt/obj/src/ksp/ksp/guess/impls/fischer/fischer.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/bcgs/pipebcgs/pipebcgs.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/bcgs/fbcgs/fbcgs.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/bcgs/fbcgsr/fbcgsr.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/cgeig.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/bcgs/qmrcgs/qmrcgs.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/bicg/bicg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/cgls.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/cgtype.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/pipecg/pipecg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/groppcg/groppcg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/cgne/cgne.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/nash/nash.o
+         CC linux-c-opt/obj/src/ksp/ksp/guess/impls/pod/pod.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/cg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/gltr/gltr.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/bcgsl/bcgsl.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/pipeprcg/pipeprcg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/pipecgrr/pipecgrr.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cheby/betas.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cgs/cgs.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cr/pipecr/pipecr.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/stcg/stcg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cr/cr.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/pipecg2/pipecg2.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cg/pipelcg/pipelcg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/agmres/agmresleja.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gcr/gcr.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/agmres/agmresdeflation.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/borthog.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/fcg/fcg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/fcg/pipefcg/pipefcg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/borthog2.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/fgmres/ftn-custom/zmodpcff.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/ftn-custom/zgmres2f.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/fgmres/modpcf.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gcr/pipegcr/pipegcr.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/gmpre.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/cheby/cheby.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/agmres/agmresorthog.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/gmres2.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/agmres/agmres.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/fgmres/fgmres.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/gmreig.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/pgmres/pgmres.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/python/pythonksp.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/preonly/preonly.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/lgmres/lgmres.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/ibcgs/ibcgs.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/pipefgmres/pipefgmres.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/lcd/lcd.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/rich/richscale.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/rich/rich.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/dgmres/dgmres.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/symmlq/symmlq.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/fetidp/fetidp.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/lsqr/lsqr.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/tfqmr/tfqmr.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/qcg/qcg.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/gmres/gmres.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/tcqmr/tcqmr.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/ftn-custom/zitfuncf90.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/tsirm/tsirm.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/ftn-custom/zitfuncf.o
+         CC linux-c-opt/obj/src/ksp/ksp/impls/minres/minres.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/ftn-custom/zdmkspf.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/dlregisksp.o
+         CC linux-c-opt/obj/src/dm/interface/dm.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/iguess.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/eige.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/kspmatregi.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/itregis.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/xmon.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/itres.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/dmksp.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/itcl.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/bfgs/bfgs.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/itcreate.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/dense/cd_utils.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/diagbrdn/diagbrdn.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/brdn/badbrdn.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/brdn/brdn.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/dfp/dfp.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/lmproducts.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/symbrdn/symbadbrdn.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/lmbasis.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/rescale/symbrdnrescale.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/asm/ftn-custom/zasmf.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/sr1/sr1.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/lmvmimpl.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/blas_cyclic/blas_cyclic.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/dense/denseqn.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/bjacobi/ftn-custom/zbjacobif.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/iterativ.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/lmvmutils.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/dm/dmproject.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/bddc/bddcnullspace.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/cp/cp.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/composite/composite.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/lmvm/symbrdn/symbrdn.o
+         CC linux-c-opt/obj/src/ksp/ksp/interface/itfunc.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/deflation/deflationspace.o
+         CC linux-c-opt/obj/src/ksp/ksp/utils/schurm/schurm.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/factor/cholesky/cholesky.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/asm/asm.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/eisens/eisen.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/bddc/bddcfetidp.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/bddc/bddcscalingbasic.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/fieldsplit/ftn-custom/zfieldsplitf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/factor/qr/qr.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/factor/lu/lu.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/factor/icc/icc.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/factor/factimpl.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/bjacobi/bjacobi.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/factor/ilu/ilu.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/deflation/deflation.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/galerkin/galerkin.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/gasm/ftn-custom/zgasmf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/bddc/bddcgraph.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/kaczmarz/kaczmarz.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/factor/factor.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/gamg/util.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/gamg/geo.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/ksp/pcksp.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/lsc/lsc.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/jacobi/jacobi.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/lmvm/lmvmpc.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mat/pcmat.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/is/nn/nn.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mg/ftn-custom/zmgf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/gamg/classical.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/hmg/hmg.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/is/pcis.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mg/ftn-custom/zmgfuncf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mg/fmg.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/none/none.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/bddc/bddc.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mg/smg.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mg/mgadapt.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/python/pythonpc.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/pbjacobi/pbjacobi.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/shell/ftn-custom/zshellpcf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mg/gdsw.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mg/mgfunc.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/gamg/gamg.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/redistribute/redistribute.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/gasm/gasm.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/tfs/bitmask.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/gamg/agg.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/svd/svd.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/sor/sor.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/redundant/redundant.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/bddc/bddcschurs.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/tfs/xxt.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/shell/shellpc.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/tfs/ivec.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/tfs/xyt.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/tfs/comm.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mpi/pcmpi.o
+         CC linux-c-opt/obj/src/ksp/pc/interface/pcregis.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/tfs/gs.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/vpbjacobi/vpbjacobi.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/tfs/tfs.o
+         CC linux-c-opt/obj/src/ksp/pc/interface/pcset.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/fieldsplit/fieldsplit.o
+         CC linux-c-opt/obj/ftn/snes/impls/al/alf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/telescope/telescope_coarsedm.o
+         CC linux-c-opt/obj/ftn/snes/impls/fas/fasgalerkinf.o
+         CC linux-c-opt/obj/ftn/snes/impls/gs/snesgsf.o
+         CC linux-c-opt/obj/ftn/snes/impls/composite/snescompositef.o
+         CC linux-c-opt/obj/ftn/snes/impls/fas/fasf.o
+         CC linux-c-opt/obj/ftn/snes/impls/fas/fasfuncf.o
+         CC linux-c-opt/obj/ftn/snes/impls/ms/msf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/mg/mg.o
+         CC linux-c-opt/obj/ftn/snes/impls/ncg/snesncgf.o
+         CC linux-c-opt/obj/ftn/snes/impls/multiblock/multiblockf.o
+         CC linux-c-opt/obj/ftn/snes/impls/nasm/nasmf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/telescope/telescope_dmda.o
+         CC linux-c-opt/obj/ftn/snes/impls/patch/snespatchf.o
+         CC linux-c-opt/obj/ftn/snes/impls/ngmres/snesngmresf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/telescope/telescope.o
+         CC linux-c-opt/obj/ftn/snes/impls/ntrdc/ntrdcf.o
+         CC linux-c-opt/obj/ftn/snes/impls/shell/snesshellf.o
+         CC linux-c-opt/obj/ftn/snes/impls/qn/qnf.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/wb/wb.o
+         CC linux-c-opt/obj/ftn/snes/impls/python/pythonsnesf.o
+         CC linux-c-opt/obj/ftn/snes/impls/vi/rs/virsf.o
+         CC linux-c-opt/obj/ftn/snes/impls/vi/ss/vissf.o
+         CC linux-c-opt/obj/ftn/snes/impls/tr/trf.o
+         CC linux-c-opt/obj/ftn/snes/interface/dlregissnesf.o
+         CC linux-c-opt/obj/ftn/snes/interface/noise/snesmfj2f.o
+         CC linux-c-opt/obj/ftn/snes/interface/snesj2f.o
+         CC linux-c-opt/obj/ftn/snes/impls/vi/vif.o
+         CC linux-c-opt/obj/ftn/snes/interface/snesobf.o
+         CC linux-c-opt/obj/ftn/snes/interface/snesjf.o
+         CC linux-c-opt/obj/ftn/snes/interface/snespcf.o
+         CC linux-c-opt/obj/ftn/snes/interface/snesutf.o
+         CC linux-c-opt/obj/ftn/snes/linesearch/impls/bt/linesearchbtf.o
+         CC linux-c-opt/obj/ftn/snes/utils/convestf.o
+         CC linux-c-opt/obj/ftn/snes/mf/snesmfjf.o
+         CC linux-c-opt/obj/ftn/snes/interface/snesf.o
+         CC linux-c-opt/obj/ftn/snes/utils/dm/dmadaptf.o
+         CC linux-c-opt/obj/ftn/snes/utils/dm/dminterpolatesnesf.o
+         CC linux-c-opt/obj/ftn/snes/linesearch/interface/linesearchf.o
+         CC linux-c-opt/obj/ftn/snes/utils/dmsnesf.o
+         CC linux-c-opt/obj/ftn/snes/utils/dmplexsnesf.o
+         CC linux-c-opt/obj/src/snes/impls/fas/fasgalerkin.o
+         CC linux-c-opt/obj/src/snes/impls/ksponly/ksponly.o
+         CC linux-c-opt/obj/src/snes/impls/gs/gssecant.o
+         CC linux-c-opt/obj/src/ksp/pc/interface/precon.o
+         CC linux-c-opt/obj/src/snes/impls/gs/snesgs.o
+         CC linux-c-opt/obj/src/snes/impls/nasm/aspin.o
+         CC linux-c-opt/obj/src/snes/impls/ls/ls.o
+         CC linux-c-opt/obj/src/snes/impls/ngmres/ngmresfunc.o
+         CC linux-c-opt/obj/src/snes/impls/ngmres/anderson.o
+         CC linux-c-opt/obj/src/snes/impls/ncg/snesncg.o
+         CC linux-c-opt/obj/src/snes/impls/al/al.o
+         CC linux-c-opt/obj/src/snes/impls/fas/fas.o
+         CC linux-c-opt/obj/src/snes/impls/multiblock/multiblock.o
+         CC linux-c-opt/obj/src/snes/impls/composite/snescomposite.o
+         CC linux-c-opt/obj/src/snes/impls/python/pythonsnes.o
+         CC linux-c-opt/obj/src/snes/impls/ngmres/snesngmres.o
+         CC linux-c-opt/obj/src/snes/impls/ms/ms.o
+         CC linux-c-opt/obj/src/snes/impls/shell/ftn-custom/zsnesshellf.o
+         CC linux-c-opt/obj/src/snes/impls/fas/fasfunc.o
+         CC linux-c-opt/obj/src/snes/impls/richardson/snesrichardson.o
+         CC linux-c-opt/obj/src/snes/impls/shell/snesshell.o
+         CC linux-c-opt/obj/src/snes/impls/ntrdc/ntrdc.o
+         CC linux-c-opt/obj/src/snes/impls/nasm/nasm.o
+         CC linux-c-opt/obj/src/snes/interface/noise/snesdnest.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/patch/pcpatch.o
+         CC linux-c-opt/obj/src/snes/impls/patch/snespatch.o
+         CC linux-c-opt/obj/src/snes/interface/ftn-custom/zsnesf90.o
+         CC linux-c-opt/obj/src/snes/interface/dlregissnes.o
+         CC linux-c-opt/obj/src/snes/impls/qn/qn.o
+         CC linux-c-opt/obj/src/snes/interface/ftn-custom/zsnesf.o
+         CC linux-c-opt/obj/src/snes/interface/noise/snesnoise.o
+         CC linux-c-opt/obj/src/snes/impls/vi/ss/viss.o
+         CC linux-c-opt/obj/src/snes/interface/noise/snesmfj2.o
+         CC linux-c-opt/obj/src/snes/interface/snesob.o
+         CC linux-c-opt/obj/src/snes/interface/snesj.o
+         CC linux-c-opt/obj/src/snes/interface/snesregi.o
+         CC linux-c-opt/obj/src/snes/interface/snespc.o
+         CC linux-c-opt/obj/src/snes/linesearch/impls/basic/linesearchbasic.o
+         CC linux-c-opt/obj/src/snes/interface/snesj2.o
+         CC linux-c-opt/obj/src/snes/linesearch/impls/cp/linesearchcp.o
+         CC linux-c-opt/obj/src/snes/impls/vi/vi.o
+         CC linux-c-opt/obj/src/snes/linesearch/impls/bisection/linesearchbisection.o
+         CC linux-c-opt/obj/src/snes/linesearch/impls/shell/ftn-custom/zlinesearchshellf.o
+         CC linux-c-opt/obj/src/snes/linesearch/interface/ftn-custom/zlinesearchf.o
+         CC linux-c-opt/obj/src/snes/linesearch/impls/shell/linesearchshell.o
+         CC linux-c-opt/obj/src/snes/linesearch/impls/secant/linesearchsecant.o
+         CC linux-c-opt/obj/src/snes/linesearch/impls/nleqerr/linesearchnleqerr.o
+         CC linux-c-opt/obj/src/snes/impls/vi/rs/virs.o
+         CC linux-c-opt/obj/src/snes/linesearch/interface/linesearchregi.o
+         CC linux-c-opt/obj/src/snes/interface/snesut.o
+         CC linux-c-opt/obj/src/snes/linesearch/impls/bt/linesearchbt.o
+         CC linux-c-opt/obj/src/snes/impls/tr/tr.o
+         CC linux-c-opt/obj/src/snes/mf/snesmfj.o
+         CC linux-c-opt/obj/src/snes/utils/ftn-custom/zdmsnesf.o
+         CC linux-c-opt/obj/ftn/ts/adapt/impls/dsp/adaptdspf.o
+         CC linux-c-opt/obj/src/snes/utils/ftn-custom/zdmlocalsnesf.o
+         CC linux-c-opt/obj/ftn/ts/adapt/impls/history/adapthistf.o
+         CC linux-c-opt/obj/ftn/ts/characteristic/interface/slregisf.o
+         CC linux-c-opt/obj/ftn/ts/characteristic/interface/characteristicf.o
+         CC linux-c-opt/obj/ftn/ts/characteristic/impls/da/sldaf.o
+         CC linux-c-opt/obj/ftn/ts/adapt/interface/tsadaptf.o
+         CC linux-c-opt/obj/src/snes/utils/ftn-custom/zdmdasnesf.o
+         CC linux-c-opt/obj/src/snes/utils/convest.o
+         CC linux-c-opt/obj/ftn/ts/impls/eimex/eimexf.o
+         CC linux-c-opt/obj/ftn/ts/event/tseventf.o
+         CC linux-c-opt/obj/src/snes/utils/dmdasnes.o
+         CC linux-c-opt/obj/ftn/ts/impls/bdf/bdff.o
+         CC linux-c-opt/obj/ftn/ts/impls/explicit/rk/rkf.o
+         CC linux-c-opt/obj/ftn/ts/impls/arkimex/arkimexf.o
+         CC linux-c-opt/obj/src/snes/utils/dmlocalsnes.o
+         CC linux-c-opt/obj/src/snes/linesearch/interface/linesearch.o
+         CC linux-c-opt/obj/ftn/ts/impls/implicit/alpha/alpha1f.o
+         CC linux-c-opt/obj/ftn/ts/impls/explicit/ssp/sspf.o
+         CC linux-c-opt/obj/ftn/ts/impls/implicit/alpha/alpha2f.o
+         CC linux-c-opt/obj/ftn/ts/impls/glee/gleef.o
+         CC linux-c-opt/obj/src/snes/utils/dmsnes.o
+         CC linux-c-opt/obj/ftn/ts/impls/implicit/discgrad/tsdiscgradf.o
+         CC linux-c-opt/obj/src/snes/utils/dm/dminterpolatesnes.o
+         CC linux-c-opt/obj/ftn/ts/impls/implicit/glle/glleadaptf.o
+         CC linux-c-opt/obj/ftn/ts/interface/dlregistsf.o
+         CC linux-c-opt/obj/ftn/ts/impls/implicit/glle/gllef.o
+         CC linux-c-opt/obj/ftn/ts/impls/implicit/theta/thetaf.o
+         CC linux-c-opt/obj/ftn/ts/impls/implicit/irk/irkf.o
+         CC linux-c-opt/obj/ftn/ts/impls/symplectic/basicsymplectic/basicsymplecticf.o
+         CC linux-c-opt/obj/ftn/ts/impls/multirate/mprkf.o
+         CC linux-c-opt/obj/ftn/ts/impls/pseudo/posindepf.o
+         CC linux-c-opt/obj/ftn/ts/impls/python/pythontsf.o
+         CC linux-c-opt/obj/ftn/ts/interface/tscreatef.o
+         CC linux-c-opt/obj/ftn/ts/impls/rosw/roswf.o
+         CC linux-c-opt/obj/ftn/ts/interface/tseigf.o
+         CC linux-c-opt/obj/ftn/ts/interface/sensitivity/tssenf.o
+         CC linux-c-opt/obj/ftn/ts/interface/tsregf.o
+         CC linux-c-opt/obj/src/snes/utils/dmplexsnes.o
+         CC linux-c-opt/obj/ftn/ts/interface/tsrhssplitf.o
+         CC linux-c-opt/obj/ftn/ts/trajectory/impls/memory/trajmemoryf.o
+         CC linux-c-opt/obj/ftn/ts/interface/tsmonf.o
+         CC linux-c-opt/obj/ftn/ts/utils/dmdatsf.o
+         CC linux-c-opt/obj/ftn/ts/utils/dmlocaltsf.o
+         CC linux-c-opt/obj/ftn/ts/trajectory/interface/trajf.o
+         CC linux-c-opt/obj/src/snes/utils/dm/dmadapt.o
+         CC linux-c-opt/obj/ftn/ts/utils/tsconvestf.o
+         CC linux-c-opt/obj/ftn/ts/interface/tsf.o
+         CC linux-c-opt/obj/ftn/ts/utils/dmnetworktsf.o
+         CC linux-c-opt/obj/src/ts/adapt/impls/cfl/adaptcfl.o
+         CC linux-c-opt/obj/src/ts/adapt/impls/basic/adaptbasic.o
+         CC linux-c-opt/obj/ftn/ts/utils/dmplexlandau/plexlandf.o
+         CC linux-c-opt/obj/ftn/ts/utils/dmplextsf.o
+         CC linux-c-opt/obj/src/ts/characteristic/interface/mocregis.o
+         CC linux-c-opt/obj/src/ts/adapt/impls/glee/adaptglee.o
+         CC linux-c-opt/obj/src/ts/characteristic/interface/slregis.o
+         CC linux-c-opt/obj/src/ts/adapt/impls/none/adaptnone.o
+         CC linux-c-opt/obj/src/ts/characteristic/impls/da/slda.o
+         CC linux-c-opt/obj/src/ts/adapt/impls/history/adapthist.o
+         CC linux-c-opt/obj/src/ts/adapt/impls/dsp/adaptdsp.o
+         CC linux-c-opt/obj/src/ts/impls/explicit/euler/euler.o
+         CC linux-c-opt/obj/src/ts/impls/bdf/bdf.o
+         CC linux-c-opt/obj/src/ts/impls/eimex/eimex.o
+         CC linux-c-opt/obj/src/ts/adapt/interface/tsadapt.o
+         CC linux-c-opt/obj/src/ts/impls/explicit/ssp/ssp.o
+         CC linux-c-opt/obj/src/ts/impls/implicit/glle/glleadapt.o
+         CC linux-c-opt/obj/src/ts/impls/arkimex/fsarkimex.o
+         CC linux-c-opt/obj/src/ts/characteristic/interface/characteristic.o
+         CC linux-c-opt/obj/src/ts/event/tsevent.o
+         CC linux-c-opt/obj/src/ts/impls/explicit/rk/mrk.o
+         CC linux-c-opt/obj/src/ts/impls/implicit/alpha/alpha2.o
+         CC linux-c-opt/obj/src/ts/impls/implicit/discgrad/tsdiscgrad.o
+         CC linux-c-opt/obj/src/ts/impls/implicit/alpha/alpha1.o
+         CC linux-c-opt/obj/src/ts/interface/dlregists.o
+         CC linux-c-opt/obj/src/ts/impls/glee/glee.o
+         CC linux-c-opt/obj/src/ts/impls/python/pythonts.o
+         CC linux-c-opt/obj/src/ts/impls/implicit/irk/irk.o
+         CC linux-c-opt/obj/src/ts/interface/ftn-custom/ztsf.o
+         CC linux-c-opt/obj/src/ts/interface/tscreate.o
+         CC linux-c-opt/obj/src/snes/interface/snes.o
+         CC linux-c-opt/obj/src/ts/impls/symplectic/basicsymplectic/basicsymplectic.o
+         CC linux-c-opt/obj/src/ts/impls/explicit/rk/rk.o
+         CC linux-c-opt/obj/src/ts/interface/tseig.o
+         CC linux-c-opt/obj/src/ts/impls/mimex/mimex.o
+         CC linux-c-opt/obj/src/ts/impls/implicit/glle/glle.o
+         CC linux-c-opt/obj/src/ts/impls/pseudo/posindep.o
+         CC linux-c-opt/obj/src/ts/impls/arkimex/arkimex.o
+         CC linux-c-opt/obj/src/ts/interface/tsreg.o
+         CC linux-c-opt/obj/src/ts/interface/tsregall.o
+         CC linux-c-opt/obj/src/ts/impls/implicit/theta/theta.o
+         CC linux-c-opt/obj/src/ts/interface/tshistory.o
+         CC linux-c-opt/obj/src/ts/trajectory/impls/singlefile/singlefile.o
+         CC linux-c-opt/obj/src/ts/trajectory/impls/basic/trajbasic.o
+         CC linux-c-opt/obj/src/ts/impls/multirate/mprk.o
+         CC linux-c-opt/obj/src/ts/trajectory/impls/visualization/trajvisualization.o
+         CC linux-c-opt/obj/src/ts/interface/tsrhssplit.o
+         CC linux-c-opt/obj/src/ts/impls/rosw/rosw.o
+         CC linux-c-opt/obj/src/ts/trajectory/utils/reconstruct.o
+         CC linux-c-opt/obj/src/ts/interface/sensitivity/tssen.o
+         CC linux-c-opt/obj/ftn/tao/bound/impls/bncg/bncgf.o
+         CC linux-c-opt/obj/ftn/tao/bound/impls/blmvm/blmvmf.o
+         CC linux-c-opt/obj/ftn/tao/bound/impls/bqnk/bqnkf.o
+         CC linux-c-opt/obj/ftn/tao/bound/utils/isutilf.o
+         CC linux-c-opt/obj/ftn/tao/interface/dlregistaof.o
+         CC linux-c-opt/obj/ftn/tao/constrained/impls/admm/admmf.o
+         CC linux-c-opt/obj/src/ts/utils/dmnetworkts.o
+         CC linux-c-opt/obj/ftn/tao/constrained/impls/almm/almmutilsf.o
+         CC linux-c-opt/obj/ftn/tao/interface/fdifff.o
+         CC linux-c-opt/obj/src/ts/interface/tsmon.o
+         CC linux-c-opt/obj/src/ts/trajectory/impls/memory/trajmemory.o
+         CC linux-c-opt/obj/ftn/tao/interface/taosolver_hjf.o
+         CC linux-c-opt/obj/src/ts/utils/dmdats.o
+         CC linux-c-opt/obj/src/ts/utils/dmlocalts.o
+         CC linux-c-opt/obj/ftn/tao/interface/taosolver_boundsf.o
+         CC linux-c-opt/obj/src/ts/utils/tsconvest.o
+         CC linux-c-opt/obj/ftn/tao/interface/taosolver_fgf.o
+         CC linux-c-opt/obj/ftn/tao/linesearch/interface/dlregis_taolinesearchf.o
+         CC linux-c-opt/obj/ftn/tao/leastsquares/impls/brgn/brgnf.o
+         CC linux-c-opt/obj/ftn/tao/matrix/submatfreef.o
+         CC linux-c-opt/obj/src/ts/utils/dmplexts.o
+         CC linux-c-opt/obj/src/ts/trajectory/interface/traj.o
+         CC linux-c-opt/obj/ftn/tao/linesearch/interface/taolinesearchf.o
+         CC linux-c-opt/obj/ftn/tao/interface/taosolverf.o
+         CC linux-c-opt/obj/ftn/tao/python/pythontaof.o
+         CC linux-c-opt/obj/ftn/tao/shell/taoshellf.o
+         CC linux-c-opt/obj/ftn/tao/util/tao_utilf.o
+         CC linux-c-opt/obj/src/ts/utils/dmts.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bnk/bnls.o
+         CC linux-c-opt/obj/src/ksp/pc/impls/bddc/bddcprivate.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bnk/bntl.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bnk/bntr.o
+         CC linux-c-opt/obj/src/tao/bound/impls/blmvm/blmvm.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bqnk/bqnkls.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bqnk/bqnktl.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bqnk/bqnktr.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bqnk/bqnk.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bqnls/bqnls.o
+         CC linux-c-opt/obj/src/tao/complementarity/impls/asls/asils.o
+         CC linux-c-opt/obj/src/tao/complementarity/impls/ssls/ssfls.o
+         CC linux-c-opt/obj/src/tao/bound/impls/tron/tron.o
+         CC linux-c-opt/obj/src/tao/complementarity/impls/asls/asfls.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bnk/bnk.o
+         CC linux-c-opt/obj/src/tao/constrained/impls/admm/ftn-custom/zadmmf.o
+         CC linux-c-opt/obj/src/tao/complementarity/impls/ssls/ssls.o
+         CC linux-c-opt/obj/src/tao/complementarity/impls/ssls/ssils.o
+         CC linux-c-opt/obj/src/tao/bound/impls/bncg/bncg.o
+         CC linux-c-opt/obj/src/tao/interface/dlregistao.o
+         CC linux-c-opt/obj/src/tao/constrained/impls/almm/almmutils.o
+         CC linux-c-opt/obj/src/tao/interface/fdiff.o
+         CC linux-c-opt/obj/src/tao/bound/utils/isutil.o
+         CC linux-c-opt/obj/src/tao/interface/taosolverregi.o
+         CC linux-c-opt/obj/src/tao/interface/ftn-custom/ztaosolverf.o
+         CC linux-c-opt/obj/src/tao/constrained/impls/almm/almm.o
+         CC linux-c-opt/obj/src/tao/leastsquares/impls/brgn/ftn-custom/zbrgnf.o
+         CC linux-c-opt/obj/src/tao/interface/taosolver_bounds.o
+         CC linux-c-opt/obj/src/ts/utils/dmplexlandau/plexland.o
+         CC linux-c-opt/obj/src/tao/linesearch/impls/armijo/armijo.o
+         CC linux-c-opt/obj/src/tao/interface/taosolver_fg.o
+         CC linux-c-opt/obj/src/tao/linesearch/interface/dlregis_taolinesearch.o
+         CC linux-c-opt/obj/src/tao/leastsquares/impls/pounders/gqt.o
+         CC linux-c-opt/obj/src/tao/linesearch/impls/unit/unit.o
+         CC linux-c-opt/obj/src/tao/linesearch/impls/gpcglinesearch/gpcglinesearch.o
+         CC linux-c-opt/obj/src/tao/linesearch/interface/ftn-custom/ztaolinesearchf.o
+         CC linux-c-opt/obj/src/tao/linesearch/impls/owarmijo/owarmijo.o
+         CC linux-c-opt/obj/src/tao/constrained/impls/admm/admm.o
+         CC linux-c-opt/obj/src/tao/linesearch/impls/morethuente/morethuente.o
+         CC linux-c-opt/obj/src/tao/constrained/impls/ipm/ipm.o
+         CC linux-c-opt/obj/src/tao/leastsquares/impls/brgn/brgn.o
+         CC linux-c-opt/obj/src/tao/python/pythontao.o
+         CC linux-c-opt/obj/src/tao/interface/taosolver_hj.o
+         CC linux-c-opt/obj/src/tao/matrix/adamat.o
+         CC linux-c-opt/obj/src/tao/shell/taoshell.o
+         CC linux-c-opt/obj/src/tao/snes/taosnes.o
+         CC linux-c-opt/obj/src/tao/matrix/submatfree.o
+         CC linux-c-opt/obj/src/tao/constrained/impls/ipm/pdipm.o
+         CC linux-c-opt/obj/src/tao/unconstrained/impls/lmvm/lmvm.o
+         CC linux-c-opt/obj/src/tao/quadratic/impls/gpcg/gpcg.o
+         CC linux-c-opt/obj/src/tao/unconstrained/impls/cg/taocg.o
+         CC linux-c-opt/obj/src/tao/quadratic/impls/bqpip/bqpip.o
+         CC linux-c-opt/obj/src/tao/unconstrained/impls/neldermead/neldermead.o
+         CC linux-c-opt/obj/src/ts/interface/ts.o
+         CC linux-c-opt/obj/ftn/ml/regressor/interface/dlregisregressorf.o
+         CC linux-c-opt/obj/src/tao/unconstrained/impls/ntr/ntr.o
+         CC linux-c-opt/obj/src/tao/unconstrained/impls/owlqn/owlqn.o
+         CC linux-c-opt/obj/ftn/ml/regressor/impls/linear/linearf.o
+         CC linux-c-opt/obj/src/tao/pde_constrained/impls/lcl/lcl.o
+         CC linux-c-opt/obj/src/tao/util/tao_util.o
+         CC linux-c-opt/obj/ftn/ml/regressor/interface/regressorf.o
+         CC linux-c-opt/obj/src/tao/leastsquares/impls/pounders/pounders.o
+         CC linux-c-opt/obj/src/tao/unconstrained/impls/bmrm/bmrm.o
+         CC linux-c-opt/obj/src/tao/linesearch/interface/taolinesearch.o
+         FC linux-c-opt/obj/src/sys/objects/ftn-src/optionenum.o
+         CC linux-c-opt/obj/src/tao/unconstrained/impls/ntl/ntl.o
+         FC linux-c-opt/obj/src/sys/classes/bag/ftn-src/bagenum.o
+         CC linux-c-opt/obj/src/ml/regressor/interface/regressorregi.o
+         CC linux-c-opt/obj/src/tao/unconstrained/impls/nls/nls.o
+         CC linux-c-opt/obj/src/ml/regressor/interface/dlregisregressor.o
+         CC linux-c-opt/obj/src/tao/interface/taosolver.o
+         CC linux-c-opt/obj/src/ml/regressor/interface/regressor.o
+         CC linux-c-opt/obj/src/ml/regressor/impls/linear/linear.o
+         FC linux-c-opt/obj/src/mat/ftn-mod/petscmatmod.o
+         FC linux-c-opt/obj/src/dm/ftn-mod/petscdmmod.o
+         FC linux-c-opt/obj/src/ksp/ftn-mod/petsckspmod.o
+         FC linux-c-opt/obj/src/snes/ftn-mod/petscsnesmod.o
+         FC linux-c-opt/obj/src/ts/ftn-mod/petsctsmod.o
+         FC linux-c-opt/obj/src/tao/ftn-mod/petsctaomod.o
+         FC linux-c-opt/obj/src/ml/ftn-mod/petscmlmod.o
+    CLINKER linux-c-opt/lib/libpetsc.so.3.24.0
+make[3]: Leaving directory '/build/petsc/src/petsc-3.24.0'
+make[2]: Leaving directory '/build/petsc/src/petsc-3.24.0'
+=========================================
+Now to install the libraries do:
+sudo make PETSC_DIR=/build/petsc/src/petsc-3.24.0 PETSC_ARCH=linux-c-opt install
+=========================================

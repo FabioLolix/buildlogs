@@ -1,0 +1,72 @@
+Making install in m4m
+make[1]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/m4m'
+make[2]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/m4m'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/m4m'
+make[1]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/m4m'
+Making install in po
+make[1]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/po'
+/bin/sh .././mkinstalldirs /build/libexif-gtk/pkg/libexif-gtk/usr/share
+mkdir -p -- /build/libexif-gtk/pkg/libexif-gtk/usr/share
+mkdir -p -- /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/de/LC_MESSAGES
+installing de.gmo as /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/de/LC_MESSAGES/libexif-gtk-5.mo
+mkdir -p -- /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/es/LC_MESSAGES
+installing es.gmo as /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/es/LC_MESSAGES/libexif-gtk-5.mo
+mkdir -p -- /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/fr/LC_MESSAGES
+installing fr.gmo as /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/fr/LC_MESSAGES/libexif-gtk-5.mo
+mkdir -p -- /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/pl/LC_MESSAGES
+installing pl.gmo as /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/pl/LC_MESSAGES/libexif-gtk-5.mo
+mkdir -p -- /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/ru/LC_MESSAGES
+installing ru.gmo as /build/libexif-gtk/pkg/libexif-gtk/usr/share/locale/ru/LC_MESSAGES/libexif-gtk-5.mo
+if test "libexif-gtk" = "gettext-tools"; then \
+  /bin/sh .././mkinstalldirs /build/libexif-gtk/pkg/libexif-gtk/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /build/libexif-gtk/pkg/libexif-gtk/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /build/libexif-gtk/pkg/libexif-gtk/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/po'
+Making install in gtk-extensions
+make[1]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/gtk-extensions'
+make[2]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/gtk-extensions'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/gtk-extensions'
+make[1]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/gtk-extensions'
+Making install in libexif-gtk
+make[1]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/libexif-gtk'
+make[2]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/libexif-gtk'
+ /usr/bin/mkdir -p '/build/libexif-gtk/pkg/libexif-gtk/usr/lib'
+ /usr/bin/mkdir -p '/build/libexif-gtk/pkg/libexif-gtk/usr/include/libexif-gtk'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libexif-gtk.la '/build/libexif-gtk/pkg/libexif-gtk/usr/lib'
+ /usr/bin/install -c -m 644 gtk-exif-browser.h gtk-exif-content-list.h gtk-exif-entry.h gtk-exif-entry-ascii.h gtk-exif-entry-copyright.h gtk-exif-entry-date.h gtk-exif-entry-generic.h gtk-exif-entry-flash.h gtk-exif-entry-number.h gtk-exif-entry-option.h gtk-exif-entry-rational.h gtk-exif-entry-resolution.h gtk-exif-entry-user-comment.h gtk-exif-entry-version.h '/build/libexif-gtk/pkg/libexif-gtk/usr/include/libexif-gtk'
+libtool: install: /usr/bin/install -c .libs/libexif-gtk.so.5.1.0 /build/libexif-gtk/pkg/libexif-gtk/usr/lib/libexif-gtk.so.5.1.0
+libtool: install: (cd /build/libexif-gtk/pkg/libexif-gtk/usr/lib && { ln -s -f libexif-gtk.so.5.1.0 libexif-gtk.so.5 || { rm -f libexif-gtk.so.5 && ln -s libexif-gtk.so.5.1.0 libexif-gtk.so.5; }; })
+libtool: install: (cd /build/libexif-gtk/pkg/libexif-gtk/usr/lib && { ln -s -f libexif-gtk.so.5.1.0 libexif-gtk.so || { rm -f libexif-gtk.so && ln -s libexif-gtk.so.5.1.0 libexif-gtk.so; }; })
+libtool: install: /usr/bin/install -c .libs/libexif-gtk.lai /build/libexif-gtk/pkg/libexif-gtk/usr/lib/libexif-gtk.la
+libtool: install: /usr/bin/install -c .libs/libexif-gtk.a /build/libexif-gtk/pkg/libexif-gtk/usr/lib/libexif-gtk.a
+libtool: install: chmod 644 /build/libexif-gtk/pkg/libexif-gtk/usr/lib/libexif-gtk.a
+libtool: install: ranlib /build/libexif-gtk/pkg/libexif-gtk/usr/lib/libexif-gtk.a
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/libexif-gtk'
+make[1]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/libexif-gtk'
+Making install in tests
+make[1]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/tests'
+make[2]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/tests'
+make[1]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0/tests'
+make[1]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0'
+make[2]: Entering directory '/build/libexif-gtk/src/libexif-gtk-0.5.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/libexif-gtk/pkg/libexif-gtk/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libexif-gtk.pc '/build/libexif-gtk/pkg/libexif-gtk/usr/lib/pkgconfig'
+make[2]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0'
+make[1]: Leaving directory '/build/libexif-gtk/src/libexif-gtk-0.5.0'

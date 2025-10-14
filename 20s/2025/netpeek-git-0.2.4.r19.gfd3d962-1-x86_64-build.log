@@ -1,0 +1,72 @@
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 build
+The Meson build system
+Version: 1.9.1
+Source dir: /build/netpeek-git/src/NetPeek
+Build dir: /build/netpeek-git/src/NetPeek/build
+Build type: native build
+Project name: netpeek
+Project version: 0.2.4
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Configuring io.github.zingytomato.netpeek.service using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Build-time dependency gio-2.0 found: YES 2.86.0
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program python3 found: YES (/usr/bin/python3)
+Configuring netpeek using configuration
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 found: YES 2.86.0 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 14
+
+netpeek 0.2.4
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/14 eta ?                                               Writing build.ninja:   0%|          | 0/42 eta ?                                                ninja: Entering directory `build'
+[1/11] Building translation po/es/LC_MESSAGES/netpeek-es.mo
+[2/11] Building translation po/fr/LC_MESSAGES/netpeek-fr.mo
+[3/11] Building translation po/it/LC_MESSAGES/netpeek-it.mo
+[4/11] Building translation po/nl/LC_MESSAGES/netpeek-nl.mo
+[5/11] Building translation po/pl/LC_MESSAGES/netpeek-pl.mo
+FAILED: po/pl/LC_MESSAGES/netpeek.mo 
+/usr/bin/msgfmt -o po/pl/LC_MESSAGES/netpeek.mo ../po/pl.po
+../po/pl.po: warning: Charset "CHARSET" is not a portable encoding name.
+                      Message conversion to user's charset might not work.
+/usr/bin/msgfmt: present charset "CHARSET" is not a portable encoding name
+[6/11] Building translation po/ru/LC_MESSAGES/netpeek-ru.mo
+[7/11] Building translation po/uk/LC_MESSAGES/netpeek-uk.mo
+[8/11] Building translation po/sk/LC_MESSAGES/netpeek-sk.mo
+[9/11] Generating src/netpeek_gresource with a custom command
+[10/11] Merging translations for data/io.github.zingytomato.netpeek.desktop
+FAILED: data/io.github.zingytomato.netpeek.desktop 
+/usr/bin/meson --internal msgfmthelper --msgfmt=/usr/bin/msgfmt ../data/io.github.zingytomato.netpeek.desktop.in data/io.github.zingytomato.netpeek.desktop desktop ../data/../po
+../data/../po/pl.po: warning: Charset "CHARSET" is not a portable encoding name.
+                              Message conversion to user's charset might not work.
+/usr/bin/msgfmt: present charset "CHARSET" is not a portable encoding name
+[11/11] Merging translations for data/io.github.zingytomato.netpeek.metainfo.xml
+FAILED: data/io.github.zingytomato.netpeek.metainfo.xml 
+/usr/bin/meson --internal msgfmthelper --msgfmt=/usr/bin/msgfmt ../data/io.github.zingytomato.netpeek.metainfo.xml.in data/io.github.zingytomato.netpeek.metainfo.xml xml ../data/../po
+../data/../po/pl.po: warning: Charset "CHARSET" is not a portable encoding name.
+                              Message conversion to user's charset might not work.
+/usr/bin/msgfmt: present charset "CHARSET" is not a portable encoding name
+ninja: build stopped: subcommand failed.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

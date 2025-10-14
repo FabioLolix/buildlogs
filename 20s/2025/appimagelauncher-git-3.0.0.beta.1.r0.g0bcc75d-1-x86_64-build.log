@@ -1,0 +1,823 @@
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Storing git commit ID in cache file
+-- Git commit: 0bcc75d
+-- Release build detected, enabling reproducible builds mode
+-- Performing Test debug_prefix_map_flag_available
+-- Performing Test debug_prefix_map_flag_available - Success
+-- Performing Test macro_prefix_map_flag_available
+-- Performing Test macro_prefix_map_flag_available - Success
+-- Populating appimageupdate
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/appimagelauncher-git/src/build/_deps/appimageupdate-subbuild
+[ 11%] Creating directories for 'appimageupdate-populate'
+[ 22%] Performing download step (git clone) for 'appimageupdate-populate'
+Cloning into 'appimageupdate-src'...
+HEAD is now at 362e637 Improve message
+[ 33%] Performing update step for 'appimageupdate-populate'
+-- Already at requested tag: 2.0.0-alpha-1-20241225
+[ 44%] No patch step for 'appimageupdate-populate'
+[ 55%] No configure step for 'appimageupdate-populate'
+[ 66%] No build step for 'appimageupdate-populate'
+[ 77%] No install step for 'appimageupdate-populate'
+[ 88%] No test step for 'appimageupdate-populate'
+[100%] Completed 'appimageupdate-populate'
+[100%] Built target appimageupdate-populate
+-- Populating zsync2
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/appimagelauncher-git/src/build/_deps/zsync2-subbuild
+[ 11%] Creating directories for 'zsync2-populate'
+[ 22%] Performing download step (git clone) for 'zsync2-populate'
+Cloning into 'zsync2-src'...
+HEAD is now at 9337846 Merge pull request #78 from pkwong4321/patch-1
+[ 33%] Performing update step for 'zsync2-populate'
+-- Already at requested tag: 2.0.0-alpha-1-20241016
+[ 44%] No patch step for 'zsync2-populate'
+[ 55%] No configure step for 'zsync2-populate'
+[ 66%] No build step for 'zsync2-populate'
+[ 77%] No install step for 'zsync2-populate'
+[ 88%] No test step for 'zsync2-populate'
+[100%] Completed 'zsync2-populate'
+[100%] Built target zsync2-populate
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Looking for include file memory.h
+-- Looking for include file memory.h - found
+-- Looking for include file stdint.h
+-- Looking for include file stdint.h - found
+-- Looking for include file stdlib.h
+-- Looking for include file stdlib.h - found
+-- Looking for include file strings.h
+-- Looking for include file strings.h - found
+-- Looking for include file sys/stat.h
+-- Looking for include file sys/stat.h - found
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file time.h
+-- Looking for include file time.h - found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for memcpy
+-- Looking for memcpy - found
+-- Looking for mkstemp
+-- Looking for mkstemp - found
+-- Looking for pread
+-- Looking for pread - found
+-- Looking for pwrite
+-- Looking for pwrite - found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'libgcrypt'
+--   Found libgcrypt, version 1.11.2
+-- Checking for one of the modules 'libcurl'
+-- Found libcurl 8.15.0
+CMake Warning at /build/appimagelauncher-git/src/build/_deps/zsync2-src/lib/CMakeLists.txt:51 (message):
+  CPR_FORCE_USE_SYSTEM_CURL is set to ON by the user
+Call Stack (most recent call first):
+  /build/appimagelauncher-git/src/build/_deps/zsync2-src/lib/CMakeLists.txt:69 (import_cpr)
+
+
+-- Populating cpr
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/appimagelauncher-git/src/build/_deps/cpr-subbuild
+[ 11%] Creating directories for 'cpr-populate'
+[ 22%] Performing download step (git clone) for 'cpr-populate'
+Cloning into 'cpr-src'...
+HEAD is now at db351ff Updated version number to 1.8.3
+[ 33%] Performing update step for 'cpr-populate'
+-- Already at requested tag: 1.8.3
+[ 44%] No patch step for 'cpr-populate'
+[ 55%] No configure step for 'cpr-populate'
+[ 66%] No build step for 'cpr-populate'
+[ 77%] No install step for 'cpr-populate'
+[ 88%] No test step for 'cpr-populate'
+[100%] Completed 'cpr-populate'
+[100%] Built target cpr-populate
+-- C++ Requests CMake Options
+-- =======================================================
+--   CPR_GENERATE_COVERAGE: OFF
+--   CPR_CURL_NOSIGNAL: OFF
+--   CPR_USE_SYSTEM_GTEST: OFF
+--   CPR_FORCE_USE_SYSTEM_CURL: ON
+--   CPR_ENABLE_SSL: ON
+--   CPR_FORCE_OPENSSL_BACKEND: OFF
+--   CPR_FORCE_WINSSL_BACKEND: OFF
+--   CPR_FORCE_DARWINSSL_BACKEND: OFF
+--   CPR_FORCE_MBEDTLS_BACKEND: OFF
+--   CPR_ENABLE_LINTING: OFF
+--   CPR_ENABLE_CPPCHECK: OFF
+--   CPR_BUILD_TESTS: OFF
+--   CPR_BUILD_TESTS_SSL: OFF
+-- =======================================================
+-- Performing Test THREAD_SANITIZER_AVAILABLE
+-- Performing Test THREAD_SANITIZER_AVAILABLE - Success
+-- Performing Test ADDRESS_SANITIZER_AVAILABLE
+-- Performing Test ADDRESS_SANITIZER_AVAILABLE - Success
+-- Performing Test LEAK_SANITIZER_AVAILABLE
+-- Performing Test LEAK_SANITIZER_AVAILABLE - Success
+-- Performing Test UNDEFINED_BEHAVIOUR_SANITIZER_AVAILABLE
+-- Performing Test UNDEFINED_BEHAVIOUR_SANITIZER_AVAILABLE - Success
+-- Performing Test ALL_SANITIZERS_AVAILABLE
+-- Performing Test ALL_SANITIZERS_AVAILABLE - Success
+-- Automatically detecting SSL backend.
+-- Detecting SSL backend...
+-- Found OpenSSL: /usr/lib/libcrypto.so (found version "3.5.2")
+-- SSL auto detect: Using OpenSSL.
+-- Found CURL: /usr/lib/libcurl.so (found version "8.15.0") found components: HTTP HTTPS
+-- Curl 8.15.0 found on this system.
+-- Populating args
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/appimagelauncher-git/src/build/_deps/args-subbuild
+[ 11%] Creating directories for 'args-populate'
+[ 22%] Performing download step (git clone) for 'args-populate'
+Cloning into 'args-src'...
+HEAD is now at e3e6e46 bump version for fixed tests
+[ 33%] Performing update step for 'args-populate'
+-- Already at requested tag: 6.4.6
+[ 44%] No patch step for 'args-populate'
+[ 55%] No configure step for 'args-populate'
+[ 66%] No build step for 'args-populate'
+[ 77%] No install step for 'args-populate'
+[ 88%] No test step for 'args-populate'
+[100%] Completed 'args-populate'
+[100%] Built target args-populate
+-- Populating libappimage
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/appimagelauncher-git/src/build/_deps/libappimage-subbuild
+[ 11%] Creating directories for 'libappimage-populate'
+[ 22%] Performing download step (git clone) for 'libappimage-populate'
+Cloning into 'libappimage-src'...
+HEAD is now at a0967b2 Drop i386 and add ARM
+Submodule 'lib/gtest' (https://github.com/google/googletest.git) registered for path 'lib/gtest'
+Cloning into '/build/appimagelauncher-git/src/build/_deps/libappimage-src/lib/gtest'...
+Submodule path 'lib/gtest': checked out 'ec44c6c1675c25b9827aacd08c02433cccde7780'
+[ 33%] Performing update step for 'libappimage-populate'
+-- Already at requested ref: a0967b29d671e9647ef128b74364defc2153e3ed
+[ 44%] No patch step for 'libappimage-populate'
+[ 55%] No configure step for 'libappimage-populate'
+[ 66%] No build step for 'libappimage-populate'
+[ 77%] No install step for 'libappimage-populate'
+[ 88%] No test step for 'libappimage-populate'
+[100%] Completed 'libappimage-populate'
+[100%] Built target libappimage-populate
+-- Release build detected, enabling reproducible builds mode
+-- Checking for program aclocal
+-- Found program aclocal: /usr/bin/aclocal
+-- Checking for program autoheader
+-- Found program autoheader: /usr/bin/autoheader
+-- Checking for program automake
+-- Found program automake: /usr/bin/automake
+-- Checking for program autoreconf
+-- Found program autoreconf: /usr/bin/autoreconf
+-- Checking for program libtoolize
+-- Found program libtoolize: /usr/bin/libtoolize
+-- Checking for program patch
+-- Found program patch: /usr/bin/patch
+-- Checking for program sed
+-- Found program sed: /usr/bin/sed
+-- Checking for program make
+-- Found program make: /usr/bin/make
+-- Importing target libglib via pkg-config (glib-2.0>=2.40, shared)
+-- Checking for module 'glib-2.0>=2.40'
+--   Found glib-2.0, version 2.84.4
+-- Importing target libgobject via pkg-config (gobject-2.0>=2.40, shared)
+-- Checking for module 'gobject-2.0>=2.40'
+--   Found gobject-2.0, version 2.84.4
+-- Importing target libgio via pkg-config (gio-2.0>=2.40, shared)
+-- Checking for module 'gio-2.0>=2.40'
+--   Found gio-2.0, version 2.84.4
+-- Importing target libzlib via pkg-config (zlib, shared)
+-- Checking for module 'zlib'
+--   Found zlib, version 1.3.1
+-- Importing target libcairo via pkg-config (cairo, shared)
+-- Checking for module 'cairo'
+--   Found cairo, version 1.18.4
+-- Importing target librsvg via pkg-config (librsvg-2.0, shared)
+-- Checking for module 'librsvg-2.0'
+--   Found librsvg-2.0, version 2.61.0
+-- Importing target liblzma via pkg-config (liblzma, shared)
+-- Checking for module 'liblzma'
+--   Found liblzma, version 5.8.1
+-- Importing target libzstd via pkg-config (libzstd, shared)
+-- Checking for module 'libzstd'
+--   Found libzstd, version 1.5.7
+-- Downloading and building squashfuse
+-- Importing target libfuse via pkg-config (fuse, shared)
+-- Checking for module 'fuse'
+--   Found fuse, version 2.9.9
+-- Using system libarchive
+-- Importing target libarchive via find_package (LibArchive)
+-- Found LibArchive: /usr/lib/libarchive.so (found version "3.8.1")
+-- Found Boost: /usr/lib/cmake/Boost-1.88.0/BoostConfig.cmake (found suitable version "1.88.0", minimum required is "1.53.0")
+-- Downloading and building XdgUtils
+-- IMAGE_MANIPULATION_BACKEND_LIBS 
+-- IMAGE_MANIPULATION_BACKEND_LIBS 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found libxpm: /usr/lib/libXpm.so
+-- Found nlohmann_json: /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.12.0")
+-- Checking for module 'gpgme>=1.10.0'
+--   Found gpgme, version 2.0.0
+-- Enabling largefile support for signing library
+-- CMAKE_INSTALL_LIBDIR: lib
+-- Checking for module 'glib-2.0>=2.40'
+--   Found glib-2.0, version 2.84.4
+-- Found INotify: /usr/include
+-- CMake build type is Release, hence disabling debug messages in AppImageLauncher
+-- 64-bit target detected (x86_64), building 32-bit preload library as well
+-- Checking for program xxd
+-- Found program xxd: /usr/bin/xxd
+-- Checking whether memfd_create(...) is available
+-- Performing Test HAVE_MEMFD_CREATE
+-- Performing Test HAVE_MEMFD_CREATE - Success
+-- CMAKE_INSTALL_DATADIR: share
+-- Checking for program lupdate
+-- Found program lupdate: /usr/bin/lupdate
+-- Checking for program lrelease
+-- Found program lrelease: /usr/bin/lrelease
+-- Configuring done (14.9s)
+-- Generating done (0.2s)
+-- Build files have been written to: /build/appimagelauncher-git/src/build
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.ast.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 95 untranslated source text(s)
+[  0%] Creating directories for 'squashfuse-EXTERNAL'
+[  0%] Built target binfmt-bypass-preload_32bit_autogen_timestamp_deps
+[  0%] Building C object _deps/libappimage-build/src/libappimage_hashlib/CMakeFiles/libappimage_hashlib.dir/md5.c.o
+[  1%] Creating directories for 'XdgUtils-EXTERNAL'
+[  1%] Building C object _deps/libappimage-build/src/xdg-basedir/CMakeFiles/xdg-basedir.dir/xdg-basedir.c.o
+[  1%] Built target binfmt-bypass-preload_autogen_timestamp_deps
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.cs.qm'...
+    Generated 91 translation(s) (88 finished and 3 unfinished)
+    Ignored 4 untranslated source text(s)
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.de.qm'...
+    Generated 95 translation(s) (95 finished and 0 unfinished)
+[  3%] Automatic MOC and UIC for target binfmt-bypass-preload_32bit
+[  3%] Automatic MOC and UIC for target binfmt-bypass-preload
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.en.qm'...
+    Generated 95 translation(s) (95 finished and 0 unfinished)
+[  3%] Performing download step (git clone) for 'squashfuse-EXTERNAL'
+[  3%] Performing download step (git clone) for 'XdgUtils-EXTERNAL'
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.es.qm'...
+    Generated 83 translation(s) (80 finished and 3 unfinished)
+    Ignored 12 untranslated source text(s)
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.fr.qm'...
+    Generated 91 translation(s) (88 finished and 3 unfinished)
+    Ignored 4 untranslated source text(s)
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.it.qm'...
+    Generated 92 translation(s) (89 finished and 3 unfinished)
+    Ignored 3 untranslated source text(s)
+Cloning into 'squashfuse-EXTERNAL'...
+Cloning into 'XdgUtils-EXTERNAL'...
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.nb_NO.qm'...
+    Generated 91 translation(s) (50 finished and 41 unfinished)
+    Ignored 4 untranslated source text(s)
+[  5%] Linking C static library libxdg-basedir.a
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.nl.qm'...
+    Generated 91 translation(s) (88 finished and 3 unfinished)
+    Ignored 4 untranslated source text(s)
+[  5%] Built target binfmt-bypass-preload_32bit_autogen
+[  5%] Built target binfmt-bypass-preload_autogen
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.pl.qm'...
+    Generated 91 translation(s) (88 finished and 3 unfinished)
+    Ignored 4 untranslated source text(s)
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.pt.qm'...
+    Generated 92 translation(s) (89 finished and 3 unfinished)
+    Ignored 3 untranslated source text(s)
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.pt_BR.qm'...
+    Generated 91 translation(s) (88 finished and 3 unfinished)
+    Ignored 4 untranslated source text(s)
+[  6%] Building CXX object src/binfmt-bypass/CMakeFiles/binfmt-bypass-preload.dir/binfmt-bypass-preload_autogen/mocs_compilation.cpp.o
+[  6%] Building CXX object src/binfmt-bypass/CMakeFiles/binfmt-bypass-preload_32bit.dir/binfmt-bypass-preload_32bit_autogen/mocs_compilation.cpp.o
+[  8%] Building C object src/binfmt-bypass/CMakeFiles/binfmt-bypass-preload_32bit.dir/preload.c.o
+[  8%] Building C object src/binfmt-bypass/CMakeFiles/binfmt-bypass-preload.dir/preload.c.o
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.pt_PT.qm'...
+    Generated 35 translation(s) (34 finished and 1 unfinished)
+    Ignored 60 untranslated source text(s)
+[ 10%] Linking C static library libappimage_hashlib.a
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.ru.qm'...
+    Generated 52 translation(s) (49 finished and 3 unfinished)
+    Ignored 43 untranslated source text(s)
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.tr.qm'...
+    Generated 13 translation(s) (11 finished and 2 unfinished)
+    Ignored 82 untranslated source text(s)
+Updating '/build/appimagelauncher-git/src/build/i18n/generated/l10n/ui.zh_Hans.qm'...
+    Generated 92 translation(s) (89 finished and 3 unfinished)
+    Ignored 3 untranslated source text(s)
+[ 10%] Built target xdg-basedir
+[ 10%] Built target libappimage_hashlib
+[ 10%] Linking CXX shared library libbinfmt-bypass-preload_32bit.so
+[ 11%] Linking CXX shared library libbinfmt-bypass-preload.so
+[ 11%] Building C object _deps/libappimage-build/src/libappimage_shared/CMakeFiles/libappimage_shared.dir/elf.c.o
+[ 11%] Building C object _deps/libappimage-build/src/libappimage_shared/CMakeFiles/libappimage_shared.dir/hexlify.c.o
+[ 13%] Building C object _deps/libappimage-build/src/libappimage_shared/CMakeFiles/libappimage_shared.dir/digest.c.o
+[ 13%] Linking C static library libappimage_shared.a
+[ 13%] Built target l10n
+[ 13%] Built target translationmanager_autogen_timestamp_deps
+[ 13%] Built target libappimage_shared
+[ 13%] Automatic MOC and UIC for target translationmanager
+patching ELF file 'libbinfmt-bypass-preload.so'
+clearing symbol version for dlsym
+writing libbinfmt-bypass-preload.so
+patching ELF file 'libbinfmt-bypass-preload_32bit.so'
+clearing symbol version for dlsym
+writing libbinfmt-bypass-preload_32bit.so
+[ 13%] Built target translationmanager_autogen
+[ 13%] Built target binfmt-bypass-preload_32bit
+[ 13%] Built target binfmt-bypass-preload
+[ 15%] Generating binfmt-bypass-preload.h
+[ 15%] Generating binfmt-bypass-preload_32bit.h
+[ 15%] Built target libbinfmt-bypass_autogen_timestamp_deps
+[ 15%] Automatic MOC and UIC for target libbinfmt-bypass
+[ 15%] Built target libbinfmt-bypass_autogen
+[ 15%] Building CXX object src/binfmt-bypass/CMakeFiles/libbinfmt-bypass.dir/lib.cpp.o
+[ 16%] Building CXX object src/binfmt-bypass/CMakeFiles/libbinfmt-bypass.dir/libbinfmt-bypass_autogen/mocs_compilation.cpp.o
+[ 18%] Building CXX object src/binfmt-bypass/CMakeFiles/libbinfmt-bypass.dir/elf.cpp.o
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+[ 20%] Performing disconnected update step for 'XdgUtils-EXTERNAL'
+[ 20%] No patch_disconnected step for 'XdgUtils-EXTERNAL'
+[ 21%] Performing configure step for 'XdgUtils-EXTERNAL'
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The C compiler identification is GNU 15.2.1
+HEAD is now at 775b4cc Merge pull request #131 from DrDaveD/prepare-0.5.2
+[ 21%] No update_disconnected step for 'squashfuse-EXTERNAL'
+[ 23%] No patch_disconnected step for 'squashfuse-EXTERNAL'
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+[ 23%] Performing configure step for 'squashfuse-EXTERNAL'
+[ 23%] Linking CXX static library liblibbinfmt-bypass.a
+-- Detecting C compiler ABI info - done
+[ 25%] Built target libbinfmt-bypass
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+[ 25%] Built target binfmt-interpreter_autogen_timestamp_deps
+[ 25%] Built target binfmt-bypass_autogen_timestamp_deps
+[ 26%] Automatic MOC and UIC for target binfmt-bypass
+[ 28%] Automatic MOC and UIC for target binfmt-interpreter
+[ 28%] Built target binfmt-bypass_autogen
+[ 28%] Built target binfmt-interpreter_autogen
+[ 28%] Building CXX object src/binfmt-bypass/CMakeFiles/binfmt-bypass.dir/binfmt-bypass_autogen/mocs_compilation.cpp.o
+[ 30%] Building CXX object src/binfmt-bypass/CMakeFiles/binfmt-bypass.dir/bypass_main.cpp.o
+[ 31%] Building CXX object src/binfmt-bypass/CMakeFiles/binfmt-interpreter.dir/binfmt-interpreter_autogen/mocs_compilation.cpp.o
+[ 31%] Building CXX object src/binfmt-bypass/CMakeFiles/binfmt-interpreter.dir/interpreter_main.cpp.o
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Creating module target: DesktopEntry STATIC
+-- Creating module target alias: XdgUtils::DesktopEntry
+-- Creating module target: BaseDir STATIC
+-- Creating module target alias: XdgUtils::BaseDir
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/appimagelauncher-git/src/build/_deps/libappimage-build/XdgUtils-EXTERNAL-prefix/src/XdgUtils-EXTERNAL-build
+[ 31%] Performing build step for 'XdgUtils-EXTERNAL'
+[  5%] Building CXX object src/BaseDir/CMakeFiles/BaseDir.dir/BaseDir.cpp.o
+[ 11%] Building CXX object src/DesktopEntry/AST/CMakeFiles/XdgUtilsDesktopEntryAST.dir/AST.cpp.o
+[ 17%] Building CXX object src/DesktopEntry/AST/CMakeFiles/XdgUtilsDesktopEntryAST.dir/Entry.cpp.o
+[ 35%] Building CXX object src/DesktopEntry/AST/CMakeFiles/XdgUtilsDesktopEntryAST.dir/Group.cpp.o
+[ 35%] Building CXX object src/DesktopEntry/AST/CMakeFiles/XdgUtilsDesktopEntryAST.dir/Comment.cpp.o
+[ 47%] Building CXX object src/DesktopEntry/AST/CMakeFiles/XdgUtilsDesktopEntryAST.dir/Node.cpp.o
+[ 52%] Building CXX object src/DesktopEntry/Reader/CMakeFiles/XdgUtilsDesktopEntryReader.dir/Tokenizer.cpp.o
+[ 52%] Building CXX object src/DesktopEntry/Reader/CMakeFiles/XdgUtilsDesktopEntryReader.dir/Reader.cpp.o
+[ 52%] Building CXX object src/DesktopEntry/Reader/CMakeFiles/XdgUtilsDesktopEntryReader.dir/Token.cpp.o
+[ 58%] Building CXX object src/DesktopEntry/Reader/CMakeFiles/XdgUtilsDesktopEntryReader.dir/Lexer.cpp.o
+[ 31%] Linking CXX executable binfmt-bypass
+[ 31%] Linking CXX executable binfmt-interpreter
+[ 64%] Linking CXX static library libXdgUtilsBaseDir.a
+[ 64%] Built target BaseDir
+[ 64%] Built target XdgUtilsDesktopEntryAST
+[ 64%] Built target XdgUtilsDesktopEntryReader
+[ 94%] Building CXX object src/DesktopEntry/CMakeFiles/DesktopEntry.dir/DesktopEntry.cpp.o
+[ 94%] Building CXX object src/DesktopEntry/CMakeFiles/DesktopEntry.dir/DesktopEntryExecValue.cpp.o
+[ 94%] Building CXX object src/DesktopEntry/CMakeFiles/DesktopEntry.dir/DesktopEntryKeyValue.cpp.o
+[ 94%] Building CXX object src/DesktopEntry/CMakeFiles/DesktopEntry.dir/DesktopEntryStringsValue.cpp.o
+[ 94%] Building CXX object src/DesktopEntry/CMakeFiles/DesktopEntry.dir/DesktopEntryKeyPath.cpp.o
+[ 33%] Built target binfmt-bypass
+[ 33%] Built target binfmt-interpreter
+[100%] Linking CXX static library libXdgUtilsDesktopEntry.a
+[100%] Built target DesktopEntry
+[ 33%] No install step for 'XdgUtils-EXTERNAL'
+[ 35%] Completed 'XdgUtils-EXTERNAL'
+[ 35%] Built target XdgUtils-EXTERNAL
+[ 38%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/MagicBytesChecker.cpp.o
+[ 38%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/hashlib.cpp.o
+[ 38%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/UrlEncoder.cpp.o
+[ 38%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/IconHandle.cpp.o
+[ 38%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/path_utils.cpp.o
+[ 38%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/ElfFile.cpp.o
+[ 40%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/resources_extractor/ResourcesExtractor.cpp.o
+[ 40%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/resources_extractor/PayloadEntriesCache.cpp.o
+[ 41%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/IconHandleCairoRsvg.cpp.o
+[ 43%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/Logger.cpp.o
+[ 43%] Building CXX object _deps/libappimage-build/src/libappimage/utils/CMakeFiles/appimage_utils.dir/StringSanitizer.cpp.o
+aclocal: installing 'm4/libtool.m4' from '/usr/share/aclocal/libtool.m4'
+aclocal: installing 'm4/ltoptions.m4' from '/usr/share/aclocal/ltoptions.m4'
+aclocal: installing 'm4/ltsugar.m4' from '/usr/share/aclocal/ltsugar.m4'
+aclocal: installing 'm4/ltversion.m4' from '/usr/share/aclocal/ltversion.m4'
+aclocal: installing 'm4/lt~obsolete.m4' from '/usr/share/aclocal/lt~obsolete.m4'
+aclocal: installing 'm4/pkg.m4' from '/usr/share/aclocal/pkg.m4'
+[ 43%] Built target appimage_utils
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/ltmain.sh'
+configure.ac:15: installing 'build-aux/ar-lib'
+configure.ac:13: installing 'build-aux/compile'
+configure.ac:10: installing 'build-aux/config.guess'
+configure.ac:10: installing 'build-aux/config.sub'
+configure.ac:12: installing 'build-aux/install-sh'
+configure.ac:12: installing 'build-aux/missing'
+Makefile.am: installing 'build-aux/depcomp'
+parallel-tests: installing 'build-aux/test-driver'
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... /usr/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /usr/bin/cc accepts -g... yes
+checking for /usr/bin/cc option to enable C11 features... none needed
+checking whether /usr/bin/cc understands -c and -o together... yes
+checking dependency style of /usr/bin/cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by /usr/bin/cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from /usr/bin/cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if /usr/bin/cc supports -fno-rtti -fno-exceptions... no
+checking for /usr/bin/cc option to produce PIC... -fPIC -DPIC
+checking if /usr/bin/cc PIC flag -fPIC -DPIC works... yes
+checking if /usr/bin/cc static flag -static works... yes
+checking if /usr/bin/cc supports -c -o file.o... yes
+checking if /usr/bin/cc supports -c -o file.o... (cached) yes
+checking whether the /usr/bin/cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gawk... (cached) gawk
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking how to run the C preprocessor... /usr/bin/cc -E
+checking for /usr/bin/cc option to enable large file support... none needed
+checking how to enable all compiler warnings... -Wall
+checking for QNX makedev... no
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+configure: checking for definition needed by makedev
+checking if makedev works without changes... yes
+configure: checking for definition needed by pread
+checking if pread works without changes... yes
+configure: checking for definition needed by S_IFSOCK
+checking if S_IFSOCK works without changes... yes
+checking for attr/xattr.h... no
+configure: checking for definition needed by ENOATTR
+checking if ENOATTR works without changes... no
+checking if ENOATTR requires changing _DARWIN_C_SOURCE... no
+checking if ENOATTR requires changing _NETBSD_SOURCE... no
+checking if ENOATTR requires changing _XOPEN_SOURCE... no
+checking if ENOATTR requires changing _BSD_SOURCE... no
+checking if ENOATTR requires changing _GNU_SOURCE... no
+checking if ENOATTR requires changing _POSIX_C_SOURCE... no
+configure: checking for definition needed by symlink
+checking if symlink works without changes... yes
+checking for library containing uncompress... -lz
+checking for zlib.h... yes
+checking for liblzma... yes
+checking for library containing lzma_stream_buffer_decode... none required
+checking for lzma.h... yes
+checking for library containing ZSTD_decompress... -lzstd
+checking for zstd.h... yes
+checking for fuse3 >= 3.2... no
+checking for fuse >= 2.6... yes
+checking for FUSE library... already present
+checking for FUSE header... yes
+checking for /usr/bin/cc options needed to detect all undeclared functions... none needed
+checking whether fuse_session_loop is declared... yes
+checking for fuse_session_loop... yes
+checking whether fuse_add_direntry is declared... yes
+checking whether fuse_add_dirent is declared... no
+checking whether fuse_daemonize is declared... yes
+checking whether fuse_session_remove_chan is declared... yes
+checking for two-argument fuse_unmount... yes
+checking for 64_t third argument to fuse ll forget op... no
+checking whether fuse_cmdline_help is declared... no
+checking for position argument to FUSE xattr operations... no
+checking if make supports export... yes
+checking for __le16... yes
+checking for asm/byteorder.h... yes
+checking for endian.h... yes
+checking for inline... inline
+checking for fusermount3... no
+checking for fusermount... fusermount
+checking for mksquashfs... no
+checking for md5sum... md5sum
+checking for pthread_mutex_lock in -lpthread... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating tests/ll-smoke.sh
+config.status: creating tests/ll-smoke-singlethreaded.sh
+config.status: creating tests/umount-test.sh
+config.status: creating Makefile
+config.status: creating squashfuse.pc
+config.status: creating squashfuse_ll.pc
+config.status: creating tests/lib.sh
+config.status: creating ci/features
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Compression support ....... : ZLIB XZ ZSTD
+High-level FUSE driver .... : 
+Low-level FUSE driver ..... : yes
+Demo program .............. : 
+Tests ..................... : none
+
+[ 45%] Performing build step for 'squashfuse-EXTERNAL'
+  CC       libsquashfuse_ll_convenience_la-ll.lo
+  CC       squashfuse_ll-ll_main.o
+  CC       libsquashfuse_ll_convenience_la-ll_inode.lo
+  CC       libsquashfuse_ll_convenience_la-nonstd-daemon.lo
+  CC       libfuseprivate_la-fuseprivate.lo
+  CC       libfuseprivate_la-nonstd-makedev.lo
+  CC       libfuseprivate_la-nonstd-enoattr.lo
+  CC       libfuseprivate_la-stat.lo
+  CC       libsquashfuse_convenience_la-swap.lo
+  CC       libsquashfuse_convenience_la-cache.lo
+  CC       libsquashfuse_convenience_la-table.lo
+  CC       libsquashfuse_convenience_la-dir.lo
+  CC       libsquashfuse_convenience_la-file.lo
+  CC       libsquashfuse_convenience_la-fs.lo
+  CC       libsquashfuse_convenience_la-decompress.lo
+  CC       libsquashfuse_convenience_la-xattr.lo
+  CC       libsquashfuse_convenience_la-hash.lo
+  CC       libsquashfuse_convenience_la-stack.lo
+  CC       libsquashfuse_convenience_la-traverse.lo
+  CC       libsquashfuse_convenience_la-util.lo
+  CC       libsquashfuse_convenience_la-nonstd-pread.lo
+  CC       libsquashfuse_convenience_la-nonstd-stat.lo
+  CC       libsquashfuse_convenience_la-cache_mt.lo
+  CCLD     libfuseprivate.la
+  CCLD     libsquashfuse_convenience.la
+  CCLD     libsquashfuse_ll_convenience.la
+  CCLD     libsquashfuse.la
+  CCLD     libsquashfuse_ll.la
+  CCLD     squashfuse_ll
+[ 46%] Performing install step for 'squashfuse-EXTERNAL'
+ /usr/bin/mkdir -p '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/pkgconfig'
+ /usr/bin/mkdir -p '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/share/man/man1'
+ /usr/bin/mkdir -p '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib'
+ /usr/bin/mkdir -p '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/include/squashfuse'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libsquashfuse.la libsquashfuse_ll.la '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib'
+ /usr/bin/install -c -m 644 squashfuse.pc squashfuse_ll.pc '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/pkgconfig'
+ /usr/bin/install -c -m 644 squashfuse.h squashfs_fs.h cache.h common.h config.h decompress.h dir.h file.h fs.h stack.h table.h traverse.h util.h xattr.h ll.h '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/include/squashfuse'
+ /usr/bin/install -c -m 644 squashfuse_ll.1 '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/share/man/man1'
+libtool: install: /usr/bin/install -c .libs/libsquashfuse.so.0.0.0 /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse.so.0.0.0
+libtool: install: (cd /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib && { ln -s -f libsquashfuse.so.0.0.0 libsquashfuse.so.0 || { rm -f libsquashfuse.so.0 && ln -s libsquashfuse.so.0.0.0 libsquashfuse.so.0; }; })
+libtool: install: (cd /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib && { ln -s -f libsquashfuse.so.0.0.0 libsquashfuse.so || { rm -f libsquashfuse.so && ln -s libsquashfuse.so.0.0.0 libsquashfuse.so; }; })
+libtool: install: /usr/bin/install -c .libs/libsquashfuse.lai /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse.la
+libtool: install: /usr/bin/install -c .libs/libsquashfuse_ll.so.0.0.0 /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse_ll.so.0.0.0
+libtool: install: (cd /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib && { ln -s -f libsquashfuse_ll.so.0.0.0 libsquashfuse_ll.so.0 || { rm -f libsquashfuse_ll.so.0 && ln -s libsquashfuse_ll.so.0.0.0 libsquashfuse_ll.so.0; }; })
+libtool: install: (cd /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib && { ln -s -f libsquashfuse_ll.so.0.0.0 libsquashfuse_ll.so || { rm -f libsquashfuse_ll.so && ln -s libsquashfuse_ll.so.0.0.0 libsquashfuse_ll.so; }; })
+libtool: install: /usr/bin/install -c .libs/libsquashfuse_ll.lai /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse_ll.la
+libtool: install: /usr/bin/install -c .libs/libsquashfuse.a /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse.a
+libtool: install: chmod 644 /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse.a
+libtool: install: ranlib /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse.a
+libtool: install: /usr/bin/install -c .libs/libsquashfuse_ll.a /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse_ll.a
+libtool: install: chmod 644 /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse_ll.a
+libtool: install: ranlib /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib/libsquashfuse_ll.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/sbin" ldconfig -n /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+After a 'make install' for many GNU/Linux systems, 'ldconfig LIBDIR'
+may need to be executed to help locate newly installed libraries,
+but you should consult with a system administrator before updating
+the shared library cache as this should be done with great care
+and consideration. (See the 'Platform-specific configuration notes'
+section of the documentation for more information.)
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c squashfuse_ll '/build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/bin'
+libtool: install: /usr/bin/install -c squashfuse_ll /build/appimagelauncher-git/src/build/_deps/libappimage-build/squashfuse-EXTERNAL-prefix/bin/squashfuse_ll
+[ 46%] Completed 'squashfuse-EXTERNAL'
+[ 46%] Built target squashfuse-EXTERNAL
+[ 46%] Building CXX object _deps/libappimage-build/src/libappimage/desktop_integration/CMakeFiles/appimage_desktop_integration.dir/IntegrationManager.cpp.o
+[ 46%] Building CXX object _deps/libappimage-build/src/libappimage/desktop_integration/CMakeFiles/appimage_desktop_integration.dir/Thumbnailer.cpp.o
+[ 46%] Building CXX object _deps/libappimage-build/src/libappimage/desktop_integration/CMakeFiles/appimage_desktop_integration.dir/integrator/DesktopEntryEditor.cpp.o
+[ 50%] Building CXX object _deps/libappimage-build/src/libappimage/core/CMakeFiles/core.dir/PayloadIterator.cpp.o
+[ 50%] Building CXX object _deps/libappimage-build/src/libappimage/desktop_integration/CMakeFiles/appimage_desktop_integration.dir/integrator/Integrator.cpp.o
+[ 51%] Building CXX object _deps/libappimage-build/src/libappimage/core/CMakeFiles/core.dir/impl/TraversalType1.cpp.o
+[ 51%] Building CXX object _deps/libappimage-build/src/libappimage/core/CMakeFiles/core.dir/impl/TraversalType2.cpp.o
+[ 51%] Building CXX object _deps/libappimage-build/src/libappimage/core/CMakeFiles/core.dir/AppImage.cpp.o
+[ 51%] Building CXX object _deps/libappimage-build/src/libappimage/core/CMakeFiles/core.dir/impl/StreambufType1.cpp.o
+[ 51%] Building CXX object _deps/libappimage-build/src/libappimage/core/CMakeFiles/core.dir/Traversal.cpp.o
+[ 53%] Building CXX object _deps/libappimage-build/src/libappimage/core/CMakeFiles/core.dir/impl/StreambufType2.cpp.o
+[ 53%] Built target core
+[ 53%] Built target appimage_desktop_integration
+[ 55%] Building C object _deps/libappimage-build/src/libappimage/CMakeFiles/libappimage.dir/libappimage.c.o
+[ 55%] Building CXX object _deps/libappimage-build/src/libappimage/CMakeFiles/libappimage.dir/libappimage.cpp.o
+[ 55%] Building CXX object _deps/libappimage-build/src/libappimage/CMakeFiles/libappimage.dir/libappimage_legacy.cpp.o
+[ 56%] Linking CXX shared library libappimage.so
+[ 56%] Built target libappimage
+[ 56%] Built target shared_autogen_timestamp_deps
+[ 56%] Built target trashbin_autogen_timestamp_deps
+[ 56%] Automatic MOC and UIC for target shared
+[ 56%] Automatic MOC and UIC for target trashbin
+[ 56%] Built target trashbin_autogen
+[ 56%] Built target shared_autogen
+[ 56%] Building CXX object src/shared/CMakeFiles/shared.dir/shared_autogen/mocs_compilation.cpp.o
+[ 58%] Building CXX object src/shared/CMakeFiles/shared.dir/shared.cpp.o
+[ 58%] Building CXX object src/shared/CMakeFiles/shared.dir/types.cpp.o
+[ 60%] Linking CXX static library libshared.a
+[ 61%] Built target shared
+[ 63%] Building CXX object src/trashbin/CMakeFiles/trashbin.dir/trashbin_autogen/mocs_compilation.cpp.o
+[ 63%] Building CXX object src/trashbin/CMakeFiles/trashbin.dir/trashbin.cpp.o
+[ 65%] Linking CXX static library libtrashbin.a
+[ 65%] Built target trashbin
+[ 65%] Building CXX object src/i18n/CMakeFiles/translationmanager.dir/translationmanager.cpp.o
+[ 66%] Building CXX object src/i18n/CMakeFiles/translationmanager.dir/translationmanager_autogen/mocs_compilation.cpp.o
+[ 68%] Linking CXX static library libtranslationmanager.a
+[ 68%] Built target translationmanager
+[ 68%] Built target filesystemwatcher_autogen_timestamp_deps
+[ 68%] Built target AppImageLauncherSettings_autogen_timestamp_deps
+[ 68%] Built target remove_autogen_timestamp_deps
+[ 68%] Built target cli_commands_autogen_timestamp_deps
+[ 68%] Built target AppImageLauncher_autogen_timestamp_deps
+[ 68%] Automatic MOC and UIC for target AppImageLauncherSettings
+[ 68%] Automatic MOC and UIC for target filesystemwatcher
+[ 70%] Automatic MOC and UIC for target cli_commands
+[ 70%] Automatic MOC and UIC for target remove
+[ 70%] Automatic MOC and UIC for target AppImageLauncher
+[ 70%] Built target cli_commands_autogen
+[ 70%] Built target remove_autogen
+[ 70%] Automatic RCC for resources.qrc
+[ 71%] Building CXX object src/cli/commands/CMakeFiles/cli_commands.dir/WouldIntegrateCommand.cpp.o
+[ 71%] Building CXX object src/cli/commands/CMakeFiles/cli_commands.dir/UnintegrateCommand.cpp.o
+[ 71%] Building CXX object src/cli/commands/CMakeFiles/cli_commands.dir/IntegrateCommand.cpp.o
+[ 73%] Building CXX object src/cli/commands/CMakeFiles/cli_commands.dir/cli_commands_autogen/mocs_compilation.cpp.o
+[ 73%] Building CXX object src/cli/commands/CMakeFiles/cli_commands.dir/CommandFactory.cpp.o
+[ 75%] Building CXX object src/ui/CMakeFiles/remove.dir/remove_autogen/EWIEGA46WW/qrc_resources.cpp.o
+[ 75%] Building CXX object src/ui/CMakeFiles/remove.dir/remove_main.cpp.o
+[ 75%] Building CXX object src/ui/CMakeFiles/remove.dir/remove_autogen/mocs_compilation.cpp.o
+[ 75%] Built target AppImageLauncher_autogen
+[ 75%] Automatic RCC for resources.qrc
+[ 75%] Built target filesystemwatcher_autogen
+[ 75%] Built target AppImageLauncherSettings_autogen
+[ 75%] Building CXX object src/fswatcher/CMakeFiles/filesystemwatcher.dir/filesystemwatcher.cpp.o
+[ 75%] Building CXX object src/fswatcher/CMakeFiles/filesystemwatcher.dir/filesystemwatcher_autogen/mocs_compilation.cpp.o
+[ 76%] Building CXX object src/ui/CMakeFiles/AppImageLauncher.dir/main.cpp.o
+[ 76%] Building CXX object src/ui/CMakeFiles/AppImageLauncher.dir/AppImageLauncher_autogen/mocs_compilation.cpp.o
+[ 76%] Building CXX object src/ui/CMakeFiles/AppImageLauncher.dir/integration_dialog.cpp.o
+[ 78%] Automatic RCC for resources.qrc
+[ 80%] Building CXX object src/ui/CMakeFiles/AppImageLauncher.dir/first-run.cpp.o
+[ 80%] Building CXX object src/ui/CMakeFiles/AppImageLauncher.dir/AppImageLauncher_autogen/EWIEGA46WW/qrc_resources.cpp.o
+[ 80%] Building CXX object src/ui/CMakeFiles/AppImageLauncherSettings.dir/AppImageLauncherSettings_autogen/mocs_compilation.cpp.o
+[ 80%] Building CXX object src/ui/CMakeFiles/AppImageLauncherSettings.dir/settings_main.cpp.o
+[ 81%] Building CXX object src/ui/CMakeFiles/AppImageLauncherSettings.dir/AppImageLauncherSettings_autogen/EWIEGA46WW/qrc_resources.cpp.o
+[ 81%] Building CXX object src/ui/CMakeFiles/AppImageLauncherSettings.dir/settings_dialog.cpp.o
+[ 81%] Linking CXX static library libcli_commands.a
+[ 81%] Built target cli_commands
+[ 81%] Built target ail-cli_autogen_timestamp_deps
+[ 83%] Automatic MOC and UIC for target ail-cli
+[ 83%] Built target ail-cli_autogen
+[ 85%] Building CXX object src/cli/CMakeFiles/ail-cli.dir/cli_main.cpp.o
+[ 85%] Building CXX object src/cli/CMakeFiles/ail-cli.dir/ail-cli_autogen/mocs_compilation.cpp.o
+[ 86%] Linking CXX executable remove
+[ 88%] Linking CXX static library libfilesystemwatcher.a
+[ 90%] Built target filesystemwatcher
+[ 91%] Linking CXX executable AppImageLauncherSettings
+[ 91%] Built target appimagelauncherd_autogen_timestamp_deps
+[ 93%] Linking CXX executable AppImageLauncher
+[ 95%] Automatic MOC and UIC for target appimagelauncherd
+[ 95%] Built target appimagelauncherd_autogen
+[ 96%] Building CXX object src/daemon/CMakeFiles/appimagelauncherd.dir/worker.cpp.o
+[ 96%] Building CXX object src/daemon/CMakeFiles/appimagelauncherd.dir/main.cpp.o
+[ 96%] Building CXX object src/daemon/CMakeFiles/appimagelauncherd.dir/appimagelauncherd_autogen/mocs_compilation.cpp.o
+[ 98%] Building CXX object src/daemon/CMakeFiles/appimagelauncherd.dir/daemon.cpp.o
+[ 98%] Linking CXX executable ail-cli
+[100%] Built target remove
+[100%] Built target AppImageLauncherSettings
+[100%] Linking CXX executable appimagelauncherd
+[100%] Built target AppImageLauncher
+[100%] Built target ail-cli
+[100%] Built target appimagelauncherd
