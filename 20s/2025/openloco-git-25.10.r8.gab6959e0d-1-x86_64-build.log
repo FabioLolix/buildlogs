@@ -11,9 +11,45 @@ Hint: The project() command has not yet been called.  It sets up system-specific
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE
+-- Populating yaml-cpp
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/openloco-git/src/build/_deps/yaml-cpp-subbuild
+[ 11%] Creating directories for 'yaml-cpp-populate'
+[ 22%] Performing download step (git clone) for 'yaml-cpp-populate'
+Cloning into 'yaml-cpp-src'...
+HEAD is now at c268020 Specify CMake policy range to avoid deprecation warning (#1211)
+[ 33%] Performing update step for 'yaml-cpp-populate'
+-- Already at requested ref: c2680200486572baf8221ba052ef50b58ecd816e
+[ 44%] No patch step for 'yaml-cpp-populate'
+[ 55%] No configure step for 'yaml-cpp-populate'
+[ 66%] No build step for 'yaml-cpp-populate'
+[ 77%] No install step for 'yaml-cpp-populate'
+[ 88%] No test step for 'yaml-cpp-populate'
+[100%] Completed 'yaml-cpp-populate'
+[100%] Built target yaml-cpp-populate
 -- Found GTest: /usr/lib32/libgtest.so
 -- Found ZLIB: /usr/lib32/libz.so (found version "1.3.1")
 -- Found PNG: /usr/lib32/libpng.so (found version "1.6.50")
+-- Populating fmt
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/openloco-git/src/build/_deps/fmt-subbuild
+[ 11%] Creating directories for 'fmt-populate'
+[ 22%] Performing download step (git clone) for 'fmt-populate'
+Cloning into 'fmt-src'...
+HEAD is now at 1239137 Update version
+[ 33%] Performing update step for 'fmt-populate'
+-- Already at requested tag: 11.1.4
+[ 44%] No patch step for 'fmt-populate'
+[ 55%] No configure step for 'fmt-populate'
+[ 66%] No build step for 'fmt-populate'
+[ 77%] No install step for 'fmt-populate'
+[ 88%] No test step for 'fmt-populate'
+[100%] Completed 'fmt-populate'
+[100%] Built target fmt-populate
+-- {fmt} version: 11.1.4
+-- Build type: None
 -- Populating sfl
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
@@ -52,7 +88,7 @@ HEAD is now at 3cdc841 New version
 -- [download 7% complete]
 -- [download 8% complete]
 -- [download 10% complete]
--- [download 11% complete]
+-- [download 12% complete]
 -- [download 13% complete]
 -- [download 15% complete]
 -- [download 16% complete]
@@ -69,42 +105,42 @@ HEAD is now at 3cdc841 New version
 -- [download 35% complete]
 -- [download 36% complete]
 -- [download 38% complete]
--- [download 40% complete]
+-- [download 39% complete]
 -- [download 41% complete]
 -- [download 43% complete]
--- [download 45% complete]
+-- [download 44% complete]
 -- [download 46% complete]
 -- [download 48% complete]
--- [download 50% complete]
+-- [download 49% complete]
 -- [download 51% complete]
--- [download 53% complete]
--- [download 55% complete]
+-- [download 52% complete]
+-- [download 54% complete]
 -- [download 56% complete]
--- [download 58% complete]
+-- [download 57% complete]
 -- [download 59% complete]
 -- [download 61% complete]
--- [download 63% complete]
+-- [download 62% complete]
 -- [download 64% complete]
 -- [download 66% complete]
--- [download 68% complete]
+-- [download 67% complete]
 -- [download 69% complete]
 -- [download 71% complete]
--- [download 73% complete]
+-- [download 72% complete]
 -- [download 74% complete]
 -- [download 76% complete]
--- [download 78% complete]
+-- [download 77% complete]
 -- [download 79% complete]
 -- [download 81% complete]
--- [download 83% complete]
+-- [download 82% complete]
 -- [download 84% complete]
 -- [download 86% complete]
--- [download 88% complete]
+-- [download 87% complete]
 -- [download 89% complete]
 -- [download 91% complete]
--- [download 93% complete]
+-- [download 92% complete]
 -- [download 94% complete]
 -- [download 96% complete]
--- [download 98% complete]
+-- [download 97% complete]
 -- [download 99% complete]
 -- [download 100% complete]
 -- verifying file...
@@ -127,114 +163,552 @@ HEAD is now at 3cdc841 New version
 [100%] Completed 'openloco_objects-populate'
 [100%] Built target openloco_objects-populate
 -- Found Git: /usr/bin/git (found version "2.51.1.dirty")
--- Configuring done (3.2s)
+-- Configuring done (6.1s)
 -- Generating done (0.1s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    USE_SYSTEM_FMT
+
+
 -- Build files have been written to: /build/openloco-git/src/build
-[  0%] Building CXX object src/Core/CMakeFiles/Core.dir/src/Numerics.cpp.o
-[  0%] Building CXX object src/Core/CMakeFiles/Core.dir/src/BinaryStream.cpp.o
-[  1%] Building CXX object src/Core/CMakeFiles/Core.dir/src/MemoryStream.cpp.o
-[  1%] Building CXX object src/Utility/CMakeFiles/Utility.dir/src/String.cpp.o
-[  1%] Building CXX object src/Core/CMakeFiles/Core.dir/src/Prng.cpp.o
-[  1%] Generating openloco_data
-[  1%] Building CXX object src/Core/CMakeFiles/Core.dir/src/FileStream.cpp.o
-[  1%] Building CXX object src/Math/CMakeFiles/Math.dir/src/Vector.cpp.o
-[  3%] Generating openloco_text
-[  3%] Building CXX object src/Math/CMakeFiles/Math.dir/src/Trigonometry.cpp.o
+[  0%] Building CXX object src/Math/CMakeFiles/Math.dir/src/Trigonometry.cpp.o
+[  0%] Generating openloco_data
+[  0%] Building CXX object src/Utility/CMakeFiles/Utility.dir/src/String.cpp.o
+[  1%] Generating openloco_text
+[  1%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o
+[  2%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o
+[  2%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o
+[  2%] Building CXX object src/Math/CMakeFiles/Math.dir/src/Vector.cpp.o
+[  2%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o
+[  2%] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o
+[  2%] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o
+[  2%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o
+[  2%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o
+[  2%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o
+[  3%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o
+[  3%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o
+[  3%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o
+[  4%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.o
+[  4%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o
+[  4%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o
 78+0 records in
 78+0 records out
-319488 bytes (319 kB, 312 KiB) copied, 0.000364354 s, 877 MB/s
+319488 bytes (319 kB, 312 KiB) copied, 0.000424979 s, 752 MB/s
 214+0 records in
 214+0 records out
-876544 bytes (877 kB, 856 KiB) copied, 0.000935888 s, 937 MB/s
+876544 bytes (877 kB, 856 KiB) copied, 0.00131818 s, 665 MB/s
+[  4%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o
 3133+0 records in
 3133+0 records out
-12832768 bytes (13 MB, 12 MiB) copied, 0.0108662 s, 1.2 GB/s
-[  3%] Built target segfiles
-[  3%] Generating openloco_data_section.o
-[  3%] Generating openloco_text_section.o
-[  3%] Built target linkable_sections
-[  3%] Linking CXX static library libMath.a
-[  3%] Built target Math
-[  4%] Building CXX object src/Math/CMakeFiles/MathTests.dir/tests/TrigonometryTests.cpp.o
-[  4%] Building CXX object src/Math/CMakeFiles/MathTests.dir/tests/VectorTests.cpp.o
-[  4%] Linking CXX static library libUtility.a
-[  4%] Built target Utility
-[  4%] Building CXX object src/Utility/CMakeFiles/UtilityTests.dir/tests/StringTests.cpp.o
-[  4%] Linking CXX static library libCore.a
-[  4%] Built target Core
-[  4%] Building CXX object src/Platform/CMakeFiles/Platform.dir/src/Platform.Posix.cpp.o
-[  4%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/EnumFlagsTests.cpp.o
-[  5%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/NumericsTests.cpp.o
-[  5%] Building CXX object src/Platform/CMakeFiles/Platform.dir/src/Platform.Windows.cpp.o
-[  5%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/MemoryStreamTests.cpp.o
-[  5%] Building CXX object src/Platform/CMakeFiles/Platform.dir/src/Crash.cpp.o
-[  5%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/FileStreamTests.cpp.o
-[  6%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/TraitsTest.cpp.o
-[  6%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/TimerTest.cpp.o
-[  6%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/PrngTests.cpp.o
-[  6%] Linking CXX executable MathTests
-[  6%] Built target MathTests
-[  7%] Linking CXX static library libPlatform.a
-[  7%] Built target Platform
-[  7%] Building CXX object src/Diagnostics/CMakeFiles/Diagnostics.dir/src/LogSink.cpp.o
-[  7%] Building CXX object src/Diagnostics/CMakeFiles/Diagnostics.dir/src/Logging.cpp.o
-[  8%] Building CXX object src/Diagnostics/CMakeFiles/Diagnostics.dir/src/LogFile.cpp.o
-[  8%] Building CXX object src/Diagnostics/CMakeFiles/Diagnostics.dir/src/LogTerminal.cpp.o
-/build/openloco-git/src/openloco/src/Diagnostics/src/LogTerminal.cpp: In member function ‘virtual void OpenLoco::Diagnostics::Logging::LogTerminal::print(OpenLoco::Diagnostics::Logging::Level, std::string_view)’:
-/build/openloco-git/src/openloco/src/Diagnostics/src/LogTerminal.cpp:68:69: error: ‘localtime’ is not a member of ‘fmt’
-   68 |             timestamp = fmt::format("[{:%Y-%m-%d %H:%M:%S}] ", fmt::localtime(std::time(nullptr)));
-      |                                                                     ^~~~~~~~~
-/build/openloco-git/src/openloco/src/Diagnostics/src/LogTerminal.cpp:68:69: note: suggested alternatives:
-In file included from /usr/include/c++/15.2.1/ctime:47,
-                 from /usr/include/c++/15.2.1/bits/chrono.h:43,
-                 from /usr/include/c++/15.2.1/bits/fs_fwd.h:37,
-                 from /usr/include/c++/15.2.1/filesystem:53,
-                 from /build/openloco-git/src/openloco/src/Core/include/OpenLoco/Core/FileSystem.hpp:6,
-                 from /build/openloco-git/src/openloco/src/Platform/include/OpenLoco/Platform/Platform.h:7,
-                 from /build/openloco-git/src/openloco/src/Diagnostics/src/LogTerminal.cpp:2:
-/usr/include/time.h:136:19: note:   ‘localtime’
-  136 | extern struct tm *localtime (const time_t *__timer) __THROW;
-      |                   ^~~~~~~~~
-/usr/include/time.h:136:19: note:   ‘localtime’
-/build/openloco-git/src/openloco/src/Diagnostics/src/LogFile.cpp: In member function ‘virtual void OpenLoco::Diagnostics::Logging::LogFile::print(OpenLoco::Diagnostics::Logging::Level, std::string_view)’:
-/build/openloco-git/src/openloco/src/Diagnostics/src/LogFile.cpp:35:69: error: ‘localtime’ is not a member of ‘fmt’
-   35 |             timestamp = fmt::format("[{:%Y-%m-%d %H:%M:%S}] ", fmt::localtime(std::time(nullptr)));
-      |                                                                     ^~~~~~~~~
-/build/openloco-git/src/openloco/src/Diagnostics/src/LogFile.cpp:35:69: note: suggested alternatives:
-In file included from /usr/include/c++/15.2.1/ctime:47,
-                 from /usr/include/c++/15.2.1/bits/chrono.h:43,
-                 from /usr/include/c++/15.2.1/bits/fs_fwd.h:37,
-                 from /usr/include/c++/15.2.1/filesystem:53,
-                 from /build/openloco-git/src/openloco/src/Core/include/OpenLoco/Core/FileSystem.hpp:6,
-                 from /build/openloco-git/src/openloco/src/Diagnostics/include/OpenLoco/Diagnostics/LogFile.h:3,
-                 from /build/openloco-git/src/openloco/src/Diagnostics/src/LogFile.cpp:1:
-/usr/include/time.h:136:19: note:   ‘localtime’
-  136 | extern struct tm *localtime (const time_t *__timer) __THROW;
-      |                   ^~~~~~~~~
-/usr/include/time.h:136:19: note:   ‘localtime’
-[  9%] Linking CXX executable UtilityTests
-[  9%] Built target UtilityTests
-At global scope:
-cc1plus: note: unrecognized command-line option ‘-Wno-unused-private-field’ may have been intended to silence earlier diagnostics
-At global scope:
-cc1plus: note: unrecognized command-line option ‘-Wno-unused-private-field’ may have been intended to silence earlier diagnostics
-make[2]: *** [src/Diagnostics/CMakeFiles/Diagnostics.dir/build.make:79: src/Diagnostics/CMakeFiles/Diagnostics.dir/src/LogFile.cpp.o] Error 1
-make[2]: *** Waiting for unfinished jobs....
-make[2]: *** [src/Diagnostics/CMakeFiles/Diagnostics.dir/build.make:107: src/Diagnostics/CMakeFiles/Diagnostics.dir/src/LogTerminal.cpp.o] Error 1
-[  9%] Linking CXX executable CoreTests
+12832768 bytes (13 MB, 12 MiB) copied, 0.0190292 s, 674 MB/s
+[  4%] Built target segfiles
+[  4%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o
+[  4%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o
+[  5%] Linking CXX static library libMath.a
+[  6%] Built target Math
+[  6%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.o
+[  6%] Generating openloco_text_section.o
+[  6%] Generating openloco_data_section.o
+[  6%] Built target linkable_sections
+[  6%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o
+[  6%] Building CXX object src/Math/CMakeFiles/MathTests.dir/tests/TrigonometryTests.cpp.o
+[  6%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o
+[  6%] Building CXX object src/Math/CMakeFiles/MathTests.dir/tests/VectorTests.cpp.o
+[  6%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o
+[  6%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o
+[  7%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o
+[  7%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o
+[  8%] Linking CXX static library libUtility.a
+[  8%] Built target Utility
+[  8%] Building CXX object src/Utility/CMakeFiles/UtilityTests.dir/tests/StringTests.cpp.o
+[  8%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o
+[  8%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o
+[  9%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o
+[  9%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o
+[  9%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o
+[  9%] Building CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o
+[  9%] Linking CXX executable MathTests
+[  9%] Built target MathTests
+[ 10%] Linking CXX static library libyaml-cpp.a
+[ 10%] Linking CXX executable UtilityTests
+[ 10%] Built target yaml-cpp
+[ 10%] Built target UtilityTests
+[ 11%] Linking CXX static library libfmt.a
+[ 11%] Built target fmt
+[ 11%] Building CXX object src/Core/CMakeFiles/Core.dir/src/BinaryStream.cpp.o
+[ 12%] Building CXX object src/Core/CMakeFiles/Core.dir/src/Prng.cpp.o
+[ 12%] Building CXX object src/Core/CMakeFiles/Core.dir/src/MemoryStream.cpp.o
+[ 12%] Building CXX object src/Core/CMakeFiles/Core.dir/src/Numerics.cpp.o
+[ 12%] Building CXX object src/Core/CMakeFiles/Core.dir/src/FileStream.cpp.o
+[ 12%] Linking CXX static library libCore.a
+[ 12%] Built target Core
+[ 12%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/FileStreamTests.cpp.o
+[ 14%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/MemoryStreamTests.cpp.o
+[ 14%] Building CXX object src/Platform/CMakeFiles/Platform.dir/src/Platform.Posix.cpp.o
+[ 14%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/EnumFlagsTests.cpp.o
+[ 14%] Building CXX object src/Platform/CMakeFiles/Platform.dir/src/Crash.cpp.o
+[ 14%] Building CXX object src/Platform/CMakeFiles/Platform.dir/src/Platform.Windows.cpp.o
+[ 14%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/TraitsTest.cpp.o
+[ 14%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/NumericsTests.cpp.o
+[ 14%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/TimerTest.cpp.o
+[ 14%] Building CXX object src/Core/CMakeFiles/CoreTests.dir/tests/PrngTests.cpp.o
+[ 14%] Linking CXX static library libPlatform.a
+[ 14%] Built target Platform
+[ 14%] Building CXX object src/Diagnostics/CMakeFiles/Diagnostics.dir/src/LogSink.cpp.o
+[ 14%] Building CXX object src/Diagnostics/CMakeFiles/Diagnostics.dir/src/LogFile.cpp.o
+[ 15%] Building CXX object src/Diagnostics/CMakeFiles/Diagnostics.dir/src/Logging.cpp.o
+[ 15%] Building CXX object src/Diagnostics/CMakeFiles/Diagnostics.dir/src/LogTerminal.cpp.o
+[ 16%] Linking CXX executable CoreTests
 /usr/bin/ld: CMakeFiles/CoreTests.dir/tests/FileStreamTests.cpp.o: in function `std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const':
 /usr/src/debug/openloco-git/openloco/src/Core/tests/FileStreamTests.cpp:18:(.text+0xcd): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
-/usr/bin/ld: libCore.a(FileStream.cpp.o): in function `std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > fmt::v12::format<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int>(fmt::v12::fstring<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int>::t, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&&)':
-/usr/include/fmt/format.h:4337:(.text._ZN8OpenLoco9Exception6Detail13ExceptionBaseINS0_18InvalidArgumentTagEEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_14SourceLocationE[_ZN8OpenLoco9Exception6Detail13ExceptionBaseINS0_18InvalidArgumentTagEEC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_14SourceLocationE]+0x17f): undefined reference to `fmt::v12::vformat[abi:cxx11](fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>)'
-/usr/bin/ld: /usr/include/fmt/format.h:4337:(.text._ZN8OpenLoco9Exception6Detail13ExceptionBaseINS0_15RuntimeErrorTagEEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_14SourceLocationE[_ZN8OpenLoco9Exception6Detail13ExceptionBaseINS0_15RuntimeErrorTagEEC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_14SourceLocationE]+0x17f): undefined reference to `fmt::v12::vformat[abi:cxx11](fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>)'
-/usr/bin/ld: /usr/include/fmt/format.h:4337:(.text._ZN8OpenLoco9Exception6Detail13ExceptionBaseINS0_19InvalidOperationTagEEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_14SourceLocationE[_ZN8OpenLoco9Exception6Detail13ExceptionBaseINS0_19InvalidOperationTagEEC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_14SourceLocationE]+0x17f): undefined reference to `fmt::v12::vformat[abi:cxx11](fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>)'
-/usr/bin/ld: libCore.a(MemoryStream.cpp.o): in function `std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > fmt::v12::format<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int>(fmt::v12::fstring<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int>::t, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&&)':
-/usr/include/fmt/format.h:4337:(.text._ZN8OpenLoco9Exception6Detail13ExceptionBaseINS0_11BadAllocTagEEC2ERKNS0_14SourceLocationE[_ZN8OpenLoco9Exception6Detail13ExceptionBaseINS0_11BadAllocTagEEC5ERKNS0_14SourceLocationE]+0x137): undefined reference to `fmt::v12::vformat[abi:cxx11](fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>)'
-collect2: error: ld returned 1 exit status
-make[2]: *** [src/Core/CMakeFiles/CoreTests.dir/build.make:201: src/Core/CoreTests] Error 1
-make[1]: *** [CMakeFiles/Makefile2:466: src/Core/CMakeFiles/CoreTests.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
-make[1]: *** [CMakeFiles/Makefile2:500: src/Diagnostics/CMakeFiles/Diagnostics.dir/all] Error 2
-make: *** [Makefile:146: all] Error 2
-[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
-[1m    Aborting...(B[m
+[ 16%] Built target CoreTests
+[ 16%] Linking CXX static library libDiagnostics.a
+[ 16%] Built target Diagnostics
+[ 16%] Building CXX object src/Diagnostics/CMakeFiles/DiagnosticsTests.dir/tests/LoggingTests.cpp.o
+[ 17%] Building CXX object src/Interop/CMakeFiles/Interop.dir/src/Interop.cpp.o
+[ 17%] Building CXX object src/Gfx/CMakeFiles/Gfx.dir/src/PngImage.cpp.o
+[ 17%] Linking CXX static library libInterop.a
+[ 17%] Built target Interop
+[ 17%] Linking CXX static library libGfx.a
+[ 17%] Built target Gfx
+[ 18%] Building CXX object src/Engine/CMakeFiles/Engine.dir/src/Engine.cpp.o
+[ 18%] Building CXX object src/Engine/CMakeFiles/Engine.dir/src/Input/ShortcutManager.cpp.o
+[ 18%] Linking CXX static library libEngine.a
+[ 18%] Built target Engine
+[ 18%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Audio/VehicleChannel.cpp.o
+[ 19%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Audio/Audio.cpp.o
+[ 19%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/EditorController.cpp.o
+[ 19%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/CommandLine.cpp.o
+[ 19%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Audio/Channel.cpp.o
+[ 19%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Date.cpp.o
+[ 19%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Economy/Economy.cpp.o
+[ 19%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/ExhaustEffect.cpp.o
+[ 19%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Audio/OpenAL.cpp.o
+[ 19%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/EffectsManager.cpp.o
+[ 20%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/Effect.cpp.o
+[ 20%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/ExplosionEffect.cpp.o
+[ 21%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/ExplosionSmokeEffect.cpp.o
+[ 22%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Config.cpp.o
+[ 22%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/MoneyEffect.cpp.o
+[ 22%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/FireballEffect.cpp.o
+[ 22%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/SmokeEffect.cpp.o
+[ 22%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/SplashEffect.cpp.o
+[ 23%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Effects/VehicleCrashEffect.cpp.o
+[ 23%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Entities/Entity.cpp.o
+[ 23%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Entities/EntityManager.cpp.o
+[ 23%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Entities/EntityTweener.cpp.o
+[ 24%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Environment.cpp.o
+[ 24%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Game.cpp.o
+[ 24%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Airports/CreateAirport.cpp.o
+[ 24%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Airports/RemoveAirport.cpp.o
+[ 25%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Buildings/CreateBuilding.cpp.o
+[ 25%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Buildings/RemoveBuilding.cpp.o
+[ 25%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Cheats/Cheat.cpp.o
+[ 25%] Linking CXX executable DiagnosticsTests
+[ 25%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Company/BuildCompanyHeadquarters.cpp.o
+[ 25%] Built target DiagnosticsTests
+[ 25%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Company/ChangeCompanyColour.cpp.o
+[ 26%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Company/ChangeCompanyFace.cpp.o
+[ 26%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Company/ChangeLoan.cpp.o
+[ 26%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Company/RemoveCompanyHeadquarters.cpp.o
+[ 26%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Company/RenameCompanyName.cpp.o
+[ 27%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Company/RenameCompanyOwner.cpp.o
+[ 27%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Company/UpdateOwnerStatus.cpp.o
+[ 27%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/CompanyAi/AiCreateRoadAndStation.cpp.o
+[ 27%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/CompanyAi/AiCreateTrackAndStation.cpp.o
+[ 28%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/CompanyAi/AiTrackReplacement.cpp.o
+[ 28%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Docks/CreatePort.cpp.o
+[ 28%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Docks/RemovePort.cpp.o
+[ 28%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/GameCommands.cpp.o
+[ 28%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/General/LoadSaveQuit.cpp.o
+[ 29%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/General/RenameStation.cpp.o
+[ 29%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/General/SetGameSpeed.cpp.o
+[ 29%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/General/TogglePause.cpp.o
+[ 29%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Industries/CreateIndustry.cpp.o
+[ 30%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Industries/RemoveIndustry.cpp.o
+[ 30%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Industries/RenameIndustry.cpp.o
+[ 30%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Road/CreateRoad.cpp.o
+[ 30%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Road/CreateRoadMod.cpp.o
+[ 31%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Road/CreateRoadStation.cpp.o
+[ 31%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Road/RemoveRoad.cpp.o
+[ 31%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Road/RemoveRoadMod.cpp.o
+[ 31%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Road/RemoveRoadStation.cpp.o
+[ 31%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/ChangeLandMaterial.cpp.o
+[ 32%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/ClearLand.cpp.o
+[ 32%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/CreateTree.cpp.o
+[ 32%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/CreateWall.cpp.o
+[ 32%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/LowerLand.cpp.o
+[ 33%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/LowerRaiseLandMountain.cpp.o
+[ 33%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/LowerWater.cpp.o
+[ 33%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/RaiseLand.cpp.o
+[ 33%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/RaiseWater.cpp.o
+[ 33%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/RemoveTree.cpp.o
+[ 34%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Terraform/RemoveWall.cpp.o
+[ 34%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Town/CreateTown.cpp.o
+[ 34%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Town/RemoveTown.cpp.o
+[ 34%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Town/RenameTown.cpp.o
+[ 35%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Track/CreateSignal.cpp.o
+[ 35%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Track/CreateTrack.cpp.o
+[ 35%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Track/CreateTrackMod.cpp.o
+[ 35%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Track/CreateTrainStation.cpp.o
+[ 36%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Track/RemoveSignal.cpp.o
+[ 36%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Track/RemoveTrack.cpp.o
+[ 36%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Track/RemoveTrackMod.cpp.o
+[ 36%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Track/RemoveTrainStation.cpp.o
+[ 36%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/CloneVehicle.cpp.o
+[ 37%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/CreateVehicle.cpp.o
+[ 37%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/RenameVehicle.cpp.o
+[ 37%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleChangeRunningMode.cpp.o
+[ 37%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleOrderDelete.cpp.o
+[ 38%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleOrderDown.cpp.o
+[ 38%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleOrderInsert.cpp.o
+[ 38%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleOrderReverse.cpp.o
+[ 38%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleOrderSkip.cpp.o
+[ 39%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleOrderUp.cpp.o
+[ 39%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehiclePassSignal.cpp.o
+[ 39%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehiclePickup.cpp.o
+[ 39%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehiclePickupAir.cpp.o
+[ 39%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehiclePickupWater.cpp.o
+[ 40%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehiclePlace.cpp.o
+[ 40%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehiclePlaceAir.cpp.o
+[ 40%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehiclePlaceWater.cpp.o
+[ 40%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleRearrange.cpp.o
+[ 41%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleRepaint.cpp.o
+[ 41%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleRefit.cpp.o
+[ 41%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleReverse.cpp.o
+[ 41%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleSell.cpp.o
+[ 42%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameCommands/Vehicles/VehicleSpeedControl.cpp.o
+[ 42%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameSaveCompare.cpp.o
+[ 42%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/GameState.cpp.o
+[ 42%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/Colour.cpp.o
+[ 42%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/DrawSprite.cpp.o
+[ 43%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/FPSCounter.cpp.o
+[ 43%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/Gfx.cpp.o
+[ 43%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/InvalidationGrid.cpp.o
+[ 43%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/PaletteMap.cpp.o
+[ 44%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/RenderTarget.cpp.o
+[ 44%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/SoftwareDrawingContext.cpp.o
+[ 44%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/SoftwareDrawingEngine.cpp.o
+[ 44%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Graphics/TextRenderer.cpp.o
+In file included from /build/openloco-git/src/openloco/src/OpenLoco/src/GameCommands/Vehicles/VehicleRearrange.cpp:6:
+In constructor ‘OpenLoco::Vehicles::Vehicle::Vehicle(const OpenLoco::Vehicles::VehicleHead&)’,
+    inlined from ‘OpenLoco::currency32_t OpenLoco::GameCommands::vehicleRearrange(const VehicleRearrangeArgs&, uint8_t)’ at /build/openloco-git/src/openloco/src/OpenLoco/src/GameCommands/Vehicles/VehicleRearrange.cpp:82:50,
+    inlined from ‘void OpenLoco::GameCommands::vehicleRearrange(OpenLoco::Interop::registers&)’ at /build/openloco-git/src/openloco/src/OpenLoco/src/GameCommands/Vehicles/VehicleRearrange.cpp:169:36:
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle.h:1058:29: warning: null pointer dereference [-Wnull-dereference]
+ 1058 |             : Vehicle(_head.id)
+      |                       ~~~~~~^~
+[ 45%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Gui.cpp.o
+[ 45%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Input.cpp.o
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unused-private-field’ may have been intended to silence earlier diagnostics
+[ 45%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Input/Keyboard.cpp.o
+[ 45%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Input/MouseInput.cpp.o
+[ 45%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Input/Shortcuts.cpp.o
+[ 46%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Interop/Hooks.cpp.o
+[ 46%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Intro.cpp.o
+[ 46%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Jukebox.cpp.o
+[ 46%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Localisation/Conversion.cpp.o
+[ 47%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Localisation/Formatting.cpp.o
+[ 47%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Localisation/LanguageFiles.cpp.o
+[ 47%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Localisation/Languages.cpp.o
+[ 47%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Localisation/StringBuffer.cpp.o
+[ 48%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Localisation/StringManager.cpp.o
+[ 48%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Localisation/Unicode.cpp.o
+[ 48%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Logging.cpp.o
+[ 48%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Main.cpp.o
+[ 48%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/AnimationManager.cpp.o
+[ 49%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/BuildingElement.cpp.o
+[ 49%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/IndustryElement.cpp.o
+[ 49%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/MapGenerator/HeightMap.cpp.o
+[ 49%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/MapGenerator/MapGenerator.cpp.o
+[ 50%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/MapGenerator/OriginalTerrainGenerator.cpp.o
+[ 50%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/MapGenerator/PngTerrainGenerator.cpp.o
+[ 50%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/MapGenerator/SimplexTerrainGenerator.cpp.o
+[ 50%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/MapSelection.cpp.o
+[ 51%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/RoadElement.cpp.o
+[ 51%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/SignalElement.cpp.o
+[ 51%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/StationElement.cpp.o
+[ 51%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/SurfaceData.cpp.o
+[ 51%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/SurfaceElement.cpp.o
+[ 52%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/Tile.cpp.o
+[ 52%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/TileClearance.cpp.o
+[ 52%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/TileLoop.cpp.o
+[ 52%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/TileManager.cpp.o
+[ 53%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/Track/SubpositionData.cpp.o
+[ 53%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/Track/Track.cpp.o
+[ 53%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/Track/TrackData.cpp.o
+[ 53%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/Tree.cpp.o
+[ 53%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/TreeElement.cpp.o
+[ 54%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Map/WaveManager.cpp.o
+[ 54%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Message.cpp.o
+[ 54%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/MessageManager.cpp.o
+[ 54%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/MultiPlayer.cpp.o
+[ 55%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Network/Network.cpp.o
+[ 55%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Network/NetworkBase.cpp.o
+[ 55%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Network/NetworkClient.cpp.o
+[ 55%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Network/NetworkConnection.cpp.o
+[ 56%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Network/NetworkServer.cpp.o
+[ 56%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Network/Socket.cpp.o
+[ 56%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/AirportObject.cpp.o
+[ 56%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/BridgeObject.cpp.o
+[ 56%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/BuildingObject.cpp.o
+[ 57%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/CargoObject.cpp.o
+[ 57%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/CliffEdgeObject.cpp.o
+[ 57%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/ClimateObject.cpp.o
+[ 57%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/CompetitorObject.cpp.o
+[ 58%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/CurrencyObject.cpp.o
+[ 58%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/DockObject.cpp.o
+[ 58%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/HillShapesObject.cpp.o
+[ 58%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/IndustryObject.cpp.o
+[ 59%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/InterfaceSkinObject.cpp.o
+[ 59%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/LandObject.cpp.o
+[ 59%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/LevelCrossingObject.cpp.o
+[ 59%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/Object.cpp.o
+[ 59%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/ObjectImageTable.cpp.o
+[ 60%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/ObjectIndex.cpp.o
+[ 60%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/ObjectManager.cpp.o
+[ 60%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/ObjectStringTable.cpp.o
+[ 60%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/ObjectUtils.cpp.o
+[ 61%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/RegionObject.cpp.o
+[ 61%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/RoadExtraObject.cpp.o
+[ 61%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/RoadObject.cpp.o
+[ 61%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/RoadStationObject.cpp.o
+[ 62%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/ScaffoldingObject.cpp.o
+[ 62%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/ScenarioTextObject.cpp.o
+[ 62%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/SnowObject.cpp.o
+[ 62%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/SoundObject.cpp.o
+[ 62%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/SteamObject.cpp.o
+[ 63%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/StreetLightObject.cpp.o
+[ 63%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/TownNamesObject.cpp.o
+[ 63%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/TrackExtraObject.cpp.o
+[ 63%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/TrackObject.cpp.o
+[ 64%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/TrainSignalObject.cpp.o
+[ 64%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/TrainStationObject.cpp.o
+[ 64%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/TreeObject.cpp.o
+[ 64%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/TunnelObject.cpp.o
+[ 65%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/VehicleObject.cpp.o
+[ 65%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/WallObject.cpp.o
+[ 65%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Objects/WaterObject.cpp.o
+[ 65%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/OpenLoco.cpp.o
+[ 65%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/Paint.cpp.o
+[ 66%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintAirport.cpp.o
+[ 66%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintBridge.cpp.o
+[ 66%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintBuilding.cpp.o
+[ 66%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintDocks.cpp.o
+[ 67%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintEffectEntity.cpp.o
+[ 67%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintEntity.cpp.o
+[ 67%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintIndustry.cpp.o
+[ 67%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintRoad.cpp.o
+[ 68%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintRoadStation.cpp.o
+[ 68%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintSignal.cpp.o
+[ 68%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintStation.cpp.o
+[ 68%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintSurface.cpp.o
+[ 68%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintTile.cpp.o
+[ 69%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintTileDecorations.cpp.o
+[ 69%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintTrack.cpp.o
+[ 69%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintTrainStation.cpp.o
+[ 69%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintTree.cpp.o
+[ 70%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintVehicle.cpp.o
+[ 70%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Paint/PaintWall.cpp.o
+[ 70%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Random.cpp.o
+[ 70%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/S5/S5.cpp.o
+[ 71%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/S5/SawyerStream.cpp.o
+[ 71%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Scenario.cpp.o
+[ 71%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/ScenarioConstruction.cpp.o
+[ 71%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/ScenarioManager.cpp.o
+[ 71%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/ScenarioObjective.cpp.o
+[ 72%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/ScenarioOptions.cpp.o
+[ 72%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/SceneManager.cpp.o
+[ 72%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Title.cpp.o
+[ 72%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Tutorial.cpp.o
+[ 73%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui.cpp.o
+[ 73%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Chart.cpp.o
+[ 73%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Cursor.cpp.o
+[ 73%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Dropdown.cpp.o
+[ 73%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/LastMapWindowAttributes.cpp.o
+[ 74%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/ProgressBar.cpp.o
+[ 74%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Screenshot.cpp.o
+[ 74%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/ScrollView.cpp.o
+[ 74%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/TextInput.cpp.o
+[ 75%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/ToolManager.cpp.o
+[ 75%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/ViewportInteraction.cpp.o
+[ 75%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widget.cpp.o
+[ 75%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/ButtonWidget.cpp.o
+[ 76%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/CaptionWidget.cpp.o
+[ 76%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/CheckboxWidget.cpp.o
+[ 76%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/ColourButtonWidget.cpp.o
+[ 76%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/DropdownWidget.cpp.o
+[ 76%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/FrameWidget.cpp.o
+[ 77%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/GroupBoxWidget.cpp.o
+[ 77%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/ImageButtonWidget.cpp.o
+[ 77%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/LabelWidget.cpp.o
+[ 77%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/NewsPanelWidget.cpp.o
+[ 78%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/PanelWidget.cpp.o
+[ 78%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/ScrollViewWidget.cpp.o
+[ 78%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/SliderWidget.cpp.o
+[ 78%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/StepperWidget.cpp.o
+[ 79%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/TabWidget.cpp.o
+[ 79%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/TableHeaderWidget.cpp.o
+[ 79%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/TextBoxWidget.cpp.o
+[ 79%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/ViewportWidget.cpp.o
+[ 79%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Widgets/Wt3Widget.cpp.o
+[ 80%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Window.cpp.o
+[ 80%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/WindowManager.cpp.o
+[ 80%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/About.cpp.o
+[ 80%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/AboutMusic.cpp.o
+[ 81%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/BuildVehicle.cpp.o
+[ 81%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Cheats.cpp.o
+[ 81%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/CompanyFaceSelection.cpp.o
+[ 81%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/CompanyList.cpp.o
+[ 82%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/CompanyWindow.cpp.o
+[ 82%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Construction/Common.cpp.o
+[ 82%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Construction/ConstructionTab.cpp.o
+[ 82%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Construction/OverheadTab.cpp.o
+[ 82%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Construction/SignalTab.cpp.o
+[ 83%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Construction/StationTab.cpp.o
+[ 83%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/DebugWindow.cpp.o
+[ 83%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/DragVehiclePart.cpp.o
+[ 83%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/EditKeyboardShortcut.cpp.o
+[ 84%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Error.cpp.o
+[ 84%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/IndustryList.cpp.o
+[ 84%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/IndustryWindow.cpp.o
+[ 84%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/KeyboardShortcuts.cpp.o
+[ 85%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/LandscapeGeneration.cpp.o
+[ 85%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Main.cpp.o
+[ 85%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/MapToolTip.cpp.o
+[ 85%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/MapWindow.cpp.o
+[ 85%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/MessageWindow.cpp.o
+[ 86%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/MusicSelection.cpp.o
+[ 86%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/NetworkStatus.cpp.o
+[ 86%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/News/Common.cpp.o
+[ 86%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/News/News.cpp.o
+[ 87%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/News/Ticker.cpp.o
+[ 87%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ObjectLoadError.cpp.o
+[ 87%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ObjectSelectionWindow.cpp.o
+[ 87%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Options.cpp.o
+[ 88%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/PlayerInfoPanel.cpp.o
+[ 88%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ProgressBar.cpp.o
+[ 88%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/PromptBrowseWindow.cpp.o
+[ 88%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/PromptOkCancelWindow.cpp.o
+[ 88%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/PromptSaveWindow.cpp.o
+[ 89%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ScenarioOptions.cpp.o
+[ 89%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ScenarioSelect.cpp.o
+[ 89%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/StationList.cpp.o
+[ 89%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/StationWindow.cpp.o
+[ 90%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TerraForm.cpp.o
+[ 90%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TextInputWindow.cpp.o
+[ 90%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TileInspector.cpp.o
+[ 90%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TimePanel.cpp.o
+[ 91%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TitleExit.cpp.o
+[ 91%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TitleLogo.cpp.o
+[ 91%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TitleMenu.cpp.o
+[ 91%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TitleOptions.cpp.o
+[ 91%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TitleVersion.cpp.o
+[ 92%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ToolTip.cpp.o
+[ 92%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ToolbarBottomEditor.cpp.o
+[ 92%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ToolbarTop.cpp.o
+[ 92%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ToolbarTopAlt.cpp.o
+[ 93%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/ToolbarTopCommon.cpp.o
+[ 93%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TownList.cpp.o
+[ 93%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/TownWindow.cpp.o
+[ 93%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Tutorial.cpp.o
+[ 93%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/Vehicle.cpp.o
+[ 94%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Ui/Windows/VehicleList.cpp.o
+[ 94%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/OrderManager.cpp.o
+[ 94%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/Orders.cpp.o
+[ 94%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/Routing.cpp.o
+[ 95%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/RoutingManager.cpp.o
+[ 95%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/Vehicle.cpp.o
+[ 95%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/Vehicle1.cpp.o
+[ 95%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/Vehicle2.cpp.o
+[ 96%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/VehicleBody.cpp.o
+[ 96%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/VehicleBogie.cpp.o
+[ 96%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/VehicleDraw.cpp.o
+[ 96%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/VehicleHead.cpp.o
+[ 96%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/VehicleManager.cpp.o
+[ 97%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Vehicles/VehicleTail.cpp.o
+[ 97%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Version.cpp.o
+[ 97%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/Viewport.cpp.o
+In function ‘OpenLoco::Vehicles::RoadMotionNewPieceResult OpenLoco::Vehicles::updateRoadMotionNewRoadPiece(Vehicle1&)’,
+    inlined from ‘int32_t OpenLoco::Vehicles::Vehicle1::updateRoadMotion(int32_t)’ at /build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:807:64:
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:722:19: warning: potential null pointer dereference [-Wnull-dereference]
+  722 |         if (head->var_52 != 1)
+      |             ~~~~~~^~~~~~
+In function ‘void OpenLoco::Vehicles::applyOvertakeToVehicle1(Vehicle1&, uint8_t)’,
+    inlined from ‘OpenLoco::Vehicles::RoadMotionNewPieceResult OpenLoco::Vehicles::updateRoadMotionNewRoadPiece(Vehicle1&)’ at /build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:731:44,
+    inlined from ‘int32_t OpenLoco::Vehicles::Vehicle1::updateRoadMotion(int32_t)’ at /build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:807:64:
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:491:15: warning: potential null pointer dereference [-Wnull-dereference]
+  491 |         head->var_3C += newDistance - noOvertakeDistance;
+      |         ~~~~~~^~~~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:491:22: warning: potential null pointer dereference [-Wnull-dereference]
+  491 |         head->var_3C += newDistance - noOvertakeDistance;
+      |         ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘void OpenLoco::Vehicles::applyChangeLaneToVehicle1(Vehicle1&, uint8_t)’,
+    inlined from ‘OpenLoco::Vehicles::RoadMotionNewPieceResult OpenLoco::Vehicles::updateRoadMotionNewRoadPiece(Vehicle1&)’ at /build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:742:46,
+    inlined from ‘int32_t OpenLoco::Vehicles::Vehicle1::updateRoadMotion(int32_t)’ at /build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:807:64:
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:524:38: warning: potential null pointer dereference [-Wnull-dereference]
+  524 |         head->trackAndDirection.road._data &= kResetRouting;
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:523:15: warning: potential null pointer dereference [-Wnull-dereference]
+  523 |         head->var_3C += newDistance - noOvertakeDistance;
+      |         ~~~~~~^~~~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/Vehicle1.cpp:523:22: warning: potential null pointer dereference [-Wnull-dereference]
+  523 |         head->var_3C += newDistance - noOvertakeDistance;
+      |         ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 97%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/ViewportManager.cpp.o
+[ 98%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/CompanyAi/CompanyAi.cpp.o
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unused-private-field’ may have been intended to silence earlier diagnostics
+[ 98%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/CompanyAi/CompanyAiPathfinding.cpp.o
+[ 98%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/CompanyAi/CompanyAiPlaceVehicle.cpp.o
+[ 98%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/Company.cpp.o
+[ 99%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/CompanyManager.cpp.o
+[ 99%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/Industry.cpp.o
+[ 99%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/IndustryManager.cpp.o
+[ 99%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/Station.cpp.o
+[ 99%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/StationManager.cpp.o
+[100%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/Town.cpp.o
+[100%] Building CXX object src/OpenLoco/CMakeFiles/OpenLoco.dir/src/World/TownManager.cpp.o
+/build/openloco-git/src/openloco/src/OpenLoco/src/Ui/Windows/Vehicle.cpp: In function ‘OpenLoco::Ui::ViewportInteraction::InteractionArg OpenLoco::Ui::Windows::Vehicle::Route::getRouteInteractionFromCursor(OpenLoco::Ui::Window&, int16_t, int16_t)’:
+/build/openloco-git/src/openloco/src/OpenLoco/src/Ui/Windows/Vehicle.cpp:3461:23: warning: potential null pointer dereference [-Wnull-dereference]
+ 3461 |             if (head->mode == TransportMode::water)
+      |                 ~~~~~~^~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/World/CompanyManager.cpp: In function ‘OpenLoco::CompanyId OpenLoco::CompanyManager::createCompany(OpenLoco::LoadedObjectId, bool)’:
+/build/openloco-git/src/openloco/src/OpenLoco/src/World/CompanyManager.cpp:574:30: warning: potential null pointer dereference [-Wnull-dereference]
+  574 |         company->startedDate = getCurrentDay();
+      |         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/World/CompanyManager.cpp:573:28: warning: potential null pointer dereference [-Wnull-dereference]
+  573 |         company->ownerName = StringIds::new_owner;
+      |         ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/World/CompanyManager.cpp:572:23: warning: potential null pointer dereference [-Wnull-dereference]
+  572 |         company->name = StringIds::new_company;
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/World/CompanyManager.cpp:571:31: warning: potential null pointer dereference [-Wnull-dereference]
+  571 |         company->ownerEmotion = Emotion::neutral;
+      |         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/World/CompanyManager.cpp:570:26: warning: potential null pointer dereference [-Wnull-dereference]
+  570 |         company->var_4A0 = 0;
+      |         ~~~~~~~~~~~~~~~~~^~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/World/CompanyManager.cpp:569:26: warning: potential null pointer dereference [-Wnull-dereference]
+  569 |         company->var_49C = 0;
+      |         ~~~~~~~~~~~~~~~~~^~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/World/CompanyManager.cpp:568:33: warning: potential null pointer dereference [-Wnull-dereference]
+  568 |         company->challengeFlags = CompanyFlags::none;
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/World/CompanyManager.cpp:566:31: warning: potential null pointer dereference [-Wnull-dereference]
+  566 |         company->competitorId = competitorId;
+      |         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unused-private-field’ may have been intended to silence earlier diagnostics
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unused-private-field’ may have been intended to silence earlier diagnostics
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/VehicleHead.cpp: In member function ‘void OpenLoco::Vehicles::VehicleHead::sub_4ADB47(bool)’:
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/VehicleHead.cpp:6513:73: warning: potential null pointer dereference [-Wnull-dereference]
+ 6513 |             auto* lastObj = ObjectManager::get<VehicleObject>(lastBody->objectId);
+      |                                                               ~~~~~~~~~~^~~~~~~~
+/build/openloco-git/src/openloco/src/OpenLoco/src/Vehicles/VehicleHead.cpp:6513:73: warning: potential null pointer dereference [-Wnull-dereference]
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unused-private-field’ may have been intended to silence earlier diagnostics
+[100%] Linking CXX executable ../../OpenLoco
+[100%] Built target OpenLoco
