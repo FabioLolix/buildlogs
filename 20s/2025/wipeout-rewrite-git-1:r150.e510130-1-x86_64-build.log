@@ -1,0 +1,607 @@
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found GLEW: /usr/include (found version "2.2.0")
+-- Found SDL2: /usr/lib/libSDL2.so (found version "2.32.56")
+-- Found SDL2main: /usr/lib/libSDL2main.a (found version "2.32.56")
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/wipeout-rewrite-git/src/wipeout-rewrite/build
+[  3%] Building C object CMakeFiles/wipeout.dir/src/wipeout/camera.c.o
+[  6%] Building C object CMakeFiles/wipeout.dir/src/wipeout/intro.c.o
+[ 10%] Building C object CMakeFiles/wipeout.dir/src/wipeout/droid.c.o
+[ 17%] Building C object CMakeFiles/wipeout.dir/src/wipeout/object.c.o
+[ 17%] Building C object CMakeFiles/wipeout.dir/src/wipeout/game.c.o
+[ 20%] Building C object CMakeFiles/wipeout.dir/src/wipeout/image.c.o
+[ 27%] Building C object CMakeFiles/wipeout.dir/src/wipeout/ingame_menus.c.o
+[ 27%] Building C object CMakeFiles/wipeout.dir/src/wipeout/menu.c.o
+[ 34%] Building C object CMakeFiles/wipeout.dir/src/wipeout/hud.c.o
+[ 34%] Building C object CMakeFiles/wipeout.dir/src/wipeout/race.c.o
+[ 37%] Building C object CMakeFiles/wipeout.dir/src/wipeout/main_menu.c.o
+[ 41%] Building C object CMakeFiles/wipeout.dir/src/wipeout/particle.c.o
+[ 44%] Building C object CMakeFiles/wipeout.dir/src/wipeout/scene.c.o
+[ 48%] Building C object CMakeFiles/wipeout.dir/src/wipeout/sfx.c.o
+[ 51%] Building C object CMakeFiles/wipeout.dir/src/wipeout/ship.c.o
+[ 55%] Building C object CMakeFiles/wipeout.dir/src/wipeout/ship_ai.c.o
+[ 62%] Building C object CMakeFiles/wipeout.dir/src/wipeout/ship_player.c.o
+[ 62%] Building C object CMakeFiles/wipeout.dir/src/wipeout/title.c.o
+[ 65%] Building C object CMakeFiles/wipeout.dir/src/wipeout/track.c.o
+[ 68%] Building C object CMakeFiles/wipeout.dir/src/wipeout/ui.c.o
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c: In function ‘camera_update_race_external’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c:43:75: warning: unused parameter ‘droid’ [-Wunused-parameter]
+   43 | void camera_update_race_external(camera_t *camera, ship_t *ship, droid_t *droid) {
+      |                                                                  ~~~~~~~~~^~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c: In function ‘camera_update_race_internal’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c:63:75: warning: unused parameter ‘droid’ [-Wunused-parameter]
+   63 | void camera_update_race_internal(camera_t *camera, ship_t *ship, droid_t *droid) {
+      |                                                                  ~~~~~~~~~^~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c: In function ‘camera_update_race_intro’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c:69:72: warning: unused parameter ‘droid’ [-Wunused-parameter]
+   69 | void camera_update_race_intro(camera_t *camera, ship_t *ship, droid_t *droid) {
+      |                                                               ~~~~~~~~~^~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/race.c: In function ‘race_init’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/race.c:54:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+   54 |                 for (int i = 0; i < len(g.ships); i++) {
+      |                                   ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c: In function ‘camera_update_attract_circle’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c:98:76: warning: unused parameter ‘droid’ [-Wunused-parameter]
+   98 | void camera_update_attract_circle(camera_t *camera, ship_t *ship, droid_t *droid) {
+      |                                                                   ~~~~~~~~~^~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c: In function ‘camera_update_rescue’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c:122:53: warning: unused parameter ‘ship’ [-Wunused-parameter]
+  122 | void camera_update_rescue(camera_t *camera, ship_t *ship, droid_t *droid) {
+      |                                             ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c: In function ‘camera_update_attract_internal’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c:132:78: warning: unused parameter ‘droid’ [-Wunused-parameter]
+  132 | void camera_update_attract_internal(camera_t *camera, ship_t *ship, droid_t *droid) {
+      |                                                                     ~~~~~~~~~^~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c: In function ‘camera_update_static_follow’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/camera.c:143:75: warning: unused parameter ‘droid’ [-Wunused-parameter]
+  143 | void camera_update_static_follow(camera_t *camera, ship_t *ship, droid_t *droid) {
+      |                                                                  ~~~~~~~~~^~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘button_start_game’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:52:49: warning: unused parameter ‘data’ [-Wunused-parameter]
+   52 | static void button_start_game(menu_t *menu, int data) {
+      |                                             ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘button_options’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:56:46: warning: unused parameter ‘data’ [-Wunused-parameter]
+   56 | static void button_options(menu_t *menu, int data) {
+      |                                          ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘button_quit’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:69:43: warning: unused parameter ‘data’ [-Wunused-parameter]
+   69 | static void button_quit(menu_t *menu, int data) {
+      |                                       ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_main_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:73:36: warning: unused parameter ‘menu’ [-Wunused-parameter]
+   73 | static void page_main_draw(menu_t *menu, int data) {
+      |                            ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/race.c: In function ‘race_start’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘button_controls’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/race.c:151:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  151 |         for (int i = 0; i < len(g.race_ranks); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:102:47: warning: unused parameter ‘data’ [-Wunused-parameter]
+  102 | static void button_controls(menu_t *menu, int data) {
+      |                                           ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/race.c:155:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  155 |         for (int i = 0; i < len(g.lap_times); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘button_video’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:106:44: warning: unused parameter ‘data’ [-Wunused-parameter]
+  106 | static void button_video(menu_t *menu, int data) {
+      |                                        ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘button_audio’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:110:44: warning: unused parameter ‘data’ [-Wunused-parameter]
+  110 | static void button_audio(menu_t *menu, int data) {
+      |                                        ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘button_highscores’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:114:49: warning: unused parameter ‘data’ [-Wunused-parameter]
+  114 | static void button_highscores(menu_t *menu, int data) {
+      |                                             ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_options_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:118:39: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  118 | static void page_options_draw(menu_t *menu, int data) {
+      |                               ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/race.c:156:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  156 |                 for (int j = 0; j < len(g.lap_times[i]); j++) {
+      |                                   ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘button_capture’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:163:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  163 |         for (int i = 0; i < len(save.buttons); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/race.c: In function ‘race_end’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:148:58: warning: unused parameter ‘ascii_char’ [-Wunused-parameter]
+  148 | void button_capture(void *user, button_t button, int32_t ascii_char) {
+      |                                                  ~~~~~~~~^~~~~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/race.c:214:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  214 |                 for (int i = 0; i < len(def.race_points_for_rank); i++) {
+      |                                   ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/race.c:218:43: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  218 |                         for (int j = 0; j < len(g.championship_ranks); j++) {
+      |                                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_options_control_set_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:175:61: warning: unused parameter ‘data’ [-Wunused-parameter]
+  175 | static void page_options_control_set_draw(menu_t *menu, int data) {
+      |                                                         ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_options_controls_set_init’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:194:22: warning: unused variable ‘page’ [-Wunused-variable]
+  194 |         menu_page_t *page = menu_push(menu, "AWAITING INPUT", page_options_control_set_draw);
+      |                      ^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/sfx.c: In function ‘sfx_load’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_options_control_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:199:57: warning: unused parameter ‘data’ [-Wunused-parameter]
+  199 | static void page_options_control_draw(menu_t *menu, int data) {
+      |                                                     ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/sfx.c:79:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   79 |         for (int p = 0; p < vb_size;) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_analog_response’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:239:44: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  239 | static void toggle_analog_response(menu_t *menu, int data) {
+      |                                    ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_fullscreen’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:273:39: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  273 | static void toggle_fullscreen(menu_t *menu, int data) {
+      |                               ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_internal_roll’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:279:42: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  279 | static void toggle_internal_roll(menu_t *menu, int data) {
+      |                                  ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_show_fps’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:284:37: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  284 | static void toggle_show_fps(menu_t *menu, int data) {
+      |                             ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_ui_scale’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:289:37: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  289 | static void toggle_ui_scale(menu_t *menu, int data) {
+      |                             ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_res’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:294:32: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  294 | static void toggle_res(menu_t *menu, int data) {
+      |                        ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_post’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:300:33: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  300 | static void toggle_post(menu_t *menu, int data) {
+      |                         ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_screen_shake’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:306:41: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  306 | static void toggle_screen_shake(menu_t *menu, int data) {
+      |                                 ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_music_volume’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:341:41: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  341 | static void toggle_music_volume(menu_t *menu, int data) {
+      |                                 ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘toggle_sfx_volume’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:346:39: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  346 | static void toggle_sfx_volume(menu_t *menu, int data) {
+      |                               ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_options_highscores_viewer_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:412:57: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  412 | static void page_options_highscores_viewer_draw(menu_t *menu, int data) {
+      |                                                 ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:412:67: warning: unused parameter ‘data’ [-Wunused-parameter]
+  412 | static void page_options_highscores_viewer_draw(menu_t *menu, int data) {
+      |                                                               ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_options_highscores_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:454:50: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  454 | static void page_options_highscores_draw(menu_t *menu, int data) {
+      |                                          ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:454:60: warning: unused parameter ‘data’ [-Wunused-parameter]
+  454 | static void page_options_highscores_draw(menu_t *menu, int data) {
+      |                                                        ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_race_class_init’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:505:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  505 |         for (int i = 0; i < len(def.race_classes); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_continue’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:30:37: warning: unused parameter ‘menu’ [-Wunused-parameter]
+   30 | static void button_continue(menu_t *menu, int data) {
+      |                             ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:30:47: warning: unused parameter ‘data’ [-Wunused-parameter]
+   30 | static void button_continue(menu_t *menu, int data) {
+      |                                           ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_restart_or_quit’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:43:44: warning: unused parameter ‘menu’ [-Wunused-parameter]
+   43 | static void button_restart_or_quit(menu_t *menu, int data) {
+      |                                    ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_restart’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:52:46: warning: unused parameter ‘data’ [-Wunused-parameter]
+   52 | static void button_restart(menu_t *menu, int data) {
+      |                                          ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_quit’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_race_type_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:521:41: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  521 | static void page_race_type_draw(menu_t *menu, int data) {
+      |                                 ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:65:43: warning: unused parameter ‘data’ [-Wunused-parameter]
+   65 | static void button_quit(menu_t *menu, int data) {
+      |                                       ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_music_track’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:70:40: warning: unused parameter ‘menu’ [-Wunused-parameter]
+   70 | static void button_music_track(menu_t *menu, int data) {
+      |                                ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_race_type_init’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:536:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  536 |         for (int i = 0; i < len(def.race_types); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_music_random’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:75:41: warning: unused parameter ‘menu’ [-Wunused-parameter]
+   75 | static void button_music_random(menu_t *menu, int data) {
+      |                                 ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:75:51: warning: unused parameter ‘data’ [-Wunused-parameter]
+   75 | static void button_music_random(menu_t *menu, int data) {
+      |                                               ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_music’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:83:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+   83 |         for (int i = 0; i < len(def.music); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_team_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:551:36: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  551 | static void page_team_draw(menu_t *menu, int data) {
+      |                            ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:80:44: warning: unused parameter ‘data’ [-Wunused-parameter]
+   80 | static void button_music(menu_t *menu, int data) {
+      |                                        ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_team_init’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:565:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  565 |         for (int i = 0; i < len(def.teams); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_qualify_confirm’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_pilot_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:119:44: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  119 | static void button_qualify_confirm(menu_t *menu, int data) {
+      |                                    ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:587:37: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  587 | static void page_pilot_draw(menu_t *menu, int data) {
+      |                             ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_pilot_init’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:598:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  598 |         for (int i = 0; i < len(def.teams[g.team].pilots); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_race_stats_continue’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:128:58: warning: unused parameter ‘data’ [-Wunused-parameter]
+  128 | static void button_race_stats_continue(menu_t *menu, int data) {
+      |                                                      ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘button_circut_select’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:607:42: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  607 | static void button_circut_select(menu_t *menu, int data) {
+      |                                  ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_circut_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:612:38: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  612 | static void page_circut_draw(menu_t *menu, int data) {
+      |                              ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: In function ‘page_circut_init’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:627:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  627 |         for (int i = 0; i < len(def.circuts); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/sfx.c: In function ‘sfx_stero_mix’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/sfx.c:335:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  335 |         for (int i = 0; i < len; i += 2) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘page_race_stats_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:148:52: warning: unused parameter ‘data’ [-Wunused-parameter]
+  148 | static void page_race_stats_draw(menu_t *menu, int data) {
+      |                                                ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_race_points_continue’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:216:59: warning: unused parameter ‘data’ [-Wunused-parameter]
+  216 | static void button_race_points_continue(menu_t *menu, int data) {
+      |                                                       ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_ai.c: In function ‘ship_ai_strat_hold_left’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_ai.c:41:40: warning: unused parameter ‘self’ [-Wunused-parameter]
+   41 | vec3_t ship_ai_strat_hold_left(ship_t *self, track_face_t *face) {
+      |                                ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_ai.c: In function ‘ship_ai_strat_hold_right’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_ai.c:48:41: warning: unused parameter ‘self’ [-Wunused-parameter]
+   48 | vec3_t ship_ai_strat_hold_right(ship_t *self, track_face_t *face) {
+      |                                 ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/track.c: In function ‘track_load’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_ai.c: In function ‘ship_ai_strat_hold_center’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_ai.c:56:42: warning: unused parameter ‘self’ [-Wunused-parameter]
+   56 | vec3_t ship_ai_strat_hold_center(ship_t *self, track_face_t *face) {
+      |                                  ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/game.c: In function ‘game_init’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_ai.c:56:62: warning: unused parameter ‘face’ [-Wunused-parameter]
+   56 | vec3_t ship_ai_strat_hold_center(ship_t *self, track_face_t *face) {
+      |                                                ~~~~~~~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/track.c:23:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   23 |         for (int i = 0; i < ttf->len; i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/game.c:586:37: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  586 |         for (int action = 0; action < len(save.buttons); action++) {
+      |                                     ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c: In function ‘free_dummmy’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c: In function ‘ships_load’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c:13:24: warning: unused parameter ‘p’ [-Wunused-parameter]
+   13 | void free_dummmy(void *p) {}
+      |                  ~~~~~~^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:30:45: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+   30 |         for (object_index = 0; object_index < len(g.ships) && ship_model && collision_model; object_index++) {
+      |                                             ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/game.c: In function ‘game_reset_championship’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/droid.c: In function ‘droid_update_intro’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/game.c:605:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  605 |         for (int i = 0; i < len(g.championship_ranks); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/droid.c:130:49: warning: unused parameter ‘ship’ [-Wunused-parameter]
+  130 | void droid_update_intro(droid_t *droid, ship_t *ship) {
+      |                                         ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c: In function ‘realloc_dummmy’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c:14:28: warning: unused parameter ‘p’ [-Wunused-parameter]
+   14 | void *realloc_dummmy(void *p, size_t sz) {
+      |                      ~~~~~~^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c:14:38: warning: unused parameter ‘sz’ [-Wunused-parameter]
+   14 | void *realloc_dummmy(void *p, size_t sz) {
+      |                               ~~~~~~~^~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:49:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+   49 |         for (int i = 0; i < len(g.ships); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/track.c: In function ‘track_load_tile_format’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c: In function ‘ship_player_update_intro_await_three’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c: In function ‘ships_init’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/track.c:97:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   97 |         for (int t = 0; t < num_tiles; t++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c:61:24: warning: unused variable ‘sfx’ [-Wunused-variable]
+   61 |                 sfx_t *sfx = sfx_play(SFX_VOICE_COUNT_3);
+      |                        ^~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘page_race_points_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:240:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  240 |         for (int i = 0; i < len(g.race_ranks); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:61:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+   61 |         for (int i = 0; i < len(g.ships); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c: In function ‘ship_player_update_intro_await_two’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c:71:24: warning: unused variable ‘sfx’ [-Wunused-variable]
+   71 |                 sfx_t *sfx = sfx_play(SFX_VOICE_COUNT_2);
+      |                        ^~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c: In function ‘ship_player_update_intro_await_one’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:228:53: warning: unused parameter ‘data’ [-Wunused-parameter]
+  228 | static void page_race_points_draw(menu_t *menu, int data) {
+      |                                                 ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c:81:24: warning: unused variable ‘sfx’ [-Wunused-variable]
+   81 |                 sfx_t *sfx = sfx_play(SFX_VOICE_COUNT_1);
+      |                        ^~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:73:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+   73 |                 for (int i = 0; i < len(g.ships); i++) {
+      |                                   ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c: In function ‘ship_player_update_intro_await_go’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c:91:24: warning: unused variable ‘sfx’ [-Wunused-variable]
+   91 |                 sfx_t *sfx = sfx_play(SFX_VOICE_COUNT_GO);
+      |                        ^~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘button_championship_points_continue’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:261:67: warning: unused parameter ‘data’ [-Wunused-parameter]
+  261 | static void button_championship_points_continue(menu_t *menu, int data) {
+      |                                                               ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:81:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+   81 |         for (int i = 0; i < len(ranks_to_pilots)-1; i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘page_championship_points_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:285:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  285 |         for (int i = 0; i < len(g.championship_ranks); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:92:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+   92 |         for (int i = 0; i < len(g.ships); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:100:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  100 |         for (int i = 0; i < len(ranks_to_pilots); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:273:61: warning: unused parameter ‘data’ [-Wunused-parameter]
+  273 | static void page_championship_points_draw(menu_t *menu, int data) {
+      |                                                         ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c: In function ‘ships_update’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:128:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  128 |                 for (int i = 0; i < len(g.ships); i++) {
+      |                                   ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:131:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  131 |                 for (int j = 0; j < (len(g.ships) - 1); j++) {
+      |                                   ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:132:47: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  132 |                         for (int i = j + 1; i < len(g.ships); i++) {
+      |                                               ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:139:47: warning: comparison of integer expressions of different signedness: ‘int32_t’ {aka ‘int’} and ‘long unsigned int’ [-Wsign-compare]
+  139 |                         for (int32_t i = 0; i < len(g.ships); i++) {
+      |                                               ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘hall_of_fame_draw_name_entry’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:314:50: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  314 | static void hall_of_fame_draw_name_entry(menu_t *menu, ui_pos_t anchor, vec2i_t pos) {
+      |                                          ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c: In function ‘ships_reset_exhaust_plumes’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:147:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  147 |         for (int i = 0; i < len(g.ships); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/track.c: In function ‘track_draw_section’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c: In function ‘ships_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/track.c:253:32: warning: comparison of integer expressions of different signedness: ‘uint32_t’ {aka ‘unsigned int’} and ‘int16_t’ {aka ‘short int’} [-Wsign-compare]
+  253 |         for (uint32_t j = 0; j < face_count; j++) {
+      |                                ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:155:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  155 |         for (int i = 0; i < len(g.ships); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘page_hall_of_fame_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:388:36: warning: unused variable ‘temp_entry’ [-Wunused-variable]
+  388 |                 highscores_entry_t temp_entry = hs->entries[0];
+      |                                    ^~~~~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:173:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  173 |         for (int i = 0; i < len(g.ships); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/track.c: In function ‘track_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/track.c:270:13: warning: unused variable ‘skipped’ [-Wunused-variable]
+  270 |         int skipped = 0;
+      |             ^~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/track.c:269:13: warning: unused variable ‘drawn’ [-Wunused-variable]
+  269 |         int drawn = 0;
+      |             ^~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:376:54: warning: unused parameter ‘data’ [-Wunused-parameter]
+  376 | static void page_hall_of_fame_draw(menu_t *menu, int data) {
+      |                                                  ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c: In function ‘text_scroll_menu_draw’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:454:43: warning: unused parameter ‘menu’ [-Wunused-parameter]
+  454 | static void text_scroll_menu_draw(menu_t *menu, int data) {
+      |                                   ~~~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ingame_menus.c:454:53: warning: unused parameter ‘data’ [-Wunused-parameter]
+  454 | static void text_scroll_menu_draw(menu_t *menu, int data) {
+      |                                                 ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c: At top level:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/main_menu.c:144:20: warning: ‘button_names’ defined but not used [-Wunused-variable]
+  144 | static const char *button_names[NUM_GAME_ACTIONS][2] = {};
+      |                    ^~~~~~~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c: In function ‘ship_resolve_nose_collision’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship.c:666:15: warning: unused variable ‘angle’ [-Wunused-variable]
+  666 |         float angle = vec3_angle(collision_vector, self->dir_forward);
+      |               ^~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c: In function ‘ship_player_find_target’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/ship_player.c:523:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  523 |         for (int i = 0; i < len(g.ships); i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c: In function ‘image_load_from_bytes’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:62:26: warning: unused variable ‘palettes’ [-Wunused-variable]
+   62 |                 uint16_t palettes = get_i16_le(bytes, &p);
+      |                          ^~~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:60:26: warning: unused variable ‘palette_y’ [-Wunused-variable]
+   60 |                 uint16_t palette_y = get_i16_le(bytes, &p);
+      |                          ^~~~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:59:26: warning: unused variable ‘palette_x’ [-Wunused-variable]
+   59 |                 uint16_t palette_x = get_i16_le(bytes, &p);
+      |                          ^~~~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:58:26: warning: unused variable ‘header_length’ [-Wunused-variable]
+   58 |                 uint32_t header_length = get_i32_le(bytes, &p);
+      |                          ^~~~~~~~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:79:18: warning: unused variable ‘skip_y’ [-Wunused-variable]
+   79 |         uint16_t skip_y = get_i16_le(bytes, &p);
+      |                  ^~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:78:18: warning: unused variable ‘skip_x’ [-Wunused-variable]
+   78 |         uint16_t skip_x = get_i16_le(bytes, &p);
+      |                  ^~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:68:18: warning: unused variable ‘data_size’ [-Wunused-variable]
+   68 |         uint32_t data_size = get_i32_le(bytes, &p);
+      |                  ^~~~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:50:18: warning: unused variable ‘magic’ [-Wunused-variable]
+   50 |         uint32_t magic = get_i32_le(bytes, &p);
+      |                  ^~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c: In function ‘image_get_compressed_textures’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:290:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  290 |         for (int i = 0; i < cmp->len; i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:291:32: warning: unused variable ‘height’ [-Wunused-variable]
+  291 |                 int32_t width, height;
+      |                                ^~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/image.c:291:25: warning: unused variable ‘width’ [-Wunused-variable]
+  291 |                 int32_t width, height;
+      |                         ^~~~~
+[ 72%] Building C object CMakeFiles/wipeout.dir/src/wipeout/weapon.c.o
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c: In function ‘audio_cb’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c:89:29: warning: unused parameter ‘plm’ [-Wunused-parameter]
+   89 | static void audio_cb(plm_t *plm, plm_samples_t *samples, void *user) {
+      |                      ~~~~~~~^~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c:89:64: warning: unused parameter ‘user’ [-Wunused-parameter]
+   89 | static void audio_cb(plm_t *plm, plm_samples_t *samples, void *user) {
+      |                                                          ~~~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c: In function ‘audio_mix’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c:99:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   99 |         for (i = 0; i < len && audio_buffer_read_pos < audio_buffer_write_pos; i++) {
+      |                       ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c:103:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  103 |         for (; i < len; i++) {
+      |                  ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c: In function ‘video_cb’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/wipeout/intro.c:108:60: warning: unused parameter ‘user’ [-Wunused-parameter]
+  108 | static void video_cb(plm_t *plm, plm_frame_t *frame, void *user) {
+      |                                                      ~~~~~~^~~~
+[ 75%] Building C object CMakeFiles/wipeout.dir/src/input.c.o
+[ 79%] Building C object CMakeFiles/wipeout.dir/src/mem.c.o
+[ 82%] Building C object CMakeFiles/wipeout.dir/src/system.c.o
+[ 86%] Building C object CMakeFiles/wipeout.dir/src/utils.c.o
+[ 89%] Building C object CMakeFiles/wipeout.dir/src/types.c.o
+[ 93%] Building C object CMakeFiles/wipeout.dir/src/render_gl.c.o
+[ 96%] Building C object CMakeFiles/wipeout.dir/src/platform_sdl.c.o
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/mem.c: In function ‘mem_temp_free’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/mem.c:66:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   66 |         for (int i = 0; i < temp_objects_len; i++) {
+      |                           ^
+In file included from /build/wipeout-rewrite-git/src/wipeout-rewrite/src/input.c:4:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/input.c: In function ‘input_bind’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/input.c:232:25: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  232 |         error_if(action < 0 || action >= INPUT_ACTION_MAX, "Invalid input action %d", action);
+      |                         ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.h:60:13: note: in definition of macro ‘error_if’
+   60 |         if (TEST) { \
+      |             ^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/input.c: In function ‘input_state’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/input.c:262:25: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  262 |         error_if(action < 0 || action >= INPUT_ACTION_MAX, "Invalid input action %d", action);
+      |                         ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.h:60:13: note: in definition of macro ‘error_if’
+   60 |         if (TEST) { \
+      |             ^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/input.c: In function ‘input_pressed’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/input.c:268:25: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  268 |         error_if(action < 0 || action >= INPUT_ACTION_MAX, "Invalid input action %d", action);
+      |                         ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.h:60:13: note: in definition of macro ‘error_if’
+   60 |         if (TEST) { \
+      |             ^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/input.c: In function ‘input_released’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/input.c:274:25: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  274 |         error_if(action < 0 || action >= INPUT_ACTION_MAX, "Invalid input action %d", action);
+      |                         ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.h:60:13: note: in definition of macro ‘error_if’
+   60 |         if (TEST) { \
+      |             ^~~~
+In file included from /build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.c:5:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.c: In function ‘file_load’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.c:42:30: warning: comparison of integer expressions of different signedness: ‘uint32_t’ {aka ‘unsigned int’} and ‘int32_t’ {aka ‘int’} [-Wsign-compare]
+   42 |         error_if(*bytes_read != size, "Could not read file: %s", path);
+      |                              ^~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.h:60:13: note: in definition of macro ‘error_if’
+   60 |         if (TEST) { \
+      |             ^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.c: In function ‘file_store’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.c:50:38: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int32_t’ {aka ‘int’} [-Wsign-compare]
+   50 |         if (fwrite(bytes, 1, len, f) != len) {
+      |                                      ^~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/render_gl.c: In function ‘render_texture_create’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/render_gl.c:910:39: warning: comparison of integer expressions of different signedness: ‘int32_t’ {aka ‘int’} and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  910 |                 for (int32_t y = 0; y < bh; y++) {
+      |                                       ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/render_gl.c:917:39: warning: comparison of integer expressions of different signedness: ‘int32_t’ {aka ‘int’} and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  917 |                 for (int32_t y = 0; y < bh; y++) {
+      |                                       ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/render_gl.c:924:39: warning: comparison of integer expressions of different signedness: ‘int32_t’ {aka ‘int’} and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  924 |                 for (int32_t y = 0; y < th; y++) {
+      |                                       ^
+In file included from /build/wipeout-rewrite-git/src/wipeout-rewrite/src/render_gl.c:31:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/render_gl.c: In function ‘render_texture_replace_pixels’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/render_gl.c:951:32: warning: comparison of integer expressions of different signedness: ‘int16_t’ {aka ‘short int’} and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  951 |         error_if(texture_index >= textures_len, "Invalid texture %d", texture_index);
+      |                                ^~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/utils.h:60:13: note: in definition of macro ‘error_if’
+   60 |         if (TEST) { \
+      |             ^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/render_gl.c: In function ‘render_textures_reset’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/render_gl.c:980:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  980 |         for (int i = 0; i < textures_len; i++) {
+      |                           ^
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/platform_sdl.c: In function ‘platform_audio_callback’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/platform_sdl.c:216:36: warning: unused parameter ‘userdata’ [-Wunused-parameter]
+  216 | void platform_audio_callback(void* userdata, uint8_t* stream, int len) {
+      |                              ~~~~~~^~~~~~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/platform_sdl.c: In function ‘main’:
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/platform_sdl.c:347:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+  347 | int main(int argc, char *argv[]) {
+      |          ~~~~^~~~
+/build/wipeout-rewrite-git/src/wipeout-rewrite/src/platform_sdl.c:347:26: warning: unused parameter ‘argv’ [-Wunused-parameter]
+  347 | int main(int argc, char *argv[]) {
+      |                    ~~~~~~^~~~~~
+[100%] Linking C executable wipeout
+[100%] Built target wipeout
