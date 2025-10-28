@@ -1,0 +1,126 @@
+Making install in src
+make[1]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/src'
+make[2]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/src'
+/usr/bin/mkdir -p "/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/lib/pcmanfm"
+ /usr/bin/mkdir -p '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/bin'
+ /usr/bin/mkdir -p '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/include'
+ /usr/bin/install -c -m 644 pcmanfm-modules.h '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/include'
+  /usr/bin/install -c pcmanfm '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/bin'
+make[2]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/src'
+make[1]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/src'
+Making install in po
+make[1]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/po'
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+linguas="ar be bg bn ca cs da de el en_GB es et eu fa fi fo fr gl he hr hu id is it ja kk km ko lg lt lv ms nl pa pl pt pt_BR ro ru si sk sl sr sr@latin sv te th tr tt_RU ug uk vi zh_CN zh_TW "; \
+for lang in $linguas; do \
+  dir=/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/$lang/LC_MESSAGES; \
+  /bin/sh /build/pcmanfm-gtk3/src/pcmanfm/install-sh -d $dir; \
+  if test -r $lang.gmo; then \
+    /usr/bin/install -c -m 644 $lang.gmo $dir/pcmanfm.mo; \
+    echo "installing $lang.gmo as $dir/pcmanfm.mo"; \
+  else \
+    /usr/bin/install -c -m 644 ./$lang.gmo $dir/pcmanfm.mo; \
+    echo "installing ./$lang.gmo as" \
+	 "$dir/pcmanfm.mo"; \
+  fi; \
+  if test -r $lang.gmo.m; then \
+    /usr/bin/install -c -m 644 $lang.gmo.m $dir/pcmanfm.mo.m; \
+    echo "installing $lang.gmo.m as $dir/pcmanfm.mo.m"; \
+  else \
+    if test -r ./$lang.gmo.m ; then \
+      /usr/bin/install -c -m 644 ./$lang.gmo.m \
+	$dir/pcmanfm.mo.m; \
+      echo "installing ./$lang.gmo.m as" \
+	   "$dir/pcmanfm.mo.m"; \
+    else \
+      true; \
+    fi; \
+  fi; \
+done
+installing ar.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/ar/LC_MESSAGES/pcmanfm.mo
+installing be.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/be/LC_MESSAGES/pcmanfm.mo
+installing bg.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/bg/LC_MESSAGES/pcmanfm.mo
+installing bn.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/bn/LC_MESSAGES/pcmanfm.mo
+installing ca.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/ca/LC_MESSAGES/pcmanfm.mo
+installing cs.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/cs/LC_MESSAGES/pcmanfm.mo
+installing da.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/da/LC_MESSAGES/pcmanfm.mo
+installing de.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/de/LC_MESSAGES/pcmanfm.mo
+installing el.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/el/LC_MESSAGES/pcmanfm.mo
+installing en_GB.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/en_GB/LC_MESSAGES/pcmanfm.mo
+installing es.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/es/LC_MESSAGES/pcmanfm.mo
+installing et.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/et/LC_MESSAGES/pcmanfm.mo
+installing eu.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/eu/LC_MESSAGES/pcmanfm.mo
+installing fa.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/fa/LC_MESSAGES/pcmanfm.mo
+installing fi.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/fi/LC_MESSAGES/pcmanfm.mo
+installing fo.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/fo/LC_MESSAGES/pcmanfm.mo
+installing fr.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/fr/LC_MESSAGES/pcmanfm.mo
+installing gl.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/gl/LC_MESSAGES/pcmanfm.mo
+installing he.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/he/LC_MESSAGES/pcmanfm.mo
+installing hr.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/hr/LC_MESSAGES/pcmanfm.mo
+installing hu.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/hu/LC_MESSAGES/pcmanfm.mo
+installing id.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/id/LC_MESSAGES/pcmanfm.mo
+installing is.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/is/LC_MESSAGES/pcmanfm.mo
+installing it.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/it/LC_MESSAGES/pcmanfm.mo
+installing ja.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/ja/LC_MESSAGES/pcmanfm.mo
+installing kk.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/kk/LC_MESSAGES/pcmanfm.mo
+installing km.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/km/LC_MESSAGES/pcmanfm.mo
+installing ko.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/ko/LC_MESSAGES/pcmanfm.mo
+installing lg.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/lg/LC_MESSAGES/pcmanfm.mo
+installing lt.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/lt/LC_MESSAGES/pcmanfm.mo
+installing lv.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/lv/LC_MESSAGES/pcmanfm.mo
+installing ms.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/ms/LC_MESSAGES/pcmanfm.mo
+installing nl.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/nl/LC_MESSAGES/pcmanfm.mo
+installing pa.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/pa/LC_MESSAGES/pcmanfm.mo
+installing pl.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/pl/LC_MESSAGES/pcmanfm.mo
+installing pt.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/pt/LC_MESSAGES/pcmanfm.mo
+installing pt_BR.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/pt_BR/LC_MESSAGES/pcmanfm.mo
+installing ro.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/ro/LC_MESSAGES/pcmanfm.mo
+installing ru.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/ru/LC_MESSAGES/pcmanfm.mo
+installing si.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/si/LC_MESSAGES/pcmanfm.mo
+installing sk.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/sk/LC_MESSAGES/pcmanfm.mo
+installing sl.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/sl/LC_MESSAGES/pcmanfm.mo
+installing sr.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/sr/LC_MESSAGES/pcmanfm.mo
+installing sr@latin.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/sr@latin/LC_MESSAGES/pcmanfm.mo
+installing sv.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/sv/LC_MESSAGES/pcmanfm.mo
+installing te.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/te/LC_MESSAGES/pcmanfm.mo
+installing th.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/th/LC_MESSAGES/pcmanfm.mo
+installing tr.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/tr/LC_MESSAGES/pcmanfm.mo
+installing tt_RU.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/tt_RU/LC_MESSAGES/pcmanfm.mo
+installing ug.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/ug/LC_MESSAGES/pcmanfm.mo
+installing uk.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/uk/LC_MESSAGES/pcmanfm.mo
+installing vi.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/vi/LC_MESSAGES/pcmanfm.mo
+installing zh_CN.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/zh_CN/LC_MESSAGES/pcmanfm.mo
+installing zh_TW.gmo as /build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/locale/zh_TW/LC_MESSAGES/pcmanfm.mo
+make[1]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/po'
+Making install in data
+make[1]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+Making install in ui
+make[2]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/data/ui'
+make[3]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/data/ui'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/pcmanfm/ui'
+ /usr/bin/install -c -m 644 pref.ui desktop-pref.ui autorun.ui connect.ui about.ui '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/pcmanfm/ui'
+make[3]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/data/ui'
+make[2]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/data/ui'
+make[2]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+make[3]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/etc/xdg/pcmanfm/default'
+ /usr/bin/mkdir -p '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/applications'
+ /usr/bin/install -c -m 644 pcmanfm.conf '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/etc/xdg/pcmanfm/default'
+ /usr/bin/mkdir -p '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/man/man1'
+ /usr/bin/install -c -m 644 pcmanfm.desktop pcmanfm-desktop-pref.desktop '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/applications'
+ /usr/bin/install -c -m 644 pcmanfm.1 '/build/pcmanfm-gtk3/pkg/pcmanfm-gtk3/usr/share/man/man1'
+make[3]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+make[2]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+make[1]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+make[1]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm'
+make[2]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm'
+make[1]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm'

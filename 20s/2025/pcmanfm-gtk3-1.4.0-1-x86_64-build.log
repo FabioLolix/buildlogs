@@ -1,0 +1,582 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for library containing strerror... none required
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for library containing floor... -lm
+checking whether NLS is requested... yes
+checking for intltool >= 0.40.0... 0.51.0 found
+checking for intltool-update... /usr/bin/intltool-update
+checking for intltool-merge... /usr/bin/intltool-merge
+checking for intltool-extract... /usr/bin/intltool-extract
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for perl... /usr/bin/perl
+checking for perl >= 5.8.1... 5.42.0
+checking for XML::Parser... ok
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for "x11"... yes
+checking for gthread-2.0 gio-unix-2.0 >= 2.18.0... yes
+checking for gthread-2.0 gio-unix-2.0 >= 2.18.0 glib-2.0 pango >= 1.20.0 libfm >= 1.0 gtk+-3.0 libfm-gtk3 >= 1.0.1... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for libintl.h... yes
+checking for ngettext in libc... yes
+checking for dgettext in libc... yes
+checking for bind_textdomain_codeset... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for dcgettext... yes
+checking if msgfmt accepts -c... yes
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating po/Makefile.in
+config.status: creating data/Makefile
+config.status: creating data/pcmanfm.1
+config.status: creating data/ui/Makefile
+config.status: creating data/ui/about.glade
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing default-1 commands
+config.status: executing po/stamp-it commands
+Ready to make pcmanfm
+make  all-recursive
+make[1]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm'
+Making all in src
+make[2]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/src'
+  CC       pcmanfm-pcmanfm.o
+  CC       pcmanfm-app-config.o
+  CC       pcmanfm-main-win.o
+  CC       pcmanfm-tab-page.o
+  CC       pcmanfm-desktop.o
+  CC       pcmanfm-volume-manager.o
+  CC       pcmanfm-pref.o
+  CC       pcmanfm-single-inst.o
+  CC       pcmanfm-connect-server.o
+In file included from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34,
+                 from /usr/include/gtk-3.0/gdk/gdkconfig.h:8,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:30,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from desktop.h:27,
+                 from desktop.c:28:
+desktop.c: In function ‘fm_desktop_accessible_get_type’:
+/usr/include/glib-2.0/glib/gatomic.h:131:5: warning: argument 2 of ‘__atomic_load’ discards ‘volatile’ qualifier [-Wdiscarded-qualifiers]
+  131 |     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gthread.h:274:7: note: in expansion of macro ‘g_atomic_pointer_get’
+  274 |     (!g_atomic_pointer_get (location) &&                             \
+      |       ^~~~~~~~~~~~~~~~~~~~
+desktop.c:1151:9: note: in expansion of macro ‘g_once_init_enter’
+ 1151 |     if (g_once_init_enter(&type_id_volatile))
+      |         ^~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32:
+desktop.c: In function ‘fm_desktop_accessible_ref_accessible_at_point’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1212:53: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1212 |         obj_l = fm_desktop_find_accessible_for_item(FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(component), item);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_add_selection’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1234:12: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1234 |     priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(selection);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_ref_selection’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1265:12: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1265 |     priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(selection);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_get_selection_count’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1278:37: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1278 |     FmDesktopAccessiblePriv *priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(selection);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_is_child_selected’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1295:37: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1295 |     FmDesktopAccessiblePriv *priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(selection);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_remove_selection’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1318:12: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1318 |     priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(selection);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_idle_do_action’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1364:12: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1364 |     priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(data);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_action_do_action’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1381:12: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1381 |     priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(action);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_finalize’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1417:37: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1417 |     FmDesktopAccessiblePriv *priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(object);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_get_n_children’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1440:37: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1440 |     FmDesktopAccessiblePriv *priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(accessible);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_ref_child’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1454:12: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1454 |     priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(accessible);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1472:37: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1472 |     FmDesktopAccessiblePriv *priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(object);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_index’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1545:37: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1545 |     FmDesktopAccessiblePriv *priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(desktop_atk);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_item_deleted’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1561:16: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1561 |         priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(obj);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_item_added’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1584:16: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1584 |         priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(obj);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_items_reordered’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1604:16: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1604 |         priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(obj);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_item_selected_changed’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1627:16: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1627 |         priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(obj);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_focus_set’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1644:16: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1644 |         priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(obj);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_focus_unset’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1660:16: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1660 |         priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(obj);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c: In function ‘fm_desktop_accessible_model_removed’:
+/usr/include/glib-2.0/glib/gmacros.h:1301:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1301 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1304:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1304 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1130:48: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+ 1130 | #define FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(_d_) G_TYPE_INSTANCE_GET_PRIVATE(_d_, FM_TYPE_DESKTOP_ACCESSIBLE, FmDesktopAccessiblePriv)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+desktop.c:1676:16: note: in expansion of macro ‘FM_DESKTOP_ACCESSIBLE_GET_PRIVATE’
+ 1676 |         priv = FM_DESKTOP_ACCESSIBLE_GET_PRIVATE(obj);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     pcmanfm
+make[2]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/src'
+Making all in po
+make[2]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/po'
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+  MSGFMT ar.gmo
+  MSGFMT be.gmo
+  MSGFMT bg.gmo
+  MSGFMT bn.gmo
+  MSGFMT ca.gmo
+  MSGFMT cs.gmo
+  MSGFMT da.gmo
+  MSGFMT de.gmo
+  MSGFMT el.gmo
+  MSGFMT en_GB.gmo
+  MSGFMT es.gmo
+  MSGFMT et.gmo
+  MSGFMT eu.gmo
+  MSGFMT fa.gmo
+  MSGFMT fi.gmo
+  MSGFMT fo.gmo
+  MSGFMT fr.gmo
+  MSGFMT gl.gmo
+  MSGFMT he.gmo
+  MSGFMT hr.gmo
+  MSGFMT hu.gmo
+  MSGFMT id.gmo
+  MSGFMT is.gmo
+  MSGFMT it.gmo
+  MSGFMT ja.gmo
+  MSGFMT km.gmo
+  MSGFMT kk.gmo
+  MSGFMT ko.gmo
+  MSGFMT lt.gmo
+  MSGFMT lv.gmo
+  MSGFMT lg.gmo
+  MSGFMT ms.gmo
+  MSGFMT nl.gmo
+  MSGFMT pa.gmo
+  MSGFMT pl.gmo
+  MSGFMT pt.gmo
+  MSGFMT pt_BR.gmo
+  MSGFMT ro.gmo
+  MSGFMT ru.gmo
+  MSGFMT si.gmo
+  MSGFMT sk.gmo
+  MSGFMT sl.gmo
+  MSGFMT sr.gmo
+  MSGFMT sr@latin.gmo
+  MSGFMT sv.gmo
+  MSGFMT te.gmo
+  MSGFMT th.gmo
+  MSGFMT tr.gmo
+  MSGFMT tt_RU.gmo
+  MSGFMT ug.gmo
+  MSGFMT uk.gmo
+  MSGFMT vi.gmo
+  MSGFMT zh_CN.gmo
+  MSGFMT zh_TW.gmo
+make[2]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/po'
+Making all in data
+make[2]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+Making all in ui
+make[3]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/data/ui'
+sed 's/<!--.*-->//' < pref.glade | sed ':a;N;$!ba;s/ *\n *</</g' > pref.ui
+sed 's/<!--.*-->//' < desktop-pref.glade | sed ':a;N;$!ba;s/ *\n *</</g' > desktop-pref.ui
+sed 's/<!--.*-->//' < autorun.glade | sed ':a;N;$!ba;s/ *\n *</</g' > autorun.ui
+sed 's/<!--.*-->//' < connect.glade | sed ':a;N;$!ba;s/ *\n *</</g' > connect.ui
+sed 's/<!--.*-->//' < about.glade | sed ':a;N;$!ba;s/ *\n *</</g' > about.ui
+make[3]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/data/ui'
+make[3]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+  ITMRG  pcmanfm.desktop
+  ITMRG  pcmanfm-desktop-pref.desktop
+make[3]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+make[2]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm/data'
+make[2]: Entering directory '/build/pcmanfm-gtk3/src/pcmanfm'
+make[2]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm'
+make[1]: Leaving directory '/build/pcmanfm-gtk3/src/pcmanfm'

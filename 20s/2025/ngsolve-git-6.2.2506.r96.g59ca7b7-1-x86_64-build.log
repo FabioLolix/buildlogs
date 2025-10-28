@@ -1,0 +1,47 @@
+-- Found Git: /usr/bin/git (found version "2.51.2")
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Build Netgen from git submodule
+CMake Warning at cmake/check_submodules.cmake:5 (message):
+  *****************************************************************
+
+        WARNING: The git submodules are out of sync! Please run
+        git submodule update --init --recursive
+        in your source directory
+
+  *****************************************************************
+
+
+CMake Error at /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake:1308 (message):
+  No download info given for 'netgen_project' and its source directory:
+
+   /build/ngsolve-git/src/ngsolve/external_dependencies/netgen
+
+  is not an existing non-empty directory.  Please specify one of:
+
+   * SOURCE_DIR with an existing non-empty directory
+   * DOWNLOAD_COMMAND
+   * URL
+   * GIT_REPOSITORY
+   * SVN_REPOSITORY
+   * HG_REPOSITORY
+   * CVS_REPOSITORY and CVS_MODULE
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/ExternalProject.cmake:3080 (_ep_add_download_command)
+  cmake/SuperBuild.cmake:155 (ExternalProject_Add)
+  CMakeLists.txt:52 (include)
+
+
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

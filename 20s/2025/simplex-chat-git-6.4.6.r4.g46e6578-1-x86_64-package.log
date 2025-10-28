@@ -1,0 +1,17 @@
+Cleared directory 'sqlcipher'
+Submodule 'sqlcipher' (https://github.com/sqlcipher/sqlcipher.git) unregistered for path 'sqlcipher'
+Error: cabal: Could not resolve dependencies:
+[__0] trying: aeson-2.2.1.0 (user goal)
+[__1] trying: text-2.0.2/installed-2.0.2 (dependency of aeson)
+[__2] trying: base-4.17.2.1/installed-4.17.2.1 (dependency of aeson)
+[__3] next goal: simplex-chat (user goal)
+[__3] rejecting: simplex-chat-6.4.6.0 (conflict: text =>
+bytestring==0.11.5.3/installed-0.11.5.3, simplex-chat => bytestring>=0.10 &&
+<0.11)
+[__3] fail (backjumping, conflict set: simplex-chat, text)
+After searching the rest of the dependency tree exhaustively, these were the
+goals I've had most trouble fulfilling: simplex-chat, text, base, aeson
+Try running with --minimize-conflict-set to improve the error message.
+
+[1m[31m==> ERROR:(B[m[1m A failure occurred in package().(B[m
+[1m    Aborting...(B[m
