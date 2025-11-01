@@ -1,9 +1,12 @@
 checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
 checking whether build environment is sane... yes
 checking for a race-free mkdir -p... /usr/bin/mkdir -p
 checking for gawk... gawk
 checking whether make sets $(MAKE)... yes
 checking whether make supports nested variables... yes
+checking xargs -n works... yes
 checking whether UID '1000' is supported by ustar format... yes
 checking whether GID '1000' is supported by ustar format... yes
 checking how to create a ustar tar archive... gnutar
@@ -51,9 +54,9 @@ checking for objdump... objdump
 checking how to recognize dependent libraries... pass_all
 checking for dlltool... no
 checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
 checking for archiver @FILE support... @
 checking for strip... strip
-checking for ranlib... ranlib
 checking command to parse /usr/bin/nm -B output from gcc object... ok
 checking for sysroot... no
 checking for a working dd... /usr/bin/dd
@@ -89,7 +92,6 @@ checking how to run the C++ preprocessor... g++ -E
 checking for ld used by g++... /usr/bin/ld -m elf_x86_64
 checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
 checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
-/usr/bin/grep: warning: stray \ before -
 checking for g++ option to produce PIC... -fPIC -DPIC
 checking if g++ PIC flag -fPIC -DPIC works... yes
 checking if g++ static flag -static works... yes
@@ -98,9 +100,8 @@ checking if g++ supports -c -o file.o... (cached) yes
 checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
 checking dynamic linker characteristics... (cached) GNU/Linux ld.so
 checking how to hardcode library paths into programs... immediate
-checking which build type to use... official
-checking for special C compiler options needed for large files... no
-checking for _FILE_OFFSET_BITS value needed for large files... no
+checking which build type to use... personal
+checking for  option for large files... none needed
 checking for objdump... (cached) objdump
 checking for strip... (cached) strip
 checking whether g++ supports C++17 features with -std=c++17... yes
@@ -169,4 +170,3 @@ config.status: executing depfiles commands
 config.status: executing libtool commands
 config.status: executing determine-execobjdir commands
 checking Which directory are executables built in... .
-config.status: executing determine-build-datetime commands
