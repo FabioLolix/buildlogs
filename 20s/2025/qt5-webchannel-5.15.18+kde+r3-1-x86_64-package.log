@@ -1,0 +1,42 @@
+cd src/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webchannel/src/kde-qtwebchannel/src/src.pro ) && make -f Makefile install
+make[1]: Entering directory '/build/qt5-webchannel/src/build/src'
+cd webchannel/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/webchannel.pro ) && make -f Makefile install
+make[2]: Entering directory '/build/qt5-webchannel/src/build/src/webchannel'
+/usr/bin/qmake -install qinstall -exe ../../lib/libQt5WebChannel.so.5.15.18 /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/libQt5WebChannel.so.5.15.18
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/include/QtWebChannel/QQmlWebChannel /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/QQmlWebChannel
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/qqmlwebchannel.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/qqmlwebchannel.h
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/qmetaobjectpublisher_p.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/5.15.18/QtWebChannel/private/qmetaobjectpublisher_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/mkspecs/modules-inst/qt_lib_webchannel.pri /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/qt/mkspecs/modules/qt_lib_webchannel.pri
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/mkspecs/modules-inst/qt_lib_webchannel_private.pri /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/qt/mkspecs/modules/qt_lib_webchannel_private.pri
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/lib/cmake/Qt5WebChannel/Qt5WebChannelConfig.cmake /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/cmake/Qt5WebChannel/Qt5WebChannelConfig.cmake
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/qwebchannel.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/qwebchannel.h
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/lib/cmake/Qt5WebChannel/Qt5WebChannelConfigVersion.cmake /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/cmake/Qt5WebChannel/Qt5WebChannelConfigVersion.cmake
+ln -f -s libQt5WebChannel.so.5.15.18 /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/libQt5WebChannel.so
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/include/QtWebChannel/QWebChannel /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/QWebChannel
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/qqmlwebchannelattached_p.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/5.15.18/QtWebChannel/private/qqmlwebchannelattached_p.h
+ln -f -s libQt5WebChannel.so.5.15.18 /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/libQt5WebChannel.so.5
+ln -f -s libQt5WebChannel.so.5.15.18 /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/libQt5WebChannel.so.5.15
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/qwebchannelabstracttransport.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h
+sed  -e 's,/build/qt5-webchannel/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webchannel/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5WebChannel.prl > /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/libQt5WebChannel.prl
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/include/QtWebChannel/QWebChannelAbstractTransport /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/QWebChannelAbstractTransport
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/qwebchannel_p.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/5.15.18/QtWebChannel/private/qwebchannel_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/qwebchannelglobal.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/qwebchannelglobal.h
+sed  -e s,/build/qt5-webchannel/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webchannel/src/build/lib,,g' ../../lib/libQt5WebChannel.la > /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/libQt5WebChannel.la
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/include/QtWebChannel/qtwebchannelversion.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/qtwebchannelversion.h
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/signalhandler_p.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/5.15.18/QtWebChannel/private/signalhandler_p.h
+sed  -e s,/build/qt5-webchannel/src/build/lib/,/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webchannel/src/build/lib,,g' ../../lib/pkgconfig/Qt5WebChannel.pc > /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/pkgconfig/Qt5WebChannel.pc
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/include/QtWebChannel/QtWebChannelDepends /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/QtWebChannelDepends
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/include/QtWebChannel/QtWebChannelVersion /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/QtWebChannelVersion
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/webchannel/variantargument_p.h /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/5.15.18/QtWebChannel/private/variantargument_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/build/include/QtWebChannel/QtWebChannel /build/qt5-webchannel/pkg/qt5-webchannel/usr/include/qt/QtWebChannel/QtWebChannel
+make[2]: Leaving directory '/build/qt5-webchannel/src/build/src/webchannel'
+cd imports/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webchannel/src/kde-qtwebchannel/src/imports/imports.pro ) && make -f Makefile install
+make[2]: Entering directory '/build/qt5-webchannel/src/build/src/imports'
+cd webchannel/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webchannel/src/kde-qtwebchannel/src/imports/webchannel/webchannel.pro ) && make -f Makefile install
+make[3]: Entering directory '/build/qt5-webchannel/src/build/src/imports/webchannel'
+/usr/bin/qmake -install qinstall -exe ../../../qml/QtWebChannel/libdeclarative_webchannel.so /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/qt/qml/QtWebChannel/libdeclarative_webchannel.so
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/imports/webchannel/qmldir /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/qt/qml/QtWebChannel/qmldir
+/usr/bin/qmake -install qinstall /build/qt5-webchannel/src/kde-qtwebchannel/src/imports/webchannel/plugins.qmltypes /build/qt5-webchannel/pkg/qt5-webchannel/usr/lib/qt/qml/QtWebChannel/plugins.qmltypes
+make[3]: Leaving directory '/build/qt5-webchannel/src/build/src/imports/webchannel'
+make[2]: Leaving directory '/build/qt5-webchannel/src/build/src/imports'
+make[1]: Leaving directory '/build/qt5-webchannel/src/build/src'

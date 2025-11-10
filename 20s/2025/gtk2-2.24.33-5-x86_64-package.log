@@ -1,0 +1,833 @@
+make: Entering directory '/build/gtk2/src/gtk'
+Making install in po
+make[1]: Entering directory '/build/gtk2/src/gtk/po'
+/bin/sh /build/gtk2/src/gtk/install-sh -d /build/gtk2/pkg/gtk2/usr/share; \
+catalogs='af.gmo am.gmo ang.gmo ar.gmo as.gmo ast.gmo az.gmo az_IR.gmo be.gmo be@latin.gmo bg.gmo bn.gmo bn_IN.gmo br.gmo bs.gmo ca.gmo ca@valencia.gmo crh.gmo cs.gmo cy.gmo da.gmo de.gmo dz.gmo el.gmo en_CA.gmo en_GB.gmo eo.gmo es.gmo et.gmo eu.gmo fa.gmo fi.gmo fr.gmo ga.gmo gl.gmo gu.gmo he.gmo hi.gmo hr.gmo hu.gmo hy.gmo ia.gmo id.gmo io.gmo is.gmo it.gmo ja.gmo ka.gmo kk.gmo kn.gmo ko.gmo ku.gmo li.gmo lt.gmo lv.gmo mai.gmo mi.gmo mk.gmo ml.gmo mn.gmo mr.gmo ms.gmo my.gmo nb.gmo nds.gmo ne.gmo nl.gmo nn.gmo nso.gmo oc.gmo or.gmo pa.gmo pl.gmo ps.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo rw.gmo si.gmo sk.gmo sl.gmo sq.gmo sr.gmo sr@latin.gmo sr@ije.gmo sv.gmo ta.gmo te.gmo th.gmo tk.gmo tr.gmo tt.gmo ug.gmo uk.gmo ur.gmo uz.gmo uz@cyrillic.gmo vi.gmo wa.gmo xh.gmo yi.gmo zh_CN.gmo zh_HK.gmo zh_TW.gmo'; \
+for cat in $catalogs; do \
+  cat=`basename $cat`; \
+  case "$cat" in \
+    *.gmo) destdir=/usr/share/locale;; \
+    *)     destdir=/usr/lib/locale;; \
+  esac; \
+  lang=`echo $cat | sed 's/\.gmo$//'`; \
+  dir=/build/gtk2/pkg/gtk2$destdir/$lang/LC_MESSAGES; \
+  /bin/sh /build/gtk2/src/gtk/install-sh -d $dir; \
+  if test -r $cat; then \
+    /usr/bin/install -c -m 644 $cat $dir/gtk20.mo; \
+    echo "installing $cat as $dir/gtk20.mo"; \
+  else \
+    /usr/bin/install -c -m 644 ./$cat $dir/gtk20.mo; \
+    echo "installing ./$cat as" \
+	 "$dir/gtk20.mo"; \
+  fi; \
+  if test -r $cat.m; then \
+    /usr/bin/install -c -m 644 $cat.m $dir/gtk20.mo.m; \
+    echo "installing $cat.m as $dir/gtk20.mo.m"; \
+  else \
+    if test -r ./$cat.m ; then \
+      /usr/bin/install -c -m 644 ./$cat.m \
+	$dir/gtk20.mo.m; \
+      echo "installing ./$cat as" \
+	   "$dir/gtk20.mo.m"; \
+    else \
+      true; \
+    fi; \
+  fi; \
+done
+installing af.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/af/LC_MESSAGES/gtk20.mo
+installing am.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/am/LC_MESSAGES/gtk20.mo
+installing ang.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ang/LC_MESSAGES/gtk20.mo
+installing ar.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ar/LC_MESSAGES/gtk20.mo
+installing as.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/as/LC_MESSAGES/gtk20.mo
+installing ast.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ast/LC_MESSAGES/gtk20.mo
+installing az.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/az/LC_MESSAGES/gtk20.mo
+installing az_IR.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/az_IR/LC_MESSAGES/gtk20.mo
+installing be.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/be/LC_MESSAGES/gtk20.mo
+installing be@latin.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/be@latin/LC_MESSAGES/gtk20.mo
+installing bg.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/bg/LC_MESSAGES/gtk20.mo
+installing bn.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/bn/LC_MESSAGES/gtk20.mo
+installing bn_IN.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/bn_IN/LC_MESSAGES/gtk20.mo
+installing br.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/br/LC_MESSAGES/gtk20.mo
+installing bs.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/bs/LC_MESSAGES/gtk20.mo
+installing ca.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ca/LC_MESSAGES/gtk20.mo
+installing ca@valencia.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ca@valencia/LC_MESSAGES/gtk20.mo
+installing crh.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/crh/LC_MESSAGES/gtk20.mo
+installing cs.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/cs/LC_MESSAGES/gtk20.mo
+installing cy.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/cy/LC_MESSAGES/gtk20.mo
+installing da.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/da/LC_MESSAGES/gtk20.mo
+installing de.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/de/LC_MESSAGES/gtk20.mo
+installing dz.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/dz/LC_MESSAGES/gtk20.mo
+installing el.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/el/LC_MESSAGES/gtk20.mo
+installing en_CA.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/en_CA/LC_MESSAGES/gtk20.mo
+installing en_GB.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/en_GB/LC_MESSAGES/gtk20.mo
+installing eo.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/eo/LC_MESSAGES/gtk20.mo
+installing es.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/es/LC_MESSAGES/gtk20.mo
+installing et.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/et/LC_MESSAGES/gtk20.mo
+installing eu.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/eu/LC_MESSAGES/gtk20.mo
+installing fa.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/fa/LC_MESSAGES/gtk20.mo
+installing fi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/fi/LC_MESSAGES/gtk20.mo
+installing fr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/fr/LC_MESSAGES/gtk20.mo
+installing ga.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ga/LC_MESSAGES/gtk20.mo
+installing gl.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/gl/LC_MESSAGES/gtk20.mo
+installing gu.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/gu/LC_MESSAGES/gtk20.mo
+installing he.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/he/LC_MESSAGES/gtk20.mo
+installing hi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/hi/LC_MESSAGES/gtk20.mo
+installing hr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/hr/LC_MESSAGES/gtk20.mo
+installing hu.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/hu/LC_MESSAGES/gtk20.mo
+installing hy.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/hy/LC_MESSAGES/gtk20.mo
+installing ia.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ia/LC_MESSAGES/gtk20.mo
+installing id.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/id/LC_MESSAGES/gtk20.mo
+installing io.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/io/LC_MESSAGES/gtk20.mo
+installing is.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/is/LC_MESSAGES/gtk20.mo
+installing it.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/it/LC_MESSAGES/gtk20.mo
+installing ja.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ja/LC_MESSAGES/gtk20.mo
+installing ka.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ka/LC_MESSAGES/gtk20.mo
+installing kk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/kk/LC_MESSAGES/gtk20.mo
+installing kn.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/kn/LC_MESSAGES/gtk20.mo
+installing ko.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ko/LC_MESSAGES/gtk20.mo
+installing ku.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ku/LC_MESSAGES/gtk20.mo
+installing li.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/li/LC_MESSAGES/gtk20.mo
+installing lt.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/lt/LC_MESSAGES/gtk20.mo
+installing lv.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/lv/LC_MESSAGES/gtk20.mo
+installing mai.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mai/LC_MESSAGES/gtk20.mo
+installing mi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mi/LC_MESSAGES/gtk20.mo
+installing mk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mk/LC_MESSAGES/gtk20.mo
+installing ml.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ml/LC_MESSAGES/gtk20.mo
+installing mn.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mn/LC_MESSAGES/gtk20.mo
+installing mr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mr/LC_MESSAGES/gtk20.mo
+installing ms.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ms/LC_MESSAGES/gtk20.mo
+installing my.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/my/LC_MESSAGES/gtk20.mo
+installing nb.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nb/LC_MESSAGES/gtk20.mo
+installing nds.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nds/LC_MESSAGES/gtk20.mo
+installing ne.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ne/LC_MESSAGES/gtk20.mo
+installing nl.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nl/LC_MESSAGES/gtk20.mo
+installing nn.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nn/LC_MESSAGES/gtk20.mo
+installing nso.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nso/LC_MESSAGES/gtk20.mo
+installing oc.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/oc/LC_MESSAGES/gtk20.mo
+installing or.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/or/LC_MESSAGES/gtk20.mo
+installing pa.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/pa/LC_MESSAGES/gtk20.mo
+installing pl.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/pl/LC_MESSAGES/gtk20.mo
+installing ps.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ps/LC_MESSAGES/gtk20.mo
+installing pt.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/pt/LC_MESSAGES/gtk20.mo
+installing pt_BR.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/pt_BR/LC_MESSAGES/gtk20.mo
+installing ro.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ro/LC_MESSAGES/gtk20.mo
+installing ru.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ru/LC_MESSAGES/gtk20.mo
+installing rw.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/rw/LC_MESSAGES/gtk20.mo
+installing si.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/si/LC_MESSAGES/gtk20.mo
+installing sk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sk/LC_MESSAGES/gtk20.mo
+installing sl.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sl/LC_MESSAGES/gtk20.mo
+installing sq.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sq/LC_MESSAGES/gtk20.mo
+installing sr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sr/LC_MESSAGES/gtk20.mo
+installing sr@latin.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sr@latin/LC_MESSAGES/gtk20.mo
+installing sr@ije.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sr@ije/LC_MESSAGES/gtk20.mo
+installing sv.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sv/LC_MESSAGES/gtk20.mo
+installing ta.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ta/LC_MESSAGES/gtk20.mo
+installing te.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/te/LC_MESSAGES/gtk20.mo
+installing th.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/th/LC_MESSAGES/gtk20.mo
+installing tk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/tk/LC_MESSAGES/gtk20.mo
+installing tr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/tr/LC_MESSAGES/gtk20.mo
+installing tt.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/tt/LC_MESSAGES/gtk20.mo
+installing ug.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ug/LC_MESSAGES/gtk20.mo
+installing uk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/uk/LC_MESSAGES/gtk20.mo
+installing ur.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ur/LC_MESSAGES/gtk20.mo
+installing uz.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/uz/LC_MESSAGES/gtk20.mo
+installing uz@cyrillic.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/uz@cyrillic/LC_MESSAGES/gtk20.mo
+installing vi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/vi/LC_MESSAGES/gtk20.mo
+installing wa.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/wa/LC_MESSAGES/gtk20.mo
+installing xh.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/xh/LC_MESSAGES/gtk20.mo
+installing yi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/yi/LC_MESSAGES/gtk20.mo
+installing zh_CN.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/zh_CN/LC_MESSAGES/gtk20.mo
+installing zh_HK.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/zh_HK/LC_MESSAGES/gtk20.mo
+installing zh_TW.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/zh_TW/LC_MESSAGES/gtk20.mo
+if test "gtk+" = "glib"; then \
+  /bin/sh /build/gtk2/src/gtk/install-sh -d /build/gtk2/pkg/gtk2/usr/share/glib-2.0/gettext/po; \
+  /usr/bin/install -c -m 644 ./Makefile.in.in \
+		  /build/gtk2/pkg/gtk2/usr/share/glib-2.0/gettext/po/Makefile.in.in; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/build/gtk2/src/gtk/po'
+Making install in po-properties
+make[1]: Entering directory '/build/gtk2/src/gtk/po-properties'
+/bin/sh /build/gtk2/src/gtk/install-sh -d /build/gtk2/pkg/gtk2/usr/share; \
+catalogs='af.gmo am.gmo ang.gmo ar.gmo as.gmo ast.gmo az.gmo az_IR.gmo be.gmo be@latin.gmo bg.gmo bn.gmo bn_IN.gmo br.gmo bs.gmo ca.gmo ca@valencia.gmo crh.gmo cs.gmo cy.gmo da.gmo de.gmo dz.gmo el.gmo en_CA.gmo en_GB.gmo eo.gmo es.gmo et.gmo eu.gmo fa.gmo fi.gmo fr.gmo ga.gmo gl.gmo gu.gmo he.gmo hi.gmo hr.gmo hu.gmo hy.gmo ia.gmo id.gmo io.gmo is.gmo it.gmo ja.gmo ka.gmo kk.gmo kn.gmo ko.gmo ku.gmo li.gmo lt.gmo lv.gmo mai.gmo mi.gmo mk.gmo ml.gmo mn.gmo mr.gmo ms.gmo my.gmo nb.gmo nds.gmo ne.gmo nl.gmo nn.gmo nso.gmo oc.gmo or.gmo pa.gmo pl.gmo ps.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo rw.gmo si.gmo sk.gmo sl.gmo sq.gmo sr.gmo sr@latin.gmo sr@ije.gmo sv.gmo ta.gmo te.gmo th.gmo tk.gmo tr.gmo tt.gmo ug.gmo uk.gmo ur.gmo uz.gmo uz@cyrillic.gmo vi.gmo wa.gmo xh.gmo yi.gmo zh_CN.gmo zh_HK.gmo zh_TW.gmo'; \
+for cat in $catalogs; do \
+  cat=`basename $cat`; \
+  case "$cat" in \
+    *.gmo) destdir=/usr/share/locale;; \
+    *)     destdir=/usr/lib/locale;; \
+  esac; \
+  lang=`echo $cat | sed 's/\.gmo$//'`; \
+  dir=/build/gtk2/pkg/gtk2$destdir/$lang/LC_MESSAGES; \
+  /bin/sh /build/gtk2/src/gtk/install-sh -d $dir; \
+  if test -r $cat; then \
+    /usr/bin/install -c -m 644 $cat $dir/gtk20-properties.mo; \
+    echo "installing $cat as $dir/gtk20-properties.mo"; \
+  else \
+    /usr/bin/install -c -m 644 ./$cat $dir/gtk20-properties.mo; \
+    echo "installing ./$cat as" \
+	 "$dir/gtk20-properties.mo"; \
+  fi; \
+  if test -r $cat.m; then \
+    /usr/bin/install -c -m 644 $cat.m $dir/gtk20-properties.mo.m; \
+    echo "installing $cat.m as $dir/gtk20-properties.mo.m"; \
+  else \
+    if test -r ./$cat.m ; then \
+      /usr/bin/install -c -m 644 ./$cat.m \
+	$dir/gtk20-properties.mo.m; \
+      echo "installing ./$cat as" \
+	   "$dir/gtk20-properties.mo.m"; \
+    else \
+      true; \
+    fi; \
+  fi; \
+done
+installing af.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/af/LC_MESSAGES/gtk20-properties.mo
+installing am.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/am/LC_MESSAGES/gtk20-properties.mo
+installing ang.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ang/LC_MESSAGES/gtk20-properties.mo
+installing ar.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ar/LC_MESSAGES/gtk20-properties.mo
+installing as.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/as/LC_MESSAGES/gtk20-properties.mo
+installing ast.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ast/LC_MESSAGES/gtk20-properties.mo
+installing az.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/az/LC_MESSAGES/gtk20-properties.mo
+installing az_IR.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/az_IR/LC_MESSAGES/gtk20-properties.mo
+installing be.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/be/LC_MESSAGES/gtk20-properties.mo
+installing be@latin.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/be@latin/LC_MESSAGES/gtk20-properties.mo
+installing bg.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/bg/LC_MESSAGES/gtk20-properties.mo
+installing bn.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/bn/LC_MESSAGES/gtk20-properties.mo
+installing bn_IN.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/bn_IN/LC_MESSAGES/gtk20-properties.mo
+installing br.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/br/LC_MESSAGES/gtk20-properties.mo
+installing bs.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/bs/LC_MESSAGES/gtk20-properties.mo
+installing ca.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ca/LC_MESSAGES/gtk20-properties.mo
+installing ca@valencia.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ca@valencia/LC_MESSAGES/gtk20-properties.mo
+installing crh.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/crh/LC_MESSAGES/gtk20-properties.mo
+installing cs.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/cs/LC_MESSAGES/gtk20-properties.mo
+installing cy.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/cy/LC_MESSAGES/gtk20-properties.mo
+installing da.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/da/LC_MESSAGES/gtk20-properties.mo
+installing de.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/de/LC_MESSAGES/gtk20-properties.mo
+installing dz.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/dz/LC_MESSAGES/gtk20-properties.mo
+installing el.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/el/LC_MESSAGES/gtk20-properties.mo
+installing en_CA.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/en_CA/LC_MESSAGES/gtk20-properties.mo
+installing en_GB.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/en_GB/LC_MESSAGES/gtk20-properties.mo
+installing eo.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/eo/LC_MESSAGES/gtk20-properties.mo
+installing es.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/es/LC_MESSAGES/gtk20-properties.mo
+installing et.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/et/LC_MESSAGES/gtk20-properties.mo
+installing eu.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/eu/LC_MESSAGES/gtk20-properties.mo
+installing fa.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/fa/LC_MESSAGES/gtk20-properties.mo
+installing fi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/fi/LC_MESSAGES/gtk20-properties.mo
+installing fr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/fr/LC_MESSAGES/gtk20-properties.mo
+installing ga.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ga/LC_MESSAGES/gtk20-properties.mo
+installing gl.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/gl/LC_MESSAGES/gtk20-properties.mo
+installing gu.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/gu/LC_MESSAGES/gtk20-properties.mo
+installing he.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/he/LC_MESSAGES/gtk20-properties.mo
+installing hi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/hi/LC_MESSAGES/gtk20-properties.mo
+installing hr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/hr/LC_MESSAGES/gtk20-properties.mo
+installing hu.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/hu/LC_MESSAGES/gtk20-properties.mo
+installing hy.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/hy/LC_MESSAGES/gtk20-properties.mo
+installing ia.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ia/LC_MESSAGES/gtk20-properties.mo
+installing id.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/id/LC_MESSAGES/gtk20-properties.mo
+installing io.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/io/LC_MESSAGES/gtk20-properties.mo
+installing is.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/is/LC_MESSAGES/gtk20-properties.mo
+installing it.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/it/LC_MESSAGES/gtk20-properties.mo
+installing ja.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ja/LC_MESSAGES/gtk20-properties.mo
+installing ka.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ka/LC_MESSAGES/gtk20-properties.mo
+installing kk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/kk/LC_MESSAGES/gtk20-properties.mo
+installing kn.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/kn/LC_MESSAGES/gtk20-properties.mo
+installing ko.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ko/LC_MESSAGES/gtk20-properties.mo
+installing ku.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ku/LC_MESSAGES/gtk20-properties.mo
+installing li.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/li/LC_MESSAGES/gtk20-properties.mo
+installing lt.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/lt/LC_MESSAGES/gtk20-properties.mo
+installing lv.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/lv/LC_MESSAGES/gtk20-properties.mo
+installing mai.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mai/LC_MESSAGES/gtk20-properties.mo
+installing mi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mi/LC_MESSAGES/gtk20-properties.mo
+installing mk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mk/LC_MESSAGES/gtk20-properties.mo
+installing ml.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ml/LC_MESSAGES/gtk20-properties.mo
+installing mn.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mn/LC_MESSAGES/gtk20-properties.mo
+installing mr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/mr/LC_MESSAGES/gtk20-properties.mo
+installing ms.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ms/LC_MESSAGES/gtk20-properties.mo
+installing my.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/my/LC_MESSAGES/gtk20-properties.mo
+installing nb.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nb/LC_MESSAGES/gtk20-properties.mo
+installing nds.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nds/LC_MESSAGES/gtk20-properties.mo
+installing ne.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ne/LC_MESSAGES/gtk20-properties.mo
+installing nl.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nl/LC_MESSAGES/gtk20-properties.mo
+installing nn.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nn/LC_MESSAGES/gtk20-properties.mo
+installing nso.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/nso/LC_MESSAGES/gtk20-properties.mo
+installing oc.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/oc/LC_MESSAGES/gtk20-properties.mo
+installing or.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/or/LC_MESSAGES/gtk20-properties.mo
+installing pa.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/pa/LC_MESSAGES/gtk20-properties.mo
+installing pl.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/pl/LC_MESSAGES/gtk20-properties.mo
+installing ps.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ps/LC_MESSAGES/gtk20-properties.mo
+installing pt.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/pt/LC_MESSAGES/gtk20-properties.mo
+installing pt_BR.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/pt_BR/LC_MESSAGES/gtk20-properties.mo
+installing ro.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ro/LC_MESSAGES/gtk20-properties.mo
+installing ru.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ru/LC_MESSAGES/gtk20-properties.mo
+installing rw.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/rw/LC_MESSAGES/gtk20-properties.mo
+installing si.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/si/LC_MESSAGES/gtk20-properties.mo
+installing sk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sk/LC_MESSAGES/gtk20-properties.mo
+installing sl.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sl/LC_MESSAGES/gtk20-properties.mo
+installing sq.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sq/LC_MESSAGES/gtk20-properties.mo
+installing sr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sr/LC_MESSAGES/gtk20-properties.mo
+installing sr@latin.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sr@latin/LC_MESSAGES/gtk20-properties.mo
+installing sr@ije.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sr@ije/LC_MESSAGES/gtk20-properties.mo
+installing sv.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/sv/LC_MESSAGES/gtk20-properties.mo
+installing ta.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ta/LC_MESSAGES/gtk20-properties.mo
+installing te.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/te/LC_MESSAGES/gtk20-properties.mo
+installing th.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/th/LC_MESSAGES/gtk20-properties.mo
+installing tk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/tk/LC_MESSAGES/gtk20-properties.mo
+installing tr.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/tr/LC_MESSAGES/gtk20-properties.mo
+installing tt.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/tt/LC_MESSAGES/gtk20-properties.mo
+installing ug.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ug/LC_MESSAGES/gtk20-properties.mo
+installing uk.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/uk/LC_MESSAGES/gtk20-properties.mo
+installing ur.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/ur/LC_MESSAGES/gtk20-properties.mo
+installing uz.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/uz/LC_MESSAGES/gtk20-properties.mo
+installing uz@cyrillic.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/uz@cyrillic/LC_MESSAGES/gtk20-properties.mo
+installing vi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/vi/LC_MESSAGES/gtk20-properties.mo
+installing wa.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/wa/LC_MESSAGES/gtk20-properties.mo
+installing xh.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/xh/LC_MESSAGES/gtk20-properties.mo
+installing yi.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/yi/LC_MESSAGES/gtk20-properties.mo
+installing zh_CN.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/zh_CN/LC_MESSAGES/gtk20-properties.mo
+installing zh_HK.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/zh_HK/LC_MESSAGES/gtk20-properties.mo
+installing zh_TW.gmo as /build/gtk2/pkg/gtk2/usr/share/locale/zh_TW/LC_MESSAGES/gtk20-properties.mo
+if test "gtk+" = "glib"; then \
+  /bin/sh /build/gtk2/src/gtk/install-sh -d /build/gtk2/pkg/gtk2/usr/share/glib-2.0/gettext/po; \
+  /usr/bin/install -c -m 644 ./Makefile.in.in \
+		  /build/gtk2/pkg/gtk2/usr/share/glib-2.0/gettext/po/Makefile.in.in; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/build/gtk2/src/gtk/po-properties'
+Making install in gdk
+make[1]: Entering directory '/build/gtk2/src/gtk/gdk'
+make  install-recursive
+make[2]: Entering directory '/build/gtk2/src/gtk/gdk'
+Making install in x11
+make[3]: Entering directory '/build/gtk2/src/gtk/gdk/x11'
+make[4]: Entering directory '/build/gtk2/src/gtk/gdk/x11'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gdk'
+ /usr/bin/install -c -m 644 gdkx.h '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gdk'
+make[4]: Leaving directory '/build/gtk2/src/gtk/gdk/x11'
+make[3]: Leaving directory '/build/gtk2/src/gtk/gdk/x11'
+Making install in .
+make[3]: Entering directory '/build/gtk2/src/gtk/gdk'
+make[4]: Entering directory '/build/gtk2/src/gtk/gdk'
+/bin/sh /build/gtk2/src/gtk/install-sh -d /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/include
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/share/gir-1.0'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gdk'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/girepository-1.0'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgdk-x11-2.0.la '/build/gtk2/pkg/gtk2/usr/lib'
+ /usr/bin/install -c -m 644 Gdk-2.0.gir GdkX11-2.0.gir '/build/gtk2/pkg/gtk2/usr/share/gir-1.0'
+ /usr/bin/install -c -m 644 Gdk-2.0.typelib GdkX11-2.0.typelib '/build/gtk2/pkg/gtk2/usr/lib/girepository-1.0'
+ /usr/bin/install -c -m 644 gdk.h gdkapplaunchcontext.h gdkcairo.h gdkcolor.h gdkcursor.h gdkdisplay.h gdkdisplaymanager.h gdkdnd.h gdkdrawable.h gdkevents.h gdkfont.h gdkgc.h gdki18n.h gdkimage.h gdkinput.h gdkkeys.h gdkkeysyms.h gdkkeysyms-compat.h gdkpango.h gdkpixbuf.h gdkpixmap.h gdkprivate.h gdkproperty.h gdkregion.h gdkrgb.h gdkscreen.h gdkselection.h gdkspawn.h gdktestutils.h gdktypes.h gdkvisual.h gdkwindow.h gdkenumtypes.h '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gdk'
+file=/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/include/gdkconfig.h; \
+if test -r $file && cmp -s gdkconfig.h $file; then :; \
+else /usr/bin/install -c -m 644 gdkconfig.h $file; fi
+libtool: install: /usr/bin/install -c .libs/libgdk-x11-2.0.so.0.2400.33 /build/gtk2/pkg/gtk2/usr/lib/libgdk-x11-2.0.so.0.2400.33
+libtool: install: (cd /build/gtk2/pkg/gtk2/usr/lib && { ln -s -f libgdk-x11-2.0.so.0.2400.33 libgdk-x11-2.0.so.0 || { rm -f libgdk-x11-2.0.so.0 && ln -s libgdk-x11-2.0.so.0.2400.33 libgdk-x11-2.0.so.0; }; })
+libtool: install: (cd /build/gtk2/pkg/gtk2/usr/lib && { ln -s -f libgdk-x11-2.0.so.0.2400.33 libgdk-x11-2.0.so || { rm -f libgdk-x11-2.0.so && ln -s libgdk-x11-2.0.so.0.2400.33 libgdk-x11-2.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgdk-x11-2.0.lai /build/gtk2/pkg/gtk2/usr/lib/libgdk-x11-2.0.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make  install-exec-hook
+make[5]: Entering directory '/build/gtk2/src/gtk/gdk'
+/bin/sh ../sanitize-la.sh /build/gtk2/pkg/gtk2/usr/lib/libgdk-x11-2.0.la
+make[5]: Leaving directory '/build/gtk2/src/gtk/gdk'
+make[4]: Leaving directory '/build/gtk2/src/gtk/gdk'
+make[3]: Leaving directory '/build/gtk2/src/gtk/gdk'
+Making install in tests
+make[3]: Entering directory '/build/gtk2/src/gtk/gdk/tests'
+make[4]: Entering directory '/build/gtk2/src/gtk/gdk/tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/gdk/tests'
+make[3]: Leaving directory '/build/gtk2/src/gtk/gdk/tests'
+make[2]: Leaving directory '/build/gtk2/src/gtk/gdk'
+make[1]: Leaving directory '/build/gtk2/src/gtk/gdk'
+Making install in gtk
+make[1]: Entering directory '/build/gtk2/src/gtk/gtk'
+make  install-recursive
+make[2]: Entering directory '/build/gtk2/src/gtk/gtk'
+Making install in theme-bits
+make[3]: Entering directory '/build/gtk2/src/gtk/gtk/theme-bits'
+make[4]: Entering directory '/build/gtk2/src/gtk/gtk/theme-bits'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/gtk/theme-bits'
+make[3]: Leaving directory '/build/gtk2/src/gtk/gtk/theme-bits'
+Making install in .
+make[3]: Entering directory '/build/gtk2/src/gtk/gtk'
+make[4]: Entering directory '/build/gtk2/src/gtk/gtk'
+/bin/sh /build/gtk2/src/gtk/install-sh -d /build/gtk2/pkg/gtk2/usr/share/themes/Raleigh/gtk-2.0
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/bin'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gtk'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/include/gtk-unix-print-2.0/gtk'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/share/gir-1.0'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/girepository-1.0'
+ /usr/bin/install -c gtk-builder-convert '/build/gtk2/pkg/gtk2/usr/bin'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgtk-x11-2.0.la '/build/gtk2/pkg/gtk2/usr/lib'
+ /usr/bin/install -c -m 644 gtkpagesetupunixdialog.h gtkprintunixdialog.h gtkprinter.h gtkprintjob.h gtkunixprint.h '/build/gtk2/pkg/gtk2/usr/include/gtk-unix-print-2.0/gtk'
+ /usr/bin/install -c -m 644 Gtk-2.0.gir '/build/gtk2/pkg/gtk2/usr/share/gir-1.0'
+ /usr/bin/install -c -m 644 Gtk-2.0.typelib '/build/gtk2/pkg/gtk2/usr/lib/girepository-1.0'
+ /usr/bin/install -c -m 644 gtk.h gtkaboutdialog.h gtkaccelgroup.h gtkaccellabel.h gtkaccelmap.h gtkaccessible.h gtkaction.h gtkactiongroup.h gtkactivatable.h gtkadjustment.h gtkalignment.h gtkarrow.h gtkaspectframe.h gtkassistant.h gtkbbox.h gtkbin.h gtkbindings.h gtkbox.h gtkbuilder.h gtkbuildable.h gtkbutton.h gtkcalendar.h gtkcelleditable.h gtkcelllayout.h gtkcellrenderer.h gtkcellrendereraccel.h gtkcellrenderercombo.h gtkcellrendererpixbuf.h gtkcellrendererprogress.h gtkcellrendererspin.h gtkcellrendererspinner.h gtkcellrenderertext.h gtkcellrenderertoggle.h gtkcellview.h gtkcheckbutton.h gtkcheckmenuitem.h gtkclipboard.h gtkcolorbutton.h gtkcolorsel.h gtkcolorseldialog.h '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gtk'
+/usr/bin/install -c -m 644 ./gtkrc.default /build/gtk2/pkg/gtk2/usr/share/themes/Raleigh/gtk-2.0/gtkrc
+/bin/sh /build/gtk2/src/gtk/install-sh -d /build/gtk2/pkg/gtk2/usr/share/themes/Default/gtk-2.0-key
+ /usr/bin/install -c -m 644 gtkcombobox.h gtkcomboboxentry.h gtkcomboboxtext.h gtkcontainer.h gtkdebug.h gtkdialog.h gtkdnd.h gtkdrawingarea.h gtkeditable.h gtkentry.h gtkentrybuffer.h gtkentrycompletion.h gtkenums.h gtkeventbox.h gtkexpander.h gtkfilechooser.h gtkfilechooserbutton.h gtkfilechooserdialog.h gtkfilechooserwidget.h gtkfilefilter.h gtkfixed.h gtkfontbutton.h gtkfontsel.h gtkframe.h gtkgc.h gtkhandlebox.h gtkhbbox.h gtkhbox.h gtkhpaned.h gtkhruler.h gtkhscale.h gtkhscrollbar.h gtkhseparator.h gtkhsv.h gtkiconfactory.h gtkicontheme.h gtkiconview.h gtkimage.h gtkimagemenuitem.h gtkimcontext.h '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gtk'
+ /usr/bin/install -c -m 644 gtkimcontextsimple.h gtkimmodule.h gtkimmulticontext.h gtkinfobar.h gtkinvisible.h gtkitem.h gtklabel.h gtklayout.h gtklinkbutton.h gtkliststore.h gtkmain.h gtkmenu.h gtkmenubar.h gtkmenuitem.h gtkmenushell.h gtkmenutoolbutton.h gtkmessagedialog.h gtkmisc.h gtkmodules.h gtkmountoperation.h gtknotebook.h gtkobject.h gtkoffscreenwindow.h gtkorientable.h gtkpagesetup.h gtkpaned.h gtkpapersize.h gtkplug.h gtkprintcontext.h gtkprintoperation.h gtkprintoperationpreview.h gtkprintsettings.h gtkprivate.h gtkprogressbar.h gtkradioaction.h gtkradiobutton.h gtkradiomenuitem.h gtkradiotoolbutton.h gtkrange.h gtkrc.h '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gtk'
+/usr/bin/install -c -m 644 ./gtkrc.key.default /build/gtk2/pkg/gtk2/usr/share/themes/Default/gtk-2.0-key/gtkrc
+/bin/sh /build/gtk2/src/gtk/install-sh -d /build/gtk2/pkg/gtk2/usr/share/themes/Emacs/gtk-2.0-key
+ /usr/bin/install -c -m 644 gtkrecentaction.h gtkrecentchooser.h gtkrecentchooserdialog.h gtkrecentchoosermenu.h gtkrecentchooserwidget.h gtkrecentfilter.h gtkrecentmanager.h gtkruler.h gtkscale.h gtkscalebutton.h gtkscrollbar.h gtkscrolledwindow.h gtkselection.h gtkseparator.h gtkseparatormenuitem.h gtkseparatortoolitem.h gtkshow.h gtksettings.h gtksizegroup.h gtksocket.h gtkspinbutton.h gtkspinner.h gtkstatusbar.h gtkstatusicon.h gtkstock.h gtkstyle.h gtktable.h gtktearoffmenuitem.h gtktestutils.h gtktextbuffer.h gtktextbufferrichtext.h gtktextchild.h gtktextdisplay.h gtktextiter.h gtktextmark.h gtktexttag.h gtktexttagtable.h gtktextview.h gtktoggleaction.h gtktogglebutton.h '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gtk'
+libtool: warning: relinking 'libgtk-x11-2.0.la'
+libtool: install: (cd /build/gtk2/src/gtk/gtk; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -version-info 2400:33:2400 -export-dynamic -export-symbols-regex "^[^_].*" -rpath /usr/lib -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o libgtk-x11-2.0.la gtkquery.lo gtksearchengine.lo gtksearchenginesimple.lo fnmatch.lo gtkaboutdialog.lo gtkaccelgroup.lo gtkaccellabel.lo gtkaccelmap.lo gtkaccessible.lo gtkaction.lo gtkactiongroup.lo gtkactivatable.lo gtkadjustment.lo gtkalignment.lo gtkarrow.lo gtkaspectframe.lo gtkassistant.lo gtkbbox.lo gtkbin.lo gtkbindings.lo gtkbox.lo gtkbuildable.lo gtkbuilder.lo gtkbuilderparser.lo gtkbutton.lo gtkcalendar.lo gtkcelleditable.lo gtkcelllayout.lo gtkcellrenderer.lo gtkcellrendereraccel.lo gtkcellrenderercombo.lo gtkcellrendererpixbuf.lo gtkcellrendererprogress.lo gtkcellrendererspin.lo gtkcellrendererspinner.lo gtkcellrenderertext.lo gtkcellrenderertoggle.lo gtkcellview.lo gtkcheckbutton.lo gtkcheckmenuitem.lo gtkcolorbutton.lo gtkcolorsel.lo gtkcolorseldialog.lo gtkcombobox.lo gtkcomboboxentry.lo gtkcomboboxtext.lo gtkcontainer.lo gtkdialog.lo gtkdrawingarea.lo gtkeditable.lo gtkentry.lo gtkentrybuffer.lo gtkentrycompletion.lo gtkeventbox.lo gtkexpander.lo gtkfilechooser.lo gtkfilechooserbutton.lo gtkfilechooserdefault.lo gtkfilechooserdialog.lo gtkfilechooserembed.lo gtkfilechooserentry.lo gtkfilechoosersettings.lo gtkfilechooserutils.lo gtkfilechooserwidget.lo gtkfilefilter.lo gtkfilesystem.lo gtkfilesystemmodel.lo gtkfixed.lo gtkfontbutton.lo gtkfontsel.lo gtkframe.lo gtkgc.lo gtkhandlebox.lo gtkhbbox.lo gtkhbox.lo gtkhpaned.lo gtkhruler.lo gtkhscale.lo gtkhscrollbar.lo gtkhseparator.lo gtkhsv.lo gtkiconcache.lo gtkiconcachevalidator.lo gtkiconfactory.lo gtkicontheme.lo gtkiconview.lo gtkimage.lo gtkimagemenuitem.lo gtkimcontext.lo gtkimcontextsimple.lo gtkimmodule.lo gtkimmulticontext.lo gtkinfobar.lo gtkinputdialog.lo gtkinvisible.lo gtkitem.lo gtkkeyhash.lo gtklabel.lo gtklayout.lo gtklinkbutton.lo gtkliststore.lo gtkmain.lo gtkmarshal.lo gtkmarshalers.lo gtkmenu.lo gtkmenubar.lo gtkmenuitem.lo gtkmenushell.lo gtkmenutoolbutton.lo gtkmessagedialog.lo gtkmisc.lo gtkmnemonichash.lo gtkmodules.lo gtkmountoperation.lo gtknotebook.lo gtkobject.lo gtkoffscreenwindow.lo gtkorientable.lo gtkpagesetup.lo gtkpaned.lo gtkpango.lo gtkpapersize.lo gtkpathbar.lo gtkplug.lo gtkprintcontext.lo gtkprintoperation.lo gtkprintoperationpreview.lo gtkprintsettings.lo gtkprintutils.lo gtkprogressbar.lo gtkradioaction.lo gtkradiobutton.lo gtkradiomenuitem.lo gtkradiotoolbutton.lo gtkrange.lo gtkrbtree.lo gtkrc.lo gtkrecentaction.lo gtkrecentchooserdefault.lo gtkrecentchooserdialog.lo gtkrecentchoosermenu.lo gtkrecentchooserwidget.lo gtkrecentchooserutils.lo gtkrecentchooser.lo gtkrecentfilter.lo gtkrecentmanager.lo gtkruler.lo gtkscale.lo gtkscalebutton.lo gtkscrollbar.lo gtkscrolledwindow.lo gtkselection.lo gtkseparator.lo gtkseparatormenuitem.lo gtkseparatortoolitem.lo gtksettings.lo gtksizegroup.lo gtkshow.lo gtksocket.lo gtkspinbutton.lo gtkspinner.lo gtkstatusbar.lo gtkstatusicon.lo gtkstock.lo gtkstyle.lo gtktable.lo gtktearoffmenuitem.lo gtktestutils.lo gtktextbtree.lo gtktextbuffer.lo gtktextbufferrichtext.lo gtktextbufferserialize.lo gtktextchild.lo gtktextdisplay.lo gtktextiter.lo gtktextlayout.lo gtktextmark.lo gtktextsegment.lo gtktexttag.lo gtktexttagtable.lo gtktexttypes.lo gtktextutil.lo gtktextview.lo gtkthemes.lo gtktoggleaction.lo gtktogglebutton.lo gtktoggletoolbutton.lo gtktoolbar.lo gtktoolbutton.lo gtktoolitem.lo gtktoolitemgroup.lo gtktoolpalette.lo gtktoolshell.lo gtktooltip.lo gtktreedatalist.lo gtktreednd.lo gtktreemodel.lo gtktreemodelfilter.lo gtktreemodelsort.lo gtktreeselection.lo gtktreesortable.lo gtktreestore.lo gtktreeview.lo gtktreeviewcolumn.lo gtktypebuiltins.lo gtktypeutils.lo gtkuimanager.lo gtkvbbox.lo gtkvbox.lo gtkvolumebutton.lo gtkviewport.lo gtkvpaned.lo gtkvruler.lo gtkvscale.lo gtkvscrollbar.lo gtkvseparator.lo gtkwidget.lo gtkwindow-decorate.lo gtkwindow.lo gtkclipboard.lo gtkdnd.lo gtktext.lo gtktree.lo gtktreeitem.lo gtkclist.lo gtkcombo.lo gtkctree.lo gtkcurve.lo gtkfilesel.lo gtkgamma.lo gtkitemfactory.lo gtklist.lo gtklistitem.lo gtkoldeditable.lo gtkoptionmenu.lo gtkpixmap.lo gtkpreview.lo gtkprogress.lo gtksignal.lo gtktipsquery.lo gtktooltips.lo gtkcustompaperunixdialog.lo gtkpagesetupunixdialog.lo gtkprinter.lo gtkprinteroption.lo gtkprinteroptionset.lo gtkprinteroptionwidget.lo gtkprintjob.lo gtkprintoperation-unix.lo gtkprintunixdialog.lo gtkprintbackend.lo gtksearchenginebeagle.lo gtksearchenginetracker.lo gtkplug-x11.lo gtksocket-x11.lo gtkxembed.lo gtktrayicon-x11.lo gtkmountoperation-x11.lo ../gdk/libgdk-x11-2.0.la -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+ /usr/bin/install -c -m 644 gtktoggletoolbutton.h gtktoolbar.h gtktoolbutton.h gtktoolitem.h gtktoolitemgroup.h gtktoolpalette.h gtktoolshell.h gtktooltip.h gtktreednd.h gtktreemodel.h gtktreemodelfilter.h gtktreemodelsort.h gtktreeselection.h gtktreesortable.h gtktreestore.h gtktreeview.h gtktreeviewcolumn.h gtktypeutils.h gtkuimanager.h gtkvbbox.h gtkvbox.h gtkviewport.h gtkvolumebutton.h gtkvpaned.h gtkvruler.h gtkvscale.h gtkvscrollbar.h gtkvseparator.h gtkwidget.h gtkwindow.h gtktext.h gtktree.h gtktreeitem.h gtkclist.h gtkcombo.h gtkctree.h gtkcurve.h gtkfilesel.h gtkgamma.h gtkinputdialog.h '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gtk'
+/usr/bin/install -c -m 644 ./gtkrc.key.emacs /build/gtk2/pkg/gtk2/usr/share/themes/Emacs/gtk-2.0-key/gtkrc
+ /usr/bin/install -c -m 644 gtkitemfactory.h gtklist.h gtklistitem.h gtkoldeditable.h gtkoptionmenu.h gtkpixmap.h gtkpreview.h gtkprogress.h gtksignal.h gtktipsquery.h gtktooltips.h gtktextlayout.h gtkmarshal.h gtktypebuiltins.h gtkversion.h '/build/gtk2/pkg/gtk2/usr/include/gtk-2.0/gtk'
+libtool: relink: /usr/bin/nm -B  .libs/gtkquery.o .libs/gtksearchengine.o .libs/gtksearchenginesimple.o .libs/fnmatch.o .libs/gtkaboutdialog.o .libs/gtkaccelgroup.o .libs/gtkaccellabel.o .libs/gtkaccelmap.o .libs/gtkaccessible.o .libs/gtkaction.o .libs/gtkactiongroup.o .libs/gtkactivatable.o .libs/gtkadjustment.o .libs/gtkalignment.o .libs/gtkarrow.o .libs/gtkaspectframe.o .libs/gtkassistant.o .libs/gtkbbox.o .libs/gtkbin.o .libs/gtkbindings.o .libs/gtkbox.o .libs/gtkbuildable.o .libs/gtkbuilder.o .libs/gtkbuilderparser.o .libs/gtkbutton.o .libs/gtkcalendar.o .libs/gtkcelleditable.o .libs/gtkcelllayout.o .libs/gtkcellrenderer.o .libs/gtkcellrendereraccel.o .libs/gtkcellrenderercombo.o .libs/gtkcellrendererpixbuf.o .libs/gtkcellrendererprogress.o .libs/gtkcellrendererspin.o .libs/gtkcellrendererspinner.o .libs/gtkcellrenderertext.o .libs/gtkcellrenderertoggle.o .libs/gtkcellview.o .libs/gtkcheckbutton.o .libs/gtkcheckmenuitem.o .libs/gtkcolorbutton.o .libs/gtkcolorsel.o .libs/gtkcolorseldialog.o .libs/gtkcombobox.o .libs/gtkcomboboxentry.o .libs/gtkcomboboxtext.o .libs/gtkcontainer.o .libs/gtkdialog.o .libs/gtkdrawingarea.o .libs/gtkeditable.o .libs/gtkentry.o .libs/gtkentrybuffer.o .libs/gtkentrycompletion.o .libs/gtkeventbox.o .libs/gtkexpander.o .libs/gtkfilechooser.o .libs/gtkfilechooserbutton.o .libs/gtkfilechooserdefault.o .libs/gtkfilechooserdialog.o .libs/gtkfilechooserembed.o .libs/gtkfilechooserentry.o .libs/gtkfilechoosersettings.o .libs/gtkfilechooserutils.o .libs/gtkfilechooserwidget.o .libs/gtkfilefilter.o .libs/gtkfilesystem.o .libs/gtkfilesystemmodel.o .libs/gtkfixed.o .libs/gtkfontbutton.o .libs/gtkfontsel.o .libs/gtkframe.o .libs/gtkgc.o .libs/gtkhandlebox.o .libs/gtkhbbox.o .libs/gtkhbox.o .libs/gtkhpaned.o .libs/gtkhruler.o .libs/gtkhscale.o .libs/gtkhscrollbar.o .libs/gtkhseparator.o .libs/gtkhsv.o .libs/gtkiconcache.o .libs/gtkiconcachevalidator.o .libs/gtkiconfactory.o .libs/gtkicontheme.o .libs/gtkiconview.o .libs/gtkimage.o .libs/gtkimagemenuitem.o .libs/gtkimcontext.o .libs/gtkimcontextsimple.o .libs/gtkimmodule.o .libs/gtkimmulticontext.o .libs/gtkinfobar.o .libs/gtkinputdialog.o .libs/gtkinvisible.o .libs/gtkitem.o .libs/gtkkeyhash.o .libs/gtklabel.o .libs/gtklayout.o .libs/gtklinkbutton.o .libs/gtkliststore.o .libs/gtkmain.o .libs/gtkmarshal.o .libs/gtkmarshalers.o .libs/gtkmenu.o .libs/gtkmenubar.o .libs/gtkmenuitem.o .libs/gtkmenushell.o .libs/gtkmenutoolbutton.o .libs/gtkmessagedialog.o .libs/gtkmisc.o .libs/gtkmnemonichash.o .libs/gtkmodules.o .libs/gtkmountoperation.o .libs/gtknotebook.o .libs/gtkobject.o .libs/gtkoffscreenwindow.o .libs/gtkorientable.o .libs/gtkpagesetup.o .libs/gtkpaned.o .libs/gtkpango.o .libs/gtkpapersize.o .libs/gtkpathbar.o .libs/gtkplug.o .libs/gtkprintcontext.o .libs/gtkprintoperation.o .libs/gtkprintoperationpreview.o .libs/gtkprintsettings.o .libs/gtkprintutils.o .libs/gtkprogressbar.o .libs/gtkradioaction.o .libs/gtkradiobutton.o .libs/gtkradiomenuitem.o .libs/gtkradiotoolbutton.o .libs/gtkrange.o .libs/gtkrbtree.o .libs/gtkrc.o .libs/gtkrecentaction.o .libs/gtkrecentchooserdefault.o .libs/gtkrecentchooserdialog.o .libs/gtkrecentchoosermenu.o .libs/gtkrecentchooserwidget.o .libs/gtkrecentchooserutils.o .libs/gtkrecentchooser.o .libs/gtkrecentfilter.o .libs/gtkrecentmanager.o .libs/gtkruler.o .libs/gtkscale.o .libs/gtkscalebutton.o .libs/gtkscrollbar.o .libs/gtkscrolledwindow.o .libs/gtkselection.o .libs/gtkseparator.o .libs/gtkseparatormenuitem.o .libs/gtkseparatortoolitem.o .libs/gtksettings.o .libs/gtksizegroup.o .libs/gtkshow.o .libs/gtksocket.o .libs/gtkspinbutton.o .libs/gtkspinner.o .libs/gtkstatusbar.o .libs/gtkstatusicon.o .libs/gtkstock.o .libs/gtkstyle.o .libs/gtktable.o .libs/gtktearoffmenuitem.o .libs/gtktestutils.o .libs/gtktextbtree.o .libs/gtktextbuffer.o .libs/gtktextbufferrichtext.o .libs/gtktextbufferserialize.o .libs/gtktextchild.o .libs/gtktextdisplay.o .libs/gtktextiter.o .libs/gtktextlayout.o .libs/gtktextmark.o .libs/gtktextsegment.o .libs/gtktexttag.o .libs/gtktexttagtable.o .libs/gtktexttypes.o .libs/gtktextutil.o .libs/gtktextview.o .libs/gtkthemes.o .libs/gtktoggleaction.o .libs/gtktogglebutton.o .libs/gtktoggletoolbutton.o .libs/gtktoolbar.o .libs/gtktoolbutton.o .libs/gtktoolitem.o .libs/gtktoolitemgroup.o .libs/gtktoolpalette.o .libs/gtktoolshell.o .libs/gtktooltip.o .libs/gtktreedatalist.o .libs/gtktreednd.o .libs/gtktreemodel.o .libs/gtktreemodelfilter.o .libs/gtktreemodelsort.o .libs/gtktreeselection.o .libs/gtktreesortable.o .libs/gtktreestore.o .libs/gtktreeview.o .libs/gtktreeviewcolumn.o .libs/gtktypebuiltins.o .libs/gtktypeutils.o .libs/gtkuimanager.o .libs/gtkvbbox.o .libs/gtkvbox.o .libs/gtkvolumebutton.o .libs/gtkviewport.o .libs/gtkvpaned.o .libs/gtkvruler.o .libs/gtkvscale.o .libs/gtkvscrollbar.o .libs/gtkvseparator.o .libs/gtkwidget.o .libs/gtkwindow-decorate.o .libs/gtkwindow.o .libs/gtkclipboard.o .libs/gtkdnd.o .libs/gtktext.o .libs/gtktree.o .libs/gtktreeitem.o .libs/gtkclist.o .libs/gtkcombo.o .libs/gtkctree.o .libs/gtkcurve.o .libs/gtkfilesel.o .libs/gtkgamma.o .libs/gtkitemfactory.o .libs/gtklist.o .libs/gtklistitem.o .libs/gtkoldeditable.o .libs/gtkoptionmenu.o .libs/gtkpixmap.o .libs/gtkpreview.o .libs/gtkprogress.o .libs/gtksignal.o .libs/gtktipsquery.o .libs/gtktooltips.o .libs/gtkcustompaperunixdialog.o .libs/gtkpagesetupunixdialog.o .libs/gtkprinter.o .libs/gtkprinteroption.o .libs/gtkprinteroptionset.o .libs/gtkprinteroptionwidget.o .libs/gtkprintjob.o .libs/gtkprintoperation-unix.o .libs/gtkprintunixdialog.o .libs/gtkprintbackend.o .libs/gtksearchenginebeagle.o .libs/gtksearchenginetracker.o .libs/gtkplug-x11.o .libs/gtksocket-x11.o .libs/gtkxembed.o .libs/gtktrayicon-x11.o .libs/gtkmountoperation-x11.o   | /usr/bin/sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | /usr/bin/sed '/ __gnu_lto/d' | /usr/bin/sed 's/.* //' | sort | uniq > .libs/libgtk-x11-2.0.expsym
+libtool: relink: /usr/bin/grep -E -e "^[^_].*" ".libs/libgtk-x11-2.0.expsym" > ".libs/libgtk-x11-2.0.expsymT"
+libtool: relink: mv -f ".libs/libgtk-x11-2.0.expsymT" ".libs/libgtk-x11-2.0.expsym"
+libtool: relink: echo "{ global:" > .libs/libgtk-x11-2.0.ver
+libtool: relink:  cat .libs/libgtk-x11-2.0.expsym | /usr/bin/sed -e "s/\(.*\)/\1;/" >> .libs/libgtk-x11-2.0.ver
+libtool: relink:  echo "local: *; };" >> .libs/libgtk-x11-2.0.ver
+libtool: relink:  gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/gtkquery.o .libs/gtksearchengine.o .libs/gtksearchenginesimple.o .libs/fnmatch.o .libs/gtkaboutdialog.o .libs/gtkaccelgroup.o .libs/gtkaccellabel.o .libs/gtkaccelmap.o .libs/gtkaccessible.o .libs/gtkaction.o .libs/gtkactiongroup.o .libs/gtkactivatable.o .libs/gtkadjustment.o .libs/gtkalignment.o .libs/gtkarrow.o .libs/gtkaspectframe.o .libs/gtkassistant.o .libs/gtkbbox.o .libs/gtkbin.o .libs/gtkbindings.o .libs/gtkbox.o .libs/gtkbuildable.o .libs/gtkbuilder.o .libs/gtkbuilderparser.o .libs/gtkbutton.o .libs/gtkcalendar.o .libs/gtkcelleditable.o .libs/gtkcelllayout.o .libs/gtkcellrenderer.o .libs/gtkcellrendereraccel.o .libs/gtkcellrenderercombo.o .libs/gtkcellrendererpixbuf.o .libs/gtkcellrendererprogress.o .libs/gtkcellrendererspin.o .libs/gtkcellrendererspinner.o .libs/gtkcellrenderertext.o .libs/gtkcellrenderertoggle.o .libs/gtkcellview.o .libs/gtkcheckbutton.o .libs/gtkcheckmenuitem.o .libs/gtkcolorbutton.o .libs/gtkcolorsel.o .libs/gtkcolorseldialog.o .libs/gtkcombobox.o .libs/gtkcomboboxentry.o .libs/gtkcomboboxtext.o .libs/gtkcontainer.o .libs/gtkdialog.o .libs/gtkdrawingarea.o .libs/gtkeditable.o .libs/gtkentry.o .libs/gtkentrybuffer.o .libs/gtkentrycompletion.o .libs/gtkeventbox.o .libs/gtkexpander.o .libs/gtkfilechooser.o .libs/gtkfilechooserbutton.o .libs/gtkfilechooserdefault.o .libs/gtkfilechooserdialog.o .libs/gtkfilechooserembed.o .libs/gtkfilechooserentry.o .libs/gtkfilechoosersettings.o .libs/gtkfilechooserutils.o .libs/gtkfilechooserwidget.o .libs/gtkfilefilter.o .libs/gtkfilesystem.o .libs/gtkfilesystemmodel.o .libs/gtkfixed.o .libs/gtkfontbutton.o .libs/gtkfontsel.o .libs/gtkframe.o .libs/gtkgc.o .libs/gtkhandlebox.o .libs/gtkhbbox.o .libs/gtkhbox.o .libs/gtkhpaned.o .libs/gtkhruler.o .libs/gtkhscale.o .libs/gtkhscrollbar.o .libs/gtkhseparator.o .libs/gtkhsv.o .libs/gtkiconcache.o .libs/gtkiconcachevalidator.o .libs/gtkiconfactory.o .libs/gtkicontheme.o .libs/gtkiconview.o .libs/gtkimage.o .libs/gtkimagemenuitem.o .libs/gtkimcontext.o .libs/gtkimcontextsimple.o .libs/gtkimmodule.o .libs/gtkimmulticontext.o .libs/gtkinfobar.o .libs/gtkinputdialog.o .libs/gtkinvisible.o .libs/gtkitem.o .libs/gtkkeyhash.o .libs/gtklabel.o .libs/gtklayout.o .libs/gtklinkbutton.o .libs/gtkliststore.o .libs/gtkmain.o .libs/gtkmarshal.o .libs/gtkmarshalers.o .libs/gtkmenu.o .libs/gtkmenubar.o .libs/gtkmenuitem.o .libs/gtkmenushell.o .libs/gtkmenutoolbutton.o .libs/gtkmessagedialog.o .libs/gtkmisc.o .libs/gtkmnemonichash.o .libs/gtkmodules.o .libs/gtkmountoperation.o .libs/gtknotebook.o .libs/gtkobject.o .libs/gtkoffscreenwindow.o .libs/gtkorientable.o .libs/gtkpagesetup.o .libs/gtkpaned.o .libs/gtkpango.o .libs/gtkpapersize.o .libs/gtkpathbar.o .libs/gtkplug.o .libs/gtkprintcontext.o .libs/gtkprintoperation.o .libs/gtkprintoperationpreview.o .libs/gtkprintsettings.o .libs/gtkprintutils.o .libs/gtkprogressbar.o .libs/gtkradioaction.o .libs/gtkradiobutton.o .libs/gtkradiomenuitem.o .libs/gtkradiotoolbutton.o .libs/gtkrange.o .libs/gtkrbtree.o .libs/gtkrc.o .libs/gtkrecentaction.o .libs/gtkrecentchooserdefault.o .libs/gtkrecentchooserdialog.o .libs/gtkrecentchoosermenu.o .libs/gtkrecentchooserwidget.o .libs/gtkrecentchooserutils.o .libs/gtkrecentchooser.o .libs/gtkrecentfilter.o .libs/gtkrecentmanager.o .libs/gtkruler.o .libs/gtkscale.o .libs/gtkscalebutton.o .libs/gtkscrollbar.o .libs/gtkscrolledwindow.o .libs/gtkselection.o .libs/gtkseparator.o .libs/gtkseparatormenuitem.o .libs/gtkseparatortoolitem.o .libs/gtksettings.o .libs/gtksizegroup.o .libs/gtkshow.o .libs/gtksocket.o .libs/gtkspinbutton.o .libs/gtkspinner.o .libs/gtkstatusbar.o .libs/gtkstatusicon.o .libs/gtkstock.o .libs/gtkstyle.o .libs/gtktable.o .libs/gtktearoffmenuitem.o .libs/gtktestutils.o .libs/gtktextbtree.o .libs/gtktextbuffer.o .libs/gtktextbufferrichtext.o .libs/gtktextbufferserialize.o .libs/gtktextchild.o .libs/gtktextdisplay.o .libs/gtktextiter.o .libs/gtktextlayout.o .libs/gtktextmark.o .libs/gtktextsegment.o .libs/gtktexttag.o .libs/gtktexttagtable.o .libs/gtktexttypes.o .libs/gtktextutil.o .libs/gtktextview.o .libs/gtkthemes.o .libs/gtktoggleaction.o .libs/gtktogglebutton.o .libs/gtktoggletoolbutton.o .libs/gtktoolbar.o .libs/gtktoolbutton.o .libs/gtktoolitem.o .libs/gtktoolitemgroup.o .libs/gtktoolpalette.o .libs/gtktoolshell.o .libs/gtktooltip.o .libs/gtktreedatalist.o .libs/gtktreednd.o .libs/gtktreemodel.o .libs/gtktreemodelfilter.o .libs/gtktreemodelsort.o .libs/gtktreeselection.o .libs/gtktreesortable.o .libs/gtktreestore.o .libs/gtktreeview.o .libs/gtktreeviewcolumn.o .libs/gtktypebuiltins.o .libs/gtktypeutils.o .libs/gtkuimanager.o .libs/gtkvbbox.o .libs/gtkvbox.o .libs/gtkvolumebutton.o .libs/gtkviewport.o .libs/gtkvpaned.o .libs/gtkvruler.o .libs/gtkvscale.o .libs/gtkvscrollbar.o .libs/gtkvseparator.o .libs/gtkwidget.o .libs/gtkwindow-decorate.o .libs/gtkwindow.o .libs/gtkclipboard.o .libs/gtkdnd.o .libs/gtktext.o .libs/gtktree.o .libs/gtktreeitem.o .libs/gtkclist.o .libs/gtkcombo.o .libs/gtkctree.o .libs/gtkcurve.o .libs/gtkfilesel.o .libs/gtkgamma.o .libs/gtkitemfactory.o .libs/gtklist.o .libs/gtklistitem.o .libs/gtkoldeditable.o .libs/gtkoptionmenu.o .libs/gtkpixmap.o .libs/gtkpreview.o .libs/gtkprogress.o .libs/gtksignal.o .libs/gtktipsquery.o .libs/gtktooltips.o .libs/gtkcustompaperunixdialog.o .libs/gtkpagesetupunixdialog.o .libs/gtkprinter.o .libs/gtkprinteroption.o .libs/gtkprinteroptionset.o .libs/gtkprinteroptionwidget.o .libs/gtkprintjob.o .libs/gtkprintoperation-unix.o .libs/gtkprintunixdialog.o .libs/gtkprintbackend.o .libs/gtksearchenginebeagle.o .libs/gtksearchenginetracker.o .libs/gtkplug-x11.o .libs/gtksocket-x11.o .libs/gtkxembed.o .libs/gtktrayicon-x11.o .libs/gtkmountoperation-x11.o   -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -Wl,--export-dynamic   -pthread -Wl,-soname -Wl,libgtk-x11-2.0.so.0 -Wl,-version-script -Wl,.libs/libgtk-x11-2.0.ver -o .libs/libgtk-x11-2.0.so.0.2400.33
+libtool: install: /usr/bin/install -c .libs/libgtk-x11-2.0.so.0.2400.33T /build/gtk2/pkg/gtk2/usr/lib/libgtk-x11-2.0.so.0.2400.33
+libtool: install: (cd /build/gtk2/pkg/gtk2/usr/lib && { ln -s -f libgtk-x11-2.0.so.0.2400.33 libgtk-x11-2.0.so.0 || { rm -f libgtk-x11-2.0.so.0 && ln -s libgtk-x11-2.0.so.0.2400.33 libgtk-x11-2.0.so.0; }; })
+libtool: install: (cd /build/gtk2/pkg/gtk2/usr/lib && { ln -s -f libgtk-x11-2.0.so.0.2400.33 libgtk-x11-2.0.so || { rm -f libgtk-x11-2.0.so && ln -s libgtk-x11-2.0.so.0.2400.33 libgtk-x11-2.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgtk-x11-2.0.lai /build/gtk2/pkg/gtk2/usr/lib/libgtk-x11-2.0.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c gtk-query-immodules-2.0 gtk-update-icon-cache '/build/gtk2/pkg/gtk2/usr/bin'
+libtool: warning: 'libgtk-x11-2.0.la' has not been installed in '/usr/lib'
+libtool: warning: '/build/gtk2/src/gtk/gdk/libgdk-x11-2.0.la' has not been installed in '/usr/lib'
+libtool: warning: '../gdk/libgdk-x11-2.0.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/gtk-query-immodules-2.0 /build/gtk2/pkg/gtk2/usr/bin/gtk-query-immodules-2.0
+libtool: install: /usr/bin/install -c gtk-update-icon-cache /build/gtk2/pkg/gtk2/usr/bin/gtk-update-icon-cache
+make  install-exec-hook
+make[5]: Entering directory '/build/gtk2/src/gtk/gtk'
+/bin/sh ../sanitize-la.sh /build/gtk2/pkg/gtk2/usr/lib/libgtk-x11-2.0.la
+make[5]: Leaving directory '/build/gtk2/src/gtk/gtk'
+make[4]: Leaving directory '/build/gtk2/src/gtk/gtk'
+make[3]: Leaving directory '/build/gtk2/src/gtk/gtk'
+Making install in tests
+make[3]: Entering directory '/build/gtk2/src/gtk/gtk/tests'
+make[4]: Entering directory '/build/gtk2/src/gtk/gtk/tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/gtk/tests'
+make[3]: Leaving directory '/build/gtk2/src/gtk/gtk/tests'
+make[2]: Leaving directory '/build/gtk2/src/gtk/gtk'
+make[1]: Leaving directory '/build/gtk2/src/gtk/gtk'
+Making install in modules
+make[1]: Entering directory '/build/gtk2/src/gtk/modules'
+Making install in input
+make[2]: Entering directory '/build/gtk2/src/gtk/modules/input'
+make[3]: Entering directory '/build/gtk2/src/gtk/modules/input'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/etc/gtk-2.0'
+ /usr/bin/install -c -m 644 im-multipress.conf '/build/gtk2/pkg/gtk2/etc/gtk-2.0'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   im-am-et.la im-cedilla.la im-cyrillic-translit.la im-inuktitut.la im-ipa.la im-multipress.la im-thai.la im-ti-er.la im-ti-et.la im-viqr.la im-xim.la '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules'
+libtool: warning: relinking 'im-am-et.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-am-et.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules imam-et.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/imam-et.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-am-et.so -o .libs/im-am-et.so
+libtool: install: /usr/bin/install -c .libs/im-am-et.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-am-et.so
+libtool: install: /usr/bin/install -c .libs/im-am-et.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-am-et.la
+libtool: warning: relinking 'im-cedilla.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-cedilla.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules imcedilla.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/imcedilla.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-cedilla.so -o .libs/im-cedilla.so
+libtool: install: /usr/bin/install -c .libs/im-cedilla.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-cedilla.so
+libtool: install: /usr/bin/install -c .libs/im-cedilla.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-cedilla.la
+libtool: warning: relinking 'im-cyrillic-translit.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-cyrillic-translit.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules imcyrillic-translit.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/imcyrillic-translit.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-cyrillic-translit.so -o .libs/im-cyrillic-translit.so
+libtool: install: /usr/bin/install -c .libs/im-cyrillic-translit.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-cyrillic-translit.so
+libtool: install: /usr/bin/install -c .libs/im-cyrillic-translit.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-cyrillic-translit.la
+libtool: warning: relinking 'im-inuktitut.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-inuktitut.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules iminuktitut.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/iminuktitut.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-inuktitut.so -o .libs/im-inuktitut.so
+libtool: install: /usr/bin/install -c .libs/im-inuktitut.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-inuktitut.so
+libtool: install: /usr/bin/install -c .libs/im-inuktitut.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-inuktitut.la
+libtool: warning: relinking 'im-ipa.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-ipa.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules imipa.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/imipa.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-ipa.so -o .libs/im-ipa.so
+libtool: install: /usr/bin/install -c .libs/im-ipa.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-ipa.so
+libtool: install: /usr/bin/install -c .libs/im-ipa.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-ipa.la
+libtool: warning: relinking 'im-multipress.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-multipress.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules im_multipress_la-gtkimcontextmultipress.lo im_multipress_la-immultipress.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/im_multipress_la-gtkimcontextmultipress.o .libs/im_multipress_la-immultipress.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-multipress.so -o .libs/im-multipress.so
+libtool: install: /usr/bin/install -c .libs/im-multipress.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-multipress.so
+libtool: install: /usr/bin/install -c .libs/im-multipress.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-multipress.la
+libtool: warning: relinking 'im-thai.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-thai.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules thai-charprop.lo gtkimcontextthai.lo imthai.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/thai-charprop.o .libs/gtkimcontextthai.o .libs/imthai.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-thai.so -o .libs/im-thai.so
+libtool: install: /usr/bin/install -c .libs/im-thai.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-thai.so
+libtool: install: /usr/bin/install -c .libs/im-thai.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-thai.la
+libtool: warning: relinking 'im-ti-er.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-ti-er.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules imti-er.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/imti-er.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-ti-er.so -o .libs/im-ti-er.so
+libtool: install: /usr/bin/install -c .libs/im-ti-er.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-ti-er.so
+libtool: install: /usr/bin/install -c .libs/im-ti-er.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-ti-er.la
+libtool: warning: relinking 'im-ti-et.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-ti-et.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules imti-et.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/imti-et.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-ti-et.so -o .libs/im-ti-et.so
+libtool: install: /usr/bin/install -c .libs/im-ti-et.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-ti-et.so
+libtool: install: /usr/bin/install -c .libs/im-ti-et.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-ti-et.la
+libtool: warning: relinking 'im-viqr.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-viqr.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules imviqr.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/imviqr.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-viqr.so -o .libs/im-viqr.so
+libtool: install: /usr/bin/install -c .libs/im-viqr.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-viqr.so
+libtool: install: /usr/bin/install -c .libs/im-viqr.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-viqr.la
+libtool: warning: relinking 'im-xim.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/input; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/2.10.0/immodules -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o im-xim.la -rpath /usr/lib/gtk-2.0/2.10.0/immodules gtkimcontextxim.lo imxim.lo ../../gdk/libgdk-x11-2.0.la ../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/gtkimcontextxim.o .libs/imxim.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,im-xim.so -o .libs/im-xim.so
+libtool: install: /usr/bin/install -c .libs/im-xim.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-xim.so
+libtool: install: /usr/bin/install -c .libs/im-xim.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/immodules/im-xim.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/gtk-2.0/2.10.0/immodules'
+make  install-data-hook
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/input'
+***
+*** Warning: immodules.cache not built
+***
+*** Generate this file manually on host
+*** system using gtk-query-immodules-2.0
+***
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/input'
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules/input'
+make[2]: Leaving directory '/build/gtk2/src/gtk/modules/input'
+Making install in engines
+make[2]: Entering directory '/build/gtk2/src/gtk/modules/engines'
+Making install in pixbuf
+make[3]: Entering directory '/build/gtk2/src/gtk/modules/engines/pixbuf'
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/engines/pixbuf'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/engines'
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libpixmap.la '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/engines'
+libtool: warning: relinking 'libpixmap.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/engines/pixbuf; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o libpixmap.la -rpath /usr/lib/gtk-2.0/2.10.0/engines pixbuf-draw.lo pixbuf-main.lo pixbuf-render.lo pixbuf-rc-style.lo -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm ../../../gdk/libgdk-x11-2.0.la ../../../gtk/libgtk-x11-2.0.la -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/pixbuf-draw.o .libs/pixbuf-main.o .libs/pixbuf-render.o .libs/pixbuf-rc-style.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,libpixmap.so -o .libs/libpixmap.so
+libtool: install: /usr/bin/install -c .libs/libpixmap.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/engines/libpixmap.so
+libtool: install: /usr/bin/install -c .libs/libpixmap.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/engines/libpixmap.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/gtk-2.0/2.10.0/engines'
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/engines/pixbuf'
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules/engines/pixbuf'
+make[3]: Entering directory '/build/gtk2/src/gtk/modules/engines'
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/engines'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/engines'
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules/engines'
+make[2]: Leaving directory '/build/gtk2/src/gtk/modules/engines'
+Making install in other
+make[2]: Entering directory '/build/gtk2/src/gtk/modules/other'
+Making install in gail
+make[3]: Entering directory '/build/gtk2/src/gtk/modules/other/gail'
+Making install in libgail-util
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/other/gail/libgail-util'
+make[5]: Entering directory '/build/gtk2/src/gtk/modules/other/gail/libgail-util'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/include/gail-1.0/libgail-util'
+ /bin/sh ../../../../libtool   --mode=install /usr/bin/install -c   libgailutil.la '/build/gtk2/pkg/gtk2/usr/lib'
+ /usr/bin/install -c -m 644 gailmisc.h gailtextutil.h gail-util.h '/build/gtk2/pkg/gtk2/usr/include/gail-1.0/libgail-util'
+libtool: warning: relinking 'libgailutil.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/other/gail/libgail-util; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -DG_DISABLE_CAST_CHECKS -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -version-info 18:1:0 -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o libgailutil.la -rpath /usr/lib libgailutil_la-gailmisc.lo libgailutil_la-gailtextutil.lo ../../../../gtk/libgtk-x11-2.0.la ../../../../gdk/libgdk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/libgailutil_la-gailmisc.o .libs/libgailutil_la-gailtextutil.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgmodule-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,libgailutil.so.18 -o .libs/libgailutil.so.18.0.1
+libtool: install: /usr/bin/install -c .libs/libgailutil.so.18.0.1T /build/gtk2/pkg/gtk2/usr/lib/libgailutil.so.18.0.1
+libtool: install: (cd /build/gtk2/pkg/gtk2/usr/lib && { ln -s -f libgailutil.so.18.0.1 libgailutil.so.18 || { rm -f libgailutil.so.18 && ln -s libgailutil.so.18.0.1 libgailutil.so.18; }; })
+libtool: install: (cd /build/gtk2/pkg/gtk2/usr/lib && { ln -s -f libgailutil.so.18.0.1 libgailutil.so || { rm -f libgailutil.so && ln -s libgailutil.so.18.0.1 libgailutil.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgailutil.lai /build/gtk2/pkg/gtk2/usr/lib/libgailutil.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[5]: Leaving directory '/build/gtk2/src/gtk/modules/other/gail/libgail-util'
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/other/gail/libgail-util'
+Making install in tests
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/other/gail/tests'
+make[5]: Entering directory '/build/gtk2/src/gtk/modules/other/gail/tests'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/modules'
+ /bin/sh ../../../../libtool   --mode=install /usr/bin/install -c   libferret.la '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/modules'
+libtool: warning: relinking 'libferret.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/other/gail/tests; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -DG_DISABLE_CAST_CHECKS -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/modules -module -avoid-version -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o libferret.la -rpath /usr/lib/gtk-2.0/modules testlib.lo ferret.lo ../../../../gtk/libgtk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/testlib.o .libs/ferret.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,libferret.so -o .libs/libferret.so
+libtool: install: /usr/bin/install -c .libs/libferret.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/modules/libferret.so
+libtool: install: /usr/bin/install -c .libs/libferret.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/modules/libferret.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/gtk-2.0/modules'
+make[5]: Leaving directory '/build/gtk2/src/gtk/modules/other/gail/tests'
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/other/gail/tests'
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/other/gail'
+make[5]: Entering directory '/build/gtk2/src/gtk/modules/other/gail'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/include/gail-1.0/gail'
+ /usr/bin/install -c -m 644 gailwidget.h '/build/gtk2/pkg/gtk2/usr/include/gail-1.0/gail'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/modules'
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libgail.la '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/modules'
+libtool: warning: relinking 'libgail.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/other/gail; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -DG_DISABLE_CAST_CHECKS -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -rpath /usr/lib/gtk-2.0/modules -module -avoid-version -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o libgail.la -rpath /usr/lib/gtk-2.0/modules libgail_la-gail.lo libgail_la-gailadjustment.lo libgail_la-gailarrow.lo libgail_la-gailbooleancell.lo libgail_la-gailbox.lo libgail_la-gailbutton.lo libgail_la-gailcalendar.lo libgail_la-gailcell.lo libgail_la-gailcellparent.lo libgail_la-gailcheckmenuitem.lo libgail_la-gailchecksubmenuitem.lo libgail_la-gailclist.lo libgail_la-gailclistcell.lo libgail_la-gailcombo.lo libgail_la-gailcombobox.lo libgail_la-gailcontainer.lo libgail_la-gailcontainercell.lo libgail_la-gailentry.lo libgail_la-gailexpander.lo libgail_la-gailframe.lo libgail_la-gailimage.lo libgail_la-gailimagecell.lo libgail_la-gailitem.lo libgail_la-gaillabel.lo libgail_la-gaillist.lo libgail_la-gailmenu.lo libgail_la-gailmenushell.lo libgail_la-gailmenuitem.lo libgail_la-gailnotebook.lo libgail_la-gailnotebookpage.lo libgail_la-gailobject.lo libgail_la-gailoptionmenu.lo libgail_la-gailpaned.lo libgail_la-gailpixmap.lo libgail_la-gailprogressbar.lo libgail_la-gailradiobutton.lo libgail_la-gailradiomenuitem.lo libgail_la-gailradiosubmenuitem.lo libgail_la-gailrange.lo libgail_la-gailrenderercell.lo libgail_la-gailscale.lo libgail_la-gailscalebutton.lo libgail_la-gailscrollbar.lo libgail_la-gailscrolledwindow.lo libgail_la-gailseparator.lo libgail_la-gailspinbutton.lo libgail_la-gailsubmenuitem.lo libgail_la-gailstatusbar.lo libgail_la-gailtextcell.lo libgail_la-gailtextview.lo libgail_la-gailtogglebutton.lo libgail_la-gailtoplevel.lo libgail_la-gailtreeview.lo libgail_la-gailutil.lo libgail_la-gailwidget.lo libgail_la-gailwindow.lo ../../../gdk/libgdk-x11-2.0.la ../../../gtk/libgtk-x11-2.0.la ../../../modules/other/gail/libgail-util/libgailutil.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/libgail_la-gail.o .libs/libgail_la-gailadjustment.o .libs/libgail_la-gailarrow.o .libs/libgail_la-gailbooleancell.o .libs/libgail_la-gailbox.o .libs/libgail_la-gailbutton.o .libs/libgail_la-gailcalendar.o .libs/libgail_la-gailcell.o .libs/libgail_la-gailcellparent.o .libs/libgail_la-gailcheckmenuitem.o .libs/libgail_la-gailchecksubmenuitem.o .libs/libgail_la-gailclist.o .libs/libgail_la-gailclistcell.o .libs/libgail_la-gailcombo.o .libs/libgail_la-gailcombobox.o .libs/libgail_la-gailcontainer.o .libs/libgail_la-gailcontainercell.o .libs/libgail_la-gailentry.o .libs/libgail_la-gailexpander.o .libs/libgail_la-gailframe.o .libs/libgail_la-gailimage.o .libs/libgail_la-gailimagecell.o .libs/libgail_la-gailitem.o .libs/libgail_la-gaillabel.o .libs/libgail_la-gaillist.o .libs/libgail_la-gailmenu.o .libs/libgail_la-gailmenushell.o .libs/libgail_la-gailmenuitem.o .libs/libgail_la-gailnotebook.o .libs/libgail_la-gailnotebookpage.o .libs/libgail_la-gailobject.o .libs/libgail_la-gailoptionmenu.o .libs/libgail_la-gailpaned.o .libs/libgail_la-gailpixmap.o .libs/libgail_la-gailprogressbar.o .libs/libgail_la-gailradiobutton.o .libs/libgail_la-gailradiomenuitem.o .libs/libgail_la-gailradiosubmenuitem.o .libs/libgail_la-gailrange.o .libs/libgail_la-gailrenderercell.o .libs/libgail_la-gailscale.o .libs/libgail_la-gailscalebutton.o .libs/libgail_la-gailscrollbar.o .libs/libgail_la-gailscrolledwindow.o .libs/libgail_la-gailseparator.o .libs/libgail_la-gailspinbutton.o .libs/libgail_la-gailsubmenuitem.o .libs/libgail_la-gailstatusbar.o .libs/libgail_la-gailtextcell.o .libs/libgail_la-gailtextview.o .libs/libgail_la-gailtogglebutton.o .libs/libgail_la-gailtoplevel.o .libs/libgail_la-gailtreeview.o .libs/libgail_la-gailutil.o .libs/libgail_la-gailwidget.o .libs/libgail_la-gailwindow.o   -L/build/gtk2/src/gtk/gdk/.libs -L/build/gtk2/src/gtk/gtk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgailutil -lgtk-x11-2.0 -lgmodule-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,libgail.so -o .libs/libgail.so
+libtool: install: /usr/bin/install -c .libs/libgail.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/modules/libgail.so
+libtool: install: /usr/bin/install -c .libs/libgail.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/modules/libgail.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/gtk-2.0/modules'
+make[5]: Leaving directory '/build/gtk2/src/gtk/modules/other/gail'
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/other/gail'
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules/other/gail'
+make[3]: Entering directory '/build/gtk2/src/gtk/modules/other'
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/other'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/other'
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules/other'
+make[2]: Leaving directory '/build/gtk2/src/gtk/modules/other'
+Making install in printbackends
+make[2]: Entering directory '/build/gtk2/src/gtk/modules/printbackends'
+Making install in file
+make[3]: Entering directory '/build/gtk2/src/gtk/modules/printbackends/file'
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/printbackends/file'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends'
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libprintbackend-file.la '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends'
+libtool: warning: relinking 'libprintbackend-file.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/printbackends/file; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o libprintbackend-file.la -rpath /usr/lib/gtk-2.0/2.10.0/printbackends libprintbackend_file_la-gtkprintbackendfile.lo ../../../gtk/libgtk-x11-2.0.la ../../../gdk/libgdk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/libprintbackend_file_la-gtkprintbackendfile.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgmodule-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,libprintbackend-file.so -o .libs/libprintbackend-file.so
+libtool: install: /usr/bin/install -c .libs/libprintbackend-file.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.so
+libtool: install: /usr/bin/install -c .libs/libprintbackend-file.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/gtk-2.0/2.10.0/printbackends'
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/printbackends/file'
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules/printbackends/file'
+Making install in lpr
+make[3]: Entering directory '/build/gtk2/src/gtk/modules/printbackends/lpr'
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/printbackends/lpr'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends'
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libprintbackend-lpr.la '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends'
+libtool: warning: relinking 'libprintbackend-lpr.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/printbackends/lpr; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o libprintbackend-lpr.la -rpath /usr/lib/gtk-2.0/2.10.0/printbackends gtkprintbackendlpr.lo -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm ../../../gtk/libgtk-x11-2.0.la -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/gtkprintbackendlpr.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lgmodule-2.0 -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,libprintbackend-lpr.so -o .libs/libprintbackend-lpr.so
+libtool: install: /usr/bin/install -c .libs/libprintbackend-lpr.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.so
+libtool: install: /usr/bin/install -c .libs/libprintbackend-lpr.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/gtk-2.0/2.10.0/printbackends'
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/printbackends/lpr'
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules/printbackends/lpr'
+Making install in cups
+make[3]: Entering directory '/build/gtk2/src/gtk/modules/printbackends/cups'
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/printbackends/cups'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends'
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libprintbackend-cups.la '/build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends'
+libtool: warning: relinking 'libprintbackend-cups.la'
+libtool: install: (cd /build/gtk2/src/gtk/modules/printbackends/cups; /bin/sh "/build/gtk2/src/gtk/libtool"  --tag CC --mode=relink gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -avoid-version -module -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -o libprintbackend-cups.la -rpath /usr/lib/gtk-2.0/2.10.0/printbackends gtkprintbackendcups.lo gtkprintercups.lo gtkcupsutils.lo ../../../gtk/libgtk-x11-2.0.la ../../../gdk/libgdk-x11-2.0.la -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -lcups -inst-prefix-dir /build/gtk2/pkg/gtk2)
+libtool: relink: gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/gtkprintbackendcups.o .libs/gtkprintercups.o .libs/gtkcupsutils.o   -L/build/gtk2/src/gtk/gdk/.libs -Wl,--as-needed -L/build/gtk2/pkg/gtk2/usr/lib -L/usr/lib -lgtk-x11-2.0 -lgmodule-2.0 -lgdk-x11-2.0 -lXinerama -lXi -lXrandr -lXcursor -lXrender -lXext -lpangocairo-1.0 -lXcomposite -lXdamage -lXfixes -latk-1.0 -lgdk_pixbuf-2.0 -lpangoft2-1.0 -lpango-1.0 -lgio-2.0 -lcairo -lfontconfig -lX11 -lharfbuzz -lfreetype -lgobject-2.0 -lglib-2.0 -lm -lcups  -march=x86-64 -mtune=generic -O2 -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/gtk2/src=/usr/src/debug/gtk2 -flto=auto -Wno-error=implicit-int -Wno-error=incompatible-pointer-types -Wall -Wl,-O1 -Wl,--sort-common -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,pack-relative-relocs -flto=auto   -pthread -Wl,-soname -Wl,libprintbackend-cups.so -o .libs/libprintbackend-cups.so
+libtool: install: /usr/bin/install -c .libs/libprintbackend-cups.soT /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-cups.so
+libtool: install: /usr/bin/install -c .libs/libprintbackend-cups.lai /build/gtk2/pkg/gtk2/usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-cups.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/gtk-2.0/2.10.0/printbackends'
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/printbackends/cups'
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules/printbackends/cups'
+make[3]: Entering directory '/build/gtk2/src/gtk/modules/printbackends'
+make[4]: Entering directory '/build/gtk2/src/gtk/modules/printbackends'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/modules/printbackends'
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules/printbackends'
+make[2]: Leaving directory '/build/gtk2/src/gtk/modules/printbackends'
+make[2]: Entering directory '/build/gtk2/src/gtk/modules'
+make[3]: Entering directory '/build/gtk2/src/gtk/modules'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gtk2/src/gtk/modules'
+make[2]: Leaving directory '/build/gtk2/src/gtk/modules'
+make[1]: Leaving directory '/build/gtk2/src/gtk/modules'
+Making install in demos
+make[1]: Entering directory '/build/gtk2/src/gtk/demos'
+make  install-recursive
+make[2]: Entering directory '/build/gtk2/src/gtk/demos'
+Making install in gtk-demo
+make[3]: Entering directory '/build/gtk2/src/gtk/demos/gtk-demo'
+make  install-am
+make[4]: Entering directory '/build/gtk2/src/gtk/demos/gtk-demo'
+make[5]: Entering directory '/build/gtk2/src/gtk/demos/gtk-demo'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/bin'
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/share/gtk-2.0/demo'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c gtk-demo '/build/gtk2/pkg/gtk2/usr/bin'
+ /usr/bin/install -c -m 644 appwindow.c assistant.c builder.c button_box.c changedisplay.c clipboard.c colorsel.c combobox.c dialog.c drawingarea.c editable_cells.c entry_buffer.c entry_completion.c expander.c hypertext.c iconview.c iconview_edit.c images.c infobar.c links.c list_store.c menus.c offscreen_window.c offscreen_window2.c panes.c pickers.c pixbufs.c printing.c rotated_text.c search_entry.c sizegroup.c spinner.c stock_browser.c textview.c textscroll.c toolpalette.c tree_store.c ui_manager.c alphatest.png apple-red.png '/build/gtk2/pkg/gtk2/usr/share/gtk-2.0/demo'
+ /usr/bin/install -c -m 644 background.jpg floppybuddy.gif gnome-applets.png gnome-calendar.png gnome-fs-directory.png gnome-fs-regular.png gnome-foot.png gnome-gimp.png gnome-gmush.png gnome-gsame.png gnu-keys.png gtk-logo-rgb.gif demo.ui '/build/gtk2/pkg/gtk2/usr/share/gtk-2.0/demo'
+libtool: warning: '../../gdk/libgdk-x11-2.0.la' has not been installed in '/usr/lib'
+libtool: warning: '../../gtk/libgtk-x11-2.0.la' has not been installed in '/usr/lib'
+libtool: warning: '/build/gtk2/src/gtk/gdk/libgdk-x11-2.0.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/gtk-demo /build/gtk2/pkg/gtk2/usr/bin/gtk-demo
+make[5]: Leaving directory '/build/gtk2/src/gtk/demos/gtk-demo'
+make[4]: Leaving directory '/build/gtk2/src/gtk/demos/gtk-demo'
+make[3]: Leaving directory '/build/gtk2/src/gtk/demos/gtk-demo'
+make[3]: Entering directory '/build/gtk2/src/gtk/demos'
+make[4]: Entering directory '/build/gtk2/src/gtk/demos'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/demos'
+make[3]: Leaving directory '/build/gtk2/src/gtk/demos'
+make[2]: Leaving directory '/build/gtk2/src/gtk/demos'
+make[1]: Leaving directory '/build/gtk2/src/gtk/demos'
+Making install in tests
+make[1]: Entering directory '/build/gtk2/src/gtk/tests'
+make[2]: Entering directory '/build/gtk2/src/gtk/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gtk2/src/gtk/tests'
+make[1]: Leaving directory '/build/gtk2/src/gtk/tests'
+Making install in perf
+make[1]: Entering directory '/build/gtk2/src/gtk/perf'
+make  install-am
+make[2]: Entering directory '/build/gtk2/src/gtk/perf'
+make[3]: Entering directory '/build/gtk2/src/gtk/perf'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gtk2/src/gtk/perf'
+make[2]: Leaving directory '/build/gtk2/src/gtk/perf'
+make[1]: Leaving directory '/build/gtk2/src/gtk/perf'
+Making install in docs
+make[1]: Entering directory '/build/gtk2/src/gtk/docs'
+Making install in tutorial
+make[2]: Entering directory '/build/gtk2/src/gtk/docs/tutorial'
+make[3]: Entering directory '/build/gtk2/src/gtk/docs/tutorial'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gtk2/src/gtk/docs/tutorial'
+make[2]: Leaving directory '/build/gtk2/src/gtk/docs/tutorial'
+Making install in faq
+make[2]: Entering directory '/build/gtk2/src/gtk/docs/faq'
+make[3]: Entering directory '/build/gtk2/src/gtk/docs/faq'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gtk2/src/gtk/docs/faq'
+make[2]: Leaving directory '/build/gtk2/src/gtk/docs/faq'
+Making install in reference
+make[2]: Entering directory '/build/gtk2/src/gtk/docs/reference'
+Making install in gdk
+make[3]: Entering directory '/build/gtk2/src/gtk/docs/reference/gdk'
+make[4]: Entering directory '/build/gtk2/src/gtk/docs/reference/gdk'
+make[4]: Nothing to be done for 'install-exec-am'.
+Nothing to install
+make[4]: Leaving directory '/build/gtk2/src/gtk/docs/reference/gdk'
+make[3]: Leaving directory '/build/gtk2/src/gtk/docs/reference/gdk'
+Making install in gtk
+make[3]: Entering directory '/build/gtk2/src/gtk/docs/reference/gtk'
+make[4]: Entering directory '/build/gtk2/src/gtk/docs/reference/gtk'
+make[4]: Nothing to be done for 'install-exec-am'.
+Nothing to install
+make[4]: Leaving directory '/build/gtk2/src/gtk/docs/reference/gtk'
+make[3]: Leaving directory '/build/gtk2/src/gtk/docs/reference/gtk'
+Making install in libgail-util
+make[3]: Entering directory '/build/gtk2/src/gtk/docs/reference/libgail-util'
+make[4]: Entering directory '/build/gtk2/src/gtk/docs/reference/libgail-util'
+make[4]: Nothing to be done for 'install-exec-am'.
+Nothing to install
+make[4]: Leaving directory '/build/gtk2/src/gtk/docs/reference/libgail-util'
+make[3]: Leaving directory '/build/gtk2/src/gtk/docs/reference/libgail-util'
+make[3]: Entering directory '/build/gtk2/src/gtk/docs/reference'
+make[4]: Entering directory '/build/gtk2/src/gtk/docs/reference'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/docs/reference'
+make[3]: Leaving directory '/build/gtk2/src/gtk/docs/reference'
+make[2]: Leaving directory '/build/gtk2/src/gtk/docs/reference'
+Making install in tools
+make[2]: Entering directory '/build/gtk2/src/gtk/docs/tools'
+make[3]: Entering directory '/build/gtk2/src/gtk/docs/tools'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gtk2/src/gtk/docs/tools'
+make[2]: Leaving directory '/build/gtk2/src/gtk/docs/tools'
+make[2]: Entering directory '/build/gtk2/src/gtk/docs'
+make[3]: Entering directory '/build/gtk2/src/gtk/docs'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gtk2/src/gtk/docs'
+make[2]: Leaving directory '/build/gtk2/src/gtk/docs'
+make[1]: Leaving directory '/build/gtk2/src/gtk/docs'
+Making install in m4macros
+make[1]: Entering directory '/build/gtk2/src/gtk/m4macros'
+make[2]: Entering directory '/build/gtk2/src/gtk/m4macros'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/share/aclocal'
+ /usr/bin/install -c -m 644 gtk-2.0.m4 '/build/gtk2/pkg/gtk2/usr/share/aclocal'
+make[2]: Leaving directory '/build/gtk2/src/gtk/m4macros'
+make[1]: Leaving directory '/build/gtk2/src/gtk/m4macros'
+Making install in build
+make[1]: Entering directory '/build/gtk2/src/gtk/build'
+Making install in win32
+make[2]: Entering directory '/build/gtk2/src/gtk/build/win32'
+Making install in vs9
+make[3]: Entering directory '/build/gtk2/src/gtk/build/win32/vs9'
+make[4]: Entering directory '/build/gtk2/src/gtk/build/win32/vs9'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs9'
+make[3]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs9'
+Making install in vs10
+make[3]: Entering directory '/build/gtk2/src/gtk/build/win32/vs10'
+make[4]: Entering directory '/build/gtk2/src/gtk/build/win32/vs10'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs10'
+make[3]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs10'
+Making install in vs11
+make[3]: Entering directory '/build/gtk2/src/gtk/build/win32/vs11'
+make[4]: Entering directory '/build/gtk2/src/gtk/build/win32/vs11'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs11'
+make[3]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs11'
+Making install in vs12
+make[3]: Entering directory '/build/gtk2/src/gtk/build/win32/vs12'
+make[4]: Entering directory '/build/gtk2/src/gtk/build/win32/vs12'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs12'
+make[3]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs12'
+Making install in vs14
+make[3]: Entering directory '/build/gtk2/src/gtk/build/win32/vs14'
+make[4]: Entering directory '/build/gtk2/src/gtk/build/win32/vs14'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs14'
+make[3]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs14'
+Making install in vs15
+make[3]: Entering directory '/build/gtk2/src/gtk/build/win32/vs15'
+make[4]: Entering directory '/build/gtk2/src/gtk/build/win32/vs15'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs15'
+make[3]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs15'
+Making install in vs16
+make[3]: Entering directory '/build/gtk2/src/gtk/build/win32/vs16'
+make[4]: Entering directory '/build/gtk2/src/gtk/build/win32/vs16'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs16'
+make[3]: Leaving directory '/build/gtk2/src/gtk/build/win32/vs16'
+make[3]: Entering directory '/build/gtk2/src/gtk/build/win32'
+make[4]: Entering directory '/build/gtk2/src/gtk/build/win32'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtk2/src/gtk/build/win32'
+make[3]: Leaving directory '/build/gtk2/src/gtk/build/win32'
+make[2]: Leaving directory '/build/gtk2/src/gtk/build/win32'
+make[2]: Entering directory '/build/gtk2/src/gtk/build'
+make[3]: Entering directory '/build/gtk2/src/gtk/build'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/gtk2/src/gtk/build'
+make[2]: Leaving directory '/build/gtk2/src/gtk/build'
+make[1]: Leaving directory '/build/gtk2/src/gtk/build'
+make[1]: Entering directory '/build/gtk2/src/gtk'
+make[2]: Entering directory '/build/gtk2/src/gtk'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtk2/pkg/gtk2/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 gdk-x11-2.0.pc gtk+-x11-2.0.pc gail.pc gtk+-unix-print-2.0.pc '/build/gtk2/pkg/gtk2/usr/lib/pkgconfig'
+make  install-data-hook
+make[3]: Entering directory '/build/gtk2/src/gtk'
+(cd /build/gtk2/pkg/gtk2/usr/lib/pkgconfig && \
+ test -f gdk-x11-2.0.pc && \
+ test -f gtk+-x11-2.0.pc && \
+ rm -f gdk-2.0.pc && cp -f gdk-x11-2.0.pc gdk-2.0.pc && \
+ rm -f gtk+-2.0.pc && cp -f gtk+-x11-2.0.pc gtk+-2.0.pc) || \
+(cd /build/gtk2/pkg/gtk2/usr/lib/pkgconfig && \
+ rm -f gdk-2.0.pc && cp -f gdk-x11-2.0.pc gdk-2.0.pc && \
+ rm -f gtk+-2.0.pc && cp -f gtk+-x11-2.0.pc gtk+-2.0.pc)
+make[3]: Leaving directory '/build/gtk2/src/gtk'
+make[2]: Leaving directory '/build/gtk2/src/gtk'
+make[1]: Leaving directory '/build/gtk2/src/gtk'
+make: Leaving directory '/build/gtk2/src/gtk'
