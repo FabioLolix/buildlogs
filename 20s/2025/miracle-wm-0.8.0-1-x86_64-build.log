@@ -1,0 +1,84 @@
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Skipping most warnings for non-Debug build
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'miral>=5.1'
+--   Found miral, version 5.2.0
+-- Checking for module 'mirrenderer>=2.18'
+--   Found mirrenderer, version 2.20.0
+-- Checking for module 'mirplatform>=2.18'
+--   Found mirplatform, version 2.20.0
+-- Checking for module 'mircommon>=2.18'
+--   Found mircommon, version 2.20.0
+-- Checking for module 'mircommon-internal>=2.18'
+--   Found mircommon-internal, version 2.20.0
+-- Checking for module 'mirserver>=2.18'
+--   Found mirserver, version 2.20.0
+-- Checking for module 'mirserver-internal>=2.18'
+--   Found mirserver-internal, version 2.20.0
+-- Checking for module 'mirwayland>=2.18'
+--   Found mirwayland, version 2.20.0
+-- Checking for module 'glib-2.0'
+--   Found glib-2.0, version 2.86.1
+-- Checking for module 'yaml-cpp'
+--   Found yaml-cpp, version 0.8.0
+-- Checking for module 'libevdev'
+--   Found libevdev, version 1.13.5
+-- Found nlohmann_json: /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found suitable version "3.12.0", minimum required is "3.2.0")
+-- Checking for module 'egl'
+--   Found egl, version 1.5
+-- Checking for module 'glesv2'
+--   Found glesv2, version 3.2
+-- Checking for module 'xkbcommon'
+--   Found xkbcommon, version 1.13.0
+-- Checking for module 'miral'
+--   Found miral, version 5.2.0
+-- Checking for module 'mirserver'
+--   Found mirserver, version 2.20.0
+-- Checking for module 'mirtest'
+--   Found mirtest, version 2.20.0
+-- Found GTest: /usr/lib/cmake/GTest/GTestConfig.cmake (found version "1.17.0")
+-- Checking for module 'mircore'
+--   Found mircore, version 2.20.0
+-- Checking for module 'json-c'
+--   Found json-c, version 0.18
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/miracle-wm/src/build
+[  1%] Building CXX object miraclemsg/CMakeFiles/miracle-ipc.dir/ipc_client.cpp.o
+[  2%] Building CXX object miracle-wm-config/CMakeFiles/miracle-wm-config.dir/src/miracle-wm-config-c.cpp.o
+[  3%] Building CXX object miracle-wm-config/CMakeFiles/miracle-wm-config.dir/src/miracle-wm-config.cpp.o
+/build/miracle-wm/src/miracle-wm/miracle-wm-config/src/miracle-wm-config.cpp:24:10: fatal error: miral/hover_click.h: No such file or directory
+   24 | #include "miral/hover_click.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [miracle-wm-config/CMakeFiles/miracle-wm-config.dir/build.make:79: miracle-wm-config/CMakeFiles/miracle-wm-config.dir/src/miracle-wm-config.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/build/miracle-wm/src/miracle-wm/miracle-wm-config/src/miracle-wm-config-c.cpp: In function ‘int miracle_config_get_key_repeat_delay(const miracle_config_data_t*)’:
+/build/miracle-wm/src/miracle-wm/miracle-wm-config/src/miracle-wm-config-c.cpp:1116:5: warning: no return statement in function returning non-void [-Wreturn-type]
+ 1116 |     }
+      |     ^
+/build/miracle-wm/src/miracle-wm/miracle-wm-config/src/miracle-wm-config-c.cpp: In function ‘int miracle_config_get_key_repeat_rate(const miracle_config_data_t*)’:
+/build/miracle-wm/src/miracle-wm/miracle-wm-config/src/miracle-wm-config-c.cpp:1134:5: warning: no return statement in function returning non-void [-Wreturn-type]
+ 1134 |     }
+      |     ^
+[  5%] Linking CXX static library libmiracle-ipc.a
+[  5%] Built target miracle-ipc
+[  6%] Building CXX object miraclemsg/CMakeFiles/miraclemsg.dir/main.cpp.o
+make[1]: *** [CMakeFiles/Makefile2:286: miracle-wm-config/CMakeFiles/miracle-wm-config.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[  7%] Linking CXX executable miraclemsg
+[  7%] Built target miraclemsg
+make: *** [Makefile:136: all] Error 2
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
