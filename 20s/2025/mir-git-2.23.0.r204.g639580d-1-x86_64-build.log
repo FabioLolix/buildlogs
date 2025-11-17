@@ -78,15 +78,55 @@
 -- Looking for dlsym
 -- Looking for dlsym - found
 -- Checking for module 'libdisplay-info'
---   Package 'libdisplay-info' not found
-CMake Error at /usr/share/cmake/Modules/FindPkgConfig.cmake:639 (message):
-  The following required packages were not found:
-
-   - libdisplay-info
-
-Call Stack (most recent call first):
-  /usr/share/cmake/Modules/FindPkgConfig.cmake:867 (_pkg_check_modules_internal)
-  src/platform/CMakeLists.txt:1 (pkg_check_modules)
+--   Found libdisplay-info, version 0.3.0
+-- Checking for module 'pixman-1'
+--   Found pixman-1, version 0.46.4
+-- Checking for module 'libxml++-2.6'
+--   Found libxml++-2.6, version 2.42.3
+-- Checking for module 'freetype2'
+--   Found freetype2, version 26.4.20
+-- Performing Test MIR_COMPILE_WITH_W_NO_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS
+-- Performing Test MIR_COMPILE_WITH_W_NO_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS - Success
+-- Checking for module 'gio-unix-2.0'
+--   Found gio-unix-2.0, version 2.86.1
+-- Performing Test HAS_W_GNU_EMPTY_INITIALIZER
+-- Performing Test HAS_W_GNU_EMPTY_INITIALIZER - Failed
+-- Checking for module 'yaml-cpp'
+--   Found yaml-cpp, version 0.8.0
+-- Performing Test HAS_W_STRINGOP_TRUNCATION
+-- Performing Test HAS_W_STRINGOP_TRUNCATION - Success
+-- Performing Test HAS_W_NO_ATTRIBUTE_ALIAS
+-- Performing Test HAS_W_NO_ATTRIBUTE_ALIAS - Success
+-- Installing: /build/mir-git/src/build/mir_gtest/fail_on_success.sh
+-- Installing: /build/mir-git/src/build/mir_gtest/xfail_if_gtest_exists.sh
+-- Checking for module 'libevdev'
+--   Found libevdev, version 1.13.5
+-- Checking for module 'umockdev-1.0>=0.6'
+--   Found umockdev-1.0, version 0.19.1
+-- Performing Test HAS_W_NULL_DEREFERENCE
+-- Performing Test HAS_W_NULL_DEREFERENCE - Success
+-- Performing Test HAS_W_OVERLOADED_VIRTUAL
+-- Performing Test HAS_W_OVERLOADED_VIRTUAL - Success
+-- Performing Test HAS_W_INCONSISTENT_MISSING_OVERRIDE
+-- Performing Test HAS_W_INCONSISTENT_MISSING_OVERRIDE - Failed
+-- Performing Test HAS_W_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS
+-- Performing Test HAS_W_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS - Failed
+-- Performing Test HAS_W_GNU_SIGN_COMPARE
+-- Performing Test HAS_W_GNU_SIGN_COMPARE - Success
+-- Performing Test HAS_W_MAYBE_UNINITIALIZED
+-- Performing Test HAS_W_MAYBE_UNINITIALIZED - Success
+-- Performing Test HAS_W_INFINITE_RECURSION
+-- Performing Test HAS_W_INFINITE_RECURSION - Success
+-- Looking for pthread_getname_np
+-- Looking for pthread_getname_np - found
+-- Checking for module 'wlcs'
+--   Found wlcs, version 1.8.1
+-- Performing Test MIRAL_COMPILE_WITH_W_NO_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS
+-- Performing Test MIRAL_COMPILE_WITH_W_NO_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS - Success
+-- Performing Test MIRAL_COMPILE_WITH_W_NO_PEDANTIC
+-- Performing Test MIRAL_COMPILE_WITH_W_NO_PEDANTIC - Success
+CMake Error at tests/miral/CMakeLists.txt:78 (find_program):
+  Could not find XWAYLAND_EXECUTABLE using the following names: Xwayland
 
 
 -- Configuring incomplete, errors occurred!
