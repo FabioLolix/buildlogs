@@ -1,0 +1,13 @@
+smatch W: Description should not contain the package name.
+smatch W: Referenced python module 'sphinx' is an uninstalled dependency (needed in files ['usr/share/doc/smatch/Documentation/sphinx/ir.py'])
+smatch W: Referenced python module 'recommonmark.parser.CommonMarkParser' is an uninstalled dependency (needed in files ['usr/share/doc/smatch/Documentation/conf.py'])
+smatch W: Referenced python module 'sphinx.util.docutils.switch_source_input' is an uninstalled dependency (needed in files ['usr/share/doc/smatch/Documentation/sphinx/cdoc.py'])
+smatch W: Referenced python module 'docutils' is an uninstalled dependency (needed in files ['usr/share/doc/smatch/Documentation/sphinx/ir.py', 'usr/share/doc/smatch/Documentation/sphinx/cdoc.py'])
+smatch W: Referenced python module 'sphinx_rtd_theme' is an uninstalled dependency (needed in files ['usr/share/doc/smatch/Documentation/conf.py'])
+smatch W: Unused shared library '/usr/lib/libssl.so.3' by file ('usr/bin/smatch')
+smatch W: Unused shared library '/usr/lib/libm.so.6' by file ('usr/bin/smatch')
+smatch E: Dependency python detected and not included (python modules ['os', 'sys', 're', 'datetime'] needed in files ['usr/share/doc/smatch/Documentation/conf.py', 'usr/share/doc/smatch/Documentation/sphinx/cdoc.py'], programs ['python'] needed in scripts ['usr/share/doc/smatch/Documentation/sphinx/ir.py', 'usr/share/doc/smatch/Documentation/sphinx/cdoc.py'])
+smatch W: Dependency glibc detected and implicitly satisfied (libraries ['usr/lib/libm.so.6', 'usr/lib/libc.so.6'] needed in files ['usr/bin/smatch'])
+smatch W: Dependency included, but may not be needed ('perl')
+smatch W: Dependency included, but may not be needed ('perl-dbd-sqlite')
+smatch W: Dependency included, but may not be needed ('perl-try-tiny')

@@ -1,0 +1,556 @@
+touch check_list_local.h
+  CC      avl.o
+  CC      smatch_about_fn_ptr_arg.o
+  CC      smatch_address.o
+  CC      smatch_allocations.o
+  CC      smatch_annotate.o
+  CC      smatch_array_values.o
+  CC      smatch_assigned_expr.o
+  CC      smatch_bits.o
+  CC      smatch_buf_comparison.o
+  CC      smatch_buf_comparison2.o
+  CC      smatch_buf_size.o
+  CC      smatch_capped.o
+  CC      smatch_common_functions.o
+  CC      smatch_comparison.o
+  CC      smatch_conditions.o
+  CC      smatch_constraints.o
+  CC      smatch_constraints_required.o
+  CC      smatch_container_of.o
+  CC      smatch_data_source.o
+  CC      smatch_db.o
+smatch_db.c: In function ‘mark_call_params_untracked’:
+smatch_db.c:592:43: warning: passing argument 3 of ‘mark_untracked’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  592 |                 mark_untracked(call, i++, "$", NULL);
+      |                                           ^~~
+In file included from smatch_db.c:22:
+smatch.h:1378:63: note: expected ‘char *’ but argument is of type ‘const char *’
+ 1378 | void mark_untracked(struct expression *expr, int param, char *key, char *value);
+      |                                                         ~~~~~~^~~
+smatch_db.c: In function ‘sql_select_caller_info’:
+smatch_db.c:737:13: warning: the comparison will always evaluate as ‘true’ for the address of ‘name’ will never be NULL [-Waddress]
+  737 |         if (sym->ident->name && is_common_function(sym->ident->name))
+      |             ^~~
+In file included from symbol.h:28,
+                 from parse.h:28,
+                 from smatch.h:30:
+token.h:79:14: note: ‘name’ declared here
+   79 |         char name[];            /* Actual identifier */
+      |              ^~~~
+  CC      smatch_equiv.o
+  CC      smatch_estate.o
+  CC      smatch_expressions.o
+  CC      smatch_expression_stacks.o
+  CC      smatch_extra.o
+  CC      smatch_files.o
+  CC      smatch_flow.o
+  CC      smatch_fn_arg_link.o
+  CC      smatch_function_hooks.o
+  CC      smatch_fresh_alloc.o
+  CC      smatch_function_info.o
+  CC      smatch_function_ptrs.o
+  CC      smatch_helper.o
+  CC      smatch_hooks.o
+  CC      smatch_ignore.o
+  CC      smatch_imaginary_absolute.o
+  CC      smatch_implied.o
+  CC      smatch_impossible.o
+  CC      smatch_integer_overflow.o
+  CC      smatch_kernel_user_data.o
+  CC      smatch_kernel_host_data.o
+  CC      smatch_links.o
+  CC      smatch_math.o
+  CC      smatch_mem_tracker.o
+smatch_extra.c:2300:13: warning: ‘assume_indexes_are_valid’ defined but not used [-Wunused-function]
+ 2300 | static void assume_indexes_are_valid(struct expression *expr)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC      smatch_modification_hooks.o
+  CC      smatch_mtag_data.o
+  CC      smatch_mtag_map.o
+  CC      smatch_mtag.o
+  CC      smatch_nul_terminator.o
+  CC      smatch_param_bits_set.o
+  CC      smatch_param_bits_clear.o
+smatch_kernel_user_data.c: In function ‘get_rl_from_function’:
+smatch_kernel_user_data.c:487:39: warning: the comparison will always evaluate as ‘true’ for the address of ‘name’ will never be NULL [-Waddress]
+  487 |             !expr->fn->symbol_name || !expr->fn->symbol_name->name)
+      |                                       ^
+In file included from symbol.h:28,
+                 from parse.h:28,
+                 from smatch.h:30,
+                 from smatch_kernel_user_data.c:25:
+token.h:79:14: note: ‘name’ declared here
+   79 |         char name[];            /* Actual identifier */
+      |              ^~~~
+smatch_kernel_user_data.c: In function ‘set_param_user_data’:
+smatch_kernel_user_data.c:1268:63: warning: comparison between pointer and integer
+ 1268 |         if (param_data_treat_untagged(value) || sym->ctype.as == 5)
+      |                                                               ^~
+smatch_kernel_host_data.c: In function ‘get_rl_from_function’:
+smatch_kernel_host_data.c:500:39: warning: the comparison will always evaluate as ‘true’ for the address of ‘name’ will never be NULL [-Waddress]
+  500 |             !expr->fn->symbol_name || !expr->fn->symbol_name->name)
+      |                                       ^
+In file included from symbol.h:28,
+                 from parse.h:28,
+                 from smatch.h:30,
+                 from smatch_kernel_host_data.c:36:
+token.h:79:14: note: ‘name’ declared here
+   79 |         char name[];            /* Actual identifier */
+      |              ^~~~
+  CC      smatch_param_cleared.o
+  CC      smatch_param_compare_limit.o
+smatch_mem_tracker.c: In function ‘get_mem_kb’:
+smatch_mem_tracker.c:60:9: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   60 |         fread(buf, 1, sizeof(buf), file);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+smatch_mtag_data.c: In function ‘is_head_next’:
+smatch_mtag_data.c:95:30: warning: the comparison will always evaluate as ‘true’ for the address of ‘name’ will never be NULL [-Waddress]
+   95 |         if (!expr->member || !expr->member->name ||
+      |                              ^
+In file included from symbol.h:28,
+                 from parse.h:28,
+                 from smatch.h:30,
+                 from smatch_mtag_data.c:24:
+token.h:79:14: note: ‘name’ declared here
+   79 |         char name[];            /* Actual identifier */
+      |              ^~~~
+smatch_mtag_data.c:106:29: warning: the comparison will always evaluate as ‘true’ for the address of ‘name’ will never be NULL [-Waddress]
+  106 |         if (!type->ident || !type->ident->name ||
+      |                             ^
+token.h:79:14: note: ‘name’ declared here
+   79 |         char name[];            /* Actual identifier */
+      |              ^~~~
+smatch_mtag.c: In function ‘str_to_mtag’:
+smatch_mtag.c:61:9: warning: ‘MD5_Init’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   61 |         MD5_Init(&mdContext);
+      |         ^~~~~~~~
+In file included from smatch_mtag.c:49:
+/usr/include/openssl/md5.h:49:27: note: declared here
+   49 | OSSL_DEPRECATEDIN_3_0 int MD5_Init(MD5_CTX *c);
+      |                           ^~~~~~~~
+smatch_mtag.c:62:9: warning: ‘MD5_Update’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   62 |         MD5_Update(&mdContext, str, len);
+      |         ^~~~~~~~~~
+/usr/include/openssl/md5.h:50:27: note: declared here
+   50 | OSSL_DEPRECATEDIN_3_0 int MD5_Update(MD5_CTX *c, const void *data, size_t len);
+      |                           ^~~~~~~~~~
+smatch_mtag.c:63:9: warning: ‘MD5_Final’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   63 |         MD5_Final(c, &mdContext);
+      |         ^~~~~~~~~
+/usr/include/openssl/md5.h:51:27: note: declared here
+   51 | OSSL_DEPRECATEDIN_3_0 int MD5_Final(unsigned char *md, MD5_CTX *c);
+      |                           ^~~~~~~~~
+  CC      smatch_parameter_names.o
+  CC      smatch_param_filter.o
+  CC      smatch_param_key.o
+  CC      smatch_param_limit.o
+  CC      smatch_param_set.o
+  CC      smatch_param_to_mtag_data.o
+  CC      smatch_param_used.o
+  CC      smatch_parse_call_math.o
+  CC      smatch_parsed_conditions.o
+  CC      smatch_passes_array_size.o
+  CC      smatch_points_to_container.o
+smatch_param_cleared.c: In function ‘already_printed’:
+smatch_param_cleared.c:368:36: warning: the comparison will always evaluate as ‘true’ for the address of ‘name’ will never be NULL [-Waddress]
+  368 |         if (!arg || !arg->ident || !arg->ident->name)
+      |                                    ^
+In file included from symbol.h:28,
+                 from parse.h:28,
+                 from smatch.h:30,
+                 from smatch_param_cleared.c:29:
+token.h:79:14: note: ‘name’ declared here
+   79 |         char name[];            /* Actual identifier */
+      |              ^~~~
+smatch_param_cleared.c: In function ‘ambiguous_members_set’:
+smatch_param_cleared.c:410:36: warning: the comparison will always evaluate as ‘true’ for the address of ‘name’ will never be NULL [-Waddress]
+  410 |         if (!arg || !arg->ident || !arg->ident->name)
+      |                                    ^
+token.h:79:14: note: ‘name’ declared here
+   79 |         char name[];            /* Actual identifier */
+      |              ^~~~
+smatch_param_cleared.c: In function ‘all_struct_members_set’:
+smatch_param_cleared.c:430:36: warning: the comparison will always evaluate as ‘true’ for the address of ‘name’ will never be NULL [-Waddress]
+  430 |         if (!arg || !arg->ident || !arg->ident->name)
+      |                                    ^
+token.h:79:14: note: ‘name’ declared here
+   79 |         char name[];            /* Actual identifier */
+      |              ^~~~
+  CC      smatch_points_to_user_data.o
+  CC      smatch_points_to_host_data.o
+  CC      smatch_power_of_two.o
+  CC      smatch_project.o
+  CC      smatch_ranges.o
+  CC      smatch_real_absolute.o
+  CC      smatch_recurse.o
+  CC      smatch_returns.o
+  CC      smatch_return_to_param.o
+  CC      smatch_ssa.o
+  CC      smatch_scope.o
+  CC      smatch_slist.o
+  CC      smatch_start_states.o
+  CC      smatch_states.o
+  CC      smatch_statement_count.o
+  CC      smatch_state_assigned.o
+  CC      smatch_stored_conditions.o
+  CC      smatch_string_list.o
+  CC      smatch_strings.o
+  CC      smatch_strlen.o
+  CC      smatch_struct_assignment.o
+  CC      smatch_sval.o
+  CC      smatch_tracker.o
+  CC      smatch_type_links.o
+  CC      smatch_type.o
+  CC      smatch_type_val.o
+  CC      smatch_unconstant_macros.o
+  CC      smatch_unknown_value.o
+  CC      smatch_untracked_param.o
+  CC      smatch_untracked_var.o
+  CC      smatch_var_sym.o
+smatch_strings.c: In function ‘match_string’:
+smatch_strings.c:133:42: warning: the comparison will always evaluate as ‘true’ for the address of ‘data’ will never be NULL [-Waddress]
+  133 |         if (expr->type != EXPR_STRING || !expr->string->data)
+      |                                          ^
+In file included from symbol.h:28,
+                 from parse.h:28,
+                 from smatch.h:30,
+                 from smatch_strings.c:18:
+token.h:172:14: note: ‘data’ declared here
+  172 |         char data[];
+      |              ^~~~
+  CC      check_64bit_shift.o
+  CC      check_access_ok_math.o
+  CC      check_all_func_returns.o
+  CC      check_allocating_enough_data.o
+  CC      check_allocation_funcs.o
+  CC      check_arm64_tagged.o
+  CC      check_array_condition.o
+  CC      check_assign_vs_compare.o
+  CC      check_atomic_inc_dec.o
+  CC      check_bit_shift.o
+  CC      check_bogus_irqrestore.o
+  CC      check_bogus_loop.o
+  CC      check_buffer_too_small_for_struct.o
+  CC      check_call_tree.o
+  CC      check_capable.o
+  CC      check_cast_assign.o
+  CC      check_check_deref.o
+  CC      check_checking_for_null_instead_of_err_ptr.o
+  CC      check_cmn_err.o
+  CC      check_container_of.o
+  CC      check_continue_vs_break.o
+  CC      check_debug.o
+  CC      check_deref.o
+  CC      check_deref_check.o
+  CC      check_dereferences_param.o
+  CC      check_dev_queue_xmit.o
+  CC      check_dma_mapping_error.o
+  CC      check_dma_on_stack.o
+  CC      check_do_while_loop_limit.o
+  CC      check_double_checking.o
+  CC      check_err_ptr.o
+  CC      check_err_ptr_deref.o
+  CC      check_expects_err_ptr.o
+  CC      check_free.o
+  CC      check_free_strict.o
+  CC      check_freeing_devm.o
+  CC      check_freeing_null.o
+  CC      check_frees_argument.o
+  CC      check_frees_param.o
+  CC      check_frees_param_strict.o
+  CC      check_get_user_overflow.o
+  CC      check_gfp_dma.o
+  CC      check_ida_alloc.o
+  CC      check_implicit_dependencies.o
+  CC      check_implicit_dependencies_tester.o
+  CC      check_impossible_mask.o
+  CC      check_indenting.o
+  CC      check_index_overflow.o
+  CC      check_info_leak.o
+  CC      check_input_free_device.o
+  CC      check_iterator_outside_loop.o
+  CC      check_kernel.o
+  CC      check_kernel_printf.o
+  CC      check_kmalloc_wrong_size.o
+  CC      check_kmalloc_to_bugon.o
+  CC      check_kunmap.o
+  CC      check_kvmalloc_NOFS.o
+  CC      check_kvmalloc_array_zero.o
+  CC      check_leaks.o
+  CC      check_list_add.o
+  CC      check_locking.o
+  CC      check_logical_instead_of_bitwise.o
+  CC      check_macro_side_effects.o
+  CC      check_macros.o
+  CC      check_memcpy_overflow.o
+  CC      check_memset.o
+  CC      check_min_t.o
+  CC      check_missing_error_code.o
+  CC      check_mod_timer.o
+  CC      check_netdev_priv.o
+  CC      check_no_effect.o
+  CC      check_no_if_block.o
+  CC      check_no_return.o
+  CC      check_nospec.o
+  CC      check_off_by_one_relative.o
+  CC      check_or_vs_and.o
+check_locking.c:878:12: warning: ‘sm_both_locked_and_unlocked’ defined but not used [-Wunused-function]
+  878 | static int sm_both_locked_and_unlocked(struct sm_state *sm)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC      check_param_mapper.o
+  CC      check_passes_sizeof.o
+  CC      check_platform_device_put.o
+  CC      check_pm_runtime_get_sync.o
+  CC      check_pointer_math.o
+  CC      check_precedence.o
+  CC      check_preempt.o
+  CC      check_preempt_info.o
+  CC      check_proc_create.o
+  CC      check_puts_argument.o
+  CC      check_refcount_inconsistent_returns.o
+  CC      check_refcount_info.o
+  CC      check_release_resource.o
+  CC      check_resource_size.o
+  CC      check_return.o
+  CC      check_return_cast.o
+  CC      check_return_efault.o
+  CC      check_return_enomem.o
+  CC      check_return_negative_var.o
+  CC      check_returns_negative_error_code.o
+  CC      check_rosenberg.o
+  CC      check_scheduling_in_atomic.o
+  CC      check_select.o
+  CC      check_select_type.o
+  CC      check_shift_to_zero.o
+  CC      check_signed.o
+  CC      check_signed_integer_overflow_check.o
+  CC      check_sizeof.o
+  CC      check_sleep_info.o
+  CC      check_snprintf.o
+  CC      check_snprintf_overflow.o
+  CC      check_spectre.o
+  CC      check_spectre_second_half.o
+  CC      check_sprintf_overflow.o
+  CC      check_sscanf_return.o
+  CC      check_stack.o
+  CC      check_strcpy_overflow.o
+  CC      check_string_len.o
+  CC      check_struct_type.o
+  CC      check_syscall_arg_type.o
+  CC      check_template.o
+  CC      check_test_bit.o
+  CC      check_testing_index_after_use.o
+  CC      check_trinity_generator.o
+  CC      check_type.o
+  CC      check_uninitialized.o
+  CC      check_unreachable.o
+  CC      check_unused_ret.o
+  CC      check_unwind.o
+  CC      check_wait_for_common.o
+  CC      check_wine.o
+  CC      check_wine_WtoA.o
+  CC      check_wine_filehandles.o
+  CC      check_wrong_size_arg.o
+  CC      check_zero_to_err_ptr.o
+  CC      allocate.o
+  CC      builtin.o
+  CC      char.o
+  CC      compat-linux.o
+  CC      cse.o
+  CC      dissect.o
+  CC      dominate.o
+  CC      evaluate.o
+  CC      expand.o
+  CC      expression.o
+  CC      flow.o
+  CC      flowgraph.o
+  CC      inline.o
+  CC      ir.o
+  CC      lib.o
+  CC      linearize.o
+  CC      liveness.o
+  CC      memops.o
+  CC      opcode.o
+  CC      optimize.o
+  CC      options.o
+  CC      parse.o
+  CC      predefine.o
+  CC      pre-process.o
+  CC      ptrlist.o
+  CC      ptrmap.o
+  CC      scope.o
+  CC      show-parse.o
+  CC      simplify.o
+  CC      sort.o
+  CC      ssa.o
+  CC      stats.o
+  CC      storage.o
+  CC      symbol.o
+  CC      target.o
+  CC      target-alpha.o
+  CC      target-arm.o
+  CC      target-arm64.o
+  CC      target-bfin.o
+  CC      target-default.o
+pre-process.c: In function ‘find_include’:
+pre-process.c:980:25: warning: ignoring return value of ‘chdir’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  980 |                         chdir(entry->d_name);
+      |                         ^~~~~~~~~~~~~~~~~~~~
+pre-process.c:982:25: warning: ignoring return value of ‘chdir’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  982 |                         chdir("..");
+      |                         ^~~~~~~~~~~
+pre-process.c: In function ‘search_dir’:
+pre-process.c:1025:17: warning: ignoring return value of ‘chdir’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1025 |                 chdir("..");
+      |                 ^~~~~~~~~~~
+pre-process.c: In function ‘init_include_path’:
+pre-process.c:2430:9: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 2430 |         fgets(os, sizeof(os) - 1, fp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC      target-h8300.o
+  CC      target-m68k.o
+pre-process.c: In function ‘use_best_guess_header_file’:
+pre-process.c:1067:9: warning: ignoring return value of ‘chdir’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1067 |         chdir(dir_part);
+      |         ^~~~~~~~~~~~~~~
+pre-process.c:1069:9: warning: ignoring return value of ‘chdir’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1069 |         chdir(cwd);
+      |         ^~~~~~~~~~
+  CC      target-microblaze.o
+  CC      target-mips.o
+  CC      target-nds32.o
+  CC      target-nios2.o
+  CC      target-openrisc.o
+  CC      target-ppc.o
+  CC      target-riscv.o
+  CC      target-s390.o
+  CC      target-sh.o
+  CC      target-sparc.o
+  CC      target-x86.o
+  CC      target-xtensa.o
+  CC      tokenize.o
+  CC      unssa.o
+  CC      utils.o
+  CC      macro_table.o
+  CC      token_store.o
+  CC      cwchash/hashtable.o
+cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/smatch/src=/usr/src/debug/smatch -flto=auto -std=gnu99 -D__CHECKNAME__='"smatch"' -c smatch.c -DSMATCHDATADIR='"/usr/share/smatch"'
+  GEN     version.h
+  CC      version.o
+  AR      libsparse.a
+smatch_ranges.c: In function ‘is_whole_rl’:
+smatch_ranges.c:756:13: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  756 |         if (sval_is_min(drange->min) && sval_is_max(drange->max))
+      |             ^
+smatch_flow.c: In function ‘get_case_rl’:
+smatch_flow.c:914:27: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  914 | static struct range_list *get_case_rl(struct expression *switch_expr,
+      |                           ^
+smatch_buf_size.c: In function ‘unmatched_strlen_state’:
+smatch_buf_size.c:70:16: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   70 |         return alloc_estate_sval(sval);
+      |                ^
+In function ‘estate_has_fuzzy_max’,
+    inlined from ‘estate_is_unknown’ at smatch_estate.c:289:6,
+    inlined from ‘estate_is_unknown’ at smatch_estate.c:283:5:
+smatch_estate.c:102:13: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  102 |         if (estate_get_fuzzy_max(state).type)
+      |             ^
+In function ‘tmp_range_list’,
+    inlined from ‘handle_zero_comparison’ at smatch_implied.c:817:2,
+    inlined from ‘handled_by_extra_states’ at smatch_implied.c:876:10,
+    inlined from ‘get_tf_states’ at smatch_implied.c:973:6,
+    inlined from ‘save_implications_hook’ at smatch_implied.c:986:2,
+    inlined from ‘save_implications_hook’ at smatch_implied.c:982:13:
+smatch_implied.c:89:20: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   89 |         my_range = alloc_range(ll_to_sval(num), ll_to_sval(num));
+      |                    ^
+In function ‘size_to_estate’,
+    inlined from ‘unmatched_size_state’ at smatch_buf_size.c:85:9:
+smatch_buf_size.c:70:16: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   70 |         return alloc_estate_sval(sval);
+      |                ^
+check_debug.c: In function ‘match_print_fuzzy_max’:
+check_debug.c:290:17: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  290 |                 sm_msg("fuzzy max: %s = %s", name, sval_to_str(sval));
+      |                 ^
+smatch_annotate.c: In function ‘sval_type_val’:
+smatch_annotate.c:34:24: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   34 |                 *res = alloc_rl(sval_type_val(rl_type(rl), 0), rl_max(rl));
+      |                        ^
+smatch_implied.c: In function ‘__separate_pools’:
+smatch_implied.c:344:13: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  344 | static void __separate_pools(struct sm_state *sm, int comparison, struct range_list *rl,
+      |             ^
+smatch.h: In function ‘fp_cmp’:
+smatch.h:1552:19: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+ 1552 | static inline int fp_cmp(sval_t one, sval_t two)
+      |                   ^
+check_kernel.c: In function ‘implied_err_cast_return’:
+check_kernel.c:32:23: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   32 |                 *rl = alloc_rl(ptr_err_min, ptr_err_max);
+      |                       ^
+smatch.h: In function ‘fp_cmp’:
+smatch.h:1552:19: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+ 1552 | static inline int fp_cmp(sval_t one, sval_t two)
+      |                   ^
+In function ‘sval_cmp_val’,
+    inlined from ‘check_size_matches’ at check_kmalloc_wrong_size.c:44:6:
+smatch_sval.c:281:16: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  281 |         return sval_cmp(one, sval);
+      |                ^
+check_dma_mapping_error.c: In function ‘match_assign’:
+check_dma_mapping_error.c:33:13: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   33 | static void match_assign(const char *fn, struct expression *expr, void *unused)
+      |             ^
+check_unwind.c: In function ‘estate_min’:
+check_unwind.c:117:13: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  117 |         if (estate_min(state).value == 0 &&
+      |             ^
+smatch_conditions.c: In function ‘sval_type_val’:
+smatch_conditions.c:628:9: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  628 |         set_extra_expr_mod(expr->left, alloc_estate_sval(sval_type_val(get_type(expr->left), 1)));
+      |         ^
+In function ‘sval_cmp_val’,
+    inlined from ‘check_expr’ at check_get_user_overflow.c:131:7:
+smatch_sval.c:281:16: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  281 |         return sval_cmp(one, sval);
+      |                ^
+check_precedence.c: In function ‘match_condition’:
+check_precedence.c:59:13: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   59 | static void match_condition(struct expression *expr)
+      |             ^
+smatch_param_limit.c: In function ‘extra_mod_hook’:
+smatch_param_limit.c:204:13: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  204 | static void extra_mod_hook(const char *name, struct symbol *sym, struct expression *expr, struct smatch_state *state)
+      |             ^
+In function ‘load_table’,
+    inlined from ‘check_locking’ at check_locking.c:1311:2,
+    inlined from ‘check_locking’ at check_locking.c:1301:6:
+check_locking.c:1283:25: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+ 1283 |                         return_implies_state_sval(lock->function,
+      |                         ^
+check_buffer_too_small_for_struct.c: In function ‘match_dereferences’:
+check_buffer_too_small_for_struct.c:102:9: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  102 |         sm_warning("is '%s' large enough for 'struct %s'? %s", name, left_type->ident ? left_type->ident->name : "<anon>", sval_to_str(min_size));
+      |         ^
+smatch_extra.c: In function ‘unmatched_state’:
+smatch_extra.c:962:29: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+  962 | static struct smatch_state *unmatched_state(struct sm_state *sm)
+      |                             ^
+check_64bit_shift.c: In function ‘match_shift_mask’:
+check_64bit_shift.c:23:13: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   23 | static void match_shift_mask(struct expression *expr)
+      |             ^
+check_returns_negative_error_code.c: In function ‘match_return’:
+check_returns_negative_error_code.c:76:13: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   76 | static void match_return(int return_id, char *return_ranges, struct expression *expr)
+      |             ^
+smatch_db.c: In function ‘get_return_ranges_str’:
+smatch_db.c:1657:20: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+ 1657 | static const char *get_return_ranges_str(struct expression *expr, struct range_list **rl_p)
+      |                    ^
+check_snprintf_overflow.c: In function ‘match_snprintf’:
+check_snprintf_overflow.c:41:17: note: the ABI of passing union with ‘long double’ has changed in GCC 4.4
+   41 |                 sm_error("snprintf() is printing too much %s vs %d",
+      |                 ^
