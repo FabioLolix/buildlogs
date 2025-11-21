@@ -1,17 +1,17 @@
-cd src/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/src.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd src/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/src.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[1]: Entering directory '/build/qt5-webengine/src/build/src'
-cd buildtools/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/buildtools/buildtools.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd buildtools/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/buildtools/buildtools.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[2]: Entering directory '/build/qt5-webengine/src/build/src/buildtools'
-( test -e Makefile.configure_host || /usr/bin/qmake -o Makefile.configure_host /build/qt5-webengine/src/kde-qtwebengine/src/buildtools/configure_host.pro CONFIG+=force_debug_info ) && make -f Makefile.configure_host install
-( test -e Makefile.ninja || /usr/bin/qmake -o Makefile.ninja /build/qt5-webengine/src/kde-qtwebengine/src/buildtools/ninja.pro CONFIG+=force_debug_info ) && make -f Makefile.ninja install
+( test -e Makefile.configure_host || /usr/bin/qmake -o Makefile.configure_host /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/buildtools/configure_host.pro CONFIG+=force_debug_info ) && make -f Makefile.configure_host install
+( test -e Makefile.ninja || /usr/bin/qmake -o Makefile.ninja /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/buildtools/ninja.pro CONFIG+=force_debug_info ) && make -f Makefile.ninja install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/buildtools'
 make[3]: Nothing to be done for 'install'.
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/buildtools'
-( test -e Makefile.gn || /usr/bin/qmake -o Makefile.gn /build/qt5-webengine/src/kde-qtwebengine/src/buildtools/gn.pro CONFIG+=force_debug_info ) && make -f Makefile.gn install
+( test -e Makefile.gn || /usr/bin/qmake -o Makefile.gn /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/buildtools/gn.pro CONFIG+=force_debug_info ) && make -f Makefile.gn install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/buildtools'
 make[3]: Nothing to be done for 'install'.
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/buildtools'
-( test -e Makefile.configure_target || /usr/bin/qmake -o Makefile.configure_target /build/qt5-webengine/src/kde-qtwebengine/src/buildtools/configure_target.pro CONFIG+=force_debug_info ) && make -f Makefile.configure_target install
+( test -e Makefile.configure_target || /usr/bin/qmake -o Makefile.configure_target /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/buildtools/configure_target.pro CONFIG+=force_debug_info ) && make -f Makefile.configure_target install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/buildtools'
 make[3]: Nothing to be done for 'install'.
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/buildtools'
@@ -19,131 +19,131 @@ make[3]: Entering directory '/build/qt5-webengine/src/build/src/buildtools'
 make[3]: Nothing to be done for 'install'.
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/buildtools'
 make[2]: Leaving directory '/build/qt5-webengine/src/build/src/buildtools'
-cd core/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/core/core.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd core/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/core.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[2]: Entering directory '/build/qt5-webengine/src/build/src/core'
-( test -e Makefile.core_headers || /usr/bin/qmake -o Makefile.core_headers /build/qt5-webengine/src/kde-qtwebengine/src/core/core_headers.pro CONFIG+=force_debug_info ) && make -f Makefile.core_headers install
+( test -e Makefile.core_headers || /usr/bin/qmake -o Makefile.core_headers /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/core_headers.pro CONFIG+=force_debug_info ) && make -f Makefile.core_headers install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/core'
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineCallback /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineCallback
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qtwebenginecoreglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecoreglobal.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qtwebenginecoreglobal_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qtwebenginecoreglobal_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qtwebenginecoreglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecoreglobal.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_webenginecoreheaders_private.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qtwebenginecoreglobal_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qtwebenginecoreglobal_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfig.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfig.cmake
 sed  -e 's,/build/qt5-webengine/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5WebEngineCore.prl > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.prl
 sed  -e s,/build/qt5-webengine/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/Qt5WebEngineCore.la > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/Qt5WebEngineCore.la
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginecallback.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginecallback.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfigVersion.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfigVersion.cmake
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginecallback_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginecallback_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineClientCertificateStore /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineClientCertificateStore
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineclientcertificatestore.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineclientcertificatestore.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginecallback_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginecallback_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginecallback.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginecallback.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfigVersion.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfigVersion.cmake
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineCookieStore /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineCookieStore
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginecookiestore_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginecookiestore_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginecookiestore.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginecookiestore_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginecookiestore_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineclientcertificatestore.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineclientcertificatestore.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginemessagepumpscheduler_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginemessagepumpscheduler_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineFindTextResult /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineFindTextResult
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginemessagepumpscheduler_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginemessagepumpscheduler_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginefindtextresult.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginefindtextresult.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginecookiestore.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineHttpRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineHttpRequest
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginehttprequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlrequestinfo_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebengineurlrequestinfo_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlrequestinfo_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebengineurlrequestinfo_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginefindtextresult.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginefindtextresult.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineNotification /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineNotification
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginenotification.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginenotification.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/qtwebenginecore-config_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qtwebenginecore-config_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginehttprequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineQuotaRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineQuotaRequest
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginequotarequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginenotification.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginenotification.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineRegisterProtocolHandlerRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineRegisterProtocolHandlerRequest
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineregisterprotocolhandlerrequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginequotarequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlRequestInfo /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlRequestInfo
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlrequestinfo.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestinfo.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineregisterprotocolhandlerrequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlRequestInterceptor /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlRequestInterceptor
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlrequestinterceptor.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestinterceptor.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlrequestinfo.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestinfo.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlRequestJob /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlRequestJob
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlrequestjob.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlrequestinterceptor.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestinterceptor.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlScheme /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlScheme
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlscheme.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlscheme.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlrequestjob.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlSchemeHandler /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlSchemeHandler
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlschemehandler.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlschemehandler.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlscheme.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlscheme.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/qtwebenginecoreversion.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecoreversion.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCoreDepends /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCoreDepends
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlschemehandler.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlschemehandler.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCoreVersion /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCoreVersion
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/qtwebenginecore-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecore-config.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCoreDepends /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCoreDepends
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCore /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCore
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/qtwebenginecore-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecore-config.h
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/core'
-( test -e Makefile.core_generator || /usr/bin/qmake -o Makefile.core_generator /build/qt5-webengine/src/kde-qtwebengine/src/core/core_generator.pro CONFIG+=force_debug_info ) && make -f Makefile.core_generator install
+( test -e Makefile.core_generator || /usr/bin/qmake -o Makefile.core_generator /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/core_generator.pro CONFIG+=force_debug_info ) && make -f Makefile.core_generator install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/core'
 make[3]: Nothing to be done for 'install'.
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/core'
-( test -e Makefile.gn_run || /usr/bin/qmake -o Makefile.gn_run /build/qt5-webengine/src/kde-qtwebengine/src/core/gn_run.pro CONFIG+=force_debug_info ) && make -f Makefile.gn_run install
+( test -e Makefile.gn_run || /usr/bin/qmake -o Makefile.gn_run /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/gn_run.pro CONFIG+=force_debug_info ) && make -f Makefile.gn_run install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/core'
 make[3]: Nothing to be done for 'install'.
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/core'
-cd api/ && ( test -e Makefile.core_api || /usr/bin/qmake -o Makefile.core_api /build/qt5-webengine/src/kde-qtwebengine/src/core/api/core_api.pro CONFIG+=force_debug_info ) && make -f Makefile.core_api install
+cd api/ && ( test -e Makefile.core_api || /usr/bin/qmake -o Makefile.core_api /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/core_api.pro CONFIG+=force_debug_info ) && make -f Makefile.core_api install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/core/api'
 make[3]: Nothing to be done for 'install'.
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/core/api'
-( test -e Makefile.core_module || /usr/bin/qmake -o Makefile.core_module /build/qt5-webengine/src/kde-qtwebengine/src/core/core_module.pro CONFIG+=force_debug_info ) && make -f Makefile.core_module install
+( test -e Makefile.core_module || /usr/bin/qmake -o Makefile.core_module /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/core_module.pro CONFIG+=force_debug_info ) && make -f Makefile.core_module install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/core'
 /usr/bin/qmake -install qinstall -exe ../../lib/libQt5WebEngineCore.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.so.5.15.19
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/am.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/am.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_resources.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/resources/qtwebengine_resources.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineCallback /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineCallback
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qtwebenginecoreglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecoreglobal.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qtwebenginecoreglobal_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qtwebenginecoreglobal_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qtwebenginecoreglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecoreglobal.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qtwebenginecoreglobal_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qtwebenginecoreglobal_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_webenginecore.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_webenginecore.pri
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_webenginecore_private.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_webenginecore_private.pri
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfig.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfig.cmake
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineClientCertificateStore /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineClientCertificateStore
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/ar.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/ar.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginecallback.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginecallback.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginecallback_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginecallback_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_resources_100p.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/resources/qtwebengine_resources_100p.pak
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginecallback.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginecallback.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginecallback_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginecallback_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfigVersion.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfigVersion.cmake
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_resources_100p.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/resources/qtwebengine_resources_100p.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineCookieStore /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineCookieStore
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/bg.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/bg.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineclientcertificatestore.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineclientcertificatestore.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginecookiestore_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginecookiestore_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineclientcertificatestore.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineclientcertificatestore.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginecookiestore_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginecookiestore_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_resources_200p.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/resources/qtwebengine_resources_200p.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineFindTextResult /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineFindTextResult
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginecookiestore.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginemessagepumpscheduler_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginemessagepumpscheduler_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/bn.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/bn.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineHttpRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineHttpRequest
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginefindtextresult.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginefindtextresult.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginecookiestore.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginemessagepumpscheduler_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebenginemessagepumpscheduler_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_devtools_resources.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/resources/qtwebengine_devtools_resources.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlrequestinfo_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebengineurlrequestinfo_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineHttpRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineHttpRequest
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/ca.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/ca.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineNotification /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineNotification
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginehttprequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginefindtextresult.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginefindtextresult.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlrequestinfo_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qwebengineurlrequestinfo_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/qtwebenginecore-config_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/5.15.19/QtWebEngineCore/private/qtwebenginecore-config_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineQuotaRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineQuotaRequest
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineNotification /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineNotification
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/cs.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/cs.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginenotification.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginenotification.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineRegisterProtocolHandlerRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineRegisterProtocolHandlerRequest
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginehttprequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/da.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/da.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebenginequotarequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlRequestInfo /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlRequestInfo
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineQuotaRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineQuotaRequest
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginenotification.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginenotification.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/de.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/de.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineregisterprotocolhandlerrequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlRequestInterceptor /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlRequestInterceptor
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineRegisterProtocolHandlerRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineRegisterProtocolHandlerRequest
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebenginequotarequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlRequestInfo /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlRequestInfo
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/el.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/el.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlrequestinfo.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestinfo.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlRequestJob /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlRequestJob
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineregisterprotocolhandlerrequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/en-GB.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/en-GB.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlrequestinterceptor.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestinterceptor.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlScheme /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlScheme
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlRequestInterceptor /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlRequestInterceptor
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlrequestinfo.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestinfo.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/en-US.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/en-US.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlrequestjob.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlSchemeHandler /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlSchemeHandler
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlscheme.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlscheme.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlRequestJob /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlRequestJob
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlrequestinterceptor.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestinterceptor.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/es-419.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/es-419.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/qtwebenginecoreversion.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecoreversion.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/core/api/qwebengineurlschemehandler.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlschemehandler.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlScheme /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlScheme
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlrequestjob.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/es.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/es.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCoreVersion /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCoreVersion
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCoreDepends /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCoreDepends
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QWebEngineUrlSchemeHandler /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QWebEngineUrlSchemeHandler
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlscheme.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlscheme.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/qtwebenginecoreversion.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecoreversion.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/et.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/et.pak
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCore /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCore
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/qtwebenginecore-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecore-config.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/core/api/qwebengineurlschemehandler.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qwebengineurlschemehandler.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCoreVersion /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCoreVersion
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/fa.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/fa.pak
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCore /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCore
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineCore/QtWebEngineCoreDepends /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/QtWebEngineCoreDepends
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/fi.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/fi.pak
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/qtwebenginecore-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineCore/qtwebenginecore-config.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/fil.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/fil.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/fr.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/fr.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/gu.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/gu.pak
@@ -151,7 +151,13 @@ make[3]: Entering directory '/build/qt5-webengine/src/build/src/core'
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/hi.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/hi.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/hr.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/hr.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/hu.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/hu.pak
+ln -f -s libQt5WebEngineCore.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.so
+ln -f -s libQt5WebEngineCore.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.so.5
+ln -f -s libQt5WebEngineCore.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.so.5.15
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/id.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/id.pak
+sed  -e 's,/build/qt5-webengine/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5WebEngineCore.prl > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.prl
+sed  -e s,/build/qt5-webengine/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/libQt5WebEngineCore.la > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.la
+sed  -e s,/build/qt5-webengine/src/build/lib/,/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/pkgconfig/Qt5WebEngineCore.pc > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/pkgconfig/Qt5WebEngineCore.pc
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/it.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/it.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/ja.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/ja.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/kn.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/kn.pak
@@ -181,271 +187,265 @@ make[3]: Entering directory '/build/qt5-webengine/src/build/src/core'
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/vi.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/vi.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/zh-CN.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/zh-CN.pak
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/core/release/qtwebengine_locales/zh-TW.pak /build/qt5-webengine/pkg/qt5-webengine/usr/share/qt/translations/qtwebengine_locales/zh-TW.pak
-ln -f -s libQt5WebEngineCore.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.so
-ln -f -s libQt5WebEngineCore.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.so.5
-ln -f -s libQt5WebEngineCore.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.so.5.15
-sed  -e 's,/build/qt5-webengine/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5WebEngineCore.prl > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.prl
-sed  -e s,/build/qt5-webengine/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/libQt5WebEngineCore.la > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineCore.la
-sed  -e s,/build/qt5-webengine/src/build/lib/,/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/pkgconfig/Qt5WebEngineCore.pc > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/pkgconfig/Qt5WebEngineCore.pc
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/core'
 make[2]: Leaving directory '/build/qt5-webengine/src/build/src/core'
-cd process/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/process/process.pro CONFIG+=force_debug_info ) && make -f Makefile install
-cd tools/qwebengine_convert_dict/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/tools/qwebengine_convert_dict/qwebengine_convert_dict.pro CONFIG+=force_debug_info ) && make -f Makefile install
-cd webengine/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/webengine/webengine.pro CONFIG+=force_debug_info ) && make -f Makefile install
-cd pdf/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/pdf/pdf.pro CONFIG+=force_debug_info ) && make -f Makefile install
-make[2]: Entering directory '/build/qt5-webengine/src/build/src/pdf'
-( test -e Makefile.pdfcore_generator || /usr/bin/qmake -o Makefile.pdfcore_generator /build/qt5-webengine/src/kde-qtwebengine/src/pdf/pdfcore_generator.pro CONFIG+=force_debug_info ) && make -f Makefile.pdfcore_generator install
+cd process/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/process/process.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd tools/qwebengine_convert_dict/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/tools/qwebengine_convert_dict/qwebengine_convert_dict.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd webengine/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/webengine.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd pdf/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/pdf.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[2]: Entering directory '/build/qt5-webengine/src/build/src/webengine'
-( test -e Makefile.module || /usr/bin/qmake -o Makefile.module /build/qt5-webengine/src/kde-qtwebengine/src/webengine/module.pro CONFIG+=force_debug_info ) && make -f Makefile.module install
+( test -e Makefile.module || /usr/bin/qmake -o Makefile.module /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/module.pro CONFIG+=force_debug_info ) && make -f Makefile.module install
+make[2]: Entering directory '/build/qt5-webengine/src/build/src/pdf'
+( test -e Makefile.pdfcore_generator || /usr/bin/qmake -o Makefile.pdfcore_generator /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/pdfcore_generator.pro CONFIG+=force_debug_info ) && make -f Makefile.pdfcore_generator install
+cd ui/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/ui.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd ui2/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/ui2.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[2]: Entering directory '/build/qt5-webengine/src/build/src/process'
-cd ui2/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/ui2.pro CONFIG+=force_debug_info ) && make -f Makefile install
-cd ui/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/ui.pro CONFIG+=force_debug_info ) && make -f Makefile install
 /usr/bin/qmake -install qinstall -exe ../../libexec/QtWebEngineProcess /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/libexec/QtWebEngineProcess
+make[3]: Entering directory '/build/qt5-webengine/src/build/src/pdf'
+make[3]: Nothing to be done for 'install'.
+make[3]: Leaving directory '/build/qt5-webengine/src/build/src/pdf'
+( test -e Makefile.gn_run || /usr/bin/qmake -o Makefile.gn_run /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/gn_run.pro CONFIG+=force_debug_info ) && make -f Makefile.gn_run install
 make[2]: Leaving directory '/build/qt5-webengine/src/build/src/process'
-make[3]: Entering directory '/build/qt5-webengine/src/build/src/pdf'
-make[3]: Nothing to be done for 'install'.
-make[3]: Leaving directory '/build/qt5-webengine/src/build/src/pdf'
-( test -e Makefile.gn_run || /usr/bin/qmake -o Makefile.gn_run /build/qt5-webengine/src/kde-qtwebengine/src/pdf/gn_run.pro CONFIG+=force_debug_info ) && make -f Makefile.gn_run install
-make[3]: Entering directory '/build/qt5-webengine/src/build/src/webengine/ui2'
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/webengine/ui'
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/qmldir
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/AuthenticationDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/AuthenticationDialog.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/qmldir
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/AuthenticationDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/AuthenticationDialog.qml
+make[3]: Entering directory '/build/qt5-webengine/src/build/src/webengine/ui2'
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/qmldir
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/AuthenticationDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/AuthenticationDialog.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/qmldir
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/AuthenticationDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/AuthenticationDialog.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/AlertDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/AlertDialog.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/AlertDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/AlertDialog.qml
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/pdf'
 make[3]: Nothing to be done for 'install'.
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/pdf'
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/AlertDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/AlertDialog.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/AlertDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/AlertDialog.qml
-( test -e Makefile.pdfcore_prl_generator || /usr/bin/qmake -o Makefile.pdfcore_prl_generator /build/qt5-webengine/src/kde-qtwebengine/src/pdf/pdfcore_prl_generator.pro CONFIG+=force_debug_info ) && make -f Makefile.pdfcore_prl_generator install
+( test -e Makefile.pdfcore_prl_generator || /usr/bin/qmake -o Makefile.pdfcore_prl_generator /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/pdfcore_prl_generator.pro CONFIG+=force_debug_info ) && make -f Makefile.pdfcore_prl_generator install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/webengine'
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/ConfirmDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/ConfirmDialog.qml
 /usr/bin/qmake -install qinstall -exe ../../lib/libQt5WebEngine.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngine.so.5.15.19
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/QQuickWebEngineProfile /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/QQuickWebEngineProfile
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebengineprofile.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qquickwebengineprofile.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/ConfirmDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/ConfirmDialog.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/ColorDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/ColorDialog.qml
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_webengine.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_webengine.pri
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_webengine_private.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_webengine_private.pri
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebengineaction_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineaction_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/QQuickWebEngineProfile /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/QQuickWebEngineProfile
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebengineprofile.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qquickwebengineprofile.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/PromptDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/PromptDialog.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebengineaction_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineaction_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngine/Qt5WebEngineConfig.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngine/Qt5WebEngineConfig.cmake
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/ColorDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/ColorDialog.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/ConfirmDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/ConfirmDialog.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebengineaction_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineaction_p_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/QQuickWebEngineScript /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/QQuickWebEngineScript
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginescript.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qquickwebenginescript.h
-make[2]: Entering directory '/build/qt5-webengine/src/build/src/tools/qwebengine_convert_dict'
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/Menu.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/Menu.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginescript.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qquickwebenginescript.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngine/Qt5WebEngineConfigVersion.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngine/Qt5WebEngineConfigVersion.cmake
+make[2]: Entering directory '/build/qt5-webengine/src/build/src/tools/qwebengine_convert_dict'
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/FilePicker.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/FilePicker.qml
 /usr/bin/qmake -install qinstall -exe ../../../bin/qwebengine_convert_dict /build/qt5-webengine/pkg/qt5-webengine/usr/bin/qwebengine_convert_dict
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebengineaction_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineaction_p_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/PromptDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/PromptDialog.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/ConfirmDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/ConfirmDialog.qml
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/pdf'
 make[3]: Nothing to be done for 'install'.
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/pdf'
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/qtwebengineversion.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qtwebengineversion.h
-( test -e Makefile.pdfcore || /usr/bin/qmake -o Makefile.pdfcore /build/qt5-webengine/src/kde-qtwebengine/src/pdf/pdfcore.pro CONFIG+=force_debug_info ) && make -f Makefile.pdfcore install
+( test -e Makefile.pdfcore || /usr/bin/qmake -o Makefile.pdfcore /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/pdfcore.pro CONFIG+=force_debug_info ) && make -f Makefile.pdfcore install
 ln -f -s libQt5WebEngine.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngine.so
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qtwebengineglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qtwebengineglobal.h
 ln -f -s libQt5WebEngine.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngine.so.5
+make[2]: Leaving directory '/build/qt5-webengine/src/build/src/tools/qwebengine_convert_dict'
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginecertificateerror_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginecertificateerror_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/PromptDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/PromptDialog.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/MenuItem.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/MenuItem.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/qtwebengineversion.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qtwebengineversion.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qtwebengineglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qtwebengineglobal.h
 ln -f -s libQt5WebEngine.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngine.so.5.15
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/QtWebEngineVersion /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/QtWebEngineVersion
-sed  -e 's,/build/qt5-webengine/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5WebEngine.prl > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngine.prl
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/FilePicker.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/FilePicker.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/Menu.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/Menu.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginecertificateerror_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginecertificateerror_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/QtWebEngine /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/QtWebEngine
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/QtWebEngineDepends /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/QtWebEngineDepends
-sed  -e s,/build/qt5-webengine/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/libQt5WebEngine.la > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngine.la
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebengineclientcertificateselection_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineclientcertificateselection_p.h
-sed  -e s,/build/qt5-webengine/src/build/lib/,/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/pkgconfig/Qt5WebEngine.pc > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/pkgconfig/Qt5WebEngine.pc
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/MenuItem.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/MenuItem.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/PromptDialog.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/PromptDialog.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/webengine/qtwebengine-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qtwebengine-config.h
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/pdf'
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginecontextmenurequest_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginecontextmenurequest_p.h
+sed  -e 's,/build/qt5-webengine/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5WebEngine.prl > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngine.prl
 /usr/bin/qmake -install qinstall -exe ../../lib/libQt5Pdf.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5Pdf.so.5.15.19
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfbookmarkmodel.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfbookmarkmodel.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfBookmarkModel /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfBookmarkModel
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_pdf.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_pdf.pri
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_pdf_private.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_pdf_private.pri
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/Menu.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/Menu.qml
-make[2]: Leaving directory '/build/qt5-webengine/src/build/src/tools/qwebengine_convert_dict'
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfbookmarkmodel.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfbookmarkmodel.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfBookmarkModel /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfBookmarkModel
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfdestination_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfdestination_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/MenuSeparator.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/MenuSeparator.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/Menu.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/Menu.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/MenuSeparator.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/MenuSeparator.qml
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5Pdf/Qt5PdfConfig.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5Pdf/Qt5PdfConfig.cmake
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginedialogrequests_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginedialogrequests_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/MenuItem.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/MenuItem.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfdestination_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfdestination_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebengineclientcertificateselection_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineclientcertificateselection_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/QtWebEngineVersion /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/QtWebEngineVersion
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/QtWebEngineDepends /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/QtWebEngineDepends
+sed  -e s,/build/qt5-webengine/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/libQt5WebEngine.la > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngine.la
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/ToolTip.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/ToolTip.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfdestination.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfdestination.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/webengine/qtwebengine-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/qtwebengine-config.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/MenuItem.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/MenuItem.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginecontextmenurequest_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginecontextmenurequest_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfDestination /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfDestination
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/ToolTip.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/ToolTip.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginedownloaditem_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginedownloaditem_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngine/QtWebEngine /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/QtWebEngine
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5Pdf/Qt5PdfConfigVersion.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5Pdf/Qt5PdfConfigVersion.cmake
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfdestination.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfdestination.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfdocument_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfdocument_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfdocument_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfdocument_p.h
+sed  -e s,/build/qt5-webengine/src/build/lib/,/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/pkgconfig/Qt5WebEngine.pc > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/pkgconfig/Qt5WebEngine.pc
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfdocument.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfdocument.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/information.png /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/information.png
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/MenuSeparator.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/MenuSeparator.qml
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfDocument /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfDocument
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/MenuSeparator.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/MenuSeparator.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfDocumentRenderOptions /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfDocumentRenderOptions
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginedownloaditem_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginedownloaditem_p_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfdocument.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfdocument.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/information.png /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/information.png
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdflinkmodel_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdflinkmodel_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdflinkmodel_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdflinkmodel_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginedialogrequests_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginedialogrequests_p.h
 ln -f -s libQt5Pdf.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5Pdf.so
 ln -f -s libQt5Pdf.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5Pdf.so.5
 ln -f -s libQt5Pdf.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5Pdf.so.5.15
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/ToolTip.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/ToolTip.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfdocumentrenderoptions.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfdocumentrenderoptions.h
 sed  -e 's,/build/qt5-webengine/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5Pdf.prl > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5Pdf.prl
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginefaviconprovider_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginefaviconprovider_p_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui2/question.png /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/question.png
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfdocumentrenderoptions.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfdocumentrenderoptions.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdflinkmodel_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdflinkmodel_p_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfPageNavigation /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfPageNavigation
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/TouchHandle.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/TouchHandle.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginehistory_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginehistory_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui2/question.png /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls2Delegates/question.png
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/ToolTip.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/ToolTip.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfDocumentRenderOptions /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfDocumentRenderOptions
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginedownloaditem_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginedownloaditem_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdflinkmodel_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdflinkmodel_p_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfnamespace.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfnamespace.h
 sed  -e s,/build/qt5-webengine/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/libQt5Pdf.la > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5Pdf.la
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfsearchmodel_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfsearchmodel_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfnamespace.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfnamespace.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfPageRenderer /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfPageRenderer
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginehistory_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginehistory_p_p.h
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/webengine/ui2'
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/ui/TouchSelectionMenu.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/TouchSelectionMenu.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfPageNavigation /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfPageNavigation
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/TouchHandle.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/TouchHandle.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginedownloaditem_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginedownloaditem_p_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfsearchmodel_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfsearchmodel_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfpagenavigation.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfpagenavigation.h
 sed  -e s,/build/qt5-webengine/src/build/lib/,/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/pkgconfig/Qt5Pdf.pc > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/pkgconfig/Qt5Pdf.pc
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfsearchresult_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfsearchresult_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebengineloadrequest_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineloadrequest_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfpagenavigation.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfpagenavigation.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfPageRenderer /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfPageRenderer
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfpagerenderer.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfpagerenderer.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginefaviconprovider_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginefaviconprovider_p_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/ui/TouchSelectionMenu.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/Controls1Delegates/TouchSelectionMenu.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfsearchresult_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfsearchresult_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfSearchModel /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfSearchModel
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginehistory_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginehistory_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfsearchmodel.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfsearchmodel.h
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/webengine/ui'
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfselection_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfselection_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginenavigationrequest_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginenavigationrequest_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfpagerenderer.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfpagerenderer.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfselection_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qpdfselection_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfSearchResult /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfSearchResult
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginehistory_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginehistory_p_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfsearchresult.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfsearchresult.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/pdf/qtpdf-config_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/5.15.19/QtPdf/private/qtpdf-config_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginenewviewrequest_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginenewviewrequest_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfsearchmodel.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfsearchmodel.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QPdfSelection /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QPdfSelection
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebengineprofile_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineprofile_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfsearchresult.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfsearchresult.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginescript_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginescript_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebengineloadrequest_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineloadrequest_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qpdfselection.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfselection.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginenavigationrequest_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginenavigationrequest_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/api/qtpdfglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qtpdfglobal.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/qtpdfversion.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qtpdfversion.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qpdfselection.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qpdfselection.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QtPdfVersion /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QtPdfVersion
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginesettings_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginesettings_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/api/qtpdfglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qtpdfglobal.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QtPdf /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QtPdf
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginesingleton_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginesingleton_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QtPdfDepends /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QtPdfDepends
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginenewviewrequest_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginenewviewrequest_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QtPdfVersion /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QtPdfVersion
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/pdf/qtpdf-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/qtpdf-config.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginetestsupport_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginetestsupport_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdf/QtPdf /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdf/QtPdf
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebengineprofile_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineprofile_p.h
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/pdf'
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebenginetouchhandleprovider_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginetouchhandleprovider_p_p.h
-cd quick/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/pdf/quick/quick.pro CONFIG+=force_debug_info ) && make -f Makefile install
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebengineview_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineview_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qquickwebengineview_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineview_p_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/api/qtwebengineglobal_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qtwebengineglobal_p.h
+cd quick/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/quick/quick.pro CONFIG+=force_debug_info ) && make -f Makefile install
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginescript_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginescript_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginesettings_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginesettings_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginesingleton_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginesingleton_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginetestsupport_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginetestsupport_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebenginetouchhandleprovider_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebenginetouchhandleprovider_p_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebengineview_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineview_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qquickwebengineview_p_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qquickwebengineview_p_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/api/qtwebengineglobal_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qtwebengineglobal_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/webengine/qtwebengine-config_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngine/5.15.19/QtWebEngine/private/qtwebengine-config_p.h
-make[3]: Leaving directory '/build/qt5-webengine/src/build/src/webengine'
-cd plugin/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/webengine/plugin/plugin.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/pdf/quick'
+make[3]: Leaving directory '/build/qt5-webengine/src/build/src/webengine'
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/quick/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qmldir
+cd plugin/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/plugin/plugin.pro CONFIG+=force_debug_info ) && make -f Makefile install
 /usr/bin/qmake -install qinstall -exe ../../../qml/QtQuick/Pdf/libpdfplugin.so /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/libpdfplugin.so
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/quick/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qmldir
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/quick/plugins.qmltypes /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/plugins.qmltypes
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/quick/qml/PdfMultiPageView.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qml/PdfMultiPageView.qml
-make[3]: Entering directory '/build/qt5-webengine/src/build/src/webengine/plugin'
-/usr/bin/qmake -install qinstall -exe ../../../qml/QtWebEngine/libqtwebengineplugin.so /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/libqtwebengineplugin.so
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/plugin/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/qmldir
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webengine/plugin/plugins.qmltypes /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/plugins.qmltypes
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/quick/qml/PdfPageView.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qml/PdfPageView.qml
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/quick/qml/PdfScrollablePageView.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qml/PdfScrollablePageView.qml
-make[3]: Leaving directory '/build/qt5-webengine/src/build/src/webengine/plugin'
-make[2]: Leaving directory '/build/qt5-webengine/src/build/src/webengine'
-cd webenginewidgets/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/webenginewidgets.pro CONFIG+=force_debug_info ) && make -f Makefile install
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdf/quick/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qmldir
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/quick/plugins.qmltypes /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/plugins.qmltypes
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/quick/qml/PdfMultiPageView.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qml/PdfMultiPageView.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/quick/qml/PdfPageView.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qml/PdfPageView.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/quick/qml/PdfScrollablePageView.qml /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qml/PdfScrollablePageView.qml
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdf/quick/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtQuick/Pdf/qmldir
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/pdf/quick'
 make[2]: Leaving directory '/build/qt5-webengine/src/build/src/pdf'
-cd pdfwidgets/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/pdfwidgets/pdfwidgets.pro CONFIG+=force_debug_info ) && make -f Makefile install
-make[2]: Entering directory '/build/qt5-webengine/src/build/src/webenginewidgets'
-/usr/bin/qmake -install qinstall -exe ../../lib/libQt5WebEngineWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.so.5.15.19
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineCertificateError /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineCertificateError
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qtwebenginewidgetsglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qtwebenginewidgetsglobal.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_webenginewidgets.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_webenginewidgets_private.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets_private.pri
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginedownloaditem_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginedownloaditem_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfig.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfig.cmake
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineClientCertificateSelection /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineClientCertificateSelection
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginehistory_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginehistory_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginecertificateerror.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginecertificateerror.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfigVersion.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfigVersion.cmake
+make[3]: Entering directory '/build/qt5-webengine/src/build/src/webengine/plugin'
+cd pdfwidgets/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdfwidgets/pdfwidgets.pro CONFIG+=force_debug_info ) && make -f Makefile install
+/usr/bin/qmake -install qinstall -exe ../../../qml/QtWebEngine/libqtwebengineplugin.so /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/libqtwebengineplugin.so
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/plugin/qmldir /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/qmldir
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webengine/plugin/plugins.qmltypes /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/qml/QtWebEngine/plugins.qmltypes
+make[3]: Leaving directory '/build/qt5-webengine/src/build/src/webengine/plugin'
+make[2]: Leaving directory '/build/qt5-webengine/src/build/src/webengine'
+cd webenginewidgets/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/webenginewidgets.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[2]: Entering directory '/build/qt5-webengine/src/build/src/pdfwidgets'
 /usr/bin/qmake -install qinstall -exe ../../lib/libQt5PdfWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5PdfWidgets.so.5.15.19
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_pdfwidgets.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets.pri
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_pdfwidgets_private.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_pdfwidgets_private.pri
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdfwidgets/qpdfview.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/qpdfview.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdfwidgets/qpdfview_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/5.15.19/QtPdfWidgets/private/qpdfview_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdfWidgets/QPdfView /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/QPdfView
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdfwidgets/qpdfview.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/qpdfview.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdfwidgets/qpdfview_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/5.15.19/QtPdfWidgets/private/qpdfview_p.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5PdfWidgets/Qt5PdfWidgetsConfig.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5PdfWidgets/Qt5PdfWidgetsConfig.cmake
-ln -f -s libQt5WebEngineWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.so
-ln -f -s libQt5WebEngineWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.so.5
-ln -f -s libQt5WebEngineWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.so.5.15
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebengineclientcertificateselection.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdfWidgets/qtpdfwidgetsversion.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/qtpdfwidgetsversion.h
 ln -f -s libQt5PdfWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5PdfWidgets.so
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineContextMenuData /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineContextMenuData
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginenotificationpresenter_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginenotificationpresenter_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/pdfwidgets/qtpdfwidgetsglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/qtpdfwidgetsglobal.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/pdfwidgets/qtpdfwidgets-config_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/5.15.19/QtPdfWidgets/private/qtpdfwidgets-config_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5PdfWidgets/Qt5PdfWidgetsConfigVersion.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5PdfWidgets/Qt5PdfWidgetsConfigVersion.cmake
 ln -f -s libQt5PdfWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5PdfWidgets.so.5
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/pdfwidgets/qtpdfwidgetsglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/qtpdfwidgetsglobal.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdfWidgets/qtpdfwidgetsversion.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/qtpdfwidgetsversion.h
 ln -f -s libQt5PdfWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5PdfWidgets.so.5.15
-sed  -e 's,/build/qt5-webengine/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5WebEngineWidgets.prl > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.prl
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5PdfWidgets/Qt5PdfWidgetsConfigVersion.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5PdfWidgets/Qt5PdfWidgetsConfigVersion.cmake
 sed  -e s,/build/qt5-webengine/src/build/src/pdf/release/obj/third_party/icu,/usr/lib/static_chrome,g -e 's,/build/qt5-webengine/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5PdfWidgets.prl > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5PdfWidgets.prl
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginecontextmenudata.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdfWidgets/QtPdfWidgetsVersion /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/QtPdfWidgetsVersion
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdfWidgets/QtPdfWidgetsDepends /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/QtPdfWidgetsDepends
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineDownloadItem /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineDownloadItem
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginepage_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginepage_p.h
-sed  -e s,/build/qt5-webengine/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/libQt5WebEngineWidgets.la > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.la
 sed  -e s,/build/qt5-webengine/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/libQt5PdfWidgets.la > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5PdfWidgets.la
+make[2]: Entering directory '/build/qt5-webengine/src/build/src/webenginewidgets'
+/usr/bin/qmake -install qinstall -exe ../../lib/libQt5WebEngineWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.so.5.15.19
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtPdfWidgets/QtPdfWidgets /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/QtPdfWidgets
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginedownloaditem.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h
-sed  -e s,/build/qt5-webengine/src/build/lib/,/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/pkgconfig/Qt5WebEngineWidgets.pc > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/pkgconfig/Qt5WebEngineWidgets.pc
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebengineprofile_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebengineprofile_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/pdfwidgets/qtpdfwidgets-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/qtpdfwidgets-config.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineFullScreenRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineFullScreenRequest
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineCertificateError /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineCertificateError
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_webenginewidgets.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qtwebenginewidgetsglobal.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qtwebenginewidgetsglobal.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/mkspecs/modules-inst/qt_lib_webenginewidgets_private.pri /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets_private.pri
 sed  -e s,/build/qt5-webengine/src/build/lib/,/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/pkgconfig/Qt5PdfWidgets.pc > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/pkgconfig/Qt5PdfWidgets.pc
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginefullscreenrequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/pdfwidgets/qtpdfwidgets-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtPdfWidgets/qtpdfwidgets-config.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginedownloaditem_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginedownloaditem_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfig.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfig.cmake
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineClientCertificateSelection /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineClientCertificateSelection
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginehistory_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginehistory_p.h
 make[2]: Leaving directory '/build/qt5-webengine/src/build/src/pdfwidgets'
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginecertificateerror.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginecertificateerror.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfigVersion.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfigVersion.cmake
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineContextMenuData /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineContextMenuData
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebengineclientcertificateselection.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginenotificationpresenter_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginenotificationpresenter_p.h
+ln -f -s libQt5WebEngineWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.so
+ln -f -s libQt5WebEngineWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.so.5
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineDownloadItem /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineDownloadItem
+ln -f -s libQt5WebEngineWidgets.so.5.15.19 /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.so.5.15
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginecontextmenudata.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h
+sed  -e 's,/build/qt5-webengine/src/build/lib/,$$[QT_INSTALL_LIBS]/,g' -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' -e 's,/usr/lib,$$[QT_INSTALL_LIBS],g' ../../lib/libQt5WebEngineWidgets.prl > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.prl
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineFullScreenRequest /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineFullScreenRequest
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginepage_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginepage_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginedownloaditem.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h
+sed  -e s,/build/qt5-webengine/src/build/lib/,=/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/libQt5WebEngineWidgets.la > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/libQt5WebEngineWidgets.la
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineHistoryItem /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineHistoryItem
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginehistory.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginescriptcollection_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginescriptcollection_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebengineprofile_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebengineprofile_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginefullscreenrequest.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineHistory /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineHistory
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebengineview_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebengineview_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginepage.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginepage.h
+sed  -e s,/build/qt5-webengine/src/build/lib/,/usr/lib/,g -e 's,[^ '\'']*/build/qt5-webengine/src/build/lib,,g' ../../lib/pkgconfig/Qt5WebEngineWidgets.pc > /build/qt5-webengine/pkg/qt5-webengine/usr/lib/pkgconfig/Qt5WebEngineWidgets.pc
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginescriptcollection_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebenginescriptcollection_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginehistory.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEnginePage /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEnginePage
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/webenginewidgets/qtwebenginewidgets-config_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qtwebenginewidgets-config_p.h
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebengineprofile.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebengineview_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qwebengineview_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginepage.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginepage.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineProfile /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineProfile
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/webenginewidgets/qtwebenginewidgets-config_p.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/5.15.19/QtWebEngineWidgets/private/qtwebenginewidgets-config_p.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebengineprofile.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineScript /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineScript
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginescript.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginescript.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginescript.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginescript.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineScriptCollection /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineScriptCollection
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginescriptcollection.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginescriptcollection.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginescriptcollection.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginescriptcollection.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineSettings /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineSettings
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebenginesettings.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebenginesettings.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QWebEngineView /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QWebEngineView
-/usr/bin/qmake -install qinstall /build/qt5-webengine/src/kde-qtwebengine/src/webenginewidgets/api/qwebengineview.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebengineview.h
+/usr/bin/qmake -install qinstall /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/webenginewidgets/api/qwebengineview.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qwebengineview.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/qtwebenginewidgetsversion.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qtwebenginewidgetsversion.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QtWebEngineWidgetsDepends /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QtWebEngineWidgetsDepends
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QtWebEngineWidgetsVersion /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QtWebEngineWidgetsVersion
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/src/webenginewidgets/qtwebenginewidgets-config.h /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/qtwebenginewidgets-config.h
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/include/QtWebEngineWidgets/QtWebEngineWidgets /build/qt5-webengine/pkg/qt5-webengine/usr/include/qt/QtWebEngineWidgets/QtWebEngineWidgets
 make[2]: Leaving directory '/build/qt5-webengine/src/build/src/webenginewidgets'
-cd plugins/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/plugins/plugins.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd plugins/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/plugins/plugins.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[2]: Entering directory '/build/qt5-webengine/src/build/src/plugins'
-cd qwebengineview/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/plugins/qwebengineview/qwebengineview.pro CONFIG+=force_debug_info ) && make -f Makefile install
-cd imageformats/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/plugins/imageformats/imageformats.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd qwebengineview/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/plugins/qwebengineview/qwebengineview.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd imageformats/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/plugins/imageformats/imageformats.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/plugins/imageformats'
-cd pdf/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/kde-qtwebengine/src/plugins/imageformats/pdf/pdf.pro CONFIG+=force_debug_info ) && make -f Makefile install
+cd pdf/ && ( test -e Makefile || /usr/bin/qmake -o Makefile /build/qt5-webengine/src/qtwebengine-5.15.19-lts/src/plugins/imageformats/pdf/pdf.pro CONFIG+=force_debug_info ) && make -f Makefile install
 make[3]: Entering directory '/build/qt5-webengine/src/build/src/plugins/qwebengineview'
-/usr/bin/qmake -install qinstall -exe ../../../plugins/designer/libqwebengineview.so /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/plugins/designer/libqwebengineview.so
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5Designer/Qt5Designer_QWebEngineViewPlugin.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5Designer/Qt5Designer_QWebEngineViewPlugin.cmake
+/usr/bin/qmake -install qinstall -exe ../../../plugins/designer/libqwebengineview.so /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/plugins/designer/libqwebengineview.so
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/plugins/qwebengineview'
 make[4]: Entering directory '/build/qt5-webengine/src/build/src/plugins/imageformats/pdf'
-/usr/bin/qmake -install qinstall -exe ../../../../plugins/imageformats/libqpdf.so /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/plugins/imageformats/libqpdf.so
 /usr/bin/qmake -install qinstall /build/qt5-webengine/src/build/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake /build/qt5-webengine/pkg/qt5-webengine/usr/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake
+/usr/bin/qmake -install qinstall -exe ../../../../plugins/imageformats/libqpdf.so /build/qt5-webengine/pkg/qt5-webengine/usr/lib/qt/plugins/imageformats/libqpdf.so
 make[4]: Leaving directory '/build/qt5-webengine/src/build/src/plugins/imageformats/pdf'
 make[3]: Leaving directory '/build/qt5-webengine/src/build/src/plugins/imageformats'
 make[2]: Leaving directory '/build/qt5-webengine/src/build/src/plugins'

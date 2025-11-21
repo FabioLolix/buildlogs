@@ -1,10 +1,4 @@
-Submodule 'src/3rdparty' (/srcdest/qtwebengine-chromium.git) registered for path 'src/3rdparty'
-Synchronizing submodule url for 'src/3rdparty'
-Cloning into '/build/qt5-webengine/src/kde-qtwebengine/src/3rdparty'...
-done.
-From /build/qt5-webengine/src/qtwebengine-chromium
- * branch                    6d29e9cfcfffa7632cc3858ceaf8940677ba9c91 -> FETCH_HEAD
-Submodule path 'src/3rdparty': checked out '6d29e9cfcfffa7632cc3858ceaf8940677ba9c91'
++ patch -Np1 -d src/3rdparty -i /build/qt5-webengine/src/qt5-webengine-pipewire-0.3.patch
 patching file chromium/third_party/webrtc/modules/desktop_capture/BUILD.gn
 patching file chromium/third_party/webrtc/modules/desktop_capture/linux/base_capturer_pipewire.cc
 patching file chromium/third_party/webrtc/modules/desktop_capture/linux/base_capturer_pipewire.h
@@ -18,6 +12,7 @@ patching file chromium/third_party/webrtc/modules/desktop_capture/window_capture
 patching file chromium/third_party/webrtc/webrtc.gni
 patching file chromium/third_party/webrtc/modules/desktop_capture/linux/pipewire02.sigs
 patching file chromium/third_party/webrtc/modules/desktop_capture/linux/pipewire03.sigs
++ patch -Np2 -d src/3rdparty/chromium -i /build/qt5-webengine/src/qt5-webengine-icu-75.patch
 patching file build/config/compiler/BUILD.gn
 patching file base/allocator/partition_allocator/partition_alloc_constants.h
 patching file third_party/webrtc/common_video/h264/sps_parser.h
@@ -26,9 +21,12 @@ patching file third_party/webrtc/modules/audio_processing/aec3/reverb_model_esti
 patching file third_party/webrtc/modules/include/module_common_types_public.h
 patching file third_party/blink/renderer/core/page/scrolling/text_fragment_selector_generator.cc
 patching file third_party/abseil-cpp/absl/base/options.h
++ patch -Np2 -d src/3rdparty/chromium -i /build/qt5-webengine/src/qt5-webengine-ninja-1.12.patch
 patching file content/public/browser/BUILD.gn
++ patch -Np1 -d src/3rdparty/chromium -i /build/qt5-webengine/src/python3.12-six.patch
 patching file third_party/protobuf/third_party/six/six.py
 patching file tools/grit/third_party/six/__init__.py
++ patch -Np1 -i /build/qt5-webengine/src/qt5-webengine-gcc-15.patch
 patching file src/3rdparty/chromium/base/debug/profiler.h
 patching file src/3rdparty/chromium/cc/trees/target_property.cc
 patching file src/3rdparty/chromium/device/base/synchronization/one_writer_seqlock.cc
@@ -64,4 +62,6 @@ patching file src/3rdparty/chromium/third_party/pdfium/third_party/base/span.h
 patching file src/3rdparty/chromium/third_party/webrtc/video/stats_counter.h
 patching file src/3rdparty/chromium/third_party/woff2/include/woff2/output.h
 patching file src/3rdparty/chromium/cc/input/main_thread_scrolling_reason.h
++ patch -Np1 -i /build/qt5-webengine/src/qt5-webengine-icu-78.patch
 patching file src/3rdparty/chromium/third_party/blink/renderer/platform/text/text_break_iterator.cc
++ set +x
