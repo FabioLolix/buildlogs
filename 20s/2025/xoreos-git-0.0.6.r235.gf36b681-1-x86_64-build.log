@@ -1,1094 +1,1116 @@
-checking build system type... x86_64-pc-linux-gnu
-checking host system type... x86_64-pc-linux-gnu
-checking target system type... x86_64-pc-linux-gnu
-checking for a BSD-compatible install... /usr/bin/install -c
-checking whether sleep supports fractional seconds... yes
-checking filesystem timestamp resolution... 0.01
-checking whether build environment is sane... yes
-checking for a race-free mkdir -p... /usr/bin/mkdir -p
-checking for gawk... gawk
-checking whether make sets $(MAKE)... yes
-checking whether make supports nested variables... yes
-checking xargs -n works... yes
-checking whether UID '1000' is supported by ustar format... yes
-checking whether GID '1000' is supported by ustar format... yes
-checking how to create a ustar tar archive... gnutar
-checking whether make supports the include directive... yes (GNU style)
-checking for gcc... gcc
-checking whether the C compiler works... yes
-checking for C compiler default output file name... a.out
-checking for suffix of executables... 
-checking whether we are cross compiling... no
-checking for suffix of object files... o
-checking whether the compiler supports GNU C... yes
-checking whether gcc accepts -g... yes
-checking for gcc option to enable C11 features... none needed
-checking whether gcc understands -c and -o together... yes
-checking dependency style of gcc... gcc3
-checking for ar... ar
-checking the archiver (ar) interface... ar
-checking how to print strings... printf
-checking for a sed that does not truncate output... /usr/bin/sed
-checking for grep that handles long lines and -e... /usr/bin/grep
-checking for egrep... /usr/bin/grep -E
-checking for fgrep... /usr/bin/grep -F
-checking for ld used by gcc... /usr/bin/ld
-checking if the linker (/usr/bin/ld) is GNU ld... yes
-checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
-checking the name lister (/usr/bin/nm -B) interface... BSD nm
-checking whether ln -s works... yes
-checking the maximum length of command line arguments... 1572864
-checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
-checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
-checking for /usr/bin/ld option to reload object files... -r
-checking for file... file
-checking for objdump... objdump
-checking how to recognize dependent libraries... pass_all
-checking for dlltool... no
-checking how to associate runtime and link libraries... printf %s\n
-checking for ranlib... ranlib
-checking for archiver @FILE support... @
-checking for strip... strip
-checking command to parse /usr/bin/nm -B output from gcc object... ok
-checking for sysroot... no
-checking for a working dd... /usr/bin/dd
-checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
-checking for mt... no
-checking if : is a manifest tool... no
-checking for stdio.h... yes
-checking for stdlib.h... yes
-checking for string.h... yes
-checking for inttypes.h... yes
-checking for stdint.h... yes
-checking for strings.h... yes
-checking for sys/stat.h... yes
-checking for sys/types.h... yes
-checking for unistd.h... yes
-checking for dlfcn.h... yes
-checking which variant of shared library versioning to provide... (default) aix
-checking for objdir... .libs
-checking if gcc supports -fno-rtti -fno-exceptions... no
-checking for gcc option to produce PIC... -fPIC -DPIC
-checking if gcc PIC flag -fPIC -DPIC works... yes
-checking if gcc static flag -static works... yes
-checking if gcc supports -c -o file.o... yes
-checking if gcc supports -c -o file.o... (cached) yes
-checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
-checking dynamic linker characteristics... GNU/Linux ld.so
-checking how to hardcode library paths into programs... immediate
-checking whether stripping libraries is possible... yes
-checking if libtool supports shared libraries... yes
-checking whether to build shared libraries... no
-checking whether to build static libraries... yes
-checking for g++... g++
-checking whether the compiler supports GNU C++... yes
-checking whether g++ accepts -g... yes
-checking for g++ option to enable C++11 features... none needed
-checking dependency style of g++... gcc3
-checking how to run the C++ preprocessor... g++ -E
-checking for ld used by g++... /usr/bin/ld -m elf_x86_64
-checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
-checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
-checking for g++ option to produce PIC... -fPIC -DPIC
-checking if g++ PIC flag -fPIC -DPIC works... yes
-checking if g++ static flag -static works... yes
-checking if g++ supports -c -o file.o... yes
-checking if g++ supports -c -o file.o... (cached) yes
-checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
-checking dynamic linker characteristics... (cached) GNU/Linux ld.so
-checking how to hardcode library paths into programs... immediate
-checking whether byte ordering is bigendian... no
-checking for intptr_t... yes
-checking for uintptr_t... yes
-checking size of char... 1
-checking size of short... 2
-checking size of int... 4
-checking size of long... 8
-checking size of long long... 8
-checking size of void *... 8
-checking for cos in -lm... yes
-checking for fabs... yes
-checking for fmin... yes
-checking for fmax... yes
-checking for fabsf... yes
-checking for fminf... yes
-checking for fmaxf... yes
-checking for strcasecmp... yes
-checking whether C++ compiler accepts -ggdb... yes
-checking whether C++ compiler accepts -Wignored-qualifiers... yes
-checking whether C++ compiler accepts -Wpointer-arith... yes
-checking whether C++ compiler accepts -Wshadow... yes
-checking whether C++ compiler accepts -Wsign-compare... yes
-checking whether C++ compiler accepts -Wtype-limits... yes
-checking whether C++ compiler accepts -Wuninitialized... yes
-checking whether C++ compiler accepts -Wunused-parameter... yes
-checking whether C++ compiler accepts -Wunused-but-set-parameter... yes
-checking whether C++ compiler accepts -Wduplicated-cond... yes
-checking whether C++ compiler accepts -Wduplicated-branches... yes
-checking whether C++ compiler accepts -Wlogical-op... yes
-checking whether C++ compiler accepts -Wshift-negative-value... yes
-checking whether C++ compiler accepts -Wshift-overflow=2... yes
-checking whether C++ compiler accepts -Wimplicit-fallthrough... yes
-checking whether C++ compiler accepts -Wvla... yes
-checking whether C++ compiler accepts -Wcast-function-type... yes
-checking whether C++ compiler accepts -Wnull-pointer-subtraction... no
-checking whether C++ compiler accepts -Wnon-virtual-dtor... yes
-checking whether C++ compiler accepts -Wdeprecated-copy... yes
-checking whether C++ compiler accepts -Wdeprecated-copy-dtor... yes
-checking whether C++ compiler accepts -Wredundant-move... yes
-checking whether C++ compiler accepts -Wctad-maybe-unsupported... yes
-checking whether C++ compiler accepts -Woverloaded-virtual... yes
-checking whether C++ compiler accepts -Wlong-long... yes
-checking whether C++ compiler accepts -Wc++11-long-long... no
-checking whether C++ compiler accepts -Wundefined-var-template... no
-checking whether C++ compiler accepts -Winconsistent-missing-override... no
-checking whether C++ compiler accepts -Wunused-private-field... no
-checking whether C++ compiler accepts -Wunused-local-typedefs... yes
-checking whether C++ compiler accepts -Wunused-const-variable... yes
-checking whether C++ compiler accepts -Wtautological-unsigned-enum-zero-compare... no
-checking whether C++ compiler accepts -std=c++17... yes
-checking whether C++ compiler accepts -flto... yes
-checking for ld... /usr/bin/ld -m elf_x86_64
-checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
-checking for shared library run path origin... done
-checking 32-bit host C ABI... no
-checking for egrep -e... (cached) /usr/bin/grep -E
-checking for ELF binary format... yes
-checking for the common suffixes of directories in the library search path... lib,lib,lib64
-checking for iconv... yes
-checking for working iconv... yes
-checking whether iconv is compatible with its POSIX signature... yes
-checking for zlib.h... yes
-checking for lzma.h... yes
-checking for xml2-config... xml2-config
-checking for libxml/xmlversion.h... yes
-checking for GL/glew.h... no
-configure: using internal GLEW library
-checking for sdl2-config... sdl2-config
-checking for X... libraries , headers 
-checking how to run the C preprocessor... gcc -E
-checking whether gcc is Clang... no
-checking whether pthreads work with "-pthread" and "-lpthread"... yes
-checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
-checking whether more special flags are required for pthreads... no
-checking for PTHREAD_PRIO_INHERIT... yes
-checking whether we are using the Microsoft C++ compiler... no
-checking for windows.h... no
-checking for GL/gl.h... yes
-checking for OpenGL/gl.h... no
-checking for OpenGL library... -lGL
-checking for pkg-config... /usr/bin/pkg-config
-checking pkg-config is at least version 0.9.0... yes
-checking for freetype2 >= 11.0.5... yes
-checking for xvid.h... yes
-checking for vpx/vpx_decoder.h... yes
-checking for vpx/vp8dx.h... yes
-checking for openal >= 1.12... yes
-checking for neaacdec.h... yes
-checking for mad.h... yes
-checking for ogg/ogg.h... yes
-checking for vorbis/codec.h... yes
-checking for vorbis/vorbisfile.h... yes
-checking for Boost headers version >= 1.53.0... /usr/include
-checking for Boost's header version... 1_88
-checking for boost/utility.hpp... yes
-checking for boost/algorithm/string.hpp... yes
-checking for the toolset name used by Boost for g++... configure: WARNING: could not figure out which toolset name to use for g++
-
-checking for boost/system/error_code.hpp... yes
-checking for the Boost system library... yes
-checking for boost/system/error_code.hpp... (cached) yes
-checking for the Boost system library... (cached) yes
-checking for boost/filesystem/path.hpp... yes
-checking for the Boost filesystem library... (cached) yes
-checking for boost/date_time/posix_time/posix_time.hpp... yes
-checking for the Boost date_time library... (cached) yes
-checking for boost/uuid/uuid.hpp... yes
-checking for boost/scope_exit.hpp... yes
-checking for boost/system/error_code.hpp... (cached) yes
-checking for the Boost system library... (cached) yes
-checking for boost/locale.hpp... yes
-checking for the Boost locale library... (cached) yes
-checking for boost/type_traits.hpp... yes
-checking for pthread_join using gcc -pthread -lpthread... yes
-checking whether gcc is Clang... (cached) no
-checking for joinable pthread attribute... (cached) PTHREAD_CREATE_JOINABLE
-checking whether more special flags are required for pthreads... (cached) no
-checking for PTHREAD_PRIO_INHERIT... (cached) yes
-checking that generated files are newer than configure... done
-configure: creating ./config.status
-config.status: creating Makefile
-config.status: creating config.h
-config.status: executing depfiles commands
-config.status: executing libtool commands
-
-Enabled engines: 
-	Neverwinter Nights: yes
-	Neverwinter Nights 2: yes
-	Star Wars: Knights of the Old Republic: yes
-	Star Wars: Knights of the Old Republic II: The Sith Lords: yes
-	Jade Empire: yes
-	The Witcher: yes
-	Sonic Chronicles: The Dark Brotherhood: yes
-	Dragon Age: Origins: yes
-	Dragon Age II: yes
-
-Enabled libraries:
-	libmad: yes
-	libvorbis: yes
-	libfaad: yes
-	xvidcore: yes
-	libvpx: yes
-	liblzma: yes
-	libxml2: yes
-make  all-am
-make[1]: Entering directory '/build/xoreos-git/src/xoreos'
-  CXX      src/cline.o
-  CXX      src/engines.o
-  CXX      src/xoreos.o
-  CXX      src/engines/dragonage2/dragonage2.lo
-  CXX      src/engines/dragonage2/probes.lo
-  CXX      src/engines/dragonage2/util.lo
-  CXX      src/engines/dragonage2/modelloader.lo
-  CXX      src/engines/dragonage2/console.lo
-  CXX      src/engines/dragonage2/event.lo
-  CXX      src/engines/dragonage2/game.lo
-  CXX      src/engines/dragonage2/campaigns.lo
-  CXX      src/engines/dragonage2/campaign.lo
-  CXX      src/engines/dragonage2/area.lo
-  CXX      src/engines/dragonage2/room.lo
-  CXX      src/engines/dragonage2/object.lo
-  CXX      src/engines/dragonage2/waypoint.lo
-  CXX      src/engines/dragonage2/placeable.lo
-  CXX      src/engines/dragonage2/creature.lo
-  CXX      src/engines/dragonage2/objectcontainer.lo
-  CXX      src/engines/dragonage2/script/container.lo
-  CXX      src/engines/dragonage2/script/functions.lo
-  CXX      src/engines/dragonage2/script/functions_math.lo
-  CXX      src/engines/dragonage2/script/functions_string.lo
-  CXX      src/engines/dragonage2/script/functions_module.lo
-  CXX      src/engines/dragonage2/script/functions_object.lo
-  CXX      src/engines/dragonage2/script/functions_creature.lo
-  CXX      src/engines/dragonage2/script/functions_event.lo
-  CXX      src/engines/dragonage/dragonage.lo
-  CXX      src/engines/dragonage/probes.lo
-  CXX      src/engines/dragonage/util.lo
-  CXX      src/engines/dragonage/modelloader.lo
-  CXX      src/engines/dragonage/console.lo
-  CXX      src/engines/dragonage/event.lo
-  CXX      src/engines/dragonage/game.lo
-  CXX      src/engines/dragonage/campaigns.lo
-  CXX      src/engines/dragonage/campaign.lo
-  CXX      src/engines/dragonage/area.lo
-  CXX      src/engines/dragonage/room.lo
-  CXX      src/engines/dragonage/object.lo
-  CXX      src/engines/dragonage/waypoint.lo
-  CXX      src/engines/dragonage/placeable.lo
-  CXX      src/engines/dragonage/creature.lo
-  CXX      src/engines/dragonage/objectcontainer.lo
-  CXX      src/engines/dragonage/script/container.lo
-  CXX      src/engines/dragonage/script/functions.lo
-  CXX      src/engines/dragonage/script/functions_math.lo
-  CXX      src/engines/dragonage/script/functions_string.lo
-  CXX      src/engines/dragonage/script/functions_module.lo
-  CXX      src/engines/dragonage/script/functions_object.lo
-  CXX      src/engines/dragonage/script/functions_creature.lo
-  CXX      src/engines/dragonage/script/functions_event.lo
-  CXX      src/engines/sonic/sonic.lo
-  CXX      src/engines/sonic/probes.lo
-  CXX      src/engines/sonic/modelloader.lo
-  CXX      src/engines/sonic/console.lo
-  CXX      src/engines/sonic/util.lo
-  CXX      src/engines/sonic/game.lo
-  CXX      src/engines/sonic/areabackground.lo
-  CXX      src/engines/sonic/areaminimap.lo
-  CXX      src/engines/sonic/area.lo
-  CXX      src/engines/sonic/objectcontainer.lo
-  CXX      src/engines/sonic/module.lo
-  CXX      src/engines/sonic/object.lo
-  CXX      src/engines/sonic/placeable.lo
-  CXX      src/engines/witcher/witcher.lo
-  CXX      src/engines/witcher/probes.lo
-  CXX      src/engines/witcher/modelloader.lo
-  CXX      src/engines/witcher/console.lo
-  CXX      src/engines/witcher/game.lo
-  CXX      src/engines/witcher/campaign.lo
-  CXX      src/engines/witcher/objectcontainer.lo
-  CXX      src/engines/witcher/module.lo
-  CXX      src/engines/witcher/area.lo
-  CXX      src/engines/witcher/location.lo
-  CXX      src/engines/witcher/object.lo
-  CXX      src/engines/witcher/waypoint.lo
-  CXX      src/engines/witcher/situated.lo
-  CXX      src/engines/witcher/door.lo
-  CXX      src/engines/witcher/placeable.lo
-  CXX      src/engines/witcher/creature.lo
-  CXX      src/engines/witcher/nwscript/container.lo
-  CXX      src/engines/witcher/nwscript/functions.lo
-  CXX      src/engines/witcher/nwscript/functions_math.lo
-  CXX      src/engines/witcher/nwscript/functions_string.lo
-  CXX      src/engines/witcher/nwscript/functions_module.lo
-  CXX      src/engines/witcher/nwscript/functions_object.lo
-  CXX      src/engines/witcher/nwscript/functions_situated.lo
-  CXX      src/engines/witcher/nwscript/functions_creature.lo
-  CXX      src/engines/witcher/nwscript/functions_action.lo
-  CXX      src/engines/witcher/nwscript/functions_conversation.lo
-  CXX      src/engines/witcher/nwscript/functions_sound.lo
-  CXX      src/engines/witcher/lua/bindings.lo
-  CXX      src/engines/jade/jade.lo
-  CXX      src/engines/jade/probes.lo
-  CXX      src/engines/jade/modelloader.lo
-  CXX      src/engines/jade/console.lo
-  CXX      src/engines/jade/game.lo
-  CXX      src/engines/jade/module.lo
-  CXX      src/engines/jade/area.lo
-  CXX      src/engines/jade/arealayout.lo
-  CXX      src/engines/jade/room.lo
-  CXX      src/engines/jade/object.lo
-  CXX      src/engines/jade/objectcontainer.lo
-  CXX      src/engines/jade/creature.lo
-  CXX      src/engines/jade/placeable.lo
-  CXX      src/engines/jade/trigger.lo
-  CXX      src/engines/jade/waypoint.lo
-  CXX      src/engines/jade/location.lo
-  CXX      src/engines/jade/event.lo
-  CXX      src/engines/jade/script/container.lo
-  CXX      src/engines/jade/script/functions.lo
-  CXX      src/engines/jade/script/functions_math.lo
-  CXX      src/engines/jade/script/functions_string.lo
-  CXX      src/engines/jade/script/functions_object.lo
-  CXX      src/engines/jade/script/functions_event.lo
-  CXX      src/engines/jade/script/functions_module.lo
-  CXX      src/engines/jade/script/functions_creature.lo
-  CXX      src/engines/jade/script/functions_action.lo
-  CXX      src/engines/jade/script/functions_2da.lo
-  CXX      src/engines/jade/script/functions_game.lo
-  CXX      src/engines/jade/gui/gui.lo
-  CXX      src/engines/jade/gui/guibackground.lo
-  CXX      src/engines/jade/gui/main/main.lo
-  CXX      src/engines/jade/gui/main/options.lo
-  CXX      src/engines/jade/gui/options/audio.lo
-  CXX      src/engines/jade/gui/options/video.lo
-  CXX      src/engines/jade/gui/options/diff.lo
-  CXX      src/engines/jade/gui/options/feed.lo
-  CXX      src/engines/jade/gui/options/control.lo
-  CXX      src/engines/jade/gui/chargen/charactergeneration.lo
-  CXX      src/engines/jade/gui/chargen/charactergenerationbase.lo
-  CXX      src/engines/jade/gui/chargen/characterinfo.lo
-  CXX      src/engines/jade/gui/chargen/charactername.lo
-  CXX      src/engines/jade/gui/chargen/characterselection.lo
-  CXX      src/engines/jade/gui/chargen/charactersummary.lo
-  CXX      src/engines/kotor2/kotor2.lo
-  CXX      src/engines/kotor2/probes.lo
-  CXX      src/engines/kotor2/console.lo
-  CXX      src/engines/kotor2/modelloader.lo
-  CXX      src/engines/kotor2/game.lo
-  CXX      src/engines/kotor2/creature.lo
-  CXX      src/engines/kotor2/module.lo
-  CXX      src/engines/kotor2/script/functions.lo
-  CXX      src/engines/kotor2/gui/gui.lo
-  CXX      src/engines/kotor2/gui/dialog.lo
-  CXX      src/engines/kotor2/gui/main/main.lo
-  CXX      src/engines/kotor2/gui/chargen/classselection.lo
-  CXX      src/engines/kotor2/gui/chargen/charactergeneration.lo
-  CXX      src/engines/kotor2/gui/chargen/chargeninfo.lo
-  CXX      src/engines/kotor2/gui/chargen/quickorcustom.lo
-  CXX      src/engines/kotor2/gui/chargen/quickchar.lo
-  CXX      src/engines/kotor2/gui/chargen/customchar.lo
-  CXX      src/engines/kotor2/gui/chargen/chargenbase.lo
-  CXX      src/engines/kotor2/gui/chargen/chargenname.lo
-  CXX      src/engines/kotor2/gui/chargen/chargenportrait.lo
-  CXX      src/engines/kotor2/gui/ingame/ingame.lo
-  CXX      src/engines/kotor2/gui/ingame/hud.lo
-  CXX      src/engines/kotor2/gui/ingame/partyselection.lo
-  CXX      src/engines/kotor/kotor.lo
-  CXX      src/engines/kotor/probes.lo
-  CXX      src/engines/kotor/console.lo
-  CXX      src/engines/kotor/modelloader.lo
-  CXX      src/engines/kotor/version.lo
-  CXX      src/engines/kotor/game.lo
-  CXX      src/engines/kotor/module.lo
-  CXX      src/engines/kotor/creature.lo
-  CXX      src/engines/kotor/savedgame.lo
-  CXX      src/engines/kotor/script/functions.lo
-  CXX      src/engines/kotor/gui/saveload.lo
-  CXX      src/engines/kotor/gui/dialog.lo
-  CXX      src/engines/kotor/gui/main/main.lo
-  CXX      src/engines/kotor/gui/main/movies.lo
-  CXX      src/engines/kotor/gui/main/options.lo
-  CXX      src/engines/kotor/gui/options/gameplay.lo
-  CXX      src/engines/kotor/gui/options/mousesettings.lo
-  CXX      src/engines/kotor/gui/options/keyboardconfig.lo
-  CXX      src/engines/kotor/gui/options/feedback.lo
-  CXX      src/engines/kotor/gui/options/autopause.lo
-  CXX      src/engines/kotor/gui/options/graphics.lo
-  CXX      src/engines/kotor/gui/options/graphicsadv.lo
-  CXX      src/engines/kotor/gui/options/sound.lo
-  CXX      src/engines/kotor/gui/options/soundadv.lo
-  CXX      src/engines/kotor/gui/options/resolution.lo
-  CXX      src/engines/kotor/gui/chargen/classselection.lo
-  CXX      src/engines/kotor/gui/chargen/charactergeneration.lo
-  CXX      src/engines/kotor/gui/chargen/quickorcustom.lo
-  CXX      src/engines/kotor/gui/chargen/quickchar.lo
-  CXX      src/engines/kotor/gui/chargen/customchar.lo
-  CXX      src/engines/kotor/gui/chargen/chargenbase.lo
-  CXX      src/engines/kotor/gui/chargen/chargenportrait.lo
-  CXX      src/engines/kotor/gui/chargen/chargenname.lo
-  CXX      src/engines/kotor/gui/chargen/chargeninfo.lo
-  CXX      src/engines/kotor/gui/ingame/ingame.lo
-  CXX      src/engines/kotor/gui/ingame/hud.lo
-  CXX      src/engines/kotor/gui/ingame/container.lo
-  CXX      src/engines/kotor/gui/ingame/menu.lo
-  CXX      src/engines/kotor/gui/ingame/menu_equ.lo
-  CXX      src/engines/kotor/gui/ingame/menu_inv.lo
-  CXX      src/engines/kotor/gui/ingame/menu_char.lo
-  CXX      src/engines/kotor/gui/ingame/menu_abi.lo
-  CXX      src/engines/kotor/gui/ingame/menu_msg.lo
-  CXX      src/engines/kotor/gui/ingame/menu_jou.lo
-  CXX      src/engines/kotor/gui/ingame/menu_map.lo
-  CXX      src/engines/kotor/gui/ingame/menu_opt.lo
-  CXX      src/engines/kotor/gui/ingame/minimap.lo
-  CXX      src/engines/kotor/gui/ingame/partyselection.lo
-  CXX      src/engines/kotor/gui/dialogs/confirm.lo
-  CXX      src/engines/kotor/gui/loadscreen/loadscreen.lo
-  CXX      src/engines/nwn2/nwn2.lo
-  CXX      src/engines/nwn2/probes.lo
-  CXX      src/engines/nwn2/types.lo
-  CXX      src/engines/nwn2/modelloader.lo
-  CXX      src/engines/nwn2/util.lo
-  CXX      src/engines/nwn2/trxfile.lo
-  CXX      src/engines/nwn2/console.lo
-  CXX      src/engines/nwn2/game.lo
-  CXX      src/engines/nwn2/campaign.lo
-  CXX      src/engines/nwn2/objectcontainer.lo
-  CXX      src/engines/nwn2/module.lo
-  CXX      src/engines/nwn2/area.lo
-  CXX      src/engines/nwn2/location.lo
-  CXX      src/engines/nwn2/object.lo
-  CXX      src/engines/nwn2/waypoint.lo
-  CXX      src/engines/nwn2/situated.lo
-  CXX      src/engines/nwn2/door.lo
-  CXX      src/engines/nwn2/placeable.lo
-  CXX      src/engines/nwn2/creature.lo
-  CXX      src/engines/nwn2/trap.lo
-  CXX      src/engines/nwn2/feats.lo
-  CXX      src/engines/nwn2/trigger.lo
-  CXX      src/engines/nwn2/faction.lo
-  CXX      src/engines/nwn2/roster.lo
-  CXX      src/engines/nwn2/item.lo
-  CXX      src/engines/nwn2/itemproperty.lo
-  CXX      src/engines/nwn2/inventory.lo
-  CXX      src/engines/nwn2/store.lo
-  CXX      src/engines/nwn2/journal.lo
-  CXX      src/engines/nwn2/script/container.lo
-  CXX      src/engines/nwn2/script/functions.lo
-  CXX      src/engines/nwn2/script/functions_math.lo
-  CXX      src/engines/nwn2/script/functions_string.lo
-  CXX      src/engines/nwn2/script/functions_campaign.lo
-  CXX      src/engines/nwn2/script/functions_module.lo
-  CXX      src/engines/nwn2/script/functions_object.lo
-  CXX      src/engines/nwn2/script/functions_situated.lo
-  CXX      src/engines/nwn2/script/functions_inventory.lo
-  CXX      src/engines/nwn2/script/functions_itemproperty.lo
-  CXX      src/engines/nwn2/script/functions_creature.lo
-  CXX      src/engines/nwn2/script/functions_action.lo
-  CXX      src/engines/nwn2/script/functions_conversation.lo
-  CXX      src/engines/nwn2/script/functions_roster.lo
-  CXX      src/engines/nwn2/script/functions_sound.lo
-  CXX      src/engines/nwn/nwn.lo
-  CXX      src/engines/nwn/probes.lo
-  CXX      src/engines/nwn/types.lo
-  CXX      src/engines/nwn/modelloader.lo
-  CXX      src/engines/nwn/version.lo
-  CXX      src/engines/nwn/creature.lo
-  CXX      src/engines/nwn/console.lo
-  CXX      src/engines/nwn/game.lo
-  CXX      src/engines/nwn/module.lo
-  CXX      src/engines/nwn/area.lo
-  CXX      src/engines/nwn/tileset.lo
-  CXX      src/engines/nwn/objectcontainer.lo
-  CXX      src/engines/nwn/object.lo
-  CXX      src/engines/nwn/waypoint.lo
-  CXX      src/engines/nwn/situated.lo
-  CXX      src/engines/nwn/placeable.lo
-  CXX      src/engines/nwn/door.lo
-  CXX      src/engines/nwn/item.lo
-  CXX      src/engines/nwn/location.lo
-  CXX      src/engines/nwn/pathfinding.lo
-  CXX      src/engines/nwn/walkmeshloader.lo
-  CXX      src/engines/nwn/objectwalkmesh.lo
-  CXX      src/engines/nwn/script/container.lo
-  CXX      src/engines/nwn/script/functions.lo
-  CXX      src/engines/nwn/script/functions_math.lo
-  CXX      src/engines/nwn/script/functions_string.lo
-  CXX      src/engines/nwn/script/functions_module.lo
-  CXX      src/engines/nwn/script/functions_object.lo
-  CXX      src/engines/nwn/script/functions_situated.lo
-  CXX      src/engines/nwn/script/functions_creature.lo
-  CXX      src/engines/nwn/script/functions_action.lo
-  CXX      src/engines/nwn/script/functions_conversation.lo
-  CXX      src/engines/nwn/script/functions_sound.lo
-  CXX      src/engines/nwn/gui/gui.lo
-  CXX      src/engines/nwn/gui/legal.lo
-  CXX      src/engines/nwn/gui/widgets/tooltip.lo
-  CXX      src/engines/nwn/gui/widgets/nwnwidget.lo
-  CXX      src/engines/nwn/gui/widgets/nwnwidgetwithcaption.lo
-  CXX      src/engines/nwn/gui/widgets/modelwidget.lo
-  CXX      src/engines/nwn/gui/widgets/quadwidget.lo
-  CXX      src/engines/nwn/gui/widgets/button.lo
-  CXX      src/engines/nwn/gui/widgets/checkbox.lo
-  CXX      src/engines/nwn/gui/widgets/close.lo
-  CXX      src/engines/nwn/gui/widgets/editbox.lo
-  CXX      src/engines/nwn/gui/widgets/frame.lo
-  CXX      src/engines/nwn/gui/widgets/label.lo
-  CXX      src/engines/nwn/gui/widgets/listbox.lo
-  CXX      src/engines/nwn/gui/widgets/panel.lo
-  CXX      src/engines/nwn/gui/widgets/scrollbar.lo
-  CXX      src/engines/nwn/gui/widgets/portrait.lo
-  CXX      src/engines/nwn/gui/widgets/slider.lo
-  CXX      src/engines/nwn/gui/widgets/buttonsgroup.lo
-  CXX      src/engines/nwn/gui/widgets/gridbox.lo
-  CXX      src/engines/nwn/gui/widgets/listitembutton.lo
-  CXX      src/engines/nwn/gui/dialogs/okcancel.lo
-  CXX      src/engines/nwn/gui/dialogs/yesnocancel.lo
-  CXX      src/engines/nwn/gui/main/charpremade.lo
-  CXX      src/engines/nwn/gui/main/chartype.lo
-  CXX      src/engines/nwn/gui/main/main.lo
-  CXX      src/engines/nwn/gui/main/moviesbase.lo
-  CXX      src/engines/nwn/gui/main/moviescamp.lo
-  CXX      src/engines/nwn/gui/main/new.lo
-  CXX      src/engines/nwn/gui/main/newcamp.lo
-  CXX      src/engines/nwn/gui/main/newgamefog.lo
-  CXX      src/engines/nwn/gui/main/newmodule.lo
-  CXX      src/engines/nwn/gui/main/newpremium.lo
-  CXX      src/engines/nwn/gui/main/newxp1.lo
-  CXX      src/engines/nwn/gui/main/newxp2.lo
-  CXX      src/engines/nwn/gui/main/options.lo
-  CXX      src/engines/nwn/gui/chargen/chargenbase.lo
-  CXX      src/engines/nwn/gui/chargen/chargenchoices.lo
-  CXX      src/engines/nwn/gui/chargen/chargen.lo
-  CXX      src/engines/nwn/gui/chargen/charsex.lo
-  CXX      src/engines/nwn/gui/chargen/charrace.lo
-  CXX      src/engines/nwn/gui/chargen/charportrait.lo
-  CXX      src/engines/nwn/gui/chargen/charclass.lo
-  CXX      src/engines/nwn/gui/chargen/charalignment.lo
-  CXX      src/engines/nwn/gui/chargen/charattributes.lo
-  CXX      src/engines/nwn/gui/chargen/charpackage.lo
-  CXX      src/engines/nwn/gui/chargen/charskills.lo
-  CXX      src/engines/nwn/gui/chargen/charfeats.lo
-  CXX      src/engines/nwn/gui/chargen/charhelp.lo
-  CXX      src/engines/nwn/gui/chargen/charfeatspopup.lo
-  CXX      src/engines/nwn/gui/chargen/charschool.lo
-  CXX      src/engines/nwn/gui/chargen/chardomain.lo
-  CXX      src/engines/nwn/gui/chargen/charspells.lo
-  CXX      src/engines/nwn/gui/chargen/charappearance.lo
-  CXX      src/engines/nwn/gui/chargen/charinfovoice.lo
-  CXX      src/engines/nwn/gui/options/controls.lo
-  CXX      src/engines/nwn/gui/options/feedback.lo
-  CXX      src/engines/nwn/gui/options/game.lo
-  CXX      src/engines/nwn/gui/options/gorepass.lo
-  CXX      src/engines/nwn/gui/options/resolution.lo
-  CXX      src/engines/nwn/gui/options/sound.lo
-  CXX      src/engines/nwn/gui/options/soundadv.lo
-  CXX      src/engines/nwn/gui/options/video.lo
-  CXX      src/engines/nwn/gui/options/videoadv.lo
-  CXX      src/engines/nwn/gui/ingame/ingame.lo
-  CXX      src/engines/nwn/gui/ingame/main.lo
-  CXX      src/engines/nwn/gui/ingame/quickbar.lo
-  CXX      src/engines/nwn/gui/ingame/quickchat.lo
-  CXX      src/engines/nwn/gui/ingame/compass.lo
-  CXX      src/engines/nwn/gui/ingame/charinfo.lo
-  CXX      src/engines/nwn/gui/ingame/partyleader.lo
-  CXX      src/engines/nwn/gui/ingame/dialog.lo
-  CXX      src/engines/engine.lo
-  CXX      src/engines/enginemanager.lo
-  CXX      src/engines/gamethread.lo
-  CXX      src/engines/kotorbase/room.lo
-  CXX      src/engines/kotorbase/object.lo
-  CXX      src/engines/kotorbase/action.lo
-  CXX      src/engines/kotorbase/item.lo
-  CXX      src/engines/kotorbase/inventory.lo
-  CXX      src/engines/kotorbase/creature.lo
-  CXX      src/engines/kotorbase/situated.lo
-  CXX      src/engines/kotorbase/placeable.lo
-  CXX      src/engines/kotorbase/door.lo
-  CXX      src/engines/kotorbase/module.lo
-  CXX      src/engines/kotorbase/trigger.lo
-  CXX      src/engines/kotorbase/waypoint.lo
-  CXX      src/engines/kotorbase/location.lo
-  CXX      src/engines/kotorbase/sound.lo
-  CXX      src/engines/kotorbase/area.lo
-  CXX      src/engines/kotorbase/objectcontainer.lo
-  CXX      src/engines/kotorbase/actionexecutor.lo
-  CXX      src/engines/kotorbase/savedgame.lo
-  CXX      src/engines/kotorbase/game.lo
-  CXX      src/engines/kotorbase/partyleader.lo
-  CXX      src/engines/kotorbase/partycontroller.lo
-  CXX      src/engines/kotorbase/creaturesearch.lo
-  CXX      src/engines/kotorbase/cameracontroller.lo
-  CXX      src/engines/kotorbase/creatureinfo.lo
-  CXX      src/engines/kotorbase/engine.lo
-  CXX      src/engines/kotorbase/console.lo
-  CXX      src/engines/kotorbase/actionqueue.lo
-  CXX      src/engines/kotorbase/round.lo
-  CXX      src/engines/kotorbase/script/container.lo
-  CXX      src/engines/kotorbase/script/event.lo
-  CXX      src/engines/kotorbase/script/functions.lo
-  CXX      src/engines/kotorbase/script/functions_action.lo
-  CXX      src/engines/kotorbase/script/functions_creatures.lo
-  CXX      src/engines/kotorbase/script/functions_events.lo
-  CXX      src/engines/kotorbase/script/functions_global.lo
-  CXX      src/engines/kotorbase/script/functions_local.lo
-  CXX      src/engines/kotorbase/script/functions_math.lo
-  CXX      src/engines/kotorbase/script/functions_module.lo
-  CXX      src/engines/kotorbase/script/functions_movie.lo
-  CXX      src/engines/kotorbase/script/functions_object.lo
-  CXX      src/engines/kotorbase/script/functions_party.lo
-  CXX      src/engines/kotorbase/script/functions_situated.lo
-  CXX      src/engines/kotorbase/script/functions_sound.lo
-  CXX      src/engines/kotorbase/script/functions_string.lo
-  CXX      src/engines/kotorbase/script/functions_time.lo
-  CXX      src/engines/kotorbase/script/functions_parameters.lo
-  CXX      src/engines/kotorbase/gui/inventoryitem.lo
-  CXX      src/engines/kotorbase/gui/chargeninfo.lo
-  CXX      src/engines/kotorbase/gui/ingame.lo
-  CXX      src/engines/kotorbase/gui/dialog.lo
-  CXX      src/engines/kotorbase/gui/partyselection.lo
-  CXX      src/engines/kotorbase/gui/gui.lo
-  CXX      src/engines/kotorbase/gui/guibackground.lo
-  CXX      src/engines/kotorbase/gui/loadscreen.lo
-  CXX      src/engines/kotorbase/gui/selectioncircle.lo
-  CXX      src/engines/kotorbase/gui/hud.lo
-  CXX      src/engines/kotorbase/gui/menubase.lo
-  CXX      src/engines/kotorbase/path/doorwalkmesh.lo
-  CXX      src/engines/kotorbase/path/objectwalkmesh.lo
-  CXX      src/engines/kotorbase/path/pathfinding.lo
-  CXX      src/engines/kotorbase/path/walkmeshloader.lo
-  CXX      src/engines/odyssey/button.lo
-  CXX      src/engines/odyssey/checkbox.lo
-  CXX      src/engines/odyssey/widget.lo
-  CXX      src/engines/odyssey/label.lo
-  CXX      src/engines/odyssey/listbox.lo
-  CXX      src/engines/odyssey/panel.lo
-  CXX      src/engines/odyssey/progressbar.lo
-  CXX      src/engines/odyssey/protoitem.lo
-  CXX      src/engines/odyssey/scrollbar.lo
-  CXX      src/engines/odyssey/slider.lo
-  CXX      src/engines/eclipse/externalhandler.lo
-  CXX      src/engines/aurora/util.lo
-  CXX      src/engines/aurora/resources.lo
-  CXX      src/engines/aurora/tokenman.lo
-  CXX      src/engines/aurora/modelloader.lo
-  CXX      src/engines/aurora/model.lo
-  CXX      src/engines/aurora/widget.lo
-  CXX      src/engines/aurora/gui.lo
-  CXX      src/engines/aurora/console.lo
-  CXX      src/engines/aurora/loadprogress.lo
-  CXX      src/engines/aurora/flycamera.lo
-  CXX      src/engines/aurora/trigger.lo
-  CXX      src/engines/aurora/pathfinding.lo
-  CXX      src/engines/aurora/astar.lo
-  CXX      src/engines/aurora/localpathfinding.lo
-  CXX      src/events/events.lo
-  CXX      src/events/requesttypes.lo
-  CXX      src/events/requests.lo
-  CXX      src/events/notifications.lo
-  CXX      src/events/timerman.lo
-  CXX      src/events/joystick.lo
-  CXX      src/events/gamecontroller.lo
-  CXX      src/common/maths.lo
-  CXX      src/common/sinetables.lo
-  CXX      src/common/cosinetables.lo
-  CXX      src/common/sinewindows.lo
-  CXX      src/common/fft.lo
-  CXX      src/common/rdft.lo
-  CXX      src/common/dct.lo
-  CXX      src/common/mdct.lo
-  CXX      src/common/threads.lo
-  CXX      src/common/thread.lo
-  CXX      src/common/ustring.lo
-  CXX      src/common/md5.lo
-  CXX      src/common/blowfish.lo
-  CXX      src/common/deflate.lo
-  CXX      src/common/error.lo
-  CXX      src/common/util.lo
-  CXX      src/common/strutil.lo
-  CXX      src/common/encoding.lo
-  CXX      src/common/platform.lo
-  CXX      src/common/debugman.lo
-  CXX      src/common/debug.lo
-  CXX      src/common/uuid.lo
-  CXX      src/common/datetime.lo
-  CXX      src/common/readstream.lo
-  CXX      src/common/memreadstream.lo
-  CXX      src/common/writestream.lo
-  CXX      src/common/memwritestream.lo
-  CXX      src/common/streamtokenizer.lo
-  CXX      src/common/stringmap.lo
-  CXX      src/common/readline.lo
-  CXX      src/common/readfile.lo
-  CXX      src/common/writefile.lo
-  CXX      src/common/filepath.lo
-  CXX      src/common/filelist.lo
-  CXX      src/common/huffman.lo
-  CXX      src/common/boundingbox.lo
-  CXX      src/common/configfile.lo
-  CXX      src/common/configman.lo
-  CXX      src/common/foxpro.lo
-  CXX      src/common/zipfile.lo
-  CXX      src/common/pe_exe.lo
-  CXX      src/common/systemfonts.lo
-  CXX      src/common/changeid.lo
-  CXX      src/common/rect.lo
-  CXX      src/common/rational.lo
-  CXX      src/common/timestamp.lo
-  CXX      src/common/aabbnode.lo
-  CXX      src/common/random.lo
-  CXX      src/common/semaphore.lo
-  CXX      src/common/serializationstream.lo
-  CXX      src/common/string.lo
-  CXX      src/common/lzx.lo
-  CXX      src/common/lzma.lo
-  CXX      src/common/xml.lo
-  CC       external/mspack/libmspack_la-cabc.lo
-  CC       external/mspack/libmspack_la-cabd.lo
-  CC       external/mspack/libmspack_la-chmc.lo
-  CC       external/mspack/libmspack_la-chmd.lo
-  CC       external/mspack/libmspack_la-crc32.lo
-  CC       external/mspack/libmspack_la-hlpc.lo
-  CC       external/mspack/libmspack_la-hlpd.lo
-  CC       external/mspack/libmspack_la-kwajc.lo
-  CC       external/mspack/libmspack_la-kwajd.lo
-  CC       external/mspack/libmspack_la-litc.lo
-  CC       external/mspack/libmspack_la-litd.lo
-  CC       external/mspack/libmspack_la-lzssd.lo
-  CC       external/mspack/libmspack_la-lzxc.lo
-  CC       external/mspack/libmspack_la-lzxd.lo
-  CC       external/mspack/libmspack_la-mszipc.lo
-  CC       external/mspack/libmspack_la-mszipd.lo
-  CC       external/mspack/libmspack_la-oabc.lo
-  CC       external/mspack/libmspack_la-oabd.lo
-  CC       external/mspack/libmspack_la-qtmc.lo
-  CC       external/mspack/libmspack_la-qtmd.lo
-  CC       external/mspack/libmspack_la-system.lo
-  CC       external/mspack/libmspack_la-szddc.lo
-  CC       external/mspack/libmspack_la-szddd.lo
-  CXX      src/video/decoder.lo
-  CXX      src/video/bink.lo
-  CXX      src/video/fader.lo
-  CXX      src/video/quicktime.lo
-  CXX      src/video/xmv.lo
-  CXX      src/video/actimagine.lo
-  CXX      src/video/matroska.lo
-  CXX      src/video/aurora/videoplayer.lo
-  CXX      src/video/codecs/codec.lo
-  CXX      src/video/codecs/wmv2data.lo
-  CXX      src/video/codecs/xmvwmv2.lo
-  CXX      src/video/codecs/h263.lo
-  CXX      src/video/codecs/vpx.lo
-  CXX      src/sound/sound.lo
-  CXX      src/sound/audiostream.lo
-  CXX      src/sound/interleaver.lo
-  CXX      src/sound/xactwavebank.lo
-  CXX      src/sound/xactwavebank_ascii.lo
-  CXX      src/sound/xactwavebank_binary.lo
-  CXX      src/sound/xactsoundbank.lo
-  CXX      src/sound/xactsoundbank_ascii.lo
-  CXX      src/sound/xactsoundbank_binary.lo
-  CXX      src/sound/fmodsamplebank.lo
-  CXX      src/sound/wwisesoundbank.lo
-  CXX      src/sound/fmodeventfile.lo
-  CXX      src/sound/decoders/adpcm.lo
-  CXX      src/sound/decoders/wave.lo
-  CXX      src/sound/decoders/pcm.lo
-  CXX      src/sound/decoders/asf.lo
-  CXX      src/sound/decoders/wma.lo
-  CXX      src/sound/decoders/wwriffvorbis.lo
-  CXX      src/sound/decoders/aac.lo
-  CXX      src/sound/decoders/mp3.lo
-  CXX      src/sound/decoders/vorbis.lo
-  CXX      src/graphics/windowman.lo
-  CXX      src/graphics/graphics.lo
-  CXX      src/graphics/fpscounter.lo
-  CXX      src/graphics/icon.lo
-  CXX      src/graphics/cursor.lo
-  CXX      src/graphics/queueman.lo
-  CXX      src/graphics/queueable.lo
-  CXX      src/graphics/glcontainer.lo
-  CXX      src/graphics/texture.lo
-  CXX      src/graphics/font.lo
-  CXX      src/graphics/camera.lo
-  CXX      src/graphics/renderable.lo
-  CXX      src/graphics/yuv_to_rgb.lo
-  CXX      src/graphics/ttf.lo
-  CXX      src/graphics/indexbuffer.lo
-  CXX      src/graphics/vertexbuffer.lo
-  CXX      src/graphics/imguiwrapper.lo
-  CXX      src/graphics/imguidemo.lo
-  CXX      src/graphics/aurora/texture.lo
-  CXX      src/graphics/aurora/texturehandle.lo
-  CXX      src/graphics/aurora/textureman.lo
-  CXX      src/graphics/aurora/pltfile.lo
-  CXX      src/graphics/aurora/cursor.lo
-  CXX      src/graphics/aurora/cursorman.lo
-  CXX      src/graphics/aurora/texturefont.lo
-  CXX      src/graphics/aurora/abcfont.lo
-  CXX      src/graphics/aurora/ttffont.lo
-  CXX      src/graphics/aurora/nftrfont.lo
-  CXX      src/graphics/aurora/fonthandle.lo
-  CXX      src/graphics/aurora/fontman.lo
-  CXX      src/graphics/aurora/highlightable.lo
-  CXX      src/graphics/aurora/text.lo
-  CXX      src/graphics/aurora/highlightabletext.lo
-  CXX      src/graphics/aurora/fps.lo
-  CXX      src/graphics/aurora/cube.lo
-  CXX      src/graphics/aurora/highlightableguiquad.lo
-  CXX      src/graphics/aurora/guiquad.lo
-  CXX      src/graphics/aurora/geometryobject.lo
-  CXX      src/graphics/aurora/modelnode.lo
-  CXX      src/graphics/aurora/model.lo
-  CXX      src/graphics/aurora/animnode.lo
-  CXX      src/graphics/aurora/animation.lo
-  CXX      src/graphics/aurora/fadequad.lo
-  CXX      src/graphics/aurora/borderquad.lo
-  CXX      src/graphics/aurora/subscenequad.lo
-  CXX      src/graphics/aurora/model_nwn.lo
-  CXX      src/graphics/aurora/model_nwn2.lo
-  CXX      src/graphics/aurora/model_kotor.lo
-  CXX      src/graphics/aurora/model_jade.lo
-  CXX      src/graphics/aurora/model_witcher.lo
-  CXX      src/graphics/aurora/model_sonic.lo
-  CXX      src/graphics/aurora/model_dragonage.lo
-  CXX      src/graphics/aurora/kotordialogframe.lo
-  CXX      src/graphics/aurora/animationthread.lo
-  CXX      src/graphics/aurora/walkmesh.lo
-  CXX      src/graphics/aurora/animationchannel.lo
-  CXX      src/graphics/aurora/line.lo
-  CXX      src/graphics/aurora/skeletalanimation.lo
-  CXX      src/graphics/images/decoder.lo
-  CXX      src/graphics/images/dumptga.lo
-  CXX      src/graphics/images/screenshot.lo
-  CXX      src/graphics/images/surface.lo
-  CXX      src/graphics/images/cubemapcombiner.lo
-  CXX      src/graphics/images/tga.lo
-  CXX      src/graphics/images/dds.lo
-  CXX      src/graphics/images/tpc.lo
-  CXX      src/graphics/images/txb.lo
-  CXX      src/graphics/images/txitypes.lo
-  CXX      src/graphics/images/txi.lo
-  CXX      src/graphics/images/s3tc.lo
-  CXX      src/graphics/images/sbm.lo
-  CXX      src/graphics/images/winiconimage.lo
-  CXX      src/graphics/images/xoreositex.lo
-  CXX      src/graphics/images/nbfs.lo
-  CXX      src/graphics/images/nclr.lo
-  CXX      src/graphics/images/ncgr.lo
-  CXX      src/graphics/images/cbgt.lo
-  CXX      src/graphics/shader/shader.lo
-  CXX      src/graphics/shader/shaderbuilder.lo
-  CXX      src/graphics/shader/shaderinstance.lo
-  CXX      src/graphics/shader/shadermaterial.lo
-  CXX      src/graphics/shader/shaderrenderable.lo
-  CXX      src/graphics/shader/shadersurface.lo
-  CXX      src/graphics/shader/materialman.lo
-  CXX      src/graphics/shader/surfaceman.lo
-  CXX      src/graphics/mesh/mesh.lo
-  CXX      src/graphics/mesh/meshman.lo
-  CXX      src/graphics/mesh/meshwirebox.lo
-  CXX      src/graphics/mesh/meshfont.lo
-  CXX      src/graphics/mesh/meshquad.lo
-  CXX      src/graphics/render/renderman.lo
-  CXX      src/graphics/render/renderqueue.lo
-  CXX      external/glew/glew.lo
-  CXX      src/aurora/util.lo
-  CXX      src/aurora/language.lo
-external/glew/glew.cpp: In function 'GLboolean _glewStrSame1(const GLubyte**, GLuint*, const GLubyte*, GLuint)':
-external/glew/glew.cpp:261:29: warning: comparing the result of pointer addition '((* a) + ((sizetype)i))' and NULL [-Waddress]
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test hasCXX-Wall
+-- Performing Test hasCXX-Wall - Success
+-- Performing Test hasCXX-Wignored-qualifiers
+-- Performing Test hasCXX-Wignored-qualifiers - Success
+-- Performing Test hasCXX-Wpointer-arith
+-- Performing Test hasCXX-Wpointer-arith - Success
+-- Performing Test hasCXX-Wshadow
+-- Performing Test hasCXX-Wshadow - Success
+-- Performing Test hasCXX-Wsign-compare
+-- Performing Test hasCXX-Wsign-compare - Success
+-- Performing Test hasCXX-Wtype-limits
+-- Performing Test hasCXX-Wtype-limits - Success
+-- Performing Test hasCXX-Wuninitialized
+-- Performing Test hasCXX-Wuninitialized - Success
+-- Performing Test hasCXX-Wunused-parameter
+-- Performing Test hasCXX-Wunused-parameter - Success
+-- Performing Test hasCXX-Wunused-but-set-parameter
+-- Performing Test hasCXX-Wunused-but-set-parameter - Success
+-- Performing Test hasCXX-Wduplicated-cond
+-- Performing Test hasCXX-Wduplicated-cond - Success
+-- Performing Test hasCXX-Wduplicated-branches
+-- Performing Test hasCXX-Wduplicated-branches - Success
+-- Performing Test hasCXX-Wlogical-op
+-- Performing Test hasCXX-Wlogical-op - Success
+-- Performing Test hasCXX-Wshift-negative-value
+-- Performing Test hasCXX-Wshift-negative-value - Success
+-- Performing Test hasCXX-Wshift-overflow=2
+-- Performing Test hasCXX-Wshift-overflow=2 - Success
+-- Performing Test hasCXX-Wimplicit-fallthrough
+-- Performing Test hasCXX-Wimplicit-fallthrough - Success
+-- Performing Test hasCXX-Wvla
+-- Performing Test hasCXX-Wvla - Success
+-- Performing Test hasCXX-Wcast-function-type
+-- Performing Test hasCXX-Wcast-function-type - Success
+-- Performing Test hasCXX-Wnull-pointer-subtraction
+-- Performing Test hasCXX-Wnull-pointer-subtraction - Failed
+-- Performing Test hasCXX-Wnon-virtual-dtor
+-- Performing Test hasCXX-Wnon-virtual-dtor - Success
+-- Performing Test hasCXX-Wdeprecated-copy
+-- Performing Test hasCXX-Wdeprecated-copy - Success
+-- Performing Test hasCXX-Wdeprecated-copy-dtor
+-- Performing Test hasCXX-Wdeprecated-copy-dtor - Success
+-- Performing Test hasCXX-Wredundant-move
+-- Performing Test hasCXX-Wredundant-move - Success
+-- Performing Test hasCXX-Wctad-maybe-unsupported
+-- Performing Test hasCXX-Wctad-maybe-unsupported - Success
+-- Performing Test hasCXX-Woverloaded-virtual
+-- Performing Test hasCXX-Woverloaded-virtual - Success
+-- Performing Test hasCXX-Wlong-long
+-- Performing Test hasCXX-Wlong-long - Success
+-- Performing Test hasCXX-Wc++11-long-long
+-- Performing Test hasCXX-Wc++11-long-long - Failed
+-- Performing Test hasCXX-Wundefined-var-template
+-- Performing Test hasCXX-Wundefined-var-template - Failed
+-- Performing Test hasCXX-Winconsistent-missing-override
+-- Performing Test hasCXX-Winconsistent-missing-override - Failed
+-- Performing Test hasCXX-Wunused-private-field
+-- Performing Test hasCXX-Wunused-private-field - Failed
+-- Performing Test hasCXX-Wunused-local-typedefs
+-- Performing Test hasCXX-Wunused-local-typedefs - Success
+-- Performing Test hasCXX-Wunused-const-variable
+-- Performing Test hasCXX-Wunused-const-variable - Success
+-- Performing Test hasCXX-Wtautological-unsigned-enum-zero-compare
+-- Performing Test hasCXX-Wtautological-unsigned-enum-zero-compare - Failed
+-- Looking for C++ include stdint.h
+-- Looking for C++ include stdint.h - found
+-- Looking for C++ include inttypes.h
+-- Looking for C++ include inttypes.h - found
+-- Looking for C++ include sys/types.h
+-- Looking for C++ include sys/types.h - found
+-- Looking for C++ include stddef.h
+-- Looking for C++ include stddef.h - found
+-- Check size of char
+-- Check size of char - done
+-- Check size of short
+-- Check size of short - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of void *
+-- Check size of void * - done
+-- Check size of intptr_t
+-- Check size of intptr_t - done
+-- Check size of uintptr_t
+-- Check size of uintptr_t - done
+-- Looking for strtof
+-- Looking for strtof - found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strtoull
+-- Looking for strtoull - found
+-- The C compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test Iconv_IS_BUILT_IN
+-- Performing Test Iconv_IS_BUILT_IN - Success
+-- Found Iconv: built in to C library
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Found Boost: /opt/boost1.88/lib/cmake/Boost-1.88.0/BoostConfig.cmake (found version "1.88.0") found components: system filesystem date_time locale
+-- Found libSDL2: /usr/lib/libSDL2.so
+-- Found OpenAL: /usr/lib/libopenal.so
+-- Found Freetype: /usr/lib/libfreetype.so (found version "2.14.1")
+-- Found libmad: /usr/lib/libmad.so
+-- Found libfaad: /usr/lib/libfaad.so
+-- Found libogg: /usr/lib/libogg.so
+-- Found libvorbis: /usr/lib/libvorbis.so
+-- Found libvorbisfile: /usr/lib/libvorbisfile.so
+-- Found libxvid: /usr/lib/libxvidcore.so
+-- Found libvpx: /usr/lib/libvpx.so
+-- Found liblzma: /usr/lib/liblzma.so
+-- Found LibXml2: /usr/lib/libxml2.so (found version "2.15.1")
+-- libGLEW was not found. Make sure GLEW_LIBRARY and GLEW_INCLUDE_DIR are set.
+-- Using internal GLEW library
+-- Parsing external/glew/rules.mk...
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found Threads: TRUE
+-- Parsing external/lua/rules.mk...
+-- Parsing external/toluapp/rules.mk...
+-- Parsing external/imgui/rules.mk...
+-- Parsing external/mspack/rules.mk...
+-- Parsing src/rules.mk...
+-- Parsing src/version/rules.mk...
+-- Parsing src/common/rules.mk...
+-- Parsing src/aurora/rules.mk...
+-- Parsing src/aurora/nwscript/rules.mk...
+-- Parsing src/aurora/lua/rules.mk...
+-- Parsing src/aurora/actionscript/rules.mk...
+-- Parsing src/graphics/rules.mk...
+-- Parsing src/graphics/images/rules.mk...
+-- Parsing src/graphics/aurora/rules.mk...
+-- Parsing src/graphics/mesh/rules.mk...
+-- Parsing src/graphics/render/rules.mk...
+-- Parsing src/graphics/shader/rules.mk...
+-- Parsing src/sound/rules.mk...
+-- Parsing src/sound/decoders/rules.mk...
+-- Parsing src/video/rules.mk...
+-- Parsing src/video/codecs/rules.mk...
+-- Parsing src/video/aurora/rules.mk...
+-- Parsing src/events/rules.mk...
+-- Parsing src/engines/rules.mk...
+-- Parsing src/engines/aurora/rules.mk...
+-- Parsing src/engines/odyssey/rules.mk...
+-- Parsing src/engines/eclipse/rules.mk...
+-- Parsing src/engines/kotorbase/rules.mk...
+-- Parsing src/engines/kotorbase/script/rules.mk...
+-- Parsing src/engines/kotorbase/gui/rules.mk...
+-- Parsing src/engines/kotorbase/path/rules.mk...
+-- Parsing src/engines/nwn/rules.mk...
+-- Parsing src/engines/nwn/script/rules.mk...
+-- Parsing src/engines/nwn/gui/rules.mk...
+-- Parsing src/engines/nwn/gui/widgets/rules.mk...
+-- Parsing src/engines/nwn/gui/dialogs/rules.mk...
+-- Parsing src/engines/nwn/gui/main/rules.mk...
+-- Parsing src/engines/nwn/gui/chargen/rules.mk...
+-- Parsing src/engines/nwn/gui/options/rules.mk...
+-- Parsing src/engines/nwn/gui/ingame/rules.mk...
+-- Parsing src/engines/nwn2/rules.mk...
+-- Parsing src/engines/nwn2/script/rules.mk...
+-- Parsing src/engines/kotor/rules.mk...
+-- Parsing src/engines/kotor/script/rules.mk...
+-- Parsing src/engines/kotor/gui/rules.mk...
+-- Parsing src/engines/kotor/gui/main/rules.mk...
+-- Parsing src/engines/kotor/gui/options/rules.mk...
+-- Parsing src/engines/kotor/gui/chargen/rules.mk...
+-- Parsing src/engines/kotor/gui/ingame/rules.mk...
+-- Parsing src/engines/kotor/gui/dialogs/rules.mk...
+-- Parsing src/engines/kotor/gui/loadscreen/rules.mk...
+-- Parsing src/engines/kotor2/rules.mk...
+-- Parsing src/engines/kotor2/script/rules.mk...
+-- Parsing src/engines/kotor2/gui/rules.mk...
+-- Parsing src/engines/kotor2/gui/main/rules.mk...
+-- Parsing src/engines/kotor2/gui/chargen/rules.mk...
+-- Parsing src/engines/kotor2/gui/ingame/rules.mk...
+-- Parsing src/engines/jade/rules.mk...
+-- Parsing src/engines/jade/script/rules.mk...
+-- Parsing src/engines/jade/gui/rules.mk...
+-- Parsing src/engines/jade/gui/main/rules.mk...
+-- Parsing src/engines/jade/gui/options/rules.mk...
+-- Parsing src/engines/jade/gui/chargen/rules.mk...
+-- Parsing src/engines/witcher/rules.mk...
+-- Parsing src/engines/witcher/nwscript/rules.mk...
+-- Parsing src/engines/witcher/lua/rules.mk...
+-- Parsing src/engines/sonic/rules.mk...
+-- Parsing src/engines/dragonage/rules.mk...
+-- Parsing src/engines/dragonage/script/rules.mk...
+-- Parsing src/engines/dragonage2/rules.mk...
+-- Parsing src/engines/dragonage2/script/rules.mk...
+-- Parsing man/rules.mk...
+-- Parsing doc/rules.mk...
+-- Parsing tests/rules.mk...
+-- Parsing tests/googletest/rules.mk...
+-- Parsing tests/engines/rules.mk...
+-- Parsing tests/version/rules.mk...
+-- Parsing tests/common/rules.mk...
+-- Parsing tests/aurora/rules.mk...
+-- Parsing tests/images/rules.mk...
+-- Parsing tests/engines/nwn2/rules.mk...
+-- Found Git: /usr/bin/git (found version "2.52.0")
+-- Building version: 0.0.6+235.gf36b681b2.dirty
+-- 
+-- Enabled engines:
+-- 	Neverwinter Nights: ON
+-- 	Neverwinter Nights 2: ON
+-- 	Star Wars: Knights of the Old Republic: ON
+-- 	Star Wars: Knights of the Old Republic II: The Sith Lords: ON
+-- 	Jade Empire: ON
+-- 	The Witcher: ON
+-- 	Sonic Chronicles: The Dark Brotherhood: ON
+-- 	Dragon Age: Origins: ON
+-- 	Dragon Age II: ON
+-- 
+-- Enabled libraries:
+-- 	libmad: ON
+-- 	libvorbis: ON
+-- 	libfaad: ON
+-- 	xvidcore: ON
+-- 	libvpx: ON
+-- 	liblzma: ON
+-- 	libxml2: ON
+-- 
+-- Configuring done (6.6s)
+-- Generating done (0.5s)
+-- Build files have been written to: /build/xoreos-git/src/build
+[  1%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lapi.cpp.o
+[  1%] Building CXX object CMakeFiles/external_glew.dir/external/glew/glew.cpp.o
+[  1%] Building CXX object CMakeFiles/version.dir/src/version/version.cpp.o
+[  1%] Building CXX object CMakeFiles/graphics_render.dir/src/graphics/render/renderman.cpp.o
+[  1%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/button.cpp.o
+[  1%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/asbuffer.cpp.o
+[  1%] Building CXX object CMakeFiles/external_imgui.dir/external/imgui/imgui.cpp.o
+[  4%] Building C object CMakeFiles/external_mspack.dir/external/mspack/cabc.c.o
+[  4%] Building CXX object CMakeFiles/aurora_nwscript.dir/src/aurora/nwscript/util.cpp.o
+[  4%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/decoder.cpp.o
+[  6%] Building CXX object CMakeFiles/graphics_shader.dir/src/graphics/shader/shader.cpp.o
+[  7%] Building CXX object CMakeFiles/graphics_mesh.dir/src/graphics/mesh/mesh.cpp.o
+[  7%] Building CXX object CMakeFiles/external_toluapp.dir/external/toluapp/tolua_event.cpp.o
+[  6%] Building CXX object CMakeFiles/aurora_lua_libluascript.la.dir/src/aurora/lua/scriptman.cpp.o
+[  7%] Building CXX object CMakeFiles/sound_decoders.dir/src/sound/decoders/adpcm.cpp.o
+[  8%] Building CXX object CMakeFiles/video_codecs.dir/src/video/codecs/codec.cpp.o
+[  9%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/util.cpp.o
+[  9%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/room.cpp.o
+[  9%] Building CXX object CMakeFiles/engines_eclipse.dir/src/engines/eclipse/externalhandler.cpp.o
+[  9%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/nwn.cpp.o
+[ 10%] Building CXX object CMakeFiles/video_codecs.dir/src/video/codecs/wmv2data.cpp.o
+[ 10%] Linking CXX static library lib/libversion.a
+[ 10%] Building C object CMakeFiles/external_mspack.dir/external/mspack/cabd.c.o
+[ 10%] Building CXX object CMakeFiles/external_toluapp.dir/external/toluapp/tolua_is.cpp.o
+[ 10%] Built target version
+[ 10%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/probes.cpp.o
+[ 10%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lauxlib.cpp.o
+/build/xoreos-git/src/xoreos/external/glew/glew.cpp: In function ‘GLboolean _glewStrSame1(const GLubyte**, GLuint*, const GLubyte*, GLuint)’:
+/build/xoreos-git/src/xoreos/external/glew/glew.cpp:261: warning: comparing the result of pointer addition ‘((* a) + ((sizetype)i))’ and NULL [-Waddress]
   261 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
       |                             ^
-external/glew/glew.cpp:261:44: warning: comparing the result of pointer addition '(b + ((sizetype)i))' and NULL [-Waddress]
+/build/xoreos-git/src/xoreos/external/glew/glew.cpp:261: warning: comparing the result of pointer addition ‘(b + ((sizetype)i))’ and NULL [-Waddress]
   261 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
       |                                            ^
-external/glew/glew.cpp: In function 'GLboolean _glewStrSame2(const GLubyte**, GLuint*, const GLubyte*, GLuint)':
-external/glew/glew.cpp:277:29: warning: comparing the result of pointer addition '((* a) + ((sizetype)i))' and NULL [-Waddress]
+/build/xoreos-git/src/xoreos/external/glew/glew.cpp: In function ‘GLboolean _glewStrSame2(const GLubyte**, GLuint*, const GLubyte*, GLuint)’:
+/build/xoreos-git/src/xoreos/external/glew/glew.cpp:277: warning: comparing the result of pointer addition ‘((* a) + ((sizetype)i))’ and NULL [-Waddress]
   277 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
       |                             ^
-external/glew/glew.cpp:277:44: warning: comparing the result of pointer addition '(b + ((sizetype)i))' and NULL [-Waddress]
+/build/xoreos-git/src/xoreos/external/glew/glew.cpp:277: warning: comparing the result of pointer addition ‘(b + ((sizetype)i))’ and NULL [-Waddress]
   277 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
       |                                            ^
-external/glew/glew.cpp: In function 'GLboolean _glewStrSame3(const GLubyte**, GLuint*, const GLubyte*, GLuint)':
-external/glew/glew.cpp:293:29: warning: comparing the result of pointer addition '((* a) + ((sizetype)i))' and NULL [-Waddress]
+/build/xoreos-git/src/xoreos/external/glew/glew.cpp: In function ‘GLboolean _glewStrSame3(const GLubyte**, GLuint*, const GLubyte*, GLuint)’:
+/build/xoreos-git/src/xoreos/external/glew/glew.cpp:293: warning: comparing the result of pointer addition ‘((* a) + ((sizetype)i))’ and NULL [-Waddress]
   293 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
       |                             ^
-external/glew/glew.cpp:293:44: warning: comparing the result of pointer addition '(b + ((sizetype)i))' and NULL [-Waddress]
+/build/xoreos-git/src/xoreos/external/glew/glew.cpp:293: warning: comparing the result of pointer addition ‘(b + ((sizetype)i))’ and NULL [-Waddress]
   293 |     while (i < nb && (*a)+i != NULL && b+i != NULL && (*a)[i] == b[i]) i++;
       |                                            ^
-  CXX      src/aurora/archive.lo
-  CXX      src/aurora/aurorafile.lo
-  CXX      src/aurora/keyfile.lo
-  CXX      src/aurora/biffile.lo
-  CXX      src/aurora/bzffile.lo
-  CXX      src/aurora/erffile.lo
-  CXX      src/aurora/erfwriter.lo
-  CXX      src/aurora/rimfile.lo
-  CXX      src/aurora/ndsrom.lo
-  CXX      src/aurora/zipfile.lo
-  CXX      src/aurora/resman.lo
-  CXX      src/aurora/talktable.lo
-  CXX      src/aurora/talktable_tlk.lo
-  CXX      src/aurora/talktable_gff.lo
-  CXX      src/aurora/talkman.lo
-  CXX      src/aurora/ssffile.lo
-  CXX      src/aurora/2dafile.lo
-  CXX      src/aurora/gdafile.lo
-  CXX      src/aurora/gdaheaders.lo
-  CXX      src/aurora/2dareg.lo
-  CXX      src/aurora/locstring.lo
-  CXX      src/aurora/gff3file.lo
-  CXX      src/aurora/gff3writer.lo
-  CXX      src/aurora/gff4file.lo
-  CXX      src/aurora/dlgfile.lo
-  CXX      src/aurora/lytfile.lo
-  CXX      src/aurora/visfile.lo
-  CXX      src/aurora/ifofile.lo
-  CXX      src/aurora/pefile.lo
-  CXX      src/aurora/herffile.lo
-  CXX      src/aurora/obbfile.lo
-  CXX      src/aurora/smallfile.lo
-  CXX      src/aurora/nitrofile.lo
-  CXX      src/aurora/nsbtxfile.lo
-  CXX      src/aurora/cdpth.lo
-  CXX      src/aurora/nfofile.lo
-  CXX      src/aurora/ltrfile.lo
-  CXX      src/aurora/thewitchersavefile.lo
-  CXX      src/aurora/thewitchersavewriter.lo
-  CXX      src/aurora/sacfile.lo
-  CXX      src/aurora/gfxfile.lo
-  CXX      src/aurora/xmlfixer.lo
-  CXX      src/aurora/oodle.lo
-  CXX      src/aurora/gr2file.lo
-  CXX      src/aurora/textureatlasfile.lo
-  CXX      src/aurora/nwscript/util.lo
-  CXX      src/aurora/nwscript/variable.lo
-  CXX      src/aurora/nwscript/variablecontainer.lo
-  CXX      src/aurora/nwscript/functioncontext.lo
-  CXX      src/aurora/nwscript/objectcontainer.lo
-  CXX      src/aurora/nwscript/functionman.lo
-  CXX      src/aurora/nwscript/ncsfile.lo
-  CXX      src/aurora/nwscript/objectref.lo
-  CXX      src/aurora/nwscript/objectman.lo
-  CXX      src/aurora/lua/scriptman.lo
-  CXX      src/aurora/lua/stack.lo
-  CXX      src/aurora/lua/variable.lo
-  CXX      src/aurora/lua/table.lo
-  CXX      src/aurora/lua/function.lo
-  CXX      src/aurora/lua/stackguard.lo
-  CXX      src/aurora/lua/util.lo
-  CXX      src/aurora/actionscript/asbuffer.lo
-  CXX      src/aurora/actionscript/avm.lo
-  CXX      src/aurora/actionscript/avm_interval.lo
-  CXX      src/aurora/actionscript/function.lo
-  CXX      src/aurora/actionscript/object.lo
-  CXX      src/aurora/actionscript/variable.lo
-  CXX      src/aurora/actionscript/array.lo
-  CXX      src/aurora/actionscript/string.lo
-  CXX      src/aurora/actionscript/movieclip.lo
-  CXX      src/aurora/actionscript/textfield.lo
-  CXX      src/aurora/actionscript/stage.lo
-  CXX      src/version/version.lo
-  CXX      external/lua/lapi.lo
-  CXX      external/lua/lauxlib.lo
-  CXX      external/lua/lbaselib.lo
-  CXX      external/lua/lcode.lo
-  CXX      external/lua/ldblib.lo
-  CXX      external/lua/ldebug.lo
-  CXX      external/lua/ldo.lo
-  CXX      external/lua/ldump.lo
-  CXX      external/lua/lfunc.lo
-  CXX      external/lua/lgc.lo
-  CXX      external/lua/liolib.lo
-  CXX      external/lua/llex.lo
-  CXX      external/lua/lmathlib.lo
-  CXX      external/lua/lmem.lo
-  CXX      external/lua/loadlib.lo
-  CXX      external/lua/lobject.lo
-  CXX      external/lua/lopcodes.lo
-  CXX      external/lua/lparser.lo
-  CXX      external/lua/lstate.lo
-  CXX      external/lua/lstring.lo
-  CXX      external/lua/lstrlib.lo
-  CXX      external/lua/ltable.lo
-  CXX      external/lua/ltablib.lo
-  CXX      external/lua/ltests.lo
-  CXX      external/lua/ltm.lo
-  CXX      external/lua/lundump.lo
-  CXX      external/lua/lvm.lo
-  CXX      external/lua/lzio.lo
-  CXX      external/toluapp/tolua_event.lo
-  CXX      external/toluapp/tolua_is.lo
-  CXX      external/toluapp/tolua_map.lo
-  CXX      external/toluapp/tolua_push.lo
-  CXX      external/toluapp/tolua_to.lo
-  CXX      external/imgui/imgui.lo
-  CXX      external/imgui/imgui_freetype.lo
-  CXX      external/imgui/imgui_draw.lo
-  CXX      external/imgui/imgui_widgets.lo
-  CXX      external/imgui/imgui_demo.lo
-  CXX      external/imgui/imgui_impl_sdl.lo
-  CXX      external/imgui/imgui_impl_opengl2.lo
-  CXX      external/imgui/imgui_impl_opengl3.lo
-  CXXLD    src/engines/dragonage2/libdragonage2.la
-  CXXLD    src/engines/dragonage/libdragonage.la
-  CXXLD    src/engines/sonic/libsonic.la
-  CXXLD    src/engines/witcher/libwitcher.la
-  CXXLD    src/engines/jade/libjade.la
-  CXXLD    src/engines/kotor2/libkotor2.la
-  CXXLD    src/engines/kotor/libkotor.la
-  CXXLD    src/engines/nwn2/libnwn2.la
-  CXXLD    src/engines/nwn/libnwn.la
-  CXXLD    src/engines/kotorbase/libkotorbase.la
-  CXXLD    src/engines/odyssey/libodyssey.la
-  CXXLD    src/engines/eclipse/libeclipse.la
-  CXXLD    src/engines/aurora/libaurora.la
-  CCLD     external/mspack/libmspack.la
-  CXXLD    src/video/codecs/libcodecs.la
-  CXXLD    src/sound/decoders/libdecoders.la
-  CXXLD    src/graphics/images/libimages.la
-  CXXLD    src/graphics/shader/libshader.la
-copying selected object files to avoid basename conflicts...
-copying selected object files to avoid basename conflicts...
-  CXXLD    src/graphics/mesh/libmesh.la
-  CXXLD    src/graphics/render/librender.la
-  CXXLD    external/glew/libglew.la
-  CXXLD    src/aurora/nwscript/libnwscript.la
-  CXXLD    src/aurora/lua/libluascript.la
-  CXXLD    src/aurora/actionscript/libactionscript.la
-  CXXLD    src/version/libversion.la
-  CXXLD    external/lua/liblua.la
-  CXXLD    external/toluapp/libtoluapp.la
-  CXXLD    src/engines/libengines.la
-  CXXLD    src/common/libcommon.la
-  CXXLD    src/video/libvideo.la
-  CXXLD    src/sound/libsound.la
-  CXXLD    src/graphics/libgraphics.la
-  CXXLD    src/aurora/libaurora.la
-copying selected object files to avoid basename conflicts...
-copying selected object files to avoid basename conflicts...
-copying selected object files to avoid basename conflicts...
-  CXXLD    src/events/libevents.la
-  CXXLD    external/imgui/libimgui.la
-  CXXLD    src/xoreos
-src/engines/odyssey/checkbox.cpp: In member function 'setState':
-src/engines/odyssey/checkbox.cpp:98:15: warning: 'quadR' may be used uninitialized [-Wmaybe-uninitialized]
-   98 |         float quadR, quadG, quadB, quadA;
-      |               ^
-src/engines/odyssey/checkbox.cpp:98:22: warning: 'quadG' may be used uninitialized [-Wmaybe-uninitialized]
-   98 |         float quadR, quadG, quadB, quadA;
-      |                      ^
-src/engines/odyssey/checkbox.cpp:98:29: warning: 'quadB' may be used uninitialized [-Wmaybe-uninitialized]
-   98 |         float quadR, quadG, quadB, quadA;
-      |                             ^
-src/engines/odyssey/checkbox.cpp:98:36: warning: 'quadA' may be used uninitialized [-Wmaybe-uninitialized]
-   98 |         float quadR, quadG, quadB, quadA;
-      |                                    ^
-make[1]: Leaving directory '/build/xoreos-git/src/xoreos'
+[ 10%] Building C object CMakeFiles/external_mspack.dir/external/mspack/chmc.c.o
+[ 10%] Building CXX object CMakeFiles/external_toluapp.dir/external/toluapp/tolua_map.cpp.o
+[ 10%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lbaselib.cpp.o
+[ 10%] Building C object CMakeFiles/external_mspack.dir/external/mspack/chmd.c.o
+[ 10%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lcode.cpp.o
+[ 10%] Building C object CMakeFiles/external_mspack.dir/external/mspack/crc32.c.o
+[ 10%] Building C object CMakeFiles/external_mspack.dir/external/mspack/hlpc.c.o
+[ 10%] Building CXX object CMakeFiles/video_codecs.dir/src/video/codecs/xmvwmv2.cpp.o
+[ 10%] Building C object CMakeFiles/external_mspack.dir/external/mspack/hlpd.c.o
+[ 10%] Building CXX object CMakeFiles/external_lua.dir/external/lua/ldblib.cpp.o
+[ 10%] Building C object CMakeFiles/external_mspack.dir/external/mspack/kwajc.c.o
+[ 10%] Building CXX object CMakeFiles/external_toluapp.dir/external/toluapp/tolua_push.cpp.o
+[ 10%] Building C object CMakeFiles/external_mspack.dir/external/mspack/kwajd.c.o
+[ 10%] Building CXX object CMakeFiles/external_lua.dir/external/lua/ldebug.cpp.o
+[ 10%] Building CXX object CMakeFiles/external_toluapp.dir/external/toluapp/tolua_to.cpp.o
+[ 10%] Building C object CMakeFiles/external_mspack.dir/external/mspack/litc.c.o
+[ 10%] Linking CXX static library lib/libexternal_toluapp.a
+[ 10%] Building CXX object CMakeFiles/external_lua.dir/external/lua/ldo.cpp.o
+[ 12%] Building C object CMakeFiles/external_mspack.dir/external/mspack/litd.c.o
+[ 12%] Built target external_toluapp
+[ 12%] Building C object CMakeFiles/external_mspack.dir/external/mspack/lzssd.c.o
+[ 12%] Building CXX object CMakeFiles/graphics_mesh.dir/src/graphics/mesh/meshman.cpp.o
+[ 12%] Building CXX object CMakeFiles/aurora_nwscript.dir/src/aurora/nwscript/variable.cpp.o
+[ 12%] Building C object CMakeFiles/external_mspack.dir/external/mspack/lzxc.c.o
+[ 12%] Building CXX object CMakeFiles/external_lua.dir/external/lua/ldump.cpp.o
+[ 12%] Building CXX object CMakeFiles/graphics_shader.dir/src/graphics/shader/shaderbuilder.cpp.o
+[ 12%] Building C object CMakeFiles/external_mspack.dir/external/mspack/lzxd.c.o
+[ 12%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lfunc.cpp.o
+[ 12%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lgc.cpp.o
+[ 12%] Building CXX object CMakeFiles/sound_decoders.dir/src/sound/decoders/wave.cpp.o
+[ 12%] Building C object CMakeFiles/external_mspack.dir/external/mspack/mszipc.c.o
+[ 12%] Building C object CMakeFiles/external_mspack.dir/external/mspack/mszipd.c.o
+[ 13%] Building CXX object CMakeFiles/external_lua.dir/external/lua/liolib.cpp.o
+[ 13%] Building C object CMakeFiles/external_mspack.dir/external/mspack/oabc.c.o
+[ 13%] Linking CXX static library lib/libengines_eclipse.a
+[ 13%] Building C object CMakeFiles/external_mspack.dir/external/mspack/oabd.c.o
+[ 13%] Building CXX object CMakeFiles/external_lua.dir/external/lua/llex.cpp.o
+[ 13%] Building CXX object CMakeFiles/aurora_lua_libluascript.la.dir/src/aurora/lua/stack.cpp.o
+[ 13%] Built target engines_eclipse
+[ 13%] Building CXX object CMakeFiles/sound_decoders.dir/src/sound/decoders/pcm.cpp.o
+[ 13%] Building C object CMakeFiles/external_mspack.dir/external/mspack/qtmc.c.o
+[ 13%] Building C object CMakeFiles/external_mspack.dir/external/mspack/qtmd.c.o
+[ 13%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lmathlib.cpp.o
+[ 14%] Building C object CMakeFiles/external_mspack.dir/external/mspack/system.c.o
+[ 14%] Building C object CMakeFiles/external_mspack.dir/external/mspack/szddc.c.o
+[ 14%] Building CXX object CMakeFiles/external_imgui.dir/external/imgui/imgui_freetype.cpp.o
+[ 15%] Building C object CMakeFiles/external_mspack.dir/external/mspack/szddd.c.o
+[ 15%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/avm.cpp.o
+[ 15%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lmem.cpp.o
+[ 15%] Linking C static library lib/libexternal_mspack.a
+[ 16%] Linking CXX static library lib/libexternal_glew.a
+[ 16%] Building CXX object CMakeFiles/external_lua.dir/external/lua/loadlib.cpp.o
+[ 16%] Built target external_mspack
+[ 16%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lobject.cpp.o
+[ 16%] Building CXX object CMakeFiles/graphics_shader.dir/src/graphics/shader/shaderinstance.cpp.o
+[ 16%] Built target external_glew
+[ 16%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/types.cpp.o
+[ 16%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lopcodes.cpp.o
+[ 16%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lparser.cpp.o
+[ 16%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/modelloader.cpp.o
+[ 16%] Building CXX object CMakeFiles/graphics_render.dir/src/graphics/render/renderqueue.cpp.o
+[ 16%] Building CXX object CMakeFiles/aurora_nwscript.dir/src/aurora/nwscript/variablecontainer.cpp.o
+[ 16%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lstate.cpp.o
+[ 16%] Building CXX object CMakeFiles/aurora_lua_libluascript.la.dir/src/aurora/lua/variable.cpp.o
+[ 16%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lstring.cpp.o
+[ 18%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lstrlib.cpp.o
+[ 18%] Building CXX object CMakeFiles/external_imgui.dir/external/imgui/imgui_draw.cpp.o
+[ 18%] Building CXX object CMakeFiles/external_lua.dir/external/lua/ltable.cpp.o
+[ 18%] Building CXX object CMakeFiles/sound_decoders.dir/src/sound/decoders/asf.cpp.o
+[ 18%] Building CXX object CMakeFiles/external_lua.dir/external/lua/ltablib.cpp.o
+[ 18%] Building CXX object CMakeFiles/external_lua.dir/external/lua/ltests.cpp.o
+[ 18%] Building CXX object CMakeFiles/external_lua.dir/external/lua/ltm.cpp.o
+[ 18%] Building CXX object CMakeFiles/sound_decoders.dir/src/sound/decoders/wma.cpp.o
+[ 18%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lundump.cpp.o
+[ 18%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lvm.cpp.o
+[ 18%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/resources.cpp.o
+[ 18%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/avm_interval.cpp.o
+[ 18%] Building CXX object CMakeFiles/aurora_lua_libluascript.la.dir/src/aurora/lua/table.cpp.o
+[ 18%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/checkbox.cpp.o
+[ 18%] Building CXX object CMakeFiles/external_lua.dir/external/lua/lzio.cpp.o
+[ 18%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/dumptga.cpp.o
+[ 18%] Linking CXX static library lib/libexternal_lua.a
+[ 18%] Building CXX object CMakeFiles/video_codecs.dir/src/video/codecs/h263.cpp.o
+[ 19%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/object.cpp.o
+[ 19%] Built target external_lua
+[ 19%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/action.cpp.o
+[ 19%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/item.cpp.o
+[ 19%] Building CXX object CMakeFiles/aurora_nwscript.dir/src/aurora/nwscript/functioncontext.cpp.o
+[ 19%] Building CXX object CMakeFiles/sound_decoders.dir/src/sound/decoders/wwriffvorbis.cpp.o
+[ 19%] Building CXX object CMakeFiles/graphics_mesh.dir/src/graphics/mesh/meshwirebox.cpp.o
+[ 19%] Building CXX object CMakeFiles/aurora_lua_libluascript.la.dir/src/aurora/lua/function.cpp.o
+[ 19%] Building CXX object CMakeFiles/aurora_lua_libluascript.la.dir/src/aurora/lua/stackguard.cpp.o
+[ 19%] Building CXX object CMakeFiles/aurora_lua_libluascript.la.dir/src/aurora/lua/util.cpp.o
+[ 19%] Building CXX object CMakeFiles/sound_decoders.dir/src/sound/decoders/aac.cpp.o
+[ 19%] Building CXX object CMakeFiles/external_imgui.dir/external/imgui/imgui_widgets.cpp.o
+[ 19%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/tokenman.cpp.o
+[ 19%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/function.cpp.o
+[ 19%] Building CXX object CMakeFiles/aurora_nwscript.dir/src/aurora/nwscript/objectcontainer.cpp.o
+[ 19%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/object.cpp.o
+[ 19%] Building CXX object CMakeFiles/video_codecs.dir/src/video/codecs/vpx.cpp.o
+[ 19%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/variable.cpp.o
+[ 19%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/array.cpp.o
+[ 19%] Linking CXX static library lib/libaurora_lua_libluascript.la.a
+[ 19%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/inventory.cpp.o
+[ 19%] Building CXX object CMakeFiles/sound_decoders.dir/src/sound/decoders/mp3.cpp.o
+[ 19%] Built target aurora_lua_libluascript.la
+[ 19%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/widget.cpp.o
+[ 20%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/nwn2.cpp.o
+[ 20%] Building CXX object CMakeFiles/graphics_shader.dir/src/graphics/shader/shadermaterial.cpp.o
+[ 20%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/modelloader.cpp.o
+[ 20%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/version.cpp.o
+[ 20%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/model.cpp.o
+[ 20%] Linking CXX static library lib/libgraphics_render.a
+[ 20%] Built target graphics_render
+[ 20%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/creature.cpp.o
+[ 20%] Building CXX object CMakeFiles/external_imgui.dir/external/imgui/imgui_demo.cpp.o
+[ 21%] Building CXX object CMakeFiles/sound_decoders.dir/src/sound/decoders/vorbis.cpp.o
+[ 21%] Building CXX object CMakeFiles/aurora_nwscript.dir/src/aurora/nwscript/functionman.cpp.o
+[ 21%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/screenshot.cpp.o
+[ 21%] Building CXX object CMakeFiles/aurora_nwscript.dir/src/aurora/nwscript/ncsfile.cpp.o
+[ 21%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/label.cpp.o
+[ 22%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/listbox.cpp.o
+[ 22%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/panel.cpp.o
+[ 22%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/surface.cpp.o
+[ 22%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/string.cpp.o
+[ 22%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/widget.cpp.o
+[ 22%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/creature.cpp.o
+[ 22%] Building CXX object CMakeFiles/external_imgui.dir/external/imgui/imgui_impl_sdl.cpp.o
+[ 22%] Building CXX object CMakeFiles/graphics_mesh.dir/src/graphics/mesh/meshfont.cpp.o
+[ 22%] Linking CXX static library lib/libvideo_codecs.a
+[ 22%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/gui.cpp.o
+[ 22%] Built target video_codecs
+[ 22%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/situated.cpp.o
+[ 22%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/movieclip.cpp.o
+[ 22%] Linking CXX static library lib/libsound_decoders.a
+[ 22%] Built target sound_decoders
+[ 22%] Building CXX object CMakeFiles/external_imgui.dir/external/imgui/imgui_impl_opengl2.cpp.o
+[ 22%] Building CXX object CMakeFiles/aurora_nwscript.dir/src/aurora/nwscript/objectref.cpp.o
+[ 22%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/probes.cpp.o
+[ 22%] Building CXX object CMakeFiles/graphics_shader.dir/src/graphics/shader/shaderrenderable.cpp.o
+[ 22%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/cubemapcombiner.cpp.o
+[ 22%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/progressbar.cpp.o
+[ 22%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/textfield.cpp.o
+[ 22%] Building CXX object CMakeFiles/graphics_mesh.dir/src/graphics/mesh/meshquad.cpp.o
+[ 22%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/placeable.cpp.o
+[ 22%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/types.cpp.o
+[ 22%] Building CXX object CMakeFiles/external_imgui.dir/external/imgui/imgui_impl_opengl3.cpp.o
+[ 22%] Building CXX object CMakeFiles/aurora_nwscript.dir/src/aurora/nwscript/objectman.cpp.o
+[ 22%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/console.cpp.o
+[ 22%] Building CXX object CMakeFiles/graphics_shader.dir/src/graphics/shader/shadersurface.cpp.o
+[ 22%] Linking CXX static library lib/libexternal_imgui.a
+[ 22%] Built target external_imgui
+[ 22%] Building CXX object CMakeFiles/graphics_shader.dir/src/graphics/shader/materialman.cpp.o
+[ 24%] Building CXX object CMakeFiles/aurora_actionscript.dir/src/aurora/actionscript/stage.cpp.o
+[ 24%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/modelloader.cpp.o
+[ 24%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/tga.cpp.o
+[ 24%] Building CXX object CMakeFiles/graphics_shader.dir/src/graphics/shader/surfaceman.cpp.o
+[ 24%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/console.cpp.o
+[ 24%] Linking CXX static library lib/libaurora_nwscript.a
+[ 24%] Built target aurora_nwscript
+[ 24%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/protoitem.cpp.o
+[ 24%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/kotor.cpp.o
+[ 24%] Linking CXX static library lib/libaurora_actionscript.a
+[ 24%] Built target aurora_actionscript
+[ 24%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/probes.cpp.o
+[ 24%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/kotor2.cpp.o
+[ 24%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/probes.cpp.o
+[ 24%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/console.cpp.o
+[ 24%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/modelloader.cpp.o
+[ 24%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/game.cpp.o
+[ 25%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/creature.cpp.o
+[ 25%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/module.cpp.o
+[ 25%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/script/functions.cpp.o
+[ 25%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/console.cpp.o
+[ 25%] Linking CXX static library lib/libgraphics_mesh.a
+[ 25%] Built target graphics_mesh
+[ 25%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/game.cpp.o
+[ 25%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/dds.cpp.o
+[ 25%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/util.cpp.o
+[ 25%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/tpc.cpp.o
+[ 25%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/door.cpp.o
+[ 25%] Linking CXX static library lib/libgraphics_shader.a
+[ 25%] Built target graphics_shader
+[ 25%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/txb.cpp.o
+[ 25%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/scrollbar.cpp.o
+[ 25%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/trxfile.cpp.o
+[ 25%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/console.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/module.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/area.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/tileset.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/loadprogress.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/objectcontainer.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/object.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_odyssey.dir/src/engines/odyssey/slider.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/gui.cpp.o
+[ 26%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/txitypes.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/module.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/dialog.cpp.o
+[ 26%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/trigger.cpp.o
+[ 27%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/waypoint.cpp.o
+[ 27%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/game.cpp.o
+[ 27%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/main/main.cpp.o
+[ 27%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/modelloader.cpp.o
+[ 28%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/txi.cpp.o
+[ 28%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/s3tc.cpp.o
+[ 28%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/sbm.cpp.o
+[ 28%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/campaign.cpp.o
+[ 28%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/chargen/classselection.cpp.o
+[ 28%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/version.cpp.o
+[ 28%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/game.cpp.o
+[ 28%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/module.cpp.o
+[ 28%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/flycamera.cpp.o
+[ 30%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/creature.cpp.o
+[ 30%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/savedgame.cpp.o
+[ 30%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/script/functions.cpp.o
+[ 30%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/location.cpp.o
+[ 30%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/jade.cpp.o
+[ 30%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/witcher.cpp.o
+[ 30%] Linking CXX static library lib/libengines_odyssey.a
+[ 30%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/winiconimage.cpp.o
+[ 30%] Built target engines_odyssey
+[ 30%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/probes.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/trigger.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/probes.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/pathfinding.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/chargen/charactergeneration.cpp.o
+[ 31%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/xoreositex.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/sonic.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/waypoint.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/modelloader.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/objectcontainer.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/console.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/astar.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/dragonage.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/saveload.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/probes.cpp.o
+[ 31%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/sound.cpp.o
+[ 32%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/modelloader.cpp.o
+[ 32%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/dialog.cpp.o
+[ 32%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/console.cpp.o
+[ 32%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/nbfs.cpp.o
+[ 32%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/dragonage2.cpp.o
+[ 33%] Building CXX object CMakeFiles/common.dir/src/common/maths.cpp.o
+[ 33%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/situated.cpp.o
+[ 33%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/game.cpp.o
+[ 33%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/placeable.cpp.o
+[ 33%] Building CXX object CMakeFiles/common.dir/src/common/sinetables.cpp.o
+[ 33%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/chargen/quickorcustom.cpp.o
+[ 33%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/chargen/chargeninfo.cpp.o
+[ 33%] Building CXX object CMakeFiles/common.dir/src/common/cosinetables.cpp.o
+[ 33%] Building CXX object CMakeFiles/common.dir/src/common/sinewindows.cpp.o
+[ 33%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/area.cpp.o
+[ 33%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/modelloader.cpp.o
+[ 34%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/console.cpp.o
+[ 34%] Building CXX object CMakeFiles/common.dir/src/common/fft.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/module.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_aurora.dir/src/engines/aurora/localpathfinding.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/probes.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/probes.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/util.cpp.o
+[ 36%] Building CXX object CMakeFiles/common.dir/src/common/rdft.cpp.o
+[ 36%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/nclr.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/modelloader.cpp.o
+[ 36%] Building CXX object CMakeFiles/common.dir/src/common/dct.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/game.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/util.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/main/main.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/door.cpp.o
+[ 36%] Building CXX object CMakeFiles/aurora.dir/src/aurora/util.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/item.cpp.o
+[ 36%] Building CXX object CMakeFiles/common.dir/src/common/mdct.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/objectcontainer.cpp.o
+[ 36%] Building CXX object CMakeFiles/common.dir/src/common/threads.cpp.o
+[ 36%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/ncgr.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/actionexecutor.cpp.o
+[ 36%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/modelloader.cpp.o
+[ 36%] Building CXX object CMakeFiles/common.dir/src/common/thread.cpp.o
+[ 37%] Building CXX object CMakeFiles/common.dir/src/common/ustring.cpp.o
+[ 37%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/console.cpp.o
+[ 37%] Building CXX object CMakeFiles/aurora.dir/src/aurora/language.cpp.o
+[ 37%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/util.cpp.o
+[ 38%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/campaign.cpp.o
+[ 38%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/chargen/quickchar.cpp.o
+[ 38%] Linking CXX static library lib/libengines_aurora.a
+[ 38%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/game.cpp.o
+[ 38%] Built target engines_aurora
+[ 38%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/areabackground.cpp.o
+[ 38%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/areaminimap.cpp.o
+[ 38%] Building CXX object CMakeFiles/aurora.dir/src/aurora/archive.cpp.o
+[ 38%] Building CXX object CMakeFiles/graphics_images.dir/src/graphics/images/cbgt.cpp.o
+[ 39%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/event.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/location.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/console.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/area.cpp.o
+[ 40%] Building CXX object CMakeFiles/common.dir/src/common/md5.cpp.o
+[ 40%] Building CXX object CMakeFiles/aurora.dir/src/aurora/aurorafile.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/pathfinding.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/walkmeshloader.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/objectwalkmesh.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/main/movies.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/objectcontainer.cpp.o
+[ 40%] Building CXX object CMakeFiles/common.dir/src/common/blowfish.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/chargen/customchar.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/chargen/chargenbase.cpp.o
+[ 40%] Building CXX object CMakeFiles/aurora.dir/src/aurora/keyfile.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/savedgame.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/module.cpp.o
+[ 40%] Building CXX object CMakeFiles/aurora.dir/src/aurora/biffile.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/event.cpp.o
+[ 40%] Building CXX object CMakeFiles/sound.dir/src/sound/sound.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/game.cpp.o
+[ 40%] Building CXX object CMakeFiles/common.dir/src/common/deflate.cpp.o
+[ 40%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/area.cpp.o
+[ 40%] Building CXX object CMakeFiles/common.dir/src/common/error.cpp.o
+[ 42%] Building CXX object CMakeFiles/sound.dir/src/sound/audiostream.cpp.o
+[ 42%] Linking CXX static library lib/libgraphics_images.a
+[ 42%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/location.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/main/options.cpp.o
+[ 42%] Built target graphics_images
+[ 42%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/gameplay.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/game.cpp.o
+[ 42%] Building CXX object CMakeFiles/aurora.dir/src/aurora/bzffile.cpp.o
+[ 42%] Building CXX object CMakeFiles/aurora.dir/src/aurora/erffile.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/module.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/chargen/chargenname.cpp.o
+[ 42%] Building CXX object CMakeFiles/common.dir/src/common/util.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/ingame/ingame.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/chargen/chargenportrait.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/container.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/game.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/ingame/hud.cpp.o
+[ 42%] Building CXX object CMakeFiles/sound.dir/src/sound/interleaver.cpp.o
+[ 42%] Building CXX object CMakeFiles/aurora.dir/src/aurora/erfwriter.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/campaigns.cpp.o
+[ 42%] Building CXX object CMakeFiles/common.dir/src/common/strutil.cpp.o
+[ 42%] Building CXX object CMakeFiles/sound.dir/src/sound/xactwavebank.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/object.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions.cpp.o
+[ 42%] Building CXX object CMakeFiles/video.dir/src/video/decoder.cpp.o
+[ 42%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/area.cpp.o
+[ 42%] Building CXX object CMakeFiles/video.dir/src/video/bink.cpp.o
+[ 42%] Building CXX object CMakeFiles/video.dir/src/video/fader.cpp.o
+[ 43%] Building CXX object CMakeFiles/aurora.dir/src/aurora/rimfile.cpp.o
+[ 43%] Building CXX object CMakeFiles/common.dir/src/common/encoding.cpp.o
+[ 43%] Building CXX object CMakeFiles/sound.dir/src/sound/xactwavebank_ascii.cpp.o
+[ 43%] Building CXX object CMakeFiles/aurora.dir/src/aurora/ndsrom.cpp.o
+[ 43%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/objectcontainer.cpp.o
+[ 43%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/mousesettings.cpp.o
+[ 43%] Building CXX object CMakeFiles/engines_kotor2.dir/src/engines/kotor2/gui/ingame/partyselection.cpp.o
+[ 43%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/partyleader.cpp.o
+[ 43%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/waypoint.cpp.o
+[ 43%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions_math.cpp.o
+[ 43%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/campaign.cpp.o
+[ 44%] Building CXX object CMakeFiles/graphics.dir/src/graphics/windowman.cpp.o
+[ 44%] Building CXX object CMakeFiles/sound.dir/src/sound/xactwavebank_binary.cpp.o
+[ 44%] Building CXX object CMakeFiles/common.dir/src/common/platform.cpp.o
+[ 44%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/campaigns.cpp.o
+[ 44%] Building CXX object CMakeFiles/aurora.dir/src/aurora/zipfile.cpp.o
+[ 44%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/area.cpp.o
+[ 45%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/keyboardconfig.cpp.o
+[ 45%] Building CXX object CMakeFiles/sound.dir/src/sound/xactsoundbank.cpp.o
+[ 45%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/arealayout.cpp.o
+In file included from /opt/boost1.88/include/boost/locale.hpp:18,
+                 from /build/xoreos-git/src/xoreos/src/common/platform.cpp:44:
+/opt/boost1.88/include/boost/locale/generator.hpp:74: warning: declaration of ‘message’ shadows a global declaration [-Wshadow]
+   74 |         message = 1 << 4,      ///< Generate message facets
+      |         ^~~~~~~
+In file included from /opt/boost1.88/include/boost/locale/format.hpp:13,
+                 from /opt/boost1.88/include/boost/locale.hpp:16:
+/opt/boost1.88/include/boost/locale/message.hpp:341: note: shadowed declaration is here
+  341 |     typedef basic_message<char> message;
+      |                                 ^~~~~~~
+[ 45%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/campaign.cpp.o
+[ 45%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/module.cpp.o
+[ 45%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions_string.cpp.o
+[ 45%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/situated.cpp.o
+[ 45%] Building CXX object CMakeFiles/aurora.dir/src/aurora/resman.cpp.o
+[ 45%] Building CXX object CMakeFiles/common.dir/src/common/debugman.cpp.o
+[ 45%] Building CXX object CMakeFiles/video.dir/src/video/quicktime.cpp.o
+[ 45%] Building CXX object CMakeFiles/video.dir/src/video/xmv.cpp.o
+[ 45%] Building CXX object CMakeFiles/aurora.dir/src/aurora/talktable.cpp.o
+[ 45%] Building CXX object CMakeFiles/graphics.dir/src/graphics/graphics.cpp.o
+[ 45%] Linking CXX static library lib/libengines_kotor2.a
+[ 45%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/object.cpp.o
+[ 45%] Building CXX object CMakeFiles/sound.dir/src/sound/xactsoundbank_ascii.cpp.o
+[ 45%] Built target engines_kotor2
+[ 46%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/location.cpp.o
+[ 46%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions_module.cpp.o
+[ 48%] Building CXX object CMakeFiles/common.dir/src/common/debug.cpp.o
+[ 48%] Building CXX object CMakeFiles/aurora.dir/src/aurora/talktable_tlk.cpp.o
+[ 48%] Building CXX object CMakeFiles/engines_sonic.dir/src/engines/sonic/placeable.cpp.o
+[ 48%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/area.cpp.o
+[ 48%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/feedback.cpp.o
+[ 48%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/partycontroller.cpp.o
+[ 49%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/creaturesearch.cpp.o
+[ 49%] Building CXX object CMakeFiles/common.dir/src/common/uuid.cpp.o
+[ 49%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/object.cpp.o
+[ 49%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/door.cpp.o
+[ 49%] Building CXX object CMakeFiles/video.dir/src/video/actimagine.cpp.o
+[ 50%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/area.cpp.o
+[ 50%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/room.cpp.o
+[ 50%] Building CXX object CMakeFiles/common.dir/src/common/datetime.cpp.o
+[ 50%] Building CXX object CMakeFiles/aurora.dir/src/aurora/talktable_gff.cpp.o
+[ 50%] Building CXX object CMakeFiles/common.dir/src/common/readstream.cpp.o
+[ 50%] Building CXX object CMakeFiles/sound.dir/src/sound/xactsoundbank_binary.cpp.o
+[ 50%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/placeable.cpp.o
+[ 50%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/room.cpp.o
+[ 50%] Building CXX object CMakeFiles/video.dir/src/video/matroska.cpp.o
+[ 51%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions_object.cpp.o
+[ 51%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/waypoint.cpp.o
+[ 51%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/object.cpp.o
+[ 51%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/situated.cpp.o
+[ 51%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/autopause.cpp.o
+[ 51%] Building CXX object CMakeFiles/aurora.dir/src/aurora/talkman.cpp.o
+[ 51%] Building CXX object CMakeFiles/aurora.dir/src/aurora/ssffile.cpp.o
+[ 51%] Building CXX object CMakeFiles/graphics.dir/src/graphics/fpscounter.cpp.o
+[ 51%] Building CXX object CMakeFiles/sound.dir/src/sound/fmodsamplebank.cpp.o
+[ 51%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/door.cpp.o
+[ 53%] Linking CXX static library lib/libengines_sonic.a
+[ 53%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/cameracontroller.cpp.o
+[ 53%] Built target engines_sonic
+[ 53%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/placeable.cpp.o
+[ 53%] Building CXX object CMakeFiles/common.dir/src/common/memreadstream.cpp.o
+[ 53%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/room.cpp.o
+[ 53%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/object.cpp.o
+[ 53%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions_situated.cpp.o
+[ 53%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/graphics.cpp.o
+[ 53%] Building CXX object CMakeFiles/graphics.dir/src/graphics/icon.cpp.o
+[ 53%] Building CXX object CMakeFiles/sound.dir/src/sound/wwisesoundbank.cpp.o
+[ 53%] Building CXX object CMakeFiles/video.dir/src/video/aurora/videoplayer.cpp.o
+[ 53%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/objectcontainer.cpp.o
+[ 53%] Building CXX object CMakeFiles/aurora.dir/src/aurora/2dafile.cpp.o
+[ 53%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/creatureinfo.cpp.o
+[ 53%] Building CXX object CMakeFiles/common.dir/src/common/writestream.cpp.o
+[ 53%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/creature.cpp.o
+[ 53%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/container.cpp.o
+[ 54%] Building CXX object CMakeFiles/aurora.dir/src/aurora/gdafile.cpp.o
+[ 54%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/object.cpp.o
+[ 54%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/creature.cpp.o
+[ 54%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/trap.cpp.o
+[ 54%] Building CXX object CMakeFiles/graphics.dir/src/graphics/cursor.cpp.o
+[ 54%] Building CXX object CMakeFiles/graphics.dir/src/graphics/queueman.cpp.o
+[ 54%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/waypoint.cpp.o
+[ 54%] Building CXX object CMakeFiles/common.dir/src/common/memwritestream.cpp.o
+[ 55%] Building CXX object CMakeFiles/sound.dir/src/sound/fmodeventfile.cpp.o
+[ 55%] Building CXX object CMakeFiles/aurora.dir/src/aurora/gdaheaders.cpp.o
+[ 55%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/waypoint.cpp.o
+[ 55%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions_creature.cpp.o
+[ 55%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/placeable.cpp.o
+[ 55%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/graphicsadv.cpp.o
+[ 55%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/sound.cpp.o
+[ 55%] Building CXX object CMakeFiles/common.dir/src/common/streamtokenizer.cpp.o
+[ 55%] Building CXX object CMakeFiles/graphics.dir/src/graphics/queueable.cpp.o
+[ 55%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/placeable.cpp.o
+[ 55%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/creature.cpp.o
+[ 55%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/creature.cpp.o
+[ 55%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions.cpp.o
+[ 55%] Building CXX object CMakeFiles/aurora.dir/src/aurora/2dareg.cpp.o
+[ 56%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions_math.cpp.o
+[ 56%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/engine.cpp.o
+[ 56%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/console.cpp.o
+[ 56%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions_action.cpp.o
+[ 56%] Building CXX object CMakeFiles/common.dir/src/common/stringmap.cpp.o
+[ 56%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/objectcontainer.cpp.o
+[ 56%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/soundadv.cpp.o
+[ 56%] Linking CXX static library lib/libsound.a
+[ 56%] Built target sound
+[ 56%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/options/resolution.cpp.o
+[ 56%] Linking CXX static library lib/libvideo.a
+[ 56%] Building CXX object CMakeFiles/aurora.dir/src/aurora/locstring.cpp.o
+[ 56%] Built target video
+[ 57%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/placeable.cpp.o
+[ 57%] Building CXX object CMakeFiles/common.dir/src/common/readline.cpp.o
+[ 57%] Building CXX object CMakeFiles/graphics.dir/src/graphics/glcontainer.cpp.o
+[ 57%] Building CXX object CMakeFiles/graphics.dir/src/graphics/texture.cpp.o
+[ 59%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/feats.cpp.o
+[ 59%] Building CXX object CMakeFiles/aurora.dir/src/aurora/gff3file.cpp.o
+[ 59%] Building CXX object CMakeFiles/aurora.dir/src/aurora/gff3writer.cpp.o
+[ 59%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/trigger.cpp.o
+[ 59%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/chargen/classselection.cpp.o
+[ 59%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/creature.cpp.o
+[ 59%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/chargen/charactergeneration.cpp.o
+[ 59%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/trigger.cpp.o
+[ 59%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions_string.cpp.o
+[ 59%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/waypoint.cpp.o
+[ 59%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/faction.cpp.o
+[ 60%] Building CXX object CMakeFiles/common.dir/src/common/readfile.cpp.o
+[ 60%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/script/container.cpp.o
+[ 60%] Building CXX object CMakeFiles/common.dir/src/common/writefile.cpp.o
+[ 60%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions_conversation.cpp.o
+[ 60%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions_module.cpp.o
+[ 60%] Building CXX object CMakeFiles/aurora.dir/src/aurora/gff4file.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/objectcontainer.cpp.o
+[ 61%] Building CXX object CMakeFiles/graphics.dir/src/graphics/font.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/location.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/event.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/script/functions.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/actionqueue.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/script/functions_math.cpp.o
+[ 61%] Building CXX object CMakeFiles/common.dir/src/common/filepath.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/script/functions_sound.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/round.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions_object.cpp.o
+[ 61%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/roster.cpp.o
+[ 61%] Building CXX object CMakeFiles/aurora.dir/src/aurora/dlgfile.cpp.o
+[ 61%] Building CXX object CMakeFiles/aurora.dir/src/aurora/lytfile.cpp.o
+[ 61%] Building CXX object CMakeFiles/aurora.dir/src/aurora/visfile.cpp.o
+[ 62%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/chargen/quickorcustom.cpp.o
+[ 62%] Building CXX object CMakeFiles/common.dir/src/common/filelist.cpp.o
+[ 62%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/container.cpp.o
+[ 63%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/script/functions_string.cpp.o
+[ 63%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions.cpp.o
+[ 63%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions_math.cpp.o
+[ 63%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/item.cpp.o
+[ 63%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/itemproperty.cpp.o
+[ 63%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/script/functions_module.cpp.o
+[ 63%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/inventory.cpp.o
+[ 65%] Building CXX object CMakeFiles/graphics.dir/src/graphics/camera.cpp.o
+[ 65%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/script/container.cpp.o
+[ 65%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions_situated.cpp.o
+[ 65%] Building CXX object CMakeFiles/graphics.dir/src/graphics/renderable.cpp.o
+[ 66%] Building CXX object CMakeFiles/aurora.dir/src/aurora/ifofile.cpp.o
+[ 66%] Building CXX object CMakeFiles/graphics.dir/src/graphics/yuv_to_rgb.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/gui.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/legal.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/tooltip.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/script/functions.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/script/functions_object.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/store.cpp.o
+[ 66%] Building CXX object CMakeFiles/graphics.dir/src/graphics/ttf.cpp.o
+[ 66%] Building CXX object CMakeFiles/aurora.dir/src/aurora/pefile.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/container.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/chargen/quickchar.cpp.o
+[ 66%] Building CXX object CMakeFiles/common.dir/src/common/huffman.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/script/functions_math.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/event.cpp.o
+[ 66%] Building CXX object CMakeFiles/aurora.dir/src/aurora/herffile.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions_creature.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/script/functions_string.cpp.o
+[ 66%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/journal.cpp.o
+[ 67%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/container.cpp.o
+[ 67%] Building CXX object CMakeFiles/common.dir/src/common/boundingbox.cpp.o
+[ 68%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions.cpp.o
+[ 68%] Building CXX object CMakeFiles/common.dir/src/common/configfile.cpp.o
+[ 68%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/script/functions_creature.cpp.o
+[ 68%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_action.cpp.o
+[ 68%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions.cpp.o
+[ 68%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions_string.cpp.o
+[ 68%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_creatures.cpp.o
+[ 68%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/nwnwidget.cpp.o
+[ 68%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions_action.cpp.o
+[ 69%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/nwnwidgetwithcaption.cpp.o
+[ 69%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/modelwidget.cpp.o
+[ 69%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/quadwidget.cpp.o
+[ 69%] Building CXX object CMakeFiles/aurora.dir/src/aurora/obbfile.cpp.o
+[ 69%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/script/functions_module.cpp.o
+[ 69%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/script/functions_object.cpp.o
+[ 69%] Building CXX object CMakeFiles/graphics.dir/src/graphics/indexbuffer.cpp.o
+[ 69%] Building CXX object CMakeFiles/common.dir/src/common/configman.cpp.o
+[ 69%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/script/functions_creature.cpp.o
+[ 69%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_events.cpp.o
+[ 69%] Building CXX object CMakeFiles/aurora.dir/src/aurora/smallfile.cpp.o
+[ 69%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions_conversation.cpp.o
+[ 69%] Building CXX object CMakeFiles/common.dir/src/common/foxpro.cpp.o
+[ 71%] Building CXX object CMakeFiles/common.dir/src/common/zipfile.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_math.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/chargen/customchar.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_dragonage2.dir/src/engines/dragonage2/script/functions_event.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/chargen/chargenbase.cpp.o
+[ 71%] Building CXX object CMakeFiles/graphics.dir/src/graphics/vertexbuffer.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/chargen/chargenportrait.cpp.o
+[ 71%] Building CXX object CMakeFiles/aurora.dir/src/aurora/nitrofile.cpp.o
+[ 71%] Building CXX object CMakeFiles/aurora.dir/src/aurora/nsbtxfile.cpp.o
+[ 71%] Building CXX object CMakeFiles/aurora.dir/src/aurora/cdpth.cpp.o
+[ 71%] Building CXX object CMakeFiles/graphics.dir/src/graphics/imguiwrapper.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_dragonage.dir/src/engines/dragonage/script/functions_event.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_string.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/nwscript/functions_sound.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_campaign.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/button.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/checkbox.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/chargen/chargenname.cpp.o
+[ 71%] Linking CXX static library lib/libengines_dragonage2.a
+[ 71%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/chargen/chargeninfo.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/ingame.cpp.o
+[ 71%] Built target engines_dragonage2
+[ 71%] Building CXX object CMakeFiles/common.dir/src/common/pe_exe.cpp.o
+[ 71%] Building CXX object CMakeFiles/aurora.dir/src/aurora/nfofile.cpp.o
+[ 71%] Building CXX object CMakeFiles/aurora.dir/src/aurora/ltrfile.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions_object.cpp.o
+[ 71%] Building CXX object CMakeFiles/common.dir/src/common/systemfonts.cpp.o
+[ 71%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/close.cpp.o
+[ 72%] Linking CXX static library lib/libengines_dragonage.a
+[ 72%] Built target engines_dragonage
+[ 72%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_module.cpp.o
+[ 73%] Building CXX object CMakeFiles/aurora.dir/src/aurora/thewitchersavefile.cpp.o
+[ 73%] Building CXX object CMakeFiles/aurora.dir/src/aurora/thewitchersavewriter.cpp.o
+[ 73%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_global.cpp.o
+[ 73%] Building CXX object CMakeFiles/graphics.dir/src/graphics/imguidemo.cpp.o
+[ 73%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/texture.cpp.o
+[ 73%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/texturehandle.cpp.o
+[ 74%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/textureman.cpp.o
+[ 74%] Building CXX object CMakeFiles/common.dir/src/common/changeid.cpp.o
+[ 74%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/hud.cpp.o
+[ 74%] Building CXX object CMakeFiles/engines_witcher.dir/src/engines/witcher/lua/bindings.cpp.o
+[ 74%] Building CXX object CMakeFiles/common.dir/src/common/rect.cpp.o
+[ 74%] Building CXX object CMakeFiles/common.dir/src/common/rational.cpp.o
+[ 75%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions_event.cpp.o
+[ 75%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions_module.cpp.o
+[ 75%] Building CXX object CMakeFiles/aurora.dir/src/aurora/sacfile.cpp.o
+[ 75%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions_creature.cpp.o
+[ 75%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions_action.cpp.o
+[ 75%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions_2da.cpp.o
+[ 75%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_object.cpp.o
+[ 75%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_situated.cpp.o
+[ 75%] Building CXX object CMakeFiles/common.dir/src/common/timestamp.cpp.o
+[ 75%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/container.cpp.o
+[ 75%] Building CXX object CMakeFiles/common.dir/src/common/aabbnode.cpp.o
+[ 75%] Building CXX object CMakeFiles/common.dir/src/common/random.cpp.o
+[ 75%] Building CXX object CMakeFiles/aurora.dir/src/aurora/gfxfile.cpp.o
+[ 75%] Building CXX object CMakeFiles/aurora.dir/src/aurora/xmlfixer.cpp.o
+[ 75%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_local.cpp.o
+[ 77%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/menu.cpp.o
+[ 77%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/editbox.cpp.o
+[ 77%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/script/functions_game.cpp.o
+[ 77%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/pltfile.cpp.o
+[ 77%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_math.cpp.o
+[ 77%] Building CXX object CMakeFiles/common.dir/src/common/semaphore.cpp.o
+[ 77%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/cursor.cpp.o
+[ 77%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_module.cpp.o
+[ 78%] Linking CXX static library lib/libengines_witcher.a
+[ 79%] Building CXX object CMakeFiles/common.dir/src/common/serializationstream.cpp.o
+[ 79%] Built target engines_witcher
+[ 79%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_inventory.cpp.o
+[ 79%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/cursorman.cpp.o
+[ 79%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/gui.cpp.o
+[ 79%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/menu_equ.cpp.o
+[ 79%] Building CXX object CMakeFiles/aurora.dir/src/aurora/oodle.cpp.o
+[ 79%] Building CXX object CMakeFiles/common.dir/src/common/string.cpp.o
+[ 79%] Building CXX object CMakeFiles/common.dir/src/common/lzx.cpp.o
+[ 79%] Building CXX object CMakeFiles/common.dir/src/common/lzma.cpp.o
+[ 79%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/frame.cpp.o
+[ 79%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/label.cpp.o
+[ 79%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/guibackground.cpp.o
+[ 79%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/main/main.cpp.o
+[ 80%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/main/options.cpp.o
+[ 80%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_movie.cpp.o
+[ 80%] Building CXX object CMakeFiles/aurora.dir/src/aurora/gr2file.cpp.o
+[ 80%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/menu_inv.cpp.o
+[ 80%] Building CXX object CMakeFiles/common.dir/src/common/xml.cpp.o
+[ 80%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/menu_char.cpp.o
+[ 80%] Building CXX object CMakeFiles/aurora.dir/src/aurora/textureatlasfile.cpp.o
+[ 80%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/options/audio.cpp.o
+[ 80%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/listbox.cpp.o
+[ 80%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_itemproperty.cpp.o
+[ 81%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/panel.cpp.o
+[ 81%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/menu_abi.cpp.o
+[ 81%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/options/video.cpp.o
+[ 81%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/options/diff.cpp.o
+[ 81%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_object.cpp.o
+[ 81%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/texturefont.cpp.o
+[ 81%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/options/feed.cpp.o
+[ 81%] Linking CXX static library lib/libcommon.a
+[ 83%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_creature.cpp.o
+[ 83%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/menu_msg.cpp.o
+[ 83%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/menu_jou.cpp.o
+[ 83%] Built target common
+[ 83%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_action.cpp.o
+[ 83%] Linking CXX static library lib/libaurora.a
+[ 83%] Built target aurora
+[ 83%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_conversation.cpp.o
+[ 83%] Building CXX object CMakeFiles/events.dir/src/events/events.cpp.o
+[ 83%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_roster.cpp.o
+[ 83%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/abcfont.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_party.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/scrollbar.cpp.o
+[ 84%] Building CXX object CMakeFiles/events.dir/src/events/requesttypes.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/portrait.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/menu_map.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/options/control.cpp.o
+[ 84%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/ttffont.cpp.o
+[ 84%] Building CXX object CMakeFiles/events.dir/src/events/requests.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_situated.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_nwn2.dir/src/engines/nwn2/script/functions_sound.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_sound.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_string.cpp.o
+[ 84%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/nftrfont.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/slider.cpp.o
+[ 84%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/menu_opt.cpp.o
+[ 85%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/minimap.cpp.o
+[ 85%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_time.cpp.o
+[ 85%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/script/functions_parameters.cpp.o
+[ 85%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/inventoryitem.cpp.o
+[ 85%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/chargen/charactergeneration.cpp.o
+[ 85%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/chargen/charactergenerationbase.cpp.o
+[ 85%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/buttonsgroup.cpp.o
+[ 85%] Building CXX object CMakeFiles/events.dir/src/events/notifications.cpp.o
+[ 85%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/ingame/partyselection.cpp.o
+[ 85%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/fonthandle.cpp.o
+[ 86%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/fontman.cpp.o
+[ 86%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/highlightable.cpp.o
+[ 86%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/text.cpp.o
+[ 86%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/gridbox.cpp.o
+[ 86%] Linking CXX static library lib/libengines_nwn2.a
+[ 86%] Built target engines_nwn2
+[ 86%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/widgets/listitembutton.cpp.o
+[ 86%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/dialogs/confirm.cpp.o
+[ 86%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/highlightabletext.cpp.o
+[ 86%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/dialogs/okcancel.cpp.o
+[ 86%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/dialogs/yesnocancel.cpp.o
+[ 86%] Building CXX object CMakeFiles/events.dir/src/events/timerman.cpp.o
+[ 86%] Building CXX object CMakeFiles/events.dir/src/events/joystick.cpp.o
+[ 86%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/fps.cpp.o
+[ 86%] Building CXX object CMakeFiles/events.dir/src/events/gamecontroller.cpp.o
+[ 86%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/highlightableguiquad.cpp.o
+[ 86%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/cube.cpp.o
+[ 86%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/charpremade.cpp.o
+[ 86%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/chargeninfo.cpp.o
+[ 86%] Building CXX object CMakeFiles/engines_kotor.dir/src/engines/kotor/gui/loadscreen/loadscreen.cpp.o
+[ 86%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/chargen/characterinfo.cpp.o
+[ 86%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/chargen/charactername.cpp.o
+[ 87%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/chartype.cpp.o
+[ 87%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/ingame.cpp.o
+[ 87%] Linking CXX static library lib/libevents.a
+[ 87%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/guiquad.cpp.o
+[ 87%] Built target events
+[ 87%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/dialog.cpp.o
+[ 87%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/geometryobject.cpp.o
+[ 87%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/main.cpp.o
+[ 89%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/partyselection.cpp.o
+[ 89%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/gui.cpp.o
+[ 89%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/modelnode.cpp.o
+[ 90%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/model.cpp.o
+[ 90%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/animnode.cpp.o
+[ 90%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/guibackground.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/chargen/characterselection.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/moviesbase.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/moviescamp.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/loadscreen.cpp.o
+[ 91%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/animation.cpp.o
+[ 91%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/fadequad.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_jade.dir/src/engines/jade/gui/chargen/charactersummary.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/selectioncircle.cpp.o
+[ 91%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/borderquad.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/hud.cpp.o
+[ 91%] Linking CXX static library lib/libengines_kotor.a
+[ 91%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/subscenequad.cpp.o
+[ 91%] Built target engines_kotor
+[ 91%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/gui/menubase.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/new.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/newcamp.cpp.o
+[ 91%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/model_nwn.cpp.o
+[ 91%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/newgamefog.cpp.o
+[ 91%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/model_nwn2.cpp.o
+[ 91%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/model_kotor.cpp.o
+[ 91%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/model_jade.cpp.o
+[ 92%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/model_witcher.cpp.o
+[ 92%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/path/doorwalkmesh.cpp.o
+[ 92%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/model_sonic.cpp.o
+[ 92%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/newmodule.cpp.o
+[ 92%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/newpremium.cpp.o
+[ 92%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/model_dragonage.cpp.o
+[ 92%] Linking CXX static library lib/libengines_jade.a
+[ 92%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/newxp1.cpp.o
+[ 92%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/kotordialogframe.cpp.o
+[ 92%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/path/objectwalkmesh.cpp.o
+[ 92%] Built target engines_jade
+[ 93%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/newxp2.cpp.o
+[ 93%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/main/options.cpp.o
+[ 93%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/path/pathfinding.cpp.o
+[ 93%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/animationthread.cpp.o
+[ 95%] Building CXX object CMakeFiles/engines_kotorbase.dir/src/engines/kotorbase/path/walkmeshloader.cpp.o
+[ 95%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/chargenbase.cpp.o
+[ 95%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/walkmesh.cpp.o
+[ 95%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/animationchannel.cpp.o
+[ 95%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/line.cpp.o
+[ 95%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/chargenchoices.cpp.o
+[ 95%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/chargen.cpp.o
+[ 95%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charsex.cpp.o
+[ 95%] Building CXX object CMakeFiles/graphics.dir/src/graphics/aurora/skeletalanimation.cpp.o
+[ 95%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charrace.cpp.o
+[ 95%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charportrait.cpp.o
+[ 95%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charclass.cpp.o
+[ 95%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charalignment.cpp.o
+[ 96%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charattributes.cpp.o
+[ 96%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charpackage.cpp.o
+[ 96%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charskills.cpp.o
+[ 96%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charfeats.cpp.o
+[ 96%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charhelp.cpp.o
+[ 96%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charfeatspopup.cpp.o
+[ 96%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charschool.cpp.o
+[ 96%] Linking CXX static library lib/libengines_kotorbase.a
+[ 96%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/chardomain.cpp.o
+[ 96%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charspells.cpp.o
+[ 96%] Built target engines_kotorbase
+[ 96%] Building CXX object CMakeFiles/engines.dir/src/engines/engine.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charappearance.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines.dir/src/engines/enginemanager.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/chargen/charinfovoice.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/options/controls.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines.dir/src/engines/gamethread.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/options/feedback.cpp.o
+[ 97%] Linking CXX static library lib/libgraphics.a
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/options/game.cpp.o
+[ 97%] Built target graphics
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/options/gorepass.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/options/resolution.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/options/sound.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/options/soundadv.cpp.o
+[ 97%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/options/video.cpp.o
+[ 98%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/options/videoadv.cpp.o
+[ 98%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/ingame/ingame.cpp.o
+[ 98%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/ingame/main.cpp.o
+[ 98%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/ingame/quickbar.cpp.o
+[ 98%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/ingame/quickchat.cpp.o
+[ 98%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/ingame/compass.cpp.o
+[ 98%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/ingame/charinfo.cpp.o
+[ 98%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/ingame/partyleader.cpp.o
+[ 98%] Building CXX object CMakeFiles/engines_nwn.dir/src/engines/nwn/gui/ingame/dialog.cpp.o
+[ 98%] Linking CXX static library lib/libengines.a
+[ 98%] Built target engines
+[ 98%] Linking CXX static library lib/libengines_nwn.a
+[ 98%] Built target engines_nwn
+[ 98%] Building CXX object CMakeFiles/xoreos.dir/src/cline.cpp.o
+[ 98%] Building CXX object CMakeFiles/xoreos.dir/src/engines.cpp.o
+[ 98%] Building CXX object CMakeFiles/xoreos.dir/src/xoreos.cpp.o
+[100%] Linking CXX executable bin/xoreos
+/usr/src/debug/xoreos-git/xoreos/src/engines/odyssey/checkbox.cpp: In member function ‘setState’:
+/usr/src/debug/xoreos-git/xoreos/src/engines/odyssey/checkbox.cpp:98: warning: ‘quadR’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/src/debug/xoreos-git/xoreos/src/engines/odyssey/checkbox.cpp:98: warning: ‘quadG’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/src/debug/xoreos-git/xoreos/src/engines/odyssey/checkbox.cpp:98: warning: ‘quadB’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/src/debug/xoreos-git/xoreos/src/engines/odyssey/checkbox.cpp:98: warning: ‘quadA’ may be used uninitialized [-Wmaybe-uninitialized]
+[100%] Built target xoreos
