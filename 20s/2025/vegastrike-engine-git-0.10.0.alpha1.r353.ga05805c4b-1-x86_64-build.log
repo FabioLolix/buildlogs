@@ -1,0 +1,91 @@
+-- CMAKE_SOURCE_DIR = /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source
+-- GIT_ROOT_DIR = /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source
+-- The CXX compiler identification is GNU 15.2.1
+-- The C compiler identification is GNU 15.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+== Vega Strike Version: 0.10.0-a05805c4b
+-- Always using preferred PIE logic now
+CMake Warning at CMakeLists.txt:175 (MESSAGE):
+  Enabling Position Independent Executables/Shared Libraries (NOT RECOMMENDED
+  on Ubuntu/Mint) !!
+
+
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Found EXPAT: /usr/lib/libexpat.so (found version "2.7.3")
+-- FFMPEG disabled
+-- Ogre disabled
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- OpenGL found
+-- Path to glext.h: /usr/include/GL/glext.h
+-- Path to gl.h: /usr/include/GL/gl.h
+-- Path to glu.h: /usr/include/GL/glu.h
+-- Found GLUT: /usr/lib/libglut.so
+-- GLUT found : /usr/lib/libglut.so;/usr/lib/libXi.so
+-- Path to glut.h: /usr/include/GL/glut.h
+-- glut.h directory: /usr/include/GL
+-- Found Python3: /usr/bin/python3.13 (found suitable version "3.13.7", required range is "3.7...<3.15") found components: Development Interpreter Development.Module Development.Embed
+-- Python library : /usr/lib/libpython3.13.so (3.13.7)
+-- Python include dir : /usr/include/python3.13
+TMP_Python_SITELIB = /usr/lib/python3.13/site-packages
+-- From now on, always using System Boost (ver. 1.75 or higher)
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found System Boost version 1.89.0
+** Boost_LIBRARIES: Boost::python;Boost::json;Boost::log;Boost::log_setup;Boost::date_time;Boost::filesystem;Boost::thread;Boost::chrono;Boost::atomic;Boost::program_options
+-- Found LibArchive: /usr/lib/libarchive.so (found version "3.8.3")
+** Build Type: Release
+-- Configuring Unit Tests
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/libraries
+-- Found Library Directory collide2
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/libraries/collide2
+-- Found Library Directory gfx_generic
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/libraries/gfx_generic
+-- Found Library Directory root_generic
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/libraries/root_generic
+-- Found Library Directory cmd
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/libraries/cmd
+-- Found Library Directory vegadisk
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/libraries/vegadisk
+-- Found Library Directory posh
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/libraries/posh
+-- Found Library Directory imgui
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/libraries/imgui
+libs: /usr/include;/usr/include;/usr/include/GL;/usr/include/GL;/usr/include/GL;/usr/include/GL;/usr/include/python3.13;/usr/include;/usr/include /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source
+-- Found Library Directory gui
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/libraries/gui
+-- Found required library SDL2
+-- PROCESSING DIRECTORY: /build/vegastrike-engine-git/src/Vega-Strike-Engine-Source/engine
+** OpenGL_GL_PREFERENCE: GLVND
+-- Found OpenAL: /usr/lib/libopenal.so
+-- Found OpenAL
+-- SDL2 Found
+CMake Error at engine/CMakeLists.txt:100 (FIND_PACKAGE):
+  By not providing "FindSDL2_IMAGE.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "SDL2_IMAGE", but CMake did not find one.
+
+  Could not find a package configuration file provided by "SDL2_IMAGE" with
+  any of the following names:
+
+    SDL2_IMAGEConfig.cmake
+    sdl2_image-config.cmake
+
+  Add the installation prefix of "SDL2_IMAGE" to CMAKE_PREFIX_PATH or set
+  "SDL2_IMAGE_DIR" to a directory containing one of the above files.  If
+  "SDL2_IMAGE" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
