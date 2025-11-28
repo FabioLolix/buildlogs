@@ -1,0 +1,361 @@
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Build type: None
+This build will be marked as: 3.5.1.r10.g805a323c
+XTest support allowed for simulating events.
+uinput support allowed for simulating events.
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+Found QT: 6.10.1
+-- Found SDL2: /usr/lib/libSDL2.so
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+Udev rules installation enabled.
+-- Configuring done (1.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/antimicrox-git/src/build
+[  0%] Built target antimicrox_autogen_timestamp_deps
+[  1%] Automatic MOC for target antimicrox
+[  1%] Built target antimicrox_autogen
+[  1%] Generating ui_aboutdialog.h
+[  2%] Generating qrc_resources.cpp
+[  2%] Generating ui_setnamesdialog.h
+[  2%] Generating ui_dpadeditdialog.h
+[  2%] Generating ui_advancebuttondialog.h
+[  4%] Generating ui_buttoneditdialog.h
+[  4%] Generating ui_addeditautoprofiledialog.h
+[  4%] Generating ui_axiseditdialog.h
+[  4%] Generating ui_joystickstatuswindow.h
+[  5%] Generating ui_capturedwindowinfodialog.h
+[  8%] Generating ui_calibration.h
+[  8%] Generating ui_editalldefaultautoprofiledialog.h
+[  8%] Generating ui_advancestickassignmentdialog.h
+[  8%] Generating ui_extraprofilesettingsdialog.h
+[  9%] Generating ui_joycontrolstickeditdialog.h
+[  9%] Generating ui_gamecontrollermappingdialog.h
+[ 10%] Generating ui_joysensoreditdialog.h
+[ 11%] Generating ui_mainsettingsdialog.h
+[ 11%] Generating ui_mainwindow.h
+[ 12%] Generating ui_mousesettingsdialog.h
+[ 14%] Generating ui_qkeydisplaydialog.h
+[ 14%] Generating ui_quicksetdialog.h
+[ 14%] Generating ui_setaxisthrottledialog.h
+[ 15%] Building CXX object CMakeFiles/antimicrox.dir/antimicrox_autogen/mocs_compilation.cpp.o
+[ 15%] Building CXX object CMakeFiles/antimicrox.dir/src/main.cpp.o
+[ 15%] Building CXX object CMakeFiles/antimicrox.dir/src/axisvaluebox.cpp.o
+[ 16%] Building CXX object CMakeFiles/antimicrox.dir/src/antkeymapper.cpp.o
+[ 16%] Building CXX object CMakeFiles/antimicrox.dir/src/antimicrosettings.cpp.o
+[ 16%] Building CXX object CMakeFiles/antimicrox.dir/src/applaunchhelper.cpp.o
+[ 17%] Building CXX object CMakeFiles/antimicrox.dir/src/autoprofileinfo.cpp.o
+[ 18%] Building CXX object CMakeFiles/antimicrox.dir/src/dpadpushbuttongroup.cpp.o
+[ 20%] Building CXX object CMakeFiles/antimicrox.dir/src/commandlineutility.cpp.o
+[ 20%] Building CXX object CMakeFiles/antimicrox.dir/src/common.cpp.o
+[ 21%] Building CXX object CMakeFiles/antimicrox.dir/src/dpadcontextmenu.cpp.o
+[ 21%] Building CXX object CMakeFiles/antimicrox.dir/src/dpadpushbutton.cpp.o
+[ 21%] Building CXX object CMakeFiles/antimicrox.dir/src/event.cpp.o
+[ 22%] Building CXX object CMakeFiles/antimicrox.dir/src/eventhandlers/baseeventhandler.cpp.o
+[ 23%] Building CXX object CMakeFiles/antimicrox.dir/src/eventhandlerfactory.cpp.o
+[ 23%] Building CXX object CMakeFiles/antimicrox.dir/src/gamecontroller/gamecontroller.cpp.o
+[ 24%] Building CXX object CMakeFiles/antimicrox.dir/src/gamecontroller/gamecontrollerdpad.cpp.o
+[ 24%] Building CXX object CMakeFiles/antimicrox.dir/src/gamecontroller/gamecontrollerset.cpp.o
+[ 25%] Building CXX object CMakeFiles/antimicrox.dir/src/gamecontroller/gamecontrollertriggerbutton.cpp.o
+[ 25%] Building CXX object CMakeFiles/antimicrox.dir/src/gamecontroller/gamecontrollertrigger.cpp.o
+[ 27%] Building CXX object CMakeFiles/antimicrox.dir/src/gamecontrollerexample.cpp.o
+[ 27%] Building CXX object CMakeFiles/antimicrox.dir/src/globalvariables.cpp.o
+[ 28%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/aboutdialog.cpp.o
+[ 28%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/addeditautoprofiledialog.cpp.o
+/build/antimicrox-git/src/antimicroX/src/common.cpp: In function ‘void PadderCommon::reloadTranslations(QTranslator*, QTranslator*, QString)’:
+/build/antimicrox-git/src/antimicroX/src/common.cpp:134:77: warning: ‘static QString QLibraryInfo::location(LibraryLocation)’ is deprecated: Use path() [-Wdeprecated-declarations]
+  134 |     translator->load(QString("qt_").append(language), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+      |                                                       ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QLibraryInfo:1,
+                 from /build/antimicrox-git/src/antimicroX/src/common.cpp:25:
+/usr/include/qt6/QtCore/qlibraryinfo.h:49:20: note: declared here
+   49 |     static QString location(LibraryLocation location)
+      |                    ^~~~~~~~
+/build/antimicrox-git/src/antimicroX/src/common.cpp:134:21: warning: ignoring return value of ‘bool QTranslator::load(const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  134 |     translator->load(QString("qt_").append(language), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QTranslator:1,
+                 from /build/antimicrox-git/src/antimicroX/src/common.h:30,
+                 from /build/antimicrox-git/src/antimicroX/src/common.cpp:20:
+/usr/include/qt6/QtCore/qtranslator.h:34:24: note: declared here
+   34 |     [[nodiscard]] bool load(const QString & filename,
+      |                        ^~~~
+/build/antimicrox-git/src/antimicroX/src/common.cpp:148:21: warning: ignoring return value of ‘bool QTranslator::load(const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  148 |     translator->load("antimicrox_" + language,
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+  149 |                      QApplication::applicationDirPath().append("/../share/antimicrox/translations"));
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qtranslator.h:34:24: note: declared here
+   34 |     [[nodiscard]] bool load(const QString & filename,
+      |                        ^~~~
+[ 29%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/advancebuttondialog.cpp.o
+[ 29%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/advancestickassignmentdialog.cpp.o
+[ 30%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/axiseditdialog.cpp.o
+[ 30%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/buttoneditdialog.cpp.o
+[ 31%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/calibration.cpp.o
+[ 31%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/dpadeditdialog.cpp.o
+[ 32%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/editalldefaultautoprofiledialog.cpp.o
+[ 32%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/extraprofilesettingsdialog.cpp.o
+[ 34%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/flashbuttonwidget.cpp.o
+[ 34%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/gamecontrollermappingdialog.cpp.o
+/build/antimicrox-git/src/antimicroX/src/main.cpp: In function ‘int main(int, char**)’:
+/build/antimicrox-git/src/antimicroX/src/main.cpp:427:47: warning: ‘static QString QLibraryInfo::location(LibraryLocation)’ is deprecated: Use path() [-Wdeprecated-declarations]
+  427 |     QString transPath = QLibraryInfo::location(QLibraryInfo::TranslationsPath);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QLibraryInfo:1,
+                 from /build/antimicrox-git/src/antimicroX/src/main.cpp:42:
+/usr/include/qt6/QtCore/qlibraryinfo.h:49:20: note: declared here
+   49 |     static QString location(LibraryLocation location)
+      |                    ^~~~~~~~
+/build/antimicrox-git/src/antimicroX/src/main.cpp:431:26: warning: ignoring return value of ‘bool QTranslator::load(const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  431 |         qtTranslator.load(QString("qt_").append(targetLang), "/app/share/antimicrox/translations");
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QTranslator:1,
+                 from /build/antimicrox-git/src/antimicroX/src/common.h:30,
+                 from /build/antimicrox-git/src/antimicroX/src/main.cpp:24:
+/usr/include/qt6/QtCore/qtranslator.h:34:24: note: declared here
+   34 |     [[nodiscard]] bool load(const QString & filename,
+      |                        ^~~~
+/build/antimicrox-git/src/antimicroX/src/main.cpp:434:26: warning: ignoring return value of ‘bool QTranslator::load(const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  434 |         qtTranslator.load(QString("qt_").append(targetLang), transPath);
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qtranslator.h:34:24: note: declared here
+   34 |     [[nodiscard]] bool load(const QString & filename,
+      |                        ^~~~
+/build/antimicrox-git/src/antimicroX/src/main.cpp:444:29: warning: ignoring return value of ‘bool QTranslator::load(const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  444 |         myappTranslator.load(QString("antimicrox_").append(targetLang), "app/share/antimicrox/translations");
+      |         ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qtranslator.h:34:24: note: declared here
+   34 |     [[nodiscard]] bool load(const QString & filename,
+      |                        ^~~~
+/build/antimicrox-git/src/antimicroX/src/main.cpp:447:29: warning: ignoring return value of ‘bool QTranslator::load(const QString&, const QString&, const QString&, const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  447 |         myappTranslator.load(QString("antimicrox_").append(targetLang),
+      |         ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  448 |                              QApplication::applicationDirPath().append("/../share/antimicrox/translations"));
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qtranslator.h:34:24: note: declared here
+   34 |     [[nodiscard]] bool load(const QString & filename,
+      |                        ^~~~
+[ 35%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/joyaxiswidget.cpp.o
+[ 35%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/joybuttonwidget.cpp.o
+[ 36%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/joycontrolstickeditdialog.cpp.o
+[ 36%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/joydpadbuttonwidget.cpp.o
+[ 37%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/joysensoreditdialog.cpp.o
+/build/antimicrox-git/src/antimicroX/src/gui/aboutdialog.cpp: In member function ‘void AboutDialog::fillInfoTextBrowser()’:
+/build/antimicrox-git/src/antimicroX/src/gui/aboutdialog.cpp:89:14: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   89 |     temp.open(QIODevice::Text | QIODevice::ReadOnly);
+      |     ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QFile:1,
+                 from /build/antimicrox-git/src/antimicroX/src/logger.h:23,
+                 from /build/antimicrox-git/src/antimicroX/src/commandlineutility.h:27,
+                 from /build/antimicrox-git/src/antimicroX/src/antimicrosettings.h:22,
+                 from /build/antimicrox-git/src/antimicroX/src/common.h:23,
+                 from /build/antimicrox-git/src/antimicroX/src/gui/aboutdialog.cpp:22:
+/usr/include/qt6/QtCore/qfile.h:291:32: note: declared here
+  291 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 37%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/joystickstatuswindow.cpp.o
+[ 38%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/joytabwidget.cpp.o
+[ 38%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/joytabwidgetcontainer.cpp.o
+[ 40%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/mainsettingsdialog.cpp.o
+[ 40%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/mainwindow.cpp.o
+[ 41%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/mousesettingsdialog.cpp.o
+[ 41%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/qkeydisplaydialog.cpp.o
+[ 42%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/quicksetdialog.cpp.o
+[ 42%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/setaxisthrottledialog.cpp.o
+/build/antimicrox-git/src/antimicroX/src/gui/joycontrolstickeditdialog.cpp: In constructor ‘JoyControlStickEditDialog::JoyControlStickEditDialog(JoyControlStick*, bool, QWidget*)’:
+/build/antimicrox-git/src/antimicroX/src/gui/joycontrolstickeditdialog.cpp:182:59: warning: ‘void QCheckBox::stateChanged(int)’ is deprecated: Use checkStateChanged() instead [-Wdeprecated-declarations]
+  182 |     connect(ui->modifierZoneInvertedCheckBox, &QCheckBox::stateChanged, stick,
+      |                                                           ^~~~~~~~~~~~
+In file included from /usr/include/qt6/QtWidgets/QCheckBox:1,
+                 from /build/antimicrox-git/src/build/ui_joycontrolstickeditdialog.h:16,
+                 from /build/antimicrox-git/src/antimicroX/src/gui/joycontrolstickeditdialog.cpp:20:
+/usr/include/qt6/QtWidgets/qcheckbox.h:42:10: note: declared here
+   42 |     void stateChanged(int);
+      |          ^~~~~~~~~~~~
+[ 43%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/setnamesdialog.cpp.o
+[ 43%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/slotitemlistwidget.cpp.o
+[ 44%] Building CXX object CMakeFiles/antimicrox.dir/src/haptictriggerps5.cpp.o
+[ 44%] Building CXX object CMakeFiles/antimicrox.dir/src/inputdaemon.cpp.o
+[ 45%] Building CXX object CMakeFiles/antimicrox.dir/src/inputdevice.cpp.o
+[ 47%] Building CXX object CMakeFiles/antimicrox.dir/src/inputdevicebitarraystatus.cpp.o
+[ 47%] Building CXX object CMakeFiles/antimicrox.dir/src/inputdevicecalibration.cpp.o
+[ 48%] Building CXX object CMakeFiles/antimicrox.dir/src/joyaccelerometersensor.cpp.o
+[ 48%] Building CXX object CMakeFiles/antimicrox.dir/src/joyaxis.cpp.o
+[ 49%] Building CXX object CMakeFiles/antimicrox.dir/src/joyaxiscontextmenu.cpp.o
+[ 49%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttoncontextmenu.cpp.o
+[ 50%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttonmousehelper.cpp.o
+[ 50%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttonslot.cpp.o
+[ 51%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttonstatusbox.cpp.o
+[ 51%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttontypes/joybutton.cpp.o
+[ 52%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttontypes/joyaccelerometerbutton.cpp.o
+[ 52%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttontypes/joyaxisbutton.cpp.o
+[ 54%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttontypes/joycontrolstickbutton.cpp.o
+[ 54%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttontypes/joycontrolstickmodifierbutton.cpp.o
+/build/antimicrox-git/src/antimicroX/src/gui/mainwindow.cpp: In member function ‘void MainWindow::convertGUIDtoUniqueID(InputDevice*, QString)’:
+/build/antimicrox-git/src/antimicroX/src/gui/mainwindow.cpp:1861:18: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+ 1861 |         data.open(QIODevice::Text | QIODevice::ReadOnly);
+      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QFile:1,
+                 from /build/antimicrox-git/src/antimicroX/src/logger.h:23,
+                 from /build/antimicrox-git/src/antimicroX/src/commandlineutility.h:27,
+                 from /build/antimicrox-git/src/antimicroX/src/antimicrosettings.h:22,
+                 from /build/antimicrox-git/src/antimicroX/src/gui/mainwindow.cpp:24:
+/usr/include/qt6/QtCore/qfile.h:291:32: note: declared here
+  291 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 55%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttontypes/joydpadbutton.cpp.o
+[ 55%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttontypes/joygradientbutton.cpp.o
+[ 56%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttontypes/joygyroscopebutton.cpp.o
+[ 56%] Building CXX object CMakeFiles/antimicrox.dir/src/joybuttontypes/joysensorbutton.cpp.o
+[ 57%] Building CXX object CMakeFiles/antimicrox.dir/src/joycontrolstick.cpp.o
+[ 57%] Building CXX object CMakeFiles/antimicrox.dir/src/joycontrolstickbuttonpushbutton.cpp.o
+[ 58%] Building CXX object CMakeFiles/antimicrox.dir/src/joycontrolstickcontextmenu.cpp.o
+[ 58%] Building CXX object CMakeFiles/antimicrox.dir/src/joycontrolstickpushbutton.cpp.o
+[ 60%] Building CXX object CMakeFiles/antimicrox.dir/src/joycontrolstickstatusbox.cpp.o
+[ 60%] Building CXX object CMakeFiles/antimicrox.dir/src/joydpad.cpp.o
+[ 61%] Building CXX object CMakeFiles/antimicrox.dir/src/joygyroscopesensor.cpp.o
+[ 61%] Building CXX object CMakeFiles/antimicrox.dir/src/joysensor.cpp.o
+[ 62%] Building CXX object CMakeFiles/antimicrox.dir/src/joysensorbuttonpushbutton.cpp.o
+[ 62%] Building CXX object CMakeFiles/antimicrox.dir/src/joysensorcontextmenu.cpp.o
+[ 63%] Building CXX object CMakeFiles/antimicrox.dir/src/joysensorfactory.cpp.o
+[ 63%] Building CXX object CMakeFiles/antimicrox.dir/src/joysensorpreset.cpp.o
+[ 64%] Building CXX object CMakeFiles/antimicrox.dir/src/joysensorpushbutton.cpp.o
+[ 64%] Building CXX object CMakeFiles/antimicrox.dir/src/joysensorstatusbox.cpp.o
+/build/antimicrox-git/src/antimicroX/src/joybuttontypes/joybutton.cpp: In member function ‘bool JoyButton::insertAssignedSlot(JoyButtonSlot*, int, bool)’:
+/build/antimicrox-git/src/antimicroX/src/joybuttontypes/joybutton.cpp:2269:76: warning: unused parameter ‘updateActiveString’ [-Wunused-parameter]
+ 2269 | bool JoyButton::insertAssignedSlot(JoyButtonSlot *newSlot, int index, bool updateActiveString)
+      |                                                                       ~~~~~^~~~~~~~~~~~~~~~~~
+[ 65%] Building CXX object CMakeFiles/antimicrox.dir/src/joystick.cpp.o
+/build/antimicrox-git/src/antimicroX/src/joybuttontypes/joybutton.cpp: In member function ‘void JoyButton::countActiveSlots(int, int&, JoyButtonSlot*, QHash<int, int>&, bool&, bool)’:
+/build/antimicrox-git/src/antimicroX/src/joybuttontypes/joybutton.cpp:3266:64: warning: unused parameter ‘activeSlotHashWindows’ [-Wunused-parameter]
+ 3266 |                                  bool &changeRepeatState, bool activeSlotHashWindows)
+      |                                                           ~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 65%] Building CXX object CMakeFiles/antimicrox.dir/src/keyboard/virtualkeyboardmousewidget.cpp.o
+[ 67%] Building CXX object CMakeFiles/antimicrox.dir/src/keyboard/virtualkeypushbutton.cpp.o
+[ 67%] Building CXX object CMakeFiles/antimicrox.dir/src/keyboard/virtualmousepushbutton.cpp.o
+[ 68%] Building CXX object CMakeFiles/antimicrox.dir/src/localantimicroserver.cpp.o
+[ 68%] Building CXX object CMakeFiles/antimicrox.dir/src/logger.cpp.o
+[ 69%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/mouseaxissettingsdialog.cpp.o
+[ 70%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/mousebuttonsettingsdialog.cpp.o
+[ 70%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/mousecontrolsticksettingsdialog.cpp.o
+[ 71%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/mousedpadsettingsdialog.cpp.o
+[ 71%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/mousesensorsettingsdialog.cpp.o
+[ 72%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/springmoderegionpreview.cpp.o
+[ 72%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/uihelpers/mouseaxissettingsdialoghelper.cpp.o
+[ 74%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/uihelpers/mousebuttonsettingsdialoghelper.cpp.o
+[ 74%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/uihelpers/mousecontrolsticksettingsdialoghelper.cpp.o
+/build/antimicrox-git/src/antimicroX/src/joystick.cpp: In member function ‘virtual double Joystick::getRawSensorRate(JoySensorType)’:
+/build/antimicrox-git/src/antimicroX/src/joystick.cpp:169:49: warning: unused parameter ‘_’ [-Wunused-parameter]
+  169 | double Joystick::getRawSensorRate(JoySensorType _) { return 0; }
+      |                                   ~~~~~~~~~~~~~~^
+/build/antimicrox-git/src/antimicroX/src/joystick.cpp: In member function ‘virtual bool Joystick::hasRawSensor(JoySensorType)’:
+/build/antimicrox-git/src/antimicroX/src/joystick.cpp:171:43: warning: unused parameter ‘_’ [-Wunused-parameter]
+  171 | bool Joystick::hasRawSensor(JoySensorType _) { return false; }
+      |                             ~~~~~~~~~~~~~~^
+[ 75%] Building CXX object CMakeFiles/antimicrox.dir/src/mousedialog/uihelpers/mousedpadsettingsdialoghelper.cpp.o
+[ 75%] Building CXX object CMakeFiles/antimicrox.dir/src/mousehelper.cpp.o
+[ 76%] Building CXX object CMakeFiles/antimicrox.dir/src/pt1filter.cpp.o
+[ 76%] Building CXX object CMakeFiles/antimicrox.dir/src/qtkeymapperbase.cpp.o
+[ 77%] Building CXX object CMakeFiles/antimicrox.dir/src/sdleventreader.cpp.o
+[ 77%] Building CXX object CMakeFiles/antimicrox.dir/src/sensorpushbuttongroup.cpp.o
+[ 78%] Building CXX object CMakeFiles/antimicrox.dir/src/setjoystick.cpp.o
+[ 78%] Building CXX object CMakeFiles/antimicrox.dir/src/simplekeygrabberbutton.cpp.o
+[ 80%] Building CXX object CMakeFiles/antimicrox.dir/src/statisticsestimator.cpp.o
+[ 80%] Building CXX object CMakeFiles/antimicrox.dir/src/stickpushbuttongroup.cpp.o
+[ 81%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/advancebuttondialoghelper.cpp.o
+[ 81%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/buttoneditdialoghelper.cpp.o
+[ 82%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/dpadcontextmenuhelper.cpp.o
+[ 82%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/dpadeditdialoghelper.cpp.o
+[ 83%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/gamecontrollermappingdialoghelper.cpp.o
+[ 83%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/joyaxiscontextmenuhelper.cpp.o
+[ 84%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/joycontrolstickcontextmenuhelper.cpp.o
+[ 84%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/joycontrolstickeditdialoghelper.cpp.o
+[ 85%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/joysensoriothreadhelper.cpp.o
+[ 85%] Building CXX object CMakeFiles/antimicrox.dir/src/uihelpers/joytabwidgethelper.cpp.o
+[ 87%] Building CXX object CMakeFiles/antimicrox.dir/src/vdpad.cpp.o
+[ 87%] Building CXX object CMakeFiles/antimicrox.dir/src/xml/inputdevicexml.cpp.o
+[ 88%] Building CXX object CMakeFiles/antimicrox.dir/src/xml/joyaxisxml.cpp.o
+[ 88%] Building CXX object CMakeFiles/antimicrox.dir/src/xml/joybuttonslotxml.cpp.o
+[ 89%] Building CXX object CMakeFiles/antimicrox.dir/src/xml/joybuttonxml.cpp.o
+[ 89%] Building CXX object CMakeFiles/antimicrox.dir/src/xml/joydpadxml.cpp.o
+[ 90%] Building CXX object CMakeFiles/antimicrox.dir/src/xml/setjoystickxml.cpp.o
+[ 90%] Building CXX object CMakeFiles/antimicrox.dir/src/xmlconfigmigration.cpp.o
+[ 91%] Building CXX object CMakeFiles/antimicrox.dir/src/xmlconfigreader.cpp.o
+[ 91%] Building CXX object CMakeFiles/antimicrox.dir/src/xmlconfigwriter.cpp.o
+[ 92%] Building CXX object CMakeFiles/antimicrox.dir/src/x11extras.cpp.o
+[ 94%] Building CXX object CMakeFiles/antimicrox.dir/src/qtx11keymapper.cpp.o
+[ 94%] Building CXX object CMakeFiles/antimicrox.dir/src/unixcapturewindowutility.cpp.o
+[ 95%] Building CXX object CMakeFiles/antimicrox.dir/src/autoprofilewatcher.cpp.o
+[ 95%] Building CXX object CMakeFiles/antimicrox.dir/src/gui/capturedwindowinfodialog.cpp.o
+[ 96%] Building CXX object CMakeFiles/antimicrox.dir/src/eventhandlers/xtesteventhandler.cpp.o
+[ 96%] Building CXX object CMakeFiles/antimicrox.dir/src/qtuinputkeymapper.cpp.o
+[ 97%] Building CXX object CMakeFiles/antimicrox.dir/src/uinputhelper.cpp.o
+[ 97%] Building CXX object CMakeFiles/antimicrox.dir/src/eventhandlers/uinputeventhandler.cpp.o
+[ 98%] Building CXX object CMakeFiles/antimicrox.dir/qrc_resources.cpp.o
+/build/antimicrox-git/src/antimicroX/src/x11extras.cpp: In member function ‘void X11Extras::findVirtualPtr(int, XIDeviceInfo*, XIDeviceInfo*, XIDeviceInfo*, QString)’:
+/build/antimicrox-git/src/antimicroX/src/x11extras.cpp:762:94: warning: parameter ‘mouse_device’ set but not used [-Wunused-but-set-parameter]
+  762 | void X11Extras::findVirtualPtr(int num_devices, XIDeviceInfo *current_devices, XIDeviceInfo *mouse_device,
+      |                                                                                ~~~~~~~~~~~~~~^~~~~~~~~~~~
+/build/antimicrox-git/src/antimicroX/src/eventhandlers/uinputeventhandler.cpp: In member function ‘void UInputEventHandler::createUInputKeyboardDevice(int)’:
+/build/antimicrox-git/src/antimicroX/src/eventhandlers/uinputeventhandler.cpp:390:10: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  390 |     write(filehandle, &uidev, sizeof(uidev));
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/antimicrox-git/src/antimicroX/src/eventhandlers/uinputeventhandler.cpp: In member function ‘void UInputEventHandler::createUInputMouseDevice(int)’:
+/build/antimicrox-git/src/antimicroX/src/eventhandlers/uinputeventhandler.cpp:406:10: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  406 |     write(filehandle, &uidev, sizeof(uidev));
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/antimicrox-git/src/antimicroX/src/eventhandlers/uinputeventhandler.cpp: In member function ‘void UInputEventHandler::createUInputSpringMouseDevice(int)’:
+/build/antimicrox-git/src/antimicroX/src/eventhandlers/uinputeventhandler.cpp:430:10: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  430 |     write(filehandle, &uidev, sizeof(uidev));
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/antimicrox-git/src/antimicroX/src/eventhandlers/uinputeventhandler.cpp: In member function ‘void UInputEventHandler::write_uinput_event(int, int, int, int, bool)’:
+/build/antimicrox-git/src/antimicroX/src/eventhandlers/uinputeventhandler.cpp:451:10: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  451 |     write(filehandle, &ev, sizeof(struct input_event));
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/antimicrox-git/src/antimicroX/src/eventhandlers/uinputeventhandler.cpp:461:14: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  461 |         write(filehandle, &ev2, sizeof(struct input_event));
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 98%] Linking CXX executable bin/antimicrox
+In member function ‘implementHapticTrigger’,
+    inlined from ‘_ZN14AxisEditDialog18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv.part.0’ at /usr/src/debug/antimicrox-git/build/antimicrox_autogen/MXUWEOXILK/moc_axiseditdialog.cpp:157:43:
+/usr/src/debug/antimicrox-git/antimicroX/src/gui/axiseditdialog.cpp:722:33: warning: ‘mode’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/src/debug/antimicrox-git/antimicroX/src/gui/axiseditdialog.cpp: In function ‘_ZN14AxisEditDialog18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv.part.0’:
+/usr/src/debug/antimicrox-git/antimicroX/src/gui/axiseditdialog.cpp:703:26: note: ‘mode’ was declared here
+/usr/src/debug/antimicrox-git/antimicroX/src/inputdaemon.cpp: In member function ‘firstInputPass’:
+/usr/src/debug/antimicrox-git/antimicroX/src/inputdaemon.cpp:826:44: warning: ‘sensor_type’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/src/debug/antimicrox-git/antimicroX/src/inputdaemon.cpp:816:31: note: ‘sensor_type’ was declared here
+/usr/src/debug/antimicrox-git/antimicroX/src/gui/axiseditdialog.cpp: In member function ‘implementHapticTrigger’:
+/usr/src/debug/antimicrox-git/antimicroX/src/gui/axiseditdialog.cpp:722:33: warning: ‘mode’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/src/debug/antimicrox-git/antimicroX/src/gui/axiseditdialog.cpp:703:26: note: ‘mode’ was declared here
+[100%] Built target antimicrox
