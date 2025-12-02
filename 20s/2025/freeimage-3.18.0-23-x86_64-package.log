@@ -1,0 +1,13 @@
+install -d /build/freeimage/pkg/freeimage/usr/include /build/freeimage/pkg/freeimage/usr/lib
+install -m 644 -o root -g root Source/FreeImage.h /build/freeimage/pkg/freeimage/usr/include
+install -m 644 -o root -g root libfreeimage.a /build/freeimage/pkg/freeimage/usr/lib
+install -m 755 -o root -g root libfreeimage-3.18.0.so /build/freeimage/pkg/freeimage/usr/lib
+ln -sf libfreeimage-3.18.0.so /build/freeimage/pkg/freeimage/usr/lib/libfreeimage.so.3
+ln -sf libfreeimage.so.3 /build/freeimage/pkg/freeimage/usr/lib/libfreeimage.so	
+install -d /build/freeimage/pkg/freeimage/usr/include /build/freeimage/pkg/freeimage/usr/lib
+install -m 644 -o root -g root Source/FreeImage.h /build/freeimage/pkg/freeimage/usr/include
+install -m 644 -o root -g root Wrapper/FreeImagePlus/FreeImagePlus.h /build/freeimage/pkg/freeimage/usr/include
+install -m 644 -o root -g root libfreeimageplus.a /build/freeimage/pkg/freeimage/usr/lib
+install -m 755 -o root -g root libfreeimageplus-3.18.0.so /build/freeimage/pkg/freeimage/usr/lib
+ln -sf libfreeimageplus-3.18.0.so /build/freeimage/pkg/freeimage/usr/lib/libfreeimageplus.so.3
+ln -sf libfreeimageplus.so.3 /build/freeimage/pkg/freeimage/usr/lib/libfreeimageplus.so	

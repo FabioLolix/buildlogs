@@ -1,0 +1,87 @@
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using ccache
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'gtest>=1.11.0'
+--   Found gtest, version 1.17.0
+-- [cmake-scripts in linuxdeploy] Using system gtest
+-- Using ccache
+-- [cmake-scripts in linuxdeploy-desktopfile] target gtest found, not setting up again
+-- [linuxdeploy-desktopfile] Test test_desktopfile is excluded from ALL, not adding as test
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Checking for module 'libpng'
+--   Found libpng, version 1.6.51
+-- Checking for module 'libjpeg'
+--   Found libjpeg, version 3.1.2
+-- Found CImg: /usr/include (found version "350")
+-- Generating excludelist
+-- [generate-excludelist.sh] downloading excludelist from GitHub
+sha256sum: excludelist.h: No such file or directory
+-- [generate-excludelist.sh] changes detected, updating excludelist.h
+-- [linuxdeploy] Adding test test_appdir
+-- [linuxdeploy] Adding test test_linuxdeploy
+-- [linuxdeploy] Adding test test_elf_file
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/linuxdeploy-git/src/build
+[  5%] Building CXX object src/core/copyright/CMakeFiles/linuxdeploy_core_copyright.dir/copyright.cpp.o
+[  5%] Building CXX object src/log/CMakeFiles/linuxdeploy_log.dir/log.cpp.o
+[  5%] Building CXX object lib/linuxdeploy-desktopfile/src/CMakeFiles/_linuxdeploy_desktopfile_objs.dir/desktopfileentry.cpp.o
+[  7%] Building CXX object lib/linuxdeploy-desktopfile/src/CMakeFiles/_linuxdeploy_desktopfile_objs.dir/desktopfile.cpp.o
+[  9%] Building CXX object lib/linuxdeploy-desktopfile/src/CMakeFiles/_linuxdeploy_desktopfile_objs.dir/desktopfilereader.cpp.o
+[ 15%] Building CXX object src/core/copyright/CMakeFiles/linuxdeploy_core_copyright.dir/copyright_dpkgquery.cpp.o
+[ 15%] Building CXX object lib/linuxdeploy-desktopfile/src/CMakeFiles/_linuxdeploy_desktopfile_objs.dir/desktopfilewriter.cpp.o
+[ 15%] Building CXX object tests/core/CMakeFiles/test_util.dir/test_util.cpp.o
+[ 19%] Building CXX object tests/simple_library/CMakeFiles/simple_library_static.dir/simple_library.cpp.o
+[ 19%] Building CXX object tests/simple_library/CMakeFiles/simple_library.dir/simple_library.cpp.o
+[ 19%] Built target linuxdeploy_log
+[ 25%] Building CXX object src/subprocess/CMakeFiles/linuxdeploy_subprocess.dir/process.cpp.o
+[ 25%] Building CXX object src/subprocess/CMakeFiles/linuxdeploy_subprocess.dir/subprocess_result.cpp.o
+[ 25%] Building CXX object src/subprocess/CMakeFiles/linuxdeploy_subprocess.dir/subprocess.cpp.o
+[ 27%] Building CXX object src/subprocess/CMakeFiles/linuxdeploy_subprocess.dir/pipe_reader.cpp.o
+[ 29%] Building CXX object src/subprocess/CMakeFiles/linuxdeploy_subprocess.dir/util.cpp.o
+[ 29%] Built target test_util
+[ 29%] Built target _linuxdeploy_desktopfile_objs
+[ 31%] Linking CXX static library liblinuxdeploy_desktopfile_static.a
+[ 33%] Linking CXX static library liblinuxdeploy_core_copyright.a
+[ 33%] Built target linuxdeploy_desktopfile_static
+[ 33%] Built target linuxdeploy_core_copyright
+[ 35%] Linking CXX static library liblinuxdeploy_subprocess.a
+[ 35%] Built target linuxdeploy_subprocess
+[ 37%] Building CXX object src/core/CMakeFiles/linuxdeploy_core.dir/elf_file.cpp.o
+[ 39%] Building CXX object src/core/CMakeFiles/linuxdeploy_core.dir/appdir.cpp.o
+[ 43%] Building CXX object src/subprocess/CMakeFiles/subprocess_demo.dir/subprocess_demo.cpp.o
+[ 43%] Building CXX object src/core/CMakeFiles/linuxdeploy_core.dir/appdir_root_setup.cpp.o
+[ 45%] Linking CXX executable subprocess_demo
+[ 45%] Built target subprocess_demo
+[ 47%] Linking CXX shared library libsimple_library.so
+[ 49%] Linking CXX static library libsimple_library_static.a
+[ 49%] Built target simple_library_static
+[ 50%] Building CXX object tests/simple_executable/CMakeFiles/simple_executable_static.dir/simple_executable.cpp.o
+[ 52%] Linking CXX executable simple_executable_static
+/usr/bin/ld: cannot find -lpng16: No such file or directory
+/usr/bin/ld: have you installed the static version of the png16 library ?
+/usr/bin/ld: cannot find -ljpeg: No such file or directory
+/usr/bin/ld: have you installed the static version of the jpeg library ?
+collect2: error: ld returned 1 exit status
+make[2]: *** [tests/simple_executable/CMakeFiles/simple_executable_static.dir/build.make:102: tests/simple_executable/simple_executable_static] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1966: tests/simple_executable/CMakeFiles/simple_executable_static.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 52%] Built target simple_library
+[ 54%] Linking CXX static library liblinuxdeploy_core.a
+[ 54%] Built target linuxdeploy_core
+make: *** [Makefile:146: all] Error 2
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
