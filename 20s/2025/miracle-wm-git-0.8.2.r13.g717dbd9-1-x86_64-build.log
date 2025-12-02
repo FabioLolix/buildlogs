@@ -10,6 +10,7 @@
 -- Check for working CXX compiler: /usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+-- Using mold linker: /usr/bin/mold
 -- Skipping most warnings for non-Debug build
 -- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
 -- Checking for module 'miral>=5.1'
@@ -52,12 +53,12 @@
 --   Found mircore, version 2.23.0
 -- Checking for module 'json-c'
 --   Found json-c, version 0.18
--- Configuring done (1.7s)
+-- Configuring done (1.4s)
 -- Generating done (0.0s)
 -- Build files have been written to: /build/miracle-wm-git/src/build
-[  2%] Building CXX object miracle-wm-config/CMakeFiles/miracle-wm-config.dir/src/config-cpp.cpp.o
-[  2%] Building CXX object miraclemsg/CMakeFiles/miracle-ipc.dir/ipc_client.cpp.o
-[  3%] Building CXX object miracle-wm-config/CMakeFiles/miracle-wm-config.dir/src/config-c.cpp.o
+[  1%] Building CXX object miraclemsg/CMakeFiles/miracle-ipc.dir/ipc_client.cpp.o
+[  2%] Building CXX object miracle-wm-config/CMakeFiles/miracle-wm-config.dir/src/config-c.cpp.o
+[  3%] Building CXX object miracle-wm-config/CMakeFiles/miracle-wm-config.dir/src/config-cpp.cpp.o
 [  4%] Linking CXX static library libmiracle-ipc.a
 [  4%] Built target miracle-ipc
 [  6%] Building CXX object miraclemsg/CMakeFiles/miraclemsg.dir/main.cpp.o
@@ -65,33 +66,33 @@
 [  7%] Built target miraclemsg
 [  8%] Linking CXX shared library libmiracle-wm-config.so
 [  8%] Built target miracle-wm-config
-[ 12%] Building CXX object miracle-wm-config/CMakeFiles/test_miracle_wm_config_c_api.dir/tests/test_config_c.cpp.o
-[ 12%] Building CXX object miracle-wm-config/CMakeFiles/test_miracle_wm_config_c_api.dir/tests/test_config_cpp.cpp.o
+[  9%] Building CXX object miracle-wm-config/CMakeFiles/test_miracle_wm_config_c_api.dir/tests/test_config_c.cpp.o
+[ 10%] Building CXX object miracle-wm-config/CMakeFiles/test_miracle_wm_config_c_api.dir/tests/test_config_cpp.cpp.o
 [ 12%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/cmake_pch.hxx.gch
 [ 13%] Linking CXX executable test_miracle_wm_config_c_api
-[ 14%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/policy.cpp.o
-[ 15%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/container.cpp.o
-[ 17%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/ipc_connection_manager.cpp.o
-[ 18%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/window_helpers.cpp.o
-[ 19%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/workspace.cpp.o
-[ 20%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/leaf_container.cpp.o
+[ 17%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/policy.cpp.o
+[ 17%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/window_helpers.cpp.o
+[ 17%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/config.cpp.o
+[ 19%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/ipc_message_handler.cpp.o
+[ 21%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/output.cpp.o
+[ 21%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/container.cpp.o
 [ 21%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/workspace_manager.cpp.o
-[ 23%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/workspace_observer.cpp.o
-[ 24%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/output.cpp.o
-[ 25%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/config.cpp.o
-[ 26%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/ipc_message_handler.cpp.o
-[ 29%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/renderer.cpp.o
-[ 29%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/tessellation_helpers.cpp.o
-[ 30%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/ipc_command.cpp.o
-[ 31%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/auto_restarting_launcher.cpp.o
-[ 32%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/parent_container.cpp.o
-[ 34%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/window_manager_tools_window_controller.cpp.o
+[ 24%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/workspace_observer.cpp.o
+[ 24%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/auto_restarting_launcher.cpp.o
+[ 25%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/workspace.cpp.o
+[ 26%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/parent_container.cpp.o
+[ 28%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/window_manager_tools_window_controller.cpp.o
+[ 30%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/leaf_container.cpp.o
+[ 30%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/ipc_connection_manager.cpp.o
+[ 31%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/tessellation_helpers.cpp.o
+[ 32%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/renderer.cpp.o
+[ 34%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/ipc_command.cpp.o
 [ 35%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/ipc_command_executor.cpp.o
 [ 36%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/render_data_manager.cpp.o
 [ 37%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/animator.cpp.o
 [ 39%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/animation.cpp.o
+[ 39%] Built target test_miracle_wm_config_c_api
 [ 40%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/program_factory.cpp.o
-[ 40%] Built target test_miracle_wm_config_c_api
 [ 41%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/mode_observer.cpp.o
 [ 42%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/shell_component_container.cpp.o
 [ 43%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/container_group_container.cpp.o
@@ -100,17 +101,17 @@
 [ 47%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/compositor_state.cpp.o
 [ 48%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/command_controller.cpp.o
 [ 50%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/animator_loop.cpp.o
-[ 51%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/drag_and_drop_service.cpp.o
+[ 52%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/drag_and_drop_service.cpp.o
 [ 52%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/output_manager.cpp.o
 [ 53%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/output_factory.cpp.o
 [ 54%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/move_service.cpp.o
 [ 56%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/resize_service.cpp.o
 [ 57%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/forwarding_surface.cpp.o
-[ 58%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/dying_surface_manager.cpp.o
-[ 59%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/shader_2d.cpp.o
+[ 58%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/shader_2d.cpp.o
+[ 59%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/dying_surface_manager.cpp.o
 [ 60%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/wlr-output-management-unstable-v1_wrapper.cpp.o
-[ 62%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/output_listener.cpp.o
-[ 63%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/wlr-ouput-management-unstable-v1.cpp.o
+[ 62%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/wlr-ouput-management-unstable-v1.cpp.o
+[ 63%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/output_listener.cpp.o
 [ 64%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/display_config.cpp.o
 [ 65%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/window_observer.cpp.o
 [ 67%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/config_observer.cpp.o
@@ -120,30 +121,30 @@
 [ 71%] Building CXX object CMakeFiles/miracle-wm-implementation.dir/src/plugin_manager.cpp.o
 [ 73%] Linking CXX static library libmiracle-wm-implementation.a
 [ 73%] Built target miracle-wm-implementation
-[ 74%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_ipc_command_parser.cpp.o
-[ 75%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_filesystem_configuration.cpp.o
+[ 75%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_render_data_manager.cpp.o
+[ 75%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_animator.cpp.o
 [ 76%] Building CXX object CMakeFiles/miracle-wm.dir/src/main.cpp.o
-[ 78%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_feature_flags.cpp.o
-[ 79%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_drag_and_drop_service.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_command_controller.cpp.o
-[ 81%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_workspace.cpp.o
-[ 82%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_dying_surface_manager.cpp.o
-[ 84%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_output_manager.cpp.o
-[ 85%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_ipc_message_handler.cpp.o
-[ 87%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_resize_service.cpp.o
-[ 89%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_animator.cpp.o
-[ 89%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_scratchpad.cpp.o
+[ 79%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_workspace.cpp.o
+[ 79%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_filesystem_configuration.cpp.o
+[ 80%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_ipc_command_parser.cpp.o
+[ 81%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_output_manager.cpp.o
+[ 82%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_drag_and_drop_service.cpp.o
+[ 84%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_output.cpp.o
+[ 85%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_leaf_container.cpp.o
+[ 87%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_feature_flags.cpp.o
+[ 87%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_scratchpad.cpp.o
+[ 89%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_command_controller.cpp.o
 [ 90%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_tiling_algorithms.cpp.o
-[ 91%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_output.cpp.o
-[ 92%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_ipc_command_executor.cpp.o
-[ 93%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_leaf_container.cpp.o
-[ 95%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_workspace_manager.cpp.o
-[ 96%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_render_data_manager.cpp.o
-[ 97%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_parent_container.cpp.o
+[ 93%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_parent_container.cpp.o
+[ 93%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_resize_service.cpp.o
+[ 92%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_dying_surface_manager.cpp.o
+[ 95%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_ipc_command_executor.cpp.o
+[ 96%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_workspace_manager.cpp.o
+[ 97%] Building CXX object tests/CMakeFiles/miracle-wm-tests.dir/test_ipc_message_handler.cpp.o
 [ 98%] Linking CXX executable miracle-wm
 [ 98%] Built target miracle-wm
 [100%] Linking CXX executable miracle-wm-tests
-/usr/bin/ld: cannot find -lboost_system: No such file or directory
+mold: fatal: library not found: boost_system
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/miracle-wm-tests.dir/build.make:400: tests/miracle-wm-tests] Error 1
 make[1]: *** [CMakeFiles/Makefile2:254: tests/CMakeFiles/miracle-wm-tests.dir/all] Error 2
