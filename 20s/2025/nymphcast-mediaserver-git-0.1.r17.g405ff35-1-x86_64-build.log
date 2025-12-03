@@ -1,0 +1,47 @@
+TARGET: x86_64-pc-linux-gnu
+mkdir -p obj/x86_64-pc-linux-gnu/src
+g++ -c -o obj/x86_64-pc-linux-gnu/src/NymphCastMediaServer.o src/NymphCastMediaServer.cpp -Isrc -g3 -std=c++17 -D__VERSION="\"v0.2-alpha0.20250505\"" -fext-numeric-literals
+g++ -c -o obj/x86_64-pc-linux-gnu/src/bytebauble.o src/bytebauble.cpp -Isrc -g3 -std=c++17 -D__VERSION="\"v0.2-alpha0.20250505\"" -fext-numeric-literals
+g++ -c -o obj/x86_64-pc-linux-gnu/src/config_parser.o src/config_parser.cpp -Isrc -g3 -std=c++17 -D__VERSION="\"v0.2-alpha0.20250505\"" -fext-numeric-literals
+g++ -c -o obj/x86_64-pc-linux-gnu/src/dashboard_handler.o src/dashboard_handler.cpp -Isrc -g3 -std=c++17 -D__VERSION="\"v0.2-alpha0.20250505\"" -fext-numeric-literals
+g++ -c -o obj/x86_64-pc-linux-gnu/src/mimetype.o src/mimetype.cpp -Isrc -g3 -std=c++17 -D__VERSION="\"v0.2-alpha0.20250505\"" -fext-numeric-literals
+g++ -c -o obj/x86_64-pc-linux-gnu/src/ncms_httpserver.o src/ncms_httpserver.cpp -Isrc -g3 -std=c++17 -D__VERSION="\"v0.2-alpha0.20250505\"" -fext-numeric-literals
+g++ -c -o obj/x86_64-pc-linux-gnu/src/sarge.o src/sarge.cpp -Isrc -g3 -std=c++17 -D__VERSION="\"v0.2-alpha0.20250505\"" -fext-numeric-literals
+g++ -c -o obj/x86_64-pc-linux-gnu/src/scan_gamesystems.o src/scan_gamesystems.cpp -Isrc -g3 -std=c++17 -D__VERSION="\"v0.2-alpha0.20250505\"" -fext-numeric-literals
+g++ -c -o obj/x86_64-pc-linux-gnu/src/scan_mediafiles.o src/scan_mediafiles.cpp -Isrc -g3 -std=c++17 -D__VERSION="\"v0.2-alpha0.20250505\"" -fext-numeric-literals
+mkdir -p bin/x86_64-pc-linux-gnu
+In file included from src/sarge.cpp:17:
+src/sarge.h:50:30: error: ‘uint32_t’ has not been declared
+   50 |         bool getTextArgument(uint32_t index, std::string &value);
+      |                              ^~~~~~~~
+src/sarge.h:18:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+   17 | #include <memory>
+  +++ |+#include <cstdint>
+   18 | 
+src/sarge.cpp:167:6: error: ‘bool Sarge::getTextArgument’ is not a static data member of ‘class Sarge’
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |      ^~~~~
+src/sarge.cpp:167:29: error: ‘uint32_t’ was not declared in this scope
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                             ^~~~~~~~
+src/sarge.cpp:20:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+   19 | #include <iostream>
+  +++ |+#include <cstdint>
+   20 | 
+src/sarge.cpp:167:57: error: expected primary-expression before ‘&’ token
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                                                         ^
+src/sarge.cpp:167:58: error: ‘value’ was not declared in this scope
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                                                          ^~~~~
+src/sarge.cpp:167:63: error: expression list treated as compound expression in initializer [-fpermissive]
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                                                               ^
+make: *** [Makefile:64: obj/x86_64-pc-linux-gnu/src/sarge.o] Error 1
+make: *** Waiting for unfinished jobs....
+src/ncms_httpserver.cpp:20:9: error: ISO C++ forbids declaration of ‘MyRequestHandlerFactory’ with no type [-fpermissive]
+   20 |         MyRequestHandlerFactory() { return 0; }
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Makefile:64: obj/x86_64-pc-linux-gnu/src/ncms_httpserver.o] Error 1
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

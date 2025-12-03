@@ -1,0 +1,35 @@
+mkdir -p obj
+g++ -c -o obj/NymphCastClient.o NymphCastClient.cpp -I . -g3 -std=c++17 -D__VERSION="\"v0.1-release.20220408\""
+g++ -c -o obj/sarge.o sarge.cpp -I . -g3 -std=c++17 -D__VERSION="\"v0.1-release.20220408\""
+mkdir -p bin
+In file included from sarge.cpp:17:
+sarge.h:50:30: error: ‘uint32_t’ has not been declared
+   50 |         bool getTextArgument(uint32_t index, std::string &value);
+      |                              ^~~~~~~~
+sarge.h:18:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+   17 | #include <memory>
+  +++ |+#include <cstdint>
+   18 | 
+sarge.cpp:167:6: error: ‘bool Sarge::getTextArgument’ is not a static data member of ‘class Sarge’
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |      ^~~~~
+sarge.cpp:167:29: error: ‘uint32_t’ was not declared in this scope
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                             ^~~~~~~~
+sarge.cpp:20:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+   19 | #include <iostream>
+  +++ |+#include <cstdint>
+   20 | 
+sarge.cpp:167:57: error: expected primary-expression before ‘&’ token
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                                                         ^
+sarge.cpp:167:58: error: ‘value’ was not declared in this scope
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                                                          ^~~~~
+sarge.cpp:167:63: error: expression list treated as compound expression in initializer [-fpermissive]
+  167 | bool Sarge::getTextArgument(uint32_t index, std::string &value) {
+      |                                                               ^
+make: *** [Makefile:35: obj/sarge.o] Error 1
+make: *** Waiting for unfinished jobs....
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

@@ -1,0 +1,916 @@
+Checking for write permissions in install directory...
+CMake Warning at CMakeLists.txt:73 (message):
+  No write access at install directory, please set correct permissions
+
+
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /usr/include/python3.13 (found version "3.13.7") found components: Development.Module
+-- Found Python3: /usr/bin/python3.13 (found version "3.13.7") found components: Interpreter Development.Embed
+-- Found Python3: /usr/bin/python3.13 (found version "3.13.7") found components: Interpreter
+Checking for write permissions in install directory...
+CMake Warning at cmake/SuperBuild.cmake:83 (message):
+  No write access at install directory, please set correct permissions
+Call Stack (most recent call first):
+  CMakeLists.txt:154 (include)
+
+
+-- Found Pybind11: /build/netgen-git/src/netgen/external_dependencies/pybind11/include
+-- Found Python3: /usr/bin/python3.13 (found version "3.13.7") found components: Interpreter Development.Module
+-- Found Python3: /usr/bin/python3.13 (found version "3.13.7") found components: Interpreter Development.Embed
+-- Found Tclsh: /bin/tclsh (found version "8.6")
+-- Found TCL: /usr/lib/libtcl.so
+-- Found TCLTK: /usr/lib/libtcl.so
+-- Found TK: /usr/lib/libtk.so
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/netgen-git/src/build
+[ 10%] Creating directories for 'netgen'
+[ 20%] Performing check_submodules step for 'netgen'
+[ 30%] No download step for 'netgen'
+[ 40%] No update step for 'netgen'
+[ 50%] No patch step for 'netgen'
+[ 60%] Performing configure step for 'netgen'
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /usr/include/python3.13 (found version "3.13.7") found components: Development.Module
+-- Found Python3: /usr/bin/python3.13 (found version "3.13.7") found components: Interpreter Development.Embed
+-- Found Python3: /usr/bin/python3.13 (found version "3.13.7") found components: Interpreter
+-- Found Git: /usr/bin/git (found version "2.52.0")
+-- Looking for include file dlfcn.h
+-- Looking for include file dlfcn.h - found
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Found Tclsh: /bin/tclsh (found version "8.6")
+-- Found TCL: /usr/lib/libtcl.so (Required is at least version "8.5")
+-- Found TCLTK: /usr/lib/libtcl.so
+-- Found TK: /usr/lib/libtk.so
+-- Found TCL: /usr/lib/libtcl.so
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- pybind11 v3.0.1 
+-- Performing Test HAS_FLTO_AUTO
+-- Performing Test HAS_FLTO_AUTO - Success
+-- OpenCasCade include dirs: /usr/include/opencascade
+-- GNU C++ ABI version: 17
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/importlib/metadata/__init__.py", line 407, in from_name
+    return next(iter(cls.discover(name=name)))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from importlib.metadata import version; print(version('pybind11-stubgen'))
+                                                  ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/metadata/__init__.py", line 987, in version
+    return distribution(distribution_name).version
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/metadata/__init__.py", line 960, in distribution
+    return Distribution.from_name(distribution_name)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/metadata/__init__.py", line 409, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for pybind11-stubgen
+CMake Warning at python/CMakeLists.txt:38 (message):
+  pybind11-stubgen not found, if you want to create stub files
+
+  for better autocompletion support install it with pip.
+
+
+grep: /etc/lsb-release: No such file or directory
+
+------------------------------------------------------------------------
+  Netgen :  Automatic configuration OK.
+
+  Build type: None
+  Flags:  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/netgen-git/src=/usr/src/debug/netgen-git -flto=auto
+
+  Enabled functionality:
+
+    OCC: ............... ON
+    JPEGlib: ........... OFF
+    FFMPEG: ............ OFF
+    GUI: ............... ON
+    MPI: ............... OFF
+    PYTHON: ............ ON
+
+
+  Building: 
+
+    Type 'make' to compile Netgen.
+
+    Type 'make install' to install Netgen.
+
+
+  Install directory:
+
+    /usr
+
+  Please set the following environment variables:
+
+    NETGENDIR=/usr/bin
+    PYTHONPATH=.:/usr/lib/python3.13/site-packages
+
+------------------------------------------------------------------------
+
+-- Configuring done (2.8s)
+-- Generating done (0.1s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PYBIND_INCLUDE_DIR
+
+
+-- Build files have been written to: /build/netgen-git/src/build/netgen
+[ 70%] Performing check_submodules1 step for 'netgen'
+[ 80%] Performing build step for 'netgen'
+[  0%] Building CXX object CMakeFiles/makerls.dir/rules/makerlsfile.cpp.o
+[  0%] Building C object ng/Togl2.1/CMakeFiles/togl.dir/toglStubInit.c.o
+[  0%] Building C object ng/Togl2.1/CMakeFiles/togl.dir/togl.c.o
+-- Found Git: /usr/bin/git (found version "2.52.0")
+[  1%] Building C object ng/Togl2.1/CMakeFiles/togl.dir/toglProcAddr.c.o
+[  1%] Built target ng_generate_version_file
+[  3%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/bitarray.cpp.o
+[  3%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/localheap.cpp.o
+[  3%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/archive.cpp.o
+[  3%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/exception.cpp.o
+[  4%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/logging.cpp.o
+[  4%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/profiler.cpp.o
+[  5%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/table.cpp.o
+[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/utils.cpp.o
+[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/flags.cpp.o
+[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/paje_trace.cpp.o
+[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/version.cpp.o
+[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/python_ngcore.cpp.o
+[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/taskmanager.cpp.o
+[  8%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/statushandler.cpp.o
+[  8%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/ng_mpi_wrapper.cpp.o
+[  8%] Linking CXX executable makerls
+[  9%] Linking C static library libtogl.a
+[  9%] Built target togl
+[  9%] Built target makerls
+[ 10%] Linking CXX shared library libngcore.so
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘DoArchive’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:853:18:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘DoArchive’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘_Construct’ at /usr/include/c++/15.2.1/bits/stl_construct.h:133:7,
+    inlined from ‘construct’ at /usr/include/c++/15.2.1/bits/alloc_traits.h:805:19,
+    inlined from ‘__ct ’ at /usr/include/c++/15.2.1/bits/shared_ptr_base.h:606:39,
+    inlined from ‘__ct ’ at /usr/include/c++/15.2.1/bits/shared_ptr_base.h:969:16,
+    inlined from ‘__ct ’ at /usr/include/c++/15.2.1/bits/shared_ptr_base.h:1719:14,
+    inlined from ‘__ct ’ at /usr/include/c++/15.2.1/bits/shared_ptr.h:463:59,
+    inlined from ‘make_shared’ at /usr/include/c++/15.2.1/bits/shared_ptr.h:1008:39,
+    inlined from ‘SetFlag’ at /usr/src/debug/netgen-git/netgen/libsrc/core/flags.cpp:161:56:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘SetFlag’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+[ 10%] Built target ngcore
+[ 10%] Generating rules/rule_pyramidrules2.cpp
+[ 12%] Generating rules/rule_hexrules.cpp
+[ 12%] Generating rules/rule_quadrules.cpp
+[ 13%] Generating rules/rule_pyramidrules.cpp
+[ 14%] Generating rules/rule_tetrules.cpp
+[ 14%] Generating rules/rule_prismrules2.cpp
+[ 14%] Generating rules/rule_triarules.cpp
+[ 14%] Building CXX object libsrc/core/CMakeFiles/pyngcore.dir/python_ngcore_export.cpp.o
+[ 15%] Building CXX object CMakeFiles/nglib.dir/rules/rule_prismrules2.cpp.o
+[ 15%] Building CXX object CMakeFiles/nglib.dir/rules/rule_pyramidrules.cpp.o
+[ 16%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/hashtabl.cpp.o
+[ 17%] Building CXX object CMakeFiles/nglib.dir/rules/rule_quadrules.cpp.o
+[ 17%] Building CXX object CMakeFiles/nglib.dir/rules/rule_pyramidrules2.cpp.o
+[ 18%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/ngbitarray.cpp.o
+[ 19%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/mystring.cpp.o
+[ 19%] Building CXX object CMakeFiles/nglib.dir/rules/rule_triarules.cpp.o
+[ 20%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/parthreads.cpp.o
+[ 20%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/optmem.cpp.o
+[ 20%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/gzstream.cpp.o
+[ 20%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/seti.cpp.o
+[ 20%] Building CXX object CMakeFiles/nglib.dir/rules/rule_hexrules.cpp.o
+[ 21%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/sort.cpp.o
+[ 21%] Building CXX object CMakeFiles/nglib.dir/rules/rule_tetrules.cpp.o
+[ 21%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/adtree.cpp.o
+[ 21%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geom2d.cpp.o
+[ 21%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/spbita2d.cpp.o
+[ 22%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/table.cpp.o
+[ 23%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geomfuncs.cpp.o
+[ 23%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geom3d.cpp.o
+[ 24%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geomtest3d.cpp.o
+[ 24%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/transform3d.cpp.o
+[ 24%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/spline.cpp.o
+[ 25%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/splinegeometry.cpp.o
+[ 26%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/bfgs.cpp.o
+[ 26%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/densemat.cpp.o
+[ 27%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/linopt.cpp.o
+[ 27%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/linsearch.cpp.o
+[ 28%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/polynomial.cpp.o
+[ 28%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/adfront2.cpp.o
+[ 28%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/adfront3.cpp.o
+[ 29%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/bisect.cpp.o
+[ 29%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/boundarylayer.cpp.o
+[ 30%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/clusters.cpp.o
+[ 30%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/curvedelems.cpp.o
+[ 31%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/delaunay.cpp.o
+[ 31%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/delaunay2d.cpp.o
+[ 32%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/geomsearch.cpp.o
+[ 32%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/global.cpp.o
+[ 33%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/hprefinement.cpp.o
+[ 33%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/improve2.cpp.o
+[ 34%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/improve2gen.cpp.o
+[ 34%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/improve3.cpp.o
+[ 34%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/localh.cpp.o
+[ 35%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/meshclass.cpp.o
+[ 35%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/meshfunc.cpp.o
+[ 36%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/meshfunc2d.cpp.o
+[ 36%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/meshing2.cpp.o
+[ 37%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/meshing3.cpp.o
+[ 37%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/meshtool.cpp.o
+[ 38%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/meshtype.cpp.o
+[ 38%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/msghandler.cpp.o
+[ 39%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/netrule2.cpp.o
+[ 39%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/netrule3.cpp.o
+[ 40%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/parser2.cpp.o
+[ 40%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/parser3.cpp.o
+[ 41%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/refine.cpp.o
+[ 41%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/ruler2.cpp.o
+[ 41%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/ruler3.cpp.o
+[ 42%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/secondorder.cpp.o
+[ 42%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/smoothing2.5.cpp.o
+[ 43%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/smoothing2.cpp.o
+[ 43%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/smoothing3.cpp.o
+[ 44%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/specials.cpp.o
+[ 44%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/topology.cpp.o
+[ 45%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/validate.cpp.o
+[ 45%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/bcfunctions.cpp.o
+[ 46%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/parallelmesh.cpp.o
+[ 46%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/paralleltop.cpp.o
+[ 47%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/basegeom.cpp.o
+[ 47%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/python_mesh.cpp.o
+[ 47%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/surfacegeom.cpp.o
+[ 48%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/debugging.cpp.o
+[ 48%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/fieldlines.cpp.o
+[ 49%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/visual_interface.cpp.o
+[ 49%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/boundarylayer2d.cpp.o
+[ 50%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/boundarylayer_interpolate.cpp.o
+[ 50%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/Partition_Inter2d.cxx.o
+[ 51%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/Partition_Inter3d.cxx.o
+[ 51%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/Partition_Loop.cxx.o
+[ 52%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/Partition_Loop2d.cxx.o
+[ 52%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/Partition_Loop3d.cxx.o
+[ 53%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/Partition_Spliter.cxx.o
+[ 53%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/occgenmesh.cpp.o
+[ 53%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/occgeom.cpp.o
+[ 54%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/occmeshsurf.cpp.o
+[ 54%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/python_occ.cpp.o
+[ 55%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/python_occ_basic.cpp.o
+[ 55%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/python_occ_shapes.cpp.o
+[ 56%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/occ_face.cpp.o
+[ 56%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/occ_edge.cpp.o
+[ 57%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/occ_vertex.cpp.o
+[ 57%] Building CXX object CMakeFiles/nglib.dir/libsrc/occ/occ_utils.cpp.o
+[ 58%] Building CXX object CMakeFiles/nglib.dir/libsrc/stlgeom/meshstlsurface.cpp.o
+[ 58%] Building CXX object CMakeFiles/nglib.dir/libsrc/stlgeom/stlgeom.cpp.o
+[ 59%] Building CXX object CMakeFiles/nglib.dir/libsrc/stlgeom/stlgeomchart.cpp.o
+[ 59%] Building CXX object CMakeFiles/nglib.dir/libsrc/stlgeom/stlgeommesh.cpp.o
+[ 59%] Building CXX object CMakeFiles/nglib.dir/libsrc/stlgeom/stlline.cpp.o
+[ 60%] Building CXX object CMakeFiles/nglib.dir/libsrc/stlgeom/stltool.cpp.o
+[ 60%] Building CXX object CMakeFiles/nglib.dir/libsrc/stlgeom/stltopology.cpp.o
+[ 61%] Linking CXX shared module pyngcore.cpython-313-x86_64-linux-gnu.so
+[ 62%] Building CXX object CMakeFiles/nglib.dir/libsrc/stlgeom/python_stl.cpp.o
+[ 62%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writeuser.cpp.o
+[ 63%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/nginterface.cpp.o
+[ 63%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/nginterface_v2.cpp.o
+[ 64%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/read_fnf_mesh.cpp.o
+[ 64%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/readtetmesh.cpp.o
+[ 65%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/readuser.cpp.o
+[ 65%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writeabaqus.cpp.o
+[ 66%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writediffpack.cpp.o
+[ 66%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writedolfin.cpp.o
+[ 67%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writeelmer.cpp.o
+[ 67%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writefeap.cpp.o
+/build/netgen-git/src/netgen/libsrc/interface/nginterface.cpp: In function ‘int Ng_GetElement_Edges(int, int*, int*)’:
+/build/netgen-git/src/netgen/libsrc/interface/nginterface.cpp:1520:37: warning: ‘int netgen::MeshTopology::GetElementEdges(int, int*, int*) const’ is deprecated: use GetEdges (ElementIndex) -> FlatArray [-Wdeprecated-declarations]
+ 1520 |     return topology.GetElementEdges (elnr, edges, orient);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /build/netgen-git/src/netgen/libsrc/include/../meshing/meshclass.hpp:21,
+                 from /build/netgen-git/src/netgen/libsrc/include/../meshing/meshtool.hpp:9,
+                 from /build/netgen-git/src/netgen/libsrc/include/../meshing/meshing.hpp:27,
+                 from /build/netgen-git/src/netgen/libsrc/include/meshing.hpp:1,
+                 from /build/netgen-git/src/netgen/libsrc/interface/nginterface.cpp:3:
+/build/netgen-git/src/netgen/libsrc/include/../meshing/topology.hpp:130:7: note: declared here
+  130 |   int GetElementEdges (int elnr, int * edges, int * orient) const;
+      |       ^~~~~~~~~~~~~~~
+/build/netgen-git/src/netgen/libsrc/interface/nginterface.cpp: In function ‘int Ng_GetSurfaceElement_Edges(int, int*, int*)’:
+/build/netgen-git/src/netgen/libsrc/interface/nginterface.cpp:1546:32: warning: ‘void netgen::MeshTopology::GetSegmentEdge(int, int&, int&) const’ is deprecated: use GetEdge(SegmentIndex) instead [-Wdeprecated-declarations]
+ 1546 |         topology.GetSegmentEdge(elnr, edges[0], orient[0]);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/netgen-git/src/netgen/libsrc/include/../meshing/topology.hpp:111:8: note: declared here
+  111 |   void GetSegmentEdge (int segnr, int & enr, int & orient) const;
+      |        ^~~~~~~~~~~~~~
+/build/netgen-git/src/netgen/libsrc/interface/nginterface.cpp:1548:43: warning: ‘netgen::EdgeIndex netgen::MeshTopology::GetSegmentEdge(int) const’ is deprecated: use GetEdge(SegmentIndex) instead [-Wdeprecated-declarations]
+ 1548 |         edges[0] = topology.GetSegmentEdge(elnr);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/build/netgen-git/src/netgen/libsrc/include/../meshing/topology.hpp:106:13: note: declared here
+  106 |   EdgeIndex GetSegmentEdge (int segnr) const { return segedges[segnr-1]+1; }
+      |             ^~~~~~~~~~~~~~
+[ 67%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writefluent.cpp.o
+[ 68%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writegmsh.cpp.o
+[ 68%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writejcm.cpp.o
+[ 69%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writepermas.cpp.o
+[ 69%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writetecplot.cpp.o
+[ 70%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writetet.cpp.o
+[ 70%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writetochnog.cpp.o
+[ 71%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/wuchemnitz.cpp.o
+[ 71%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writegmsh2.cpp.o
+[ 72%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writeOpenFOAM15x.cpp.o
+[ 72%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/rw_cgns.cpp.o
+[ 73%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/rw_medit.cpp.o
+[ 73%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/algprim.cpp.o
+[ 73%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/brick.cpp.o
+[ 74%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/bspline2d.cpp.o
+[ 74%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/csgeom.cpp.o
+[ 75%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/csgparser.cpp.o
+[ 75%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/curve2d.cpp.o
+[ 75%] Built target pyngcore
+[ 76%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/edgeflw.cpp.o
+[ 76%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/explicitcurve2d.cpp.o
+[ 77%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/extrusion.cpp.o
+[ 77%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/gencyl.cpp.o
+[ 78%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/genmesh.cpp.o
+[ 78%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/identify.cpp.o
+[ 79%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/manifold.cpp.o
+[ 79%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/meshsurf.cpp.o
+[ 79%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/polyhedra.cpp.o
+[ 80%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/revolution.cpp.o
+[ 80%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/singularref.cpp.o
+[ 81%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/solid.cpp.o
+[ 81%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/specpoin.cpp.o
+[ 82%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/spline3d.cpp.o
+[ 82%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/surface.cpp.o
+[ 83%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/triapprox.cpp.o
+[ 83%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/zrefine.cpp.o
+[ 84%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/python_csg.cpp.o
+[ 84%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/splinesurface.cpp.o
+[ 85%] Building CXX object CMakeFiles/nglib.dir/libsrc/geom2d/csg2d.cpp.o
+[ 85%] Building CXX object CMakeFiles/nglib.dir/libsrc/geom2d/genmesh2d.cpp.o
+[ 85%] Building CXX object CMakeFiles/nglib.dir/libsrc/geom2d/geometry2d.cpp.o
+[ 86%] Building CXX object CMakeFiles/nglib.dir/libsrc/geom2d/python_geom2d.cpp.o
+[ 86%] Building CXX object CMakeFiles/nglib.dir/ng/onetcl.cpp.o
+[ 87%] Building CXX object CMakeFiles/nglib.dir/nglib/nglib.cpp.o
+[ 87%] Building CXX object CMakeFiles/nglib.dir/nglib/nglib_occ.cpp.o
+[ 88%] Linking CXX shared library libnglib.so
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../gprim/splinegeometry.hpp:25:20,
+    inlined from ‘_S_manage’ at /usr/include/c++/15.2.1/any:638:37:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_S_manage’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../gprim/splinegeometry.hpp:25:20,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1569:20,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1562:16:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../gprim/splinegeometry.hpp:25:20,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1569:20,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1568:16:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../gprim/splinegeometry.hpp:25:20,
+    inlined from ‘_S_manage’ at /usr/include/c++/15.2.1/any:638:37:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_S_manage’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../gprim/splinegeometry.hpp:25:20,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1569:20,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1562:16:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../gprim/splinegeometry.hpp:25:20,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1569:20,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1568:16:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp: In member function ‘ReSize’:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:427:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp: In member function ‘ReSize’:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:427:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘DivideMesh’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshfunc.cpp:54:18,
+    inlined from ‘MeshVolume’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshfunc.cpp:638:37:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘MeshVolume’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘DivideMesh’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshfunc.cpp:57:20,
+    inlined from ‘MeshVolume’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshfunc.cpp:638:37:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘MeshVolume’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:641:3:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘DoArchive’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:853:18:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘DoArchive’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../csg/splinesurface.hpp:7:9:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../csg/splinesurface.hpp:7:9:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../csg/splinesurface.hpp:7:9:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘load’ at /usr/src/debug/netgen-git/netgen/libsrc/core/python_ngcore.hpp:86:22,
+    inlined from ‘load_impl_sequence’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:2122:51,
+    inlined from ‘load_args’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:2100:68,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/pybind11.h:404:42,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/pybind11.h:400:21:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:641:3,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1562:55,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1562:16:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/general/ngarray.hpp:290:9,
+    inlined from ‘GetLocals.isra’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/adfront2.cpp:379:23:
+/usr/src/debug/netgen-git/netgen/libsrc/general/ngarray.hpp:427:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘GetLocals.isra’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/general/ngarray.hpp:290:9,
+    inlined from ‘GetLocals.isra’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/adfront2.cpp:379:23:
+/usr/src/debug/netgen-git/netgen/libsrc/general/ngarray.hpp:443:11: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘GetLocals.isra’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘DoArchive’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:853:18:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘DoArchive’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../gprim/splinegeometry.hpp:25:20,
+    inlined from ‘cast’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:1651:43,
+    inlined from ‘cast’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:1768:35,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/libsrc/core/register_archive.hpp:92:38,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/libsrc/core/register_archive.hpp:87:26:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘GenerateBoundaryLayer2’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/boundarylayer2d.cpp:230:51:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘GenerateBoundaryLayer2’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../gprim/splinegeometry.hpp:25:20,
+    inlined from ‘cast’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:1651:43,
+    inlined from ‘cast’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:1768:35,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/libsrc/core/register_archive.hpp:92:38,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/libsrc/core/register_archive.hpp:87:26:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘BuildEdgeList.constprop’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/improve2.hpp:46:51:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘BuildEdgeList.constprop’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘ClipSolids’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.cpp:1596:30:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘ClipSolids’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp: In member function ‘ReSize’:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:427:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:443:11: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:641:3,
+    inlined from ‘ClipSolids’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.cpp:1561:44:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘ClipSolids’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:641:3,
+    inlined from ‘ClipSolids’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.cpp:1561:31:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘ClipSolids’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:641:3,
+    inlined from ‘ClipSolids’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.cpp:1566:31:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘ClipSolids’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:641:3,
+    inlined from ‘ClipSolids’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.cpp:1571:46:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘ClipSolids’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘SwapImprove2’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/improve3.cpp:2415:101:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘SwapImprove2’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/interface/writeuser.hpp:25:10:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp: In member function ‘__ct_base ’:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:810:37: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘operator=’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1027:19,
+    inlined from ‘operator=’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:648:12,
+    inlined from ‘Append’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:912:18,
+    inlined from ‘Add’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:731:20:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘Add’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In function ‘ParallelFor’,
+    inlined from ‘CheckGeometryOverlapping’ at /usr/src/debug/netgen-git/netgen/libsrc/stlgeom/stlgeom.cpp:2255:16:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/parthreads.hpp:81:27: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘CheckGeometryOverlapping’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘BuildEdgeList’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/improve2.hpp:46:51,
+    inlined from ‘CombineImprove’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/improve2.cpp:609:18:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘CombineImprove’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘load’ at /usr/src/debug/netgen-git/netgen/libsrc/core/python_ngcore.hpp:86:22,
+    inlined from ‘load_impl_sequence’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:2122:51,
+    inlined from ‘load_args’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:2100:68,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/pybind11.h:404:42,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/pybind11.h:400:21:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘load’ at /usr/src/debug/netgen-git/netgen/libsrc/core/python_ngcore.hpp:86:22,
+    inlined from ‘load_impl_sequence’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:2122:51,
+    inlined from ‘load_args’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/cast.h:2100:68,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/pybind11.h:404:42,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/pybind11.h:400:21:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘SetLocalH’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshclass.cpp:3947:27:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘SetLocalH’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘Add’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshtype.cpp:2745:18:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘Add’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp: In member function ‘ReSize’:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:427:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp: In member function ‘ReSize’:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:427:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp: In member function ‘ReSize’:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:427:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp: In member function ‘ReSize’:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:427:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp: In member function ‘ReSize’:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:427:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘MapSurfaceMesh’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/basegeom.cpp:1107:70:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘MapSurfaceMesh’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘operator=’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1027:19,
+    inlined from ‘operator=.isra’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshtype.hpp:1626:25:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘operator=.isra’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshtype.hpp:1624:5:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘DoArchive’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:853:18,
+    inlined from ‘operator&’ at /usr/src/debug/netgen-git/netgen/libsrc/core/archive.hpp:468:20,
+    inlined from ‘DoArchive’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshtype.cpp:2730:14,
+    inlined from ‘operator&’ at /usr/src/debug/netgen-git/netgen/libsrc/core/archive.hpp:468:20,
+    inlined from ‘DoArchive’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshclass.cpp:1894:16:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘DoArchive’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘FindOpenElements’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshclass.cpp:2787:57:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘FindOpenElements’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/boundarylayer.hpp:17:8,
+    inlined from ‘__ct ’ at /usr/include/c++/15.2.1/bits/stl_pair.h:312:17,
+    inlined from ‘FixIntersectingSurfaceTrigs’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/boundarylayer_limiter.hpp:511:44,
+    inlined from ‘Perform’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/boundarylayer_limiter.hpp:763:38,
+    inlined from ‘LimitGrowthVectorLengths’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/boundarylayer.cpp:180:18:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘LimitGrowthVectorLengths’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘operator=’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1027:19,
+    inlined from ‘operator=’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshclass.cpp:305:26:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘operator=’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘operator=’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1027:19,
+    inlined from ‘operator=’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshclass.cpp:310:27:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘operator=’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshing3.cpp:58:20:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘InsertNewElements.isra’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/boundarylayer.cpp:606:16:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘InsertNewElements.isra’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘operator().isra’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/python_mesh.cpp:1866:54:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘operator().isra’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘operator().isra’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/python_mesh.cpp:1869:51:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘operator().isra’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/ruler2.hpp:7:7:
+/usr/src/debug/netgen-git/netgen/libsrc/general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/ruler2.hpp:7:7:
+/usr/src/debug/netgen-git/netgen/libsrc/general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+[ 88%] Built target nglib
+[ 89%] Building CXX object CMakeFiles/nggui.dir/libsrc/occ/occpkg.cpp.o
+[ 89%] Building CXX object CMakeFiles/nggui.dir/libsrc/occ/vsocc.cpp.o
+[ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/stlgeom/stlpkg.cpp.o
+[ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/vsfieldlines.cpp.o
+[ 91%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/visualpkg.cpp.o
+[ 92%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/meshdoc.cpp.o
+[ 92%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/mvdraw.cpp.o
+[ 93%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/vsmesh.cpp.o
+[ 93%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/importsolution.cpp.o
+[ 93%] Building CXX object ng/CMakeFiles/ngpy.dir/netgenpy.cpp.o
+[ 93%] Building CXX object CMakeFiles/nggui.dir/libsrc/csg/vscsg.cpp.o
+[ 93%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/vssolution.cpp.o
+[ 94%] Building CXX object CMakeFiles/nggui.dir/libsrc/csg/csgpkg.cpp.o
+[ 94%] Building CXX object CMakeFiles/nggui.dir/libsrc/geom2d/vsgeom2d.cpp.o
+[ 94%] Building CXX object CMakeFiles/nggui.dir/libsrc/stlgeom/vsstl.cpp.o
+[ 95%] Building CXX object CMakeFiles/nggui.dir/ng/ngpkg.cpp.o
+[ 95%] Building CXX object CMakeFiles/nggui.dir/ng/gui.cpp.o
+[ 96%] Building CXX object CMakeFiles/nggui.dir/ng/demoview.cpp.o
+[ 96%] Building CXX object CMakeFiles/nggui.dir/ng/parallelfunc.cpp.o
+[ 97%] Building CXX object CMakeFiles/nggui.dir/libsrc/geom2d/geom2dpkg.cpp.o
+[ 97%] Building CXX object CMakeFiles/nggui.dir/ng/ngtcl.cpp.o
+[ 98%] Linking CXX shared library libngpy.so
+[ 98%] Linking CXX shared library libnggui.so
+[ 98%] Built target ngpy
+In function ‘ParallelFor’,
+    inlined from ‘GetMinMax’ at /usr/src/debug/netgen-git/netgen/libsrc/visualization/vssolution.cpp:2667:26:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/parthreads.hpp:81:27: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘GetMinMax’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+[ 98%] Built target nggui
+[ 99%] Building CXX object ng/CMakeFiles/ngguipy.dir/ngguipy.cpp.o
+[100%] Building CXX object ng/CMakeFiles/netgen.dir/ngappinit.cpp.o
+[100%] Linking CXX shared library libngguipy.so
+[100%] Linking CXX executable netgen
+[100%] Built target netgen
+[100%] Built target ngguipy
+[ 90%] No install step for 'netgen'
+[100%] Completed 'netgen'
+[100%] Built target netgen

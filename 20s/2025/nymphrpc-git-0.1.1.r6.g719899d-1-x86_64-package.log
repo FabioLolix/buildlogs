@@ -1,0 +1,10 @@
+install -d /build/nymphrpc-git/pkg/nymphrpc-git/usr/lib/
+install -m 644 lib/x86_64-pc-linux-gnu/libnymphrpc.a /build/nymphrpc-git/pkg/nymphrpc-git/usr/lib/
+install -m 644 lib/x86_64-pc-linux-gnu/libnymphrpc.so.0.1 /build/nymphrpc-git/pkg/nymphrpc-git/usr/lib/
+install -d /build/nymphrpc-git/pkg/nymphrpc-git/usr/include/nymph
+install -m 644 src/*.h /build/nymphrpc-git/pkg/nymphrpc-git/usr/include/nymph/
+cd /build/nymphrpc-git/pkg/nymphrpc-git/usr/lib && \
+	if [ -f libnymphrpc.so ]; then \
+		rm libnymphrpc.so; \
+	fi && \
+	ln -s libnymphrpc.so.0.1 libnymphrpc.so

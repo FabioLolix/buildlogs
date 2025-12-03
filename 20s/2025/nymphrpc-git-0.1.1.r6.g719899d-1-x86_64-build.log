@@ -1,0 +1,310 @@
+mkdir -p lib/x86_64-pc-linux-gnu/
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/callback_request.o src/callback_request.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/dispatcher.o src/dispatcher.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/nymph_listener.o src/nymph_listener.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/nymph_logger.o src/nymph_logger.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/nymph_message.o src/nymph_message.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/nymph_method.o src/nymph_method.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/nymph_server.o src/nymph_server.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/nymph_session.o src/nymph_session.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/nymph_socket_listener.o src/nymph_socket_listener.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+mkdir -p obj/static/x86_64-pc-linux-gnu/src
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/nymph_types.o src/nymph_types.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/nymph_utilities.o src/nymph_utilities.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/remote_client.o src/remote_client.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/remote_server.o src/remote_server.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/static/x86_64-pc-linux-gnu/src/worker.o src/worker.cpp -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/callback_request.o src/callback_request.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+mkdir -p obj/shared/x86_64-pc-linux-gnu/src
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/dispatcher.o src/dispatcher.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/nymph_listener.o src/nymph_listener.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/nymph_logger.o src/nymph_logger.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/nymph_message.o src/nymph_message.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/nymph_method.o src/nymph_method.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/vector:62,
+                 from src/nymph_listener.h:21,
+                 from src/nymph_listener.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_server.h:20,
+                 from src/nymph_server.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_message.h:18,
+                 from src/nymph_socket_listener.h:20,
+                 from src/nymph_socket_listener.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_session.h:20,
+                 from src/nymph_session.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_types.cpp:17:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/abstract_request.h:19,
+                 from src/dispatcher.h:18,
+                 from src/dispatcher.cpp:17:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_message.h:18,
+                 from src/nymph_message.cpp:15:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/abstract_request.h:19,
+                 from src/callback_request.h:18,
+                 from src/callback_request.cpp:14:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from /usr/include/Poco/Foundation.h:94,
+                 from /usr/include/Poco/Logger.h:21,
+                 from src/nymph_logger.h:22,
+                 from src/nymph_logger.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_method.h:20,
+                 from src/nymph_method.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_utilities.h:19,
+                 from src/nymph_utilities.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/vector:62,
+                 from src/remote_client.h:19,
+                 from src/remote_client.cpp:13:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/abstract_request.h:19,
+                 from src/dispatcher.h:18,
+                 from src/dispatcher.cpp:17:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/abstract_request.h:19,
+                 from src/worker.h:18,
+                 from src/worker.cpp:17:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_message.h:18,
+                 from src/nymph_message.cpp:15:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/vector:62,
+                 from src/nymph_listener.h:21,
+                 from src/nymph_listener.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from /usr/include/Poco/Foundation.h:94,
+                 from /usr/include/Poco/Net/Net.h:23,
+                 from /usr/include/Poco/Net/NetException.h:21,
+                 from src/remote_server.cpp:23:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/abstract_request.h:19,
+                 from src/callback_request.h:18,
+                 from src/callback_request.cpp:14:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_method.h:20,
+                 from src/nymph_method.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from /usr/include/Poco/Foundation.h:94,
+                 from /usr/include/Poco/Logger.h:21,
+                 from src/nymph_logger.h:22,
+                 from src/nymph_logger.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/nymph_server.o src/nymph_server.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_server.h:20,
+                 from src/nymph_server.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/nymph_session.o src/nymph_session.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_session.h:20,
+                 from src/nymph_session.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/nymph_socket_listener.o src/nymph_socket_listener.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_message.h:18,
+                 from src/nymph_socket_listener.h:20,
+                 from src/nymph_socket_listener.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/nymph_types.o src/nymph_types.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_types.cpp:17:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/nymph_utilities.o src/nymph_utilities.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/nymph_types.h:27,
+                 from src/nymph_utilities.h:19,
+                 from src/nymph_utilities.cpp:16:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/remote_client.o src/remote_client.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/vector:62,
+                 from src/remote_client.h:19,
+                 from src/remote_client.cpp:13:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/remote_server.o src/remote_server.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+g++ -c -o obj/shared/x86_64-pc-linux-gnu/src/worker.o src/worker.cpp -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from /usr/include/Poco/Foundation.h:94,
+                 from /usr/include/Poco/Net/Net.h:23,
+                 from /usr/include/Poco/Net/NetException.h:21,
+                 from src/remote_server.cpp:23:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:727,
+                 from /usr/include/c++/15.2.1/bits/requires_hosted.h:31,
+                 from /usr/include/c++/15.2.1/string:40,
+                 from src/abstract_request.h:19,
+                 from src/worker.h:18,
+                 from src/worker.cpp:17:
+/usr/include/features.h:435:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  435 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+rm -f lib/x86_64-pc-linux-gnu/libnymphrpc.a
+ar rcs lib/x86_64-pc-linux-gnu/libnymphrpc.a obj/static/x86_64-pc-linux-gnu/src/callback_request.o obj/static/x86_64-pc-linux-gnu/src/dispatcher.o obj/static/x86_64-pc-linux-gnu/src/nymph_listener.o obj/static/x86_64-pc-linux-gnu/src/nymph_logger.o obj/static/x86_64-pc-linux-gnu/src/nymph_message.o obj/static/x86_64-pc-linux-gnu/src/nymph_method.o obj/static/x86_64-pc-linux-gnu/src/nymph_server.o obj/static/x86_64-pc-linux-gnu/src/nymph_session.o obj/static/x86_64-pc-linux-gnu/src/nymph_socket_listener.o obj/static/x86_64-pc-linux-gnu/src/nymph_types.o obj/static/x86_64-pc-linux-gnu/src/nymph_utilities.o obj/static/x86_64-pc-linux-gnu/src/remote_client.o obj/static/x86_64-pc-linux-gnu/src/remote_server.o obj/static/x86_64-pc-linux-gnu/src/worker.o
+g++ -o lib/x86_64-pc-linux-gnu/libnymphrpc.so.0.1 -I src -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nymphrpc-git/src=/usr/src/debug/nymphrpc-git -flto=auto -g3 -std=c++17 -O0 -fPIC -shared -Wl,-soname,libnymphrpc.so.0.1 obj/shared/x86_64-pc-linux-gnu/src/callback_request.o obj/shared/x86_64-pc-linux-gnu/src/dispatcher.o obj/shared/x86_64-pc-linux-gnu/src/nymph_listener.o obj/shared/x86_64-pc-linux-gnu/src/nymph_logger.o obj/shared/x86_64-pc-linux-gnu/src/nymph_message.o obj/shared/x86_64-pc-linux-gnu/src/nymph_method.o obj/shared/x86_64-pc-linux-gnu/src/nymph_server.o obj/shared/x86_64-pc-linux-gnu/src/nymph_session.o obj/shared/x86_64-pc-linux-gnu/src/nymph_socket_listener.o obj/shared/x86_64-pc-linux-gnu/src/nymph_types.o obj/shared/x86_64-pc-linux-gnu/src/nymph_utilities.o obj/shared/x86_64-pc-linux-gnu/src/remote_client.o obj/shared/x86_64-pc-linux-gnu/src/remote_server.o obj/shared/x86_64-pc-linux-gnu/src/worker.o -lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON  -pthread
