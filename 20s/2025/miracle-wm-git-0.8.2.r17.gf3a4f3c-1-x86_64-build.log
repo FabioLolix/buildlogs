@@ -1,0 +1,35 @@
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using mold linker: /usr/bin/mold
+-- Skipping most warnings for non-Debug build
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'miral>=5.1'
+--   Found miral, version 5.6.0
+-- Checking for module 'mirrenderer>=2.18'
+--   Package 'mirrenderer' not found
+-- Checking for module 'mirplatform>=2.18'
+--   Package dependency requirement 'mirplatform >= 2.18' could not be satisfied.
+Package 'mirplatform' has version '', required version is '>= 2.18'
+CMake Error at /usr/share/cmake/Modules/FindPkgConfig.cmake:1093 (message):
+  The following required packages were not found:
+
+   - mirplatform>=2.18
+
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)
+  CMakeLists.txt:94 (pkg_check_modules)
+
+
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
