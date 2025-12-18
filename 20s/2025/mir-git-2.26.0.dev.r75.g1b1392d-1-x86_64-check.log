@@ -1,0 +1,297 @@
+Test project /build/mir-git/src/build
+      Start  1: LGPL-required
+ 1/81 Test  #1: LGPL-required ....................................................................................................................   Passed    0.01 sec
+      Start  2: GPL-required
+ 2/81 Test  #2: GPL-required .....................................................................................................................   Passed    0.02 sec
+      Start  3: package-abis
+ 3/81 Test  #3: package-abis .....................................................................................................................   Passed    0.33 sec
+      Start  4: verify-options-reference-unchanged
+ 4/81 Test  #4: verify-options-reference-unchanged ...............................................................................................   Passed    0.04 sec
+      Start  5: mir_acceptance_tests
+ 5/81 Test  #5: mir_acceptance_tests .............................................................................................................***Failed    0.47 sec
+Running main() from main.cpp
+Note: Google Test filter = -:
+[==========] Running 39 tests from 12 test suites.
+[----------] Global test environment set-up.
+[----------] 7 tests from ServerConfigurationWrapping
+[ RUN ] ServerConfigurationWrapping.shell_is_of_wrapper_type
+Saving server logs to: /tmp/ServerConfigurationWrapping_shell_is_of_wrapper_type_server.log
+[ OK ] ServerConfigurationWrapping.shell_is_of_wrapper_type (9 ms)
+[ RUN ] ServerConfigurationWrapping.can_override_shell_methods
+Saving server logs to: /tmp/ServerConfigurationWrapping_can_override_shell_methods_server.log
+[ OK ] ServerConfigurationWrapping.can_override_shell_methods (7 ms)
+[ RUN ] ServerConfigurationWrapping.returns_same_shell_from_cache
+Saving server logs to: /tmp/ServerConfigurationWrapping_returns_same_shell_from_cache_server.log
+[ OK ] ServerConfigurationWrapping.returns_same_shell_from_cache (7 ms)
+[ RUN ] ServerConfigurationWrapping.cursor_observer_multiplexer_is_of_wrapper_type
+Saving server logs to: /tmp/ServerConfigurationWrapping_cursor_observer_multiplexer_is_of_wrapper_type_server.log
+[ OK ] ServerConfigurationWrapping.cursor_observer_multiplexer_is_of_wrapper_type (7 ms)
+[ RUN ] ServerConfigurationWrapping.can_override_cursor_observer_methods
+Saving server logs to: /tmp/ServerConfigurationWrapping_can_override_cursor_observer_methods_server.log
+[ OK ] ServerConfigurationWrapping.can_override_cursor_observer_methods (7 ms)
+[ RUN ] ServerConfigurationWrapping.returns_same_cursor_observer_multiplexer_from_cache
+Saving server logs to: /tmp/ServerConfigurationWrapping_returns_same_cursor_observer_multiplexer_from_cache_server.log
+[ OK ] ServerConfigurationWrapping.returns_same_cursor_observer_multiplexer_from_cache (7 ms)
+[ RUN ] ServerConfigurationWrapping.surface_stack_is_of_wrapper_type
+Saving server logs to: /tmp/ServerConfigurationWrapping_surface_stack_is_of_wrapper_type_server.log
+[ OK ] ServerConfigurationWrapping.surface_stack_is_of_wrapper_type (7 ms)
+[----------] 7 tests from ServerConfigurationWrapping (52 ms total)
+
+[----------] 9 tests from ServerConfigurationOptions
+[ RUN ] ServerConfigurationOptions.unknown_command_line_options_are_passed_to_handler
+Saving server logs to: /tmp/ServerConfigurationOptions_unknown_command_line_options_are_passed_to_handler_server.log
+[ OK ] ServerConfigurationOptions.unknown_command_line_options_are_passed_to_handler (4 ms)
+[ RUN ] ServerConfigurationOptions.are_parsed_from_environment
+Saving server logs to: /tmp/ServerConfigurationOptions_are_parsed_from_environment_server.log
+[ OK ] ServerConfigurationOptions.are_parsed_from_environment (4 ms)
+[ RUN ] ServerConfigurationOptions.unknown_environment_options_are_fatal
+Saving server logs to: /tmp/ServerConfigurationOptions_unknown_environment_options_are_fatal_server.log
+[ OK ] ServerConfigurationOptions.unknown_environment_options_are_fatal (4 ms)
+[ RUN ] ServerConfigurationOptions.are_read_from_xdg_config_home
+Saving server logs to: /tmp/ServerConfigurationOptions_are_read_from_xdg_config_home_server.log
+[ OK ] ServerConfigurationOptions.are_read_from_xdg_config_home (4 ms)
+[ RUN ] ServerConfigurationOptions.are_read_from_home_config_file
+Saving server logs to: /tmp/ServerConfigurationOptions_are_read_from_home_config_file_server.log
+[ OK ] ServerConfigurationOptions.are_read_from_home_config_file (4 ms)
+[ RUN ] ServerConfigurationOptions.are_read_from_xdg_config_dir0_config_file
+Saving server logs to: /tmp/ServerConfigurationOptions_are_read_from_xdg_config_dir0_config_file_server.log
+[ OK ] ServerConfigurationOptions.are_read_from_xdg_config_dir0_config_file (4 ms)
+[ RUN ] ServerConfigurationOptions.are_read_from_xdg_config_dir1_config_file
+Saving server logs to: /tmp/ServerConfigurationOptions_are_read_from_xdg_config_dir1_config_file_server.log
+[ OK ] ServerConfigurationOptions.are_read_from_xdg_config_dir1_config_file (4 ms)
+[ RUN ] ServerConfigurationOptions.are_read_from_xdg_config_dir0_before_xdg_config_dir1
+Saving server logs to: /tmp/ServerConfigurationOptions_are_read_from_xdg_config_dir0_before_xdg_config_dir1_server.log
+[ OK ] ServerConfigurationOptions.are_read_from_xdg_config_dir0_before_xdg_config_dir1 (4 ms)
+[ RUN ] ServerConfigurationOptions.are_read_from_xdg_config_home_before_xdg_config_dirs
+Saving server logs to: /tmp/ServerConfigurationOptions_are_read_from_xdg_config_home_before_xdg_config_dirs_server.log
+[ OK ] ServerConfigurationOptions.are_read_from_xdg_config_home_before_xdg_config_dirs (4 ms)
+[----------] 9 tests from ServerConfigurationOptions (40 ms total)
+
+[----------] 2 tests from ServerStopCallback
+[ RUN ] ServerStopCallback.is_invoked
+Saving server logs to: /tmp/ServerStopCallback_is_invoked_server.log
+error: XDG_RUNTIME_DIR is invalid or not set in the environment
+Mir fatal error: Unable to bind Wayland socket
+/build/mir-git/src/mir/tools/detect_fd_leaks.bash: line 84: 10202 Aborted                    (core dumped) $@ 2>&1
+     10203 Done                       | detect_fd_leaks
+
+      Start  6: wlcs
+ 6/81 Test  #6: wlcs .............................................................................................................................***Exception: SegFault  0.21 sec
+Note: Google Test filter = -ClientSurfaceEventsTest.buffer_release:Anchor/LayerSurfaceLayoutTest.surfaces_with_exclusive_zone_set_to_negative_one_do_not_respect_other_exclusive_zones/*:TouchInputSubsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0:TouchInputSubsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0:TouchInputSubsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0:TouchInputSubsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0:TouchInputSubsurfaces/SubsurfaceTest.place_above_simple/0:TouchInputSubsurfaces/SubsurfaceTest.place_below_simple/0:TouchInputSubsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0:TouchInputSubsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0:TouchInputSubsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0:TouchInputSubsurfaces/SubsurfaceTest.subsurface_moves_out_from_under_input_device/0:TouchInputSubsurfaces/SubsurfaceTest.subsurface_moves_under_input_device_once/0:TouchInputSubsurfaces/SubsurfaceTest.subsurface_moves_under_input_device_twice/0:TouchInputSubsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0:WlShellSubsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0:WlShellSubsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0:WlShellSubsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0:WlShellSubsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0:WlShellSubsurfaces/SubsurfaceTest.place_above_simple/0:WlShellSubsurfaces/SubsurfaceTest.place_below_simple/0:WlShellSubsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0:WlShellSubsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0:WlShellSubsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0:WlShellSubsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0:XdgShellStableSubsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0:XdgShellStableSubsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0:XdgShellStableSubsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0:XdgShellStableSubsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0:XdgShellStableSubsurfaces/SubsurfaceTest.place_above_simple/0:XdgShellStableSubsurfaces/SubsurfaceTest.place_below_simple/0:XdgShellStableSubsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0:XdgShellStableSubsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0:XdgShellStableSubsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0:XdgShellStableSubsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0:XdgShellV6Subsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0:XdgShellV6Subsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0:XdgShellV6Subsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0:XdgShellV6Subsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0:XdgShellV6Subsurfaces/SubsurfaceTest.place_above_simple/0:XdgShellV6Subsurfaces/SubsurfaceTest.place_below_simple/0:XdgShellV6Subsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0:XdgShellV6Subsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0:XdgShellV6Subsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0:XdgShellV6Subsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0:XdgSurfaceStableTest.attaching_buffer_to_unconfigured_xdg_surface_is_an_error:XdgSurfaceStableTest.creating_xdg_surface_from_wl_surface_with_attached_buffer_is_an_error:XdgSurfaceStableTest.creating_xdg_surface_from_wl_surface_with_committed_buffer_is_an_error:XdgSurfaceStableTest.creating_xdg_surface_from_wl_surface_with_existing_role_is_an_error:XdgToplevelStableTest.pointer_leaves_surface_during_interactive_move:XdgToplevelStableTest.pointer_leaves_surface_during_interactive_resize:XdgToplevelV6Test.pointer_leaves_surface_during_interactive_move:XdgToplevelV6Test.pointer_leaves_surface_during_interactive_resize:ForeignToplevelHandleTest.can_maximize_foreign_while_fullscreen:XdgToplevelStableConfigurationTest.window_can_maximize_itself_while_fullscreen:TextInputV3WithInputMethodV2Test.text_input_enters_parent_surface_after_child_destroyed:TextInputV3WithInputMethodV2Test.text_input_enters_grabbing_popup:XdgPopupUnstableV6/XdgPopupTest.grabbed_popup_gets_keyboard_focus/0:XdgPopupStable/XdgPopupTest.grabbed_popup_gets_keyboard_focus/0:LayerShellPopup/XdgPopupTest.grabbed_popup_gets_keyboard_focus/0:XdgPopupTest.when_parent_surface_is_moved_a_reactive_popup_is_moved:XdgDecorationV1Test.destroying_toplevel_before_decoration_throws_orphaned:BadBufferTest.test_truncated_shm_file
+[==========] Running 1133 tests from 62 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from FractionalScaleV1Test
+[ RUN      ] FractionalScaleV1Test.fractional_scale_creation_does_not_throw
+error: XDG_RUNTIME_DIR is invalid or not set in the environment
+
+      Start  7: wlcs_TouchInputSubsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0_fails
+ 7/81 Test  #7: wlcs_TouchInputSubsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0_fails .......   Passed    0.22 sec
+      Start  8: wlcs_TouchInputSubsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0_fails
+ 8/81 Test  #8: wlcs_TouchInputSubsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0_fails .......   Passed    0.21 sec
+      Start  9: wlcs_TouchInputSubsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0_fails
+ 9/81 Test  #9: wlcs_TouchInputSubsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0_fails .............................   Passed    0.22 sec
+      Start 10: wlcs_TouchInputSubsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0_fails
+10/81 Test #10: wlcs_TouchInputSubsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0_fails ..........................................   Passed    0.22 sec
+      Start 11: wlcs_TouchInputSubsurfaces/SubsurfaceTest.place_above_simple/0_fails
+11/81 Test #11: wlcs_TouchInputSubsurfaces/SubsurfaceTest.place_above_simple/0_fails .............................................................   Passed    0.21 sec
+      Start 12: wlcs_TouchInputSubsurfaces/SubsurfaceTest.place_below_simple/0_fails
+12/81 Test #12: wlcs_TouchInputSubsurfaces/SubsurfaceTest.place_below_simple/0_fails .............................................................   Passed    0.21 sec
+      Start 13: wlcs_TouchInputSubsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0_fails
+13/81 Test #13: wlcs_TouchInputSubsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0_fails ..................................   Passed    0.22 sec
+      Start 14: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0_fails
+14/81 Test #14: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0_fails .............................   Passed    0.22 sec
+      Start 15: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0_fails
+15/81 Test #15: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0_fails .........................................   Passed    0.22 sec
+      Start 16: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_moves_out_from_under_input_device/0_fails
+16/81 Test #16: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_moves_out_from_under_input_device/0_fails ...................................   Passed    0.21 sec
+      Start 17: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_moves_under_input_device_once/0_fails
+17/81 Test #17: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_moves_under_input_device_once/0_fails .......................................   Passed    0.21 sec
+      Start 18: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_moves_under_input_device_twice/0_fails
+18/81 Test #18: wlcs_TouchInputSubsurfaces/SubsurfaceTest.subsurface_moves_under_input_device_twice/0_fails ......................................   Passed    0.22 sec
+      Start 19: wlcs_TouchInputSubsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0_fails
+19/81 Test #19: wlcs_TouchInputSubsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0_fails ...............................   Passed    0.22 sec
+      Start 20: wlcs_WlShellSubsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0_fails
+20/81 Test #20: wlcs_WlShellSubsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0_fails ..........   Passed    0.23 sec
+      Start 21: wlcs_WlShellSubsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0_fails
+21/81 Test #21: wlcs_WlShellSubsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0_fails ..........   Passed    0.23 sec
+      Start 22: wlcs_WlShellSubsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0_fails
+22/81 Test #22: wlcs_WlShellSubsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0_fails ................................   Passed    0.21 sec
+      Start 23: wlcs_WlShellSubsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0_fails
+23/81 Test #23: wlcs_WlShellSubsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0_fails .............................................   Passed    0.22 sec
+      Start 24: wlcs_WlShellSubsurfaces/SubsurfaceTest.place_above_simple/0_fails
+24/81 Test #24: wlcs_WlShellSubsurfaces/SubsurfaceTest.place_above_simple/0_fails ................................................................   Passed    0.21 sec
+      Start 25: wlcs_WlShellSubsurfaces/SubsurfaceTest.place_below_simple/0_fails
+25/81 Test #25: wlcs_WlShellSubsurfaces/SubsurfaceTest.place_below_simple/0_fails ................................................................   Passed    0.22 sec
+      Start 26: wlcs_WlShellSubsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0_fails
+26/81 Test #26: wlcs_WlShellSubsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0_fails .....................................   Passed    0.21 sec
+      Start 27: wlcs_WlShellSubsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0_fails
+27/81 Test #27: wlcs_WlShellSubsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0_fails ................................   Passed    0.22 sec
+      Start 28: wlcs_WlShellSubsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0_fails
+28/81 Test #28: wlcs_WlShellSubsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0_fails ............................................   Passed    0.22 sec
+      Start 29: wlcs_WlShellSubsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0_fails
+29/81 Test #29: wlcs_WlShellSubsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0_fails ..................................   Passed    0.22 sec
+      Start 30: wlcs_XdgShellStableSubsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0_fails
+30/81 Test #30: wlcs_XdgShellStableSubsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0_fails ...   Passed    0.22 sec
+      Start 31: wlcs_XdgShellStableSubsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0_fails
+31/81 Test #31: wlcs_XdgShellStableSubsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0_fails ...   Passed    0.23 sec
+      Start 32: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0_fails
+32/81 Test #32: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0_fails .........................   Passed    0.22 sec
+      Start 33: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0_fails
+33/81 Test #33: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0_fails ......................................   Passed    0.22 sec
+      Start 34: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.place_above_simple/0_fails
+34/81 Test #34: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.place_above_simple/0_fails .........................................................   Passed    0.22 sec
+      Start 35: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.place_below_simple/0_fails
+35/81 Test #35: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.place_below_simple/0_fails .........................................................   Passed    0.22 sec
+      Start 36: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0_fails
+36/81 Test #36: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0_fails ..............................   Passed    0.22 sec
+      Start 37: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0_fails
+37/81 Test #37: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0_fails .........................   Passed    0.22 sec
+      Start 38: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0_fails
+38/81 Test #38: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0_fails .....................................   Passed    0.23 sec
+      Start 39: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0_fails
+39/81 Test #39: wlcs_XdgShellStableSubsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0_fails ...........................   Passed    0.21 sec
+      Start 40: wlcs_XdgShellV6Subsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0_fails
+40/81 Test #40: wlcs_XdgShellV6Subsurfaces/SubsurfaceMultilevelTest.subsurface_moves_after_both_sync_parent_and_grandparent_commit/0_fails .......   Passed    0.22 sec
+      Start 41: wlcs_XdgShellV6Subsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0_fails
+41/81 Test #41: wlcs_XdgShellV6Subsurfaces/SubsurfaceMultilevelTest.subsurface_with_desync_parent_moves_when_only_parent_committed/0_fails .......   Passed    0.23 sec
+      Start 42: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0_fails
+42/81 Test #42: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.desync_subsurface_moves_when_only_parent_committed/0_fails .............................   Passed    0.22 sec
+      Start 43: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0_fails
+43/81 Test #43: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.one_subsurface_to_another_fallthrough/0_fails ..........................................   Passed    0.21 sec
+      Start 44: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.place_above_simple/0_fails
+44/81 Test #44: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.place_above_simple/0_fails .............................................................   Passed    0.21 sec
+      Start 45: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.place_below_simple/0_fails
+45/81 Test #45: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.place_below_simple/0_fails .............................................................   Passed    0.21 sec
+      Start 46: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0_fails
+46/81 Test #46: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.pointer_input_correctly_offset_for_subsurface/0_fails ..................................   Passed    0.21 sec
+      Start 47: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0_fails
+47/81 Test #47: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.subsurface_does_not_move_when_parent_not_committed/0_fails .............................   Passed    0.20 sec
+      Start 48: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0_fails
+48/81 Test #48: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.subsurface_extends_parent_input_region/0_fails .........................................   Passed    0.21 sec
+      Start 49: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0_fails
+49/81 Test #49: wlcs_XdgShellV6Subsurfaces/SubsurfaceTest.sync_subsurface_moves_when_only_parent_committed/0_fails ...............................   Passed    0.22 sec
+      Start 50: wlcs_XdgSurfaceStableTest.attaching_buffer_to_unconfigured_xdg_surface_is_an_error_fails
+50/81 Test #50: wlcs_XdgSurfaceStableTest.attaching_buffer_to_unconfigured_xdg_surface_is_an_error_fails .........................................   Passed    0.21 sec
+      Start 51: wlcs_XdgSurfaceStableTest.creating_xdg_surface_from_wl_surface_with_attached_buffer_is_an_error_fails
+51/81 Test #51: wlcs_XdgSurfaceStableTest.creating_xdg_surface_from_wl_surface_with_attached_buffer_is_an_error_fails ............................   Passed    0.21 sec
+      Start 52: wlcs_XdgSurfaceStableTest.creating_xdg_surface_from_wl_surface_with_committed_buffer_is_an_error_fails
+52/81 Test #52: wlcs_XdgSurfaceStableTest.creating_xdg_surface_from_wl_surface_with_committed_buffer_is_an_error_fails ...........................   Passed    0.20 sec
+      Start 53: wlcs_XdgSurfaceStableTest.creating_xdg_surface_from_wl_surface_with_existing_role_is_an_error_fails
+53/81 Test #53: wlcs_XdgSurfaceStableTest.creating_xdg_surface_from_wl_surface_with_existing_role_is_an_error_fails ..............................   Passed    0.22 sec
+      Start 54: wlcs_XdgToplevelStableTest.pointer_leaves_surface_during_interactive_move_fails
+54/81 Test #54: wlcs_XdgToplevelStableTest.pointer_leaves_surface_during_interactive_move_fails ..................................................   Passed    0.21 sec
+      Start 55: wlcs_XdgToplevelStableTest.pointer_leaves_surface_during_interactive_resize_fails
+55/81 Test #55: wlcs_XdgToplevelStableTest.pointer_leaves_surface_during_interactive_resize_fails ................................................   Passed    0.22 sec
+      Start 56: wlcs_XdgToplevelV6Test.pointer_leaves_surface_during_interactive_move_fails
+56/81 Test #56: wlcs_XdgToplevelV6Test.pointer_leaves_surface_during_interactive_move_fails ......................................................   Passed    0.22 sec
+      Start 57: wlcs_XdgToplevelV6Test.pointer_leaves_surface_during_interactive_resize_fails
+57/81 Test #57: wlcs_XdgToplevelV6Test.pointer_leaves_surface_during_interactive_resize_fails ....................................................   Passed    0.22 sec
+      Start 58: wlcs_ForeignToplevelHandleTest.can_maximize_foreign_while_fullscreen_fails
+58/81 Test #58: wlcs_ForeignToplevelHandleTest.can_maximize_foreign_while_fullscreen_fails .......................................................   Passed    0.21 sec
+      Start 59: wlcs_XdgToplevelStableConfigurationTest.window_can_maximize_itself_while_fullscreen_fails
+59/81 Test #59: wlcs_XdgToplevelStableConfigurationTest.window_can_maximize_itself_while_fullscreen_fails ........................................   Passed    0.02 sec
+      Start 60: wlcs_TextInputV3WithInputMethodV2Test.text_input_enters_parent_surface_after_child_destroyed_fails
+60/81 Test #60: wlcs_TextInputV3WithInputMethodV2Test.text_input_enters_parent_surface_after_child_destroyed_fails ...............................   Passed    0.22 sec
+      Start 61: wlcs_TextInputV3WithInputMethodV2Test.text_input_enters_grabbing_popup_fails
+61/81 Test #61: wlcs_TextInputV3WithInputMethodV2Test.text_input_enters_grabbing_popup_fails .....................................................   Passed    0.21 sec
+      Start 62: wlcs_XdgPopupUnstableV6/XdgPopupTest.grabbed_popup_gets_keyboard_focus/0_fails
+62/81 Test #62: wlcs_XdgPopupUnstableV6/XdgPopupTest.grabbed_popup_gets_keyboard_focus/0_fails ...................................................   Passed    0.21 sec
+      Start 63: wlcs_XdgPopupStable/XdgPopupTest.grabbed_popup_gets_keyboard_focus/0_fails
+63/81 Test #63: wlcs_XdgPopupStable/XdgPopupTest.grabbed_popup_gets_keyboard_focus/0_fails .......................................................   Passed    0.22 sec
+      Start 64: wlcs_LayerShellPopup/XdgPopupTest.grabbed_popup_gets_keyboard_focus/0_fails
+64/81 Test #64: wlcs_LayerShellPopup/XdgPopupTest.grabbed_popup_gets_keyboard_focus/0_fails ......................................................   Passed    0.22 sec
+      Start 65: wlcs_XdgPopupTest.when_parent_surface_is_moved_a_reactive_popup_is_moved_fails
+65/81 Test #65: wlcs_XdgPopupTest.when_parent_surface_is_moved_a_reactive_popup_is_moved_fails ...................................................   Passed    0.22 sec
+      Start 66: wlcs_XdgDecorationV1Test.destroying_toplevel_before_decoration_throws_orphaned_fails
+66/81 Test #66: wlcs_XdgDecorationV1Test.destroying_toplevel_before_decoration_throws_orphaned_fails .............................................   Passed    0.21 sec
+      Start 67: wlcs_BadBufferTest.test_truncated_shm_file_fails
+67/81 Test #67: wlcs_BadBufferTest.test_truncated_shm_file_fails .................................................................................   Passed    0.22 sec
+      Start 68: test_wayland_generator
+68/81 Test #68: test_wayland_generator ...........................................................................................................   Passed    0.01 sec
+      Start 69: mir_umock_acceptance_tests
+69/81 Test #69: mir_umock_acceptance_tests .......................................................................................................   Passed    0.20 sec
+      Start 70: miral-test
+70/81 Test #70: miral-test .......................................................................................................................***Failed    0.23 sec
+Running main() from main.cpp
+Note: Google Test filter = -:TestConfigFile.*
+[==========] Running 109 tests from 11 test suites.
+[----------] Global test environment set-up.
+[----------] 13 tests from ExternalClient
+[ RUN ] ExternalClient.default_app_env_is_as_expected
+error: XDG_RUNTIME_DIR is invalid or not set in the environment
+Mir fatal error: Unable to bind Wayland socket
+/build/mir-git/src/mir/tools/detect_fd_leaks.bash: line 84: 14849 Aborted                    (core dumped) $@ 2>&1
+     14850 Done                       | detect_fd_leaks
+
+      Start 71: miral-test-internal
+71/81 Test #71: miral-test-internal ..............................................................................................................***Failed    0.23 sec
+Running main() from main.cpp
+Note: Google Test filter = -:
+[==========] Running 742 tests from 55 test suites.
+[----------] Global test environment set-up.
+[----------] 6 tests from RenderSceneIntoSurfaceTest
+[ RUN ] RenderSceneIntoSurfaceTest.set_capture_area_before_starting
+error: XDG_RUNTIME_DIR is invalid or not set in the environment
+Mir fatal error: Unable to bind Wayland socket
+/build/mir-git/src/mir/tools/detect_fd_leaks.bash: line 84: 15004 Aborted                    (core dumped) $@ 2>&1
+     15005 Done                       | detect_fd_leaks
+
+      Start 72: mir_integration_tests
+72/81 Test #72: mir_integration_tests ............................................................................................................***Failed    0.13 sec
+Running main() from main.cpp
+Note: Google Test filter = -:
+[==========] Running 45 tests from 11 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from TestCustomInputDispatcher
+[ RUN ] TestCustomInputDispatcher.gets_started_and_stopped
+Saving server logs to: /tmp/TestCustomInputDispatcher_gets_started_and_stopped_server.log
+error: XDG_RUNTIME_DIR is invalid or not set in the environment
+Mir fatal error: Unable to bind Wayland socket
+/build/mir-git/src/mir/tools/detect_fd_leaks.bash: line 84: 15159 Aborted                    (core dumped) $@ 2>&1
+     15160 Done                       | detect_fd_leaks
+
+      Start 73: mir_window_management_tests
+73/81 Test #73: mir_window_management_tests ......................................................................................................***Failed    0.12 sec
+Running main() from main.cpp
+Note: Google Test filter = -:
+[==========] Running 102 tests from 16 test suites.
+[----------] Global test environment set-up.
+[----------] 19 tests from MinimalWindowManagerTest
+[ RUN ] MinimalWindowManagerTest.new_window_has_focus
+Saving server logs to: /tmp/MinimalWindowManagerTest_new_window_has_focus_server.log
+error: XDG_RUNTIME_DIR is invalid or not set in the environment
+Mir fatal error: Unable to bind Wayland socket
+/build/mir-git/src/mir/tools/detect_fd_leaks.bash: line 84: 15273 Aborted                    (core dumped) $@ 2>&1
+     15274 Done                       | detect_fd_leaks
+
+      Start 74: mir_unit_tests
+74/81 Test #74: mir_unit_tests ...................................................................................................................   Passed   83.31 sec
+      Start 75: mir_umock_unit_tests
+75/81 Test #75: mir_umock_unit_tests .............................................................................................................   Passed   10.55 sec
+      Start 76: unit-tests-do-not-link-with-GL-or-EGL
+76/81 Test #76: unit-tests-do-not-link-with-GL-or-EGL ............................................................................................   Passed    0.02 sec
+      Start 77: mir_unit_tests_gbm-kms
+77/81 Test #77: mir_unit_tests_gbm-kms ...........................................................................................................   Passed   10.06 sec
+      Start 78: mir_unit_tests_atomic-kms
+78/81 Test #78: mir_unit_tests_atomic-kms ........................................................................................................   Passed    0.62 sec
+      Start 79: mir_unit_tests_eglstream-kms
+79/81 Test #79: mir_unit_tests_eglstream-kms .....................................................................................................   Passed    0.24 sec
+      Start 80: mir_unit_tests_x11
+80/81 Test #80: mir_unit_tests_x11 ...............................................................................................................   Passed    0.58 sec
+      Start 81: mir_unit_tests_virtual
+81/81 Test #81: mir_unit_tests_virtual ...........................................................................................................   Passed    0.47 sec
+
+93% tests passed, 6 tests failed out of 81
+
+Total Test time (real) = 120.90 sec
+
+The following tests FAILED:
+	  5 - mir_acceptance_tests (Failed)
+	  6 - wlcs (SEGFAULT)
+	 70 - miral-test (Failed)
+	 71 - miral-test-internal (Failed)
+	 72 - mir_integration_tests (Failed)
+	 73 - mir_window_management_tests (Failed)
+Errors while running CTest
+[1m[31m==> ERROR:(B[m[1m A failure occurred in check().(B[m
+[1m    Aborting...(B[m
