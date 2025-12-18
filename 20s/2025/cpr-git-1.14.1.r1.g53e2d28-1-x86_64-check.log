@@ -1,0 +1,3783 @@
+UpdateCTestConfiguration  from :/build/cpr-git/src/build/DartConfiguration.tcl
+Test project /build/cpr-git/src/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+      Start  1: cpr_get_tests
+
+1: Test command: /build/cpr-git/src/build/bin/get_tests
+1: Working Directory: /build/cpr-git/src/build/test
+1: Test timeout computed to be: 10000000
+1: [==========] Running 105 tests from 12 test suites.
+1: [----------] Global test environment set-up.
+1: [----------] 10 tests from BasicTests
+1: [ RUN      ] BasicTests.HelloWorldTest
+1: [       OK ] BasicTests.HelloWorldTest (1 ms)
+1: [ RUN      ] BasicTests.HelloWorldStringViewUrlTest
+1: [       OK ] BasicTests.HelloWorldStringViewUrlTest (0 ms)
+1: [ RUN      ] BasicTests.HelloWorldNoInterfaceTest
+1: [       OK ] BasicTests.HelloWorldNoInterfaceTest (0 ms)
+1: [ RUN      ] BasicTests.HelloWorldNoInterfaceStringViewTest
+1: [       OK ] BasicTests.HelloWorldNoInterfaceStringViewTest (0 ms)
+1: [ RUN      ] BasicTests.TimeoutTest
+1: [       OK ] BasicTests.TimeoutTest (0 ms)
+1: [ RUN      ] BasicTests.BasicJsonTest
+1: [       OK ] BasicTests.BasicJsonTest (0 ms)
+1: [ RUN      ] BasicTests.ResourceNotFoundTest
+1: [       OK ] BasicTests.ResourceNotFoundTest (0 ms)
+1: [ RUN      ] BasicTests.BadHostTest
+1: [       OK ] BasicTests.BadHostTest (9 ms)
+1: [ RUN      ] BasicTests.RequestBodyTest
+1: [       OK ] BasicTests.RequestBodyTest (0 ms)
+1: [ RUN      ] BasicTests.RequestBodyStringViewTest
+1: [       OK ] BasicTests.RequestBodyStringViewTest (0 ms)
+1: [----------] 10 tests from BasicTests (12 ms total)
+1: 
+1: [----------] 4 tests from CookiesTests
+1: [ RUN      ] CookiesTests.BasicCookiesTest
+1: [       OK ] CookiesTests.BasicCookiesTest (0 ms)
+1: [ RUN      ] CookiesTests.EmptyCookieTest
+1: [       OK ] CookiesTests.EmptyCookieTest (0 ms)
+1: [ RUN      ] CookiesTests.ClientSetCookiesTest
+1: [       OK ] CookiesTests.ClientSetCookiesTest (0 ms)
+1: [ RUN      ] CookiesTests.UnencodedCookiesTest
+1: [       OK ] CookiesTests.UnencodedCookiesTest (0 ms)
+1: [----------] 4 tests from CookiesTests (0 ms total)
+1: 
+1: [----------] 4 tests from ParameterTests
+1: [ RUN      ] ParameterTests.SingleParameterTest
+1: [       OK ] ParameterTests.SingleParameterTest (0 ms)
+1: [ RUN      ] ParameterTests.SingleParameterOnlyKeyTest
+1: [       OK ] ParameterTests.SingleParameterOnlyKeyTest (0 ms)
+1: [ RUN      ] ParameterTests.MultipleParametersTest
+1: [       OK ] ParameterTests.MultipleParametersTest (0 ms)
+1: [ RUN      ] ParameterTests.MultipleDynamicParametersTest
+1: [       OK ] ParameterTests.MultipleDynamicParametersTest (0 ms)
+1: [----------] 4 tests from ParameterTests (0 ms total)
+1: 
+1: [----------] 5 tests from BasicAuthenticationTests
+1: [ RUN      ] BasicAuthenticationTests.BasicAuthenticationSuccessTest
+1: [       OK ] BasicAuthenticationTests.BasicAuthenticationSuccessTest (0 ms)
+1: [ RUN      ] BasicAuthenticationTests.BasicBearerSuccessTest
+1: [       OK ] BasicAuthenticationTests.BasicBearerSuccessTest (0 ms)
+1: [ RUN      ] BasicAuthenticationTests.BasicDigestSuccessTest
+1: [       OK ] BasicAuthenticationTests.BasicDigestSuccessTest (0 ms)
+1: [ RUN      ] BasicAuthenticationTests.BasicAuthenticationNullFailureTest
+1: [       OK ] BasicAuthenticationTests.BasicAuthenticationNullFailureTest (0 ms)
+1: [ RUN      ] BasicAuthenticationTests.BasicAuthenticationFailureTest
+1: [       OK ] BasicAuthenticationTests.BasicAuthenticationFailureTest (0 ms)
+1: [----------] 5 tests from BasicAuthenticationTests (0 ms total)
+1: 
+1: [----------] 1 test from BasicAthenticationParameterTests
+1: [ RUN      ] BasicAthenticationParameterTests.BasicAuthenticationSuccessSingleParameterTest
+1: [       OK ] BasicAthenticationParameterTests.BasicAuthenticationSuccessSingleParameterTest (0 ms)
+1: [----------] 1 test from BasicAthenticationParameterTests (0 ms total)
+1: 
+1: [----------] 5 tests from BasicAuthenticationParameterTests
+1: [ RUN      ] BasicAuthenticationParameterTests.BasicAuthenticationSuccessMultipleParametersTest
+1: [       OK ] BasicAuthenticationParameterTests.BasicAuthenticationSuccessMultipleParametersTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterTests.BasicAuthenticationSuccessSingleParameterReverseTest
+1: [       OK ] BasicAuthenticationParameterTests.BasicAuthenticationSuccessSingleParameterReverseTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterTests.BasicAuthenticationSuccessMultipleParametersReverseTest
+1: [       OK ] BasicAuthenticationParameterTests.BasicAuthenticationSuccessMultipleParametersReverseTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterTests.BasicAuthenticationFailureSingleParameterTest
+1: [       OK ] BasicAuthenticationParameterTests.BasicAuthenticationFailureSingleParameterTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterTests.BasicAuthenticationFailureMultipleParametersTest
+1: [       OK ] BasicAuthenticationParameterTests.BasicAuthenticationFailureMultipleParametersTest (0 ms)
+1: [----------] 5 tests from BasicAuthenticationParameterTests (0 ms total)
+1: 
+1: [----------] 4 tests from BasicAuthenticationHeaderTests
+1: [ RUN      ] BasicAuthenticationHeaderTests.BasicAuthenticationSuccessSingleHeaderTest
+1: [       OK ] BasicAuthenticationHeaderTests.BasicAuthenticationSuccessSingleHeaderTest (0 ms)
+1: [ RUN      ] BasicAuthenticationHeaderTests.BasicAuthenticationSuccessMultipleHeadersTest
+1: [       OK ] BasicAuthenticationHeaderTests.BasicAuthenticationSuccessMultipleHeadersTest (0 ms)
+1: [ RUN      ] BasicAuthenticationHeaderTests.BasicAuthenticationSuccessSingleHeaderReverseTest
+1: [       OK ] BasicAuthenticationHeaderTests.BasicAuthenticationSuccessSingleHeaderReverseTest (0 ms)
+1: [ RUN      ] BasicAuthenticationHeaderTests.BasicAuthenticationSuccessMultipleHeadersReverseTest
+1: [       OK ] BasicAuthenticationHeaderTests.BasicAuthenticationSuccessMultipleHeadersReverseTest (0 ms)
+1: [----------] 4 tests from BasicAuthenticationHeaderTests (0 ms total)
+1: 
+1: [----------] 10 tests from HeaderTests
+1: [ RUN      ] HeaderTests.HeaderJsonTest
+1: [       OK ] HeaderTests.HeaderJsonTest (0 ms)
+1: [ RUN      ] HeaderTests.HeaderReflectNoneTest
+1: [       OK ] HeaderTests.HeaderReflectNoneTest (0 ms)
+1: [ RUN      ] HeaderTests.HeaderReflectUpdateHeaderAddSessionTest
+1: [       OK ] HeaderTests.HeaderReflectUpdateHeaderAddSessionTest (0 ms)
+1: [ RUN      ] HeaderTests.SessionHeaderReflectTest
+1: /usr/src/debug/cpr-git/cpr/test/get_tests.cpp:480: Failure
+1: Expected equality of these values:
+1:   ErrorCode::OK
+1:     Which is: 4-byte object <00-00 00-00>
+1:   response.error.code
+1:     Which is: 4-byte object <08-00 00-00>
+1: 
+1: /usr/src/debug/cpr-git/cpr/test/get_tests.cpp:481: Failure
+1: Expected equality of these values:
+1:   std::string{"Header reflect POST"}
+1:     Which is: "Header reflect POST"
+1:   response.text
+1:     Which is: ""
+1: 
+1: [  FAILED  ] HeaderTests.SessionHeaderReflectTest (0 ms)
+1: [ RUN      ] HeaderTests.HeaderReflectUpdateHeaderUpdateSessionTest
+1: [       OK ] HeaderTests.HeaderReflectUpdateHeaderUpdateSessionTest (0 ms)
+1: [ RUN      ] HeaderTests.HeaderReflectEmptyTest
+1: [       OK ] HeaderTests.HeaderReflectEmptyTest (0 ms)
+1: [ RUN      ] HeaderTests.HeaderReflectSingleTest
+1: [       OK ] HeaderTests.HeaderReflectSingleTest (0 ms)
+1: [ RUN      ] HeaderTests.HeaderReflectMultipleTest
+1: [       OK ] HeaderTests.HeaderReflectMultipleTest (0 ms)
+1: [ RUN      ] HeaderTests.HeaderReflectCaseInsensitiveTest
+1: [       OK ] HeaderTests.HeaderReflectCaseInsensitiveTest (0 ms)
+1: [ RUN      ] HeaderTests.SetEmptyHeaderTest
+1: [       OK ] HeaderTests.SetEmptyHeaderTest (0 ms)
+1: [----------] 10 tests from HeaderTests (1 ms total)
+1: 
+1: [----------] 9 tests from ParameterHeaderTests
+1: [ RUN      ] ParameterHeaderTests.HeaderReflectNoneParametersTest
+1: [       OK ] ParameterHeaderTests.HeaderReflectNoneParametersTest (0 ms)
+1: [ RUN      ] ParameterHeaderTests.HeaderReflectEmptyParametersTest
+1: [       OK ] ParameterHeaderTests.HeaderReflectEmptyParametersTest (0 ms)
+1: [ RUN      ] ParameterHeaderTests.HeaderReflectSingleParametersTest
+1: [       OK ] ParameterHeaderTests.HeaderReflectSingleParametersTest (0 ms)
+1: [ RUN      ] ParameterHeaderTests.HeaderReflectMultipleParametersTest
+1: [       OK ] ParameterHeaderTests.HeaderReflectMultipleParametersTest (0 ms)
+1: [ RUN      ] ParameterHeaderTests.HeaderReflectCaseInsensitiveParametersTest
+1: [       OK ] ParameterHeaderTests.HeaderReflectCaseInsensitiveParametersTest (0 ms)
+1: [ RUN      ] ParameterHeaderTests.HeaderReflectEmptyParametersReverseTest
+1: [       OK ] ParameterHeaderTests.HeaderReflectEmptyParametersReverseTest (0 ms)
+1: [ RUN      ] ParameterHeaderTests.HeaderReflectSingleParametersReverseTest
+1: [       OK ] ParameterHeaderTests.HeaderReflectSingleParametersReverseTest (0 ms)
+1: [ RUN      ] ParameterHeaderTests.HeaderReflectMultipleParametersReverseTest
+1: [       OK ] ParameterHeaderTests.HeaderReflectMultipleParametersReverseTest (0 ms)
+1: [ RUN      ] ParameterHeaderTests.HeaderReflectCaseInsensitiveParametersReverseTest
+1: [       OK ] ParameterHeaderTests.HeaderReflectCaseInsensitiveParametersReverseTest (0 ms)
+1: [----------] 9 tests from ParameterHeaderTests (1 ms total)
+1: 
+1: [----------] 48 tests from BasicAuthenticationParameterHeaderTests
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAATest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAATest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderABTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderABTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderACTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderACTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderADTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderADTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAETest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAETest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAFTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAFTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAGTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAGTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAHTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderAHTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBATest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBATest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBBTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBBTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBCTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBCTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBDTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBDTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBETest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBETest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBFTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBFTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBGTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBGTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBHTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderBHTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCATest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCATest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCBTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCBTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCCTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCCTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCDTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCDTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCETest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCETest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCFTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCFTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCGTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCGTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCHTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderCHTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDATest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDATest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDBTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDBTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDCTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDCTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDDTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDDTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDETest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDETest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDFTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDFTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDGTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDGTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDHTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderDHTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEATest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEATest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEBTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEBTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderECTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderECTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEDTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEDTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEETest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEETest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEFTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEFTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEGTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEGTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEHTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderEHTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFATest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFATest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFBTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFBTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFCTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFCTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFDTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFDTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFETest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFETest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFFTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFFTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFGTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFGTest (0 ms)
+1: [ RUN      ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFHTest
+1: [       OK ] BasicAuthenticationParameterHeaderTests.BasicAuthenticationParameterHeaderFHTest (0 ms)
+1: [----------] 48 tests from BasicAuthenticationParameterHeaderTests (6 ms total)
+1: 
+1: [----------] 4 tests from GetRedirectTests
+1: [ RUN      ] GetRedirectTests.RedirectTest
+1: [       OK ] GetRedirectTests.RedirectTest (0 ms)
+1: [ RUN      ] GetRedirectTests.ZeroMaxRedirectsSuccessTest
+1: [       OK ] GetRedirectTests.ZeroMaxRedirectsSuccessTest (0 ms)
+1: [ RUN      ] GetRedirectTests.ZeroMaxRedirectsFailureTest
+1: [       OK ] GetRedirectTests.ZeroMaxRedirectsFailureTest (0 ms)
+1: [ RUN      ] GetRedirectTests.BasicAuthenticationRedirectSuccessTest
+1: [       OK ] GetRedirectTests.BasicAuthenticationRedirectSuccessTest (0 ms)
+1: [----------] 4 tests from GetRedirectTests (0 ms total)
+1: 
+1: [----------] 1 test from LimitRateTests
+1: [ RUN      ] LimitRateTests.HelloWorldTest
+1: [       OK ] LimitRateTests.HelloWorldTest (0 ms)
+1: [----------] 1 test from LimitRateTests (0 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 105 tests from 12 test suites ran. (25 ms total)
+1: [  PASSED  ] 104 tests.
+1: [  FAILED  ] 1 test, listed below:
+1: [  FAILED  ] HeaderTests.SessionHeaderReflectTest
+1: 
+1:  1 FAILED TEST
+ 1/31 Test  #1: cpr_get_tests ....................***Failed    0.03 sec
+test 2
+      Start  2: cpr_post_tests
+
+2: Test command: /build/cpr-git/src/build/bin/post_tests
+2: Working Directory: /build/cpr-git/src/build/test
+2: Test timeout computed to be: 10000000
+2: [==========] Running 39 tests from 2 test suites.
+2: [----------] Global test environment set-up.
+2: [----------] 35 tests from UrlEncodedPostTests
+2: [ RUN      ] UrlEncodedPostTests.UrlPostSingleTest
+2: [       OK ] UrlEncodedPostTests.UrlPostSingleTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.UrlPostAddPayloadPair
+2: [       OK ] UrlEncodedPostTests.UrlPostAddPayloadPair (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.UrlPostPayloadIteratorTest
+2: [       OK ] UrlEncodedPostTests.UrlPostPayloadIteratorTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.UrlPostEncodeTest
+2: [       OK ] UrlEncodedPostTests.UrlPostEncodeTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.UrlPostEncodeNoCopyTest
+2: [       OK ] UrlEncodedPostTests.UrlPostEncodeNoCopyTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.UrlPostManyTest
+2: [       OK ] UrlEncodedPostTests.UrlPostManyTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.UrlPostBadHostTest
+2: [       OK ] UrlEncodedPostTests.UrlPostBadHostTest (9 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostSingleTest
+2: [       OK ] UrlEncodedPostTests.FormPostSingleTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileTest
+2: [       OK ] UrlEncodedPostTests.FormPostFileTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostMultipleFilesTestLvalue
+2: [       OK ] UrlEncodedPostTests.FormPostMultipleFilesTestLvalue (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostMultipleFilesTestRvalue
+2: [       OK ] UrlEncodedPostTests.FormPostMultipleFilesTestRvalue (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileTestWithOverridenFilename
+2: [       OK ] UrlEncodedPostTests.FormPostFileTestWithOverridenFilename (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileNoCopyTest
+2: [       OK ] UrlEncodedPostTests.FormPostFileNoCopyTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileNoCopyTestWithOverridenFilename
+2: [       OK ] UrlEncodedPostTests.FormPostFileNoCopyTestWithOverridenFilename (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.TimeoutPostTest
+2: [       OK ] UrlEncodedPostTests.TimeoutPostTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileBufferTest
+2: [       OK ] UrlEncodedPostTests.FormPostFileBufferTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileBufferNoCopyTest
+2: [       OK ] UrlEncodedPostTests.FormPostFileBufferNoCopyTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileBufferPointerTest
+2: [       OK ] UrlEncodedPostTests.FormPostFileBufferPointerTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileBufferArrayTest
+2: [       OK ] UrlEncodedPostTests.FormPostFileBufferArrayTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileBufferVectorTest
+2: [       OK ] UrlEncodedPostTests.FormPostFileBufferVectorTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostFileBufferStdArrayTest
+2: [       OK ] UrlEncodedPostTests.FormPostFileBufferStdArrayTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostBufferRvalueTest
+2: [       OK ] UrlEncodedPostTests.FormPostBufferRvalueTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.ReflectPostBufferLvalueTest
+2: [       OK ] UrlEncodedPostTests.ReflectPostBufferLvalueTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostManyTest
+2: [       OK ] UrlEncodedPostTests.FormPostManyTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostManyNoCopyTest
+2: [       OK ] UrlEncodedPostTests.FormPostManyNoCopyTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostContentTypeTest
+2: [       OK ] UrlEncodedPostTests.FormPostContentTypeTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.FormPostContentTypeLValueTest
+2: [       OK ] UrlEncodedPostTests.FormPostContentTypeLValueTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.UrlPostAsyncSingleTest
+2: [       OK ] UrlEncodedPostTests.UrlPostAsyncSingleTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.UrlReflectTest
+2: /usr/src/debug/cpr-git/cpr/test/post_tests.cpp:619: Failure
+2: Expected equality of these values:
+2:   expected_text
+2:     Which is: "Header reflect POST"
+2:   response.text
+2:     Which is: ""
+2: 
+2: /usr/src/debug/cpr-git/cpr/test/post_tests.cpp:622: Failure
+2: Expected equality of these values:
+2:   ErrorCode::OK
+2:     Which is: 4-byte object <00-00 00-00>
+2:   response.error.code
+2:     Which is: 4-byte object <08-00 00-00>
+2: 
+2: [  FAILED  ] UrlEncodedPostTests.UrlReflectTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.PostWithNoBodyTest
+2: [       OK ] UrlEncodedPostTests.PostWithNoBodyTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.PostReflectTest
+2: [       OK ] UrlEncodedPostTests.PostReflectTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.PostReflectPayloadTest
+2: /usr/src/debug/cpr-git/cpr/test/post_tests.cpp:674: Failure
+2: Expected equality of these values:
+2:   ErrorCode::OK
+2:     Which is: 4-byte object <00-00 00-00>
+2:   response.error.code
+2:     Which is: 4-byte object <08-00 00-00>
+2: 
+2: [  FAILED  ] UrlEncodedPostTests.PostReflectPayloadTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.InjectMultipleHeadersTest
+2: [       OK ] UrlEncodedPostTests.InjectMultipleHeadersTest (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.PostBodyWithFile
+2: [       OK ] UrlEncodedPostTests.PostBodyWithFile (0 ms)
+2: [ RUN      ] UrlEncodedPostTests.PostBodyWithBuffer
+2: [       OK ] UrlEncodedPostTests.PostBodyWithBuffer (0 ms)
+2: [----------] 35 tests from UrlEncodedPostTests (17 ms total)
+2: 
+2: [----------] 4 tests from PostRedirectTests
+2: [ RUN      ] PostRedirectTests.TempRedirectTest
+2: [       OK ] PostRedirectTests.TempRedirectTest (0 ms)
+2: [ RUN      ] PostRedirectTests.TempRedirectNoneTest
+2: [       OK ] PostRedirectTests.TempRedirectNoneTest (0 ms)
+2: [ RUN      ] PostRedirectTests.PermRedirectTest
+2: [       OK ] PostRedirectTests.PermRedirectTest (0 ms)
+2: [ RUN      ] PostRedirectTests.PermRedirectNoneTest
+2: [       OK ] PostRedirectTests.PermRedirectNoneTest (0 ms)
+2: [----------] 4 tests from PostRedirectTests (0 ms total)
+2: 
+2: [----------] Global test environment tear-down
+2: [==========] 39 tests from 2 test suites ran. (118 ms total)
+2: [  PASSED  ] 37 tests.
+2: [  FAILED  ] 2 tests, listed below:
+2: [  FAILED  ] UrlEncodedPostTests.UrlReflectTest
+2: [  FAILED  ] UrlEncodedPostTests.PostReflectPayloadTest
+2: 
+2:  2 FAILED TESTS
+ 2/31 Test  #2: cpr_post_tests ...................***Failed    0.12 sec
+test 3
+      Start  3: cpr_session_tests
+
+3: Test command: /build/cpr-git/src/build/bin/session_tests
+3: Working Directory: /build/cpr-git/src/build/test
+3: Test timeout computed to be: 10000000
+3: [==========] Running 90 tests from 23 test suites.
+3: [----------] Global test environment set-up.
+3: [----------] 1 test from SessionGetTests
+3: [ RUN      ] SessionGetTests.GetMultipleTimes
+3: [       OK ] SessionGetTests.GetMultipleTimes (4 ms)
+3: [----------] 1 test from SessionGetTests (4 ms total)
+3: 
+3: [----------] 1 test from SessionPostTests
+3: [ RUN      ] SessionPostTests.PostMultipleTimes
+3: [       OK ] SessionPostTests.PostMultipleTimes (3 ms)
+3: [----------] 1 test from SessionPostTests (3 ms total)
+3: 
+3: [----------] 4 tests from RedirectTests
+3: [ RUN      ] RedirectTests.TemporaryDefaultRedirectTest
+3: [       OK ] RedirectTests.TemporaryDefaultRedirectTest (0 ms)
+3: [ RUN      ] RedirectTests.NoTemporaryRedirectTest
+3: [       OK ] RedirectTests.NoTemporaryRedirectTest (0 ms)
+3: [ RUN      ] RedirectTests.PermanentDefaultRedirectTest
+3: [       OK ] RedirectTests.PermanentDefaultRedirectTest (0 ms)
+3: [ RUN      ] RedirectTests.NoPermanentRedirectTest
+3: [       OK ] RedirectTests.NoPermanentRedirectTest (0 ms)
+3: [----------] 4 tests from RedirectTests (0 ms total)
+3: 
+3: [----------] 5 tests from MaxRedirectsTests
+3: [ RUN      ] MaxRedirectsTests.ZeroMaxRedirectsSuccessTest
+3: [       OK ] MaxRedirectsTests.ZeroMaxRedirectsSuccessTest (0 ms)
+3: [ RUN      ] MaxRedirectsTests.ZeroMaxRedirectsFailureTest
+3: [       OK ] MaxRedirectsTests.ZeroMaxRedirectsFailureTest (0 ms)
+3: [ RUN      ] MaxRedirectsTests.OneMaxRedirectsSuccessTest
+3: [       OK ] MaxRedirectsTests.OneMaxRedirectsSuccessTest (0 ms)
+3: [ RUN      ] MaxRedirectsTests.OneMaxRedirectsFailureTest
+3: [       OK ] MaxRedirectsTests.OneMaxRedirectsFailureTest (0 ms)
+3: [ RUN      ] MaxRedirectsTests.TwoMaxRedirectsSuccessTest
+3: [       OK ] MaxRedirectsTests.TwoMaxRedirectsSuccessTest (0 ms)
+3: [----------] 5 tests from MaxRedirectsTests (0 ms total)
+3: 
+3: [----------] 8 tests from MultipleGetTests
+3: [ RUN      ] MultipleGetTests.BasicMultipleGetTest
+3: [       OK ] MultipleGetTests.BasicMultipleGetTest (3 ms)
+3: [ RUN      ] MultipleGetTests.UrlChangeMultipleGetTest
+3: [       OK ] MultipleGetTests.UrlChangeMultipleGetTest (0 ms)
+3: [ RUN      ] MultipleGetTests.HeaderMultipleGetTest
+3: [       OK ] MultipleGetTests.HeaderMultipleGetTest (3 ms)
+3: [ RUN      ] MultipleGetTests.HeaderChangeMultipleGetTest
+3: [       OK ] MultipleGetTests.HeaderChangeMultipleGetTest (0 ms)
+3: [ RUN      ] MultipleGetTests.ParameterMultipleGetTest
+3: [       OK ] MultipleGetTests.ParameterMultipleGetTest (3 ms)
+3: [ RUN      ] MultipleGetTests.ParameterChangeMultipleGetTest
+3: [       OK ] MultipleGetTests.ParameterChangeMultipleGetTest (0 ms)
+3: [ RUN      ] MultipleGetTests.BasicAuthenticationMultipleGetTest
+3: [       OK ] MultipleGetTests.BasicAuthenticationMultipleGetTest (3 ms)
+3: [ RUN      ] MultipleGetTests.BasicAuthenticationChangeMultipleGetTest
+3: [       OK ] MultipleGetTests.BasicAuthenticationChangeMultipleGetTest (0 ms)
+3: [----------] 8 tests from MultipleGetTests (15 ms total)
+3: 
+3: [----------] 2 tests from ParameterTests
+3: [ RUN      ] ParameterTests.ParameterSingleTest
+3: [       OK ] ParameterTests.ParameterSingleTest (0 ms)
+3: [ RUN      ] ParameterTests.ParameterMultipleTest
+3: [       OK ] ParameterTests.ParameterMultipleTest (0 ms)
+3: [----------] 2 tests from ParameterTests (0 ms total)
+3: 
+3: [----------] 3 tests from FullRequestUrlTest
+3: [ RUN      ] FullRequestUrlTest.GetFullRequestUrlNoParametersTest
+3: [       OK ] FullRequestUrlTest.GetFullRequestUrlNoParametersTest (0 ms)
+3: [ RUN      ] FullRequestUrlTest.GetFullRequestUrlOneParameterTest
+3: [       OK ] FullRequestUrlTest.GetFullRequestUrlOneParameterTest (0 ms)
+3: [ RUN      ] FullRequestUrlTest.GetFullRequestUrlMultipleParametersTest
+3: [       OK ] FullRequestUrlTest.GetFullRequestUrlMultipleParametersTest (0 ms)
+3: [----------] 3 tests from FullRequestUrlTest (0 ms total)
+3: 
+3: [----------] 7 tests from TimeoutTests
+3: [ RUN      ] TimeoutTests.SetTimeoutTest
+3: [       OK ] TimeoutTests.SetTimeoutTest (0 ms)
+3: [ RUN      ] TimeoutTests.SetTimeoutLongTest
+3: [       OK ] TimeoutTests.SetTimeoutLongTest (0 ms)
+3: [ RUN      ] TimeoutTests.SetTimeoutLowSpeed
+3: [       OK ] TimeoutTests.SetTimeoutLowSpeed (1000 ms)
+3: [ RUN      ] TimeoutTests.SetChronoTimeoutTest
+3: [       OK ] TimeoutTests.SetChronoTimeoutTest (0 ms)
+3: [ RUN      ] TimeoutTests.SetChronoTimeoutLongTest
+3: [       OK ] TimeoutTests.SetChronoTimeoutLongTest (0 ms)
+3: [ RUN      ] TimeoutTests.SetChronoLiteralTimeoutTest
+3: [       OK ] TimeoutTests.SetChronoLiteralTimeoutTest (0 ms)
+3: [ RUN      ] TimeoutTests.SetChronoLiteralTimeoutLowSpeed
+3: [       OK ] TimeoutTests.SetChronoLiteralTimeoutLowSpeed (1000 ms)
+3: [----------] 7 tests from TimeoutTests (2002 ms total)
+3: 
+3: [----------] 4 tests from ConnectTimeoutTests
+3: [ RUN      ] ConnectTimeoutTests.SetConnectTimeoutTest
+3: [       OK ] ConnectTimeoutTests.SetConnectTimeoutTest (0 ms)
+3: [ RUN      ] ConnectTimeoutTests.SetConnectTimeoutLongTest
+3: [       OK ] ConnectTimeoutTests.SetConnectTimeoutLongTest (0 ms)
+3: [ RUN      ] ConnectTimeoutTests.SetChronoConnectTimeoutTest
+3: [       OK ] ConnectTimeoutTests.SetChronoConnectTimeoutTest (0 ms)
+3: [ RUN      ] ConnectTimeoutTests.SetChronoConnectTimeoutLongTest
+3: [       OK ] ConnectTimeoutTests.SetChronoConnectTimeoutLongTest (0 ms)
+3: [----------] 4 tests from ConnectTimeoutTests (0 ms total)
+3: 
+3: [----------] 1 test from LowSpeedTests
+3: [ RUN      ] LowSpeedTests.SetLowSpeedTest
+3: [       OK ] LowSpeedTests.SetLowSpeedTest (0 ms)
+3: [----------] 1 test from LowSpeedTests (0 ms total)
+3: 
+3: [----------] 2 tests from PayloadTests
+3: [ RUN      ] PayloadTests.SetPayloadTest
+3: [       OK ] PayloadTests.SetPayloadTest (0 ms)
+3: [ RUN      ] PayloadTests.SetPayloadLValueTest
+3: [       OK ] PayloadTests.SetPayloadLValueTest (0 ms)
+3: [----------] 2 tests from PayloadTests (0 ms total)
+3: 
+3: [----------] 3 tests from MultipartTests
+3: [ RUN      ] MultipartTests.SetMultipartTest
+3: [       OK ] MultipartTests.SetMultipartTest (0 ms)
+3: [ RUN      ] MultipartTests.SetMultipartValueTest
+3: [       OK ] MultipartTests.SetMultipartValueTest (0 ms)
+3: [ RUN      ] MultipartTests.SetMultipartVectorPartsTest
+3: [       OK ] MultipartTests.SetMultipartVectorPartsTest (0 ms)
+3: [----------] 3 tests from MultipartTests (1 ms total)
+3: 
+3: [----------] 3 tests from BodyTests
+3: [ RUN      ] BodyTests.SetBodyTest
+3: [       OK ] BodyTests.SetBodyTest (0 ms)
+3: [ RUN      ] BodyTests.SetBodyValueTest
+3: [       OK ] BodyTests.SetBodyValueTest (0 ms)
+3: [ RUN      ] BodyTests.SetBodyViewTest
+3: [       OK ] BodyTests.SetBodyViewTest (0 ms)
+3: [----------] 3 tests from BodyTests (0 ms total)
+3: 
+3: [----------] 1 test from DigestTests
+3: [ RUN      ] DigestTests.SetDigestTest
+3: [       OK ] DigestTests.SetDigestTest (0 ms)
+3: [----------] 1 test from DigestTests (0 ms total)
+3: 
+3: [----------] 2 tests from AnyAuthTests
+3: [ RUN      ] AnyAuthTests.SetAnyTest
+3: [       OK ] AnyAuthTests.SetAnyTest (0 ms)
+3: [ RUN      ] AnyAuthTests.SetAnySafeTest
+3: [       OK ] AnyAuthTests.SetAnySafeTest (0 ms)
+3: [----------] 2 tests from AnyAuthTests (0 ms total)
+3: 
+3: [----------] 2 tests from UserAgentTests
+3: [ RUN      ] UserAgentTests.SetUserAgentTest
+3: [       OK ] UserAgentTests.SetUserAgentTest (0 ms)
+3: [ RUN      ] UserAgentTests.SetUserAgentStringViewTest
+3: [       OK ] UserAgentTests.SetUserAgentStringViewTest (0 ms)
+3: [----------] 2 tests from UserAgentTests (0 ms total)
+3: 
+3: [----------] 3 tests from CookiesTests
+3: [ RUN      ] CookiesTests.BasicCookiesTest
+3: [       OK ] CookiesTests.BasicCookiesTest (0 ms)
+3: [ RUN      ] CookiesTests.ClientSetCookiesTest
+3: [       OK ] CookiesTests.ClientSetCookiesTest (0 ms)
+3: [ RUN      ] CookiesTests.RedirectionWithChangingCookiesTest
+3: [       OK ] CookiesTests.RedirectionWithChangingCookiesTest (0 ms)
+3: [----------] 3 tests from CookiesTests (0 ms total)
+3: 
+3: [----------] 6 tests from DifferentMethodTests
+3: [ RUN      ] DifferentMethodTests.GetPostTest
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:952: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:955: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: [  FAILED  ] DifferentMethodTests.GetPostTest (0 ms)
+3: [ RUN      ] DifferentMethodTests.PostGetTest
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:966: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:969: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: [  FAILED  ] DifferentMethodTests.PostGetTest (0 ms)
+3: [ RUN      ] DifferentMethodTests.GetPostGetTest
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:996: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:999: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: [  FAILED  ] DifferentMethodTests.GetPostGetTest (0 ms)
+3: [ RUN      ] DifferentMethodTests.PostGetPostTest
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1018: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1021: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1034: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1037: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: [  FAILED  ] DifferentMethodTests.PostGetPostTest (0 ms)
+3: [ RUN      ] DifferentMethodTests.MultipleGetPostTest
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1057: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1060: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: [  FAILED  ] DifferentMethodTests.MultipleGetPostTest (15 ms)
+3: [ RUN      ] DifferentMethodTests.MultipleDeleteHeadPutGetPostTest
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1100: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect DELETE"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1103: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: [  FAILED  ] DifferentMethodTests.MultipleDeleteHeadPutGetPostTest (4 ms)
+3: [----------] 6 tests from DifferentMethodTests (20 ms total)
+3: 
+3: [----------] 1 test from CurlHolderManipulateTests
+3: [ RUN      ] CurlHolderManipulateTests.CustomOptionTest
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1167: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1170: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: [  FAILED  ] CurlHolderManipulateTests.CustomOptionTest (0 ms)
+3: [----------] 1 test from CurlHolderManipulateTests (0 ms total)
+3: 
+3: [----------] 4 tests from LocalPortTests
+3: [ RUN      ] LocalPortTests.SetLocalPortTest
+3: [       OK ] LocalPortTests.SetLocalPortTest (0 ms)
+3: [ RUN      ] LocalPortTests.SetOptionTest
+3: [       OK ] LocalPortTests.SetOptionTest (0 ms)
+3: [ RUN      ] LocalPortTests.SetLocalPortTestOccupied
+3: [       OK ] LocalPortTests.SetLocalPortTestOccupied (0 ms)
+3: [ RUN      ] LocalPortTests.SetOptionTestOccupied
+3: [       OK ] LocalPortTests.SetOptionTestOccupied (0 ms)
+3: [----------] 4 tests from LocalPortTests (0 ms total)
+3: 
+3: [----------] 8 tests from BasicTests
+3: [ RUN      ] BasicTests.ReserveResponseString
+3: [       OK ] BasicTests.ReserveResponseString (0 ms)
+3: [ RUN      ] BasicTests.AcceptEncodingTestWithMethodsStringMap
+3: [       OK ] BasicTests.AcceptEncodingTestWithMethodsStringMap (0 ms)
+3: [ RUN      ] BasicTests.AcceptEncodingTestWithMethodsStringMapLValue
+3: [       OK ] BasicTests.AcceptEncodingTestWithMethodsStringMapLValue (0 ms)
+3: [ RUN      ] BasicTests.AcceptEncodingTestWithCostomizedString
+3: [       OK ] BasicTests.AcceptEncodingTestWithCostomizedString (0 ms)
+3: [ RUN      ] BasicTests.AcceptEncodingTestWithCostomizedStringLValue
+3: [       OK ] BasicTests.AcceptEncodingTestWithCostomizedStringLValue (0 ms)
+3: [ RUN      ] BasicTests.AcceptEncodingTestDisabled
+3: [       OK ] BasicTests.AcceptEncodingTestDisabled (0 ms)
+3: [ RUN      ] BasicTests.AcceptEncodingTestDisabledMultipleThrow
+3: [       OK ] BasicTests.AcceptEncodingTestDisabledMultipleThrow (0 ms)
+3: [ RUN      ] BasicTests.DisableHeaderExpect100ContinueTest
+3: [       OK ] BasicTests.DisableHeaderExpect100ContinueTest (176 ms)
+3: [----------] 8 tests from BasicTests (177 ms total)
+3: 
+3: [----------] 11 tests from AsyncRequestsTests
+3: [ RUN      ] AsyncRequestsTests.AsyncGetTest
+3: [       OK ] AsyncRequestsTests.AsyncGetTest (0 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncGetMultipleTest
+3: [       OK ] AsyncRequestsTests.AsyncGetMultipleTest (0 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncGetMultipleTemporarySessionTest
+3: [       OK ] AsyncRequestsTests.AsyncGetMultipleTemporarySessionTest (1028 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncGetMultipleReflectTest
+3: [       OK ] AsyncRequestsTests.AsyncGetMultipleReflectTest (0 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncWritebackDownloadTest
+3: [       OK ] AsyncRequestsTests.AsyncWritebackDownloadTest (0 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncPostTest
+3: [       OK ] AsyncRequestsTests.AsyncPostTest (0 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncPutTest
+3: [       OK ] AsyncRequestsTests.AsyncPutTest (0 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncHeadTest
+3: [       OK ] AsyncRequestsTests.AsyncHeadTest (0 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncDeleteTest
+3: [       OK ] AsyncRequestsTests.AsyncDeleteTest (0 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncOptionsTest
+3: [       OK ] AsyncRequestsTests.AsyncOptionsTest (0 ms)
+3: [ RUN      ] AsyncRequestsTests.AsyncPatchTest
+3: [       OK ] AsyncRequestsTests.AsyncPatchTest (0 ms)
+3: [----------] 11 tests from AsyncRequestsTests (1031 ms total)
+3: 
+3: [----------] 8 tests from CallbackTests
+3: [ RUN      ] CallbackTests.GetCallbackTest
+3: [       OK ] CallbackTests.GetCallbackTest (50 ms)
+3: [ RUN      ] CallbackTests.PostCallbackTest
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1590: Failure
+3: Expected equality of these values:
+3:   expected_text
+3:     Which is: "Header reflect POST"
+3:   response.text
+3:     Which is: ""
+3: 
+3: /usr/src/debug/cpr-git/cpr/test/session_tests.cpp:1593: Failure
+3: Expected equality of these values:
+3:   ErrorCode::OK
+3:     Which is: 4-byte object <00-00 00-00>
+3:   response.error.code
+3:     Which is: 4-byte object <08-00 00-00>
+3: 
+3: [  FAILED  ] CallbackTests.PostCallbackTest (50 ms)
+3: [ RUN      ] CallbackTests.PutCallbackTest
+3: [       OK ] CallbackTests.PutCallbackTest (50 ms)
+3: [ RUN      ] CallbackTests.HeadCallbackTest
+3: [       OK ] CallbackTests.HeadCallbackTest (50 ms)
+3: [ RUN      ] CallbackTests.DeleteCallbackTest
+3: [       OK ] CallbackTests.DeleteCallbackTest (50 ms)
+3: [ RUN      ] CallbackTests.OptionsCallbackTest
+3: [       OK ] CallbackTests.OptionsCallbackTest (50 ms)
+3: [ RUN      ] CallbackTests.PatchCallbackTest
+3: [       OK ] CallbackTests.PatchCallbackTest (50 ms)
+3: [ RUN      ] CallbackTests.Move
+3: [       OK ] CallbackTests.Move (0 ms)
+3: [----------] 8 tests from CallbackTests (351 ms total)
+3: 
+3: [----------] Global test environment tear-down
+3: [==========] 90 tests from 23 test suites ran. (3713 ms total)
+3: [  PASSED  ] 82 tests.
+3: [  FAILED  ] 8 tests, listed below:
+3: [  FAILED  ] DifferentMethodTests.GetPostTest
+3: [  FAILED  ] DifferentMethodTests.PostGetTest
+3: [  FAILED  ] DifferentMethodTests.GetPostGetTest
+3: [  FAILED  ] DifferentMethodTests.PostGetPostTest
+3: [  FAILED  ] DifferentMethodTests.MultipleGetPostTest
+3: [  FAILED  ] DifferentMethodTests.MultipleDeleteHeadPutGetPostTest
+3: [  FAILED  ] CurlHolderManipulateTests.CustomOptionTest
+3: [  FAILED  ] CallbackTests.PostCallbackTest
+3: 
+3:  8 FAILED TESTS
+ 3/31 Test  #3: cpr_session_tests ................***Failed    3.72 sec
+test 4
+      Start  4: cpr_prepare_tests
+
+4: Test command: /build/cpr-git/src/build/bin/prepare_tests
+4: Working Directory: /build/cpr-git/src/build/test
+4: Test timeout computed to be: 10000000
+4: [==========] Running 4 tests from 1 test suite.
+4: [----------] Global test environment set-up.
+4: [----------] 4 tests from PrepareTests
+4: [ RUN      ] PrepareTests.GetTest
+4: [       OK ] PrepareTests.GetTest (0 ms)
+4: [ RUN      ] PrepareTests.OptionsTests
+4: [       OK ] PrepareTests.OptionsTests (0 ms)
+4: [ RUN      ] PrepareTests.PatchTest
+4: [       OK ] PrepareTests.PatchTest (0 ms)
+4: [ RUN      ] PrepareTests.MultipleDeleteHeadPutGetPostTest
+4: [       OK ] PrepareTests.MultipleDeleteHeadPutGetPostTest (0 ms)
+4: [----------] 4 tests from PrepareTests (1 ms total)
+4: 
+4: [----------] Global test environment tear-down
+4: [==========] 4 tests from 1 test suite ran. (102 ms total)
+4: [  PASSED  ] 4 tests.
+ 4/31 Test  #4: cpr_prepare_tests ................   Passed    0.11 sec
+test 5
+      Start  5: cpr_async_tests
+
+5: Test command: /build/cpr-git/src/build/bin/async_tests
+5: Working Directory: /build/cpr-git/src/build/test
+5: Test timeout computed to be: 10000000
+5: [==========] Running 4 tests from 1 test suite.
+5: [----------] Global test environment set-up.
+5: [----------] 4 tests from AsyncTests
+5: [ RUN      ] AsyncTests.AsyncGetTest
+5: [       OK ] AsyncTests.AsyncGetTest (1 ms)
+5: [ RUN      ] AsyncTests.AsyncGetMultipleTest
+5: [       OK ] AsyncTests.AsyncGetMultipleTest (0 ms)
+5: [ RUN      ] AsyncTests.AsyncGetMultipleReflectTest
+5: [       OK ] AsyncTests.AsyncGetMultipleReflectTest (1446 ms)
+5: [ RUN      ] AsyncTests.AsyncDownloadTest
+5: [       OK ] AsyncTests.AsyncDownloadTest (0 ms)
+5: [----------] 4 tests from AsyncTests (1449 ms total)
+5: 
+5: [----------] Global test environment tear-down
+5: [==========] 4 tests from 1 test suite ran. (1549 ms total)
+5: [  PASSED  ] 4 tests.
+ 5/31 Test  #5: cpr_async_tests ..................   Passed    1.56 sec
+test 6
+      Start  6: cpr_head_tests
+
+6: Test command: /build/cpr-git/src/build/bin/head_tests
+6: Working Directory: /build/cpr-git/src/build/test
+6: Test timeout computed to be: 10000000
+6: [==========] Running 18 tests from 1 test suite.
+6: [----------] Global test environment set-up.
+6: [----------] 18 tests from HeadTests
+6: [ RUN      ] HeadTests.BasicHeadTest
+6: [       OK ] HeadTests.BasicHeadTest (0 ms)
+6: [ RUN      ] HeadTests.ComplexHeadTest
+6: [       OK ] HeadTests.ComplexHeadTest (0 ms)
+6: [ RUN      ] HeadTests.ResourceNotFoundHeadTest
+6: [       OK ] HeadTests.ResourceNotFoundHeadTest (0 ms)
+6: [ RUN      ] HeadTests.BadHostHeadTest
+6: [       OK ] HeadTests.BadHostHeadTest (8 ms)
+6: [ RUN      ] HeadTests.CookieHeadTest
+6: [       OK ] HeadTests.CookieHeadTest (0 ms)
+6: [ RUN      ] HeadTests.ParameterHeadTest
+6: [       OK ] HeadTests.ParameterHeadTest (0 ms)
+6: [ RUN      ] HeadTests.AuthenticationSuccessHeadTest
+6: [       OK ] HeadTests.AuthenticationSuccessHeadTest (0 ms)
+6: [ RUN      ] HeadTests.AuthenticationNullFailureHeadTest
+6: [       OK ] HeadTests.AuthenticationNullFailureHeadTest (0 ms)
+6: [ RUN      ] HeadTests.AuthenticationFailureHeadTest
+6: [       OK ] HeadTests.AuthenticationFailureHeadTest (0 ms)
+6: [ RUN      ] HeadTests.BearerSuccessHeadTest
+6: [       OK ] HeadTests.BearerSuccessHeadTest (0 ms)
+6: [ RUN      ] HeadTests.DigestSuccessHeadTest
+6: [       OK ] HeadTests.DigestSuccessHeadTest (0 ms)
+6: [ RUN      ] HeadTests.HeaderReflectNoneHeadTest
+6: [       OK ] HeadTests.HeaderReflectNoneHeadTest (0 ms)
+6: [ RUN      ] HeadTests.HeaderReflectEmptyHeadTest
+6: [       OK ] HeadTests.HeaderReflectEmptyHeadTest (0 ms)
+6: [ RUN      ] HeadTests.HeaderReflectHeadTest
+6: [       OK ] HeadTests.HeaderReflectHeadTest (0 ms)
+6: [ RUN      ] HeadTests.SetEmptyHeaderHeadTest
+6: [       OK ] HeadTests.SetEmptyHeaderHeadTest (0 ms)
+6: [ RUN      ] HeadTests.RedirectHeadTest
+6: [       OK ] HeadTests.RedirectHeadTest (0 ms)
+6: [ RUN      ] HeadTests.ZeroMaxRedirectsHeadTest
+6: [       OK ] HeadTests.ZeroMaxRedirectsHeadTest (0 ms)
+6: [ RUN      ] HeadTests.BasicHeadAsyncTest
+6: [       OK ] HeadTests.BasicHeadAsyncTest (0 ms)
+6: [----------] 18 tests from HeadTests (12 ms total)
+6: 
+6: [----------] Global test environment tear-down
+6: [==========] 18 tests from 1 test suite ran. (112 ms total)
+6: [  PASSED  ] 18 tests.
+ 6/31 Test  #6: cpr_head_tests ...................   Passed    0.12 sec
+test 7
+      Start  7: cpr_delete_tests
+
+7: Test command: /build/cpr-git/src/build/bin/delete_tests
+7: Working Directory: /build/cpr-git/src/build/test
+7: Test timeout computed to be: 10000000
+7: [==========] Running 16 tests from 1 test suite.
+7: [----------] Global test environment set-up.
+7: [----------] 16 tests from DeleteTests
+7: [ RUN      ] DeleteTests.DeleteTest
+7: [       OK ] DeleteTests.DeleteTest (0 ms)
+7: [ RUN      ] DeleteTests.DeleteUnallowedTest
+7: [       OK ] DeleteTests.DeleteUnallowedTest (0 ms)
+7: [ RUN      ] DeleteTests.DeleteJsonBodyTest
+7: [       OK ] DeleteTests.DeleteJsonBodyTest (0 ms)
+7: [ RUN      ] DeleteTests.SessionDeleteTest
+7: [       OK ] DeleteTests.SessionDeleteTest (0 ms)
+7: [ RUN      ] DeleteTests.SessionDeleteUnallowedTest
+7: [       OK ] DeleteTests.SessionDeleteUnallowedTest (0 ms)
+7: [ RUN      ] DeleteTests.SessionDeleteJsonBodyTest
+7: [       OK ] DeleteTests.SessionDeleteJsonBodyTest (0 ms)
+7: [ RUN      ] DeleteTests.SessionDeleteAfterGetTest
+7: [       OK ] DeleteTests.SessionDeleteAfterGetTest (0 ms)
+7: [ RUN      ] DeleteTests.SessionDeleteUnallowedAfterGetTest
+7: [       OK ] DeleteTests.SessionDeleteUnallowedAfterGetTest (0 ms)
+7: [ RUN      ] DeleteTests.SessionDeleteAfterHeadTest
+7: [       OK ] DeleteTests.SessionDeleteAfterHeadTest (0 ms)
+7: [ RUN      ] DeleteTests.SessionDeleteUnallowedAfterHeadTest
+7: [       OK ] DeleteTests.SessionDeleteUnallowedAfterHeadTest (0 ms)
+7: [ RUN      ] DeleteTests.SessionDeleteAfterPostTest
+7: [       OK ] DeleteTests.SessionDeleteAfterPostTest (0 ms)
+7: [ RUN      ] DeleteTests.SessionDeleteUnallowedAfterPostTest
+7: [       OK ] DeleteTests.SessionDeleteUnallowedAfterPostTest (0 ms)
+7: [ RUN      ] DeleteTests.AsyncDeleteTest
+7: [       OK ] DeleteTests.AsyncDeleteTest (0 ms)
+7: [ RUN      ] DeleteTests.AsyncDeleteUnallowedTest
+7: [       OK ] DeleteTests.AsyncDeleteUnallowedTest (0 ms)
+7: [ RUN      ] DeleteTests.AsyncMultipleDeleteTest
+7: [       OK ] DeleteTests.AsyncMultipleDeleteTest (0 ms)
+7: [ RUN      ] DeleteTests.AsyncMultipleDeleteUnallowedTest
+7: [       OK ] DeleteTests.AsyncMultipleDeleteUnallowedTest (0 ms)
+7: [----------] 16 tests from DeleteTests (4 ms total)
+7: 
+7: [----------] Global test environment tear-down
+7: [==========] 16 tests from 1 test suite ran. (104 ms total)
+7: [  PASSED  ] 16 tests.
+ 7/31 Test  #7: cpr_delete_tests .................   Passed    0.11 sec
+test 8
+      Start  8: cpr_put_tests
+
+8: Test command: /build/cpr-git/src/build/bin/put_tests
+8: Working Directory: /build/cpr-git/src/build/test
+8: Test timeout computed to be: 10000000
+8: [==========] Running 14 tests from 1 test suite.
+8: [----------] Global test environment set-up.
+8: [----------] 14 tests from PutTests
+8: [ RUN      ] PutTests.PutTest
+8: [       OK ] PutTests.PutTest (1 ms)
+8: [ RUN      ] PutTests.PutUnallowedTest
+8: [       OK ] PutTests.PutUnallowedTest (0 ms)
+8: [ RUN      ] PutTests.SessionPutTest
+8: [       OK ] PutTests.SessionPutTest (0 ms)
+8: [ RUN      ] PutTests.SessionPutUnallowedTest
+8: [       OK ] PutTests.SessionPutUnallowedTest (0 ms)
+8: [ RUN      ] PutTests.SessionPutAfterGetTest
+8: [       OK ] PutTests.SessionPutAfterGetTest (0 ms)
+8: [ RUN      ] PutTests.SessionPutUnallowedAfterGetTest
+8: [       OK ] PutTests.SessionPutUnallowedAfterGetTest (0 ms)
+8: [ RUN      ] PutTests.SessionPutAfterHeadTest
+8: [       OK ] PutTests.SessionPutAfterHeadTest (0 ms)
+8: [ RUN      ] PutTests.SessionPutUnallowedAfterHeadTest
+8: [       OK ] PutTests.SessionPutUnallowedAfterHeadTest (0 ms)
+8: [ RUN      ] PutTests.SessionPutAfterPostTest
+8: [       OK ] PutTests.SessionPutAfterPostTest (0 ms)
+8: [ RUN      ] PutTests.SessionPutUnallowedAfterPostTest
+8: [       OK ] PutTests.SessionPutUnallowedAfterPostTest (0 ms)
+8: [ RUN      ] PutTests.AsyncPutTest
+8: [       OK ] PutTests.AsyncPutTest (0 ms)
+8: [ RUN      ] PutTests.AsyncPutUnallowedTest
+8: [       OK ] PutTests.AsyncPutUnallowedTest (0 ms)
+8: [ RUN      ] PutTests.AsyncMultiplePutTest
+8: [       OK ] PutTests.AsyncMultiplePutTest (0 ms)
+8: [ RUN      ] PutTests.AsyncMultiplePutUnallowedTest
+8: [       OK ] PutTests.AsyncMultiplePutUnallowedTest (0 ms)
+8: [----------] 14 tests from PutTests (4 ms total)
+8: 
+8: [----------] Global test environment tear-down
+8: [==========] 14 tests from 1 test suite ran. (104 ms total)
+8: [  PASSED  ] 14 tests.
+ 8/31 Test  #8: cpr_put_tests ....................   Passed    0.11 sec
+test 9
+      Start  9: cpr_callback_tests
+
+9: Test command: /build/cpr-git/src/build/bin/callback_tests
+9: Working Directory: /build/cpr-git/src/build/test
+9: Test timeout computed to be: 10000000
+9: [==========] Running 67 tests from 8 test suites.
+9: [----------] Global test environment set-up.
+9: [----------] 8 tests from CallbackGetTests
+9: [ RUN      ] CallbackGetTests.CallbackGetLambdaStatusTest
+9: [       OK ] CallbackGetTests.CallbackGetLambdaStatusTest (50 ms)
+9: [ RUN      ] CallbackGetTests.CallbackGetLambdaTextTest
+9: [       OK ] CallbackGetTests.CallbackGetLambdaTextTest (50 ms)
+9: [ RUN      ] CallbackGetTests.CallbackGetLambdaStatusReferenceTest
+9: [       OK ] CallbackGetTests.CallbackGetLambdaStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackGetTests.CallbackGetLambdaTextReferenceTest
+9: [       OK ] CallbackGetTests.CallbackGetLambdaTextReferenceTest (50 ms)
+9: [ RUN      ] CallbackGetTests.CallbackGetFunctionStatusTest
+9: [       OK ] CallbackGetTests.CallbackGetFunctionStatusTest (50 ms)
+9: [ RUN      ] CallbackGetTests.CallbackGetFunctionTextTest
+9: [       OK ] CallbackGetTests.CallbackGetFunctionTextTest (50 ms)
+9: [ RUN      ] CallbackGetTests.CallbackGetFunctionStatusReferenceTest
+9: [       OK ] CallbackGetTests.CallbackGetFunctionStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackGetTests.CallbackGetFunctionTextReferenceTest
+9: [       OK ] CallbackGetTests.CallbackGetFunctionTextReferenceTest (50 ms)
+9: [----------] 8 tests from CallbackGetTests (400 ms total)
+9: 
+9: [----------] 8 tests from CallbackDeleteTests
+9: [ RUN      ] CallbackDeleteTests.CallbackDeleteLambdaStatusTest
+9: [       OK ] CallbackDeleteTests.CallbackDeleteLambdaStatusTest (50 ms)
+9: [ RUN      ] CallbackDeleteTests.CallbackDeleteLambdaTextTest
+9: [       OK ] CallbackDeleteTests.CallbackDeleteLambdaTextTest (50 ms)
+9: [ RUN      ] CallbackDeleteTests.CallbackDeleteLambdaStatusReferenceTest
+9: [       OK ] CallbackDeleteTests.CallbackDeleteLambdaStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackDeleteTests.CallbackDeleteLambdaTextReferenceTest
+9: [       OK ] CallbackDeleteTests.CallbackDeleteLambdaTextReferenceTest (50 ms)
+9: [ RUN      ] CallbackDeleteTests.CallbackDeleteFunctionStatusTest
+9: [       OK ] CallbackDeleteTests.CallbackDeleteFunctionStatusTest (50 ms)
+9: [ RUN      ] CallbackDeleteTests.CallbackDeleteFunctionTextTest
+9: [       OK ] CallbackDeleteTests.CallbackDeleteFunctionTextTest (50 ms)
+9: [ RUN      ] CallbackDeleteTests.CallbackDeleteFunctionStatusReferenceTest
+9: [       OK ] CallbackDeleteTests.CallbackDeleteFunctionStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackDeleteTests.CallbackDeleteFunctionTextReferenceTest
+9: [       OK ] CallbackDeleteTests.CallbackDeleteFunctionTextReferenceTest (50 ms)
+9: [----------] 8 tests from CallbackDeleteTests (400 ms total)
+9: 
+9: [----------] 8 tests from CallbackHeadTests
+9: [ RUN      ] CallbackHeadTests.CallbackHeadLambdaStatusTest
+9: [       OK ] CallbackHeadTests.CallbackHeadLambdaStatusTest (50 ms)
+9: [ RUN      ] CallbackHeadTests.CallbackHeadLambdaTextTest
+9: [       OK ] CallbackHeadTests.CallbackHeadLambdaTextTest (50 ms)
+9: [ RUN      ] CallbackHeadTests.CallbackHeadLambdaStatusReferenceTest
+9: [       OK ] CallbackHeadTests.CallbackHeadLambdaStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackHeadTests.CallbackHeadLambdaTextReferenceTest
+9: [       OK ] CallbackHeadTests.CallbackHeadLambdaTextReferenceTest (50 ms)
+9: [ RUN      ] CallbackHeadTests.CallbackHeadFunctionStatusTest
+9: [       OK ] CallbackHeadTests.CallbackHeadFunctionStatusTest (50 ms)
+9: [ RUN      ] CallbackHeadTests.CallbackHeadFunctionTextTest
+9: [       OK ] CallbackHeadTests.CallbackHeadFunctionTextTest (50 ms)
+9: [ RUN      ] CallbackHeadTests.CallbackHeadFunctionStatusReferenceTest
+9: [       OK ] CallbackHeadTests.CallbackHeadFunctionStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackHeadTests.CallbackHeadFunctionTextReferenceTest
+9: [       OK ] CallbackHeadTests.CallbackHeadFunctionTextReferenceTest (50 ms)
+9: [----------] 8 tests from CallbackHeadTests (400 ms total)
+9: 
+9: [----------] 8 tests from CallbackPostTests
+9: [ RUN      ] CallbackPostTests.CallbackPostLambdaStatusTest
+9: [       OK ] CallbackPostTests.CallbackPostLambdaStatusTest (50 ms)
+9: [ RUN      ] CallbackPostTests.CallbackPostLambdaTextTest
+9: [       OK ] CallbackPostTests.CallbackPostLambdaTextTest (50 ms)
+9: [ RUN      ] CallbackPostTests.CallbackPostLambdaStatusReferenceTest
+9: [       OK ] CallbackPostTests.CallbackPostLambdaStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackPostTests.CallbackPostLambdaTextReferenceTest
+9: [       OK ] CallbackPostTests.CallbackPostLambdaTextReferenceTest (50 ms)
+9: [ RUN      ] CallbackPostTests.CallbackPostFunctionStatusTest
+9: [       OK ] CallbackPostTests.CallbackPostFunctionStatusTest (50 ms)
+9: [ RUN      ] CallbackPostTests.CallbackPostFunctionTextTest
+9: [       OK ] CallbackPostTests.CallbackPostFunctionTextTest (50 ms)
+9: [ RUN      ] CallbackPostTests.CallbackPostFunctionStatusReferenceTest
+9: [       OK ] CallbackPostTests.CallbackPostFunctionStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackPostTests.CallbackPostFunctionTextReferenceTest
+9: [       OK ] CallbackPostTests.CallbackPostFunctionTextReferenceTest (50 ms)
+9: [----------] 8 tests from CallbackPostTests (400 ms total)
+9: 
+9: [----------] 8 tests from CallbackPutTests
+9: [ RUN      ] CallbackPutTests.CallbackPutLambdaStatusTest
+9: [       OK ] CallbackPutTests.CallbackPutLambdaStatusTest (50 ms)
+9: [ RUN      ] CallbackPutTests.CallbackPutLambdaTextTest
+9: [       OK ] CallbackPutTests.CallbackPutLambdaTextTest (50 ms)
+9: [ RUN      ] CallbackPutTests.CallbackPutLambdaStatusReferenceTest
+9: [       OK ] CallbackPutTests.CallbackPutLambdaStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackPutTests.CallbackPutLambdaTextReferenceTest
+9: [       OK ] CallbackPutTests.CallbackPutLambdaTextReferenceTest (50 ms)
+9: [ RUN      ] CallbackPutTests.CallbackPutFunctionStatusTest
+9: [       OK ] CallbackPutTests.CallbackPutFunctionStatusTest (50 ms)
+9: [ RUN      ] CallbackPutTests.CallbackPutFunctionTextTest
+9: [       OK ] CallbackPutTests.CallbackPutFunctionTextTest (50 ms)
+9: [ RUN      ] CallbackPutTests.CallbackPutFunctionStatusReferenceTest
+9: [       OK ] CallbackPutTests.CallbackPutFunctionStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackPutTests.CallbackPutFunctionTextReferenceTest
+9: [       OK ] CallbackPutTests.CallbackPutFunctionTextReferenceTest (50 ms)
+9: [----------] 8 tests from CallbackPutTests (400 ms total)
+9: 
+9: [----------] 8 tests from CallbackOptionsTests
+9: [ RUN      ] CallbackOptionsTests.CallbackOptionsLambdaStatusTest
+9: [       OK ] CallbackOptionsTests.CallbackOptionsLambdaStatusTest (50 ms)
+9: [ RUN      ] CallbackOptionsTests.CallbackOptionsLambdaTextTest
+9: [       OK ] CallbackOptionsTests.CallbackOptionsLambdaTextTest (50 ms)
+9: [ RUN      ] CallbackOptionsTests.CallbackOptionsLambdaStatusReferenceTest
+9: [       OK ] CallbackOptionsTests.CallbackOptionsLambdaStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackOptionsTests.CallbackOptionsLambdaTextReferenceTest
+9: [       OK ] CallbackOptionsTests.CallbackOptionsLambdaTextReferenceTest (50 ms)
+9: [ RUN      ] CallbackOptionsTests.CallbackOptionsFunctionStatusTest
+9: [       OK ] CallbackOptionsTests.CallbackOptionsFunctionStatusTest (50 ms)
+9: [ RUN      ] CallbackOptionsTests.CallbackOptionsFunctionTextTest
+9: [       OK ] CallbackOptionsTests.CallbackOptionsFunctionTextTest (50 ms)
+9: [ RUN      ] CallbackOptionsTests.CallbackOptionsFunctionStatusReferenceTest
+9: [       OK ] CallbackOptionsTests.CallbackOptionsFunctionStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackOptionsTests.CallbackOptionsFunctionTextReferenceTest
+9: [       OK ] CallbackOptionsTests.CallbackOptionsFunctionTextReferenceTest (50 ms)
+9: [----------] 8 tests from CallbackOptionsTests (400 ms total)
+9: 
+9: [----------] 8 tests from CallbackPatchTests
+9: [ RUN      ] CallbackPatchTests.CallbackPatchLambdaStatusTest
+9: [       OK ] CallbackPatchTests.CallbackPatchLambdaStatusTest (50 ms)
+9: [ RUN      ] CallbackPatchTests.CallbackPatchLambdaTextTest
+9: [       OK ] CallbackPatchTests.CallbackPatchLambdaTextTest (50 ms)
+9: [ RUN      ] CallbackPatchTests.CallbackPatchLambdaStatusReferenceTest
+9: [       OK ] CallbackPatchTests.CallbackPatchLambdaStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackPatchTests.CallbackPatchLambdaTextReferenceTest
+9: [       OK ] CallbackPatchTests.CallbackPatchLambdaTextReferenceTest (50 ms)
+9: [ RUN      ] CallbackPatchTests.CallbackPatchFunctionStatusTest
+9: [       OK ] CallbackPatchTests.CallbackPatchFunctionStatusTest (50 ms)
+9: [ RUN      ] CallbackPatchTests.CallbackPatchFunctionTextTest
+9: [       OK ] CallbackPatchTests.CallbackPatchFunctionTextTest (50 ms)
+9: [ RUN      ] CallbackPatchTests.CallbackPatchFunctionStatusReferenceTest
+9: [       OK ] CallbackPatchTests.CallbackPatchFunctionStatusReferenceTest (50 ms)
+9: [ RUN      ] CallbackPatchTests.CallbackPatchFunctionTextReferenceTest
+9: [       OK ] CallbackPatchTests.CallbackPatchFunctionTextReferenceTest (50 ms)
+9: [----------] 8 tests from CallbackPatchTests (400 ms total)
+9: 
+9: [----------] 11 tests from CallbackDataTests
+9: [ RUN      ] CallbackDataTests.CallbackReadFunctionCancelTest
+9: [       OK ] CallbackDataTests.CallbackReadFunctionCancelTest (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackReadFunctionTextTest
+9: [       OK ] CallbackDataTests.CallbackReadFunctionTextTest (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackReadFunctionTextTestPut
+9: [       OK ] CallbackDataTests.CallbackReadFunctionTextTestPut (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackReadFunctionHeaderTest
+9: [       OK ] CallbackDataTests.CallbackReadFunctionHeaderTest (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackHeaderFunctionCancelTest
+9: [       OK ] CallbackDataTests.CallbackHeaderFunctionCancelTest (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackHeaderFunctionTextTest
+9: HTTP/1.1 201 Created
+9: 
+9: Content-Type: application/json
+9: 
+9: 
+9: 
+9: [       OK ] CallbackDataTests.CallbackHeaderFunctionTextTest (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackWriteFunctionCancelTest
+9: [       OK ] CallbackDataTests.CallbackWriteFunctionCancelTest (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackWriteFunctionTextTest
+9: [       OK ] CallbackDataTests.CallbackWriteFunctionTextTest (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackProgressFunctionCancelTest
+9: [       OK ] CallbackDataTests.CallbackProgressFunctionCancelTest (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackProgressFunctionTotalTest
+9: [       OK ] CallbackDataTests.CallbackProgressFunctionTotalTest (0 ms)
+9: [ RUN      ] CallbackDataTests.CallbackDebugFunctionTextTest
+9: [       OK ] CallbackDataTests.CallbackDebugFunctionTextTest (0 ms)
+9: [----------] 11 tests from CallbackDataTests (1 ms total)
+9: 
+9: [----------] Global test environment tear-down
+9: [==========] 67 tests from 8 test suites ran. (2906 ms total)
+9: [  PASSED  ] 67 tests.
+ 9/31 Test  #9: cpr_callback_tests ...............   Passed    2.91 sec
+test 10
+      Start 10: cpr_raw_body_tests
+
+10: Test command: /build/cpr-git/src/build/bin/raw_body_tests
+10: Working Directory: /build/cpr-git/src/build/test
+10: Test timeout computed to be: 10000000
+10: [==========] Running 10 tests from 1 test suite.
+10: [----------] Global test environment set-up.
+10: [----------] 10 tests from BodyPostTests
+10: [ RUN      ] BodyPostTests.DefaultUrlEncodedPostTest
+10: [       OK ] BodyPostTests.DefaultUrlEncodedPostTest (0 ms)
+10: [ RUN      ] BodyPostTests.TextUrlEncodedPostTest
+10: [       OK ] BodyPostTests.TextUrlEncodedPostTest (0 ms)
+10: [ RUN      ] BodyPostTests.TextUrlEncodedNoCopyPostTest
+10: [       OK ] BodyPostTests.TextUrlEncodedNoCopyPostTest (0 ms)
+10: [ RUN      ] BodyPostTests.UrlEncodedManyPostTest
+10: [       OK ] BodyPostTests.UrlEncodedManyPostTest (0 ms)
+10: [ RUN      ] BodyPostTests.CustomHeaderNumberPostTest
+10: [       OK ] BodyPostTests.CustomHeaderNumberPostTest (0 ms)
+10: [ RUN      ] BodyPostTests.CustomHeaderTextPostTest
+10: [       OK ] BodyPostTests.CustomHeaderTextPostTest (0 ms)
+10: [ RUN      ] BodyPostTests.CustomWrongHeaderPostTest
+10: [       OK ] BodyPostTests.CustomWrongHeaderPostTest (0 ms)
+10: [ RUN      ] BodyPostTests.UrlPostBadHostTest
+10: [       OK ] BodyPostTests.UrlPostBadHostTest (10 ms)
+10: [ RUN      ] BodyPostTests.StringMoveBodyTest
+10: [       OK ] BodyPostTests.StringMoveBodyTest (0 ms)
+10: [ RUN      ] BodyPostTests.BodyViewTest
+10: [       OK ] BodyPostTests.BodyViewTest (0 ms)
+10: [----------] 10 tests from BodyPostTests (12 ms total)
+10: 
+10: [----------] Global test environment tear-down
+10: [==========] 10 tests from 1 test suite ran. (12 ms total)
+10: [  PASSED  ] 10 tests.
+10/31 Test #10: cpr_raw_body_tests ...............   Passed    0.02 sec
+test 11
+      Start 11: cpr_options_tests
+
+11: Test command: /build/cpr-git/src/build/bin/options_tests
+11: Working Directory: /build/cpr-git/src/build/test
+11: Test timeout computed to be: 10000000
+11: [==========] Running 4 tests from 1 test suite.
+11: [----------] Global test environment set-up.
+11: [----------] 4 tests from OptionsTests
+11: [ RUN      ] OptionsTests.BaseUrlTest
+11: [       OK ] OptionsTests.BaseUrlTest (0 ms)
+11: [ RUN      ] OptionsTests.SpecificUrlTest
+11: [       OK ] OptionsTests.SpecificUrlTest (0 ms)
+11: [ RUN      ] OptionsTests.AsyncBaseUrlTest
+11: [       OK ] OptionsTests.AsyncBaseUrlTest (0 ms)
+11: [ RUN      ] OptionsTests.AsyncSpecificUrlTest
+11: [       OK ] OptionsTests.AsyncSpecificUrlTest (0 ms)
+11: [----------] 4 tests from OptionsTests (2 ms total)
+11: 
+11: [----------] Global test environment tear-down
+11: [==========] 4 tests from 1 test suite ran. (102 ms total)
+11: [  PASSED  ] 4 tests.
+11/31 Test #11: cpr_options_tests ................   Passed    0.11 sec
+test 12
+      Start 12: cpr_patch_tests
+
+12: Test command: /build/cpr-git/src/build/bin/patch_tests
+12: Working Directory: /build/cpr-git/src/build/test
+12: Test timeout computed to be: 10000000
+12: [==========] Running 14 tests from 1 test suite.
+12: [----------] Global test environment set-up.
+12: [----------] 14 tests from PatchTests
+12: [ RUN      ] PatchTests.PatchTest
+12: [       OK ] PatchTests.PatchTest (0 ms)
+12: [ RUN      ] PatchTests.PatchUnallowedTest
+12: [       OK ] PatchTests.PatchUnallowedTest (0 ms)
+12: [ RUN      ] PatchTests.SessionPatchTest
+12: [       OK ] PatchTests.SessionPatchTest (0 ms)
+12: [ RUN      ] PatchTests.SessionPatchUnallowedTest
+12: [       OK ] PatchTests.SessionPatchUnallowedTest (0 ms)
+12: [ RUN      ] PatchTests.SessionPatchAfterGetTest
+12: [       OK ] PatchTests.SessionPatchAfterGetTest (0 ms)
+12: [ RUN      ] PatchTests.SessionPatchUnallowedAfterGetTest
+12: [       OK ] PatchTests.SessionPatchUnallowedAfterGetTest (0 ms)
+12: [ RUN      ] PatchTests.SessionPatchAfterHeadTest
+12: [       OK ] PatchTests.SessionPatchAfterHeadTest (0 ms)
+12: [ RUN      ] PatchTests.SessionPatchUnallowedAfterHeadTest
+12: [       OK ] PatchTests.SessionPatchUnallowedAfterHeadTest (0 ms)
+12: [ RUN      ] PatchTests.SessionPatchAfterPostTest
+12: [       OK ] PatchTests.SessionPatchAfterPostTest (0 ms)
+12: [ RUN      ] PatchTests.SessionPatchUnallowedAfterPostTest
+12: [       OK ] PatchTests.SessionPatchUnallowedAfterPostTest (0 ms)
+12: [ RUN      ] PatchTests.AsyncPatchTest
+12: [       OK ] PatchTests.AsyncPatchTest (0 ms)
+12: [ RUN      ] PatchTests.AsyncPatchUnallowedTest
+12: [       OK ] PatchTests.AsyncPatchUnallowedTest (0 ms)
+12: [ RUN      ] PatchTests.AsyncMultiplePatchTest
+12: [       OK ] PatchTests.AsyncMultiplePatchTest (0 ms)
+12: [ RUN      ] PatchTests.AsyncMultiplePatchUnallowedTest
+12: [       OK ] PatchTests.AsyncMultiplePatchUnallowedTest (0 ms)
+12: [----------] 14 tests from PatchTests (4 ms total)
+12: 
+12: [----------] Global test environment tear-down
+12: [==========] 14 tests from 1 test suite ran. (105 ms total)
+12: [  PASSED  ] 14 tests.
+12/31 Test #12: cpr_patch_tests ..................   Passed    0.11 sec
+test 13
+      Start 13: cpr_error_tests
+
+13: Test command: /build/cpr-git/src/build/bin/error_tests
+13: Working Directory: /build/cpr-git/src/build/test
+13: Test timeout computed to be: 10000000
+13: [==========] Running 13 tests from 1 test suite.
+13: [----------] Global test environment set-up.
+13: [----------] 13 tests from ErrorTests
+13: [ RUN      ] ErrorTests.UnsupportedProtocolFailure
+13: [       OK ] ErrorTests.UnsupportedProtocolFailure (0 ms)
+13: [ RUN      ] ErrorTests.InvalidURLFailure
+13: [       OK ] ErrorTests.InvalidURLFailure (0 ms)
+13: [ RUN      ] ErrorTests.TimeoutFailure
+13: [       OK ] ErrorTests.TimeoutFailure (1 ms)
+13: [ RUN      ] ErrorTests.ChronoTimeoutFailure
+13: [       OK ] ErrorTests.ChronoTimeoutFailure (1 ms)
+13: [ RUN      ] ErrorTests.ConnectTimeoutFailure
+13: [       OK ] ErrorTests.ConnectTimeoutFailure (0 ms)
+13: [ RUN      ] ErrorTests.ChronoConnectTimeoutFailure
+13: [       OK ] ErrorTests.ChronoConnectTimeoutFailure (0 ms)
+13: [ RUN      ] ErrorTests.LowSpeedTimeFailure
+13: [       OK ] ErrorTests.LowSpeedTimeFailure (1002 ms)
+13: [ RUN      ] ErrorTests.LowSpeedBytesFailure
+13: [       OK ] ErrorTests.LowSpeedBytesFailure (1001 ms)
+13: [ RUN      ] ErrorTests.ProxyFailure
+13: [       OK ] ErrorTests.ProxyFailure (10 ms)
+13: [ RUN      ] ErrorTests.BoolFalseTest
+13: [       OK ] ErrorTests.BoolFalseTest (0 ms)
+13: [ RUN      ] ErrorTests.BoolTrueTest
+13: [       OK ] ErrorTests.BoolTrueTest (0 ms)
+13: [ RUN      ] ErrorTests.StringReprTest
+13: [       OK ] ErrorTests.StringReprTest (0 ms)
+13: [ RUN      ] ErrorTests.StringReprUnknownTest
+13: [       OK ] ErrorTests.StringReprUnknownTest (0 ms)
+13: [----------] 13 tests from ErrorTests (2017 ms total)
+13: 
+13: [----------] Global test environment tear-down
+13: [==========] 13 tests from 1 test suite ran. (3106 ms total)
+13: [  PASSED  ] 13 tests.
+13/31 Test #13: cpr_error_tests ..................   Passed    3.11 sec
+test 14
+      Start 14: cpr_alternating_tests
+
+14: Test command: /build/cpr-git/src/build/bin/alternating_tests
+14: Working Directory: /build/cpr-git/src/build/test
+14: Test timeout computed to be: 10000000
+14: [==========] Running 5 tests from 1 test suite.
+14: [----------] Global test environment set-up.
+14: [----------] 5 tests from AlternatingTests
+14: [ RUN      ] AlternatingTests.PutGetTest
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:22: Failure
+14: Expected equality of these values:
+14:   expected_text
+14:     Which is: "Header reflect PUT"
+14:   response.text
+14:     Which is: ""
+14: 
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:25: Failure
+14: Expected equality of these values:
+14:   ErrorCode::OK
+14:     Which is: 4-byte object <00-00 00-00>
+14:   response.error.code
+14:     Which is: 4-byte object <08-00 00-00>
+14: 
+14: [  FAILED  ] AlternatingTests.PutGetTest (1 ms)
+14: [ RUN      ] AlternatingTests.PutGetPutGetTest
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:47: Failure
+14: Expected equality of these values:
+14:   expected_text
+14:     Which is: "Header reflect PUT"
+14:   response.text
+14:     Which is: ""
+14: 
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:50: Failure
+14: Expected equality of these values:
+14:   ErrorCode::OK
+14:     Which is: 4-byte object <00-00 00-00>
+14:   response.error.code
+14:     Which is: 4-byte object <08-00 00-00>
+14: 
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:66: Failure
+14: Expected equality of these values:
+14:   expected_text
+14:     Which is: "Header reflect PUT"
+14:   response.text
+14:     Which is: ""
+14: 
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:69: Failure
+14: Expected equality of these values:
+14:   ErrorCode::OK
+14:     Which is: 4-byte object <00-00 00-00>
+14:   response.error.code
+14:     Which is: 4-byte object <08-00 00-00>
+14: 
+14: [  FAILED  ] AlternatingTests.PutGetPutGetTest (0 ms)
+14: [ RUN      ] AlternatingTests.HeadGetTest
+14: [       OK ] AlternatingTests.HeadGetTest (0 ms)
+14: [ RUN      ] AlternatingTests.PutHeadTest
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:116: Failure
+14: Expected equality of these values:
+14:   expected_text
+14:     Which is: "Header reflect PUT"
+14:   response.text
+14:     Which is: ""
+14: 
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:119: Failure
+14: Expected equality of these values:
+14:   ErrorCode::OK
+14:     Which is: 4-byte object <00-00 00-00>
+14:   response.error.code
+14:     Which is: 4-byte object <08-00 00-00>
+14: 
+14: [  FAILED  ] AlternatingTests.PutHeadTest (0 ms)
+14: [ RUN      ] AlternatingTests.PutPostTest
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:142: Failure
+14: Expected equality of these values:
+14:   expected_text
+14:     Which is: "Header reflect PUT"
+14:   response.text
+14:     Which is: ""
+14: 
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:145: Failure
+14: Expected equality of these values:
+14:   ErrorCode::OK
+14:     Which is: 4-byte object <00-00 00-00>
+14:   response.error.code
+14:     Which is: 4-byte object <08-00 00-00>
+14: 
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:152: Failure
+14: Expected equality of these values:
+14:   expected_text
+14:     Which is: "Header reflect POST"
+14:   response.text
+14:     Which is: ""
+14: 
+14: /usr/src/debug/cpr-git/cpr/test/alternating_tests.cpp:155: Failure
+14: Expected equality of these values:
+14:   ErrorCode::OK
+14:     Which is: 4-byte object <00-00 00-00>
+14:   response.error.code
+14:     Which is: 4-byte object <08-00 00-00>
+14: 
+14: [  FAILED  ] AlternatingTests.PutPostTest (0 ms)
+14: [----------] 5 tests from AlternatingTests (2 ms total)
+14: 
+14: [----------] Global test environment tear-down
+14: [==========] 5 tests from 1 test suite ran. (102 ms total)
+14: [  PASSED  ] 1 test.
+14: [  FAILED  ] 4 tests, listed below:
+14: [  FAILED  ] AlternatingTests.PutGetTest
+14: [  FAILED  ] AlternatingTests.PutGetPutGetTest
+14: [  FAILED  ] AlternatingTests.PutHeadTest
+14: [  FAILED  ] AlternatingTests.PutPostTest
+14: 
+14:  4 FAILED TESTS
+14/31 Test #14: cpr_alternating_tests ............***Failed    0.11 sec
+test 15
+      Start 15: cpr_util_tests
+
+15: Test command: /build/cpr-git/src/build/bin/util_tests
+15: Working Directory: /build/cpr-git/src/build/test
+15: Test timeout computed to be: 10000000
+15: [==========] Running 16 tests from 5 test suites.
+15: [----------] Global test environment set-up.
+15: [----------] 1 test from UtilParseCookiesTests
+15: [ RUN      ] UtilParseCookiesTests.BasicParseTest
+15: [       OK ] UtilParseCookiesTests.BasicParseTest (0 ms)
+15: [----------] 1 test from UtilParseCookiesTests (0 ms total)
+15: 
+15: [----------] 9 tests from UtilParseHeaderTests
+15: [ RUN      ] UtilParseHeaderTests.BasicParseTest
+15: [       OK ] UtilParseHeaderTests.BasicParseTest (0 ms)
+15: [ RUN      ] UtilParseHeaderTests.NewlineTest
+15: [       OK ] UtilParseHeaderTests.NewlineTest (0 ms)
+15: [ RUN      ] UtilParseHeaderTests.SpaceNewlineTest
+15: [       OK ] UtilParseHeaderTests.SpaceNewlineTest (0 ms)
+15: [ RUN      ] UtilParseHeaderTests.CarriageReturnNewlineTest
+15: [       OK ] UtilParseHeaderTests.CarriageReturnNewlineTest (0 ms)
+15: [ RUN      ] UtilParseHeaderTests.SpaceCarriageReturnNewlineTest
+15: [       OK ] UtilParseHeaderTests.SpaceCarriageReturnNewlineTest (0 ms)
+15: [ RUN      ] UtilParseHeaderTests.BasicStatusLineTest
+15: [       OK ] UtilParseHeaderTests.BasicStatusLineTest (0 ms)
+15: [ RUN      ] UtilParseHeaderTests.NewlineStatusLineTest
+15: [       OK ] UtilParseHeaderTests.NewlineStatusLineTest (0 ms)
+15: [ RUN      ] UtilParseHeaderTests.NoReasonSpaceTest
+15: [       OK ] UtilParseHeaderTests.NoReasonSpaceTest (0 ms)
+15: [ RUN      ] UtilParseHeaderTests.NoReasonTest
+15: [       OK ] UtilParseHeaderTests.NoReasonTest (0 ms)
+15: [----------] 9 tests from UtilParseHeaderTests (0 ms total)
+15: 
+15: [----------] 2 tests from UtilUrlEncodeTests
+15: [ RUN      ] UtilUrlEncodeTests.UnicodeEncoderTest
+15: [       OK ] UtilUrlEncodeTests.UnicodeEncoderTest (0 ms)
+15: [ RUN      ] UtilUrlEncodeTests.AsciiEncoderTest
+15: [       OK ] UtilUrlEncodeTests.AsciiEncoderTest (0 ms)
+15: [----------] 2 tests from UtilUrlEncodeTests (0 ms total)
+15: 
+15: [----------] 2 tests from UtilUrlDecodeTests
+15: [ RUN      ] UtilUrlDecodeTests.UnicodeDecoderTest
+15: [       OK ] UtilUrlDecodeTests.UnicodeDecoderTest (0 ms)
+15: [ RUN      ] UtilUrlDecodeTests.AsciiDecoderTest
+15: [       OK ] UtilUrlDecodeTests.AsciiDecoderTest (0 ms)
+15: [----------] 2 tests from UtilUrlDecodeTests (0 ms total)
+15: 
+15: [----------] 2 tests from UtilIsTrueTests
+15: [ RUN      ] UtilIsTrueTests.TrueTest
+15: [       OK ] UtilIsTrueTests.TrueTest (0 ms)
+15: [ RUN      ] UtilIsTrueTests.FalseTest
+15: [       OK ] UtilIsTrueTests.FalseTest (0 ms)
+15: [----------] 2 tests from UtilIsTrueTests (0 ms total)
+15: 
+15: [----------] Global test environment tear-down
+15: [==========] 16 tests from 5 test suites ran. (0 ms total)
+15: [  PASSED  ] 16 tests.
+15/31 Test #15: cpr_util_tests ...................   Passed    0.01 sec
+test 16
+      Start 16: cpr_structures_tests
+
+16: Test command: /build/cpr-git/src/build/bin/structures_tests
+16: Working Directory: /build/cpr-git/src/build/test
+16: Test timeout computed to be: 10000000
+16: [==========] Running 6 tests from 3 test suites.
+16: [----------] Global test environment set-up.
+16: [----------] 2 tests from PayloadTests
+16: [ RUN      ] PayloadTests.UseStringVariableTest
+16: [       OK ] PayloadTests.UseStringVariableTest (0 ms)
+16: [ RUN      ] PayloadTests.DisableEncodingTest
+16: [       OK ] PayloadTests.DisableEncodingTest (0 ms)
+16: [----------] 2 tests from PayloadTests (0 ms total)
+16: 
+16: [----------] 3 tests from ParametersTests
+16: [ RUN      ] ParametersTests.UseStringVariableTest
+16: [       OK ] ParametersTests.UseStringVariableTest (0 ms)
+16: [ RUN      ] ParametersTests.DisableEncodingTest
+16: [       OK ] ParametersTests.DisableEncodingTest (0 ms)
+16: [ RUN      ] ParametersTests.NoCurlHolderTest
+16: [       OK ] ParametersTests.NoCurlHolderTest (0 ms)
+16: [----------] 3 tests from ParametersTests (0 ms total)
+16: 
+16: [----------] 1 test from UrlToAndFromString
+16: [ RUN      ] UrlToAndFromString.UrlTests
+16: [       OK ] UrlToAndFromString.UrlTests (0 ms)
+16: [----------] 1 test from UrlToAndFromString (0 ms total)
+16: 
+16: [----------] Global test environment tear-down
+16: [==========] 6 tests from 3 test suites ran. (0 ms total)
+16: [  PASSED  ] 6 tests.
+16/31 Test #16: cpr_structures_tests .............   Passed    0.00 sec
+test 17
+      Start 17: cpr_encoded_auth_tests
+
+17: Test command: /build/cpr-git/src/build/bin/encoded_auth_tests
+17: Working Directory: /build/cpr-git/src/build/test
+17: Test timeout computed to be: 10000000
+17: [==========] Running 1 test from 1 test suite.
+17: [----------] Global test environment set-up.
+17: [----------] 1 test from EncodedAuthenticationTests
+17: [ RUN      ] EncodedAuthenticationTests.UnicodeEncoderTest
+17: [       OK ] EncodedAuthenticationTests.UnicodeEncoderTest (0 ms)
+17: [----------] 1 test from EncodedAuthenticationTests (0 ms total)
+17: 
+17: [----------] Global test environment tear-down
+17: [==========] 1 test from 1 test suite ran. (0 ms total)
+17: [  PASSED  ] 1 test.
+17/31 Test #17: cpr_encoded_auth_tests ...........   Passed    0.01 sec
+test 18
+      Start 18: cpr_version_tests
+
+18: Test command: /build/cpr-git/src/build/bin/version_tests
+18: Working Directory: /build/cpr-git/src/build/test
+18: Test timeout computed to be: 10000000
+18: [==========] Running 6 tests from 1 test suite.
+18: [----------] Global test environment set-up.
+18: [----------] 6 tests from VersionTests
+18: [ RUN      ] VersionTests.StringVersionExists
+18: [       OK ] VersionTests.StringVersionExists (0 ms)
+18: [ RUN      ] VersionTests.StringVersionValid
+18: [       OK ] VersionTests.StringVersionValid (0 ms)
+18: [ RUN      ] VersionTests.VersionMajorExists
+18: [       OK ] VersionTests.VersionMajorExists (0 ms)
+18: [ RUN      ] VersionTests.VersionMinorExists
+18: [       OK ] VersionTests.VersionMinorExists (0 ms)
+18: [ RUN      ] VersionTests.VersionPatchExists
+18: [       OK ] VersionTests.VersionPatchExists (0 ms)
+18: [ RUN      ] VersionTests.VersionNumExists
+18: [       OK ] VersionTests.VersionNumExists (0 ms)
+18: [----------] 6 tests from VersionTests (0 ms total)
+18: 
+18: [----------] Global test environment tear-down
+18: [==========] 6 tests from 1 test suite ran. (0 ms total)
+18: [  PASSED  ] 6 tests.
+18/31 Test #18: cpr_version_tests ................   Passed    0.00 sec
+test 19
+      Start 19: cpr_download_tests
+
+19: Test command: /build/cpr-git/src/build/bin/download_tests
+19: Working Directory: /build/cpr-git/src/build/test
+19: Test timeout computed to be: 10000000
+19: [==========] Running 9 tests from 1 test suite.
+19: [----------] Global test environment set-up.
+19: [----------] 9 tests from DownloadTests
+19: [ RUN      ] DownloadTests.DownloadHeaderGzip
+19: [       OK ] DownloadTests.DownloadHeaderGzip (0 ms)
+19: [ RUN      ] DownloadTests.DownloadAcceptEncodingGzip
+19: [       OK ] DownloadTests.DownloadAcceptEncodingGzip (0 ms)
+19: [ RUN      ] DownloadTests.RangeTestWholeFile
+19: [       OK ] DownloadTests.RangeTestWholeFile (0 ms)
+19: [ RUN      ] DownloadTests.RangeTestLowerLimit
+19: [       OK ] DownloadTests.RangeTestLowerLimit (0 ms)
+19: [ RUN      ] DownloadTests.RangeTestUpperLimit
+19: [       OK ] DownloadTests.RangeTestUpperLimit (0 ms)
+19: [ RUN      ] DownloadTests.RangeTestLowerAndUpperLimit
+19: [       OK ] DownloadTests.RangeTestLowerAndUpperLimit (0 ms)
+19: [ RUN      ] DownloadTests.RangeTestMultipleRangesSet
+19: [       OK ] DownloadTests.RangeTestMultipleRangesSet (0 ms)
+19: [ RUN      ] DownloadTests.RangeTestMultipleRangesOption
+19: [       OK ] DownloadTests.RangeTestMultipleRangesOption (0 ms)
+19: [ RUN      ] DownloadTests.GetDownloadFileLength
+19: [       OK ] DownloadTests.GetDownloadFileLength (0 ms)
+19: [----------] 9 tests from DownloadTests (1 ms total)
+19: 
+19: [----------] Global test environment tear-down
+19: [==========] 9 tests from 1 test suite ran. (2 ms total)
+19: [  PASSED  ] 9 tests.
+19/31 Test #19: cpr_download_tests ...............   Passed    0.01 sec
+test 20
+      Start 20: cpr_interceptor_tests
+
+20: Test command: /build/cpr-git/src/build/bin/interceptor_tests
+20: Working Directory: /build/cpr-git/src/build/test
+20: Test timeout computed to be: 10000000
+20: [==========] Running 16 tests from 1 test suite.
+20: [----------] Global test environment set-up.
+20: [----------] 16 tests from InterceptorTest
+20: [ RUN      ] InterceptorTest.HiddenUrlRewriteInterceptorTest
+20: [       OK ] InterceptorTest.HiddenUrlRewriteInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.ChangeStatusCodeInterceptorTest
+20: [       OK ] InterceptorTest.ChangeStatusCodeInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.RetryInterceptorTest
+20: [       OK ] InterceptorTest.RetryInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.DownloadChangeStatusCodeInterceptorTest
+20: [       OK ] InterceptorTest.DownloadChangeStatusCodeInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.SetBasicAuthInterceptorTest
+20: [       OK ] InterceptorTest.SetBasicAuthInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.SetUnsupportedProtocolErrorInterceptorTest
+20: [       OK ] InterceptorTest.SetUnsupportedProtocolErrorInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.ChangeRequestMethodToGetInterceptorTest
+20: [       OK ] InterceptorTest.ChangeRequestMethodToGetInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.ChangeRequestMethodToPostInterceptorTest
+20: [       OK ] InterceptorTest.ChangeRequestMethodToPostInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.ChangeRequestMethodToPutInterceptorTest
+20: [       OK ] InterceptorTest.ChangeRequestMethodToPutInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.ChangeRequestMethodToPatchInterceptorTest
+20: [       OK ] InterceptorTest.ChangeRequestMethodToPatchInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.ChangeRequestMethodToOptionsInterceptorTest
+20: [       OK ] InterceptorTest.ChangeRequestMethodToOptionsInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.ChangeRequestMethodToHeadInterceptorTest
+20: [       OK ] InterceptorTest.ChangeRequestMethodToHeadInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.ChangeRequestMethodToDownloadCallbackInterceptorTest
+20: [       OK ] InterceptorTest.ChangeRequestMethodToDownloadCallbackInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.ChangeRequestMethodToDeleteInterceptorTest
+20: [       OK ] InterceptorTest.ChangeRequestMethodToDeleteInterceptorTest (0 ms)
+20: [ RUN      ] InterceptorTest.TwoInterceptorsTest
+20: [       OK ] InterceptorTest.TwoInterceptorsTest (0 ms)
+20: [ RUN      ] InterceptorTest.ThreeInterceptorsTest
+20: [       OK ] InterceptorTest.ThreeInterceptorsTest (0 ms)
+20: [----------] 16 tests from InterceptorTest (2 ms total)
+20: 
+20: [----------] Global test environment tear-down
+20: [==========] 16 tests from 1 test suite ran. (2 ms total)
+20: [  PASSED  ] 16 tests.
+20/31 Test #20: cpr_interceptor_tests ............   Passed    0.01 sec
+test 21
+      Start 21: cpr_interceptor_multi_tests
+
+21: Test command: /build/cpr-git/src/build/bin/interceptor_multi_tests
+21: Working Directory: /build/cpr-git/src/build/test
+21: Test timeout computed to be: 10000000
+21: [==========] Running 16 tests from 1 test suite.
+21: [----------] Global test environment set-up.
+21: [----------] 16 tests from InterceptorMultiTest
+21: [ RUN      ] InterceptorMultiTest.HiddenUrlRewriteInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.HiddenUrlRewriteInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeStatusCodeInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.ChangeStatusCodeInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.DownloadChangeStatusCodeInterceptorMultiTest
+21: PrepareSessions failed: Undefined HttpMethod or download without arguments!
+21: [       OK ] InterceptorMultiTest.DownloadChangeStatusCodeInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.SetBasicAuthInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.SetBasicAuthInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.SetUnsupportedProtocolErrorInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.SetUnsupportedProtocolErrorInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeRequestMethodToGetInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.ChangeRequestMethodToGetInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeRequestMethodToPostInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.ChangeRequestMethodToPostInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeRequestMethodToPutInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.ChangeRequestMethodToPutInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeRequestMethodToPatchInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.ChangeRequestMethodToPatchInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeRequestMethodToOptionsInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.ChangeRequestMethodToOptionsInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeRequestMethodToHeadInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.ChangeRequestMethodToHeadInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeRequestMethodToDownloadCallbackInterceptorMultiTest
+21: PrepareSessions failed: Undefined HttpMethod or download without arguments!
+21: [       OK ] InterceptorMultiTest.ChangeRequestMethodToDownloadCallbackInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeRequestMethodToDownloadCallbackInterceptorMultiMixTest
+21: [       OK ] InterceptorMultiTest.ChangeRequestMethodToDownloadCallbackInterceptorMultiMixTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ChangeRequestMethodToDeleteInterceptorMultiTest
+21: [       OK ] InterceptorMultiTest.ChangeRequestMethodToDeleteInterceptorMultiTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.TwoInterceptorMultisTest
+21: [       OK ] InterceptorMultiTest.TwoInterceptorMultisTest (0 ms)
+21: [ RUN      ] InterceptorMultiTest.ThreeInterceptorMultisTest
+21: [       OK ] InterceptorMultiTest.ThreeInterceptorMultisTest (0 ms)
+21: [----------] 16 tests from InterceptorMultiTest (2 ms total)
+21: 
+21: [----------] Global test environment tear-down
+21: [==========] 16 tests from 1 test suite ran. (2 ms total)
+21: [  PASSED  ] 16 tests.
+21/31 Test #21: cpr_interceptor_multi_tests ......   Passed    0.01 sec
+test 22
+      Start 22: cpr_multiperform_tests
+
+22: Test command: /build/cpr-git/src/build/bin/multiperform_tests
+22: Working Directory: /build/cpr-git/src/build/test
+22: Test timeout computed to be: 10000000
+22: [==========] Running 39 tests from 13 test suites.
+22: [----------] Global test environment set-up.
+22: [----------] 6 tests from MultiperformAddSessionTests
+22: [ RUN      ] MultiperformAddSessionTests.MultiperformAddSingleSessionTest
+22: [       OK ] MultiperformAddSessionTests.MultiperformAddSingleSessionTest (0 ms)
+22: [ RUN      ] MultiperformAddSessionTests.MultiperformAddMultipleSessionsTest
+22: [       OK ] MultiperformAddSessionTests.MultiperformAddMultipleSessionsTest (0 ms)
+22: [ RUN      ] MultiperformAddSessionTests.MultiperformAddMultipleNonDownloadSessionsTest
+22: [       OK ] MultiperformAddSessionTests.MultiperformAddMultipleNonDownloadSessionsTest (0 ms)
+22: [ RUN      ] MultiperformAddSessionTests.MultiperformAddMultipleDownloadSessionsTest
+22: [       OK ] MultiperformAddSessionTests.MultiperformAddMultipleDownloadSessionsTest (0 ms)
+22: [ RUN      ] MultiperformAddSessionTests.MultiperformAddTwoMixedTypeSessionsTest
+22: [       OK ] MultiperformAddSessionTests.MultiperformAddTwoMixedTypeSessionsTest (0 ms)
+22: [ RUN      ] MultiperformAddSessionTests.MultiperformAddTwoMixedTypeSessionsReversTest
+22: [       OK ] MultiperformAddSessionTests.MultiperformAddTwoMixedTypeSessionsReversTest (0 ms)
+22: [----------] 6 tests from MultiperformAddSessionTests (0 ms total)
+22: 
+22: [----------] 4 tests from MultiperformRemoveSessionTests
+22: [ RUN      ] MultiperformRemoveSessionTests.MultiperformRemoveSingleSessionTest
+22: [       OK ] MultiperformRemoveSessionTests.MultiperformRemoveSingleSessionTest (0 ms)
+22: [ RUN      ] MultiperformRemoveSessionTests.MultiperformRemoveMultipleSessionsTest
+22: [       OK ] MultiperformRemoveSessionTests.MultiperformRemoveMultipleSessionsTest (0 ms)
+22: [ RUN      ] MultiperformRemoveSessionTests.MultiperformRemoveNonExistingSessionEmptyTest
+22: [       OK ] MultiperformRemoveSessionTests.MultiperformRemoveNonExistingSessionEmptyTest (0 ms)
+22: [ RUN      ] MultiperformRemoveSessionTests.MultiperformRemoveNonExistingSessionTest
+22: [       OK ] MultiperformRemoveSessionTests.MultiperformRemoveNonExistingSessionTest (0 ms)
+22: [----------] 4 tests from MultiperformRemoveSessionTests (0 ms total)
+22: 
+22: [----------] 6 tests from MultiperformGetTests
+22: [ RUN      ] MultiperformGetTests.MultiperformSingleSessionGetTest
+22: [       OK ] MultiperformGetTests.MultiperformSingleSessionGetTest (0 ms)
+22: [ RUN      ] MultiperformGetTests.MultiperformTwoSessionsGetTest
+22: [       OK ] MultiperformGetTests.MultiperformTwoSessionsGetTest (0 ms)
+22: [ RUN      ] MultiperformGetTests.MultiperformRemoveSessionGetTest
+22: [       OK ] MultiperformGetTests.MultiperformRemoveSessionGetTest (0 ms)
+22: [ RUN      ] MultiperformGetTests.MultiperformSingleSessionMultiGetTest
+22: [       OK ] MultiperformGetTests.MultiperformSingleSessionMultiGetTest (0 ms)
+22: [ RUN      ] MultiperformGetTests.MultiperformAssignAfterUseTest
+22: [       OK ] MultiperformGetTests.MultiperformAssignAfterUseTest (0 ms)
+22: [ RUN      ] MultiperformGetTests.MultiperformTenSessionsGetTest
+22: [       OK ] MultiperformGetTests.MultiperformTenSessionsGetTest (0 ms)
+22: [----------] 6 tests from MultiperformGetTests (1 ms total)
+22: 
+22: [----------] 1 test from MultiperformDeleteTests
+22: [ RUN      ] MultiperformDeleteTests.MultiperformSingleSessionDeleteTest
+22: [       OK ] MultiperformDeleteTests.MultiperformSingleSessionDeleteTest (0 ms)
+22: [----------] 1 test from MultiperformDeleteTests (0 ms total)
+22: 
+22: [----------] 4 tests from MultiperformDownloadTests
+22: [ RUN      ] MultiperformDownloadTests.MultiperformSingleSessionDownloadTest
+22: [       OK ] MultiperformDownloadTests.MultiperformSingleSessionDownloadTest (0 ms)
+22: [ RUN      ] MultiperformDownloadTests.MultiperformSingleSessionDownloadNonMatchingArgumentsNumberTest
+22: [       OK ] MultiperformDownloadTests.MultiperformSingleSessionDownloadNonMatchingArgumentsNumberTest (0 ms)
+22: [ RUN      ] MultiperformDownloadTests.MultiperformTwoSessionsDownloadTest
+22: [       OK ] MultiperformDownloadTests.MultiperformTwoSessionsDownloadTest (0 ms)
+22: [ RUN      ] MultiperformDownloadTests.MultiperformSinglePerformDownloadNonMatchingArgumentsNumberTest
+22: [       OK ] MultiperformDownloadTests.MultiperformSinglePerformDownloadNonMatchingArgumentsNumberTest (0 ms)
+22: [----------] 4 tests from MultiperformDownloadTests (0 ms total)
+22: 
+22: [----------] 1 test from MultiperformPutTests
+22: [ RUN      ] MultiperformPutTests.MultiperformSingleSessionPutTest
+22: [       OK ] MultiperformPutTests.MultiperformSingleSessionPutTest (0 ms)
+22: [----------] 1 test from MultiperformPutTests (0 ms total)
+22: 
+22: [----------] 1 test from MultiperformHeadTests
+22: [ RUN      ] MultiperformHeadTests.MultiperformSingleSessionHeadTest
+22: [       OK ] MultiperformHeadTests.MultiperformSingleSessionHeadTest (0 ms)
+22: [----------] 1 test from MultiperformHeadTests (0 ms total)
+22: 
+22: [----------] 1 test from MultiperformOptionsTests
+22: [ RUN      ] MultiperformOptionsTests.MultiperformSingleSessionOptionsTest
+22: [       OK ] MultiperformOptionsTests.MultiperformSingleSessionOptionsTest (0 ms)
+22: [----------] 1 test from MultiperformOptionsTests (0 ms total)
+22: 
+22: [----------] 1 test from MultiperformPatchTests
+22: [ RUN      ] MultiperformPatchTests.MultiperformSingleSessionPatchTest
+22: [       OK ] MultiperformPatchTests.MultiperformSingleSessionPatchTest (0 ms)
+22: [----------] 1 test from MultiperformPatchTests (0 ms total)
+22: 
+22: [----------] 1 test from MultiperformPostTests
+22: [ RUN      ] MultiperformPostTests.MultiperformSingleSessionPostTest
+22: [       OK ] MultiperformPostTests.MultiperformSingleSessionPostTest (0 ms)
+22: [----------] 1 test from MultiperformPostTests (0 ms total)
+22: 
+22: [----------] 3 tests from MultiperformPerformTests
+22: [ RUN      ] MultiperformPerformTests.MultiperformSingleGetPerformTest
+22: [       OK ] MultiperformPerformTests.MultiperformSingleGetPerformTest (0 ms)
+22: [ RUN      ] MultiperformPerformTests.MultiperformTwoGetPerformTest
+22: [       OK ] MultiperformPerformTests.MultiperformTwoGetPerformTest (0 ms)
+22: [ RUN      ] MultiperformPerformTests.MultiperformMixedMethodsPerformTest
+22: [       OK ] MultiperformPerformTests.MultiperformMixedMethodsPerformTest (0 ms)
+22: [----------] 3 tests from MultiperformPerformTests (0 ms total)
+22: 
+22: [----------] 2 tests from MultiperformPerformDownloadTests
+22: [ RUN      ] MultiperformPerformDownloadTests.MultiperformSinglePerformDownloadTest
+22: [       OK ] MultiperformPerformDownloadTests.MultiperformSinglePerformDownloadTest (0 ms)
+22: [ RUN      ] MultiperformPerformDownloadTests.MultiperformTwoPerformDownloadTest
+22: [       OK ] MultiperformPerformDownloadTests.MultiperformTwoPerformDownloadTest (0 ms)
+22: [----------] 2 tests from MultiperformPerformDownloadTests (0 ms total)
+22: 
+22: [----------] 8 tests from MultiperformAPITests
+22: [ RUN      ] MultiperformAPITests.MultiperformApiSingleGetTest
+22: [       OK ] MultiperformAPITests.MultiperformApiSingleGetTest (0 ms)
+22: [ RUN      ] MultiperformAPITests.MultiperformApiTwoGetsTest
+22: [       OK ] MultiperformAPITests.MultiperformApiTwoGetsTest (2000 ms)
+22: [ RUN      ] MultiperformAPITests.MultiperformApiSingleDeleteTest
+22: [       OK ] MultiperformAPITests.MultiperformApiSingleDeleteTest (0 ms)
+22: [ RUN      ] MultiperformAPITests.MultiperformApiSinglePutTest
+22: [       OK ] MultiperformAPITests.MultiperformApiSinglePutTest (0 ms)
+22: [ RUN      ] MultiperformAPITests.MultiperformApiSingleHeadTest
+22: [       OK ] MultiperformAPITests.MultiperformApiSingleHeadTest (0 ms)
+22: [ RUN      ] MultiperformAPITests.MultiperformApiSingleOptionsTest
+22: [       OK ] MultiperformAPITests.MultiperformApiSingleOptionsTest (0 ms)
+22: [ RUN      ] MultiperformAPITests.MultiperformApiSinglePatchTest
+22: [       OK ] MultiperformAPITests.MultiperformApiSinglePatchTest (0 ms)
+22: [ RUN      ] MultiperformAPITests.MultiperformApiSinglePostTest
+22: [       OK ] MultiperformAPITests.MultiperformApiSinglePostTest (0 ms)
+22: [----------] 8 tests from MultiperformAPITests (2002 ms total)
+22: 
+22: [----------] Global test environment tear-down
+22: [==========] 39 tests from 13 test suites ran. (2106 ms total)
+22: [  PASSED  ] 39 tests.
+22/31 Test #22: cpr_multiperform_tests ...........   Passed    2.11 sec
+test 23
+      Start 23: cpr_resolve_tests
+
+23: Test command: /build/cpr-git/src/build/bin/resolve_tests
+23: Working Directory: /build/cpr-git/src/build/test
+23: Test timeout computed to be: 10000000
+23: [==========] Running 2 tests from 1 test suite.
+23: [----------] Global test environment set-up.
+23: [----------] 2 tests from ResolveTests
+23: [ RUN      ] ResolveTests.HelloWorldTest
+23: [       OK ] ResolveTests.HelloWorldTest (0 ms)
+23: [ RUN      ] ResolveTests.RedirectMultiple
+23: [       OK ] ResolveTests.RedirectMultiple (0 ms)
+23: [----------] 2 tests from ResolveTests (1 ms total)
+23: 
+23: [----------] Global test environment tear-down
+23: [==========] 2 tests from 1 test suite ran. (1 ms total)
+23: [  PASSED  ] 2 tests.
+23/31 Test #23: cpr_resolve_tests ................   Passed    0.01 sec
+test 24
+      Start 24: cpr_multiasync_tests
+
+24: Test command: /build/cpr-git/src/build/bin/multiasync_tests
+24: Working Directory: /build/cpr-git/src/build/test
+24: Test timeout computed to be: 10000000
+24: [==========] Running 17 tests from 5 test suites.
+24: [----------] Global test environment set-up.
+24: [----------] 1 test from AsyncWrapperTests
+24: [ RUN      ] AsyncWrapperTests.TestConstructorDeductions
+24: [       OK ] AsyncWrapperTests.TestConstructorDeductions (0 ms)
+24: [----------] 1 test from AsyncWrapperTests (0 ms total)
+24: 
+24: [----------] 2 tests from AsyncWrapperNonCancellableTests
+24: [ RUN      ] AsyncWrapperNonCancellableTests.TestGetNoError
+24: [       OK ] AsyncWrapperNonCancellableTests.TestGetNoError (1 ms)
+24: [ RUN      ] AsyncWrapperNonCancellableTests.TestExceptionsNoSharedState
+24: [       OK ] AsyncWrapperNonCancellableTests.TestExceptionsNoSharedState (0 ms)
+24: [----------] 2 tests from AsyncWrapperNonCancellableTests (1 ms total)
+24: 
+24: [----------] 3 tests from AsyncWrapperCancellableTests
+24: [ RUN      ] AsyncWrapperCancellableTests.TestExceptionsNoSharedState
+24: [       OK ] AsyncWrapperCancellableTests.TestExceptionsNoSharedState (0 ms)
+24: [ RUN      ] AsyncWrapperCancellableTests.TestExceptionsCancelledRequest
+24: [       OK ] AsyncWrapperCancellableTests.TestExceptionsCancelledRequest (0 ms)
+24: [ RUN      ] AsyncWrapperCancellableTests.TestWaitFor
+24: [       OK ] AsyncWrapperCancellableTests.TestWaitFor (110 ms)
+24: [----------] 3 tests from AsyncWrapperCancellableTests (110 ms total)
+24: 
+24: [----------] 7 tests from MultiAsyncBasicTests
+24: [ RUN      ] MultiAsyncBasicTests.MultiAsyncGetTest
+24: [       OK ] MultiAsyncBasicTests.MultiAsyncGetTest (1990 ms)
+24: [ RUN      ] MultiAsyncBasicTests.MultiAsyncDeleteTest
+24: [       OK ] MultiAsyncBasicTests.MultiAsyncDeleteTest (0 ms)
+24: [ RUN      ] MultiAsyncBasicTests.MultiAsyncHeadTest
+24: [       OK ] MultiAsyncBasicTests.MultiAsyncHeadTest (0 ms)
+24: [ RUN      ] MultiAsyncBasicTests.MultiAsyncOptionsTest
+24: [       OK ] MultiAsyncBasicTests.MultiAsyncOptionsTest (0 ms)
+24: [ RUN      ] MultiAsyncBasicTests.MultiAsyncPatchTest
+24: [       OK ] MultiAsyncBasicTests.MultiAsyncPatchTest (0 ms)
+24: [ RUN      ] MultiAsyncBasicTests.MultiAsyncPostTest
+24: [       OK ] MultiAsyncBasicTests.MultiAsyncPostTest (1 ms)
+24: [ RUN      ] MultiAsyncBasicTests.MultiAsyncPutTest
+24: [       OK ] MultiAsyncBasicTests.MultiAsyncPutTest (0 ms)
+24: [----------] 7 tests from MultiAsyncBasicTests (1992 ms total)
+24: 
+24: [----------] 4 tests from MultiAsyncCancelTests
+24: [ RUN      ] MultiAsyncCancelTests.CancellationOnQueue
+24: [       OK ] MultiAsyncCancelTests.CancellationOnQueue (0 ms)
+24: [ RUN      ] MultiAsyncCancelTests.TestCancellationInTransit
+24: [       OK ] MultiAsyncCancelTests.TestCancellationInTransit (101 ms)
+24: [ RUN      ] MultiAsyncCancelTests.TestCancellationOnResponseWrapperDestruction
+24: [       OK ] MultiAsyncCancelTests.TestCancellationOnResponseWrapperDestruction (100 ms)
+24: [ RUN      ] MultiAsyncCancelTests.TestIntervalOfProgressCallsLowSpeed
+24: [       OK ] MultiAsyncCancelTests.TestIntervalOfProgressCallsLowSpeed (3103 ms)
+24: [----------] 4 tests from MultiAsyncCancelTests (3305 ms total)
+24: 
+24: [----------] Global test environment tear-down
+24: [==========] 17 tests from 5 test suites ran. (5508 ms total)
+24: [  PASSED  ] 17 tests.
+24/31 Test #24: cpr_multiasync_tests .............   Passed    5.51 sec
+test 25
+      Start 25: cpr_file_upload_tests
+
+25: Test command: /build/cpr-git/src/build/bin/file_upload_tests
+25: Working Directory: /build/cpr-git/src/build/test
+25: Test timeout computed to be: 10000000
+25: [==========] Running 3 tests from 1 test suite.
+25: [----------] Global test environment set-up.
+25: [----------] 3 tests from FileUploadTests
+25: [ RUN      ] FileUploadTests.AsciiFileName
+25: [       OK ] FileUploadTests.AsciiFileName (1 ms)
+25: [ RUN      ] FileUploadTests.NonAsciiFileName
+25: [       OK ] FileUploadTests.NonAsciiFileName (0 ms)
+25: [ RUN      ] FileUploadTests.ChineseFileName
+25: [       OK ] FileUploadTests.ChineseFileName (0 ms)
+25: [----------] 3 tests from FileUploadTests (2 ms total)
+25: 
+25: [----------] Global test environment tear-down
+25: [==========] 3 tests from 1 test suite ran. (102 ms total)
+25: [  PASSED  ] 3 tests.
+25/31 Test #25: cpr_file_upload_tests ............   Passed    0.11 sec
+test 26
+      Start 26: cpr_singleton_tests
+
+26: Test command: /build/cpr-git/src/build/bin/singleton_tests
+26: Working Directory: /build/cpr-git/src/build/test
+26: Test timeout computed to be: 10000000
+26: [==========] Running 2 tests from 1 test suite.
+26: [----------] Global test environment set-up.
+26: [----------] 2 tests from SingletonTests
+26: [ RUN      ] SingletonTests.GetInstanceTest
+26: [       OK ] SingletonTests.GetInstanceTest (0 ms)
+26: [ RUN      ] SingletonTests.ExitInstanceTest
+26: [       OK ] SingletonTests.ExitInstanceTest (0 ms)
+26: [----------] 2 tests from SingletonTests (0 ms total)
+26: 
+26: [----------] Global test environment tear-down
+26: [==========] 2 tests from 1 test suite ran. (0 ms total)
+26: [  PASSED  ] 2 tests.
+26/31 Test #26: cpr_singleton_tests ..............   Passed    0.00 sec
+test 27
+      Start 27: cpr_threadpool_tests
+
+27: Test command: /build/cpr-git/src/build/bin/threadpool_tests
+27: Working Directory: /build/cpr-git/src/build/test
+27: Test timeout computed to be: 10000000
+27: [==========] Running 0 tests from 0 test suites.
+27: [==========] 0 tests from 0 test suites ran. (0 ms total)
+27: [  PASSED  ] 0 tests.
+27: 
+27:   YOU HAVE 4 DISABLED TESTS
+27: 
+27/31 Test #27: cpr_threadpool_tests .............   Passed    0.00 sec
+test 28
+      Start 28: cpr_testUtils_tests
+
+28: Test command: /build/cpr-git/src/build/bin/testUtils_tests
+28: Working Directory: /build/cpr-git/src/build/test
+28: Test timeout computed to be: 10000000
+28: [==========] Running 1 test from 1 test suite.
+28: [----------] Global test environment set-up.
+28: [----------] 1 test from TestUtils
+28: [ RUN      ] TestUtils.GetUnusedPort
+28: [       OK ] TestUtils.GetUnusedPort (0 ms)
+28: [----------] 1 test from TestUtils (0 ms total)
+28: 
+28: [----------] Global test environment tear-down
+28: [==========] 1 test from 1 test suite ran. (0 ms total)
+28: [  PASSED  ] 1 test.
+28/31 Test #28: cpr_testUtils_tests ..............   Passed    0.00 sec
+test 29
+      Start 29: cpr_connection_pool_tests
+
+29: Test command: /build/cpr-git/src/build/bin/connection_pool_tests
+29: Working Directory: /build/cpr-git/src/build/test
+29: Test timeout computed to be: 10000000
+29: [==========] Running 2 tests from 1 test suite.
+29: [----------] Global test environment set-up.
+29: [----------] 2 tests from MultipleGetTests
+29: [ RUN      ] MultipleGetTests.PoolBasicMultipleGetTest
+29: [       OK ] MultipleGetTests.PoolBasicMultipleGetTest (2 ms)
+29: [ RUN      ] MultipleGetTests.PoolAsyncGetMultipleTest
+29: [       OK ] MultipleGetTests.PoolAsyncGetMultipleTest (11 ms)
+29: [----------] 2 tests from MultipleGetTests (13 ms total)
+29: 
+29: [----------] Global test environment tear-down
+29: [==========] 2 tests from 1 test suite ran. (13 ms total)
+29: [  PASSED  ] 2 tests.
+29/31 Test #29: cpr_connection_pool_tests ........   Passed    0.02 sec
+test 30
+      Start 30: cpr_sse_tests
+
+30: Test command: /build/cpr-git/src/build/bin/sse_tests
+30: Working Directory: /build/cpr-git/src/build/test
+30: Test timeout computed to be: 10000000
+30: [==========] Running 15 tests from 1 test suite.
+30: [----------] Global test environment set-up.
+30: [----------] 15 tests from SSETests
+30: [ RUN      ] SSETests.SSEParserBasicTest
+30: [       OK ] SSETests.SSEParserBasicTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserMultilineDataTest
+30: [       OK ] SSETests.SSEParserMultilineDataTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserWithEventTypeTest
+30: [       OK ] SSETests.SSEParserWithEventTypeTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserWithIdTest
+30: [       OK ] SSETests.SSEParserWithIdTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserWithRetryTest
+30: [       OK ] SSETests.SSEParserWithRetryTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserCompleteEventTest
+30: [       OK ] SSETests.SSEParserCompleteEventTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserMultipleEventsTest
+30: [       OK ] SSETests.SSEParserMultipleEventsTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserIgnoreCommentsTest
+30: [       OK ] SSETests.SSEParserIgnoreCommentsTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserIgnoreEmptyDataTest
+30: [       OK ] SSETests.SSEParserIgnoreEmptyDataTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserChunkedDataTest
+30: [       OK ] SSETests.SSEParserChunkedDataTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserCRLFTest
+30: [       OK ] SSETests.SSEParserCRLFTest (0 ms)
+30: [ RUN      ] SSETests.SSEParserFieldWithoutColonTest
+30: [       OK ] SSETests.SSEParserFieldWithoutColonTest (0 ms)
+30: [ RUN      ] SSETests.SSECallbackTest
+30: [       OK ] SSETests.SSECallbackTest (0 ms)
+30: [ RUN      ] SSETests.SSECallbackHandleDataTest
+30: [       OK ] SSETests.SSECallbackHandleDataTest (0 ms)
+30: [ RUN      ] SSETests.SSECallbackAbortTest
+30: [       OK ] SSETests.SSECallbackAbortTest (0 ms)
+30: [----------] 15 tests from SSETests (0 ms total)
+30: 
+30: [----------] Global test environment tear-down
+30: [==========] 15 tests from 1 test suite ran. (100 ms total)
+30: [  PASSED  ] 15 tests.
+30/31 Test #30: cpr_sse_tests ....................   Passed    0.10 sec
+test 31
+      Start 31: cpr_ssl_tests
+
+31: Test command: /build/cpr-git/src/build/bin/ssl_tests
+31: Working Directory: /build/cpr-git/src/build/test
+31: Test timeout computed to be: 10000000
+31: [==========] Running 7 tests from 1 test suite.
+31: [----------] Global test environment set-up.
+31: [----------] 7 tests from SslTests
+31: [ RUN      ] SslTests.HelloWorldTestSimpel
+31: *   Trying 127.0.0.1:61937...
+31: * ALPN: curl offers h2,http/1.1
+31: * SSL Trust Anchors:
+31: *   CAfile: /build/cpr-git/src/build/bin/data/certificates/ca-bundle.crt
+31: * SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / ED25519
+31: * ALPN: server did not agree on a protocol. Uses default.
+31: * Server certificate:
+31: *   subject: CN=test-server
+31: *   start date: May  7 10:18:22 2024 GMT
+31: *   expire date: May  6 10:18:22 2029 GMT
+31: *   issuer: C=GB; O=Example; CN=Sub CA
+31: *   Certificate level 0: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   Certificate level 1: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   subjectAltName: "127.0.0.1" matches cert's IP address!
+31: * SSL certificate verified via OpenSSL.
+31: * Established connection to 127.0.0.1 (127.0.0.1 port 61937) from 127.0.0.1 port 58702 
+31: * using HTTP/1.x
+31: > GET /hello.html HTTP/1.1
+31: Host: 127.0.0.1:61937
+31: User-Agent: curl/8.17.0
+31: Accept: */*
+31: Accept-Encoding: deflate, gzip, br, zstd
+31: 
+31: < HTTP/1.1 200 OK
+31: < Content-Type: text/html
+31: < Content-Length: 12
+31: < 
+31: * Connection #0 to host 127.0.0.1:61937 left intact
+31: [       OK ] SslTests.HelloWorldTestSimpel (1005 ms)
+31: [ RUN      ] SslTests.HelloWorldTestFull
+31: *   Trying 127.0.0.1:61937...
+31: * SSL Trust Anchors:
+31: *   CAfile: /build/cpr-git/src/build/bin/data/certificates/ca-bundle.crt
+31: * SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / ED25519
+31: * Server certificate:
+31: *   subject: CN=test-server
+31: *   start date: May  7 10:18:22 2024 GMT
+31: *   expire date: May  6 10:18:22 2029 GMT
+31: *   issuer: C=GB; O=Example; CN=Sub CA
+31: *   Certificate level 0: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   Certificate level 1: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   subjectAltName: "127.0.0.1" matches cert's IP address!
+31: * SSL certificate verified via OpenSSL.
+31: * Established connection to 127.0.0.1 (127.0.0.1 port 61937) from 127.0.0.1 port 58712 
+31: * using HTTP/1.x
+31: > GET /hello.html HTTP/1.1
+31: Host: 127.0.0.1:61937
+31: User-Agent: curl/8.17.0
+31: Accept: */*
+31: Accept-Encoding: deflate, gzip, br, zstd
+31: 
+31: < HTTP/1.1 200 OK
+31: < Content-Type: text/html
+31: < Content-Length: 12
+31: < 
+31: * Connection #0 to host 127.0.0.1:61937 left intact
+31: [       OK ] SslTests.HelloWorldTestFull (1002 ms)
+31: [ RUN      ] SslTests.GetCertInfos
+31: *   Trying 127.0.0.1:61937...
+31: * ALPN: curl offers h2,http/1.1
+31: * SSL Trust Anchors:
+31: *   CAfile: /build/cpr-git/src/build/bin/data/certificates/ca-bundle.crt
+31: * SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / ED25519
+31: * ALPN: server did not agree on a protocol. Uses default.
+31: * Server certificate:
+31: *   subject: CN=test-server
+31: *   start date: May  7 10:18:22 2024 GMT
+31: *   expire date: May  6 10:18:22 2029 GMT
+31: *   issuer: C=GB; O=Example; CN=Sub CA
+31: *   Certificate level 0: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   Certificate level 1: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   subjectAltName: "127.0.0.1" matches cert's IP address!
+31: * SSL certificate verified via OpenSSL.
+31: * Established connection to 127.0.0.1 (127.0.0.1 port 61937) from 127.0.0.1 port 58720 
+31: * using HTTP/1.x
+31: > GET /hello.html HTTP/1.1
+31: Host: 127.0.0.1:61937
+31: User-Agent: curl/8.17.0
+31: Accept: */*
+31: Accept-Encoding: deflate, gzip, br, zstd
+31: 
+31: < HTTP/1.1 200 OK
+31: < Content-Type: text/html
+31: < Content-Length: 12
+31: < 
+31: * Connection #0 to host 127.0.0.1:61937 left intact
+31: 
+31: [       OK ] SslTests.GetCertInfos (1002 ms)
+31: [ RUN      ] SslTests.LoadCertFromBufferTestSimpel
+31: *   Trying 127.0.0.1:61937...
+31: * SSL Trust Anchors:
+31: *   CAfile: /etc/ssl/certs/ca-certificates.crt
+31: * ALPN: curl offers h2,http/1.1
+31: * SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / ED25519
+31: * ALPN: server did not agree on a protocol. Uses default.
+31: * Server certificate:
+31: *   subject: CN=test-server
+31: *   start date: May  7 10:18:22 2024 GMT
+31: *   expire date: May  6 10:18:22 2029 GMT
+31: *   issuer: C=GB; O=Example; CN=Sub CA
+31: *   Certificate level 0: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   Certificate level 1: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   subjectAltName: "127.0.0.1" matches cert's IP address!
+31: * SSL certificate verified via OpenSSL.
+31: * Established connection to 127.0.0.1 (127.0.0.1 port 61937) from 127.0.0.1 port 58724 
+31: * using HTTP/1.x
+31: > GET /hello.html HTTP/1.1
+31: Host: 127.0.0.1:61937
+31: User-Agent: curl/8.17.0
+31: Accept: */*
+31: Accept-Encoding: deflate, gzip, br, zstd
+31: 
+31: < HTTP/1.1 200 OK
+31: < Content-Type: text/html
+31: < Content-Length: 12
+31: < 
+31: * Connection #0 to host 127.0.0.1:61937 left intact
+31: [       OK ] SslTests.LoadCertFromBufferTestSimpel (1008 ms)
+31: [ RUN      ] SslTests.LoadCertFromBlobTestSimpel
+31: *   Trying 127.0.0.1:61937...
+31: * ALPN: curl offers h2,http/1.1
+31: * SSL Trust Anchors:
+31: *   CAfile: /build/cpr-git/src/build/bin/data/certificates/ca-bundle.crt
+31: * SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / ED25519
+31: * ALPN: server did not agree on a protocol. Uses default.
+31: * Server certificate:
+31: *   subject: CN=test-server
+31: *   start date: May  7 10:18:22 2024 GMT
+31: *   expire date: May  6 10:18:22 2029 GMT
+31: *   issuer: C=GB; O=Example; CN=Sub CA
+31: *   Certificate level 0: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   Certificate level 1: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   subjectAltName: "127.0.0.1" matches cert's IP address!
+31: * SSL certificate verified via OpenSSL.
+31: * Established connection to 127.0.0.1 (127.0.0.1 port 61937) from 127.0.0.1 port 58734 
+31: * using HTTP/1.x
+31: > GET /hello.html HTTP/1.1
+31: Host: 127.0.0.1:61937
+31: User-Agent: curl/8.17.0
+31: Accept: */*
+31: Accept-Encoding: deflate, gzip, br, zstd
+31: 
+31: < HTTP/1.1 200 OK
+31: < Content-Type: text/html
+31: < Content-Length: 12
+31: < 
+31: * Connection #0 to host 127.0.0.1:61937 left intact
+31: [       OK ] SslTests.LoadCertFromBlobTestSimpel (1002 ms)
+31: [ RUN      ] SslTests.LoadKeyFromBlobTestSimpel
+31: *   Trying 127.0.0.1:61937...
+31: * ALPN: curl offers h2,http/1.1
+31: * SSL Trust Anchors:
+31: *   CAfile: /build/cpr-git/src/build/bin/data/certificates/ca-bundle.crt
+31: * SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / ED25519
+31: * ALPN: server did not agree on a protocol. Uses default.
+31: * Server certificate:
+31: *   subject: CN=test-server
+31: *   start date: May  7 10:18:22 2024 GMT
+31: *   expire date: May  6 10:18:22 2029 GMT
+31: *   issuer: C=GB; O=Example; CN=Sub CA
+31: *   Certificate level 0: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   Certificate level 1: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   subjectAltName: "127.0.0.1" matches cert's IP address!
+31: * SSL certificate verified via OpenSSL.
+31: * Established connection to 127.0.0.1 (127.0.0.1 port 61937) from 127.0.0.1 port 54804 
+31: * using HTTP/1.x
+31: > GET /hello.html HTTP/1.1
+31: Host: 127.0.0.1:61937
+31: User-Agent: curl/8.17.0
+31: Accept: */*
+31: Accept-Encoding: deflate, gzip, br, zstd
+31: 
+31: * Request completely sent off
+31: < HTTP/1.1 200 OK
+31: < Content-Type: text/html
+31: < Content-Length: 12
+31: < 
+31: * Connection #0 to host 127.0.0.1:61937 left intact
+31: [       OK ] SslTests.LoadKeyFromBlobTestSimpel (1002 ms)
+31: [ RUN      ] SslTests.CaInfoBlobTestSimpel
+31: *   Trying 127.0.0.1:61937...
+31: * ALPN: curl offers h2,http/1.1
+31: * SSL Trust Anchors:
+31: *   CA Blob from configuration
+31: * SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519MLKEM768 / ED25519
+31: * ALPN: server did not agree on a protocol. Uses default.
+31: * Server certificate:
+31: *   subject: CN=test-server
+31: *   start date: May  7 10:18:22 2024 GMT
+31: *   expire date: May  6 10:18:22 2029 GMT
+31: *   issuer: C=GB; O=Example; CN=Sub CA
+31: *   Certificate level 0: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   Certificate level 1: Public key type ED25519 (256/128 Bits/secBits), signed using ED25519
+31: *   subjectAltName: "127.0.0.1" matches cert's IP address!
+31: * SSL certificate verified via OpenSSL.
+31: * Established connection to 127.0.0.1 (127.0.0.1 port 61937) from 127.0.0.1 port 54806 
+31: * using HTTP/1.x
+31: > GET /hello.html HTTP/1.1
+31: Host: 127.0.0.1:61937
+31: User-Agent: curl/8.17.0
+31: Accept: */*
+31: Accept-Encoding: deflate, gzip, br, zstd
+31: 
+31: < HTTP/1.1 200 OK
+31: < Content-Type: text/html
+31: < Content-Length: 12
+31: < 
+31: * Connection #0 to host 127.0.0.1:61937 left intact
+31: [       OK ] SslTests.CaInfoBlobTestSimpel (1002 ms)
+31: [----------] 7 tests from SslTests (7025 ms total)
+31: 
+31: [----------] Global test environment tear-down
+31: [==========] 7 tests from 1 test suite ran. (7125 ms total)
+31: [  PASSED  ] 7 tests.
+31/31 Test #31: cpr_ssl_tests ....................   Passed    7.13 sec
+
+87% tests passed, 4 tests failed out of 31
+
+Total Test time (real) =  27.29 sec
+
+The following tests FAILED:
+	  1 - cpr_get_tests (Failed)
+	  2 - cpr_post_tests (Failed)
+	  3 - cpr_session_tests (Failed)
+	 14 - cpr_alternating_tests (Failed)
+Errors while running CTest
+Output from these tests are in: /build/cpr-git/src/build/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
