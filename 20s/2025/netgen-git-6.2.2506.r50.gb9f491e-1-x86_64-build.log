@@ -25,9 +25,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:154 (include)
 
 
-Submodule 'external_dependencies/pybind11' (https://github.com/ngsolve/pybind11.git) registered for path 'external_dependencies/pybind11'
-Cloning into '/build/netgen-git/src/netgen/external_dependencies/pybind11'...
-Submodule path 'external_dependencies/pybind11': checked out 'f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8'
 -- Found Pybind11: /build/netgen-git/src/netgen/external_dependencies/pybind11/include
 -- Found Python3: /usr/bin/python3.13 (found version "3.13.11") found components: Interpreter Development.Module
 -- Found Python3: /usr/bin/python3.13 (found version "3.13.11") found components: Interpreter Development.Embed
@@ -35,10 +32,10 @@ Submodule path 'external_dependencies/pybind11': checked out 'f5fbe867d2d26e4a0a
 -- Found TCL: /usr/lib/libtcl.so
 -- Found TCLTK: /usr/lib/libtcl.so
 -- Found TK: /usr/lib/libtk.so
--- Configuring done (3.2s)
+-- Configuring done (1.3s)
 -- Generating done (0.0s)
 -- Build files have been written to: /build/netgen-git/src/build
-[ 10%] Performing check_submodules step for 'netgen'
+[ 20%] Performing check_submodules step for 'netgen'
 [ 20%] Creating directories for 'netgen'
 [ 30%] No download step for 'netgen'
 [ 40%] No update step for 'netgen'
@@ -116,7 +113,6 @@ CMake Warning at python/CMakeLists.txt:38 (message):
   for better autocompletion support install it with pip.
 
 
-grep: /etc/lsb-release: No such file or directory
 
 ------------------------------------------------------------------------
   Netgen :  Automatic configuration OK.
@@ -152,7 +148,7 @@ grep: /etc/lsb-release: No such file or directory
 
 ------------------------------------------------------------------------
 
--- Configuring done (3.4s)
+-- Configuring done (3.2s)
 -- Generating done (0.1s)
 CMake Warning:
   Manually-specified variables were not used by the project:
@@ -164,28 +160,28 @@ CMake Warning:
 [ 70%] Performing check_submodules1 step for 'netgen'
 [ 80%] Performing build step for 'netgen'
 [  0%] Building CXX object CMakeFiles/makerls.dir/rules/makerlsfile.cpp.o
-[  0%] Building C object ng/Togl2.1/CMakeFiles/togl.dir/togl.c.o
 [  0%] Building C object ng/Togl2.1/CMakeFiles/togl.dir/toglStubInit.c.o
--- Found Git: /usr/bin/git (found version "2.52.0")
+[  1%] Building C object ng/Togl2.1/CMakeFiles/togl.dir/togl.c.o
 [  1%] Building C object ng/Togl2.1/CMakeFiles/togl.dir/toglProcAddr.c.o
+-- Found Git: /usr/bin/git (found version "2.52.0")
 [  1%] Built target ng_generate_version_file
-[  1%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/bitarray.cpp.o
-[  4%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/archive.cpp.o
-[  4%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/taskmanager.cpp.o
-[  4%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/logging.cpp.o
-[  4%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/utils.cpp.o
-[  4%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/profiler.cpp.o
+[  2%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/flags.cpp.o
+[  2%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/exception.cpp.o
+[  2%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/bitarray.cpp.o
+[  3%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/logging.cpp.o
+[  4%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/paje_trace.cpp.o
 [  5%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/localheap.cpp.o
-[  5%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/exception.cpp.o
-[  6%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/paje_trace.cpp.o
+[  5%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/archive.cpp.o
+[  5%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/profiler.cpp.o
+[  5%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/utils.cpp.o
+[  6%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/version.cpp.o
 [  6%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/ng_mpi_wrapper.cpp.o
-[  6%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/flags.cpp.o
-[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/statushandler.cpp.o
-[  8%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/version.cpp.o
-[  8%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/python_ngcore.cpp.o
-[  8%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/table.cpp.o
+[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/taskmanager.cpp.o
+[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/table.cpp.o
+[  7%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/python_ngcore.cpp.o
+[  8%] Building CXX object libsrc/core/CMakeFiles/ngcore.dir/statushandler.cpp.o
+[  8%] Linking CXX executable makerls
 [  9%] Linking C static library libtogl.a
-[  9%] Linking CXX executable makerls
 [  9%] Built target togl
 [  9%] Built target makerls
 [ 10%] Linking CXX shared library libngcore.so
@@ -212,46 +208,46 @@ In member function ‘__ct ’,
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
 [ 10%] Built target ngcore
-[ 11%] Generating rules/rule_pyramidrules.cpp
-[ 11%] Generating rules/rule_pyramidrules2.cpp
-[ 11%] Generating rules/rule_tetrules.cpp
-[ 12%] Generating rules/rule_quadrules.cpp
-[ 13%] Generating rules/rule_prismrules2.cpp
-[ 13%] Generating rules/rule_triarules.cpp
-[ 14%] Generating rules/rule_hexrules.cpp
+[ 10%] Generating rules/rule_prismrules2.cpp
+[ 11%] Generating rules/rule_hexrules.cpp
+[ 12%] Generating rules/rule_pyramidrules2.cpp
+[ 12%] Generating rules/rule_pyramidrules.cpp
+[ 12%] Generating rules/rule_tetrules.cpp
+[ 13%] Generating rules/rule_quadrules.cpp
+[ 14%] Generating rules/rule_triarules.cpp
 [ 14%] Building CXX object libsrc/core/CMakeFiles/pyngcore.dir/python_ngcore_export.cpp.o
-[ 15%] Building CXX object CMakeFiles/nglib.dir/rules/rule_prismrules2.cpp.o
-[ 15%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/hashtabl.cpp.o
-[ 16%] Building CXX object CMakeFiles/nglib.dir/rules/rule_triarules.cpp.o
-[ 16%] Building CXX object CMakeFiles/nglib.dir/rules/rule_pyramidrules2.cpp.o
-[ 17%] Building CXX object CMakeFiles/nglib.dir/rules/rule_tetrules.cpp.o
+[ 14%] Building CXX object CMakeFiles/nglib.dir/rules/rule_hexrules.cpp.o
+[ 14%] Building CXX object CMakeFiles/nglib.dir/rules/rule_prismrules2.cpp.o
+[ 14%] Building CXX object CMakeFiles/nglib.dir/rules/rule_pyramidrules2.cpp.o
+[ 15%] Building CXX object CMakeFiles/nglib.dir/rules/rule_tetrules.cpp.o
+[ 17%] Building CXX object CMakeFiles/nglib.dir/rules/rule_pyramidrules.cpp.o
 [ 17%] Building CXX object CMakeFiles/nglib.dir/rules/rule_quadrules.cpp.o
-[ 17%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/mystring.cpp.o
+[ 17%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/spbita2d.cpp.o
+[ 17%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/optmem.cpp.o
 [ 17%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/gzstream.cpp.o
-[ 18%] Building CXX object CMakeFiles/nglib.dir/rules/rule_hexrules.cpp.o
-[ 18%] Building CXX object CMakeFiles/nglib.dir/rules/rule_pyramidrules.cpp.o
-[ 18%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/optmem.cpp.o
-[ 18%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/seti.cpp.o
+[ 18%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/hashtabl.cpp.o
+[ 19%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/mystring.cpp.o
 [ 19%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/ngbitarray.cpp.o
 [ 20%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/parthreads.cpp.o
-[ 21%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/spbita2d.cpp.o
+[ 20%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/sort.cpp.o
+[ 21%] Building CXX object CMakeFiles/nglib.dir/rules/rule_triarules.cpp.o
+[ 21%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/table.cpp.o
+[ 21%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/seti.cpp.o
+[ 21%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geom2d.cpp.o
 [ 22%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/adtree.cpp.o
-[ 22%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/table.cpp.o
-[ 22%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geom2d.cpp.o
-[ 22%] Building CXX object CMakeFiles/nglib.dir/libsrc/general/sort.cpp.o
-[ 23%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geom3d.cpp.o
-[ 24%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/splinegeometry.cpp.o
-[ 24%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/spline.cpp.o
+[ 22%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geomfuncs.cpp.o
+[ 22%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/spline.cpp.o
+[ 24%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geom3d.cpp.o
+[ 24%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geomtest3d.cpp.o
+[ 25%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/splinegeometry.cpp.o
 [ 25%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/transform3d.cpp.o
-[ 25%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geomfuncs.cpp.o
-[ 25%] Building CXX object CMakeFiles/nglib.dir/libsrc/gprim/geomtest3d.cpp.o
 [ 26%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/bfgs.cpp.o
 [ 26%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/densemat.cpp.o
 [ 26%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/linopt.cpp.o
 [ 27%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/linsearch.cpp.o
 [ 27%] Building CXX object CMakeFiles/nglib.dir/libsrc/linalg/polynomial.cpp.o
+[ 27%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/adfront3.cpp.o
 [ 28%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/adfront2.cpp.o
-[ 29%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/adfront3.cpp.o
 [ 29%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/bisect.cpp.o
 [ 29%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/boundarylayer.cpp.o
 [ 30%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/clusters.cpp.o
@@ -261,8 +257,8 @@ In member function ‘__ct ’,
 [ 32%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/geomsearch.cpp.o
 [ 32%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/global.cpp.o
 [ 32%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/hprefinement.cpp.o
+[ 32%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/improve2gen.cpp.o
 [ 33%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/improve2.cpp.o
-[ 33%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/improve2gen.cpp.o
 [ 34%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/improve3.cpp.o
 [ 34%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/localh.cpp.o
 [ 35%] Building CXX object CMakeFiles/nglib.dir/libsrc/meshing/meshclass.cpp.o
@@ -332,6 +328,7 @@ In member function ‘__ct ’,
 [ 65%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/readuser.cpp.o
 [ 65%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writeabaqus.cpp.o
 [ 66%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writediffpack.cpp.o
+[ 66%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writedolfin.cpp.o
 /build/netgen-git/src/netgen/libsrc/interface/nginterface.cpp: In function ‘int Ng_GetElement_Edges(int, int*, int*)’:
 /build/netgen-git/src/netgen/libsrc/interface/nginterface.cpp:1520:37: warning: ‘int netgen::MeshTopology::GetElementEdges(int, int*, int*) const’ is deprecated: use GetEdges (ElementIndex) -> FlatArray [-Wdeprecated-declarations]
  1520 |     return topology.GetElementEdges (elnr, edges, orient);
@@ -357,7 +354,6 @@ In file included from /build/netgen-git/src/netgen/libsrc/include/../meshing/mes
 /build/netgen-git/src/netgen/libsrc/include/../meshing/topology.hpp:106:13: note: declared here
   106 |   EdgeIndex GetSegmentEdge (int segnr) const { return segedges[segnr-1]+1; }
       |             ^~~~~~~~~~~~~~
-[ 66%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writedolfin.cpp.o
 [ 67%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writeelmer.cpp.o
 [ 67%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writefeap.cpp.o
 [ 68%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writefluent.cpp.o
@@ -371,7 +367,6 @@ In file included from /build/netgen-git/src/netgen/libsrc/include/../meshing/mes
 [ 71%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writegmsh2.cpp.o
 [ 72%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/writeOpenFOAM15x.cpp.o
 [ 72%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/rw_cgns.cpp.o
-[ 72%] Built target pyngcore
 [ 73%] Building CXX object CMakeFiles/nglib.dir/libsrc/interface/rw_medit.cpp.o
 [ 73%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/algprim.cpp.o
 [ 74%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/brick.cpp.o
@@ -382,6 +377,7 @@ In file included from /build/netgen-git/src/netgen/libsrc/include/../meshing/mes
 [ 76%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/edgeflw.cpp.o
 [ 76%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/explicitcurve2d.cpp.o
 [ 77%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/extrusion.cpp.o
+[ 77%] Built target pyngcore
 [ 77%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/gencyl.cpp.o
 [ 78%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/genmesh.cpp.o
 [ 78%] Building CXX object CMakeFiles/nglib.dir/libsrc/csg/identify.cpp.o
@@ -493,32 +489,32 @@ In member function ‘__ct ’,
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
-In member function ‘__ct ’,
-    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../csg/splinesurface.hpp:7:9:
-/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
-/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
-  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
-      |                          ^
-In member function ‘__ct ’,
-    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../csg/splinesurface.hpp:7:9:
-/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
-/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
-  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
-      |                          ^
-In member function ‘__ct ’,
-    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../csg/splinesurface.hpp:7:9:
-/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
-/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
-  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
-      |                          ^
 In member function ‘ReSize’,
     inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
     inlined from ‘DoArchive’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:853:18:
 /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
 /usr/include/c++/15.2.1/new: In member function ‘DoArchive’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../csg/splinesurface.hpp:7:9:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../csg/splinesurface.hpp:7:9:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
+/usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
+  140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
+      |                          ^
+In member function ‘__ct ’,
+    inlined from ‘__ct_base ’ at /usr/src/debug/netgen-git/netgen/libsrc/include/../csg/splinesurface.hpp:7:9:
+/usr/src/debug/netgen-git/netgen/libsrc/include/../general/ngarray.hpp:260:60: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘__ct_base ’:
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
@@ -534,12 +530,11 @@ In member function ‘ReSize’,
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
-In member function ‘__ct ’,
-    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:641:3,
-    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1562:55,
-    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1562:16:
-/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-/usr/include/c++/15.2.1/new: In function ‘_FUN’:
+In member function ‘ReSize’,
+    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
+    inlined from ‘DoArchive’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:853:18:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In member function ‘DoArchive’:
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
@@ -559,11 +554,12 @@ In member function ‘ReSize’,
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
-In member function ‘ReSize’,
-    inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
-    inlined from ‘DoArchive’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:853:18:
-/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-/usr/include/c++/15.2.1/new: In member function ‘DoArchive’:
+In member function ‘__ct ’,
+    inlined from ‘__ct ’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.hpp:641:3,
+    inlined from ‘operator()’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1562:55,
+    inlined from ‘_FUN’ at /usr/src/debug/netgen-git/netgen/external_dependencies/pybind11/include/pybind11/detail/type_caster_base.h:1562:16:
+/usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:771:56: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+/usr/include/c++/15.2.1/new: In function ‘_FUN’:
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
@@ -597,16 +593,16 @@ In member function ‘__ct ’,
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
 In member function ‘__ct ’,
-    inlined from ‘BuildEdgeList.constprop’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/improve2.hpp:46:51:
+    inlined from ‘ClipSolids’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.cpp:1596:30:
 /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-/usr/include/c++/15.2.1/new: In function ‘BuildEdgeList.constprop’:
+/usr/include/c++/15.2.1/new: In function ‘ClipSolids’:
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
 In member function ‘__ct ’,
-    inlined from ‘ClipSolids’ at /usr/src/debug/netgen-git/netgen/libsrc/geom2d/csg2d.cpp:1596:30:
+    inlined from ‘BuildEdgeList.constprop’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/improve2.hpp:46:51:
 /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:725:40: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-/usr/include/c++/15.2.1/new: In function ‘ClipSolids’:
+/usr/include/c++/15.2.1/new: In function ‘BuildEdgeList.constprop’:
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
@@ -722,17 +718,17 @@ In member function ‘ReSize’,
       |                          ^
 In member function ‘ReSize’,
     inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
-    inlined from ‘Add’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshtype.cpp:2745:18:
+    inlined from ‘SetLocalH’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshclass.cpp:3947:27:
 /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-/usr/include/c++/15.2.1/new: In member function ‘Add’:
+/usr/include/c++/15.2.1/new: In member function ‘SetLocalH’:
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
 In member function ‘ReSize’,
     inlined from ‘SetSize’ at /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:870:37,
-    inlined from ‘SetLocalH’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshclass.cpp:3947:27:
+    inlined from ‘Add’ at /usr/src/debug/netgen-git/netgen/libsrc/meshing/meshtype.cpp:2745:18:
 /usr/src/debug/netgen-git/netgen/libsrc/core/array.hpp:1146:12: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-/usr/include/c++/15.2.1/new: In member function ‘SetLocalH’:
+/usr/include/c++/15.2.1/new: In member function ‘Add’:
 /usr/include/c++/15.2.1/new:140:26: note: in a call to allocation function ‘operator new []’ declared here
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
@@ -877,26 +873,26 @@ In member function ‘__ct ’,
   140 | _GLIBCXX_NODISCARD void* operator new[](std::size_t)
       |                          ^
 [ 88%] Built target nglib
-[ 89%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/mvdraw.cpp.o
-[ 89%] Building CXX object CMakeFiles/nggui.dir/libsrc/occ/vsocc.cpp.o
+[ 88%] Building CXX object ng/CMakeFiles/ngpy.dir/netgenpy.cpp.o
+[ 89%] Building CXX object CMakeFiles/nggui.dir/libsrc/stlgeom/stlpkg.cpp.o
+[ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/mvdraw.cpp.o
 [ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/stlgeom/vsstl.cpp.o
-[ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/occ/occpkg.cpp.o
-[ 90%] Building CXX object ng/CMakeFiles/ngpy.dir/netgenpy.cpp.o
-[ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/importsolution.cpp.o
+[ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/occ/vsocc.cpp.o
 [ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/meshdoc.cpp.o
-[ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/vssolution.cpp.o
-[ 91%] Building CXX object CMakeFiles/nggui.dir/libsrc/stlgeom/stlpkg.cpp.o
-[ 91%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/vsfieldlines.cpp.o
-[ 91%] Building CXX object CMakeFiles/nggui.dir/libsrc/geom2d/vsgeom2d.cpp.o
-[ 92%] Building CXX object CMakeFiles/nggui.dir/libsrc/geom2d/geom2dpkg.cpp.o
-[ 92%] Building CXX object CMakeFiles/nggui.dir/ng/gui.cpp.o
-[ 93%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/visualpkg.cpp.o
+[ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/vsfieldlines.cpp.o
+[ 90%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/importsolution.cpp.o
+[ 92%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/vsmesh.cpp.o
+[ 92%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/visualpkg.cpp.o
+[ 93%] Building CXX object CMakeFiles/nggui.dir/libsrc/occ/occpkg.cpp.o
+[ 93%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/vssolution.cpp.o
 [ 93%] Building CXX object CMakeFiles/nggui.dir/libsrc/csg/vscsg.cpp.o
-[ 94%] Building CXX object CMakeFiles/nggui.dir/libsrc/visualization/vsmesh.cpp.o
+[ 94%] Building CXX object CMakeFiles/nggui.dir/libsrc/csg/csgpkg.cpp.o
+[ 94%] Building CXX object CMakeFiles/nggui.dir/ng/gui.cpp.o
 [ 94%] Building CXX object CMakeFiles/nggui.dir/ng/parallelfunc.cpp.o
-[ 94%] Building CXX object CMakeFiles/nggui.dir/ng/demoview.cpp.o
-[ 95%] Building CXX object CMakeFiles/nggui.dir/libsrc/csg/csgpkg.cpp.o
+[ 95%] Building CXX object CMakeFiles/nggui.dir/libsrc/geom2d/geom2dpkg.cpp.o
 [ 96%] Building CXX object CMakeFiles/nggui.dir/ng/ngpkg.cpp.o
+[ 96%] Building CXX object CMakeFiles/nggui.dir/libsrc/geom2d/vsgeom2d.cpp.o
+[ 96%] Building CXX object CMakeFiles/nggui.dir/ng/demoview.cpp.o
 [ 97%] Building CXX object CMakeFiles/nggui.dir/ng/ngtcl.cpp.o
 [ 98%] Linking CXX shared library libngpy.so
 [ 98%] Built target ngpy
