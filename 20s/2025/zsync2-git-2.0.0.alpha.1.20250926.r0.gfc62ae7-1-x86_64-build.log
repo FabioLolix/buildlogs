@@ -1,0 +1,541 @@
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Looking for include file memory.h
+-- Looking for include file memory.h - found
+-- Looking for include file stdint.h
+-- Looking for include file stdint.h - found
+-- Looking for include file stdlib.h
+-- Looking for include file stdlib.h - found
+-- Looking for include file strings.h
+-- Looking for include file strings.h - found
+-- Looking for include file sys/stat.h
+-- Looking for include file sys/stat.h - found
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file time.h
+-- Looking for include file time.h - found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for memcpy
+-- Looking for memcpy - found
+-- Looking for mkstemp
+-- Looking for mkstemp - found
+-- Looking for pread
+-- Looking for pread - found
+-- Looking for pwrite
+-- Looking for pwrite - found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'libgcrypt'
+--   Found libgcrypt, version 1.11.2
+-- Found CURL: /usr/lib/libcurl.so (found version "8.17.0")
+-- Found GTest: /usr/lib/cmake/GTest/GTestConfig.cmake (found version "1.17.0")
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/zsync2-git/src/build
+[  9%] Building C object lib/librcksum/CMakeFiles/librcksum.dir/rsum.c.o
+[  9%] Building C object lib/librcksum/CMakeFiles/md4test.dir/md4.c.o
+[  9%] Building C object lib/zlib/CMakeFiles/zsync2_libz.dir/inftrees.c.o
+[  9%] Building C object lib/libzsync/CMakeFiles/sha1test.dir/sha1.c.o
+[  9%] Building C object lib/librcksum/CMakeFiles/librcksum.dir/range.c.o
+[ 11%] Building C object lib/libzsync/CMakeFiles/sha1test.dir/sha1test.c.o
+[ 13%] Building C object lib/librcksum/CMakeFiles/md4test.dir/md4test.c.o
+[ 15%] Building C object lib/zlib/CMakeFiles/zsync2_libz.dir/inflate.c.o
+[ 17%] Building C object lib/librcksum/CMakeFiles/librcksum.dir/hash.c.o
+[ 21%] Building C object lib/librcksum/CMakeFiles/librcksum.dir/state.c.o
+[ 21%] Building C object lib/zlib/CMakeFiles/zsync2_libz.dir/adler32.c.o
+[ 23%] Building C object lib/zlib/CMakeFiles/zsync2_libz.dir/compress.c.o
+[ 25%] Building C object lib/librcksum/CMakeFiles/librcksum.dir/md4.c.o
+[ 29%] Building C object lib/zlib/CMakeFiles/zsync2_libz.dir/zutil.c.o
+[ 31%] Building C object lib/zlib/CMakeFiles/zsync2_libz.dir/crc32.c.o
+[ 31%] Building C object lib/zlib/CMakeFiles/zsync2_libz.dir/deflate.c.o
+[ 35%] Building C object lib/zlib/CMakeFiles/zsync2_libz.dir/trees.c.o
+[ 35%] Building C object lib/zlib/CMakeFiles/zsync2_libz.dir/gzio.c.o
+/build/zsync2-git/src/zsync2/lib/zlib/compress.c: In function ‘compress2’:
+/build/zsync2-git/src/zsync2/lib/zlib/compress.c:22:13: warning: old-style function definition [-Wold-style-definition]
+   22 | int ZEXPORT compress2 (dest, destLen, source, sourceLen, level)
+      |             ^~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/compress.c: In function ‘compress’:
+/build/zsync2-git/src/zsync2/lib/zlib/compress.c:62:13: warning: old-style function definition [-Wold-style-definition]
+   62 | int ZEXPORT compress (dest, destLen, source, sourceLen)
+      |             ^~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/compress.c: In function ‘compressBound’:
+/build/zsync2-git/src/zsync2/lib/zlib/compress.c:75:15: warning: old-style function definition [-Wold-style-definition]
+   75 | uLong ZEXPORT compressBound (sourceLen)
+      |               ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/adler32.c: In function ‘adler32’:
+/build/zsync2-git/src/zsync2/lib/zlib/adler32.c:47:15: warning: old-style function definition [-Wold-style-definition]
+   47 | uLong ZEXPORT adler32(adler, buf, len)
+      |               ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inftrees.c: In function ‘inflate_table’:
+/build/zsync2-git/src/zsync2/lib/zlib/inftrees.c:32:5: warning: old-style function definition [-Wold-style-definition]
+   32 | int inflate_table(type, lens, codes, table, bits, work)
+      |     ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/zutil.c: In function ‘zError’:
+/build/zsync2-git/src/zsync2/lib/zlib/zutil.c:137:22: warning: old-style function definition [-Wold-style-definition]
+  137 | const char * ZEXPORT zError(err)
+      |                      ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/zutil.c: In function ‘zcalloc’:
+/build/zsync2-git/src/zsync2/lib/zlib/zutil.c:301:8: warning: old-style function definition [-Wold-style-definition]
+  301 | voidpf zcalloc (opaque, items, size)
+      |        ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/zutil.c: In function ‘zcfree’:
+/build/zsync2-git/src/zsync2/lib/zlib/zutil.c:311:7: warning: old-style function definition [-Wold-style-definition]
+  311 | void  zcfree (opaque, ptr)
+      |       ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflateInit_’:
+/build/zsync2-git/src/zsync2/lib/zlib/crc32.c: In function ‘crc32’:
+/build/zsync2-git/src/zsync2/lib/zlib/crc32.c:193:23: warning: old-style function definition [-Wold-style-definition]
+  193 | unsigned long ZEXPORT crc32(crc, buf, len)
+      |                       ^~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:204:13: warning: old-style function definition [-Wold-style-definition]
+  204 | int ZEXPORT deflateInit_(strm, level, version, stream_size)
+      |             ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflateInit2_’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:216:13: warning: old-style function definition [-Wold-style-definition]
+  216 | int ZEXPORT deflateInit2_(strm, level, method, windowBits, memLevel, strategy,
+      |             ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/crc32.c: In function ‘crc32_little’:
+/build/zsync2-git/src/zsync2/lib/zlib/crc32.c:236:21: warning: old-style function definition [-Wold-style-definition]
+  236 | local unsigned long crc32_little(crc, buf, len)
+      |                     ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/crc32.c: In function ‘crc32_big’:
+/build/zsync2-git/src/zsync2/lib/zlib/crc32.c:276:21: warning: old-style function definition [-Wold-style-definition]
+  276 | local unsigned long crc32_big(crc, buf, len)
+      |                     ^~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflateSetDictionary’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:314:13: warning: old-style function definition [-Wold-style-definition]
+  314 | int ZEXPORT deflateSetDictionary (strm, dictionary, dictLength)
+      |             ^~~~~~~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflateReset’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:358:13: warning: old-style function definition [-Wold-style-definition]
+  358 | int ZEXPORT deflateReset (strm)
+      |             ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflatePrime’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:394:13: warning: old-style function definition [-Wold-style-definition]
+  394 | int ZEXPORT deflatePrime (strm, bits, value)
+      |             ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflateParams’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:406:13: warning: old-style function definition [-Wold-style-definition]
+  406 | int ZEXPORT deflateParams(strm, level, strategy)
+      |             ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘_tr_init’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflateBound’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:460:15: warning: old-style function definition [-Wold-style-definition]
+  460 | uLong ZEXPORT deflateBound(strm, sourceLen)
+      |               ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:382:6: warning: old-style function definition [-Wold-style-definition]
+  382 | void _tr_init(s)
+      |      ^~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘putShortMSB’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:489:12: warning: old-style function definition [-Wold-style-definition]
+  489 | local void putShortMSB (s, b)
+      |            ^~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘flush_pending’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:503:12: warning: old-style function definition [-Wold-style-definition]
+  503 | local void flush_pending(strm)
+      |            ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘init_block’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:411:12: warning: old-style function definition [-Wold-style-definition]
+  411 | local void init_block(s)
+      |            ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflate’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:523:13: warning: old-style function definition [-Wold-style-definition]
+  523 | int ZEXPORT deflate (strm, flush)
+      |             ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflateReset’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘pqdownheap’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:455:12: warning: old-style function definition [-Wold-style-definition]
+  455 | local void pqdownheap(s, tree, k)
+      |            ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:107:13: warning: old-style function definition [-Wold-style-definition]
+  107 | int ZEXPORT inflateReset(strm)
+      |             ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflateInit2_’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘gen_bitlen’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:128:13: warning: old-style function definition [-Wold-style-definition]
+  128 | int ZEXPORT inflateInit2_(strm, windowBits, version, stream_size)
+      |             ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:490:12: warning: old-style function definition [-Wold-style-definition]
+  490 | local void gen_bitlen(s, desc)
+      |            ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflateInit_’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:171:13: warning: old-style function definition [-Wold-style-definition]
+  171 | int ZEXPORT inflateInit_(strm, version, stream_size)
+      |             ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflateEnd’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:699:13: warning: old-style function definition [-Wold-style-definition]
+  699 | int ZEXPORT deflateEnd (strm)
+      |             ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘fixedtables’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:189:12: warning: old-style function definition [-Wold-style-definition]
+  189 | local void fixedtables(state)
+      |            ^~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘gen_codes’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:577:12: warning: old-style function definition [-Wold-style-definition]
+  577 | local void gen_codes (tree, max_code, bl_count)
+      |            ^~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflateCopy’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:729:13: warning: old-style function definition [-Wold-style-definition]
+  729 | int ZEXPORT deflateCopy (dest, source)
+      |             ^~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/librcksum/state.c: In function ‘rcksum_init’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘build_tree’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:619:12: warning: old-style function definition [-Wold-style-definition]
+  619 | local void build_tree(s, desc)
+      |            ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/librcksum/state.c:59:29: warning: ignoring return value of ‘strdup’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   59 |     if (directory != NULL) {strdup("rcksum-XXXXXX");
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘read_buf’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:791:11: warning: old-style function definition [-Wold-style-definition]
+  791 | local int read_buf(strm, buf, size)
+      |           ^~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘lm_init’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:821:12: warning: old-style function definition [-Wold-style-definition]
+  821 | local void lm_init (s)
+      |            ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘scan_tree’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘longest_match’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:707:12: warning: old-style function definition [-Wold-style-definition]
+  707 | local void scan_tree (s, tree, max_code)
+      |            ^~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:860:12: warning: old-style function definition [-Wold-style-definition]
+  860 | local uInt longest_match(s, cur_match)
+      |            ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘send_tree’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:752:12: warning: old-style function definition [-Wold-style-definition]
+  752 | local void send_tree (s, tree, max_code)
+      |            ^~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘longest_match_fast’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:1003:12: warning: old-style function definition [-Wold-style-definition]
+ 1003 | local uInt longest_match_fast(s, cur_match)
+      |            ^~~~~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘fill_window’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:1094:12: warning: old-style function definition [-Wold-style-definition]
+ 1094 | local void fill_window(s)
+      |            ^~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflate_stored’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:1217:19: warning: old-style function definition [-Wold-style-definition]
+ 1217 | local block_state deflate_stored(s, flush)
+      |                   ^~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflate_fast’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:1275:19: warning: old-style function definition [-Wold-style-definition]
+ 1275 | local block_state deflate_fast(s, flush)
+      |                   ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c: In function ‘deflate_slow’:
+/build/zsync2-git/src/zsync2/lib/zlib/deflate.c:1381:19: warning: old-style function definition [-Wold-style-definition]
+ 1381 | local block_state deflate_slow(s, flush)
+      |                   ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘build_bl_tree’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘updatewindow’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:803:11: warning: old-style function definition [-Wold-style-definition]
+  803 | local int build_bl_tree(s)
+      |           ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:307:5: warning: old-style function definition [-Wold-style-definition]
+  307 | int updatewindow(strm, out)
+      |     ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘send_all_trees’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:838:12: warning: old-style function definition [-Wold-style-definition]
+  838 | local void send_all_trees(s, lcodes, dcodes, blcodes)
+      |            ^~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflate’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:538:13: warning: old-style function definition [-Wold-style-definition]
+  538 | int ZEXPORT inflate(strm, flush)
+      |             ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘_tr_stored_block’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:867:6: warning: old-style function definition [-Wold-style-definition]
+  867 | void _tr_stored_block(s, buf, stored_len, eof)
+      |      ^~~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘_tr_align’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:892:6: warning: old-style function definition [-Wold-style-definition]
+  892 | void _tr_align(s)
+      |      ^~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gz_open’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:93:14: warning: old-style function definition [-Wold-style-definition]
+   93 | local gzFile gz_open (path, mode, fd)
+      |              ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘_tr_flush_block’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:921:6: warning: old-style function definition [-Wold-style-definition]
+  921 | void _tr_flush_block(s, buf, stored_len, eof)
+      |      ^~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzopen’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:208:16: warning: old-style function definition [-Wold-style-definition]
+  208 | gzFile ZEXPORT gzopen (path, mode)
+      |                ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzdopen’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:219:16: warning: old-style function definition [-Wold-style-definition]
+  219 | gzFile ZEXPORT gzdopen (fd, mode)
+      |                ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzsetparams’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:234:13: warning: old-style function definition [-Wold-style-definition]
+  234 | int ZEXPORT gzsetparams (file, level, strategy)
+      |             ^~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘_tr_tally’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:1021:5: warning: old-style function definition [-Wold-style-definition]
+ 1021 | int _tr_tally (s, dist, lc)
+      |     ^~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘get_byte’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:261:11: warning: old-style function definition [-Wold-style-definition]
+  261 | local int get_byte(s)
+      |           ^~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘check_header’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:288:12: warning: old-style function definition [-Wold-style-definition]
+  288 | local void check_header(s)
+      |            ^~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘compress_block’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:1071:12: warning: old-style function definition [-Wold-style-definition]
+ 1071 | local void compress_block(s, ltree, dtree)
+      |            ^~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘destroy’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:355:11: warning: old-style function definition [-Wold-style-definition]
+  355 | local int destroy (s)
+      |           ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzread’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:394:13: warning: old-style function definition [-Wold-style-definition]
+  394 | int ZEXPORT gzread (file, buf, len)
+      |             ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzgetc’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:499:13: warning: old-style function definition [-Wold-style-definition]
+  499 | int ZEXPORT gzgetc(file)
+      |             ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzungetc’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:511:13: warning: old-style function definition [-Wold-style-definition]
+  511 | int ZEXPORT gzungetc(c, file)
+      |             ^~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzgets’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:536:16: warning: old-style function definition [-Wold-style-definition]
+  536 | char * ZEXPORT gzgets(file, buf, len)
+      |                ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzwrite’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:555:13: warning: old-style function definition [-Wold-style-definition]
+  555 | int ZEXPORT gzwrite (file, buf, len)
+      |             ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘set_data_type’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:1125:12: warning: old-style function definition [-Wold-style-definition]
+ 1125 | local void set_data_type(s)
+      |            ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzputc’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:674:13: warning: old-style function definition [-Wold-style-definition]
+  674 | int ZEXPORT gzputc(file, c)
+      |             ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzputs’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:689:13: warning: old-style function definition [-Wold-style-definition]
+  689 | int ZEXPORT gzputs(file, s)
+      |             ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘do_flush’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:701:11: warning: old-style function definition [-Wold-style-definition]
+  701 | local int do_flush (file, flush)
+      |           ^~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘bi_reverse’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:1142:16: warning: old-style function definition [-Wold-style-definition]
+ 1142 | local unsigned bi_reverse(code, len)
+      |                ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzflush’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:742:13: warning: old-style function definition [-Wold-style-definition]
+  742 | int ZEXPORT gzflush (file, flush)
+      |             ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘bi_flush’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:1157:12: warning: old-style function definition [-Wold-style-definition]
+ 1157 | local void bi_flush(s)
+      |            ^~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzseek’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:763:17: warning: old-style function definition [-Wold-style-definition]
+  763 | z_off_t ZEXPORT gzseek (file, offset, whence)
+      |                 ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘bi_windup’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:1174:12: warning: old-style function definition [-Wold-style-definition]
+ 1174 | local void bi_windup(s)
+      |            ^~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c: In function ‘copy_block’:
+/build/zsync2-git/src/zsync2/lib/zlib/trees.c:1193:12: warning: old-style function definition [-Wold-style-definition]
+ 1193 | local void copy_block(s, buf, len, header)
+      |            ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzrewind’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:853:13: warning: old-style function definition [-Wold-style-definition]
+  853 | int ZEXPORT gzrewind (file)
+      |             ^~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gztell’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:877:17: warning: old-style function definition [-Wold-style-definition]
+  877 | z_off_t ZEXPORT gztell (file)
+      |                 ^~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzeof’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:887:13: warning: old-style function definition [-Wold-style-definition]
+  887 | int ZEXPORT gzeof (file)
+      |             ^~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘putLong’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:904:12: warning: old-style function definition [-Wold-style-definition]
+  904 | local void putLong (file, x)
+      |            ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘getLong’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:919:13: warning: old-style function definition [-Wold-style-definition]
+  919 | local uLong getLong (s)
+      |             ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzclose’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:937:13: warning: old-style function definition [-Wold-style-definition]
+  937 | int ZEXPORT gzclose (file)
+      |             ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzerror’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:966:22: warning: old-style function definition [-Wold-style-definition]
+  966 | const char * ZEXPORT gzerror (file, errnum)
+      |                      ^~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c: In function ‘gzclearerr’:
+/build/zsync2-git/src/zsync2/lib/zlib/gzio.c:996:14: warning: old-style function definition [-Wold-style-definition]
+  996 | void ZEXPORT gzclearerr (file)
+      |              ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflateEnd’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:1089:13: warning: old-style function definition [-Wold-style-definition]
+ 1089 | int ZEXPORT inflateEnd(strm)
+      |             ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflateSetDictionary’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:1103:13: warning: old-style function definition [-Wold-style-definition]
+ 1103 | int ZEXPORT inflateSetDictionary(strm, dictionary, dictLength)
+      |             ^~~~~~~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘syncsearch’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:1152:16: warning: old-style function definition [-Wold-style-definition]
+ 1152 | local unsigned syncsearch(have, buf, len)
+      |                ^~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflateSync’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:1175:13: warning: old-style function definition [-Wold-style-definition]
+ 1175 | int ZEXPORT inflateSync(strm)
+      |             ^~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflateSyncPoint’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:1226:13: warning: old-style function definition [-Wold-style-definition]
+ 1226 | int ZEXPORT inflateSyncPoint(strm)
+      |             ^~~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflateCopy’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:1236:13: warning: old-style function definition [-Wold-style-definition]
+ 1236 | int ZEXPORT inflateCopy(dest, source)
+      |             ^~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflate_advance’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:1281:6: warning: old-style function definition [-Wold-style-definition]
+ 1281 | void inflate_advance(strm,zoffset,b,s)
+      |      ^~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c: In function ‘inflateSafePoint’:
+/build/zsync2-git/src/zsync2/lib/zlib/inflate.c:1311:13: warning: old-style function definition [-Wold-style-definition]
+ 1311 | int ZEXPORT inflateSafePoint(strm)
+      |             ^~~~~~~~~~~~~~~~
+[ 37%] Linking C executable md4test
+[ 37%] Built target md4test
+In function ‘SHA1Update’,
+    inlined from ‘SHA1Pad’ at /build/zsync2-git/src/zsync2/lib/libzsync/sha1.c:171:3:
+/build/zsync2-git/src/zsync2/lib/libzsync/sha1.c:147:25: warning: ‘SHA1Transform’ reading 64 bytes from a region of size 1 [-Wstringop-overread]
+  147 |                         SHA1Transform(context->state, (uint8_t *)&data[i]);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/libzsync/sha1.c:147:25: note: referencing argument 2 of type ‘const uint8_t[64]’ {aka ‘const unsigned char[64]’}
+/build/zsync2-git/src/zsync2/lib/libzsync/sha1.c: In function ‘SHA1Pad’:
+/build/zsync2-git/src/zsync2/lib/libzsync/sha1.c:63:1: note: in a call to function ‘SHA1Transform’
+   63 | SHA1Transform(uint32_t state[5], const uint8_t buffer[SHA1_BLOCK_LENGTH])
+      | ^~~~~~~~~~~~~
+In function ‘SHA1Update’,
+    inlined from ‘SHA1Pad’ at /build/zsync2-git/src/zsync2/lib/libzsync/sha1.c:171:3,
+    inlined from ‘SHA1Final’ at /build/zsync2-git/src/zsync2/lib/libzsync/sha1.c:180:2:
+/build/zsync2-git/src/zsync2/lib/libzsync/sha1.c:147:25: warning: ‘SHA1Transform’ reading 64 bytes from a region of size 1 [-Wstringop-overread]
+  147 |                         SHA1Transform(context->state, (uint8_t *)&data[i]);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/lib/libzsync/sha1.c:147:25: note: referencing argument 2 of type ‘const uint8_t[64]’ {aka ‘const unsigned char[64]’}
+/build/zsync2-git/src/zsync2/lib/libzsync/sha1.c: In function ‘SHA1Final’:
+/build/zsync2-git/src/zsync2/lib/libzsync/sha1.c:63:1: note: in a call to function ‘SHA1Transform’
+   63 | SHA1Transform(uint32_t state[5], const uint8_t buffer[SHA1_BLOCK_LENGTH])
+      | ^~~~~~~~~~~~~
+[ 39%] Linking C static library librcksum.a
+[ 41%] Linking C executable sha1test
+[ 41%] Built target librcksum
+[ 41%] Built target sha1test
+[ 43%] Linking C static library libzsync2_libz.a
+[ 43%] Built target zsync2_libz
+[ 47%] Building C object lib/libzsync/CMakeFiles/libzsync.dir/zsync.c.o
+[ 47%] Building C object lib/libzsync/CMakeFiles/libzsync.dir/zmap.c.o
+[ 49%] Building C object lib/libzsync/CMakeFiles/libzsync.dir/sha1.c.o
+/build/zsync2-git/src/zsync2/lib/libzsync/zsync.c: In function ‘zsync_receive_data_compressed’:
+/build/zsync2-git/src/zsync2/lib/libzsync/zsync.c:945:22: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  945 |     zr->strm.next_in = buf;
+      |                      ^
+/build/zsync2-git/src/zsync2/lib/libzsync/zsync.c:962:26: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  962 |         zr->strm.next_in = buf;
+      |                          ^
+[ 49%] Built target libzsync
+[ 54%] Building C object src/CMakeFiles/libzsync2_static.dir/legacy_progress.c.o
+[ 54%] Building CXX object src/CMakeFiles/libzsync2_static.dir/zsclient.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/libzsync2.dir/zsclient.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/libzsync2_standalone.dir/zsclient.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/libzsync2_standalone.dir/zsutil.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/libzsync2_standalone.dir/zsmake.cpp.o
+[ 68%] Building C object src/CMakeFiles/libzsync2.dir/legacy_http.c.o
+[ 68%] Building C object src/CMakeFiles/libzsync2.dir/legacy_progress.c.o
+[ 68%] Building CXX object src/CMakeFiles/libzsync2_static.dir/zsmake.cpp.o
+[ 68%] Building C object src/CMakeFiles/libzsync2_standalone.dir/legacy_progress.c.o
+[ 72%] Building CXX object src/CMakeFiles/libzsync2.dir/zsmake.cpp.o
+[ 72%] Building C object src/CMakeFiles/libzsync2_standalone.dir/legacy_http.c.o
+[ 78%] Building CXX object src/CMakeFiles/libzsync2_static.dir/zsutil.cpp.o
+[ 78%] Building CXX object src/CMakeFiles/libzsync2.dir/zsutil.cpp.o
+[ 78%] Building C object src/CMakeFiles/libzsync2_static.dir/legacy_http.c.o
+/build/zsync2-git/src/zsync2/src/legacy_http.c: In function ‘http_load_ranges’:
+/build/zsync2-git/src/zsync2/src/legacy_http.c:205:9: warning: ‘__builtin___strncat_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  205 |         strncat(ranges_opt, range, l + strlen(range));
+      |         ^
+/build/zsync2-git/src/zsync2/src/legacy_http.c:205:40: note: length computed here
+  205 |         strncat(ranges_opt, range, l + strlen(range));
+      |                                        ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/src/legacy_http.c: In function ‘http_load_ranges’:
+/build/zsync2-git/src/zsync2/src/legacy_http.c:205:9: warning: ‘__builtin___strncat_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  205 |         strncat(ranges_opt, range, l + strlen(range));
+      |         ^
+/build/zsync2-git/src/zsync2/src/legacy_http.c:205:40: note: length computed here
+  205 |         strncat(ranges_opt, range, l + strlen(range));
+      |                                        ^~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/src/legacy_http.c: In function ‘http_load_ranges’:
+/build/zsync2-git/src/zsync2/src/legacy_http.c:205:9: warning: ‘__builtin___strncat_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  205 |         strncat(ranges_opt, range, l + strlen(range));
+      |         ^
+/build/zsync2-git/src/zsync2/src/legacy_http.c:205:40: note: length computed here
+  205 |         strncat(ranges_opt, range, l + strlen(range));
+      |                                        ^~~~~~~~~~~~~
+[ 80%] Linking CXX static library libzsync2_standalone.a
+[ 80%] Built target libzsync2_standalone
+[ 82%] Building CXX object src/CMakeFiles/zsync2.dir/main.cpp.o
+[ 84%] Linking CXX shared library libzsync2.so
+[ 86%] Linking CXX static library libzsync2.a
+[ 86%] Built target libzsync2_static
+[ 86%] Built target libzsync2
+[ 88%] Building CXX object src/CMakeFiles/zsyncmake2.dir/make_main.cpp.o
+[ 92%] Building CXX object tests/CMakeFiles/test_zshash.dir/test_zshash.cpp.o
+[ 92%] Building CXX object tests/CMakeFiles/test_zsutil.dir/test_zsutil.cpp.o
+/build/zsync2-git/src/zsync2/src/main.cpp: In function ‘int main(int, const char**)’:
+/build/zsync2-git/src/zsync2/src/main.cpp:108:16: warning: ignoring return value of ‘FILE* freopen(const char*, const char*, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  108 |         freopen("/dev/null", "a", stdout);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/zsync2-git/src/zsync2/src/main.cpp:109:16: warning: ignoring return value of ‘FILE* freopen(const char*, const char*, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  109 |         freopen("/dev/null", "a", stderr);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 94%] Linking CXX executable test_zshash
+[ 94%] Built target test_zshash
+[ 96%] Linking CXX executable test_zsutil
+[ 96%] Built target test_zsutil
+[ 98%] Linking CXX executable zsync2
+[100%] Linking CXX executable zsyncmake2
+/usr/bin/ld: libzsync2_standalone.a(zsclient.cpp.o): undefined reference to symbol 'gzseek64@@ZLIB_1.2.3.3'
+/usr/bin/ld: /usr/lib/libz.so.1: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+make[2]: *** [src/CMakeFiles/zsync2.dir/build.make:108: src/zsync2] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1428: src/CMakeFiles/zsync2.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[100%] Built target zsyncmake2
+make: *** [Makefile:146: all] Error 2
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
