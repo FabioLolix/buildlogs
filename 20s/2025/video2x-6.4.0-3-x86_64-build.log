@@ -1,0 +1,908 @@
+-- The CXX compiler identification is Clang 21.1.6
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'libavcodec'
+--   Found libavcodec, version 62.11.100
+-- Checking for module 'libavfilter'
+--   Found libavfilter, version 11.4.100
+-- Checking for module 'libavformat'
+--   Found libavformat, version 62.3.100
+-- Checking for module 'libavutil'
+--   Found libavutil, version 60.8.100
+-- Checking for module 'libswscale'
+--   Found libswscale, version 9.1.100
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+-- Found OpenMP: TRUE (found version "5.1")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found ncnn: 20260117
+CMake Deprecation Warning at third_party/librealesrgan_ncnn_vulkan/src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The C compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Found Vulkan: /lib/libvulkan.so (found version "1.4.335") found components: glslc glslangValidator
+-- Found glslangValidator: /usr/bin/glslangValidator
+CMake Warning at third_party/librealesrgan_ncnn_vulkan/src/CMakeLists.txt:104 (message):
+  IPO is not supported: Change Dir:
+  '/build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+
+
+  Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f
+  Makefile
+
+  /usr/bin/cmake
+  -S/build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src
+  -B/build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  --check-build-system CMakeFiles/Makefile.cmake 0
+
+  /usr/bin/cmake -E cmake_progress_start
+  /build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles
+  /build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+
+  /usr/bin/make -f CMakeFiles/Makefile2 all
+
+  make[1]: Entering directory
+  '/build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  /usr/bin/make -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+
+  make[2]: Entering directory
+  '/build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  cd
+  /build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  && /usr/bin/cmake -E cmake_depends "Unix Makefiles"
+  /build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src
+  /build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src
+  /build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  /build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  /build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+  foo
+
+  make[2]: Leaving directory
+  '/build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  /usr/bin/make -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+
+  make[2]: Entering directory
+  '/build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+
+  /usr/bin/clang++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt
+  -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security
+  -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer
+  -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g
+  -ffile-prefix-map=/build/video2x/src=/usr/src/debug/video2x -flto=auto
+  -flto=thin -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF
+  CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c
+  /build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+
+  [ 50%] Linking CXX static library libfoo.a
+
+  /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+
+  /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+
+  "CMAKE_CXX_COMPILER_AR-NOTFOUND" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+
+  Error running link command: no such file or directorymake[2]: ***
+  [CMakeFiles/foo.dir/build.make:104: libfoo.a] Error 2
+
+  make[2]: Leaving directory
+  '/build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  make[1]: *** [CMakeFiles/Makefile2:93: CMakeFiles/foo.dir/all] Error 2
+
+  make[1]: Leaving directory
+  '/build/video2x/src/build/third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  make: *** [Makefile:94: all] Error 2
+
+
+
+
+
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+-- Found ncnn: 20260117
+CMake Deprecation Warning at third_party/librealcugan_ncnn_vulkan/src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+-- Found glslangValidator: /usr/bin/glslangValidator
+CMake Warning at third_party/librealcugan_ncnn_vulkan/src/CMakeLists.txt:73 (message):
+  IPO is not supported: Change Dir:
+  '/build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+
+
+  Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f
+  Makefile
+
+  /usr/bin/cmake
+  -S/build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src
+  -B/build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  --check-build-system CMakeFiles/Makefile.cmake 0
+
+  /usr/bin/cmake -E cmake_progress_start
+  /build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles
+  /build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+
+  /usr/bin/make -f CMakeFiles/Makefile2 all
+
+  make[1]: Entering directory
+  '/build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  /usr/bin/make -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+
+  make[2]: Entering directory
+  '/build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  cd
+  /build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  && /usr/bin/cmake -E cmake_depends "Unix Makefiles"
+  /build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src
+  /build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src
+  /build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  /build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  /build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+  foo
+
+  make[2]: Leaving directory
+  '/build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  /usr/bin/make -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+
+  make[2]: Entering directory
+  '/build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+
+  /usr/bin/clang++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt
+  -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security
+  -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer
+  -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g
+  -ffile-prefix-map=/build/video2x/src=/usr/src/debug/video2x -flto=auto
+  -flto=thin -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF
+  CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c
+  /build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+
+  [ 50%] Linking CXX static library libfoo.a
+
+  /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+
+  /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+
+  "CMAKE_CXX_COMPILER_AR-NOTFOUND" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+
+  Error running link command: no such file or directorymake[2]: ***
+  [CMakeFiles/foo.dir/build.make:104: libfoo.a] Error 2
+
+  make[2]: Leaving directory
+  '/build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  make[1]: *** [CMakeFiles/Makefile2:93: CMakeFiles/foo.dir/all] Error 2
+
+  make[1]: Leaving directory
+  '/build/video2x/src/build/third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  make: *** [Makefile:94: all] Error 2
+
+
+
+
+
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+-- Found ncnn: 20260117
+CMake Deprecation Warning at third_party/librife_ncnn_vulkan/src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+CMake Warning at third_party/librife_ncnn_vulkan/src/CMakeLists.txt:65 (message):
+  IPO is not supported: Change Dir:
+  '/build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+
+
+  Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f
+  Makefile
+
+  /usr/bin/cmake
+  -S/build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src
+  -B/build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  --check-build-system CMakeFiles/Makefile.cmake 0
+
+  /usr/bin/cmake -E cmake_progress_start
+  /build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles
+  /build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+
+  /usr/bin/make -f CMakeFiles/Makefile2 all
+
+  make[1]: Entering directory
+  '/build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  /usr/bin/make -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+
+  make[2]: Entering directory
+  '/build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  cd
+  /build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  && /usr/bin/cmake -E cmake_depends "Unix Makefiles"
+  /build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src
+  /build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src
+  /build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  /build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin
+  /build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+  foo
+
+  make[2]: Leaving directory
+  '/build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  /usr/bin/make -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+
+  make[2]: Entering directory
+  '/build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+
+  /usr/bin/clang++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt
+  -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security
+  -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer
+  -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g
+  -ffile-prefix-map=/build/video2x/src=/usr/src/debug/video2x -flto=auto
+  -flto=thin -MD -MT CMakeFiles/foo.dir/foo.cpp.o -MF
+  CMakeFiles/foo.dir/foo.cpp.o.d -o CMakeFiles/foo.dir/foo.cpp.o -c
+  /build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+
+  [ 50%] Linking CXX static library libfoo.a
+
+  /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+
+  /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+
+  "CMAKE_CXX_COMPILER_AR-NOTFOUND" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+
+  Error running link command: no such file or directorymake[2]: ***
+  [CMakeFiles/foo.dir/build.make:104: libfoo.a] Error 2
+
+  make[2]: Leaving directory
+  '/build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  make[1]: *** [CMakeFiles/Makefile2:93: CMakeFiles/foo.dir/all] Error 2
+
+  make[1]: Leaving directory
+  '/build/video2x/src/build/third_party/librife_ncnn_vulkan/src/CMakeFiles/_CMakeLTOTest-CXX/bin'
+
+  make: *** [Makefile:94: all] Error 2
+
+
+
+
+
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+-- Found ncnn: 20260117
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/video2x/src/build
+[  3%] Preprocessing shader source realcugan_4x_postproc_tta.comp
+[  3%] Building SPIR-V module realesrgan_postproc_tta_int8s.spv
+[  4%] Building SPIR-V module realesrgan_postproc_int8s.spv
+[ 12%] Preprocessing shader source rife_flow_tta_temporal_avg.comp
+[ 12%] Preprocessing shader source warp_pack8.comp
+[ 12%] Building SPIR-V module realesrgan_postproc_tta.spv
+[ 12%] Preprocessing shader source rife_out_tta_temporal_avg.comp
+[ 16%] Preprocessing shader source rife_postproc_tta.comp
+[ 19%] Building SPIR-V module realesrgan_preproc_tta_int8s.spv
+[ 19%] Preprocessing shader source rife_v2_flow_tta_temporal_avg.comp
+[ 20%] Building SPIR-V module realesrgan_postproc_fp16s.spv
+[ 25%] Building SPIR-V module realesrgan_preproc.spv
+[ 25%] Preprocessing shader source warp.comp
+[ 30%] Preprocessing shader source rife_v4_flow_tta_avg.comp
+[ 30%] Building SPIR-V module realesrgan_postproc_tta_fp16s.spv
+[ 32%] Building SPIR-V module realesrgan_preproc_int8s.spv
+[ 33%] Preprocessing shader source realcugan_preproc_tta.comp
+[ 29%] Preprocessing shader source rife_flow_tta_avg.comp
+[ 35%] Building SPIR-V module realesrgan_postproc.spv
+[ 35%] Preprocessing shader source rife_v4_timestep.comp
+[ 35%] Preprocessing shader source realcugan_4x_postproc.comp
+[ 41%] Preprocessing shader source realcugan_postproc_tta.comp
+[ 41%] Building SPIR-V module realesrgan_preproc_tta_fp16s.spv
+[ 43%] Preprocessing shader source rife_postproc.comp
+[ 45%] Building SPIR-V module realesrgan_preproc_fp16s.spv
+[ 46%] Preprocessing shader source realcugan_preproc.comp
+[ 48%] Preprocessing shader source rife_v4_timestep_tta.comp
+[ 38%] Preprocessing shader source realcugan_postproc.comp
+[ 38%] Preprocessing shader source rife_v4_flow_tta_temporal_avg.comp
+[ 53%] Preprocessing shader source rife_preproc_tta.comp
+[ 54%] Preprocessing shader source rife_preproc.comp
+[ 54%] Preprocessing shader source warp_pack4.comp
+[ 54%] Building SPIR-V module realesrgan_preproc_tta.spv
+[ 51%] Preprocessing shader source rife_v2_flow_tta_avg.comp
+[ 56%] Building CXX object third_party/librealcugan_ncnn_vulkan/src/CMakeFiles/librealcugan-ncnn-vulkan.dir/realcugan.cpp.o
+[ 58%] Building CXX object third_party/librife_ncnn_vulkan/src/CMakeFiles/librife-ncnn-vulkan.dir/warp.cpp.o
+[ 59%] Building CXX object third_party/librife_ncnn_vulkan/src/CMakeFiles/librife-ncnn-vulkan.dir/rife.cpp.o
+[ 61%] Building CXX object third_party/librealesrgan_ncnn_vulkan/src/CMakeFiles/librealesrgan-ncnn-vulkan.dir/realesrgan.cpp.o
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/warp.cpp:62:13: error: no member named 'use_shader_pack8' in 'ncnn::Option'
+   62 |     if (opt.use_shader_pack8)
+      |         ~~~ ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/warp.cpp:82:42: warning: unused parameter 'opt' [-Wunused-parameter]
+   82 | int Warp::destroy_pipeline(const Option& opt)
+      |                                          ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/warp.cpp:127:34: warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  127 |                 float sample_x = x + flow_x;
+      |                                  ^ ~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/warp.cpp:128:34: warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  128 |                 float sample_y = y + flow_y;
+      |                                  ^ ~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/warp.cpp:133:30: warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+  133 |                     int x0 = floor(sample_x);
+      |                         ~~   ^~~~~~~~~~~~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/warp.cpp:134:30: warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+  134 |                     int y0 = floor(sample_y);
+      |                         ~~   ^~~~~~~~~~~~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/warp.cpp:143:46: warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  143 |                     float alpha = sample_x - x0;
+      |                                            ~ ^~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/warp.cpp:144:45: warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  144 |                     float beta = sample_y - y0;
+      |                                           ~ ^~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/warp.cpp:195:31: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  195 |     constants[3].i = top_blob.cstep;
+      |                    ~ ~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:425:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  425 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:428:53: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  428 |                     constants[5].i = in_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:500:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  500 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:503:54: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  503 |                     constants[5].i = out_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:506:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  506 |                     constants[8].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:539:54: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  539 |                     constants[2].i = out_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:542:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  542 |                     constants[5].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:584:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  584 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:587:50: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  587 |                     constants[5].i = in_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:651:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  651 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:654:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  654 |                     constants[5].i = out_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:657:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  657 |                     constants[8].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:683:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  683 |                     constants[2].i = out_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:686:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  686 |                     constants[5].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1497:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1497 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1500:53: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1500 |                     constants[5].i = in_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1573:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1573 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1576:50: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1576 |                     constants[5].i = in_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1776:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1776 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1779:53: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1779 |                     constants[5].i = in_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1859:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1859 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1862:54: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1862 |                     constants[5].i = out_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1865:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1865 |                     constants[8].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1898:54: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1898 |                     constants[2].i = out_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1901:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1901 |                     constants[5].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1943:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1943 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:1946:50: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1946 |                     constants[5].i = in_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2018:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2018 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2021:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2021 |                     constants[5].i = out_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2024:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2024 |                     constants[8].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2050:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2050 |                     constants[2].i = out_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2053:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2053 |                     constants[5].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2166:29: warning: implicit conversion changes signedness: 'const int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2166 |         feats_cpu[i].resize(tiles);
+      |                      ~~~~~~ ^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2170:59: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2170 |             cmd.record_download(feats[i][j], feats_cpu[i][j], opt);
+      |                                              ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2170:42: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2170 |             cmd.record_download(feats[i][j], feats_cpu[i][j], opt);
+      |                                 ~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2184:89: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2184 |             if (opt.use_fp16_storage && ncnn::cpu_support_arm_asimdhp() && feats_cpu[i][j].elembits() == 16)
+      |                                                                            ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2187:60: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2187 |                 ncnn::cast_float16_to_float32(feats_cpu[i][j], feat_fp32, opt);
+      |                                               ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2188:30: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2188 |                 feats_cpu[i][j] = feat_fp32;
+      |                 ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2191:56: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2191 |             if (opt.use_packing_layout && feats_cpu[i][j].elempack != 1)
+      |                                           ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2194:52: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2194 |                 ncnn::convert_packing(feats_cpu[i][j], feat_cpu_unpacked, 1, opt);
+      |                                       ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2195:30: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2195 |                 feats_cpu[i][j] = feat_cpu_unpacked;
+      |                 ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2209:50: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2209 |                 const ncnn::Mat f = feats_cpu[i][j];
+      |                                     ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2213:29: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 2213 |                     avgfeat[k] += f[k];
+      |                     ~~~~~~~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2213:37: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 2213 |                     avgfeat[k] += f[k];
+      |                                   ~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2219:25: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 2219 |                 avgfeat[k] /= tiles;
+      |                 ~~~~~~~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2219:31: warning: implicit conversion from 'const int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+ 2219 |                 avgfeat[k] /= tiles;
+      |                            ~~ ^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2116:26: warning: unused variable 'pixeldata' [-Wunused-variable]
+ 2116 |     const unsigned char* pixeldata = (const unsigned char*)inimage.data;
+      |                          ^~~~~~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2119:15: warning: unused variable 'channels' [-Wunused-variable]
+ 2119 |     const int channels = inimage.elempack;
+      |               ^~~~~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2205:31: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2205 |             int len = avgfeat.total();
+      |                 ~~~   ~~~~~~~~^~~~~~~
+8 warnings and 1 error generated.
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2397:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2397 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2400:53: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2400 |                     constants[5].i = in_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2473:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2473 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2476:50: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2476 |                     constants[5].i = in_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2587:29: warning: implicit conversion changes signedness: 'const int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2587 |         feats_cpu[i].resize(tiles);
+      |                      ~~~~~~ ^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2591:59: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2591 |             cmd.record_download(feats[i][j], feats_cpu[i][j], opt);
+      |                                              ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2591:42: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2591 |             cmd.record_download(feats[i][j], feats_cpu[i][j], opt);
+      |                                 ~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2605:89: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2605 |             if (opt.use_fp16_storage && ncnn::cpu_support_arm_asimdhp() && feats_cpu[i][j].elembits() == 16)
+      |                                                                            ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2608:60: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2608 |                 ncnn::cast_float16_to_float32(feats_cpu[i][j], feat_fp32, opt);
+      |                                               ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2609:30: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2609 |                 feats_cpu[i][j] = feat_fp32;
+      |                 ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2612:56: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2612 |             if (opt.use_packing_layout && feats_cpu[i][j].elempack != 1)
+      |                                           ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2615:52: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2615 |                 ncnn::convert_packing(feats_cpu[i][j], feat_cpu_unpacked, 1, opt);
+      |                                       ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2616:30: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2616 |                 feats_cpu[i][j] = feat_cpu_unpacked;
+      |                 ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2630:50: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 2630 |                 const ncnn::Mat f = feats_cpu[i][j];
+      |                                     ~~~~~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2634:29: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 2634 |                     avgfeat[k] += f[k];
+      |                     ~~~~~~~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2634:37: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 2634 |                     avgfeat[k] += f[k];
+      |                                   ~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2640:25: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 2640 |                 avgfeat[k] /= tiles;
+      |                 ~~~~~~~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2640:31: warning: implicit conversion from 'const int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+ 2640 |                 avgfeat[k] /= tiles;
+      |                            ~~ ^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2537:26: warning: unused variable 'pixeldata' [-Wunused-variable]
+ 2537 |     const unsigned char* pixeldata = (const unsigned char*)inimage.data;
+      |                          ^~~~~~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2540:15: warning: unused variable 'channels' [-Wunused-variable]
+ 2540 |     const int channels = inimage.elempack;
+      |               ^~~~~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2626:31: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2626 |             int len = avgfeat.total();
+      |                 ~~~   ~~~~~~~~^~~~~~~
+make[2]: *** [third_party/librife_ncnn_vulkan/src/CMakeFiles/librife-ncnn-vulkan.dir/build.make:157: third_party/librife_ncnn_vulkan/src/CMakeFiles/librife-ncnn-vulkan.dir/warp.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:2703:18: warning: unused variable 'opt' [-Wunused-variable]
+ 2703 |     ncnn::Option opt = net.opt;
+      |                  ^~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3432:46: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 3432 |                 const ncnn::Mat f = feats[i][j];
+      |                                     ~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3436:29: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 3436 |                     avgfeat[k] += f[k];
+      |                     ~~~~~~~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3436:37: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 3436 |                     avgfeat[k] += f[k];
+      |                                   ~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3442:25: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 3442 |                 avgfeat[k] /= tiles;
+      |                 ~~~~~~~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3442:31: warning: implicit conversion from 'const int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+ 3442 |                 avgfeat[k] /= tiles;
+      |                            ~~ ^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3372:26: warning: unused variable 'pixeldata' [-Wunused-variable]
+ 3372 |     const unsigned char* pixeldata = (const unsigned char*)inimage.data;
+      |                          ^~~~~~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3375:15: warning: unused variable 'channels' [-Wunused-variable]
+ 3375 |     const int channels = inimage.elempack;
+      |               ^~~~~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3380:18: warning: unused variable 'opt' [-Wunused-variable]
+ 3380 |     ncnn::Option opt = net.opt;
+      |                  ^~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3428:31: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 3428 |             int len = avgfeat.total();
+      |                 ~~~   ~~~~~~~~^~~~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3485:18: warning: unused variable 'opt' [-Wunused-variable]
+ 3485 |     ncnn::Option opt = net.opt;
+      |                  ^~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3787:46: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+ 3787 |                 const ncnn::Mat f = feats[i][j];
+      |                                     ~~~~~    ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3791:29: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 3791 |                     avgfeat[k] += f[k];
+      |                     ~~~~~~~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3791:37: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 3791 |                     avgfeat[k] += f[k];
+      |                                   ~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3797:25: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 3797 |                 avgfeat[k] /= tiles;
+      |                 ~~~~~~~ ^
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3797:31: warning: implicit conversion from 'const int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+ 3797 |                 avgfeat[k] /= tiles;
+      |                            ~~ ^~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3727:26: warning: unused variable 'pixeldata' [-Wunused-variable]
+ 3727 |     const unsigned char* pixeldata = (const unsigned char*)inimage.data;
+      |                          ^~~~~~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3730:15: warning: unused variable 'channels' [-Wunused-variable]
+ 3730 |     const int channels = inimage.elempack;
+      |               ^~~~~~~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3735:18: warning: unused variable 'opt' [-Wunused-variable]
+ 3735 |     ncnn::Option opt = net.opt;
+      |                  ^~~
+/build/video2x/src/video2x/third_party/librealcugan_ncnn_vulkan/src/realcugan.cpp:3783:31: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 3783 |             int len = avgfeat.total();
+      |                 ~~~   ~~~~~~~~^~~~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:652:42: warning: declaration shadows a local variable [-Wshadow]
+  652 |                 std::vector<ncnn::VkMat> bindings(2);
+      |                                          ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:628:38: note: previous declaration is here
+  628 |             std::vector<ncnn::VkMat> bindings(8);
+      |                                      ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:656:53: warning: declaration shadows a local variable [-Wshadow]
+  656 |                 std::vector<ncnn::vk_constant_type> constants(3);
+      |                                                     ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:638:49: note: previous declaration is here
+  638 |             std::vector<ncnn::vk_constant_type> constants(3);
+      |                                                 ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:661:29: warning: declaration shadows a local variable [-Wshadow]
+  661 |                 ncnn::VkMat dispatcher;
+      |                             ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:643:25: note: previous declaration is here
+  643 |             ncnn::VkMat dispatcher;
+      |                         ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:488:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  488 |             constants[2].i = in0_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:491:48: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  491 |             constants[5].i = in0_gpu_padded[0].cstep;
+      |                            ~ ~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:519:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  519 |             constants[2].i = in1_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:522:48: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  522 |             constants[5].i = in1_gpu_padded[0].cstep;
+      |                            ~ ~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:617:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  617 |             constants[2].i = flow[0].cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:641:47: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  641 |             constants[2].i = flow_reversed[0].cstep;
+      |                            ~ ~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:659:43: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  659 |                 constants[2].i = flow[ti].cstep;
+      |                                ~ ~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:834:57: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  834 |                     constants[2].i = out_gpu_padded[ti].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:870:48: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  870 |             constants[2].i = out_gpu_padded[0].cstep;
+      |                            ~ ~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:873:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  873 |             constants[5].i = out_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:893:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  893 |             constants[2].i = in0_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:896:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  896 |             constants[5].i = in0_gpu_padded.cstep;
+      |                            ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:910:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  910 |             constants[2].i = in1_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:913:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  913 |             constants[5].i = in1_gpu_padded.cstep;
+      |                            ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:997:39: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  997 |                 constants[2].i = flow.cstep;
+      |                                ~ ~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1148:49: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1148 |                 constants[2].i = out_gpu_padded.cstep;
+      |                                ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1176:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1176 |             constants[2].i = out_gpu_padded.cstep;
+      |                            ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1179:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 1179 |             constants[5].i = out_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1508:39: warning: declaration shadows a local variable [-Wshadow]
+ 1508 |                                 float w = (*flow_w + *flow_reversed_y) * 0.5f;
+      |                                       ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1230:15: note: previous declaration is here
+ 1230 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1630:31: warning: declaration shadows a local variable [-Wshadow]
+ 1630 |                         float w = (*w0 + *w1 + -*w2 + -*w3 + *z4 + -*z5 + -*z6 + *z7) * 0.125f;
+      |                               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1230:15: note: previous declaration is here
+ 1230 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1808:31: warning: declaration shadows a local variable [-Wshadow]
+ 1808 |                         float w = (*w0 + *w1 + -*w2 + -*w3 + *z4 + -*z5 + -*z6 + *z7) * 0.125f;
+      |                               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1230:15: note: previous declaration is here
+ 1230 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1920:35: warning: declaration shadows a local variable [-Wshadow]
+ 1920 |                             float w = (*flow_w + *flow_reversed_y) * 0.5f;
+      |                                   ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1230:15: note: previous declaration is here
+ 1230 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2290:35: warning: declaration shadows a local variable [-Wshadow]
+ 2290 |                             float w = (*flow_w + *flow_reversed_y) * 0.5f;
+      |                                   ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1230:15: note: previous declaration is here
+ 1230 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:1232:15: warning: unused variable 'channels' [-Wunused-variable]
+ 1232 |     const int channels = 3;//in0image.elempack;
+      |               ^~~~~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2564:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2564 |             constants[2].i = in0_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2567:48: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2567 |             constants[5].i = in0_gpu_padded[0].cstep;
+      |                            ~ ~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2595:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2595 |             constants[2].i = in1_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2598:48: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2598 |             constants[5].i = in1_gpu_padded[0].cstep;
+      |                            ~ ~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2613:53: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2613 |             constants[2].i = timestep_gpu_padded[0].cstep;
+      |                            ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2634:66: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2634 |                 constants[2].i = timestep_gpu_padded_reversed[0].cstep;
+      |                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2707:55: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2707 |                         constants[2].i = flow[fi][ti].cstep;
+      |                                        ~ ~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2732:50: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2732 |                     constants[2].i = flow[fi][0].cstep;
+      |                                    ~ ~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2754:59: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2754 |                     constants[2].i = flow_reversed[fi][0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2811:57: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2811 |                     constants[2].i = out_gpu_padded[ti].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2868:50: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2868 |                     constants[2].i = flow[fi][0].cstep;
+      |                                    ~ ~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2923:48: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2923 |             constants[2].i = out_gpu_padded[0].cstep;
+      |                            ~ ~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2926:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2926 |             constants[5].i = out_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2947:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2947 |             constants[2].i = in0_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2950:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2950 |             constants[5].i = in0_gpu_padded.cstep;
+      |                            ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2964:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2964 |             constants[2].i = in1_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2967:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2967 |             constants[5].i = in1_gpu_padded.cstep;
+      |                            ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2980:50: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2980 |             constants[2].i = timestep_gpu_padded.cstep;
+      |                            ~ ~~~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:2999:63: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 2999 |                 constants[2].i = timestep_gpu_padded_reversed.cstep;
+      |                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3070:47: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 3070 |                     constants[2].i = flow[fi].cstep;
+      |                                    ~ ~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3125:49: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 3125 |                 constants[2].i = out_gpu_padded.cstep;
+      |                                ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3166:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 3166 |             constants[2].i = out_gpu_padded.cstep;
+      |                            ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3169:38: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 3169 |             constants[5].i = out_gpu.cstep;
+      |                            ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3497:39: warning: declaration shadows a local variable [-Wshadow]
+ 3497 |                                 float w = (*flow_w + *flow_reversed_y) * 0.5f;
+      |                                       ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3220:15: note: previous declaration is here
+ 3220 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3619:35: warning: declaration shadows a local variable [-Wshadow]
+ 3619 |                             float w = (*w0 + *w1 + -*w2 + -*w3 + *z4 + -*z5 + -*z6 + *z7) * 0.125f;
+      |                                   ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3220:15: note: previous declaration is here
+ 3220 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3772:35: warning: declaration shadows a local variable [-Wshadow]
+ 3772 |                             float w = (*w0 + *w1 + -*w2 + -*w3 + *z4 + -*z5 + -*z6 + *z7) * 0.125f;
+      |                                   ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3220:15: note: previous declaration is here
+ 3220 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3986:35: warning: declaration shadows a local variable [-Wshadow]
+ 3986 |                             float w = (*w0 + *w1 + -*w2 + -*w3 + *z4 + -*z5 + -*z6 + *z7) * 0.125f;
+      |                                   ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3220:15: note: previous declaration is here
+ 3220 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:4297:35: warning: declaration shadows a local variable [-Wshadow]
+ 4297 |                             float w = (*flow_w + *flow_reversed_y) * 0.5f;
+      |                                   ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3220:15: note: previous declaration is here
+ 3220 |     const int w = in0image.w;
+      |               ^
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3222:15: warning: unused variable 'channels' [-Wunused-variable]
+ 3222 |     const int channels = 3;//in0image.elempack;
+      |               ^~~~~~~~
+/build/video2x/src/video2x/third_party/librife_ncnn_vulkan/src/rife.cpp:3226:18: warning: unused variable 'opt' [-Wunused-variable]
+ 3226 |     ncnn::Option opt = flownet.opt;
+      |                  ^~~
+/build/video2x/src/video2x/third_party/librealesrgan_ncnn_vulkan/src/realesrgan.cpp:332:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  332 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealesrgan_ncnn_vulkan/src/realesrgan.cpp:335:53: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  335 |                     constants[5].i = in_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealesrgan_ncnn_vulkan/src/realesrgan.cpp:410:54: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  410 |                     constants[2].i = out_tile_gpu[0].cstep;
+      |                                    ~ ~~~~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealesrgan_ncnn_vulkan/src/realesrgan.cpp:413:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  413 |                     constants[5].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealesrgan_ncnn_vulkan/src/realesrgan.cpp:457:45: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  457 |                     constants[2].i = in_gpu.cstep;
+      |                                    ~ ~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealesrgan_ncnn_vulkan/src/realesrgan.cpp:460:50: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  460 |                     constants[5].i = in_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealesrgan_ncnn_vulkan/src/realesrgan.cpp:522:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  522 |                     constants[2].i = out_tile_gpu.cstep;
+      |                                    ~ ~~~~~~~~~~~~~^~~~~
+/build/video2x/src/video2x/third_party/librealesrgan_ncnn_vulkan/src/realesrgan.cpp:525:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  525 |                     constants[5].i = out_gpu.cstep;
+      |                                    ~ ~~~~~~~~^~~~~
+8 warnings generated.
+[ 62%] Linking CXX shared library librealesrgan-ncnn-vulkan.so
+[ 62%] Built target librealesrgan-ncnn-vulkan
+90 warnings generated.
+[ 64%] Linking CXX shared library librealcugan-ncnn-vulkan.so
+57 warnings generated.
+make[1]: *** [CMakeFiles/Makefile2:288: third_party/librife_ncnn_vulkan/src/CMakeFiles/librife-ncnn-vulkan.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 64%] Built target librealcugan-ncnn-vulkan
+make: *** [Makefile:136: all] Error 2
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

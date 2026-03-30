@@ -1,0 +1,23 @@
+/usr/bin/install -c -D -m 644 out/libdriveio.so.0 /build/makemkv/pkg/makemkv/usr/lib/libdriveio.so.0
+/usr/bin/install -c -D -m 644 out/libmakemkv.so.1 /build/makemkv/pkg/makemkv/usr/lib/libmakemkv.so.1
+/usr/bin/install -c -D -m 644 out/libmmbd.so.0 /build/makemkv/pkg/makemkv/usr/lib/libmmbd.so.0
+/usr/bin/install -c -D -m 755 out/makemkv /build/makemkv/pkg/makemkv/usr/bin/makemkv
+/usr/bin/install -c -D -m 644 makemkvgui/share/makemkv.desktop /build/makemkv/pkg/makemkv/usr/share/applications/makemkv.desktop
+/usr/bin/install -c -D -m 644 makemkvgui/share/icons/16x16/makemkv.png /build/makemkv/pkg/makemkv/usr/share/icons/hicolor/16x16/apps/makemkv.png
+/usr/bin/install -c -D -m 644 makemkvgui/share/icons/22x22/makemkv.png /build/makemkv/pkg/makemkv/usr/share/icons/hicolor/22x22/apps/makemkv.png
+/usr/bin/install -c -D -m 644 makemkvgui/share/icons/32x32/makemkv.png /build/makemkv/pkg/makemkv/usr/share/icons/hicolor/32x32/apps/makemkv.png
+/usr/bin/install -c -D -m 644 makemkvgui/share/icons/64x64/makemkv.png /build/makemkv/pkg/makemkv/usr/share/icons/hicolor/64x64/apps/makemkv.png
+/usr/bin/install -c -D -m 644 makemkvgui/share/icons/128x128/makemkv.png /build/makemkv/pkg/makemkv/usr/share/icons/hicolor/128x128/apps/makemkv.png
+/usr/bin/install -c -D -m 644 makemkvgui/share/icons/256x256/makemkv.png /build/makemkv/pkg/makemkv/usr/share/icons/hicolor/256x256/apps/makemkv.png
+/usr/bin/install -c -D -m 755 out/mmccextr /build/makemkv/pkg/makemkv/usr/bin/mmccextr
+/usr/bin/install -c -D -m 755 out/mmgplsrv /build/makemkv/pkg/makemkv/usr/bin/mmgplsrv
+rm -f /build/makemkv/pkg/makemkv/usr/bin/makemkvcon
+rm -f /build/makemkv/pkg/makemkv/usr/bin/mmdtsdec
+rm -f /build/makemkv/pkg/makemkv/usr/share/MakeMKV/*
+install -d /build/makemkv/pkg/makemkv/usr/share/MakeMKV
+install -d /build/makemkv/pkg/makemkv/usr/bin
+install -t /build/makemkv/pkg/makemkv/usr/bin bin/amd64/makemkvcon
+install -m 644 -t /build/makemkv/pkg/makemkv/usr/share/MakeMKV src/share/appdata.tar
+install -m 644 -t /build/makemkv/pkg/makemkv/usr/share/MakeMKV src/share/blues.jar
+install -m 644 -t /build/makemkv/pkg/makemkv/usr/share/MakeMKV src/share/blues.policy
+cd /build/makemkv/pkg/makemkv/usr/bin && ln -s -f makemkvcon sdftool

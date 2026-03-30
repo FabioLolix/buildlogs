@@ -1,0 +1,31 @@
+  CC	 activate_linux.c
+  CC	 cairo_draw_text.c
+  CC	 color.c
+  CC	 i18n.c
+  CC	 log.c
+  CC	 options.c
+ GEN	 wayland/wlr-layer-shell-unstable-v1.h
+  CC	 x11/x11.c
+  CC	 config.c
+ GEN	 wayland/wlr-layer-shell-unstable-v1.c
+ GEN	 wayland/xdg-shell.c
+ GEN	 x11/XEventTypes.c
+  CC	 wayland/wayland.c
+  CC	 wayland/wlr-layer-shell-unstable-v1.c
+  CC	 wayland/xdg-shell.c
+  CC	 x11/XEventTypes.c
+WITH	 libconfig
+LINK	 activate-linux
+	 + activate_linux.o 
+	 + cairo_draw_text.o 
+	 + color.o 
+	 + i18n.o 
+	 + log.o 
+	 + options.o 
+	 + wayland/wayland.o 
+	 + x11/x11.o 
+	 + config.o 
+	 + wayland/wlr-layer-shell-unstable-v1.o 
+	 + wayland/xdg-shell.o 
+	 + x11/XEventTypes.o
+rm src/wayland/wlr-layer-shell-unstable-v1.c src/wayland/wlr-layer-shell-unstable-v1.h src/x11/XEventTypes.c src/wayland/xdg-shell.c

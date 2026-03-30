@@ -1,0 +1,61 @@
+# Move these to eyed3.nicfit.net
+test -f /build/python-eyed3/src/eyeD3-0.9.9/tests/eyeD3-test-data.tgz || \
+	wget --quiet "http://eyed3.nicfit.net/releases/eyeD3-test-data.tgz" \
+	     -O /build/python-eyed3/src/eyeD3-0.9.9/tests/eyeD3-test-data.tgz
+tar xzf /build/python-eyed3/src/eyeD3-0.9.9/tests/eyeD3-test-data.tgz -C /build/python-eyed3/src/eyeD3-0.9.9/tests
+cd tests && rm -f ./data && ln -s /build/python-eyed3/src/eyeD3-0.9.9/tests/eyeD3-test-data ./data
+============================= test session starts ==============================
+platform linux -- Python 3.14.2, pytest-8.4.2, pluggy-1.6.0
+rootdir: /build/python-eyed3/src/eyeD3-0.9.9
+configfile: pyproject.toml
+plugins: Faker-40.1.1
+collected 185 items
+
+tests/id3/test_frames.py .............                                   [  7%]
+tests/id3/test_headers.py ................                               [ 15%]
+tests/id3/test_id3.py .............                                      [ 22%]
+tests/id3/test_rva.py ...........                                        [ 28%]
+tests/id3/test_tag.py .................................                  [ 46%]
+tests/mp3/test_infos.py .                                                [ 47%]
+tests/mp3/test_mp3.py ....                                               [ 49%]
+tests/test__init__.py ...                                                [ 50%]
+tests/test_binfuncs.py .......                                           [ 54%]
+tests/test_classic_plugin.py ........................................... [ 77%]
+.                                                                        [ 78%]
+tests/test_console.py ...                                                [ 80%]
+tests/test_core.py .......                                               [ 83%]
+tests/test_factory.py .                                                  [ 84%]
+tests/test_issues.py ..                                                  [ 85%]
+tests/test_jsonyaml_plugin.py ..                                         [ 86%]
+tests/test_lameinfo_plugin.py ..                                         [ 87%]
+tests/test_main.py .......                                               [ 91%]
+tests/test_mimetype.py ........                                          [ 95%]
+tests/test_plugins.py ..                                                 [ 96%]
+tests/test_stats_plugins.py .                                            [ 97%]
+tests/test_utils.py .....                                                [100%]
+
+=============================== warnings summary ===============================
+tests/test_classic_plugin.py:879
+  /build/python-eyed3/src/eyeD3-0.9.9/tests/test_classic_plugin.py:879: PytestUnknownMarkWarning: Unknown pytest.mark.audiofile_name - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.audiofile_name("unknown-frame-ASDF.mp3")
+
+tests/id3/test_frames.py::test_DateFrame
+tests/id3/test_tag.py::testRecordingDate_v23_issue517
+tests/id3/test_tag.py::testRecordingDate_v23_issue517
+tests/test_core.py::test_Date
+tests/test_core.py::test_Date
+tests/test_core.py::test_Date
+  /build/python-eyed3/src/eyeD3-0.9.9/eyed3/core.py:375: DeprecationWarning: Parsing dates involving a day of month without a year specified is ambiguous
+  and fails to parse leap day. The default behavior will change in Python 3.15
+  to either always raise an exception or to use a different default year (TBD).
+  To avoid trouble, add a specific year to the input & format.
+  See https://github.com/python/cpython/issues/70647.
+    pdate = time.strptime(s, fmt)
+
+tests/test_jsonyaml_plugin.py::testJsonPlugin
+tests/test_jsonyaml_plugin.py::testYamlPlugin
+  /build/python-eyed3/src/eyeD3-0.9.9/eyed3/plugins/jsontag.py:42: DeprecationWarning: Use Tag.getBestDate() instead
+    member = getattr(tag, name)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 185 passed, 9 warnings in 1.51s ========================

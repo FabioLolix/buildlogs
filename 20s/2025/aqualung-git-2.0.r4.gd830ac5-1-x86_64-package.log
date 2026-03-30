@@ -1,0 +1,58 @@
+Making install in doc
+make[1]: Entering directory '/build/aqualung-git/src/aqualung/doc'
+make[2]: Entering directory '/build/aqualung-git/src/aqualung/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/aqualung-git/pkg/aqualung-git/usr/share/doc/aqualung'
+ /usr/bin/mkdir -p '/build/aqualung-git/pkg/aqualung-git/usr/share/man/man1'
+ /usr/bin/install -c -m 644 README split.sh aqualung-doc.css aqualung-doc.dtd aqualung-doc.xml aqualung-latex.xsl aqualung-man.xsl aqualung-xhtml-multipage.xsl aqualung-xhtml-view.xsl aqualung-xhtml.xsl external.eps timer.eps external.png jack.png main.png playlist.png settings.png store.png systray.png timer.png '/build/aqualung-git/pkg/aqualung-git/usr/share/doc/aqualung'
+ /usr/bin/install -c -m 644 aqualung.1 '/build/aqualung-git/pkg/aqualung-git/usr/share/man/man1'
+make[2]: Leaving directory '/build/aqualung-git/src/aqualung/doc'
+make[1]: Leaving directory '/build/aqualung-git/src/aqualung/doc'
+Making install in po
+make[1]: Entering directory '/build/aqualung-git/src/aqualung/po'
+installing cs.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/cs/LC_MESSAGES/aqualung.mo
+installing de.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/de/LC_MESSAGES/aqualung.mo
+installing es.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/es/LC_MESSAGES/aqualung.mo
+installing fr.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/fr/LC_MESSAGES/aqualung.mo
+installing hu.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/hu/LC_MESSAGES/aqualung.mo
+installing it.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/it/LC_MESSAGES/aqualung.mo
+installing ja.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/ja/LC_MESSAGES/aqualung.mo
+installing nl.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/nl/LC_MESSAGES/aqualung.mo
+installing pl.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/pl/LC_MESSAGES/aqualung.mo
+installing ru.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/ru/LC_MESSAGES/aqualung.mo
+installing sv.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/sv/LC_MESSAGES/aqualung.mo
+installing uk.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/uk/LC_MESSAGES/aqualung.mo
+installing zh.gmo as /build/aqualung-git/pkg/aqualung-git/usr/share/locale/zh/LC_MESSAGES/aqualung.mo
+if test "aqualung" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /build/aqualung-git/pkg/aqualung-git/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /build/aqualung-git/pkg/aqualung-git/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /build/aqualung-git/pkg/aqualung-git/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/build/aqualung-git/src/aqualung/po'
+Making install in .
+make[1]: Entering directory '/build/aqualung-git/src/aqualung'
+make[2]: Entering directory '/build/aqualung-git/src/aqualung'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/aqualung-git/src/aqualung'
+make[1]: Leaving directory '/build/aqualung-git/src/aqualung'
+Making install in src
+make[1]: Entering directory '/build/aqualung-git/src/aqualung/src'
+make[2]: Entering directory '/build/aqualung-git/src/aqualung/src'
+ /usr/bin/mkdir -p '/build/aqualung-git/pkg/aqualung-git/usr/bin'
+ /usr/bin/mkdir -p '/build/aqualung-git/pkg/aqualung-git/usr/share/aqualung'
+ /usr/bin/mkdir -p '/build/aqualung-git/pkg/aqualung-git/usr/share/aqualung/theme/default'
+ /usr/bin/mkdir -p '/build/aqualung-git/pkg/aqualung-git/usr/share/aqualung/theme/dark'
+  /usr/bin/install -c aqualung '/build/aqualung-git/pkg/aqualung-git/usr/bin'
+ /usr/bin/install -c -m 644 img/appearance.png img/cdda.png img/cddb.png img/drag.png img/dsp.png img/general.png img/icon_16.png img/icon_24.png img/icon_32.png img/icon_48.png img/icon_64.png img/inet.png img/logo.png img/metadata.png img/ms-artist.png img/ms-cdda-disk.png img/ms-cdda-nodisk.png img/ms-cdda.png img/ms-feed.png img/ms-podcast.png img/ms-record.png img/ms-store.png img/ms-track.png img/music_store.png img/playlist.png img/rva.png img/tab-close.png '/build/aqualung-git/pkg/aqualung-git/usr/share/aqualung'
+ /usr/bin/install -c -m 644 img/theme/dark/theme.css img/theme/dark/next.png img/theme/dark/pause.png img/theme/dark/play.png img/theme/dark/play_pause.png img/theme/dark/prev.png img/theme/dark/repeat.png img/theme/dark/repeat_all.png img/theme/dark/shuffle.png img/theme/dark/stop.png '/build/aqualung-git/pkg/aqualung-git/usr/share/aqualung/theme/dark'
+ /usr/bin/install -c -m 644 img/theme/default/theme.css img/theme/default/next.png img/theme/default/pause.png img/theme/default/play.png img/theme/default/play_pause.png img/theme/default/prev.png img/theme/default/repeat.png img/theme/default/repeat_all.png img/theme/default/shuffle.png img/theme/default/stop.png '/build/aqualung-git/pkg/aqualung-git/usr/share/aqualung/theme/default'
+make[2]: Leaving directory '/build/aqualung-git/src/aqualung/src'
+make[1]: Leaving directory '/build/aqualung-git/src/aqualung/src'

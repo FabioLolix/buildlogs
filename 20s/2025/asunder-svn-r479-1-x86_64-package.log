@@ -1,0 +1,164 @@
+Making install in src
+make[1]: Entering directory '/build/asunder-svn/src/asunder/src'
+make[2]: Entering directory '/build/asunder-svn/src/asunder/src'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/build/asunder-svn/pkg/asunder-svn/usr/bin'
+  /usr/bin/install -c asunder '/build/asunder-svn/pkg/asunder-svn/usr/bin'
+make[2]: Leaving directory '/build/asunder-svn/src/asunder/src'
+make[1]: Leaving directory '/build/asunder-svn/src/asunder/src'
+Making install in po
+make[1]: Entering directory '/build/asunder-svn/src/asunder/po'
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+linguas="af am an ar as az be be@latin bg bn bn_IN br bs_BA ca cs cy da de dz el eo es eu fa ff fi fo fr fy ga gl gu he hi hr ht hu hy ia id ie is it ja ka kk km ko ku ky la lb lg lt lv mg mk ml mn mr ms my nb ne nl nn oc or pa pl ps pt pt_BR ro ru rw si sk sl sq sr sr@latin sv ta te th tk tl tr tt ug uk ur ur_PK uz uz@cyrillic vi wa wo xh yi zh_CN zh_TW zu "; \
+for lang in $linguas; do \
+  dir=/build/asunder-svn/pkg/asunder-svn/usr/share/locale/$lang/LC_MESSAGES; \
+  /bin/sh /build/asunder-svn/src/asunder/install-sh -d $dir; \
+  if test -r $lang.gmo; then \
+    /usr/bin/install -c -m 644 $lang.gmo $dir/asunder.mo; \
+    echo "installing $lang.gmo as $dir/asunder.mo"; \
+  else \
+    /usr/bin/install -c -m 644 ./$lang.gmo $dir/asunder.mo; \
+    echo "installing ./$lang.gmo as" \
+	 "$dir/asunder.mo"; \
+  fi; \
+  if test -r $lang.gmo.m; then \
+    /usr/bin/install -c -m 644 $lang.gmo.m $dir/asunder.mo.m; \
+    echo "installing $lang.gmo.m as $dir/asunder.mo.m"; \
+  else \
+    if test -r ./$lang.gmo.m ; then \
+      /usr/bin/install -c -m 644 ./$lang.gmo.m \
+	$dir/asunder.mo.m; \
+      echo "installing ./$lang.gmo.m as" \
+	   "$dir/asunder.mo.m"; \
+    else \
+      true; \
+    fi; \
+  fi; \
+done
+installing af.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/af/LC_MESSAGES/asunder.mo
+installing am.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/am/LC_MESSAGES/asunder.mo
+installing an.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/an/LC_MESSAGES/asunder.mo
+installing ar.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ar/LC_MESSAGES/asunder.mo
+installing as.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/as/LC_MESSAGES/asunder.mo
+installing az.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/az/LC_MESSAGES/asunder.mo
+installing be.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/be/LC_MESSAGES/asunder.mo
+installing be@latin.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/be@latin/LC_MESSAGES/asunder.mo
+installing bg.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/bg/LC_MESSAGES/asunder.mo
+installing bn.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/bn/LC_MESSAGES/asunder.mo
+installing bn_IN.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/bn_IN/LC_MESSAGES/asunder.mo
+installing br.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/br/LC_MESSAGES/asunder.mo
+installing bs_BA.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/bs_BA/LC_MESSAGES/asunder.mo
+installing ca.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ca/LC_MESSAGES/asunder.mo
+installing cs.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/cs/LC_MESSAGES/asunder.mo
+installing cy.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/cy/LC_MESSAGES/asunder.mo
+installing da.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/da/LC_MESSAGES/asunder.mo
+installing de.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/de/LC_MESSAGES/asunder.mo
+installing dz.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/dz/LC_MESSAGES/asunder.mo
+installing el.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/el/LC_MESSAGES/asunder.mo
+installing eo.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/eo/LC_MESSAGES/asunder.mo
+installing es.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/es/LC_MESSAGES/asunder.mo
+installing eu.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/eu/LC_MESSAGES/asunder.mo
+installing fa.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/fa/LC_MESSAGES/asunder.mo
+installing ff.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ff/LC_MESSAGES/asunder.mo
+installing fi.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/fi/LC_MESSAGES/asunder.mo
+installing fo.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/fo/LC_MESSAGES/asunder.mo
+installing fr.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/fr/LC_MESSAGES/asunder.mo
+installing fy.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/fy/LC_MESSAGES/asunder.mo
+installing ga.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ga/LC_MESSAGES/asunder.mo
+installing gl.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/gl/LC_MESSAGES/asunder.mo
+installing gu.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/gu/LC_MESSAGES/asunder.mo
+installing he.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/he/LC_MESSAGES/asunder.mo
+installing hi.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/hi/LC_MESSAGES/asunder.mo
+installing hr.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/hr/LC_MESSAGES/asunder.mo
+installing ht.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ht/LC_MESSAGES/asunder.mo
+installing hu.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/hu/LC_MESSAGES/asunder.mo
+installing hy.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/hy/LC_MESSAGES/asunder.mo
+installing ia.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ia/LC_MESSAGES/asunder.mo
+installing id.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/id/LC_MESSAGES/asunder.mo
+installing ie.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ie/LC_MESSAGES/asunder.mo
+installing is.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/is/LC_MESSAGES/asunder.mo
+installing it.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/it/LC_MESSAGES/asunder.mo
+installing ja.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ja/LC_MESSAGES/asunder.mo
+installing ka.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ka/LC_MESSAGES/asunder.mo
+installing kk.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/kk/LC_MESSAGES/asunder.mo
+installing km.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/km/LC_MESSAGES/asunder.mo
+installing ko.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ko/LC_MESSAGES/asunder.mo
+installing ku.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ku/LC_MESSAGES/asunder.mo
+installing ky.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ky/LC_MESSAGES/asunder.mo
+installing la.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/la/LC_MESSAGES/asunder.mo
+installing lb.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/lb/LC_MESSAGES/asunder.mo
+installing lg.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/lg/LC_MESSAGES/asunder.mo
+installing lt.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/lt/LC_MESSAGES/asunder.mo
+installing lv.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/lv/LC_MESSAGES/asunder.mo
+installing mg.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/mg/LC_MESSAGES/asunder.mo
+installing mk.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/mk/LC_MESSAGES/asunder.mo
+installing ml.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ml/LC_MESSAGES/asunder.mo
+installing mn.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/mn/LC_MESSAGES/asunder.mo
+installing mr.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/mr/LC_MESSAGES/asunder.mo
+installing ms.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ms/LC_MESSAGES/asunder.mo
+installing my.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/my/LC_MESSAGES/asunder.mo
+installing nb.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/nb/LC_MESSAGES/asunder.mo
+installing ne.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ne/LC_MESSAGES/asunder.mo
+installing nl.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/nl/LC_MESSAGES/asunder.mo
+installing nn.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/nn/LC_MESSAGES/asunder.mo
+installing oc.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/oc/LC_MESSAGES/asunder.mo
+installing or.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/or/LC_MESSAGES/asunder.mo
+installing pa.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/pa/LC_MESSAGES/asunder.mo
+installing pl.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/pl/LC_MESSAGES/asunder.mo
+installing ps.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ps/LC_MESSAGES/asunder.mo
+installing pt.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/pt/LC_MESSAGES/asunder.mo
+installing pt_BR.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/pt_BR/LC_MESSAGES/asunder.mo
+installing ro.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ro/LC_MESSAGES/asunder.mo
+installing ru.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ru/LC_MESSAGES/asunder.mo
+installing rw.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/rw/LC_MESSAGES/asunder.mo
+installing si.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/si/LC_MESSAGES/asunder.mo
+installing sk.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/sk/LC_MESSAGES/asunder.mo
+installing sl.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/sl/LC_MESSAGES/asunder.mo
+installing sq.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/sq/LC_MESSAGES/asunder.mo
+installing sr.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/sr/LC_MESSAGES/asunder.mo
+installing sr@latin.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/sr@latin/LC_MESSAGES/asunder.mo
+installing sv.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/sv/LC_MESSAGES/asunder.mo
+installing ta.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ta/LC_MESSAGES/asunder.mo
+installing te.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/te/LC_MESSAGES/asunder.mo
+installing th.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/th/LC_MESSAGES/asunder.mo
+installing tk.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/tk/LC_MESSAGES/asunder.mo
+installing tl.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/tl/LC_MESSAGES/asunder.mo
+installing tr.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/tr/LC_MESSAGES/asunder.mo
+installing tt.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/tt/LC_MESSAGES/asunder.mo
+installing ug.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ug/LC_MESSAGES/asunder.mo
+installing uk.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/uk/LC_MESSAGES/asunder.mo
+installing ur.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ur/LC_MESSAGES/asunder.mo
+installing ur_PK.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/ur_PK/LC_MESSAGES/asunder.mo
+installing uz.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/uz/LC_MESSAGES/asunder.mo
+installing uz@cyrillic.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/uz@cyrillic/LC_MESSAGES/asunder.mo
+installing vi.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/vi/LC_MESSAGES/asunder.mo
+installing wa.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/wa/LC_MESSAGES/asunder.mo
+installing wo.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/wo/LC_MESSAGES/asunder.mo
+installing xh.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/xh/LC_MESSAGES/asunder.mo
+installing yi.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/yi/LC_MESSAGES/asunder.mo
+installing zh_CN.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/zh_CN/LC_MESSAGES/asunder.mo
+installing zh_TW.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/zh_TW/LC_MESSAGES/asunder.mo
+installing zu.gmo as /build/asunder-svn/pkg/asunder-svn/usr/share/locale/zu/LC_MESSAGES/asunder.mo
+make[1]: Leaving directory '/build/asunder-svn/src/asunder/po'
+make[1]: Entering directory '/build/asunder-svn/src/asunder'
+make[2]: Entering directory '/build/asunder-svn/src/asunder'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/asunder-svn/pkg/asunder-svn/usr/share/applications'
+ /usr/bin/mkdir -p '/build/asunder-svn/pkg/asunder-svn/usr/share/pixmaps'
+ /usr/bin/install -c -m 644 asunder.desktop '/build/asunder-svn/pkg/asunder-svn/usr/share/applications'
+ /usr/bin/install -c -m 644 pixmaps/asunder.png pixmaps/asunder.svg '/build/asunder-svn/pkg/asunder-svn/usr/share/pixmaps'
+make  install-data-hook
+make[3]: Entering directory '/build/asunder-svn/src/asunder'
+cd syslogng && make install
+make[4]: Entering directory '/build/asunder-svn/src/asunder/syslogng'
+'asunder.conf' -> '/etc/rsyslog.d/'
+cp: cannot create regular file '/etc/rsyslog.d/': Not a directory
+It appears that your system is not using syslog-ng. That's ok but Asunder will be logging to the default syslog target instead of /var/log/asunder.log
+make[4]: Leaving directory '/build/asunder-svn/src/asunder/syslogng'
+make[3]: Leaving directory '/build/asunder-svn/src/asunder'
+make[2]: Leaving directory '/build/asunder-svn/src/asunder'
+make[1]: Leaving directory '/build/asunder-svn/src/asunder'
