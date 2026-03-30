@@ -267,7 +267,7 @@ checking for main in -lmad... yes
 checking for main in -lmpg123... yes
 checking for main in -lvorbis... yes
 checking for main in -lvorbisfile... yes
-checking for opusfile... no
+checking for opusfile... yes
 checking for main in -logg... yes
 checking for ogg_stream_flush_fill in -logg... yes
 checking for main in -lFLAC... yes
@@ -396,7 +396,7 @@ Plugin Summary:
     musepack: yes - musepack player plugin
     notify: yes - notification-daemon support plugin
     nullout: yes - NULL output
-    opus: no - ogg opus player
+    opus: yes - ogg opus player
     oss: yes - oss output plugin
     pltbrowser: yes - playlist browser gui plugin
     psf: yes - PSF player, using Audio Overload SDK
@@ -436,8 +436,8 @@ make[3]: Entering directory '/build/deadbeef-git/src/deadbeef/external/ddb_dsp_l
   CXXLD    ddb_dsp_libretro.la
 make[3]: Leaving directory '/build/deadbeef-git/src/deadbeef/external/ddb_dsp_libretro'
 make[3]: Entering directory '/build/deadbeef-git/src/deadbeef/external'
-  CC       mp4p/src/libmp4p_la-mp4patomdata.lo
   CC       mp4p/src/libmp4p_la-mp4p.lo
+  CC       mp4p/src/libmp4p_la-mp4patomdata.lo
   CC       mp4p/src/libmp4p_la-mp4pfile.lo
   CCLD     libmp4p.la
 make[3]: Leaving directory '/build/deadbeef-git/src/deadbeef/external'
@@ -457,9 +457,9 @@ make[3]: Leaving directory '/build/deadbeef-git/src/deadbeef/shared/scope'
 Making all in scriptable
 make[3]: Entering directory '/build/deadbeef-git/src/deadbeef/shared/scriptable'
   CC       libscriptable_la-scriptable.lo
-  CC       libscriptable_la-scriptable_dsp.lo
   CC       libscriptable_la-scriptable_model.lo
   CC       libscriptable_la-scriptable_encoder.lo
+  CC       libscriptable_la-scriptable_dsp.lo
 scriptable_encoder.c:61:11: warning: initializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
    61 |     char *ext = strrchr (ent->d_name, '.');
       |           ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -492,10 +492,10 @@ make[3]: Entering directory '/build/deadbeef-git/src/deadbeef/shared'
   CC       libpluginsettings_la-pluginsettings.lo
   CC       libparser_la-parser.lo
   CCLD     libgrowablebuffer.la
+  CCLD     libctmap.la
   CCLD     libparser.la
   CCLD     libtftintutil.la
   CCLD     libpluginsettings.la
-  CCLD     libctmap.la
   CCLD     libeqpreset.la
   CCLD     libdeletefromdisk.la
   CCLD     libtrkpropertiesutil.la
@@ -507,9 +507,9 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/liboggedit
   CC       liboggedit_la-oggedit_internal.lo
   CC       liboggedit_la-oggedit_utils.lo
   CC       liboggedit_la-oggedit_art.lo
-  CC       liboggedit_la-oggedit_vorbis.lo
   CC       liboggedit_la-oggedit_opus.lo
   CC       liboggedit_la-oggedit_flac.lo
+  CC       liboggedit_la-oggedit_vorbis.lo
   CCLD     liboggedit.la
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/liboggedit'
 Making all in plugins/lastfm
@@ -565,7 +565,8 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/vorbis'
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/vorbis'
 Making all in plugins/opus
 make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/opus'
-make[2]: Nothing to be done for 'all'.
+  CC       opus_la-opus.lo
+  CCLD     opus.la
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/opus'
 Making all in plugins/flac
 make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/flac'
@@ -644,10 +645,10 @@ make[3]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/gtkui'
   CC       ddb_gui_GTK3_la-deadbeefapp.lo
   CC       ddb_gui_GTK3_la-actions.lo
   CC       ddb_gui_GTK3_la-callbacks.lo
-  CC       ddb_gui_GTK3_la-support.lo
   CC       ddb_gui_GTK3_la-interface.lo
-  CC       ddb_gui_GTK3_la-ddbcellrenderertextmultiline.lo
+  CC       ddb_gui_GTK3_la-support.lo
   CC       ddb_gui_GTK3_la-ddbseekbar.lo
+  CC       ddb_gui_GTK3_la-ddbcellrenderertextmultiline.lo
   CC       ddb_gui_GTK3_la-ddbequalizer.lo
   CC       ddb_gui_GTK3_la-ddbtabstrip.lo
   CC       ddb_gui_GTK3_la-ddbvolumebar.lo
@@ -657,8 +658,8 @@ make[3]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/gtkui'
   CC       ddb_gui_GTK3_la-fileman.lo
   CC       ddb_gui_GTK3_la-gtkui.lo
   CC       ddb_gui_GTK3_la-gtkui_deletefromdisk.lo
-  CC       ddb_gui_GTK3_la-pluginconf.lo
   CC       ddb_gui_GTK3_la-plmenu.lo
+  CC       ddb_gui_GTK3_la-pluginconf.lo
   CC       ddb_gui_GTK3_la-progress.lo
   CC       ddb_gui_GTK3_la-rg.lo
   CC       ddb_gui_GTK3_la-search.lo
@@ -677,8 +678,8 @@ make[3]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/gtkui'
   CC       ddb_gui_GTK3_la-pltmenu.lo
   CC       ddb_gui_GTK3_la-tfimport.lo
   CC       ddb_gui_GTK3_la-undostack.lo
-  CC       ddb_gui_GTK3_la-undointegration.lo
   CC       ddb_gui_GTK3_la-gtkui-gresources.lo
+  CC       ddb_gui_GTK3_la-undointegration.lo
   CC       ../../src/ddb_gui_GTK3_la-utf8.lo
   CC       medialib/ddb_gui_GTK3_la-medialibwidget.lo
   CC       medialib/ddb_gui_GTK3_la-medialibmanager.lo
@@ -739,19 +740,20 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/oss'
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/oss'
 Making all in plugins/artwork
 make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/artwork'
-  CC       artwork_la-artwork.lo
   CC       artwork_la-cache.lo
+  CC       artwork_la-artwork.lo
   CC       artwork_la-artwork_internal.lo
-  CC       artwork_la-coverinfo.lo
   CC       artwork_la-artwork_flac.lo
+  CC       artwork_la-coverinfo.lo
   CC       artwork_la-ogg_shared.lo
   CC       artwork_la-musicbrainz.lo
   CC       artwork_la-albumartorg.lo
-  CC       artwork_la-wos.lo
   CC       artwork_la-lastfm.lo
+  CC       artwork_la-wos.lo
   CC       artwork_la-escape.lo
-  CC       artwork_la-base64.lo
   CC       artwork_la-artwork_ogg.lo
+  CC       artwork_la-base64.lo
+  CC       artwork_la-artwork_opus.lo
 wos.c:54:11: warning: initializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
    54 |     char *dash = strstr (title, " -");
       |           ^      ~~~~~~~~~~~~~~~~~~~~
@@ -766,12 +768,16 @@ Making all in plugins/adplug
 make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/adplug'
   CC       adplug_la-plugin.lo
   CXX      adplug_la-adplug-db.lo
-  CC       adplug/la-debug.lo
+  CXX      libbinio/adplug_la-binfile.lo
+  CXX      libbinio/adplug_la-binio.lo
+  CXX      libbinio/adplug_la-binwrap.lo
+  CXX      libbinio/adplug_la-binstr.lo
   CC       adplug/la-adlibemu.lo
-  CC       adplug/la-depack.lo
+  CC       adplug/la-debug.lo
   CC       adplug/la-fmopl.lo
-  CC       adplug/la-unlzh.lo
+  CC       adplug/la-depack.lo
   CC       adplug/la-nukedopl.lo
+  CC       adplug/la-unlzh.lo
   CC       adplug/la-unlzss.lo
   CC       adplug/la-unlzw.lo
   CXX      adplug/la-a2m-v2.lo
@@ -792,8 +798,21 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/adplug'
   CXX      adplug/la-database.lo
   CXX      adplug/la-dfm.lo
   CXX      adplug/la-diskopl.lo
+libbinio/binio.cpp:71:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+   71 |     } else
+      |       ^
+libbinio/binio.cpp:214:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+  214 |     } else {      // Not a number (maybe unsupported on non-IEEE systems)
+      |       ^
+libbinio/binio.cpp:253:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+  253 |     } else {      // Not a number (maybe unsupported on non-IEEE systems)
+      |       ^
+libbinio/binio.cpp:498:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+  498 |   register long bits;
+      |   ^~~~~~~~
   CXX      adplug/la-dmo.lo
   CXX      adplug/la-dro.lo
+4 warnings generated.
   CXX      adplug/la-dro2.lo
   CXX      adplug/la-dtm.lo
   CXX      adplug/la-emuopl.lo
@@ -808,11 +827,14 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/adplug'
   CXX      adplug/la-hyp.lo
   CXX      adplug/la-imf.lo
   CXX      adplug/la-jbm.lo
-  CXX      adplug/la-ksm.lo
   CXX      adplug/la-kemuopl.lo
+  CXX      adplug/la-ksm.lo
   CXX      adplug/la-lds.lo
   CXX      adplug/la-mad.lo
   CXX      adplug/la-mdi.lo
+  CXX      adplug/la-mid.lo
+  CXX      adplug/la-mkj.lo
+  CXX      adplug/la-msc.lo
 adplug/herad.cpp:88:19: warning: expression result unused [-Wunused-value]
    88 |                 AdPlug_LogWrite("HERAD: Is not HSQ, wrong check byte.\n");
       |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -870,16 +892,13 @@ adplug/herad.cpp:667:19: warning: expression result unused [-Wunused-value]
 adplug/herad.cpp:677:19: warning: expression result unused [-Wunused-value]
   677 |                 AdPlug_LogWrite("HERAD: Speed is not defined.\n");
       |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  CXX      adplug/la-mid.lo
-  CXX      adplug/la-mkj.lo
-  CXX      adplug/la-msc.lo
   CXX      adplug/la-mtk.lo
   CXX      adplug/la-mtr.lo
   CXX      adplug/la-mus.lo
   CXX      adplug/la-nemuopl.lo
   CXX      adplug/la-pis.lo
-  CXX      adplug/la-player.lo
   CXX      adplug/la-players.lo
+  CXX      adplug/la-player.lo
   CXX      adplug/la-protrack.lo
   CXX      adplug/la-psi.lo
   CXX      adplug/la-rad2.lo
@@ -901,23 +920,6 @@ adplug/herad.cpp:677:19: warning: expression result unused [-Wunused-value]
   CXX      adplug/la-woodyopl.lo
   CXX      adplug/la-xad.lo
   CXX      adplug/la-xsm.lo
-  CXX      libbinio/adplug_la-binfile.lo
-  CXX      libbinio/adplug_la-binio.lo
-  CXX      libbinio/adplug_la-binstr.lo
-  CXX      libbinio/adplug_la-binwrap.lo
-libbinio/binio.cpp:71:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
-   71 |     } else
-      |       ^
-libbinio/binio.cpp:214:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
-  214 |     } else {      // Not a number (maybe unsupported on non-IEEE systems)
-      |       ^
-libbinio/binio.cpp:253:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
-  253 |     } else {      // Not a number (maybe unsupported on non-IEEE systems)
-      |       ^
-libbinio/binio.cpp:498:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
-  498 |   register long bits;
-      |   ^~~~~~~~
-4 warnings generated.
   CXXLD    adplug.la
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/adplug'
 Making all in plugins/ffap
@@ -933,12 +935,12 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/sid'
   CC       sid_la-plugin.lo
   CXX      sid_la-csid.lo
   CXX      sidplay-libs/libsidplay/src/sid_la-mixer.lo
-  CXX      sidplay-libs/libsidplay/src/sid_la-player.lo
   CXX      sidplay-libs/builders/resid-builder/src/sid_la-resid-builder.lo
+  CXX      sidplay-libs/libsidplay/src/sid_la-player.lo
   CXX      sidplay-libs/builders/resid-builder/src/sid_la-resid.lo
   CXX      sidplay-libs/libsidplay/src/sid_la-config.lo
-  CXX      sidplay-libs/libsidplay/src/sid_la-event.lo
   CXX      sidplay-libs/libsidplay/src/mos6510/sid_la-mos6510.lo
+  CXX      sidplay-libs/libsidplay/src/sid_la-event.lo
   CXX      sidplay-libs/libsidplay/src/mos6526/sid_la-mos6526.lo
   CXX      sidplay-libs/libsidplay/src/mos656x/sid_la-mos656x.lo
   CXX      sidplay-libs/libsidplay/src/sid_la-psiddrv.lo
@@ -948,8 +950,24 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/sid'
   CXX      sidplay-libs/libsidplay/src/sidtune/sid_la-IconInfo.lo
   CXX      sidplay-libs/libsidplay/src/sidtune/sid_la-InfoFile.lo
   CXX      sidplay-libs/libsidplay/src/sidtune/sid_la-MUS.lo
-  CXX      sidplay-libs/libsidplay/src/sidtune/sid_la-PP20.lo
   CXX      sidplay-libs/libsidplay/src/sidtune/sid_la-PSID.lo
+  CXX      sidplay-libs/libsidplay/src/sidtune/sid_la-PP20.lo
+In file included from sidplay-libs/libsidplay/src/mixer.cpp:50:
+In file included from sidplay-libs/libsidplay/src/player.h:150:
+../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:69:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
+   69 |     operator bool()  const { return (&sidplayer ? true: false); }
+      |                                       ^~~~~~~~~ ~
+In file included from sidplay-libs/libsidplay/src/config.cpp:113:
+In file included from sidplay-libs/libsidplay/src/player.h:150:
+../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:69:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
+../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:70:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
+   69 |      70  |   o p e rbaotoolr  obpoeorla(to)r ! c(o)n scto n{s tr e{t urrent u(r&ns i(d&psliadpyleary e? rt r?u ef:a lfsael:s et)r;u e})
+;       | }                                      ^~~~~~~~~ ~
+
+      |                                       ^~~~~~~~~ ~
+../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:70:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
+   70 |     bool operator!() const { return (&sidplayer ? false: true); }
+      |                                       ^~~~~~~~~ ~
   CXX      sidplay-libs/libsidplay/src/sidtune/sid_la-SidTune.lo
 sidplay-libs/libsidplay/src/sidtune/IconInfo.cpp:378:18: warning: logical not is only applied to the left hand side of this comparison [-Wlogical-not-parentheses]
   378 |             if ( !pos >= len )
@@ -962,7 +980,7 @@ sidplay-libs/libsidplay/src/sidtune/IconInfo.cpp:378:18: note: add parentheses a
   378 |             if ( !pos >= len )
       |                  ^
       |                  (   )
-In file included from sidplay-libs/libsidplay/src/config.cpp:113:
+In file included from sidplay-libs/libsidplay/src/sidplay2.cpp:76:
 In file included from sidplay-libs/libsidplay/src/player.h:150:
 ../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:69:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
    69 |     operator bool()  const { return (&sidplayer ? true: false); }
@@ -975,33 +993,10 @@ In file included from sidplay-libs/libsidplay/src/player.h:150:
 ../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:69:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
    69 |     operator bool()  const { return (&sidplayer ? true: false); }
       |                                       ^~~~~~~~~ ~
-../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.hIn file included from sidplay-libs/libsidplay/src/sidplay2.cpp:76:
-In file included from sidplay-libs/libsidplay/src/player.h:150:
-../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:69:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
-   69 |     operator bool()  const { return (&sidplayer ? true: false); }
-      |                                       ^~~~~~~~~ ~
-:../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:70:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
-   70 |     bool operator!() const { return (&sidplayer ? false: true); }
-      |                                       ^~~~~~~~~ ~
-70:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
-   70 |     bool operator!() const { return (&sidplayer ? false: true); }
-      |                                       ^~~~~~~~~ ~
-In file included from sidplay-libs/libsidplay/src/mixer.cpp:50:
-In file included from sidplay-libs/libsidplay/src/player.h:150:
-../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:69:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
-   69 |     operaIn file included from sidplay-libs/libsidplay/src/player.cpp:211:
-In file included from sidplay-libs/libsidplay/src/player.h:150:
-../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:69:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
-   69 |     operator bool()  const { return (&sidplayer ? true: false); }
-      |                                       ^~~~~~~~~ ~
 ../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:70:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
    70 |     bool operator!() const { return (&sidplayer ? false: true); }
       |                                       ^~~~~~~~~ ~
-tor bool()  const { return (&sidplayer ? true: false); }
-      |                                       ^~~~~~~~~ ~
-../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:70:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
-   70 |     bool operator!() const { return (&sidplayer ? false: true); }
-      |                                       ^~~~~~~~~ ~
+2 warnings generated.
   CXX      sidplay-libs/libsidplay/src/sidtune/sid_la-SidTuneTools.lo
 In file included from csid.cpp:26:
 ../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:69:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
@@ -1010,33 +1005,40 @@ In file included from csid.cpp:26:
 ../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:70:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
    70 |     bool operator!() const { return (&sidplayer ? false: true); }
       |                                       ^~~~~~~~~ ~
-  CXX      sidplay-libs/libsidplay/src/xsid/sid_la-xsid.lo
-  CXX      sidplay-libs/resid/sid_la-envelope.lo
 sidplay-libs/libsidplay/src/sidplay2.cpp:92:10: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
    92 | {   if (&sidplayer) delete &sidplayer; }
       |     ~~   ^~~~~~~~~
+  CXX      sidplay-libs/libsidplay/src/xsid/sid_la-xsid.lo
   CXX      sidplay-libs/resid/sid_la-extfilt.lo
+  CXX      sidplay-libs/resid/sid_la-envelope.lo
   CXX      sidplay-libs/resid/sid_la-filter.lo
 3 warnings generated.
   CXX      sidplay-libs/resid/sid_la-pot.lo
-2 warnings generated.
-2 warnings generated.
+In file included from sidplay-libs/libsidplay/src/player.cpp:211:
+In file included from sidplay-libs/libsidplay/src/player.h:150:
+../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:69:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
+   69 |     operator bool()  const { return (&sidplayer ? true: false); }
+      |                                       ^~~~~~~~~ ~
+../../plugins/sid/sidplay-libs/libsidplay/include/sidplay/sidplay2.h:70:39: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
+   70 |     bool operator!() const { return (&sidplayer ? false: true); }
+      |                                       ^~~~~~~~~ ~
   CXX      sidplay-libs/resid/sid_la-sid.lo
   CXX      sidplay-libs/resid/sid_la-version.lo
+2 warnings generated.
+2 warnings generated.
   CXX      sidplay-libs/resid/sid_la-voice.lo
   CXX      sidplay-libs/resid/sid_la-wave.lo
-  CXX      sidplay-libs/resid/sid_la-wave6581_PST.lo
-2 warnings generated.
   CXX      sidplay-libs/resid/sid_la-wave6581_PS_.lo
+  CXX      sidplay-libs/resid/sid_la-wave6581_PST.lo
   CXX      sidplay-libs/resid/sid_la-wave6581_P_T.lo
   CXX      sidplay-libs/resid/sid_la-wave6581__ST.lo
 1 warning generated.
 2 warnings generated.
   CXX      sidplay-libs/resid/sid_la-wave8580_PST.lo
-2 warnings generated.
   CXX      sidplay-libs/resid/sid_la-wave8580_PS_.lo
   CXX      sidplay-libs/resid/sid_la-wave8580_P_T.lo
   CXX      sidplay-libs/resid/sid_la-wave8580__ST.lo
+2 warnings generated.
 sidplay-libs/builders/resid-builder/src/resid.cpp:57:8: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
    57 |         if (!&m_sid)
       |             ~ ^~~~~
@@ -1066,8 +1068,8 @@ Making all in plugins/vtx
 make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/vtx'
   CC       vtx_la-vtx.lo
   CC       libayemu/vtx_la-ay8912.lo
-  CC       libayemu/vtx_la-lh5dec.lo
   CC       libayemu/vtx_la-vtxfile.lo
+  CC       libayemu/vtx_la-lh5dec.lo
   CCLD     vtx.la
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/vtx'
 Making all in plugins/gme
@@ -1092,15 +1094,15 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/gme'
   CXX      game-music-emu-0.6pre/gme/gme_la-Gbs_Core.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Gbs_Cpu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Gbs_Emu.lo
-  CXX      game-music-emu-0.6pre/gme/gme_la-Gme_File.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Gme_Loader.lo
+  CXX      game-music-emu-0.6pre/gme/gme_la-Gme_File.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Gym_Emu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Hes_Apu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Hes_Apu_Adpcm.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Hes_Core.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Hes_Cpu.lo
-  CXX      game-music-emu-0.6pre/gme/gme_la-Kss_Core.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Hes_Emu.lo
+  CXX      game-music-emu-0.6pre/gme/gme_la-Kss_Core.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Kss_Cpu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Kss_Emu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Kss_Scc_Apu.lo
@@ -1117,8 +1119,8 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/gme'
   CXX      game-music-emu-0.6pre/gme/gme_la-Nes_Vrc7_Apu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Nsf_Core.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Nsf_Cpu.lo
-  CXX      game-music-emu-0.6pre/gme/gme_la-Nsf_Emu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Nsf_Impl.lo
+  CXX      game-music-emu-0.6pre/gme/gme_la-Nsf_Emu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Nsfe_Emu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Opl_Apu.lo
   CXX      game-music-emu-0.6pre/gme/gme_la-Resampler.lo
@@ -1157,6 +1159,7 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/gme'
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/gme_la-ChipMapper.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-2151intf.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-2203intf.lo
+  CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-2413intf.lo
 game-music-emu-0.6pre/gme/Vgm_Emu.cpp:38:34: warning: 'voice_names' is deprecated [-Wdeprecated-declarations]
    38 |     const char ** voice_names_ = voice_names();
       |                                  ^
@@ -1166,7 +1169,6 @@ game-music-emu-0.6pre/gme/Music_Emu.h:181:2: note: 'voice_names' has been explic
 game-music-emu-0.6pre/gme/blargg_common.h:101:57: note: expanded from macro 'BLARGG_DEPRECATED'
   101 |         #define BLARGG_DEPRECATED(      text ) __attribute__ ((deprecated)) text
       |                                                                ^
-  CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-2413intf.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-2608intf.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-2610intf.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-2612intf.lo
@@ -1175,11 +1177,11 @@ game-music-emu-0.6pre/gme/blargg_common.h:101:57: note: expanded from macro 'BLA
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-3812intf.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-8950intf.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-adlibemu_opl2.lo
-  CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-adlibemu_opl3.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-ay8910.lo
+  CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-adlibemu_opl3.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-ay_intf.lo
-1 warning generated.
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-c140.lo
+1 warning generated.
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-c352.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-c6280.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-c6280intf.lo
@@ -1226,8 +1228,8 @@ game-music-emu-0.6pre/gme/blargg_common.h:101:57: note: expanded from macro 'BLA
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-ym2612.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-ymdeltat.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-ymf262.lo
-  CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-ymf271.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-ymf278b.lo
+  CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-ymf271.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-ymz280b.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/chips/gme_la-yam.lo
   CC       game-music-emu-0.6pre/vgmplay/VGMPlay/gme_la-resampler.lo
@@ -1249,12 +1251,12 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/musepack'
   CC       musepack_la-musepack.lo
   CC       musepack_la-huffman.lo
   CC       musepack_la-mpc_bits_reader.lo
-  CC       musepack_la-mpc_demux.lo
   CC       musepack_la-mpc_decoder.lo
   CC       musepack_la-mpc_reader.lo
+  CC       musepack_la-mpc_demux.lo
   CC       musepack_la-requant.lo
-  CC       musepack_la-streaminfo.lo
   CC       musepack_la-synth_filter.lo
+  CC       musepack_la-streaminfo.lo
   CC       musepack_la-crc32.lo
   CCLD     musepack.la
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/musepack'
@@ -1314,8 +1316,8 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/dca'
   CC       libdca/dca_la-bitstream.lo
   CC       libdca/dca_la-downmix.lo
   CC       libdca/dca_la-extract_dca.lo
-  CC       libdca/dca_la-gettimeofday.lo
   CC       libdca/dca_la-parse.lo
+  CC       libdca/dca_la-gettimeofday.lo
   CCLD     dca.la
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/dca'
 Making all in plugins/aac
@@ -1400,7 +1402,6 @@ libmms/uri.c:224:22: warning: initializing 'char *' with an expression of type '
 libmms/uri.c:32:11: note: expanded from macro 'strndup'
    32 |     char *c = memchr (s, n, 0);\
       |           ^   ~~~~~~~~~~~~~~~~
-2 warnings generated.
 libmms/uri.c:246:28: warning: initializing 'char *' with an expression of type 'const void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
   246 |           guri->hostname = strndup (temp, p - temp);
       |                            ^~~~~~~~~~~~~~~~~~~~~~~~
@@ -1425,6 +1426,7 @@ libmms/uri.c:281:21: warning: initializing 'char *' with an expression of type '
 libmms/uri.c:32:11: note: expanded from macro 'strndup'
    32 |     char *c = memchr (s, n, 0);\
       |           ^   ~~~~~~~~~~~~~~~~
+2 warnings generated.
 mmsplug.c:236:6: warning: 'abort' is deprecated: since deadbeef API 1.11 [-Wdeprecated-declarations]
   236 |     .abort = mms_abort,
       |      ^
@@ -1524,30 +1526,18 @@ libmms/mmsh.c:398:68: note: expanded from macro 'io_read'
 libmms/mmsh.c:655:33: warning: passing 'uint8_t[65536]' (aka 'unsigned char[65536]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
   655 |     len = io_read (io, this->s, this->buf, this->chunk_length, this->need_abort);
       |                                 ^~~~~~~~~
-libmms/mmsh.c:3981: warning102 generated:.
- note: expanded from macro 'io_read'
+libmms/mmsh.c:398:102: note: expanded from macro 'io_read'
   398 | #define io_read(io, args...) ((io) ? (io)->read(io->read_data , ## args) : default_io.read(NULL , ## args))
       |                                                                                                      ^~~~
+1 warning generated.
 libmms/mms.c:526:36: warning: passing 'char[16424]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
   526 |   mms_buffer_init(&command_buffer, this->scmd);
       |                                    ^~~~~~~~~~
 libmms/mms.c:412:65: note: passing argument to parameter 'buffer' here
   412 | static void mms_buffer_init (mms_buffer_t *mms_buffer, uint8_t *buffer) {
       |                                                                 ^
-libmms/mmsh.c:1305:33: warning: passing 'uint8_t[65536]' (aka 'unsigned char[65536]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1305 |     len = io_read (io, this->s, this->buf, this->chunk_length, this->need_abort);
-      |                                 ^~~~~~~~~
-libmms/mmsh.c:398:68: note: expanded from macro 'io_read'
-  398 | #define io_read(io, args...) ((io) ? (io)->read(io->read_data , ## args) : default_io.read(NULL , ## args))
-      |                                                                    ^~~~
-libmms/mmsh.c:1305:33: warning: passing 'uint8_t[65536]' (aka 'unsigned char[65536]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1305 |     len = io_read (io, this->s, this->buf, this->chunk_length, this->need_abort);
-      |                                 ^~~~~~~~~
-libmms/mmsh.c:398:102: note: expanded from macro 'io_read'
-  398 | #define io_read(io, args...) ((io) ? (io)->read(io->read_datalibmms/mms.c :,605 :#31:# warning:  passing 'uint8_t[102400]' (aka 'unsigned char[102400]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]a
-rgs) :   d605e | f a ulletn_ i=o io._rreeaadd((NiUo,L L  t,hi s#-#> s,a rthgiss-)>)b
-u      f| ,                                                                                                     ^~~~ 
-8, this->need_abort);
+libmms/mms.c:605:31: warning: passing 'uint8_t[102400]' (aka 'unsigned char[102400]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  605 |   len = io_read(io,  this->s, this->buf, 8, this->need_abort);
       |                               ^~~~~~~~~
 libmms/mms.c:362:68: note: expanded from macro 'io_read'
   362 | #define io_read(io, args...) ((io) ? (io)->read(io->read_data , ## args) : default_io.read(NULL , ## args))
@@ -1588,11 +1578,23 @@ libmms/mms.c:657:18: warning: passing 'uint8_t[102400]' (aka 'unsigned char[1024
 libmms/mms.c:472:34: note: passing argument to parameter 'data' here
   472 | static void print_command (char *data, int len) {
       |                                  ^
-libmms/mms.c:745:31: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  745 |                               this->asf_header + this->asf_header_len, header.packet_len, this->need_abort);
-      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-libmms/mms.c:362:68: note: expanded from macro 'io_read'
-  362 | #define io_read(io, args...) ((io) ? (io)->read(io->read_data , ## args) : default_io.read(NULL , ## args))
+libmms/mmsh.c:1305:33: warning: passing 'uint8_t[65536]' (aka 'unsigned char[65536]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1305 |     len = io_read (io, this->s, this->buf, this->chunk_length, this->need_abort);
+      |                                 ^~~~~~~~~
+libmms/mmsh.c:398:68: note: expanded from macro 'io_read'
+  398 | #define io_read(io, args...) ((io) ? (io)->read(io->read_data , ## args) : default_io.read(NULL , ## args))
+      | libmms/mms.c                                                                   ^~~~
+:745:31: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  745 |                          libmms/mmsh.c : 1305 : 33:  thwarning: ipassing 'uint8_t[65536]' (aka 'unsigned char[65536]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]s
+->asf _1305h | e a d er  +l etnh i=s -io>_arsefa_dh e(aidoer,_ ltenh,i sh-e>asd,e rt.hpias-c>kbeutf_,l etnh,i st-h>isc-h>unneke_lde_nagtbho, trhti)s;->
+ne      e|                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~d_
+aborlibmms/mms.ct):;362:
+68      :|                                  ^~~~~~~~~
+note: expanded from macro 'io_read'
+libmms/mmsh.c:398:102: note: expanded from macro 'io_read'  
+362 | #defi  ne398 |  #dieof_inree aido(_rieoad,( iaor, gasr.gs....). ) (((i(oio))  ??  (i(oi)o->)-r>earde(iaod->(riead_data , ## args) : deof-a>urletad__idoa.trae ,a d(NULL , ####  aarrggss)) ):
+       d| e                                                                                                     ^~~~f
+ault_io.read(NULL , ## args))
       |                                                                    ^~~~
 libmms/mms.c:745:31: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
   745 |                               this->asf_header + this->asf_header_len, header.packet_len, this->need_abort);
@@ -1675,10 +1677,10 @@ shellexecutil.c:11:25: warning: 'pl_format_title_escaped' is deprecated: since d
 ../../include/deadbeef/deadbeef.h:113:46: note: expanded from macro 'DDB_DEPRECATED'
   113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
       |                                              ^
-1 warning generated.
 shellexec.c:75:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
    75 |     system (cmd);
       |     ^~~~~~~~~~~~
+1 warning generated.
 1 warning generated.
   CCLD     shellexec.la
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/shellexec'
@@ -2193,31 +2195,19 @@ interface.c:204:14: warning: 'gtk_image_new_from_stock' is deprecated: Use 'gtk_
   204 |   image470 = gtk_image_new_from_stock ("gtk-edit", GTK_ICON_SIZE_BUTTON);
       |              ^
 /usr/include/gtk-3.0/gtk/gtkimage.h:121:1: note: 'gtk_image_new_from_stock' has been explicitly marked deprecated here
-  121 | GDK_DEPREconvgui.cCAT:E348D:_151I:N _3warning: _'GtkStock' is deprecated [-Wdeprecated-declarations]10
-_FOR(gtk_image_new  _348f | r o m _ iGctoknW_indagmete )*
-p      r| o^g
-ress/usr/include/gtk-3.0/gdk/gdkversionmacros.h :=329 :g47t:k _note: diexpanded from macro 'GDK_DEPRECATED_IN_3_10_FOR'a
-log_new  _329w | i#t hd_ebfuitnteo nGsD K(__D(E"PCRoEnCvAeTrEtDi_nIgN._.3."_)1,0 _GFTOKR_(WfI)N D O W   ( g t kGDuKi__DpElPuRgEiCnA-T>EgDe_tF_OmaRi(nfw)i
-n       | (                                              ^)
-), /usr/include/gtk-3.0/gdk/gdkversionmacros.hG:T49K:_31D:I Anote: Lexpanded from macro 'GDK_DEPRECATED_FOR'O
-G_DEST   R49O | Y#_dWeIfTiHn_eP AGRDEKN_DTE,P RGETCKA_TSETDO_CFKO_RC(AfNC)E LG,_ DGETPKR_ERCEASTPEODN_SFEO_RC(AfN)C E_LG,D KN_UELXLT)E;R
-N      
-|                                                                                                                                                             ^| 
-                              ^
-/usr/include/glib-2.0/glib/gmacros.h:/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h1277::15944::38 :note:  expanded from macro 'G_DEPRECATED_FOR'note: 
-expanded from macro 'GTK_STOCK_CANCEL'
-   1277159 |  | ##dedfeifnien eG _GDTEKP_RSETCOACTKE_DC_AFNOCRE(Lf )   _ _ a t tr i b u t(e(_G_t(k(S_t_odcke)p"rgetcka-tceadn_c_e(l""U)s
-e       '| "                                     ^ 
-#f "' instead")/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h):)
-105      :| 1                                           ^:
- note: 'GtkStock' has been explicitly marked deprecated here
-  105 | G_DEPRECATED
+  121 | GDK_DEPRECATED_IN_3_10_FOR(gtk_image_new_from_icon_name)
       | ^
-/usr/include/glib-2.0/glib/gmacros.h:1267:37: note: expanded from macro 'G_DEPRECATED'
- 1267 | #define G_DEPRECATED __attribute__((__depreinterface.cc:a208t:e12d: _warning: _'gtk_hbox_new' is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations])
-)
-      |                                       ^208
- |   hbox88 = gtk_hbox_new (FALSE, 8);
+/usr/include/gtk-3.0/gdk/gdkversionmacros.h:329:47: note: expanded from macro 'GDK_DEPRECATED_IN_3_10_FOR'
+  329 | # define GDK_DEPRECATED_IN_3_10_FOR(f)        GDK_DEPRECATED_FOR(f)
+      |                                               ^
+/usr/include/gtk-3.0/gdk/gdkversionmacros.h:49:31: note: expanded from macro 'GDK_DEPRECATED_FOR'
+   49 | #define GDK_DEPRECATED_FOR(f) G_DEPRECATED_FOR(f) _GDK_EXTERN
+      |                               ^
+/usr/include/glib-2.0/glib/gmacros.h:1277:44: note: expanded from macro 'G_DEPRECATED_FOR'
+ 1277 | #define G_DEPRECATED_FOR(f) __attribute__((__deprecated__("Use '" #f "' instead")))
+      |                                            ^
+interface.c:208:12: warning: 'gtk_hbox_new' is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+  208 |   hbox88 = gtk_hbox_new (FALSE, 8);
       |            ^
 /usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:62:1: note: 'gtk_hbox_new' has been explicitly marked deprecated here
    62 | GDK_DEPRECATED_IN_3_2_FOR(gtk_box_new)
@@ -2321,30 +2311,6 @@ interface.c:273:18: warning: 'gtk_button_new_from_stock' is deprecated: Use 'gtk
 /usr/include/glib-2.0/glib/gmacros.h:1277:44: note: expanded from macro 'G_DEPRECATED_FOR'
  1277 | #define G_DEPRECATED_FOR(f) __attribute__((__deprecated__("Use '" #f "' instead")))
       |                                            ^
-convgui.c:703:150: warning: 'GtkStock' is deprecated [-Wdeprecated-declarations]
-  703 |     GtkWidget *dlg = gtk_file_chooser_dialog_new (_("Select folder..."), GTK_WINDOW (current_ctx->converter), GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER, GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, GTK_STOCK_OPEN, GTK_RESPONSE_OK, NULL);
-      |                                                                                                                                                      ^
-/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:159:38: note: expanded from macro 'GTK_STOCK_CANCEL'
-  159 | #define GTK_STOCK_CANCEL           ((GtkStock)"gtk-cancel")
-      |                                      ^
-/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:105:1: note: 'GtkStock' has been explicitly marked deprecated here
-  105 | G_DEPRECATED
-      | ^
-/usr/include/glib-2.0/glib/gmacros.h:1267:37: note: expanded from macro 'G_DEPRECATED'
- 1267 | #define G_DEPRECATED __attribute__((__deprecated__))
-      |                                     ^
-convgui.c:703:189: warning: 'GtkStock' is deprecated [-Wdeprecated-declarations]
-  703 |     GtkWidget *dlg = gtk_file_chooser_dialog_new (_("Select folder..."), GTK_WINDOW (current_ctx->converter), GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER, GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, GTK_STOCK_OPEN, GTK_RESPONSE_OK, NULL);
-      |                                                                                                                                                                                             ^
-/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:765:38: note: expanded from macro 'GTK_STOCK_OPEN'
-  765 | #define GTK_STOCK_OPEN             ((GtkStock)"gtk-open")
-      |                                      ^
-/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:105:1: note: 'GtkStock' has been explicitly marked deprecated here
-  105 | G_DEPRECATED
-      | ^
-/usr/include/glib-2.0/glib/gmacros.h:1267:37: note: expanded from macro 'G_DEPRECATED'
- 1267 | #define G_DEPRECATED __attribute__((__deprecated__))
-      |                                     ^
 interface.c:409:12: warning: 'gtk_vbox_new' is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
   409 |   vbox27 = gtk_vbox_new (FALSE, 8);
       |            ^
@@ -2645,6 +2611,18 @@ interface.c:564:19: warning: 'gtk_button_new_from_stock' is deprecated: Use 'gtk
 /usr/include/glib-2.0/glib/gmacros.h:1277:44: note: expanded from macro 'G_DEPRECATED_FOR'
  1277 | #define G_DEPRECATED_FOR(f) __attribute__((__deprecated__("Use '" #f "' instead")))
       |                                            ^
+convgui.c:348:151: warning: 'GtkStock' is deprecated [-Wdeprecated-declarations]
+  348 |     GtkWidget *progress = gtk_dialog_new_with_buttons (_("Converting..."), GTK_WINDOW (gtkui_plugin->get_mainwin ()), GTK_DIALOG_DESTROY_WITH_PARENT, GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, NULL);
+      |                                                                                                                                                       ^
+/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:159:38: note: expanded from macro 'GTK_STOCK_CANCEL'
+  159 | #define GTK_STOCK_CANCEL           ((GtkStock)"gtk-cancel")
+      |                                      ^
+/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:105:1: note: 'GtkStock' has been explicitly marked deprecated here
+  105 | G_DEPRECATED
+      | ^
+/usr/include/glib-2.0/glib/gmacros.h:1267:37: note: expanded from macro 'G_DEPRECATED'
+ 1267 | #define G_DEPRECATED __attribute__((__deprecated__))
+      |                                     ^
 interface.c:644:12: warning: 'gtk_vbox_new' is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
   644 |   vbox30 = gtk_vbox_new (FALSE, 8);
       |            ^
@@ -2810,6 +2788,30 @@ interface.c:721:15: warning: 'gtk_button_new_from_stock' is deprecated: Use 'gtk
 /usr/include/glib-2.0/glib/gmacros.h:1277:44: note: expanded from macro 'G_DEPRECATED_FOR'
  1277 | #define G_DEPRECATED_FOR(f) __attribute__((__deprecated__("Use '" #f "' instead")))
       |                                            ^
+convgui.c:703:150: warning: 'GtkStock' is deprecated [-Wdeprecated-declarations]
+  703 |     GtkWidget *dlg = gtk_file_chooser_dialog_new (_("Select folder..."), GTK_WINDOW (current_ctx->converter), GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER, GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, GTK_STOCK_OPEN, GTK_RESPONSE_OK, NULL);
+      |                                                                                                                                                      ^
+/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:159:38: note: expanded from macro 'GTK_STOCK_CANCEL'
+  159 | #define GTK_STOCK_CANCEL           ((GtkStock)"gtk-cancel")
+      |                                      ^
+/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:105:1: note: 'GtkStock' has been explicitly marked deprecated here
+  105 | G_DEPRECATED
+      | ^
+/usr/include/glib-2.0/glib/gmacros.h:1267:37: note: expanded from macro 'G_DEPRECATED'
+ 1267 | #define G_DEPRECATED __attribute__((__deprecated__))
+      |                                     ^
+convgui.c:703:189: warning: 'GtkStock' is deprecated [-Wdeprecated-declarations]
+  703 |     GtkWidget *dlg = gtk_file_chooser_dialog_new (_("Select folder..."), GTK_WINDOW (current_ctx->converter), GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER, GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, GTK_STOCK_OPEN, GTK_RESPONSE_OK, NULL);
+      |                                                                                                                                                                                             ^
+/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:765:38: note: expanded from macro 'GTK_STOCK_OPEN'
+  765 | #define GTK_STOCK_OPEN             ((GtkStock)"gtk-open")
+      |                                      ^
+/usr/include/gtk-3.0/gtk/deprecated/gtkstock.h:105:1: note: 'GtkStock' has been explicitly marked deprecated here
+  105 | G_DEPRECATED
+      | ^
+/usr/include/glib-2.0/glib/gmacros.h:1267:37: note: expanded from macro 'G_DEPRECATED'
+ 1267 | #define G_DEPRECATED __attribute__((__deprecated__))
+      |                                     ^
 interface.c:788:12: warning: 'gtk_vbox_new' is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
   788 |   vbox31 = gtk_vbox_new (FALSE, 8);
       |            ^
@@ -3011,13 +3013,13 @@ interface.c:900:15: warning: 'gtk_button_new_from_stock' is deprecated: Use 'gtk
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/converter'
 Making all in plugins/dumb
 make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/dumb'
-  CXX      ddb_dumb_la-unrealfmtdata.lo
+  CXX      ddb_dumb_la-modloader.lo
   CXX      ddb_dumb_la-unrealfmt.lo
+  CXX      ddb_dumb_la-unrealfmtdata.lo
   CC       ddb_dumb_la-cdumb.lo
   CC       dumb-kode54/src/helpers/libdumbsse2_la-resampler_sse2.lo
   CC       dumb-kode54/src/helpers/ddb_dumb_la-riff.lo
   CC       dumb-kode54/src/helpers/ddb_dumb_la-memfile.lo
-  CXX      ddb_dumb_la-modloader.lo
   CC       dumb-kode54/src/helpers/ddb_dumb_la-silence.lo
   CC       dumb-kode54/src/helpers/ddb_dumb_la-stdfile.lo
   CC       dumb-kode54/src/helpers/ddb_dumb_la-clickrem.lo
@@ -3026,14 +3028,14 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/dumb'
   CC       dumb-kode54/src/helpers/ddb_dumb_la-barray.lo
   CC       dumb-kode54/src/helpers/ddb_dumb_la-lpc.lo
   CC       dumb-kode54/src/helpers/ddb_dumb_la-resampler.lo
-  CC       dumb-kode54/src/core/ddb_dumb_la-unload.lo
   CC       dumb-kode54/src/helpers/ddb_dumb_la-sampbuf.lo
+  CC       dumb-kode54/src/core/ddb_dumb_la-unload.lo
   CC       dumb-kode54/src/core/ddb_dumb_la-loadduh.lo
   CC       dumb-kode54/src/core/ddb_dumb_la-duhlen.lo
   CC       dumb-kode54/src/core/ddb_dumb_la-register.lo
+  CC       dumb-kode54/src/core/ddb_dumb_la-rendduh.lo
   CC       dumb-kode54/src/core/ddb_dumb_la-rawsig.lo
   CC       dumb-kode54/src/core/ddb_dumb_la-makeduh.lo
-  CC       dumb-kode54/src/core/ddb_dumb_la-rendduh.lo
   CC       dumb-kode54/src/core/ddb_dumb_la-duhtag.lo
   CC       dumb-kode54/src/core/ddb_dumb_la-readduh.lo
   CC       dumb-kode54/src/core/ddb_dumb_la-dumbfile.lo
@@ -3096,8 +3098,8 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/dumb'
   CC       dumb-kode54/src/it/ddb_dumb_la-loadstm2.lo
   CC       dumb-kode54/src/it/ddb_dumb_la-loadstm.lo
   CC       dumb-kode54/src/it/ddb_dumb_la-load6692.lo
-  CC       dumb-kode54/src/it/ddb_dumb_la-readstm2.lo
   CC       dumb-kode54/src/it/ddb_dumb_la-reads3m2.lo
+  CC       dumb-kode54/src/it/ddb_dumb_la-readstm2.lo
   CC       dumb-kode54/src/it/ddb_dumb_la-loads3m2.lo
   CC       dumb-kode54/src/it/ddb_dumb_la-loadoldpsm.lo
   CC       dumb-kode54/src/it/ddb_dumb_la-xmeffect.lo
@@ -3109,12 +3111,12 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/shn'
   CC       ddb_shn_la-shnplugin.lo
   CC       libshn/ddb_shn_la-array.lo
   CC       libshn/ddb_shn_la-convert.lo
-  CC       libshn/ddb_shn_la-output.lo
   CC       libshn/ddb_shn_la-misc.lo
-  CC       libshn/ddb_shn_la-seek.lo
+  CC       libshn/ddb_shn_la-output.lo
   CC       libshn/ddb_shn_la-shorten.lo
-  CC       libshn/ddb_shn_la-sulawalaw.lo
+  CC       libshn/ddb_shn_la-seek.lo
   CC       libshn/ddb_shn_la-vario.lo
+  CC       libshn/ddb_shn_la-sulawalaw.lo
   CC       libshn/ddb_shn_la-wave.lo
 libshn/misc.c:46:6: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
    46 |         dot = strrchr(filename,'.');
@@ -3122,6 +3124,7 @@ libshn/misc.c:46:6: warning: assigning to 'char *' from 'const char *' discards 
 libshn/misc.c:50:8: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
    50 |         slash = strrchr(filename,'/');
       |               ^ ~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
 libshn/output.c:94:21: warning: passing 'int8_t[4096]' (aka 'signed char[4096]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
    94 |       shn_vsnprintf(this_shn->vars.fatal_error_msg,BUF_SIZE,complaint,args);
       |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -3131,7 +3134,6 @@ libshn/shn.h:35:42: note: expanded from macro 'shn_vsnprintf'
 /usr/include/bits/stdio2.h:93:69: note: passing argument to parameter '__s' here
    93 | __NTH (vsnprintf (__fortify_clang_overload_arg (char *, __restrict, __s),
       |                                                                     ^
-2 warnings generated.
 1 warning generated.
   CCLD     ddb_shn.la
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/shn'
@@ -3139,15 +3141,16 @@ Making all in plugins/psf
 make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/psf'
   CC       psf_la-plugin.lo
   CC       aosdk/psf_la-corlett.lo
+  CC       aosdk/psf_la-psfmain.lo
   CC       aosdk/eng_dsf/psf_la-aica.lo
-  CC       aosdk/eng_dsf/psf_la-arm7.lo
   CC       aosdk/eng_dsf/psf_la-aicadsp.lo
+  CC       aosdk/eng_dsf/psf_la-arm7.lo
   CC       aosdk/eng_dsf/psf_la-arm7i.lo
   CC       aosdk/eng_dsf/psf_la-dc_hw.lo
-  CC       aosdk/eng_dsf/psf_la-eng_dsf.lo
   CC       aosdk/eng_psf/psf_la-eng_psf.lo
-  CC       aosdk/eng_psf/psf_la-eng_psf2.lo
+  CC       aosdk/eng_dsf/psf_la-eng_dsf.lo
   CC       aosdk/eng_psf/psf_la-eng_spu.lo
+  CC       aosdk/eng_psf/psf_la-eng_psf2.lo
   CC       aosdk/eng_psf/peops/psf_la-spu.lo
   CC       aosdk/eng_psf/peops2/psf_la-dma2.lo
   CC       aosdk/eng_psf/peops2/psf_la-registers2.lo
@@ -3156,10 +3159,13 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/psf'
   CC       aosdk/eng_psf/psf_la-psx_hw.lo
   CC       aosdk/eng_qsf/psf_la-eng_qsf.lo
   CC       aosdk/eng_qsf/psf_la-kabuki.lo
-  CC       aosdk/eng_qsf/psf_la-qsound.lo
 aosdk/corlett.c:168:7: warning: variable 'tag' set but not used [-Wunused-but-set-variable]
   168 |                 int tag, l, num_tags, data;
       |                     ^
+  CC       aosdk/eng_qsf/psf_la-qsound.lo
+  CC       aosdk/eng_qsf/psf_la-z80dasm.lo
+  CC       aosdk/eng_qsf/psf_la-z80.lo
+1 warning generated.
 aosdk/eng_dsf/arm7i.c:274:46: warning: '&&' within '||' [-Wlogical-op-parentheses]
   274 |   return (cpu->Rx [ARM7_CPSR] & ARM7_CPSR_N) &&\
       |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
@@ -3206,24 +3212,17 @@ aosdk/eng_dsf/arm7i.c:286:77: note: place parentheses around the '&&' expression
   287 |  !(cpu->Rx [ARM7_CPSR] & ARM7_CPSR_V);
       |                                      
       |                                      )
-  CC       aosdk/eng_qsf/psf_la-z80dasm.lo
-  CC       aosdk/eng_qsf/psf_la-z80.lo
-aosdk/eng_dsf/arm7i.c:957:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
-  957 |     else
-      |     ^
   CC       aosdk/eng_ssf/psf_la-eng_ssf.lo
-aosdk/eng_psf/psx_hw.c:3129:48: warning: variable 'argbase' set but not used [-Wunused-but-set-variable]
- 3129 |                                                 uint8 *argwalk = (uint8 *)cpu->psx_ram, *argbase;
-      |                                                                                          ^
-1 warning generated.
-  CC       aosdk/eng_ssf/psf_la-m68kcpu.lo
-  CC       aosdk/eng_ssf/psf_la-m68kopac.lo
-  CC       aosdk/eng_ssf/psf_la-m68kopdm.lo
 aosdk/eng_psf/psx.c:147:20: warning: unused variable 'delayn' [-Wunused-variable]
   147 | static const char *delayn[] =
       |                    ^~~~~~
+  CC       aosdk/eng_ssf/psf_la-m68kcpu.lo
+  CC       aosdk/eng_ssf/psf_la-m68kopac.lo
+aosdk/eng_dsf/arm7i.c:957:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+  957 |     else
+      |     ^
+  CC       aosdk/eng_ssf/psf_la-m68kopdm.lo
   CC       aosdk/eng_ssf/psf_la-m68kopnz.lo
-  CC       aosdk/eng_ssf/psf_la-m68kops.lo
 aosdk/eng_psf/eng_psf2.c:111:9: warning: variable 'nameoffs' set but not used [-Wunused-but-set-variable]
   111 |         uint32 nameoffs, saddr, heap, tsize, dsize, bsize, vers2;
       |                ^
@@ -3239,7 +3238,8 @@ aosdk/eng_psf/eng_psf2.c:111:32: warning: variable 'tsize' set but not used [-Wu
 aosdk/eng_psf/eng_psf2.c:111:39: warning: variable 'dsize' set but not used [-Wunused-but-set-variable]
   111 |         uint32 nameoffs, saddr, heap, tsize, dsize, bsize, vers2;
       |                                              ^
-aosdk/eng_psf/eng_psf2.c:111:46: warning: variable 'bsize' set but not used [-Wunused-but-set-variable]
+aosdk/eng_psf/eng_psf2.c:111:46: warning:   CC       aosdk/eng_ssf/psf_la-m68kops.lo
+variable 'bsize' set but not used [-Wunused-but-set-variable]
   111 |         uint32 nameoffs, saddr, heap, tsize, dsize, bsize, vers2;
       |                                                     ^
 aosdk/eng_psf/eng_psf2.c:111:53: warning: variable 'vers2' set but not used [-Wunused-but-set-variable]
@@ -3264,9 +3264,11 @@ aosdk/eng_psf/eng_psf2.c:131:21: warning: variable 'flags' set but not used [-Wu
   131 |         uint32 name, type, flags, addr, offset, size, shent;
       |                            ^
   CC       aosdk/eng_ssf/psf_la-sat_hw.lo
+aosdk/eng_psf/psx_hw.c:3129:48: warning: variable 'argbase' set but not used [-Wunused-but-set-variable]
+ 3129 |                                                 uint8 *argwalk = (uint8 *)cpu->psx_ram, *argbase;
+      |                                                                                          ^
   CC       aosdk/eng_ssf/psf_la-scsp.lo
   CC       aosdk/eng_ssf/psf_la-scspdsp.lo
-  CC       aosdk/psf_la-psfmain.lo
 13 warnings generated.
 5 warnings generated.
 1 warning generated.
@@ -3317,8 +3319,8 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/wma'
   CC       libasf/wma_la-asf.lo
   CC       libwma/wma_la-wmafixed.lo
   CC       libwma/wma_la-wmadeci.lo
-  CC       libwma/wma_la-fft-ffmpeg.lo
   CC       libwma/wma_la-mdct_lookup.lo
+  CC       libwma/wma_la-fft-ffmpeg.lo
   CC       libwma/wma_la-mdct.lo
   CC       libwma/wma_la-ffmpeg_bitstream.lo
 asfheader.c:100:9: warning: 'htole16' macro redefined [-Wmacro-redefined]
@@ -3623,28 +3625,28 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/sc68'
   CC       libsc68/unice68/in_sc68_la-unice68_pack.lo
   CC       libsc68/unice68/in_sc68_la-unice68_version.lo
   CC       libsc68/libsc68/in_sc68_la-conf68.lo
-  CC       libsc68/libsc68/in_sc68_la-api68.lo
   CC       libsc68/libsc68/in_sc68_la-mixer68.lo
   CC       libsc68/libsc68/io68/in_sc68_la-paulaemul.lo
+  CC       libsc68/libsc68/in_sc68_la-api68.lo
   CC       libsc68/libsc68/io68/in_sc68_la-ym_envel.lo
   CC       libsc68/libsc68/io68/in_sc68_la-ymemul.lo
   CC       libsc68/libsc68/io68/in_sc68_la-shifter_io.lo
   CC       libsc68/libsc68/io68/in_sc68_la-paula_io.lo
   CC       libsc68/libsc68/io68/in_sc68_la-mw_io.lo
   CC       libsc68/libsc68/io68/in_sc68_la-ym_dump.lo
-  CC       libsc68/libsc68/io68/in_sc68_la-mfp_io.lo
-  CC       libsc68/libsc68/io68/in_sc68_la-mwemul.lo
 libsc68/file68/src/option68.c:371:5: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
   371 |     *(int*)0 = 0;
       |     ^~~~~~~~
 libsc68/file68/src/option68.c:371:5: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+  CC       libsc68/libsc68/io68/in_sc68_la-mfp_io.lo
+  CC       libsc68/libsc68/io68/in_sc68_la-mwemul.lo
   CC       libsc68/libsc68/io68/in_sc68_la-ym_io.lo
   CC       libsc68/libsc68/io68/in_sc68_la-io68.lo
   CC       libsc68/libsc68/io68/in_sc68_la-ym_blep.lo
+1 warning generated.
   CC       libsc68/libsc68/io68/in_sc68_la-mfpemul.lo
   CC       libsc68/libsc68/io68/in_sc68_la-ym_puls.lo
   CC       libsc68/libsc68/in_sc68_la-libsc68.lo
-1 warning generated.
   CC       libsc68/libsc68/emu68/in_sc68_la-lines68.lo
   CC       libsc68/libsc68/emu68/in_sc68_la-ioplug68.lo
   CC       libsc68/libsc68/emu68/in_sc68_la-mem68.lo
@@ -4009,27 +4011,27 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/soundtouch
   CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-FIRFilter.lo
   CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-InterpolateCubic.lo
   CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-InterpolateShannon.lo
-  CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-InterpolateLinear.lo
   CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-PeakFinder.lo
   CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-RateTransposer.lo
   CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-SoundTouch.lo
-  CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-TDStretch.lo
+  CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-InterpolateLinear.lo
   CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-mmx_optimized.lo
   CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-cpu_detect_x86.lo
+  CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-TDStretch.lo
   CXX      soundtouch/source/SoundTouch/ddb_soundtouch_la-sse_optimized.lo
   CXXLD    ddb_soundtouch.la
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/plugins/soundtouch'
 Making all in plugins/medialib
 make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/plugins/medialib'
   CC       medialib_la-medialib.lo
-  CC       medialib_la-medialibcommon.lo
   CC       medialib_la-medialibdb.lo
+  CC       medialib_la-medialibcommon.lo
   CC       medialib_la-medialibfilesystem_inotify.lo
   CC       medialib_la-medialibscanner.lo
+  CC       medialib_la-medialibstate.lo
   CC       medialib_la-medialibsource.lo
   CC       medialib_la-medialibtree.lo
   CC       medialib_la-scriptable_tfquery.lo
-  CC       medialib_la-medialibstate.lo
 medialibscanner.c:101:37: warning: format specifies type 'long long *' but the argument has type 'int64_t *' (aka 'long *') [-Wformat]
   101 |     if (sscanf (stimestamp, "%lld", &timestamp) != 1) {
       |                              ~~~~   ^~~~~~~~~~
@@ -4054,13 +4056,13 @@ grep: warning: stray \ before #
 grep: warning: stray \ before #
 grep: warning: stray \ before #
   MSGFMT be.gmo
-  MSGFMT bn.gmo
-  MSGFMT ca.gmo
   MSGFMT bg.gmo
+  MSGFMT ca.gmo
+  MSGFMT bn.gmo
   MSGFMT cs.gmo
-  MSGFMT da.gmo
-  MSGFMT el.gmo
   MSGFMT de.gmo
+  MSGFMT el.gmo
+  MSGFMT da.gmo
   MSGFMT en_GB.gmo
   MSGFMT es.gmo
   MSGFMT et.gmo
@@ -4095,8 +4097,8 @@ grep: warning: stray \ before #
   MSGFMT sr@latin.gmo
   MSGFMT sv.gmo
   MSGFMT te.gmo
-  MSGFMT ug.gmo
   MSGFMT tr.gmo
+  MSGFMT ug.gmo
   MSGFMT uk.gmo
   MSGFMT vi.gmo
   MSGFMT zh_CN.gmo
@@ -4116,14 +4118,14 @@ make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/icons'
 Making all in src
 make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/src'
-  CC       deadbeef-actionhandlers.o
   CC       deadbeef-actionhelp.o
-  CC       deadbeef-coreplugin.o
+  CC       deadbeef-actionhandlers.o
   CC       deadbeef-buffered_file_writer.o
+  CC       deadbeef-coreplugin.o
   CC       deadbeef-conf.o
   CC       deadbeef-cueutil.o
-  CC       deadbeef-playlist.o
   CC       deadbeef-decodedblock.o
+  CC       deadbeef-playlist.o
   CC       deadbeef-dsp.o
   CC       deadbeef-dsppreset.o
   CC       deadbeef-escape.o
@@ -4137,7 +4139,6 @@ make[2]: Entering directory '/build/deadbeef-git/src/deadbeef/src'
   CC       deadbeef-metacache.o
   CC       deadbeef-playmodes.o
   CC       deadbeef-playqueue.o
-  CC       deadbeef-plmeta.o
 actionhandlers.c:356:28: warning: 'DB_EV_PLAYLIST_REFRESH' is deprecated: since deadbeef API 1.8 [-Wdeprecated-declarations]
   356 |     deadbeef->sendmessage (DB_EV_PLAYLIST_REFRESH, 0, 0, 0);
       |                            ^
@@ -4150,7 +4151,9 @@ actionhandlers.c:356:28: warning: 'DB_EV_PLAYLIST_REFRESH' is deprecated: since 
 ../include/deadbeef/deadbeef.h:113:46: note: expanded from macro 'DDB_DEPRECATED'
   113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
       |                                              ^
+  CC       deadbeef-plmeta.o
   CC       deadbeef-pltmeta.o
+  CC       deadbeef-plugins.o
 conf.c:80:14: warning: initializing 'uint8_t *' (aka 'unsigned char *') with an expression of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
    80 |     uint8_t *str = buffer;
       |              ^     ~~~~~~
@@ -4160,7 +4163,6 @@ conf.c:153:23: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
 conf.c:79:26: note: passing argument to parameter 'buffer' here
    79 | _conf_load_buffer (char *buffer) {
       |                          ^
-  CC       deadbeef-plugins.o
   CC       deadbeef-premix.o
   CC       deadbeef-replaygain.o
   CC       deadbeef-resizable_buffer.o
@@ -4177,11 +4179,14 @@ junklib.c:696:25: note: passing argument to parameter 'in' here
   696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
       |                         ^
 junklib.c:1015:36: warning: passing 'unsigned char[size * 4]' to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1015 |         if (junk_iconv (str, size, out, (int)sizeof (out), "shift-jis", UTF8_STR) >= 0) {
+ 1015 |         if (junk_iconv (str, size, out, (int)sizeof (out), "shift-jis", UTF8_STR  CC       deadbeef-sort.o
+) >= 0) {
       |                                    ^~~
+  CC       deadbeef-ringbuf.o
 junklib.c:696:46: note: passing argument to parameter 'out' here
   696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
       |                                              ^
+  CC       deadbeef-streamer.o
 junklib.c:1043:33: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const signed char *' converts between pointers to integer types with different sign [-Wpointer-sign]
  1043 |         else if (can_be_cp1251 (str, sz)) {
       |                                 ^~~
@@ -4224,24 +4229,21 @@ junklib.c:1180:21: warning: passing 'char[31]' to parameter of type 'uint8_t *' 
 junklib.c:1126:26: note: passing argument to parameter 'str' here
  1126 | str_trim_right (uint8_t *str, int len) {
       |                          ^
-main.c:835:62: warning: passing 'int *' to parameter of type 'socklen_t *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]
-  835 |     s2 = accept (srv_socket, (struct sockaddr *)&srv_remote, &t);
-      |                                                              ^~
-/usr/include/sys/socket.h:307:28: note: passing argument to parameter '__addr_len' here
-  307 |                    socklen_t *__restrict __addr_len);
-      |                                          ^
+  CC       deadbeef-streamreader.o
 junklib.c:1262:37: warning: passing 'uint8_t[128]' (aka 'unsigned char[128]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
  1262 |     return junk_id3v1_read_int (it, id3, NULL);
       |                                     ^~~
 junklib.c:1136:44: note: passing argument to parameter 'buffer' here
  1136 | junk_id3v1_read_int (playItem_t *it, char *buffer, const char **charset) {
       |                                            ^
-main.c:1609:38: warning: passing 'unsigned int *' to parameter of type 'int *' converts between pointers to integer types with different sign [-Wpointer-sign]
- 1609 |     s = db_socket_set_unix (&remote, &len);
-      |                                      ^~~~
-main.c:698:54: note: passing argument to parameter 'len' here
-  698 | db_socket_set_unix (struct sockaddr_un *remote, int *len) {
-      |                                                      ^
+main.c:835:62: warning: passing 'int *' to parameter of type 'socklen_t *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+  835 |     s2 = accept (srv_socket, (struct sockaddr *)&srv_remote, &t);
+      |                                                              ^~
+/usr/include/sys/socket.h:307:28: note: passing argument to parameter '__addr_len' here
+  307 |                    socklen_t *__restrict __addr_len);
+      |                                          ^
+  CC       deadbeef-tf.o
+2 warnings generated.
 junklib.c:1490:18: warning: passing 'uint8_t[32]' (aka 'unsigned char[32]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
  1490 |     if (strncmp (header, "APETAGEX", 8)) {
       |                  ^~~~~~
@@ -4254,147 +4256,9 @@ junklib.c:1498:22: warning: passing 'uint8_t[32]' (aka 'unsigned char[32]') to p
 /usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
   174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
       |                                 ^
-  CC       deadbeef-ringbuf.o
 junklib.c:1555:11: warning: initializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
  1555 |     char *slash = strchr (track, '/');
       |           ^       ~~~~~~~~~~~~~~~~~~~
-  CC       deadbeef-streamer.o
-  CC       deadbeef-sort.o
-junklib.c:1568:11: warning: initializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
- 1568 |     char *slash = strchr (disc, '/');
-      |           ^       ~~~~~~~~~~~~~~~~~~
-  CC       deadbeef-streamreader.o
-junklib.c:1602:28: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1602 |             if (!u8_valid (value, itemsize, NULL)) {
-      |                            ^~~~~
-./utf8.h:136:28: note: passing argument to parameter 'str' here
-  136 | int u8_valid (const char  *str,
-      |                            ^
-junklib.c:1611:50: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1611 |                         junk_add_track_meta (it, value);
-      |                                                  ^~~~~
-junklib.c:1554:50: note: passing argument to parameter 'track' here
- 1554 | junk_add_track_meta (playItem_t *it, const char *track) {
-      |                                                  ^
-junklib.c:1614:49: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1614 |                         junk_add_disc_meta (it, value);
-      |                                                 ^~~~~
-junklib.c:1567:49: note: passing argument to parameter 'disc' here
- 1567 | junk_add_disc_meta (playItem_t *it, const char *disc) {
-      |                                                 ^
-junklib.c:1618:76: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1618 |                         pl_append_meta_full (it, frame_mapping[m+MAP_DDB], value, itemsize+1);
-      |                                                                            ^~~~~
-./plmeta.h:19:67: note: passing argument to parameter 'value' here
-   19 | pl_append_meta_full (playItem_t *it, const char *key, const char *value, int valuesize);
-      |                                                                   ^
-junklib.c:1628:88: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1628 |                     pl_set_item_replaygain (it, DDB_REPLAYGAIN_ALBUMGAIN, (float)atof (value));
-      |                                                                                        ^~~~~
-/usr/include/bits/stdlib-float.h:25:26: note: passing argument to parameter '__nptr' here
-   25 | __NTH (atof (const char *__nptr))
-      |                          ^
-junklib.c:1632:88: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1632 |                     pl_set_item_replaygain (it, DDB_REPLAYGAIN_ALBUMPEAK, (float)atof (value));
-      |                                                                                        ^~~~~
-/usr/include/bits/stdlib-float.h:25:26: note: passing argument to parameter '__nptr' here
-   25 | __NTH (atof (const char *__nptr))
-      |                          ^
-junklib.c:1636:88: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1636 |                     pl_set_item_replaygain (it, DDB_REPLAYGAIN_TRACKGAIN, (float)atof (value));
-      |                                                                                        ^~~~~
-/usr/include/bits/stdlib-float.h:25:26: note: passing argument to parameter '__nptr' here
-   25 | __NTH (atof (const char *__nptr))
-      |                          ^
-junklib.c:1640:88: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1640 |                     pl_set_item_replaygain (it, DDB_REPLAYGAIN_TRACKPEAK, (float)atof (value));
-      |                                                                                        ^~~~~
-/usr/include/bits/stdlib-float.h:25:26: note: passing argument to parameter '__nptr' here
-   25 | __NTH (atof (const char *__nptr))
-      |                          ^
-junklib.c:1645:51: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1645 |                     pl_append_meta_full (it, key, value, itemsize+1);
-      |                                                   ^~~~~
-./plmeta.h:19:67: note: passing argument to parameter 'value' here
-   19 | pl_append_meta_full (playItem_t *it, const char *key, const char *value, int valuesize);
-      |                                                                   ^
-junklib.c:1663:40: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1663 |     uint32_t version = extract_i32_le (&header[0]);
-      |                                        ^~~~~~~~~~
-junklib.c:178:32: note: passing argument to parameter 'buf' here
-  178 | extract_i32_le (unsigned char *buf)
-      |                                ^
-junklib.c:1664:36: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1664 |     int32_t size = extract_i32_le (&header[4]);
-      |                                    ^~~~~~~~~~
-junklib.c:178:32: note: passing argument to parameter 'buf' here
-  178 | extract_i32_le (unsigned char *buf)
-      |                                ^
-junklib.c:1665:41: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1665 |     uint32_t numitems = extract_i32_le (&header[8]);
-      |                                         ^~~~~~~~~~
-junklib.c:178:32: note: passing argument to parameter 'buf' here
-  178 | extract_i32_le (unsigned char *buf)
-      |                                ^
-junklib.c:1666:38: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1666 |     uint32_t flags = extract_i32_le (&header[12]);
-      |                                      ^~~~~~~~~~~
-junklib.c:178:32: note: passing argument to parameter 'buf' here
-  178 | extract_i32_le (unsigned char *buf)
-      |                                ^
-junklib.c:1683:18: warning: initializing 'uint8_t *' (aka 'unsigned char *') with an expression of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1683 |         uint8_t *buffer = mem;
-      |                  ^        ~~~
-junklib.c:1747:18: warning: passing 'uint8_t[32]' (aka 'unsigned char[32]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1747 |     if (strncmp (header, "APETAGEX", 8)) {
-      |                  ^~~~~~
-/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
-  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
-      |                                 ^
-junklib.c:1755:22: warning: passing 'uint8_t[32]' (aka 'unsigned char[32]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1755 |         if (strncmp (header, "APETAGEX", 8)) {
-      |                      ^~~~~~
-/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
-  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
-      |                                 ^
-junklib.c:1870:18: warning: passing 'uint8_t[10]' (aka 'unsigned char[10]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1870 |     if (strncmp (header, "ID3", 3)) {
-      |                  ^~~~~~
-/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
-  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
-      |                                 ^
-junklib.c:1897:18: warning: passing 'uint8_t[10]' (aka 'unsigned char[10]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1897 |     if (strncmp (header, "ID3", 3)) {
-      |                  ^~~~~~
-/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
-  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
-      |                                 ^
-junklib.c:1924:18: warning: passing 'uint8_t[10]' (aka 'unsigned char[10]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1924 |     if (strncmp (header, "ID3", 3)) {
-      |                  ^~~~~~
-/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
-  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
-      |                                 ^
-junklib.c:1974:18: warning: passing 'uint8_t[32]' (aka 'unsigned char[32]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 1974 |     if (strncmp (header, "APETAGEX", 8)) {
-      |                  ^~~~~~
-/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
-  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
-      |                                 ^
-junklib.c:2080:49: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 2080 |         outlen = junk_iconv (value, (int)inlen, out, (int)bufsize, UTF8_STR, "cp1252");
-      |                                                 ^~~
-junklib.c:696:46: note: passing argument to parameter 'out' here
-  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
-      |                                              ^
-junklib.c:2082:53: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 2082 |             outlen = junk_iconv (value, (int)inlen, out+2, (int)(bufsize - 2), UTF8_STR, "UCS-2LE");
-      |                                                     ^~~~~
-junklib.c:696:46: note: passing argument to parameter 'out' here
-  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
-      |                                              ^
-  CC       deadbeef-tf.o
-2 warnings generated.
 cueutil.c:238:27: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
   238 |         if (!strncasecmp (p, "FILE ", 5)) {
       |                           ^
@@ -4405,82 +4269,123 @@ cueutil.c:241:27: warning: passing 'const uint8_t *' (aka 'const unsigned char *
   241 |         if (!strncasecmp (p, "TRACK ", 6)) {
       |                           ^
 /usr/include/strings.h:120:37: note: passing argument to parameter '__s1' here
-  120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
-      |                                     ^
-junklib.c:2279:27: warning: passing 'uint8_t[len]' (aka 'unsigned char[len]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 2279 |         res = junk_iconv (buffer, (int)len, out, (int)outsize, UTF8_STR, "iso8859-1");
-      |                           ^~~~~~
-junklib.c:696:25: note: passing argument to parameter 'in' here
-  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
-      |                         ^
-junklib.c:2279:45: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 2279 |         res = junk_iconv (buffer, (int)len, out, (int)outsize, UTF8_STR, "iso8859-1");
-      |                                             ^~~
-junklib.c:696:46: note: passing argument to parameter 'out' here
-  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
-      |                                              ^
-junklib.c:2281:31: warning: passing 'uint8_t[len]' (aka 'unsigned char[len]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 2281 |             res = junk_iconv (buffer, (int)len, out+2, (int)(outsize - 2), UTF8_STR, "UCS-2LE");
-      |                               ^~~~~~
-junklib.c:696:25: note: passing argument to parameter 'in' here
-  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
-      |                         ^
-junklib.c:2281:49: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 2281 |             res = junk_iconv (buffer, (int)len, out+2, (int)(outsize - 2), UTF8_STR, "UCS-2LE");
-      |                                                 ^~~~~
-junklib.c:696:46: note: passing argument to parameter 'out' here
-  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
-      |                                              ^
-cueutil.c:333:23: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  120 | extern int strncasecmp (consjunklib.ct :c1568:h11a:r  warning: *_initializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]_
+s1, const  c1568h | ar   * _ _csh2a,r  s*iszlea_sth  _=_ ns)t
+r      c| h                                    ^
+r (disc, '/');
+      |           ^       ~~~~~~~~~~~~~~~~~~
+junklib.c:cueutil.c:333:23: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
   333 |     if (!strncasecmp (cue->p, "FILE ", 5)) {
       |                       ^~~~~~
 /usr/include/strings.h:120:37: note: passing argument to parameter '__s1' here
   120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
       |                                     ^
+main.c:1609:38: warning: passing 'unsigned int *' to parameter of type 'int *' converts between pointers to integer types with different sign [-Wpointer-sign]
+ 1609 |     s = db_socket_set_unix (&remote, &len);
+      |                                      ^~~~
+main.c:698:54: note: passing argument to parameter 'len' here
+  698 | db_socket_set_unix (struct sockaddr_un *remote, int *len) {
+      |                                                      ^
+1602:28: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1602 |             if (!u8_valid (value, itemsize, NULL)) {
+      |                            ^~~~~
+./utf8.h:136:28: note: passing argument to parameter 'str' here
+  136 | int u8_valid (const char  *str,
+      |                            ^
 cueutil.c:342:28: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
   342 |     else if (!strncasecmp (cue->p, "TRACK ", 6)) {
       |                            ^~~~~~
 /usr/include/strings.h:120:37: note: passing argument to parameter '__s1' here
-  120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
-      |                                     ^
-cueutil.c:347:28: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  347 |     else if (!strncasecmp (cue->p, "PERFORMER ", 10)) {
+  120 | extern int strncasecmp (const junklib.cc:ha1611r :*50_:_ swarning: 1passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign], 
+const cha r1611  | * _ _ s 2 ,   s i z e _ t   _ _ n ) 
+        |                                      ^ 
+  junk_add_track_meta (it, value);
+      |                                                  ^~~~~
+junklib.c:1554:50: note: passing argument to parameter 'track' here
+ 1554 | junk_add_track_meta (playItem_t *it,cueutil.c c:o347n:s28t:  chwarning: apassing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]r
+ *track)   {347
+ |       |                                                   ^ 
+  else if (!strncasecmp (cue->p, "PERFORMER ", 10)) {
       |                            ^~~~~~
 /usr/include/strings.h:120:37: note: passing argument to parameter '__s1' here
-  120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
+  120 | extern int strncasecmp (const char *__s1junklib.c,: c1614o:n49:s twarning:  cpassing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]h
+ar *__s2,  s1614i | z e _ t   _ _ n ) 
+        |                                      ^ 
+           junk_add_disc_meta (it, value);
+      |                                                 ^~~~~
+junklib.c:1567:49: note: passing argument to parameter 'disc' here
+ 1567 | junk_add_disc_me  CC       deadbeef-threading_pthread.o
+ta (playItem_t *it, const char *disc) {
+      |                                                 ^
+junklib.c:1618:76: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+cueutil.c :1618357 | : 28 :   warning:   passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign] 
+            357  |          e lpsle_ aipfp e(n!ds_tmrentcaa_sfeuclmlp  ((ictu,e -f>rpa,m e"_SmONapGpWiRnIgT[EmR+ M"A,P _1D1D)B)] ,{ 
+v      a| l                           ^~~~~~u
+e, ite/usr/include/strings.hm:s120i:z37e:+ note: 1passing argument to parameter '__s1' here)
+;
+      |                                                                            ^~~~~
+  120 | exte./plmeta.hr:n19 :i67n:t  snote: trpassing argument to parameter 'value' heren
+casecmp    (19c | opnls_ta pcpheanrd _*m_e_tsa1_,f ucloln s(tp lacyhIatre m*__t_ s*2i,t ,s iczoen_stt  _c_hna)r
+       *| k                                    ^e
+y, const char *value, int valuesize);
+      |                                                                   ^
+junklib.c:1628:88: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1628 |  cueutil.c : 367 : 28 :  warning:  passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign] 
+           367  |   p l _ seelts_ei tiefm _(r!esptlranycgaasienc m(pi t(,c uDeD-B>_pR,E P"LTAIYTGLAEI N_"A,L B6U)M)G A{I
+N      ,|                             ^~~~~~(
+float)/usr/include/strings.ha:t120o:f37 :( vnote: alpassing argument to parameter '__s1' hereu
+e));
+      |                                                                                          ^~~~~
+120 | extern i/usr/include/bits/stdlib-float.hn:t25 :s26t:r nnote: capassing argument to parameter '__nptr' heres
+ecmp    25( | c_o_nNsTtH  c(haatro f* _(_cso1n,s tc ocnhsatr  c*h_a_rn p*t_r_)s)2
+,       | s                         ^i
+ze_t __n)
       |                                     ^
-cueutil.c:357:28: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  357 |     else if (!strncasecmp (cue->p, "SONGWRITER ", 11)) {
+junklib.c:1632:88: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1632 |                     pl_set_item_replaygain (it, DDB_REPLAYGAIN_ALBUMPEAK, (float)atof (v  CC       deadbeef-vfs.o
+alue));
+      |                                                                                        ^~~~~
+/usr/include/bits/stdlib-float.h:25:cueutil.c26:: 377:note: 28passing argument to parameter '__nptr' here:
+ warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+   25 | __NTH   377( | a t o f  e(lcsoen sitf  c(h!asrt r*n_c_anspetcrm)p) 
+(      c| u                         ^e
+->p, "REM REPLAYGAIN_ALBUM_GAIN ", 26)) {
       |                            ^~~~~~
 /usr/include/strings.h:120:37: note: passing argument to parameter '__s1' here
-  120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
-      |                                     ^
-cueutil.c:367:28: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  367 |     else if (!strncasecmp (cue->p, "TITLE ", 6)) {
-      |                            ^~~~~~
-/usr/include/strings.h:120:37: note: passing argument to parameter '__s1' here
-  120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
-      |                                     ^
-cueutil.c:377:28: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  377 |     else if (!strncasecmp (cue->p, "REM REPLAYGAIN_ALBUM_GAIN ", 26)) {
-      |                            ^~~~~~
-/usr/include/strings.h:120:37: note: passing argument to parameter '__s1' here
-  120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
-      |                                     ^
-cueutil.c:378:32: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  378 |         pl_get_value_from_cue (cue->p + 26, CUE_FIELD_LEN, cue->cuefields[CUE_FIELD_REPLAYGAIN_ALBUM_GAIN]);
+  120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)junklib.c
+:      | 1636                                    ^:
+88: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1636 |                     pl_set_item_replaygain (it, DDB_REPLAYGAIN_TRACKcueutil.cG:A378I:N32,:  (warning: fpassing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]l
+oat)atof   (378v | a l u e ) ) ;  
+p      l| _                                                                                       ^~~~~g
+et_value/usr/include/bits/stdlib-float.h_:f25r:o26m:_ cnote: upassing argument to parameter '__nptr' heree
+ (cue   -25> | p_ _+N T2H6 ,( aCtUoEf_ F(IcEoLnDs_tL EcNh,a rc u*e_-_>ncputerf)i)e
+l      d| s                         ^[
+CUE_FIELD_REPLAYGAIN_ALBUM_GAIN]);
       |                                ^~~~~~~~~~~
 cueutil.c:197:36: note: passing argument to parameter 'p' here
   197 | pl_get_value_from_cue (const char *p, int sz, char *out) {
       |                                    ^
-cueutil.c:381:28: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  381 |     else if (!strncasecmp (cue->p, "REM REPLAYGAIN_ALBUM_PEAK ", 26)) {
-      |                            ^~~~~~
-/usr/include/strings.h:120:37: note: passing argument to parameter '__s1' here
+junklib.c:1640:88: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1640 |                     pl_set_item_replaygain (it, DDBcueutil.c_:R381E:P28L:A Ywarning: Gpassing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]AIN
+_TRACKPEA  K381,  |  (f l o aetl)asteo fi f( v(a!slturen)c)a;s
+e      c| mp                                                                                       ^~~~~ 
+(cue-/usr/include/bits/stdlib-float.h>:p25,: 26":R Enote: Mpassing argument to parameter '__nptr' here 
+REPL   A25YG | A_I_NN_TAHL B(UaMt_oPfE A(Kc on"s,t  2c6h)a)r  {*
+_      _| n                           ^~~~~~p
+tr))
+      /usr/include/strings.h| :                         ^120
+:37: note: passing argument to parameter '__s1' here
   120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
-      |                                     ^
-cueutil.c:382:32: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  382 |         pl_get_value_from_cue (cue->p + 26, CUE_FIELD_LEN, cue->cuefields[CUE_FIELD_REPLAYGAIN_ALBUM_PEAK]);
+      | junklib.c                                    ^:
+1645:51: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1645 |                     pl_append_meta_full (it, key, value, itemsize+1);
+      |                                                   ^~~~~
+./plmeta.hcueutil.c::19382:67:: 32note: :passing argument to parameter 'value' here 
+warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+   19 | pl_a  p382p | e n d_ m e t a _f pull_lg e(tp_lvaayIltueem__ftr o*mi_tc,u ec o(ncsuet-> pc h+a r2 6*,k eyC,U Ec_oFnIsEtL Dch_aLrE N*,v acluuee,- >icnute fviaelludess[iCzeU);E
+_F      I| E                                                                  ^L
+D_REPLAYGAIN_ALBUM_PEAK]);
       |                                ^~~~~~~~~~~
 cueutil.c:197:36: note: passing argument to parameter 'p' here
   197 | pl_get_value_from_cue (const char *p, int sz, char *out) {
@@ -4540,8 +4445,7 @@ cueutil.c:401:28: warning: passing 'const uint8_t *' (aka 'const unsigned char *
   120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
       |                                     ^
 cueutil.c:402:32: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  402 |         pl_get_value_from_cue (cue->p + 9, CUE_FIELD_LEN, cue->cuefields[CU  CC       deadbeef-threading_pthread.o
-E_FIELD_INDEX01]);
+  402 |         pl_get_value_from_cue (cue->p + 9, CUE_FIELD_LEN, cue->cuefields[CUE_FIELD_INDEX01]);
       |                                ^~~~~~~~~~
 cueutil.c:197:36: note: passing argument to parameter 'p' here
   197 | pl_get_value_from_cue (const char *p, int sz, char *out) {
@@ -4576,102 +4480,88 @@ cueutil.c:418:31: warning: passing 'const uint8_t *' (aka 'const unsigned char *
 /usr/include/strings.h:120:37: note: passing argument to parameter '__s1' here
   120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
       |                                     ^
-  CC       deadbeef-vfs.o
-cueutil.c:817:40: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+junklib.c:1663:40: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1663 |     uint32_t version = extract_i32_le (&header[0]);
+      |                                        ^~~~~~~~~~
+junklib.c:178:32: note: passing argument to parameter 'buf' here
+  178 | extractcueutil.c:817:40: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
   817 |     cue.charset = junk_detect_charset (buffer);
       |                                        ^~~~~~
 ./junklib.h:117:34: note: passing argument to parameter 's' here
   117 | junk_detect_charset (const char *s);
       |                                  ^
-cueutil.c:924:36: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
-  924 |             pl_get_value_from_cue (cue.p + 6, CUE_FIELD_LEN, cue.cuefields[CUE_FIELD_TRACK]);
+_i32_le (unsigned char *buf)
+      |                                ^
+junklib.c:1664:36: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1664 |     int32_t size = extract_i32_le (&header[4]);
+      |                                    ^~~~~~~~~~
+junklib.c:178:32: note: passing argument to parameter 'buf' here
+  178 | extract_i32_le (unsigned char *buf)
+      |                                ^
+junklib.c:1665:41: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1665 |     uint32_t numitems = extract_i32_le (&header[8]);
+      |                                         ^~~~~~~~~~
+junklib.c:178:32: note: passing argument to parameter 'buf' here
+  178 | extract_i32cueutil.c_:l924e: 36:( uwarning: npassing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]s
+igned cha  r924  | *  b u f  ) 
+         |                                 ^ p
+l_get_value_from_cue (cue.p + 6, CUE_FIELD_LEN, cue.cuefields[CUE_FIELD_TRACK]);
       |                                    ^~~~~~~~~
 cueutil.c:197:36: note: passing argument to parameter 'p' here
-  197 | pl_get_value_from_cue (const char *p, int sz, char *out) {
-      |                                    ^
+  197 | pl_get_value_frjunklib.com:_1666cu:e38 :(c owarning: nspassing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]t 
+char *p,  in1666t |  s z ,  c hauri n*tou3t2)_ {
+t      |                                     ^f
+lags = extract_i32_le (&header[12]);
+      |                                      ^~~~~~~~~~~
+junklib.c:178:32: note: passing argument to parameter 'buf' here
+  178 | extract_i32_le (unsigned char *buf)
+      |                                ^
 pltmeta.c:85:19: warning: initializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
    85 |             char *next = strchr (str, '\n');
       |                   ^      ~~~~~~~~~~~~~~~~~~
-1 warning generated.
-  CC       deadbeef-vfs_stdio.o
-  CC       deadbeef-volume.o
-  CC       deadbeef-viz.o
-junklib.c:3606:11: warning: initializing 'char *' with an expression of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 3606 |     char *writeptr = data;
-      |           ^          ~~~~
-junklib.c:3732:22: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 3732 |     if (!strcasecmp (rva_desc, "album")) {
-      |                      ^~~~~~~~
-/usr/include/strings.h:116:36: note: passing argument to parameter '__s1' here
-  116 | extern int strcasecmp (const char *__s1, const char *__s2)
-      |                                    ^
-junklib.c:3740:27: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 3740 |     else if (!strcasecmp (rva_desc, "track")) {
-      |                           ^~~~~~~~
-/usr/include/strings.h:116:36: note: passing argument to parameter '__s1' here
-  116 | extern int strcasecmp (const char *__s1, const char *__s2)
-      |                                    ^
-junklib.c:3754:11: warning: initializing 'char *' with an expression of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 3754 |     char *owner = readptr;
-      |           ^       ~~~~~~~
-junklib.c:3831:11: warning: initializing 'char *' with an expression of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 3831 |     char *email = readptr;
-      |           ^       ~~~~~~~
-junklib.c:3876:56: warning: passing 'uint8_t[0]' (aka 'unsigned char[0]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 3876 |         if (!strcmp (frame->id, "POPM") && !strcasecmp(frame->data, wmp_popm_email)) {
-      |                                                        ^~~~~~~~~~~
-/usr/include/strings.h:116:36: note: passing argument to parameter '__s1' here
-  116 | extern int strcasecmp (const char *__s1, const char *__s2)
-      |                                    ^
-junklib.c:3904:13: warning: passing 'uint8_t[0]' (aka 'unsigned char[0]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 3904 |     strcpy (frame->data, email);
-      |             ^~~~~~~~~~~
-/usr/include/bits/string_fortified.h:89:66: note: passing argument to parameter '__dest' here
-   89 | __NTH (strcpy (__fortify_clang_overload_arg (char *, __restrict, __dest),
-      |                                                                  ^
-junklib.c:3919:79: warning: passing 'uint8_t[0]' (aka 'unsigned char[0]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 3919 |         if (!strcmp (f->id, frame_id) && f->size >= strlen(owner) && !strcmp (f->data, owner)) {
-      |                                                                               ^~~~~~~
-/usr/include/string.h:171:32: note: passing argument to parameter '__s1' here
-  171 | extern int strcmp (const char *__s1, const char *__s2)
-      |                                ^
-  CC       ../external/wcwidth/deadbeef-wcwidth.o
-junklib.c:4293:18: warning: passing 'uint8_t[10]' (aka 'unsigned char[10]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 4293 |     if (strncmp (header, "ID3", 3)) {
+junklib.c:1683:18: warning: initializing 'uint8_t *' (aka 'unsigned char *') with an expression of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1683 |      CC       deadbeef-vfs_stdio.o
+     uint8_t *buffer = mem;
+      |                  ^        ~~~
+junklib.c:1747:18: warning: passing 'uint8_t[32]' (aka 'unsigned char[32]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1747 |     if (strncmp (header, "APETAGEX", 8)) {
       |                  ^~~~~~
 /usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
   174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
       |                                 ^
-1 warning generated.
-  CC       md5/deadbeef-md5.o
-junklib.c:4656:57: warning: passing 'const char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 4656 |     if (enable_shift_jis_detection && can_be_shift_jis (s, len)) {
-      |                                                         ^
-junklib.c:990:40: note: passing argument to parameter 'str' here
-  990 | can_be_shift_jis (const unsigned char *str, int size) {
-      |                                        ^
-junklib.c:4660:25: warning: passing 'const char *' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 4660 |     if (can_be_chinese (s, len)) {
-      |                         ^
-junklib.c:966:32: note: passing argument to parameter 'str' here
-  966 | can_be_chinese (const uint8_t *str, int sz) {
-      |                                ^
-junklib.c:4664:24: warning: passing 'const char *' to parameter of type 'const signed char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 4664 |     if (can_be_cp1251 (s, len)) {
-      |                        ^
-junklib.c:936:35: note: passing argument to parameter 'str' here
-  936 | can_be_cp1251 (const signed char *str, int size) {
-      |                                   ^
-junklib.c:4865:41: warning: passing 'uint8_t[0]' (aka 'unsigned char[0]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 4865 |                         if (!strcasecmp(frame->data, wmp_popm_email)) {
-      |                                         ^~~~~~~~~~~
-/usr/include/strings.h:116:36: note: passing argument to parameter '__s1' here
-  116 | extern int strcasecmp (const char *__s1, const char *__s2)
-      |                                    ^
-junklib.c:4876:33: warning: initializing 'const char *' with an expression of type 'uint8_t[0]' (aka 'unsigned char[0]') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
- 4876 |                     const char *email = frame_popm->data;
-      |                                 ^       ~~~~~~~~~~~~~~~~
-2 warnings generated.
+junklib.c:1755:22: warning: passing 'uint8_t[32]' (aka 'unsigned char[32]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1755 |         if (strncmp (header, "APETAGEX", 8)) {
+      |                      ^~~~~~
+/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
+  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+      |                                 ^
+junklib.c:1870:18: warning: passing 'uint8_t[10]' (aka 'unsigned char[10]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1870 |     if (strncmp (header, "ID3", 3)) {
+      |                  ^~~~~~
+/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
+  174 | extern int strncmp (const char *__s1, const char *__1s2, size_t __n)
+      |                                 ^
+ warning generated.
+junklib.c:1897:18: warning: passing 'uint8_t[10]' (aka 'unsigned char[10]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1897 |     if (strncmp (header, "ID3", 3)) {
+      |                  ^~~~~~
+/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
+  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+      |                                 ^
+junklib.c:1924:18: warning: passing 'uint8_t[10]' (aka 'unsigned char[10]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1924 |     if (strncmp (header, "ID3", 3)) {
+      |                  ^~~~~~
+/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
+  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+      |                                 ^
+junklib.c:1974:18: warning: passing 'uint8_t[32]' (aka 'unsigned char[32]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1974 |     if (strncmp (header, "APETAGEX", 8)) {
+      |                  ^~~~~~
+/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
+  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+      |                                 ^
+  CC       deadbeef-volume.o
+  CC       deadbeef-viz.o
 plugins.c:232:6: warning: 'streamer_get_playing_track' is deprecated: since deadbeef API 1.16 [-Wdeprecated-declarations]
   232 |     .streamer_get_playing_track = (DB_playItem_t *(*) (void))streamer_get_playing_track_unsafe,
       |      ^
@@ -4691,19 +4581,26 @@ plugins.c:246:6: warning: 'get_config_dir' is deprecated: since deadbeef API 1.8
   918 |     const char *(*get_config_dir) (void) DEPRECATED_18; // installdir/config | $XDG_CONFIG_HOME/.config/deadbeef
       |                                          ^
 ../include/deadbeef/deadbeef.h:213:23: note: expanded from macro 'DEPRECATED_18'
-  213 | #define DEPRECATED_18 DDB_DEPRECATED("since deadbeef API 1.8")
-      |                       ^
-../include/deadbeef/deadbeef.h:113:46: note: expanded from macro 'DDB_DEPRECATED'
-  113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
-      |                                              ^
-plugins.c:247:6: warning: 'get_prefix' is deprecated: since deadbeef API 1.8 [-Wdeprecated-declarations]
-  247 |     .get_prefix = plug_get_prefix,
+  213 | #define DEPRECATEDjunklib.c_1:8 2080DD:B49_D:E PRwarning: ECpassing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]AT
+ED("since deadbeef AP I2080 1 | .8 " ) 
+        |                       ^ 
+  ../include/deadbeef/deadbeef.ho:u113:t46l:e note: nexpanded from macro 'DDB_DEPRECATED' 
+= ju  n113k | #_ i c odenfvin e( vDDaBl_uDEeP,R EC(iAnTEtD)(ix)n l_e_ant,t riobuutte,_ _( i((ndte)prbeucfatseid(zxe)),) 
+U      | T                                             ^F
+8_Splugins.cT:R247,: 6:" cwarning: p'get_prefix' is deprecated: since deadbeef API 1.8 [-Wdeprecated-declarations]1
+25  2247" |  ) ;  
+.      g| et                                                ^~~_
+prefix = pjunklib.clu:g696_:ge46t:_ pnote: rpassing argument to parameter 'out' hereef
+ix,
       |      ^
-../include/deadbeef/deadbeef.h:919:38: note: 'get_prefix' has been explicitly marked deprecated here
-  919 |     const char *(*get_prefix) (void) DEPRECATED_18; // installdir | PREFIX
-      |                                      ^
-../include/deadbeef/deadbeef.h:213:23: note: expanded from macro 'DEPRECATED_18'
-  213 | #define DEPRECATED_18 DDB_DEPRECATED("since deadbeef API 1.8")
+../include/deadbeef/deadbeef.h:  919696:38 | :j note: u'get_prefix' has been explicitly marked deprecated heren
+k_ic  o919n | v    ( ccoonnsts tc hacrh *a(r* ge*ti_npr,e fiinx)t  (ivonilde)n D,E PcREhCaArTE D*_1o8u;t /,/  iinnstt aolludtirl e| nP,R EFcIoXn
+s      t|                                      ^ 
+c../include/deadbeef/deadbeef.hh:a213:r23 : *note: cexpanded from macro 'DEPRECATED_18's
+_in  ,213  | c#doefnisnte  cDEhPaRrE C*AcTEDs__1o8u tD) {
+      |                                              ^
+DB_junklib.c:2082:53: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ DEPRECATED("since deadbeef API 1.8")
       |                       ^
 ../include/deadbeef/deadbeef.h:113:46: note: expanded from macro 'DDB_DEPRECATED'
   113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
@@ -4730,16 +4627,21 @@ plugins.c:249:6: warning: 'get_plugin_dir' is deprecated: since deadbeef API 1.8
   213 | #define DEPRECATED_18 DDB_DEPRECATED("since deadbeef API 1.8")
       |                       ^
 ../include/deadbeef/deadbeef.h:113:46: note: expanded from macro 'DDB_DEPRECATED'
-  113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
-      |                                              ^
-plugins.c:250:6: warning: 'get_pixmap_dir' is deprecated: since deadbeef API 1.8 [-Wdeprecated-declarations]
-  250 |     .get_pixmap_dir = plug_get_pixmap_dir,
-      |      ^
-../include/deadbeef/deadbeef.h:922:42: note: 'get_pixmap_dir' has been explicitly marked deprecated here
-  922 |     const char *(*get_pixmap_dir) (void) DEPRECATED_18; // installdir/pixmaps | PREFIX "/share/deadbeef/pixmaps"
-      |                                          ^
-../include/deadbeef/deadbeef.h:213:23: note: expanded from macro 'DEPRECATED_18'
-  213 | #define DEPRECATED_18 DDB_DEPRECATED("since deadbeef API 1.8")
+  113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)2082)) | 
+       |                                               ^
+    plugins.c : 250 : 6 :  warning: o'get_pixmap_dir' is deprecated: since deadbeef API 1.8 [-Wdeprecated-declarations]u
+tle  n250  | =   j u n.gke_ti_cpioxnmavp _(divra l= upel,u g(_gientt_)piixnmlaepn_,d ioru,t
++      | 2     ^,
+ (../include/deadbeef/deadbeef.hi:n922t:42):( bnote: 'get_pixmap_dir' has been explicitly marked deprecated hereu
+fsize -   9222 |  ) ,   UcToFn8s_tS TcRh,a r" U*C(S*-g2eLtE_"p)i;x
+m      a| p                                                    ^~~~~_
+dir) (voidjunklib.c): 696D:E46P:R ECnote: Apassing argument to parameter 'out' hereT
+ED_18; //   696in | sjtuanlkld_iirc/opnivxm a(pcs o|n sPtR EcFhIaX r" /*sihna,r e/idneta dbieenfl/epni,xm acpsh"a
+r       |                                          ^*
+out../include/deadbeef/deadbeef.h:,213 :i23n: t note: oexpanded from macro 'DEPRECATED_18'u
+tlen  ,213  | c#odnesfitn ec DhEaPrR EC*AcTsE_Di_n18,  DcDBo_nDsEtP REcChAaTrE D*(c"ssi_nocuet )d ea{d
+b      e| e                                             ^f
+ API 1.8")
       |                       ^
 ../include/deadbeef/deadbeef.h:113:46: note: expanded from macro 'DDB_DEPRECATED'
   113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
@@ -4787,13 +4689,10 @@ plugins.c:309:6: warning: 'plt_insert_dir' is deprecated: since deadbeef API 1.5
  1050 |     DB_playItem_t *(*plt_insert_dir) (ddb_playlist_t *plt, DB_playItem_t *after, const char *dirname, int *pabort, int (*cb)(DB_playItem_t *it, void *data), void *user_data) DEPRECATED_15;
       |                                                                                                                                                                               ^
 ../include/deadbeef/deadbeef.h:231:23: note: expanded from macro 'DEPRECATED_15'
-  231 | #define DEPRECATED_15 DDB_DEPRECATED("sinceplaylist.c d:e2482adb:e11e:f  Awarning: Pinitializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]I
- 1.5")
+  231 | #define DEPRECATED_15 DDB_DEPRECATED("since deadbeef API 1.5")
       |                       ^
-../include/deadbeef/deadbeef.h :2482113 | : 46 :   note: cexpanded from macro 'DDB_DEPRECATED'h
-ar *s  l113a | s#h   =  dfenfaimnee  ?D DsBt_rDrEcPhRrE C(AfTnEaDm(ex,)  '_/'_)a t:t rNiUbLuLt;e
-_      _|            ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(
-(deprecated(x)))
+../include/deadbeef/deadbeef.h:113:46: note: expanded from macro 'DDB_DEPRECATED'
+  113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
       |                                              ^
 plugins.c:324:6: warning: 'plt_add_file' is deprecated: since deadbeef API 1.5 [-Wdeprecated-declarations]
   324 |     .plt_add_file = (int (*) (ddb_playlist_t *plt, const char *, int (*cb)(DB_playItem_t *it, void *data), void *))plt_add_file,
@@ -4802,8 +4701,7 @@ plugins.c:324:6: warning: 'plt_add_file' is deprecated: since deadbeef API 1.5 [
  1080 |     int (*plt_add_file) (ddb_playlist_t *plt, const char *fname, int (*cb)(DB_playItem_t *it, void *data), void *user_data) DEPRECATED_15;
       |                                                                                                                             ^
 ../include/deadbeef/deadbeef.h:231:23: note: expanded from macro 'DEPRECATED_15'
-  231 | #define DEPRECATED_15 DDB_DEPRECATED("si  CC       undo/deadbeef-undo_playlist.o
-nce deadbeef API 1.5")
+  231 | #define DEPRECATED_15 DDB_DEPRECATED("since deadbeef API 1.5")
       |                       ^
 ../include/deadbeef/deadbeef.h:113:46: note: expanded from macro 'DDB_DEPRECATED'
   113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
@@ -4833,11 +4731,14 @@ plugins.c:326:6: warning: 'pl_add_files_begin' is deprecated: since deadbeef API
   113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
       |                                              ^
 plugins.c:327:6: warning: 'pl_add_files_end' is deprecated: since deadbeef API 1.5 [-Wdeprecated-declarations]
-  327 |     .pl_add_files_end = pl_add_files_end,
+  327 |     .pl_add_files_playlist.cend: 2482=: 11p:l_ adwarning: d_initializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]fi
+les_end,
       |      ^
 ../include/deadbeef/deadbeef.h:1112:37: note: 'pl_add_files_end' has been explicitly marked deprecated here
- 1112 |     void (*pl_add_files_end) (void) DEPRECATED_15;
-      |                                     ^
+ 2482 |   1112  |     c h avro i*ds l(a*sphl _=a dfdn_afmiel e?s _setnrdr)c h(rv o(ifdn)a mDeE,P R'E/C'A)T E:D _1N5U;L
+L      ;| 
+                                    ^      
+|           ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ../include/deadbeef/deadbeef.h:231:23: note: expanded from macro 'DEPRECATED_15'
   231 | #define DEPRECATED_15 DDB_DEPRECATED("since deadbeef API 1.5")
       |                       ^
@@ -5000,13 +4901,39 @@ plugins.c:501:6: warning: 'vis_spectrum_listen' is deprecated: since deadbeef AP
 ../include/deadbeef/deadbeef.h:113:46: note: expanded from macro 'DDB_DEPRECATED'
   113 | #   define DDB_DEPRECATED(x) __attribute__ ((deprecated(x)))
       |                                              ^
+junklib.c:2279:27: warning: passing 'uint8_t[len]' (aka 'unsigned char[len]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 2279 |         res = junk_iconv (buffer, (int)len, out, (int)outsize, UTF8_STR, "iso8859-1");
+      |                           ^~~~~~
+junklib.c:696:25: note: passing argument to parameter 'in' here
+  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
+      |                         ^
+junklib.c:2279:45: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 2279 |         res = junk_iconv (buffer, (int)len, out, (int)outsize, UTF8_STR, "iso8859-1");
+      |                                             ^~~
+junklib.c:696:46: note: passing argument to parameter 'out' here
+  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
+      |                                              ^
+junklib.c:2281:31: warning: passing 'uint8_t[len]' (aka 'unsigned char[len]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 2281 |             res = junk_iconv (buffer, (int)len, out+2, (int)(outsize - 2), UTF8_STR, "UCS-2LE");
+      |                               ^~~~~~
+junklib.c:696:25: note: passing argument to parameter 'in' here
+  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
+      |                         ^
+junklib.c:2281:49: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 2281 |             res = junk_iconv (buffer, (int)len, out+2, (int)(outsize - 2), UTF8_STR, "UCS-2LE");
+      |                                                 ^~~~~
+junklib.c:696:46: note: passing argument to parameter 'out' here
+  696 | junk_iconv (const char *in, int inlen, char *out, int outlen, const char *cs_in, const char *cs_out) {
+      |                                              ^
+1 warning generated.
 plugins.c:692:22: warning: passing 'const char *' to parameter of type 'const md5_byte_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
   692 |     md5_append (&st, in, len);
       |                      ^~
 ./md5/md5.h:84:53: note: passing argument to parameter 'data' here
    84 | void md5_append(md5_state_t *pms, const md5_byte_t *data, int nbytes);
       |                                                     ^
-  CC       scriptable/deadbeef-scriptable_shared.o
+  CC       ../external/wcwidth/deadbeef-wcwidth.o
+  CC       md5/deadbeef-md5.o
 plugins.c:1033:32: warning: initializing 'const uint8_t *' (aka 'const unsigned char *') with an expression of type 'char[1000]' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
  1033 |                 const uint8_t *p = conf_blacklist_plugins;
       |                                ^   ~~~~~~~~~~~~~~~~~~~~~~
@@ -5016,7 +4943,80 @@ plugins.c:1040:39: warning: passing 'const uint8_t *' (aka 'const unsigned char 
 /usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
   174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
       |                                 ^
-28 warnings generated.
+junklib.c:3606:11: warning: initializing 'char *' with an expression of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 3606 |     char *writeptr = data;
+      |           ^          ~~~~
+junklib.c:3732:22: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 3732 |     if (!strcasecmp (rva_desc, "album")) {
+      |                      ^~~~~~~~
+/usr/include/strings.h:116:36: note: passing argument to parameter '__s1' here
+  116 | extern int strcasecmp (const char *__s1, const char *__s2)
+      |                                    ^
+junklib.c:3740:27: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 3740 |     else if (!strcasecmp (rva_desc, "track")) {
+      |                           ^~~~~~~~
+/usr/include/strings.h:116:36: note: passing argument to parameter '__s1' here
+  116 | extern int strcasecmp (const char *__s1, const char *__s2)
+      |                                    ^
+junklib.c:3754:11: warning: initializing 'char *' with an expression of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 3754 |     char *owner = readptr;
+      |           ^       ~~~~~~~
+junklib.c:3831:11: warning: initializing 'char *' with an expression of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 3831 |     char *email = readptr;
+      |           ^       ~~~~~~~
+junklib.c:3876:56: warning: passing 'uint8_t[0]' (aka 'unsigned char[0]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 3876 |         if (!strcmp (frame->id, "POPM") && !strcasecmp(frame->data, wmp_popm_email)) {
+      |                                                        ^~~~~~~~~~~
+/usr/include/strings.h:116:36: note: passing argument to parameter '__s1' here
+  116 | extern int strcasecmp (const char *__s1, const char *__s2)
+      |                                    ^
+junklib.c:3904:13: warning: passing 'uint8_t[0]' (aka 'unsigned char[0]') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 3904 |     strcpy (frame->data, email);
+      |             ^~~~~~~~~~~
+/usr/include/bits/string_fortified.h:89:66: note: passing argument to parameter '__dest' here
+   89 | __NTH (strcpy (__fortify_clang_overload_arg (char *, __restrict, __dest),
+      |                                                                  ^
+junklib.c:3919:79: warning: passing 'uint8_t[0]' (aka 'unsigned char[0]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 3919 |         if (!strcmp (f->id, frame_id) && f->size >= strlen(owner) && !strcmp (f->data, owner)) {
+      |                                                                               ^~~~~~~
+/usr/include/string.h:171:32: note: passing argument to parameter '__s1' here
+  171 | extern int strcmp (const char *__s1, const char *__s2)
+      |                                ^
+  CC       undo/deadbeef-undo_playlist.o
+junklib.c:4293:18: warning: passing 'uint8_t[10]' (aka 'unsigned char[10]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 4293 |     if (strncmp (header, "ID3", 3)) {
+      |                  ^~~~~~
+/usr/include/string.h:174:33: note: passing argument to parameter '__s1' here
+  174 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+      |                                 ^
+  CC       scriptable/deadbeef-scriptable_shared.o
+junklib.c:4656:57: warning: passing 'const char *' to parameter of type 'const unsigned char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 4656 |     if (enable_shift_jis_detection && can_be_shift_jis (s, len)) {
+      |                                                         ^
+junklib.c:990:40: note: passing argument to parameter 'str' here
+  990 | can_be_shift_jis (const unsigned char *str, int size) {
+      |                                        ^
+junklib.c:4660:25: warning: passing 'const char *' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 4660 |     if (can_be_chinese (s, len)) {
+      |                         ^
+junklib.c:966:32: note: passing argument to parameter 'str' here
+  966 | can_be_chinese (const uint8_t *str, int sz) {
+      |                                ^
+junklib.c:4664:24: warning: passing 'const char *' to parameter of type 'const signed char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 4664 |     if (can_be_cp1251 (s, len)) {
+      |                        ^
+junklib.c:936:35: note: passing argument to parameter 'str' here
+  936 | can_be_cp1251 (const signed char *str, int size) {
+      |                                   ^
+junklib.c:4865:41: warning: passing 'uint8_t[0]' (aka 'unsigned char[0]') to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 4865 |                         if (!strcasecmp(frame->data, wmp_popm_email)) {
+      |                                         ^~~~~~~~~~~
+/usr/include/strings.h:116:36: note: passing argument to parameter '__s1' here
+  116 | extern int strcasecmp (const char *__s1, const char *__s2)
+      |                                    ^
+junklib.c:4876:33: warning: initializing 'const char *' with an expression of type 'uint8_t[0]' (aka 'unsigned char[0]') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 4876 |                     const char *email = frame_popm->data;
+      |                                 ^       ~~~~~~~~~~~~~~~~
 tf.c:526:25: warning: passing 'uint32_t *' (aka 'unsigned int *') to parameter of type 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
   526 |         u8_nextchar (p, &i);
       |                         ^~
@@ -5041,9 +5041,11 @@ tf.c:560:29: warning: passing 'char *' to parameter of type 'const signed char *
 ./utf8.h:141:32: note: passing argument to parameter 'c' here
   141 | u8_tolower (const signed char *c, int l, char *out);
       |                                ^
+2 warnings generated.
 tf.c:665:19: warning: initializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
   665 |             char *found = strstr (iptr, lines[i*2+1]);
       |                   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+28 warnings generated.
 tf.c:3993:17: warning: initializing 'const char *' with an expression of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
  3993 |     const char *fstart = c->o;
       |                 ^        ~~~~
@@ -5054,8 +5056,8 @@ tf.c:4116:11: warning: initializing 'char *' with an expression of type 'uint8_t
  4116 |     char *start = c->o;
       |           ^       ~~~~
 30 warnings generated.
-55 warnings generated.
 1 warning generated.
+55 warnings generated.
 8 warnings generated.
   CCLD     deadbeef
 make[2]: Leaving directory '/build/deadbeef-git/src/deadbeef/src'
