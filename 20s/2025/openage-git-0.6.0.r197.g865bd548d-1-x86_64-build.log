@@ -26,10 +26,10 @@ If it doesn't, consider reporting the issue, or ask for help:
 -- Detecting CXX compile features - done
 -- Performing Test HAVE_REQUIRED_CXX20_SUPPORT
 -- Performing Test HAVE_REQUIRED_CXX20_SUPPORT - Success
--- Found Python3: /usr/bin/python3.13 (found suitable exact version "3.13.7") found components: Interpreter Development NumPy Development.Module Development.Embed
--- Found Python: /usr/bin/python3.13 (Required is at least version "3.9")
--- Found Cython: /usr/bin/python3.13 -m cython (found suitable version "3.1.4", minimum required is "3.0.10")
-PYTHON_LIBRARIES: /usr/lib/libpython3.13.so
+-- Found Python3: /usr/bin/python3.14 (found suitable exact version "3.14.3") found components: Interpreter Development NumPy Development.Module Development.Embed
+-- Found Python: /usr/bin/python3.14 (Required is at least version "3.9")
+-- Found Cython: /usr/bin/python3.14 -m cython (found suitable version "3.2.4", minimum required is "3.0.10")
+PYTHON_LIBRARIES: /usr/lib/libpython3.14.so
 -- Checking python3 module PIL.Image - Success
 -- Checking python3 module PIL.ImageDraw - Success
 -- Checking python3 module numpy - Success
@@ -51,12 +51,12 @@ Call Stack (most recent call first):
   CMakeLists.txt:223 (doxygen_configure)
 
 
--- Found Freetype: /usr/lib/libfreetype.so (found version "2.14.1")
--- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
--- Found PNG: /usr/lib/libpng.so (found version "1.6.50")
+-- Found Freetype: /usr/lib/libfreetype.so (found version "2.14.3")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.2")
+-- Found PNG: /usr/lib/libpng.so (found version "1.6.56")
 -- Found Opusfile: /usr/lib/libopusfile.so
 -- Found Epoxy: /usr/lib/libepoxy.so
--- Found HarfBuzz: /usr/lib/libharfbuzz.so (found suitable version "12.1.0", minimum required is "1.0.0")
+-- Found HarfBuzz: /usr/lib/libharfbuzz.so (found suitable version "13.2.1", minimum required is "1.0.0")
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE
@@ -73,7 +73,7 @@ Call Stack (most recent call first):
 -- Looking for wsyncup in /usr/lib/libcurses.so
 -- Looking for wsyncup in /usr/lib/libcurses.so - found
 -- Found Curses: /usr/lib/libncursesw.so
--- Found Vulkan: /lib/libvulkan.so (found version "1.4.321") found components: glslc glslangValidator
+-- Found Vulkan: /usr/lib/libvulkan.so (found version "1.4.341") found components: glslc glslangValidator
 
 cython module
 	run                                                 [embedded interpreter] [noinstall]
@@ -116,7 +116,7 @@ Traceback (most recent call last):
   File "/build/openage-git/src/build/openage/__main__.py", line 178, in <module>
     multiprocessing.set_start_method('spawn')
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "/usr/lib/python3.13/multiprocessing/context.py", line 247, in set_start_method
+  File "/usr/lib/python3.14/multiprocessing/context.py", line 247, in set_start_method
     raise RuntimeError('context has already been set')
 RuntimeError: context has already been set
 CMake Error at buildsystem/codegen.cmake:32 (message):

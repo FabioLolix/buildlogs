@@ -1,6 +1,6 @@
 + exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 build -Denable-gtk-doc=true
 The Meson build system
-Version: 1.10.1
+Version: 1.10.2
 Source dir: /build/entangle-git/src/entangle
 Build dir: /build/entangle-git/src/entangle/build
 Build type: native build
@@ -12,29 +12,29 @@ Host machine cpu family: x86_64
 Host machine cpu: x86_64
 Program pod2man found: YES (/usr/bin/core_perl/pod2man)
 Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
-Run-time dependency glib-2.0 found: YES 2.86.4
-Run-time dependency gio-2.0 found: YES 2.86.4
-Run-time dependency gio-unix-2.0 found: YES 2.86.4
-Run-time dependency gthread-2.0 found: YES 2.86.4
-Run-time dependency gmodule-2.0 found: YES 2.86.4
-Run-time dependency gdk-pixbuf-2.0 found: YES 2.44.4
-Run-time dependency gtk+-3.0 found: YES 3.24.51
-Run-time dependency pango found: YES 1.57.0
-Run-time dependency pangocairo found: YES 1.57.0
+Run-time dependency glib-2.0 found: YES 2.88.0
+Run-time dependency gio-2.0 found: YES 2.88.0
+Run-time dependency gio-unix-2.0 found: YES 2.88.0
+Run-time dependency gthread-2.0 found: YES 2.88.0
+Run-time dependency gmodule-2.0 found: YES 2.88.0
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.44.6
+Run-time dependency gtk+-3.0 found: YES 3.24.52
+Run-time dependency pango found: YES 1.57.1
+Run-time dependency pangocairo found: YES 1.57.1
 Run-time dependency libgphoto2 found: YES 2.5.33
 Run-time dependency gudev-1.0 found: YES 238
 Run-time dependency lcms2 found: YES 2.18
-Run-time dependency libpeas-1.0 found: YES 1.36.0
-Run-time dependency libpeas-gtk-1.0 found: YES 1.36.0
+Run-time dependency libpeas-1.0 found: YES 1.38.1
+Run-time dependency libpeas-gtk-1.0 found: YES 1.38.1
 Did not find CMake 'cmake'
 Found CMake: NO
 Run-time dependency gexiv2-0.16 found: NO (tried pkgconfig and cmake)
 Run-time dependency gexiv2 found: YES 0.14.6
 Run-time dependency xext found: YES 1.3.7
 Library raw_r found: YES
-Run-time dependency gstreamer-1.0 found: YES 1.28.1
-Run-time dependency gstreamer-video-1.0 found: YES 1.28.1
-Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Run-time dependency gstreamer-1.0 found: YES 1.28.2
+Run-time dependency gstreamer-video-1.0 found: YES 1.28.2
+Run-time dependency girepository-2.0 found: YES 2.88.0
 Compiler for C supports arguments -W: YES 
 Compiler for C supports arguments -Waddress: YES 
 Compiler for C supports arguments -Waggressive-loop-optimizations: YES 
@@ -156,23 +156,23 @@ Compiler for C supports arguments -funit-at-a-time: YES
 Compiler for C supports arguments -fipa-pure-const: YES 
 Compiler for C supports arguments -Wno-suggest-attribute=pure: YES 
 Compiler for C supports arguments -Wno-suggest-attribute=const: YES 
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency gio-2.0 found: YES 2.86.4 (cached)
+Dependency gio-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
 Program msgfmt found: YES (/usr/bin/msgfmt)
 src/meson.build:89: WARNING: Project targets '>= 0.56.0' but uses feature introduced in '0.60.0': list.<plus>. The right hand operand was not a list.
-Dependency gobject-introspection-1.0 found: YES 1.86.0 (cached)
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
 Dependency gobject-introspection-1.0 found: YES 1.86.0 (cached)
 Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
 Dependency gobject-introspection-1.0 found: YES 1.86.0 (cached)
@@ -211,92 +211,92 @@ Found ninja-1.13.2 at /usr/bin/ninja
 Generating targets:   0%|          | 0/53 eta ?                                               Writing build.ninja:   0%|          | 0/132 eta ?                                                 ninja: Entering directory `build'
 [1/95] Building translation po/eu/LC_MESSAGES/entangle-eu.mo
 [2/95] Building translation po/bg/LC_MESSAGES/entangle-bg.mo
-[3/95] Building translation po/ca/LC_MESSAGES/entangle-ca.mo
-[4/95] Building translation po/cs/LC_MESSAGES/entangle-cs.mo
-[5/95] Building translation po/de/LC_MESSAGES/entangle-de.mo
-[6/95] Building translation po/en_GB/LC_MESSAGES/entangle-en_GB.mo
-[7/95] Building translation po/es/LC_MESSAGES/entangle-es.mo
-[8/95] Building translation po/fr/LC_MESSAGES/entangle-fr.mo
-[9/95] Building translation po/he/LC_MESSAGES/entangle-he.mo
-[10/95] Building translation po/hu/LC_MESSAGES/entangle-hu.mo
-[11/95] Building translation po/ja/LC_MESSAGES/entangle-ja.mo
-[12/95] Building translation po/pl/LC_MESSAGES/entangle-pl.mo
-[13/95] Building translation po/pt_BR/LC_MESSAGES/entangle-pt_BR.mo
-[14/95] Building translation po/sv/LC_MESSAGES/entangle-sv.mo
-[15/95] Building translation po/it/LC_MESSAGES/entangle-it.mo
-[16/95] Building translation po/nl/LC_MESSAGES/entangle-nl.mo
+[3/95] Building translation po/cs/LC_MESSAGES/entangle-cs.mo
+[4/95] Building translation po/de/LC_MESSAGES/entangle-de.mo
+[5/95] Building translation po/en_GB/LC_MESSAGES/entangle-en_GB.mo
+[6/95] Building translation po/es/LC_MESSAGES/entangle-es.mo
+[7/95] Building translation po/he/LC_MESSAGES/entangle-he.mo
+[8/95] Building translation po/hu/LC_MESSAGES/entangle-hu.mo
+[9/95] Building translation po/it/LC_MESSAGES/entangle-it.mo
+[10/95] Building translation po/ja/LC_MESSAGES/entangle-ja.mo
+[11/95] Building translation po/pt_BR/LC_MESSAGES/entangle-pt_BR.mo
+[12/95] Building translation po/ca/LC_MESSAGES/entangle-ca.mo
+[13/95] Building translation po/fr/LC_MESSAGES/entangle-fr.mo
+[14/95] Building translation po/nl/LC_MESSAGES/entangle-nl.mo
+[15/95] Building translation po/pl/LC_MESSAGES/entangle-pl.mo
+[16/95] Building translation po/sv/LC_MESSAGES/entangle-sv.mo
 [17/95] Building translation po/tr/LC_MESSAGES/entangle-tr.mo
-[18/95] Building translation po/fa/LC_MESSAGES/entangle-fa.mo
-[19/95] Building translation po/zh_TW/LC_MESSAGES/entangle-zh_TW.mo
-[20/95] Building translation po/uk/LC_MESSAGES/entangle-uk.mo
-[21/95] Building translation po/zh_CN/LC_MESSAGES/entangle-zh_CN.mo
-[22/95] Building translation po/nb_NO/LC_MESSAGES/entangle-nb_NO.mo
-[23/95] Building translation po/si/LC_MESSAGES/entangle-si.mo
+[18/95] Building translation po/zh_TW/LC_MESSAGES/entangle-zh_TW.mo
+[19/95] Building translation po/uk/LC_MESSAGES/entangle-uk.mo
+[20/95] Building translation po/zh_CN/LC_MESSAGES/entangle-zh_CN.mo
+[21/95] Building translation po/fa/LC_MESSAGES/entangle-fa.mo
+[22/95] Building translation po/si/LC_MESSAGES/entangle-si.mo
+[23/95] Building translation po/nb_NO/LC_MESSAGES/entangle-nb_NO.mo
 [24/95] Building translation po/ka/LC_MESSAGES/entangle-ka.mo
-[25/95] Building translation po/ro/LC_MESSAGES/entangle-ro.mo
-[26/95] Building translation po/sl/LC_MESSAGES/entangle-sl.mo
-[27/95] Building translation po/fi/LC_MESSAGES/entangle-fi.mo
-[28/95] Building translation po/ko/LC_MESSAGES/entangle-ko.mo
-[29/95] Building translation po/id/LC_MESSAGES/entangle-id.mo
+[25/95] Building translation po/fi/LC_MESSAGES/entangle-fi.mo
+[26/95] Building translation po/ko/LC_MESSAGES/entangle-ko.mo
+[27/95] Building translation po/ro/LC_MESSAGES/entangle-ro.mo
+[28/95] Building translation po/id/LC_MESSAGES/entangle-id.mo
+[29/95] Building translation po/sl/LC_MESSAGES/entangle-sl.mo
 [30/95] Generating src/gen-metadata with a custom command
 [31/95] Generating src/frontend/entangle-resources_h with a custom command
 [32/95] Generating src/frontend/entangle-resources_c with a custom command
 [33/95] Generating docs/man/en/man with a custom command
-[34/95] Merging translations for src/org.entangle_photo.Manager.desktop
-[35/95] Generating GObject enum file src/backend/entangle-camera-enums.c (wrapped by meson because command contains newlines, to capture output)
-[36/95] Generating GObject enum file src/frontend/entangle-image-display-enums.h (wrapped by meson because command contains newlines, to capture output)
-[37/95] Generating GObject enum file src/frontend/entangle-image-display-enums.c (wrapped by meson because command contains newlines, to capture output)
-[38/95] Generating GObject enum file src/backend/entangle-camera-enums.h (wrapped by meson because command contains newlines, to capture output)
-[39/95] Generating GObject enum file src/backend/entangle-colour-profile-enums.c (wrapped by meson because command contains newlines, to capture output)
-[40/95] Generating GObject enum file src/backend/entangle-colour-profile-enums.h (wrapped by meson because command contains newlines, to capture output)
+[34/95] Generating GObject enum file src/backend/entangle-camera-enums.c (wrapped by meson because command contains newlines, to capture output)
+[35/95] Generating GObject enum file src/frontend/entangle-image-display-enums.h (wrapped by meson because command contains newlines, to capture output)
+[36/95] Generating GObject enum file src/backend/entangle-camera-enums.h (wrapped by meson because command contains newlines, to capture output)
+[37/95] Generating GObject enum file src/backend/entangle-colour-profile-enums.c (wrapped by meson because command contains newlines, to capture output)
+[38/95] Merging translations for src/org.entangle_photo.Manager.desktop
+[39/95] Generating GObject enum file src/backend/entangle-colour-profile-enums.h (wrapped by meson because command contains newlines, to capture output)
+[40/95] Generating GObject enum file src/frontend/entangle-image-display-enums.c (wrapped by meson because command contains newlines, to capture output)
 [41/95] Merging translations for src/org.entangle_photo.Manager.metainfo.xml
 [42/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-debug.c.o
-[43/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-progress.c.o
-[44/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-button.c.o
-[45/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-date.c.o
-[46/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-text.c.o
-[47/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-group.c.o
+[43/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-toggle.c.o
+[44/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-date.c.o
+[45/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-group.c.o
+[46/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-device-manager.c.o
+[47/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-progress.c.o
 [48/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control.c.o
 [49/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-choice.c.o
-[50/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-range.c.o
-[51/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-device-manager.c.o
-[52/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/meson-generated_.._entangle-camera-enums.c.o
-[53/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-toggle.c.o
-[54/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/meson-generated_.._entangle-colour-profile-enums.c.o
-[55/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-file.c.o
-[56/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-media.c.o
-[57/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-image.c.o
-[58/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-colour-profile.c.o
-[59/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-image-loader.c.o
-[60/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-automata.c.o
-[61/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/meson-generated_.._entangle-resources.c.o
-[62/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-list.c.o
-[63/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-pixbuf-loader.c.o
-[64/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-pixbuf.c.o
-[65/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-thumbnail-loader.c.o
-[66/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-video.c.o
+[50/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-text.c.o
+[51/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-range.c.o
+[52/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-button.c.o
+[53/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/meson-generated_.._entangle-camera-enums.c.o
+[54/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-media.c.o
+[55/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/meson-generated_.._entangle-colour-profile-enums.c.o
+[56/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-image-loader.c.o
+[57/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-file.c.o
+[58/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-automata.c.o
+[59/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-colour-profile.c.o
+[60/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-image.c.o
+[61/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-list.c.o
+[62/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-video.c.o
+[63/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-thumbnail-loader.c.o
+[64/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/meson-generated_.._entangle-resources.c.o
+[65/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-pixbuf-loader.c.o
+[66/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-pixbuf.c.o
 [67/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-session.c.o
 [68/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-preferences.c.o
-[69/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-support.c.o
+[69/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera.c.o
 [70/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-preferences.c.o
-[71/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/meson-generated_.._entangle-image-display-enums.c.o
-[72/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-application.c.o
-[73/95] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera.c.o
-[74/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-dpms.c.o
-[75/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-help-about.c.o
-[76/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-media-popup.c.o
-[77/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-picker.c.o
-[78/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script.c.o
+[71/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-dpms.c.o
+[72/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-picker.c.o
+[73/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/meson-generated_.._entangle-image-display-enums.c.o
+[74/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-help-about.c.o
+[75/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-support.c.o
+[76/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-image-display.c.o
+[77/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-control-panel.c.o
+[78/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-application.c.o
 [79/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-image-histogram.c.o
-[80/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-media-statusbar.c.o
-[81/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script-simple.c.o
-[82/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-image-display.c.o
-[83/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script-config.c.o
-[84/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-control-panel.c.o
+[80/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script-config.c.o
+[81/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-media-popup.c.o
+[82/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-media-statusbar.c.o
+[83/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script.c.o
+[84/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script-simple.c.o
 [85/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-preferences-display.c.o
 [86/95] Compiling C object src/entangle.p/entangle-main.c.o
-[87/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-session-browser.c.o
-[88/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-manager.c.o
+[87/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-manager.c.o
+[88/95] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-session-browser.c.o
 [89/95] Linking target src/backend/libentangle_backend.so.0.0.0
 [90/95] Generating symbol file src/backend/libentangle_backend.so.0.0.0.p/libentangle_backend.so.0.0.0.symbols
 [91/95] Linking target src/frontend/libentangle_frontend.so.0.0.0

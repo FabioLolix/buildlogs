@@ -1,6 +1,6 @@
 + exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 build -Denable-gtk-doc=true
 The Meson build system
-Version: 1.10.1
+Version: 1.10.2
 Source dir: /build/entangle/src/entangle-3.0
 Build dir: /build/entangle/src/entangle-3.0/build
 Build type: native build
@@ -12,25 +12,25 @@ Host machine cpu family: x86_64
 Host machine cpu: x86_64
 Program pod2man found: YES (/usr/bin/core_perl/pod2man)
 Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
-Run-time dependency glib-2.0 found: YES 2.86.4
-Run-time dependency gio-2.0 found: YES 2.86.4
-Run-time dependency gthread-2.0 found: YES 2.86.4
-Run-time dependency gmodule-2.0 found: YES 2.86.4
-Run-time dependency gdk-pixbuf-2.0 found: YES 2.44.4
-Run-time dependency gtk+-3.0 found: YES 3.24.51
-Run-time dependency pango found: YES 1.57.0
-Run-time dependency pangocairo found: YES 1.57.0
+Run-time dependency glib-2.0 found: YES 2.88.0
+Run-time dependency gio-2.0 found: YES 2.88.0
+Run-time dependency gthread-2.0 found: YES 2.88.0
+Run-time dependency gmodule-2.0 found: YES 2.88.0
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.44.6
+Run-time dependency gtk+-3.0 found: YES 3.24.52
+Run-time dependency pango found: YES 1.57.1
+Run-time dependency pangocairo found: YES 1.57.1
 Run-time dependency libgphoto2 found: YES 2.5.33
 Run-time dependency gudev-1.0 found: YES 238
 Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
 Run-time dependency lcms2 found: YES 2.18
-Run-time dependency libpeas-1.0 found: YES 1.36.0
-Run-time dependency libpeas-gtk-1.0 found: YES 1.36.0
+Run-time dependency libpeas-1.0 found: YES 1.38.1
+Run-time dependency libpeas-gtk-1.0 found: YES 1.38.1
 Run-time dependency gexiv2 found: YES 0.14.6
 Run-time dependency xext found: YES 1.3.7
 Library raw_r found: YES
-Run-time dependency gstreamer-1.0 found: YES 1.28.1
-Run-time dependency gstreamer-video-1.0 found: YES 1.28.1
+Run-time dependency gstreamer-1.0 found: YES 1.28.2
+Run-time dependency gstreamer-video-1.0 found: YES 1.28.2
 Compiler for C supports arguments -W: YES 
 Compiler for C supports arguments -Waddress: YES 
 Compiler for C supports arguments -Waggressive-loop-optimizations: YES 
@@ -155,19 +155,19 @@ Compiler for C supports arguments -Wno-suggest-attribute=const: YES
 meson.build:199: WARNING: Consider using the built-in warning_level option instead of using "-Wall".
 meson.build:199: WARNING: Consider using the built-in warning_level option instead of using "-Wextra".
 meson.build:199: WARNING: Consider using the built-in optimization level instead of using "-O2".
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency gio-2.0 found: YES 2.86.4 (cached)
+Dependency gio-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
-Dependency glib-2.0 found: YES 2.86.4 (cached)
+Dependency glib-2.0 found: YES 2.88.0 (cached)
 Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
 Program msgfmt found: YES (/usr/bin/msgfmt)
 Dependency gobject-introspection-1.0 found: YES 1.86.0 (cached)
@@ -211,62 +211,74 @@ entangle 3.0
 
 Found ninja-1.13.2 at /usr/bin/ninja
 Generating targets:   0%|          | 0/46 eta ?                                               Writing build.ninja:   0%|          | 0/125 eta ?                                                 ninja: Entering directory `build'
-[1/88] Building translation po/eu/LC_MESSAGES/entangle-eu.mo
-[2/88] Building translation po/bg/LC_MESSAGES/entangle-bg.mo
-[3/88] Building translation po/ca/LC_MESSAGES/entangle-ca.mo
-[4/88] Building translation po/cs/LC_MESSAGES/entangle-cs.mo
-[5/88] Building translation po/de/LC_MESSAGES/entangle-de.mo
-[6/88] Building translation po/en_GB/LC_MESSAGES/entangle-en_GB.mo
-[7/88] Building translation po/es/LC_MESSAGES/entangle-es.mo
+[1/88] Building translation po/bg/LC_MESSAGES/entangle-bg.mo
+[2/88] Building translation po/ca/LC_MESSAGES/entangle-ca.mo
+[3/88] Building translation po/cs/LC_MESSAGES/entangle-cs.mo
+[4/88] Building translation po/de/LC_MESSAGES/entangle-de.mo
+[5/88] Building translation po/en_GB/LC_MESSAGES/entangle-en_GB.mo
+[6/88] Building translation po/es/LC_MESSAGES/entangle-es.mo
+[7/88] Building translation po/eu/LC_MESSAGES/entangle-eu.mo
 [8/88] Building translation po/fr/LC_MESSAGES/entangle-fr.mo
 [9/88] Building translation po/he/LC_MESSAGES/entangle-he.mo
 [10/88] Building translation po/hu/LC_MESSAGES/entangle-hu.mo
 [11/88] Building translation po/it/LC_MESSAGES/entangle-it.mo
-[12/88] Building translation po/ja/LC_MESSAGES/entangle-ja.mo
-[13/88] Building translation po/pl/LC_MESSAGES/entangle-pl.mo
-[14/88] Building translation po/nl/LC_MESSAGES/entangle-nl.mo
-[15/88] Building translation po/pt_BR/LC_MESSAGES/entangle-pt_BR.mo
-[16/88] Building translation po/sv/LC_MESSAGES/entangle-sv.mo
-[17/88] Building translation po/uk/LC_MESSAGES/entangle-uk.mo
+[12/88] Building translation po/pt_BR/LC_MESSAGES/entangle-pt_BR.mo
+[13/88] Building translation po/sv/LC_MESSAGES/entangle-sv.mo
+[14/88] Building translation po/tr/LC_MESSAGES/entangle-tr.mo
+[15/88] Building translation po/zh_CN/LC_MESSAGES/entangle-zh_CN.mo
+[16/88] Building translation po/nb_NO/LC_MESSAGES/entangle-nb_NO.mo
+[17/88] Building translation po/fa/LC_MESSAGES/entangle-fa.mo
 [18/88] Building translation po/zh_TW/LC_MESSAGES/entangle-zh_TW.mo
-[19/88] Building translation po/tr/LC_MESSAGES/entangle-tr.mo
-[20/88] Building translation po/zh_CN/LC_MESSAGES/entangle-zh_CN.mo
-[21/88] Building translation po/fa/LC_MESSAGES/entangle-fa.mo
-[22/88] Building translation po/nb_NO/LC_MESSAGES/entangle-nb_NO.mo
+[19/88] Building translation po/uk/LC_MESSAGES/entangle-uk.mo
+[20/88] Building translation po/pl/LC_MESSAGES/entangle-pl.mo
+[21/88] Building translation po/ja/LC_MESSAGES/entangle-ja.mo
+[22/88] Building translation po/nl/LC_MESSAGES/entangle-nl.mo
 [23/88] Generating src/gen-metadata with a custom command
 [24/88] Generating src/frontend/entangle-resources_h with a custom command
 [25/88] Generating src/frontend/entangle-resources_c with a custom command
 [26/88] Generating docs/man/en/man with a custom command
 [27/88] Merging translations for src/org.entangle_photo.Manager.desktop
-[28/88] Generating GObject enum file src/backend/entangle-colour-profile-enums.h (wrapped by meson because command contains newlines, to capture output)
-[29/88] Generating GObject enum file src/backend/entangle-camera-enums.c (wrapped by meson because command contains newlines, to capture output)
-[30/88] Generating GObject enum file src/backend/entangle-colour-profile-enums.c (wrapped by meson because command contains newlines, to capture output)
-[31/88] Generating GObject enum file src/backend/entangle-camera-enums.h (wrapped by meson because command contains newlines, to capture output)
-[32/88] Generating GObject enum file src/frontend/entangle-image-display-enums.c (wrapped by meson because command contains newlines, to capture output)
-[33/88] Merging translations for src/org.entangle_photo.Manager.metainfo.xml
-[34/88] Generating GObject enum file src/frontend/entangle-image-display-enums.h (wrapped by meson because command contains newlines, to capture output)
+[28/88] Generating GObject enum file src/backend/entangle-camera-enums.c (wrapped by meson because command contains newlines, to capture output)
+[29/88] Generating GObject enum file src/backend/entangle-colour-profile-enums.h (wrapped by meson because command contains newlines, to capture output)
+[30/88] Generating GObject enum file src/frontend/entangle-image-display-enums.c (wrapped by meson because command contains newlines, to capture output)
+[31/88] Generating GObject enum file src/frontend/entangle-image-display-enums.h (wrapped by meson because command contains newlines, to capture output)
+[32/88] Generating GObject enum file src/backend/entangle-colour-profile-enums.c (wrapped by meson because command contains newlines, to capture output)
+[33/88] Generating GObject enum file src/backend/entangle-camera-enums.h (wrapped by meson because command contains newlines, to capture output)
+[34/88] Merging translations for src/org.entangle_photo.Manager.metainfo.xml
 [35/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-debug.c.o
-[36/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-toggle.c.o
-[37/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-progress.c.o
-[38/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-date.c.o
+[36/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-button.c.o
+[37/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-device-manager.c.o
+[38/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-choice.c.o
 [39/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-range.c.o
-[40/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-choice.c.o
-[41/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control.c.o
-[42/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-button.c.o
-[43/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-group.c.o
-[44/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-text.c.o
-[45/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-device-manager.c.o
-[46/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/meson-generated_.._entangle-camera-enums.c.o
-[47/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-media.c.o
-[48/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-image-loader.c.o
-[49/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-colour-profile.c.o
-[50/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-image.c.o
-[51/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/meson-generated_.._entangle-colour-profile-enums.c.o
-[52/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-pixbuf-loader.c.o
-[53/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-list.c.o
-[54/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-file.c.o
-[55/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-automata.c.o
-[56/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-pixbuf.c.o
+[40/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-date.c.o
+[41/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-group.c.o
+[42/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control.c.o
+[43/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-toggle.c.o
+[44/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-progress.c.o
+[45/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/meson-generated_.._entangle-camera-enums.c.o
+[46/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-control-text.c.o
+[47/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/meson-generated_.._entangle-colour-profile-enums.c.o
+[48/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-image.c.o
+[49/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-media.c.o
+[50/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-file.c.o
+[51/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-list.c.o
+[52/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-colour-profile.c.o
+[53/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera-automata.c.o
+[54/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-image-loader.c.o
+[55/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-thumbnail-loader.c.o
+[56/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/meson-generated_.._entangle-resources.c.o
+src/frontend/entangle-resources.c:6248:9: warning: macro ‘__G_CONSTRUCTOR_H__’ is not used [-Wunused-macros]
+ 6248 | #define __G_CONSTRUCTOR_H__
+      |         ^~~~~~~~~~~~~~~~~~~
+[57/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-video.c.o
+[58/88] Compiling C object src/entangle.p/entangle-main.c.o
+FAILED: [code=1] src/entangle.p/entangle-main.c.o 
+cc -Isrc/entangle.p -Isrc -I../src -Isrc/backend -I../src/backend -Isrc/frontend -I../src/frontend -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gstreamer-1.0 -I/usr/include/libdrm -I/usr/include/orc-0.4 -I/usr/include/gphoto2 -I/usr/include/gudev-1.0 -I/usr/include/libpeas-1.0 -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cloudproviders -I/usr/include/cairo -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/atk-1.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/gio-unix-2.0 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -W -Waddress -Waggressive-loop-optimizations -Wall -Warray-bounds -Wattributes -Wbuiltin-macro-redefined -Wcast-align -Wchar-subscripts -Wclobbered -Wcomment -Wcomments -Wcoverage-mismatch -Wcpp -Wdate-time -Wdeprecated-declarations -Wdisabled-optimization -Wdiv-by-zero -Wdouble-promotion -Wempty-body -Wendif-labels -Wenum-compare -Wextra -Wformat-contains-nul -Wformat-extra-args -Wformat-security -Wformat-y2k -Wformat-zero-length -Wfree-nonheap-object -Wignored-qualifiers -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Winit-self -Winline -Wint-to-pointer-cast -Winvalid-memory-model -Winvalid-pch -Wjump-misses-init -Wlogical-op -Wmain -Wmaybe-uninitialized -Wmissing-braces -Wmissing-declarations -Wmissing-field-initializers -Wmissing-parameter-type -Wmissing-prototypes -Wmultichar -Wnarrowing -Wnested-externs -Wnonnull -Wold-style-declaration -Wold-style-definition -Wopenmp-simd -Woverflow -Woverride-init -Wpacked -Wpacked-bitfield-compat -Wparentheses -Wpointer-arith -Wpointer-sign -Wpointer-to-int-cast -Wpragmas -Wreturn-local-addr -Wreturn-type -Wsequence-point -Wshadow -Wsizeof-pointer-memaccess -Wstack-protector -Wstrict-aliasing -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=const -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wswitch -Wswitch-default -Wsync-nand -Wtrampolines -Wtrigraphs -Wtype-limits -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wunused -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-function -Wunused-label -Wunused-local-typedefs -Wunused-macros -Wunused-parameter -Wunused-result -Wunused-value -Wunused-variable -Wvarargs -Wvariadic-macros -Wvector-operation-performance -Wvla -Wvolatile-register-var -Wwrite-strings -Wnormalized=nfc -Wno-sign-compare -Wno-sign-conversion -Wno-conversion -Wno-unsafe-loop-optimizations -Wno-cast-function-type -Wjump-misses-init -Wframe-larger-than=40096 -O2 -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -fexceptions -fasynchronous-unwind-tables -fdiagnostics-show-option -funit-at-a-time -fipa-pure-const -Wno-suggest-attribute=pure -Wno-suggest-attribute=const -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_38 -DGLIB_VERSION_MAX_ALLOWED=GLIB_VERSION_2_38 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/entangle/src=/usr/src/debug/entangle -flto=auto -fPIE -pthread '-DDATADIR="/usr/share"' '-DLOCALE_DIR="/usr/share/locale"' '-DGETTEXT_PACKAGE="entangle"' -MD -MQ src/entangle.p/entangle-main.c.o -MF src/entangle.p/entangle-main.c.o.d -o src/entangle.p/entangle-main.c.o -c ../src/entangle-main.c
+../src/entangle-main.c:24:10: fatal error: girepository.h: No such file or directory
+   24 | #include <girepository.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+[59/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-pixbuf.c.o
 ../src/backend/entangle-pixbuf.c: In function ‘entangle_pixbuf_auto_rotate’:
 ../src/backend/entangle-pixbuf.c:54:13: warning: ‘gexiv2_metadata_get_orientation’ is deprecated: Use 'gexiv2_metadata_try_get_orientation' instead [-Wdeprecated-declarations]
    54 |             transform = gexiv2_metadata_get_orientation(metadata);
@@ -304,22 +316,30 @@ In file included from /usr/include/gexiv2/gexiv2.h:13,
 /usr/include/gexiv2/gexiv2-metadata.h:1381:19: note: declared here
  1381 | GExiv2Orientation gexiv2_metadata_get_orientation       (GExiv2Metadata *self);
       |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[57/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-thumbnail-loader.c.o
-[58/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-video.c.o
-[59/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/meson-generated_.._entangle-resources.c.o
-src/frontend/entangle-resources.c:6248:9: warning: macro ‘__G_CONSTRUCTOR_H__’ is not used [-Wunused-macros]
- 6248 | #define __G_CONSTRUCTOR_H__
-      |         ^~~~~~~~~~~~~~~~~~~
-[60/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-session.c.o
+[60/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-pixbuf-loader.c.o
 [61/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-preferences.c.o
-[62/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera.c.o
-[63/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/meson-generated_.._entangle-image-display-enums.c.o
-[64/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-help-about.c.o
-[65/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-support.c.o
-[66/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-preferences.c.o
-[67/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-dpms.c.o
-[68/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-application.c.o
-[69/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-media-statusbar.c.o
+[62/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-session.c.o
+[63/88] Compiling C object src/backend/libentangle_backend.so.0.0.0.p/entangle-camera.c.o
+[64/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-preferences.c.o
+[65/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/meson-generated_.._entangle-image-display-enums.c.o
+[66/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-dpms.c.o
+[67/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-application.c.o
+FAILED: [code=1] src/frontend/libentangle_frontend.so.0.0.0.p/entangle-application.c.o 
+cc -Isrc/frontend/libentangle_frontend.so.0.0.0.p -Isrc/frontend -I../src/frontend -Isrc/backend -I../src/backend -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cloudproviders -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/atk-1.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gstreamer-1.0 -I/usr/include/libpeas-1.0 -I/usr/include/libdrm -I/usr/include/orc-0.4 -I/usr/include/gphoto2 -I/usr/include/gudev-1.0 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -W -Waddress -Waggressive-loop-optimizations -Wall -Warray-bounds -Wattributes -Wbuiltin-macro-redefined -Wcast-align -Wchar-subscripts -Wclobbered -Wcomment -Wcomments -Wcoverage-mismatch -Wcpp -Wdate-time -Wdeprecated-declarations -Wdisabled-optimization -Wdiv-by-zero -Wdouble-promotion -Wempty-body -Wendif-labels -Wenum-compare -Wextra -Wformat-contains-nul -Wformat-extra-args -Wformat-security -Wformat-y2k -Wformat-zero-length -Wfree-nonheap-object -Wignored-qualifiers -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Winit-self -Winline -Wint-to-pointer-cast -Winvalid-memory-model -Winvalid-pch -Wjump-misses-init -Wlogical-op -Wmain -Wmaybe-uninitialized -Wmissing-braces -Wmissing-declarations -Wmissing-field-initializers -Wmissing-parameter-type -Wmissing-prototypes -Wmultichar -Wnarrowing -Wnested-externs -Wnonnull -Wold-style-declaration -Wold-style-definition -Wopenmp-simd -Woverflow -Woverride-init -Wpacked -Wpacked-bitfield-compat -Wparentheses -Wpointer-arith -Wpointer-sign -Wpointer-to-int-cast -Wpragmas -Wreturn-local-addr -Wreturn-type -Wsequence-point -Wshadow -Wsizeof-pointer-memaccess -Wstack-protector -Wstrict-aliasing -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=const -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wswitch -Wswitch-default -Wsync-nand -Wtrampolines -Wtrigraphs -Wtype-limits -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wunused -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-function -Wunused-label -Wunused-local-typedefs -Wunused-macros -Wunused-parameter -Wunused-result -Wunused-value -Wunused-variable -Wvarargs -Wvariadic-macros -Wvector-operation-performance -Wvla -Wvolatile-register-var -Wwrite-strings -Wnormalized=nfc -Wno-sign-compare -Wno-sign-conversion -Wno-conversion -Wno-unsafe-loop-optimizations -Wno-cast-function-type -Wjump-misses-init -Wframe-larger-than=40096 -O2 -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -fexceptions -fasynchronous-unwind-tables -fdiagnostics-show-option -funit-at-a-time -fipa-pure-const -Wno-suggest-attribute=pure -Wno-suggest-attribute=const -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_38 -DGLIB_VERSION_MAX_ALLOWED=GLIB_VERSION_2_38 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/entangle/src=/usr/src/debug/entangle -flto=auto -fPIC -pthread '-DPREFIX="/usr"' '-DDATADIR="/usr/share"' '-DPKGDATADIR="/usr/share/entangle"' '-DLIBDIR="/usr/lib"' '-DVERSION="3.0"' -MD -MQ src/frontend/libentangle_frontend.so.0.0.0.p/entangle-application.c.o -MF src/frontend/libentangle_frontend.so.0.0.0.p/entangle-application.c.o.d -o src/frontend/libentangle_frontend.so.0.0.0.p/entangle-application.c.o -c ../src/frontend/entangle-application.c
+../src/frontend/entangle-application.c: In function ‘entangle_application_init’:
+../src/frontend/entangle-application.c:473:5: error: implicit declaration of function ‘g_irepository_require’; did you mean ‘gi_repository_require’? [-Wimplicit-function-declaration]
+  473 |     g_irepository_require(g_irepository_get_default(), "Peas", "1.0", 0, NULL);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     gi_repository_require
+../src/frontend/entangle-application.c:473:5: warning: nested extern declaration of ‘g_irepository_require’ [-Wnested-externs]
+../src/frontend/entangle-application.c:473:27: error: implicit declaration of function ‘g_irepository_get_default’; did you mean ‘gi_repository_dup_default’? [-Wimplicit-function-declaration]
+  473 |     g_irepository_require(g_irepository_get_default(), "Peas", "1.0", 0, NULL);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                           gi_repository_dup_default
+../src/frontend/entangle-application.c:473:27: warning: nested extern declaration of ‘g_irepository_get_default’ [-Wnested-externs]
+[68/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-support.c.o
+[69/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-help-about.c.o
+[70/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-media-statusbar.c.o
 ../src/frontend/entangle-media-statusbar.c: In function ‘entangle_media_statusbar_update_labels’:
 ../src/frontend/entangle-media-statusbar.c:203:9: warning: ‘gexiv2_metadata_has_tag’ is deprecated: Use 'gexiv2_metadata_try_has_tag' instead [-Wdeprecated-declarations]
   203 |         if (gexiv2_metadata_has_tag(metadata, "Exif.Photo.ExposureTime")) {
@@ -385,39 +405,17 @@ In file included from /usr/include/gexiv2/gexiv2.h:13,
 /usr/include/gexiv2/gexiv2-metadata.h:1067:25: note: declared here
  1067 | gboolean                gexiv2_metadata_get_exif_tag_rational (GExiv2Metadata *self, const gchar* tag, gint* nom, gint* den);
       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[70/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-picker.c.o
-[71/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-image-display.c.o
-[72/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-media-popup.c.o
-[73/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-image-histogram.c.o
-[74/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-control-panel.c.o
-[75/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script-simple.c.o
-[76/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script.c.o
-[77/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script-config.c.o
-[78/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-preferences-display.c.o
-[79/88] Compiling C object src/entangle.p/entangle-main.c.o
+[71/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-control-panel.c.o
+[72/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-image-histogram.c.o
+[73/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script-config.c.o
+[74/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-picker.c.o
+[75/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-media-popup.c.o
+[76/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-image-display.c.o
+[77/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script-simple.c.o
+[78/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-script.c.o
+[79/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-preferences-display.c.o
 [80/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-camera-manager.c.o
 [81/88] Compiling C object src/frontend/libentangle_frontend.so.0.0.0.p/entangle-session-browser.c.o
-[82/88] Linking target src/backend/libentangle_backend.so.0.0.0
-[83/88] Generating symbol file src/backend/libentangle_backend.so.0.0.0.p/libentangle_backend.so.0.0.0.symbols
-[84/88] Linking target src/frontend/libentangle_frontend.so.0.0.0
-[85/88] Generating symbol file src/frontend/libentangle_frontend.so.0.0.0.p/libentangle_frontend.so.0.0.0.symbols
-[86/88] Linking target src/entangle
-[87/88] Generating src/Entangle-0.1.gir with a custom command (wrapped by meson to set env)
-../src/backend/entangle-camera.c:756: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:895: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:1105: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:1259: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:1413: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:1545: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:1752: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:2684: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:2848: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:3067: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:3226: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:3398: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:2331: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:2467: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/backend/entangle-camera.c:3721: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/frontend/entangle-script.c:147: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-../src/frontend/entangle-script.c:147: Warning: Entangle: invalid "closure" annotation: only valid on callback parameters
-[88/88] Generating src/Entangle-0.1.typelib with a custom command
+ninja: build stopped: subcommand failed.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
