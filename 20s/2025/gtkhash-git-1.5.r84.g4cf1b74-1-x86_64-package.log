@@ -1,0 +1,138 @@
+make: Entering directory '/build/gtkhash-git/src/gtkhash'
+Making install in data
+make[1]: Entering directory '/build/gtkhash-git/src/gtkhash/data'
+Making install in icons
+make[2]: Entering directory '/build/gtkhash-git/src/gtkhash/data/icons'
+make[3]: Entering directory '/build/gtkhash-git/src/gtkhash/data/icons'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/128x128/apps'
+ /usr/bin/mkdir -p '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/256x256/apps'
+ /usr/bin/mkdir -p '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/32x32/apps'
+ /usr/bin/mkdir -p '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/48x48/apps'
+ /usr/bin/mkdir -p '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/64x64/apps'
+ /usr/bin/mkdir -p '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/scalable/apps'
+ /usr/bin/install -c -m 644 256/org.gtkhash.gtkhash.png '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/256x256/apps'
+ /usr/bin/install -c -m 644 128/org.gtkhash.gtkhash.png '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/128x128/apps'
+ /usr/bin/install -c -m 644 32/org.gtkhash.gtkhash.png '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/32x32/apps'
+ /usr/bin/install -c -m 644 48/org.gtkhash.gtkhash.png '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/48x48/apps'
+ /usr/bin/install -c -m 644 scalable/org.gtkhash.gtkhash.svg '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/scalable/apps'
+ /usr/bin/install -c -m 644 64/org.gtkhash.gtkhash.png '/build/gtkhash-git/pkg/gtkhash-git/usr/share/icons/hicolor/64x64/apps'
+make[3]: Leaving directory '/build/gtkhash-git/src/gtkhash/data/icons'
+make[2]: Leaving directory '/build/gtkhash-git/src/gtkhash/data/icons'
+Making install in appdata
+make[2]: Entering directory '/build/gtkhash-git/src/gtkhash/data/appdata'
+make[3]: Entering directory '/build/gtkhash-git/src/gtkhash/data/appdata'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/gtkhash-git/pkg/gtkhash-git/usr/share/metainfo'
+ /usr/bin/install -c -m 644 org.gtkhash.gtkhash.appdata.xml '/build/gtkhash-git/pkg/gtkhash-git/usr/share/metainfo'
+make[3]: Leaving directory '/build/gtkhash-git/src/gtkhash/data/appdata'
+make[2]: Leaving directory '/build/gtkhash-git/src/gtkhash/data/appdata'
+make[2]: Entering directory '/build/gtkhash-git/src/gtkhash/data'
+make[3]: Entering directory '/build/gtkhash-git/src/gtkhash/data'
+make[3]: Nothing to be done for 'install-exec-am'.
+if test -n "org.gtkhash.gschema.xml"; then \
+	test -z "/usr/share/glib-2.0/schemas" || /usr/bin/mkdir -p "/build/gtkhash-git/pkg/gtkhash-git/usr/share/glib-2.0/schemas"; \
+	/usr/bin/install -c -m 644 org.gtkhash.gschema.xml "/build/gtkhash-git/pkg/gtkhash-git/usr/share/glib-2.0/schemas"; \
+	test -n "1/build/gtkhash-git/pkg/gtkhash-git" || /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas; \
+fi
+ /usr/bin/mkdir -p '/build/gtkhash-git/pkg/gtkhash-git/usr/share/applications'
+ /usr/bin/install -c -m 644 org.gtkhash.gtkhash.desktop '/build/gtkhash-git/pkg/gtkhash-git/usr/share/applications'
+make[3]: Leaving directory '/build/gtkhash-git/src/gtkhash/data'
+make[2]: Leaving directory '/build/gtkhash-git/src/gtkhash/data'
+make[1]: Leaving directory '/build/gtkhash-git/src/gtkhash/data'
+Making install in src
+make[1]: Entering directory '/build/gtkhash-git/src/gtkhash/src'
+make  install-recursive
+make[2]: Entering directory '/build/gtkhash-git/src/gtkhash/src'
+Making install in hash
+make[3]: Entering directory '/build/gtkhash-git/src/gtkhash/src/hash'
+make[4]: Entering directory '/build/gtkhash-git/src/gtkhash/src/hash'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtkhash-git/src/gtkhash/src/hash'
+make[3]: Leaving directory '/build/gtkhash-git/src/gtkhash/src/hash'
+Making install in util
+make[3]: Entering directory '/build/gtkhash-git/src/gtkhash/src/util'
+make[4]: Entering directory '/build/gtkhash-git/src/gtkhash/src/util'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/gtkhash-git/src/gtkhash/src/util'
+make[3]: Leaving directory '/build/gtkhash-git/src/gtkhash/src/util'
+make[3]: Entering directory '/build/gtkhash-git/src/gtkhash/src'
+make[4]: Entering directory '/build/gtkhash-git/src/gtkhash/src'
+make[4]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/build/gtkhash-git/pkg/gtkhash-git/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c gtkhash '/build/gtkhash-git/pkg/gtkhash-git/usr/bin'
+libtool: install: /usr/bin/install -c gtkhash /build/gtkhash-git/pkg/gtkhash-git/usr/bin/gtkhash
+make[4]: Leaving directory '/build/gtkhash-git/src/gtkhash/src'
+make[3]: Leaving directory '/build/gtkhash-git/src/gtkhash/src'
+make[2]: Leaving directory '/build/gtkhash-git/src/gtkhash/src'
+make[1]: Leaving directory '/build/gtkhash-git/src/gtkhash/src'
+Making install in po
+make[1]: Entering directory '/build/gtkhash-git/src/gtkhash/po'
+installing ar.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ar/LC_MESSAGES/gtkhash.mo
+installing bn.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/bn/LC_MESSAGES/gtkhash.mo
+installing bn_BD.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/bn_BD/LC_MESSAGES/gtkhash.mo
+installing ca.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ca/LC_MESSAGES/gtkhash.mo
+installing cs.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/cs/LC_MESSAGES/gtkhash.mo
+installing da.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/da/LC_MESSAGES/gtkhash.mo
+installing de.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/de/LC_MESSAGES/gtkhash.mo
+installing el.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/el/LC_MESSAGES/gtkhash.mo
+installing en_GB.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/en_GB/LC_MESSAGES/gtkhash.mo
+installing en_US.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/en_US/LC_MESSAGES/gtkhash.mo
+installing eo.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/eo/LC_MESSAGES/gtkhash.mo
+installing es.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/es/LC_MESSAGES/gtkhash.mo
+installing fa.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/fa/LC_MESSAGES/gtkhash.mo
+installing fi.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/fi/LC_MESSAGES/gtkhash.mo
+installing fr.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/fr/LC_MESSAGES/gtkhash.mo
+installing gl.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/gl/LC_MESSAGES/gtkhash.mo
+installing he.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/he/LC_MESSAGES/gtkhash.mo
+installing hr.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/hr/LC_MESSAGES/gtkhash.mo
+installing hu.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/hu/LC_MESSAGES/gtkhash.mo
+installing id.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/id/LC_MESSAGES/gtkhash.mo
+installing ie.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ie/LC_MESSAGES/gtkhash.mo
+installing it.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/it/LC_MESSAGES/gtkhash.mo
+installing ja.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ja/LC_MESSAGES/gtkhash.mo
+installing ka.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ka/LC_MESSAGES/gtkhash.mo
+installing lt.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/lt/LC_MESSAGES/gtkhash.mo
+installing nb_NO.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/nb_NO/LC_MESSAGES/gtkhash.mo
+installing nl.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/nl/LC_MESSAGES/gtkhash.mo
+installing nl_BE.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/nl_BE/LC_MESSAGES/gtkhash.mo
+installing pl.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/pl/LC_MESSAGES/gtkhash.mo
+installing pt.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/pt/LC_MESSAGES/gtkhash.mo
+installing pt_BR.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/pt_BR/LC_MESSAGES/gtkhash.mo
+installing ru.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ru/LC_MESSAGES/gtkhash.mo
+installing sr.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/sr/LC_MESSAGES/gtkhash.mo
+installing sv.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/sv/LC_MESSAGES/gtkhash.mo
+installing tr.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/tr/LC_MESSAGES/gtkhash.mo
+installing vi.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/vi/LC_MESSAGES/gtkhash.mo
+installing zh_CN.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/zh_CN/LC_MESSAGES/gtkhash.mo
+installing zh_TW.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/zh_TW/LC_MESSAGES/gtkhash.mo
+installing ml.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ml/LC_MESSAGES/gtkhash.mo
+installing ro.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ro/LC_MESSAGES/gtkhash.mo
+installing ro_MD.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ro_MD/LC_MESSAGES/gtkhash.mo
+installing et.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/et/LC_MESSAGES/gtkhash.mo
+installing ko.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ko/LC_MESSAGES/gtkhash.mo
+installing hi.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/hi/LC_MESSAGES/gtkhash.mo
+installing tok.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/tok/LC_MESSAGES/gtkhash.mo
+installing ta.gmo as /build/gtkhash-git/pkg/gtkhash-git/usr/share/locale/ta/LC_MESSAGES/gtkhash.mo
+if test "gtkhash" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /build/gtkhash-git/pkg/gtkhash-git/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /build/gtkhash-git/pkg/gtkhash-git/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /build/gtkhash-git/pkg/gtkhash-git/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/build/gtkhash-git/src/gtkhash/po'
+make[1]: Entering directory '/build/gtkhash-git/src/gtkhash'
+make[2]: Entering directory '/build/gtkhash-git/src/gtkhash'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gtkhash-git/src/gtkhash'
+make[1]: Leaving directory '/build/gtkhash-git/src/gtkhash'
+make: Leaving directory '/build/gtkhash-git/src/gtkhash'

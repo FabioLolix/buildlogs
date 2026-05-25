@@ -1,0 +1,28 @@
+Producing user manual... 
+make[1]: 'manual.pdf' is up to date.
+Installing package...
+install -d "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/bin"
+install dvdisaster "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/bin"
+install -d "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/doc/dvdisaster-0.79.10-pl6"
+install -m 644 CHANGELOG "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/doc/dvdisaster-0.79.10-pl6"
+install -m 644 COPYING "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/doc/dvdisaster-0.79.10-pl6"
+install -m 644 CREDITS* "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/doc/dvdisaster-0.79.10-pl6"
+install -m 644 TODO "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/doc/dvdisaster-0.79.10-pl6"
+install -d "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/doc/dvdisaster-0.79.10-pl6"
+(cd documentation/user-manual; install -m 644 manual.pdf "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/doc/dvdisaster-0.79.10-pl6")
+install -d "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/man/man1"
+install -d "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/man/de/man1"
+cd documentation; \
+  ESCAPED_DOCSUBDIR=`echo /usr/share/doc/dvdisaster-0.79.10-pl6 | sed -e 's/\//\\\\\//g'`; \
+  sed "s/%docdir%/$ESCAPED_DOCSUBDIR/" <dvdisaster.en.1 >dvdisaster.updated; \
+  install -m 644 dvdisaster.updated "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/man/man1/dvdisaster.1"; \
+  sed "s/%docdir%/$ESCAPED_DOCSUBDIR/" <dvdisaster.de.1 >dvdisaster.updated; \
+  install -m 644 dvdisaster.updated "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/man/de/man1/dvdisaster.1"; \
+  rm dvdisaster.updated
+if echo -DWITH_GUI_YES -DWITH_NLS_YES -DWITH_EMBEDDED_SRC_PATH_YES -DWITH_MEMDEBUG_NO -DWITH_DEBUG_PRINTF_FORMAT_NO -DWITH_WERROR_NO -DWITH_DEBUG_NO -DWITH_EFENCE_NO | grep "NLS_YES" >/dev/null; then \
+  cd locale; \
+  for i in ?? ??_??; do\
+    install -d "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/locale/$i/LC_MESSAGES"; \
+    install -m 644 $i/LC_MESSAGES/dvdisaster.mo "/build/dvdisaster-speed47/pkg/dvdisaster-speed47//usr/share/locale/$i/LC_MESSAGES"; \
+  done \
+fi

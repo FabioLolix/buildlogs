@@ -24,7 +24,7 @@ Looking for includes and libraries:
 GLib 2.36.0 is required... 
  pkg-config... works
  test compile... works
- Checking for GLIB version >= 2.36.0. Found version 2.88.0. Okay.
+ Checking for GLIB version >= 2.36.0. Found version 2.88.1. Okay.
 
 Gtk+ 3.4.0 is required...
  pkg-config... works
@@ -103,8 +103,8 @@ Compiling: src/endian.c
 Compiling: src/galois.c
 Compiling: src/help-dialogs.c
 Compiling: src/heuristic-lec.c
-Compiling: src/image.c
 Compiling: src/l-ec.c
+Compiling: src/image.c
 Compiling: src/large-io.c
 Compiling: src/logfile.c
 Compiling: src/main-window.c
@@ -142,8 +142,8 @@ Compiling: src/rs02-recognize.c
 Compiling: src/rs02-verify.c
 Compiling: src/rs02-window.c
 Compiling: src/rs03-common.c
-Compiling: src/rs03-fix.c
 Compiling: src/rs03-create.c
+Compiling: src/rs03-fix.c
 Compiling: src/rs03-preferences.c
 Compiling: src/rs03-recognize.c
 Compiling: src/rs03-verify.c
@@ -182,6 +182,16 @@ src/rs01-verify.c:53:38: warning: zero-length gnu_printf format string [-Wformat
 Compiling: src/scsi-linux.c
 Compiling: src/scsi-netbsd.c
 Compiling: src/scsi-simulated.c
+Compiling: src/scsi-unknown.c
+Compiling: src/scsi-win32.c
+Compiling: src/show-manual.c
+src/rs03-create.c: In function ‘create_reed_solomon’:
+src/rs03-create.c:1170:47: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+ 1170 |       GuiSetLabelText(ec->wl->encPerformance, "");
+      |                                               ^~
+src/rs03-create.c:1171:46: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+ 1171 |       GuiSetLabelText(ec->wl->encBottleneck, "");
+      |                                              ^~
 src/rs02-verify.c: In function ‘ResetRS02VerifyWindow’:
 src/rs02-verify.c:38:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
    38 |    GuiSetLabelText(wl->cmpImageSectors, "");
@@ -229,18 +239,12 @@ src/rs02-verify.c:537:47: warning: zero-length gnu_printf format string [-Wforma
 src/rs02-verify.c:538:47: warning: zero-length gnu_printf format string [-Wformat-zero-length]
   538 |          GuiSetLabelText(vc->wl->cmpEcc1Msg,  "");
       |                                               ^~
-Compiling: src/scsi-unknown.c
-src/rs03-create.c: In function ‘create_reed_solomon’:
-src/rs03-create.c:1170:47: warning: zero-length gnu_printf format string [-Wformat-zero-length]
- 1170 |       GuiSetLabelText(ec->wl->encPerformance, "");
-      |                                               ^~
-src/rs03-create.c:1171:46: warning: zero-length gnu_printf format string [-Wformat-zero-length]
- 1171 |       GuiSetLabelText(ec->wl->encBottleneck, "");
-      |                                              ^~
-Compiling: src/scsi-win32.c
-Compiling: src/show-manual.c
 Compiling: src/smart-lec.c
 Compiling: src/spiral.c
+Compiling: src/udf.c
+Compiling: src/welcome-window.c
+/usr/bin/gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/dvdisaster-speed47-git/src=/usr/src/debug/dvdisaster-speed47-git -flto=auto -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -I. -pipe  -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cloudproviders -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/atk-1.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread -Wno-format-security -O2 -fomit-frame-pointer   -c -o /build/dvdisaster-speed47-git/src/dvdisaster/build/inlined-icons.o /build/dvdisaster-speed47-git/src/dvdisaster/build/inlined-icons.c
+Compiling: src/build.o
 src/rs03-verify.c: In function ‘ResetRS03VerifyWindow’:
 src/rs03-verify.c:46:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
    46 |    GuiSetLabelText(wl->cmpImageSectors, "");
@@ -293,15 +297,11 @@ src/rs03-verify.c:66:40: warning: zero-length gnu_printf format string [-Wformat
 src/rs03-verify.c:67:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
    67 |    GuiSetLabelText(wl->cmpEccSyndromes, "");
       |                                         ^~
+Compiling: src/closure.c
 src/rs03-verify.c: In function ‘RS03Verify’:
 src/rs03-verify.c:1298:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
  1298 |    GuiSetLabelText(wl->cmpEccSyndromes, "");
       |                                         ^~
-Compiling: src/udf.c
-/usr/bin/gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/dvdisaster-speed47-git/src=/usr/src/debug/dvdisaster-speed47-git -flto=auto -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -I. -pipe  -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cloudproviders -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/atk-1.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread -Wno-format-security -O2 -fomit-frame-pointer   -c -o /build/dvdisaster-speed47-git/src/dvdisaster/build/inlined-icons.o /build/dvdisaster-speed47-git/src/dvdisaster/build/inlined-icons.c
-Compiling: src/welcome-window.c
-Compiling: src/build.o
-Compiling: src/closure.c
 src/scsi-layer.c: In function ‘TestUnitReady’:
 src/scsi-layer.c:2259:43: warning: zero-length gnu_printf format string [-Wformat-zero-length]
  2259 |          GuiSetLabelText(Closure->status, "");
@@ -312,15 +312,15 @@ src/scsi-layer.c:2288:37: warning: zero-length gnu_printf format string [-Wforma
 Linking  : dvdisaster
 src/help-dialogs.c:777: warning: Message contains an embedded email address.  Better move it out of the translatable string, see https://www.gnu.org/software/gettext/manual/html_node/No-embedded-URLs.html
 src/help-dialogs.c:793: warning: Message contains an embedded email address.  Better move it out of the translatable string, see https://www.gnu.org/software/gettext/manual/html_node/No-embedded-URLs.html
-Updating cs.po
 Updating de.po
+Updating cs.po
 Updating it.po
-Updating ru.po
 Updating pt_BR.po
+Updating ru.po
 Updating sv.po
-Updating sv.mo
 Updating it.mo
-Updating ru.mo
-Updating de.mo
 Updating pt_BR.mo
+Updating sv.mo
+Updating de.mo
 Updating cs.mo
+Updating ru.mo

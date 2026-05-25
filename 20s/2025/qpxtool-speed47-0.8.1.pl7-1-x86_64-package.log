@@ -1,0 +1,271 @@
+make -C lib
+make -C man
+make -C lib install
+make -C gui install
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib'
+make -C qpxtransport DIR=qpxtransport
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/include/qpxtool
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/gui'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+make -C qpxtransport DIR=qpxtransport install
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/man'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/man'
+make -C qpxplextor   DIR=qpxplextor install
+make -C qpxpioneer   DIR=qpxpioneer install
+make -C qpxyamaha 	DIR=qpxyamaha install
+make -C qpxscan   	DIR=qpxscan install
+install -m 755 qpxtool /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin/qpxtool
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxtransport'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxtransport'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxtransport'
+strip libqpxtransport.so.0.8.0
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/qpxtool/locale
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxplextor'
+strip libqpxplextor.so.0.8.0
+make -C qpxplextor   DIR=qpxplextor
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxpioneer'
+strip libqpxpioneer.so.0.8.0
+make -C qpxpioneer   DIR=qpxpioneer
+make -C qpxyamaha 	DIR=qpxyamaha
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxscan'
+strip libqpxscan.so.0.8.0
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxyamaha'
+strip libqpxyamaha.so.0.8.0
+install -m 644 locale/*.qm /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/qpxtool/locale
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+install -m 755 libqpxplextor.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+install -m 755 libqpxtransport.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxplextor'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxplextor'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+make -C qpxscan   	DIR=qpxscan
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+install -m 755 libqpxpioneer.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxpioneer'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxpioneer'
+ln -sf libqpxplextor.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxplextor.so.0
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxyamaha'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxyamaha'
+ln -sf libqpxtransport.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxtransport.so.0
+install -m 755 libqpxyamaha.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/pixmaps
+install -m 755 libqpxscan.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib
+ln -sf libqpxpioneer.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxpioneer.so.0
+ln -sf libqpxplextor.so.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxplextor.so
+ln -sf libqpxtransport.so.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxtransport.so
+install -m 644 images/q.png /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/pixmaps/qpxtool.png
+ln -sf libqpxpioneer.so.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxpioneer.so
+ln -sf libqpxyamaha.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxyamaha.so.0
+ln -sf libqpxscan.so.0.8.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxscan.so.0
+install -m 644 include/plextor_features.h /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/include/qpxtool
+install -m 644 include/qpx_mmc.h include/qpx_mmc_defs.h include/qpx_opcodes.h include/qpx_transport.h include/common_functions.h include/threads.h include/sense.h include/csstables.h include/colors.h /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/include/qpxtool
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxscan'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxscan'
+install -m 644 include/pioneer_spdctl.h /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/include/qpxtool
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/applications
+ln -sf libqpxyamaha.so.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxyamaha.so
+ln -sf libqpxscan.so.0 /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/libqpxscan.so
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib'
+make -C console
+make -C plugins
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxplextor'
+make -C gui
+install -m 644 include/qpx_scan.h include/qpx_scan_plugin_api.h include/qpx_writer.h /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/include/qpxtool
+install -m 644 include/yamaha_features.h /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/include/qpxtool
+install -m 644 qpxtool.desktop /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/applications/qpxtool.desktop
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxpioneer'
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxtransport'
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console'
+make -C readdvd     DIR=readdvd
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins'
+make -C generic DIR=generic
+make -C cdvdcontrol DIR=cdvdcontrol
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/gui'
+make -f Makefile.qmake 
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/gui'
+make -C plextor DIR=plextor
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxyamaha'
+make -C pxfw        DIR=pxfw
+make -C pioneer DIR=pioneer
+make -C f1tattoo    DIR=f1tattoo
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib/qpxscan'
+make -C nec     DIR=nec
+make -C qscan       DIR=qscan
+make -C liteon  DIR=liteon
+make -C qscand      DIR=qscand
+make -C asus    DIR=asus
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/lib'
+make -C benq    DIR=benq
+make -C benq_dvdrom DIR=benq_dvdrom
+make -C console install
+make -C tsst    DIR=tsst
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/pxfw'
+make[2]: 'pxfw' is up to date.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/pxfw'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/cdvdcontrol'
+make[2]: 'cdvdcontrol' is up to date.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/cdvdcontrol'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/qscan'
+make[2]: 'qscan' is up to date.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/qscan'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/f1tattoo'
+make[2]: 'f1tattoo' is up to date.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/f1tattoo'
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console'
+make -C readdvd     DIR=readdvd install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/generic'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/generic'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/qscand'
+make[2]: 'qscand' is up to date.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/qscand'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/plextor'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/plextor'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/pioneer'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/pioneer'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/nec'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/nec'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/liteon'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/liteon'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/asus'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/asus'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/benq'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/benq'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/benq_dvdrom'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/benq_dvdrom'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/readdvd'
+make[2]: 'readdvd' is up to date.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/readdvd'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/tsst'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/tsst'
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console'
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/readdvd'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+install -m 755 readdvd /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/readdvd'
+make -C cdvdcontrol DIR=cdvdcontrol install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/cdvdcontrol'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+install -m 4755 cdvdcontrol /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/gui'
+make[2]: Nothing to be done for 'first'.
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/gui'
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/cdvdcontrol'
+strip qpxtool
+make -C pxfw        DIR=pxfw install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/pxfw'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+install -m 755 pxfw /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/pxfw'
+/usr/lib/qt6/bin/lrelease -verbose qpxtool.pro
+make -C f1tattoo    DIR=f1tattoo install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/f1tattoo'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+install -m 4755 f1tattoo /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/f1tattoo'
+make -C qscan       DIR=qscan install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/qscan'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+install -m 4755 qscan /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/qscan'
+make -C qscand      DIR=qscand install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/qscand'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+install -m 755 qscand /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/bin
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console/qscand'
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/console'
+make -C plugins install
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins'
+make -C generic DIR=generic install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/generic'
+strip libqscan_generic.so
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+install -m 755 libqscan_generic.so /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/generic'
+make -C plextor DIR=plextor install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/plextor'
+strip libqscan_plextor.so
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+install -m 755 libqscan_plextor.so /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/plextor'
+make -C pioneer DIR=pioneer install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/pioneer'
+strip libqscan_pioneer.so
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+install -m 755 libqscan_pioneer.so /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/pioneer'
+make -C nec     DIR=nec install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/nec'
+strip libqscan_nec.so
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+install -m 755 libqscan_nec.so /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/nec'
+make -C liteon  DIR=liteon install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/liteon'
+strip libqscan_liteon.so
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+install -m 755 libqscan_liteon.so /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/liteon'
+make -C asus    DIR=asus install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/asus'
+strip libqscan_asus.so
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+install -m 755 libqscan_asus.so /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/asus'
+Info: creating stash file /.qmake.stash
+Updating './locale/qpxtool.ru_RU.qm'...
+    Generated 301 translation(s) (300 finished and 1 unfinished)
+    Ignored 32 untranslated source text(s)
+Updating './locale/qpxtool.de_DE.qm'...
+    Generated 291 translation(s) (278 finished and 13 unfinished)
+    Ignored 42 untranslated source text(s)
+make -C benq    DIR=benq install
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/gui'
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/benq'
+strip libqscan_benq.so
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+install -m 755 libqscan_benq.so /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/benq'
+make -C benq_dvdrom DIR=benq_dvdrom install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/benq_dvdrom'
+strip libqscan_benq_dvdrom.so
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+install -m 755 libqscan_benq_dvdrom.so /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/benq_dvdrom'
+make -C tsst    DIR=tsst install
+make[2]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/tsst'
+strip libqscan_tsst.so
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+install -m 755 libqscan_tsst.so /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/lib/qpxtool
+make[2]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins/tsst'
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/plugins'
+make -C man install
+make[1]: Entering directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/man'
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/man/man1
+mkdir -p /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/man/man8
+install -m 0644 f1tattoo.1.gz /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/man/man1
+install -m 0644 pxfw.8.gz /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/man/man8
+install -m 0644 cdvdcontrol.1.gz /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/man/man1
+install -m 0644 qscan.1.gz /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/man/man1
+install -m 0644 qscand.1.gz /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/man/man1
+install -m 0644 qpxtool.1.gz /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/man/man1
+install -m 0644 readdvd.1.gz /build/qpxtool-speed47/pkg/qpxtool-speed47/usr/share/man/man1
+make[1]: Leaving directory '/build/qpxtool-speed47/src/qpxtool-0.8.1-pl7/man'

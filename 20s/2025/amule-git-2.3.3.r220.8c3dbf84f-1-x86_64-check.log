@@ -1,0 +1,114 @@
+Test project /build/amule-git/src/build
+    Start 1: CTagTest
+1/9 Test #1: CTagTest .........................   Passed    0.01 sec
+    Start 2: CUInt128Test
+2/9 Test #2: CUInt128Test .....................***Failed    0.01 sec
+
+Running test-collection "CUInt128" with 50 test-cases:
+	Test "Reading/writing byte sequences" 
+	Test "ToHexString" 
+	Test "ToBinaryString" 
+	Test "Get32BitChunk" 
+	Test "operator==(const CUInt128&)" 
+	Test "operator==(uint32_t)" 
+	Test "operator==(uint32_t, const CUInt128&)" 
+	Test "CUInt128()" 
+	Test "CUInt128(const CUInt128&)" 
+	Test "CUInt128(bool)" 
+	Test "CUInt128(uint32_t)" 
+	Test "CUInt128(const CUInt128&, unsigned)" 
+	Test "operator=(const CUInt128&)" 
+	Test "operator=(uint32_t)" 
+	Test "Set32BitChunk" 
+		Failure running:
+		 /usr/src/debug/amule-git/amule/unittests/tests/CUInt128Test.cpp:267 -- Exception of type CAssertFailureException not raised.
+	Test "SetValueBE" 
+	Test "StoreCryptValue" 
+	Test "operator<<=(unsigned)" 
+	Test "operator+=(const CUInt128&)" 
+	Test "operator+=(uint32_t)" 
+	Test "operator-=(const CUInt128&)" 
+	Test "operator-=(uint32_t)" 
+	Test "operator^=(const CUInt128&)" 
+	Test "operator^=(uint32_t)" 
+	Test "GetBitNumber" 
+	Test "SetBitNumber" 
+		Failure running:
+		 /usr/src/debug/amule-git/amule/unittests/tests/CUInt128Test.cpp:447 -- Exception of type CAssertFailureException not raised.
+	Test "operator!=(const CUInt128&)" 
+	Test "operator!=(uint32_t)" 
+	Test "operator!=(uint32_t, const CUInt128&)" 
+	Test "operator<(const CUInt128&)" 
+	Test "operator<=(const CUInt128&)" 
+	Test "operator>(const CUInt128&)" 
+	Test "operator>=(const CUInt128&)" 
+	Test "operator<(uint32_t)" 
+	Test "operator<=(uint32_t)" 
+	Test "operator>(uint32_t)" 
+	Test "operator>=(uint32_t)" 
+	Test "operator<(uint32_t, const CUInt128&)" 
+	Test "operator<=(uint32_t, const CUInt128&)" 
+	Test "operator>(uint32_t, const CUInt128&)" 
+	Test "operator>=(uint32_t, const CUInt128&)" 
+	Test "operator+(const CUInt128&)" 
+	Test "operator-(const CUInt128&)" 
+	Test "operator^(const CUInt128&)" 
+	Test "operator+(uint32_t)" 
+	Test "operator-(uint32_t)" 
+	Test "operator^(uint32_t)" 
+	Test "operator+(uint32_t, const CUInt128&)" 
+	Test "operator-(uint32_t, const CUInt128&)" 
+	Test "operator^(uint32_t, const CUInt128&)" 
+
+    Start 3: FileDataIOTest
+3/9 Test #3: FileDataIOTest ...................   Passed    0.37 sec
+    Start 4: FormatTest
+4/9 Test #4: FormatTest .......................***Failed    0.01 sec
+
+Running test-collection "Format" with 18 test-cases:
+	Test "ConstructorAndGetString" 
+	Test "SetStringAndGetString" 
+	Test "InjectwxChar" 
+	Test "InjectInteger" 
+	Test "InjectFloatAndDouble" 
+	Test "InjectString" 
+	Test "InjectNULLString" 
+	Test "MultipleFields" 
+	Test "EscapedPercentageSign" 
+	Test "MalformedFields" 
+		Failure running:
+		 /usr/src/debug/amule-git/amule/unittests/tests/FormatTest.cpp:300 -- Exception of type CAssertFailureException not raised.
+	Test "NotReady" 
+	Test "WrongTypes" 
+		Failure running:
+		 /usr/src/debug/amule-git/amule/unittests/tests/FormatTest.cpp:353 -- Exception of type CAssertFailureException not raised.
+	Test "NotSupported" 
+		Failure running:
+		 /usr/src/debug/amule-git/amule/unittests/tests/FormatTest.cpp:372 -- Exception of type CAssertFailureException not raised.
+	Test "Overfeeding" 
+	Test "64bValues" 
+	Test "UserDefined" 
+	Test "ReorderedArguments" 
+	Test "DifferentArguments" 
+
+    Start 5: NetworkFunctionsTest
+5/9 Test #5: NetworkFunctionsTest .............   Passed    0.08 sec
+    Start 6: PathTest
+6/9 Test #6: PathTest .........................   Passed    0.01 sec
+    Start 7: RangeMapTest
+7/9 Test #7: RangeMapTest .....................   Passed    0.01 sec
+    Start 8: StringFunctionsTest
+8/9 Test #8: StringFunctionsTest ..............   Passed    0.01 sec
+    Start 9: TextFileTest
+9/9 Test #9: TextFileTest .....................   Passed    0.03 sec
+
+78% tests passed, 2 tests failed out of 9
+
+Total Test time (real) =   0.53 sec
+
+The following tests FAILED:
+	  2 - CUInt128Test (Failed)
+	  4 - FormatTest (Failed)
+Errors while running CTest
+[1m[31m==> ERROR:(B[m[1m A failure occurred in check().(B[m
+[1m    Aborting...(B[m
