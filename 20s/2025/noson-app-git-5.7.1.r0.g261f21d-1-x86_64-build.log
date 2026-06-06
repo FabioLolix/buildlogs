@@ -62,18 +62,11 @@
 -- Build noson: /build/noson-app-git/src/build/backend/lib/noson-build
 -- Found OpenGL: /usr/lib/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found WrapVulkanHeaders: /usr/include
 -- Enable interface MPRIS
 -- PlugIns install path: /usr/lib/noson
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
 -- PlugIns install path: /usr/lib/noson
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
 -- PlugIns install path: /usr/lib/noson
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
 -- The following OPTIONAL packages have been found:
 
  * Qt6Core (required version >= 6)
@@ -88,6 +81,7 @@
  * Qt6Qml (required version >= 6)
  * Qt6QmlTools (required version >= 6.11.1)
  * Qt6QuickTools (required version >= 6.11.1)
+ * WrapVulkanHeaders
  * Qt6Quick (required version >= 6)
  * Qt6QuickControls2 (required version >= 6)
  * Qt6CoreTools (required version >= 6.11.1)
@@ -107,122 +101,121 @@
 -- The following OPTIONAL packages have not been found:
 
  * Pulse-simple
- * Qt6QmlCompilerPlusPrivateTools (required version >= 6.11.1)
  * Vulkan
- * WrapVulkanHeaders
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.11.1)
 
--- Configuring done (2.8s)
+-- Configuring done (2.6s)
 -- Generating done (0.1s)
 -- Build files have been written to: /build/noson-app-git/src/build
 [  0%] Built target noson-gui_autogen_timestamp_deps
 [  0%] Built target NosonMediaScanner_autogen_timestamp_deps
-[  0%] Building C object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/builtin.c.o
-[  1%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/byteorder.cpp.o
-[  1%] Built target NosonThumbnailer_autogen_timestamp_deps
-[  2%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/compressor.cpp.o
-[  3%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/base64.cpp.o
-[  3%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/debug.cpp.o
-[  4%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/jsonparser.cpp.o
-[  5%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/eventbroker.cpp.o
-[  6%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/pcmblankkiller.cpp.o
-[  6%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/mainpagebroker.cpp.o
-[  7%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/socket.cpp.o
-[  7%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/securesocket.cpp.o
+[  0%] Built target NosonThumbnailer_autogen_timestamp_deps
+[  0%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/debug.cpp.o
+[  1%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/eventbroker.cpp.o
+[  2%] Building C object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/builtin.c.o
+[  2%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/base64.cpp.o
+[  3%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/byteorder.cpp.o
+[  4%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/compressor.cpp.o
+[  5%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/jsonparser.cpp.o
+[  5%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/mainpagebroker.cpp.o
+[  7%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/pcmblankkiller.cpp.o
 [  8%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/ringbuffer.cpp.o
-[  8%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/upnpnotificationbroker.cpp.o
-[  9%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/tinyxml2.cpp.o
-[ 10%] Built target NosonApp-qmldir
-[ 10%] Built target NosonThumbnailer-qmldir
+[  8%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/tinyxml2.cpp.o
+[  8%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/securesocket.cpp.o
+[  9%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/socket.cpp.o
+[  9%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/upnpnotificationbroker.cpp.o
+[  9%] Built target NosonApp-qmldir
+[  9%] Built target NosonThumbnailer-qmldir
 [ 10%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/uriencoder.cpp.o
 [ 10%] Built target NosonMediaScanner-qmldir
-[ 11%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/uriparser.cpp.o
-[ 11%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/wsreplychunked.cpp.o
 [ 12%] Automatic MOC for target noson-gui
-[ 13%] Automatic MOC for target NosonMediaScanner
-[ 14%] Automatic MOC for target NosonThumbnailer
+[ 12%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/wsreplychunked.cpp.o
+[ 12%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/uriparser.cpp.o
+[ 13%] Automatic MOC for target NosonThumbnailer
+[ 15%] Automatic MOC for target NosonMediaScanner
 [ 15%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/wsrequest.cpp.o
-[ 16%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/wsrequestbroker.cpp.o
+[ 16%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/wsresponse.cpp.o
 [ 16%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/wsrequestreply.cpp.o
-[ 17%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/wsresponse.cpp.o
+[ 17%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/wsrequestbroker.cpp.o
 [ 18%] Building C object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/wsstatic.c.o
-[ 18%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/xmldict.cpp.o
 [ 19%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/data/datareader.cpp.o
-[ 20%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/alarmclock.cpp.o
-[ 20%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/avtransport.cpp.o
-[ 21%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/alarm.cpp.o
-[ 21%] Built target noson-gui_autogen
+[ 19%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/private/xmldict.cpp.o
+[ 19%] Built target noson-gui_autogen
+[ 20%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/alarm.cpp.o
+[ 21%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/alarmclock.cpp.o
+[ 21%] Generating qrc_noson_controls2_640.cpp
+[ 21%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/avtransport.cpp.o
 [ 22%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/contentdirectory.cpp.o
+[ 22%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/didlparser.cpp.o
 [ 23%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/deviceproperties.cpp.o
-[ 23%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/didlparser.cpp.o
-[ 23%] Generating qrc_noson_controls2_640.cpp
 [ 24%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/digitalitem.cpp.o
 [ 24%] Built target NosonThumbnailer_autogen
-[ 24%] Built target NosonMediaScanner_autogen
 [ 25%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/eventhandler.cpp.o
 [ 25%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/filepicreader.cpp.o
 [ 26%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/NosonThumbnailer_autogen/mocs_compilation.cpp.o
-[ 26%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/plugin.cpp.o
-[ 27%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/NosonMediaScanner_autogen/mocs_compilation.cpp.o
-[ 28%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/filestreamer.cpp.o
-[ 30%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/artistartgenerator.cpp.o
-[ 30%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/albumartgenerator.cpp.o
-[ 31%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/imageservice.cpp.o
-[ 31%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/plugin.cpp.o
-[ 32%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/mediascanner.cpp.o
-[ 32%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailerimageresponse.cpp.o
-[ 33%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/mediascannerengine.cpp.o
-[ 34%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/thumbnailer.cpp.o
-[ 34%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/intrinsic.cpp.o
-[ 35%] Building CXX object CMakeFiles/noson-gui.dir/noson-gui_autogen/mocs_compilation.cpp.o
-[ 36%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/iostream.cpp.o
-[ 37%] Building CXX object CMakeFiles/noson-gui.dir/src/noson.cpp.o
-[ 38%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/thumbnailerjob.cpp.o
-[ 38%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/mediarunnable.cpp.o
-[ 38%] Building CXX object CMakeFiles/noson-gui.dir/src/diskcache/diskcachefactory.cpp.o
-[ 39%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/mediaextractor.cpp.o
-[ 40%] Building CXX object CMakeFiles/noson-gui.dir/src/diskcache/cachingnetworkaccessmanager.cpp.o
-[ 40%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/ratelimiter.cpp.o
-[ 41%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/flacparser.cpp.o
-[ 42%] Building CXX object CMakeFiles/noson-gui.dir/src/diskcache/cachereply.cpp.o
-[ 43%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/locked.cpp.o
-[ 44%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/netrequest.cpp.o
-[ 44%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/musicservices.cpp.o
-[ 44%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/id3parser.cpp.o
-[ 44%] Building CXX object CMakeFiles/noson-gui.dir/src/signalhandler.cpp.o
-[ 45%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/renderingcontrol.cpp.o
-[ 46%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/netmanager.cpp.o
-[ 47%] Building CXX object CMakeFiles/noson-gui.dir/qrc_noson_controls2_640.cpp.o
-[ 48%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/m4aparser.cpp.o
-[ 48%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/diskcachemanager.cpp.o
-[ 49%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/requestbroker.cpp.o
+[ 27%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/filestreamer.cpp.o
+[ 27%] Built target NosonMediaScanner_autogen
+[ 27%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/plugin.cpp.o
+[ 28%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/imageservice.cpp.o
+[ 29%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/albumartgenerator.cpp.o
+[ 30%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/NosonMediaScanner_autogen/mocs_compilation.cpp.o
+[ 30%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/plugin.cpp.o
+[ 30%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/intrinsic.cpp.o
+[ 31%] Building CXX object CMakeFiles/noson-gui.dir/noson-gui_autogen/mocs_compilation.cpp.o
+[ 32%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/iostream.cpp.o
+[ 33%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/artistartgenerator.cpp.o
+[ 34%] Building CXX object CMakeFiles/noson-gui.dir/src/noson.cpp.o
+[ 34%] Building CXX object CMakeFiles/noson-gui.dir/src/diskcache/diskcachefactory.cpp.o
+[ 35%] Building CXX object CMakeFiles/noson-gui.dir/src/diskcache/cachingnetworkaccessmanager.cpp.o
+[ 35%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailerimageresponse.cpp.o
+[ 36%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/thumbnailer.cpp.o
+[ 37%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/mediascanner.cpp.o
+[ 38%] Building CXX object CMakeFiles/noson-gui.dir/src/diskcache/cachereply.cpp.o
+[ 39%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/mediascannerengine.cpp.o
+[ 40%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/thumbnailerjob.cpp.o
+[ 40%] Building CXX object CMakeFiles/noson-gui.dir/src/signalhandler.cpp.o
+[ 41%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/locked.cpp.o
+[ 41%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/mediarunnable.cpp.o
+[ 41%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/musicservices.cpp.o
+[ 41%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/ratelimiter.cpp.o
+[ 42%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/mediaextractor.cpp.o
+[ 43%] Building CXX object CMakeFiles/noson-gui.dir/qrc_noson_controls2_640.cpp.o
+[ 44%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/renderingcontrol.cpp.o
+[ 45%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/netrequest.cpp.o
+[ 46%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/flacparser.cpp.o
+[ 47%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/netmanager.cpp.o
+[ 48%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/requestbroker.cpp.o
+[ 48%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/id3parser.cpp.o
+[ 49%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/m4aparser.cpp.o
+[ 49%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/service.cpp.o
+[ 49%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/diskcachemanager.cpp.o
 [ 50%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/oggparser.cpp.o
-[ 51%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/artistinfo.cpp.o
-[ 52%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/albuminfo.cpp.o
-[ 52%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/service.cpp.o
-[ 52%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/abstractapi.cpp.o
+[ 51%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sharedptr.cpp.o
+[ 52%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/artistinfo.cpp.o
 [ 52%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/listmodel.cpp.o
-[ 53%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sharedptr.cpp.o
-[ 54%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/byteorder.cpp.o
-[ 55%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/tinyxml2.cpp.o
-[ 56%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/smaccount.cpp.o
-[ 57%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/artists.cpp.o
+[ 53%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/albuminfo.cpp.o
+[ 54%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/smaccount.cpp.o
+[ 54%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/smapi.cpp.o
+[ 54%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/abstractapi.cpp.o
+[ 55%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/byteorder.cpp.o
+[ 56%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/smapimetadata.cpp.o
+[ 57%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/tinyxml2.cpp.o
 [ 58%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/xmldict.cpp.o
-[ 58%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/genres.cpp.o
-[ 58%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/smapi.cpp.o
-[ 58%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/jsonparser.cpp.o
-[ 59%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/smapimetadata.cpp.o
-[ 60%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/lastfm/lastfm.cpp.o
-[ 61%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sonosplayer.cpp.o
-[ 62%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/lastfm/lfm-artistinfo.cpp.o
-[ 62%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sonossystem.cpp.o
-[ 63%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/albums.cpp.o
-[ 63%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/lastfm/lfm-albuminfo.cpp.o
-[ 64%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/tracks.cpp.o
-[ 65%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sonostypes.cpp.o
-[ 66%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/deezer/deezer.cpp.o
-[ 67%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/composers.cpp.o
-[ 67%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sonoszone.cpp.o
-[ 68%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/subscription.cpp.o
+[ 59%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sonosplayer.cpp.o
+[ 60%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/artists.cpp.o
+[ 60%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sonossystem.cpp.o
+[ 60%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/genres.cpp.o
+[ 61%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sonostypes.cpp.o
+[ 61%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/jsonparser.cpp.o
+[ 62%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/albums.cpp.o
+[ 63%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/lastfm/lastfm.cpp.o
+[ 65%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/lastfm/lfm-artistinfo.cpp.o
+[ 65%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/tracks.cpp.o
+[ 65%] Building CXX object backend/NosonMediaScanner/CMakeFiles/NosonMediaScanner.dir/aggregate/composers.cpp.o
+[ 66%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/sonoszone.cpp.o
+[ 66%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/lastfm/lfm-albuminfo.cpp.o
+[ 67%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/subscription.cpp.o
+[ 68%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/deezer/deezer.cpp.o
 [ 69%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/deezer/deezer-artistinfo.cpp.o
 [ 69%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/subscriptionpool.cpp.o
 [ 69%] Building CXX object backend/NosonThumbnailer/CMakeFiles/NosonThumbnailer.dir/thumbnailer/deezer/deezer-albuminfo.cpp.o
@@ -232,48 +225,48 @@
 [ 72%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/flacencoder.cpp.o
 [ 73%] Building C object backend/lib/noson-build/CMakeFiles/noson.dir/src/dlsym_pulse.c.o
 [ 73%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/pacontrol.cpp.o
-[ 75%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/pasource.cpp.o
 [ 75%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/pulsestreamer.cpp.o
+[ 75%] Building CXX object backend/lib/noson-build/CMakeFiles/noson.dir/src/pasource.cpp.o
 [ 75%] Linking CXX static library libnoson.a
 [ 75%] Built target noson
-[ 75%] Built target NosonApp_autogen_timestamp_deps
 [ 76%] Building CXX object backend/cli/CMakeFiles/noson-cli.dir/noson.cpp.o
+[ 76%] Built target NosonApp_autogen_timestamp_deps
 [ 77%] Automatic MOC for target NosonApp
-[ 77%] Built target NosonApp_autogen
-[ 78%] Generating mpris2_root.cpp, mpris2_root.h
-[ 78%] Generating mpris2_player.cpp, mpris2_player.h
-[ 79%] Generating moc_mpris2_player.cpp
+[ 78%] Linking CXX executable noson-gui
+[ 78%] Built target NosonApp_autogen
+[ 79%] Generating mpris2_root.cpp, mpris2_root.h
+[ 79%] Generating mpris2_player.cpp, mpris2_player.h
 [ 79%] Generating moc_mpris2_root.cpp
-[ 80%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/plugin.cpp.o
-[ 81%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/sonos.cpp.o
+[ 80%] Generating moc_mpris2_player.cpp
 [ 81%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/queuemodel.cpp.o
-[ 83%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/tracksmodel.cpp.o
-[ 83%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/renderingmodel.cpp.o
-[ 83%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/player.cpp.o
-[ 83%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/NosonApp_autogen/mocs_compilation.cpp.o
-[ 84%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/roomsmodel.cpp.o
-[ 85%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/mediamodel.cpp.o
-[ 87%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/playlistsmodel.cpp.o
-[ 87%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/favoritesmodel.cpp.o
-[ 88%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/servicesmodel.cpp.o
-[ 88%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/zonesmodel.cpp.o
-[ 89%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/qmlfilterbehavior.cpp.o
-[ 90%] Linking CXX executable noson-cli
+[ 81%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/renderingmodel.cpp.o
+[ 81%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/sonos.cpp.o
+[ 86%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/tracksmodel.cpp.o
+[ 86%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/zonesmodel.cpp.o
+[ 86%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/playlistsmodel.cpp.o
+[ 86%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/plugin.cpp.o
+[ 86%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/NosonApp_autogen/mocs_compilation.cpp.o
+[ 86%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/roomsmodel.cpp.o
+[ 89%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/favoritesmodel.cpp.o
+[ 89%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/player.cpp.o
+[ 89%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/mediamodel.cpp.o
+[ 89%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/servicesmodel.cpp.o
+[ 90%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/qmlfilterbehavior.cpp.o
 [ 91%] Linking CXX shared module ../qml/NosonThumbnailer/libNosonThumbnailer.so
-[ 92%] Linking CXX executable noson-gui
-[ 92%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/qmlsortbehavior.cpp.o
+[ 91%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/qmlsortbehavior.cpp.o
+[ 92%] Linking CXX executable noson-cli
 [ 93%] Linking CXX shared module ../qml/NosonMediaScanner/libNosonMediaScanner.so
+[ 93%] Built target noson-gui
 [ 94%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/qmlsortfiltermodel.cpp.o
-[ 94%] Built target noson-gui
 [ 95%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/allservicesmodel.cpp.o
 [ 95%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/alarmsmodel.cpp.o
 [ 96%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/future.cpp.o
 [ 97%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/librarymodel.cpp.o
 [ 98%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/radiosmodel.cpp.o
 [ 98%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/dbus/mpris2.cpp.o
-[ 98%] Built target NosonThumbnailer
 [ 99%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/mpris2_root.cpp.o
 [100%] Building CXX object backend/NosonApp/CMakeFiles/NosonApp.dir/mpris2_player.cpp.o
+[100%] Built target NosonThumbnailer
 [100%] Built target NosonMediaScanner
 In file included from /build/noson-app-git/src/build/backend/NosonApp/NosonApp_autogen/EWIEGA46WW/moc_sonos.cpp:9,
                  from /build/noson-app-git/src/build/backend/NosonApp/NosonApp_autogen/mocs_compilation.cpp:20:
