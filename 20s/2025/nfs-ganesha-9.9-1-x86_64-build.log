@@ -203,184 +203,236 @@
 -- SANITIZE_ADDRESS = OFF
 -- Found LSB_release: /usr/bin/lsb_release
 -- Found Doxygen: /usr/bin/doxygen (found version "1.16.1") found components: doxygen dot
--- Configuring done (3.4s)
--- Generating done (0.1s)
+-- Configuring done (2.6s)
+-- Generating done (0.2s)
 -- Build files have been written to: /build/nfs-ganesha/src/build
 [  0%] [BISON][ConfigParser] Building parser with bison 3.8.2
 [  0%] [FLEX][ConfigScanner] Building scanner with flex 2.6.4
+[  0%] Building C object avl/CMakeFiles/avltree.dir/avl.c.o
+[  0%] Building C object RPCAL/CMakeFiles/rpcal.dir/connection_manager.c.o
+[  0%] Building C object dbus/CMakeFiles/gshdbus.dir/dbus_server.c.o
+[  0%] Building C object log/CMakeFiles/log.dir/display.c.o
 [  1%] Building CXX object libntirpc/src/monitoring/CMakeFiles/ntirpcmonitoring.dir/monitoring.cc.o
-[  1%] Building C object log/CMakeFiles/log.dir/display.c.o
-[  1%] Building C object avl/CMakeFiles/avltree.dir/avl.c.o
-[  1%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_Null.c.o
+[  1%] Building C object Protocols/NFSACL/CMakeFiles/nfsacl.dir/nfsacl_Null.c.o
 [  1%] Building C object hashtable/CMakeFiles/hashtable.dir/hashtable.c.o
-[  1%] Building C object RPCAL/CMakeFiles/rpcal.dir/connection_manager.c.o
-[  1%] Building C object dbus/CMakeFiles/gshdbus.dir/dbus_server.c.o
-[  2%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_mount.c.o
-[  2%] Building C object Protocols/NFS/CMakeFiles/nfs4callbacks.dir/nfs4_cb_Compound.c.o
-[  2%] Building C object SAL/CMakeFiles/sal.dir/sal_metrics.c.o
-[  2%] Building C object support/CMakeFiles/netgroup_cache.dir/netgroup_cache.c.o
-[  2%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_Compound.c.o
-[  2%] Building C object support/CMakeFiles/string_utils.dir/strlcpy.c.o
-[  2%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_interpreter.c.o
 [  3%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Cancel.c.o
-[  3%] Building C object Protocols/NFSACL/CMakeFiles/nfsacl.dir/nfsacl_Null.c.o
+[  3%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_mount.c.o
+[  3%] Building C object Protocols/NFS/CMakeFiles/nfs4callbacks.dir/nfs4_cb_Compound.c.o
+[  3%] Building C object SAL/CMakeFiles/sal.dir/sal_metrics.c.o
+[  3%] Building C object support/CMakeFiles/string_utils.dir/strlcpy.c.o
+[  3%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_Null.c.o
 [  3%] Building C object support/CMakeFiles/hash.dir/murmur3.c.o
+[  3%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_interpreter.c.o
+[  3%] Building C object support/CMakeFiles/netgroup_cache.dir/netgroup_cache.c.o
 [  3%] Building C object support/CMakeFiles/uid2grp.dir/uid2grp.c.o
-[  3%] Building C object support/CMakeFiles/uid2grp.dir/uid2grp_cache.c.o
+[  3%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_Compound.c.o
+[  3%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Free_All.c.o
 [  4%] Building C object support/CMakeFiles/string_utils.dir/strnlen.c.o
-[  4%] Building C object support/CMakeFiles/hash.dir/city.c.o
-[  4%] Building C object avl/CMakeFiles/avltree.dir/bst.c.o
-[  4%] Building C object log/CMakeFiles/log.dir/log_functions.c.o
-[  4%] Building C object support/CMakeFiles/string_utils.dir/refstr.c.o
+[  5%] Building C object support/CMakeFiles/string_utils.dir/refstr.c.o
 [  5%] Building C object config_parsing/CMakeFiles/config_parsing.dir/analyse.c.o
-[  6%] Building C object avl/CMakeFiles/avltree.dir/rb.c.o
-/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:36:10: fatal error: prometheus/counter.h: No such file or directory
-   36 | #include "prometheus/counter.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+[  5%] Building C object log/CMakeFiles/log.dir/log_functions.c.o
+[  5%] Building C object support/CMakeFiles/hash.dir/city.c.o
+[  5%] Built target nfs4callbacks
+[  6%] Building C object avl/CMakeFiles/avltree.dir/bst.c.o
+[  6%] Building C object SAL/CMakeFiles/sal.dir/state_async.c.o
+[  6%] Built target string_utils
+[  7%] Building C object Protocols/NFSACL/CMakeFiles/nfsacl.dir/nfsacl_getacl.c.o
+[  7%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_getquota.c.o
+[  7%] Building C object SAL/CMakeFiles/sal.dir/state_lock.c.o
+[  7%] Building C object SAL/CMakeFiles/sal.dir/state_share.c.o
+[  7%] Building C object SAL/CMakeFiles/sal.dir/state_misc.c.o
+[  7%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Granted_Res.c.o
+[  7%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_proto_tools.c.o
+[  7%] Built target netgroup_cache
+[  7%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nfs23.c.o
+[  8%] Building C object avl/CMakeFiles/avltree.dir/rb.c.o
+[  8%] Building C object support/CMakeFiles/uid2grp.dir/uid2grp_cache.c.o
+[  8%] Built target hash
+[  8%] Building C object config_parsing/CMakeFiles/config_parsing.dir/config_parsing.c.o
+[  8%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_access.c.o
+[  9%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_allocate.c.o
+[  9%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_getactivequota.c.o
+[  9%] Building C object Protocols/NFSACL/CMakeFiles/nfsacl.dir/nfsacl_setacl.c.o
+[  9%] Building C object avl/CMakeFiles/avltree.dir/splay.c.o
+[  9%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Lock.c.o
+[  9%] Building C object RPCAL/CMakeFiles/rpcal.dir/connection_manager_metrics.c.o
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:43:20: error: ‘prometheus::Counter’ is not a template
+   43 | using CounterInt = prometheus::Counter<int64_t>;
+      |                    ^~~~~~~~~~
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:44:18: error: ‘prometheus::Gauge’ is not a template
+   44 | using GaugeInt = prometheus::Gauge<int64_t>;
+      |                  ^~~~~~~~~~
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:45:22: error: ‘prometheus::Histogram’ is not a template
+   45 | using HistogramInt = prometheus::Histogram<int64_t>;
+      |                      ^~~~~~~~~~
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:46:25: error: ‘prometheus::Histogram’ is not a template
+   46 | using HistogramDouble = prometheus::Histogram<double>;
+      |                         ^~~~~~~~~~
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:49:29: error: aggregate ‘prometheus::Registry ntirpc_monitoring::registry’ has incomplete type and cannot be defined
+   49 | static prometheus::Registry registry;
+      |                             ^~~~~~~~
+[  9%] Building C object dbus/CMakeFiles/gshdbus.dir/properties_handler.c.o
+[  9%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_bind_conn.c.o
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc: In function ‘counter_metric_handle_t ntirpc_monitoring::monitoring__register_counter(const char*, metric_metadata_t, const metric_label_t*, uint16_t)’:
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:118:37: error: ‘Builder’ is not a member of ‘prometheus’; did you mean ‘prometheus::detail::Builder’?
+  118 |         auto &counter = prometheus::Builder<CounterInt>()
+      |                                     ^~~~~~~
+In file included from /usr/include/prometheus/counter.h:4,
+                 from /build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:36:
+/usr/include/prometheus/detail/builder.h:19:7: note: ‘prometheus::detail::Builder’ declared here
+   19 | class Builder {
+      |       ^~~~~~~
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:118:55: error: expected primary-expression before ‘>’ token
+  118 |         auto &counter = prometheus::Builder<CounterInt>()
+      |                                                       ^
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:118:57: error: expected primary-expression before ‘)’ token
+  118 |         auto &counter = prometheus::Builder<CounterInt>()
+      |                                                         ^
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc: In function ‘gauge_metric_handle_t ntirpc_monitoring::monitoring__register_gauge(const char*, metric_metadata_t, const metric_label_t*, uint16_t)’:
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:131:35: error: ‘Builder’ is not a member of ‘prometheus’; did you mean ‘prometheus::detail::Builder’?
+  131 |         auto &gauge = prometheus::Builder<GaugeInt>()
+      |                                   ^~~~~~~
+/usr/include/prometheus/detail/builder.h:19:7: note: ‘prometheus::detail::Builder’ declared here
+   19 | class Builder {
+      |       ^~~~~~~
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:131:51: error: expected primary-expression before ‘>’ token
+  131 |         auto &gauge = prometheus::Builder<GaugeInt>()
+      |                                                   ^
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:131:53: error: expected primary-expression before ‘)’ token
+  131 |         auto &gauge = prometheus::Builder<GaugeInt>()
+      |                                                     ^
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc: In function ‘histogram_metric_handle_t ntirpc_monitoring::monitoring__register_histogram(const char*, metric_metadata_t, const metric_label_t*, uint16_t, histogram_buckets_t)’:
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:147:29: error: ‘Builder’ is not a member of ‘prometheus’; did you mean ‘prometheus::detail::Builder’?
+  147 |                 prometheus::Builder<HistogramInt>()
+      |                             ^~~~~~~
+/usr/include/prometheus/detail/builder.h:19:7: note: ‘prometheus::detail::Builder’ declared here
+   19 | class Builder {
+      |       ^~~~~~~
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:147:49: error: expected primary-expression before ‘>’ token
+  147 |                 prometheus::Builder<HistogramInt>()
+      |                                                 ^
+/build/nfs-ganesha/src/nfs-ganesha/src/libntirpc/src/monitoring/monitoring.cc:147:51: error: expected primary-expression before ‘)’ token
+  147 |                 prometheus::Builder<HistogramInt>()
+      |                                                   ^
+[  9%] Built target avltree
+[  9%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_read_conf.c.o
+[ 10%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_setquota.c.o
+[ 10%] Built target hashtable
+[ 10%] Building C object config_parsing/CMakeFiles/config_parsing.dir/conf_url.c.o
+[ 10%] Building C object config_parsing/CMakeFiles/config_parsing.dir/conf_yacc.c.o
 make[2]: *** [libntirpc/src/monitoring/CMakeFiles/ntirpcmonitoring.dir/build.make:79: libntirpc/src/monitoring/CMakeFiles/ntirpcmonitoring.dir/monitoring.cc.o] Error 1
 make[1]: *** [CMakeFiles/Makefile2:1455: libntirpc/src/monitoring/CMakeFiles/ntirpcmonitoring.dir/all] Error 2
 make[1]: *** Waiting for unfinished jobs....
-[  6%] Built target netgroup_cache
-[  6%] Built target hash
-[  6%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nfs23.c.o
-[  8%] Building C object Protocols/NFSACL/CMakeFiles/nfsacl.dir/nfsacl_getacl.c.o
-[  8%] Building C object SAL/CMakeFiles/sal.dir/state_async.c.o
-[  8%] Building C object Protocols/NFSACL/CMakeFiles/nfsacl.dir/nfsacl_setacl.c.o
-[  8%] Built target string_utils
-[  8%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nfsv41.c.o
-[  8%] Building C object avl/CMakeFiles/avltree.dir/splay.c.o
-[  8%] Built target hashtable
-[  8%] Built target nfs4callbacks
-[  8%] Building C object config_parsing/CMakeFiles/config_parsing.dir/config_parsing.c.o
-[  8%] Building C object dbus/CMakeFiles/gshdbus.dir/properties_handler.c.o
-[  8%] Building C object RPCAL/CMakeFiles/rpcal.dir/connection_manager_metrics.c.o
-[  8%] Building C object dbus/CMakeFiles/gshdbus.dir/signal_handler.c.o
-[  8%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Free_All.c.o
-[  9%] Building C object dbus/CMakeFiles/gshdbus.dir/dbus_heartbeat.c.o
-[  9%] Built target avltree
-[  9%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_getactivequota.c.o
-[  9%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_getquota.c.o
-[  9%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_proto_tools.c.o
-[ 10%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_setquota.c.o
-[ 10%] Built target uid2grp
-[ 10%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_access.c.o
-[ 11%] Building C object RPCAL/CMakeFiles/rpcal.dir/nfs_dupreq.c.o
-[ 11%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Granted_Res.c.o
-[ 11%] Building C object SAL/CMakeFiles/sal.dir/state_lock.c.o
-[ 11%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nlm4.c.o
-[ 11%] Building C object SAL/CMakeFiles/sal.dir/state_share.c.o
-[ 11%] Building C object SAL/CMakeFiles/sal.dir/state_misc.c.o
-[ 13%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nsm.c.o
-[ 13%] Building C object SAL/CMakeFiles/sal.dir/state_layout.c.o
-[ 13%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_read_conf.c.o
-[ 13%] Built target nfsacl
+[ 10%] Building C object dbus/CMakeFiles/gshdbus.dir/signal_handler.c.o
+[ 11%] Building C object SAL/CMakeFiles/sal.dir/state_layout.c.o
+[ 11%] Built target uid2grp
+[ 12%] Building C object SAL/CMakeFiles/sal.dir/state_deleg.c.o
+[ 12%] Building C object config_parsing/CMakeFiles/config_parsing.dir/conf_lex.c.o
+[ 13%] Building C object RPCAL/CMakeFiles/rpcal.dir/nfs_dupreq.c.o
 [ 13%] Building C object RPCAL/CMakeFiles/rpcal.dir/rpc_tools.c.o
-[ 13%] Building C object config_parsing/CMakeFiles/config_parsing.dir/conf_url.c.o
-[ 13%] Built target gshdbus
-[ 13%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_attach.c.o
+[ 13%] Built target nfsacl
 [ 13%] Building C object RPCAL/CMakeFiles/rpcal.dir/gss_credcache.c.o
-[ 14%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_allocate.c.o
-[ 15%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_auth.c.o
-[ 15%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_clunk.c.o
-[ 15%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_setactivequota.c.o
-[ 15%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_common.c.o
-[ 15%] Built target log
-[ 15%] Building C object SAL/CMakeFiles/sal.dir/state_deleg.c.o
-[ 15%] Building C object SAL/CMakeFiles/sal.dir/nfs4_clientid.c.o
-[ 15%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_flush.c.o
-[ 15%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Lock.c.o
-[ 15%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_flush_hook.c.o
-[ 15%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_bind_conn.c.o
-[ 15%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nfsacl.c.o
-[ 15%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_close.c.o
-[ 16%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Null.c.o
-[ 16%] Building C object config_parsing/CMakeFiles/config_parsing.dir/conf_yacc.c.o
-[ 16%] Building C object RPCAL/CMakeFiles/rpcal.dir/gss_extra.c.o
-[ 16%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_rquota.c.o
-[ 17%] Building C object config_parsing/CMakeFiles/config_parsing.dir/conf_lex.c.o
-[ 17%] Building C object SAL/CMakeFiles/sal.dir/nfs4_state.c.o
+[ 13%] Building C object RPCAL/CMakeFiles/rpcal.dir/gss_extra.c.o
+[ 13%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_attach.c.o
+[ 13%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_close.c.o
+[ 14%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Null.c.o
+[ 14%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_setactivequota.c.o
+[ 14%] Building C object SAL/CMakeFiles/sal.dir/nfs4_clientid.c.o
+[ 15%] Building C object dbus/CMakeFiles/gshdbus.dir/dbus_heartbeat.c.o
+[ 15%] Building C object SAL/CMakeFiles/sal.dir/nfs4_state.c.o
+[ 16%] Building C object SAL/CMakeFiles/sal.dir/nfs4_state_id.c.o
+[ 16%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Share.c.o
+[ 16%] Building C object SAL/CMakeFiles/sal.dir/nfs4_lease.c.o
+[ 16%] Building C object Protocols/RQUOTA/CMakeFiles/rquota.dir/rquota_common.c.o
+[ 17%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_clunk.c.o
+[ 17%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_auth.c.o
+[ 17%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nfsv41.c.o
+[ 17%] Built target gshdbus
+[ 17%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Sm_Notify.c.o
+[ 17%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Test.c.o
 [ 17%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_commit.c.o
-[ 17%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Share.c.o
-[ 18%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_getattr.c.o
+[ 17%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_flush.c.o
+[ 17%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nlm4.c.o
+[ 17%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_flush_hook.c.o
+[ 18%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nsm.c.o
 [ 18%] Built target rquota
-[ 19%] Building C object SAL/CMakeFiles/sal.dir/nfs4_state_id.c.o
-[ 19%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Sm_Notify.c.o
-[ 19%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_create.c.o
-[ 19%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Test.c.o
-[ 20%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_create_session.c.o
-[ 21%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Unlock.c.o
-[ 21%] Building C object SAL/CMakeFiles/sal.dir/nfs4_lease.c.o
-[ 21%] Built target nfs_mnt_xdr
-[ 21%] Building C object SAL/CMakeFiles/sal.dir/nfs4_recovery.c.o
+[ 18%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_nfsacl.c.o
+[ 18%] Building C object Protocols/XDR/CMakeFiles/nfs_mnt_xdr.dir/xdr_rquota.c.o
+[ 18%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_create.c.o
+[ 19%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Unlock.c.o
+[ 19%] Built target config_parsing
+[ 20%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_getattr.c.o
+[ 20%] Building C object SAL/CMakeFiles/sal.dir/nfs4_recovery.c.o
+[ 21%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_create_session.c.o
+[ 21%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Unshare.c.o
 [ 21%] Building C object SAL/CMakeFiles/sal.dir/nfs41_session_id.c.o
 [ 21%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_getlock.c.o
-[ 21%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_Unshare.c.o
-[ 21%] Built target rpcal
 [ 21%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_delegpurge.c.o
+[ 21%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_async.c.o
+[ 21%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_util.c.o
 [ 21%] Building C object SAL/CMakeFiles/sal.dir/nfs4_owner.c.o
-[ 22%] Building C object SAL/CMakeFiles/sal.dir/recovery/recovery_fs.c.o
+[ 22%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nsm.c.o
 [ 22%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_delegreturn.c.o
-[ 22%] Built target config_parsing
-[ 22%] Building C object SAL/CMakeFiles/sal.dir/recovery/recovery_fs_ng.c.o
-[ 22%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_async.c.o
-[ 22%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_destroy_session.c.o
-[ 22%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nlm_util.c.o
-[ 22%] Building C object SAL/CMakeFiles/sal.dir/nlm_owner.c.o
+[ 22%] Built target rpcal
+[ 22%] Built target log
+[ 22%] Built target nfs_mnt_xdr
 [ 22%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_lcreate.c.o
-[ 22%] Building C object SAL/CMakeFiles/sal.dir/nlm_state.c.o
-[ 23%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_exchange_id.c.o
+[ 23%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_destroy_session.c.o
 [ 23%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_lopen.c.o
-[ 25%] Building C object SAL/CMakeFiles/sal.dir/9p_owner.c.o
-[ 25%] Building C object Protocols/NLM/CMakeFiles/nlm.dir/nsm.c.o
-[ 26%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_free_stateid.c.o
-[ 26%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_link.c.o
-[ 26%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_getattr.c.o
-[ 26%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_getdeviceinfo.c.o
-[ 27%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_getdevicelist.c.o
+[ 23%] Building C object SAL/CMakeFiles/sal.dir/recovery/recovery_fs.c.o
+[ 24%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_link.c.o
+[ 24%] Building C object SAL/CMakeFiles/sal.dir/recovery/recovery_fs_ng.c.o
+[ 24%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_lock.c.o
+[ 25%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_exchange_id.c.o
+[ 25%] Building C object SAL/CMakeFiles/sal.dir/nlm_owner.c.o
+[ 25%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_free_stateid.c.o
+[ 25%] Building C object SAL/CMakeFiles/sal.dir/nlm_state.c.o
+[ 25%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_mkdir.c.o
+[ 25%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_getattr.c.o
+[ 25%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_mknod.c.o
+[ 26%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_read.c.o
+[ 27%] Building C object SAL/CMakeFiles/sal.dir/9p_owner.c.o
+[ 27%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_readdir.c.o
+[ 27%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_getdeviceinfo.c.o
 [ 27%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_getfh.c.o
-[ 27%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_illegal.c.o
-[ 27%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_lock.c.o
-[ 27%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_mkdir.c.o
-[ 27%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_layoutcommit.c.o
-[ 28%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_mknod.c.o
-[ 28%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_read.c.o
-[ 28%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_readdir.c.o
+[ 28%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_getdevicelist.c.o
+[ 28%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_readlink.c.o
+[ 28%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_illegal.c.o
+[ 28%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_layoutcommit.c.o
+[ 28%] Built target nlm
 [ 29%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_layoutget.c.o
 [ 29%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_layoutreturn.c.o
-[ 29%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_readlink.c.o
 [ 29%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_remove.c.o
+[ 29%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_link.c.o
 [ 29%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_rename.c.o
+[ 29%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_lock.c.o
 [ 30%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_renameat.c.o
-[ 30%] Built target sal
-[ 30%] Built target nlm
-[ 30%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_link.c.o
-[ 30%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_fsync.c.o
-[ 30%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_unlinkat.c.o
-[ 30%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_lock.c.o
 [ 31%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_lockt.c.o
+[ 31%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_fsync.c.o
+[ 31%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_locku.c.o
+[ 31%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_lookup.c.o
+[ 31%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_unlinkat.c.o
 [ 31%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_setattr.c.o
 [ 32%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_statfs.c.o
-[ 32%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_symlink.c.o
-[ 32%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_locku.c.o
 [ 32%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_lookupp.c.o
-[ 32%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_lookup.c.o
-[ 32%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_version.c.o
+[ 32%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_symlink.c.o
 [ 32%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_nverify.c.o
-[ 32%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_walk.c.o
-[ 34%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_xattrcreate.c.o
-[ 35%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_open.c.o
-[ 35%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_open_confirm.c.o
-[ 35%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_write.c.o
-[ 35%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_xattrwalk.c.o
-[ 35%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_rerror.c.o
-[ 35%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_openattr.c.o
-[ 35%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_open_downgrade.c.o
-[ 36%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_putfh.c.o
+[ 34%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_open_confirm.c.o
+[ 34%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_open.c.o
+[ 34%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_open_downgrade.c.o
+[ 34%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_version.c.o
+[ 34%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_openattr.c.o
+[ 34%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_walk.c.o
+[ 35%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_putfh.c.o
+[ 36%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_xattrcreate.c.o
 [ 36%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_putpubfh.c.o
-[ 36%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_read.c.o
+[ 36%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_xattrwalk.c.o
 [ 36%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_putrootfh.c.o
+[ 36%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_read.c.o
+[ 36%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_write.c.o
 [ 37%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_readdir.c.o
+[ 37%] Building C object Protocols/9P/CMakeFiles/9p.dir/9p_rerror.c.o
+[ 37%] Built target sal
 [ 37%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_readlink.c.o
 [ 37%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_reclaim_complete.c.o
 [ 37%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_release_lockowner.c.o
@@ -388,22 +440,22 @@ make[1]: *** Waiting for unfinished jobs....
 [ 38%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_rename.c.o
 [ 38%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_renew.c.o
 [ 38%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_restorefh.c.o
-[ 39%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_secinfo.c.o
 [ 39%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_savefh.c.o
-[ 39%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_sequence.c.o
+[ 39%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_secinfo.c.o
 [ 39%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_secinfo_no_name.c.o
+[ 39%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_sequence.c.o
 [ 39%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_set_ssv.c.o
-[ 39%] Built target 9p
 [ 40%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_setattr.c.o
+[ 40%] Built target 9p
 [ 40%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_xattr.c.o
 [ 40%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_setclientid.c.o
 [ 40%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_setclientid_confirm.c.o
-[ 41%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_test_stateid.c.o
 [ 41%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_destroy_clientid.c.o
 [ 41%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_verify.c.o
+[ 41%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_test_stateid.c.o
 [ 41%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_op_write.c.o
-[ 42%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs_proto_tools.c.o
 [ 42%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs4_pseudo.c.o
+[ 42%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs_proto_tools.c.o
 [ 42%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs_null.c.o
 [ 42%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/mnt_Dump.c.o
 [ 43%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/mnt_Export.c.o
@@ -416,18 +468,18 @@ make[1]: *** Waiting for unfinished jobs....
 [ 44%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_create.c.o
 [ 44%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_fsinfo.c.o
 [ 45%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_fsstat.c.o
-[ 45%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_link.c.o
 [ 45%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_getattr.c.o
+[ 45%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_link.c.o
 [ 45%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_lookup.c.o
 [ 46%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_mkdir.c.o
 [ 46%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_mknod.c.o
-[ 46%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_read.c.o
 [ 46%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_pathconf.c.o
+[ 46%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_read.c.o
 [ 47%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_readdir.c.o
 [ 47%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_readdirplus.c.o
 [ 47%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_readlink.c.o
+[ 47%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_remove.c.o
 [ 48%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_rename.c.o
-[ 48%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_remove.c.o
 [ 48%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_rmdir.c.o
 [ 48%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_setattr.c.o
 [ 48%] Building C object Protocols/NFS/CMakeFiles/nfsproto.dir/nfs3_symlink.c.o
