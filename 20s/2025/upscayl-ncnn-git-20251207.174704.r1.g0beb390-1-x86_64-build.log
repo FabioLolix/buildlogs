@@ -1,0 +1,52 @@
+-- The C compiler identification is GNU 16.1.1
+-- The CXX compiler identification is GNU 16.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- Found Vulkan: /usr/lib/libvulkan.so (found version "1.4.350") found components: glslc glslangValidator
+-- Found glslangValidator: /usr/bin/glslangValidator
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found ncnn: 20260528
+-- Found WebP: /usr/include
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/upscayl-ncnn-git/src/build
+[ 13%] Building SPIR-V module realesrgan_preproc_int8s.spv
+[ 13%] Building SPIR-V module realesrgan_postproc_fp16s.spv
+[ 33%] Building SPIR-V module realesrgan_preproc.spv
+[ 33%] Building SPIR-V module realesrgan_postproc_int8s.spv
+[ 40%] Building SPIR-V module realesrgan_preproc_fp16s.spv
+[ 40%] Building SPIR-V module realesrgan_preproc_tta.spv
+[ 53%] Building SPIR-V module realesrgan_preproc_tta_fp16s.spv
+[ 53%] Building SPIR-V module realesrgan_postproc.spv
+[ 66%] Building SPIR-V module realesrgan_preproc_tta_int8s.spv
+[ 66%] Building SPIR-V module realesrgan_postproc_tta.spv
+[ 73%] Building SPIR-V module realesrgan_postproc_tta_fp16s.spv
+[ 80%] Building SPIR-V module realesrgan_postproc_tta_int8s.spv
+[ 80%] Built target generate-spirv
+[ 93%] Building CXX object CMakeFiles/upscayl-bin.dir/main.cpp.o
+[ 93%] Building CXX object CMakeFiles/upscayl-bin.dir/realesrgan.cpp.o
+In file included from /build/upscayl-ncnn-git/src/upscayl-ncnn/src/main.cpp:196:
+/build/upscayl-ncnn-git/src/upscayl-ncnn/src/filesystem_utils.h: In function ‘path_t get_executable_directory()’:
+/build/upscayl-ncnn-git/src/upscayl-ncnn/src/filesystem_utils.h:179:13: warning: ignoring return value of ‘ssize_t readlink(const char*, char*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  179 |     readlink("/proc/self/exe", filepath, 256);
+      |     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable upscayl-bin
+/usr/src/debug/upscayl-ncnn-git/upscayl-ncnn/src/stb_image.h: In function ‘stbi__parse_png_file.constprop’:
+/usr/src/debug/upscayl-ncnn-git/upscayl-ncnn/src/stb_image.h:5026:56: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+/usr/src/debug/upscayl-ncnn-git/upscayl-ncnn/src/stb_image.h:4943:25: note: at offset 3 into destination object ‘tc’ of size 3
+[100%] Built target upscayl-bin
