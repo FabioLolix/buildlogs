@@ -1,0 +1,332 @@
+
+Wrap files:
+Wrap curl.wrap          type file not found: curl-8.12.1
+Wrap expat.wrap         type file not found: expat-2.7.5
+Wrap flac.wrap          type file not found: flac-1.5.0
+Wrap fmt.wrap           type file not found: fmt-12.0.0
+Wrap gtest.wrap         type file not found: googletest-1.17.0
+Wrap id3tag.wrap        type file not found: libid3tag-0.15.1b
+Wrap lame.wrap          type file not found: lame-3.100
+Wrap libmpdclient.wrap  type  git not found: libmpdclient
+Wrap libnpupnp.wrap     type file not found: libnpupnp-6.3.0
+Wrap libsndfile.wrap    type file not found: libsndfile-1.2.2
+Wrap liburing.wrap      type file not found: liburing-liburing-2.14
+Wrap nlohmann_json.wrap type file not found: nlohmann_json-3.12.0
+Wrap ogg.wrap           type file not found: libogg-1.3.6
+Wrap openssl.wrap       type file not found: openssl-3.0.8
+Wrap opus.wrap          type file not found: opus-1.6.1
+Wrap pcre2.wrap         type file not found: pcre2-10.47
+Wrap sqlite3.wrap       type file not found: sqlite-amalgamation-3530100
+Wrap vorbis.wrap        type file not found: libvorbis-1.3.7
+
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 mpd build -D documentation=enabled -D adplug=disabled -D audiofile=disabled -D io_uring=disabled -D sndio=disabled -D shine=disabled -D tremor=disabled -D b_ndebug=true -D test=true
+The Meson build system
+Version: 1.11.1
+Source dir: /build/mpd/src/mpd
+Build dir: /build/mpd/src/build
+Build type: native build
+Project name: mpd
+Project version: 0.24.12
+C compiler for the host machine: cc (gcc 16.1.1 "cc (GCC) 16.1.1 20260430")
+C linker for the host machine: cc ld.bfd 2.46.0
+C++ compiler for the host machine: c++ (gcc 16.1.1 "c++ (GCC) 16.1.1 20260430")
+C++ linker for the host machine: c++ ld.bfd 2.46.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found git repository at /build/mpd/src/mpd
+Configuring Version.h using configuration
+Compiler for C++ supports arguments -fvisibility=hidden: YES 
+Compiler for C++ supports arguments -ffunction-sections: YES 
+Compiler for C++ supports arguments -fdata-sections: YES 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Compiler for C supports arguments -ffunction-sections: YES 
+Compiler for C supports arguments -fdata-sections: YES 
+Compiler for C++ supports arguments -ffast-math: YES 
+Compiler for C++ supports arguments -ftree-vectorize: YES 
+Compiler for C++ supports arguments -Wcast-qual: YES 
+Compiler for C++ supports arguments -Wdouble-promotion: YES 
+Compiler for C++ supports arguments -Wmissing-declarations: YES 
+Compiler for C++ supports arguments -Wshadow: YES 
+Compiler for C++ supports arguments -Wunused: YES 
+Compiler for C++ supports arguments -Wvla: YES 
+Compiler for C++ supports arguments -Wwrite-strings: YES 
+Compiler for C++ supports arguments -Wunreachable-code-aggressive: NO 
+Compiler for C++ supports arguments -Wused-but-marked-unused: NO 
+Compiler for C++ supports arguments -Wno-stringop-overflow: YES 
+Compiler for C++ supports arguments -Wno-nan-infinity-disabled: NO 
+Compiler for C++ supports arguments -fno-threadsafe-statics: YES 
+Compiler for C++ supports arguments -fmerge-all-constants: YES 
+Compiler for C++ supports arguments -Wcomma-subscript: YES 
+Compiler for C++ supports arguments -Wextra-semi: YES 
+Compiler for C++ supports arguments -Wmismatched-tags: YES 
+Compiler for C++ supports arguments -Woverloaded-virtual: YES 
+Compiler for C++ supports arguments -Wsign-promo: YES 
+Compiler for C++ supports arguments -Wsuggest-override: YES 
+Compiler for C++ supports arguments -Wvolatile: YES 
+Compiler for C++ supports arguments -Wvirtual-inheritance: YES 
+Compiler for C++ supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C++ supports arguments -Wno-non-virtual-dtor: YES 
+Compiler for C++ supports arguments -Wcomma: NO 
+Compiler for C++ supports arguments -Wheader-hygiene: NO 
+Compiler for C++ supports arguments -Winconsistent-missing-destructor-override: NO 
+Compiler for C supports arguments -ffast-math: YES 
+Compiler for C supports arguments -ftree-vectorize: YES 
+Compiler for C supports arguments -Wcast-qual: YES 
+Compiler for C supports arguments -Wdouble-promotion: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wunused: YES 
+Compiler for C supports arguments -Wvla: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -Wunreachable-code-aggressive: NO 
+Compiler for C supports arguments -Wused-but-marked-unused: NO 
+Compiler for C supports arguments -Wno-stringop-overflow: YES 
+Compiler for C supports arguments -Wno-nan-infinity-disabled: NO 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C++ supports link arguments -Wl,-z,relro: YES 
+Compiler for C++ supports link arguments -Wl,-z,now: YES 
+Compiler for C++ supports link arguments -Wl,--gc-sections: YES 
+Checking for function "getpwnam_r" : YES 
+Checking for function "initgroups" : YES 
+Checking for function "fnmatch" : YES 
+Checking for function "strndup" : YES 
+Checking for function "strcasestr" : YES 
+Checking for function "syslog" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency fmt found: YES 12.2.0
+Run-time dependency icu-i18n found: YES 78.3
+Run-time dependency icu-uc found: YES 78.3
+Dependency liburing for host machine skipped: feature io_uring disabled
+Configuring Features.h using configuration
+Header "fcntl.h" has symbol "openat2" : YES 
+Configuring Features.h using configuration
+Run-time dependency threads found: YES
+Checking for function "pthread_setname_np" with dependency threads: YES 
+Header "sys/socket.h" has symbol "AF_INET6" : YES 
+Header "sys/socket.h" has symbol "struct ucred" : YES 
+Header "sys/socket.h" has symbol "SO_PEERCRED" : YES 
+Checking for function "getpeereid" : NO 
+Configuring Features.h using configuration
+Run-time dependency samplerate found: YES 0.2.2
+Run-time dependency soxr found: YES 0.1.3
+Run-time dependency dbus-1 found: YES 1.16.2
+Dependency smbclient for host machine skipped: feature smbclient disabled
+Run-time dependency zlib found: YES 1.3.2
+Run-time dependency alsa found: YES 1.2.16.1
+Run-time dependency libchromaprint found: YES 1.6.0
+Run-time dependency libcurl found: YES 8.20.0
+Run-time dependency expat found: YES 2.8.1
+Run-time dependency libavformat found: YES 62.12.102
+Run-time dependency libavcodec found: YES 62.28.102
+Run-time dependency libavutil found: YES 60.26.102
+Run-time dependency libavfilter found: YES 11.14.102
+Run-time dependency libnfs found: YES 16.2.0
+Run-time dependency nlohmann_json found: YES 3.12.0
+Has header "sys/soundcard.h" : YES 
+Run-time dependency libpcre2-8 found: YES 10.47
+Run-time dependency libpipewire-0.3 found: YES 1.6.7
+Run-time dependency libpulse found: YES 17.0-98-gb096
+Library sndio skipped: feature sndio disabled
+Run-time dependency sqlite3 found: YES 3.53.2
+Run-time dependency libsystemd found: YES 260
+Run-time dependency libupnp found: YES 1.14.31
+Run-time dependency avahi-client found: YES 0.9-rc4
+Run-time dependency id3tag found: YES 0.16.4
+Run-time dependency libcdio_paranoia found: YES 10.2+2.0.2
+Run-time dependency libmms found: YES 0.6.4
+Configuring Features.h using configuration
+Run-time dependency libiso9660 found: YES 2.3.0
+Library bz2 found: YES
+Run-time dependency zziplib found: YES 0.13.80
+Configuring Features.h using configuration
+Run-time dependency ao found: YES 1.2.2
+Run-time dependency jack found: YES 1.9.22
+Header "jack/jack.h" has symbol "jack_set_info_function" : YES 
+Run-time dependency openal found: YES 1.25.2
+Run-time dependency shout found: YES 2.4.6
+Configuring Features.h using configuration
+Run-time dependency flac found: YES 1.5.0
+Run-time dependency opus found: YES 1.6.1
+Run-time dependency vorbis found: YES 1.3.7
+Run-time dependency vorbisenc found: YES 1.3.7
+Run-time dependency ogg found: YES 1.3.6
+Dependency adplug for host machine skipped: feature adplug disabled
+Run-time dependency fluidsynth found: YES 2.5.5
+Dependency audiofile for host machine skipped: feature audiofile disabled
+Library faad found: YES
+Run-time dependency libgme found: YES 0.6.5
+Library mad found: YES
+Run-time dependency libmikmod found: YES 3.3.13
+Run-time dependency libmodplug found: YES 0.8.9.0
+Run-time dependency libopenmpt found: YES 0.8.7+release.autotools
+Library mpcdec found: YES
+Run-time dependency libmpg123 found: YES 1.33.5
+Run-time dependency sndfile found: YES 1.2.2
+Run-time dependency wavpack found: YES 5.9.0
+Run-time dependency wildmidi found: YES 0.4.6
+Run-time dependency libsidplayfp found: YES 2.16.1
+Has header "sidplayfp/builders/residfp.h" with dependency libsidplayfp: YES 
+Configuring Features.h using configuration
+Library mp3lame found: YES
+Run-time dependency twolame found: YES 0.4.0
+Dependency shine for host machine skipped: feature shine disabled
+Configuring Features.h using configuration
+Configuring Features.h using configuration
+Run-time dependency libmpdclient found: YES 2.23
+Configuring config.h using configuration
+Run-time dependency systemd found: YES 260
+Configuring mpd.socket using configuration
+Configuring mpd.service using configuration
+Dependency systemd for host machine found: YES 260 (cached)
+Configuring mpd.socket using configuration
+Configuring mpd.service using configuration
+Program sphinx-build found: YES (/usr/bin/sphinx-build)
+Run-time dependency GTest found: YES 1.17.0
+Program mkisofs found: NO
+Program bzip2 found: YES (/usr/bin/bzip2)
+Program test_archive_bzip2.sh found: YES (/build/mpd/src/mpd/test/test_archive_bzip2.sh)
+Program zip found: NO
+Build targets in project: 132
+
+mpd 0.24.12
+
+  User defined options
+    adplug            : disabled
+    audiofile         : disabled
+    auto_features     : enabled
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    documentation     : enabled
+    io_uring          : disabled
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    shine             : disabled
+    sndio             : disabled
+    test              : true
+    tremor            : disabled
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+Generating targets:   0%|          | 0/132 eta ?Generating targets:  51%|█████     | 67/132 eta 00:00                                                     Writing build.ninja:   0%|          | 0/897 eta ?                                                 ninja: Entering directory `/build/mpd/src/build'
+[1/871] Generating GitVersion.cxx with a custom command
+[2/871] Compiling C++ object src/tag/GenParseName.p/Names.cxx.o
+[3/871] Compiling C++ object src/util/libutil.a.p/PrintException.cxx.o
+[4/871] Compiling C++ object src/util/libutil.a.p/StringCompare.cxx.o
+[5/871] Compiling C++ object src/util/libutil.a.p/StringUtil.cxx.o
+[6/871] Compiling C++ object src/util/libutil.a.p/ByteReverse.cxx.o
+[7/871] Compiling C++ object src/util/libutil.a.p/TruncateString.cxx.o
+[8/871] Compiling C++ object src/util/libutil.a.p/WStringCompare.cxx.o
+[9/871] Compiling C++ object src/util/libutil.a.p/BitReverse.cxx.o
+[10/871] Compiling C++ object src/util/libutil.a.p/HugeAllocator.cxx.o
+[11/871] Compiling C object src/util/libutil.a.p/format.c.o
+[12/871] Compiling C++ object src/util/libutil.a.p/UriExtract.cxx.o
+[13/871] Compiling C++ object src/util/libutil.a.p/StringStrip.cxx.o
+[14/871] Compiling C++ object src/util/libutil.a.p/UTF8.cxx.o
+[15/871] Compiling C++ object src/time/libtime.a.p/Zone.cxx.o
+[16/871] Compiling C++ object src/util/libutil.a.p/Tokenizer.cxx.o
+[17/871] Compiling C++ object src/util/libutil.a.p/PeakBuffer.cxx.o
+[18/871] Compiling C++ object src/lib/fmt/libfmt.a.p/RuntimeError.cxx.o
+[19/871] Compiling C++ object src/tag/GenParseName.p/GenParseName.cxx.o
+[20/871] Compiling C++ object src/util/libutil.a.p/Exception.cxx.o
+[21/871] Compiling C++ object src/util/libutil.a.p/UriRelative.cxx.o
+[22/871] Compiling C++ object src/util/libutil.a.p/UriUtil.cxx.o
+[23/871] Compiling C++ object src/util/libutil.a.p/UriQueryParser.cxx.o
+[24/871] Compiling C++ object src/util/libutil.a.p/SplitString.cxx.o
+[25/871] Compiling C++ object src/util/libutil.a.p/SparseBuffer.cxx.o
+[26/871] Compiling C++ object src/lib/fmt/libfmt.a.p/SystemError.cxx.o
+[27/871] Compiling C++ object src/protocol/libprotocol.a.p/Verify.cxx.o
+[28/871] Compiling C++ object src/lib/icu/libicu.a.p/Compare.cxx.o
+[29/871] Compiling C++ object liblog.a.p/src_Log.cxx.o
+[30/871] Compiling C++ object src/lib/fmt/libfmt.a.p/ExceptionFormatter.cxx.o
+[31/871] Compiling C++ object src/fs/libfs.a.p/Domain.cxx.o
+[32/871] Compiling C++ object src/lib/fmt/libfmt.a.p/SocketAddressFormatter.cxx.o
+[33/871] Compiling C++ object src/util/libutil.a.p/LazyRandomEngine.cxx.o
+[34/871] Compiling C++ object src/util/libutil.a.p/MimeType.cxx.o
+[35/871] Compiling C++ object src/cmdline/libcmdline.a.p/OptionParser.cxx.o
+[36/871] Linking target src/tag/GenParseName
+[37/871] Generating src/tag/RunGenParseName with a custom command
+[38/871] Compiling C++ object src/io/libio.a.p/PeekReader.cxx.o
+[39/871] Compiling C++ object src/lib/icu/libicu.a.p/Init.cxx.o
+[40/871] Compiling C++ object src/io/libio.a.p/FileDescriptor.cxx.o
+[41/871] Compiling C++ object src/lib/icu/libicu.a.p/Canonicalize.cxx.o
+[42/871] Compiling C++ object src/io/libio.a.p/Reader.cxx.o
+[43/871] Compiling C++ object src/io/libio.a.p/Open.cxx.o
+[44/871] Compiling C++ object src/io/linux/libio_linux.a.p/ProcStatus.cxx.o
+[45/871] Compiling C++ object src/lib/icu/libicu.a.p/Util.cxx.o
+[46/871] Compiling C++ object src/fs/libfs.a.p/Glob.cxx.o
+[47/871] Compiling C++ object src/lib/icu/libicu.a.p/Normalize.cxx.o
+[48/871] Compiling C++ object src/fs/libfs.a.p/Traits.cxx.o
+[49/871] Compiling C++ object src/io/libio.a.p/BufferedReader.cxx.o
+[50/871] Compiling C++ object src/lib/icu/libicu.a.p/Collate.cxx.o
+[51/871] Compiling C++ object src/fs/libfs.a.p/Path.cxx.o
+[52/871] Compiling C++ object src/system/libsystem.a.p/KernelVersion.cxx.o
+[53/871] Compiling C++ object src/lib/icu/libicu.a.p/Transliterator.cxx.o
+[54/871] Compiling C++ object src/fs/libfs.a.p/Path2.cxx.o
+[55/871] Compiling C++ object src/fs/libfs.a.p/AllocatedPath.cxx.o
+[56/871] Compiling C++ object src/lib/icu/libicu.a.p/FoldCase.cxx.o
+[57/871] Compiling C++ object src/lib/icu/libicu.a.p/Converter.cxx.o
+[58/871] Compiling C++ object src/fs/libfs.a.p/NarrowPath.cxx.o
+[59/871] Compiling C++ object src/net/libnet.a.p/DscpParser.cxx.o
+[60/871] Compiling C++ object src/fs/libfs.a.p/Charset.cxx.o
+[61/871] Compiling C++ object src/io/libio.a.p/BufferedOutputStream.cxx.o
+[62/871] Compiling C++ object src/net/libnet.a.p/IPv6Address.cxx.o
+[63/871] Compiling C++ object src/net/libnet.a.p/IPv4Address.cxx.o
+[64/871] Compiling C++ object src/system/libsystem.a.p/EventPipe.cxx.o
+[65/871] Compiling C++ object src/thread/libthread.a.p/Util.cxx.o
+[66/871] Compiling C++ object src/time/libtime.a.p/Math.cxx.o
+[67/871] Compiling C++ object src/system/libsystem.a.p/EpollFD.cxx.o
+[68/871] Compiling C++ object src/net/libnet.a.p/HostParser.cxx.o
+[69/871] Compiling C++ object src/thread/libthread.a.p/Thread.cxx.o
+[70/871] Compiling C++ object src/system/libsystem.a.p/EventFD.cxx.o
+[71/871] Compiling C++ object src/time/libtime.a.p/ISO8601.cxx.o
+[72/871] Compiling C++ object src/net/libnet.a.p/FormatAddress.cxx.o
+[73/871] Compiling C++ object src/fs/libfs.a.p/List.cxx.o
+[74/871] Compiling C++ object src/time/libtime.a.p/Convert.cxx.o
+[75/871] Compiling C++ object src/system/libsystem.a.p/SignalFD.cxx.o
+[76/871] Compiling C++ object src/fs/libfs.a.p/FileSystem.cxx.o
+[77/871] Compiling C++ object liblog.a.p/src_LogBackend.cxx.o
+[78/871] Compiling C++ object src/net/libnet.a.p/StaticSocketAddress.cxx.o
+[79/871] Compiling C++ object src/net/libnet.a.p/ToString.cxx.o
+FAILED: [code=1] src/net/libnet.a.p/ToString.cxx.o 
+c++ -Isrc/net/libnet.a.p -Isrc/net -I../mpd/src/net -Isrc -I../mpd/src -I. -I../mpd -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c++20 -ffast-math -ftree-vectorize -Wcast-qual -Wdouble-promotion -Wmissing-declarations -Wshadow -Wunused -Wvla -Wwrite-strings -Wno-stringop-overflow -fno-threadsafe-statics -fmerge-all-constants -Wcomma-subscript -Wextra-semi -Wmismatched-tags -Woverloaded-virtual -Wsign-promo -Wsuggest-override -Wvolatile -Wvirtual-inheritance -Wno-missing-field-initializers -Wno-non-virtual-dtor -fvisibility=hidden -ffunction-sections -fdata-sections -D_GNU_SOURCE -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/mpd/src=/usr/src/debug/mpd -flto=auto -fPIC -MD -MQ src/net/libnet.a.p/ToString.cxx.o -MF src/net/libnet.a.p/ToString.cxx.o.d -o src/net/libnet.a.p/ToString.cxx.o -c ../mpd/src/net/ToString.cxx
+../mpd/src/net/ToString.cxx: In function ‘std::string ToString(SocketAddress)’:
+../mpd/src/net/ToString.cxx:80:37: error: ‘format’ is not a member of ‘fmt’
+   80 |                         return fmt::format("[{}]:{}", host, serv);
+      |                                     ^~~~~~
+../mpd/src/net/ToString.cxx:84:29: error: ‘format’ is not a member of ‘fmt’
+   84 |                 return fmt::format("{}:{}", host, serv);
+      |                             ^~~~~~
+[80/871] Compiling C++ object src/net/libnet.a.p/AllocatedSocketAddress.cxx.o
+[81/871] Compiling C++ object src/net/libnet.a.p/SocketAddress.cxx.o
+[82/871] Compiling C++ object src/util/libutil.a.p/Serial.cxx.o
+[83/871] Compiling C++ object src/fs/libfs.a.p/DirectoryReader.cxx.o
+[84/871] Compiling C++ object src/net/libnet.a.p/LocalSocketAddress.cxx.o
+[85/871] Compiling C++ object src/io/fs/libio_fs.a.p/.._FileOutputStream.cxx.o
+[86/871] Compiling C++ object src/net/libnet.a.p/AddressInfo.cxx.o
+[87/871] Compiling C++ object src/net/libnet.a.p/SocketDescriptor.cxx.o
+[88/871] Compiling C++ object src/fs/libfs.a.p/Config.cxx.o
+[89/871] Compiling C++ object src/net/libnet.a.p/SocketError.cxx.o
+[90/871] Compiling C++ object src/net/libnet.a.p/SocketUtil.cxx.o
+[91/871] Compiling C++ object src/net/libnet.a.p/Resolver.cxx.o
+[92/871] Compiling C++ object src/event/libevent.a.p/SignalMonitor.cxx.o
+[93/871] Compiling C++ object src/event/libevent.a.p/MaskMonitor.cxx.o
+[94/871] Compiling C++ object src/fs/libfs.a.p/LookupFile.cxx.o
+[95/871] Compiling C++ object src/event/libevent.a.p/BufferedSocket.cxx.o
+[96/871] Compiling C++ object src/io/fs/libio_fs.a.p/.._FileReader.cxx.o
+[97/871] Compiling C++ object src/fs/libfs.a.p/FileInfo.cxx.o
+[98/871] Compiling C++ object src/event/libevent.a.p/CoarseTimerEvent.cxx.o
+[99/871] Compiling C++ object src/event/libevent.a.p/TimerWheel.cxx.o
+[100/871] Compiling C++ object src/event/libevent.a.p/FineTimerEvent.cxx.o
+[101/871] Compiling C++ object src/event/libevent.a.p/InjectEvent.cxx.o
+[102/871] Compiling C++ object src/event/libevent.a.p/TimerList.cxx.o
+[103/871] Compiling C++ object src/event/libevent.a.p/DeferEvent.cxx.o
+[104/871] Compiling C++ object src/event/libevent.a.p/SocketEvent.cxx.o
+ninja: build stopped: subcommand failed.
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/mpd/src/build
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

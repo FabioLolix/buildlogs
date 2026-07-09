@@ -1,0 +1,915 @@
+The Meson build system
+Version: 1.11.1
+Source dir: /build/mpd-git/src/MPD
+Build dir: /build/mpd-git/src/MPD/build
+Build type: native build
+Project name: mpd
+Project version: 0.25
+C compiler for the host machine: cc (gcc 16.1.1 "cc (GCC) 16.1.1 20260625")
+C linker for the host machine: cc ld.bfd 2.46.1
+C++ compiler for the host machine: c++ (gcc 16.1.1 "c++ (GCC) 16.1.1 20260625")
+C++ linker for the host machine: c++ ld.bfd 2.46.1
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found git repository at /build/mpd-git/src/MPD
+Configuring Version.h using configuration
+Compiler for C++ supports arguments -fvisibility=hidden: YES 
+Compiler for C++ supports arguments -ffunction-sections: YES 
+Compiler for C++ supports arguments -fdata-sections: YES 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Compiler for C supports arguments -ffunction-sections: YES 
+Compiler for C supports arguments -fdata-sections: YES 
+Compiler for C++ supports arguments -ffast-math: YES 
+Compiler for C++ supports arguments -ftree-vectorize: YES 
+Compiler for C++ supports arguments -Wcast-qual: YES 
+Compiler for C++ supports arguments -Wdouble-promotion: YES 
+Compiler for C++ supports arguments -Wmissing-declarations: YES 
+Compiler for C++ supports arguments -Wshadow: YES 
+Compiler for C++ supports arguments -Wunused: YES 
+Compiler for C++ supports arguments -Wvla: YES 
+Compiler for C++ supports arguments -Wwrite-strings: YES 
+Compiler for C++ supports arguments -Wunreachable-code-aggressive: NO 
+Compiler for C++ supports arguments -Wused-but-marked-unused: NO 
+Compiler for C++ supports arguments -Wno-stringop-overflow: YES 
+Compiler for C++ supports arguments -Wno-nan-infinity-disabled: NO 
+Compiler for C++ supports arguments -fno-threadsafe-statics: YES 
+Compiler for C++ supports arguments -fmerge-all-constants: YES 
+Compiler for C++ supports arguments -Wcomma-subscript: YES 
+Compiler for C++ supports arguments -Wextra-semi: YES 
+Compiler for C++ supports arguments -Wmismatched-tags: YES 
+Compiler for C++ supports arguments -Woverloaded-virtual: YES 
+Compiler for C++ supports arguments -Wsign-promo: YES 
+Compiler for C++ supports arguments -Wsuggest-override: YES 
+Compiler for C++ supports arguments -Wvolatile: YES 
+Compiler for C++ supports arguments -Wvirtual-inheritance: YES 
+Compiler for C++ supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C++ supports arguments -Wno-non-virtual-dtor: YES 
+Compiler for C++ supports arguments -Wcomma: NO 
+Compiler for C++ supports arguments -Wheader-hygiene: NO 
+Compiler for C++ supports arguments -Winconsistent-missing-destructor-override: NO 
+Compiler for C supports arguments -ffast-math: YES 
+Compiler for C supports arguments -ftree-vectorize: YES 
+Compiler for C supports arguments -Wcast-qual: YES 
+Compiler for C supports arguments -Wdouble-promotion: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wunused: YES 
+Compiler for C supports arguments -Wvla: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -Wunreachable-code-aggressive: NO 
+Compiler for C supports arguments -Wused-but-marked-unused: NO 
+Compiler for C supports arguments -Wno-stringop-overflow: YES 
+Compiler for C supports arguments -Wno-nan-infinity-disabled: NO 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C++ supports link arguments -Wl,-z,relro: YES 
+Compiler for C++ supports link arguments -Wl,-z,now: YES 
+Compiler for C++ supports link arguments -Wl,--gc-sections: YES 
+Checking for function "getpwnam_r" : YES 
+Checking for function "initgroups" : YES 
+Checking for function "fnmatch" : YES 
+Checking for function "strndup" : YES 
+Checking for function "strcasestr" : YES 
+Checking for function "syslog" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency fmt found: YES 12.2.0
+Run-time dependency icu-i18n found: YES 78.3
+Run-time dependency icu-uc found: YES 78.3
+Configuring Features.h using configuration
+Run-time dependency liburing found: YES 2.15
+Configuring Features.h using configuration
+Header "fcntl.h" has symbol "openat2" : YES 
+Configuring Features.h using configuration
+Run-time dependency threads found: YES
+Checking for function "pthread_setname_np" with dependency threads: YES 
+Header "sys/socket.h" has symbol "AF_INET6" : YES 
+Header "sys/socket.h" has symbol "struct ucred" : YES 
+Header "sys/socket.h" has symbol "SO_PEERCRED" : YES 
+Checking for function "getpeereid" : NO 
+Configuring Features.hxx using configuration
+Configuring config.h using configuration
+Run-time dependency samplerate found: YES 0.2.2
+Run-time dependency soxr found: YES 0.1.3
+Configuring Features.h using configuration
+Run-time dependency dbus-1 found: YES 1.16.2
+Dependency smbclient for host machine skipped: feature smbclient disabled
+Run-time dependency zlib found: YES 1.3.2
+Run-time dependency alsa found: YES 1.2.16.1
+Run-time dependency libchromaprint found: YES 1.6.0
+Run-time dependency libcurl found: YES 8.21.0
+Run-time dependency expat found: YES 2.8.2
+Run-time dependency libavformat found: YES 62.12.102
+Run-time dependency libavcodec found: YES 62.28.102
+Run-time dependency libavutil found: YES 60.26.102
+Run-time dependency libavfilter found: YES 11.14.102
+Run-time dependency libnfs found: YES 16.2.0
+Run-time dependency nlohmann_json found: YES 3.12.0
+Has header "sys/soundcard.h" : YES 
+Run-time dependency libpcre2-8 found: YES 10.47
+Run-time dependency libpipewire-0.3 found: YES 1.6.7
+Run-time dependency libpulse found: YES 17.0-98-gb096
+Library sndio skipped: feature sndio disabled
+Run-time dependency sqlite3 found: YES 3.53.3
+Run-time dependency libsystemd found: YES 261
+Run-time dependency libupnp found: YES 1.14.31
+Run-time dependency avahi-client found: YES 0.9-rc5
+Run-time dependency id3tag found: YES 0.16.4
+Run-time dependency libcdio_paranoia found: YES 10.2+2.0.2
+Run-time dependency libmms found: YES 0.6.4
+Configuring Features.h using configuration
+Run-time dependency libiso9660 found: YES 2.3.0
+Library bz2 found: YES
+Run-time dependency zziplib found: YES 0.13.80
+Configuring Features.h using configuration
+Run-time dependency ao found: YES 1.2.2
+Run-time dependency jack found: YES 1.9.22
+Header "jack/jack.h" has symbol "jack_set_info_function" : YES 
+Run-time dependency openal found: YES 1.25.2
+Run-time dependency shout found: YES 2.4.6
+Configuring Features.h using configuration
+Run-time dependency flac found: YES 1.5.0
+Run-time dependency opus found: YES 1.6.1
+Run-time dependency vorbis found: YES 1.3.7
+Run-time dependency vorbisenc found: YES 1.3.7
+Run-time dependency ogg found: YES 1.3.6
+Dependency adplug for host machine skipped: feature adplug disabled
+Run-time dependency fluidsynth found: YES 2.5.5
+Run-time dependency audiofile found: YES 0.3.6
+Library faad found: YES
+Run-time dependency libgme found: YES 0.6.5
+Library vgmstream skipped: feature vgmstream disabled
+Library mad found: YES
+Run-time dependency libmikmod found: YES 3.3.13
+Run-time dependency libmodplug found: YES 0.8.9.0
+Dependency libopenmpt for host machine skipped: feature openmpt disabled
+Library mpcdec found: YES
+Run-time dependency libmpg123 found: YES 1.33.5
+Run-time dependency sndfile found: YES 1.2.2
+Run-time dependency wavpack found: YES 5.9.0
+Run-time dependency wildmidi found: YES 0.4.6
+Run-time dependency libsidplayfp found: YES 3.0.2
+Has header "sidplayfp/builders/residfp.h" with dependency libsidplayfp: YES 
+Dependency libpsgplay for host machine skipped: feature psgplay disabled
+Configuring Features.h using configuration
+Library mp3lame found: YES
+Run-time dependency twolame found: YES 0.4.0
+Dependency shine for host machine skipped: feature shine disabled
+Configuring Features.h using configuration
+Configuring Features.h using configuration
+Configuring Features.hxx using configuration
+Run-time dependency libmpdclient found: YES 2.26
+Configuring config.h using configuration
+Run-time dependency systemd found: YES 261
+Configuring mpd.socket using configuration
+Configuring mpd.service using configuration
+Dependency systemd for host machine found: YES 261 (cached)
+Configuring mpd.socket using configuration
+Configuring mpd.service using configuration
+Program sphinx-build found: YES (/usr/bin/sphinx-build)
+Build targets in project: 86
+
+mpd 0.25
+
+  User defined options
+    adplug       : disabled
+    auto_features: enabled
+    b_lto        : true
+    b_pie        : true
+    buildtype    : plain
+    documentation: enabled
+    libexecdir   : lib
+    openmpt      : disabled
+    prefix       : /usr
+    psgplay      : disabled
+    sbindir      : bin
+    shine        : disabled
+    sndio        : disabled
+    tremor       : disabled
+    vgmstream    : disabled
+    wrap_mode    : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+Generating targets:   0%|          | 0/86 eta ?Generating targets:  22%|██▏       | 19/86 eta 00:00Generating targets:  58%|█████▊    | 50/86 eta 00:00Generating targets:  97%|█████████▋| 83/86 eta 00:00                                                    Writing build.ninja:   0%|          | 0/746 eta ?                                                 ninja: Entering directory `build'
+[1/720] Compiling C++ object src/util/libutil.a.p/PrintException.cxx.o
+[2/720] Generating GitVersion.cxx with a custom command
+[3/720] Compiling C++ object src/util/libutil.a.p/ByteReverse.cxx.o
+[4/720] Compiling C++ object src/util/libutil.a.p/BitReverse.cxx.o
+[5/720] Compiling C++ object src/util/libutil.a.p/StringCompare.cxx.o
+[6/720] Compiling C object src/util/libutil.a.p/format.c.o
+[7/720] Compiling C++ object src/util/libutil.a.p/StringUtil.cxx.o
+[8/720] Compiling C++ object src/util/libutil.a.p/WStringCompare.cxx.o
+[9/720] Compiling C++ object src/tag/GenParseName.p/Names.cxx.o
+[10/720] Compiling C++ object src/util/libutil.a.p/TruncateString.cxx.o
+[11/720] Compiling C++ object src/time/libtime.a.p/Zone.cxx.o
+[12/720] Compiling C++ object src/util/libutil.a.p/PeakBuffer.cxx.o
+[13/720] Compiling C++ object src/util/libutil.a.p/UriExtract.cxx.o
+[14/720] Compiling C++ object src/util/libutil.a.p/UTF8.cxx.o
+[15/720] Compiling C++ object src/util/libutil.a.p/StringStrip.cxx.o
+[16/720] Compiling C++ object src/tag/GenParseName.p/GenParseName.cxx.o
+[17/720] Compiling C++ object src/util/libutil.a.p/Tokenizer.cxx.o
+[18/720] Compiling C++ object src/util/libutil.a.p/Exception.cxx.o
+[19/720] Compiling C++ object src/util/libutil.a.p/UriRelative.cxx.o
+[20/720] Compiling C++ object src/lib/fmt/libfmt.a.p/RuntimeError.cxx.o
+[21/720] Compiling C++ object src/lib/fmt/libfmt.a.p/SystemError.cxx.o
+[22/720] Compiling C++ object src/util/libutil.a.p/UriQueryParser.cxx.o
+[23/720] Compiling C++ object src/protocol/libprotocol.a.p/Verify.cxx.o
+[24/720] Compiling C++ object src/util/libutil.a.p/SplitString.cxx.o
+[25/720] Compiling C++ object src/cmdline/libcmdline.a.p/OptionParser.cxx.o
+[26/720] Compiling C++ object src/lib/icu/libicu.a.p/Compare.cxx.o
+[27/720] Compiling C++ object src/util/libutil.a.p/UriUtil.cxx.o
+[28/720] Linking target src/tag/GenParseName
+[29/720] Compiling C++ object liblog.a.p/src_Log.cxx.o
+[30/720] Compiling C++ object src/util/libutil.a.p/LazyRandomEngine.cxx.o
+[31/720] Compiling C++ object src/lib/fmt/libfmt.a.p/ExceptionFormatter.cxx.o
+[32/720] Generating src/tag/RunGenParseName with a custom command (wrapped by meson to capture output)
+[33/720] Compiling C++ object src/lib/fmt/libfmt.a.p/SocketAddressFormatter.cxx.o
+[34/720] Compiling C++ object src/util/libutil.a.p/MimeType.cxx.o
+[35/720] Compiling C++ object src/lib/icu/libicu.a.p/Init.cxx.o
+[36/720] Compiling C++ object src/io/libio.a.p/Reader.cxx.o
+[37/720] Compiling C++ object src/io/libio.a.p/PeekReader.cxx.o
+[38/720] Compiling C++ object src/io/libio.a.p/Open.cxx.o
+[39/720] Compiling C++ object src/io/libio.a.p/FileDescriptor.cxx.o
+[40/720] Compiling C++ object src/io/linux/libio_linux.a.p/ProcStatus.cxx.o
+[41/720] Compiling C++ object src/lib/icu/libicu.a.p/Util.cxx.o
+[42/720] Compiling C++ object src/lib/icu/libicu.a.p/Normalize.cxx.o
+[43/720] Compiling C++ object src/lib/icu/libicu.a.p/Collate.cxx.o
+[44/720] Compiling C++ object src/fs/libfs.a.p/Glob.cxx.o
+[45/720] Compiling C++ object src/lib/icu/libicu.a.p/FoldCase.cxx.o
+[46/720] Compiling C++ object src/lib/icu/libicu.a.p/Transliterator.cxx.o
+[47/720] Compiling C++ object src/fs/libfs.a.p/Path2.cxx.o
+[48/720] Compiling C++ object src/fs/libfs.a.p/Path.cxx.o
+[49/720] Compiling C++ object src/io/libio.a.p/BufferedReader.cxx.o
+[50/720] Compiling C++ object src/lib/icu/libicu.a.p/Canonicalize.cxx.o
+[51/720] Compiling C++ object src/fs/libfs_path.a.p/Traits.cxx.o
+[52/720] Compiling C++ object src/system/libsystem.a.p/KernelVersion.cxx.o
+[53/720] Compiling C++ object src/fs/libfs.a.p/NarrowPath.cxx.o
+[54/720] Compiling C++ object src/lib/icu/libicu.a.p/Converter.cxx.o
+[55/720] Compiling C++ object src/util/libutil.a.p/Serial.cxx.o
+[56/720] Compiling C++ object src/fs/libfs.a.p/Charset.cxx.o
+[57/720] Compiling C++ object src/fs/libfs.a.p/AllocatedPath.cxx.o
+[58/720] Compiling C++ object src/time/libtime.a.p/Convert.cxx.o
+[59/720] Compiling C++ object src/system/libsystem.a.p/PageAllocator.cxx.o
+[60/720] Compiling C++ object src/time/libtime.a.p/ISO8601.cxx.o
+[61/720] Compiling C++ object src/io/uring/liburing.a.p/Operation.cxx.o
+[62/720] Compiling C++ object src/io/libio.a.p/BufferedOutputStream.cxx.o
+[63/720] Compiling C++ object src/fs/libfs.a.p/List.cxx.o
+[64/720] Compiling C++ object src/net/libnet.a.p/DscpParser.cxx.o
+[65/720] Compiling C++ object src/io/uring/liburing.a.p/Queue.cxx.o
+[66/720] Compiling C++ object src/time/libtime.a.p/Math.cxx.o
+[67/720] Compiling C++ object src/io/uring/liburing.a.p/Ring.cxx.o
+[68/720] Compiling C++ object src/io/uring/liburing.a.p/Close.cxx.o
+[69/720] Compiling C++ object src/system/libsystem.a.p/EpollFD.cxx.o
+[70/720] Compiling C++ object src/fs/libfs.a.p/FileSystem.cxx.o
+[71/720] Compiling C++ object src/system/libsystem.a.p/EventPipe.cxx.o
+[72/720] Compiling C++ object src/net/libnet.a.p/IPv6Address.cxx.o
+[73/720] Compiling C++ object src/fs/libfs.a.p/DirectoryReader.cxx.o
+[74/720] Compiling C++ object src/system/libsystem.a.p/EventFD.cxx.o
+[75/720] Compiling C++ object src/thread/libthread.a.p/Thread.cxx.o
+[76/720] Compiling C++ object src/io/uring/liburing.a.p/ReadOperation.cxx.o
+[77/720] Compiling C++ object src/system/libsystem.a.p/SignalFD.cxx.o
+[78/720] Compiling C++ object src/net/libnet.a.p/IPv4Address.cxx.o
+[79/720] Compiling C++ object src/thread/libthread.a.p/Util.cxx.o
+[80/720] Compiling C++ object liblog.a.p/src_LogBackend.cxx.o
+[81/720] Compiling C++ object src/net/libnet.a.p/HostParser.cxx.o
+[82/720] Compiling C++ object src/net/libnet.a.p/MaskedInetAddress.cxx.o
+[83/720] Compiling C++ object src/net/libnet.a.p/FormatAddress.cxx.o
+[84/720] Compiling C++ object src/net/libnet.a.p/BareInetAddress.cxx.o
+[85/720] Compiling C++ object src/memory/libmemory.a.p/HugeAllocator.cxx.o
+[86/720] Compiling C++ object src/io/fs/libio_fs.a.p/.._FileOutputStream.cxx.o
+[87/720] Compiling C++ object src/net/libnet.a.p/StaticSocketAddress.cxx.o
+[88/720] Compiling C++ object src/net/libnet.a.p/SocketAddress.cxx.o
+[89/720] Compiling C++ object src/net/libnet.a.p/SocketDescriptor.cxx.o
+[90/720] Compiling C++ object src/net/libnet.a.p/LocalSocketAddress.cxx.o
+[91/720] Compiling C++ object src/fs/libfs.a.p/Config.cxx.o
+[92/720] Compiling C++ object src/net/libnet.a.p/AllocatedSocketAddress.cxx.o
+[93/720] Compiling C++ object src/net/libnet.a.p/AddressInfo.cxx.o
+[94/720] Compiling C++ object src/net/libnet.a.p/SocketError.cxx.o
+[95/720] Compiling C++ object src/memory/libmemory.a.p/SparseBuffer.cxx.o
+[96/720] Compiling C++ object src/net/libnet.a.p/SocketUtil.cxx.o
+[97/720] Compiling C++ object src/net/libnet.a.p/ToString.cxx.o
+[98/720] Compiling C++ object src/fs/libfs.a.p/LookupFile.cxx.o
+[99/720] Compiling C++ object src/net/libnet.a.p/Resolver.cxx.o
+[100/720] Compiling C++ object src/event/libevent.a.p/MaskMonitor.cxx.o
+[101/720] Compiling C++ object src/event/libevent.a.p/SignalMonitor.cxx.o
+[102/720] Compiling C++ object src/event/libevent.a.p/BufferedSocket.cxx.o
+[103/720] Compiling C++ object src/io/fs/libio_fs.a.p/.._FileReader.cxx.o
+[104/720] Compiling C++ object src/fs/glue/libfs_glue.a.p/StandardDirectory.cxx.o
+[105/720] Compiling C++ object src/event/libevent.a.p/InotifyEvent.cxx.o
+[106/720] Compiling C++ object src/config/libfs.a.p/Domain.cxx.o
+[107/720] Compiling C++ object src/config/libfs.a.p/Param.cxx.o
+[108/720] Compiling C++ object src/event/libevent.a.p/FullyBufferedSocket.cxx.o
+[109/720] Compiling C++ object src/event/libevent.a.p/InotifyManager.cxx.o
+[110/720] Compiling C++ object src/pcm/libpcm_basic.a.p/AudioFormat.cxx.o
+[111/720] Compiling C++ object src/fs/libfs.a.p/FileInfo.cxx.o
+[112/720] Compiling C++ object src/pcm/libpcm_basic.a.p/SampleFormat.cxx.o
+[113/720] Compiling C++ object src/event/libevent.a.p/TimerWheel.cxx.o
+[114/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Buffer.cxx.o
+[115/720] Compiling C++ object src/event/libevent.a.p/ServerSocket.cxx.o
+[116/720] Compiling C++ object src/pcm/libpcm_basic.a.p/CheckAudioFormat.cxx.o
+[117/720] Compiling C++ object src/config/libfs.a.p/Templates.cxx.o
+[118/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Interleave.cxx.o
+[119/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Pack.cxx.o
+[120/720] Compiling C++ object src/config/libfs.a.p/Net.cxx.o
+[121/720] Compiling C++ object src/event/libevent.a.p/CoarseTimerEvent.cxx.o
+[122/720] Compiling C++ object src/event/libevent.a.p/TimerList.cxx.o
+[123/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Dither.cxx.o
+[124/720] Compiling C++ object src/event/libevent.a.p/InjectEvent.cxx.o
+[125/720] Compiling C++ object src/event/libevent.a.p/FineTimerEvent.cxx.o
+[126/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Export.cxx.o
+[127/720] Compiling C++ object src/pcm/libpcm_basic.a.p/AudioParser.cxx.o
+[128/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Mix.cxx.o
+[129/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Silence.cxx.o
+[130/720] Compiling C++ object src/event/libevent.a.p/DeferEvent.cxx.o
+[131/720] Compiling C++ object src/event/libevent.a.p/SocketEvent.cxx.o
+[132/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Dop.cxx.o
+[133/720] Compiling C++ object src/config/libfs.a.p/Check.cxx.o
+[134/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Order.cxx.o
+[135/720] Compiling C++ object src/config/libfs.a.p/Block.cxx.o
+[136/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Dsd16.cxx.o
+[137/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Dsd2Pcm.cxx.o
+[138/720] Compiling C++ object src/pcm/libpcm_basic.a.p/PcmDsd.cxx.o
+[139/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Dsd32.cxx.o
+[140/720] Compiling C++ object src/pcm/libpcm.a.p/GlueResampler.cxx.o
+[141/720] Compiling C++ object src/config/libfs.a.p/Parser.cxx.o
+[142/720] Compiling C++ object src/event/libevent.a.p/Call.cxx.o
+[143/720] Compiling C++ object src/lib/dbus/libdbus.a.p/FilterHelper.cxx.o
+[144/720] Compiling C++ object src/event/libevent.a.p/MultiSocketMonitor.cxx.o
+[145/720] Compiling C++ object src/pcm/libpcm.a.p/FallbackResampler.cxx.o
+[146/720] Compiling C++ object src/lib/dbus/libdbus.a.p/Connection.cxx.o
+[147/720] Compiling C++ object src/event/libevent.a.p/Thread.cxx.o
+[148/720] Compiling C++ object src/lib/dbus/libdbus.a.p/ScopeMatch.cxx.o
+[149/720] Compiling C++ object src/fs/glue/libfs_glue.a.p/CheckFile.cxx.o
+[150/720] Compiling C++ object src/pcm/libpcm.a.p/PcmFormat.cxx.o
+[151/720] Compiling C++ object src/pcm/libpcm.a.p/Normalizer.cxx.o
+[152/720] Compiling C++ object src/event/libevent.a.p/Loop.cxx.o
+[153/720] Compiling C++ object src/config/libfs.a.p/Path.cxx.o
+[154/720] Compiling C++ object src/pcm/libpcm.a.p/Convert.cxx.o
+[155/720] Compiling C++ object src/pcm/libpcm.a.p/PcmChannels.cxx.o
+[156/720] Compiling C++ object src/pcm/libpcm_basic.a.p/Volume.cxx.o
+[157/720] Compiling C++ object src/config/libfs.a.p/Data.cxx.o
+[158/720] Compiling C++ object src/lib/alsa/libalsa.a.p/Version.cxx.o
+[159/720] Compiling C++ object src/lib/dbus/libdbus.a.p/Error.cxx.o
+[160/720] Compiling C++ object src/lib/dbus/libdbus.a.p/Message.cxx.o
+[161/720] Compiling C++ object src/config/libfs.a.p/Migrate.cxx.o
+[162/720] Compiling C++ object src/pcm/libpcm.a.p/FormatConverter.cxx.o
+[163/720] Compiling C++ object src/pcm/libpcm.a.p/ReplayGainAnalyzer.cxx.o
+[164/720] Compiling C++ object src/lib/zlib/libzlib.a.p/GzipOutputStream.cxx.o
+[165/720] Compiling C++ object src/config/libfs.a.p/File.cxx.o
+[166/720] Compiling C++ object src/lib/zlib/libzlib.a.p/GunzipReader.cxx.o
+[167/720] Compiling C++ object src/lib/alsa/libalsa.a.p/Error.cxx.o
+[168/720] Compiling C++ object src/pcm/libpcm.a.p/ChannelsConverter.cxx.o
+[169/720] Compiling C++ object src/lib/dbus/libdbus.a.p/Watch.cxx.o
+[170/720] Compiling C++ object src/lib/dbus/libdbus.a.p/UDisks2.cxx.o
+[171/720] Compiling C++ object src/lib/ffmpeg/libffmpeg.a.p/Init.cxx.o
+[172/720] Compiling C++ object src/lib/alsa/libalsa.a.p/AllowedFormat.cxx.o
+[173/720] Compiling C++ object src/lib/zlib/libzlib.a.p/AutoGunzipReader.cxx.o
+[174/720] Compiling C++ object src/lib/dbus/libdbus.a.p/Glue.cxx.o
+[175/720] Compiling C++ object src/lib/ffmpeg/libffmpeg.a.p/Domain.cxx.o
+[176/720] Compiling C++ object src/lib/alsa/libalsa.a.p/ChannelMap.cxx.o
+[177/720] Compiling C++ object src/lib/zlib/libzlib.a.p/AutoGunzipFileLineReader.cxx.o
+[178/720] Compiling C++ object src/lib/curl/libcurl.a.p/Delegate.cxx.o
+[179/720] Compiling C++ object src/lib/expat/libexpat.a.p/ExpatParser.cxx.o
+[180/720] Compiling C++ object src/lib/ffmpeg/libffmpeg_util.a.p/Error.cxx.o
+[181/720] Compiling C++ object src/lib/curl/libcurl.a.p/Form.cxx.o
+[182/720] Compiling C++ object src/lib/alsa/libalsa.a.p/HwSetup.cxx.o
+[183/720] Compiling C++ object src/lib/ffmpeg/libffmpeg.a.p/LogCallback.cxx.o
+[184/720] Compiling C++ object src/lib/curl/libcurl.a.p/StringHandler.cxx.o
+[185/720] Compiling C++ object src/pcm/libpcm.a.p/ConfiguredResampler.cxx.o
+[186/720] Compiling C++ object src/lib/ffmpeg/libffmpeg.a.p/Error.cxx.o
+[187/720] Compiling C++ object src/lib/ffmpeg/libffmpeg_util.a.p/Interleave.cxx.o
+[188/720] Compiling C++ object src/pcm/libpcm.a.p/LibsamplerateResampler.cxx.o
+[189/720] Compiling C++ object src/lib/ffmpeg/libffmpeg.a.p/Interleave.cxx.o
+[190/720] Compiling C++ object src/lib/expat/libexpat.a.p/StreamExpatParser.cxx.o
+[191/720] Compiling C++ object src/lib/pulse/libpulse.a.p/Domain.cxx.o
+[192/720] Compiling C++ object src/lib/ffmpeg/libffmpeg.a.p/Filter.cxx.o
+[193/720] Compiling C++ object src/pcm/libpcm.a.p/MixRampAnalyzer.cxx.o
+[194/720] Compiling C++ object src/lib/nfs/libnfs.a.p/Error.cxx.o
+[195/720] Compiling C++ object src/lib/nfs/libnfs.a.p/Base.cxx.o
+[196/720] Compiling C++ object src/pcm/libpcm.a.p/MixRampGlue.cxx.o
+[197/720] Compiling C++ object src/lib/ffmpeg/libffmpeg.a.p/DetectFilterFormat.cxx.o
+[198/720] Compiling C++ object src/lib/pcre/libpcre.a.p/Error.cxx.o
+[199/720] Compiling C++ object src/lib/pulse/libpulse.a.p/LogError.cxx.o
+[200/720] Compiling C++ object src/lib/pipewire/libpipewire.a.p/Error.cxx.o
+[201/720] Compiling C++ object src/pcm/libpcm.a.p/SoxrResampler.cxx.o
+[202/720] Compiling C++ object src/lib/pcre/libpcre.a.p/UniqueRegex.cxx.o
+[203/720] Compiling C++ object src/lib/pulse/libpulse.a.p/Error.cxx.o
+[204/720] Compiling C++ object src/lib/nfs/libnfs.a.p/Glue.cxx.o
+[205/720] Compiling C++ object src/lib/sqlite/libsqlite.a.p/Error.cxx.o
+[206/720] Compiling C++ object src/lib/curl/libcurl.a.p/Init.cxx.o
+[207/720] Compiling C++ object src/lib/sqlite/libsqlite.a.p/Generator.cxx.o
+[208/720] Compiling C++ object src/lib/alsa/libalsa.a.p/NonBlock.cxx.o
+[209/720] Compiling C++ object src/lib/sqlite/libsqlite.a.p/Database.cxx.o
+[210/720] Compiling C++ object src/lib/upnp/libupnp.a.p/Device.cxx.o
+[211/720] Compiling C++ object src/lib/curl/libcurl.a.p/Setup.cxx.o
+[212/720] Compiling C++ object src/lib/crypto/libcrypto_md5.a.p/MD5.cxx.o
+[213/720] Compiling C++ object src/lib/curl/libcurl.a.p/Escape.cxx.o
+[214/720] Compiling C++ object src/lib/upnp/libupnp.a.p/Init.cxx.o
+[215/720] Compiling C++ object src/lib/upnp/libupnp.a.p/ClientInit.cxx.o
+[216/720] Compiling C++ object src/lib/curl/libcurl.a.p/Request.cxx.o
+[217/720] Compiling C++ object src/tag/libtag.a.p/Settings.cxx.o
+[218/720] Compiling C++ object src/lib/upnp/libupnp.a.p/Util.cxx.o
+[219/720] Compiling C++ object src/lib/curl/libcurl.a.p/Global.cxx.o
+[220/720] Compiling C++ object src/lib/upnp/libupnp.a.p/ContentDirectoryService.cxx.o
+[221/720] Compiling C++ object src/lib/upnp/libupnp.a.p/Action.cxx.o
+[222/720] Compiling C++ object src/tag/libtag.a.p/meson-generated_.._ParseName2.cxx.o
+[223/720] Compiling C++ object src/lib/curl/libcurl.a.p/Adapter.cxx.o
+[224/720] Compiling C++ object src/zeroconf/avahi/libavahi.a.p/.._.._lib_avahi_Error.cxx.o
+[225/720] Compiling C++ object src/tag/libtag.a.p/Names.cxx.o
+[226/720] Compiling C++ object src/tag/libtag.a.p/ParseName.cxx.o
+[227/720] Compiling C++ object src/lib/crypto/libcrypto_base64.a.p/Base64.cxx.o
+[228/720] Compiling C++ object src/tag/libtag.a.p/Table.cxx.o
+[229/720] Compiling C++ object src/tag/libtag.a.p/VorbisComment.cxx.o
+[230/720] Compiling C++ object src/zeroconf/libzeroconf_avahi.a.p/Helper.cxx.o
+[231/720] Compiling C++ object src/tag/libtag.a.p/FixString.cxx.o
+[232/720] Compiling C++ object src/tag/libtag.a.p/ReplayGainParser.cxx.o
+[233/720] Compiling C++ object src/tag/libtag.a.p/ReplayGainInfo.cxx.o
+[234/720] Compiling C++ object src/tag/libtag.a.p/Id3MusicBrainz.cxx.o
+[235/720] Compiling C++ object src/tag/libtag.a.p/MixRampParser.cxx.o
+[236/720] Compiling C++ object src/lib/nfs/libnfs.a.p/Connection.cxx.o
+[237/720] Compiling C++ object src/tag/libtag.a.p/Pool.cxx.o
+[238/720] Compiling C++ object src/tag/libtag.a.p/Rva2.cxx.o
+[239/720] Compiling C++ object src/lib/systemd/libsystemd.a.p/Watchdog.cxx.o
+[240/720] Compiling C++ object src/lib/nfs/libnfs.a.p/Blocking.cxx.o
+[241/720] Compiling C++ object src/tag/libtag.a.p/Generic.cxx.o
+[242/720] Compiling C++ object src/tag/libtag.a.p/Id3ReplayGain.cxx.o
+[243/720] Compiling C++ object src/lib/nfs/libnfs.a.p/Manager.cxx.o
+[244/720] Compiling C++ object src/tag/libtag.a.p/ApeReplayGain.cxx.o
+[245/720] Compiling C++ object src/tag/libtag.a.p/Id3MixRamp.cxx.o
+[246/720] Compiling C++ object src/zeroconf/avahi/libavahi.a.p/.._.._lib_avahi_Client.cxx.o
+[247/720] Compiling C++ object src/tag/libtag.a.p/ApeLoader.cxx.o
+[248/720] Compiling C++ object src/lib/nfs/libnfs.a.p/FileReader.cxx.o
+[249/720] Compiling C++ object src/zeroconf/libzeroconf_avahi.a.p/Glue.cxx.o
+[250/720] Compiling C++ object src/tag/libtag.a.p/Id3Load.cxx.o
+[251/720] Compiling C++ object src/zeroconf/avahi/libavahi.a.p/Helper.cxx.o
+[252/720] Compiling C++ object src/zeroconf/avahi/libavahi.a.p/.._.._lib_avahi_Poll.cxx.o
+[253/720] Compiling C++ object src/tag/libtag.a.p/Aiff.cxx.o
+[254/720] Compiling C++ object src/tag/libtag.a.p/Sort.cxx.o
+[255/720] Compiling C++ object src/tag/libtag.a.p/Handler.cxx.o
+[256/720] Compiling C++ object src/neighbor/libneighbor_glue.a.p/Registry.cxx.o
+[257/720] Compiling C++ object src/input/libinput_api.a.p/Error.cxx.o
+[258/720] Compiling C++ object src/tag/libtag.a.p/Tag.cxx.o
+[259/720] Compiling C++ object src/tag/libtag.a.p/Config.cxx.o
+[260/720] Compiling C++ object src/tag/libtag.a.p/Builder.cxx.o
+[261/720] Compiling C++ object src/lib/upnp/libupnp.a.p/Discovery.cxx.o
+[262/720] Compiling C++ object src/zeroconf/avahi/libavahi.a.p/.._.._lib_avahi_Publisher.cxx.o
+[263/720] Compiling C++ object src/tag/libtag.a.p/RiffId3.cxx.o
+[264/720] Compiling C++ object src/tag/libtag.a.p/Format.cxx.o
+[265/720] Compiling C++ object src/tag/libtag.a.p/Id3Picture.cxx.o
+[266/720] Compiling C++ object src/input/libinput_basic.a.p/MemoryInputStream.cxx.o
+[267/720] Compiling C++ object src/input/libinput_api.a.p/InputPlugin.cxx.o
+[268/720] Compiling C++ object src/tag/libtag.a.p/ApeTag.cxx.o
+[269/720] Compiling C++ object src/input/libinput_basic.a.p/TextInputStream.cxx.o
+[270/720] Compiling C++ object src/input/libinput_basic.a.p/RewindInputStream.cxx.o
+[271/720] Compiling C++ object src/neighbor/plugins/libneighbor_plugins.a.p/UdisksNeighborPlugin.cxx.o
+[272/720] Compiling C++ object src/tag/libtag.a.p/Id3Scan.cxx.o
+[273/720] Compiling C++ object src/input/libinput_basic.a.p/ThreadInputStream.cxx.o
+[274/720] Compiling C++ object src/neighbor/plugins/libneighbor_plugins.a.p/UpnpNeighborPlugin.cxx.o
+[275/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/MmsInputPlugin.cxx.o
+[276/720] Compiling C++ object src/input/libinput_basic.a.p/LastInputStream.cxx.o
+[277/720] Compiling C++ object src/neighbor/libneighbor_glue.a.p/Glue.cxx.o
+[278/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/NfsInputPlugin.cxx.o
+[279/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/FfmpegInputPlugin.cxx.o
+[280/720] Compiling C++ object src/input/libinput_api.a.p/InputStream.cxx.o
+[281/720] Compiling C++ object src/input/libinput_basic.a.p/ProxyInputStream.cxx.o
+[282/720] Compiling C++ object src/input/libinput_glue.a.p/Registry.cxx.o
+[283/720] Compiling C++ object src/input/libinput_glue.a.p/Open.cxx.o
+[284/720] Compiling C++ object src/input/libinput_glue.a.p/WaitReady.cxx.o
+[285/720] Compiling C++ object src/input/libinput_glue.a.p/LocalOpen.cxx.o
+[286/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/.._IcyInputStream.cxx.o
+[287/720] Compiling C++ object src/input/libinput_glue.a.p/ScanTags.cxx.o
+[288/720] Compiling C++ object src/input/libinput_basic.a.p/AsyncInputStream.cxx.o
+[289/720] Compiling C++ object src/input/libinput_glue.a.p/Reader.cxx.o
+[290/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/.._.._tag_IcyMetaDataParser.cxx.o
+[291/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/CdioParanoiaInputPlugin.cxx.o
+[292/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/FileInputPlugin.cxx.o
+[293/720] Compiling C++ object src/input/libinput_glue.a.p/BufferingInputStream.cxx.o
+[294/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/QobuzClient.cxx.o
+[295/720] Compiling C++ object src/input/libinput_glue.a.p/BufferedInputStream.cxx.o
+[296/720] Compiling C++ object src/input/libinput_glue.a.p/cache_Manager.cxx.o
+[297/720] Compiling C++ object src/input/libinput_glue.a.p/MaybeBufferedInputStream.cxx.o
+[298/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/UringInputPlugin.cxx.o
+[299/720] Compiling C++ object src/input/libinput_glue.a.p/Init.cxx.o
+[300/720] Compiling C++ object src/archive/libarchive_glue.a.p/ArchivePlugin.cxx.o
+[301/720] Compiling C++ object src/archive/plugins/libarchive_plugins.a.p/Bzip2ArchivePlugin.cxx.o
+[302/720] Compiling C++ object src/input/libinput_glue.a.p/cache_Stream.cxx.o
+[303/720] Compiling C++ object src/input/libinput_glue.a.p/cache_Item.cxx.o
+[304/720] Compiling C++ object src/filter/libfilter_api.a.p/Observer.cxx.o
+[305/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/AlsaInputPlugin.cxx.o
+[306/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/NullFilterPlugin.cxx.o
+[307/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/AutoConvertFilterPlugin.cxx.o
+[308/720] Compiling C++ object src/input/libinput_glue.a.p/cache_Config.cxx.o
+[309/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/ConvertFilterPlugin.cxx.o
+[310/720] Compiling C++ object src/archive/libarchive_glue.a.p/.._input_plugins_ArchiveInputPlugin.cxx.o
+[311/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/QobuzInputPlugin.cxx.o
+[312/720] Compiling C++ object src/mixer/libmixer_api.a.p/Control.cxx.o
+[313/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/TwoFilters.cxx.o
+[314/720] Compiling C++ object src/archive/plugins/libarchive_plugins.a.p/Iso9660ArchivePlugin.cxx.o
+[315/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/NormalizeFilterPlugin.cxx.o
+[316/720] Compiling C++ object src/mixer/libmixer_api.a.p/Mixer.cxx.o
+[317/720] Compiling C++ object src/mixer/plugins/libmixer_plugins.a.p/NullMixerPlugin.cxx.o
+[318/720] Compiling C++ object src/archive/plugins/libarchive_plugins.a.p/ZzipArchivePlugin.cxx.o
+[319/720] Compiling C++ object src/output/liboutput_api.a.p/OutputPlugin.cxx.o
+[320/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/VolumeFilterPlugin.cxx.o
+[321/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/ReplayGainFilterPlugin.cxx.o
+[322/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/FfmpegFilter.cxx.o
+[323/720] Compiling C++ object src/filter/libfilter_glue.a.p/Registry.cxx.o
+[324/720] Compiling C++ object src/mixer/plugins/libmixer_plugins.a.p/VolumeMapping.cxx.o
+[325/720] Compiling C++ object src/archive/libarchive_api.a.p/ArchiveList.cxx.o
+[326/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/HdcdFilterPlugin.cxx.o
+[327/720] Compiling C++ object src/mixer/plugins/libmixer_plugins.a.p/PipeWireMixerPlugin.cxx.o
+[328/720] Compiling C++ object src/mixer/plugins/libmixer_plugins.a.p/SoftwareMixerPlugin.cxx.o
+[329/720] Compiling C++ object src/filter/libfilter_glue.a.p/LoadChain.cxx.o
+[330/720] Compiling C++ object src/mixer/libmixer_glue.a.p/Type.cxx.o
+[331/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/CurlInputPlugin.cxx.o
+[332/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/RouteFilterPlugin.cxx.o
+[333/720] Compiling C++ object src/filter/libfilter_glue.a.p/Factory.cxx.o
+[334/720] Compiling C++ object src/filter/libfilter_glue.a.p/LoadOne.cxx.o
+[335/720] Compiling C++ object src/output/liboutput_api.a.p/Timer.cxx.o
+[336/720] Compiling C++ object src/filter/plugins/libfilter_plugins.a.p/FfmpegFilterPlugin.cxx.o
+[337/720] Compiling C++ object src/output/liboutput_api.a.p/Interface.cxx.o
+[338/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/QobuzErrorParser.cxx.o
+[339/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/QobuzLoginRequest.cxx.o
+[340/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/NullOutputPlugin.cxx.o
+[341/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/AoOutputPlugin.cxx.o
+[342/720] Compiling C++ object src/mixer/plugins/libmixer_plugins.a.p/OssMixerPlugin.cxx.o
+[343/720] Compiling C++ object src/mixer/plugins/libmixer_plugins.a.p/PulseMixerPlugin.cxx.o
+[344/720] Compiling C++ object src/mixer/plugins/libmixer_plugins.a.p/AlsaMixerPlugin.cxx.o
+[345/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/QobuzTagScanner.cxx.o
+[346/720] Compiling C++ object src/output/liboutput_glue.a.p/Domain.cxx.o
+[347/720] Compiling C++ object src/mixer/libmixer_glue.a.p/All.cxx.o
+[348/720] Compiling C++ object src/input/plugins/libinput_plugins.a.p/QobuzTrackRequest.cxx.o
+[349/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/PipeOutputPlugin.cxx.o
+[350/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/OssOutputPlugin.cxx.o
+[351/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/FifoOutputPlugin.cxx.o
+[352/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/httpd_IcyMetaDataServer.cxx.o
+[353/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/JackOutputPlugin.cxx.o
+[354/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/OpenALOutputPlugin.cxx.o
+[355/720] Compiling C++ object src/lib/xiph/libxiph.a.p/XiphTags.cxx.o
+[356/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/AlsaOutputPlugin.cxx.o
+[357/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/PulseOutputPlugin.cxx.o
+[358/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/httpd_HttpdOutputPlugin.cxx.o
+[359/720] Compiling C++ object src/lib/xiph/libxiph.a.p/VorbisPicture.cxx.o
+[360/720] Compiling C++ object src/lib/xiph/libogg.a.p/OggPacket.cxx.o
+[361/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/httpd_HttpdClient.cxx.o
+[362/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/PipeWireOutputPlugin.cxx.o
+[363/720] Compiling C++ object src/lib/xiph/libogg.a.p/OggSyncState.cxx.o
+[364/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/RecorderOutputPlugin.cxx.o
+[365/720] Compiling C++ object src/decoder/libdecoder_api.a.p/Domain.cxx.o
+[366/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/ShoutOutputPlugin.cxx.o
+[367/720] Compiling C++ object src/lib/xiph/libogg.a.p/OggVisitor.cxx.o
+[368/720] Compiling C++ object src/output/liboutput_glue.a.p/Defaults.cxx.o
+[369/720] Compiling C++ object src/output/liboutput_registry.a.p/Registry.cxx.o
+[370/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/SolarisOutputPlugin.cxx.o
+[371/720] Compiling C++ object src/lib/xiph/libogg.a.p/OggFind.cxx.o
+[372/720] Compiling C++ object src/output/liboutput_glue.a.p/SharedPipeConsumer.cxx.o
+[373/720] Compiling C++ object src/lib/xiph/libflac.a.p/FlacIOHandle.cxx.o
+[374/720] Compiling C++ object src/lib/xiph/libflac.a.p/FlacMetadataChain.cxx.o
+[375/720] Compiling C++ object src/output/liboutput_glue.a.p/Filtered.cxx.o
+[376/720] Compiling C++ object src/lib/xiph/libxiph.a.p/ScanVorbisComment.cxx.o
+[377/720] Compiling C++ object src/decoder/libdecoder_api.a.p/DecoderPlugin.cxx.o
+[378/720] Compiling C++ object src/output/liboutput_glue.a.p/Source.cxx.o
+[379/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FlacDomain.cxx.o
+[380/720] Compiling C++ object src/output/liboutput_glue.a.p/Control.cxx.o
+[381/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/snapcast_Client.cxx.o
+[382/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/VorbisDomain.cxx.o
+[383/720] Compiling C++ object src/output/liboutput_glue.a.p/MultipleOutputs.cxx.o
+[384/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/OpusDomain.cxx.o
+[385/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/OpusHead.cxx.o
+[386/720] Compiling C++ object src/lib/xiph/libxiph.a.p/VorbisComments.cxx.o
+[387/720] Compiling C++ object src/output/liboutput_glue.a.p/State.cxx.o
+[388/720] Compiling C++ object src/output/liboutput_glue.a.p/Thread.cxx.o
+[389/720] Compiling C++ object src/output/liboutput_glue.a.p/Print.cxx.o
+[390/720] Compiling C++ object src/lib/xiph/libvorbis.a.p/VorbisComments.cxx.o
+[391/720] Compiling C++ object src/lib/xiph/libflac.a.p/FlacStreamMetadata.cxx.o
+[392/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FlacPcm.cxx.o
+[393/720] Compiling C++ object src/output/liboutput_glue.a.p/OutputCommand.cxx.o
+[394/720] Compiling C++ object src/decoder/libdecoder_api.a.p/DecoderAPI.cxx.o
+[395/720] Compiling C++ object src/output/liboutput_glue.a.p/Init.cxx.o
+[396/720] Compiling C++ object src/decoder/libdecoder_api.a.p/Reader.cxx.o
+[397/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/DsdLib.cxx.o
+[398/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/OggDecoder.cxx.o
+[399/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FfmpegIo.cxx.o
+[400/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/DsdiffDecoderPlugin.cxx.o
+[401/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FfmpegMetaData.cxx.o
+[402/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/PcmDecoderPlugin.cxx.o
+[403/720] Compiling C++ object src/decoder/libdecoder_api.a.p/DecoderBuffer.cxx.o
+[404/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/DsfDecoderPlugin.cxx.o
+[405/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FlacInput.cxx.o
+[406/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/OpusTags.cxx.o
+[407/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FfmpegDecoderPlugin.cxx.o
+[408/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/VorbisDecoderPlugin.cxx.o
+[409/720] Compiling C++ object src/output/plugins/liboutput_plugins.a.p/snapcast_SnapcastOutputPlugin.cxx.o
+[410/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FlacDecoderPlugin.cxx.o
+[411/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FlacCommon.cxx.o
+[412/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FluidsynthDecoderPlugin.cxx.o
+[413/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/OggCodec.cxx.o
+[414/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/OpusDecoderPlugin.cxx.o
+[415/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/AudiofileDecoderPlugin.cxx.o
+[416/720] Compiling C++ object src/encoder/libencoder_glue.a.p/ToOutputStream.cxx.o
+[417/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/MadDecoderPlugin.cxx.o
+[418/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/MikmodDecoderPlugin.cxx.o
+[419/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/SndfileDecoderPlugin.cxx.o
+[420/720] Compiling C++ object src/encoder/libencoder_glue.a.p/EncoderList.cxx.o
+[421/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/ModplugDecoderPlugin.cxx.o
+[422/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/FaadDecoderPlugin.cxx.o
+[423/720] Compiling C++ object src/song/libsong.a.p/Escape.cxx.o
+[424/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/ModCommon.cxx.o
+[425/720] Compiling C++ object src/song/libsong.a.p/StringFilter.cxx.o
+[426/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/GmeDecoderPlugin.cxx.o
+[427/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/MpcdecDecoderPlugin.cxx.o
+[428/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/Mpg123DecoderPlugin.cxx.o
+[429/720] Compiling C++ object src/encoder/plugins/libencoder_plugins.a.p/NullEncoderPlugin.cxx.o
+[430/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/WavpackDecoderPlugin.cxx.o
+[431/720] Compiling C++ object src/encoder/libencoder_glue.a.p/Configured.cxx.o
+[432/720] Compiling C++ object src/encoder/plugins/libencoder_plugins.a.p/OpusEncoderPlugin.cxx.o
+[433/720] Compiling C++ object src/decoder/libdecoder_glue.a.p/DecoderList.cxx.o
+[434/720] Compiling C++ object src/encoder/plugins/libencoder_plugins.a.p/LameEncoderPlugin.cxx.o
+[435/720] Compiling C++ object src/encoder/plugins/libencoder_plugins.a.p/VorbisEncoderPlugin.cxx.o
+[436/720] Compiling C++ object src/song/libsong.a.p/DetachedSong.cxx.o
+[437/720] Compiling C++ object src/playlist/libplaylist_api.a.p/PlaylistPlugin.cxx.o
+[438/720] Compiling C++ object src/song/libsong.a.p/AndSongFilter.cxx.o
+[439/720] Compiling C++ object src/encoder/plugins/libencoder_plugins.a.p/FlacEncoderPlugin.cxx.o
+[440/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/WildmidiDecoderPlugin.cxx.o
+[441/720] Compiling C++ object src/song/libsong.a.p/OptimizeFilter.cxx.o
+[442/720] Compiling C++ object src/encoder/plugins/libencoder_plugins.a.p/TwolameEncoderPlugin.cxx.o
+[443/720] Compiling C++ object src/decoder/plugins/libdecoder_plugins.a.p/SidplayDecoderPlugin.cxx.o
+[444/720] Compiling C++ object src/encoder/plugins/libencoder_plugins.a.p/WaveEncoderPlugin.cxx.o
+[445/720] Compiling C++ object libbasic.a.p/src_ReplayGainMode.cxx.o
+[446/720] Compiling C++ object libbasic.a.p/src_ConsumeMode.cxx.o
+[447/720] Compiling C++ object src/song/libsong.a.p/BaseSongFilter.cxx.o
+[448/720] Compiling C++ object libbasic.a.p/src_SingleMode.cxx.o
+[449/720] Compiling C++ object src/song/libsong.a.p/UriSongFilter.cxx.o
+[450/720] Compiling C++ object src/song/libsong.a.p/AddedSinceSongFilter.cxx.o
+[451/720] Compiling C++ object src/song/libsong.a.p/AudioFormatSongFilter.cxx.o
+[452/720] Compiling C++ object src/song/libsong.a.p/ModifiedSinceSongFilter.cxx.o
+[453/720] Compiling C++ object src/storage/libstorage_api.a.p/StoragePlugin.cxx.o
+[454/720] Compiling C++ object src/playlist/libplaylist_api.a.p/MemorySongEnumerator.cxx.o
+[455/720] Compiling C++ object src/song/libsong.a.p/PrioritySongFilter.cxx.o
+[456/720] Compiling C++ object src/storage/libstorage_api.a.p/StorageInterface.cxx.o
+[457/720] Compiling C++ object src/song/libsong.a.p/LightSong.cxx.o
+[458/720] Compiling C++ object src/db/libdb_api.a.p/DatabaseLock.cxx.o
+[459/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/M3uPlaylistPlugin.cxx.o
+[460/720] Compiling C++ object src/song/libsong.a.p/TagSongFilter.cxx.o
+[461/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/ExtM3uPlaylistPlugin.cxx.o
+[462/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/.._cue_CueParser.cxx.o
+[463/720] Compiling C++ object src/storage/libstorage_glue.a.p/Registry.cxx.o
+[464/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/PlsPlaylistPlugin.cxx.o
+[465/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/AsxPlaylistPlugin.cxx.o
+[466/720] Compiling C++ object src/playlist/libplaylist_glue.a.p/PlaylistRegistry.cxx.o
+[467/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/XspfPlaylistPlugin.cxx.o
+[468/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/EmbeddedCuePlaylistPlugin.cxx.o
+[469/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/FlacPlaylistPlugin.cxx.o
+[470/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/RssPlaylistPlugin.cxx.o
+[471/720] Compiling C++ object src/db/libdb_api.a.p/Selection.cxx.o
+[472/720] Compiling C++ object src/song/libsong.a.p/Filter.cxx.o
+[473/720] Compiling C++ object src/playlist/plugins/libplaylist_plugins.a.p/CuePlaylistPlugin.cxx.o
+[474/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/upnp_Tags.cxx.o
+[475/720] Compiling C++ object src/db/libdb_glue.a.p/update_UpdateDomain.cxx.o
+[476/720] Compiling C++ object src/storage/libstorage_api.a.p/MemoryDirectoryReader.cxx.o
+[477/720] Compiling C++ object src/storage/plugins/libstorage_plugins.a.p/LocalStorage.cxx.o
+[478/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/simple_DatabaseSave.cxx.o
+[479/720] Compiling C++ object src/storage/libstorage_glue.a.p/Configured.cxx.o
+[480/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/.._Registry.cxx.o
+[481/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/.._Helpers.cxx.o
+[482/720] Compiling C++ object src/db/libdb_glue.a.p/update_Queue.cxx.o
+[483/720] Compiling C++ object src/storage/libstorage_glue.a.p/CompositeStorage.cxx.o
+[484/720] Compiling C++ object src/storage/plugins/libstorage_plugins.a.p/CurlStorage.cxx.o
+[485/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/.._.._PlaylistDatabase.cxx.o
+[486/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/.._UniqueTags.cxx.o
+[487/720] Compiling C++ object src/storage/plugins/libstorage_plugins.a.p/NfsStorage.cxx.o
+[488/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/upnp_Object.cxx.o
+[489/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/simple_Song.cxx.o
+[490/720] Compiling C++ object src/storage/plugins/libstorage_plugins.a.p/UdisksStorage.cxx.o
+[491/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/simple_SongSort.cxx.o
+[492/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/upnp_Directory.cxx.o
+[493/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/.._VHelper.cxx.o
+[494/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/simple_Mount.cxx.o
+[495/720] Compiling C++ object src/db/libdb_glue.a.p/update_InotifyDomain.cxx.o
+[496/720] Compiling C++ object src/db/libdb_glue.a.p/update_Config.cxx.o
+[497/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/simple_DirectorySave.cxx.o
+[498/720] Linking static target src/lib/fmt/libfmt.a
+[499/720] Linking static target liblog.a
+[500/720] Linking static target src/util/libutil.a
+[501/720] Linking static target src/protocol/libprotocol.a
+[502/720] Linking static target src/cmdline/libcmdline.a
+[503/720] Compiling C++ object src/db/libdb_glue.a.p/update_Remove.cxx.o
+[504/720] Linking static target src/time/libtime.a
+[505/720] Linking static target src/lib/icu/libicu.a
+[506/720] Linking static target src/io/libio.a
+[507/720] Linking static target src/io/linux/libio_linux.a
+[508/720] Linking static target src/fs/libfs_path.a
+[509/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/upnp_ContentDirectoryService.cxx.o
+[510/720] Linking static target src/io/fs/libio_fs.a
+[511/720] Linking static target src/fs/libfs.a
+[512/720] Linking static target src/io/uring/liburing.a
+[513/720] Linking static target src/net/libnet.a
+[514/720] Linking static target src/thread/libthread.a
+[515/720] Linking static target src/system/libsystem.a
+[516/720] Linking static target src/fs/glue/libfs_glue.a
+[517/720] Linking static target src/memory/libmemory.a
+[518/720] Linking static target src/event/libevent.a
+[519/720] Linking static target src/config/libfs.a
+[520/720] Linking static target src/pcm/libpcm_basic.a
+[521/720] Linking static target src/pcm/libpcm.a
+[522/720] Linking static target src/lib/dbus/libdbus.a
+[523/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/simple_Directory.cxx.o
+[524/720] Linking static target src/lib/zlib/libzlib.a
+[525/720] Linking static target src/lib/alsa/libalsa.a
+[526/720] Linking static target src/lib/curl/libcurl.a
+[527/720] Linking static target src/lib/expat/libexpat.a
+[528/720] Linking static target src/lib/ffmpeg/libffmpeg_util.a
+[529/720] Linking static target src/lib/ffmpeg/libffmpeg.a
+[530/720] Linking static target src/lib/nfs/libnfs.a
+[531/720] Linking static target src/lib/pcre/libpcre.a
+[532/720] Linking static target src/lib/pipewire/libpipewire.a
+[533/720] Linking static target src/lib/pulse/libpulse.a
+[534/720] Linking static target src/lib/sqlite/libsqlite.a
+[535/720] Linking static target src/lib/crypto/libcrypto_md5.a
+[536/720] Linking static target src/lib/crypto/libcrypto_base64.a
+[537/720] Linking static target src/lib/systemd/libsystemd.a
+[538/720] Linking static target src/lib/upnp/libupnp.a
+[539/720] Linking static target src/zeroconf/avahi/libavahi.a
+[540/720] Linking static target src/zeroconf/libzeroconf_avahi.a
+[541/720] Linking static target src/neighbor/plugins/libneighbor_plugins.a
+[542/720] Linking static target src/neighbor/libneighbor_glue.a
+[543/720] Linking static target src/input/libinput_api.a
+[544/720] Linking static target src/tag/libtag.a
+[545/720] Linking static target src/input/libinput_basic.a
+[546/720] Linking static target src/input/libinput_glue.a
+[547/720] Linking static target src/archive/plugins/libarchive_plugins.a
+[548/720] Linking static target src/archive/libarchive_api.a
+[549/720] Linking static target src/input/plugins/libinput_plugins.a
+[550/720] Linking static target src/archive/libarchive_glue.a
+[551/720] Linking static target src/filter/libfilter_api.a
+[552/720] Linking static target src/filter/plugins/libfilter_plugins.a
+[553/720] Linking static target src/filter/libfilter_glue.a
+[554/720] Linking static target src/mixer/libmixer_api.a
+[555/720] Linking static target src/mixer/plugins/libmixer_plugins.a
+[556/720] Linking static target src/mixer/libmixer_glue.a
+[557/720] Linking static target src/output/liboutput_api.a
+[558/720] Linking static target src/output/liboutput_glue.a
+[559/720] Linking static target src/output/liboutput_registry.a
+[560/720] Linking static target src/output/plugins/liboutput_plugins.a
+[561/720] Linking static target src/lib/xiph/libvorbis.a
+[562/720] Linking static target src/lib/xiph/libxiph.a
+[563/720] Linking static target src/lib/xiph/libogg.a
+[564/720] Linking static target src/lib/xiph/libflac.a
+[565/720] Linking static target src/decoder/libdecoder_glue.a
+[566/720] Linking static target src/decoder/libdecoder_api.a
+[567/720] Linking static target src/encoder/plugins/libencoder_plugins.a
+[568/720] Linking static target src/encoder/libencoder_glue.a
+[569/720] Linking static target src/playlist/libplaylist_api.a
+[570/720] Linking static target src/playlist/plugins/libplaylist_plugins.a
+[571/720] Linking static target src/decoder/plugins/libdecoder_plugins.a
+[572/720] Linking static target src/song/libsong.a
+[573/720] Linking static target libbasic.a
+[574/720] Linking static target src/playlist/libplaylist_glue.a
+[575/720] Linking static target src/storage/libstorage_api.a
+[576/720] Linking static target src/storage/plugins/libstorage_plugins.a
+[577/720] Linking static target src/storage/libstorage_glue.a
+[578/720] Linking static target src/db/libdb_api.a
+[579/720] Compiling C++ object mpd.p/meson-generated_.._GitVersion.cxx.o
+[580/720] Compiling C++ object src/db/libdb_glue.a.p/update_ExcludeList.cxx.o
+[581/720] Compiling C++ object src/db/libdb_glue.a.p/Count.cxx.o
+[582/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/ProxyDatabasePlugin.cxx.o
+[583/720] Compiling C++ object mpd.p/src_protocol_IdleFlags.cxx.o
+[584/720] Compiling C++ object src/db/libdb_glue.a.p/update_Editor.cxx.o
+[585/720] Compiling C++ object src/db/libdb_glue.a.p/update_UpdateIO.cxx.o
+[586/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/simple_SimpleDatabasePlugin.cxx.o
+[587/720] Compiling C++ object mpd.p/src_command_CommandError.cxx.o
+[588/720] Compiling C++ object src/db/libdb_glue.a.p/update_Service.cxx.o
+[589/720] Compiling C++ object mpd.p/src_command_PositionArg.cxx.o
+[590/720] Compiling C++ object src/db/libdb_glue.a.p/update_Container.cxx.o
+[591/720] Compiling C++ object src/db/plugins/libdb_plugins.a.p/upnp_UpnpDatabasePlugin.cxx.o
+[592/720] Linking static target src/db/plugins/libdb_plugins.a
+[593/720] Compiling C++ object src/db/libdb_glue.a.p/DatabaseGlue.cxx.o
+[594/720] Compiling C++ object src/db/libdb_glue.a.p/update_Playlist.cxx.o
+[595/720] Compiling C++ object src/db/libdb_glue.a.p/DatabaseSong.cxx.o
+[596/720] Compiling C++ object src/db/libdb_glue.a.p/update_SpecialDirectory.cxx.o
+[597/720] Compiling C++ object src/db/libdb_glue.a.p/update_Walk.cxx.o
+[598/720] Compiling C++ object src/db/libdb_glue.a.p/update_UpdateSong.cxx.o
+[599/720] Compiling C++ object src/db/libdb_glue.a.p/DatabasePlaylist.cxx.o
+[600/720] Compiling C++ object src/db/libdb_glue.a.p/Configured.cxx.o
+[601/720] Compiling C++ object src/db/libdb_glue.a.p/update_VirtualDirectory.cxx.o
+[602/720] Compiling C++ object mpd.p/src_protocol_ArgParser.cxx.o
+[603/720] Compiling C++ object src/db/libdb_glue.a.p/update_InotifyQueue.cxx.o
+[604/720] Compiling C++ object src/db/libdb_glue.a.p/DatabasePrint.cxx.o
+[605/720] Compiling C++ object src/db/libdb_glue.a.p/update_InotifyUpdate.cxx.o
+[606/720] Compiling C++ object mpd.p/src_client_Domain.cxx.o
+[607/720] Compiling C++ object src/db/libdb_glue.a.p/DatabaseQueue.cxx.o
+[608/720] Linking static target src/db/libdb_glue.a
+[609/720] Compiling C++ object mpd.p/src_decoder_DecoderPrint.cxx.o
+[610/720] Compiling C++ object mpd.p/src_command_TagCommands.cxx.o
+[611/720] Compiling C++ object mpd.p/src_config_PartitionConfig.cxx.o
+[612/720] Compiling C++ object mpd.p/src_command_CommandListBuilder.cxx.o
+[613/720] Compiling C++ object mpd.p/src_config_PlayerConfig.cxx.o
+[614/720] Compiling C++ object mpd.p/src_decoder_Control.cxx.o
+[615/720] Compiling C++ object mpd.p/src_command_ClientCommands.cxx.o
+[616/720] Compiling C++ object mpd.p/src_config_ReplayGainConfig.cxx.o
+[617/720] Compiling C++ object mpd.p/src_command_OutputCommands.cxx.o
+[618/720] Compiling C++ object mpd.p/src_command_FileCommands.cxx.o
+[619/720] Compiling C++ object mpd.p/src_Idle.cxx.o
+[620/720] Compiling C++ object mpd.p/src_command_MessageCommands.cxx.o
+[621/720] Compiling C++ object mpd.p/src_client_Message.cxx.o
+[622/720] Compiling C++ object mpd.p/src_command_AllCommands.cxx.o
+[623/720] Compiling C++ object mpd.p/src_client_Listener.cxx.o
+[624/720] Compiling C++ object mpd.p/src_decoder_Thread.cxx.o
+[625/720] Compiling C++ object mpd.p/src_Main.cxx.o
+[626/720] Compiling C++ object mpd.p/src_client_Config.cxx.o
+[627/720] Compiling C++ object mpd.p/src_command_PlaylistCommands.cxx.o
+[628/720] Compiling C++ object mpd.p/src_command_PlayerCommands.cxx.o
+[629/720] Compiling C++ object mpd.p/src_decoder_Bridge.cxx.o
+[630/720] Compiling C++ object mpd.p/src_command_PartitionCommands.cxx.o
+[631/720] Compiling C++ object mpd.p/src_command_QueueCommands.cxx.o
+[632/720] Compiling C++ object mpd.p/src_client_Expire.cxx.o
+[633/720] Compiling C++ object mpd.p/src_client_Process.cxx.o
+[634/720] Compiling C++ object mpd.p/src_client_Event.cxx.o
+[635/720] Compiling C++ object mpd.p/src_client_Client.cxx.o
+[636/720] Compiling C++ object mpd.p/src_client_List.cxx.o
+[637/720] Compiling C++ object mpd.p/src_client_Write.cxx.o
+[638/720] Compiling C++ object mpd.p/src_command_OtherCommands.cxx.o
+[639/720] Compiling C++ object mpd.p/src_client_Idle.cxx.o
+[640/720] Compiling C++ object mpd.p/src_client_ThreadBackgroundCommand.cxx.o
+[641/720] Compiling C++ object mpd.p/src_ls.cxx.o
+[642/720] Compiling C++ object mpd.p/src_PlaylistError.cxx.o
+[643/720] Compiling C++ object mpd.p/src_client_Response.cxx.o
+[644/720] Compiling C++ object mpd.p/src_client_File.cxx.o
+[645/720] Compiling C++ object mpd.p/src_client_Subscribe.cxx.o
+[646/720] Compiling C++ object mpd.p/src_client_ProtocolFeature.cxx.o
+[647/720] Compiling C++ object mpd.p/src_MusicBuffer.cxx.o
+[648/720] Compiling C++ object mpd.p/src_PlaylistPrint.cxx.o
+[649/720] Compiling C++ object mpd.p/src_client_StringNormalization.cxx.o
+[650/720] Compiling C++ object mpd.p/src_client_Read.cxx.o
+[651/720] Compiling C++ object mpd.p/src_playlist_PlaylistStream.cxx.o
+[652/720] Compiling C++ object mpd.p/src_MusicPipe.cxx.o
+[653/720] Compiling C++ object mpd.p/src_Listen.cxx.o
+[654/720] Compiling C++ object mpd.p/src_MusicChunk.cxx.o
+[655/720] Compiling C++ object mpd.p/src_client_New.cxx.o
+[656/720] Compiling C++ object mpd.p/src_playlist_PlaylistAny.cxx.o
+[657/720] Compiling C++ object mpd.p/src_playlist_PlaylistMapper.cxx.o
+[658/720] Compiling C++ object mpd.p/src_MusicChunkPtr.cxx.o
+[659/720] Compiling C++ object mpd.p/src_LogInit.cxx.o
+[660/720] Compiling C++ object mpd.p/src_Mapper.cxx.o
+[661/720] Compiling C++ object mpd.p/src_Permission.cxx.o
+[662/720] Compiling C++ object mpd.p/src_LocateUri.cxx.o
+[663/720] Compiling C++ object mpd.p/src_player_Thread.cxx.o
+[664/720] Compiling C++ object mpd.p/src_player_Control.cxx.o
+[665/720] Compiling C++ object mpd.p/src_player_CrossFade.cxx.o
+[666/720] Compiling C++ object mpd.p/src_Instance.cxx.o
+[667/720] Compiling C++ object mpd.p/src_playlist_PlaylistSong.cxx.o
+[668/720] Compiling C++ object mpd.p/src_db_PlaylistVector.cxx.o
+[669/720] Compiling C++ object mpd.p/src_queue_Selection.cxx.o
+[670/720] Compiling C++ object mpd.p/src_PlaylistSave.cxx.o
+[671/720] Compiling C++ object mpd.p/src_playlist_PlaylistQueue.cxx.o
+[672/720] Compiling C++ object mpd.p/src_queue_Queue.cxx.o
+[673/720] Compiling C++ object mpd.p/src_Partition.cxx.o
+[674/720] Compiling C++ object mpd.p/src_queue_PlaylistEdit.cxx.o
+[675/720] Compiling C++ object mpd.p/src_queue_Playlist.cxx.o
+[676/720] Compiling C++ object mpd.p/src_queue_Print.cxx.o
+[677/720] Compiling C++ object mpd.p/src_queue_Save.cxx.o
+[678/720] Compiling C++ object mpd.p/src_queue_PlaylistTag.cxx.o
+[679/720] Compiling C++ object mpd.p/src_queue_PlaylistControl.cxx.o
+[680/720] Compiling C++ object mpd.p/src_queue_PlaylistState.cxx.o
+[681/720] Compiling C++ object mpd.p/src_SongUpdate.cxx.o
+[682/720] Compiling C++ object mpd.p/src_SongLoader.cxx.o
+[683/720] Compiling C++ object mpd.p/src_SongPrint.cxx.o
+[684/720] Compiling C++ object mpd.p/src_playlist_Length.cxx.o
+[685/720] Compiling C++ object mpd.p/src_StateFileConfig.cxx.o
+[686/720] Compiling C++ object mpd.p/src_sticker_AllowedTags.cxx.o
+[687/720] Compiling C++ object mpd.p/src_playlist_Print.cxx.o
+[688/720] Compiling C++ object mpd.p/src_SongSave.cxx.o
+[689/720] Compiling C++ object mpd.p/src_CommandLine.cxx.o
+[690/720] Compiling C++ object mpd.p/src_TagFile.cxx.o
+[691/720] Compiling C++ object mpd.p/src_TagPrint.cxx.o
+[692/720] Compiling C++ object mpd.p/src_TagSave.cxx.o
+[693/720] Compiling C++ object mpd.p/src_TimePrint.cxx.o
+[694/720] Compiling C++ object mpd.p/src_TagStream.cxx.o
+[695/720] Compiling C++ object mpd.p/src_sticker_Print.cxx.o
+[696/720] Compiling C++ object mpd.p/src_unix_Daemon.cxx.o
+[697/720] Compiling C++ object mpd.p/src_StateFile.cxx.o
+[698/720] Compiling C++ object mpd.p/src_sticker_Database.cxx.o
+[699/720] Compiling C++ object mpd.p/src_TagAny.cxx.o
+[700/720] Compiling C++ object mpd.p/src_TagArchive.cxx.o
+[701/720] Compiling C++ object mpd.p/src_Stats.cxx.o
+[702/720] Compiling C++ object mpd.p/src_mixer_Memento.cxx.o
+[703/720] Compiling C++ object mpd.p/src_unix_SignalHandlers.cxx.o
+[704/720] Compiling C++ object mpd.p/src_PlaylistFile.cxx.o
+[705/720] Compiling C++ object mpd.p/src_queue_PlaylistUpdate.cxx.o
+[706/720] Compiling C++ object mpd.p/src_RemoteTagCache.cxx.o
+[707/720] Compiling C++ object mpd.p/src_sticker_SongSticker.cxx.o
+[708/720] Compiling C++ object mpd.p/src_sticker_TagSticker.cxx.o
+[709/720] Compiling C++ object mpd.p/src_command_DatabaseCommands.cxx.o
+[710/720] Compiling C++ object mpd.p/src_lib_chromaprint_DecoderClient.cxx.o
+[711/720] Compiling C++ object mpd.p/src_storage_StorageState.cxx.o
+[712/720] Compiling C++ object mpd.p/src_sticker_CleanupService.cxx.o
+[713/720] Compiling C++ object mpd.p/src_command_StorageCommands.cxx.o
+[714/720] Generating doc/Manpage documentation with a custom command
+[715/720] Compiling C++ object mpd.p/src_command_FingerprintCommands.cxx.o
+[716/720] Compiling C++ object mpd.p/src_command_NeighborCommands.cxx.o
+[717/720] Compiling C++ object mpd.p/src_db_update_Archive.cxx.o
+[718/720] Compiling C++ object mpd.p/src_command_StickerCommands.cxx.o
+[719/720] Generating doc/HTML documentation with a custom command
+WARNING: unsupported theme option 'github_url' given
+/build/mpd-git/src/MPD/doc/user.rst:1356: WARNING: unknown option: '--verbose' [ref.option]
+/build/mpd-git/src/MPD/doc/user.rst:1453: WARNING: unknown option: '--verbose' [ref.option]
+[720/720] Linking target mpd

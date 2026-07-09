@@ -1,0 +1,424 @@
+/build/minigalaxy-git/src/minigalaxy/minigalaxy/api.py:244: SyntaxWarning: 'return' in a 'finally' block
+  return result
+test1_finish (download.test_download.TestDownload.test1_finish) ... ok
+test1_set_progress (download.test_download.TestDownload.test1_set_progress) ... ok
+test2_finish (download.test_download.TestDownload.test2_finish) ... ok
+test2_set_progress (download.test_download.TestDownload.test2_set_progress) ... ok
+test_cancel (download.test_download.TestDownload.test_cancel) ... ok
+test_add_new_downloads (download.test_helper.TestDownloadHelper.test_add_new_downloads)
+[scenario: adding new downloads also dynamically recalculates current progress] ... ok
+test_attaches_progress_callback (download.test_helper.TestDownloadHelper.test_attaches_progress_callback)
+[scenario: progress watcher attaches a customized progress callback to downloads] ... ok
+test_no_progress_when_empty (download.test_helper.TestDownloadHelper.test_no_progress_when_empty)
+[scenario: Empty download list in progress watcher should not trigger callbacks] ... ok
+test_progress_tracked_individually (download.test_helper.TestDownloadHelper.test_progress_tracked_individually)
+[scenario: progress watcher keeps track of each file via progress callbacks] ... ok
+test_properties (download.test_helper.TestDownloadHelper.test_properties)
+[scenario: make sure the property accessors are correct] ... ok
+test_remove_downloads (download.test_helper.TestDownloadHelper.test_remove_downloads)
+[scenario: removing downloads updates current and deregisters progress listener] ... ok
+test_update_list_mixed (download.test_helper.TestDownloadHelper.test_update_list_mixed)
+[scenario: updating the list must be able to handle add and remove at once] ... ok
+test1_get_gamesdb_info (test_api.TestApiGamesDb.test1_get_gamesdb_info) ... ok
+test2_get_gamesdb_info (test_api.TestApiGamesDb.test2_get_gamesdb_info) ... ok
+test3_get_gamesdb_info_no_genre (test_api.TestApiGamesDb.test3_get_gamesdb_info_no_genre) ... ok
+test_get_gamesdb_info_with_multiple_genres (test_api.TestApiGamesDb.test_get_gamesdb_info_with_multiple_genres) ... ok
+test_can_connect_exception (test_api.TestApiGog.test_can_connect_exception) ... ok
+test_can_connect_success (test_api.TestApiGog.test_can_connect_success) ... ok
+test_get_download_file__info_md5 (test_api.TestApiGog.test_get_download_file__info_md5) ... /build/minigalaxy-git/src/minigalaxy/minigalaxy/api.py:236: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if response_object and response_object.attrib:
+ok
+test_get_download_file_info_md5_returns_empty_string_on_empty_response (test_api.TestApiGog.test_get_download_file_info_md5_returns_empty_string_on_empty_response) ... ERROR:root:Couldn't read xml data. Response with code 200 received with the following content: 
+NoneType: None
+WARNING:root:Couldn't find md5 in xml checksum data
+WARNING:root:Couldn't find file size in xml checksum data
+ok
+test_get_download_file_info_md5_returns_empty_string_on_missing_md5 (test_api.TestApiGog.test_get_download_file_info_md5_returns_empty_string_on_missing_md5) ... WARNING:root:Couldn't find md5 in xml checksum data
+ok
+test_get_download_file_info_md5_returns_empty_string_on_response_error (test_api.TestApiGog.test_get_download_file_info_md5_returns_empty_string_on_response_error) ... ERROR:root:Couldn't read xml data. Response with code 404 received with the following content: <MagicMock name='mock().text' id='140669752998080'>
+NoneType: None
+WARNING:root:Couldn't find md5 in xml checksum data
+WARNING:root:Couldn't find file size in xml checksum data
+ok
+test_get_download_info (test_api.TestApiGog.test_get_download_info) ... ok
+test_get_download_info_dlc (test_api.TestApiGog.test_get_download_info_dlc) ... ok
+test_get_download_info_no_linux (test_api.TestApiGog.test_get_download_info_no_linux) ... ok
+test_get_file_info_size (test_api.TestApiGog.test_get_file_info_size) ... ok
+test_get_file_info_size_returns_zero_on_empty_response (test_api.TestApiGog.test_get_file_info_size_returns_zero_on_empty_response) ... ERROR:root:Couldn't read xml data. Response with code 200 received with the following content: 
+NoneType: None
+WARNING:root:Couldn't find md5 in xml checksum data
+WARNING:root:Couldn't find file size in xml checksum data
+ok
+test_get_file_info_size_returns_zero_on_missing_total_size (test_api.TestApiGog.test_get_file_info_size_returns_zero_on_missing_total_size) ... WARNING:root:Couldn't find file size in xml checksum data
+ok
+test_get_file_info_size_returns_zero_on_request_exception (test_api.TestApiGog.test_get_file_info_size_returns_zero_on_request_exception) ... ERROR:root:Couldn't read xml data. Received RequestException
+Traceback (most recent call last):
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/api.py", line 233, in __get_xml_checksum
+    response = self.session.get(url)
+  File "/usr/lib/python3.14/unittest/mock.py", line 1176, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1180, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1241, in _execute_mock_call
+    raise effect
+requests.exceptions.RequestException: test
+WARNING:root:Couldn't find md5 in xml checksum data
+WARNING:root:Couldn't find file size in xml checksum data
+ok
+test_get_file_info_size_returns_zero_on_request_timeout_exception (test_api.TestApiGog.test_get_file_info_size_returns_zero_on_request_timeout_exception) ... ERROR:root:Couldn't read xml data. Received RequestException
+Traceback (most recent call last):
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/api.py", line 233, in __get_xml_checksum
+    response = self.session.get(url)
+  File "/usr/lib/python3.14/unittest/mock.py", line 1176, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1180, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1241, in _execute_mock_call
+    raise effect
+requests.exceptions.ReadTimeout: test
+WARNING:root:Couldn't find md5 in xml checksum data
+WARNING:root:Couldn't find file size in xml checksum data
+ok
+test_get_file_info_size_returns_zero_on_response_error (test_api.TestApiGog.test_get_file_info_size_returns_zero_on_response_error) ... ERROR:root:Couldn't read xml data. Response with code 404 received with the following content: <MagicMock name='mock().text' id='140669771969072'>
+NoneType: None
+WARNING:root:Couldn't find md5 in xml checksum data
+WARNING:root:Couldn't find file size in xml checksum data
+ok
+test_get_library_invalid_httpstatus (test_api.TestApiGog.test_get_library_invalid_httpstatus) ... ok
+test_get_library_ok (test_api.TestApiGog.test_get_library_ok) ... ok
+test_get_login_url (test_api.TestApiGog.test_get_login_url) ... ok
+test_get_redirect_url (test_api.TestApiGog.test_get_redirect_url) ... ok
+test_get_user_info_from_api (test_api.TestApiGog.test_get_user_info_from_api) ... ok
+test_get_user_info_from_config (test_api.TestApiGog.test_get_user_info_from_config) ... ok
+test_get_user_info_return_empty_string_when_nothing_is_returned (test_api.TestApiGog.test_get_user_info_return_empty_string_when_nothing_is_returned) ... ok
+test_get_version (test_api.TestApiGog.test_get_version) ... ok
+test_get_version_dlc (test_api.TestApiGog.test_get_version_dlc) ... ok
+test_parse_productlist_json (test_api.TestApiGog.test_parse_productlist_json) ... /build/minigalaxy-git/src/minigalaxy/minigalaxy/api.py:121: DeprecationWarning: The 'warn' function is deprecated, use 'warning' instead
+  logging.warn("%s has no platform information - skip", product["title"])
+WARNING:root:Should not be included has no platform information - skip
+WARNING:root:Should not be included has no platform information - skip
+WARNING:root:Pure Linux Game (22) has no store page url
+WARNING:root:Pure Windows Game (32) has no store page url
+WARNING:root:Mixed Game (42) has no store page url
+ok
+test_add_ongoing_download (test_config.TestConfig.test_add_ongoing_download) ... ok
+test_add_paused_download (test_config.TestConfig.test_add_paused_download) ... ok
+test_config_property_setters (test_config.TestConfig.test_config_property_setters) ... ok
+test_create_config (test_config.TestConfig.test_create_config) ... ok
+test_defaults_if_file_does_not_exist (test_config.TestConfig.test_defaults_if_file_does_not_exist) ... ok
+test_invalid_config_file_is_deleted (test_config.TestConfig.test_invalid_config_file_is_deleted) ... WARNING:root:Reading config.json failed, creating new config file.
+ok
+test_platform_mode (test_config.TestConfig.test_platform_mode) ... ok
+test_read_config_file (test_config.TestConfig.test_read_config_file) ... ok
+test_remove_ongoing_download (test_config.TestConfig.test_remove_ongoing_download) ... ok
+test_remove_paused_download (test_config.TestConfig.test_remove_paused_download) ... ok
+test_cancel_download (test_download_manager.TestDownloadManager.test_cancel_download) ... ok
+test_download_operation (test_download_manager.TestDownloadManager.test_download_operation) ... ok
+test_download_operation_cancel_download (test_download_manager.TestDownloadManager.test_download_operation_cancel_download) ... ERROR:minigalaxy.download_manager.DownloadManager:Couldn't get file size for /tmp/tmpr888ugg4. No progress will be shown.
+ok
+test_download_operation_still_downloads_without_content_length (test_download_manager.TestDownloadManager.test_download_operation_still_downloads_without_content_length) ... ERROR:minigalaxy.download_manager.DownloadManager:Couldn't get file size for /tmp/tmpjd1aecut. No progress will be shown.
+ok
+test1_fallback_read_installed_version (test_game.TestGame.test1_fallback_read_installed_version) ... ok
+test1_get_dlc_info_legacy (test_game.TestGame.test1_get_dlc_info_legacy) ... ok
+test1_get_info_legacy (test_game.TestGame.test1_get_info_legacy) ... WARNING:root:An instance of game.InfoKey is expected, but <class 'str'> was given!
+ok
+test1_get_install_directory_name (test_game.TestGame.test1_get_install_directory_name) ... ok
+test1_is_installed (test_game.TestGame.test1_is_installed) ... ok
+test1_is_update_available (test_game.TestGame.test1_is_update_available) ... ok
+test1_load_minigalaxy_info_json (test_game.TestGame.test1_load_minigalaxy_info_json) ... ok
+test1_set_info (test_game.TestGame.test1_set_info) ... ok
+test2_fallback_read_installed_version (test_game.TestGame.test2_fallback_read_installed_version) ... ok
+test2_get_dlc_info_legacy (test_game.TestGame.test2_get_dlc_info_legacy) ... ok
+test2_get_info_legacy (test_game.TestGame.test2_get_info_legacy) ... WARNING:root:An instance of game.InfoKey is expected, but <class 'str'> was given!
+ok
+test2_get_install_directory_name (test_game.TestGame.test2_get_install_directory_name) ... ok
+test2_is_installed (test_game.TestGame.test2_is_installed) ... ok
+test2_is_update_available (test_game.TestGame.test2_is_update_available) ... ok
+test2_load_minigalaxy_info_json (test_game.TestGame.test2_load_minigalaxy_info_json) ... ok
+test2_set_dlc_info (test_game.TestGame.test2_set_dlc_info) ... ok
+test2_set_info (test_game.TestGame.test2_set_info) ... ok
+test3_get_dlc_info_legacy (test_game.TestGame.test3_get_dlc_info_legacy) ... ok
+test3_get_info_legacy (test_game.TestGame.test3_get_info_legacy) ... WARNING:root:An instance of game.InfoKey is expected, but <class 'str'> was given!
+ok
+test3_is_installed (test_game.TestGame.test3_is_installed) ... ok
+test3_is_update_available (test_game.TestGame.test3_is_update_available) ... ok
+test3_set_info (test_game.TestGame.test3_set_info) ... ok
+test4_is_update_available (test_game.TestGame.test4_is_update_available) ... ok
+test4_set_info (test_game.TestGame.test4_set_info) ... ok
+test_get_dlc_info (test_game.TestGame.test_get_dlc_info) ... ok
+test_get_info (test_game.TestGame.test_get_info) ... WARNING:root:An instance of game.InfoKey is expected, but <class 'str'> was given!
+ok
+test_get_status_file_path_default (test_game.TestGame.test_get_status_file_path_default) ... ok
+test_get_status_file_path_override_install_dir (test_game.TestGame.test_get_status_file_path_override_install_dir) ... ok
+test_get_stripped_name (test_game.TestGame.test_get_stripped_name) ... ok
+test_local_and_api_comparison (test_game.TestGame.test_local_and_api_comparison) ... ok
+test_local_comparison (test_game.TestGame.test_local_comparison) ... ok
+test_save_minigalaxy_info_json (test_game.TestGame.test_save_minigalaxy_info_json) ... ok
+test_set_install_dir (test_game.TestGame.test_set_install_dir) ... ok
+test_strip_within_comparison (test_game.TestGame.test_strip_within_comparison) ... ok
+test_update_from_other_different_id (test_game.TestGame.test_update_from_other_different_id) ... ok
+test_update_from_other_different_name (test_game.TestGame.test_update_from_other_different_name) ... ok
+test1_check_diskspace (test_installer.Test.test1_check_diskspace) ... ok
+test1_extract_by_wine (test_installer.Test.test1_extract_by_wine)
+[scenario: success] ... ok
+test1_extract_installer (test_installer.Test.test1_extract_installer)
+[scenario: linux installer, unpack success] ... ok
+test1_get_lang_with_innoextract (test_installer.Test.test1_get_lang_with_innoextract)
+[scenario: no innoextract - default en-US used] ... ok
+test1_postinstaller (test_installer.Test.test1_postinstaller) ... ok
+test1_verify_disk_space (test_installer.Test.test1_verify_disk_space) ... ok
+test1_verify_installer_integrity (test_installer.Test.test1_verify_installer_integrity) ... WARNING:root:Warning. No info about correct beneath_a_steel_sky_en_gog_2_20150.json MD5 checksum
+ok
+test2_check_diskspace (test_installer.Test.test2_check_diskspace) ... ok
+test2_extract_by_wine (test_installer.Test.test2_extract_by_wine)
+[scenario: install failed] ... ERROR:root:<MagicMock name='Popen().stderr.readline().__radd__()' id='140669715290432'>
+ERROR:root:Unattended install failed. Try install with wizard dialog.
+ERROR:root:<MagicMock name='Popen().stderr.readline().__radd__()' id='140669715290432'>
+ok
+test2_extract_installer (test_installer.Test.test2_extract_installer)
+[scenario: linux installer, unpack failed] ... ok
+test2_get_lang_with_innoextract (test_installer.Test.test2_get_lang_with_innoextract)
+[scenario: innoextract --list-languages returns locale ids] ... ok
+test2_postinstaller (test_installer.Test.test2_postinstaller) ... ok
+test2_verify_installer_integrity (test_installer.Test.test2_verify_installer_integrity) ... WARNING:root:Warning. No info about correct beneath_a_steel_sky_en_gog_2_20150.json MD5 checksum
+ok
+test3_get_lang_with_innoextract (test_installer.Test.test3_get_lang_with_innoextract)
+[scenario: innoextract --list-languages returns language names] ... ok
+test3_postinstaller (test_installer.Test.test3_postinstaller) ... ok
+test4_get_lang_with_innoextract (test_installer.Test.test4_get_lang_with_innoextract)
+[scenario: innoextract --list-languages can't be matched - default en-US is used] ... ok
+test_compare_directory_false (test_installer.Test.test_compare_directory_false) ... ok
+test_compare_directory_true (test_installer.Test.test_compare_directory_true) ... ok
+test_extract_linux (test_installer.Test.test_extract_linux) ... ok
+test_fail_on_error (test_installer.Test.test_fail_on_error)
+[scenario: fail_on_error throws on thruthy first argument] ... ok
+test_fail_on_error_tuple (test_installer.Test.test_fail_on_error_tuple)
+[scenario: fail_on_error supports tuple as first argument]: ... ok
+test_get_availablediskspace (test_installer.Test.test_get_availablediskspace) ... ok
+test_get_exec_line (test_installer.Test.test_get_exec_line) ... ok
+test_get_game_size_from_unzip (test_installer.Test.test_get_game_size_from_unzip) ... ok
+test_install_game (test_installer.Test.test_install_game)
+[scenario: unhandled error] ... ERROR:root:Error installing game 'Absolute Drift'
+Traceback (most recent call last):
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/installer.py", line 88, in install_game
+    installer_inventory = InstallerInventory.from_file_system(installer)
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/installer.py", line 613, in from_file_system
+    if os.path.isfile(inventory.inventory_file):
+       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 39, in isfile
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+
+The above exception was the direct cause of the following exception:
+
+minigalaxy.installer.InstallException: Unhandled error.
+ERROR:root:Unhandled error.
+ok
+test_install_game_with_checksum_exception (test_installer.Test.test_install_game_with_checksum_exception)
+[scenario: install_game with raise_error=True uses raise instead of return - checksum failure variant] ... ERROR:root:Error installing game 'Absolute Drift'
+Traceback (most recent call last):
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/installer.py", line 90, in install_game
+    verify_installer_integrity(game, installer_inventory, progress_callback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1176, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1180, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1241, in _execute_mock_call
+    raise effect
+minigalaxy.installer.InstallException: ('Checksum Error', <InstallResultType.CHECKSUM_ERROR: 6>, {'/cache/adrift_setup-1.bin': 'md5abc'})
+ERROR:root:Checksum Error
+ok
+test_install_game_with_failure_exception (test_installer.Test.test_install_game_with_failure_exception)
+[scenario: install_game with raise_error=True uses raise instead of return - regular failure variant] ... ERROR:root:Error installing game 'Absolute Drift'
+Traceback (most recent call last):
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/installer.py", line 93, in install_game
+    fail_on_error(verify_disk_space(game, installer), InstallResultType.FAILURE)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/installer.py", line 146, in fail_on_error
+    raise InstallException(message_to_test, fail_type, data)
+minigalaxy.installer.InstallException: ('disk_full', <InstallResultType.FAILURE: 5>, None)
+ERROR:root:disk_full
+ok
+test_remove_corrupt_files_only (test_installer.Test.test_remove_corrupt_files_only)
+[scenario: install_game fails checksum, verify that remove_installer will be called, but not remove valid files] ... ERROR:root:Error installing game 'Absolute Drift'
+Traceback (most recent call last):
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/installer.py", line 90, in install_game
+    verify_installer_integrity(game, installer_inventory, progress_callback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1176, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1180, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1241, in _execute_mock_call
+    raise effect
+minigalaxy.installer.InstallException: ('Checksum Error', <InstallResultType.CHECKSUM_ERROR: 6>, ['/cache/adrift_setup-1.bin', '/cache/adrift_setup-3.bin'])
+ERROR:root:Checksum Error
+ok
+test_remove_installer_from_keep (test_installer.Test.test_remove_installer_from_keep)
+Called from keep dir ... ok
+test_remove_installer_keep (test_installer.Test.test_remove_installer_keep)
+Keep installer dir ... ok
+test_remove_installer_no_installer (test_installer.Test.test_remove_installer_no_installer)
+No installer present ... ok
+test_remove_installer_no_keep (test_installer.Test.test_remove_installer_no_keep)
+Disabled keep_installer ... ok
+test_InstallTask_init_requires_Game (test_installer_queue.Test.test_InstallTask_init_requires_Game)
+[scenario: InstallTask__init__ must have received a Game instance as part of *args or **kwargs] ... ok
+test_InstallTask_init_requires_callback (test_installer_queue.Test.test_InstallTask_init_requires_callback)
+[scenario: InstallTask__init__ enforces result_callback to be a callable] ... ok
+test_enqueue_game (test_installer_queue.Test.test_enqueue_game)
+[scenario: Game gets queued and ultimately runs into install_game] ... ok
+test_enqueue_game_failure (test_installer_queue.Test.test_enqueue_game_failure)
+[scenario: Game gets queued and ultimately runs into install_game] ... ERROR:root:Error installing item 12345: error
+Traceback (most recent call last):
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/installer.py", line 807, in execute
+    install_game(*self.arg_array, **self.named_args, raise_error=True, progress_callback=self.notifyStep)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1176, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1180, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1241, in _execute_mock_call
+    raise effect
+minigalaxy.installer.InstallException: error
+ok
+test_enqueue_game_install_lazy_init (test_installer_queue.Test.test_enqueue_game_install_lazy_init)
+[scenario: The very first invocation of installer.enqueue_game_install creates the global InstallerQueue] ... ok
+test_install_thread_lifecycle (test_installer_queue.Test.test_install_thread_lifecycle)
+[scenario: The install worker thread of InstallerQueue must only run when there are items on the queue] ... ok
+test_no_duplicates (test_installer_queue.Test.test_no_duplicates)
+[scenario: InstallerQueue.put() must ignore items which are equal to already placed items.] ... ok
+test1_check_if_game_start_process_spawned_final_process (test_launcher.Test.test1_check_if_game_start_process_spawned_final_process) ... ok
+test1_check_if_game_started_correctly (test_launcher.Test.test1_check_if_game_started_correctly) ... ok
+test1_determine_launcher_type (test_launcher.Test.test1_determine_launcher_type) ... ok
+test1_get_windows_launch_commands (test_launcher.Test.test1_get_windows_launch_commands) ... ok
+test1_get_windows_launch_commands_can_choose_lnk (test_launcher.Test.test1_get_windows_launch_commands_can_choose_lnk) ... ok
+test1_run_game_subprocess (test_launcher.Test.test1_run_game_subprocess) ... ok
+test2_check_if_game_start_process_spawned_final_process (test_launcher.Test.test2_check_if_game_start_process_spawned_final_process) ... ok
+test2_check_if_game_started_correctly (test_launcher.Test.test2_check_if_game_started_correctly) ... ok
+test2_determine_launcher_type (test_launcher.Test.test2_determine_launcher_type) ... ok
+test2_get_windows_launch_commands (test_launcher.Test.test2_get_windows_launch_commands) ... ok
+test2_run_game_subprocess (test_launcher.Test.test2_run_game_subprocess) ... ok
+test3_check_if_game_start_process_spawned_final_process (test_launcher.Test.test3_check_if_game_start_process_spawned_final_process) ... ok
+test3_determine_launcher_type (test_launcher.Test.test3_determine_launcher_type) ... ok
+test3_get_windows_launch_commands (test_launcher.Test.test3_get_windows_launch_commands) ... ok
+test4_determine_launcher_type (test_launcher.Test.test4_determine_launcher_type) ... ok
+test5_determine_launcher_type (test_launcher.Test.test5_determine_launcher_type) ... ok
+test_get_dosbox_launch_commands (test_launcher.Test.test_get_dosbox_launch_commands) ... ok
+test_get_scummvm_launch_commands (test_launcher.Test.test_get_scummvm_launch_commands) ... ok
+test_get_start_script_launch_commands (test_launcher.Test.test_get_start_script_launch_commands) ... ok
+test_load_pixbuf_cached (ui.test_gtk.TestGtk.test_load_pixbuf_cached) ... ok
+test_load_pixbuf_docache (ui.test_gtk.TestGtk.test_load_pixbuf_docache) ... ok
+test_load_pixbuf_nocache (ui.test_gtk.TestGtk.test_load_pixbuf_nocache) ... ok
+test_load_scaled_pixbuf_both_cached (ui.test_gtk.TestGtk.test_load_scaled_pixbuf_both_cached) ... ok
+test_load_scaled_pixbuf_docache (ui.test_gtk.TestGtk.test_load_scaled_pixbuf_docache) ... ok
+test_load_scaled_pixbuf_nocache (ui.test_gtk.TestGtk.test_load_scaled_pixbuf_nocache) ... ok
+test_load_scaled_pixbuf_unscaled_cached (ui.test_gtk.TestGtk.test_load_scaled_pixbuf_unscaled_cached) ... ok
+test_load_ui (ui.test_gtk.TestGtk.test_load_ui)
+Checks if ui files are loaded correctly by loading some of the smaller files and comparing ... ok
+test_scale_pixbuf (ui.test_gtk.TestGtk.test_scale_pixbuf) ... ok
+test1_add_games_from_api (ui.test_ui_library.TestLibrary.test1_add_games_from_api) ... /build/minigalaxy-git/src/minigalaxy/minigalaxy/ui/library.py:36: DeprecationWarning: 'locale.getdefaultlocale' is deprecated and slated for removal in Python 3.15. Use setlocale(), getencoding() and getlocale() instead.
+  default_locale = locale.getdefaultlocale()[0]
+ok
+test1_get_installed_windows_game (ui.test_ui_library.TestLibrary.test1_get_installed_windows_game) ... ok
+test2_add_games_from_api (ui.test_ui_library.TestLibrary.test2_add_games_from_api) ... ok
+test2_get_installed_windows_game (ui.test_ui_library.TestLibrary.test2_get_installed_windows_game) ... ok
+test3_add_games_from_api (ui.test_ui_library.TestLibrary.test3_add_games_from_api) ... ok
+test4_add_games_from_api (ui.test_ui_library.TestLibrary.test4_add_games_from_api) ... ok
+test5_add_games_from_api (ui.test_ui_library.TestLibrary.test5_add_games_from_api) ... ok
+test6_add_games_from_api (ui.test_ui_library.TestLibrary.test6_add_games_from_api) ... ok
+test_installed_games_removed_from_current_downloads (ui.test_ui_library.TestLibrary.test_installed_games_removed_from_current_downloads)
+Make sure that library detects when already installed games are still marked as to be downloaded ... ok
+test_read_game_categories_file_should_return_populated_dict (ui.test_ui_library.TestLibrary.test_read_game_categories_file_should_return_populated_dict) ... ok
+test_update_game_categories_file_should_create_file_if_not_found (ui.test_ui_library.TestLibrary.test_update_game_categories_file_should_create_file_if_not_found) ... ok
+test_update_game_categories_file_should_overwrite_file_if_contents_differ (ui.test_ui_library.TestLibrary.test_update_game_categories_file_should_overwrite_file_if_contents_differ) ... ok
+test_update_game_categories_file_should_skip_for_empty_dict (ui.test_ui_library.TestLibrary.test_update_game_categories_file_should_skip_for_empty_dict) ... ok
+test_update_game_categories_file_should_skip_if_file_found_with_identical_contents (ui.test_ui_library.TestLibrary.test_update_game_categories_file_should_skip_if_file_found_with_identical_contents) ... ok
+test1_init (ui.test_ui_window.TestWindow.test1_init) ... /build/minigalaxy-git/src/minigalaxy/minigalaxy/ui/window.py:36: DeprecationWarning: 'locale.getdefaultlocale' is deprecated and slated for removal in Python 3.15. Use setlocale(), getencoding() and getlocale() instead.
+  default_locale = locale.getdefaultlocale()[0]
+ok
+test2_init (ui.test_ui_window.TestWindow.test2_init) ... ok
+test3_init (ui.test_ui_window.TestWindow.test3_init) ... WARNING:root:Starting in offline mode after receiving exception
+Traceback (most recent call last):
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/ui/window.py", line 94, in load_library
+    self.__authenticate()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/build/minigalaxy-git/src/minigalaxy/minigalaxy/ui/window.py", line 218, in __authenticate
+    authenticated = self.api.authenticate(refresh_token=token, login_code=url)
+  File "/usr/lib/python3.14/unittest/mock.py", line 1176, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1180, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/unittest/mock.py", line 1241, in _execute_mock_call
+    raise effect
+simplejson.errors.JSONDecodeError: mock: line 1 column 1 (char 0)
+ok
+test_opulate_combo_with_preselect (ui.test_widget_utils.TestWidgetUtils.test_opulate_combo_with_preselect) ... ok
+test_populate_combo_no_default (ui.test_widget_utils.TestWidgetUtils.test_populate_combo_no_default) ... ok
+
+----------------------------------------------------------------------
+Ran 177 tests in 2.593s
+
+OK
+1781456474.9573028 assert
+<MagicMock name='Popen().stdout.readline()' id='140669753400288'><MagicMock name='Popen().stderr.readline()' id='140669715284720'><MagicMock name='Popen().stdout.readline()' id='140669715296480'><MagicMock name='Popen().stderr.readline()' id='140669715291440'><MagicMock name='Popen().stdout.readline()' id='140669715296480'><MagicMock name='Popen().stderr.readline()' id='140669715291440'>/build/minigalaxy-git/src/minigalaxy/minigalaxy/api.py:244: SyntaxWarning: 'return' in a 'finally' block
+  return result
+Name                                               Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------------
+minigalaxy/__init__.py                                 0      0   100%
+minigalaxy/__main__.py                                 2      2     0%   1-4
+minigalaxy/api.py                                    253     61    76%   36-41, 45-52, 56-64, 67-77, 95-96, 111, 132-140, 157-160, 163-167, 174-175, 187, 202, 219-220, 258, 294, 302-304, 316-317, 321-328
+minigalaxy/config.py                                 185     14    92%   42-46, 79-80, 93-94, 98, 101-102, 237, 241
+minigalaxy/constants.py                               10      0   100%
+minigalaxy/css.py                                     11     11     0%   1-19
+minigalaxy/data/__init__.py                            0      0   100%
+minigalaxy/download/__init__.py                        2      0   100%
+minigalaxy/download/combined_progress_watcher.py      34      0   100%
+minigalaxy/download/model.py                          56      5    91%   84-85, 88-89, 99
+minigalaxy/download_manager.py                       398    148    63%   56-59, 159-161, 164-165, 168-174, 180, 187, 193, 196, 205-206, 225, 228-235, 250, 262-282, 296, 358, 364, 370-371, 380-386, 404-405, 410, 414-415, 437-445, 465-502, 512-518, 527-536, 554, 561-562, 585, 588-590, 622-646, 656, 675-681, 685-690, 704, 717, 736, 744
+minigalaxy/entity/__init__.py                          0      0   100%
+minigalaxy/entity/state.py                            14      0   100%
+minigalaxy/file_info.py                                6      0   100%
+minigalaxy/game.py                                   180     20    89%   46-49, 63-72, 111, 121-122, 234, 237, 262, 267-269
+minigalaxy/installer.py                              576    140    76%   48, 95-108, 129, 159, 194-200, 208, 219, 226, 243-254, 303-317, 321-330, 342-349, 358-396, 444-446, 462, 468-472, 487-492, 534-543, 557-558, 566-568, 614, 640-643, 646-650, 668-671, 674-683, 711, 713, 795, 817-818, 823, 826, 838, 841-842, 865, 885-886, 889-890, 901-903, 916-917
+minigalaxy/launch_command.py                          20      7    65%   15, 17-18, 24-27
+minigalaxy/launcher.py                               207     61    71%   21, 31-33, 37-38, 42-43, 47-48, 52-67, 76, 78, 81-85, 110, 124, 155-159, 232-244, 248-258, 314-321
+minigalaxy/minigalaxy.py                              83     83     0%   2-146
+minigalaxy/paths.py                                   21      1    95%   6
+minigalaxy/resources.py                               10      4    60%   9, 20-23
+minigalaxy/translation.py                             31      8    74%   11-12, 16-17, 21-22, 35, 39
+minigalaxy/ui/__init__.py                              3      0   100%
+minigalaxy/ui/about.py                                11     11     0%   1-14
+minigalaxy/ui/categoryfilters.py                      34     34     0%   1-58
+minigalaxy/ui/chooselauchoption.py                    40     40     0%   1-54
+minigalaxy/ui/data/__init__.py                         0      0   100%
+minigalaxy/ui/download_list.py                       280    280     0%   1-445
+minigalaxy/ui/filterswitch.py                         15     15     0%   1-20
+minigalaxy/ui/game_icon_bar.py                        58     58     0%   1-95
+minigalaxy/ui/gametile.py                             52     52     0%   1-67
+minigalaxy/ui/gametilelist.py                         61     61     0%   1-79
+minigalaxy/ui/gtk.py                                  30      0   100%
+minigalaxy/ui/information.py                         108    108     0%   1-145
+minigalaxy/ui/library.py                             207     93    55%   38, 42-43, 57-59, 62-64, 67-71, 74-76, 79-88, 91-93, 96-103, 106-121, 127-129, 133-159, 162-175, 181, 189, 193-204, 222-224, 251, 264
+minigalaxy/ui/library_entry.py                       611    611     0%   1-938
+minigalaxy/ui/login.py                                51     51     0%   1-72
+minigalaxy/ui/preferences.py                         136    136     0%   1-171
+minigalaxy/ui/properties.py                          114    114     0%   1-153
+minigalaxy/ui/webkit.py                                6      6     0%   1-7
+minigalaxy/ui/widget_utils.py                         21      6    71%   34-40
+minigalaxy/ui/window.py                              163     62    62%   38, 42-43, 69, 75, 104-106, 110-112, 116-118, 122-124, 128-139, 143-146, 150-152, 166, 169, 172-184, 187-198, 210-212, 216, 221-231
+minigalaxy/version.py                                  1      1     0%   1
+--------------------------------------------------------------------------------
+TOTAL                                               4101   2304    44%

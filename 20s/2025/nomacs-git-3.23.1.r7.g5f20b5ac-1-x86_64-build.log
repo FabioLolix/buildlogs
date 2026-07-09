@@ -1,0 +1,95 @@
+-- The C compiler identification is GNU 16.1.1
+-- The CXX compiler identification is GNU 16.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found Cups: /usr/lib/libcups.so (found version "2.4.19")
+-- A release build (non-debug). Debugging outputs are silently ignored.
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'exiv2>=0.27'
+--   Found exiv2, version 0.28.8
+-- exiv2 version by pkg-config: 0.28.8
+-- exiv2 contains exiv2.hpp, using it
+-- Found OpenCV: /usr (found version "5.0.0") found components: core imgproc
+-- Checking for module 'libraw>=0.12.0'
+--   Found libraw, version 0.22.1
+-- Found TIFF: /usr/lib/cmake/tiff (found version "4.7.2")
+-- revision is 5f20b5ac, 2026-07-05, custom
+linuxdeploy is not available or working, required for AppImage
+you may install a compatible version with scripts/build-linuxdeploy.sh
+-- nomacs version is 3.23.1
+-- using plugin directory: /build/nomacs-git/src/nomacs/ImageLounge/plugins
+-- Found GTest: /usr/lib/cmake/GTest/GTestConfig.cmake (found version "1.17.0")
+-- 
+-- ----------------------------------------------------------------------------------
+--  nomacs - Image Lounge 3.23  <https://nomacs.org>
+--  Qt version: 6.11.1
+--  nomacs will be compiled with OPENCV support .................. YES
+--  nomacs will be compiled with LIBRAW support .................. YES
+--  nomacs will be compiled with extended TIFF support ........... YES
+--  nomacs will be compiled with plugin support .................. YES
+--  nomacs will be compiled with Translations .................... YES
+--  nomacs will be compiled with QuaZip support .................. NO
+--  nomacs tests ................................................. YES
+--  nomacs benchmarks ............................................ NO
+-- ----------------------------------------------------------------------------------
+-- Configuring done (1.2s)
+-- Generating done (0.1s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    ENABLE_AVIF
+
+
+-- Build files have been written to: /build/nomacs-git/src/nomacs/build
+[  0%] Built target nomacsCore_autogen_timestamp_deps
+[  0%] Built target copy_css_files
+[  1%] Automatic MOC for target nomacsCore
+[  1%] Built target nomacsCore_autogen
+[  2%] Generating qrc_nomacs.cpp
+[  3%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkControlWidget.cpp.o
+[  4%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkLogWidget.cpp.o
+[  5%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBaseWidgets.cpp.o
+[  6%] Building CXX object CMakeFiles/nomacsCore.dir/nomacsCore_autogen/mocs_compilation.cpp.o
+[  8%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMetaDataWidgets.cpp.o
+[  8%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMenu.cpp.o
+[  8%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkCentralWidget.cpp.o
+[  9%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkConnection.cpp.o
+[ 10%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDockWidgets.cpp.o
+[ 10%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkManipulatorWidgets.cpp.o
+[ 10%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o
+[ 11%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNetwork.cpp.o
+[ 12%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBatch.cpp.o
+[ 12%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNoMacs.cpp.o
+[ 13%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPreferenceWidgets.cpp.o
+[ 13%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkQuickAccess.cpp.o
+[ 14%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkSettingsWidget.cpp.o
+[ 14%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkThumbsWidgets.cpp.o
+[ 15%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkShortcuts.cpp.o
+[ 16%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPong.cpp.o
+/build/nomacs-git/src/nomacs/ImageLounge/src/DkGui/DkDialog.cpp:95:10: fatal error: opencv2/imgproc/imgproc_c.h: No such file or directory
+   95 | #include "opencv2/imgproc/imgproc_c.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/nomacsCore.dir/build.make:271: CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:323: CMakeFiles/nomacsCore.dir/all] Error 2
+make: *** [Makefile:166: all] Error 2
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

@@ -1,0 +1,180 @@
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.1.1
+-- The CXX compiler identification is GNU 16.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'ogg'
+--   Found ogg, version 1.3.6
+found libogg
+-- Checking for modules 'vorbis;vorbisfile'
+--   Found vorbis, version 1.3.7
+--   Found vorbisfile, version 1.3.7
+found libvorbis
+-- Checking for module 'glew'
+--   Found glew, version 2.3.1
+found GLEW
+-- Checking for module 'sdl2'
+--   Found sdl2, version 2.32.70
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/rsdkv4/src/build
+[  1%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Debug.cpp.o
+[  4%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Animation.cpp.o
+[  4%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Ini.cpp.o
+[  6%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Audio.cpp.o
+[  9%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/main.cpp.o
+[  9%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/ModAPI.cpp.o
+[ 12%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Drawing.cpp.o
+[ 12%] Building CXX object CMakeFiles/RetroEngine.dir/dependencies/all/tinyxml2/tinyxml2.cpp.o
+[ 15%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Input.cpp.o
+[ 15%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Collision.cpp.o
+[ 16%] Building C object CMakeFiles/RetroEngine.dir/RSDKv4/fcaseopen.c.o
+[ 18%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Math.cpp.o
+[ 19%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Networking.cpp.o
+[ 21%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Object.cpp.o
+[ 24%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Renderer.cpp.o
+[ 25%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Reader.cpp.o
+[ 25%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Palette.cpp.o
+[ 27%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/RetroEngine.cpp.o
+[ 28%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Scene.cpp.o
+[ 30%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Scene3D.cpp.o
+/build/rsdkv4/src/rsdkv4/RSDKv4/fcaseopen.c: In function ‘casechdir’:
+/build/rsdkv4/src/rsdkv4/RSDKv4/fcaseopen.c:128:9: warning: ignoring return value of ‘chdir’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  128 |         chdir(r);
+      |         ^~~~~~~~
+[ 31%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Script.cpp.o
+[ 33%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Sprite.cpp.o
+In file included from /build/rsdkv4/src/rsdkv4/RSDKv4/RetroEngine.hpp:326,
+                 from /build/rsdkv4/src/rsdkv4/RSDKv4/Reader.cpp:1:
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.cpp: In function ‘bool CheckRSDKFile(const char*)’:
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.hpp:9:62: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+    9 | #define fRead(buffer, elementSize, elementCount, file)  fread(buffer, elementSize, elementCount, file)
+      |                                                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.cpp:43:13: note: in expansion of macro ‘fRead’
+   43 |             fRead(&buf, 1, 1, cFileHandle);
+      |             ^~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.hpp:9:62: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+    9 | #define fRead(buffer, elementSize, elementCount, file)  fread(buffer, elementSize, elementCount, file)
+      |                                                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.cpp:56:9: note: in expansion of macro ‘fRead’
+   56 |         fRead(&b, 2, 1, cFileHandle);
+      |         ^~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.hpp:9:62: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+    9 | #define fRead(buffer, elementSize, elementCount, file)  fread(buffer, elementSize, elementCount, file)
+      |                                                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.cpp:60:17: note: in expansion of macro ‘fRead’
+   60 |                 fRead(b, 1, 4, cFileHandle);
+      |                 ^~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.hpp:9:62: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+    9 | #define fRead(buffer, elementSize, elementCount, file)  fread(buffer, elementSize, elementCount, file)
+      |                                                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.cpp:64:13: note: in expansion of macro ‘fRead’
+   64 |             fRead(b, 4, 1, cFileHandle);
+      |             ^~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.hpp:9:62: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+    9 | #define fRead(buffer, elementSize, elementCount, file)  fread(buffer, elementSize, elementCount, file)
+      |                                                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.cpp:66:13: note: in expansion of macro ‘fRead’
+   66 |             fRead(b, 4, 1, cFileHandle);
+      |             ^~~~~
+[ 34%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/String.cpp.o
+[ 36%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Text.cpp.o
+[ 37%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/Userdata.cpp.o
+/build/rsdkv4/src/rsdkv4/RSDKv4/ModAPI.cpp: In function ‘void InitMods()’:
+/build/rsdkv4/src/rsdkv4/RSDKv4/ModAPI.cpp:66:23: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   66 |     sprintf(savePath, "");
+      |                       ^~
+/build/rsdkv4/src/rsdkv4/RSDKv4/ModAPI.cpp:126:23: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+  126 |     sprintf(savePath, "");
+      |                       ^~
+/build/rsdkv4/src/rsdkv4/RSDKv4/ModAPI.cpp: In function ‘void RefreshEngine()’:
+/build/rsdkv4/src/rsdkv4/RSDKv4/ModAPI.cpp:409:23: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+  409 |     sprintf(savePath, "");
+      |                       ^~
+[ 39%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/AboutScreen.cpp.o
+/build/rsdkv4/src/rsdkv4/RSDKv4/Ini.cpp: In constructor ‘IniParser::IniParser(const char*, bool)’:
+/build/rsdkv4/src/rsdkv4/RSDKv4/Ini.cpp:76:39: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   76 |                 sprintf(item.section, "");
+      |                                       ^~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Ini.cpp: In member function ‘void IniParser::Write(const char*, bool)’:
+/build/rsdkv4/src/rsdkv4/RSDKv4/Ini.cpp:295:19: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+  295 |     sprintf(past, "");
+      |                   ^~
+[ 40%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/AchievementDisplay.cpp.o
+[ 42%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/AchievementsButton.cpp.o
+[ 43%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/AchievementsMenu.cpp.o
+[ 46%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/CWSplash.cpp.o
+[ 46%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/BackButton.cpp.o
+[ 48%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/CreditText.cpp.o
+[ 50%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/DialogPanel.cpp.o
+[ 51%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/FadeScreen.cpp.o
+[ 53%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/InstructionsScreen.cpp.o
+[ 54%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/LeaderboardsButton.cpp.o
+[ 56%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/MenuBG.cpp.o
+[ 57%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/MenuControl.cpp.o
+[ 59%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/ModInfoButton.cpp.o
+[ 60%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/ModsButton.cpp.o
+[ 62%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/ModsMenu.cpp.o
+In file included from /build/rsdkv4/src/rsdkv4/RSDKv4/RetroEngine.hpp:326,
+                 from /build/rsdkv4/src/rsdkv4/RSDKv4/Userdata.cpp:1:
+/build/rsdkv4/src/rsdkv4/RSDKv4/Userdata.cpp: In function ‘bool ReadSaveRAMData()’:
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.hpp:9:62: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+    9 | #define fRead(buffer, elementSize, elementCount, file)  fread(buffer, elementSize, elementCount, file)
+      |                                                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Userdata.cpp:112:5: note: in expansion of macro ‘fRead’
+  112 |     fRead(saveRAM, sizeof(int), SAVEDATA_SIZE, saveFile);
+      |     ^~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Userdata.cpp: In function ‘void ReadUserdata()’:
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.hpp:9:62: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+    9 | #define fRead(buffer, elementSize, elementCount, file)  fread(buffer, elementSize, elementCount, file)
+      |                                                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Userdata.cpp:834:9: note: in expansion of macro ‘fRead’
+  834 |         fRead(&buf, 4, 1, userFile);
+      |         ^~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Reader.hpp:9:62: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+    9 | #define fRead(buffer, elementSize, elementCount, file)  fread(buffer, elementSize, elementCount, file)
+      |                                                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/rsdkv4/src/rsdkv4/RSDKv4/Userdata.cpp:838:9: note: in expansion of macro ‘fRead’
+  838 |         fRead(&buf, 4, 1, userFile);
+      |         ^~~~~
+[ 63%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/MultiplayerButton.cpp.o
+[ 65%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/MultiplayerHandler.cpp.o
+[ 66%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/MultiplayerScreen.cpp.o
+[ 68%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/OptionsButton.cpp.o
+[ 69%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/OptionsMenu.cpp.o
+[ 71%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/PauseMenu.cpp.o
+[ 72%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/PlayerSelectScreen.cpp.o
+[ 74%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/PushButton.cpp.o
+[ 75%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/RecordsScreen.cpp.o
+[ 77%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/RetroGameLoop.cpp.o
+[ 78%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/SaveSelect.cpp.o
+[ 80%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/SegaIDButton.cpp.o
+[ 83%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/SettingsScreen.cpp.o
+[ 83%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/SegaSplash.cpp.o
+[ 84%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/StaffCredits.cpp.o
+[ 86%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/StartGameButton.cpp.o
+[ 87%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/SubMenuButton.cpp.o
+[ 89%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/TextLabel.cpp.o
+[ 90%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/TimeAttack.cpp.o
+[ 92%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/TimeAttackButton.cpp.o
+[ 93%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/TitleScreen.cpp.o
+[ 95%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/VirtualDPad.cpp.o
+[ 96%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/VirtualDPadM.cpp.o
+[ 98%] Building CXX object CMakeFiles/RetroEngine.dir/RSDKv4/NativeObjects/ZoneButton.cpp.o
+[100%] Linking CXX executable RSDKv4
+In function ‘memset’,
+    inlined from ‘FileRead’ at /usr/src/debug/rsdkv4/rsdkv4/RSDKv4/Reader.cpp:399:11,
+    inlined from ‘_Z16LoadStageGIFFilei.part.0’ at /usr/src/debug/rsdkv4/rsdkv4/RSDKv4/Scene.cpp:1374:25:
+/usr/include/bits/string_fortified.h:59:33: warning: ‘__builtin___memset_chk’ writing 3 bytes into a region of size 1 overflows the destination [-Wstringop-overflow=]
+   59 |   return __builtin___memset_chk (__dest, __ch, __len,
+      |                                 ^
+[100%] Built target RetroEngine

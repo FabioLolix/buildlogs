@@ -1,0 +1,222 @@
+-- The CXX compiler identification is Clang 22.1.6
+-- The C compiler identification is Clang 22.1.6
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for C++ include filesystem
+-- Looking for C++ include filesystem - found
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED - Success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for C++ include pwd.h
+-- Looking for C++ include pwd.h - found
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/libffi.so
+-- Looking for histedit.h
+-- Looking for histedit.h - found
+-- Found LibEdit: /usr/include (found version "2.11")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.2")
+-- Found LibXml2: /usr/lib/libxml2.so (found version "2.15.3")
+-- Found CURL: /usr/lib/libcurl.so (found version "8.20.0")
+-- Linker detection: GNU ld
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS - Success
+-- Performing Test SUPPORT_EXCLUDE_LIBS
+-- Performing Test SUPPORT_EXCLUDE_LIBS - Success
+-- spdlog found
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /usr/bin/clang
+-- Configuring done (2.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/wasmedge-git/src/build
+[  1%] Building CXX object lib/common/CMakeFiles/wasmedgeCommon.dir/hash.cpp.o
+[  3%] Building CXX object lib/common/CMakeFiles/wasmedgeCommon.dir/errinfo.cpp.o
+[  3%] Building CXX object lib/common/CMakeFiles/wasmedgeCommon.dir/spdlog.cpp.o
+[  3%] Building CXX object lib/common/CMakeFiles/wasmedgeCommon.dir/hexstr.cpp.o
+[  4%] Building C object thirdparty/blake3/CMakeFiles/utilBlake3.dir/blake3_dispatch.c.o
+[  5%] Building C object thirdparty/blake3/CMakeFiles/utilBlake3.dir/blake3_portable.c.o
+[  6%] Building ASM object thirdparty/blake3/CMakeFiles/utilBlake3.dir/blake3_avx512_x86-64_unix.S.o
+[  7%] Building ASM object thirdparty/blake3/CMakeFiles/utilBlake3.dir/blake3_sse2_x86-64_unix.S.o
+[  8%] Building ASM object thirdparty/blake3/CMakeFiles/utilBlake3.dir/blake3_sse41_x86-64_unix.S.o
+[  8%] Building ASM object thirdparty/blake3/CMakeFiles/utilBlake3.dir/blake3_avx2_x86-64_unix.S.o
+[  8%] Building C object thirdparty/blake3/CMakeFiles/utilBlake3.dir/blake3.c.o
+[  8%] Linking C static library libutilBlake3.a
+[  8%] Built target utilBlake3
+In file included from /build/wasmedge-git/src/WasmEdge/lib/common/spdlog.cpp:4:
+In file included from /build/wasmedge-git/src/WasmEdge/include/common/spdlog.h:17:
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:559:42: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  559 | inline constexpr bool operator>=(detail::uint128_fallback LHS,
+      |                                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:564:41: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  564 | inline constexpr bool operator<(detail::uint128_fallback LHS,
+      |                                 ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:569:41: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  569 | inline constexpr bool operator<(detail::uint128_fallback LHS,
+      |                                 ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:570:41: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  570 |                                 detail::uint128_fallback RHS) {
+      |                                 ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:575:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  575 | inline constexpr detail::uint128_fallback
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:576:19: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  576 | operator+(detail::uint128_fallback LHS, unsigned int RHS) {
+      |           ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:579:10: error: excess elements in scalar initializer
+  579 |   return {NewHigh, NewLow};
+      |          ^       ~~~~~~~~~
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:582:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  582 | inline constexpr detail::uint128_fallback
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:583:37: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  583 | operator-(unsigned int LHS, detail::uint128_fallback RHS) {
+      |                             ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:584:11: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  584 |   detail::uint128_fallback Negated = {~RHS.high(), ~RHS.low()};
+      |   ~~~~~~~~^
+In file included from /build/wasmedge-git/src/WasmEdge/lib/common/errinfo.cpp:4:
+In file included from /build/wasmedge-git/src/WasmEdge/include/common/errinfo.h:16:
+In file included from /build/wasmedge-git/src/WasmEdge/include/common/enum_ast.hpp:22:
+In file included from /build/wasmedge-git/src/WasmEdge/include/common/spdlog.h:17:
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:559:42: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  559 | inline constexpr bool operator>=(detail::uint128_fallback LHS,
+      |                                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:588:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  588 | inline constexpr detail::uint128_fallback &
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:564:41: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  564 | inline constexpr bool operator<(detail::uint128_fallback LHS,
+      |                                 ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:589:20: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  589 | operator/=(detail::uint128_fallback &LHS, unsigned int RHSi) {
+      |            ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:569:41: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  569 | inline constexpr bool operator<(detail::uint128_fallback LHS,
+      |                                 ~~~~~~~~^
+In file included from /build/wasmedge-git/src/WasmEdge/lib/common/hash.cpp:1:
+In file included from /build/wasmedge-git/src/WasmEdge/include/common/hash.h:18:
+In file included from /build/wasmedge-git/src/WasmEdge/include/common/errcode.h:16:
+In file included from /build/wasmedge-git/src/WasmEdge/include/common/enum_errcode.hpp:19:
+In file included from /build/wasmedge-git/src/WasmEdge/include/common/spdlog.h:17:
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:559:42: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  559 | inline constexpr bool operator>=(detail::uint128_fallback LHS,
+      |                                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:609:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  609 | inline constexpr detail::uint128_fallback
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:570:41: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  570 |                                 detail::uint128_fallback RHS) {
+      |                                 ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:564:41: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  564 | inline constexpr bool operator<(detail::uint128_fallback LHS,
+      |                                 ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:610:19: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  610 | operator%(detail::uint128_fallback LHS, unsigned int RHSi) {
+      |           ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:575:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  575 | inline constexpr detail::uint128_fallback
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:569:41: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  569 | inline constexpr bool operator<(detail::uint128_fallback LHS,
+      |                                 ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:576:19: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  576 | operator+(detail::uint128_fallback LHS, unsigned int RHS) {
+      |           ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:579:10: error: excess elements in scalar initializer
+  579 |   return {NewHigh, NewLow};
+      |          ^       ~~~~~~~~~
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:620:36: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  620 | inline int do_count_digits(detail::uint128_fallback N) {
+      |                            ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:570:41: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  570 |                                 detail::uint128_fallback RHS) {
+      |                                 ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:582:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  582 | inline constexpr detail::uint128_fallback
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:575:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  575 | inline constexpr detail::uint128_fallback
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:583:37: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  583 | operator-(unsigned int LHS, detail::uint128_fallback RHS) {
+      |                             ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:663:49: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  663 | FMT_CONSTEXPR20 inline int count_digits(detail::uint128_fallback N) {
+      |                                         ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:576:19: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  576 | operator+(detail::uint128_fallback LHS, unsigned int RHS) {
+      |           ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:579:10: error: excess elements in scalar initializer
+  579 |   return {NewHigh, NewLow};
+      |          ^       ~~~~~~~~~
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:584:11: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  584 |   detail::uint128_fallback Negated = {~RHS.high(), ~RHS.low()};
+      |   ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:582:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  582 | inline constexpr detail::uint128_fallback
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:588:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  588 | inline constexpr detail::uint128_fallback &
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:583:37: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  583 | operator-(unsigned int LHS, detail::uint128_fallback RHS) {
+      |                             ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:589:20: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  589 | operator/=(detail::uint128_fallback &LHS, unsigned int RHSi) {
+      |            ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:609:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  609 | inline constexpr detail::uint128_fallback
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:584:11: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  584 |   detail::uint128_fallback Negated = {~RHS.high(), ~RHS.low()};
+      |   ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:610:19: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  610 | operator%(detail::uint128_fallback LHS, unsigned int RHSi) {
+      |           ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:588:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  588 | inline constexpr detail::uint128_fallback &
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:589:20: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  589 | operator/=(detail::uint128_fallback &LHS, unsigned int RHSi) {
+      |            ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:620:36: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  620 | inline int do_count_digits(detail::uint128_fallback N) {
+      |                            ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:609:26: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  609 | inline constexpr detail::uint128_fallback
+      |                  ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:610:19: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  610 | operator%(detail::uint128_fallback LHS, unsigned int RHSi) {
+      |           ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:663:49: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  663 | FMT_CONSTEXPR20 inline int count_digits(detail::uint128_fallback N) {
+      |                                         ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:620:36: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  620 | inline int do_count_digits(detail::uint128_fallback N) {
+      |                            ~~~~~~~~^
+/build/wasmedge-git/src/WasmEdge/include/common/int128.h:663:49: error: no type named 'uint128_fallback' in namespace 'fmt::detail'
+  663 | FMT_CONSTEXPR20 inline int count_digits(detail::uint128_fallback N) {
+      |                                         ~~~~~~~~^
+16 errors generated.
+make[2]: *** [lib/common/CMakeFiles/wasmedgeCommon.dir/build.make:107: lib/common/CMakeFiles/wasmedgeCommon.dir/spdlog.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+16 errors generated.
+make[2]: *** [lib/common/CMakeFiles/wasmedgeCommon.dir/build.make:79: lib/common/CMakeFiles/wasmedgeCommon.dir/hash.cpp.o] Error 1
+16 errors generated.
+make[2]: *** [lib/common/CMakeFiles/wasmedgeCommon.dir/build.make:121: lib/common/CMakeFiles/wasmedgeCommon.dir/errinfo.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:813: lib/common/CMakeFiles/wasmedgeCommon.dir/all] Error 2
+make: *** [Makefile:156: all] Error 2
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
