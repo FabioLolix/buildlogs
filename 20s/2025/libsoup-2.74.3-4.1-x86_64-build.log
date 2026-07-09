@@ -1,0 +1,682 @@
+
+Wrap files:
+Wrap sysprof.wrap type  git not found: sysprof
+Wrap zlib.wrap    type file not found: zlib-1.2.11
+
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 libsoup build -D gtk_doc=true
+The Meson build system
+Version: 1.11.1
+Source dir: /build/libsoup/src/libsoup
+Build dir: /build/libsoup/src/build
+Build type: native build
+DEPRECATION: WrapDB v1 is deprecated, updated using `meson wrap update zlib`
+Project name: libsoup
+Project version: 2.74.3
+C compiler for the host machine: cc (gcc 16.1.1 "cc (GCC) 16.1.1 20260625")
+C linker for the host machine: cc ld.bfd 2.46.1
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wall: YES 
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Winit-self: YES 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports arguments -Werror=aggregate-return: YES 
+Compiler for C supports arguments -Werror=format=2: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wno-format-zero-length: YES 
+libsoup/meson.build:81: WARNING: Consider using the built-in warning_level option instead of using "-Wall".
+libsoup/meson.build:84: WARNING: Project targets '>=0.50' but uses feature introduced in '0.54.0': fallback arg in dependency.
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency glib-2.0 found: YES 2.88.2
+libsoup/meson.build:86: WARNING: Project targets '>=0.50' but uses feature introduced in '0.54.0': fallback arg in dependency.
+Run-time dependency gmodule-2.0 found: YES 2.88.2
+libsoup/meson.build:88: WARNING: Project targets '>=0.50' but uses feature introduced in '0.54.0': fallback arg in dependency.
+Run-time dependency gobject-2.0 found: YES 2.88.2
+libsoup/meson.build:90: WARNING: Project targets '>=0.50' but uses feature introduced in '0.54.0': fallback arg in dependency.
+Run-time dependency gio-2.0 found: YES 2.88.2
+Run-time dependency sqlite3 found: YES 3.53.3
+Run-time dependency libxml-2.0 found: YES 2.15.3
+Run-time dependency libbrotlidec found: YES 1.2.0
+libsoup/meson.build:151: WARNING: Project targets '>=0.50' but uses feature introduced in '0.54.0': fallback arg in dependency.
+Run-time dependency libpsl found: YES 0.21.5
+Checking for function "gmtime_r" : YES 
+libsoup/meson.build:159: WARNING: Project targets '>=0.50' but uses feature introduced in '0.54.0': fallback arg in dependency.
+Run-time dependency sysprof-capture-4 found: YES 50.0
+Checking if "GIO has real TLS support" with dependencies glib-2.0, gmodule-2.0, gobject-2.0, gio-2.0 runs: YES
+Run-time dependency zlib found: YES 1.3.2
+Program apachectl found: YES (/usr/bin/apachectl)
+Program httpd found: YES (/usr/bin/httpd)
+Message: Apache modules directory: /usr/lib64/httpd/modules
+Message: Apache SSL module directory: /usr/lib64/httpd/modules
+Message: Apache PHP module file: 
+Message: Apache mod_unixd module directory: /usr/lib64/httpd/modules
+Program php found: YES (/usr/bin/php)
+Message: 
+libsoup/meson.build:302: WARNING: Some regression tests will not be compiled due to missing libraries or modules. Please check the logs for more details.
+Program krb5-config found: YES (/usr/bin/krb5-config)
+Program ntlm_auth found: YES (/usr/bin/ntlm_auth)
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Vala compiler for the host machine: valac (valac 0.56.19)
+Configuring config.h using configuration
+Dependency gio-2.0 for build machine found: YES 2.88.2 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Configuring soup-version.h using configuration
+Dependency glib-2.0 for build machine found: YES 2.88.2 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for build machine found: YES 2.88.2 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 for build machine found: YES 2.88.2 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Configuring httpd.conf using configuration
+Program gtkdoc-scan found: YES (/usr/bin/gtkdoc-scan)
+Program gtkdoc-scangobj found: YES (/usr/bin/gtkdoc-scangobj)
+Program gtkdoc-mkdb found: YES (/usr/bin/gtkdoc-mkdb)
+Program gtkdoc-mkhtml found: YES (/usr/bin/gtkdoc-mkhtml)
+Program gtkdoc-fixxref found: YES (/usr/bin/gtkdoc-fixxref)
+Build targets in project: 126
+WARNING: Project specifies a minimum meson_version '>=0.50' but uses features which were added in newer versions:
+ * 0.54.0: {'fallback arg in dependency'}
+NOTICE: Future-deprecated features used:
+ * 0.55.0: {'Program.path'}
+ * 0.56.0: {'meson.build_root'}
+
+libsoup 2.74.3
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    gtk_doc           : true
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+Generating targets:   0%|          | 0/126 eta ?                                                Writing build.ninja:   0%|          | 0/286 eta ?                                                 ninja: Entering directory `/build/libsoup/src/build'
+[1/251] Generating libsoup/soup-resources_c with a custom command
+[2/251] Generating libsoup/soup-resources_h with a custom command
+[3/251] Building translation po/ab/LC_MESSAGES/libsoup-ab.mo
+[4/251] Building translation po/an/LC_MESSAGES/libsoup-an.mo
+[5/251] Building translation po/as/LC_MESSAGES/libsoup-as.mo
+[6/251] Building translation po/be/LC_MESSAGES/libsoup-be.mo
+[7/251] Building translation po/bg/LC_MESSAGES/libsoup-bg.mo
+[8/251] Building translation po/bn_IN/LC_MESSAGES/libsoup-bn_IN.mo
+[9/251] Building translation po/bs/LC_MESSAGES/libsoup-bs.mo
+[10/251] Building translation po/ca/LC_MESSAGES/libsoup-ca.mo
+[11/251] Building translation po/ca@valencia/LC_MESSAGES/libsoup-ca@valencia.mo
+[12/251] Generating tests/soup-tests_gresource with a custom command
+[13/251] Building translation po/cs/LC_MESSAGES/libsoup-cs.mo
+[14/251] Building translation po/da/LC_MESSAGES/libsoup-da.mo
+[15/251] Building translation po/de/LC_MESSAGES/libsoup-de.mo
+[16/251] Building translation po/el/LC_MESSAGES/libsoup-el.mo
+[17/251] Building translation po/en_GB/LC_MESSAGES/libsoup-en_GB.mo
+[18/251] Building translation po/eo/LC_MESSAGES/libsoup-eo.mo
+[19/251] Building translation po/es/LC_MESSAGES/libsoup-es.mo
+[20/251] Building translation po/et/LC_MESSAGES/libsoup-et.mo
+[21/251] Building translation po/eu/LC_MESSAGES/libsoup-eu.mo
+[22/251] Building translation po/fa/LC_MESSAGES/libsoup-fa.mo
+[23/251] Building translation po/fi/LC_MESSAGES/libsoup-fi.mo
+[24/251] Building translation po/fr/LC_MESSAGES/libsoup-fr.mo
+[25/251] Building translation po/fur/LC_MESSAGES/libsoup-fur.mo
+[26/251] Building translation po/gd/LC_MESSAGES/libsoup-gd.mo
+[27/251] Building translation po/gl/LC_MESSAGES/libsoup-gl.mo
+[28/251] Building translation po/gu/LC_MESSAGES/libsoup-gu.mo
+[29/251] Building translation po/he/LC_MESSAGES/libsoup-he.mo
+[30/251] Building translation po/hi/LC_MESSAGES/libsoup-hi.mo
+[31/251] Building translation po/hr/LC_MESSAGES/libsoup-hr.mo
+[32/251] Building translation po/hu/LC_MESSAGES/libsoup-hu.mo
+[33/251] Building translation po/id/LC_MESSAGES/libsoup-id.mo
+[34/251] Building translation po/it/LC_MESSAGES/libsoup-it.mo
+[35/251] Building translation po/ja/LC_MESSAGES/libsoup-ja.mo
+[36/251] Building translation po/kn/LC_MESSAGES/libsoup-kn.mo
+[37/251] Building translation po/ko/LC_MESSAGES/libsoup-ko.mo
+[38/251] Building translation po/lt/LC_MESSAGES/libsoup-lt.mo
+[39/251] Building translation po/lv/LC_MESSAGES/libsoup-lv.mo
+[40/251] Building translation po/ml/LC_MESSAGES/libsoup-ml.mo
+[41/251] Building translation po/mr/LC_MESSAGES/libsoup-mr.mo
+[42/251] Building translation po/ms/LC_MESSAGES/libsoup-ms.mo
+[43/251] Building translation po/nb/LC_MESSAGES/libsoup-nb.mo
+[44/251] Building translation po/ne/LC_MESSAGES/libsoup-ne.mo
+[45/251] Building translation po/nl/LC_MESSAGES/libsoup-nl.mo
+[46/251] Building translation po/oc/LC_MESSAGES/libsoup-oc.mo
+[47/251] Building translation po/or/LC_MESSAGES/libsoup-or.mo
+[48/251] Building translation po/pa/LC_MESSAGES/libsoup-pa.mo
+[49/251] Building translation po/pl/LC_MESSAGES/libsoup-pl.mo
+[50/251] Building translation po/pt/LC_MESSAGES/libsoup-pt.mo
+[51/251] Building translation po/pt_BR/LC_MESSAGES/libsoup-pt_BR.mo
+[52/251] Building translation po/ru/LC_MESSAGES/libsoup-ru.mo
+[53/251] Building translation po/ro/LC_MESSAGES/libsoup-ro.mo
+[54/251] Building translation po/sk/LC_MESSAGES/libsoup-sk.mo
+[55/251] Building translation po/sl/LC_MESSAGES/libsoup-sl.mo
+[56/251] Building translation po/sr/LC_MESSAGES/libsoup-sr.mo
+[57/251] Building translation po/ta/LC_MESSAGES/libsoup-ta.mo
+[58/251] Building translation po/tg/LC_MESSAGES/libsoup-tg.mo
+[59/251] Building translation po/sr@latin/LC_MESSAGES/libsoup-sr@latin.mo
+[60/251] Building translation po/sv/LC_MESSAGES/libsoup-sv.mo
+[61/251] Building translation po/te/LC_MESSAGES/libsoup-te.mo
+[62/251] Building translation po/th/LC_MESSAGES/libsoup-th.mo
+[63/251] Building translation po/tr/LC_MESSAGES/libsoup-tr.mo
+[64/251] Building translation po/ug/LC_MESSAGES/libsoup-ug.mo
+[65/251] Building translation po/uz@cyrillic/LC_MESSAGES/libsoup-uz@cyrillic.mo
+[66/251] Building translation po/uk/LC_MESSAGES/libsoup-uk.mo
+[67/251] Building translation po/vi/LC_MESSAGES/libsoup-vi.mo
+[68/251] Building translation po/zh_CN/LC_MESSAGES/libsoup-zh_CN.mo
+[69/251] Building translation po/zh_HK/LC_MESSAGES/libsoup-zh_HK.mo
+[70/251] Building translation po/zh_TW/LC_MESSAGES/libsoup-zh_TW.mo
+[71/251] Generating GObject enum file libsoup/soup-enum-types.h (wrapped by meson to capture output)
+[72/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/meson-generated_.._soup-resources.c.o
+[73/251] Generating GObject enum file libsoup/soup-enum-types.c (wrapped by meson to capture output)
+[74/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-cache-input-stream.c.o
+[75/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-cache-client-input-stream.c.o
+[76/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-client-input-stream.c.o
+[77/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-auth-domain.c.o
+[78/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-auth-domain-basic.c.o
+[79/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-body-output-stream.c.o
+[80/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-content-decoder.c.o
+[81/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-body-input-stream.c.o
+[82/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-connection-auth.c.o
+[83/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-auth-basic.c.o
+[84/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-auth.c.o
+[85/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-content-sniffer-stream.c.o
+[86/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-auth-digest.c.o
+[87/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-connection.c.o
+[88/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-content-sniffer.c.o
+[89/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-auth-manager.c.o
+[90/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-auth-negotiate.c.o
+[91/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-converter-wrapper.c.o
+[92/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-content-processor.c.o
+[93/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-cookie.c.o
+[94/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-address.c.o
+../libsoup/libsoup/soup-address.c: In function ‘soup_address_set_property’:
+../libsoup/libsoup/soup-address.c:203:17: warning: ‘g_memdup’ is deprecated: Use 'g_memdup2' instead [-Wdeprecated-declarations]
+  203 |                 priv->sockaddr = g_memdup (sa, len);
+      |                 ^~~~
+In file included from /usr/include/glib-2.0/glib/gstring.h:37,
+                 from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/glib-2.0/gio/gnetworking.h:24,
+                 from ../libsoup/libsoup/soup-address.c:14:
+/usr/include/glib-2.0/glib/gstrfuncs.h:338:23: note: declared here
+  338 | gpointer              g_memdup         (gconstpointer mem,
+      |                       ^~~~~~~~
+[95/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-init.c.o
+[96/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-auth-ntlm.c.o
+../libsoup/libsoup/soup-auth-ntlm.c: In function ‘soup_ntlm_parse_challenge’:
+../libsoup/libsoup/soup-auth-ntlm.c:757:17: warning: ‘g_memdup’ is deprecated: Use 'g_memdup2' instead [-Wdeprecated-declarations]
+  757 |                 *nonce = g_memdup (chall + NTLM_CHALLENGE_NONCE_OFFSET,
+      |                 ^
+In file included from /usr/include/glib-2.0/glib/gstring.h:37,
+                 from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from ../libsoup/libsoup/soup-auth-ntlm.c:17:
+/usr/include/glib-2.0/glib/gstrfuncs.h:338:23: note: declared here
+  338 | gpointer              g_memdup         (gconstpointer mem,
+      |                       ^~~~~~~~
+../libsoup/libsoup/soup-auth-ntlm.c:770:17: warning: ‘g_memdup’ is deprecated: Use 'g_memdup2' instead [-Wdeprecated-declarations]
+  770 |                 *target_info = g_memdup (chall + target.offset, target.length);
+      |                 ^
+/usr/include/glib-2.0/glib/gstrfuncs.h:338:23: note: declared here
+  338 | gpointer              g_memdup         (gconstpointer mem,
+      |                       ^~~~~~~~
+../libsoup/libsoup/soup-auth-ntlm.c: At top level:
+../libsoup/libsoup/soup-auth-ntlm.c:1340:39: warning: argument 2 of type ‘unsigned char[8]’ with mismatched bound [-Warray-parameter=]
+ 1340 | des (guint32 ks[16][2], unsigned char block[8])
+      |                         ~~~~~~~~~~~~~~^~~~~~~~
+../libsoup/libsoup/soup-auth-ntlm.c:604:44: note: previously declared as ‘unsigned char *’
+  604 | static void des                   (DES_KS, unsigned char *);
+      |                                            ^~~~~~~~~~~~~~~
+[97/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-auth-domain-digest.c.o
+[98/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-cache.c.o
+[99/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-cookie-jar-db.c.o
+[100/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/meson-generated_.._soup-enum-types.c.o
+[101/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-hsts-enforcer-db.c.o
+[102/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-directory-input-stream.c.o
+In file included from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/glib-2.0/glib/gi18n-lib.h:23,
+                 from ../libsoup/libsoup/soup-directory-input-stream.c:28:
+../libsoup/libsoup/soup-directory-input-stream.c: In function ‘soup_directory_input_stream_parse_info’:
+/usr/include/glib-2.0/glib/gstring.h:78:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   74 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   76 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   79 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/libsoup/soup-directory-input-stream.c:102:9: note: in expansion of macro ‘g_string_free’
+  102 |         g_string_free (string, FALSE);
+      |         ^~~~~~~~~~~~~
+[103/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-filter-input-stream.c.o
+[104/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-cookie-jar-text.c.o
+[105/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-form.c.o
+[106/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-hsts-policy.c.o
+[107/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-date.c.o
+[108/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-cookie-jar.c.o
+[109/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-message-client-io.c.o
+[110/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-method.c.o
+[111/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-io-stream.c.o
+[112/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-logger.c.o
+[113/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-message-body.c.o
+../libsoup/libsoup/soup-message-body.c: In function ‘soup_buffer_new’:
+../libsoup/libsoup/soup-message-body.c:99:17: warning: ‘g_memdup’ is deprecated: Use 'g_memdup2' instead [-Wdeprecated-declarations]
+   99 |                 data = g_memdup (data, length);
+      |                 ^~~~
+In file included from /usr/include/glib-2.0/glib/gstring.h:37,
+                 from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from ../libsoup/libsoup/soup-types.h:9,
+                 from ../libsoup/libsoup/soup-message-body.h:9,
+                 from ../libsoup/libsoup/soup-message-body.c:14:
+/usr/include/glib-2.0/glib/gstrfuncs.h:338:23: note: declared here
+  338 | gpointer              g_memdup         (gconstpointer mem,
+      |                       ^~~~~~~~
+[114/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-hsts-enforcer.c.o
+[115/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-headers.c.o
+[116/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-message-queue.c.o
+[117/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-message-headers.c.o
+[118/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-multipart-input-stream.c.o
+[119/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-misc.c.o
+[120/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-message-io.c.o
+[121/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-message-server-io.c.o
+[122/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-password-manager.c.o
+[123/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-multipart.c.o
+In file included from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from ../libsoup/libsoup/soup-types.h:9,
+                 from ../libsoup/libsoup/soup-multipart.h:9,
+                 from ../libsoup/libsoup/soup-multipart.c:14:
+../libsoup/libsoup/soup-multipart.c: In function ‘soup_multipart_to_message’:
+/usr/include/glib-2.0/glib/gstring.h:78:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   74 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   76 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   79 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/libsoup/soup-multipart.c:434:17: note: in expansion of macro ‘g_string_free’
+  434 |                 g_string_free (str, FALSE);
+      |                 ^~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gstring.h:78:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   74 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   76 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   79 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/libsoup/soup-multipart.c:444:9: note: in expansion of macro ‘g_string_free’
+  444 |         g_string_free (str, FALSE);
+      |         ^~~~~~~~~~~~~
+[124/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-message.c.o
+[125/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-version.c.o
+[126/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-proxy-resolver-default.c.o
+[127/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-proxy-uri-resolver.c.o
+[128/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-proxy-resolver.c.o
+[129/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-path-map.c.o
+[130/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-proxy-resolver-wrapper.c.o
+[131/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-request-http.c.o
+[132/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-request.c.o
+[133/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-requester.c.o
+[134/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-request-data.c.o
+[135/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-request-file.c.o
+[136/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-session-sync.c.o
+[137/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-websocket-extension.c.o
+[138/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-socket-properties.c.o
+[139/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-status.c.o
+[140/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-session-async.c.o
+[141/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-value-utils.c.o
+[142/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-session-feature.c.o
+[143/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-websocket.c.o
+[144/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-tld.c.o
+[145/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-socket.c.o
+[146/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-websocket-extension-deflate.c.o
+[147/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-websocket-extension-manager.c.o
+[148/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-brotli-decompressor.c.o
+[149/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-server.c.o
+[150/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-websocket-connection.c.o
+[151/251] Compiling C object libsoup/libsoup-gnome-2.4.so.1.11.2.p/soup-gnome-features.c.o
+[152/251] Compiling C object libsoup/libsoup-gnome-2.4.so.1.11.2.p/soup-cookie-jar-sqlite.c.o
+[153/251] Compiling C object libsoup/libsoup-gnome-2.4.so.1.11.2.p/soup-proxy-resolver-gnome.c.o
+[154/251] Compiling C object libsoup/libsoup-gnome-2.4.so.1.11.2.p/soup-password-manager-gnome.c.o
+[155/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-xmlrpc-old.c.o
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from ../libsoup/libsoup/soup-types.h:9,
+                 from ../libsoup/libsoup/soup-xmlrpc-old.h:9,
+                 from ../libsoup/libsoup/soup-xmlrpc-old.c:17:
+../libsoup/libsoup/soup-xmlrpc-old.c: In function ‘insert_value’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "(g_array_get_type ())"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:142:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  142 | #define GOBJECT_DEPRECATED_MACRO_IN_2_32_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gvaluearray.h:40:56: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_32_FOR’
+   40 | #define G_TYPE_VALUE_ARRAY (g_value_array_get_type ()) GOBJECT_DEPRECATED_MACRO_IN_2_32_FOR(G_TYPE_ARRAY)
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/libsoup/soup-xmlrpc-old.c:103:28: note: in expansion of macro ‘G_TYPE_VALUE_ARRAY’
+  103 |         } else if (type == G_TYPE_VALUE_ARRAY) {
+      |                            ^~~~~~~~~~~~~~~~~~
+../libsoup/libsoup/soup-xmlrpc-old.c: In function ‘parse_value’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "(g_array_get_type ())"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:142:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  142 | #define GOBJECT_DEPRECATED_MACRO_IN_2_32_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gvaluearray.h:40:56: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_32_FOR’
+   40 | #define G_TYPE_VALUE_ARRAY (g_value_array_get_type ()) GOBJECT_DEPRECATED_MACRO_IN_2_32_FOR(G_TYPE_ARRAY)
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/libsoup/soup-xmlrpc-old.c:479:38: note: in expansion of macro ‘G_TYPE_VALUE_ARRAY’
+  479 |                 g_value_init (value, G_TYPE_VALUE_ARRAY);
+      |                                      ^~~~~~~~~~~~~~~~~~
+[156/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-uri.c.o
+In file included from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from ../libsoup/libsoup/soup-types.h:9,
+                 from ../libsoup/libsoup/soup-uri.h:11,
+                 from ../libsoup/libsoup/soup-uri.c:15:
+../libsoup/libsoup/soup-uri.c: In function ‘soup_uri_to_string_internal’:
+/usr/include/glib-2.0/glib/gstring.h:78:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   74 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   76 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   79 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/libsoup/soup-uri.c:599:9: note: in expansion of macro ‘g_string_free’
+  599 |         g_string_free (str, FALSE);
+      |         ^~~~~~~~~~~~~
+../libsoup/libsoup/soup-uri.c: In function ‘soup_uri_encode’:
+/usr/include/glib-2.0/glib/gstring.h:78:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   74 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   76 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   79 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/libsoup/soup-uri.c:754:9: note: in expansion of macro ‘g_string_free’
+  754 |         g_string_free (str, FALSE);
+      |         ^~~~~~~~~~~~~
+[157/251] Compiling C object examples/get.p/get.c.o
+[158/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-xmlrpc.c.o
+[159/251] Compiling C object examples/simple-proxy.p/simple-proxy.c.o
+[160/251] Compiling C object libsoup/libsoup-2.4.so.1.11.2.p/soup-session.c.o
+[161/251] Compiling C object examples/simple-httpd.p/simple-httpd.c.o
+In file included from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from ../libsoup/libsoup/soup-types.h:9,
+                 from ../libsoup/libsoup/soup-address.h:11,
+                 from ../libsoup/libsoup/soup.h:11,
+                 from ../libsoup/examples/simple-httpd.c:12:
+../libsoup/examples/simple-httpd.c: In function ‘do_get’:
+/usr/include/glib-2.0/glib/gstring.h:78:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   74 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   76 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   79 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/examples/simple-httpd.c:116:17: note: in expansion of macro ‘g_string_free’
+  116 |                 g_string_free (listing, FALSE);
+      |                 ^~~~~~~~~~~~~
+[162/251] Compiling C object tests/libtest-utils.so.p/test-utils.c.o
+[163/251] Compiling C object tests/chunk-test.p/chunk-test.c.o
+[164/251] Compiling C object tests/coding-test.p/coding-test.c.o
+[165/251] Compiling C object tests/cache-test.p/cache-test.c.o
+../libsoup/tests/cache-test.c: In function ‘do_request’:
+../libsoup/tests/cache-test.c:214:9: warning: ‘g_memdup’ is deprecated: Use 'g_memdup2' instead [-Wdeprecated-declarations]
+  214 |         return nread ? g_memdup (buf, nread) : g_strdup ("");
+      |         ^~~~~~
+In file included from /usr/include/glib-2.0/glib/gstring.h:37,
+                 from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from ../libsoup/libsoup/soup-types.h:9,
+                 from ../libsoup/libsoup/soup-address.h:11,
+                 from ../libsoup/libsoup/soup.h:11,
+                 from ../libsoup/tests/test-utils.h:12,
+                 from ../libsoup/tests/cache-test.c:6:
+/usr/include/glib-2.0/glib/gstrfuncs.h:338:23: note: declared here
+  338 | gpointer              g_memdup         (gconstpointer mem,
+      |                       ^~~~~~~~
+[166/251] Compiling C object tests/cookies-test.p/cookies-test.c.o
+[167/251] Compiling C object tests/context-test.p/context-test.c.o
+[168/251] Compiling C object tests/continue-test.p/continue-test.c.o
+[169/251] Compiling C object tests/date-test.p/date-test.c.o
+[170/251] Compiling C object tests/chunk-io-test.p/chunk-io-test.c.o
+[171/251] Compiling C object tests/forms-test.p/forms-test.c.o
+In file included from /usr/include/glib-2.0/glib/giochannel.h:36,
+                 from /usr/include/glib-2.0/glib.h:56,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from ../libsoup/libsoup/soup-types.h:9,
+                 from ../libsoup/libsoup/soup-address.h:11,
+                 from ../libsoup/libsoup/soup.h:11,
+                 from ../libsoup/tests/test-utils.h:12,
+                 from ../libsoup/tests/forms-test.c:6:
+../libsoup/tests/forms-test.c: In function ‘md5_get_callback’:
+/usr/include/glib-2.0/glib/gstring.h:78:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   74 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   76 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   79 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/tests/forms-test.c:344:9: note: in expansion of macro ‘g_string_free’
+  344 |         g_string_free (buf, FALSE);
+      |         ^~~~~~~~~~~~~
+../libsoup/tests/forms-test.c: In function ‘hello_callback’:
+/usr/include/glib-2.0/glib/gstring.h:78:5: warning: ignoring return value of ‘g_string_free_and_steal’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   74 |   (__builtin_constant_p (free_segment) ?        \
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |     ((free_segment) ?                           \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   76 |       (g_string_free) ((str), (free_segment)) : \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |       g_string_free_and_steal (str))            \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |     :                                           \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   79 |     (g_string_free) ((str), (free_segment)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libsoup/tests/forms-test.c:300:9: note: in expansion of macro ‘g_string_free’
+  300 |         g_string_free (buf, FALSE);
+      |         ^~~~~~~~~~~~~
+[172/251] Compiling C object tests/hsts-db-test.p/hsts-db-test.c.o
+[173/251] Compiling C object tests/no-ssl-test.p/no-ssl-test.c.o
+[174/251] Compiling C object tests/header-parsing-test.p/header-parsing-test.c.o
+[175/251] Compiling C object tests/hsts-test.p/hsts-test.c.o
+[176/251] Compiling C object tests/redirect-test.p/redirect-test.c.o
+[177/251] Compiling C object tests/multipart-test.p/multipart-test.c.o
+[178/251] Compiling C object tests/requester-test.p/requester-test.c.o
+[179/251] Compiling C object tests/session-test.p/session-test.c.o
+[180/251] Compiling C object tests/ntlm-test.p/ntlm-test.c.o
+[181/251] Compiling C object tests/samesite-test.p/samesite-test.c.o
+[182/251] Compiling C object tests/misc-test.p/misc-test.c.o
+[183/251] Compiling C object tests/resource-test.p/resource-test.c.o
+[184/251] Compiling C object tests/sniffing-test.p/sniffing-test.c.o
+[185/251] Compiling C object tests/server-auth-test.p/server-auth-test.c.o
+[186/251] Compiling C object tests/streaming-test.p/streaming-test.c.o
+[187/251] Compiling C object tests/ssl-test.p/ssl-test.c.o
+../libsoup/tests/ssl-test.c:361:1: warning: ‘do_tls_interaction_test’ defined but not used [-Wunused-function]
+  361 | do_tls_interaction_test (void)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+[188/251] Compiling C object tests/tld-test.p/tld-test.c.o
+[189/251] Compiling C object tests/uri-parsing-test.p/uri-parsing-test.c.o
+[190/251] Compiling C object tests/socket-test.p/socket-test.c.o
+[191/251] Compiling C object tests/timeout-test.p/timeout-test.c.o
+[192/251] Compiling C object tests/proxy-test.p/proxy-test.c.o
+[193/251] Compiling C object tests/brotli-decompressor-test.p/brotli-decompressor-test.c.o
+[194/251] Compiling C object tests/range-test.p/range-test.c.o
+[195/251] Compiling C object tests/server-test.p/server-test.c.o
+../libsoup/tests/server-test.c: In function ‘do_one_server_aliases_test’:
+../libsoup/tests/server-test.c:180:17: warning: ‘g_socket_client_set_tls_validation_flags’ is deprecated [-Wdeprecated-declarations]
+  180 |                 g_socket_client_set_tls_validation_flags (client, 0);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gio/gio.h:150,
+                 from ../libsoup/libsoup/soup-types.h:9,
+                 from ../libsoup/libsoup/soup-address.h:11,
+                 from ../libsoup/libsoup/soup.h:11,
+                 from ../libsoup/tests/test-utils.h:12,
+                 from ../libsoup/tests/server-test.c:6:
+/usr/include/glib-2.0/gio/gsocketclient.h:118:25: note: declared here
+  118 | void                    g_socket_client_set_tls_validation_flags        (GSocketClient        *client,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[196/251] Compiling C object tests/pull-api-test.p/pull-api-test.c.o
+[197/251] Compiling C object tests/ntlm-test-helper.p/ntlm-test-helper.c.o
+[198/251] Compiling C object tests/connection-test.p/connection-test.c.o
+[199/251] Compiling C object tests/auth-test.p/auth-test.c.o
+[200/251] Compiling C object tests/websocket-test.p/websocket-test.c.o
+[201/251] Linking target libsoup/libsoup-2.4.so.1.11.2
+[202/251] Generating symbol file libsoup/libsoup-2.4.so.1.11.2.p/libsoup-2.4.so.1.11.2.symbols
+[203/251] Linking target libsoup/libsoup-gnome-2.4.so.1.11.2
+[204/251] Linking target tests/ntlm-test-helper
+[205/251] Linking target examples/simple-proxy
+[206/251] Linking target examples/get
+[207/251] Linking target examples/simple-httpd
+[208/251] Linking target tests/libtest-utils.so
+[209/251] Generating symbol file tests/libtest-utils.so.p/libtest-utils.so.symbols
+[210/251] Linking target tests/hsts-db-test
+[211/251] Linking target tests/samesite-test
+[212/251] Linking target tests/no-ssl-test
+[213/251] Linking target tests/date-test
+[214/251] Linking target tests/context-test
+[215/251] Linking target tests/continue-test
+[216/251] Linking target tests/resource-test
+[217/251] Linking target tests/server-auth-test
+[218/251] Linking target tests/forms-test
+[219/251] Linking target tests/redirect-test
+[220/251] Linking target tests/coding-test
+[221/251] Linking target tests/sniffing-test
+[222/251] Linking target tests/ntlm-test
+[223/251] Linking target tests/cookies-test
+[224/251] Linking target tests/session-test
+[225/251] Linking target tests/chunk-test
+[226/251] Linking target tests/hsts-test
+[227/251] Linking target tests/cache-test
+[228/251] Linking target tests/requester-test
+[229/251] Linking target tests/header-parsing-test
+[230/251] Linking target tests/socket-test
+[231/251] Linking target tests/multipart-test
+[232/251] Linking target tests/chunk-io-test
+[233/251] Linking target tests/misc-test
+[234/251] Linking target tests/server-test
+[235/251] Linking target tests/tld-test
+[236/251] Linking target tests/streaming-test
+[237/251] Linking target tests/ssl-test
+[238/251] Linking target tests/timeout-test
+[239/251] Linking target tests/brotli-decompressor-test
+[240/251] Linking target tests/uri-parsing-test
+[241/251] Linking target tests/range-test
+[242/251] Linking target tests/pull-api-test
+[243/251] Linking target tests/proxy-test
+[244/251] Linking target tests/auth-test
+[245/251] Linking target tests/connection-test
+[246/251] Generating libsoup/Soup-2.4.gir with a custom command (wrapped by meson to set env)
+<unknown>:: Warning: Soup: (ErrorQuarkFunction)http_error_quark: soup_http_error_quark: Couldn't find corresponding enumeration
+[247/251] Linking target tests/websocket-test
+[248/251] Generating libsoup/libsoup-2.4.vapi with a custom command
+[249/251] Generating libsoup/Soup-2.4.typelib with a custom command
+[250/251] Generating libsoup/SoupGNOME-2.4.gir with a custom command (wrapped by meson to set env)
+[251/251] Generating libsoup/SoupGNOME-2.4.typelib with a custom command
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/libsoup/src/build
