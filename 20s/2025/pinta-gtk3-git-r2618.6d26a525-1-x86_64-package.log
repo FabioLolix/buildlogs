@@ -1,0 +1,74 @@
+Making install in xdg
+make[1]: Entering directory '/build/pinta-gtk3-git/src/Pinta/xdg'
+make[2]: Entering directory '/build/pinta-gtk3-git/src/Pinta/xdg'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/share/metainfo'
+ /usr/bin/install -c -m 644 pinta.appdata.xml '/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/share/metainfo'
+ /usr/bin/mkdir -p '/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/share/applications'
+ /usr/bin/install -c -m 644 pinta.desktop '/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/share/applications'
+ /usr/bin/mkdir -p '/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/share/man/man1'
+ /usr/bin/install -c -m 644 pinta.1 '/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/share/man/man1'
+make[2]: Leaving directory '/build/pinta-gtk3-git/src/Pinta/xdg'
+make[1]: Leaving directory '/build/pinta-gtk3-git/src/Pinta/xdg'
+make[1]: Entering directory '/build/pinta-gtk3-git/src/Pinta'
+make[2]: Entering directory '/build/pinta-gtk3-git/src/Pinta'
+cd . && env TargetFramework=net7.0 /usr/bin/dotnet build Pinta.sln --configuration Release -p:BuildTranslations=true -maxcpucount:1
+  Determining projects to restore...
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj]
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/tests/PintaBenchmarks/PintaBenchmarks.csproj]
+/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj : warning NU1903: Package 'Tmds.DBus' 0.14.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-xrw6-gwf8-vvr9 [/build/pinta-gtk3-git/src/Pinta/Pinta.sln]
+  All projects are up-to-date for restore.
+  Pinta.Resources -> /build/pinta-gtk3-git/src/Pinta/Pinta.Resources/bin/Release/net7.0/Pinta.Resources.dll
+  Pinta.Core -> /build/pinta-gtk3-git/src/Pinta/Pinta.Core/bin/Release/net7.0/Pinta.Core.dll
+  Pinta.Gui.Widgets -> /build/pinta-gtk3-git/src/Pinta/Pinta.Gui.Widgets/bin/Release/net7.0/Pinta.Gui.Widgets.dll
+  Pinta.Effects -> /build/pinta-gtk3-git/src/Pinta/Pinta.Effects/bin/Release/net7.0/Pinta.Effects.dll
+  Pinta.Tools -> /build/pinta-gtk3-git/src/Pinta/Pinta.Tools/bin/Release/net7.0/Pinta.Tools.dll
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj]
+/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj : warning NU1903: Package 'Tmds.DBus' 0.14.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-xrw6-gwf8-vvr9
+  Pinta.Docking -> /build/pinta-gtk3-git/src/Pinta/Pinta.Docking/bin/Release/net7.0/Pinta.Docking.dll
+  Pinta -> /build/pinta-gtk3-git/src/Pinta/bin/Pinta.dll
+  Pinta.Core.Tests -> /build/pinta-gtk3-git/src/Pinta/tests/Pinta.Core.Tests/bin/Release/net7.0/Pinta.Core.Tests.dll
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/tests/PintaBenchmarks/PintaBenchmarks.csproj]
+  PintaBenchmarks -> /build/pinta-gtk3-git/src/Pinta/tests/PintaBenchmarks/bin/Release/net7.0/PintaBenchmarks.dll
+
+Build succeeded.
+
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj]
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/tests/PintaBenchmarks/PintaBenchmarks.csproj]
+/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj : warning NU1903: Package 'Tmds.DBus' 0.14.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-xrw6-gwf8-vvr9 [/build/pinta-gtk3-git/src/Pinta/Pinta.sln]
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj]
+/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj : warning NU1903: Package 'Tmds.DBus' 0.14.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-xrw6-gwf8-vvr9
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/tests/PintaBenchmarks/PintaBenchmarks.csproj]
+    6 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.92
+env TargetFramework=net7.0 /usr/bin/dotnet publish Pinta.sln --configuration Release -p:BuildTranslations=true -maxcpucount:1 --self-contained false -p:PublishDir=/build/pinta-gtk3-git/src/Pinta/publish
+  Determining projects to restore...
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj]
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/tests/PintaBenchmarks/PintaBenchmarks.csproj]
+/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj : warning NU1903: Package 'Tmds.DBus' 0.14.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-xrw6-gwf8-vvr9 [/build/pinta-gtk3-git/src/Pinta/Pinta.sln]
+  All projects are up-to-date for restore.
+  Pinta.Resources -> /build/pinta-gtk3-git/src/Pinta/Pinta.Resources/bin/Release/net7.0/Pinta.Resources.dll
+  Pinta.Core -> /build/pinta-gtk3-git/src/Pinta/Pinta.Core/bin/Release/net7.0/Pinta.Core.dll
+  Pinta.Gui.Widgets -> /build/pinta-gtk3-git/src/Pinta/Pinta.Gui.Widgets/bin/Release/net7.0/Pinta.Gui.Widgets.dll
+  Pinta.Effects -> /build/pinta-gtk3-git/src/Pinta/Pinta.Effects/bin/Release/net7.0/Pinta.Effects.dll
+  Pinta.Effects -> /build/pinta-gtk3-git/src/Pinta/publish/
+  Pinta.Tools -> /build/pinta-gtk3-git/src/Pinta/Pinta.Tools/bin/Release/net7.0/Pinta.Tools.dll
+  Pinta.Tools -> /build/pinta-gtk3-git/src/Pinta/publish/
+/usr/share/dotnet/sdk/10.0.109/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj]
+/build/pinta-gtk3-git/src/Pinta/Pinta/Pinta.csproj : warning NU1903: Package 'Tmds.DBus' 0.14.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-xrw6-gwf8-vvr9
+  Pinta.Docking -> /build/pinta-gtk3-git/src/Pinta/Pinta.Docking/bin/Release/net7.0/Pinta.Docking.dll
+  Pinta -> /build/pinta-gtk3-git/src/Pinta/bin/Pinta.dll
+  Pinta -> /build/pinta-gtk3-git/src/Pinta/publish/
+  Pinta.Core -> /build/pinta-gtk3-git/src/Pinta/publish/
+  Pinta.Resources -> /build/pinta-gtk3-git/src/Pinta/publish/
+  Pinta.Gui.Widgets -> /build/pinta-gtk3-git/src/Pinta/publish/
+  Pinta.Docking -> /build/pinta-gtk3-git/src/Pinta/publish/
+env TargetFramework=net7.0 /usr/bin/dotnet msbuild installer/linux/install.proj -target:Install -p:SourceDir=/build/pinta-gtk3-git/src/Pinta -p:PublishDir=/build/pinta-gtk3-git/src/Pinta/publish -p:InstallPrefix=/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr -p:InstallBinDir=/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/bin -p:InstallLibDir=/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/lib -p:InstallDataRootDir=/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/share -p:InstallManDir=/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/share/man -p:InstallLocaleDir=/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/share/locale
+MSBuild version 18.0.11 for .NET
+/usr/bin/install -c installer/linux/pinta /build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/bin/pinta
+ /usr/bin/mkdir -p '/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 ./pinta.pc '/build/pinta-gtk3-git/pkg/pinta-gtk3-git/usr/lib/pkgconfig'
+make[2]: Leaving directory '/build/pinta-gtk3-git/src/Pinta'
+make[1]: Leaving directory '/build/pinta-gtk3-git/src/Pinta'
