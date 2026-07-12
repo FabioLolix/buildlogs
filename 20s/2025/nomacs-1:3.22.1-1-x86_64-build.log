@@ -18,7 +18,7 @@
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found WrapVulkanHeaders: /usr/include
 -- Found Cups: /usr/lib/libcups.so (found version "2.4.19")
 -- A release build (non-debug). Debugging outputs are silently ignored.
 -- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
@@ -26,65 +26,139 @@
 --   Found exiv2, version 0.28.8
 -- exiv2 version by pkg-config: 0.28.8
 -- exiv2 contains exiv2.hpp, using it
--- Found OpenCV: /usr (found version "5.0.0") found components: core imgproc
--- Checking for module 'libraw>=0.12.0'
---   Found libraw, version 0.22.1
--- Found TIFF: /usr/lib/cmake/tiff (found version "4.7.2")
 -- QUAZIP: QuaZip-1 for Qt6 found
 -- revision is 8f3dff6f, 2026-04-17, custom
 linuxdeploy is not available or working, required for AppImage
 you may install a compatible version with scripts/build-linuxdeploy.sh
 -- nomacs version is 3.22.1
--- using plugin directory: /build/nomacs/src/nomacs/ImageLounge/plugins
--- Found GTest: /usr/lib/cmake/GTest/GTestConfig.cmake (found version "1.17.0")
+-- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY) 
+CMake Warning at CMakeLists.txt:323 (message):
+  GTest not found, disabling testing.
+
+
 -- 
 -- ----------------------------------------------------------------------------------
 --  nomacs - Image Lounge 3.22  <https://nomacs.org>
 --  Qt version: 6.11.1
---  nomacs will be compiled with OPENCV support .................. YES
---  nomacs will be compiled with LIBRAW support .................. YES
---  nomacs will be compiled with extended TIFF support ........... YES
---  nomacs will be compiled with plugin support .................. YES
+--  nomacs will be compiled with OPENCV support .................. NO
+--  nomacs will be compiled with LIBRAW support .................. NO
+--  nomacs will be compiled with extended TIFF support ........... NO
+--  nomacs will be compiled with plugin support .................. NO
 --  nomacs will be compiled with Translations .................... YES
 --  nomacs will be compiled with QuaZip support .................. YES
---  nomacs tests ................................................. YES
+--  nomacs tests ................................................. NO
 --  nomacs benchmarks ............................................ NO
 -- ----------------------------------------------------------------------------------
--- Configuring done (1.4s)
--- Generating done (0.1s)
--- Build files have been written to: /build/nomacs/src/nomacs/build
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/nomacs/src/build
 [  0%] Built target nomacsCore_autogen_timestamp_deps
 [  0%] Built target copy_css_files
 [  1%] Automatic MOC for target nomacsCore
 [  1%] Built target nomacsCore_autogen
 [  2%] Generating qrc_nomacs.cpp
-[  3%] Building CXX object CMakeFiles/nomacsCore.dir/nomacsCore_autogen/mocs_compilation.cpp.o
 [  3%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkConnection.cpp.o
-[  3%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkCentralWidget.cpp.o
-[  4%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBaseWidgets.cpp.o
-[  6%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDockWidgets.cpp.o
-[  6%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMenu.cpp.o
-[  6%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBatch.cpp.o
-[  7%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o
-[  8%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkLogWidget.cpp.o
-[  9%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkControlWidget.cpp.o
-[ 11%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNoMacs.cpp.o
-[ 11%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkManipulatorWidgets.cpp.o
-[ 11%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPreferenceWidgets.cpp.o
-[ 12%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPong.cpp.o
-[ 13%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkQuickAccess.cpp.o
-[ 13%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkThumbsWidgets.cpp.o
-[ 14%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMetaDataWidgets.cpp.o
-[ 14%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNetwork.cpp.o
-[ 15%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkShortcuts.cpp.o
-[ 16%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkSettingsWidget.cpp.o
-/build/nomacs/src/nomacs/ImageLounge/src/DkGui/DkDialog.cpp:95:10: fatal error: opencv2/imgproc/imgproc_c.h: No such file or directory
-   95 | #include "opencv2/imgproc/imgproc_c.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-make[2]: *** [CMakeFiles/nomacsCore.dir/build.make:271: CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o] Error 1
-make[2]: *** Waiting for unfinished jobs....
-make[1]: *** [CMakeFiles/Makefile2:323: CMakeFiles/nomacsCore.dir/all] Error 2
-make: *** [Makefile:166: all] Error 2
-[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
-[1m    Aborting...(B[m
+[  4%] Building CXX object CMakeFiles/nomacsCore.dir/nomacsCore_autogen/mocs_compilation.cpp.o
+[  5%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkManipulatorWidgets.cpp.o
+[  6%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBaseWidgets.cpp.o
+[  7%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMetaDataWidgets.cpp.o
+[ 12%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o
+[ 12%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMenu.cpp.o
+[ 12%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDockWidgets.cpp.o
+[ 13%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkLogWidget.cpp.o
+[ 14%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkCentralWidget.cpp.o
+[ 14%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkControlWidget.cpp.o
+[ 15%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBatch.cpp.o
+[ 16%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNoMacs.cpp.o
+[ 17%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNetwork.cpp.o
+[ 18%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkShortcuts.cpp.o
+[ 19%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkQuickAccess.cpp.o
+[ 20%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkSettingsWidget.cpp.o
+[ 23%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkThumbsWidgets.cpp.o
+[ 23%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPreferenceWidgets.cpp.o
+[ 24%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPong.cpp.o
+[ 25%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkToolbars.cpp.o
+[ 26%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkViewPort.cpp.o
+[ 27%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkWidgets.cpp.o
+[ 28%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkActionManager.cpp.o
+[ 30%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBaseViewPort.cpp.o
+[ 30%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicLoader.cpp.o
+[ 31%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicWidgets.cpp.o
+[ 32%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBatchInfo.cpp.o
+[ 34%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkDependencyResolver.cpp.o
+[ 35%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkFileInfo.cpp.o
+[ 36%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkImageContainer.cpp.o
+[ 37%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkImageLoader.cpp.o
+[ 38%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkImageStorage.cpp.o
+[ 39%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkManipulators.cpp.o
+[ 40%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkManipulatorsIpl.cpp.o
+[ 41%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkMath.cpp.o
+/build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkBasicLoader.cpp: In member function ‘bool nmc::DkBasicLoader::loadGeneral(const QString&, QSharedPointer<QByteArray>, bool, bool)’:
+/build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkBasicLoader.cpp:215:113: warning: unused parameter ‘fast’ [-Wunused-parameter]
+  215 | bool DkBasicLoader::loadGeneral(const QString &filePath, QSharedPointer<QByteArray> ba, bool loadMetaData, bool fast)
+      |                                                                                                            ~~~~~^~~~
+[ 42%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkMessageBox.cpp.o
+[ 43%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkMetaData.cpp.o
+[ 45%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkPluginManager.cpp.o
+[ 46%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkProcess.cpp.o
+[ 47%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkSaveDialog.cpp.o
+[ 48%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkSettings.cpp.o
+[ 49%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkStatusBar.cpp.o
+[ 50%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkThemeManager.cpp.o
+[ 51%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkThumbs.cpp.o
+[ 52%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkTimer.cpp.o
+[ 53%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkUpdater.cpp.o
+[ 54%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkUtils.cpp.o
+[ 56%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkVersion.cpp.o
+[ 57%] Building CXX object CMakeFiles/nomacsCore.dir/qrc_nomacs.cpp.o
+[ 58%] Building CXX object CMakeFiles/nomacsCore.dir/3rdparty/libqpsd/qpsdhandler.cpp.o
+[ 60%] Building CXX object CMakeFiles/nomacsCore.dir/3rdparty/libqpsd/qpsdplugin.cpp.o
+[ 60%] Building CXX object CMakeFiles/nomacsCore.dir/3rdparty/libqpsd/qpsdhandler_p.cpp.o
+/build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkMetaData.cpp: In static member function ‘static void nmc::DkMetaDataHelper::initialize()’:
+/build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkMetaData.cpp:2037:26: warning: ‘bool Exiv2::enableBMFF(bool)’ is deprecated [-Wdeprecated-declarations]
+ 2037 |     if (Exiv2::enableBMFF(true)) {
+      |         ~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/exiv2/exiv2.hpp:9,
+                 from /build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkMetaData.h:35,
+                 from /build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkMetaData.cpp:28:
+/usr/include/exiv2/bmffimage.hpp:16:30: note: declared here
+   16 | [[deprecated]] EXIV2API bool enableBMFF(bool enable = true);
+      |                              ^~~~~~~~~~
+[ 61%] Linking CXX shared library libnomacsCore.so
+[ 62%] Built target nomacsCore
+[ 62%] Built target nomacs_autogen_timestamp_deps
+[ 63%] Automatic MOC for target nomacs
+[ 63%] Built target nomacs_autogen
+[ 64%] Generating nomacs_zh_TW.qm
+[ 65%] Generating nomacs_bs.qm
+[ 68%] Generating nomacs_ca.qm
+[ 68%] Generating nomacs_ar.qm
+[ 73%] Generating nomacs_es.qm
+[ 73%] Generating nomacs_de.qm
+[ 73%] Generating nomacs_bg.qm
+[ 73%] Generating nomacs_el.qm
+[ 73%] Generating nomacs_fi.qm
+[ 74%] Generating nomacs_hu.qm
+[ 75%] Generating nomacs_fr.qm
+[ 76%] Generating nomacs_cs.qm
+[ 78%] Generating nomacs_hr.qm
+[ 79%] Generating nomacs_id.qm
+[ 82%] Generating nomacs_et.qm
+[ 82%] Generating nomacs_nl.qm
+[ 84%] Generating nomacs_ja.qm
+[ 84%] Generating nomacs_it.qm
+[ 84%] Generating nomacs_ko.qm
+[ 85%] Generating nomacs_pl.qm
+[ 87%] Generating nomacs_pt_BR.qm
+[ 87%] Generating nomacs_pt.qm
+[ 89%] Generating nomacs_ru.qm
+[ 90%] Generating nomacs_sk.qm
+[ 91%] Generating nomacs_tr.qm
+[ 92%] Generating nomacs_sr.qm
+[ 94%] Generating nomacs_uk.qm
+[ 94%] Generating nomacs_sv.qm
+[ 95%] Generating nomacs_zh_CN.qm
+[ 96%] Building CXX object CMakeFiles/nomacs.dir/src/main.cpp.o
+[ 97%] Building CXX object CMakeFiles/nomacs.dir/nomacs_autogen/mocs_compilation.cpp.o
+[ 98%] Linking CXX executable nomacs
+[100%] Built target nomacs
