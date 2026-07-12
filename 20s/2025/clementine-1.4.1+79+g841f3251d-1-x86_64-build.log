@@ -114,8 +114,8 @@ The no-dev option is deprecated.  Use -Wno-author instead.
 --     bindir:                      bin
 -- 
 --     compiler:                    /usr/bin/c++
---     cflags:                      -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/clementine-git/src=/usr/src/debug/clementine-git -flto=auto -w
---     cxxflags:                    -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/clementine-git/src=/usr/src/debug/clementine-git -flto=auto -w -Wno-unused-result -Wno-error=stringop-overflow
+--     cflags:                      -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/clementine/src=/usr/src/debug/clementine -flto=auto -w
+--     cxxflags:                    -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/clementine/src=/usr/src/debug/clementine -flto=auto -w -Wno-unused-result -Wno-error=stringop-overflow
 --     ldflags:                     -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto
 -- 
 -- Features:
@@ -174,272 +174,272 @@ The following components WILL NOT be built:
    Sparkle integration (disabled in CMake config)
    Wiimote support (disabled in CMake config)
 
--- Configuring done (5.7s)
+-- Configuring done (5.4s)
 -- Generating done (0.4s)
--- Build files have been written to: /build/clementine-git/src/build
-[  0%] Generating moc_smain.cpp
-[  0%] Generating moc_qtiocompressor.cpp
-[  0%] Generating moc_qtsinglecoreapplication.cpp
-[  0%] Generating moc_qsql_sqlite.cpp
+-- Build files have been written to: /build/clementine/src/build
 [  0%] Generating moc_qtlocalpeer.cpp
-[  0%] Generating moc_qxtglobalshortcut.cpp
+[  0%] Generating moc_smain.cpp
+[  0%] Generating moc_qtsinglecoreapplication.cpp
+[  0%] Generating moc_qtiocompressor.cpp
 [  0%] Generating moc_qtsingleapplication.cpp
+[  0%] Generating moc_qxtglobalshortcut.cpp
 [  0%] Generating core/moc_workerpool.cpp
-[  0%] Generating core/moc_closure.cpp
-[  0%] Generating moc_qbutton.cpp
-[  0%] Generating moc_Tag_p.cpp
+[  0%] Generating moc_qsql_sqlite.cpp
 [  0%] Generating qrc_qprogressindicatorspinning_nonmac.cpp
-[  0%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/Compiler.c.o
-[  0%] Built target glm
-[  0%] Built target GenerateCompiler
-[  0%] Building C object 3rdparty/libprojectm/vendor/SOIL2/CMakeFiles/SOIL2.dir/etc1_utils.c.o
+[  0%] Generating moc_qbutton.cpp
+[  0%] Generating moc_qprogressindicatorspinning.cpp
+[  0%] Generating moc_Tag_p.cpp
 [  0%] Built target GenerateScanner
+[  0%] Built target projectM_api
+[  0%] Building CXX object gst/moodbar/CMakeFiles/gstmoodbar.dir/gstfastspectrum.cpp.o
+[  0%] Built target GenerateCompiler
+[  0%] Built target glm
 [  1%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/CodeWriter.cpp.o
-[  1%] Generating moc_AddRemoveResult.cpp
-[  1%] Building CXX object gst/moodbar/CMakeFiles/gstmoodbar.dir/gstfastspectrum.cpp.o
-[  1%] Building C object 3rdparty/libprojectm/vendor/SOIL2/CMakeFiles/SOIL2.dir/image_DXT.c.o
-[  1%] Built target projectM_api
-[  1%] Building C object 3rdparty/libprojectm/vendor/SOIL2/CMakeFiles/SOIL2.dir/image_helper.c.o
-[  1%] Building C object 3rdparty/libprojectm/vendor/SOIL2/CMakeFiles/SOIL2.dir/SOIL2.c.o
-[  1%] Generating moc_qprogressindicatorspinning.cpp
 [  1%] Building CXX object gst/moodbar/CMakeFiles/gstmoodbar.dir/plugin.cpp.o
+[  1%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/Compiler.c.o
+[  1%] Building C object 3rdparty/libprojectm/vendor/SOIL2/CMakeFiles/SOIL2.dir/etc1_utils.c.o
+[  1%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/CompilerFunctions.c.o
+[  1%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/Scanner.c.o
+[  1%] Generating moc_qsearchfield.cpp
+[  1%] Building C object 3rdparty/libprojectm/vendor/SOIL2/CMakeFiles/SOIL2.dir/image_DXT.c.o
+[  1%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/CompileContext.c.o
+[  1%] Generating moc_AddRemoveResult.cpp
+[  1%] Generating core/moc_closure.cpp
 [  1%] Generating moc_AddRemoveResult_p.cpp
 [  1%] Generating core/moc_latch.cpp
-[  1%] Generating core/moc_messagehandler.cpp
-[  1%] Generating core/moc_messagereply.cpp
-[  1%] Generating moc_Device.cpp
-[  1%] Generating moc_qsearchfield.cpp
-[  1%] Building CXX object 3rdparty/qxt/CMakeFiles/qxt.dir/qxtglobal.cpp.o
-[  1%] Building CXX object 3rdparty/qsqlite/CMakeFiles/qsqlite.dir/qsql_sqlite.cpp.o
+[  1%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/ExpressionTree.c.o
 [  1%] Building CXX object 3rdparty/qtiocompressor/CMakeFiles/qtiocompressor.dir/qtiocompressor.cpp.o
 [  1%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/qtlocalpeer.cpp.o
-[  1%] Building CXX object 3rdparty/qtiocompressor/CMakeFiles/qtiocompressor.dir/moc_qtiocompressor.cpp.o
-[  1%] Building CXX object 3rdparty/qsqlite/CMakeFiles/qsqlite.dir/clementinesqlcachedresult.cpp.o
-[  1%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/qtsingleapplication.cpp.o
-[  1%] Generating moc_DeviceList.cpp
-[  1%] Generating moc_DeviceList_p.cpp
-[  1%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/Engine.cpp.o
-[  1%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/qtsinglecoreapplication.cpp.o
+[  1%] Building CXX object 3rdparty/qsqlite/CMakeFiles/qsqlite.dir/qsql_sqlite.cpp.o
+[  1%] Building CXX object 3rdparty/qxt/CMakeFiles/qxt.dir/qxtglobalshortcut.cpp.o
+[  1%] Building CXX object 3rdparty/qxt/CMakeFiles/qxt.dir/qxtglobal.cpp.o
+[  1%] Building CXX object 3rdparty/qxt/CMakeFiles/qxt.dir/qxtglobalshortcut_x11.cpp.o
+[  1%] Generating moc_Device.cpp
+[  1%] Generating core/moc_messagehandler.cpp
+[  1%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Audio/CMakeFiles/Audio.dir/MilkdropFFT.cpp.o
 [  1%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/qsearchfield_nonmac.cpp.o
+[  1%] Generating moc_DeviceList.cpp
+[  1%] Generating core/moc_messagereply.cpp
+[  1%] Generating moc_DeviceList_p.cpp
+[  1%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/qtsingleapplication.cpp.o
+[  1%] Building C object 3rdparty/libprojectm/vendor/SOIL2/CMakeFiles/SOIL2.dir/image_helper.c.o
+[  1%] Building C object 3rdparty/libprojectm/vendor/SOIL2/CMakeFiles/SOIL2.dir/SOIL2.c.o
 [  1%] Generating moc_DeviceSyncResult.cpp
+[  1%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/latch.cpp.o
 [  1%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/closure.cpp.o
 [  1%] Generating moc_DeviceSyncResult_p.cpp
+[  1%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/qtsinglecoreapplication.cpp.o
 [  1%] Generating moc_DeviceUpdates.cpp
-[  1%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/moc_qtlocalpeer.cpp.o
 [  1%] Generating moc_DeviceUpdates_p.cpp
+[  1%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/MemoryBuffer.c.o
+[  1%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/logging.cpp.o
 [  1%] Generating moc_Device_p.cpp
-[  1%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Audio/CMakeFiles/Audio.dir/MilkdropFFT.cpp.o
-[  1%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/GLSLGenerator.cpp.o
+[  1%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/TreeFunctions.c.o
 [  1%] Generating moc_Episode.cpp
-[  1%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/Scanner.c.o
+[  1%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/Engine.cpp.o
 [  1%] Generating moc_EpisodeAction.cpp
 [  2%] Generating moc_EpisodeActionList.cpp
 [  2%] Generating moc_EpisodeActionList_p.cpp
 [  2%] Generating moc_EpisodeAction_p.cpp
+[  2%] Building CXX object 3rdparty/qxt/CMakeFiles/qxt.dir/moc_qxtglobalshortcut.cpp.o
 [  2%] Generating moc_EpisodeList.cpp
-[  2%] Building CXX object 3rdparty/qxt/CMakeFiles/qxt.dir/qxtglobalshortcut.cpp.o
 [  3%] Generating moc_EpisodeList_p.cpp
 [  3%] Generating moc_Episode_p.cpp
-[  3%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/CompileContext.c.o
+[  3%] Building CXX object 3rdparty/qsqlite/CMakeFiles/qsqlite.dir/clementinesqlcachedresult.cpp.o
 [  3%] Generating moc_Podcast.cpp
+[  3%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/TreeVariables.c.o
 [  3%] Generating moc_PodcastList.cpp
-[  3%] Building CXX object 3rdparty/qxt/CMakeFiles/qxt.dir/qxtglobalshortcut_x11.cpp.o
 [  3%] Generating moc_PodcastList_p.cpp
 [  3%] Generating moc_Podcast_p.cpp
-[  3%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/CompilerFunctions.c.o
+[  3%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/api/projectm-eval.c.o
 [  3%] Generating moc_Settings.cpp
 [  3%] Generating moc_Settings_p.cpp
-[  3%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/ExpressionTree.c.o
+[  3%] Linking C static library libprojectM_eval.a
 [  3%] Generating moc_Tag.cpp
 [  3%] Generating moc_TagList.cpp
 [  3%] Generating moc_TagList_p.cpp
-[  3%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/MemoryBuffer.c.o
-[  3%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Config.cpp.o
-[  3%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/TreeFunctions.c.o
-[  3%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/DeviceSyncResult.cpp.o
-[  3%] Building CXX object 3rdparty/qxt/CMakeFiles/qxt.dir/moc_qxtglobalshortcut.cpp.o
-[  3%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/TreeVariables.c.o
-[  3%] Building C object 3rdparty/libprojectm/vendor/projectm-eval/projectm-eval/CMakeFiles/projectM_eval.dir/api/projectm-eval.c.o
-[  3%] Linking C static library libprojectM_eval.a
-[  3%] Linking CXX static library libgstmoodbar.a
-[  3%] Built target SOIL2
-[  3%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Settings.cpp.o
-[  3%] Built target projectM_eval
-[  3%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/HLSLParser.cpp.o
-[  3%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/latch.cpp.o
-[  3%] Built target gstmoodbar
-[  3%] Building CXX object 3rdparty/libprojectm/src/playlist/CMakeFiles/projectM_playlist_main.dir/Filter.cpp.o
 [  3%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Audio/CMakeFiles/Audio.dir/PCM.cpp.o
-[  3%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Audio/CMakeFiles/Audio.dir/Loudness.cpp.o
+[  3%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Config.cpp.o
+[  3%] Built target projectM_eval
 [  4%] Building CXX object 3rdparty/qsqlite/CMakeFiles/qsqlite.dir/smain.cpp.o
-[  4%] Linking CXX static library libqtiocompressor.a
-[  4%] Building CXX object 3rdparty/libprojectm/src/playlist/CMakeFiles/projectM_playlist_main.dir/Item.cpp.o
-[  4%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/AddRemoveResult.cpp.o
+[  4%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/GLSLGenerator.cpp.o
+[  4%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/moc_qtlocalpeer.cpp.o
+[  4%] Linking CXX static library libgstmoodbar.a
+[  4%] Built target SOIL2
+[  4%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Audio/CMakeFiles/Audio.dir/Loudness.cpp.o
+[  4%] Built target gstmoodbar
 [  4%] Building CXX object 3rdparty/qsqlite/CMakeFiles/qsqlite.dir/moc_qsql_sqlite.cpp.o
-[  4%] Built target qtiocompressor
-[  4%] Building CXX object 3rdparty/qsqlite/CMakeFiles/qsqlite.dir/moc_smain.cpp.o
-[  4%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/qbutton_nonmac.cpp.o
-[  4%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/logging.cpp.o
-[  4%] Linking CXX static library libqxt.a
-[  5%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/moc_qtsingleapplication.cpp.o
-[  5%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/moc_qtsinglecoreapplication.cpp.o
+[  4%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/HLSLParser.cpp.o
+[  4%] Building CXX object 3rdparty/qtiocompressor/CMakeFiles/qtiocompressor.dir/moc_qtiocompressor.cpp.o
+[  4%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Audio/CMakeFiles/Audio.dir/WaveformAligner.cpp.o
+[  5%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/messagehandler.cpp.o
+[  5%] Linking CXX static library libqxt.a
+[  5%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/HLSLTokenizer.cpp.o
+[  5%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/messagereply.cpp.o
 [  5%] Built target qxt
-[  6%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/messagehandler.cpp.o
-[  6%] Building CXX object 3rdparty/libprojectm/src/playlist/CMakeFiles/projectM_playlist_main.dir/Playlist.cpp.o
-[  6%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/HLSLTokenizer.cpp.o
-[  6%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Audio/CMakeFiles/Audio.dir/WaveformAligner.cpp.o
-[  6%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/qprogressindicatorspinning_nonmac.cpp.o
-[  6%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/HLSLTree.cpp.o
-[  6%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/moc_qsearchfield.cpp.o
-[  6%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/moc_qbutton.cpp.o
-[  6%] Building CXX object 3rdparty/libprojectm/src/playlist/CMakeFiles/projectM_playlist_main.dir/PlaylistCWrapper.cpp.o
-[  6%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/messagereply.cpp.o
-[  6%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Tag.cpp.o
-[  6%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/moc_qprogressindicatorspinning.cpp.o
-[  6%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/JsonCreator.cpp.o
-[  6%] Built target Audio
+[  5%] Building CXX object 3rdparty/libprojectm/src/playlist/CMakeFiles/projectM_playlist_main.dir/Filter.cpp.o
+[  5%] Building CXX object 3rdparty/libprojectm/src/playlist/CMakeFiles/projectM_playlist_main.dir/Item.cpp.o
+[  5%] Building CXX object 3rdparty/libprojectm/src/playlist/CMakeFiles/projectM_playlist_main.dir/Playlist.cpp.o
+[  5%] Building CXX object 3rdparty/libprojectm/src/playlist/CMakeFiles/projectM_playlist_main.dir/PlaylistCWrapper.cpp.o
+[  5%] Building CXX object 3rdparty/libprojectm/vendor/hlslparser/CMakeFiles/hlslparser.dir/src/HLSLTree.cpp.o
+[  5%] Building CXX object 3rdparty/qsqlite/CMakeFiles/qsqlite.dir/moc_smain.cpp.o
+[  5%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/DeviceSyncResult.cpp.o
+[  6%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/moc_qtsingleapplication.cpp.o
+[  6%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Settings.cpp.o
+[  6%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/qbutton_nonmac.cpp.o
 [  6%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/waitforsignal.cpp.o
+[  6%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/qprogressindicatorspinning_nonmac.cpp.o
+[  6%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/moc_qsearchfield.cpp.o
 [  6%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/workerpool.cpp.o
+[  6%] Built target Audio
+[  6%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/moc_qbutton.cpp.o
+[  6%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/AddRemoveResult.cpp.o
+[  6%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Tag.cpp.o
 [  6%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/moc_closure.cpp.o
+[  6%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/JsonCreator.cpp.o
+[  6%] Linking CXX static library libqtiocompressor.a
+[  6%] Building CXX object 3rdparty/qtsingleapplication/CMakeFiles/qtsingleapplication.dir/moc_qtsinglecoreapplication.cpp.o
+[  6%] Built target hlslparser
 [  6%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Podcast.cpp.o
-[  7%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/qrc_qprogressindicatorspinning_nonmac.cpp.o
-[  7%] Built target hlslparser
-[  7%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/moc_latch.cpp.o
-[  7%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Episode.cpp.o
-[  7%] Linking CXX static library libqsqlite.a
-[  7%] Built target qsqlite
-[  7%] Linking CXX static library libqtsingleapplication.a
-[  7%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/EpisodeAction.cpp.o
-[  7%] Generating BuiltInTransitionsResources.hpp
-[  7%] Built target projectM_playlist_main
-[  7%] Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp
-[  7%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/CopyTexture.cpp.o
-[  7%] Built target qtsingleapplication
-[  7%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/moc_messagehandler.cpp.o
-[  7%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/MilkdropStaticShaders.cpp.o
-[  7%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/BlurTexture.cpp.o
-[  7%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/moc_messagereply.cpp.o
-[  7%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/moc_workerpool.cpp.o
-[  7%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/FileScanner.cpp.o
-[  7%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/Framebuffer.cpp.o
-[  8%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/EpisodeActionList.cpp.o
-[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/MilkdropNoise.cpp.o
+[  6%] Built target qtiocompressor
+[  6%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Episode.cpp.o
+[  6%] Built target projectM_playlist_main
+[  6%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/moc_latch.cpp.o
+[  6%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/moc_qprogressindicatorspinning.cpp.o
+[  6%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/moc_messagehandler.cpp.o
+[  6%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/EpisodeAction.cpp.o
+[  6%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/moc_messagereply.cpp.o
+[  6%] Generating BuiltInTransitionsResources.hpp
+[  6%] Linking CXX static library libqsqlite.a
+[  6%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/CopyTexture.cpp.o
+[  6%] Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp
+[  6%] Built target qsqlite
+[  6%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/MilkdropStaticShaders.cpp.o
+[  7%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/EpisodeActionList.cpp.o
+[  8%] Building CXX object 3rdparty/qocoa/CMakeFiles/Qocoa.dir/qrc_qprogressindicatorspinning_nonmac.cpp.o
+[  8%] Building CXX object ext/libclementine-common/CMakeFiles/libclementine-common.dir/core/moc_workerpool.cpp.o
+[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/FileScanner.cpp.o
 [  8%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/ApiRequest.cpp.o
+[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/BlurTexture.cpp.o
+[  8%] Linking CXX static library libqtsingleapplication.a
 [  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Border.cpp.o
-[  8%] Linking CXX static library libQocoa.a
-[  8%] Built target Qocoa
-[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/CustomShape.cpp.o
-[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/PresetTransition.cpp.o
 [  8%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/RequestHandler.cpp.o
+[  8%] Built target qtsingleapplication
+[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/CustomShape.cpp.o
 [  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/CustomWaveform.cpp.o
-[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/RenderItem.cpp.o
+[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/Framebuffer.cpp.o
 [  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/DarkenCenter.cpp.o
-[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/EvalLibMutex.cpp.o
 [  8%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/UrlBuilder.cpp.o
-[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/Sampler.cpp.o
+[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/MilkdropNoise.cpp.o
 [  8%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/TagList.cpp.o
-[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/Shader.cpp.o
-[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/Texture.cpp.o
-[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/TextureAttachment.cpp.o
 [  8%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/EpisodeList.cpp.o
+[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/EvalLibMutex.cpp.o
+[  8%] Linking CXX static library libQocoa.a
+[  8%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/PresetTransition.cpp.o
 [  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Factory.cpp.o
+[  9%] Built target Qocoa
 [  9%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/PodcastList.cpp.o
-[  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/TextureManager.cpp.o
 [  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Filters.cpp.o
-[  9%] Linking CXX static library liblibclementine-common.a
 [  9%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/DeviceUpdates.cpp.o
 [  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/FinalComposite.cpp.o
-[  9%] Built target libclementine-common
-[  9%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/DeviceList.cpp.o
+[  9%] Linking CXX static library liblibclementine-common.a
 [  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/IdlePreset.cpp.o
-[  9%] Running cpp protocol buffer compiler on tagreadermessages.proto
-[  9%] Building CXX object ext/libclementine-tagreader/CMakeFiles/libclementine-tagreader.dir/fmpsparser.cpp.o
-[  9%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Device.cpp.o
-[  9%] Running cpp protocol buffer compiler on remotecontrolmessages.proto
+[  9%] Built target libclementine-common
+[  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/RenderItem.cpp.o
 [  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/MilkdropPreset.cpp.o
-[  9%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/qjsonwrapper/Json.cpp.o
-[  9%] Building CXX object ext/libclementine-remote/CMakeFiles/libclementine-remote.dir/remotecontrolmessages.pb.cc.o
+[  9%] Running cpp protocol buffer compiler on tagreadermessages.proto
 [  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/MilkdropShader.cpp.o
-[  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/TextureSamplerDescriptor.cpp.o
-[  9%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Podcast.cpp.o
+[  9%] Building CXX object ext/libclementine-tagreader/CMakeFiles/libclementine-tagreader.dir/fmpsparser.cpp.o
+[  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/Sampler.cpp.o
+[  9%] Running cpp protocol buffer compiler on remotecontrolmessages.proto
+[  9%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/DeviceList.cpp.o
+[  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/Shader.cpp.o
+[  9%] Building CXX object ext/libclementine-remote/CMakeFiles/libclementine-remote.dir/remotecontrolmessages.pb.cc.o
+[  9%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/Device.cpp.o
 [  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/MotionVectors.cpp.o
-[  9%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/PerFrameContext.cpp.o
 [ 10%] Building CXX object ext/libclementine-tagreader/CMakeFiles/libclementine-tagreader.dir/tagreader.cpp.o
+[ 10%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/qjsonwrapper/Json.cpp.o
+[ 10%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/Texture.cpp.o
+[ 10%] Building CXX object ext/libclementine-tagreader/CMakeFiles/libclementine-tagreader.dir/gmereader.cpp.o
+[ 10%] Building CXX object ext/libclementine-tagreader/CMakeFiles/libclementine-tagreader.dir/tagreadermessages.pb.cc.o
+[ 10%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/TextureAttachment.cpp.o
+[ 10%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Podcast.cpp.o
+[ 10%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/TextureManager.cpp.o
+[ 10%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/PerFrameContext.cpp.o
 [ 10%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/PerPixelContext.cpp.o
-[ 11%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/TransitionShaderManager.cpp.o
-[ 11%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/PerPixelMesh.cpp.o
-[ 11%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Podcast_p.cpp.o
-[ 11%] Building CXX object ext/libclementine-tagreader/CMakeFiles/libclementine-tagreader.dir/gmereader.cpp.o
+[ 10%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Podcast_p.cpp.o
+[ 10%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/PerPixelMesh.cpp.o
+[ 10%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_PodcastList.cpp.o
+[ 10%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_PodcastList_p.cpp.o
+[ 10%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/TextureSamplerDescriptor.cpp.o
 [ 11%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/PresetFileParser.cpp.o
-[ 11%] Building CXX object ext/libclementine-tagreader/CMakeFiles/libclementine-tagreader.dir/tagreadermessages.pb.cc.o
-[ 11%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_PodcastList.cpp.o
-[ 11%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/PresetState.cpp.o
-[ 11%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_PodcastList_p.cpp.o
-[ 11%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/ShapePerFrameContext.cpp.o
-[ 12%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Episode.cpp.o
-[ 12%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/VideoEcho.cpp.o
-[ 12%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Episode_p.cpp.o
-[ 12%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveform.cpp.o
+[ 11%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Episode.cpp.o
+[ 11%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Episode_p.cpp.o
+[ 12%] Building CXX object 3rdparty/libprojectm/src/libprojectM/Renderer/CMakeFiles/Renderer.dir/TransitionShaderManager.cpp.o
 [ 12%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeList.cpp.o
+[ 12%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/PresetState.cpp.o
+[ 12%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeList_p.cpp.o
+[ 12%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Tag.cpp.o
+[ 12%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/ShapePerFrameContext.cpp.o
+[ 12%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Tag_p.cpp.o
+[ 12%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/VideoEcho.cpp.o
+[ 12%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveform.cpp.o
+[ 12%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_TagList.cpp.o
+[ 12%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_TagList_p.cpp.o
 [ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/WaveformPerFrameContext.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/WaveformPerPointContext.cpp.o
-[ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeList_p.cpp.o
-[ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Tag.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/CenteredSpiro.cpp.o
-[ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Tag_p.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Circle.cpp.o
-[ 13%] Built target Renderer
-[ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_TagList.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/DerivativeLine.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/DoubleLine.cpp.o
-[ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_TagList_p.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/ExplosiveHash.cpp.o
 [ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Device.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Factory.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Line.cpp.o
+[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/WaveformPerPointContext.cpp.o
 [ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Device_p.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/LineBase.cpp.o
 [ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_DeviceList.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077Wave11.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077Wave9.cpp.o
 [ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_DeviceList_p.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveFlower.cpp.o
+[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/CenteredSpiro.cpp.o
+[ 13%] Built target Renderer
 [ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_DeviceSyncResult.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveLasso.cpp.o
-[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveSkewed.cpp.o
 [ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_DeviceSyncResult_p.cpp.o
-[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveStar.cpp.o
-[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveX.cpp.o
-[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_DeviceUpdates.cpp.o
-[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/SpectrumLine.cpp.o
-[ 15%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_DeviceUpdates_p.cpp.o
+[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Circle.cpp.o
+[ 13%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/DerivativeLine.cpp.o
+[ 13%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_DeviceUpdates.cpp.o
+[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_DeviceUpdates_p.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/DoubleLine.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/ExplosiveHash.cpp.o
+[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeAction.cpp.o
+[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeAction_p.cpp.o
+[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeActionList.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Factory.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Line.cpp.o
+[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeActionList_p.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/LineBase.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077Wave11.cpp.o
+[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Settings.cpp.o
+[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Settings_p.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077Wave9.cpp.o
+[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_AddRemoveResult.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveFlower.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveLasso.cpp.o
+[ 14%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_AddRemoveResult_p.cpp.o
+[ 14%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveSkewed.cpp.o
+[ 15%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveStar.cpp.o
+[ 15%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/SpectrumLine.cpp.o
+[ 15%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/Milkdrop2077WaveX.cpp.o
 [ 15%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/WaveformMath.cpp.o
-[ 15%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/XYOscillationSpiral.cpp.o
-[ 15%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeAction.cpp.o
-[ 15%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeAction_p.cpp.o
-[ 15%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeActionList.cpp.o
-[ 15%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_EpisodeActionList_p.cpp.o
-[ 15%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Settings.cpp.o
-[ 15%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_Settings_p.cpp.o
-[ 15%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_AddRemoveResult.cpp.o
-[ 15%] Building CXX object 3rdparty/libmygpo-qt5/src/CMakeFiles/mygpo-qt5.dir/moc_AddRemoveResult_p.cpp.o
 [ 15%] Linking CXX static library liblibclementine-remote.a
 [ 15%] Built target libclementine-remote
+[ 15%] Building CXX object 3rdparty/libprojectm/src/libprojectM/MilkdropPreset/CMakeFiles/MilkdropPreset.dir/Waveforms/XYOscillationSpiral.cpp.o
+[ 15%] Linking CXX static library liblibclementine-tagreader.a
+[ 15%] Linking CXX static library libmygpo-qt5.a
+[ 15%] Built target libclementine-tagreader
+[ 15%] Generating qrc_data.cpp
+[ 15%] Building CXX object ext/clementine-tagreader/CMakeFiles/clementine-tagreader.dir/tagreaderworker.cpp.o
+[ 15%] Building CXX object ext/clementine-tagreader/CMakeFiles/clementine-tagreader.dir/qrc_data.cpp.o
+[ 15%] Building CXX object ext/clementine-tagreader/CMakeFiles/clementine-tagreader.dir/main.cpp.o
+[ 15%] Built target mygpo-qt5
 [ 15%] Built target MilkdropPreset
+[ 15%] Building CXX object 3rdparty/libprojectm/src/libprojectM/CMakeFiles/projectM_main.dir/PresetFactory.cpp.o
+[ 16%] Building CXX object 3rdparty/libprojectm/src/libprojectM/CMakeFiles/projectM_main.dir/ProjectM.cpp.o
 [ 16%] Building CXX object 3rdparty/libprojectm/src/libprojectM/CMakeFiles/projectM_main.dir/PresetFactoryManager.cpp.o
-[ 16%] Building CXX object 3rdparty/libprojectm/src/libprojectM/CMakeFiles/projectM_main.dir/PresetFactory.cpp.o
 [ 16%] Building CXX object 3rdparty/libprojectm/src/libprojectM/CMakeFiles/projectM_main.dir/TimeKeeper.cpp.o
 [ 16%] Building CXX object 3rdparty/libprojectm/src/libprojectM/CMakeFiles/projectM_main.dir/ProjectMCWrapper.cpp.o
-[ 16%] Building CXX object 3rdparty/libprojectm/src/libprojectM/CMakeFiles/projectM_main.dir/ProjectM.cpp.o
 [ 16%] Building CXX object 3rdparty/libprojectm/src/libprojectM/CMakeFiles/projectM_main.dir/Utils.cpp.o
-[ 16%] Linking CXX static library libmygpo-qt5.a
-[ 16%] Linking CXX static library liblibclementine-tagreader.a
-[ 16%] Built target libclementine-tagreader
-[ 16%] Generating qrc_data.cpp
-[ 16%] Building CXX object ext/clementine-tagreader/CMakeFiles/clementine-tagreader.dir/tagreaderworker.cpp.o
-[ 16%] Building CXX object ext/clementine-tagreader/CMakeFiles/clementine-tagreader.dir/main.cpp.o
-[ 16%] Building CXX object ext/clementine-tagreader/CMakeFiles/clementine-tagreader.dir/qrc_data.cpp.o
-[ 16%] Built target mygpo-qt5
 [ 16%] Built target projectM_main
 [ 17%] Building CXX object 3rdparty/libprojectm/src/libprojectM/CMakeFiles/projectM.dir/__/__/dummy.cpp.o
 [ 17%] Linking CXX static library libprojectM-4.a
@@ -447,534 +447,534 @@ The following components WILL NOT be built:
 [ 17%] Building CXX object 3rdparty/libprojectm/src/playlist/CMakeFiles/projectM_playlist.dir/__/__/dummy.cpp.o
 [ 17%] Linking CXX static library libprojectM-4-playlist.a
 [ 17%] Built target projectM_playlist
+[ 17%] Generating dbus/gnomesettingsdaemon.cpp, dbus/gnomesettingsdaemon.h
 [ 17%] Generating widgets/moc_widgetfadehelper.cpp
-[ 17%] Generating dbus/kglobalaccelcomponent.cpp, dbus/kglobalaccelcomponent.h
 [ 17%] Generating core/mpris2_tracklist.cpp, core/mpris2_tracklist.h
-[ 17%] Generating core/mpris2_player.cpp, core/mpris2_player.h
-[ 17%] Generating dbus/notification.cpp, dbus/notification.h
-[ 17%] Generating core/mpris2_playlists.cpp, core/mpris2_playlists.h
-[ 18%] Generating core/mpris2_root.cpp, core/mpris2_root.h
 [ 18%] Generating dbus/kglobalaccel.cpp, dbus/kglobalaccel.h
-[ 18%] Generating dbus/gnomesettingsdaemon.cpp, dbus/gnomesettingsdaemon.h
+[ 18%] Generating core/mpris2_player.cpp, core/mpris2_player.h
+[ 18%] Generating core/mpris2_playlists.cpp, core/mpris2_playlists.h
 [ 18%] Generating dbus/avahiserver.cpp, dbus/avahiserver.h
+[ 18%] Generating dbus/notification.cpp, dbus/notification.h
 [ 18%] Generating dbus/avahientrygroup.cpp, dbus/avahientrygroup.h
+[ 18%] Generating core/mpris2_root.cpp, core/mpris2_root.h
 [ 18%] Generating dbus/objectmanager.cpp, dbus/objectmanager.h
-[ 18%] Generating dbus/udisks2drive.cpp, dbus/udisks2drive.h
-[ 18%] Generating dbus/udisks2filesystem.cpp, dbus/udisks2filesystem.h
-[ 18%] Generating dbus/udisks2job.cpp, dbus/udisks2job.h
 [ 18%] Generating dbus/udisks2block.cpp, dbus/udisks2block.h
+[ 18%] Generating dbus/udisks2drive.cpp, dbus/udisks2drive.h
+[ 18%] Generating dbus/udisks2job.cpp, dbus/udisks2job.h
+[ 18%] Generating dbus/udisks2filesystem.cpp, dbus/udisks2filesystem.h
+[ 18%] Generating dbus/kglobalaccelcomponent.cpp, dbus/kglobalaccelcomponent.h
+[ 18%] Generating analyzers/moc_analyzercontainer.cpp
 [ 19%] Generating analyzers/moc_analyzerbase.cpp
-[ 19%] Generating analyzers/moc_analyzercontainer.cpp
 [ 19%] Generating analyzers/moc_baranalyzer.cpp
-[ 19%] Generating analyzers/moc_turbine.cpp
-[ 19%] Generating analyzers/moc_blockanalyzer.cpp
-[ 19%] Generating core/moc_crashreporting.cpp
-[ 19%] Generating analyzers/moc_sonogram.cpp
-[ 19%] Generating core/moc_backgroundstreams.cpp
-[ 19%] Generating analyzers/moc_rainbowanalyzer.cpp
-[ 19%] Generating core/moc_deletefiles.cpp
 [ 19%] Generating analyzers/moc_boomanalyzer.cpp
+[ 19%] Generating core/moc_backgroundstreams.cpp
+[ 19%] Generating analyzers/moc_blockanalyzer.cpp
+[ 19%] Generating analyzers/moc_sonogram.cpp
+[ 19%] Generating analyzers/moc_rainbowanalyzer.cpp
+[ 19%] Generating analyzers/moc_turbine.cpp
 [ 19%] Generating core/moc_application.cpp
 [ 19%] Generating core/moc_database.cpp
+[ 19%] Generating core/moc_crashreporting.cpp
+[ 19%] Generating core/moc_deletefiles.cpp
+[ 19%] Generating core/moc_filesystemwatcherinterface.cpp
 [ 19%] Generating core/moc_globalshortcuts.cpp
 [ 20%] Generating core/moc_globalshortcutbackend.cpp
-[ 20%] Generating core/moc_filesystemwatcherinterface.cpp
 [ 20%] Generating core/moc_kglobalaccelglobalshortcutbackend.cpp
-[ 20%] Generating core/moc_mergedproxymodel.cpp
-[ 20%] Generating core/moc_mimedata.cpp
 [ 20%] Generating core/moc_gnomeglobalshortcutbackend.cpp
-[ 20%] Generating core/moc_network.cpp
 [ 20%] Generating core/moc_organise.cpp
+[ 20%] Generating core/moc_mimedata.cpp
 [ 20%] Generating core/moc_qtfslistener.cpp
 [ 20%] Generating core/moc_songloader.cpp
-[ 20%] Generating core/moc_player.cpp
+[ 20%] Generating core/moc_network.cpp
+[ 20%] Generating core/moc_mergedproxymodel.cpp
 [ 20%] Generating core/moc_tagreaderclient.cpp
+[ 20%] Generating core/moc_player.cpp
+[ 20%] Generating core/moc_taskmanager.cpp
 [ 20%] Generating core/moc_urlhandler.cpp
+[ 20%] Generating covers/moc_albumcoverexporter.cpp
 [ 20%] Generating covers/moc_albumcoverfetcher.cpp
 [ 20%] Generating covers/moc_albumcoverloader.cpp
+[ 20%] Generating covers/moc_discogscoverprovider.cpp
 [ 21%] Generating covers/moc_albumcoverfetchersearch.cpp
-[ 21%] Generating covers/moc_discogscoverprovider.cpp
-[ 21%] Generating covers/moc_albumcoverexporter.cpp
-[ 21%] Generating core/moc_taskmanager.cpp
-[ 21%] Generating covers/moc_coverexportrunnable.cpp
-[ 21%] Generating covers/moc_kittenloader.cpp
-[ 21%] Generating covers/moc_coverprovider.cpp
 [ 21%] Generating covers/moc_coversearchstatisticsdialog.cpp
-[ 21%] Generating covers/moc_currentartloader.cpp
 [ 21%] Generating covers/moc_coverproviders.cpp
-[ 21%] Generating devices/moc_connecteddevice.cpp
-[ 21%] Generating devices/moc_devicemanager.cpp
+[ 21%] Generating covers/moc_coverexportrunnable.cpp
+[ 21%] Generating covers/moc_coverprovider.cpp
+[ 21%] Generating covers/moc_currentartloader.cpp
 [ 21%] Generating covers/moc_musicbrainzcoverprovider.cpp
+[ 21%] Generating covers/moc_kittenloader.cpp
 [ 21%] Generating devices/moc_devicedatabasebackend.cpp
 [ 21%] Generating devices/moc_devicelister.cpp
+[ 21%] Generating devices/moc_connecteddevice.cpp
 [ 21%] Generating devices/moc_deviceproperties.cpp
-[ 21%] Generating devices/moc_deviceview.cpp
+[ 22%] Generating devices/moc_devicemanager.cpp
 [ 22%] Generating devices/moc_devicestatefiltermodel.cpp
+[ 22%] Generating devices/moc_deviceview.cpp
 [ 22%] Generating devices/moc_deviceviewcontainer.cpp
+[ 22%] Generating engines/moc_enginebase.cpp
 [ 22%] Generating devices/moc_deviceinfo.cpp
 [ 22%] Generating devices/moc_filesystemdevice.cpp
-[ 22%] Generating engines/moc_gstenginepipeline.cpp
-[ 22%] Generating engines/moc_enginebase.cpp
-[ 22%] Generating engines/moc_gstengine.cpp
-[ 22%] Generating engines/moc_pipelineview.cpp
-[ 22%] Generating globalsearch/moc_globalsearch.cpp
 [ 22%] Generating engines/moc_gstenginedebug.cpp
-[ 22%] Generating engines/moc_gstpipelinebase.cpp
+[ 22%] Generating engines/moc_gstengine.cpp
+[ 22%] Generating engines/moc_gstenginepipeline.cpp
 [ 22%] Generating engines/moc_gstelementdeleter.cpp
-[ 22%] Generating globalsearch/moc_globalsearchmodel.cpp
+[ 22%] Generating engines/moc_pipelineview.cpp
+[ 22%] Generating engines/moc_gstpipelinebase.cpp
 [ 22%] Generating globalsearch/moc_globalsearchsettingspage.cpp
+[ 22%] Generating globalsearch/moc_globalsearch.cpp
+[ 22%] Generating globalsearch/moc_globalsearchmodel.cpp
 [ 23%] Generating globalsearch/moc_globalsearchview.cpp
 [ 23%] Generating globalsearch/moc_searchprovider.cpp
-[ 23%] Generating globalsearch/moc_suggestionwidget.cpp
 [ 23%] Generating globalsearch/moc_simplesearchprovider.cpp
+[ 23%] Generating globalsearch/moc_suggestionwidget.cpp
 [ 23%] Generating globalsearch/moc_radiobrowsersearchprovider.cpp
 [ 23%] Generating internet/core/moc_cloudfileservice.cpp
+[ 23%] Generating internet/digitally/moc_digitallyimportedsettingspage.cpp
 [ 23%] Generating internet/digitally/moc_digitallyimportedclient.cpp
 [ 23%] Generating internet/digitally/moc_digitallyimportedservicebase.cpp
-[ 23%] Generating internet/digitally/moc_digitallyimportedsettingspage.cpp
 [ 23%] Generating internet/core/moc_geolocator.cpp
 [ 23%] Generating internet/icecast/moc_icecastbackend.cpp
 [ 23%] Generating internet/icecast/moc_icecastfilterwidget.cpp
-[ 23%] Generating internet/core/moc_internetmimedata.cpp
-[ 23%] Generating internet/icecast/moc_icecastservice.cpp
 [ 23%] Generating internet/icecast/moc_icecastmodel.cpp
-[ 23%] Generating internet/core/moc_internetservice.cpp
 [ 24%] Generating internet/core/moc_internetmodel.cpp
-[ 24%] Generating internet/core/moc_internetshowsettingspage.cpp
+[ 24%] Generating internet/icecast/moc_icecastservice.cpp
+[ 24%] Generating internet/core/moc_internetmimedata.cpp
+[ 24%] Generating internet/core/moc_internetservice.cpp
 [ 24%] Generating internet/core/moc_internetsongmimedata.cpp
-[ 24%] Generating internet/jamendo/moc_jamendoservice.cpp
+[ 24%] Generating internet/jamendo/moc_jamendodynamicplaylist.cpp
 [ 24%] Generating internet/core/moc_internetviewcontainer.cpp
 [ 24%] Generating internet/core/moc_internetview.cpp
-[ 24%] Generating internet/core/moc_localredirectserver.cpp
-[ 24%] Generating internet/jamendo/moc_jamendodynamicplaylist.cpp
+[ 24%] Generating internet/core/moc_internetshowsettingspage.cpp
+[ 24%] Generating internet/jamendo/moc_jamendoservice.cpp
+[ 24%] Generating internet/magnatune/moc_magnatunesettingspage.cpp
 [ 24%] Generating internet/magnatune/moc_magnatuneservice.cpp
+[ 24%] Generating internet/core/moc_localredirectserver.cpp
 [ 24%] Generating internet/magnatune/moc_magnatunedownloaddialog.cpp
 [ 24%] Generating internet/core/moc_oauthenticator.cpp
-[ 24%] Generating internet/magnatune/moc_magnatunesettingspage.cpp
 [ 25%] Generating internet/internetradio/moc_savedradio.cpp
 [ 25%] Generating internet/core/moc_scrobbler.cpp
 [ 25%] Generating internet/somafm/moc_somafmurlhandler.cpp
 [ 25%] Generating internet/core/moc_searchboxwidget.cpp
 [ 25%] Generating internet/somafm/moc_somafmservice.cpp
-[ 25%] Generating internet/intergalacticfm/moc_intergalacticfmurlhandler.cpp
 [ 25%] Generating internet/intergalacticfm/moc_intergalacticfmservice.cpp
-[ 25%] Generating internet/radiobrowser/moc_radiobrowserservice.cpp
+[ 25%] Generating internet/intergalacticfm/moc_intergalacticfmurlhandler.cpp
 [ 25%] Generating internet/radiobrowser/moc_radiobrowsersettingspage.cpp
+[ 25%] Generating internet/radiobrowser/moc_radiobrowserservice.cpp
 [ 25%] Generating internet/radiobrowser/moc_radiobrowserurlhandler.cpp
-[ 25%] Generating internet/subsonic/moc_subsonicservice.cpp
-[ 25%] Generating internet/subsonic/moc_subsonicdynamicplaylist.cpp
 [ 25%] Generating internet/subsonic/moc_subsonicsettingspage.cpp
+[ 25%] Generating internet/subsonic/moc_subsonicservice.cpp
+/build/clementine/src/Clementine/src/devices/deviceinfo.h:0: Note: No relevant classes found. No output generated.
 [ 25%] Generating internet/subsonic/moc_subsonicurlhandler.cpp
 [ 25%] Generating library/moc_groupbydialog.cpp
+[ 25%] Generating internet/subsonic/moc_subsonicdynamicplaylist.cpp
 [ 25%] Generating library/moc_library.cpp
-/build/clementine-git/src/Clementine/src/devices/deviceinfo.h:0: Note: No relevant classes found. No output generated.
-[ 25%] Generating library/moc_librarydirectorymodel.cpp
 [ 26%] Generating library/moc_librarybackend.cpp
+[ 26%] Generating library/moc_librarydirectorymodel.cpp
 [ 26%] Generating library/moc_libraryfilterwidget.cpp
 [ 26%] Generating library/moc_librarymodel.cpp
-[ 26%] Generating library/moc_libraryview.cpp
-[ 26%] Generating library/moc_libraryviewcontainer.cpp
 [ 26%] Generating library/moc_librarysettingspage.cpp
+[ 26%] Generating library/moc_libraryviewcontainer.cpp
+[ 26%] Generating library/moc_libraryview.cpp
 [ 26%] Generating library/moc_librarywatcher.cpp
 [ 26%] Generating library/moc_savedgroupingmanager.cpp
 [ 26%] Generating musicbrainz/moc_acoustidclient.cpp
-[ 26%] Generating networkremote/moc_networkremotehelper.cpp
 [ 26%] Generating musicbrainz/moc_musicbrainzclient.cpp
-[ 26%] Generating networkremote/moc_networkremote.cpp
+[ 26%] Generating networkremote/moc_networkremotehelper.cpp
 [ 26%] Generating musicbrainz/moc_tagfetcher.cpp
+[ 26%] Generating networkremote/moc_networkremote.cpp
 [ 26%] Generating networkremote/moc_incomingdataparser.cpp
-[ 27%] Generating networkremote/moc_outgoingdatacreator.cpp
 [ 27%] Generating networkremote/moc_remoteclient.cpp
+[ 27%] Generating networkremote/moc_outgoingdatacreator.cpp
 [ 27%] Generating networkremote/moc_songsender.cpp
-[ 27%] Generating playlist/moc_dynamicplaylistcontrols.cpp
 [ 27%] Generating playlist/moc_dbplaylistitem.cpp
+[ 27%] Generating playlist/moc_dynamicplaylistcontrols.cpp
 [ 27%] Generating playlist/moc_playlist.cpp
 [ 27%] Generating playlist/moc_playlistbackend.cpp
-/build/clementine-git/src/Clementine/src/playlist/dbplaylistitem.h:0: Note: No relevant classes found. No output generated.
+/build/clementine/src/Clementine/src/playlist/dbplaylistitem.h:0: Note: No relevant classes found. No output generated.
 [ 27%] Generating playlist/moc_playlistcontainer.cpp
-[ 27%] Generating playlist/moc_playlistdelegates.cpp
 [ 27%] Generating playlist/moc_playlistheader.cpp
+[ 27%] Generating playlist/moc_playlistdelegates.cpp
 [ 27%] Generating playlist/moc_playlistfilter.cpp
 [ 27%] Generating playlist/moc_playlistitem.cpp
 [ 27%] Generating playlist/moc_playlistitemmimedata.cpp
 [ 27%] Generating playlist/moc_playlistlistcontainer.cpp
-/build/clementine-git/src/Clementine/src/playlist/playlistitem.h:0: Note: No relevant classes found. No output generated.
-[ 27%] Generating playlist/moc_playlistlistmodel.cpp
+/build/clementine/src/Clementine/src/playlist/playlistitem.h:0: Note: No relevant classes found. No output generated.
 [ 28%] Generating playlist/moc_playlistmanager.cpp
 [ 28%] Generating playlist/moc_playlistlistview.cpp
+[ 28%] Generating playlist/moc_playlistlistmodel.cpp
 [ 28%] Generating playlist/moc_playlistsaveoptionsdialog.cpp
 [ 28%] Generating playlist/moc_playlistsequence.cpp
 [ 28%] Generating playlist/moc_playlisttabbar.cpp
-[ 28%] Generating playlist/moc_playlistview.cpp
 [ 28%] Generating playlist/moc_queue.cpp
+[ 28%] Generating playlist/moc_playlistview.cpp
 [ 28%] Generating playlist/moc_queuemanager.cpp
-[ 28%] Generating playlist/moc_songloaderinserter.cpp
 [ 28%] Generating playlist/moc_songmimedata.cpp
+[ 28%] Generating playlist/moc_songloaderinserter.cpp
 [ 28%] Generating playlistparsers/moc_asxparser.cpp
-[ 28%] Generating playlistparsers/moc_cueparser.cpp
-[ 28%] Generating playlistparsers/moc_m3uparser.cpp
 [ 28%] Generating playlistparsers/moc_asxiniparser.cpp
-[ 28%] Generating playlistparsers/moc_parserbase.cpp
+[ 29%] Generating playlistparsers/moc_parserbase.cpp
+[ 29%] Generating playlistparsers/moc_m3uparser.cpp
 [ 29%] Generating playlistparsers/moc_playlistparser.cpp
 [ 29%] Generating playlistparsers/moc_plsparser.cpp
-[ 29%] Generating playlistparsers/moc_xspfparser.cpp
+[ 29%] Generating playlistparsers/moc_cueparser.cpp
 [ 29%] Generating internet/podcasts/moc_addpodcastbyurl.cpp
 [ 29%] Generating internet/podcasts/moc_addpodcastdialog.cpp
 [ 29%] Generating internet/podcasts/moc_addpodcastpage.cpp
+[ 29%] Generating playlistparsers/moc_xspfparser.cpp
 [ 29%] Generating internet/podcasts/moc_fixedopmlpage.cpp
 [ 29%] Generating internet/podcasts/moc_episodeinfowidget.cpp
-[ 29%] Generating internet/podcasts/moc_gpoddersync.cpp
 [ 29%] Generating internet/podcasts/moc_gpoddersearchpage.cpp
-[ 29%] Generating internet/podcasts/moc_gpoddertoptagspage.cpp
+[ 29%] Generating internet/podcasts/moc_gpoddersync.cpp
 [ 29%] Generating internet/podcasts/moc_gpoddertoptagsmodel.cpp
 [ 29%] Generating internet/podcasts/moc_itunessearchpage.cpp
+[ 29%] Generating internet/podcasts/moc_gpoddertoptagspage.cpp
+[ 29%] Generating internet/podcasts/moc_podcastdiscoverymodel.cpp
 [ 29%] Generating internet/podcasts/moc_podcastbackend.cpp
-[ 30%] Generating internet/podcasts/moc_podcastdeleter.cpp
-[ 30%] Generating internet/podcasts/moc_podcastdiscoverymodel.cpp
 [ 30%] Generating internet/podcasts/moc_podcastdownloader.cpp
+[ 30%] Generating internet/podcasts/moc_podcastdeleter.cpp
+[ 30%] Generating internet/podcasts/moc_podcastinfodialog.cpp
+[ 30%] Generating internet/podcasts/moc_podcastinfowidget.cpp
 [ 30%] Generating internet/podcasts/moc_podcastservice.cpp
-[ 30%] Generating internet/podcasts/moc_podcastsettingspage.cpp
 [ 30%] Generating internet/podcasts/moc_podcastservicemodel.cpp
 [ 30%] Generating internet/podcasts/moc_podcasturlloader.cpp
-[ 30%] Generating internet/podcasts/moc_podcastinfowidget.cpp
+[ 30%] Generating internet/podcasts/moc_podcastsettingspage.cpp
 [ 30%] Generating internet/podcasts/moc_podcastupdater.cpp
-[ 30%] Generating internet/podcasts/moc_podcastinfodialog.cpp
 [ 30%] Generating smartplaylists/moc_generatorinserter.cpp
-[ 30%] Generating smartplaylists/moc_searchpreview.cpp
-[ 30%] Generating smartplaylists/moc_querywizardplugin.cpp
-[ 30%] Generating smartplaylists/moc_wizard.cpp
 [ 30%] Generating smartplaylists/moc_generatormimedata.cpp
-[ 30%] Generating smartplaylists/moc_wizardplugin.cpp
 [ 30%] Generating smartplaylists/moc_generator.cpp
 [ 31%] Generating smartplaylists/moc_searchtermwidget.cpp
-[ 31%] Generating songinfo/moc_artistbiography.cpp
+[ 31%] Generating smartplaylists/moc_searchpreview.cpp
+[ 31%] Generating smartplaylists/moc_querywizardplugin.cpp
+[ 31%] Generating smartplaylists/moc_wizard.cpp
+[ 31%] Generating smartplaylists/moc_wizardplugin.cpp
 [ 31%] Generating songinfo/moc_artistinfoview.cpp
+[ 31%] Generating songinfo/moc_artistbiography.cpp
 [ 31%] Generating songinfo/moc_collapsibleinfopane.cpp
 [ 31%] Generating songinfo/moc_collapsibleinfoheader.cpp
-[ 31%] Generating songinfo/moc_songinfoprovider.cpp
 [ 31%] Generating songinfo/moc_songinfobase.cpp
+[ 31%] Generating songinfo/moc_songinfoprovider.cpp
 [ 31%] Generating songinfo/moc_songinfofetcher.cpp
+[ 31%] Generating songinfo/moc_songinfotextview.cpp
 [ 31%] Generating songinfo/moc_songinfosettingspage.cpp
+[ 31%] Generating songinfo/moc_spotifyimages.cpp
+[ 31%] Generating songinfo/moc_songkickconcertwidget.cpp
 [ 31%] Generating songinfo/moc_songkickconcerts.cpp
+[ 31%] Generating songinfo/moc_taglyricsinfoprovider.cpp
+[ 31%] Generating songinfo/moc_ultimatelyricslyric.cpp
+[ 31%] Generating songinfo/moc_ultimatelyricsprovider.cpp
+[ 31%] Generating songinfo/moc_songinfoview.cpp
+[ 31%] Generating songinfo/moc_streamdiscoverer.cpp
 [ 32%] Generating songinfo/moc_songplaystats.cpp
-[ 32%] Generating songinfo/moc_songinfoview.cpp
-[ 32%] Generating songinfo/moc_spotifyimages.cpp
-[ 32%] Generating songinfo/moc_streamdiscoverer.cpp
-[ 32%] Generating songinfo/moc_songkickconcertwidget.cpp
-[ 32%] Generating songinfo/moc_taglyricsinfoprovider.cpp
-[ 32%] Generating songinfo/moc_ultimatelyricsreader.cpp
-[ 32%] Generating songinfo/moc_ultimatelyricslyric.cpp
-[ 32%] Generating songinfo/moc_ultimatelyricsprovider.cpp
 [ 32%] Generating transcoder/moc_transcoder.cpp
-[ 32%] Generating transcoder/moc_transcoderoptionsdialog.cpp
-[ 32%] Generating transcoder/moc_transcoderoptionsmp3.cpp
+[ 32%] Generating songinfo/moc_ultimatelyricsreader.cpp
 [ 32%] Generating transcoder/moc_transcoderoptionsavaac.cpp
-[ 32%] Generating transcoder/moc_transcoderoptionsflac.cpp
 [ 32%] Generating transcoder/moc_transcoderoptionsfdkaac.cpp
-[ 32%] Generating songinfo/moc_songinfotextview.cpp
 [ 32%] Generating transcoder/moc_transcodedialog.cpp
+[ 32%] Generating transcoder/moc_transcoderoptionsflac.cpp
+[ 32%] Generating transcoder/moc_transcoderoptionsdialog.cpp
+[ 32%] Generating ui/moc_albumcoverexport.cpp
+[ 32%] Generating ui/moc_addstreamdialog.cpp
 [ 32%] Generating transcoder/moc_transcodersettingspage.cpp
 [ 34%] Generating ui/moc_about.cpp
-[ 34%] Generating ui/moc_addstreamdialog.cpp
-[ 34%] Generating ui/moc_albumcovermanager.cpp
-[ 34%] Generating ui/moc_albumcoverexport.cpp
 [ 34%] Generating ui/moc_albumcoverchoicecontroller.cpp
 [ 34%] Generating ui/moc_albumcovermanagerlist.cpp
+[ 34%] Generating transcoder/moc_transcoderoptionsmp3.cpp
+[ 34%] Generating ui/moc_albumcovermanager.cpp
 [ 34%] Generating ui/moc_albumcoversearcher.cpp
-[ 34%] Generating ui/moc_backgroundstreamssettingspage.cpp
+[ 34%] Generating ui/moc_console.cpp
 [ 34%] Generating ui/moc_behavioursettingspage.cpp
+[ 34%] Generating ui/moc_appearancesettingspage.cpp
+[ 34%] Generating ui/moc_backgroundstreamssettingspage.cpp
 [ 34%] Generating ui/moc_coverfromurldialog.cpp
 [ 34%] Generating ui/moc_filechooserwidget.cpp
-[ 34%] Generating ui/moc_console.cpp
 [ 34%] Generating ui/moc_edittagdialog.cpp
-[ 34%] Generating ui/moc_appearancesettingspage.cpp
-[ 35%] Generating ui/moc_lovedialog.cpp
-[ 35%] Generating ui/moc_equalizer.cpp
-[ 35%] Generating ui/moc_mainwindow.cpp
-[ 35%] Generating ui/moc_networkproxysettingspage.cpp
+[ 34%] Generating ui/moc_lovedialog.cpp
 [ 35%] Generating ui/moc_globalshortcutgrabber.cpp
-[ 35%] Generating ui/moc_networkremotesettingspage.cpp
-[ 35%] Generating ui/moc_organiseerrordialog.cpp
-[ 35%] Generating ui/moc_organisedialog.cpp
+[ 35%] Generating ui/moc_equalizer.cpp
+[ 35%] Generating ui/moc_globalshortcutssettingspage.cpp
+[ 35%] Generating ui/moc_networkproxysettingspage.cpp
+[ 35%] Generating ui/moc_mainwindow.cpp
 [ 35%] Generating ui/moc_notificationssettingspage.cpp
+[ 35%] Generating ui/moc_organisedialog.cpp
+[ 35%] Generating ui/moc_organiseerrordialog.cpp
 [ 35%] Generating ui/moc_qtsystemtrayicon.cpp
 [ 35%] Generating ui/moc_playbacksettingspage.cpp
-[ 35%] Generating ui/moc_settingspage.cpp
+[ 35%] Generating ui/moc_settingsdialog.cpp
 [ 35%] Generating ui/moc_settingscategory.cpp
-[ 35%] Generating ui/moc_songmetadatasettingspage.cpp
-/build/clementine-git/src/Clementine/src/ui/settingscategory.h:0: Note: No relevant classes found. No output generated.
-[ 35%] Generating ui/moc_streamdetailsdialog.cpp
-[ 35%] Generating ui/moc_systemtrayicon.cpp
+[ 35%] Generating ui/moc_settingspage.cpp
+/build/clementine/src/Clementine/src/ui/settingscategory.h:0: Note: No relevant classes found. No output generated.
+[ 36%] Generating ui/moc_songmetadatasettingspage.cpp
 [ 36%] Generating ui/moc_standarditemiconloader.cpp
-[ 36%] Generating ui/moc_trackselectiondialog.cpp
 [ 36%] Generating ui/moc_windows7thumbbar.cpp
+[ 36%] Generating ui/moc_trackselectiondialog.cpp
+[ 36%] Generating ui/moc_streamdetailsdialog.cpp
 [ 36%] Generating widgets/moc_autoexpandingtreeview.cpp
-[ 36%] Generating ui/moc_globalshortcutssettingspage.cpp
 [ 36%] Generating widgets/moc_busyindicator.cpp
-[ 36%] Generating widgets/moc_equalizerslider.cpp
+[ 36%] Generating ui/moc_systemtrayicon.cpp
+[ 36%] Generating ui/moc_networkremotesettingspage.cpp
 [ 36%] Generating widgets/moc_didyoumean.cpp
-[ 36%] Generating widgets/moc_elidedlabel.cpp
 [ 36%] Generating widgets/moc_clickablelabel.cpp
-[ 36%] Generating ui/moc_settingsdialog.cpp
-[ 36%] Generating widgets/moc_errordialog.cpp
-[ 36%] Generating widgets/moc_favoritewidget.cpp
-[ 36%] Generating widgets/moc_filenameformatwidget.cpp
+[ 36%] Generating widgets/moc_elidedlabel.cpp
 [ 36%] Generating widgets/moc_fancytabwidget.cpp
-[ 36%] Generating widgets/moc_freespacebar.cpp
-[ 36%] Generating widgets/moc_groupediconview.cpp
-[ 36%] Generating widgets/moc_fileviewlist.cpp
-[ 37%] Generating widgets/moc_lineedit.cpp
+[ 36%] Generating widgets/moc_equalizerslider.cpp
+[ 36%] Generating widgets/moc_filenameformatwidget.cpp
+[ 36%] Generating widgets/moc_favoritewidget.cpp
 [ 37%] Generating widgets/moc_fileview.cpp
-[ 37%] Generating widgets/moc_linetextedit.cpp
+[ 37%] Generating widgets/moc_freespacebar.cpp
+[ 37%] Generating widgets/moc_fileviewlist.cpp
+[ 37%] Generating widgets/moc_errordialog.cpp
+[ 37%] Generating widgets/moc_groupediconview.cpp
 [ 37%] Generating widgets/moc_loginstatewidget.cpp
-[ 37%] Generating widgets/moc_multiloadingindicator.cpp
+[ 37%] Generating widgets/moc_linetextedit.cpp
+[ 37%] Generating widgets/moc_prettyimage.cpp
 [ 37%] Generating widgets/moc_nowplayingwidget.cpp
-[ 37%] Generating widgets/moc_prettyimageview.cpp
+[ 37%] Generating widgets/moc_multiloadingindicator.cpp
 [ 37%] Generating widgets/moc_osd.cpp
 [ 37%] Generating widgets/moc_osdpretty.cpp
-[ 37%] Generating widgets/moc_progressitemdelegate.cpp
+[ 37%] Generating widgets/moc_prettyimageview.cpp
 [ 37%] Generating widgets/moc_ratingwidget.cpp
-[ 37%] Generating widgets/moc_sliderwidget.cpp
-[ 37%] Generating widgets/moc_prettyimage.cpp
+[ 37%] Generating widgets/moc_stickyslider.cpp
+[ 37%] Generating widgets/moc_tracksliderpopup.cpp
 [ 38%] Generating widgets/moc_renametablineedit.cpp
-[ 38%] Generating widgets/moc_stickyslider.cpp
+[ 38%] Generating widgets/moc_sliderwidget.cpp
 [ 38%] Generating widgets/moc_stretchheaderview.cpp
 [ 38%] Generating widgets/moc_trackslider.cpp
 [ 38%] Generating widgets/moc_tracksliderslider.cpp
+[ 38%] Generating widgets/moc_progressitemdelegate.cpp
 [ 38%] Generating visualisations/moc_projectmpresetmodel.cpp
-[ 38%] Generating widgets/moc_tracksliderpopup.cpp
+[ 38%] Generating widgets/moc_lineedit.cpp
+[ 38%] Generating dbus/moc_avahiserver.cpp
 [ 38%] Generating visualisations/moc_projectmvisualisation.cpp
-[ 38%] Generating visualisations/moc_visualisationoverlay.cpp
-[ 38%] Generating visualisations/moc_visualisationselector.cpp
-[ 38%] Generating core/moc_mpris.cpp
+[ 38%] Generating visualisations/moc_visualisationcontainer.cpp
 [ 39%] Generating dbus/moc_avahientrygroup.cpp
-[ 39%] Generating core/moc_mpris2.cpp
 [ 39%] Generating devices/moc_giolister.cpp
+[ 39%] Generating core/moc_mpris.cpp
+[ 39%] Generating visualisations/moc_visualisationoverlay.cpp
 [ 39%] Generating devices/moc_udisks2lister.cpp
-[ 39%] Generating visualisations/moc_visualisationcontainer.cpp
-[ 39%] Generating devices/moc_cddadevice.cpp
-[ 39%] Generating devices/moc_cddalister.cpp
-[ 39%] Generating moodbar/moc_moodbaritemdelegate.cpp
 [ 39%] Generating devices/moc_cddasongloader.cpp
-[ 39%] Generating ripper/moc_ripcddialog.cpp
-[ 39%] Generating moodbar/moc_moodbarloader.cpp
+[ 39%] Generating devices/moc_cddalister.cpp
 [ 39%] Generating ripper/moc_ripper.cpp
-[ 39%] Generating dbus/moc_avahiserver.cpp
+[ 39%] Generating ripper/moc_ripcddialog.cpp
+[ 39%] Generating devices/moc_cddadevice.cpp
 [ 39%] Generating moodbar/moc_moodbarcontroller.cpp
-[ 39%] Generating moodbar/moc_moodbarpipeline.cpp
-[ 39%] Generating ui_coversearchstatisticsdialog.h
+[ 39%] Generating moodbar/moc_moodbaritemdelegate.cpp
+[ 39%] Generating moodbar/moc_moodbarloader.cpp
+[ 39%] Generating core/moc_mpris2.cpp
+[ 39%] Generating visualisations/moc_visualisationselector.cpp
 [ 39%] Generating moodbar/moc_moodbarproxystyle.cpp
-[ 39%] Generating ui_deviceproperties.h
+[ 39%] Generating moodbar/moc_moodbarpipeline.cpp
+[ 40%] Generating ui_deviceproperties.h
+[ 40%] Generating ui_coversearchstatisticsdialog.h
 [ 40%] Generating core/moc_ubuntuunityhack.cpp
-[ 40%] Generating ui_gstenginedebug.h
 [ 40%] Generating ui_deviceviewcontainer.h
+[ 40%] Generating ui_gstenginedebug.h
 [ 40%] Generating ui_globalsearchsettingspage.h
-[ 40%] Generating ui_searchproviderstatuswidget.h
-[ 40%] Generating ui_suggestionwidget.h
-[ 40%] Generating ui_icecastfilterwidget.h
-[ 40%] Generating ui_digitallyimportedsettingspage.h
-[ 40%] Generating ui_internetshowsettingspage.h
-[ 40%] Generating ui_internetviewcontainer.h
 [ 40%] Generating ui_globalsearchview.h
-[ 40%] Generating ui_magnatunedownloaddialog.h
-[ 40%] Generating ui_groupbydialog.h
-[ 40%] Generating ui_librarysettingspage.h
-[ 40%] Generating ui_libraryfilterwidget.h
-[ 40%] Generating ui_radiobrowsersettingspage.h
-[ 40%] Generating ui_subsonicsettingspage.h
-[ 41%] Generating ui_searchboxwidget.h
-[ 41%] Generating ui_libraryviewcontainer.h
-[ 41%] Generating ui_savedgroupingmanager.h
+[ 40%] Generating ui_suggestionwidget.h
+[ 40%] Generating ui_searchproviderstatuswidget.h
+[ 40%] Generating ui_icecastfilterwidget.h
+[ 40%] Generating ui_internetshowsettingspage.h
+[ 40%] Generating ui_digitallyimportedsettingspage.h
+[ 40%] Generating ui_internetviewcontainer.h
 [ 41%] Generating ui_magnatunesettingspage.h
-[ 41%] Generating ui_dynamicplaylistcontrols.h
-[ 41%] Generating ui_playlistcontainer.h
+[ 41%] Generating ui_searchboxwidget.h
+[ 41%] Generating ui_magnatunedownloaddialog.h
+[ 41%] Generating ui_subsonicsettingspage.h
+[ 41%] Generating ui_radiobrowsersettingspage.h
+[ 41%] Generating ui_groupbydialog.h
+[ 41%] Generating ui_librarysettingspage.h
 [ 41%] Generating ui_playlistsaveoptionsdialog.h
+[ 41%] Generating ui_playlistlistcontainer.h
+[ 41%] Generating ui_libraryviewcontainer.h
+[ 41%] Generating ui_playlistcontainer.h
+[ 41%] Generating ui_dynamicplaylistcontrols.h
+[ 41%] Generating ui_savedgroupingmanager.h
+[ 41%] Generating ui_libraryfilterwidget.h
 [ 41%] Generating ui_playlistsequence.h
 [ 41%] Generating ui_addpodcastbyurl.h
-[ 41%] Generating ui_playlistlistcontainer.h
 [ 41%] Generating ui_queuemanager.h
 [ 41%] Generating ui_episodeinfowidget.h
-[ 41%] Generating ui_gpoddersearchpage.h
 [ 42%] Generating ui_addpodcastdialog.h
-[ 42%] Generating ui_itunessearchpage.h
 [ 42%] Generating ui_podcastinfowidget.h
-[ 42%] Generating ui_podcastinfodialog.h
-[ 42%] Generating ui_podcastsettingspage.h
+[ 42%] Generating ui_gpoddersearchpage.h
+[ 42%] Generating ui_itunessearchpage.h
 [ 42%] Generating ui_querysearchpage.h
-[ 42%] Generating ui_querysortpage.h
-[ 42%] Generating ui_wizardfinishpage.h
 [ 42%] Generating ui_searchpreview.h
+[ 42%] Generating ui_querysortpage.h
 [ 42%] Generating ui_searchtermwidget.h
-[ 42%] Generating ui_songkickconcertwidget.h
+[ 42%] Generating ui_wizardfinishpage.h
 [ 42%] Generating ui_transcodedialog.h
-[ 43%] Generating ui_songinfosettingspage.h
+[ 42%] Generating ui_songinfosettingspage.h
+[ 42%] Generating ui_songkickconcertwidget.h
 [ 43%] Generating ui_transcodelogdialog.h
-[ 43%] Generating ui_transcoderoptionsaac.h
+[ 42%] Generating ui_transcoderoptionsaac.h
 [ 43%] Generating ui_transcoderoptionsavaac.h
 [ 43%] Generating ui_transcoderoptionsdialog.h
 [ 43%] Generating ui_transcoderoptionserror.h
-[ 43%] Generating ui_transcoderoptionsflac.h
-[ 43%] Generating ui_transcoderoptionsfdkaac.h
-[ 43%] Generating ui_transcoderoptionsmp3.h
-[ 43%] Generating ui_transcoderoptionsspeex.h
 [ 43%] Generating ui_transcoderoptionsopus.h
+[ 43%] Generating ui_transcoderoptionswma.h
 [ 43%] Generating ui_transcoderoptionsvorbis.h
-[ 43%] Generating ui_about.h
+[ 43%] Generating ui_transcoderoptionsspeex.h
+[ 43%] Generating ui_podcastinfodialog.h
+[ 43%] Generating ui_transcoderoptionsvoaac.h
+[ 43%] Generating ui_transcoderoptionsmp3.h
 [ 43%] Generating ui_transcodersettingspage.h
-[ 44%] Generating ui_transcoderoptionswma.h
+[ 43%] Generating ui_transcoderoptionsflac.h
+[ 44%] Generating ui_about.h
 [ 44%] Generating ui_addstreamdialog.h
-[ 44%] Generating ui_transcoderoptionsvoaac.h
 [ 44%] Generating ui_albumcoverexport.h
 [ 44%] Generating ui_albumcovermanager.h
 [ 44%] Generating ui_albumcoversearcher.h
-[ 44%] Generating ui_backgroundstreamssettingspage.h
 [ 44%] Generating ui_appearancesettingspage.h
 [ 44%] Generating ui_behavioursettingspage.h
+[ 44%] Generating ui_podcastsettingspage.h
+[ 44%] Generating ui_console.h
 [ 44%] Generating ui_coverfromurldialog.h
 [ 44%] Generating ui_edittagdialog.h
-[ 44%] Generating ui_console.h
-[ 44%] Generating ui_globalshortcutssettingspage.h
-[ 44%] Generating ui_mainwindow.h
-[ 44%] Generating ui_globalshortcutgrabber.h
 [ 44%] Generating ui_lovedialog.h
+[ 44%] Generating ui_transcoderoptionsfdkaac.h
+[ 44%] Generating ui_globalshortcutgrabber.h
 [ 44%] Generating ui_equalizer.h
-[ 44%] Generating ui_networkremotesettingspage.h
+[ 44%] Generating ui_globalshortcutssettingspage.h
 [ 45%] Generating ui_networkproxysettingspage.h
 [ 45%] Generating ui_notificationssettingspage.h
-[ 45%] Generating ui_settingsdialog.h
-[ 45%] Generating ui_organiseerrordialog.h
 [ 45%] Generating ui_organisedialog.h
-[ 45%] Generating ui_streamdetailsdialog.h
-[ 45%] Generating ui_trackselectiondialog.h
-[ 45%] Generating ui_songmetadatasettingspage.h
+[ 45%] Generating ui_mainwindow.h
+[ 45%] Generating ui_organiseerrordialog.h
+[ 45%] Generating ui_networkremotesettingspage.h
 [ 45%] Generating ui_playbacksettingspage.h
-[ 45%] Generating ui_errordialog.h
+[ 45%] Generating ui_backgroundstreamssettingspage.h
+[ 45%] Generating ui_songmetadatasettingspage.h
+[ 45%] Generating ui_settingsdialog.h
+[ 45%] Generating ui_trackselectiondialog.h
+[ 45%] Generating ui_streamdetailsdialog.h
 [ 45%] Generating ui_equalizerslider.h
-[ 45%] Generating ui_filenameformatwidget.h
-[ 45%] Generating ui_trackslider.h
-[ 46%] Generating ui_fileview.h
-[ 46%] Generating ui_loginstatewidget.h
-[ 46%] Generating ui_wiimotesettingspage.h
+[ 45%] Generating ui_errordialog.h
 [ 46%] Generating ui_osdpretty.h
+[ 46%] Generating ui_loginstatewidget.h
+[ 46%] Generating ui_fileview.h
 [ 46%] Generating ui_wiimoteshortcutgrabber.h
-[ 46%] Generating ui_visualisationselector.h
 [ 46%] Generating ui_visualisationoverlay.h
-[ 46%] Generating ui_googledrivesettingspage.h
-[ 46%] Generating ui_lastfmsettingspage.h
+[ 46%] Generating ui_trackslider.h
+[ 46%] Generating ui_visualisationselector.h
+[ 46%] Generating ui_wiimotesettingspage.h
 [ 46%] Generating ui_ripcddialog.h
+[ 46%] Generating ui_lastfmsettingspage.h
+[ 46%] Generating ui_googledrivesettingspage.h
 [ 46%] Generating ui_dropboxsettingspage.h
+[ 46%] Generating ui_seafilesettingspage.h
 [ 46%] Generating ui_skydrivesettingspage.h
 [ 46%] Generating ui_boxsettingspage.h
-[ 46%] Generating qrc_data.cpp
-[ 46%] Generating ui_seafilesettingspage.h
-[ 46%] Generating translations/clementine_be.qm
 [ 46%] Generating translations/clementine_ar.qm
+[ 46%] Generating qrc_data.cpp
 [ 46%] Generating translations/clementine_af.qm
-[ 46%] Generating translations/clementine_bn.qm
 [ 46%] Generating translations/clementine_bg.qm
-[ 46%] Generating translations/clementine_bs.qm
-[ 47%] Generating translations/clementine_ca.qm
-[ 47%] Generating translations/clementine_cy.qm
+[ 46%] Generating translations/clementine_bn.qm
 [ 47%] Generating translations/clementine_br.qm
-[ 47%] Generating translations/clementine_de.qm
+[ 47%] Generating ui_filenameformatwidget.h
+[ 47%] Generating translations/clementine_bs.qm
+[ 47%] Generating translations/clementine_ca.qm
 [ 47%] Generating translations/clementine_cs.qm
-[ 47%] Generating translations/clementine_el.qm
-[ 47%] Generating translations/clementine_en.qm
+[ 47%] Generating translations/clementine_be.qm
 [ 47%] Generating translations/clementine_da.qm
-[ 47%] Generating translations/clementine_en_CA.qm
+[ 47%] Generating translations/clementine_de.qm
+[ 47%] Generating translations/clementine_cy.qm
+[ 47%] Generating translations/clementine_en.qm
 [ 47%] Generating translations/clementine_en_GB.qm
-[ 47%] Generating translations/clementine_eo.qm
+[ 47%] Generating translations/clementine_en_CA.qm
+[ 47%] Generating translations/clementine_el.qm
 [ 47%] Generating translations/clementine_es.qm
-[ 47%] Generating translations/clementine_fi.qm
-[ 48%] Generating translations/clementine_et.qm
+[ 47%] Generating translations/clementine_et.qm
+[ 47%] Generating translations/clementine_eu.qm
 [ 48%] Generating translations/clementine_fa.qm
-[ 48%] Generating translations/clementine_eu.qm
 [ 48%] Generating translations/clementine_fr.qm
-[ 48%] Generating translations/clementine_hy.qm
-[ 48%] Generating translations/clementine_he.qm
 [ 48%] Generating translations/clementine_ga.qm
 [ 48%] Generating translations/clementine_gl.qm
-[ 48%] Generating translations/clementine_hr.qm
-[ 48%] Generating translations/clementine_ia.qm
+[ 48%] Generating translations/clementine_he.qm
+[ 48%] Generating translations/clementine_fi.qm
 [ 48%] Generating translations/clementine_he_IL.qm
+[ 48%] Generating translations/clementine_hy.qm
 [ 48%] Generating translations/clementine_hu.qm
+[ 48%] Generating translations/clementine_hr.qm
 [ 48%] Generating translations/clementine_hi.qm
 [ 48%] Generating translations/clementine_is.qm
-[ 49%] Generating translations/clementine_id.qm
+[ 48%] Generating translations/clementine_ia.qm
+[ 48%] Generating translations/clementine_eo.qm
+[ 48%] Generating translations/clementine_id.qm
+[ 48%] Generating translations/clementine_it.qm
 [ 49%] Generating translations/clementine_ja.qm
-[ 49%] Generating translations/clementine_it.qm
 [ 49%] Generating translations/clementine_ka.qm
 [ 49%] Generating translations/clementine_kk.qm
 [ 49%] Generating translations/clementine_ko.qm
 [ 49%] Generating translations/clementine_lt.qm
-[ 49%] Generating translations/clementine_nb.qm
+[ 49%] Generating translations/clementine_mk_MK.qm
+[ 49%] Generating translations/clementine_mr.qm
 [ 49%] Generating translations/clementine_lv.qm
 [ 49%] Generating translations/clementine_ms.qm
-[ 49%] Generating translations/clementine_mr.qm
-[ 49%] Generating translations/clementine_mk_MK.qm
 [ 49%] Generating translations/clementine_my.qm
+[ 49%] Generating translations/clementine_nb.qm
 [ 49%] Generating translations/clementine_nl.qm
 [ 49%] Generating translations/clementine_oc.qm
-[ 49%] Generating translations/clementine_pl.qm
-[ 49%] Generating translations/clementine_pt_BR.qm
-[ 49%] Generating translations/clementine_pa.qm
-[ 49%] Generating translations/clementine_ro.qm
+[ 50%] Generating translations/clementine_pl.qm
 [ 50%] Generating translations/clementine_pt.qm
+[ 50%] Generating translations/clementine_pa.qm
+[ 50%] Generating translations/clementine_pt_BR.qm
+[ 50%] Generating translations/clementine_ro.qm
 [ 50%] Generating translations/clementine_sk.qm
-[ 50%] Generating translations/clementine_si_LK.qm
 [ 50%] Generating translations/clementine_ru.qm
 [ 50%] Generating translations/clementine_sl.qm
-[ 50%] Generating translations/clementine_sr.qm
+[ 50%] Generating translations/clementine_si_LK.qm
 [ 50%] Generating translations/clementine_sr@latin.qm
-[ 50%] Generating translations/clementine_sv.qm
-[ 50%] Generating translations/clementine_tr_TR.qm
+[ 50%] Generating translations/clementine_sr.qm
 [ 50%] Generating translations/clementine_te.qm
+[ 50%] Generating translations/clementine_sv.qm
 [ 50%] Generating translations/clementine_tr.qm
-[ 50%] Generating translations/clementine_uk.qm
 [ 50%] Generating translations/clementine_uz.qm
-[ 50%] Generating translations/clementine_zh_CN.qm
-[ 51%] Generating translations/clementine_zh_TW.qm
+[ 51%] Generating translations/clementine_tr_TR.qm
+[ 51%] Generating translations/clementine_uk.qm
 [ 51%] Generating translations/clementine_vi.qm
-[ 51%] Generating core/mpris2_root.moc
+[ 51%] Generating translations/clementine_zh_CN.qm
+[ 51%] Generating translations/clementine_zh_TW.qm
 [ 51%] Generating core/mpris2_player.moc
-[ 51%] Generating dbus/udisks2filesystem.moc
-[ 51%] Generating core/mpris2_tracklist.moc
+[ 51%] Generating core/mpris2_root.moc
 [ 51%] Generating dbus/gnomesettingsdaemon.moc
-[ 51%] Generating dbus/notification.moc
-[ 51%] Generating dbus/kglobalaccel.moc
-[ 51%] Generating dbus/objectmanager.moc
-[ 51%] Generating core/mpris2_playlists.moc
 [ 51%] Generating dbus/kglobalaccelcomponent.moc
-[ 51%] Generating qrc_translations.cpp
-[ 51%] Generating dbus/udisks2drive.moc
-[ 51%] Generating dbus/udisks2job.moc
+[ 51%] Generating dbus/notification.moc
+[ 51%] Generating dbus/udisks2filesystem.moc
 [ 51%] Generating dbus/udisks2block.moc
-[ 51%] Generating /build/clementine-git/src/Clementine/src/translations/translations.pot
+[ 51%] Generating core/mpris2_tracklist.moc
+[ 51%] Generating dbus/kglobalaccel.moc
+[ 51%] Generating core/mpris2_playlists.moc
+[ 51%] Generating dbus/udisks2job.moc
+[ 51%] Generating dbus/objectmanager.moc
+[ 51%] Generating dbus/udisks2drive.moc
+[ 51%] Generating qrc_translations.cpp
+[ 51%] Generating /build/clementine/src/Clementine/src/translations/translations.pot
 /usr/bin/xgettext: The option '--sort-output' is deprecated.
 core/database.cpp:629: warning: Message contains an embedded URL.  Better move it out of the translatable string, see https://www.gnu.org/software/gettext/manual/html_node/No-embedded-URLs.html
 songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Better move it out of the translatable string, see https://www.gnu.org/software/gettext/manual/html_node/No-embedded-URLs.html
 ../../build/src/ui_podcastsettingspage.h:281: warning: Message contains an embedded URL.  Better move it out of the translatable string, see https://www.gnu.org/software/gettext/manual/html_node/No-embedded-URLs.html
-[ 51%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/analyzercontainer.cpp.o
-[ 51%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/sonogram.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/blockanalyzer.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/boomanalyzer.cpp.o
+[ 52%] Linking CXX executable ../../clementine-tagreader
 [ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/analyzerbase.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/appearance.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/baranalyzer.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/turbine.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/rainbowanalyzer.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/backgroundstreams.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/application.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/commandlineoptions.cpp.o
 [ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/fht.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/database.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/deletefiles.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/filesystemmusicstorage.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/filesystemwatcherinterface.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/crashreporting.cpp.o
-[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/globalshortcutbackend.cpp.o
-[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/globalshortcuts.cpp.o
-[ 54%] Linking CXX executable ../../clementine-tagreader
+[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/blockanalyzer.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/analyzercontainer.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/boomanalyzer.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/baranalyzer.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/appearance.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/application.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/sonogram.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/turbine.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/backgroundstreams.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/analyzers/rainbowanalyzer.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/crashreporting.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/commandlineoptions.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/database.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/deletefiles.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/filesystemmusicstorage.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/globalshortcutbackend.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/filesystemwatcherinterface.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/globalshortcuts.cpp.o
 [ 54%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/gnomeglobalshortcutbackend.cpp.o
 [ 54%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/kglobalaccelglobalshortcutbackend.cpp.o
 [ 54%] Building CXX object src/CMakeFiles/clementine_lib.dir/core/mergedproxymodel.cpp.o
@@ -1010,8 +1010,8 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 56%] Building CXX object src/CMakeFiles/clementine_lib.dir/covers/coverproviders.cpp.o
 [ 56%] Building CXX object src/CMakeFiles/clementine_lib.dir/covers/coversearchstatistics.cpp.o
 [ 56%] Building CXX object src/CMakeFiles/clementine_lib.dir/covers/coversearchstatisticsdialog.cpp.o
-[ 56%] Building CXX object src/CMakeFiles/clementine_lib.dir/covers/currentartloader.cpp.o
 [ 56%] Built target clementine-tagreader
+[ 56%] Building CXX object src/CMakeFiles/clementine_lib.dir/covers/currentartloader.cpp.o
 [ 56%] Building CXX object src/CMakeFiles/clementine_lib.dir/covers/kittenloader.cpp.o
 [ 56%] Building CXX object src/CMakeFiles/clementine_lib.dir/covers/musicbrainzcoverprovider.cpp.o
 [ 56%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/connecteddevice.cpp.o
@@ -1067,8 +1067,8 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 60%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/core/internetsettingscategory.cpp.o
 [ 60%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/core/internetshowsettingspage.cpp.o
 [ 60%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/core/internetview.cpp.o
-[ 60%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/core/internetviewcontainer.cpp.o
 [ 60%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/jamendo/jamendodynamicplaylist.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/core/internetviewcontainer.cpp.o
 [ 60%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/jamendo/jamendoplaylistitem.cpp.o
 [ 60%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/jamendo/jamendoservice.cpp.o
 [ 60%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/core/localredirectserver.cpp.o
@@ -1106,14 +1106,14 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 62%] Building CXX object src/CMakeFiles/clementine_lib.dir/library/savedgroupingmanager.cpp.o
 [ 62%] Building CXX object src/CMakeFiles/clementine_lib.dir/library/sqlrow.cpp.o
 [ 62%] Building CXX object src/CMakeFiles/clementine_lib.dir/musicbrainz/acoustidclient.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/clementine_lib.dir/musicbrainz/musicbrainzclient.cpp.o
 [ 62%] Building CXX object src/CMakeFiles/clementine_lib.dir/musicbrainz/chromaprinter.cpp.o
 [ 62%] Building CXX object src/CMakeFiles/clementine_lib.dir/musicbrainz/tagfetcher.cpp.o
-[ 62%] Building CXX object src/CMakeFiles/clementine_lib.dir/musicbrainz/musicbrainzclient.cpp.o
 [ 63%] Building CXX object src/CMakeFiles/clementine_lib.dir/networkremote/incomingdataparser.cpp.o
 [ 63%] Building CXX object src/CMakeFiles/clementine_lib.dir/networkremote/networkremote.cpp.o
 [ 63%] Building CXX object src/CMakeFiles/clementine_lib.dir/networkremote/networkremotehelper.cpp.o
-[ 63%] Building CXX object src/CMakeFiles/clementine_lib.dir/networkremote/outgoingdatacreator.cpp.o
 [ 63%] Building CXX object src/CMakeFiles/clementine_lib.dir/networkremote/remoteclient.cpp.o
+[ 63%] Building CXX object src/CMakeFiles/clementine_lib.dir/networkremote/outgoingdatacreator.cpp.o
 [ 63%] Building CXX object src/CMakeFiles/clementine_lib.dir/networkremote/songsender.cpp.o
 [ 63%] Building CXX object src/CMakeFiles/clementine_lib.dir/networkremote/zeroconf.cpp.o
 [ 63%] Building CXX object src/CMakeFiles/clementine_lib.dir/playlist/dbplaylistitem.cpp.o
@@ -1173,8 +1173,8 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 68%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/podcastparser.cpp.o
 [ 68%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/podcastupdater.cpp.o
 [ 68%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/podcasturlloader.cpp.o
-[ 68%] Building CXX object src/CMakeFiles/clementine_lib.dir/smartplaylists/generatorinserter.cpp.o
 [ 68%] Building CXX object src/CMakeFiles/clementine_lib.dir/smartplaylists/generator.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/clementine_lib.dir/smartplaylists/generatorinserter.cpp.o
 [ 68%] Building CXX object src/CMakeFiles/clementine_lib.dir/smartplaylists/querygenerator.cpp.o
 [ 68%] Building CXX object src/CMakeFiles/clementine_lib.dir/smartplaylists/querywizardplugin.cpp.o
 [ 68%] Building CXX object src/CMakeFiles/clementine_lib.dir/smartplaylists/search.cpp.o
@@ -1242,7 +1242,7 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 72%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/networkremotesettingspage.cpp.o
 [ 72%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/notificationssettingspage.cpp.o
 [ 72%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/organisedialog.cpp.o
-[ 73%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/organiseerrordialog.cpp.o
+[ 72%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/organiseerrordialog.cpp.o
 [ 73%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/playbacksettingspage.cpp.o
 [ 73%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/qtsystemtrayicon.cpp.o
 [ 73%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/screensaver.cpp.o
@@ -1324,10 +1324,10 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/cddasongloader.cpp.o
 [ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/ripper/ripcddialog.cpp.o
 [ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/ripper/ripper.cpp.o
-[ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/moodbar/moodbarbuilder.cpp.o
 [ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/moodbar/moodbarcontroller.cpp.o
-[ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/moodbar/moodbaritemdelegate.cpp.o
+[ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/moodbar/moodbarbuilder.cpp.o
 [ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/moodbar/moodbarloader.cpp.o
+[ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/moodbar/moodbaritemdelegate.cpp.o
 [ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/moodbar/moodbarpipeline.cpp.o
 [ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/moodbar/moodbarproxystyle.cpp.o
 [ 78%] Building CXX object src/CMakeFiles/clementine_lib.dir/moodbar/moodbarrenderer.cpp.o
@@ -1378,8 +1378,8 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 81%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/moc_devicedatabasebackend.cpp.o
 [ 82%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/moc_devicelister.cpp.o
 [ 82%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/moc_devicemanager.cpp.o
-[ 82%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/moc_devicestatefiltermodel.cpp.o
 [ 82%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/moc_deviceproperties.cpp.o
+[ 82%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/moc_devicestatefiltermodel.cpp.o
 [ 82%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/moc_deviceview.cpp.o
 [ 82%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/moc_deviceviewcontainer.cpp.o
 [ 82%] Building CXX object src/CMakeFiles/clementine_lib.dir/devices/moc_filesystemdevice.cpp.o
@@ -1503,10 +1503,10 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/moc_podcastinfodialog.cpp.o
 [ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/moc_podcastinfowidget.cpp.o
 [ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/moc_podcastservice.cpp.o
-[ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/moc_podcastservicemodel.cpp.o
 [ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/moc_podcastsettingspage.cpp.o
-[ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/moc_podcasturlloader.cpp.o
+[ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/moc_podcastservicemodel.cpp.o
 [ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/moc_podcastupdater.cpp.o
+[ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/internet/podcasts/moc_podcasturlloader.cpp.o
 [ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/smartplaylists/moc_generator.cpp.o
 [ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/smartplaylists/moc_generatorinserter.cpp.o
 [ 90%] Building CXX object src/CMakeFiles/clementine_lib.dir/smartplaylists/moc_generatormimedata.cpp.o
@@ -1534,8 +1534,8 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 92%] Building CXX object src/CMakeFiles/clementine_lib.dir/songinfo/moc_ultimatelyricslyric.cpp.o
 [ 92%] Building CXX object src/CMakeFiles/clementine_lib.dir/songinfo/moc_ultimatelyricsprovider.cpp.o
 [ 92%] Building CXX object src/CMakeFiles/clementine_lib.dir/songinfo/moc_ultimatelyricsreader.cpp.o
-[ 92%] Building CXX object src/CMakeFiles/clementine_lib.dir/transcoder/moc_transcodedialog.cpp.o
 [ 92%] Building CXX object src/CMakeFiles/clementine_lib.dir/transcoder/moc_transcoder.cpp.o
+[ 92%] Building CXX object src/CMakeFiles/clementine_lib.dir/transcoder/moc_transcodedialog.cpp.o
 [ 92%] Building CXX object src/CMakeFiles/clementine_lib.dir/transcoder/moc_transcoderoptionsavaac.cpp.o
 [ 92%] Building CXX object src/CMakeFiles/clementine_lib.dir/transcoder/moc_transcoderoptionsdialog.cpp.o
 [ 92%] Building CXX object src/CMakeFiles/clementine_lib.dir/transcoder/moc_transcoderoptionsmp3.cpp.o
@@ -1557,8 +1557,8 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 94%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/moc_edittagdialog.cpp.o
 [ 94%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/moc_filechooserwidget.cpp.o
 [ 94%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/moc_lovedialog.cpp.o
-[ 94%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/moc_equalizer.cpp.o
 [ 94%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/moc_globalshortcutgrabber.cpp.o
+[ 94%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/moc_equalizer.cpp.o
 [ 94%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/moc_globalshortcutssettingspage.cpp.o
 [ 94%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/moc_mainwindow.cpp.o
 [ 94%] Building CXX object src/CMakeFiles/clementine_lib.dir/ui/moc_networkproxysettingspage.cpp.o
@@ -1598,8 +1598,8 @@ songinfo/artistbiography.cpp:279: warning: Message contains an embedded URL.  Be
 [ 96%] Building CXX object src/CMakeFiles/clementine_lib.dir/widgets/moc_nowplayingwidget.cpp.o
 [ 96%] Building CXX object src/CMakeFiles/clementine_lib.dir/widgets/moc_osd.cpp.o
 [ 96%] Building CXX object src/CMakeFiles/clementine_lib.dir/widgets/moc_osdpretty.cpp.o
-[ 96%] Building CXX object src/CMakeFiles/clementine_lib.dir/widgets/moc_prettyimage.cpp.o
 [ 97%] Building CXX object src/CMakeFiles/clementine_lib.dir/widgets/moc_prettyimageview.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/clementine_lib.dir/widgets/moc_prettyimage.cpp.o
 [ 97%] Building CXX object src/CMakeFiles/clementine_lib.dir/widgets/moc_progressitemdelegate.cpp.o
 [ 97%] Building CXX object src/CMakeFiles/clementine_lib.dir/widgets/moc_ratingwidget.cpp.o
 [ 97%] Building CXX object src/CMakeFiles/clementine_lib.dir/widgets/moc_renametablineedit.cpp.o
