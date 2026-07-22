@@ -1,0 +1,325 @@
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The CXX compiler identification is GNU 16.1.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test ARGS_HAS__Wall
+-- Performing Test ARGS_HAS__Wall - Success
+-- Performing Test ARGS_HAS__Wextra
+-- Performing Test ARGS_HAS__Wextra - Success
+-- Performing Test ARGS_HAS__Wpedantic
+-- Performing Test ARGS_HAS__Wpedantic - Success
+-- Performing Test ARGS_HAS__Wconversion
+-- Performing Test ARGS_HAS__Wconversion - Success
+-- Performing Test ARGS_HAS__Wsign_conversion
+-- Performing Test ARGS_HAS__Wsign_conversion - Success
+-- Performing Test ARGS_HAS__Wnull_dereference
+-- Performing Test ARGS_HAS__Wnull_dereference - Success
+-- Performing Test ARGS_HAS__Wformat_2
+-- Performing Test ARGS_HAS__Wformat_2 - Success
+-- Performing Test ARGS_HAS__Wshadow
+-- Performing Test ARGS_HAS__Wshadow - Success
+-- Performing Test ARGS_HAS__Wcast_align
+-- Performing Test ARGS_HAS__Wcast_align - Success
+-- Performing Test ARGS_HAS__Wunused
+-- Performing Test ARGS_HAS__Wunused - Success
+-- Configuring done (3.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /build/args/src/build
+[  1%] Building CXX object CMakeFiles/argstest-arg_flags.dir/test/arg_flags.cxx.o
+[  1%] Building CXX object CMakeFiles/argstest-arg_flag_lists_default.dir/test/arg_flag_lists_default.cxx.o
+[  2%] Building CXX object CMakeFiles/argstest-bool_flags.dir/test/bool_flags.cxx.o
+[  2%] Building CXX object CMakeFiles/argstest-arg_flag_lists_replace_default.dir/test/arg_flag_lists_replace_default.cxx.o
+[  2%] Building CXX object CMakeFiles/argstest-arg_flag_lists_sets.dir/test/arg_flag_lists_sets.cxx.o
+[  4%] Building CXX object CMakeFiles/argstest-argument_separation.dir/test/argument_separation.cxx.o
+[  4%] Building CXX object CMakeFiles/argstest-completion_separator_prefix_overlap.dir/test/completion_separator_prefix_overlap.cxx.o
+[  4%] Building CXX object CMakeFiles/argstest-completion_terminator.dir/test/completion_terminator.cxx.o
+[  4%] Building CXX object CMakeFiles/argstest-completion.dir/test/completion.cxx.o
+[  5%] Building CXX object CMakeFiles/gitlike.dir/examples/gitlike.cxx.o
+[  6%] Building CXX object CMakeFiles/completion.dir/examples/completion.cxx.o
+[  6%] Building CXX object CMakeFiles/argstest-arg_flag_lists.dir/test/arg_flag_lists.cxx.o
+[  6%] Building CXX object CMakeFiles/argstest-action_flag.dir/test/action_flag.cxx.o
+[  7%] Building CXX object CMakeFiles/argstest-default_values.dir/test/default_values.cxx.o
+[  8%] Building CXX object CMakeFiles/argstest-custom_types.dir/test/custom_types.cxx.o
+[  9%] Building CXX object CMakeFiles/argstest-choices_description.dir/test/choices_description.cxx.o
+[  9%] Building CXX object CMakeFiles/argstest-count_flag.dir/test/count_flag.cxx.o
+[  9%] Building CXX object CMakeFiles/argstest-completion_long_separator_multichar.dir/test/completion_long_separator_multichar.cxx.o
+[ 10%] Building CXX object CMakeFiles/argstest-arg_to_non_arg_flag.dir/test/arg_to_non_arg_flag.cxx.o
+[ 10%] Building CXX object CMakeFiles/argstest-completion_bad_cword.dir/test/completion_bad_cword.cxx.o
+/build/args/src/args-6.5.0/examples/gitlike.cxx: In function ‘int main(int, char**)’:
+/build/args/src/args-6.5.0/examples/gitlike.cxx:45:18: warning: catching polymorphic type ‘class args::Help’ by value [-Wcatch-value=]
+   45 |     catch (args::Help)
+      |                  ^~~~
+/build/args/src/args-6.5.0/examples/gitlike.cxx:50:24: warning: catching polymorphic type ‘class args::Error’ by value [-Wcatch-value=]
+   50 |     catch (args::Error e)
+      |                        ^
+/build/args/src/args-6.5.0/examples/gitlike.cxx: In function ‘void Init(const std::string&, std::vector<std::__cxx11::basic_string<char> >::const_iterator, std::vector<std::__cxx11::basic_string<char> >::const_iterator)’:
+/build/args/src/args-6.5.0/examples/gitlike.cxx:78:18: warning: catching polymorphic type ‘class args::Help’ by value [-Wcatch-value=]
+   78 |     catch (args::Help)
+      |                  ^~~~
+/build/args/src/args-6.5.0/examples/gitlike.cxx:83:29: warning: catching polymorphic type ‘class args::ParseError’ by value [-Wcatch-value=]
+   83 |     catch (args::ParseError e)
+      |                             ^
+/build/args/src/args-6.5.0/examples/gitlike.cxx: In function ‘void Add(const std::string&, std::vector<std::__cxx11::basic_string<char> >::const_iterator, std::vector<std::__cxx11::basic_string<char> >::const_iterator)’:
+/build/args/src/args-6.5.0/examples/gitlike.cxx:118:18: warning: catching polymorphic type ‘class args::Help’ by value [-Wcatch-value=]
+  118 |     catch (args::Help)
+      |                  ^~~~
+/build/args/src/args-6.5.0/examples/gitlike.cxx:123:29: warning: catching polymorphic type ‘class args::ParseError’ by value [-Wcatch-value=]
+  123 |     catch (args::ParseError e)
+      |                             ^
+[ 11%] Linking CXX executable argstest-completion_separator_prefix_overlap
+[ 12%] Linking CXX executable argstest-arg_flag_lists_default
+[ 13%] Linking CXX executable argstest-completion
+[ 13%] Linking CXX executable argstest-bool_flags
+[ 14%] Linking CXX executable argstest-completion_terminator
+[ 14%] Linking CXX executable argstest-arg_flags
+[ 14%] Linking CXX executable argstest-arg_to_non_arg_flag
+[ 15%] Linking CXX executable argstest-arg_flag_lists_replace_default
+[ 16%] Linking CXX executable argstest-arg_flag_lists_sets
+[ 16%] Linking CXX executable argstest-custom_types
+[ 16%] Linking CXX executable argstest-default_values
+[ 17%] Linking CXX executable argstest-count_flag
+[ 17%] Linking CXX executable argstest-argument_separation
+[ 18%] Linking CXX executable argstest-completion_long_separator_multichar
+[ 19%] Linking CXX executable argstest-arg_flag_lists
+[ 20%] Linking CXX executable argstest-completion_bad_cword
+[ 21%] Linking CXX executable argstest-action_flag
+[ 21%] Linking CXX executable completion
+[ 21%] Linking CXX executable argstest-choices_description
+[ 22%] Linking CXX executable gitlike
+[ 22%] Built target argstest-arg_flag_lists_replace_default
+[ 22%] Built target argstest-bool_flags
+[ 22%] Built target argstest-default_values
+[ 23%] Building CXX object CMakeFiles/argstest-embedded_nul_numeric.dir/test/embedded_nul_numeric.cxx.o
+[ 24%] Building CXX object CMakeFiles/argstest-empty_longprefix_short_flags.dir/test/empty_longprefix_short_flags.cxx.o
+[ 24%] Linking CXX executable argstest-embedded_nul_numeric
+[ 24%] Built target argstest-count_flag
+[ 25%] Building CXX object CMakeFiles/argstest-extra_positionals.dir/test/extra_positionals.cxx.o
+[ 25%] Built target argstest-arg_to_non_arg_flag
+[ 26%] Building CXX object CMakeFiles/argstest-get_assignable.dir/test/get_assignable.cxx.o
+[ 26%] Built target argstest-embedded_nul_numeric
+[ 26%] Building CXX object CMakeFiles/argstest-get_program_line.dir/test/get_program_line.cxx.o
+[ 26%] Built target argstest-arg_flag_lists_default
+[ 26%] Building CXX object CMakeFiles/argstest-global_options.dir/test/global_options.cxx.o
+[ 26%] Built target argstest-arg_flag_lists_sets
+[ 26%] Building CXX object CMakeFiles/argstest-group_get_filtered.dir/test/group_get_filtered.cxx.o
+[ 26%] Built target argstest-arg_flag_lists
+[ 26%] Built target argstest-argument_separation
+[ 26%] Building CXX object CMakeFiles/argstest-group_get_matches.dir/test/group_get_matches.cxx.o
+[ 26%] Building CXX object CMakeFiles/argstest-group_nesting.dir/test/group_nesting.cxx.o
+[ 26%] Built target argstest-action_flag
+[ 26%] Built target argstest-completion_bad_cword
+[ 27%] Building CXX object CMakeFiles/argstest-group_validation_fail.dir/test/group_validation_fail.cxx.o
+[ 28%] Building CXX object CMakeFiles/argstest-help_flag.dir/test/help_flag.cxx.o
+[ 28%] Built target argstest-choices_description
+[ 29%] Building CXX object CMakeFiles/argstest-help_params.dir/test/help_params.cxx.o
+[ 30%] Building CXX object CMakeFiles/argstest-help_stream.dir/test/help_stream.cxx.o
+[ 30%] Built target argstest-completion_separator_prefix_overlap
+[ 31%] Building CXX object CMakeFiles/argstest-help_underflow.dir/test/help_underflow.cxx.o
+[ 31%] Linking CXX executable argstest-empty_longprefix_short_flags
+[ 31%] Built target argstest-completion_terminator
+[ 32%] Linking CXX executable argstest-get_assignable
+[ 33%] Building CXX object CMakeFiles/argstest-hidden_options.dir/test/hidden_options.cxx.o
+[ 34%] Linking CXX executable argstest-get_program_line
+[ 34%] Linking CXX executable argstest-extra_positionals
+[ 34%] Built target argstest-completion_long_separator_multichar
+[ 35%] Linking CXX executable argstest-group_get_filtered
+[ 35%] Built target argstest-arg_flags
+[ 35%] Built target argstest-custom_types
+[ 36%] Linking CXX executable argstest-group_nesting
+[ 37%] Linking CXX executable argstest-global_options
+[ 37%] Linking CXX executable argstest-help_flag
+[ 37%] Linking CXX executable argstest-help_params
+[ 37%] Built target completion
+[ 37%] Building CXX object CMakeFiles/argstest-implicit_values.dir/test/implicit_values.cxx.o
+[ 37%] Linking CXX executable argstest-help_stream
+[ 37%] Built target argstest-completion
+[ 37%] Building CXX object CMakeFiles/argstest-inteager_overflow_arithmetic.dir/test/inteager_overflow_arithmetic.cxx.o
+[ 38%] Linking CXX executable argstest-group_get_matches
+[ 38%] Linking CXX executable argstest-group_validation_fail
+[ 38%] Linking CXX executable argstest-help_underflow
+[ 39%] Linking CXX executable argstest-hidden_options
+[ 40%] Linking CXX executable argstest-inteager_overflow_arithmetic
+[ 40%] Built target gitlike
+[ 40%] Built target argstest-inteager_overflow_arithmetic
+[ 41%] Linking CXX executable argstest-implicit_values
+[ 41%] Built target argstest-empty_longprefix_short_flags
+[ 41%] Building CXX object CMakeFiles/argstest-integer_overflow.dir/test/integer_overflow.cxx.o
+[ 41%] Building CXX object CMakeFiles/argstest-integer_parser.dir/test/integer_parser.cxx.o
+[ 41%] Building CXX object CMakeFiles/argstest-invalid_arg_parse.dir/test/invalid_arg_parse.cxx.o
+[ 41%] Built target argstest-get_assignable
+[ 42%] Building CXX object CMakeFiles/argstest-kickout_flags.dir/test/kickout_flags.cxx.o
+[ 43%] Building CXX object CMakeFiles/argstest-locale_independent_parsing.dir/test/locale_independent_parsing.cxx.o
+[ 43%] Built target argstest-help_params
+[ 43%] Built target argstest-group_get_filtered
+[ 44%] Building CXX object CMakeFiles/argstest-map_invalid_arg_parse.dir/test/map_invalid_arg_parse.cxx.o
+[ 45%] Building CXX object CMakeFiles/argstest-mapping_types.dir/test/mapping_types.cxx.o
+[ 45%] Built target argstest-get_program_line
+[ 45%] Built target argstest-extra_positionals
+[ 46%] Building CXX object CMakeFiles/argstest-matcher_validation.dir/test/matcher_validation.cxx.o
+[ 47%] Building CXX object CMakeFiles/argstest-multiple_inclusion.dir/test/multiple_inclusion.cxx.o
+[ 47%] Built target argstest-global_options
+[ 48%] Linking CXX executable argstest-integer_parser
+[ 49%] Building CXX object CMakeFiles/argstest-nargs.dir/test/nargs.cxx.o
+[ 50%] Building CXX object CMakeFiles/argstest-noexcept_completion.dir/test/noexcept_completion.cxx.o
+[ 50%] Built target argstest-help_stream
+[ 50%] Built target argstest-help_flag
+[ 50%] Built target argstest-integer_parser
+[ 51%] Building CXX object CMakeFiles/argstest-noexcept_completion_bad_cword.dir/test/noexcept_completion_bad_cword.cxx.o
+[ 52%] Building CXX object CMakeFiles/argstest-noexcept_completion_separator_prefix_overlap.dir/test/noexcept_completion_separator_prefix_overlap.cxx.o
+[ 52%] Building CXX object CMakeFiles/argstest-noexcept_completion_terminator.dir/test/noexcept_completion_terminator.cxx.o
+[ 52%] Built target argstest-group_get_matches
+[ 52%] Built target argstest-group_validation_fail
+[ 52%] Building CXX object CMakeFiles/argstest-noexcept_completion_value_oob.dir/test/noexcept_completion_value_oob.cxx.o
+[ 52%] Building CXX object CMakeFiles/argstest-noexcept_flag_error_no_shadow.dir/test/noexcept_flag_error_no_shadow.cxx.o
+[ 53%] Building CXX object CMakeFiles/argstest-multiple_inclusion.dir/test/multiple_inclusion.aux.cxx.o
+[ 53%] Built target argstest-group_nesting
+[ 53%] Building CXX object CMakeFiles/argstest-noexcept_map_invalid_arg_parse.dir/test/noexcept_map_invalid_arg_parse.cxx.o
+[ 53%] Building CXX object CMakeFiles/argstest-noexcept_matcher_validation.dir/test/noexcept_matcher_validation.cxx.o
+[ 53%] Built target argstest-hidden_options
+[ 54%] Building CXX object CMakeFiles/argstest-noexcept_mode.dir/test/noexcept_mode.cxx.o
+[ 55%] Linking CXX executable argstest-integer_overflow
+[ 55%] Built target argstest-help_underflow
+[ 56%] Building CXX object CMakeFiles/argstest-noexcept_nargs.dir/test/noexcept_nargs.cxx.o
+[ 56%] Linking CXX executable argstest-kickout_flags
+[ 57%] Linking CXX executable argstest-invalid_arg_parse
+[ 57%] Linking CXX executable argstest-locale_independent_parsing
+[ 57%] Linking CXX executable argstest-multiple_inclusion
+[ 57%] Linking CXX executable argstest-matcher_validation
+[ 57%] Built target argstest-multiple_inclusion
+[ 57%] Linking CXX executable argstest-map_invalid_arg_parse
+[ 57%] Built target argstest-implicit_values
+[ 57%] Linking CXX executable argstest-noexcept_completion
+[ 58%] Linking CXX executable argstest-noexcept_completion_separator_prefix_overlap
+[ 58%] Linking CXX executable argstest-mapping_types
+[ 58%] Linking CXX executable argstest-nargs
+[ 58%] Linking CXX executable argstest-noexcept_completion_bad_cword
+[ 59%] Linking CXX executable argstest-noexcept_completion_value_oob
+[ 60%] Linking CXX executable argstest-noexcept_map_invalid_arg_parse
+[ 61%] Linking CXX executable argstest-noexcept_matcher_validation
+[ 62%] Linking CXX executable argstest-noexcept_completion_terminator
+[ 63%] Linking CXX executable argstest-noexcept_flag_error_no_shadow
+[ 63%] Linking CXX executable argstest-noexcept_nargs
+[ 63%] Linking CXX executable argstest-noexcept_mode
+[ 63%] Built target argstest-invalid_arg_parse
+[ 63%] Built target argstest-matcher_validation
+[ 64%] Building CXX object CMakeFiles/argstest-noexcept_parser_failure_state.dir/test/noexcept_parser_failure_state.cxx.o
+[ 64%] Built target argstest-map_invalid_arg_parse
+[ 64%] Built target argstest-noexcept_completion_bad_cword
+[ 64%] Built target argstest-integer_overflow
+[ 65%] Building CXX object CMakeFiles/argstest-noexcept_required_flags.dir/test/noexcept_required_flags.cxx.o
+[ 66%] Building CXX object CMakeFiles/argstest-noexcept_single_flag_repeat.dir/test/noexcept_single_flag_repeat.cxx.o
+[ 67%] Building CXX object CMakeFiles/argstest-noexcept_subparser_validation.dir/test/noexcept_subparser_validation.cxx.o
+[ 67%] Built target argstest-kickout_flags
+[ 67%] Built target argstest-noexcept_completion
+[ 67%] Building CXX object CMakeFiles/argstest-noexcept_terminator_flag_values.dir/test/noexcept_terminator_flag_values.cxx.o
+[ 67%] Building CXX object CMakeFiles/argstest-noexcept_unsigned_negative.dir/test/noexcept_unsigned_negative.cxx.o
+[ 67%] Building CXX object CMakeFiles/argstest-option_terminator.dir/test/option_terminator.cxx.o
+[ 67%] Built target argstest-locale_independent_parsing
+[ 67%] Building CXX object CMakeFiles/argstest-parsecli_zero_argc.dir/test/parsecli_zero_argc.cxx.o
+[ 67%] Building CXX object CMakeFiles/argstest-positional_and_lists.dir/test/positional_and_lists.cxx.o
+[ 67%] Built target argstest-noexcept_flag_error_no_shadow
+[ 68%] Building CXX object CMakeFiles/argstest-positional_lists.dir/test/positional_lists.cxx.o
+[ 68%] Built target argstest-noexcept_mode
+[ 70%] Building CXX object CMakeFiles/argstest-positional_lists_replace_default.dir/test/positional_lists_replace_default.cxx.o
+[ 70%] Building CXX object CMakeFiles/argstest-positional_lists_default.dir/test/positional_lists_default.cxx.o
+[ 70%] Built target argstest-noexcept_completion_separator_prefix_overlap
+[ 71%] Building CXX object CMakeFiles/argstest-positional_lists_sets.dir/test/positional_lists_sets.cxx.o
+[ 71%] Built target argstest-noexcept_matcher_validation
+[ 72%] Building CXX object CMakeFiles/argstest-positional_unspecified.dir/test/positional_unspecified.cxx.o
+[ 72%] Built target argstest-noexcept_nargs
+[ 73%] Building CXX object CMakeFiles/argstest-prefix_dd_style.dir/test/prefix_dd_style.cxx.o
+[ 73%] Linking CXX executable argstest-noexcept_parser_failure_state
+[ 73%] Built target argstest-noexcept_completion_terminator
+[ 73%] Building CXX object CMakeFiles/argstest-prefix_windows_style.dir/test/prefix_windows_style.cxx.o
+[ 73%] Built target argstest-noexcept_map_invalid_arg_parse
+[ 73%] Linking CXX executable argstest-noexcept_required_flags
+[ 73%] Building CXX object CMakeFiles/argstest-program_line_wrap.dir/test/program_line_wrap.cxx.o
+[ 73%] Built target argstest-noexcept_completion_value_oob
+[ 73%] Building CXX object CMakeFiles/argstest-required_flags.dir/test/required_flags.cxx.o
+[ 74%] Linking CXX executable argstest-noexcept_subparser_validation
+[ 75%] Linking CXX executable argstest-noexcept_unsigned_negative
+[ 76%] Linking CXX executable argstest-noexcept_terminator_flag_values
+[ 76%] Linking CXX executable argstest-noexcept_single_flag_repeat
+[ 77%] Linking CXX executable argstest-option_terminator
+[ 78%] Linking CXX executable argstest-parsecli_zero_argc
+[ 79%] Linking CXX executable argstest-positional_and_lists
+[ 79%] Built target argstest-mapping_types
+[ 79%] Linking CXX executable argstest-positional_lists
+[ 79%] Building CXX object CMakeFiles/argstest-safe_arithmetic.dir/test/safe_arithmetic.cxx.o
+[ 79%] Built target argstest-nargs
+[ 79%] Linking CXX executable argstest-positional_lists_sets
+[ 79%] Linking CXX executable argstest-positional_lists_replace_default
+[ 79%] Linking CXX executable argstest-positional_unspecified
+[ 79%] Linking CXX executable argstest-positional_lists_default
+[ 80%] Linking CXX executable argstest-prefix_dd_style
+[ 81%] Linking CXX executable argstest-prefix_windows_style
+[ 82%] Linking CXX executable argstest-safe_arithmetic
+[ 83%] Linking CXX executable argstest-program_line_wrap
+[ 84%] Linking CXX executable argstest-required_flags
+[ 84%] Built target argstest-safe_arithmetic
+[ 84%] Built target argstest-parsecli_zero_argc
+[ 84%] Built target argstest-noexcept_parser_failure_state
+[ 84%] Built target argstest-option_terminator
+[ 84%] Building CXX object CMakeFiles/argstest-simple_commands.dir/test/simple_commands.cxx.o
+[ 84%] Built target argstest-positional_lists
+[ 84%] Built target argstest-noexcept_required_flags
+[ 85%] Building CXX object CMakeFiles/argstest-single_flag_repeat.dir/test/single_flag_repeat.cxx.o
+[ 86%] Building CXX object CMakeFiles/argstest-subparser_commands.dir/test/subparser_commands.cxx.o
+[ 87%] Building CXX object CMakeFiles/argstest-subparser_commands_kickout.dir/test/subparser_commands_kickout.cxx.o
+[ 88%] Building CXX object CMakeFiles/argstest-subparser_group_validation.dir/test/subparser_group_validation.cxx.o
+[ 88%] Built target argstest-positional_lists_default
+[ 89%] Building CXX object CMakeFiles/argstest-subparser_help.dir/test/subparser_help.cxx.o
+[ 89%] Built target argstest-positional_and_lists
+[ 90%] Building CXX object CMakeFiles/argstest-subparser_kickout.dir/test/subparser_kickout.cxx.o
+[ 90%] Building CXX object CMakeFiles/argstest-subparser_validation.dir/test/subparser_validation.cxx.o
+[ 90%] Built target argstest-positional_lists_replace_default
+[ 90%] Built target argstest-positional_lists_sets
+[ 90%] Building CXX object CMakeFiles/argstest-terminator_flag_values.dir/test/terminator_flag_values.cxx.o
+[ 90%] Building CXX object CMakeFiles/argstest-unified_match_lists.dir/test/unified_match_lists.cxx.o
+[ 90%] Building CXX object CMakeFiles/argstest-unknown_flags.dir/test/unknown_flags.cxx.o
+[ 90%] Built target argstest-noexcept_unsigned_negative
+[ 90%] Building CXX object CMakeFiles/argstest-unsigned_negative.dir/test/unsigned_negative.cxx.o
+[ 90%] Built target argstest-program_line_wrap
+[ 91%] Building CXX object CMakeFiles/argstest-value_parser.dir/test/value_parser.cxx.o
+[ 91%] Built target argstest-positional_unspecified
+[ 91%] Built target argstest-noexcept_terminator_flag_values
+[ 92%] Building CXX object CMakeFiles/argstest-whitespace_numeric.dir/test/whitespace_numeric.cxx.o
+[ 92%] Built target argstest-noexcept_subparser_validation
+[ 93%] Building CXX object CMakeFiles/argstest-windows_h.dir/test/windows_h.cxx.o
+[ 93%] Built target argstest-required_flags
+[ 94%] Linking CXX executable argstest-simple_commands
+[ 94%] Built target argstest-noexcept_single_flag_repeat
+[ 94%] Built target argstest-prefix_windows_style
+[ 94%] Linking CXX executable argstest-subparser_commands
+[ 94%] Built target argstest-prefix_dd_style
+[ 94%] Linking CXX executable argstest-subparser_commands_kickout
+[ 94%] Linking CXX executable argstest-subparser_group_validation
+[ 94%] Linking CXX executable argstest-single_flag_repeat
+[ 95%] Linking CXX executable argstest-subparser_validation
+[ 96%] Linking CXX executable argstest-unified_match_lists
+[ 96%] Linking CXX executable argstest-subparser_help
+[ 97%] Linking CXX executable argstest-terminator_flag_values
+[ 98%] Linking CXX executable argstest-subparser_kickout
+[ 99%] Linking CXX executable argstest-unknown_flags
+[100%] Linking CXX executable argstest-unsigned_negative
+[100%] Linking CXX executable argstest-windows_h
+[100%] Linking CXX executable argstest-whitespace_numeric
+[100%] Linking CXX executable argstest-value_parser
+[100%] Built target argstest-simple_commands
+[100%] Built target argstest-subparser_commands_kickout
+[100%] Built target argstest-subparser_group_validation
+[100%] Built target argstest-subparser_kickout
+[100%] Built target argstest-unsigned_negative
+[100%] Built target argstest-subparser_commands
+[100%] Built target argstest-single_flag_repeat
+[100%] Built target argstest-unknown_flags
+[100%] Built target argstest-windows_h
+[100%] Built target argstest-subparser_validation
+[100%] Built target argstest-whitespace_numeric
+[100%] Built target argstest-value_parser
+[100%] Built target argstest-terminator_flag_values
+[100%] Built target argstest-unified_match_lists
+[100%] Built target argstest-subparser_help

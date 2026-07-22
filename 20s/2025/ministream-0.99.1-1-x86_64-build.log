@@ -1,0 +1,63 @@
+ has no wrap files
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 build
+The Meson build system
+Version: 1.11.2
+Source dir: /build/ministream/src/ministream
+Build dir: /build/ministream/src/ministream/build
+Build type: native build
+Project name: ministream
+Project version: 0.99.1
+C compiler for the host machine: cc (gcc 16.1.1 "cc (GCC) 16.1.1 20260625")
+C linker for the host machine: cc ld.bfd 2.46.1
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.3
+Run-time dependency glib-2.0 found: YES 2.88.2
+Run-time dependency gobject-2.0 found: YES 2.88.2
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Configuring ministream-version.h using configuration
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments /wd4100: NO 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.3
+Run-time dependency libxml-2.0 found: YES 2.15.3
+Run-time dependency appstream found: YES 1.1.3
+Run-time dependency gio-2.0 found: YES 2.88.2
+Dependency gio-2.0 for build machine found: YES 2.88.2 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Build targets in project: 7
+
+ministream 0.99.1
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+Generating targets:   0%|          | 0/7 eta ?                                              Writing build.ninja:   0%|          | 0/42 eta ?                                                ninja: Entering directory `build'
+[1/15] Generating tests/fixtures/testfixtures_h with a custom command
+[2/15] Generating tests/fixtures/testfixtures_c with a custom command
+[3/15] Compiling C object src/libministream.so.0.99.1.p/ministream.c.o
+[4/15] Compiling C object src/libministream.so.0.99.1.p/ms-locale.c.o
+[5/15] Compiling C object src/libministream.so.0.99.1.p/ms-version.c.o
+[6/15] Compiling C object src/libministream.so.0.99.1.p/ms-xml.c.o
+[7/15] Compiling C object tests/ms-tests.p/meson-generated_.._fixtures_testfixtures.c.o
+[8/15] Compiling C object tests/ms-tests.p/ms-tests.c.o
+[9/15] Compiling C object tests/compare-with-as.p/compare-with-as.c.o
+[10/15] Linking target src/libministream.so.0.99.1
+[11/15] Generating symbol file src/libministream.so.0.99.1.p/libministream.so.0.99.1.symbols
+[12/15] Linking target tests/ms-tests
+[13/15] Linking target tests/compare-with-as
+[14/15] Generating src/Ministream-1.gir with a custom command (wrapped by meson to set env)
+[15/15] Generating src/Ministream-1.typelib with a custom command

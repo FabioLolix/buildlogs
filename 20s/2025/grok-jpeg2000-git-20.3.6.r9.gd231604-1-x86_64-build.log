@@ -1,0 +1,118 @@
+-- The C compiler identification is GNU 16.1.1
+-- The CXX compiler identification is GNU 16.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Architecture: x86_64
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.2")
+-- The system seems to have a zlib available; it will be used to build libpng
+-- Found JPEG: /usr/lib/libjpeg.so (found version "80")
+-- The system seems to have libjpeg available, it will be used to support JPEG files
+-- Found PNG: /usr/lib/libpng.so (found version "1.6.58")
+-- The system seems to have a libpng available, it will be used to support PNG files
+-- The system seems to have a libtiff available, it will be used to support TIFF files.
+-- BigTIFF support is enabled for libtiff version 4.7.2
+-- Shared build detected with find_package. Using standard TIFF libraries and include directories.
+-- Found LCMS2: /usr/lib/liblcms2.so
+-- Your system seems to have a LCMS2 library available, we will use it
+-- spdlog version: 2.0.0
+-- spdlog build type: None
+-- spdlog build shared: OFF
+-- spdlog fmt external: ON
+-- Using external fmt lib version: 12.2.0
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for fwrite_unlocked
+-- Looking for fwrite_unlocked - found
+-- Found Valgrind: /usr/include
+-- Found Valgrind
+-- Performing Test ATOMICS_LOCK_FREE_INSTRUCTIONS
+-- Performing Test ATOMICS_LOCK_FREE_INSTRUCTIONS - Success
+-- Performing Test HWY_EMSCRIPTEN
+-- Performing Test HWY_EMSCRIPTEN - Failed
+-- Performing Test HWY_RISCV
+-- Performing Test HWY_RISCV - Failed
+-- Looking for sys/auxv.h
+-- Looking for sys/auxv.h - found
+-- Looking for asm/hwcap.h
+-- Looking for asm/hwcap.h - not found
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter Development Development.Module Development.Embed
+-- Python tests enabled
+-- Configuring done (1.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /build/grok-jpeg2000-git/src/build
+[  2%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/logger.cpp.o
+[  2%] Building CXX object src/lib/core/highway/CMakeFiles/hwy.dir/hwy/aligned_allocator.cc.o
+[  2%] Building CXX object tests/CMakeFiles/grk_messenger_test.dir/grk_messenger_test.cpp.o
+[  3%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/common.cpp.o
+[  3%] Building CXX object src/lib/core/highway/CMakeFiles/hwy.dir/hwy/per_target.cc.o
+[  3%] Swig compile /build/grok-jpeg2000-git/src/build/bindings/swig/grok_codec.i for python
+[  4%] Swig compile /build/grok-jpeg2000-git/src/build/bindings/swig/grok_core.i for python
+[  4%] Building CXX object src/lib/core/highway/CMakeFiles/hwy.dir/hwy/nanobenchmark.cc.o
+[  5%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/pattern_formatter.cpp.o
+[  5%] Building CXX object src/lib/core/highway/CMakeFiles/hwy.dir/hwy/abort.cc.o
+[  5%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+[  5%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/details/file_helper.cpp.o
+[  7%] Building CXX object tests/CMakeFiles/grk_messenger_test.dir/GrkMessengerTest.cpp.o
+[  7%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/details/os_filesystem.cpp.o
+[  7%] Building CXX object src/lib/core/highway/CMakeFiles/hwy.dir/hwy/perf_counters.cc.o
+[  7%] Building CXX object src/lib/core/highway/CMakeFiles/hwy.dir/hwy/profiler.cc.o
+[  9%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/details/async_log_msg.cpp.o
+[  9%] Building CXX object src/lib/core/highway/CMakeFiles/hwy.dir/hwy/print.cc.o
+[  9%] Building CXX object tests/CMakeFiles/grk_messenger_loopback.dir/grk_messenger_loopback.cpp.o
+[  9%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/details/log_msg.cpp.o
+[ 10%] Building CXX object src/lib/core/highway/CMakeFiles/hwy.dir/hwy/targets.cc.o
+[ 10%] Built target grok_codec_swig_compilation
+[ 10%] Building CXX object src/lib/core/highway/CMakeFiles/hwy.dir/hwy/timer.cc.o
+[ 10%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/details/err_helper.cpp.o
+[ 11%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/sinks/base_sink.cpp.o
+[ 11%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/sinks/basic_file_sink.cpp.o
+[ 11%] Built target grok_core_swig_compilation
+[ 12%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/sinks/rotating_file_sink.cpp.o
+[ 12%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/sinks/stdout_sinks.cpp.o
+[ 13%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/sinks/async_sink.cpp.o
+[ 13%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/details/os_unix.cpp.o
+In file included from /build/grok-jpeg2000-git/src/grok-jpeg2000/tests/GrkMessengerTest.cpp:30:
+/build/grok-jpeg2000-git/src/grok-jpeg2000/src/lib/codec/shared/Messenger.h: In constructor ‘grk_plugin::MessengerBlockingQueue<Data>::MessengerBlockingQueue()’:
+/build/grok-jpeg2000-git/src/grok-jpeg2000/src/lib/codec/shared/Messenger.h:601:53: error: ‘UINT_MAX’ was not declared in this scope [-Wtemplate-body]
+  601 |   MessengerBlockingQueue() : MessengerBlockingQueue(UINT_MAX) {}
+      |                                                     ^~~~~~~~
+/build/grok-jpeg2000-git/src/grok-jpeg2000/src/lib/codec/shared/Messenger.h:63:1: note: ‘UINT_MAX’ is defined in header ‘<climits>’; this is probably fixable by adding ‘#include <climits>’
+   62 | #include <signal.h>
+  +++ |+#include <climits>
+   63 | #endif
+[ 14%] Building CXX object src/include/spdlog/CMakeFiles/spdlog.dir/src/sinks/ansicolor_sink.cpp.o
+In file included from /build/grok-jpeg2000-git/src/grok-jpeg2000/tests/grk_messenger_loopback.cpp:46:
+/build/grok-jpeg2000-git/src/grok-jpeg2000/src/lib/codec/shared/Messenger.h: In constructor ‘grk_plugin::MessengerBlockingQueue<Data>::MessengerBlockingQueue()’:
+/build/grok-jpeg2000-git/src/grok-jpeg2000/src/lib/codec/shared/Messenger.h:601:53: error: ‘UINT_MAX’ was not declared in this scope [-Wtemplate-body]
+  601 |   MessengerBlockingQueue() : MessengerBlockingQueue(UINT_MAX) {}
+      |                                                     ^~~~~~~~
+/build/grok-jpeg2000-git/src/grok-jpeg2000/src/lib/codec/shared/Messenger.h:63:1: note: ‘UINT_MAX’ is defined in header ‘<climits>’; this is probably fixable by adding ‘#include <climits>’
+   62 | #include <signal.h>
+  +++ |+#include <climits>
+   63 | #endif
+/build/grok-jpeg2000-git/src/grok-jpeg2000/tests/GrkMessengerTest.cpp: In function ‘void testSharedMemoryCrashRecovery()’:
+/build/grok-jpeg2000-git/src/grok-jpeg2000/tests/GrkMessengerTest.cpp:394:12: warning: ignoring return value of ‘int ftruncate(int, __off_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  394 |   ftruncate(stale_fd, (off_t)bufLen);
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [tests/CMakeFiles/grk_messenger_test.dir/build.make:93: tests/CMakeFiles/grk_messenger_test.dir/GrkMessengerTest.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2261: tests/CMakeFiles/grk_messenger_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [tests/CMakeFiles/grk_messenger_loopback.dir/build.make:79: tests/CMakeFiles/grk_messenger_loopback.dir/grk_messenger_loopback.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2293: tests/CMakeFiles/grk_messenger_loopback.dir/all] Error 2
+[ 15%] Linking CXX static library ../../../bin/libspdlog.a
+[ 15%] Built target spdlog
+[ 16%] Linking CXX static library ../../../../bin/libhwy.a
+[ 16%] Built target hwy
+make: *** [Makefile:166: all] Error 2
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

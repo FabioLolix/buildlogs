@@ -1,0 +1,23 @@
+cd src/lib/ && ( test -e Makefile || /usr/bin/qmake-qt5 -o Makefile /build/wkhtmltopdf/src/wkhtmltopdf/src/lib/lib.pro ) && make -f Makefile install
+make[1]: Entering directory '/build/wkhtmltopdf/src/wkhtmltopdf/src/lib'
+/usr/bin/qmake-qt5 -install qinstall /build/wkhtmltopdf/src/wkhtmltopdf/src/lib/image.h /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/include/wkhtmltox/image.h
+/usr/bin/qmake-qt5 -install qinstall -exe ../../bin/libwkhtmltox.so.0.12.6 /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/lib/libwkhtmltox.so.0.12.6
+/usr/bin/qmake-qt5 -install qinstall /build/wkhtmltopdf/src/wkhtmltopdf/src/lib/pdf.h /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/include/wkhtmltox/pdf.h
+/usr/bin/qmake-qt5 -install qinstall /build/wkhtmltopdf/src/wkhtmltopdf/src/lib/dllbegin.inc /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/include/wkhtmltox/dllbegin.inc
+ln -f -s libwkhtmltox.so.0.12.6 /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/lib/libwkhtmltox.so
+ln -f -s libwkhtmltox.so.0.12.6 /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/lib/libwkhtmltox.so.0
+ln -f -s libwkhtmltox.so.0.12.6 /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/lib/libwkhtmltox.so.0.12
+/usr/bin/qmake-qt5 -install qinstall /build/wkhtmltopdf/src/wkhtmltopdf/src/lib/dllend.inc /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/include/wkhtmltox/dllend.inc
+make[1]: Leaving directory '/build/wkhtmltopdf/src/wkhtmltopdf/src/lib'
+cd src/pdf/ && ( test -e Makefile || /usr/bin/qmake-qt5 -o Makefile /build/wkhtmltopdf/src/wkhtmltopdf/src/pdf/pdf.pro ) && make -f Makefile install
+make[1]: Entering directory '/build/wkhtmltopdf/src/wkhtmltopdf/src/pdf'
+/usr/bin/qmake-qt5 -install qinstall -exe ../../bin/wkhtmltopdf /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/bin/wkhtmltopdf
+../../bin/wkhtmltopdf --manpage | gzip > /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/share/man/man1/wkhtmltopdf.1.gz
+make[1]: Leaving directory '/build/wkhtmltopdf/src/wkhtmltopdf/src/pdf'
+cd src/image/ && ( test -e Makefile || /usr/bin/qmake-qt5 -o Makefile /build/wkhtmltopdf/src/wkhtmltopdf/src/image/image.pro ) && make -f Makefile install
+make[1]: Entering directory '/build/wkhtmltopdf/src/wkhtmltopdf/src/image'
+../../bin/wkhtmltoimage --manpage | gzip > /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/share/man/man1/wkhtmltoimage.1.gz
+/usr/bin/qmake-qt5 -install qinstall -exe ../../bin/wkhtmltoimage /build/wkhtmltopdf/pkg/wkhtmltopdf/usr/bin/wkhtmltoimage
+make[1]: Leaving directory '/build/wkhtmltopdf/src/wkhtmltopdf/src/image'
+ERROR: ld.so: object 'libfakeroot.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libfakeroot.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
