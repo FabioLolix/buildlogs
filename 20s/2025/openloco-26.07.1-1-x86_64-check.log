@@ -1,0 +1,277 @@
+Test project /build/openloco/src/build
+        Start   1: TimerTest.TestDuration
+  1/136 Test   #1: TimerTest.TestDuration ......................................................   Passed    1.01 sec
+        Start   2: TimerTest.TestReset
+  2/136 Test   #2: TimerTest.TestReset .........................................................   Passed    1.01 sec
+        Start   3: StoreTest.defaultConstructed
+  3/136 Test   #3: StoreTest.defaultConstructed ................................................   Passed    0.00 sec
+        Start   4: StoreTest.allocateAssignsSequentialIndices
+  4/136 Test   #4: StoreTest.allocateAssignsSequentialIndices ..................................   Passed    0.00 sec
+        Start   5: StoreTest.accessAndModify
+  5/136 Test   #5: StoreTest.accessAndModify ...................................................   Passed    0.00 sec
+        Start   6: StoreTest.containsTracksLiveness
+  6/136 Test   #6: StoreTest.containsTracksLiveness ............................................   Passed    0.00 sec
+        Start   7: StoreTest.releaseDecreasesSize
+  7/136 Test   #7: StoreTest.releaseDecreasesSize ..............................................   Passed    0.00 sec
+        Start   8: StoreTest.releaseDoesNotShrinkCapacity
+  8/136 Test   #8: StoreTest.releaseDoesNotShrinkCapacity ......................................   Passed    0.00 sec
+        Start   9: StoreTest.allocateReusesFreedSlots
+  9/136 Test   #9: StoreTest.allocateReusesFreedSlots ..........................................   Passed    0.00 sec
+        Start  10: StoreTest.allocateAfterReleaseResetsValue
+ 10/136 Test  #10: StoreTest.allocateAfterReleaseResetsValue ...................................   Passed    0.00 sec
+        Start  11: StoreTest.iteratorVisitsOnlyLiveSlots
+ 11/136 Test  #11: StoreTest.iteratorVisitsOnlyLiveSlots .......................................   Passed    0.00 sec
+        Start  12: StoreTest.iteratorExposesIndex
+ 12/136 Test  #12: StoreTest.iteratorExposesIndex ..............................................   Passed    0.00 sec
+        Start  13: StoreTest.iteratorSkipsLeadingAndTrailingHoles
+ 13/136 Test  #13: StoreTest.iteratorSkipsLeadingAndTrailingHoles ..............................   Passed    0.00 sec
+        Start  14: StoreTest.iteratorMutatesValuesInPlace
+ 14/136 Test  #14: StoreTest.iteratorMutatesValuesInPlace ......................................   Passed    0.00 sec
+        Start  15: StoreTest.constIteration
+ 15/136 Test  #15: StoreTest.constIteration ....................................................   Passed    0.00 sec
+        Start  16: StoreTest.clearResetsState
+ 16/136 Test  #16: StoreTest.clearResetsState ..................................................   Passed    0.00 sec
+        Start  17: StoreTest.reserveDoesNotAffectSizeOrLiveness
+ 17/136 Test  #17: StoreTest.reserveDoesNotAffectSizeOrLiveness ................................   Passed    0.00 sec
+        Start  18: StoreTest.growBeyondOneBitWord
+ 18/136 Test  #18: StoreTest.growBeyondOneBitWord ..............................................   Passed    0.00 sec
+        Start  19: StoreTest.repeatedAllocReleaseCyclesAreStable
+ 19/136 Test  #19: StoreTest.repeatedAllocReleaseCyclesAreStable ...............................   Passed    0.00 sec
+        Start  20: StoreTest.worksWithNonTrivialType
+ 20/136 Test  #20: StoreTest.worksWithNonTrivialType ...........................................   Passed    0.00 sec
+        Start  21: StoreTest.invalidIndexConstant
+ 21/136 Test  #21: StoreTest.invalidIndexConstant ..............................................   Passed    0.00 sec
+        Start  22: StoreTest.allocateReturnsLowestFreeIndex
+ 22/136 Test  #22: StoreTest.allocateReturnsLowestFreeIndex ....................................   Passed    0.00 sec
+        Start  23: StoreTest.mixedAllocReleaseReturnsExpectedIndices
+ 23/136 Test  #23: StoreTest.mixedAllocReleaseReturnsExpectedIndices ...........................   Passed    0.00 sec
+        Start  24: StoreTest.iteratorPostIncrement
+ 24/136 Test  #24: StoreTest.iteratorPostIncrement .............................................   Passed    0.00 sec
+        Start  25: StoreTest.iteratorArrowOperator
+ 25/136 Test  #25: StoreTest.iteratorArrowOperator .............................................   Passed    0.00 sec
+        Start  26: StoreTest.iteratorEqualityBetweenInstances
+ 26/136 Test  #26: StoreTest.iteratorEqualityBetweenInstances ..................................   Passed    0.00 sec
+        Start  27: StoreTest.fullyReleasedStoreIteratesEmpty
+ 27/136 Test  #27: StoreTest.fullyReleasedStoreIteratesEmpty ...................................   Passed    0.00 sec
+        Start  28: StoreTest.cbeginCendExplicit
+ 28/136 Test  #28: StoreTest.cbeginCendExplicit ................................................   Passed    0.00 sec
+        Start  29: StoreTest.bitmapBoundarySlot63
+ 29/136 Test  #29: StoreTest.bitmapBoundarySlot63 ..............................................   Passed    0.00 sec
+        Start  30: StoreTest.bitmapBoundarySlot64
+ 30/136 Test  #30: StoreTest.bitmapBoundarySlot64 ..............................................   Passed    0.00 sec
+        Start  31: StoreTest.bitmapHighBitWithinWord
+ 31/136 Test  #31: StoreTest.bitmapHighBitWithinWord ...........................................   Passed    0.00 sec
+        Start  32: StoreTest.allocateScansAcrossWordBoundary
+ 32/136 Test  #32: StoreTest.allocateScansAcrossWordBoundary ...................................   Passed    0.00 sec
+        Start  33: StoreTest.allocateFindsHoleInLaterWordWhenEarlierWordIsFull
+ 33/136 Test  #33: StoreTest.allocateFindsHoleInLaterWordWhenEarlierWordIsFull .................   Passed    0.00 sec
+        Start  34: StoreTest.allocateAfterClearRegrowsCleanly
+ 34/136 Test  #34: StoreTest.allocateAfterClearRegrowsCleanly ..................................   Passed    0.00 sec
+        Start  35: PrngTests.misc
+ 35/136 Test  #35: PrngTests.misc ..............................................................   Passed    0.01 sec
+        Start  36: NumericTest.bitScanForward
+ 36/136 Test  #36: NumericTest.bitScanForward ..................................................   Passed    0.00 sec
+        Start  37: NumericTest.bitScanReverse
+ 37/136 Test  #37: NumericTest.bitScanReverse ..................................................   Passed    0.00 sec
+        Start  38: MemoryStreamTest.testWriteRead
+ 38/136 Test  #38: MemoryStreamTest.testWriteRead ..............................................   Passed    0.00 sec
+        Start  39: MemoryStreamTest.testOverwrite
+ 39/136 Test  #39: MemoryStreamTest.testOverwrite ..............................................   Passed    0.00 sec
+        Start  40: MemoryStreamTest.testPosition
+ 40/136 Test  #40: MemoryStreamTest.testPosition ...............................................   Passed    0.00 sec
+        Start  41: MemoryStreamTest.testBadRead
+ 41/136 Test  #41: MemoryStreamTest.testBadRead ................................................   Passed    0.00 sec
+        Start  42: MemoryStreamTest.testWrite100MiB
+ 42/136 Test  #42: MemoryStreamTest.testWrite100MiB ............................................   Passed    0.71 sec
+        Start  43: MemoryStreamTest.testResize
+ 43/136 Test  #43: MemoryStreamTest.testResize .................................................   Passed    0.00 sec
+        Start  44: FileStreamTest.testWriteRead
+ 44/136 Test  #44: FileStreamTest.testWriteRead ................................................   Passed    0.00 sec
+        Start  45: FileStreamTest.testBadRead
+ 45/136 Test  #45: FileStreamTest.testBadRead ..................................................   Passed    0.00 sec
+        Start  46: FileStreamTest.testPosition
+ 46/136 Test  #46: FileStreamTest.testPosition .................................................   Passed    0.01 sec
+        Start  47: FileStreamTest.testModeWriteRead
+ 47/136 Test  #47: FileStreamTest.testModeWriteRead ............................................   Passed    0.01 sec
+        Start  48: FileStreamTest.testModeReadWrite
+ 48/136 Test  #48: FileStreamTest.testModeReadWrite ............................................   Passed    0.00 sec
+        Start  49: FileStreamTest.testWrite100MiB
+ 49/136 Test  #49: FileStreamTest.testWrite100MiB ..............................................   Passed    1.72 sec
+        Start  50: FileStreamTest.testRead100MiB
+ 50/136 Test  #50: FileStreamTest.testRead100MiB ...............................................   Passed    1.80 sec
+        Start  51: EnumFlagsTest.operatorOr
+ 51/136 Test  #51: EnumFlagsTest.operatorOr ....................................................   Passed    0.00 sec
+        Start  52: EnumFlagsTest.operatorAnd
+ 52/136 Test  #52: EnumFlagsTest.operatorAnd ...................................................   Passed    0.00 sec
+        Start  53: EnumFlagsTest.operatorXor
+ 53/136 Test  #53: EnumFlagsTest.operatorXor ...................................................   Passed    0.00 sec
+        Start  54: EnumFlagsTest.operatorOrInplace
+ 54/136 Test  #54: EnumFlagsTest.operatorOrInplace .............................................   Passed    0.00 sec
+        Start  55: EnumFlagsTest.operatorAndInplace
+ 55/136 Test  #55: EnumFlagsTest.operatorAndInplace ............................................   Passed    0.00 sec
+        Start  56: EnumFlagsTest.operatorXorInplace
+ 56/136 Test  #56: EnumFlagsTest.operatorXorInplace ............................................   Passed    0.00 sec
+        Start  57: AssertionsDeathTest.FailingEq
+ 57/136 Test  #57: AssertionsDeathTest.FailingEq ...............................................   Passed    0.10 sec
+        Start  58: AssertionsDeathTest.FailingNeq
+ 58/136 Test  #58: AssertionsDeathTest.FailingNeq ..............................................   Passed    0.12 sec
+        Start  59: AssertionsDeathTest.FailingLt
+ 59/136 Test  #59: AssertionsDeathTest.FailingLt ...............................................   Passed    0.48 sec
+        Start  60: AssertionsDeathTest.FailingLe
+ 60/136 Test  #60: AssertionsDeathTest.FailingLe ...............................................   Passed    0.40 sec
+        Start  61: AssertionsDeathTest.FailingGt
+ 61/136 Test  #61: AssertionsDeathTest.FailingGt ...............................................   Passed    0.44 sec
+        Start  62: AssertionsDeathTest.FailingGe
+ 62/136 Test  #62: AssertionsDeathTest.FailingGe ...............................................   Passed    0.37 sec
+        Start  63: AssertionsDeathTest.FailingIsTrue
+ 63/136 Test  #63: AssertionsDeathTest.FailingIsTrue ...........................................   Passed    0.51 sec
+        Start  64: AssertionsDeathTest.FailingIsFalse
+ 64/136 Test  #64: AssertionsDeathTest.FailingIsFalse ..........................................   Passed    0.41 sec
+        Start  65: AssertionsDeathTest.FailingIsNull
+ 65/136 Test  #65: AssertionsDeathTest.FailingIsNull ...........................................   Passed    0.33 sec
+        Start  66: AssertionsDeathTest.FailingNotNull
+ 66/136 Test  #66: AssertionsDeathTest.FailingNotNull ..........................................   Passed    0.45 sec
+        Start  67: LoggingTests.BasicSinkTest
+ 67/136 Test  #67: LoggingTests.BasicSinkTest ..................................................   Passed    0.00 sec
+        Start  68: LoggingTests.LevelFilterTestInfo
+ 68/136 Test  #68: LoggingTests.LevelFilterTestInfo ............................................   Passed    0.00 sec
+        Start  69: LoggingTests.LevelFilterTestWarning
+ 69/136 Test  #69: LoggingTests.LevelFilterTestWarning .........................................   Passed    0.01 sec
+        Start  70: LoggingTests.LevelFilterTestError
+ 70/136 Test  #70: LoggingTests.LevelFilterTestError ...........................................   Passed    0.00 sec
+        Start  71: LoggingTests.LevelFilterTestVerbose
+ 71/136 Test  #71: LoggingTests.LevelFilterTestVerbose .........................................   Passed    0.00 sec
+        Start  72: AssertionsTest.AllSuccessCases
+ 72/136 Test  #72: AssertionsTest.AllSuccessCases ..............................................   Passed    0.00 sec
+        Start  73: AssertionsTest.EnumClass
+ 73/136 Test  #73: AssertionsTest.EnumClass ....................................................   Passed    0.49 sec
+        Start  74: AssertionsTest.SmartPointerNullChecks
+ 74/136 Test  #74: AssertionsTest.SmartPointerNullChecks .......................................   Passed    0.01 sec
+        Start  75: VectorTest.fastSquareRoot
+ 75/136 Test  #75: VectorTest.fastSquareRoot ...................................................   Passed    0.00 sec
+        Start  76: VectorTest.distance
+ 76/136 Test  #76: VectorTest.distance .........................................................   Passed    0.00 sec
+        Start  77: VectorTest.manhattenDistance
+ 77/136 Test  #77: VectorTest.manhattenDistance ................................................   Passed    0.01 sec
+        Start  78: TrigonometryTest.integerSinePrecisionHigh
+ 78/136 Test  #78: TrigonometryTest.integerSinePrecisionHigh ...................................   Passed    0.00 sec
+        Start  79: TrigonometryTest.integerCosinePrecisionHigh
+ 79/136 Test  #79: TrigonometryTest.integerCosinePrecisionHigh .................................   Passed    0.00 sec
+        Start  80: TileManagerTest.InitialiseLeavesOneSurfacePerTile
+ 80/136 Test  #80: TileManagerTest.InitialiseLeavesOneSurfacePerTile ...........................   Passed    0.02 sec
+        Start  81: TileManagerTest.InsertSingleElementSetsTypeBaseZAndIsLast
+ 81/136 Test  #81: TileManagerTest.InsertSingleElementSetsTypeBaseZAndIsLast ...................   Passed    0.02 sec
+        Start  82: TileManagerTest.MultipleInsertsAreOrderedByBaseZ
+ 82/136 Test  #82: TileManagerTest.MultipleInsertsAreOrderedByBaseZ ............................   Passed    0.02 sec
+        Start  83: TileManagerTest.RemoveMiddleElementShiftsRemainder
+ 83/136 Test  #83: TileManagerTest.RemoveMiddleElementShiftsRemainder ..........................   Passed    0.02 sec
+        Start  84: TileManagerTest.RemoveLastElementTransfersIsLastFlag
+ 84/136 Test  #84: TileManagerTest.RemoveLastElementTransfersIsLastFlag ........................   Passed    0.02 sec
+        Start  85: TileManagerTest.TilesAreIsolatedFromEachOther
+ 85/136 Test  #85: TileManagerTest.TilesAreIsolatedFromEachOther ...............................   Passed    0.02 sec
+        Start  86: TileManagerTest.NumFreeElementsDecreasesMonotonicallyOnInsert
+ 86/136 Test  #86: TileManagerTest.NumFreeElementsDecreasesMonotonicallyOnInsert ...............   Passed    0.02 sec
+        Start  87: TileManagerTest.InsertElementPropagatesOccupiedQuads
+ 87/136 Test  #87: TileManagerTest.InsertElementPropagatesOccupiedQuads ........................   Passed    0.02 sec
+        Start  88: TileManagerTest.GetOutOfBoundsReturnsNullTile
+ 88/136 Test  #88: TileManagerTest.GetOutOfBoundsReturnsNullTile ...............................   Passed    0.02 sec
+        Start  89: TileManagerTest.GetByPos2AndCoordsAgreeWithTilePos2
+ 89/136 Test  #89: TileManagerTest.GetByPos2AndCoordsAgreeWithTilePos2 .........................   Passed    0.02 sec
+        Start  90: TileManagerTest.TileSizeMatchesIteration
+ 90/136 Test  #90: TileManagerTest.TileSizeMatchesIteration ....................................   Passed    0.02 sec
+        Start  91: TileManagerTest.TileSubscriptMatchesIterationOrder
+ 91/136 Test  #91: TileManagerTest.TileSubscriptMatchesIterationOrder ..........................   Passed    0.02 sec
+        Start  92: TileManagerTest.TileIndexOfFindsMemberAndMissesNonMember
+ 92/136 Test  #92: TileManagerTest.TileIndexOfFindsMemberAndMissesNonMember ....................   Passed    0.02 sec
+        Start  93: TileManagerTest.BoundaryTilesAreUsable
+ 93/136 Test  #93: TileManagerTest.BoundaryTilesAreUsable ......................................   Passed    0.02 sec
+        Start  94: TileManagerTest.InsertElementAfterNoReorgPlacesRightAfterTarget
+ 94/136 Test  #94: TileManagerTest.InsertElementAfterNoReorgPlacesRightAfterTarget .............   Passed    0.02 sec
+        Start  95: TileManagerTest.CheckFreeElementsAndReorganiseSucceedsWithDefaultSpace
+ 95/136 Test  #95: TileManagerTest.CheckFreeElementsAndReorganiseSucceedsWithDefaultSpace ......   Passed    0.01 sec
+        Start  96: TileManagerTest.ReorganisePreservesEveryTouchedTile
+ 96/136 Test  #96: TileManagerTest.ReorganisePreservesEveryTouchedTile .........................   Passed    0.02 sec
+        Start  97: TileManagerTest.DefragmentTilePeriodicCompactsTilePointerBackward
+ 97/136 Test  #97: TileManagerTest.DefragmentTilePeriodicCompactsTilePointerBackward ...........   Passed    0.02 sec
+        Start  98: TileManagerTest.DefragmentTilePeriodicReducesElementsEnd
+ 98/136 Test  #98: TileManagerTest.DefragmentTilePeriodicReducesElementsEnd ....................   Passed    0.02 sec
+        Start  99: TileManagerTest.DefragmentTilePeriodicPreservesByteContentAfterChurn
+ 99/136 Test  #99: TileManagerTest.DefragmentTilePeriodicPreservesByteContentAfterChurn ........   Passed    0.02 sec
+        Start 100: TileManagerTest.DisablePeriodicDefragSkipsNextCall
+100/136 Test #100: TileManagerTest.DisablePeriodicDefragSkipsNextCall ..........................   Passed    0.02 sec
+        Start 101: TileManagerTest.DefragmentTilePeriodicIsSafeAfterChurn
+101/136 Test #101: TileManagerTest.DefragmentTilePeriodicIsSafeAfterChurn ......................   Passed    0.02 sec
+        Start 102: TileManagerTest.GetEntriesReflectsLiveRegion
+102/136 Test #102: TileManagerTest.GetEntriesReflectsLiveRegion ................................   Passed    0.02 sec
+        Start 103: TileManagerTest.GetEntriesCountGrowsAfterInsert
+103/136 Test #103: TileManagerTest.GetEntriesCountGrowsAfterInsert .............................   Passed    0.02 sec
+        Start 104: TileManagerTest.UpdateTilePointersRebuildsConsistently
+104/136 Test #104: TileManagerTest.UpdateTilePointersRebuildsConsistently ......................   Passed    0.02 sec
+        Start 105: TileManagerTest.BaseZTiesPreserveInsertionOrder
+105/136 Test #105: TileManagerTest.BaseZTiesPreserveInsertionOrder .............................   Passed    0.02 sec
+        Start 106: TileManagerTest.IteratorDefaultConstructedEqualsEnd
+106/136 Test #106: TileManagerTest.IteratorDefaultConstructedEqualsEnd .........................   Passed    0.02 sec
+        Start 107: TileManagerTest.IteratorPostIncrementReturnsOldPosition
+107/136 Test #107: TileManagerTest.IteratorPostIncrementReturnsOldPosition .....................   Passed    0.04 sec
+        Start 108: TileManagerTest.ManyElementsOnOneTileAllWalk
+108/136 Test #108: TileManagerTest.ManyElementsOnOneTileAllWalk ................................   Passed    0.03 sec
+        Start 109: TileManagerTest.ReorganiseIsIdempotent
+109/136 Test #109: TileManagerTest.ReorganiseIsIdempotent ......................................   Passed    0.02 sec
+        Start 110: TileManagerTest.ReorganisePreservesRawElementBytes
+110/136 Test #110: TileManagerTest.ReorganisePreservesRawElementBytes ..........................   Passed    0.02 sec
+        Start 111: TileManagerTest.RemoveDoesNotChangeOtherTileBytes
+111/136 Test #111: TileManagerTest.RemoveDoesNotChangeOtherTileBytes ...........................   Passed    0.02 sec
+        Start 112: TileManagerTest.WasRemoveOnLastElementFalseForMiddleRemoval
+112/136 Test #112: TileManagerTest.WasRemoveOnLastElementFalseForMiddleRemoval .................   Passed    0.02 sec
+        Start 113: TileManagerTest.InsertElementRoadBasicAddsRoadElement
+113/136 Test #113: TileManagerTest.InsertElementRoadBasicAddsRoadElement .......................   Passed    0.02 sec
+        Start 114: TileManagerTest.InsertElementRoadStopsBeforeRoadStationAtSameBaseZ
+114/136 Test #114: TileManagerTest.InsertElementRoadStopsBeforeRoadStationAtSameBaseZ ..........   Passed    0.02 sec
+        Start 115: TileManagerTest.InsertElementTypedTemplateReturnsTypedPointer
+115/136 Test #115: TileManagerTest.InsertElementTypedTemplateReturnsTypedPointer ...............   Passed    0.02 sec
+        Start 116: TileManagerTest.InsertElementAfterNoReorgTypedTemplateReturnsTypedPointer
+116/136 Test #116: TileManagerTest.InsertElementAfterNoReorgTypedTemplateReturnsTypedPointer ...   Passed    0.02 sec
+        Start 117: TileManagerTest.TileSurfaceReturnsTheSurfaceElement
+117/136 Test #117: TileManagerTest.TileSurfaceReturnsTheSurfaceElement .........................   Passed    0.02 sec
+        Start 118: TileManagerTest.TileTrainStationFindsStationFollowingMatchingTrack
+118/136 Test #118: TileManagerTest.TileTrainStationFindsStationFollowingMatchingTrack ..........   Passed    0.02 sec
+        Start 119: TileManagerTest.TileRoadStationFindsStationFollowingMatchingRoad
+119/136 Test #119: TileManagerTest.TileRoadStationFindsStationFollowingMatchingRoad ............   Passed    0.02 sec
+        Start 120: TileManagerTest.ManyInsertsTriggerReorganiseInternallyWithoutBreakingTile
+120/136 Test #120: TileManagerTest.ManyInsertsTriggerReorganiseInternallyWithoutBreakingTile ...   Passed    0.02 sec
+        Start 121: TileManagerTest.ReorganiseReclaimsFragmentationGarbage
+121/136 Test #121: TileManagerTest.ReorganiseReclaimsFragmentationGarbage ......................   Passed    0.02 sec
+        Start 122: TileManagerTest.ReorganiseAfterChurnMatchesByteShadow
+122/136 Test #122: TileManagerTest.ReorganiseAfterChurnMatchesByteShadow .......................   Passed    0.02 sec
+        Start 123: StringTests.iequals
+123/136 Test #123: StringTests.iequals .........................................................   Passed    0.00 sec
+        Start 124: StringTests.equals
+124/136 Test #124: StringTests.equals ..........................................................   Passed    0.00 sec
+        Start 125: StringTests.startsWith
+125/136 Test #125: StringTests.startsWith ......................................................   Passed    0.00 sec
+        Start 126: StringTests.endsWith
+126/136 Test #126: StringTests.endsWith ........................................................   Passed    0.00 sec
+        Start 127: StringTests.strlcpy
+127/136 Test #127: StringTests.strlcpy .........................................................   Passed    0.00 sec
+        Start 128: StringTests.strlcat
+128/136 Test #128: StringTests.strlcat .........................................................   Passed    0.00 sec
+        Start 129: StringTests.split
+129/136 Test #129: StringTests.split ...........................................................   Passed    0.00 sec
+        Start 130: StringTests.trim
+130/136 Test #130: StringTests.trim ............................................................   Passed    0.00 sec
+        Start 131: LookupTableTests.buildLookupTable
+131/136 Test #131: LookupTableTests.buildLookupTable ...........................................   Passed    0.00 sec
+        Start 132: LookupTableTests.sortedOrder
+132/136 Test #132: LookupTableTests.sortedOrder ................................................   Passed    0.00 sec
+        Start 133: LookupTableTests.find
+133/136 Test #133: LookupTableTests.find .......................................................   Passed    0.00 sec
+        Start 134: LookupTableTests.contains
+134/136 Test #134: LookupTableTests.contains ...................................................   Passed    0.00 sec
+        Start 135: LookupTableTests.at
+135/136 Test #135: LookupTableTests.at .........................................................   Passed    0.00 sec
+        Start 136: LookupTableTests.constexprEvaluation
+136/136 Test #136: LookupTableTests.constexprEvaluation ........................................   Passed    0.00 sec
+
+100% tests passed out of 136
+
+Total Test time (real) =  11.60 sec
