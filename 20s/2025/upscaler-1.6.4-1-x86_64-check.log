@@ -1,0 +1,23 @@
+ninja: Entering directory `/build/upscaler/src/build'
+ninja: no work to do.
+1/3 upscaler:Validate desktop file   OK              0.01s
+2/3 upscaler:Validate schema file    OK              0.01s
+3/3 upscaler:Validate appstream file FAIL            3.27s   exit status 3
+>>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MESON_TEST_ITERATION=1 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MALLOC_PERTURB_=248 /usr/bin/appstreamcli validate --explain data/io.gitlab.theevilskeleton.Upscaler.metainfo.xml
+――――――――――――――――――――――――――――――――――――― ✀  ―――――――――――――――――――――――――――――――――――――
+W: io.gitlab.theevilskeleton.Upscaler:100: url-not-reachable
+     https://gitlab.gnome.org/World/Upscaler/-/issues - URL was not found on the server.
+   Unable to reach remote location that this URL references - does it exist?
+
+✘ Validation failed: warnings: 1, pedantic: 1
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+Summary of Failures:
+
+3/3 upscaler:Validate appstream file FAIL            3.27s   exit status 3
+
+Ok:                2   
+Fail:              1   
+
+Full log written to /build/upscaler/src/build/meson-logs/testlog.txt
