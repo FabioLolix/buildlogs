@@ -1,0 +1,255 @@
+Test project /build/sayonara-player/src/build
+      Start  1: AudioConverterTest
+ 1/95 Test  #1: AudioConverterTest ...............   Passed    0.02 sec
+      Start  2: BookmarkStorageTest
+ 2/95 Test  #2: BookmarkStorageTest ..............   Passed    0.02 sec
+      Start  3: FileSystemMockTest
+ 3/95 Test  #3: FileSystemMockTest ...............   Passed    0.02 sec
+      Start  4: LibraryDatabaseProviderTest
+ 4/95 Test  #4: LibraryDatabaseProviderTest ......   Passed    0.04 sec
+      Start  5: AudioscrobblerTest
+ 5/95 Test  #5: AudioscrobblerTest ...............   Passed    0.02 sec
+      Start  6: CoverFetchManagerTest
+ 6/95 Test  #6: CoverFetchManagerTest ............   Passed    0.02 sec
+      Start  7: CoverLocationTest
+ 7/95 Test  #7: CoverLocationTest ................   Passed    0.13 sec
+      Start  8: AlbumTest
+ 8/95 Test  #8: AlbumTest ........................   Passed    0.05 sec
+      Start  9: ArtistTest
+ 9/95 Test  #9: ArtistTest .......................   Passed    0.04 sec
+      Start 10: BasicQueryTest
+10/95 Test #10: BasicQueryTest ...................   Passed    0.02 sec
+      Start 11: FixesTest
+11/95 Test #11: FixesTest ........................   Passed    0.02 sec
+      Start 12: LibraryDatabaseTest
+12/95 Test #12: LibraryDatabaseTest ..............   Passed    0.04 sec
+      Start 13: PlaylistDatabaseTest
+13/95 Test #13: PlaylistDatabaseTest .............   Passed    0.02 sec
+      Start 14: PodcastTest
+14/95 Test #14: PodcastTest ......................   Passed    0.02 sec
+      Start 15: TracksTest
+15/95 Test #15: TracksTest .......................   Passed    0.11 sec
+      Start 16: DirectorySelectionHandlerTest
+16/95 Test #16: DirectorySelectionHandlerTest ....   Passed    0.02 sec
+      Start 17: ArtistMatchTest
+17/95 Test #17: ArtistMatchTest ..................   Passed    0.02 sec
+      Start 18: DynamicPlaybackHandlerTest
+18/95 Test #18: DynamicPlaybackHandlerTest .......   Passed    5.97 sec
+      Start 19: LfmSimilarArtistFetcherTest
+19/95 Test #19: LfmSimilarArtistFetcherTest ......   Passed    0.04 sec
+      Start 20: LfmSimilarArtistParserTest
+20/95 Test #20: LfmSimilarArtistParserTest .......   Passed    0.04 sec
+      Start 21: BroadcastTest
+21/95 Test #21: BroadcastTest ....................***Failed    0.33 sec
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-builduser'
+[21:22:46] [32mInfo: [0m[34mDB::Base: [0mDatabase not existent. Creating database...
+[21:22:46] [32mInfo: [0m[34mDB::Base: [0mDatabase /tmp/sayonara/BroadcastTest/player.db not existent yet
+[21:22:46] [32mInfo: [0m[34mDB::Base: [0mCopy :/Database/player.db to /tmp/sayonara/BroadcastTest/player.db
+[21:22:46] [32mInfo: [0m[34mDB::Base: [0mDB file has been copied to /tmp/sayonara/BroadcastTest/player.db
+[21:22:46] [32mInfo: [0m[34mDB::StandardConnectorFixes: [0mDatabase Version:  40. Latest Version: 42
+[21:22:46] [32mInfo: [0m[34mDB::StandardConnectorFixes: [0mApply fixes
+[21:22:46] [31mError: [0m[34mDB::Module: [0mQuery error to connection /tmp/sayonara/BroadcastTest/player.db-0
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: : 1
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mNo query Unable to fetch row
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mUnable to fetch row
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mNo query
+[21:22:46] [31mError: [0m[34mSqlQuery: [0m
+SELECT
+podcastTitle 
+FROM OnlineTracks;
+[21:22:46] [31mError: [0m[34mDB::Module: [0mQuery error to connection /tmp/sayonara/BroadcastTest/player.db-0
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: : 1
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mNo query Unable to fetch row
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mUnable to fetch row
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mNo query
+[21:22:46] [31mError: [0m[34mSqlQuery: [0m
+SELECT
+podcastArtist 
+FROM OnlineTracks;
+[21:22:46] [31mError: [0m[34mDB::Module: [0mQuery error to connection /tmp/sayonara/BroadcastTest/player.db-0
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: : 1
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mNo query Unable to fetch row
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mUnable to fetch row
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mNo query
+[21:22:46] [31mError: [0m[34mSqlQuery: [0m
+SELECT
+podcastAlbumArtist 
+FROM OnlineTracks;
+[21:22:46] [31mError: [0m[34mDB::Module: [0mQuery error to connection /tmp/sayonara/BroadcastTest/player.db-0
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mSQL ERROR: : 1
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mNo query Unable to fetch row
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mUnable to fetch row
+[21:22:46] [31mError: [0m[34mSqlQuery: [0mNo query
+[21:22:46] [31mError: [0m[34mSqlQuery: [0m
+SELECT
+podcastAlbum 
+FROM OnlineTracks;
+[21:22:47] [33mDebug: [0m[34maddElements: [0mTry to add element appsrc0
+[21:22:47] [33mDebug: [0m[34maddElements: [0mTry to add element audio_convert1
+[21:22:47] [33mDebug: [0m[34maddElements: [0mTry to add element audio_resample
+[21:22:47] [33mDebug: [0m[34maddElements: [0mTry to add element tee0
+[21:22:47] [33mDebug: [0m[34maddElements: [0mTry to add element queue0
+[21:22:47] [33mDebug: [0m[34maddElements: [0mTry to add element fakesink0
+[21:22:47] [33mDebug: [0m[34mlinkElements: [0mTry to link appsrc0 with audio_convert1
+[21:22:47] [33mDebug: [0m[34mlinkElements: [0mTry to link audio_convert1 with audio_resample
+[21:22:47] [33mDebug: [0m[34mlinkElements: [0mTry to link audio_resample with tee0
+[21:22:47] [33mDebug: [0m[34mlinkElements: [0mTry to link queue0 with fakesink0
+[21:22:47] [31mError: [0m[34mtestAndError: [0mEngine: Cannot create element 'bc_lamemp3enc' of type 'lamemp3enc'
+[21:22:47] [33mVerbose: [0m[34mUtil::File: [0mI will delete /tmp/sayonara/BroadcastTest
+
+      Start 22: CallbackTest
+22/95 Test #22: CallbackTest .....................   Passed    0.27 sec
+      Start 23: EngineUtilsTest
+23/95 Test #23: EngineUtilsTest ..................   Passed    0.29 sec
+      Start 24: EqualizerTest
+24/95 Test #24: EqualizerTest ....................   Passed    0.04 sec
+      Start 25: HistoryTest
+25/95 Test #25: HistoryTest ......................   Passed    0.04 sec
+      Start 26: ScrobbleTest
+26/95 Test #26: ScrobbleTest .....................   Passed    1.00 sec
+      Start 27: CacheThreadTest
+27/95 Test #27: CacheThreadTest ..................   Passed    0.03 sec
+      Start 28: CopyThreadTest
+28/95 Test #28: CopyThreadTest ...................   Passed    0.03 sec
+      Start 29: GenreFetcherTest
+29/95 Test #29: GenreFetcherTest .................   Passed    0.04 sec
+      Start 30: GenreTreeBuilderTest
+30/95 Test #30: GenreTreeBuilderTest .............   Passed    0.03 sec
+      Start 31: ImportCacheTest
+31/95 Test #31: ImportCacheTest ..................   Passed    0.03 sec
+      Start 32: LibraryImporterTest
+32/95 Test #32: LibraryImporterTest ..............   Passed    0.25 sec
+      Start 33: LibraryManagerTest
+33/95 Test #33: LibraryManagerTest ...............   Passed    0.10 sec
+      Start 34: LocalLibraryTest
+34/95 Test #34: LocalLibraryTest .................   Passed    0.05 sec
+      Start 35: ReloadThreadTest
+35/95 Test #35: ReloadThreadTest .................   Passed    0.23 sec
+      Start 36: LibraryPluginHandlerTest
+36/95 Test #36: LibraryPluginHandlerTest .........   Passed    0.04 sec
+      Start 37: LyricsLogicTest
+37/95 Test #37: LyricsLogicTest ..................   Passed    0.04 sec
+      Start 38: LyricsServerProviderTest
+38/95 Test #38: LyricsServerProviderTest .........   Passed    0.04 sec
+      Start 39: PlayManagerTest
+39/95 Test #39: PlayManagerTest ..................   Passed    0.03 sec
+      Start 40: LibraryPlaylistInteractorTest
+40/95 Test #40: LibraryPlaylistInteractorTest ....   Passed    0.66 sec
+      Start 41: LocalPathPlaylistCreatorTest
+41/95 Test #41: LocalPathPlaylistCreatorTest .....   Passed    0.03 sec
+      Start 42: LocalPathProcessorTest
+42/95 Test #42: LocalPathProcessorTest ...........   Passed    0.04 sec
+      Start 43: PlaylistDbInterfaceTest
+43/95 Test #43: PlaylistDbInterfaceTest ..........   Passed    0.03 sec
+      Start 44: PlaylistFileTest
+44/95 Test #44: PlaylistFileTest .................   Passed    0.02 sec
+      Start 45: PlaylistHandlerTest
+45/95 Test #45: PlaylistHandlerTest ..............   Passed    0.08 sec
+      Start 46: PlaylistLoaderTest
+46/95 Test #46: PlaylistLoaderTest ...............   Passed    0.06 sec
+      Start 47: PlaylistShuffleTest
+47/95 Test #47: PlaylistShuffleTest ..............   Passed    0.02 sec
+      Start 48: PlaylistTest
+48/95 Test #48: PlaylistTest .....................   Passed    0.02 sec
+      Start 49: PlaylistTrackModifyTest
+49/95 Test #49: PlaylistTrackModifyTest ..........   Passed    0.02 sec
+      Start 50: RepeatTest
+50/95 Test #50: RepeatTest .......................   Passed    0.02 sec
+      Start 51: StopBehaviorTest
+51/95 Test #51: StopBehaviorTest .................   Passed    0.02 sec
+      Start 52: SettingConverterTest
+52/95 Test #52: SettingConverterTest .............   Passed    0.02 sec
+      Start 53: SettingsNotifierTest
+53/95 Test #53: SettingsNotifierTest .............   Passed    0.02 sec
+      Start 54: ConverterTest
+54/95 Test #54: ConverterTest ....................   Passed    0.02 sec
+      Start 55: ListeningDateTest
+55/95 Test #55: ListeningDateTest ................   Passed    0.02 sec
+      Start 56: SmartPlaylistManagerTest
+56/95 Test #56: SmartPlaylistManagerTest .........   Passed    0.02 sec
+      Start 57: StreamRecorderTest
+57/95 Test #57: StreamRecorderTest ...............   Passed    0.02 sec
+      Start 58: StreamRecorderUtilsTest
+58/95 Test #58: StreamRecorderUtilsTest ..........   Passed    0.02 sec
+      Start 59: RadioBrowserParserTest
+59/95 Test #59: RadioBrowserParserTest ...........   Passed    0.02 sec
+      Start 60: RadioStationParserTest
+60/95 Test #60: RadioStationParserTest ...........   Passed    0.02 sec
+      Start 61: StreamHandlerTest
+61/95 Test #61: StreamHandlerTest ................   Passed    0.03 sec
+      Start 62: AlbumArtistTest
+62/95 Test #62: AlbumArtistTest ..................   Passed    0.02 sec
+      Start 63: CoverEditTest
+63/95 Test #63: CoverEditTest ....................   Passed    1.37 sec
+      Start 64: CoverTest
+64/95 Test #64: CoverTest ........................   Passed    0.18 sec
+      Start 65: DiscnumberTest
+65/95 Test #65: DiscnumberTest ...................   Passed    0.02 sec
+      Start 66: EditorTest
+66/95 Test #66: EditorTest .......................   Passed    0.26 sec
+      Start 67: LyricsTest
+67/95 Test #67: LyricsTest .......................   Passed    0.02 sec
+      Start 68: RatingTest
+68/95 Test #68: RatingTest .......................   Passed    0.04 sec
+      Start 69: TagFromPathTest
+69/95 Test #69: TagFromPathTest ..................   Passed    0.02 sec
+      Start 70: TaggingTest
+70/95 Test #70: TaggingTest ......................   Passed    0.03 sec
+      Start 71: ASXParserTest
+71/95 Test #71: ASXParserTest ....................   Passed    0.02 sec
+      Start 72: AlbumClassTest
+72/95 Test #72: AlbumClassTest ...................   Passed    0.02 sec
+      Start 73: CissearchTest
+73/95 Test #73: CissearchTest ....................   Passed    0.03 sec
+      Start 74: CryptTest
+74/95 Test #74: CryptTest ........................   Passed    0.02 sec
+      Start 75: DirectoryReaderTest
+75/95 Test #75: DirectoryReaderTest ..............   Passed    0.02 sec
+      Start 76: FileHelperTest
+76/95 Test #76: FileHelperTest ...................   Passed    0.02 sec
+      Start 77: LanguageKeyTest
+77/95 Test #77: LanguageKeyTest ..................   Passed    0.01 sec
+      Start 78: LanguageUtilTest
+78/95 Test #78: LanguageUtilTest .................   Passed    0.02 sec
+      Start 79: LibraryFilterTest
+79/95 Test #79: LibraryFilterTest ................   Passed    0.02 sec
+      Start 80: M3UParserTest
+80/95 Test #80: M3UParserTest ....................   Passed    0.02 sec
+      Start 81: MetaDataListTest
+81/95 Test #81: MetaDataListTest .................   Passed    0.09 sec
+      Start 82: MetaDataSortingTest
+82/95 Test #82: MetaDataSortingTest ..............   Passed    0.02 sec
+      Start 83: MetaDataTest
+83/95 Test #83: MetaDataTest .....................   Passed    0.02 sec
+      Start 84: MimeDataTest
+84/95 Test #84: MimeDataTest .....................   Passed    0.02 sec
+      Start 85: PlaylistModeTest
+85/95 Test #85: PlaylistModeTest .................   Passed    0.02 sec
+      Start 86: PlsParserTest
+86/95 Test #86: PlsParserTest ....................   Passed    0.02 sec
+      Start 87: PodcastParserTest
+87/95 Test #87: PodcastParserTest ................   Passed    0.03 sec
+      Start 88: SetTest
+88/95 Test #88: SetTest ..........................   Passed    0.01 sec
+      Start 89: SettingsTest
+89/95 Test #89: SettingsTest .....................   Passed    0.02 sec
+      Start 90: SortingTest
+90/95 Test #90: SortingTest ......................   Passed    0.02 sec
+      Start 91: StandardPathTest
+91/95 Test #91: StandardPathTest .................   Passed    0.02 sec
+      Start 92: StreamParserTest
+92/95 Test #92: StreamParserTest .................   Passed    0.34 sec
+      Start 93: TreeTest
+93/95 Test #93: TreeTest .........................   Passed    0.02 sec
+      Start 94: UtilTest
+94/95 Test #94: UtilTest .........................   Passed    0.02 sec
+      Start 95: WebClientTest
+95/95 Test #95: WebClientTest ....................   Passed    5.33 sec
+
+99% tests passed, 1 tests failed out of 95
+
+Total Test time (real) =  19.03 sec
+
+The following tests FAILED:
+	 21 - BroadcastTest (Failed)
+Errors while running CTest
