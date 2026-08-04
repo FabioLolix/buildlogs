@@ -1,0 +1,589 @@
+ has no wrap files
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 build
+The Meson build system
+Version: 1.11.2
+Source dir: /build/shotwell-git/src/shotwell
+Build dir: /build/shotwell-git/src/shotwell/build
+Build type: native build
+Project name: shotwell
+Project version: 33.rc
+C compiler for the host machine: cc (gcc 16.1.1 "cc (GCC) 16.1.1 20260728")
+C linker for the host machine: cc ld.bfd 2.47
+Vala compiler for the host machine: valac (valac 0.56.19)
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Configuring config.h using configuration
+Compiler for C supports arguments -Wno-address: YES 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES 
+Compiler for C supports arguments -Wno-unused-variable: YES 
+Compiler for C supports arguments -Wno-discarded-qualifiers: YES 
+Compiler for C supports arguments -Wno-unused-label: YES 
+Compiler for C supports arguments -Wno-unused-function: YES 
+Compiler for C supports arguments -Wno-unused-value: YES 
+Compiler for C supports arguments -Wno-pointer-sign: YES 
+Compiler for C supports arguments -Wno-error=incompatible-pointer-types: YES 
+Compiler for C supports arguments -Wno-incompatible-pointer-types: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.5
+Run-time dependency gtk4 found: YES 4.22.4
+Run-time dependency gio-2.0 found: YES 2.88.3
+Run-time dependency gmodule-2.0 found: YES 2.88.3
+Run-time dependency gee-0.8 found: YES 0.20.8
+Run-time dependency libsoup-3.0 found: YES 3.6.6
+Run-time dependency json-glib-1.0 found: YES 1.10.8
+Run-time dependency libxml-2.0 found: YES 2.15.3
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.44.7
+Run-time dependency sqlite3 found: YES 3.53.4
+Run-time dependency gstreamer-1.0 found: YES 1.28.5
+Run-time dependency gstreamer-pbutils-1.0 found: YES 1.28.5
+Run-time dependency libgphoto2 found: YES 2.5.34
+Run-time dependency gudev-1.0 found: YES 238
+Run-time dependency gexiv2-0.16 found: YES 0.16.1
+Run-time dependency libraw found: YES 0.22.2
+Run-time dependency libexif found: YES 0.6.26
+Run-time dependency libsecret-1 found: YES 0.21.7
+Run-time dependency libportal found: YES 0.10.0
+Run-time dependency libportal-gtk4 found: YES 0.10.0
+Library m found: YES
+Run-time dependency pangocairo found: YES 1.58.1
+Run-time dependency libwebpdemux found: YES 1.6.0
+Run-time dependency libwebp found: YES 1.6.0
+Dependency json-glib-1.0 for host machine found: YES 1.10.8 (cached)
+Run-time dependency gcr-4 found: YES 4.4.0.1
+Run-time dependency cairo found: YES 1.18.4
+Library posix found: YES
+Dependency gio-2.0 for build machine found: YES 2.88.3 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Dependency gio-2.0 for build machine found: YES 2.88.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 for build machine found: YES 2.88.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 for build machine found: YES 2.88.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 for build machine found: YES 2.88.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 for build machine found: YES 2.88.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Library m found: YES
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program itstool found: YES (/usr/bin/itstool)
+Program itstool found: YES (/usr/bin/itstool)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Dependency gio-2.0 for build machine found: YES 2.88.3 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 152
+
+shotwell 33.rc
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+Generating targets:   0%|          | 0/152 eta ?                                                Writing build.ninja:   0%|          | 0/515 eta ?                                                 ninja: Entering directory `build'
+[1/448] Generating plugins/common-resource_h with a custom command
+[2/448] Generating plugins/authenticator/shotwell/authenticator-resource_h with a custom command
+[3/448] Generating plugins/authenticator/shotwell/authenticator-resource_c with a custom command
+[4/448] Generating plugins/common-resource_c with a custom command
+[5/448] Generating plugins/shotwell-publishing/publishing-resource_h with a custom command
+[6/448] Generating plugins/shotwell-transitions/transitions-resource_h with a custom command
+[7/448] Generating plugins/shotwell-transitions/transitions-resource_c with a custom command
+[8/448] Generating yelp doc help/ca/help-shotwell-ca-gmo
+[9/448] Generating yelp doc help/cs/help-shotwell-cs-gmo
+[10/448] Generating yelp doc help/de/help-shotwell-de-gmo
+[11/448] Generating yelp doc help/el/help-shotwell-el-gmo
+[12/448] Generating yelp doc help/es/help-shotwell-es-gmo
+[13/448] Generating yelp doc help/fr/help-shotwell-fr-gmo
+[14/448] Generating yelp doc help/hu/help-shotwell-hu-gmo
+[15/448] Generating yelp doc help/id/help-shotwell-id-gmo
+[16/448] Generating yelp doc help/pt_BR/help-shotwell-pt_BR-gmo
+[17/448] Generating yelp doc help/lv/help-shotwell-lv-gmo
+[18/448] Generating plugins/shotwell-publishing/publishing-resource_c with a custom command
+[19/448] Compiling gschemas data/gsettings/gsettings-compile-data_gsettings
+[20/448] Generating yelp doc help/kk/help-shotwell-kk-gmo
+[21/448] Generating yelp doc help/ru/help-shotwell-ru-gmo
+[22/448] Generating yelp doc help/sr/help-shotwell-sr-gmo
+[23/448] Building translation po/bn/LC_MESSAGES/shotwell-bn.mo
+[24/448] Generating yelp doc help/sv/help-shotwell-sv-gmo
+[25/448] Generating yelp doc help/uk/help-shotwell-uk-gmo
+[26/448] Building translation po/ar/LC_MESSAGES/shotwell-ar.mo
+[27/448] Building translation po/bg/LC_MESSAGES/shotwell-bg.mo
+[28/448] Building translation po/af/LC_MESSAGES/shotwell-af.mo
+[29/448] Building translation po/as/LC_MESSAGES/shotwell-as.mo
+[30/448] Building translation po/ast/LC_MESSAGES/shotwell-ast.mo
+[31/448] Building translation po/bs/LC_MESSAGES/shotwell-bs.mo
+[32/448] Building translation po/bn_IN/LC_MESSAGES/shotwell-bn_IN.mo
+[33/448] Building translation po/eo/LC_MESSAGES/shotwell-eo.mo
+[34/448] Building translation po/ca/LC_MESSAGES/shotwell-ca.mo
+[35/448] Building translation po/et/LC_MESSAGES/shotwell-et.mo
+[36/448] Building translation po/cs/LC_MESSAGES/shotwell-cs.mo
+[37/448] Building translation po/en_GB/LC_MESSAGES/shotwell-en_GB.mo
+[38/448] Building translation po/de/LC_MESSAGES/shotwell-de.mo
+[39/448] Generating version.h with a custom command
+[40/448] Building translation po/eu/LC_MESSAGES/shotwell-eu.mo
+[41/448] Building translation po/da/LC_MESSAGES/shotwell-da.mo
+[42/448] Building translation po/fi/LC_MESSAGES/shotwell-fi.mo
+[43/448] Building translation po/es/LC_MESSAGES/shotwell-es.mo
+[44/448] Building translation po/fr/LC_MESSAGES/shotwell-fr.mo
+[45/448] Building translation po/gd/LC_MESSAGES/shotwell-gd.mo
+[46/448] Building translation po/el/LC_MESSAGES/shotwell-el.mo
+[47/448] Building translation po/gu/LC_MESSAGES/shotwell-gu.mo
+[48/448] Building translation po/gl/LC_MESSAGES/shotwell-gl.mo
+[49/448] Building translation po/hi/LC_MESSAGES/shotwell-hi.mo
+[50/448] Building translation po/ia/LC_MESSAGES/shotwell-ia.mo
+[51/448] Building translation po/it/LC_MESSAGES/shotwell-it.mo
+[52/448] Building translation po/he/LC_MESSAGES/shotwell-he.mo
+[53/448] Building translation po/ie/LC_MESSAGES/shotwell-ie.mo
+[54/448] Building translation po/hr/LC_MESSAGES/shotwell-hr.mo
+[55/448] Building translation po/ka/LC_MESSAGES/shotwell-ka.mo
+[56/448] Building translation po/hu/LC_MESSAGES/shotwell-hu.mo
+[57/448] Building translation po/id/LC_MESSAGES/shotwell-id.mo
+[58/448] Building translation po/kab/LC_MESSAGES/shotwell-kab.mo
+[59/448] Building translation po/km/LC_MESSAGES/shotwell-km.mo
+[60/448] Building translation po/ky/LC_MESSAGES/shotwell-ky.mo
+[61/448] Building translation po/kn/LC_MESSAGES/shotwell-kn.mo
+[62/448] Building translation po/ja/LC_MESSAGES/shotwell-ja.mo
+[63/448] Building translation po/ko/LC_MESSAGES/shotwell-ko.mo
+[64/448] Building translation po/kk/LC_MESSAGES/shotwell-kk.mo
+[65/448] Building translation po/mk/LC_MESSAGES/shotwell-mk.mo
+[66/448] Building translation po/ml/LC_MESSAGES/shotwell-ml.mo
+[67/448] Building translation po/lt/LC_MESSAGES/shotwell-lt.mo
+[68/448] Building translation po/mjw/LC_MESSAGES/shotwell-mjw.mo
+[69/448] Building translation po/mr/LC_MESSAGES/shotwell-mr.mo
+[70/448] Building translation po/nb/LC_MESSAGES/shotwell-nb.mo
+[71/448] Building translation po/lv/LC_MESSAGES/shotwell-lv.mo
+[72/448] Building translation po/nn/LC_MESSAGES/shotwell-nn.mo
+[73/448] Building translation po/pa/LC_MESSAGES/shotwell-pa.mo
+[74/448] Building translation po/or/LC_MESSAGES/shotwell-or.mo
+[75/448] Building translation po/oc/LC_MESSAGES/shotwell-oc.mo
+[76/448] Building translation po/nl/LC_MESSAGES/shotwell-nl.mo
+[77/448] Building translation po/pl/LC_MESSAGES/shotwell-pl.mo
+[78/448] Building translation po/pt/LC_MESSAGES/shotwell-pt.mo
+[79/448] Building translation po/ro/LC_MESSAGES/shotwell-ro.mo
+[80/448] Building translation po/pt_BR/LC_MESSAGES/shotwell-pt_BR.mo
+[81/448] Building translation po/sk/LC_MESSAGES/shotwell-sk.mo
+[82/448] Building translation po/ru/LC_MESSAGES/shotwell-ru.mo
+[83/448] Building translation po/sl/LC_MESSAGES/shotwell-sl.mo
+[84/448] Building translation po/sr@latin/LC_MESSAGES/shotwell-sr@latin.mo
+[85/448] Generating data/shotwell-resources_h with a custom command
+[86/448] Building translation po/ta/LC_MESSAGES/shotwell-ta.mo
+[87/448] Building translation po/sv/LC_MESSAGES/shotwell-sv.mo
+[88/448] Building translation po/sr/LC_MESSAGES/shotwell-sr.mo
+[89/448] Building translation po/th/LC_MESSAGES/shotwell-th.mo
+[90/448] Building translation po/tr/LC_MESSAGES/shotwell-tr.mo
+[91/448] Building translation po/zh_TW/LC_MESSAGES/shotwell-zh_TW.mo
+[92/448] Building translation po/uk/LC_MESSAGES/shotwell-uk.mo
+[93/448] Building translation po/te/LC_MESSAGES/shotwell-te.mo
+[94/448] Building translation po/vi/LC_MESSAGES/shotwell-vi.mo
+[95/448] Building translation po/zh_HK/LC_MESSAGES/shotwell-zh_HK.mo
+[96/448] Building translation po/zh_CN/LC_MESSAGES/shotwell-zh_CN.mo
+[97/448] Compiling Vala source ../src/metadata/MediaMetadata.vala ../src/metadata/MetadataDateTime.vala ../src/metadata/MetadataRational.vala
+[98/448] Generating data/shotwell-resources_c with a custom command
+[99/448] Compiling Vala source ../test/NaturalCollate-Test.vala ../test/NaturalCollate.vala
+[100/448] Compiling Vala source ../test/RegexpReplace.vala ../test/DatabaseTable.vala
+[101/448] Compiling Vala source ../src/video-support/VideoMetadataReaderProcess.vala
+[102/448] Compiling Vala source ../thumbnailer/shotwell-video-thumbnailer.vala
+[103/448] Compiling Vala source ../src/ColorTransformation.vala ../src/util/KeyValueMap.vala
+[104/448] Generating yelp doc help/ca/help-shotwell-ca
+[105/448] Generating yelp doc help/de/help-shotwell-de
+[106/448] Generating yelp doc help/cs/help-shotwell-cs
+[107/448] Generating yelp doc help/el/help-shotwell-el
+[108/448] Generating yelp doc help/lv/help-shotwell-lv
+[109/448] Generating yelp doc help/hu/help-shotwell-hu
+[110/448] Generating yelp doc help/kk/help-shotwell-kk
+[111/448] Generating yelp doc help/fr/help-shotwell-fr
+[112/448] Generating yelp doc help/ru/help-shotwell-ru
+[113/448] Generating yelp doc help/sr/help-shotwell-sr
+[114/448] Generating yelp doc help/id/help-shotwell-id
+[115/448] Compiling Vala source ../src/video-support/AVIChunk.vala ../src/video-support/AVIMetadataLoader.vala ../src/video-support/QuickTimeAtom.vala ../src/video-support/QuicktimeMetdataLoader.vala ../src/video-support/util.vala src/metadata/metadata.vapi
+[116/448] Generating yelp doc help/es/help-shotwell-es
+[117/448] Compiling Vala source ../src/widgets/lib.vala ../src/widgets/FolderButton.vala ../src/widgets/SettingsGroup.vala ../src/widgets/Toast.vala
+[118/448] Generating yelp doc help/pt_BR/help-shotwell-pt_BR
+[119/448] Compiling C object src/metadata/libmetadata.a.p/meson-generated_MetadataRational.c.o
+[120/448] Compiling C object src/metadata/libmetadata.a.p/meson-generated_MediaMetadata.c.o
+[121/448] Compiling C object test/natural-collate-test.p/meson-generated_NaturalCollate.c.o
+[122/448] Compiling C object test/regexp-replace-test.p/meson-generated_RegexpReplace.c.o
+[123/448] Compiling C object test/natural-collate-test.p/meson-generated_NaturalCollate-Test.c.o
+[124/448] Compiling C object src/video-support/shotwell-video-metadata-handler.p/meson-generated_VideoMetadataReaderProcess.c.o
+[125/448] Compiling Vala source ../src/plugins/DataImportsInterfaces.vala ../src/plugins/PublishingInterfaces.vala ../src/plugins/SpitInterfaces.vala ../src/plugins/TransitionsInterfaces.vala
+[126/448] Compiling C object src/metadata/libmetadata.a.p/meson-generated_MetadataDateTime.c.o
+[127/448] Compiling C object thumbnailer/shotwell-video-thumbnailer.p/meson-generated_shotwell-video-thumbnailer.c.o
+[128/448] Compiling C object src/libshotwell-graphics-processor.a.p/_transformation.c.o
+[129/448] Compiling C object src/libshotwell-graphics-processor.a.p/meson-generated_util_KeyValueMap.c.o
+[130/448] Compiling C object src/video-support/libvideo_metadata_handling.a.p/meson-generated_util.c.o
+[131/448] Linking static target src/metadata/libmetadata.a
+[132/448] Compiling C object src/video-support/libvideo_metadata_handling.a.p/meson-generated_QuicktimeMetdataLoader.c.o
+[133/448] Compiling C object src/video-support/libvideo_metadata_handling.a.p/meson-generated_AVIChunk.c.o
+[134/448] Compiling C object src/video-support/libvideo_metadata_handling.a.p/meson-generated_QuickTimeAtom.c.o
+[135/448] Generating yelp doc help/uk/help-shotwell-uk
+[136/448] Compiling C object src/video-support/libvideo_metadata_handling.a.p/meson-generated_AVIMetadataLoader.c.o
+[137/448] Compiling Vala source ../src/graphics-processor.vala src/shotwell-graphics-processor.vapi
+[138/448] Generating yelp doc help/sv/help-shotwell-sv
+[139/448] Linking static target src/video-support/libvideo_metadata_handling.a
+[140/448] Compiling Vala source ../test/jfif/JfifSupport-Test.vala ../test/jfif/PhotoFileSniffer.vala ../test/jfif/PhotoFileAdapter.vala ../test/jfif/JfifSupport.vala ../test/jfif/GdkSupport.vala ../test/jfif/KeyValueMap.vala ../test/jfif/Dimensions.vala ../test/jfif/string.vala ../test/jfif/file.vala ../test/jfif/util_core-stub.vala ../test/jfif/ProgressMonitor-stub.vala ../test/jfif/PhotoMetadata-stub.vala ../test/jfif/PhotoFileFormat-jfifstub.vala ../test/jfif/util_image-stub.vala
+[141/448] Compiling C object test/regexp-replace-test.p/meson-generated_DatabaseTable.c.o
+[142/448] Linking target src/video-support/shotwell-video-metadata-handler
+[143/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_string.c.o
+[144/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_JfifSupport-Test.c.o
+[145/448] Compiling C object src/libshotwell-graphics-processor.a.p/meson-generated_ColorTransformation.c.o
+[146/448] Linking static target src/libshotwell-graphics-processor.a
+[147/448] Compiling C object src/widgets/libwidgets.a.p/meson-generated_lib.c.o
+[148/448] Compiling C object src/widgets/libwidgets.a.p/meson-generated_FolderButton.c.o
+[149/448] Compiling C object src/shotwell-graphics-processor.p/meson-generated_graphics-processor.c.o
+[150/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_ProgressMonitor-stub.c.o
+[151/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_util_core-stub.c.o
+[152/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_KeyValueMap.c.o
+[153/448] Linking target test/natural-collate-test
+[154/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_PhotoFileAdapter.c.o
+[155/448] Merging translations for data/org.gnome.Shotwell-Viewer.desktop
+[156/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_GdkSupport.c.o
+[157/448] Compiling C object src/widgets/libwidgets.a.p/meson-generated_Toast.c.o
+[158/448] Compiling C object src/widgets/libwidgets.a.p/meson-generated_SettingsGroup.c.o
+[159/448] Linking static target src/widgets/libwidgets.a
+[160/448] Merging translations for data/org.gnome.Shotwell.desktop
+[161/448] Merging translations for data/org.gnome.Shotwell.metainfo.xml
+[162/448] Linking target thumbnailer/shotwell-video-thumbnailer
+[163/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_JfifSupport.c.o
+[164/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_PhotoFileSniffer.c.o
+[165/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_util_image-stub.c.o
+[166/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_PhotoMetadata-stub.c.o
+[167/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_file.c.o
+[168/448] Compiling C object src/plugins/libshotwell-plugin-dev-1.0.so.0.33.p/meson-generated_DataImportsInterfaces.c.o
+[169/448] Compiling C object src/plugins/libshotwell-plugin-dev-1.0.so.0.33.p/meson-generated_SpitInterfaces.c.o
+[170/448] Compiling C object src/plugins/libshotwell-plugin-dev-1.0.so.0.33.p/meson-generated_PublishingInterfaces.c.o
+[171/448] Compiling C object src/plugins/libshotwell-plugin-dev-1.0.so.0.33.p/meson-generated_TransitionsInterfaces.c.o
+[172/448] Compiling Vala source ../src/publishing/StaticMessagePaneWidget.vala ../src/publishing/ProgressPaneWidget.vala ../src/publishing/SuccessPaneWidget.vala ../src/publishing/LoginWelcomePaneWidget.vala src/plugins/shotwell-plugin-dev-1.0.vapi
+[173/448] Linking target test/regexp-replace-test
+[174/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_PhotoFileFormat-jfifstub.c.o
+[175/448] Compiling C object test/jfif-support-test.p/meson-generated_jfif_Dimensions.c.o
+[176/448] Compiling Vala source ../plugins/common/RESTSupport.vala ../plugins/common/Resources.vala ../plugins/common/WebAuthenticationPane.vala ../plugins/common/OAuth1Support.vala ../plugins/common/SSLCertificatePane.vala src/plugins/shotwell-plugin-dev-1.0.vapi
+[177/448] Compiling C object src/shotwell.p/meson-generated_.._.._data_shotwell-resources.c.o
+[178/448] Compiling C object plugins/libshotwell-plugin-common.so.0.33.p/meson-generated_.._common-resource.c.o
+[179/448] Compiling C object src/publishing/libpublishing_gui.a.p/meson-generated_ProgressPaneWidget.c.o
+[180/448] Compiling C object src/publishing/libpublishing_gui.a.p/meson-generated_StaticMessagePaneWidget.c.o
+[181/448] Compiling C object src/publishing/libpublishing_gui.a.p/meson-generated_SuccessPaneWidget.c.o
+[182/448] Compiling C object src/publishing/libpublishing_gui.a.p/meson-generated_LoginWelcomePaneWidget.c.o
+[183/448] Linking static target src/publishing/libpublishing_gui.a
+[184/448] Compiling C object plugins/libshotwell-plugin-common.so.0.33.p/meson-generated_common_Resources.c.o
+[185/448] Compiling C object plugins/libshotwell-plugin-common.so.0.33.p/meson-generated_common_WebAuthenticationPane.c.o
+[186/448] Compiling C object plugins/libshotwell-plugin-common.so.0.33.p/meson-generated_common_OAuth1Support.c.o
+[187/448] Linking target src/shotwell-graphics-processor
+[188/448] Compiling C object plugins/libshotwell-plugin-common.so.0.33.p/meson-generated_common_SSLCertificatePane.c.o
+[189/448] Linking target test/jfif-support-test
+[190/448] Compiling Vala source ../plugins/shotwell-transitions/BlindsEffect.vala ../plugins/shotwell-transitions/ChessEffect.vala ../plugins/shotwell-transitions/CircleEffect.vala ../plugins/shotwell-transitions/CirclesEffect.vala ../plugins/shotwell-transitions/ClockEffect.vala ../plugins/shotwell-transitions/CrumbleEffect.vala ../plugins/shotwell-transitions/FadeEffect.vala ../plugins/shotwell-transitions/shotwell-transitions.vala ../plugins/shotwell-transitions/SlideEffect.vala ../plugins/shotwell-transitions/SquaresEffect.vala ../plugins/shotwell-transitions/StripesEffect.vala src/plugins/shotwell-plugin-dev-1.0.vapi plugins/shotwell-plugin-common.vapi
+[191/448] Compiling Vala source ../plugins/authenticator/shotwell/ShotwellAuthenticatorFactory.vala ../plugins/authenticator/shotwell/FlickrPublishingAuthenticator.vala ../plugins/authenticator/shotwell/GoogleAuthenticator.vala ../plugins/authenticator/shotwell/OAuth1Authenticator.vala ../plugins/authenticator/shotwell/TumblrAuthenticator.vala src/plugins/shotwell-plugin-dev-1.0.vapi plugins/shotwell-plugin-common.vapi
+../plugins/authenticator/shotwell/GoogleAuthenticator.vala:182.15-182.31: warning: unreachable catch clause detected
+  182 |             } catch (Error err) {
+      |               ^~~~~~~~~~~~~~~~~  
+Compilation succeeded - 1 warning(s)
+[192/448] Compiling C object plugins/libshotwell-plugin-common.so.0.33.p/meson-generated_common_RESTSupport.c.o
+[193/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_.._transitions-resource.c.o
+[194/448] Compiling C object plugins/authenticator/shotwell/libshotwell-authenticator.so.0.33.p/meson-generated_.._authenticator-resource.c.o
+[195/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_StripesEffect.c.o
+[196/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_shotwell-transitions.c.o
+[197/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_CrumbleEffect.c.o
+[198/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_ClockEffect.c.o
+[199/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_FadeEffect.c.o
+[200/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_ChessEffect.c.o
+[201/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_CircleEffect.c.o
+[202/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_SlideEffect.c.o
+[203/448] Compiling C object plugins/authenticator/shotwell/libshotwell-authenticator.so.0.33.p/meson-generated_ShotwellAuthenticatorFactory.c.o
+[204/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_SquaresEffect.c.o
+[205/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_BlindsEffect.c.o
+[206/448] Compiling C object plugins/authenticator/shotwell/libshotwell-authenticator.so.0.33.p/meson-generated_OAuth1Authenticator.c.o
+[207/448] Compiling C object plugins/authenticator/shotwell/libshotwell-authenticator.so.0.33.p/meson-generated_GoogleAuthenticator.c.o
+[208/448] Compiling C object plugins/shotwell-transitions/libshotwell-transitions.so.p/meson-generated_CirclesEffect.c.o
+[209/448] Compiling C object plugins/authenticator/shotwell/libshotwell-authenticator.so.0.33.p/meson-generated_TumblrAuthenticator.c.o
+[210/448] Compiling C object plugins/authenticator/shotwell/libshotwell-authenticator.so.0.33.p/meson-generated_FlickrPublishingAuthenticator.c.o
+[211/448] Compiling Vala source ../plugins/shotwell-publishing/shotwell-publishing.vala ../plugins/shotwell-publishing/FlickrPublishing.vala ../plugins/shotwell-publishing/TumblrPublishing.vala ../plugins/shotwell-publishing/YouTubePublishing.vala ../plugins/shotwell-publishing/YoutubeUploader.vala ../plugins/shotwell-publishing/PiwigoPublishing.vala ../plugins/shotwell-publishing/PhotosPublisher.vala ../plugins/shotwell-publishing/PhotosService.vala ../plugins/shotwell-publishing/PhotosPublishingPane.vala ../plugins/shotwell-publishing/PhotosUploader.vala src/plugins/shotwell-plugin-dev-1.0.vapi plugins/shotwell-plugin-common.vapi plugins/authenticator/shotwell/shotwell-authenticator.vapi
+[212/448] Linking target src/plugins/libshotwell-plugin-dev-1.0.so.0.33
+[213/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_.._publishing-resource.c.o
+[214/448] Generating symbol file src/plugins/libshotwell-plugin-dev-1.0.so.0.33.p/libshotwell-plugin-dev-1.0.so.0.33.symbols
+[215/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_shotwell-publishing.c.o
+[216/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_PhotosPublishingPane.c.o
+[217/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_PhotosService.c.o
+[218/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_YoutubeUploader.c.o
+[219/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_PhotosUploader.c.o
+[220/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_YouTubePublishing.c.o
+[221/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_PhotosPublisher.c.o
+[222/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_TumblrPublishing.c.o
+[223/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_FlickrPublishing.c.o
+[224/448] Compiling C object plugins/shotwell-publishing/libshotwell-publishing.so.p/meson-generated_PiwigoPublishing.c.o
+[225/448] Linking target plugins/libshotwell-plugin-common.so.0.33
+[226/448] Generating symbol file plugins/libshotwell-plugin-common.so.0.33.p/libshotwell-plugin-common.so.0.33.symbols
+[227/448] Linking target plugins/shotwell-transitions/libshotwell-transitions.so
+[228/448] Linking target plugins/authenticator/shotwell/libshotwell-authenticator.so.0.33
+[229/448] Generating symbol file plugins/authenticator/shotwell/libshotwell-authenticator.so.0.33.p/libshotwell-authenticator.so.0.33.symbols
+[230/448] Compiling Vala source ../src/unit/Unit.vala ../src/util/Util.vala ../src/util/file.vala ../src/util/image.vala ../src/util/misc.vala ../src/util/string.vala ../src/util/system.vala ../src/util/ui.vala ../src/threads/Threads.vala ../src/threads/Workers.vala ../src/threads/BackgroundJob.vala ../src/threads/Semaphore.vala ../src/db/Db.vala ../src/db/DatabaseTable.vala ../src/db/PhotoTable.vala ../src/db/EventTable.vala ../src/db/FaceLocationTable.vala ../src/db/FaceTable.vala ../src/db/TagTable.vala ../src/db/TombstoneTable.vala ../src/db/VideoTable.vala ../src/db/VersionTable.vala ../src/db/SavedSearchDBTable.vala ../src/editing_tools/AdjustTool.vala ../src/editing_tools/EditingTools.vala ../src/editing_tools/EditingTool.vala ../src/editing_tools/CropTool.vala ../src/editing_tools/PhotoCanvas.vala ../src/editing_tools/RedeyeTool.vala ../src/editing_tools/StraightenTool.vala ../src/editing_tools/EditingToolWindow.vala ../src/editing_tools/RGBHistogramManipulator.vala ../src/faces/Face.vala ../src/faces/FaceLocation.vala ../src/slideshow/Slideshow.vala ../src/slideshow/TransitionEffects.vala ../src/photos/Photos.vala ../src/photos/PhotoFileAdapter.vala ../src/photos/PhotoFileFormat.vala ../src/photos/PhotoFileSniffer.vala ../src/photos/PhotoMetadata.vala ../src/photos/GRaw.vala ../src/photos/GdkSupport.vala ../src/photos/GifSupport.vala ../src/photos/JfifSupport.vala ../src/photos/BmpSupport.vala ../src/photos/RawSupport.vala ../src/photos/PngSupport.vala ../src/photos/TiffSupport.vala ../src/photos/WebPSupport.vala ../src/photos/AvifSupport.vala ../src/photos/HeifSupport.vala ../src/photos/JpegXLSupport.vala ../src/plugins/Plugins.vala ../src/plugins/StandardHostInterface.vala ../src/plugins/ManifestWidget.vala ../src/publishing/Publishing.vala ../src/publishing/PublishingUI.vala ../src/publishing/PublishingPluginHost.vala ../src/publishing/APIGlue.vala ../src/library/BackgroundProgressBar.vala ../src/library/Library.vala ../src/library/LibraryWindow.vala ../src/library/LibraryBranch.vala ../src/library/TrashSidebarEntry.vala ../src/library/OfflineSidebarEntry.vala ../src/library/FlaggedSidebarEntry.vala ../src/library/LastImportSidebarEntry.vala ../src/library/ImportQueueSidebarEntry.vala ../src/library/FlaggedPage.vala ../src/library/ImportQueuePage.vala ../src/library/LastImportPage.vala ../src/library/OfflinePage.vala ../src/library/TrashPage.vala ../src/direct/Direct.vala ../src/direct/DirectWindow.vala ../src/direct/DirectPhoto.vala ../src/direct/DirectPhotoPage.vala ../src/direct/DirectView.vala ../src/core/Core.vala ../src/core/DataCollection.vala ../src/core/DataSet.vala ../src/core/util.vala ../src/core/SourceCollection.vala ../src/core/SourceHoldingTank.vala ../src/core/DatabaseSourceCollection.vala ../src/core/ContainerSourceCollection.vala ../src/core/ViewCollection.vala ../src/core/DataObject.vala ../src/core/Alteration.vala ../src/core/DataSource.vala ../src/core/DataSourceTypes.vala ../src/core/DataView.vala ../src/core/DataViewTypes.vala ../src/core/Tracker.vala ../src/core/SourceInterfaces.vala ../src/sidebar/Sidebar.vala ../src/sidebar/Branch.vala ../src/sidebar/Entry.vala ../src/sidebar/Tree.vala ../src/sidebar/common.vala ../src/events/Events.vala ../src/events/EventsBranch.vala ../src/events/EventsDirectoryPage.vala ../src/events/EventPage.vala ../src/events/EventDirectoryItem.vala ../src/tags/Tags.vala ../src/tags/TagsBranch.vala ../src/tags/TagPage.vala ../src/tags/HierarchicalTagIndex.vala ../src/tags/HierarchicalTagUtilities.vala ../src/camera/Camera.vala ../src/camera/CameraBranch.vala ../src/camera/CameraTable.vala ../src/camera/DiscoveredCamera.vala ../src/camera/GPhoto.vala ../src/camera/ImportPage.vala ../src/searches/Searches.vala ../src/searches/SearchesBranch.vala ../src/searches/SearchBoolean.vala ../src/searches/SavedSearchPage.vala ../src/searches/SavedSearchDialog.vala ../src/config/Config.vala ../src/config/ConfigurationInterfaces.vala ../src/config/GSettingsEngine.vala ../src/folders/Folders.vala ../src/folders/FoldersBranch.vala ../src/folders/FoldersPage.vala ../src/import-roll/ImportRollBranch.vala ../src/import-roll/ImportRollEntry.vala ../src/main.vala ../src/AppWindow.vala ../src/FullscreenWindow.vala ../src/PageWindow.vala ../src/CollectionPage.vala ../src/NaturalCollate.vala ../src/Thumbnail.vala ../src/ThumbnailCache.vala ../src/CheckerboardItem.vala ../src/CheckerboardItemText.vala ../src/CheckerboardLayout.vala ../src/Page.vala ../src/SinglePhotoPage.vala ../src/CheckerboardPage.vala ../src/PageMessagePane.vala ../src/SortedList.vala ../src/Dimensions.vala ../src/Box.vala ../src/Photo.vala ../src/Orientation.vala ../src/BatchImport.vala ../src/Dialogs.vala ../src/Resources.vala ../src/Debug.vala ../src/DragAndDropHandler.vala ../src/Properties.vala ../src/Event.vala ../src/International.vala ../src/AppDirs.vala ../src/PixbufCache.vala ../src/CommandManager.vala ../src/Commands.vala ../src/SlideshowPage.vala ../src/LibraryFiles.vala ../src/printing/Measurement.vala ../src/printing/Settings.vala ../src/printing/Preview.vala ../src/printing/Job.vala ../src/printing/Manager.vala ../src/Tag.vala ../src/Screensaver.vala ../src/Exporter.vala ../src/DirectoryMonitor.vala ../src/LibraryMonitor.vala ../src/Tombstone.vala ../src/MetadataWriter.vala ../src/Application.vala ../src/AuthCallbackServer.vala ../src/TimedQueue.vala ../src/MediaPage.vala ../src/MediaDataRepresentation.vala ../src/DesktopIntegration.vala ../src/LibraryPhotoPage.vala ../src/ZoomBuffer.vala ../src/EditingHostPage.vala ../src/MediaInterfaces.vala ../src/MediaMonitor.vala ../src/PhotoMonitor.vala ../src/VideoMonitor.vala ../src/SearchFilter.vala ../src/SavedSearchPopover.vala ../src/MediaViewTracker.vala ../src/Upgrades.vala ../src/dialogs/AdjustDateTimeDialog.vala ../src/dialogs/EntryMultiCompletion.vala ../src/dialogs/ExportDialog.vala ../src/dialogs/MultiTextEntryDialog.vala ../src/dialogs/Preferences.vala ../src/dialogs/ProgressDialog.vala ../src/dialogs/SetBackgroundSlideshow.vala ../src/dialogs/SetBackground.vala ../src/dialogs/TextEntry.vala ../src/dialogs/WelcomeDialog.vala ../src/Profiles.vala ../src/ProfileBrowser.vala ../src/video-support/VideoReader.vala ../src/video-support/VideoImportParams.vala ../src/video-support/Video.vala ../src/video-support/VideoSourceCollection.vala ../src/video-support/VideoMetadata.vala ../src/faces/FacesBranch.vala ../src/faces/FacePage.vala ../src/faces/FaceShape.vala ../src/faces/FaceDetect.vala ../src/faces/Faces.vala ../src/faces/FacesTool.vala src/shotwell-graphics-processor.vapi src/plugins/shotwell-plugin-dev-1.0.vapi src/publishing/shotwell-internal-publishing-gui.vapi src/metadata/metadata.vapi src/video-support/shotwell-internal-video-metadata-handling.vapi src/widgets/shotwell-internal-widgets.vapi
+../src/AuthCallbackServer.vala:16.34-16.37: warning: Argument 1: Cannot pass null to non-null parameter type
+   16 |         server = new Soup.Server(null);
+      |                                  ^~~~  
+../src/main.vala:357.13-357.95: warning: unhandled error `GLib.Error'
+  357 |             var info = initial_file.query_info("standard::target-uri", FileQueryInfoFlags.NONE);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+../src/util/ui.vala:103.1-103.20: warning: Method `is_pointer_over' never used
+  103 | bool is_pointer_over(Gtk.Window window) {
+      | ^~~~~~~~~~~~~~~~~~~~                     
+../src/direct/DirectPhotoPage.vala:315.13-315.16: warning: Local variable `file' declared but never used
+  315 |         var file = photo.get_file();
+      |             ^~~~                    
+../src/sidebar/Tree.vala:120.5-120.45: warning: Field `Sidebar.Tree.is_internal_drag_in_progress' never used
+  120 |     private bool is_internal_drag_in_progress = false;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~         
+../src/sidebar/Tree.vala:121.5-121.53: warning: Field `Sidebar.Tree.internal_drag_source_entry' never used
+  121 |     private Sidebar.Entry? internal_drag_source_entry = null;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        
+../src/sidebar/Tree.vala:36.9-36.29: warning: Method `Sidebar.Tree.EntryWrapper.draggable' never used
+   36 |         public bool draggable() {
+      |         ^~~~~~~~~~~~~~~~~~~~~    
+../src/tags/HierarchicalTagUtilities.vala:86.5-86.46: warning: Method `HierarchicalTagUtilities.join_path_components' never used
+   86 |     public static string? join_path_components(string[] path_components) {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                            
+../src/camera/ImportPage.vala:1659.21-1659.29: warning: Local variable `local_ref' declared but never used
+ 1659 |         ImportPage? local_ref = this.local_ref;
+      |                     ^~~~~~~~~                  
+../src/PageWindow.vala:13.5-13.54: warning: Field `PageWindow.publishables' never used
+   13 |     private Spit.Publishing.Publishable[] publishables = null;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        
+../src/Page.vala:667.13-667.17: warning: Local variable `event' declared but never used
+  667 |         var event = gesture.get_last_event (sequence);
+      |             ^~~~~                                     
+../src/Page.vala:702.13-702.17: warning: Local variable `event' declared but never used
+  702 |         var event = gesture.get_last_event (sequence);
+      |             ^~~~~                                     
+../src/printing/Settings.vala:63.21-63.23: warning: Local variable `sel' declared but never used
+   63 |                 var sel = get_size_selection();
+      |                     ^~~                        
+../src/printing/Manager.vala:25.5-25.47: warning: Field `PrintManager.temp_printstream' never used
+   25 |     private GLib.OutputStream? temp_printstream = null;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        
+Compilation succeeded - 14 warning(s)
+[231/448] Compiling C object src/shotwell.p/meson-generated_util_Util.c.o
+[232/448] Compiling C object src/shotwell.p/meson-generated_threads_Threads.c.o
+[233/448] Compiling C object src/shotwell.p/meson-generated_threads_Semaphore.c.o
+[234/448] Compiling C object src/shotwell.p/meson-generated_db_VersionTable.c.o
+[235/448] Compiling C object src/shotwell.p/meson-generated_util_string.c.o
+[236/448] Compiling C object src/shotwell.p/meson-generated_db_TombstoneTable.c.o
+[237/448] Compiling C object src/shotwell.p/meson-generated_unit_Unit.c.o
+[238/448] Compiling C object src/shotwell.p/meson-generated_db_Db.c.o
+[239/448] Compiling C object src/shotwell.p/meson-generated_editing_tools_EditingTools.c.o
+[240/448] Compiling C object src/shotwell.p/meson-generated_util_system.c.o
+[241/448] Compiling C object src/shotwell.p/meson-generated_threads_Workers.c.o
+[242/448] Compiling C object src/shotwell.p/meson-generated_db_EventTable.c.o
+[243/448] Compiling C object src/shotwell.p/meson-generated_util_file.c.o
+[244/448] Compiling C object src/shotwell.p/meson-generated_threads_BackgroundJob.c.o
+[245/448] Compiling C object src/shotwell.p/meson-generated_db_FaceTable.c.o
+[246/448] Compiling C object src/shotwell.p/meson-generated_db_TagTable.c.o
+[247/448] Compiling C object src/shotwell.p/meson-generated_util_misc.c.o
+[248/448] Compiling C object src/shotwell.p/meson-generated_db_VideoTable.c.o
+[249/448] Compiling C object src/shotwell.p/meson-generated_db_DatabaseTable.c.o
+[250/448] Compiling C object src/shotwell.p/meson-generated_photos_Photos.c.o
+[251/448] Compiling C object src/shotwell.p/meson-generated_db_SavedSearchDBTable.c.o
+[252/448] Compiling C object src/shotwell.p/meson-generated_util_ui.c.o
+[253/448] Compiling C object src/shotwell.p/meson-generated_faces_FaceLocation.c.o
+[254/448] Compiling C object src/shotwell.p/meson-generated_util_image.c.o
+[255/448] Compiling C object src/shotwell.p/meson-generated_photos_PhotoFileSniffer.c.o
+[256/448] Compiling C object src/shotwell.p/meson-generated_db_FaceLocationTable.c.o
+[257/448] Compiling C object src/shotwell.p/meson-generated_faces_Face.c.o
+[258/448] Compiling C object src/shotwell.p/meson-generated_photos_PhotoFileAdapter.c.o
+[259/448] Compiling C object src/shotwell.p/meson-generated_editing_tools_EditingTool.c.o
+[260/448] Compiling C object src/shotwell.p/meson-generated_photos_PhotoFileFormat.c.o
+[261/448] Compiling C object src/shotwell.p/meson-generated_photos_GifSupport.c.o
+[262/448] Compiling C object src/shotwell.p/meson-generated_db_PhotoTable.c.o
+[263/448] Compiling C object src/shotwell.p/meson-generated_photos_JfifSupport.c.o
+[264/448] Compiling C object src/shotwell.p/meson-generated_photos_BmpSupport.c.o
+[265/448] Compiling C object src/shotwell.p/meson-generated_editing_tools_AdjustTool.c.o
+[266/448] Compiling C object src/shotwell.p/meson-generated_photos_GdkSupport.c.o
+[267/448] Compiling C object src/shotwell.p/meson-generated_editing_tools_RGBHistogramManipulator.c.o
+[268/448] Compiling C object src/shotwell.p/meson-generated_photos_GRaw.c.o
+[269/448] Compiling C object src/shotwell.p/meson-generated_editing_tools_EditingToolWindow.c.o
+[270/448] Compiling C object src/shotwell.p/meson-generated_editing_tools_PhotoCanvas.c.o
+[271/448] Compiling C object src/shotwell.p/meson-generated_editing_tools_RedeyeTool.c.o
+[272/448] Compiling C object src/shotwell.p/meson-generated_slideshow_Slideshow.c.o
+[273/448] Compiling C object src/shotwell.p/meson-generated_photos_PngSupport.c.o
+[274/448] Compiling C object src/shotwell.p/meson-generated_photos_TiffSupport.c.o
+[275/448] Compiling C object src/shotwell.p/meson-generated_photos_RawSupport.c.o
+[276/448] Compiling C object src/shotwell.p/meson-generated_photos_AvifSupport.c.o
+[277/448] Compiling C object src/shotwell.p/meson-generated_library_Library.c.o
+[278/448] Compiling C object src/shotwell.p/meson-generated_photos_WebPSupport.c.o
+[279/448] Compiling C object src/shotwell.p/meson-generated_editing_tools_StraightenTool.c.o
+[280/448] Compiling C object src/shotwell.p/meson-generated_editing_tools_CropTool.c.o
+[281/448] Compiling C object src/shotwell.p/meson-generated_photos_JpegXLSupport.c.o
+[282/448] Compiling C object src/shotwell.p/meson-generated_slideshow_TransitionEffects.c.o
+[283/448] Compiling C object src/shotwell.p/meson-generated_photos_HeifSupport.c.o
+[284/448] Compiling C object src/shotwell.p/meson-generated_photos_PhotoMetadata.c.o
+[285/448] Compiling C object src/shotwell.p/meson-generated_direct_Direct.c.o
+[286/448] Linking target plugins/shotwell-publishing/libshotwell-publishing.so
+[287/448] Compiling C object src/shotwell.p/meson-generated_core_Core.c.o
+[288/448] Compiling C object src/shotwell.p/meson-generated_plugins_StandardHostInterface.c.o
+[289/448] Compiling C object src/shotwell.p/meson-generated_publishing_Publishing.c.o
+[290/448] Compiling C object src/shotwell.p/meson-generated_library_BackgroundProgressBar.c.o
+[291/448] Compiling C object src/shotwell.p/meson-generated_plugins_Plugins.c.o
+[292/448] Compiling C object src/shotwell.p/meson-generated_direct_DirectPhoto.c.o
+[293/448] Compiling C object src/shotwell.p/meson-generated_publishing_PublishingPluginHost.c.o
+[294/448] Compiling C object src/shotwell.p/meson-generated_plugins_ManifestWidget.c.o
+[295/448] Compiling C object src/shotwell.p/meson-generated_library_ImportQueueSidebarEntry.c.o
+[296/448] Compiling C object src/shotwell.p/meson-generated_library_OfflineSidebarEntry.c.o
+[297/448] Compiling C object src/shotwell.p/meson-generated_publishing_APIGlue.c.o
+[298/448] Compiling C object src/shotwell.p/meson-generated_publishing_PublishingUI.c.o
+[299/448] Compiling C object src/shotwell.p/meson-generated_library_FlaggedSidebarEntry.c.o
+[300/448] Compiling C object src/shotwell.p/meson-generated_direct_DirectView.c.o
+[301/448] Compiling C object src/shotwell.p/meson-generated_library_FlaggedPage.c.o
+[302/448] Compiling C object src/shotwell.p/meson-generated_library_LastImportSidebarEntry.c.o
+[303/448] Compiling C object src/shotwell.p/meson-generated_library_TrashSidebarEntry.c.o
+[304/448] Compiling C object src/shotwell.p/meson-generated_library_LibraryBranch.c.o
+[305/448] Compiling C object src/shotwell.p/meson-generated_direct_DirectWindow.c.o
+[306/448] Compiling C object src/shotwell.p/meson-generated_sidebar_Sidebar.c.o
+[307/448] Compiling C object src/shotwell.p/meson-generated_core_DataViewTypes.c.o
+[308/448] Compiling C object src/shotwell.p/meson-generated_library_OfflinePage.c.o
+[309/448] Compiling C object src/shotwell.p/meson-generated_core_DataSet.c.o
+[310/448] Compiling C object src/shotwell.p/meson-generated_core_DataObject.c.o
+[311/448] Compiling C object src/shotwell.p/meson-generated_core_DataView.c.o
+[312/448] Compiling C object src/shotwell.p/meson-generated_core_DataCollection.c.o
+[313/448] Compiling C object src/shotwell.p/meson-generated_core_SourceCollection.c.o
+[314/448] Compiling C object src/shotwell.p/meson-generated_core_SourceInterfaces.c.o
+[315/448] Compiling C object src/shotwell.p/meson-generated_library_TrashPage.c.o
+[316/448] Compiling C object src/shotwell.p/meson-generated_library_LastImportPage.c.o
+[317/448] Compiling C object src/shotwell.p/meson-generated_core_DatabaseSourceCollection.c.o
+[318/448] Compiling C object src/shotwell.p/meson-generated_core_SourceHoldingTank.c.o
+[319/448] Compiling C object src/shotwell.p/meson-generated_library_ImportQueuePage.c.o
+[320/448] Compiling C object src/shotwell.p/meson-generated_events_Events.c.o
+[321/448] Compiling C object src/shotwell.p/meson-generated_tags_Tags.c.o
+[322/448] Compiling C object src/shotwell.p/meson-generated_core_ContainerSourceCollection.c.o
+[323/448] Compiling C object src/shotwell.p/meson-generated_core_DataSourceTypes.c.o
+[324/448] Compiling C object src/shotwell.p/meson-generated_direct_DirectPhotoPage.c.o
+[325/448] Compiling C object src/shotwell.p/meson-generated_library_LibraryWindow.c.o
+[326/448] Compiling C object src/shotwell.p/meson-generated_camera_Camera.c.o
+[327/448] Compiling C object src/shotwell.p/meson-generated_core_Alteration.c.o
+[328/448] Compiling C object src/shotwell.p/meson-generated_core_Tracker.c.o
+[329/448] Compiling C object src/shotwell.p/meson-generated_searches_Searches.c.o
+[330/448] Compiling C object src/shotwell.p/meson-generated_core_util.c.o
+[331/448] Compiling C object src/shotwell.p/meson-generated_core_DataSource.c.o
+[332/448] Compiling C object src/shotwell.p/meson-generated_tags_HierarchicalTagIndex.c.o
+[333/448] Compiling C object src/shotwell.p/meson-generated_camera_DiscoveredCamera.c.o
+[334/448] Compiling C object src/shotwell.p/meson-generated_tags_HierarchicalTagUtilities.c.o
+[335/448] Compiling C object src/shotwell.p/meson-generated_folders_Folders.c.o
+[336/448] Compiling C object src/shotwell.p/meson-generated_core_ViewCollection.c.o
+[337/448] Compiling C object src/shotwell.p/meson-generated_camera_GPhoto.c.o
+[338/448] Compiling C object src/shotwell.p/meson-generated_events_EventPage.c.o
+[339/448] Compiling C object src/shotwell.p/meson-generated_sidebar_Branch.c.o
+[340/448] Compiling C object src/shotwell.p/meson-generated_sidebar_Entry.c.o
+[341/448] Compiling C object src/shotwell.p/meson-generated_tags_TagPage.c.o
+[342/448] Compiling C object src/shotwell.p/meson-generated_events_EventDirectoryItem.c.o
+[343/448] Compiling C object src/shotwell.p/meson-generated_events_EventsDirectoryPage.c.o
+[344/448] Compiling C object src/shotwell.p/meson-generated_sidebar_common.c.o
+[345/448] Compiling C object src/shotwell.p/meson-generated_tags_TagsBranch.c.o
+[346/448] Compiling C object src/shotwell.p/meson-generated_events_EventsBranch.c.o
+[347/448] Compiling C object src/shotwell.p/meson-generated_camera_CameraBranch.c.o
+[348/448] Compiling C object src/shotwell.p/meson-generated_camera_CameraTable.c.o
+[349/448] Compiling C object src/shotwell.p/meson-generated_searches_SavedSearchPage.c.o
+[350/448] Compiling C object src/shotwell.p/meson-generated_searches_SearchesBranch.c.o
+[351/448] Compiling C object src/shotwell.p/meson-generated_NaturalCollate.c.o
+[352/448] Compiling C object src/shotwell.p/meson-generated_sidebar_Tree.c.o
+[353/448] Compiling C object src/shotwell.p/meson-generated_config_Config.c.o
+[354/448] Compiling C object src/shotwell.p/meson-generated_folders_FoldersPage.c.o
+[355/448] Compiling C object src/shotwell.p/meson-generated_config_GSettingsEngine.c.o
+[356/448] Compiling C object src/shotwell.p/meson-generated_searches_SavedSearchDialog.c.o
+[357/448] Compiling C object src/shotwell.p/meson-generated_import-roll_ImportRollEntry.c.o
+[358/448] Compiling C object src/shotwell.p/meson-generated_searches_SearchBoolean.c.o
+[359/448] Compiling C object src/shotwell.p/meson-generated_import-roll_ImportRollBranch.c.o
+[360/448] Compiling C object src/shotwell.p/meson-generated_folders_FoldersBranch.c.o
+[361/448] Compiling C object src/shotwell.p/meson-generated_FullscreenWindow.c.o
+[362/448] Compiling C object src/shotwell.p/meson-generated_SortedList.c.o
+[363/448] Compiling C object src/shotwell.p/meson-generated_ThumbnailCache.c.o
+[364/448] Compiling C object src/shotwell.p/meson-generated_main.c.o
+[365/448] Compiling C object src/shotwell.p/meson-generated_Orientation.c.o
+[366/448] Compiling C object src/shotwell.p/meson-generated_PageMessagePane.c.o
+[367/448] Compiling C object src/shotwell.p/meson-generated_PageWindow.c.o
+[368/448] Compiling C object src/shotwell.p/meson-generated_Thumbnail.c.o
+[369/448] Compiling C object src/shotwell.p/meson-generated_AppWindow.c.o
+[370/448] Compiling C object src/shotwell.p/meson-generated_CheckerboardItemText.c.o
+[371/448] Compiling C object src/shotwell.p/meson-generated_camera_ImportPage.c.o
+[372/448] Compiling C object src/shotwell.p/meson-generated_Debug.c.o
+[373/448] Compiling C object src/shotwell.p/meson-generated_International.c.o
+[374/448] Compiling C object src/shotwell.p/meson-generated_CheckerboardItem.c.o
+[375/448] Compiling C object src/shotwell.p/meson-generated_printing_Measurement.c.o
+[376/448] Compiling C object src/shotwell.p/meson-generated_CollectionPage.c.o
+[377/448] Compiling C object src/shotwell.p/meson-generated_config_ConfigurationInterfaces.c.o
+[378/448] Compiling C object src/shotwell.p/meson-generated_printing_Settings.c.o
+[379/448] Compiling C object src/shotwell.p/meson-generated_SinglePhotoPage.c.o
+[380/448] Compiling C object src/shotwell.p/meson-generated_CheckerboardPage.c.o
+[381/448] Compiling C object src/shotwell.p/meson-generated_Box.c.o
+[382/448] Compiling C object src/shotwell.p/meson-generated_Dimensions.c.o
+[383/448] Compiling C object src/shotwell.p/meson-generated_AppDirs.c.o
+[384/448] Compiling C object src/shotwell.p/meson-generated_CommandManager.c.o
+[385/448] Compiling C object src/shotwell.p/meson-generated_PixbufCache.c.o
+[386/448] Compiling C object src/shotwell.p/meson-generated_LibraryFiles.c.o
+[387/448] Compiling C object src/shotwell.p/meson-generated_Resources.c.o
+[388/448] Compiling C object src/shotwell.p/meson-generated_CheckerboardLayout.c.o
+[389/448] Compiling C object src/shotwell.p/meson-generated_DragAndDropHandler.c.o
+[390/448] Compiling C object src/shotwell.p/meson-generated_Page.c.o
+[391/448] Compiling C object src/shotwell.p/meson-generated_TimedQueue.c.o
+[392/448] Compiling C object src/shotwell.p/meson-generated_Properties.c.o
+[393/448] Compiling C object src/shotwell.p/meson-generated_Tombstone.c.o
+[394/448] Compiling C object src/shotwell.p/meson-generated_BatchImport.c.o
+[395/448] Compiling C object src/shotwell.p/meson-generated_MetadataWriter.c.o
+[396/448] Compiling C object src/shotwell.p/meson-generated_Tag.c.o
+[397/448] Compiling C object src/shotwell.p/meson-generated_Screensaver.c.o
+[398/448] Compiling C object src/shotwell.p/meson-generated_SlideshowPage.c.o
+[399/448] Compiling C object src/shotwell.p/meson-generated_Event.c.o
+[400/448] Compiling C object src/shotwell.p/meson-generated_LibraryMonitor.c.o
+[401/448] Compiling C object src/shotwell.p/meson-generated_printing_Preview.c.o
+[402/448] Compiling C object src/shotwell.p/meson-generated_printing_Manager.c.o
+[403/448] Compiling C object src/shotwell.p/meson-generated_MediaViewTracker.c.o
+[404/448] Compiling C object src/shotwell.p/meson-generated_Dialogs.c.o
+[405/448] Compiling C object src/shotwell.p/meson-generated_Application.c.o
+[406/448] Compiling C object src/shotwell.p/meson-generated_AuthCallbackServer.c.o
+[407/448] Compiling C object src/shotwell.p/meson-generated_printing_Job.c.o
+[408/448] Compiling C object src/shotwell.p/meson-generated_MediaInterfaces.c.o
+[409/448] Compiling C object src/shotwell.p/meson-generated_MediaDataRepresentation.c.o
+[410/448] Compiling C object src/shotwell.p/meson-generated_DirectoryMonitor.c.o
+[411/448] Compiling C object src/shotwell.p/meson-generated_Exporter.c.o
+[412/448] Compiling C object src/shotwell.p/meson-generated_ZoomBuffer.c.o
+[413/448] Compiling C object src/shotwell.p/meson-generated_Upgrades.c.o
+[414/448] Compiling C object src/shotwell.p/meson-generated_MediaMonitor.c.o
+[415/448] Compiling C object src/shotwell.p/meson-generated_VideoMonitor.c.o
+[416/448] Compiling C object src/shotwell.p/meson-generated_DesktopIntegration.c.o
+[417/448] Compiling C object src/shotwell.p/meson-generated_MediaPage.c.o
+[418/448] Compiling C object src/shotwell.p/meson-generated_PhotoMonitor.c.o
+[419/448] Compiling C object src/shotwell.p/meson-generated_LibraryPhotoPage.c.o
+[420/448] Compiling C object src/shotwell.p/meson-generated_Profiles.c.o
+[421/448] Compiling C object src/shotwell.p/meson-generated_video-support_VideoImportParams.c.o
+[422/448] Compiling C object src/shotwell.p/meson-generated_video-support_VideoReader.c.o
+[423/448] Compiling C object src/shotwell.p/meson-generated_video-support_VideoSourceCollection.c.o
+[424/448] Compiling C object src/shotwell.p/meson-generated_SavedSearchPopover.c.o
+[425/448] Compiling C object src/shotwell.p/meson-generated_dialogs_MultiTextEntryDialog.c.o
+[426/448] Compiling C object src/shotwell.p/meson-generated_faces_Faces.c.o
+[427/448] Compiling C object src/shotwell.p/meson-generated_dialogs_ProgressDialog.c.o
+[428/448] Compiling C object src/shotwell.p/meson-generated_dialogs_AdjustDateTimeDialog.c.o
+[429/448] Compiling C object src/shotwell.p/meson-generated_video-support_VideoMetadata.c.o
+[430/448] Compiling C object src/shotwell.p/meson-generated_dialogs_SetBackground.c.o
+[431/448] Compiling C object src/shotwell.p/meson-generated_dialogs_EntryMultiCompletion.c.o
+[432/448] Compiling C object src/shotwell.p/meson-generated_dialogs_ExportDialog.c.o
+[433/448] Compiling C object src/shotwell.p/meson-generated_dialogs_WelcomeDialog.c.o
+[434/448] Compiling C object src/shotwell.p/meson-generated_dialogs_TextEntry.c.o
+[435/448] Compiling C object src/shotwell.p/meson-generated_dialogs_Preferences.c.o
+[436/448] Compiling C object src/shotwell.p/meson-generated_ProfileBrowser.c.o
+[437/448] Compiling C object src/shotwell.p/meson-generated_dialogs_SetBackgroundSlideshow.c.o
+[438/448] Compiling C object src/shotwell.p/meson-generated_SearchFilter.c.o
+[439/448] Compiling C object src/shotwell.p/meson-generated_EditingHostPage.c.o
+[440/448] Compiling C object src/shotwell.p/meson-generated_Commands.c.o
+[441/448] Compiling C object src/shotwell.p/meson-generated_Photo.c.o
+[442/448] Compiling C object src/shotwell.p/meson-generated_faces_FacesBranch.c.o
+[443/448] Compiling C object src/shotwell.p/meson-generated_faces_FacePage.c.o
+[444/448] Compiling C object src/shotwell.p/meson-generated_faces_FaceDetect.c.o
+[445/448] Compiling C object src/shotwell.p/meson-generated_video-support_Video.c.o
+[446/448] Compiling C object src/shotwell.p/meson-generated_faces_FaceShape.c.o
+[447/448] Compiling C object src/shotwell.p/meson-generated_faces_FacesTool.c.o
+[448/448] Linking target src/shotwell
