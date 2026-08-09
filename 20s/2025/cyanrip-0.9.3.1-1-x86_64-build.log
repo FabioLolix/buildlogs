@@ -1,0 +1,126 @@
+The Meson build system
+Version: 1.11.2
+Source dir: /build/cyanrip/src/cyanrip-0.9.3.1
+Build dir: /build/cyanrip/src/cyanrip-0.9.3.1/build
+Build type: native build
+Project name: cyanrip
+Project version: 0.9.3
+C compiler for the host machine: cc (gcc 16.1.1 "cc (GCC) 16.1.1 20260728")
+C linker for the host machine: cc ld.bfd 2.47
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.5
+Run-time dependency libavcodec found: YES 63.1.100
+Run-time dependency libavformat found: YES 63.1.100
+Run-time dependency libswresample found: YES 7.1.100
+Run-time dependency libavfilter found: YES 12.1.100
+Run-time dependency libavutil found: YES 61.1.100
+Run-time dependency libcdio found: YES 2.3.0
+Run-time dependency libcdio_paranoia found: YES 10.2+2.0.2
+Run-time dependency libmusicbrainz5 found: YES 5.1.0
+Run-time dependency libcurl found: YES 8.21.0
+Run-time dependency threads found: YES
+Library m found: YES
+Configuring config.h using configuration
+Build targets in project: 2
+
+cyanrip 0.9.3
+
+  User defined options
+    prefix: /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+Generating targets:   0%|          | 0/2 eta ?                                              Writing build.ninja:   0%|          | 0/40 eta ?                                                WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+ninja: Entering directory `build'
+[1/14] Compiling C object src/cyanrip.p/utils.c.o
+[2/14] Compiling C object src/cyanrip.p/fifo_packet.c.o
+[3/14] Compiling C object src/cyanrip.p/fifo_frame.c.o
+[4/14] Compiling C object src/cyanrip.p/discid.c.o
+[5/14] Generating src/version.c with a custom command
+[6/14] Compiling C object src/cyanrip.p/cue_writer.c.o
+[7/14] Compiling C object src/cyanrip.p/meson-generated_.._version.c.o
+[8/14] Compiling C object src/cyanrip.p/cyanrip_encode.c.o
+FAILED: [code=1] src/cyanrip.p/cyanrip_encode.c.o 
+cc -Isrc/cyanrip.p -Isrc -I../src -I/usr/include/neon -I/usr/include/libxml2 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -O2 -g -D_ISOC11_SOURCE -D_XOPEN_SOURCE=700 -U__STRICT_ANSI__ -Wundef -Wmissing-prototypes -Wshadow -Wparentheses -Wpointer-arith -Wno-pointer-sign -Werror=implicit-function-declaration -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/cyanrip/src=/usr/src/debug/cyanrip -flto=auto -pthread -MD -MQ src/cyanrip.p/cyanrip_encode.c.o -MF src/cyanrip.p/cyanrip_encode.c.o.d -o src/cyanrip.p/cyanrip_encode.c.o -c ../src/cyanrip_encode.c
+../src/cyanrip_encode.c: In function ‘pick_codec_channel_layout’:
+../src/cyanrip_encode.c:144:15: error: ‘AVCodec’ has no member named ‘ch_layouts’
+  144 |     if (!codec->ch_layouts)
+      |               ^~
+../src/cyanrip_encode.c:149:19: error: ‘AVCodec’ has no member named ‘ch_layouts’
+  149 |         if (!codec->ch_layouts[i].nb_channels)
+      |                   ^~
+../src/cyanrip_encode.c:151:46: error: ‘AVCodec’ has no member named ‘ch_layouts’
+  151 |         if (!av_channel_layout_compare(&codec->ch_layouts[i], &ilayout))
+      |                                              ^~
+../src/cyanrip_encode.c:152:25: error: ‘AVCodec’ has no member named ‘ch_layouts’
+  152 |             return codec->ch_layouts[i];
+      |                         ^~
+../src/cyanrip_encode.c:160:19: error: ‘AVCodec’ has no member named ‘ch_layouts’
+  160 |         if (!codec->ch_layouts[i].nb_channels)
+      |                   ^~
+../src/cyanrip_encode.c:162:24: error: ‘AVCodec’ has no member named ‘ch_layouts’
+  162 |         int num = codec->ch_layouts[i].nb_channels;
+      |                        ^~
+../src/cyanrip_encode.c:165:32: error: ‘AVCodec’ has no member named ‘ch_layouts’
+  165 |             best_layout = codec->ch_layouts[i];
+      |                                ^~
+../src/cyanrip_encode.c:168:25: error: ‘AVCodec’ has no member named ‘ch_layouts’
+  168 |             return codec->ch_layouts[i];
+      |                         ^~
+../src/cyanrip_encode.c:137:9: warning: variable ‘i’ set but not used [-Wunused-but-set-variable=]
+  137 |     int i = 0;
+      |         ^
+../src/cyanrip_encode.c: In function ‘pick_codec_sample_fmt’:
+../src/cyanrip_encode.c:190:15: error: ‘AVCodec’ has no member named ‘sample_fmts’
+  190 |     if (!codec->sample_fmts)
+      |               ^~
+../src/cyanrip_encode.c:195:18: error: ‘AVCodec’ has no member named ‘sample_fmts’
+  195 |         if (codec->sample_fmts[i] == AV_SAMPLE_FMT_NONE)
+      |                  ^~
+../src/cyanrip_encode.c:197:18: error: ‘AVCodec’ has no member named ‘sample_fmts’
+  197 |         if (codec->sample_fmts[i] == ifmt ||
+      |                  ^~
+../src/cyanrip_encode.c:198:18: error: ‘AVCodec’ has no member named ‘sample_fmts’
+  198 |             codec->sample_fmts[i] == ifmt_p)
+      |                  ^~
+../src/cyanrip_encode.c:199:25: error: ‘AVCodec’ has no member named ‘sample_fmts’
+  199 |             return codec->sample_fmts[i];
+      |                         ^~
+../src/cyanrip_encode.c:207:18: error: ‘AVCodec’ has no member named ‘sample_fmts’
+  207 |         if (codec->sample_fmts[i] == -1)
+      |                  ^~
+../src/cyanrip_encode.c:209:48: error: ‘AVCodec’ has no member named ‘sample_fmts’
+  209 |         int bps = av_get_bytes_per_sample(codec->sample_fmts[i]);
+      |                                                ^~
+../src/cyanrip_encode.c:212:32: error: ‘AVCodec’ has no member named ‘sample_fmts’
+  212 |             max_bps_fmt = codec->sample_fmts[i];
+      |                                ^~
+../src/cyanrip_encode.c:215:25: error: ‘AVCodec’ has no member named ‘sample_fmts’
+  215 |             return codec->sample_fmts[i];
+      |                         ^~
+../src/cyanrip_encode.c:178:9: warning: variable ‘i’ set but not used [-Wunused-but-set-variable=]
+  178 |     int i = 0;
+      |         ^
+../src/cyanrip_encode.c: In function ‘pick_codec_sample_rate’:
+../src/cyanrip_encode.c:228:15: error: ‘AVCodec’ has no member named ‘supported_samplerates’
+  228 |     if (!codec->supported_samplerates)
+      |               ^~
+../src/cyanrip_encode.c:232:17: error: ‘AVCodec’ has no member named ‘supported_samplerates’
+  232 |     while (codec->supported_samplerates[++i] > 0);
+      |                 ^~
+../src/cyanrip_encode.c:235:22: error: ‘AVCodec’ has no member named ‘supported_samplerates’
+  235 |     memcpy(tmp, codec->supported_samplerates, i*sizeof(int));
+      |                      ^~
+../src/cyanrip_encode.c: In function ‘init_filtering’:
+../src/cyanrip_encode.c:340:15: error: implicit declaration of function ‘av_opt_set_int_list’; did you mean ‘av_opt_set_int’? [-Wimplicit-function-declaration]
+  340 |         ret = av_opt_set_int_list(s->buffersink_ctx, "sample_fmts",
+      |               ^~~~~~~~~~~~~~~~~~~
+      |               av_opt_set_int
+[9/14] Compiling C object src/cyanrip.p/musicbrainz.c.o
+[10/14] Compiling C object src/cyanrip.p/cyanrip_log.c.o
+[11/14] Compiling C object src/cyanrip.p/accurip.c.o
+[12/14] Compiling C object src/cyanrip.p/coverart.c.o
+[13/14] Compiling C object src/cyanrip.p/cyanrip_main.c.o
+ninja: build stopped: subcommand failed.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
