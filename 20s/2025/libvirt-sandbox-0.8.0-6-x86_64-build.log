@@ -235,7 +235,1546 @@ checking where to find <rpc/rpc.h>... -I/usr/include/tirpc
 checking for static LIBC... yes
 checking for static LZMA... no
 yes
-checking for static ZLIB... no
-configure: error: static ZLIB is required in order to build virt-sandbox-init-qemu
-[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
-[1m    Aborting...(B[m
+checking for static ZLIB... yes
+checking for ldd... /usr/bin/ldd
+checking for gobject-introspection... yes
+checking whether NLS is requested... yes
+checking for intltool >= 0.35.0... 0.51.0 found
+checking for intltool-update... /usr/bin/intltool-update
+checking for intltool-merge... /usr/bin/intltool-merge
+checking for intltool-extract... /usr/bin/intltool-extract
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for perl... /usr/bin/perl
+checking for perl >= 5.8.1... 5.42.2
+checking for XML::Parser... ok
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libvirt-sandbox/Makefile
+config.status: creating libvirt-sandbox/tests/Makefile
+config.status: creating bin/Makefile
+config.status: creating examples/Makefile
+config.status: creating docs/Makefile
+config.status: creating docs/libvirt-sandbox/Makefile
+config.status: creating po/Makefile.in
+config.status: creating libvirt-sandbox.spec
+config.status: creating libvirt-sandbox-1.0.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po/stamp-it commands
+configure: 
+configure: Configuration summary
+configure: =====================
+configure: 
+configure: 
+configure:  Libraries:
+configure: 
+configure:             LZMA: no
+configure:             ZLIB:  -lz
+configure:          GOBJECT: -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -lgobject-2.0 -lglib-2.0
+configure:  LIBVIRT_GOBJECT: -I/usr/include/libvirt-gobject-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/libvirt-gconfig-1.0 -I/usr/include/libxml2 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -lvirt-gobject-1.0 -lgio-2.0 -lvirt-gconfig-1.0 -lgobject-2.0 -lxml2 -lglib-2.0 -lvirt
+configure: 
+make  all-recursive
+make[1]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0'
+Making all in libvirt-sandbox
+make[2]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/libvirt-sandbox'
+  GEN      libvirt-sandbox-enum-types.h
+  GEN      libvirt-sandbox-enum-types.c
+/bin/sh: line 1: /usr/bin/glib-mkenums: No such file or directory
+/bin/sh: line 1: /usr/bin/glib-mkenums: No such file or directory
+make  all-recursive
+make[3]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/libvirt-sandbox'
+Making all in tests
+make[4]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/libvirt-sandbox/tests'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/libvirt-sandbox/tests'
+make[4]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/libvirt-sandbox'
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-main.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-builder.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-builder-initrd.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-builder-machine.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-builder-container.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-console-raw.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-console.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-console-rpc.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-context.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-context-interactive.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-context-service.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-util.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-disk.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-network.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-network-address.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-network-filterref.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-network-filterref-parameter.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-network-route.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-mount.lo
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network-filterref-parameter.c:26:
+libvirt-sandbox-config-network-filterref-parameter.c: In function ‘gvir_sandbox_config_network_filterref_parameter_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-filterref-parameter.c:40:10: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   40 |         (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK_FILTERREF_PARAMETER, GVirSandboxConfigNetworkFilterrefParameterPrivate))
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-filterref-parameter.c:153:19: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_FILTERREF_PARAMETER_GET_PRIVATE’
+  153 |     param->priv = GVIR_SANDBOX_CONFIG_NETWORK_FILTERREF_PARAMETER_GET_PRIVATE(param);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network.c:26:
+libvirt-sandbox-config-network.c: In function ‘gvir_sandbox_config_network_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK, GVirSandboxConfigNetworkPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network.c:194:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_GET_PRIVATE’
+  194 |     priv = config->priv = GVIR_SANDBOX_CONFIG_NETWORK_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-disk.c:26:
+libvirt-sandbox-config-disk.c: In function ‘gvir_sandbox_config_disk_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-disk.c:39:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   39 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_DISK, GVirSandboxConfigDiskPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-disk.c:204:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_DISK_GET_PRIVATE’
+  204 |     config->priv = GVIR_SANDBOX_CONFIG_DISK_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network-route.c:26:
+libvirt-sandbox-config-network-route.c: In function ‘gvir_sandbox_config_network_route_init’:
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n.h:23,
+                 from libvirt-sandbox-config.c:27:
+libvirt-sandbox-config.c: In function ‘gvir_sandbox_config_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-route.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK_ROUTE, GVirSandboxConfigNetworkRoutePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-route.c:190:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_ROUTE_GET_PRIVATE’
+  190 |     config->priv = GVIR_SANDBOX_CONFIG_NETWORK_ROUTE_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config.c:46:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   46 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG, GVirSandboxConfigPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config.c:485:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_GET_PRIVATE’
+  485 |     priv = config->priv = GVIR_SANDBOX_CONFIG_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount.c:26:
+libvirt-sandbox-config-mount.c: In function ‘gvir_sandbox_config_mount_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT, GVirSandboxConfigMountPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount.c:145:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_GET_PRIVATE’
+  145 |     priv = config->priv = GVIR_SANDBOX_CONFIG_MOUNT_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network-filterref.c:27:
+libvirt-sandbox-config-network-filterref.c: In function ‘gvir_sandbox_config_network_filterref_init’:
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network-address.c:26:
+libvirt-sandbox-config-network-address.c: In function ‘gvir_sandbox_config_network_address_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-address.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK_ADDRESS, GVirSandboxConfigNetworkAddressPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-address.c:190:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_ADDRESS_GET_PRIVATE’
+  190 |     config->priv = GVIR_SANDBOX_CONFIG_NETWORK_ADDRESS_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-filterref.c:42:10: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   42 |         (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK_FILTERREF, GVirSandboxConfigNetworkFilterrefPrivate))
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-filterref.c:151:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_FILTERREF_GET_PRIVATE’
+  151 |     config->priv = GVIR_SANDBOX_CONFIG_NETWORK_FILTERREF_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config.c: In function ‘gvir_sandbox_config_add_mount_opts’:
+libvirt-sandbox-config.c:1555:9: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1555 |     tmp = strchr(mount, ':');
+      |         ^
+libvirt-sandbox-config.c:1607:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1607 |         if ((tmp = strchr(source, ',')) != NULL) {
+      |                  ^
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n.h:23,
+                 from libvirt-sandbox-console.c:25:
+libvirt-sandbox-console.c: In function ‘gvir_sandbox_console_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-console.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONSOLE, GVirSandboxConsolePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-console.c:261:21: note: in expansion of macro ‘GVIR_SANDBOX_CONSOLE_GET_PRIVATE’
+  261 |     console->priv = GVIR_SANDBOX_CONSOLE_GET_PRIVATE(console);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n.h:23,
+                 from libvirt-sandbox-context-interactive.c:27:
+libvirt-sandbox-context-interactive.c: In function ‘gvir_sandbox_context_interactive_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-context-interactive.c:45:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   45 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONTEXT_INTERACTIVE, GVirSandboxContextInteractivePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-context-interactive.c:356:21: note: in expansion of macro ‘GVIR_SANDBOX_CONTEXT_INTERACTIVE_GET_PRIVATE’
+  356 |     context->priv = GVIR_SANDBOX_CONTEXT_INTERACTIVE_GET_PRIVATE(context);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n.h:23,
+                 from libvirt-sandbox-context.c:28:
+libvirt-sandbox-context.c: In function ‘gvir_sandbox_context_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-context.c:46:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   46 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONTEXT, GVirSandboxContextPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-context.c:218:18: note: in expansion of macro ‘GVIR_SANDBOX_CONTEXT_GET_PRIVATE’
+  218 |     ctxt->priv = GVIR_SANDBOX_CONTEXT_GET_PRIVATE(ctxt);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from /usr/include/gio-unix-2.0/gio/gfiledescriptorbased.h:26,
+                 from libvirt-sandbox-console-raw.c:25:
+libvirt-sandbox-console-raw.c: In function ‘gvir_sandbox_console_raw_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-console-raw.c:52:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   52 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONSOLE_RAW, GVirSandboxConsoleRawPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-console-raw.c:143:21: note: in expansion of macro ‘GVIR_SANDBOX_CONSOLE_RAW_GET_PRIVATE’
+  143 |     console->priv = GVIR_SANDBOX_CONSOLE_RAW_GET_PRIVATE(console);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gobject-1.0/libvirt-gobject/libvirt-gobject.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox.h:27,
+                 from libvirt-sandbox-context-service.c:27:
+libvirt-sandbox-context-service.c: In function ‘gvir_sandbox_context_service_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-context-service.c:43:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   43 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONTEXT_SERVICE, GVirSandboxContextServicePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-context-service.c:366:21: note: in expansion of macro ‘GVIR_SANDBOX_CONTEXT_SERVICE_GET_PRIVATE’
+  366 |     context->priv = GVIR_SANDBOX_CONTEXT_SERVICE_GET_PRIVATE(context);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n.h:23,
+                 from libvirt-sandbox-builder-initrd.c:29:
+libvirt-sandbox-builder-initrd.c: In function ‘gvir_sandbox_builder_initrd_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-builder-initrd.c:47:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   47 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_BUILDER_INITRD, GVirSandboxBuilderInitrdPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-builder-initrd.c:137:21: note: in expansion of macro ‘GVIR_SANDBOX_BUILDER_INITRD_GET_PRIVATE’
+  137 |     builder->priv = GVIR_SANDBOX_BUILDER_INITRD_GET_PRIVATE(builder);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n.h:23,
+                 from libvirt-sandbox-builder-container.c:26:
+libvirt-sandbox-builder-container.c: In function ‘gvir_sandbox_builder_container_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-builder-container.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_BUILDER_CONTAINER, GVirSandboxBuilderContainerPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-builder-container.c:483:21: note: in expansion of macro ‘GVIR_SANDBOX_BUILDER_CONTAINER_GET_PRIVATE’
+  483 |     builder->priv = GVIR_SANDBOX_BUILDER_CONTAINER_GET_PRIVATE(builder);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gobject-1.0/libvirt-gobject/libvirt-gobject.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox.h:27,
+                 from libvirt-sandbox-builder.c:27:
+libvirt-sandbox-builder.c: In function ‘gvir_sandbox_builder_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-builder.c:43:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   43 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_BUILDER, GVirSandboxBuilderPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-builder.c:203:18: note: in expansion of macro ‘GVIR_SANDBOX_BUILDER_GET_PRIVATE’
+  203 |     ctxt->priv = GVIR_SANDBOX_BUILDER_GET_PRIVATE(ctxt);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n.h:23,
+                 from libvirt-sandbox-builder-machine.c:28:
+libvirt-sandbox-builder-machine.c: In function ‘gvir_sandbox_builder_machine_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-builder-machine.c:46:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   46 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_BUILDER_MACHINE, GVirSandboxBuilderMachinePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-builder-machine.c:806:21: note: in expansion of macro ‘GVIR_SANDBOX_BUILDER_MACHINE_GET_PRIVATE’
+  806 |     builder->priv = GVIR_SANDBOX_BUILDER_MACHINE_GET_PRIVATE(builder);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/glib-2.0/gio/gioenums.h:30,
+                 from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from /usr/include/gio-unix-2.0/gio/gfiledescriptorbased.h:26,
+                 from libvirt-sandbox-console-rpc.c:25:
+libvirt-sandbox-console-rpc.c: In function ‘gvir_sandbox_console_rpc_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-console-rpc.c:51:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   51 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONSOLE_RPC, GVirSandboxConsoleRpcPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-console-rpc.c:301:21: note: in expansion of macro ‘GVIR_SANDBOX_CONSOLE_RPC_GET_PRIVATE’
+  301 |     console->priv = GVIR_SANDBOX_CONSOLE_RPC_GET_PRIVATE(console);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-mount-file.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-mount-host-bind.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-mount-host-image.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-mount-guest-bind.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-mount-ram.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-initrd.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-interactive.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-service.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-service-systemd.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-config-service-generic.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-rpcpacket.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-enum-types.lo
+  CC       libvirt_sandbox_1_0_la-libvirt-sandbox-protocol.lo
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-init-common.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-protocol.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-rpcpacket.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-util.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-disk.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-network.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-network-address.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-network-filterref.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-network-filterref-parameter.o
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/glib/gi18n.h:23,
+                 from libvirt-sandbox-config.c:27:
+libvirt-sandbox-config.c: In function ‘gvir_sandbox_config_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config.c:46:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   46 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG, GVirSandboxConfigPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config.c:485:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_GET_PRIVATE’
+  485 |     priv = config->priv = GVIR_SANDBOX_CONFIG_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config.c: In function ‘gvir_sandbox_config_add_mount_opts’:
+libvirt-sandbox-config.c:1555:9: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1555 |     tmp = strchr(mount, ':');
+      |         ^
+libvirt-sandbox-config.c:1607:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1607 |         if ((tmp = strchr(source, ',')) != NULL) {
+      |                  ^
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-disk.c:26:
+libvirt-sandbox-config-disk.c: In function ‘gvir_sandbox_config_disk_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-disk.c:39:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   39 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_DISK, GVirSandboxConfigDiskPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-disk.c:204:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_DISK_GET_PRIVATE’
+  204 |     config->priv = GVIR_SANDBOX_CONFIG_DISK_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network.c:26:
+libvirt-sandbox-config-network.c: In function ‘gvir_sandbox_config_network_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK, GVirSandboxConfigNetworkPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network.c:194:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_GET_PRIVATE’
+  194 |     priv = config->priv = GVIR_SANDBOX_CONFIG_NETWORK_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-network-route.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-mount.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-mount-file.o
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network-address.c:26:
+libvirt-sandbox-config-network-address.c: In function ‘gvir_sandbox_config_network_address_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-address.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK_ADDRESS, GVirSandboxConfigNetworkAddressPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-address.c:190:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_ADDRESS_GET_PRIVATE’
+  190 |     config->priv = GVIR_SANDBOX_CONFIG_NETWORK_ADDRESS_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-mount-host-bind.o
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network-filterref.c:27:
+libvirt-sandbox-config-network-filterref.c: In function ‘gvir_sandbox_config_network_filterref_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-filterref.c:42:10: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   42 |         (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK_FILTERREF, GVirSandboxConfigNetworkFilterrefPrivate))
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-filterref.c:151:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_FILTERREF_GET_PRIVATE’
+  151 |     config->priv = GVIR_SANDBOX_CONFIG_NETWORK_FILTERREF_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-mount-host-image.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-mount-guest-bind.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-mount-ram.o
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network-filterref-parameter.c:26:
+libvirt-sandbox-config-network-filterref-parameter.c: In function ‘gvir_sandbox_config_network_filterref_parameter_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-filterref-parameter.c:40:10: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   40 |         (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK_FILTERREF_PARAMETER, GVirSandboxConfigNetworkFilterrefParameterPrivate))
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-filterref-parameter.c:153:19: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_FILTERREF_PARAMETER_GET_PRIVATE’
+  153 |     param->priv = GVIR_SANDBOX_CONFIG_NETWORK_FILTERREF_PARAMETER_GET_PRIVATE(param);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-file.c:26:
+libvirt-sandbox-config-mount-file.c: In function ‘gvir_sandbox_config_mount_file_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-file.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_FILE, GVirSandboxConfigMountFilePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-file.c:141:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_FILE_GET_PRIVATE’
+  141 |     config->priv = GVIR_SANDBOX_CONFIG_MOUNT_FILE_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-initrd.o
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-host-bind.c:26:
+libvirt-sandbox-config-mount-host-bind.c: In function ‘gvir_sandbox_config_mount_host_bind_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-host-bind.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_HOST_BIND, GVirSandboxConfigMountHostBindPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-host-bind.c:62:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_HOST_BIND_GET_PRIVATE’
+   62 |     config->priv = GVIR_SANDBOX_CONFIG_MOUNT_HOST_BIND_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-initrd.c:26:
+libvirt-sandbox-config-initrd.c: In function ‘gvir_sandbox_config_initrd_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-initrd.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_INITRD, GVirSandboxConfigInitrdPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-initrd.c:185:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_INITRD_GET_PRIVATE’
+  185 |     priv = config->priv = GVIR_SANDBOX_CONFIG_INITRD_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-network-route.c:26:
+libvirt-sandbox-config-network-route.c: In function ‘gvir_sandbox_config_network_route_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-route.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_NETWORK_ROUTE, GVirSandboxConfigNetworkRoutePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-network-route.c:190:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_NETWORK_ROUTE_GET_PRIVATE’
+  190 |     config->priv = GVIR_SANDBOX_CONFIG_NETWORK_ROUTE_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-interactive.o
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-host-image.c:26:
+libvirt-sandbox-config-mount-host-image.c: In function ‘gvir_sandbox_config_mount_host_image_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-host-image.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_HOST_IMAGE, GVirSandboxConfigMountHostImagePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-host-image.c:129:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_HOST_IMAGE_GET_PRIVATE’
+  129 |     priv = config->priv = GVIR_SANDBOX_CONFIG_MOUNT_HOST_IMAGE_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-guest-bind.c:26:
+libvirt-sandbox-config-mount-guest-bind.c: In function ‘gvir_sandbox_config_mount_guest_bind_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-guest-bind.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_GUEST_BIND, GVirSandboxConfigMountGuestBindPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-guest-bind.c:62:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_GUEST_BIND_GET_PRIVATE’
+   62 |     config->priv = GVIR_SANDBOX_CONFIG_MOUNT_GUEST_BIND_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-file.c:26:
+libvirt-sandbox-config-mount-file.c: In function ‘gvir_sandbox_config_mount_file_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-file.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_FILE, GVirSandboxConfigMountFilePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-file.c:141:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_FILE_GET_PRIVATE’
+  141 |     config->priv = GVIR_SANDBOX_CONFIG_MOUNT_FILE_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-service.o
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-ram.c:26:
+libvirt-sandbox-config-mount-ram.c: In function ‘gvir_sandbox_config_mount_ram_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-ram.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_RAM, GVirSandboxConfigMountRamPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-ram.c:132:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_RAM_GET_PRIVATE’
+  132 |     priv = config->priv = GVIR_SANDBOX_CONFIG_MOUNT_RAM_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount.c:26:
+libvirt-sandbox-config-mount.c: In function ‘gvir_sandbox_config_mount_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT, GVirSandboxConfigMountPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount.c:145:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_GET_PRIVATE’
+  145 |     priv = config->priv = GVIR_SANDBOX_CONFIG_MOUNT_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-interactive.c:26:
+libvirt-sandbox-config-interactive.c: In function ‘gvir_sandbox_config_interactive_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-interactive.c:42:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   42 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_INTERACTIVE, GVirSandboxConfigInteractivePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-interactive.c:222:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_INTERACTIVE_GET_PRIVATE’
+  222 |     priv = config->priv = GVIR_SANDBOX_CONFIG_INTERACTIVE_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-service.c:26:
+libvirt-sandbox-config-service.c: In function ‘gvir_sandbox_config_service_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_SERVICE, GVirSandboxConfigServicePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service.c:87:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_SERVICE_GET_PRIVATE’
+   87 |     config->priv = GVIR_SANDBOX_CONFIG_SERVICE_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-service-systemd.o
+  CC       libvirt_sandbox_init_common-libvirt-sandbox-config-service-generic.o
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-service-systemd.c:26:
+libvirt-sandbox-config-service-systemd.c: In function ‘gvir_sandbox_config_service_systemd_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service-systemd.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_SERVICE_SYSTEMD, GVirSandboxConfigServiceSystemdPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service-systemd.c:175:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_SERVICE_SYSTEMD_GET_PRIVATE’
+  175 |     config->priv = GVIR_SANDBOX_CONFIG_SERVICE_SYSTEMD_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-host-bind.c:26:
+libvirt-sandbox-config-mount-host-bind.c: In function ‘gvir_sandbox_config_mount_host_bind_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-host-bind.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_HOST_BIND, GVirSandboxConfigMountHostBindPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-host-bind.c:62:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_HOST_BIND_GET_PRIVATE’
+   62 |     config->priv = GVIR_SANDBOX_CONFIG_MOUNT_HOST_BIND_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-service-generic.c:26:
+libvirt-sandbox-config-service-generic.c: In function ‘gvir_sandbox_config_service_generic_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service-generic.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_SERVICE_GENERIC, GVirSandboxConfigServiceGenericPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service-generic.c:166:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_SERVICE_GENERIC_GET_PRIVATE’
+  166 |     priv = config->priv = GVIR_SANDBOX_CONFIG_SERVICE_GENERIC_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-host-image.c:26:
+libvirt-sandbox-config-mount-host-image.c: In function ‘gvir_sandbox_config_mount_host_image_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-host-image.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_HOST_IMAGE, GVirSandboxConfigMountHostImagePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-host-image.c:129:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_HOST_IMAGE_GET_PRIVATE’
+  129 |     priv = config->priv = GVIR_SANDBOX_CONFIG_MOUNT_HOST_IMAGE_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-guest-bind.c:26:
+libvirt-sandbox-config-mount-guest-bind.c: In function ‘gvir_sandbox_config_mount_guest_bind_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-guest-bind.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_GUEST_BIND, GVirSandboxConfigMountGuestBindPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-guest-bind.c:62:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_GUEST_BIND_GET_PRIVATE’
+   62 |     config->priv = GVIR_SANDBOX_CONFIG_MOUNT_GUEST_BIND_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libvirt_sandbox_init_qemu-libvirt-sandbox-init-qemu.o
+  CC       libvirt_sandbox_init_lxc-libvirt-sandbox-init-lxc.o
+libvirt-sandbox-init-qemu.c: In function ‘mount_mkparent’:
+libvirt-sandbox-init-qemu.c:92:17: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   92 |     char *tmp = strrchr(dir, '/');
+      |                 ^~~~~~~
+libvirt-sandbox-init-qemu.c: In function ‘has_suffix’:
+libvirt-sandbox-init-qemu.c:512:20: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  512 |     char *offset = strstr(filename, ext);
+      |                    ^~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-mount-ram.c:26:
+libvirt-sandbox-config-mount-ram.c: In function ‘gvir_sandbox_config_mount_ram_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-ram.c:44:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   44 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_MOUNT_RAM, GVirSandboxConfigMountRamPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-mount-ram.c:132:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_MOUNT_RAM_GET_PRIVATE’
+  132 |     priv = config->priv = GVIR_SANDBOX_CONFIG_MOUNT_RAM_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libvirt-sandbox-init-lxc
+  CCLD     libvirt-sandbox-init-qemu
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-initrd.c:26:
+libvirt-sandbox-config-initrd.c: In function ‘gvir_sandbox_config_initrd_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-initrd.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_INITRD, GVirSandboxConfigInitrdPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-initrd.c:185:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_INITRD_GET_PRIVATE’
+  185 |     priv = config->priv = GVIR_SANDBOX_CONFIG_INITRD_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-interactive.c:26:
+libvirt-sandbox-config-interactive.c: In function ‘gvir_sandbox_config_interactive_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-interactive.c:42:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   42 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_INTERACTIVE, GVirSandboxConfigInteractivePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-interactive.c:222:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_INTERACTIVE_GET_PRIVATE’
+  222 |     priv = config->priv = GVIR_SANDBOX_CONFIG_INTERACTIVE_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-service.c:26:
+libvirt-sandbox-config-service.c: In function ‘gvir_sandbox_config_service_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_SERVICE, GVirSandboxConfigServicePrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service.c:87:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_SERVICE_GET_PRIVATE’
+   87 |     config->priv = GVIR_SANDBOX_CONFIG_SERVICE_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-service-generic.c:26:
+libvirt-sandbox-config-service-generic.c: In function ‘gvir_sandbox_config_service_generic_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service-generic.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_SERVICE_GENERIC, GVirSandboxConfigServiceGenericPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service-generic.c:166:27: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_SERVICE_GENERIC_GET_PRIVATE’
+  166 |     priv = config->priv = GVIR_SANDBOX_CONFIG_SERVICE_GENERIC_GET_PRIVATE(config);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:30,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from /usr/include/libvirt-gconfig-1.0/libvirt-gconfig/libvirt-gconfig.h:27,
+                 from ../libvirt-sandbox/libvirt-sandbox-config-all.h:27,
+                 from libvirt-sandbox-config-service-systemd.c:26:
+libvirt-sandbox-config-service-systemd.c: In function ‘gvir_sandbox_config_service_systemd_init’:
+/usr/include/glib-2.0/glib/gmacros.h:1337:33: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1337 | #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
+      |                                 ^~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:1340:3: note: in expansion of macro ‘_GLIB_GNUC_DO_PRAGMA’
+ 1340 |   _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+      |   ^~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gobject-visibility.h:584:49: note: in expansion of macro ‘GLIB_DEPRECATED_MACRO_FOR’
+  584 | #define GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(f) GLIB_DEPRECATED_MACRO_FOR (f)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/gobject/gtype.h:688:145: note: in expansion of macro ‘GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR’
+  688 | #define G_TYPE_INSTANCE_GET_PRIVATE(instance, g_type, c_type)   ((c_type*) g_type_instance_get_private ((GTypeInstance*) (instance), (g_type))) GOBJECT_DEPRECATED_MACRO_IN_2_58_FOR(G_ADD_PRIVATE)
+      |                                                                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service-systemd.c:41:6: note: in expansion of macro ‘G_TYPE_INSTANCE_GET_PRIVATE’
+   41 |     (G_TYPE_INSTANCE_GET_PRIVATE((obj), GVIR_SANDBOX_TYPE_CONFIG_SERVICE_SYSTEMD, GVirSandboxConfigServiceSystemdPrivate))
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+libvirt-sandbox-config-service-systemd.c:175:20: note: in expansion of macro ‘GVIR_SANDBOX_CONFIG_SERVICE_SYSTEMD_GET_PRIVATE’
+  175 |     config->priv = GVIR_SANDBOX_CONFIG_SERVICE_SYSTEMD_GET_PRIVATE(config);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libvirt-sandbox-init-common
+  CCLD     libvirt-sandbox-1.0.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+  GISCAN   LibvirtSandbox-1.0.gir
+libvirt-sandbox-util.h:40: Warning: LibvirtSandbox: symbol='LIBVIRT_SANDBOX_CLASS_PADDING': Unknown namespace for symbol 'LIBVIRT_SANDBOX_CLASS_PADDING'
+libvirt-sandbox-console.h:87: Warning: LibvirtSandbox: gvir_sandbox_console_attach: argument localStdin: Unresolved type: 'GUnixInputStream*'
+libvirt-sandbox-console.h:87: Warning: LibvirtSandbox: gvir_sandbox_console_attach: argument localStdout: Unresolved type: 'GUnixOutputStream*'
+libvirt-sandbox-console.h:87: Warning: LibvirtSandbox: gvir_sandbox_console_attach: argument localStderr: Unresolved type: 'GUnixOutputStream*'
+  GICOMP   LibvirtSandbox-1.0.gir
+make[4]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/libvirt-sandbox'
+make[3]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/libvirt-sandbox'
+make[2]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/libvirt-sandbox'
+Making all in bin
+make[2]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/bin'
+  CC       virt_sandbox-virt-sandbox.o
+  GEN      virt-sandbox.1
+  CCLD     virt-sandbox
+make[2]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/bin'
+Making all in examples
+make[2]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/examples'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/examples'
+Making all in docs
+make[2]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/docs'
+Making all in libvirt-sandbox
+make[3]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/docs/libvirt-sandbox'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/docs/libvirt-sandbox'
+make[3]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/docs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/docs'
+make[2]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/docs'
+Making all in po
+make[2]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/po'
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+grep: warning: stray \ before #
+  MSGFMT af.gmo
+  MSGFMT am.gmo
+  MSGFMT anp.gmo
+  MSGFMT ar.gmo
+  MSGFMT as.gmo
+  MSGFMT bal.gmo
+  MSGFMT ast.gmo
+  MSGFMT be.gmo
+  MSGFMT bg.gmo
+  MSGFMT bn_IN.gmo
+  MSGFMT bn.gmo
+  MSGFMT bo.gmo
+  MSGFMT br.gmo
+  MSGFMT brx.gmo
+  MSGFMT bs.gmo
+  MSGFMT ca.gmo
+  MSGFMT cs.gmo
+  MSGFMT cy.gmo
+  MSGFMT da.gmo
+  MSGFMT de_CH.gmo
+  MSGFMT de.gmo
+  MSGFMT el.gmo
+  MSGFMT en_GB.gmo
+  MSGFMT eo.gmo
+  MSGFMT et.gmo
+  MSGFMT es.gmo
+  MSGFMT eu.gmo
+  MSGFMT fa.gmo
+  MSGFMT fi.gmo
+  MSGFMT fr.gmo
+  MSGFMT gl.gmo
+  MSGFMT he.gmo
+  MSGFMT gu.gmo
+  MSGFMT hi.gmo
+  MSGFMT hr.gmo
+  MSGFMT hu.gmo
+  MSGFMT ia.gmo
+  MSGFMT id.gmo
+  MSGFMT ilo.gmo
+  MSGFMT is.gmo
+  MSGFMT it.gmo
+  MSGFMT ja.gmo
+  MSGFMT ka.gmo
+  MSGFMT kk.gmo
+  MSGFMT km.gmo
+  MSGFMT kn.gmo
+  MSGFMT ko.gmo
+  MSGFMT kw_GB.gmo
+  MSGFMT kw@kkcor.gmo
+  MSGFMT kw.gmo
+  MSGFMT kw@uccor.gmo
+  MSGFMT ky.gmo
+  MSGFMT lt.gmo
+  MSGFMT lv.gmo
+  MSGFMT mai.gmo
+  MSGFMT mk.gmo
+  MSGFMT ml.gmo
+  MSGFMT mn.gmo
+  MSGFMT mr.gmo
+  MSGFMT ms.gmo
+  MSGFMT nb.gmo
+  MSGFMT nds.gmo
+  MSGFMT ne.gmo
+  MSGFMT nl.gmo
+  MSGFMT nn.gmo
+  MSGFMT nso.gmo
+  MSGFMT or.gmo
+  MSGFMT pa.gmo
+  MSGFMT pl.gmo
+  MSGFMT pt_BR.gmo
+  MSGFMT ro.gmo
+  MSGFMT pt.gmo
+  MSGFMT ru.gmo
+  MSGFMT si.gmo
+  MSGFMT sk.gmo
+  MSGFMT sl.gmo
+  MSGFMT sq.gmo
+  MSGFMT sr@latin.gmo
+  MSGFMT sr.gmo
+  MSGFMT sv.gmo
+  MSGFMT ta.gmo
+  MSGFMT te.gmo
+  MSGFMT tg.gmo
+  MSGFMT th.gmo
+  MSGFMT tr.gmo
+  MSGFMT tw.gmo
+  MSGFMT uk.gmo
+  MSGFMT ur.gmo
+  MSGFMT vi.gmo
+  MSGFMT wba.gmo
+  MSGFMT yo.gmo
+  MSGFMT zh_CN.gmo
+  MSGFMT zh_HK.gmo
+  MSGFMT zh_TW.gmo
+  MSGFMT zu.gmo
+make[2]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0/po'
+make[2]: Entering directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0'
+make[2]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0'
+make[1]: Leaving directory '/build/libvirt-sandbox/src/libvirt-sandbox-0.8.0'
