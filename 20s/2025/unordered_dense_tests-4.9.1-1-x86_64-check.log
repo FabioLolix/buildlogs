@@ -1,7 +1,7 @@
 ninja: Entering directory `/build/unordered_dense_tests/src/build'
 ninja: no work to do.
 1/1 unordered_dense:unit RUNNING       
->>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MESON_TEST_ITERATION=1 MALLOC_PERTURB_=100 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 /build/unordered_dense_tests/src/build/test/udm-test
+>>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MESON_TEST_ITERATION=1 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 MALLOC_PERTURB_=219 /build/unordered_dense_tests/src/build/test/udm-test
 ――――――――――――――――――――――――――――――――――――― ✀  ―――――――――――――――――――――――――――――――――――――
 [doctest] doctest version is "2.5.2"
 [doctest] run with "--help" for options
@@ -34,8 +34,8 @@ TEST CASE:  fuzz_string
 ../unordered_dense/test/unit/fuzz_string.cpp:51: ERROR: test case THREW exception: could not find corpus base dir :-(
 
 ===============================================================================
-[doctest] test cases:     499 |     495 passed | 4 failed | 26 skipped
-[doctest] assertions: 1387120 | 1387120 passed | 0 failed |
+[doctest] test cases:     501 |     497 passed | 4 failed | 27 skipped
+[doctest] assertions: 1446154 | 1446154 passed | 0 failed |
 [doctest] Status: FAILURE!
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 1/1 unordered_dense:unit FAIL            0.10s   exit status 1
