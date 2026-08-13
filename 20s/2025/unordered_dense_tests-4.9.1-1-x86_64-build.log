@@ -1,0 +1,44 @@
+
+Wrap files:
+Wrap abseil-cpp.wrap type file not found: abseil-cpp-20250814.1
+Wrap doctest.wrap    type file not found: doctest-2.4.12
+Wrap fmt.wrap        type file not found: fmt-11.2.0
+
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 unordered_dense build
+The Meson build system
+Version: 1.12.0
+Source dir: /build/unordered_dense_tests/src/unordered_dense
+Build dir: /build/unordered_dense_tests/src/build
+Build type: native build
+Project name: unordered_dense
+Project version: 4.9.1
+C++ compiler for the host machine: c++ (gcc 16.2.1 "c++ (GCC) 16.2.1 20260810")
+C++ linker for the host machine: c++ ld.bfd 2.47
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C++ supports arguments -Wno-stringop-overflow: YES 
+Compiler for C++ supports arguments -Warith-conversion: YES 
+Compiler for C++ supports arguments -Wshadow=global: YES 
+Compiler for C++ supports arguments -Wno-array-bounds: YES 
+Compiler for C++ supports arguments -Wconversion: YES 
+Compiler for C++ supports arguments -Wextra: YES 
+Compiler for C++ supports arguments -Wunreachable-code: YES 
+Compiler for C++ supports arguments -Wuninitialized: YES 
+Compiler for C++ supports arguments -pedantic-errors: YES 
+Compiler for C++ supports arguments -Wold-style-cast: YES 
+Compiler for C++ supports arguments -Wno-unused-function: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.5
+Run-time dependency Boost for cpp found: NO  (tried system)
+Run-time dependency threads found: YES
+Run-time dependency doctest found: YES 2.5.2
+Did not find CMake 'cmake'
+Found CMake: NO
+Run-time dependency fmt found: NO  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency fmt
+ERROR: Subproject fmt is buildable: NO
+
+unordered_dense/test/meson.build:193:8: ERROR: Automatic wrap-based subproject downloading is disabled
+
+A full log can be found at /build/unordered_dense_tests/src/build/meson-logs/meson-log.txt
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
