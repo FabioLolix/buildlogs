@@ -1,9 +1,9 @@
 ninja: Entering directory `/build/unordered_dense_tests/src/build'
 ninja: no work to do.
 1/1 unordered_dense:unit RUNNING       
->>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MESON_TEST_ITERATION=1 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 MALLOC_PERTURB_=219 /build/unordered_dense_tests/src/build/test/udm-test
+>>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MESON_TEST_ITERATION=1 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 LD_LIBRARY_PATH=/build/unordered_dense_tests/src/build/subprojects/fmt-11.2.0 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MALLOC_PERTURB_=248 /build/unordered_dense_tests/src/build/test/udm-test
 ――――――――――――――――――――――――――――――――――――― ✀  ―――――――――――――――――――――――――――――――――――――
-[doctest] doctest version is "2.5.2"
+[doctest] doctest version is "2.4.12"
 [doctest] run with "--help" for options
 ===============================================================================
 ../unordered_dense/test/unit/fuzz_api.cpp:286:
@@ -35,15 +35,15 @@ TEST CASE:  fuzz_string
 
 ===============================================================================
 [doctest] test cases:     501 |     497 passed | 4 failed | 27 skipped
-[doctest] assertions: 1446154 | 1446154 passed | 0 failed |
+[doctest] assertions: 1445971 | 1445971 passed | 0 failed |
 [doctest] Status: FAILURE!
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-1/1 unordered_dense:unit FAIL            0.10s   exit status 1
+1/1 unordered_dense:unit FAIL            0.11s   exit status 1
 
 
 Summary of Failures:
 
-1/1 unordered_dense:unit FAIL            0.10s   exit status 1
+1/1 unordered_dense:unit FAIL            0.11s   exit status 1
 
 Ok:                0   
 Fail:              1   
