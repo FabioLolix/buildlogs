@@ -11,20 +11,22 @@ Progress: resolved 0, reused 0, downloaded 1, added 0
    │                                          │
    ╰──────────────────────────────────────────╯
 
-Progress: resolved 0, reused 0, downloaded 114, added 90
-Progress: resolved 0, reused 0, downloaded 205, added 188
- WARN  Tarball download average speed 17 KiB/s (size 18 KiB) is below 50 KiB/s: https://registry.npmjs.org/cosmiconfig/-/cosmiconfig-8.3.6.tgz (GET)
-Progress: resolved 0, reused 0, downloaded 353, added 351
-Progress: resolved 0, reused 0, downloaded 568, added 582
-Progress: resolved 0, reused 0, downloaded 743, added 810
-Progress: resolved 0, reused 0, downloaded 959, added 1043
-Progress: resolved 0, reused 0, downloaded 1252, added 1363
+Progress: resolved 0, reused 0, downloaded 81, added 68
+Progress: resolved 0, reused 0, downloaded 148, added 121
+Progress: resolved 0, reused 0, downloaded 239, added 248
+Progress: resolved 0, reused 0, downloaded 429, added 437
+Progress: resolved 0, reused 0, downloaded 582, added 612
+Progress: resolved 0, reused 0, downloaded 651, added 684
+ WARN  Tarball download average speed 36 KiB/s (size 43 KiB) is below 50 KiB/s: https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz (GET)
+Progress: resolved 0, reused 0, downloaded 746, added 801
+Progress: resolved 0, reused 0, downloaded 875, added 953
+ WARN  Tarball download average speed 10 KiB/s (size 16 KiB) is below 50 KiB/s: https://registry.npmjs.org/istanbul-lib-instrument/-/istanbul-lib-instrument-6.0.3.tgz (GET)
+Progress: resolved 0, reused 0, downloaded 1036, added 1125
+Progress: resolved 0, reused 0, downloaded 1193, added 1298
 Progress: resolved 0, reused 0, downloaded 1256, added 1366
-Progress: resolved 0, reused 0, downloaded 1260, added 1372
-Progress: resolved 0, reused 0, downloaded 1261, added 1373
-Progress: resolved 0, reused 0, downloaded 1263, added 1375
-Progress: resolved 0, reused 0, downloaded 1264, added 1376
-Progress: resolved 0, reused 0, downloaded 1265, added 1376
+Progress: resolved 0, reused 0, downloaded 1260, added 1370
+Progress: resolved 0, reused 0, downloaded 1262, added 1373
+Progress: resolved 0, reused 0, downloaded 1263, added 1373
 Progress: resolved 0, reused 0, downloaded 1265, added 1377
 Progress: resolved 0, reused 0, downloaded 1266, added 1377
 Progress: resolved 0, reused 0, downloaded 1266, added 1378
@@ -34,8 +36,8 @@ Progress: resolved 0, reused 0, downloaded 1268, added 1380
 Progress: resolved 0, reused 0, downloaded 1268, added 1381, done
 node_modules/@swc/core postinstall$ node postinstall.js
 node_modules/esbuild postinstall$ node install.js
-node_modules/vite/node_modules/esbuild postinstall$ node install.js
 node_modules/@swc/core postinstall: Done
+node_modules/vite/node_modules/esbuild postinstall$ node install.js
 node_modules/esbuild postinstall: Done
 node_modules/unrs-resolver postinstall$ napi-postinstall unrs-resolver 1.9.1 check
 node_modules/vite/node_modules/esbuild postinstall: Done
@@ -51,9 +53,9 @@ node_modules/unrs-resolver postinstall: Done
 │   to run scripts.                                                            │
 │                                                                              │
 ╰──────────────────────────────────────────────────────────────────────────────╯
-Done in 48.5s using pnpm v10.28.0
+Done in 36.5s using pnpm v10.28.0
 
-> heroic@2.22.1 download-helper-binaries /build/heroic-games-launcher/src/HeroicGamesLauncher
+> heroic@2.22.1 download-helper-binaries /build/heroic-games-launcher-git/src/HeroicGamesLauncher
 > esbuild --bundle --platform=node --target=node21 meta/downloadHelperBinaries.ts | node
 
 Downloading: [ 'legendary', 'gogdl', 'nile', 'comet', 'epic-integration' ]
@@ -84,29 +86,29 @@ Downloading comet for win32 arm64 from https://github.com/imLinguin/comet/releas
 Downloading EpicGamesLauncher for win32 x64 from https://github.com/Etaash-mathamsetty/heroic-epic-integration/releases/download/v0.4/EpicGamesLauncher.exe
 Done downloading GalaxyCommunication for win32 x64
 Done downloading EpicGamesLauncher for win32 x64
-Done downloading gogdl for linux arm64
 Done downloading gogdl for linux x64
+Done downloading gogdl for linux arm64
 Done downloading nile for darwin arm64
-Done downloading nile for darwin x64
-Done downloading gogdl for darwin arm64
 Done downloading nile for linux arm64
-Done downloading comet for win32 arm64
+Done downloading nile for darwin x64
 Done downloading nile for linux x64
 Done downloading comet for darwin arm64
+Done downloading comet for darwin x64
+Done downloading gogdl for darwin arm64
+Done downloading gogdl for darwin x64
+Done downloading comet for linux arm64
 Done downloading comet for win32 x64
 Done downloading gogdl for win32 arm64
-Done downloading legendary for linux arm64
 Done downloading gogdl for win32 x64
+Done downloading comet for win32 arm64
 Done downloading nile for win32 x64
-Done downloading comet for darwin x64
-Done downloading comet for linux arm64
-Done downloading legendary for linux x64
 Done downloading comet for linux x64
-Done downloading gogdl for darwin x64
-Done downloading legendary for darwin arm64
-Done downloading legendary for win32 arm64
+Done downloading legendary for linux x64
 Done downloading legendary for darwin x64
+Done downloading legendary for linux arm64
+Done downloading legendary for darwin arm64
 Done downloading legendary for win32 x64
+Done downloading legendary for win32 arm64
 vite v6.3.5 building SSR bundle for production...
 transforming...
 ✓ 268 modules transformed.
@@ -117,19 +119,19 @@ build/main/chunks/windows-F5IOkFmk.js      2.83 kB │ map:     1.44 kB
 build/main/chunks/index-CFWHD77-.js        3.60 kB │ map:     1.98 kB
 build/main/chunks/unix-KKeU1Zqb.js         3.95 kB │ map:     2.09 kB
 build/main/chunks/macos-Cb8VCzAB.js        4.17 kB │ map:     2.14 kB
-build/main/chunks/linux-CibtqTS0.js        5.70 kB │ map:     3.05 kB
+build/main/chunks/linux-B8a07WxW.js        5.54 kB │ map:     2.97 kB
 build/main/chunks/windows-D564Kq9m.js      7.94 kB │ map:     4.27 kB
 build/main/chunks/linux-BbjdN-nN.js        8.24 kB │ map:     4.06 kB
 build/main/chunks/windows-OtlkwtE3.js      9.22 kB │ map:     4.82 kB
 build/main/chunks/index-DVs2HbV_.js    1,297.02 kB │ map:   726.33 kB
-build/main/main.js                     2,258.67 kB │ map: 1,234.52 kB
-✓ built in 1.67s
+build/main/main.js                     2,255.87 kB │ map: 1,233.29 kB
+✓ built in 1.56s
 vite v6.3.5 building SSR bundle for production...
 transforming...
 ✓ 13 modules transformed.
 rendering chunks...
 build/preload/webviewPreload.js   3.07 kB
-build/preload/index.js           11.04 kB
+build/preload/index.js           11.03 kB
 ✓ built in 51ms
 vite v6.3.5 building for production...
 transforming...
@@ -154,7 +156,7 @@ Export "updateGame" of module "src/frontend/helpers/library.ts" was reexported t
 Either change the import in "src/frontend/screens/ConsoleMode/index.tsx" to point directly to the exporting module or reconfigure "output.manualChunks" to ensure these modules end up in the same chunk.
 rendering chunks...
 [plugin vite:reporter] 
-(!) /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/index.tsx is dynamically imported by /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/App.tsx but also statically imported by /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/AdvertiseAvxForRosetta.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/AutoDXVK.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/AutoDXVKNVAPI.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/AutoVKD3D.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/CrossoverBottle.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/DisableUMU.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/EnableDXVKFpsLimit.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/EnableMsync.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/PreferSystemLibs.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/SteamRuntime.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/WinePrefix.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/WineVersionSelector.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/sections/GamesSettings/index.tsx, /build/heroic-games-launcher/src/HeroicGamesLauncher/src/frontend/screens/Settings/sections/SyncSaves/index.tsx, dynamic import will not move module into another chunk.
+(!) /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/index.tsx is dynamically imported by /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/App.tsx but also statically imported by /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/AdvertiseAvxForRosetta.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/AutoDXVK.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/AutoDXVKNVAPI.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/AutoVKD3D.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/CrossoverBottle.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/DisableUMU.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/EnableDXVKFpsLimit.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/EnableMsync.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/PreferSystemLibs.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/SteamRuntime.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/WinePrefix.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/components/WineVersionSelector.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/sections/GamesSettings/index.tsx, /build/heroic-games-launcher-git/src/HeroicGamesLauncher/src/frontend/screens/Settings/sections/SyncSaves/index.tsx, dynamic import will not move module into another chunk.
 
 build/index.html                                               0.52 kB
 build/assets/SteamDeck_X-DwNz7cO3.png                          4.22 kB
@@ -227,16 +229,16 @@ build/assets/App-oBB701TK.js                               1,110.66 kB
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 11.75s
+✓ built in 11.77s
   • electron-builder  version=26.8.1 os=7.1.7-arch1-1
-  • loaded configuration  file=/build/heroic-games-launcher/src/HeroicGamesLauncher/electron-builder.yml
-  • detected workspace root for project using packageManager field  pm=pnpm config=pnpm@10.28.0 resolved=/build/heroic-games-launcher/src/HeroicGamesLauncher projectDir=/build/heroic-games-launcher/src/HeroicGamesLauncher
-  • executing @electron/rebuild  electronVersion=43.4.0 arch=x64 buildFromSource=false workspaceRoot=/build/heroic-games-launcher/src/HeroicGamesLauncher projectDir=./ appDir=./
+  • loaded configuration  file=/build/heroic-games-launcher-git/src/HeroicGamesLauncher/electron-builder.yml
+  • detected workspace root for project using packageManager field  pm=pnpm config=pnpm@10.28.0 resolved=/build/heroic-games-launcher-git/src/HeroicGamesLauncher projectDir=/build/heroic-games-launcher-git/src/HeroicGamesLauncher
+  • executing @electron/rebuild  electronVersion=43.4.0 arch=x64 buildFromSource=false workspaceRoot=/build/heroic-games-launcher-git/src/HeroicGamesLauncher projectDir=./ appDir=./
   • installing native dependencies  arch=x64
   • completed installing native dependencies
   • packaging       platform=linux arch=x64 electron=43.4.0 appOutDir=dist/linux-unpacked
   • using custom unpacked Electron distribution  electronDist=/usr/lib/electron43/
-  • copying unpacked Electron  source=/usr/lib/electron43 destination=/build/heroic-games-launcher/src/HeroicGamesLauncher/dist/linux-unpacked
-  • searching for node modules  pm=pnpm searchDir=/build/heroic-games-launcher/src/HeroicGamesLauncher
-(node:1882) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+  • copying unpacked Electron  source=/usr/lib/electron43 destination=/build/heroic-games-launcher-git/src/HeroicGamesLauncher/dist/linux-unpacked
+  • searching for node modules  pm=pnpm searchDir=/build/heroic-games-launcher-git/src/HeroicGamesLauncher
+(node:1889) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
