@@ -1048,9 +1048,9 @@ CMake Warning at /build/unraid-usb-creator-git/src/build/libarchive_zstd_patch.c
 [ 11%] Creating directories for 'curl-populate'
 [ 22%] Performing download step (git clone) for 'curl-populate'
 Cloning into 'curl-src'...
-HEAD is now at a05f34973e RELEASE-NOTES: synced
+HEAD is now at 68720b4837 RELEASE-NOTES: synced
 [ 33%] Performing update step for 'curl-populate'
--- Already at requested tag: curl-8_20_0
+-- Already at requested tag: curl-8_21_0
 [ 44%] No patch step for 'curl-populate'
 [ 55%] No configure step for 'curl-populate'
 [ 66%] No build step for 'curl-populate'
@@ -1059,9 +1059,9 @@ HEAD is now at a05f34973e RELEASE-NOTES: synced
 [100%] Completed 'curl-populate'
 [100%] Built target curl-populate
 -- Using CMake version 4.4.2
--- curl version=[8.20.0-DEV]
+-- curl version=[8.21.0-DEV]
 -- CMake platform flags: UNIX GCC
--- Picky compiler options: -Werror-implicit-function-declaration -W -Wall -Wpedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-padded -Wno-sign-conversion -Wno-switch-default -Wno-switch-enum -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wno-format-signedness -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -Warray-compare -Wenum-int-mismatch -Wxor-used-as-pow -Wleading-whitespace=spaces -Wtrailing-whitespace=any -Wunterminated-string-initialization
+-- Picky compiler options: -Werror-implicit-function-declaration -W -Wall -Wpedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-padded -Wno-sign-conversion -Wno-switch-default -Wno-switch-enum -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wlogical-op -Wtrampolines -Warray-bounds=2 -Wformat-signedness -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -Warray-compare -Wenum-int-mismatch -Wxor-used-as-pow -Wleading-whitespace=spaces -Wtrailing-whitespace=any -Wunterminated-string-initialization
 -- Found Perl: /usr/bin/perl (found version "5.42.2")
 -- Looking for connect in socket
 -- Looking for connect in socket - not found
@@ -1191,16 +1191,20 @@ HEAD is now at a05f34973e RELEASE-NOTES: synced
 -- Looking for realpath - found
 -- Looking for sched_yield
 -- Looking for sched_yield - found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Looking for inet_pton
+-- Looking for inet_pton - found
 -- Looking for strcasecmp
 -- Looking for strcasecmp - found
 -- Looking for stricmp
 -- Looking for stricmp - not found
 -- Looking for strcmpi
 -- Looking for strcmpi - not found
--- Looking for inet_ntop
--- Looking for inet_ntop - found
--- Looking for inet_pton
--- Looking for inet_pton - found
+-- Looking for memset_s
+-- Looking for memset_s - not found
+-- Looking for memset_explicit
+-- Looking for memset_explicit - found
 -- Performing Test HAVE_FSETXATTR_5
 -- Performing Test HAVE_FSETXATTR_5 - Success
 -- Performing Test HAVE_FSETXATTR_6
@@ -1302,54 +1306,103 @@ HEAD is now at 87a55632 libusb 1.0.30
 -- Found OpenGL: /usr/lib/libOpenGL.so
 -- Found WrapOpenGL: TRUE
 -- Found WrapVulkanHeaders: /usr/include
--- Configuring done (103.0s)
+-- Configuring done (103.5s)
 -- Generating done (0.3s)
 -- Build files have been written to: /build/unraid-usb-creator-git/src/build
-[  0%] Generating timezones data (downloads from API, falls back to source if offline)
-[  0%] Populating .qmlls.ini file at /build/unraid-usb-creator-git/src/build/.qt/.qmlls.build.ini
-[  0%] Populating .qmlls.ini file at /build/unraid-usb-creator-git/src/build/.qt/qmlls.ini.build
-[  0%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/adler32.c.o
-[  0%] Copying rpi-imager qml sources into build dir
-[  0%] Copying rpi-imager qml resources into build dir
-[  0%] Generating countries data (downloads from API, falls back to source if offline)
-[  0%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/compress.c.o
-[  0%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/descriptor.c.o
 [  0%] Checking build-time version via git describe
-[  0%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.c.o
+[  0%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/descriptor.c.o
 [  0%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/core.c.o
-[  1%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32.c.o
-[  1%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzread.c.o
-[  1%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzclose.c.o
-[  1%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/yescrypt-opt.c.o
-[  1%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate.c.o
-[  2%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_pq.c.o
-[  4%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/debug.c.o
-[  4%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/common/tuklib_physmem.c.o
+[  0%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/yescrypt-platform.c.o
+[  0%] Copying rpi-imager qml resources into build dir
+[  0%] Generating timezones data (downloads from API, falls back to source if offline)
+[  0%] Populating .qmlls.ini file at /build/unraid-usb-creator-git/src/build/.qt/qmlls.ini.build
+[  0%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/hotplug.c.o
+[  0%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/yescrypt-opt.c.o
+[  0%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/yescrypt-common.c.o
+[  1%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_pq.c.o
+[  1%] Generating countries data (downloads from API, falls back to source if offline)
+[  1%] Populating .qmlls.ini file at /build/unraid-usb-creator-git/src/build/.qt/.qmlls.build.ini
+[  1%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/insecure_memzero.c.o
+[  1%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/io.c.o
+[  1%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/common/tuklib_physmem.c.o
+[  1%] Copying rpi-imager qml sources into build dir
+[  1%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/adler32.c.o
+[  1%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/sha256.c.o
+[  1%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/debug.c.o
 -- Downloading wireless-regdb from https://git.kernel.org/pub/scm/linux/kernel/git/wens/wireless-regdb.git/plain/db.txt
 -- Downloading IANA timezone data from https://data.iana.org/time-zones/releases/tzdata2025c.tar.gz
-[  4%] Built target rpi-imager_copy_res
-[  4%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/entropy_common.c.o
-[  4%] Built target rpi-imager_copy_qml
-[  4%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/error_private.c.o
-[  4%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/check/check.c.o
-[  4%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_util.c.o
-[  4%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/yescrypt-common.c.o
-[  4%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_map.c.o
-[  4%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.c.o
-[  4%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/fse_decompress.c.o
-[  4%] Built target generate_qmlls_build_ini_file
-[  4%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_queue.c.o
-[  4%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/pool.c.o
-[  4%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_frame.c.o
+[  1%] Built target rpi-imager_copy_res
+[  1%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/compress.c.o
+[  1%] Built target rpi-imager_copy_qml
+[  1%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/entropy_common.c.o
+[  1%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/error_private.c.o
+[  1%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/yescrypt_wrapper.c.o
+[  1%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/check/check.c.o
+[  1%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32.c.o
+[  1%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_util.c.o
+[  1%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_map.c.o
+[  1%] Built target generate_qmlls_build_ini_file
+[  1%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_queue.c.o
+[  1%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/fse_decompress.c.o
+[  2%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/threading.c.o
+[  2%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/pool.c.o
+[  2%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate.c.o
+[  4%] Copying .qmlls.ini file at /build/unraid-usb-creator-git/src/build/.qt/qmlls.ini.build to /build/unraid-usb-creator-git/src/usb-creator-next/src/.qmlls.ini
+[  4%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/xxhash.c.o
+[  4%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/zstd_common.c.o
+-- Build-time version: v2.0.11-unraid.1-dirty
+[  4%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzclose.c.o
+[  4%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/fse_compress.c.o
+[  4%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.c.o
+[  4%] Built target generate_version
+[  5%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzread.c.o
+[  5%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/hist.c.o
+[  5%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/strerror.c.o
+[  5%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_frame.c.o
+[  5%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_buf.c.o
+[  5%] Built target rpi-imager_generate_qmlls_ini_file
+[  5%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_stream.c.o
+[  5%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/common.c.o
+[  5%] Configuring metainfo.xml with build-time version
+[  5%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.c.o
+[  6%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_outbound_item.c.o
+[  8%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/easy_preset.c.o
+[  8%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_session.c.o
+[  8%] Built target generate_metainfo
+[  8%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/sync.c.o
+[  8%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_submit.c.o
+[  9%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_common.c.o
+[  9%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/os/linux_usbfs.c.o
+[  9%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/os/linux_netlink.c.o
+[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_helper.c.o
+[  9%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/huf_compress.c.o
+[  9%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/inflate.c.o
+[  9%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.c.o
+[  9%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_compress.c.o
+[  9%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/infback.c.o
+[  9%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/inffast.c.o
+[  9%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/hardware_physmem.c.o
+[  9%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/trees.c.o
+[  9%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.c.o
+[  9%] Linking C static library libyescrypt.a
+[  9%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_compress_literals.c.o
+[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_alpn.c.o
+[  9%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/zutil.c.o
+[  9%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/index.c.o
+[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_hd.c.o
+[  9%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/os/events_posix.c.o
+[  9%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/os/threads_posix.c.o
+[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_hd_huffman.c.o
+[  9%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_compress_sequences.c.o
+[  9%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_flags_common.c.o
+[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_hd_huffman_data.c.o
 -- [download 0% complete]
 -- [download 1% complete]
--- Build-time version: v2.0.11-unraid.1
+-- [download 2% complete]
 -- [download 3% complete]
+[  9%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/string_conversion.c.o
 -- [download 4% complete]
 -- [download 5% complete]
-[  5%] Copying .qmlls.ini file at /build/unraid-usb-creator-git/src/build/.qt/qmlls.ini.build to /build/unraid-usb-creator-git/src/usb-creator-next/src/.qmlls.ini
--- [download 6% complete]
-[  5%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/threading.c.o
 -- [download 7% complete]
 -- [download 8% complete]
 -- [download 9% complete]
@@ -1359,24 +1412,23 @@ HEAD is now at 87a55632 libusb 1.0.30
 -- [download 13% complete]
 -- [download 14% complete]
 -- [download 15% complete]
-[  5%] Built target generate_version
 -- [download 16% complete]
-[  5%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_buf.c.o
 -- [download 17% complete]
+[  9%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_compress_superblock.c.o
+[  9%] Built target yescrypt
 -- [download 18% complete]
 -- [download 19% complete]
 -- [download 20% complete]
 -- [download 21% complete]
 -- [download 22% complete]
 -- [download 23% complete]
--- [download 24% complete]
 -- [download 25% complete]
-[  5%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_stream.c.o
 -- [download 26% complete]
 -- [download 27% complete]
 -- [download 28% complete]
 -- [download 29% complete]
 -- [download 30% complete]
+[  9%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/vli_size.c.o
 -- [download 31% complete]
 -- [download 32% complete]
 -- [download 33% complete]
@@ -1384,63 +1436,61 @@ HEAD is now at 87a55632 libusb 1.0.30
 -- [download 35% complete]
 -- [download 36% complete]
 -- [download 37% complete]
-[  5%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/hotplug.c.o
-[  5%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_outbound_item.c.o
 -- [download 38% complete]
-[  5%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/xxhash.c.o
 -- [download 39% complete]
-[  5%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/io.c.o
-[  5%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/strerror.c.o
 -- [download 40% complete]
+[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_version.c.o
 -- [download 41% complete]
+[ 10%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_double_fast.c.o
 -- [download 42% complete]
 -- [download 43% complete]
+[ 10%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_priority_spec.c.o
 -- [download 44% complete]
 -- [download 45% complete]
 -- [download 46% complete]
-[  5%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/common.c.o
--- [download 49% complete]
-[  5%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/easy_preset.c.o
--- [download 53% complete]
-[  5%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/sync.c.o
-[  5%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_common.c.o
--- [download 56% complete]
-[  5%] Built target rpi-imager_generate_qmlls_ini_file
--- [download 59% complete]
--- [download 63% complete]
--- [download 66% complete]
+-- [download 47% complete]
+[ 10%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/common/tuklib_cpucores.c.o
+[ 10%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_fast.c.o
+-- [download 50% complete]
+-- [download 54% complete]
+-- [download 57% complete]
+-- [download 61% complete]
+-- [download 65% complete]
+-- Generated 181 wireless regulatory country codes into /build/unraid-usb-creator-git/src/build/countries_generated.txt.tmp
 -- [download 68% complete]
 -- [download 72% complete]
 -- [download 75% complete]
 -- [download 79% complete]
--- [download 80% complete]
--- [download 84% complete]
-[  6%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/os/linux_usbfs.c.o
-[  6%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/inflate.c.o
--- [download 87% complete]
--- [download 91% complete]
--- [download 94% complete]
--- [download 98% complete]
+[ 12%] Linking C static library libz.a
+-- [download 82% complete]
+[ 12%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/hardware_cputhreads.c.o
+-- [download 85% complete]
+-- [download 89% complete]
+-- [download 92% complete]
+[ 12%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_lazy.c.o
+-- [download 96% complete]
+-- [download 99% complete]
 -- [download 100% complete]
 -- Extracting timezone data...
-[  6%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/yescrypt-platform.c.o
-[  6%] Configuring metainfo.xml with build-time version
-[  6%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/sha256.c.o
+[ 13%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_option.c.o
+[ 13%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_callbacks.c.o
+[ 13%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_mem.c.o
+[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/outqueue.c.o
 -- Parsing timezone names from zone.tab...
-[  6%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/common/zstd_common.c.o
-[  6%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/fse_compress.c.o
-[  6%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/hardware_physmem.c.o
-[  6%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_session.c.o
+[ 14%] Built target generate_countries
 -- Generated 432 timezone entries in /build/unraid-usb-creator-git/src/build/timezones_generated.txt.tmp
 -- Comparing with existing timezone list...
-[  6%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/hist.c.o
-[  6%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_compress.c.o
-[  8%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/huf_compress.c.o
-[  8%] Built target generate_metainfo
-[  8%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/insecure_memzero.c.o
-[  8%] Building C object CMakeFiles/yescrypt.dir/dependencies/yescrypt/yescrypt_wrapper.c.o
-[  8%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/infback.c.o
-[  8%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_compress_literals.c.o
+[ 14%] Linking C static library libusb-1.0-static.a
+[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/check/crc32_fast.c.o
+[ 14%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_ldm.c.o
+[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/check/crc64_fast.c.o
+[ 14%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_opt.c.o
+[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/check/sha256.c.o
+[ 14%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_http.c.o
+[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/alone_encoder.c.o
+[ 14%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_extpri.c.o
+[ 14%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_rcbuf.c.o
+[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_buffer_encoder.c.o
 -- 
 -- === TIMEZONE LIST COMPARISON ===
 -- Fallback file: 432 timezones
@@ -1451,252 +1501,707 @@ HEAD is now at 87a55632 libusb 1.0.30
 -- =================================
 -- 
 -- Timezone generation completed successfully
-[  8%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_compress_sequences.c.o
-[  8%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.c.o
-[  8%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/inffast.c.o
-[  8%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_submit.c.o
-[  8%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/index.c.o
-[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_helper.c.o
-[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_alpn.c.o
-[  9%] Built target generate_timezones
-[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_hd.c.o
-[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_hd_huffman.c.o
-[  9%] Linking C static library libyescrypt.a
--- Generated 181 wireless regulatory country codes into /build/unraid-usb-creator-git/src/build/countries_generated.txt.tmp
-[  9%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_compress_superblock.c.o
-[  9%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/os/linux_netlink.c.o
-[  9%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_double_fast.c.o
-[  9%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_flags_common.c.o
-[  9%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/trees.c.o
-[  9%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_fast.c.o
-[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_hd_huffman_data.c.o
-[  9%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_version.c.o
-[  9%] Built target generate_countries
-[ 10%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/string_conversion.c.o
-[ 10%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_lazy.c.o
-[ 10%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/os/events_posix.c.o
-[ 10%] Building C object dependencies/libusb-cmake/CMakeFiles/usb-1.0-static.dir/__/__/_deps/libusb-src/libusb/os/threads_posix.c.o
-[ 10%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_priority_spec.c.o
-[ 10%] Built target yescrypt
-[ 10%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_ldm.c.o
-[ 10%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_option.c.o
-[ 10%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_callbacks.c.o
-[ 12%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_opt.c.o
-[ 12%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_preSplit.c.o
-[ 12%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/vli_size.c.o
-[ 12%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/common/tuklib_cpucores.c.o
-[ 12%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.c.o
-[ 12%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_mem.c.o
-[ 12%] Linking C static library libusb-1.0-static.a
-[ 13%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_http.c.o
-[ 13%] Building C object _deps/zlib-build/CMakeFiles/zlibstatic.dir/zutil.c.o
-[ 13%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/hardware_cputhreads.c.o
-[ 13%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/outqueue.c.o
-[ 13%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/check/crc32_fast.c.o
-[ 13%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstdmt_compress.c.o
-[ 13%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/huf_decompress.c.o
-[ 13%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_rcbuf.c.o
-[ 13%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_extpri.c.o
-[ 13%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_ratelim.c.o
-[ 13%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/check/crc64_fast.c.o
-[ 13%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_time.c.o
-[ 14%] Linking C static library libz.a
-[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/check/sha256.c.o
-[ 14%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/zstd_ddict.c.o
-[ 14%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_debug.c.o
-[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/alone_encoder.c.o
+[ 14%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstd_preSplit.c.o
+[ 14%] Built target zlibstatic
+[ 14%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_ratelim.c.o
+[ 14%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/compress/zstdmt_compress.c.o
+[ 14%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_time.c.o
+[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_encoder.c.o
+[ 14%] Built target generate_timezones
+[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_header_encoder.c.o
 [ 14%] Built target usb-1.0-static
-[ 14%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/sfparse.c.o
-[ 14%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/zstd_decompress.c.o
-[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_buffer_encoder.c.o
-[ 14%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/zstd_decompress_block.c.o
-[ 14%] Building ASM object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/huf_decompress_amd64.S.o
-[ 16%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_encoder.c.o
-[ 16%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v01.c.o
-[ 16%] Built target zlibstatic
-[ 16%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_header_encoder.c.o
-[ 16%] Linking C static library libnghttp2.a
-[ 16%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/easy_buffer_encoder.c.o
+[ 14%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/huf_decompress.c.o
+[ 14%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/nghttp2_debug.c.o
+[ 14%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/easy_buffer_encoder.c.o
+[ 14%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/zstd_ddict.c.o
+[ 16%] Building C object _deps/nghttp2-build/lib/CMakeFiles/nghttp2_static.dir/sfparse.c.o
+[ 16%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/zstd_decompress.c.o
 [ 16%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/easy_encoder.c.o
-[ 16%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v02.c.o
-[ 17%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v03.c.o
-[ 17%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/easy_encoder_memusage.c.o
-[ 17%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v04.c.o
-[ 17%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_buffer_encoder.c.o
-[ 17%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_encoder.c.o
-[ 17%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v05.c.o
-[ 17%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v06.c.o
-[ 17%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_flags_encoder.c.o
-[ 17%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v07.c.o
-[ 17%] Built target nghttp2_static
-[ 17%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/index_encoder.c.o
+[ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_buffer_encoder.c.o
+[ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/easy_encoder_memusage.c.o
+[ 18%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/zstd_decompress_block.c.o
+[ 18%] Building ASM object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/decompress/huf_decompress_amd64.S.o
+[ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_encoder.c.o
+[ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_flags_encoder.c.o
+[ 18%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v01.c.o
+[ 18%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v02.c.o
+[ 18%] Linking C static library libnghttp2.a
+[ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/index_encoder.c.o
+[ 18%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v03.c.o
+[ 18%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v04.c.o
 [ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_buffer_encoder.c.o
+[ 18%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v05.c.o
 [ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_encoder.c.o
+[ 18%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v06.c.o
+[ 18%] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/__/__/zstd-src/lib/legacy/zstd_v07.c.o
 [ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_flags_encoder.c.o
-[ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/vli_encoder.c.o
-[ 18%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/amigaos.c.o
-[ 18%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/altsvc.c.o
 [ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_encoder_mt.c.o
-[ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma_encoder.c.o
-[ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma_encoder_optimum_fast.c.o
-[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o
+[ 18%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/vli_encoder.c.o
+[ 18%] Built target nghttp2_static
+[ 20%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma_encoder.c.o
+[ 20%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma_encoder_optimum_fast.c.o
 [ 20%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma_encoder_optimum_normal.c.o
-[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o
 [ 20%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lz/lz_encoder.c.o
+[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/altsvc.c.o
+[ 20%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/rangecoder/price_table.c.o
 [ 20%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lz/lz_encoder_mf.c.o
-[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o
-[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/bufq.c.o
-[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/bufref.c.o
-[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-dns.c.o
-[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o
-[ 21%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/rangecoder/price_table.c.o
-[ 21%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o
-[ 21%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o
-[ 21%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/fastpos_table.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o
-[ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma2_encoder.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cfilters.c.o
-[ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/delta/delta_encoder.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/conncache.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/connect.c.o
+[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/amigaos.c.o
+[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o
+[ 20%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/fastpos_table.c.o
+[ 20%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o
+[ 20%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma2_encoder.c.o
+[ 20%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/delta/delta_encoder.c.o
+[ 21%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o
+[ 21%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/bufq.c.o
 [ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/alone_decoder.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o
-[ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_buffer_decoder.c.o
 [ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/auto_decoder.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cookie.c.o
+[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/bufref.c.o
+[ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_buffer_decoder.c.o
+[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-dns.c.o
 [ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_decoder.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o
-[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o
+[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o
+[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o
 [ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/block_header_decoder.c.o
-[ 24%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/easy_decoder_memusage.c.o
-[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/file_info.c.o
-[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o
-[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_buffer_decoder.c.o
-[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o
-[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_fopen.c.o
-[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_decoder.c.o
-[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o
-[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_flags_decoder.c.o
+[ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/easy_decoder_memusage.c.o
+[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o
+[ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/file_info.c.o
+[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o
+[ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_buffer_decoder.c.o
+[ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_decoder.c.o
+[ 22%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o
+[ 22%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/filter_flags_decoder.c.o
+[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-recvbuf.c.o
 [ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/index_decoder.c.o
-[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o
+[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-setup.c.o
 [ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/index_hash.c.o
-[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o
-[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o
-[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o
-[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_range.c.o
-[ 27%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o
-[ 27%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o
-[ 27%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_share.c.o
-[ 27%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_buffer_decoder.c.o
-[ 27%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_decoder.c.o
-[ 27%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o
-[ 27%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_flags_decoder.c.o
-[ 28%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/vli_decoder.c.o
-[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o
-[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o
-[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cw-out.c.o
-[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o
-[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/dict.c.o
-[ 28%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma_decoder.c.o
-[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/dnscache.c.o
-[ 28%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_decoder_mt.c.o
-[ 28%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lz/lz_decoder.c.o
+[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_buffer_decoder.c.o
+[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_decoder.c.o
+[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_flags_decoder.c.o
+[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/vli_decoder.c.o
+[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o
+[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cfilters.c.o
+[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/common/stream_decoder_mt.c.o
+[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma_decoder.c.o
+[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/conncache.c.o
+[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lz/lz_decoder.c.o
+[ 25%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma2_decoder.c.o
+[ 25%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/connect.c.o
+[ 26%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/delta/delta_decoder.c.o
+[ 26%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cookie.c.o
+[ 26%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o
+[ 26%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma_encoder_presets.c.o
+[ 26%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/creds.c.o
+[ 26%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o
+[ 26%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/delta/delta_common.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_fopen.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o
+[ 28%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_range.c.o
+[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o
+[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o
+[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o
+[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_share.c.o
+[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o
+[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o
+[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cw-out.c.o
+[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o
+[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/dict.c.o
 [ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/doh.c.o
-[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/dynhds.c.o
-[ 29%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma2_decoder.c.o
-[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/easy.c.o
-[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o
-[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o
-[ 29%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/delta/delta_decoder.c.o
-[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/escape.c.o
-[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o
-[ 29%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/lzma/lzma_encoder_presets.c.o
-[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o
-[ 29%] Building C object _deps/xz-build/CMakeFiles/liblzma.dir/src/liblzma/delta/delta_common.c.o
-[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/file.c.o
-[ 29%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/formdata.c.o
-[ 31%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/ftp.c.o
-[ 31%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o
-[ 31%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/getinfo.c.o
-[ 31%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/getenv.c.o
-[ 31%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/gopher.c.o
-[ 31%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hash.c.o
-[ 31%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hmac.c.o
-[ 31%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/headers.c.o
-[ 31%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hostip.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hostip4.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hostip6.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hsts.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http1.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http2.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o
-[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_digest.c.o
-[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o
-[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o
-[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o
-[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/idn.c.o
-[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/if2ip.c.o
-[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/imap.c.o
-[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/ldap.c.o
-[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/llist.c.o
-[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/macos.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/md4.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/md5.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/memdebug.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/mime.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/mprintf.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/mqtt.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/multi.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/multi_ntfy.c.o
-[ 35%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/netrc.c.o
-[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/noproxy.c.o
-[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/openldap.c.o
-[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/parsedate.c.o
-[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/pingpong.c.o
-[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/pop3.c.o
-[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/progress.c.o
-[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/protocol.c.o
-[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/rand.c.o
-[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/psl.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/ratelimit.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/request.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/rtsp.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/select.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/sendf.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/setopt.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/sha256.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/slist.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/smb.c.o
-[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/smtp.c.o
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/socketpair.c.o
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/socks.c.o
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/splay.c.o
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/strcase.c.o
-/build/unraid-usb-creator-git/src/build/_deps/curl-src/lib/sha256.c:116:10: fatal error: nettle/sha.h: No such file or directory
-  116 | #include <nettle/sha.h>
-      |          ^~~~~~~~~~~~~~
-compilation terminated.
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/strequal.c.o
-make[2]: *** [_deps/curl-build/lib/CMakeFiles/libcurl_static.dir/build.make:1521: _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/sha256.c.o] Error 1
-make[2]: *** Waiting for unfinished jobs....
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/system_win32.c.o
-[ 39%] Linking C static library libzstd.a
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/strerror.c.o
-[ 39%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/telnet.c.o
-[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/tftp.c.o
+[ 30%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/dnscache.c.o
+[ 30%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/dynhds.c.o
+[ 30%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/easy.c.o
+[ 30%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o
+[ 30%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o
+[ 30%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/escape.c.o
+[ 30%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o
+[ 30%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/file.c.o
+[ 30%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/formdata.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/ftp.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/getenv.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/getinfo.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/gopher.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hash.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hostip.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hmac.c.o
+[ 32%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/headers.c.o
+[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hostip4.c.o
+[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hostip6.c.o
+[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/hsts.c.o
+[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http.c.o
+[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http1.c.o
+[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http2.c.o
+[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o
+[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o
+[ 33%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_digest.c.o
+[ 34%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o
+[ 34%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o
+[ 34%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o
+[ 34%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o
+[ 34%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/if2ip.c.o
+[ 34%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/idn.c.o
+[ 34%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/imap.c.o
+[ 34%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/ldap.c.o
+[ 34%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/llist.c.o
+[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/md5.c.o
+[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/md4.c.o
+[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/macos.c.o
+[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/memdebug.c.o
+[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/mime.c.o
+[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/mprintf.c.o
+[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/mqtt.c.o
+[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/multi.c.o
+[ 36%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/openldap.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/netrc.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/multi_ntfy.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/parsedate.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/peer.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/pingpong.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/pop3.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/progress.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/protocol.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/proxy.c.o
+[ 37%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/psl.c.o
+[ 38%] Linking C static library libzstd.a
+[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/rand.c.o
+[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/ratelimit.c.o
 [ 40%] Linking C static library liblzma.a
-make[1]: *** [CMakeFiles/Makefile2:3876: _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
-[ 40%] Built target libzstd_static
-[ 40%] Built target liblzma
-make: *** [Makefile:156: all] Error 2
-[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
-[1m    Aborting...(B[m
+[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/request.c.o
+[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/rtsp.c.o
+[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/select.c.o
+[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/sendf.c.o
+[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/setopt.c.o
+[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/sha256.c.o
+[ 40%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/smb.c.o
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/slist.c.o
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/smtp.c.o
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/socketpair.c.o
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/socks.c.o
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/splay.c.o
+[ 41%] Built target libzstd_static
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/strcase.c.o
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/strequal.c.o
+[ 41%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/strerror.c.o
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/system_win32.c.o
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/telnet.c.o
+[ 42%] Built target liblzma
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/tftp.c.o
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/thrdqueue.c.o
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/thrdpool.c.o
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/transfer.c.o
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o
+[ 42%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/uint-table.c.o
+[ 42%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_acl.c.o
+[ 42%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_check_magic.c.o
+[ 44%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_cmdline.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/url.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/version.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/urlapi.c.o
+[ 44%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_cryptor.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/ws.c.o
+[ 44%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_digest.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o
+[ 44%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_entry.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o
+[ 44%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_entry_copy_stat.c.o
+[ 44%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o
+[ 45%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o
+[ 45%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o
+[ 45%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_entry_link_resolver.c.o
+[ 46%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_entry_stat.c.o
+[ 46%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o
+[ 46%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_entry_sparse.c.o
+[ 46%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o
+[ 46%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_entry_strmode.c.o
+[ 46%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o
+[ 46%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o
+[ 46%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_entry_xattr.c.o
+[ 46%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_hmac.c.o
+[ 46%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o
+[ 46%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_match.c.o
+[ 46%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/apple.c.o
+[ 46%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_options.c.o
+[ 46%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o
+[ 46%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_pack_dev.c.o
+[ 46%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o
+[ 46%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_parse_date.c.o
+[ 48%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o
+[ 48%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_pathmatch.c.o
+[ 48%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o
+[ 49%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o
+[ 49%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_ppmd8.c.o
+[ 49%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_ppmd7.c.o
+[ 49%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o
+[ 49%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o
+[ 49%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_random.c.o
+[ 49%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_rb.c.o
+[ 49%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o
+[ 49%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o
+[ 49%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read.c.o
+[ 49%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_add_passphrase.c.o
+[ 49%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_append_filter.c.o
+[ 49%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_data_into_fd.c.o
+[ 49%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_disk_entry_from_file.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_disk_posix.c.o
+[ 50%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_disk_set_standard_lookup.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_extract.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_extract2.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_open_fd.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_open_file.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_open_filename.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_open_memory.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_set_format.c.o
+[ 50%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/vtls_config.c.o
+[ 50%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_set_options.c.o
+[ 52%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o
+[ 52%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o
+[ 52%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_all.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_by_code.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_bzip2.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_compress.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_gzip.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_grzip.c.o
+[ 53%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_lrzip.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_lz4.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_lzop.c.o
+[ 53%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_none.c.o
+[ 53%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vquic/capsule.c.o
+[ 54%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_program.c.o
+[ 54%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vquic/cf-ngtcp2.c.o
+[ 54%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_rpm.c.o
+[ 54%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vquic/cf-capsule.c.o
+[ 54%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_uu.c.o
+[ 54%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_xz.c.o
+[ 54%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vquic/cf-ngtcp2-cmn.c.o
+[ 54%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_filter_zstd.c.o
+[ 54%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vquic/cf-ngtcp2-proxy.c.o
+[ 54%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_7zip.c.o
+[ 54%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vquic/cf-quiche.c.o
+[ 56%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_all.c.o
+[ 56%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o
+[ 56%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_by_code.c.o
+[ 56%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_ar.c.o
+[ 57%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_cab.c.o
+[ 57%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o
+[ 57%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o
+[ 57%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o
+[ 57%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_cpio.c.o
+[ 57%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/vssh/vssh.c.o
+[ 57%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_empty.c.o
+[ 57%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_iso9660.c.o
+[ 57%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o
+[ 57%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/basename.c.o
+[ 57%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_lha.c.o
+[ 57%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_mtree.c.o
+[ 57%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_rar.c.o
+[ 57%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/fopen.c.o
+[ 57%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o
+[ 58%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_rar5.c.o
+[ 58%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o
+[ 58%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o
+[ 58%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_raw.c.o
+[ 58%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o
+[ 58%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_tar.c.o
+[ 60%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_warc.c.o
+[ 60%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o
+[ 60%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_xar.c.o
+[ 60%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/snprintf.c.o
+[ 60%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/strcopy.c.o
+[ 60%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/strdup.c.o
+[ 60%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/strerr.c.o
+[ 60%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_read_support_format_zip.c.o
+[ 60%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_string.c.o
+[ 60%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o
+[ 60%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_string_sprintf.c.o
+[ 60%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_time.c.o
+[ 60%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o
+[ 60%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_version_details.c.o
+[ 60%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_util.c.o
+[ 61%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o
+[ 61%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_virtual.c.o
+[ 61%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write.c.o
+[ 61%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o
+[ 61%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o
+[ 61%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o
+[ 62%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_disk_posix.c.o
+[ 62%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_disk_set_standard_lookup.c.o
+[ 62%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_open_fd.c.o
+[ 62%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_open_file.c.o
+[ 62%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_open_filename.c.o
+[ 62%] Building C object _deps/curl-build/lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o
+[ 62%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_open_memory.c.o
+[ 62%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter.c.o
+[ 62%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_b64encode.c.o
+[ 62%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_by_name.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_bzip2.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_compress.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_grzip.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_gzip.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_lrzip.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_none.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_lz4.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_lzop.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_program.c.o
+[ 64%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_uuencode.c.o
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_xz.c.o
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_add_filter_zstd.c.o
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format.c.o
+[ 65%] Linking C static library libcurl.a
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_7zip.c.o
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_ar.c.o
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_by_name.c.o
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_cpio.c.o
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_cpio_newc.c.o
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_cpio_binary.c.o
+[ 65%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_cpio_odc.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_filter_by_ext.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_iso9660.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_gnutar.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_mtree.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_pax.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_raw.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_shar.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_ustar.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_v7tar.c.o
+[ 66%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_xar.c.o
+[ 68%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_warc.c.o
+[ 68%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_format_zip.c.o
+[ 68%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_options.c.o
+[ 68%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_write_set_passphrase.c.o
+[ 68%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/filter_fork_posix.c.o
+[ 68%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/xxhash.c.o
+[ 68%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_blake2s_ref.c.o
+[ 68%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_blake2sp_ref.c.o
+[ 68%] Building C object _deps/libarchive-build/libarchive/CMakeFiles/archive_static.dir/archive_disk_acl_linux.c.o
+[ 68%] Built target libcurl_static
+[ 69%] Linking C static library libarchive.a
+[ 69%] Built target archive_static
+[ 69%] Running rcc for timezones_generated
+[ 69%] Running rcc for countries_generated
+[ 69%] Built target rpi-imager_autogen_timestamp_deps
+[ 69%] Automatic MOC and UIC for target rpi-imager
+[ 69%] Built target rpi-imager_autogen
+[ 69%] Running AUTOMOC file extraction for target rpi-imager
+[ 69%] Running rcc for resource qmake_RpiImager
+[ 69%] Generating rpi-imager_ko.qm
+[ 69%] Generating rpi-imager_zh.qm
+[ 69%] Running rcc for resource rpi-imager_raw_qml_0
+[ 69%] Generating rpi-imager_ru.qm
+[ 70%] Running rcc for resource rpi-imager_raw_qml_0_extra_qmldirs
+[ 70%] Generating rpi-imager_sl.qm
+[ 70%] Generating .rcc/qmlcache/rpi-imager_qmlcache_loader.cpp
+[ 70%] Generating rpi-imager_ka.qm
+[ 70%] Generating rpi-imager_it.qm
+[ 70%] Generating rpi-imager_es.qm
+[ 72%] Generating rpi-imager_pt-BR.qm
+[ 72%] Generating rpi-imager_ja.qm
+[ 72%] Generating rpi-imager_zh-TW.qm
+[ 72%] Generating rpi-imager_ro.qm
+[ 72%] Generating rpi-imager_he.qm
+[ 72%] Generating rpi-imager_cs.qm
+[ 72%] Generating rpi-imager_hu.qm
+[ 72%] Generating rpi-imager_bn.qm
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_ko.qm'...
+    Generated 543 translation(s) (538 finished and 5 unfinished)
+    Ignored 202 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_zh.qm'...
+    Generated 544 translation(s) (539 finished and 5 unfinished)
+    Ignored 201 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_ja.qm'...
+    Generated 41 translation(s) (18 finished and 23 unfinished)
+    Ignored 704 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_zh-TW.qm'...
+    Generated 43 translation(s) (19 finished and 24 unfinished)
+    Ignored 702 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_sl.qm'...
+    Generated 37 translation(s) (18 finished and 19 unfinished)
+    Ignored 708 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_ka.qm'...
+    Generated 264 translation(s) (250 finished and 14 unfinished)
+    Ignored 481 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_ru.qm'...
+    Generated 533 translation(s) (525 finished and 8 unfinished)
+    Ignored 212 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_it.qm'...
+    Generated 479 translation(s) (465 finished and 14 unfinished)
+    Ignored 266 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_es.qm'...
+    Generated 544 translation(s) (539 finished and 5 unfinished)
+    Ignored 201 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_pt-BR.qm'...
+    Generated 544 translation(s) (539 finished and 5 unfinished)
+    Ignored 201 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_cs.qm'...
+    Generated 538 translation(s) (533 finished and 5 unfinished)
+    Ignored 207 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_ro.qm'...
+    Generated 483 translation(s) (469 finished and 14 unfinished)
+    Ignored 262 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_hu.qm'...
+    Generated 191 translation(s) (164 finished and 27 unfinished)
+    Ignored 554 untranslated source text(s)
+[ 72%] Generating rpi-imager_tr.qm
+[ 72%] Generating rpi-imager_en.qm
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_he.qm'...
+    Generated 264 translation(s) (250 finished and 14 unfinished)
+    Ignored 481 untranslated source text(s)
+[ 72%] Generating rpi-imager_pt.qm
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_bn.qm'...
+    Generated 45 translation(s) (21 finished and 24 unfinished)
+    Ignored 700 untranslated source text(s)
+[ 72%] Generating rpi-imager_ca.qm
+[ 72%] Generating rpi-imager_pl.qm
+[ 73%] Generating rpi-imager_ga.qm
+[ 73%] Generating rpi-imager_de.qm
+[ 73%] Generating rpi-imager_uk.qm
+[ 73%] Automatic RCC for qml.qrc
+[ 73%] Automatic RCC for unraid/unraid.qrc
+[ 73%] Generating rpi-imager_nl.qm
+[ 73%] Generating rpi-imager_sk.qm
+[ 73%] Generating rpi-imager_fr.qm
+[ 74%] Running moc --collect-json for target rpi-imager
+[ 74%] Generating rpi-imager_en-US.qm
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_en.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 745 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_tr.qm'...
+    Generated 745 translation(s) (745 finished and 0 unfinished)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_pt.qm'...
+    Generated 544 translation(s) (539 finished and 5 unfinished)
+    Ignored 201 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_pl.qm'...
+    Generated 222 translation(s) (186 finished and 36 unfinished)
+    Ignored 523 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_ca.qm'...
+    Generated 544 translation(s) (539 finished and 5 unfinished)
+    Ignored 201 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_ga.qm'...
+    Generated 745 translation(s) (745 finished and 0 unfinished)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_uk.qm'...
+    Generated 41 translation(s) (18 finished and 23 unfinished)
+    Ignored 704 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_nl.qm'...
+    Generated 41 translation(s) (18 finished and 23 unfinished)
+    Ignored 704 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_fr.qm'...
+    Generated 666 translation(s) (666 finished and 0 unfinished)
+    Ignored 79 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_sk.qm'...
+    Generated 544 translation(s) (539 finished and 5 unfinished)
+    Ignored 201 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_de.qm'...
+    Generated 524 translation(s) (518 finished and 6 unfinished)
+    Ignored 221 untranslated source text(s)
+Updating '/build/unraid-usb-creator-git/src/build/rpi-imager_en-US.qm'...
+    Generated 1 translation(s) (1 finished and 0 unfinished)
+    Ignored 744 untranslated source text(s)
+[ 74%] Automatic RCC for translations.qrc
+[ 74%] Generating meta_types/qt6rpi-imager_metatypes.json
+[ 74%] Automatic QML type registration for target rpi-imager
+[ 74%] Generating .rcc/qmlcache/rpi-imager_main_qml.cpp, .rcc/qmlcache/rpi-imager_main_qml.cpp.aotstats
+[ 74%] Generating .rcc/qmlcache/rpi-imager_Style_qml.cpp, .rcc/qmlcache/rpi-imager_Style_qml.cpp.aotstats
+[ 74%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/BaseDialog_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/BaseDialog_qml.cpp.aotstats
+[ 74%] Generating .rcc/qmlcache/rpi-imager_CommonStrings_qml.cpp, .rcc/qmlcache/rpi-imager_CommonStrings_qml.cpp.aotstats
+[ 74%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/FocusableHeading_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/FocusableHeading_qml.cpp.aotstats
+[ 74%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImButton_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImButton_qml.cpp.aotstats
+[ 74%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImComboBox_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImComboBox_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImButtonRed_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImButtonRed_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImOptionPill_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImOptionPill_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImCheckBox_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImCheckBox_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImPasswordField_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImPasswordField_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/FocusableText_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/FocusableText_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImSaveFileDialog_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImSaveFileDialog_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImRadioButton_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImRadioButton_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImFileDialog_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImFileDialog_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImOptionButton_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImOptionButton_qml.cpp.aotstats
+[ 76%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImToggleTab_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImToggleTab_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/ImTextField_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/ImTextField_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/SelectionListView_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/SelectionListView_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/MarqueeText_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/MarqueeText_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_qmlcomponents/OSSelectionListView_qml.cpp, .rcc/qmlcache/rpi-imager_qmlcomponents/OSSelectionListView_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_unraid/wizard/BrandSteps_qml.cpp, .rcc/qmlcache/rpi-imager_unraid/wizard/BrandSteps_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_unraid/wizard/UnraidWifiStep_qml.cpp, .rcc/qmlcache/rpi-imager_unraid/wizard/UnraidWifiStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_unraid/wizard/UnraidNetworkStep_qml.cpp, .rcc/qmlcache/rpi-imager_unraid/wizard/UnraidNetworkStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/DeviceSelectionStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/DeviceSelectionStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/DoneStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/DoneStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/HostnameCustomizationStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/HostnameCustomizationStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/IfAndFeaturesCustomizationStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/IfAndFeaturesCustomizationStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/LanguageSelectionStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/LanguageSelectionStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/LocaleCustomizationStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/LocaleCustomizationStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/OSSelectionStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/OSSelectionStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/PiConnectCustomizationStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/PiConnectCustomizationStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/RemoteAccessStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/RemoteAccessStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/SecureBootCustomizationStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/SecureBootCustomizationStep_qml.cpp.aotstats
+[ 77%] Generating .rcc/qmlcache/rpi-imager_wizard/UserCustomizationStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/UserCustomizationStep_qml.cpp.aotstats
+[ 78%] Generating .rcc/qmlcache/rpi-imager_wizard/StorageSelectionStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/StorageSelectionStep_qml.cpp.aotstats
+[ 78%] Generating .rcc/qmlcache/rpi-imager_wizard/WizardContainer_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/WizardContainer_qml.cpp.aotstats
+[ 78%] Generating .rcc/qmlcache/rpi-imager_wizard/WifiCustomizationStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/WifiCustomizationStep_qml.cpp.aotstats
+[ 78%] Generating .rcc/qmlcache/rpi-imager_wizard/WizardStepBase_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/WizardStepBase_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/WritingStep_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/WritingStep_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/components/SshKeyManager_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/components/SshKeyManager_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/components/WizardDescriptionText_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/components/WizardDescriptionText_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/components/WizardFormLabel_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/components/WizardFormLabel_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/components/WizardSectionContainer_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/components/WizardSectionContainer_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/dialogs/AppOptionsDialog_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/dialogs/AppOptionsDialog_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/dialogs/ConfirmOtpProgramDialog_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/dialogs/ConfirmOtpProgramDialog_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/dialogs/ConfirmSystemDriveDialog_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/dialogs/ConfirmSystemDriveDialog_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/dialogs/ConfirmUnfilterDialog_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/dialogs/ConfirmUnfilterDialog_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/dialogs/DebugOptionsDialog_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/dialogs/DebugOptionsDialog_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/dialogs/KeychainPermissionDialog_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/dialogs/KeychainPermissionDialog_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/dialogs/PasswordlessSudoWarningDialog_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/dialogs/PasswordlessSudoWarningDialog_qml.cpp.aotstats
+[ 80%] Generating .rcc/qmlcache/rpi-imager_wizard/dialogs/RepositoryDialog_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/dialogs/RepositoryDialog_qml.cpp.aotstats
+[ 81%] Generating .rcc/qmlcache/rpi-imager_wizard/dialogs/UpdateAvailableDialog_qml.cpp, .rcc/qmlcache/rpi-imager_wizard/dialogs/UpdateAvailableDialog_qml.cpp.aotstats
+[ 81%] Building CXX object CMakeFiles/rpi-imager.dir/linux/linux_suspend_inhibitor.cpp.o
+[ 81%] Building CXX object CMakeFiles/rpi-imager.dir/rpi-imager_autogen/mocs_compilation.cpp.o
+[ 81%] Building CXX object CMakeFiles/rpi-imager.dir/linux/networkmanagerapi.cpp.o
+[ 81%] Building CXX object CMakeFiles/rpi-imager.dir/drivelist/drivelist_linux.cpp.o
+[ 82%] Building CXX object CMakeFiles/rpi-imager.dir/linux/urihandler_dbus.cpp.o
+[ 82%] Building CXX object CMakeFiles/rpi-imager.dir/linux/stpanalyzer.cpp.o
+[ 82%] Building CXX object CMakeFiles/rpi-imager.dir/linux/bootimgcreator_linux.cpp.o
+[ 82%] Building CXX object CMakeFiles/rpi-imager.dir/linux/acceleratedcryptographichash_gnutls.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/drivelistitem.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/linux/platformquirks_linux.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/linux/secureboot_crypto_linux.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/drivelistmodel.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/linux/file_operations_linux.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/main.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/linux/nativefiledialog_linux.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/drivelistmodelpollthread.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/devicewrapper.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/devicewrapperblockcacheentry.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/downloadextractthread.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/downloadthread.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/devicewrapperpartition.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/devicewrapperfatpartition.cpp.o
+[ 84%] Building CXX object CMakeFiles/rpi-imager.dir/driveformatthread.cpp.o
+[ 85%] Building CXX object CMakeFiles/rpi-imager.dir/localfileextractthread.cpp.o
+[ 85%] Building CXX object CMakeFiles/rpi-imager.dir/downloadstatstelemetry.cpp.o
+[ 85%] Building C object CMakeFiles/rpi-imager.dir/dependencies/sha256crypt/sha256crypt.c.o
+[ 85%] Building CXX object CMakeFiles/rpi-imager.dir/cli.cpp.o
+[ 85%] Building CXX object CMakeFiles/rpi-imager.dir/disk_formatter.cpp.o
+[ 85%] Building CXX object CMakeFiles/rpi-imager.dir/file_operations.cpp.o
+[ 85%] Building CXX object CMakeFiles/rpi-imager.dir/cachemanager.cpp.o
+[ 85%] Building CXX object CMakeFiles/rpi-imager.dir/systemmemorymanager.cpp.o
+[ 85%] Building CXX object CMakeFiles/rpi-imager.dir/imageadvancedoptions.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/customization_generator.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/platformhelper.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/suspend_inhibitor.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/secureboot.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/asynccachewriter.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/ringbuffer.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/performancestats.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/curlnetworkconfig.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/curlfetcher.cpp.o
+[ 86%] Building CXX object CMakeFiles/rpi-imager.dir/writeprogresswatchdog.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/unraid/unraid_guid.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/unraid/unraid_postwrite.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/nativefiledialog.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/iconimageprovider.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/iconmultifetcher.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/device_info.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/rpiboot/libusb_transport.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/rpiboot/bootcode_loader.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/rpiboot/file_server.cpp.o
+[ 88%] Building CXX object CMakeFiles/rpi-imager.dir/rpiboot/bootfiles.cpp.o
+[ 89%] Building CXX object CMakeFiles/rpi-imager.dir/rpiboot/rpiboot_protocol.cpp.o
+[ 89%] Building CXX object CMakeFiles/rpi-imager.dir/rpiboot/firmware_manager.cpp.o
+[ 89%] Building CXX object CMakeFiles/rpi-imager.dir/rpiboot/rpiboot_scanner.cpp.o
+[ 89%] Building CXX object CMakeFiles/rpi-imager.dir/rpiboot/secure_boot_provisioner.cpp.o
+[ 89%] Building CXX object CMakeFiles/rpi-imager.dir/rpiboot/bootloader_image.cpp.o
+[ 89%] Building CXX object CMakeFiles/rpi-imager.dir/rpibootthread.cpp.o
+[ 89%] Building CXX object CMakeFiles/rpi-imager.dir/fastboot/fastboot_protocol.cpp.o
+[ 89%] Building CXX object CMakeFiles/rpi-imager.dir/fastboot/bmap.cpp.o
+[ 89%] Building CXX object CMakeFiles/rpi-imager.dir/fastboot/sparse_encoder.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/fastboot/pieeprom.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/fastboot/eeprom_signer.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/fastbootflashthread.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/connect_device_registrar.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/qrc_timezones_generated.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/qrc_countries_generated.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/rpi-imager_qmltyperegistrations.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/.qt/rcc/qrc_qmake_RpiImager.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/imagewriter.cpp.o
+[ 90%] Building CXX object CMakeFiles/rpi-imager.dir/hwlistmodel.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/oslistmodel.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/urlfmt.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/clipboardhelper.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcache_loader.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_main_qml.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_CommonStrings_qml.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_Style_qml.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/dialogs/ConfirmUnfilterDialog_qml.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/dialogs/ConfirmSystemDriveDialog_qml.cpp.o
+[ 92%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/dialogs/KeychainPermissionDialog_qml.cpp.o
+[ 93%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/dialogs/UpdateAvailableDialog_qml.cpp.o
+[ 93%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/dialogs/PasswordlessSudoWarningDialog_qml.cpp.o
+[ 93%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/dialogs/RepositoryDialog_qml.cpp.o
+[ 93%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/dialogs/AppOptionsDialog_qml.cpp.o
+[ 93%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/dialogs/DebugOptionsDialog_qml.cpp.o
+[ 93%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/dialogs/ConfirmOtpProgramDialog_qml.cpp.o
+[ 93%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/LanguageSelectionStep_qml.cpp.o
+[ 93%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/BaseDialog_qml.cpp.o
+[ 93%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImButton_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImButtonRed_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImCheckBox_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImComboBox_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/FocusableText_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/FocusableHeading_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImFileDialog_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImSaveFileDialog_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImRadioButton_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImOptionPill_qml.cpp.o
+[ 94%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImOptionButton_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImTextField_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImPasswordField_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/ImToggleTab_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/MarqueeText_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/SelectionListView_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_qmlcomponents/OSSelectionListView_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/WizardStepBase_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/WizardContainer_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/DeviceSelectionStep_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/OSSelectionStep_qml.cpp.o
+[ 97%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/StorageSelectionStep_qml.cpp.o
+[ 97%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/HostnameCustomizationStep_qml.cpp.o
+[ 97%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/IfAndFeaturesCustomizationStep_qml.cpp.o
+[ 97%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/LocaleCustomizationStep_qml.cpp.o
+[ 97%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/UserCustomizationStep_qml.cpp.o
+[ 97%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/WifiCustomizationStep_qml.cpp.o
+[ 97%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/RemoteAccessStep_qml.cpp.o
+[ 97%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/SecureBootCustomizationStep_qml.cpp.o
+[ 97%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/PiConnectCustomizationStep_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/WritingStep_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/DoneStep_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/components/WizardSectionContainer_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/components/WizardFormLabel_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/components/WizardDescriptionText_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_wizard/components/SshKeyManager_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_unraid/wizard/BrandSteps_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_unraid/wizard/UnraidNetworkStep_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.rcc/qmlcache/rpi-imager_unraid/wizard/UnraidWifiStep_qml.cpp.o
+[ 98%] Building CXX object CMakeFiles/rpi-imager.dir/.qt/rcc/qrc_rpi-imager_raw_qml_0.cpp.o
+[100%] Building CXX object CMakeFiles/rpi-imager.dir/.qt/rcc/qrc_rpi-imager_raw_qml_0_extra_qmldirs.cpp.o
+[100%] Building CXX object CMakeFiles/rpi-imager.dir/rpi-imager_autogen/FNY3NDHFM6/qrc_unraid.cpp.o
+[100%] Building CXX object CMakeFiles/rpi-imager.dir/rpi-imager_autogen/EWIEGA46WW/qrc_qml.cpp.o
+[100%] Building CXX object CMakeFiles/rpi-imager.dir/rpi-imager_autogen/EJRQKI7XPS/qrc_translations.cpp.o
+[100%] Linking CXX executable unraid-usb-creator
+lto-wrapper: warning: Extra option to ‘-Xassembler’: --noexecstack, dropping all ‘-Xassembler’ and ‘-Wa’ options.
+[100%] Built target rpi-imager
