@@ -1,0 +1,452 @@
+-- The CXX compiler identification is GNU 16.2.1
+-- The C compiler identification is GNU 16.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for C++ include filesystem
+-- Looking for C++ include filesystem - found
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED - Success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for C++ include pwd.h
+-- Looking for C++ include pwd.h - found
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/libffi.so
+-- Looking for histedit.h
+-- Looking for histedit.h - found
+-- Found LibEdit: /usr/include (found version "2.11")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.2")
+-- Found LibXml2: /usr/lib/libxml2.so (found version "2.15.3")
+-- Found CURL: /usr/lib/libcurl.so (found version "8.21.0")
+-- Linker detection: GNU ld
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS - Success
+-- Performing Test SUPPORT_EXCLUDE_LIBS
+-- Performing Test SUPPORT_EXCLUDE_LIBS - Success
+-- spdlog found
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/wasmedge/src/build
+ninja: Entering directory `build'
+[1/129] Building CXX object lib/system/CMakeFiles/wasmedgeSystem.dir/mmap.cpp.o
+[2/129] Building CXX object lib/system/CMakeFiles/wasmedgeSystem.dir/path.cpp.o
+[3/129] Building CXX object lib/common/CMakeFiles/wasmedgeCommon.dir/hexstr.cpp.o
+[4/129] Building CXX object lib/common/CMakeFiles/wasmedgeCommon.dir/spdlog.cpp.o
+FAILED: [code=1] lib/common/CMakeFiles/wasmedgeCommon.dir/spdlog.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/common/CMakeFiles/wasmedgeCommon.dir/spdlog.cpp.o -MF lib/common/CMakeFiles/wasmedgeCommon.dir/spdlog.cpp.o.d -o lib/common/CMakeFiles/wasmedgeCommon.dir/spdlog.cpp.o -c /build/wasmedge/src/wasmedge/lib/common/spdlog.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/lib/common/spdlog.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[5/129] Building CXX object lib/system/CMakeFiles/wasmedgeSystem.dir/allocator.cpp.o
+FAILED: [code=1] lib/system/CMakeFiles/wasmedgeSystem.dir/allocator.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/lib/system -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/system/CMakeFiles/wasmedgeSystem.dir/allocator.cpp.o -MF lib/system/CMakeFiles/wasmedgeSystem.dir/allocator.cpp.o.d -o lib/system/CMakeFiles/wasmedgeSystem.dir/allocator.cpp.o -c /build/wasmedge/src/wasmedge/lib/system/allocator.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/lib/system/allocator.cpp:8:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[6/129] Building CXX object lib/common/CMakeFiles/wasmedgeCommon.dir/hash.cpp.o
+FAILED: [code=1] lib/common/CMakeFiles/wasmedgeCommon.dir/hash.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/common/CMakeFiles/wasmedgeCommon.dir/hash.cpp.o -MF lib/common/CMakeFiles/wasmedgeCommon.dir/hash.cpp.o.d -o lib/common/CMakeFiles/wasmedgeCommon.dir/hash.cpp.o -c /build/wasmedge/src/wasmedge/lib/common/hash.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/hash.h:18,
+                 from /build/wasmedge/src/wasmedge/lib/common/hash.cpp:1:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[7/129] Building CXX object lib/po/CMakeFiles/wasmedgePO.dir/argument_parser.cpp.o
+FAILED: [code=1] lib/po/CMakeFiles/wasmedgePO.dir/argument_parser.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/po/CMakeFiles/wasmedgePO.dir/argument_parser.cpp.o -MF lib/po/CMakeFiles/wasmedgePO.dir/argument_parser.cpp.o.d -o lib/po/CMakeFiles/wasmedgePO.dir/argument_parser.cpp.o -c /build/wasmedge/src/wasmedge/lib/po/argument_parser.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/po/argument_parser.h:12,
+                 from /build/wasmedge/src/wasmedge/lib/po/argument_parser.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[8/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/filemgr.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/filemgr.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/filemgr.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/filemgr.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/filemgr.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/filemgr.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/loader/filemgr.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/filemgr.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[9/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/shared_library.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/shared_library.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/shared_library.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/shared_library.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/shared_library.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/shared_library.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/common/executable.h:19,
+                 from /build/wasmedge/src/wasmedge/include/ast/type.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/description.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/loader/shared_library.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/shared_library.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[10/129] Building CXX object lib/common/CMakeFiles/wasmedgeCommon.dir/errinfo.cpp.o
+FAILED: [code=1] lib/common/CMakeFiles/wasmedgeCommon.dir/errinfo.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/common/CMakeFiles/wasmedgeCommon.dir/errinfo.cpp.o -MF lib/common/CMakeFiles/wasmedgeCommon.dir/errinfo.cpp.o.d -o lib/common/CMakeFiles/wasmedgeCommon.dir/errinfo.cpp.o -c /build/wasmedge/src/wasmedge/lib/common/errinfo.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_ast.hpp:23,
+                 from /build/wasmedge/src/wasmedge/include/common/errinfo.h:16,
+                 from /build/wasmedge/src/wasmedge/lib/common/errinfo.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[11/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/aot_section.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/aot_section.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/aot_section.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/aot_section.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoaderFileMgr.dir/aot_section.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/aot_section.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/common/executable.h:19,
+                 from /build/wasmedge/src/wasmedge/include/ast/type.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/description.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/loader/aot_section.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/aot_section.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[12/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_instance.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_instance.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_instance.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_instance.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_instance.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_instance.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/sort.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/alias.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/component.h:17,
+                 from /build/wasmedge/src/wasmedge/include/loader/loader.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_instance.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[13/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_sort.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_sort.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_sort.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_sort.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_sort.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_sort.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/sort.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/alias.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/component.h:17,
+                 from /build/wasmedge/src/wasmedge/include/loader/loader.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_sort.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[14/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_alias.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_alias.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_alias.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_alias.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_alias.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_alias.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/sort.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/alias.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/component.h:17,
+                 from /build/wasmedge/src/wasmedge/include/loader/loader.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_alias.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[15/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/ast/component/component.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/sort.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/alias.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/component.h:17,
+                 from /build/wasmedge/src/wasmedge/include/loader/loader.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/ast/component/component.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[16/129] Building CXX object lib/llvm/CMakeFiles/wasmedgeLLVM.dir/data.cpp.o
+FAILED: [code=1] lib/llvm/CMakeFiles/wasmedgeLLVM.dir/data.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -funwind-tables -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/llvm/CMakeFiles/wasmedgeLLVM.dir/data.cpp.o -MF lib/llvm/CMakeFiles/wasmedgeLLVM.dir/data.cpp.o.d -o lib/llvm/CMakeFiles/wasmedgeLLVM.dir/data.cpp.o -c /build/wasmedge/src/wasmedge/lib/llvm/data.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/common/executable.h:19,
+                 from /build/wasmedge/src/wasmedge/include/ast/type.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/description.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/module.h:17,
+                 from /build/wasmedge/src/wasmedge/include/llvm/data.h:16,
+                 from /build/wasmedge/src/wasmedge/lib/llvm/data.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[17/129] Building CXX object lib/llvm/CMakeFiles/wasmedgeLLVM.dir/codegen.cpp.o
+FAILED: [code=1] lib/llvm/CMakeFiles/wasmedgeLLVM.dir/codegen.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -funwind-tables -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/llvm/CMakeFiles/wasmedgeLLVM.dir/codegen.cpp.o -MF lib/llvm/CMakeFiles/wasmedgeLLVM.dir/codegen.cpp.o.d -o lib/llvm/CMakeFiles/wasmedgeLLVM.dir/codegen.cpp.o -c /build/wasmedge/src/wasmedge/lib/llvm/codegen.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/common/executable.h:19,
+                 from /build/wasmedge/src/wasmedge/include/ast/type.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/description.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/module.h:17,
+                 from /build/wasmedge/src/wasmedge/include/llvm/codegen.h:16,
+                 from /build/wasmedge/src/wasmedge/lib/llvm/codegen.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[18/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_start.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_start.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_start.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_start.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_start.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_start.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/sort.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/alias.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/component.h:17,
+                 from /build/wasmedge/src/wasmedge/include/loader/loader.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_start.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[19/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_section.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_section.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_section.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_section.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_section.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_section.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/sort.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/alias.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/component.h:17,
+                 from /build/wasmedge/src/wasmedge/include/loader/loader.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_section.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[20/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_canonical.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_canonical.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_canonical.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_canonical.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_canonical.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_canonical.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/sort.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/alias.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/component.h:17,
+                 from /build/wasmedge/src/wasmedge/include/loader/loader.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_canonical.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[21/129] Building CXX object lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/func.cpp.o
+FAILED: [code=1] lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/func.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/func.cpp.o -MF lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/func.cpp.o.d -o lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/func.cpp.o -c /build/wasmedge/src/wasmedge/lib/plugin/wasi_logging/func.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/plugin/wasi_logging/env.h:10,
+                 from /build/wasmedge/src/wasmedge/include/plugin/wasi_logging/base.h:9,
+                 from /build/wasmedge/src/wasmedge/include/plugin/wasi_logging/func.h:9,
+                 from /build/wasmedge/src/wasmedge/lib/plugin/wasi_logging/func.cpp:7:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[22/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_import.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_import.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_import.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_import.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_import.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_import.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/sort.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/alias.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/component.h:17,
+                 from /build/wasmedge/src/wasmedge/include/loader/loader.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_import.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[23/129] Building CXX object lib/llvm/CMakeFiles/wasmedgeLLVM.dir/jit.cpp.o
+FAILED: [code=1] lib/llvm/CMakeFiles/wasmedgeLLVM.dir/jit.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -funwind-tables -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/llvm/CMakeFiles/wasmedgeLLVM.dir/jit.cpp.o -MF lib/llvm/CMakeFiles/wasmedgeLLVM.dir/jit.cpp.o.d -o lib/llvm/CMakeFiles/wasmedgeLLVM.dir/jit.cpp.o -c /build/wasmedge/src/wasmedge/lib/llvm/jit.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/common/executable.h:19,
+                 from /build/wasmedge/src/wasmedge/include/ast/type.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/description.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/module.h:17,
+                 from /build/wasmedge/src/wasmedge/include/llvm/jit.h:16,
+                 from /build/wasmedge/src/wasmedge/lib/llvm/jit.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[24/129] Building CXX object lib/system/CMakeFiles/wasmedgeSystem.dir/fault.cpp.o
+FAILED: [code=1] lib/system/CMakeFiles/wasmedgeSystem.dir/fault.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/lib/system -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/system/CMakeFiles/wasmedgeSystem.dir/fault.cpp.o -MF lib/system/CMakeFiles/wasmedgeSystem.dir/fault.cpp.o.d -o lib/system/CMakeFiles/wasmedgeSystem.dir/fault.cpp.o -c /build/wasmedge/src/wasmedge/lib/system/fault.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/system/fault.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/system/fault.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[25/129] Building CXX object lib/system/CMakeFiles/wasmedgeSystem.dir/stacktrace.cpp.o
+FAILED: [code=1] lib/system/CMakeFiles/wasmedgeSystem.dir/stacktrace.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/lib/system -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/system/CMakeFiles/wasmedgeSystem.dir/stacktrace.cpp.o -MF lib/system/CMakeFiles/wasmedgeSystem.dir/stacktrace.cpp.o.d -o lib/system/CMakeFiles/wasmedgeSystem.dir/stacktrace.cpp.o -c /build/wasmedge/src/wasmedge/lib/system/stacktrace.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_ast.hpp:23,
+                 from /build/wasmedge/src/wasmedge/include/ast/instruction.h:16,
+                 from /build/wasmedge/src/wasmedge/include/runtime/stackmgr.h:16,
+                 from /build/wasmedge/src/wasmedge/include/system/stacktrace.h:18,
+                 from /build/wasmedge/src/wasmedge/lib/system/stacktrace.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[26/129] Building CXX object lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_type.cpp.o
+FAILED: [code=1] lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_type.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_type.cpp.o -MF lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_type.cpp.o.d -o lib/loader/CMakeFiles/wasmedgeLoader.dir/ast/component/component_type.cpp.o -c /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_type.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/sort.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/alias.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/component/component.h:17,
+                 from /build/wasmedge/src/wasmedge/include/loader/loader.h:17,
+                 from /build/wasmedge/src/wasmedge/lib/loader/ast/component/component_type.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[27/129] Building CXX object lib/llvm/CMakeFiles/wasmedgeLLVM.dir/compiler.cpp.o
+FAILED: [code=1] lib/llvm/CMakeFiles/wasmedgeLLVM.dir/compiler.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -funwind-tables -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/llvm/CMakeFiles/wasmedgeLLVM.dir/compiler.cpp.o -MF lib/llvm/CMakeFiles/wasmedgeLLVM.dir/compiler.cpp.o.d -o lib/llvm/CMakeFiles/wasmedgeLLVM.dir/compiler.cpp.o -c /build/wasmedge/src/wasmedge/lib/llvm/compiler.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_types.hpp:18,
+                 from /build/wasmedge/src/wasmedge/include/common/types.h:17,
+                 from /build/wasmedge/src/wasmedge/include/common/executable.h:19,
+                 from /build/wasmedge/src/wasmedge/include/ast/type.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/description.h:17,
+                 from /build/wasmedge/src/wasmedge/include/ast/section.h:16,
+                 from /build/wasmedge/src/wasmedge/include/ast/module.h:17,
+                 from /build/wasmedge/src/wasmedge/include/llvm/compiler.h:16,
+                 from /build/wasmedge/src/wasmedge/lib/llvm/compiler.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[28/129] Building CXX object lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/module.cpp.o
+FAILED: [code=1] lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/module.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/module.cpp.o -MF lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/module.cpp.o.d -o lib/plugin/wasi_logging/CMakeFiles/wasmedgePluginWasiLogging.dir/module.cpp.o -c /build/wasmedge/src/wasmedge/lib/plugin/wasi_logging/module.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/plugin/wasi_logging/env.h:10,
+                 from /build/wasmedge/src/wasmedge/include/plugin/wasi_logging/module.h:9,
+                 from /build/wasmedge/src/wasmedge/lib/plugin/wasi_logging/module.cpp:7:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+[29/129] Building CXX object lib/plugin/CMakeFiles/wasmedgePlugin.dir/plugin.cpp.o
+FAILED: [code=1] lib/plugin/CMakeFiles/wasmedgePlugin.dir/plugin.cpp.o 
+/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/build/wasmedge/src/build/include/api -I/build/wasmedge/src/wasmedge/include/api -I/build/wasmedge/src/build/include -I/build/wasmedge/src/wasmedge/include -I/build/wasmedge/src/build/lib/system -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/wasmedge/src=/usr/src/debug/wasmedge -flto=auto -std=c++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-error=dangling-reference -Wno-error=template-id-cdtor -MD -MT lib/plugin/CMakeFiles/wasmedgePlugin.dir/plugin.cpp.o -MF lib/plugin/CMakeFiles/wasmedgePlugin.dir/plugin.cpp.o.d -o lib/plugin/CMakeFiles/wasmedgePlugin.dir/plugin.cpp.o -c /build/wasmedge/src/wasmedge/lib/plugin/plugin.cpp
+In file included from /build/wasmedge/src/wasmedge/include/common/spdlog.h:18,
+                 from /build/wasmedge/src/wasmedge/include/common/enum_errcode.hpp:20,
+                 from /build/wasmedge/src/wasmedge/include/common/errcode.h:16,
+                 from /build/wasmedge/src/wasmedge/include/common/hash.h:18,
+                 from /build/wasmedge/src/wasmedge/include/plugin/plugin.h:18,
+                 from /build/wasmedge/src/wasmedge/lib/plugin/plugin.cpp:4:
+/build/wasmedge/src/wasmedge/include/common/int128.h: In function ‘constexpr fmt::v12::detail::uint128_fallback fmt::v12::detail::operator-(unsigned int, uint128_fallback)’:
+/build/wasmedge/src/wasmedge/include/common/int128.h:585:11: error: no match for ‘operator~’ (operand type is ‘fmt::v12::detail::uint128_fallback’ {aka ‘fmt::v12::detail::uint128’})
+  585 |   return (~Result) + 1 + LHS;
+      |           ^~~~~~~
+ninja: build stopped: subcommand failed.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
