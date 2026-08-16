@@ -1,0 +1,496 @@
+-----------------------------------------------------------------
+          Welcome to the OpenShot Build System!
+
+CMake will now check libopenshot's build dependencies and inform
+you of any missing files or other issues.
+
+For more information, please visit <http://www.openshot.org/>.
+-----------------------------------------------------------------
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+
+Generating build files for OpenShot with CMake 4.4.2
+  Building libopenshot (version 0.7.0)
+  SO/API/ABI Version: 30
+
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.5")
+-- Found ALSA: /usr/lib/libasound.so (found version "1.2.16.1")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.2")
+-- Found ImageMagick: /usr/lib/libMagick++-7.Q16HDRI.so (found version "7.1.2-29")
+-- Looking for system jsoncpp
+-- Found jsoncpp: /usr/include (found version "1.9.6")
+-- Found Resvg: /usr/lib/libresvg.so (found version "0.48.1")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Qt6  (components: Core, Gui, Widgets)
+-- Checking for module 'libavcodec'
+--   Found libavcodec, version 58.134.100
+-- Checking for module 'libavdevice'
+--   Found libavdevice, version 58.13.100
+-- Checking for module 'libavformat'
+--   Found libavformat, version 58.76.100
+-- Checking for module 'libavutil'
+--   Found libavutil, version 56.70.100
+-- Checking for module 'libswscale'
+--   Found libswscale, version 5.9.100
+-- Checking for module 'libswresample'
+--   Found libswresample, version 3.9.100
+-- Found FFmpeg: /usr/lib/ffmpeg4.4/libavcodec.so;/usr/lib/ffmpeg4.4/libavdevice.so;/usr/lib/ffmpeg4.4/libavformat.so;/usr/lib/ffmpeg4.4/libavutil.so;/usr/lib/ffmpeg4.4/libswscale.so;/usr/lib/ffmpeg4.4/libswresample.so (found version "n4.4.8") found components: avcodec avdevice avformat avutil swscale swresample
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- Found ZeroMQ: /usr/lib/libzmq.so (found version "4.3.5")
+-- Found babl: /usr/include/babl-0.1 (found version "0.1.128")
+CMake Warning at /usr/lib/cmake/opencv4/OpenCVConfig.cmake:118 (message):
+  OpenCV: Include directory doesn't exist: '//include/opencv4'.  OpenCV
+  installation may be broken.  Skip...
+Call Stack (most recent call first):
+  src/CMakeLists.txt:544 (find_package)
+
+
+-- Found OpenCV: / (found suitable version "4.14.0", minimum required is "4")
+-- Found Protobuf: /usr/lib/libprotobuf.so (found suitable version "7.35.1", minimum required is "3")
+-- Found SWIG: /usr/bin/swig (found suitable version "4.5.0", minimum required is "3.0")
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.14.7", minimum required is "3")
+-- Found PythonLibs: /usr/lib/libpython3.14.so (found suitable version "3.14.7", minimum required is "3")
+-- PYTHON_MODULE_PATH: /usr/lib/python3.14/site-packages
+-- Found Ruby: /usr/bin/ruby (found version "3.4.10") found components: Interpreter Development
+-- RUBY_MODULE_PATH: /usr/lib/ruby/vendor_ruby/3.4.0/x86_64-linux
+-- Found Doxygen: /usr/bin/doxygen (found version "1.16.1") found components: doxygen missing components: dot
+-- Doxygen found, enabling libopenshot documentation target
+-- libopenshot Build configuration:
+-- The following features have been enabled:
+
+ * Wayland screen capture, Use xdg-desktop-portal ScreenCast and PipeWire
+ * FFmpeg swresample, Audio resampling uses swresample
+ * FFmpeg hwaccel, GPU-accelerated routines (FFmpeg 3.4+)
+ * OpenCV algorithms, Use OpenCV algorithms
+ * Parallel tests, Unit tests can use 24 processors
+ * Unit tests, Compile unit tests for library functions
+ * Non-default target 'coverage', Run unit tests and (if enabled) collect coverage data
+ * Non-default target 'doc', Build formatted API documentation (HTML+SVG)
+
+-- The following OPTIONAL packages have been found:
+
+ * ImageMagick
+ * Resvg
+ * Qt6WidgetsTools (required version >= 6.11.1)
+ * Qt6Widgets
+ * cppzmq
+ * PkgConfig
+ * babl
+ * OpenCV (required version >= 4)
+ * Threads
+ * OpenGL
+ * Vulkan
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6DBusTools (required version >= 6.11.1)
+ * Qt6Gui
+ * PythonInterp (required version >= 3)
+ * PythonLibs (required version >= 3)
+ * Ruby
+ * Doxygen
+ * Catch2
+
+-- The following REQUIRED packages have been found:
+
+ * OpenShotAudio (required version >= 0.6.0)
+ * jsoncpp
+ * FFmpeg
+ * OpenMP
+ * ZeroMQ
+ * Protobuf (required version >= 3)
+ * Qt6
+ * SWIG (required version >= 3.0)
+
+-- The following features have been disabled:
+
+ * Coverage, analyze test coverage and generate report
+ * IWYU (include-what-you-use), Scan all source files with 'iwyu'
+
+-- Configuring done (2.8s)
+-- Generating done (0.3s)
+-- Build files have been written to: /build/libopenshot-qt6-git/src/build
+[  0%] Running cpp protocol buffer compiler on stabilizedata.proto
+[  0%] Running cpp protocol buffer compiler on objdetectdata.proto
+[  1%] Running cpp protocol buffer compiler on trackerdata.proto
+[  1%] Built target openshot_autogen_timestamp_deps
+[  2%] Automatic MOC for target openshot
+[  2%] Built target openshot_autogen
+[  3%] Building CXX object src/CMakeFiles/openshot.dir/openshot_autogen/mocs_compilation.cpp.o
+[  3%] Building CXX object src/CMakeFiles/openshot.dir/CacheBase.cpp.o
+[  3%] Building CXX object src/CMakeFiles/openshot.dir/AudioBufferSource.cpp.o
+[  3%] Building CXX object src/CMakeFiles/openshot.dir/CameraCaptureReader.cpp.o
+[  3%] Building CXX object src/CMakeFiles/openshot.dir/AudioResampler.cpp.o
+[  4%] Building CXX object src/CMakeFiles/openshot.dir/AudioReaderSource.cpp.o
+[  4%] Building CXX object src/CMakeFiles/openshot.dir/CacheDisk.cpp.o
+[  4%] Building CXX object src/CMakeFiles/openshot.dir/AudioDevices.cpp.o
+[  6%] Building CXX object src/CMakeFiles/openshot.dir/AudioRecorder.cpp.o
+[  6%] Building CXX object src/CMakeFiles/openshot.dir/AnimatedCurve.cpp.o
+[  6%] Building CXX object src/CMakeFiles/openshot.dir/CacheMemory.cpp.o
+[  6%] Building CXX object src/CMakeFiles/openshot.dir/AudioWaveformer.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/ChunkReader.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/ChunkWriter.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/Color.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/ClipBase.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/Coordinate.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/DummyReader.cpp.o
+[  8%] Building CXX object src/CMakeFiles/openshot.dir/Clip.cpp.o
+[  9%] Building CXX object src/CMakeFiles/openshot.dir/CrashHandler.cpp.o
+[  9%] Building CXX object src/CMakeFiles/openshot.dir/ReaderBase.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/openshot.dir/RendererBase.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/openshot.dir/ScreenCaptureReader.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/openshot.dir/WriterBase.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/openshot.dir/EffectBase.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/openshot.dir/EffectInfo.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/openshot.dir/FFmpegReader.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/openshot.dir/FFmpegWriter.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/openshot.dir/Fraction.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/openshot.dir/Frame.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/openshot.dir/FrameScope.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/openshot.dir/FrameMapper.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/openshot.dir/MemoryTrim.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/openshot.dir/Json.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/openshot.dir/KeyFrame.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/openshot.dir/OpenShotVersion.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/openshot.dir/PlayerBase.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/openshot.dir/Point.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/openshot.dir/Profiles.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/openshot.dir/QtHtmlReader.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/openshot.dir/QtImageReader.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/openshot.dir/QtPlayer.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/openshot.dir/QtTextReader.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/openshot.dir/Settings.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/openshot.dir/TimelineBase.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/openshot.dir/Timeline.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/openshot.dir/TrackedObjectBase.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/openshot.dir/ZmqLogger.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/openshot.dir/WaylandScreenCaptureReader.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/openshot.dir/effects/AudioVisualization.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/openshot.dir/effects/Bars.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/openshot.dir/effects/BeatSync.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/openshot.dir/effects/Blur.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/openshot.dir/effects/Brightness.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/openshot.dir/effects/Caption.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/openshot.dir/effects/ChromaKey.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/openshot.dir/effects/ColorGrade.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/openshot.dir/effects/ColorMap.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/openshot.dir/effects/ColorShift.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/openshot.dir/effects/Crop.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/openshot.dir/effects/CropHelpers.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/openshot.dir/effects/Deinterlace.cpp.o
+/build/libopenshot-qt6-git/src/libopenshot/src/Timeline.cpp: In constructor ‘openshot::Timeline::Timeline(const std::string&, bool)’:
+/build/libopenshot-qt6-git/src/libopenshot/src/Timeline.cpp:131:25: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  131 |         projectFile.open(QFile::ReadOnly);
+      |         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/QDir:1,
+                 from /build/libopenshot-qt6-git/src/libopenshot/src/CacheDisk.h:18,
+                 from /build/libopenshot-qt6-git/src/libopenshot/src/Timeline.cpp:16:
+/usr/include/qt6/QtCore/qfile.h:264:32: note: declared here
+  264 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 25%] Building CXX object src/CMakeFiles/openshot.dir/effects/Displace.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/openshot.dir/effects/FilmGrain.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/openshot.dir/effects/Glow.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/openshot.dir/effects/Hue.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/openshot.dir/effects/LensFlare.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/openshot.dir/effects/AnalogTape.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/openshot.dir/effects/Mask.cpp.o
+[ 29%] Building CXX object src/CMakeFiles/openshot.dir/effects/Negate.cpp.o
+[ 29%] Building CXX object src/CMakeFiles/openshot.dir/effects/Pixelate.cpp.o
+[ 29%] Building CXX object src/CMakeFiles/openshot.dir/effects/Saturation.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/openshot.dir/effects/Sharpen.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/openshot.dir/effects/Shadow.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/openshot.dir/effects/Shift.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/openshot.dir/effects/SphericalProjection.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/openshot.dir/effects/Timer.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/openshot.dir/effects/DenoiseImage.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/openshot.dir/effects/Wave.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/STFT.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Noise.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Delay.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Echo.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Distortion.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/ParametricEQ.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Compressor.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Expander.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Robotization.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Whisperization.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/openshot.dir/Qt/AudioPlaybackThread.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/openshot.dir/Qt/PlayerDemo.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/openshot.dir/Qt/PlayerPrivate.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoCacheThread.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoPlaybackThread.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoRenderer.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoRenderWidget.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/openshot.dir/MagickUtilities.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/openshot.dir/ImageReader.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/openshot.dir/ImageWriter.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/openshot.dir/TextReader.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/openshot.dir/objdetectdata.pb.cc.o
+[ 41%] Building CXX object src/CMakeFiles/openshot.dir/stabilizedata.pb.cc.o
+[ 41%] Building CXX object src/CMakeFiles/openshot.dir/trackerdata.pb.cc.o
+[ 41%] Building CXX object src/CMakeFiles/openshot.dir/CVTracker.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/openshot.dir/CVStabilization.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/openshot.dir/ClipProcessingJobs.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/openshot.dir/CVObjectDetection.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/openshot.dir/CVObjectMask.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/openshot.dir/TrackedObjectBBox.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/openshot.dir/effects/Stabilizer.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/openshot.dir/effects/Tracker.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/openshot.dir/effects/ObjectDetection.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/openshot.dir/effects/ObjectMask.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/openshot.dir/effects/Outline.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/openshot.dir/sort_filter/sort.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/openshot.dir/sort_filter/Hungarian.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/openshot.dir/sort_filter/KalmanTracker.cpp.o
+/build/libopenshot-qt6-git/src/libopenshot/src/sort_filter/KalmanTracker.cpp: In member function ‘void KalmanTracker::init_kf(cv::Rect_<float>)’:
+/build/libopenshot-qt6-git/src/libopenshot/src/sort_filter/KalmanTracker.cpp:25:53: warning: ‘cv::MatCommaInitializer_<_Tp> cv::operator<<(const Mat_<_Tp>&, T2) [with _Tp = float; T2 = int]’ is deprecated [-Wdeprecated-declarations]
+   25 |         kf.transitionMatrix = (Mat_<float>(8, 8) << 1, 0, 0, 0, 1, 0, 0, 0,
+      |                                                     ^
+In file included from /usr/include/opencv4/opencv2/core/mat.hpp:3869,
+                 from /usr/include/opencv4/opencv2/core.hpp:58,
+                 from /usr/include/opencv4/opencv2/video/tracking.hpp:47,
+                 from /build/libopenshot-qt6-git/src/libopenshot/src/sort_filter/KalmanTracker.h:11,
+                 from /build/libopenshot-qt6-git/src/libopenshot/src/sort_filter/KalmanTracker.cpp:8:
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:3015:27: note: declared here
+ 3015 | MatCommaInitializer_<_Tp> operator << (const Mat_<_Tp>& m, T2 val)
+      |                           ^~~~~~~~
+/build/libopenshot-qt6-git/src/libopenshot/src/CVObjectDetection.cpp: In function ‘openshot::CVObjectMaskData {anonymous}::TransformMaskToBox(const openshot::CVObjectMaskData&, const cv::Rect_<float>&, const cv::Rect_<float>&, const cv::Size&)’:
+/build/libopenshot-qt6-git/src/libopenshot/src/CVObjectDetection.cpp:163:9: warning: ‘cv::MatCommaInitializer_<_Tp> cv::operator<<(const Mat_<_Tp>&, T2) [with _Tp = double; T2 = double]’ is deprecated [-Wdeprecated-declarations]
+  163 |         xScale, 0.0, targetMaskBox.x - xScale * sourceMaskBox.x,
+      |         ^~~~~~
+In file included from /usr/include/opencv4/opencv2/core/mat.hpp:3869,
+                 from /usr/include/opencv4/opencv2/core.hpp:58,
+                 from /usr/include/opencv4/opencv2/dnn/dnn.hpp:46,
+                 from /usr/include/opencv4/opencv2/dnn.hpp:76,
+                 from /build/libopenshot-qt6-git/src/libopenshot/src/CVObjectDetection.h:18,
+                 from /build/libopenshot-qt6-git/src/libopenshot/src/CVObjectDetection.cpp:19:
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:3015:27: note: declared here
+ 3015 | MatCommaInitializer_<_Tp> operator << (const Mat_<_Tp>& m, T2 val)
+      |                           ^~~~~~~~
+[ 48%] Linking CXX shared library libopenshot.so
+[ 48%] Built target openshot
+[ 48%] Swig compile openshot.i for ruby
+[ 48%] Swig compile openshot.i for python
+[ 49%] Building CXX object tests/CMakeFiles/openshot-AnimatedCurve-test.dir/AnimatedCurve.cpp.o
+[ 49%] Building CXX object tests/CMakeFiles/openshot-Caption-test.dir/Caption.cpp.o
+[ 50%] Building CXX object tests/CMakeFiles/openshot-AudioRecorder-test.dir/AudioRecorder.cpp.o
+[ 50%] Building CXX object examples/CMakeFiles/openshot-example.dir/Example.cpp.o
+[ 50%] Built target openshot-player_autogen_timestamp_deps
+[ 50%] Building CXX object tests/CMakeFiles/openshot-benchmark.dir/Benchmark.cpp.o
+[ 50%] Building CXX object tests/CMakeFiles/openshot-CacheMemory-test.dir/CacheMemory.cpp.o
+[ 51%] Building CXX object tests/CMakeFiles/openshot-Clip-test.dir/Clip.cpp.o
+[ 53%] Building CXX object tests/CMakeFiles/openshot-CameraCaptureReader-test.dir/CameraCaptureReader.cpp.o
+[ 54%] Building CXX object tests/CMakeFiles/openshot-CacheDisk-test.dir/CacheDisk.cpp.o
+[ 54%] Building CXX object examples/CMakeFiles/openshot-html-example.dir/ExampleHtml.cpp.o
+[ 54%] Building CXX object tests/CMakeFiles/openshot-Coordinate-test.dir/Coordinate.cpp.o
+[ 54%] Building CXX object tests/CMakeFiles/openshot-AudioWaveformer-test.dir/AudioWaveformer.cpp.o
+[ 54%] Building CXX object tests/CMakeFiles/openshot-FFmpegWriter-test.dir/FFmpegWriter.cpp.o
+[ 54%] Building CXX object tests/CMakeFiles/openshot-Color-test.dir/Color.cpp.o
+[ 54%] Building CXX object tests/CMakeFiles/openshot-AudioDeviceManager-test.dir/AudioDeviceManager.cpp.o
+[ 55%] Building CXX object tests/CMakeFiles/openshot-DummyReader-test.dir/DummyReader.cpp.o
+[ 56%] Building CXX object tests/CMakeFiles/openshot-FFmpegReader-test.dir/FFmpegReader.cpp.o
+[ 58%] Building CXX object tests/CMakeFiles/openshot-Fraction-test.dir/Fraction.cpp.o
+[ 58%] Linking CXX executable openshot-Coordinate-test
+[ 58%] Linking CXX executable openshot-AnimatedCurve-test
+[ 58%] Building CXX object bindings/ruby/CMakeFiles/rbopenshot.dir/CMakeFiles/rbopenshot.dir/openshotRUBY_wrap.cxx.o
+[ 58%] Built target openshot-Coordinate-test
+[ 58%] Building CXX object tests/CMakeFiles/openshot-Frame-test.dir/Frame.cpp.o
+[ 58%] Built target openshot-AnimatedCurve-test
+[ 59%] Building CXX object tests/CMakeFiles/openshot-FrameScope-test.dir/FrameScope.cpp.o
+[ 59%] Linking CXX executable openshot-Fraction-test
+[ 59%] Linking CXX executable openshot-Color-test
+[ 59%] Linking CXX executable openshot-html-example
+[ 59%] Building CXX object bindings/python/CMakeFiles/pyopenshot.dir/CMakeFiles/pyopenshot.dir/openshotPYTHON_wrap.cxx.o
+[ 59%] Built target openshot-Fraction-test
+[ 60%] Building CXX object tests/CMakeFiles/openshot-benchmark.dir/BenchmarkOptions.cpp.o
+[ 60%] Linking CXX executable openshot-DummyReader-test
+[ 60%] Linking CXX executable openshot-example
+[ 60%] Linking CXX executable openshot-CameraCaptureReader-test
+[ 60%] Building CXX object tests/CMakeFiles/openshot-FrameMapper-test.dir/FrameMapper.cpp.o
+[ 60%] Built target openshot-Color-test
+[ 60%] Building CXX object tests/CMakeFiles/openshot-KeyFrame-test.dir/KeyFrame.cpp.o
+[ 60%] Built target openshot-example
+[ 60%] Built target openshot-html-example
+[ 60%] Building CXX object tests/CMakeFiles/openshot-Point-test.dir/Point.cpp.o
+[ 61%] Linking CXX executable openshot-CacheDisk-test
+[ 61%] Built target openshot-DummyReader-test
+[ 61%] Building CXX object tests/CMakeFiles/openshot-Profiles-test.dir/Profiles.cpp.o
+[ 61%] Building CXX object tests/CMakeFiles/openshot-QtPlayer-test.dir/QtPlayer.cpp.o
+[ 61%] Built target openshot-CameraCaptureReader-test
+[ 61%] Building CXX object tests/CMakeFiles/openshot-QtImageReader-test.dir/QtImageReader.cpp.o
+[ 61%] Linking CXX executable openshot-CacheMemory-test
+[ 61%] Linking CXX executable openshot-AudioDeviceManager-test
+[ 61%] Built target openshot-CacheDisk-test
+[ 62%] Building CXX object tests/CMakeFiles/openshot-ReaderBase-test.dir/ReaderBase.cpp.o
+[ 64%] Linking CXX executable openshot-FFmpegWriter-test
+[ 65%] Linking CXX executable openshot-Caption-test
+[ 65%] Built target openshot-AudioDeviceManager-test
+[ 65%] Built target openshot-CacheMemory-test
+[ 66%] Building CXX object tests/CMakeFiles/openshot-Settings-test.dir/Settings.cpp.o
+[ 66%] Building CXX object tests/CMakeFiles/openshot-ScreenCaptureReader-test.dir/ScreenCaptureReader.cpp.o
+[ 67%] Linking CXX executable openshot-Point-test
+[ 67%] Built target openshot-FFmpegWriter-test
+[ 67%] Linking CXX executable openshot-FrameScope-test
+[ 67%] Building CXX object tests/CMakeFiles/openshot-SphericalMetadata-test.dir/SphericalMetadata.cpp.o
+[ 69%] Linking CXX executable openshot-Frame-test
+[ 69%] Built target openshot-Point-test
+[ 70%] Building CXX object tests/CMakeFiles/openshot-Timeline-test.dir/Timeline.cpp.o
+[ 70%] Linking CXX executable openshot-AudioRecorder-test
+[ 70%] Built target openshot-Caption-test
+[ 70%] Linking CXX executable openshot-FFmpegReader-test
+[ 70%] Building CXX object tests/CMakeFiles/openshot-VideoCacheThread-test.dir/VideoCacheThread.cpp.o
+[ 70%] Linking CXX executable openshot-Settings-test
+[ 70%] Linking CXX executable openshot-AudioWaveformer-test
+[ 70%] Built target openshot-FrameScope-test
+[ 70%] Building CXX object tests/CMakeFiles/openshot-AudioVisualization-test.dir/AudioVisualization.cpp.o
+[ 70%] Linking CXX executable openshot-ScreenCaptureReader-test
+[ 70%] Built target openshot-Frame-test
+[ 71%] Building CXX object tests/CMakeFiles/openshot-Bars-test.dir/Bars.cpp.o
+[ 71%] Linking CXX executable openshot-ReaderBase-test
+[ 71%] Built target openshot-AudioRecorder-test
+[ 71%] Building CXX object tests/CMakeFiles/openshot-BeatSync-test.dir/BeatSync.cpp.o
+[ 71%] Linking CXX executable openshot-Profiles-test
+[ 71%] Built target openshot-Settings-test
+[ 71%] Built target openshot-AudioWaveformer-test
+[ 71%] Building CXX object tests/CMakeFiles/openshot-Blur-test.dir/Blur.cpp.o
+[ 72%] Building CXX object tests/CMakeFiles/openshot-ColorGrade-test.dir/ColorGrade.cpp.o
+[ 72%] Built target openshot-FFmpegReader-test
+[ 72%] Building CXX object tests/CMakeFiles/openshot-ColorMap-test.dir/ColorMap.cpp.o
+[ 72%] Built target openshot-ScreenCaptureReader-test
+[ 72%] Building CXX object tests/CMakeFiles/openshot-ChromaKey-test.dir/ChromaKey.cpp.o
+[ 72%] Linking CXX executable openshot-benchmark
+[ 72%] Built target openshot-ReaderBase-test
+[ 74%] Building CXX object tests/CMakeFiles/openshot-Crop-test.dir/Crop.cpp.o
+[ 74%] Linking CXX executable openshot-QtPlayer-test
+[ 74%] Built target openshot-Profiles-test
+[ 74%] Building CXX object tests/CMakeFiles/openshot-Displace-test.dir/Displace.cpp.o
+[ 75%] Linking CXX executable openshot-QtImageReader-test
+[ 75%] Built target openshot-QtPlayer-test
+[ 75%] Building CXX object tests/CMakeFiles/openshot-FilmGrain-test.dir/FilmGrain.cpp.o
+[ 75%] Built target openshot-benchmark
+[ 75%] Building CXX object tests/CMakeFiles/openshot-Glow-test.dir/Glow.cpp.o
+[ 75%] Linking CXX executable openshot-SphericalMetadata-test
+[ 75%] Built target openshot-QtImageReader-test
+[ 76%] Building CXX object tests/CMakeFiles/openshot-LensFlare-test.dir/LensFlare.cpp.o
+[ 76%] Linking CXX executable openshot-Bars-test
+[ 76%] Linking CXX executable openshot-FrameMapper-test
+[ 76%] Linking CXX executable openshot-KeyFrame-test
+[ 76%] Linking CXX executable openshot-Blur-test
+[ 76%] Built target openshot-SphericalMetadata-test
+[ 76%] Building CXX object tests/CMakeFiles/openshot-AnalogTape-test.dir/AnalogTape.cpp.o
+[ 76%] Linking CXX executable openshot-ChromaKey-test
+[ 76%] Built target openshot-Bars-test
+[ 76%] Built target openshot-FrameMapper-test
+[ 76%] Building CXX object tests/CMakeFiles/openshot-BenchmarkArgs-test.dir/BenchmarkArgs.cpp.o
+[ 76%] Building CXX object tests/CMakeFiles/openshot-EffectMask-test.dir/EffectMask.cpp.o
+[ 76%] Built target openshot-Blur-test
+[ 77%] Linking CXX executable openshot-AudioVisualization-test
+[ 77%] Building CXX object tests/CMakeFiles/openshot-Mask-test.dir/Mask.cpp.o
+[ 77%] Built target openshot-KeyFrame-test
+[ 77%] Building CXX object tests/CMakeFiles/openshot-BenchmarkArgs-test.dir/BenchmarkOptions.cpp.o
+[ 79%] Linking CXX executable openshot-ColorMap-test
+[ 79%] Built target openshot-ChromaKey-test
+[ 80%] Building CXX object tests/CMakeFiles/openshot-Pixelate-test.dir/Pixelate.cpp.o
+[ 80%] Building CXX object tests/CMakeFiles/openshot-Saturation-test.dir/Saturation.cpp.o
+[ 80%] Linking CXX executable openshot-Clip-test
+[ 80%] Linking CXX executable openshot-Displace-test
+[ 80%] Linking CXX executable openshot-ColorGrade-test
+[ 81%] Linking CXX executable openshot-BenchmarkArgs-test
+[ 81%] Linking CXX executable openshot-LensFlare-test
+[ 81%] Linking CXX executable openshot-Glow-test
+[ 81%] Linking CXX executable openshot-VideoCacheThread-test
+[ 81%] Built target openshot-AudioVisualization-test
+[ 81%] Building CXX object tests/CMakeFiles/openshot-Sharpen-test.dir/Sharpen.cpp.o
+[ 81%] Built target openshot-BenchmarkArgs-test
+[ 81%] Built target openshot-ColorMap-test
+[ 81%] Building CXX object tests/CMakeFiles/openshot-Shadow-test.dir/Shadow.cpp.o
+[ 81%] Building CXX object tests/CMakeFiles/openshot-SphericalEffect-test.dir/SphericalEffect.cpp.o
+[ 81%] Linking CXX executable openshot-Crop-test
+[ 81%] Built target openshot-Displace-test
+[ 81%] Building CXX object tests/CMakeFiles/openshot-Timer-test.dir/Timer.cpp.o
+[ 81%] Built target openshot-Clip-test
+[ 81%] Building CXX object tests/CMakeFiles/openshot-DenoiseImage-test.dir/DenoiseImage.cpp.o
+[ 82%] Linking CXX executable openshot-BeatSync-test
+[ 82%] Built target openshot-ColorGrade-test
+[ 83%] Building CXX object tests/CMakeFiles/openshot-WaveEffect-test.dir/WaveEffect.cpp.o
+[ 83%] Built target openshot-LensFlare-test
+[ 85%] Building CXX object tests/CMakeFiles/openshot-ImageReader-test.dir/ImageReader.cpp.o
+[ 85%] Built target openshot-VideoCacheThread-test
+[ 85%] Building CXX object tests/CMakeFiles/openshot-ImageWriter-test.dir/ImageWriter.cpp.o
+[ 85%] Linking CXX executable openshot-AnalogTape-test
+[ 85%] Built target openshot-Glow-test
+[ 86%] Building CXX object tests/CMakeFiles/openshot-CVTracker-test.dir/CVTracker.cpp.o
+[ 86%] Linking CXX executable openshot-FilmGrain-test
+[ 86%] Linking CXX executable openshot-Pixelate-test
+[ 86%] Built target openshot-Crop-test
+[ 86%] Building CXX object tests/CMakeFiles/openshot-CVStabilizer-test.dir/CVStabilizer.cpp.o
+[ 86%] Built target openshot-BeatSync-test
+[ 87%] Building CXX object tests/CMakeFiles/openshot-CVOutline-test.dir/CVOutline.cpp.o
+[ 87%] Built target openshot-FilmGrain-test
+[ 87%] Building CXX object tests/CMakeFiles/openshot-ObjectMask-test.dir/ObjectMask.cpp.o
+[ 87%] Built target openshot-AnalogTape-test
+[ 87%] Automatic MOC for target openshot-player
+[ 87%] Built target openshot-player_autogen
+[ 87%] Building CXX object examples/CMakeFiles/openshot-player.dir/openshot-player_autogen/mocs_compilation.cpp.o
+[ 88%] Building CXX object examples/CMakeFiles/openshot-player.dir/qt-demo/main.cpp.o
+[ 88%] Built target openshot-Pixelate-test
+[ 90%] Linking CXX executable openshot-Shadow-test
+[ 91%] Linking CXX executable openshot-Mask-test
+[ 91%] Linking CXX executable openshot-Sharpen-test
+[ 91%] Linking CXX executable openshot-ImageReader-test
+[ 92%] Linking CXX executable openshot-SphericalEffect-test
+[ 92%] Linking CXX executable openshot-WaveEffect-test
+[ 93%] Linking CXX executable openshot-Saturation-test
+[ 93%] Built target openshot-Shadow-test
+[ 93%] Built target openshot-ImageReader-test
+[ 93%] Built target openshot-Mask-test
+[ 93%] Built target openshot-Sharpen-test
+[ 93%] Built target openshot-SphericalEffect-test
+[ 93%] Built target openshot-WaveEffect-test
+[ 95%] Linking CXX executable openshot-DenoiseImage-test
+[ 95%] Built target openshot-Saturation-test
+[ 95%] Linking CXX executable openshot-player
+[ 95%] Linking CXX executable openshot-CVStabilizer-test
+[ 95%] Linking CXX executable openshot-CVOutline-test
+[ 95%] Built target openshot-DenoiseImage-test
+[ 96%] Linking CXX executable openshot-ImageWriter-test
+[ 96%] Built target openshot-player
+[ 96%] Built target openshot-CVStabilizer-test
+[ 96%] Linking CXX executable openshot-ObjectMask-test
+[ 96%] Built target openshot-CVOutline-test
+[ 96%] Linking CXX executable openshot-CVTracker-test
+[ 96%] Built target openshot-ImageWriter-test
+[ 96%] Linking CXX executable openshot-Timeline-test
+[ 96%] Built target openshot-CVTracker-test
+[ 96%] Built target openshot-ObjectMask-test
+[ 97%] Linking CXX executable openshot-Timer-test
+[ 97%] Built target openshot-Timeline-test
+[ 97%] Linking CXX executable openshot-EffectMask-test
+[ 97%] Built target openshot-Timer-test
+[ 97%] Built target openshot-EffectMask-test
+[ 98%] Linking CXX shared module openshot.so
+[ 98%] Built target rbopenshot
+[100%] Linking CXX shared module _openshot.so
+[100%] Built target pyopenshot

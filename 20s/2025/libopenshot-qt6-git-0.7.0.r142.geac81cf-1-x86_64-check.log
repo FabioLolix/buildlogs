@@ -1,0 +1,1096 @@
+Test project /build/libopenshot-qt6-git/src/build
+        Start   1: AudioDeviceManager:Initialize Audio Device Manager Singleton
+  1/515 Test   #1: AudioDeviceManager:Initialize Audio Device Manager Singleton .................................................   Passed    0.36 sec
+        Start   2: AudioRecorder:Audio recorder empty writer output has no waveform samples
+  2/515 Test   #2: AudioRecorder:Audio recorder empty writer output has no waveform samples .....................................   Passed    0.33 sec
+        Start   3: AudioRecorder:Audio recorder frames write through FFmpegWriter
+  3/515 Test   #3: AudioRecorder:Audio recorder frames write through FFmpegWriter ...............................................   Passed    0.32 sec
+        Start   4: AudioRecorder:Audio recorder level meter calculates peak and RMS
+  4/515 Test   #4: AudioRecorder:Audio recorder level meter calculates peak and RMS .............................................   Passed    0.07 sec
+        Start   5: AudioRecorder:Audio recorder settings validation
+  5/515 Test   #5: AudioRecorder:Audio recorder settings validation .............................................................   Passed    0.07 sec
+        Start   6: AudioRecorder:Audio recorder silent frames produce readable zero waveform
+  6/515 Test   #6: AudioRecorder:Audio recorder silent frames produce readable zero waveform ....................................   Passed    0.32 sec
+        Start   7: AudioRecorder:Audio recorder waveform accumulator downsamples max and RMS
+  7/515 Test   #7: AudioRecorder:Audio recorder waveform accumulator downsamples max and RMS ....................................   Passed    0.07 sec
+        Start   8: AudioRecorder:Audio recording frame factory creates audio-only frames
+  8/515 Test   #8: AudioRecorder:Audio recording frame factory creates audio-only frames ........................................   Passed    0.07 sec
+        Start   9: AnimatedCurve:AnimatedCurve JSON round trip preserves animated nodes
+  9/515 Test   #9: AnimatedCurve:AnimatedCurve JSON round trip preserves animated nodes .........................................   Passed    0.07 sec
+        Start  10: AnimatedCurve:AnimatedCurve defaults to identity curve
+ 10/515 Test  #10: AnimatedCurve:AnimatedCurve defaults to identity curve .......................................................   Passed    0.07 sec
+        Start  11: AnimatedCurve:AnimatedCurve interpolates node coordinates over time
+ 11/515 Test  #11: AnimatedCurve:AnimatedCurve interpolates node coordinates over time ..........................................   Passed    0.07 sec
+        Start  12: AnimatedCurve:AnimatedCurve preserves bezier handles on evaluated runtime curve
+ 12/515 Test  #12: AnimatedCurve:AnimatedCurve preserves bezier handles on evaluated runtime curve ..............................   Passed    0.07 sec
+        Start  13: AudioWaveformer:AudioWaveformData struct methods
+ 13/515 Test  #13: AudioWaveformer:AudioWaveformData struct methods .............................................................   Passed    0.06 sec
+        Start  14: AudioWaveformer:Channel selection returns data and rejects invalid channel
+ 14/515 Test  #14: AudioWaveformer:Channel selection returns data and rejects invalid channel ...................................   Passed    0.48 sec
+        Start  15: AudioWaveformer:Clip duration uses parent timeline FPS when time-mapped
+ 15/515 Test  #15: AudioWaveformer:Clip duration uses parent timeline FPS when time-mapped ......................................   Passed    0.32 sec
+        Start  16: AudioWaveformer:Extract waveform continues if caller closes original reader
+ 16/515 Test  #16: AudioWaveformer:Extract waveform continues if caller closes original reader ..................................   Passed    0.46 sec
+        Start  17: AudioWaveformer:Extract waveform data clip reversed and slowed
+ 17/515 Test  #17: AudioWaveformer:Extract waveform data clip reversed and slowed ...............................................   Passed    0.32 sec
+        Start  18: AudioWaveformer:Extract waveform data clip reversed by time curve
+ 18/515 Test  #18: AudioWaveformer:Extract waveform data clip reversed by time curve ............................................   Passed    0.32 sec
+        Start  19: AudioWaveformer:Extract waveform data clip slowed by time curve
+ 19/515 Test  #19: AudioWaveformer:Extract waveform data clip slowed by time curve ..............................................   Passed    0.46 sec
+        Start  20: AudioWaveformer:Extract waveform data piano.wav
+ 20/515 Test  #20: AudioWaveformer:Extract waveform data piano.wav ..............................................................   Passed    0.32 sec
+        Start  21: AudioWaveformer:Extract waveform data sintel
+ 21/515 Test  #21: AudioWaveformer:Extract waveform data sintel .................................................................   Passed    0.46 sec
+        Start  22: AudioWaveformer:Extract waveform data sintel (all channels)
+ 22/515 Test  #22: AudioWaveformer:Extract waveform data sintel (all channels) ..................................................   Passed    0.45 sec
+        Start  23: AudioWaveformer:Extract waveform from image (no audio)
+ 23/515 Test  #23: AudioWaveformer:Extract waveform from image (no audio) .......................................................   Passed    0.32 sec
+        Start  24: AudioWaveformer:Extract waveform waits for reader reopen
+ 24/515 Test  #24: AudioWaveformer:Extract waveform waits for reader reopen .....................................................   Passed    0.46 sec
+        Start  25: AudioWaveformer:FFmpegWriter FLAC includes duration metadata for waveform extraction
+ 25/515 Test  #25: AudioWaveformer:FFmpegWriter FLAC includes duration metadata for waveform extraction .........................   Passed    0.32 sec
+        Start  26: AudioWaveformer:Normalize & scale waveform data piano.wav
+ 26/515 Test  #26: AudioWaveformer:Normalize & scale waveform data piano.wav ....................................................   Passed    0.32 sec
+        Start  27: AudioWaveformer:Waveform extraction does not mutate source reader video flag
+ 27/515 Test  #27: AudioWaveformer:Waveform extraction does not mutate source reader video flag .................................   Passed    0.46 sec
+        Start  28: CameraCaptureReader:Camera capture default backend follows platform
+ 28/515 Test  #28: CameraCaptureReader:Camera capture default backend follows platform ..........................................   Passed    0.07 sec
+        Start  29: CameraCaptureReader:Camera capture reader reports configured video info
+ 29/515 Test  #29: CameraCaptureReader:Camera capture reader reports configured video info ......................................   Passed    0.07 sec
+        Start  30: CameraCaptureReader:Camera capture settings validation
+ 30/515 Test  #30: CameraCaptureReader:Camera capture settings validation .......................................................   Passed    0.07 sec
+        Start  31: CacheDisk:JSON
+ 31/515 Test  #31: CacheDisk:JSON ...............................................................................................   Passed    0.07 sec
+        Start  32: CacheDisk:MaxBytes constructor
+ 32/515 Test  #32: CacheDisk:MaxBytes constructor ...............................................................................   Passed    0.07 sec
+        Start  33: CacheDisk:SetMaxBytes
+ 33/515 Test  #33: CacheDisk:SetMaxBytes ........................................................................................   Passed    0.10 sec
+        Start  34: CacheDisk:constructor
+ 34/515 Test  #34: CacheDisk:constructor ........................................................................................   Passed    0.06 sec
+        Start  35: CacheDisk:freshen frames
+ 35/515 Test  #35: CacheDisk:freshen frames .....................................................................................   Passed    0.10 sec
+        Start  36: CacheDisk:multiple remove
+ 36/515 Test  #36: CacheDisk:multiple remove ....................................................................................   Passed    0.10 sec
+        Start  37: CacheMemory:Clear
+ 37/515 Test  #37: CacheMemory:Clear ............................................................................................   Passed    0.06 sec
+        Start  38: CacheMemory:GetFrame
+ 38/515 Test  #38: CacheMemory:GetFrame .........................................................................................   Passed    0.06 sec
+        Start  39: CacheMemory:GetSmallest
+ 39/515 Test  #39: CacheMemory:GetSmallest ......................................................................................   Passed    0.07 sec
+        Start  40: CacheMemory:JSON
+ 40/515 Test  #40: CacheMemory:JSON .............................................................................................   Passed    0.07 sec
+        Start  41: CacheMemory:MaxBytes constructor
+ 41/515 Test  #41: CacheMemory:MaxBytes constructor .............................................................................   Passed    0.08 sec
+        Start  42: CacheMemory:Remove
+ 42/515 Test  #42: CacheMemory:Remove ...........................................................................................   Passed    0.07 sec
+        Start  43: CacheMemory:SetMaxBytes
+ 43/515 Test  #43: CacheMemory:SetMaxBytes ......................................................................................   Passed    0.07 sec
+        Start  44: CacheMemory:add duplicate Frames
+ 44/515 Test  #44: CacheMemory:add duplicate Frames .............................................................................   Passed    0.07 sec
+        Start  45: CacheMemory:check if Frame exists
+ 45/515 Test  #45: CacheMemory:check if Frame exists ............................................................................   Passed    0.06 sec
+        Start  46: CacheMemory:default constructor
+ 46/515 Test  #46: CacheMemory:default constructor ..............................................................................   Passed    0.06 sec
+        Start  47: CacheMemory:multiple remove
+ 47/515 Test  #47: CacheMemory:multiple remove ..................................................................................   Passed    0.09 sec
+        Start  48: Caption:caption effect
+ 48/515 Test  #48: Caption:caption effect .......................................................................................   Passed    0.60 sec
+        Start  49: Clip:Clip JSON stores internal reader orientation compatibility mode
+ 49/515 Test  #49: Clip:Clip JSON stores internal reader orientation compatibility mode .........................................   Passed    0.07 sec
+        Start  50: Clip:Clip JSON stores margin and corner radius
+ 50/515 Test  #50: Clip:Clip JSON stores margin and corner radius ...............................................................   Passed    0.06 sec
+        Start  51: Clip:CreateReader_selects_ffmpeg_reader
+ 51/515 Test  #51: Clip:CreateReader_selects_ffmpeg_reader ......................................................................   Passed    0.32 sec
+        Start  52: Clip:CreateReader_selects_qt_image_reader
+ 52/515 Test  #52: Clip:CreateReader_selects_qt_image_reader ....................................................................   Passed    0.07 sec
+        Start  53: Clip:GIF_clip_properties
+ 53/515 Test  #53: Clip:GIF_clip_properties .....................................................................................   Passed    0.32 sec
+        Start  54: Clip:GIF_time_mapping
+ 54/515 Test  #54: Clip:GIF_time_mapping ........................................................................................   Passed    0.32 sec
+        Start  55: Clip:GIF_timeline_mapping
+ 55/515 Test  #55: Clip:GIF_timeline_mapping ....................................................................................   Passed    0.33 sec
+        Start  56: Clip:Metadata rotation defaults to reader orientation for new clips
+ 56/515 Test  #56: Clip:Metadata rotation defaults to reader orientation for new clips ..........................................   Passed    0.06 sec
+        Start  57: Clip:Metadata rotation does not override manual scaling
+ 57/515 Test  #57: Clip:Metadata rotation does not override manual scaling ......................................................   Passed    0.07 sec
+        Start  58: Clip:Reverse time curve (sample-exact, no resampling)
+ 58/515 Test  #58: Clip:Reverse time curve (sample-exact, no resampling) ........................................................   Passed    0.49 sec
+        Start  59: Clip:SetJsonValue restores defaults for empty core transform keyframes
+ 59/515 Test  #59: Clip:SetJsonValue restores defaults for empty core transform keyframes .......................................   Passed    0.06 sec
+        Start  60: Clip:Speed up time curve (3x, with resampling)
+ 60/515 Test  #60: Clip:Speed up time curve (3x, with resampling) ...............................................................   Passed    0.49 sec
+        Start  61: Clip:Timeline render remains visible after loading clip with empty core transform keyframes
+ 61/515 Test  #61: Clip:Timeline render remains visible after loading clip with empty core transform keyframes ..................   Passed    0.34 sec
+        Start  62: Clip:access frames past reader length
+ 62/515 Test  #62: Clip:access frames past reader length ........................................................................   Passed    0.32 sec
+        Start  63: Clip:all_composite_modes_simple_colors
+ 63/515 Test  #63: Clip:all_composite_modes_simple_colors .......................................................................   Passed    0.32 sec
+        Start  64: Clip:basic getters and setters
+ 64/515 Test  #64: Clip:basic getters and setters ...............................................................................   Passed    0.07 sec
+        Start  65: Clip:cached_frame_not_mutated_by_background_compositing
+ 65/515 Test  #65: Clip:cached_frame_not_mutated_by_background_compositing ......................................................   Passed    0.32 sec
+        Start  66: Clip:clip_corner_radius_clips_source_alpha
+ 66/515 Test  #66: Clip:clip_corner_radius_clips_source_alpha ...................................................................   Passed    0.31 sec
+        Start  67: Clip:clip_gravity_anchors_scaled_clip_when_location_is_zero
+ 67/515 Test  #67: Clip:clip_gravity_anchors_scaled_clip_when_location_is_zero ..................................................   Passed    0.34 sec
+        Start  68: Clip:clip_location_endpoints_offscreen_for_qt_square_image_reader
+ 68/515 Test  #68: Clip:clip_location_endpoints_offscreen_for_qt_square_image_reader ............................................   Passed    0.32 sec
+        Start  69: Clip:clip_location_minus_one_plus_one_places_scaled_clip_offscreen
+ 69/515 Test  #69: Clip:clip_location_minus_one_plus_one_places_scaled_clip_offscreen ...........................................   Passed    0.34 sec
+        Start  70: Clip:clip_location_uses_distance_from_gravity_anchor_to_offscreen_edge
+ 70/515 Test  #70: Clip:clip_location_uses_distance_from_gravity_anchor_to_offscreen_edge .......................................   Passed    0.32 sec
+        Start  71: Clip:clip_margin_insets_edge_gravity
+ 71/515 Test  #71: Clip:clip_margin_insets_edge_gravity .........................................................................   Passed    0.32 sec
+        Start  72: Clip:clip_margin_reduces_scale_layout_area
+ 72/515 Test  #72: Clip:clip_margin_reduces_scale_layout_area ...................................................................   Passed    0.32 sec
+        Start  73: Clip:composite_over_opaque_background_blend
+ 73/515 Test  #73: Clip:composite_over_opaque_background_blend ..................................................................   Passed    0.32 sec
+        Start  74: Clip:default constructor
+ 74/515 Test  #74: Clip:default constructor .....................................................................................   Passed    0.06 sec
+        Start  75: Clip:effects
+ 75/515 Test  #75: Clip:effects .................................................................................................   Passed    0.60 sec
+        Start  76: Clip:has_video
+ 76/515 Test  #76: Clip:has_video ...............................................................................................   Passed    0.42 sec
+        Start  77: Clip:painter_opacity_applied_no_per_pixel_mutation
+ 77/515 Test  #77: Clip:painter_opacity_applied_no_per_pixel_mutation ...........................................................   Passed    0.32 sec
+        Start  78: Clip:path string constructor
+ 78/515 Test  #78: Clip:path string constructor .................................................................................   Passed    0.32 sec
+        Start  79: Clip:properties
+ 79/515 Test  #79: Clip:properties ..............................................................................................   Passed    0.07 sec
+        Start  80: Clip:resample_audio_8000_to_48000_reverse
+ 80/515 Test  #80: Clip:resample_audio_8000_to_48000_reverse ....................................................................   Passed    0.33 sec
+        Start  81: Clip:safe_extension_parsing_no_dot
+ 81/515 Test  #81: Clip:safe_extension_parsing_no_dot ...........................................................................   Passed    0.32 sec
+        Start  82: Clip:setting and clobbering readers
+ 82/515 Test  #82: Clip:setting and clobbering readers ..........................................................................   Passed    0.32 sec
+        Start  83: Clip:time remapping
+ 83/515 Test  #83: Clip:time remapping ..........................................................................................   Passed    0.52 sec
+        Start  84: Clip:timeline_background_compositing_mutates_only_timeline_canvas
+ 84/515 Test  #84: Clip:timeline_background_compositing_mutates_only_timeline_canvas ............................................   Passed    0.32 sec
+        Start  85: Clip:timeline_location_y_endpoints_offscreen_for_qt_square_image_reader
+ 85/515 Test  #85: Clip:timeline_location_y_endpoints_offscreen_for_qt_square_image_reader ......................................   Passed    0.33 sec
+        Start  86: Clip:transform_path_identity_vs_scaled
+ 86/515 Test  #86: Clip:transform_path_identity_vs_scaled .......................................................................   Passed    0.32 sec
+        Start  87: Clip:verify parent Timeline
+ 87/515 Test  #87: Clip:verify parent Timeline ..................................................................................   Passed    0.43 sec
+        Start  88: Clip:waveform mode serializes and exposes visualization choices
+ 88/515 Test  #88: Clip:waveform mode serializes and exposes visualization choices ..............................................   Passed    0.07 sec
+        Start  89: Color:Animate_Colors
+ 89/515 Test  #89: Color:Animate_Colors .........................................................................................   Passed    0.07 sec
+        Start  90: Color:Distance
+ 90/515 Test  #90: Color:Distance ...............................................................................................   Passed    0.07 sec
+        Start  91: Color:HEX_Value
+ 91/515 Test  #91: Color:HEX_Value ..............................................................................................   Passed    0.07 sec
+        Start  92: Color:Json
+ 92/515 Test  #92: Color:Json ...................................................................................................   Passed    0.07 sec
+        Start  93: Color:Keyframe constructor
+ 93/515 Test  #93: Color:Keyframe constructor ...................................................................................   Passed    0.06 sec
+        Start  94: Color:QColor ctor
+ 94/515 Test  #94: Color:QColor ctor ............................................................................................   Passed    0.07 sec
+        Start  95: Color:RGBA_Constructor
+ 95/515 Test  #95: Color:RGBA_Constructor .......................................................................................   Passed    0.07 sec
+        Start  96: Color:SetJson
+ 96/515 Test  #96: Color:SetJson ................................................................................................   Passed    0.07 sec
+        Start  97: Color:default constructor
+ 97/515 Test  #97: Color:default constructor ....................................................................................   Passed    0.06 sec
+        Start  98: Color:std::string construction
+ 98/515 Test  #98: Color:std::string construction ...............................................................................   Passed    0.07 sec
+        Start  99: Coordinate:Json
+ 99/515 Test  #99: Coordinate:Json ..............................................................................................   Passed    0.07 sec
+        Start 100: Coordinate:SetJson
+100/515 Test #100: Coordinate:SetJson ...........................................................................................   Passed    0.08 sec
+        Start 101: Coordinate:XY constructor
+101/515 Test #101: Coordinate:XY constructor ....................................................................................   Passed    0.07 sec
+        Start 102: Coordinate:default constructor
+102/515 Test #102: Coordinate:default constructor ...............................................................................   Passed    0.07 sec
+        Start 103: Coordinate:std::pair constructor
+103/515 Test #103: Coordinate:std::pair constructor .............................................................................   Passed    0.07 sec
+        Start 104: DummyReader:Blank_Frame
+104/515 Test #104: DummyReader:Blank_Frame ......................................................................................   Passed    0.07 sec
+        Start 105: DummyReader:Constructor
+105/515 Test #105: DummyReader:Constructor ......................................................................................   Passed    0.07 sec
+        Start 106: DummyReader:Default constructor
+106/515 Test #106: DummyReader:Default constructor ..............................................................................   Passed    0.07 sec
+        Start 107: DummyReader:Fake_Frame
+107/515 Test #107: DummyReader:Fake_Frame .......................................................................................   Passed    0.07 sec
+        Start 108: DummyReader:Json
+108/515 Test #108: DummyReader:Json .............................................................................................   Passed    0.07 sec
+        Start 109: DummyReader:SetJson
+109/515 Test #109: DummyReader:SetJson ..........................................................................................   Passed    0.07 sec
+        Start 110: FFmpegReader:Attached_Picture_Audio_Does_Not_Stall_Early_Frames
+110/515 Test #110: FFmpegReader:Attached_Picture_Audio_Does_Not_Stall_Early_Frames ..............................................   Passed    0.44 sec
+        Start 111: FFmpegReader:Audio_Only_SetJson_Preserves_Stored_Dimensions
+111/515 Test #111: FFmpegReader:Audio_Only_SetJson_Preserves_Stored_Dimensions ..................................................   Passed    0.32 sec
+        Start 112: FFmpegReader:Check_Audio_File
+112/515 Test #112: FFmpegReader:Check_Audio_File ................................................................................   Passed    0.32 sec
+        Start 113: FFmpegReader:Check_Video_File
+113/515 Test #113: FFmpegReader:Check_Video_File ................................................................................   Passed    0.47 sec
+        Start 114: FFmpegReader:Decoding AV1 Video
+114/515 Test #114: FFmpegReader:Decoding AV1 Video ..............................................................................   Passed    1.34 sec
+        Start 115: FFmpegReader:DisplayInfo
+115/515 Test #115: FFmpegReader:DisplayInfo .....................................................................................   Passed    0.33 sec
+        Start 116: FFmpegReader:Duration_And_Length
+116/515 Test #116: FFmpegReader:Duration_And_Length .............................................................................   Passed    0.33 sec
+        Start 117: FFmpegReader:Duration_Strategy_Audio_Preferred
+117/515 Test #117: FFmpegReader:Duration_Strategy_Audio_Preferred ...............................................................   Passed    0.33 sec
+        Start 118: FFmpegReader:Duration_Strategy_Longest_Stream
+118/515 Test #118: FFmpegReader:Duration_Strategy_Longest_Stream ................................................................   Passed    0.33 sec
+        Start 119: FFmpegReader:Duration_Strategy_Video_Preferred
+119/515 Test #119: FFmpegReader:Duration_Strategy_Video_Preferred ...............................................................   Passed    0.33 sec
+        Start 120: FFmpegReader:Frame_Rate
+120/515 Test #120: FFmpegReader:Frame_Rate ......................................................................................   Passed    0.33 sec
+        Start 121: FFmpegReader:GIF_TimeBase
+121/515 Test #121: FFmpegReader:GIF_TimeBase ....................................................................................   Passed    0.32 sec
+        Start 122: FFmpegReader:GetFrame_Before_Opening
+122/515 Test #122: FFmpegReader:GetFrame_Before_Opening .........................................................................   Passed    0.32 sec
+        Start 123: FFmpegReader:HardwareDecodeSuccessful_IsFalse_WhenHardwareDecodeIsDisabled
+123/515 Test #123: FFmpegReader:HardwareDecodeSuccessful_IsFalse_WhenHardwareDecodeIsDisabled ...................................   Passed    0.41 sec
+        Start 124: FFmpegReader:Invalid_Path
+124/515 Test #124: FFmpegReader:Invalid_Path ....................................................................................   Passed    0.32 sec
+        Start 125: FFmpegReader:Max_Decode_Size_FFmpegReader
+125/515 Test #125: FFmpegReader:Max_Decode_Size_FFmpegReader ....................................................................   Passed    0.37 sec
+        Start 126: FFmpegReader:Missing_Image_Frame_Finalizes_Using_Previous_Image
+126/515 Test #126: FFmpegReader:Missing_Image_Frame_Finalizes_Using_Previous_Image ..............................................   Passed    0.31 sec
+        Start 127: FFmpegReader:Multiple_Open_and_Close
+127/515 Test #127: FFmpegReader:Multiple_Open_and_Close .........................................................................   Passed    1.00 sec
+        Start 128: FFmpegReader:Seek
+128/515 Test #128: FFmpegReader:Seek ............................................................................................   Passed    0.96 sec
+        Start 129: FFmpegReader:Static_Image_JPG_Reports_Single_Image
+129/515 Test #129: FFmpegReader:Static_Image_JPG_Reports_Single_Image ...........................................................   Passed    0.34 sec
+        Start 130: FFmpegReader:Static_Image_PNG_Reports_Single_Image
+130/515 Test #130: FFmpegReader:Static_Image_PNG_Reports_Single_Image ...........................................................   Passed    0.32 sec
+        Start 131: FFmpegReader:VAAPI_H264_420_Reports_HardwareDecodeSuccess
+131/515 Test #131: FFmpegReader:VAAPI_H264_420_Reports_HardwareDecodeSuccess ....................................................   Passed    0.16 sec
+        Start 132: FFmpegReader:VAAPI_H264_422_Does_Not_Return_Black_Frames
+132/515 Test #132: FFmpegReader:VAAPI_H264_422_Does_Not_Return_Black_Frames .....................................................   Passed    0.16 sec
+        Start 133: FFmpegReader:verify parent Timeline
+133/515 Test #133: FFmpegReader:verify parent Timeline ..........................................................................   Passed    0.51 sec
+        Start 134: FFmpegWriter:DisplayInfo
+134/515 Test #134: FFmpegWriter:DisplayInfo .....................................................................................   Passed    0.35 sec
+        Start 135: FFmpegWriter:Gif
+135/515 Test #135: FFmpegWriter:Gif .............................................................................................   Passed    1.08 sec
+        Start 136: FFmpegWriter:MP4_30fps_duration_exact_with_b_frames
+136/515 Test #136: FFmpegWriter:MP4_30fps_duration_exact_with_b_frames ..........................................................   Passed    0.46 sec
+        Start 137: FFmpegWriter:Options_Overloads
+137/515 Test #137: FFmpegWriter:Options_Overloads ...............................................................................   Passed    0.83 sec
+        Start 138: FFmpegWriter:SizeOrdering_vp9_CRF
+138/515 Test #138: FFmpegWriter:SizeOrdering_vp9_CRF ............................................................................   Passed   11.66 sec
+        Start 139: FFmpegWriter:SizeOrdering_x264_CRF
+139/515 Test #139: FFmpegWriter:SizeOrdering_x264_CRF ...........................................................................   Passed    2.53 sec
+        Start 140: FFmpegWriter:Webm
+140/515 Test #140: FFmpegWriter:Webm ............................................................................................   Passed    0.92 sec
+        Start 141: FFmpegWriter:WriteFrameAt_preserves_sparse_video_timestamps
+141/515 Test #141: FFmpegWriter:WriteFrameAt_preserves_sparse_video_timestamps ..................................................   Passed    0.35 sec
+        Start 142: Fraction:Alt_Constructors
+142/515 Test #142: Fraction:Alt_Constructors ....................................................................................   Passed    0.07 sec
+        Start 143: Fraction:Constructors
+143/515 Test #143: Fraction:Constructors ........................................................................................   Passed    0.06 sec
+        Start 144: Fraction:Fraction operations
+144/515 Test #144: Fraction:Fraction operations .................................................................................   Passed    0.07 sec
+        Start 145: Fraction:Numeric division
+145/515 Test #145: Fraction:Numeric division ....................................................................................   Passed    0.06 sec
+        Start 146: Fraction:Numeric multiplication
+146/515 Test #146: Fraction:Numeric multiplication ..............................................................................   Passed    0.06 sec
+        Start 147: Fraction:Operator ostream
+147/515 Test #147: Fraction:Operator ostream ....................................................................................   Passed    0.06 sec
+        Start 148: Fraction:Reciprocal
+148/515 Test #148: Fraction:Reciprocal ..........................................................................................   Passed    0.07 sec
+        Start 149: Fraction:WxH_1280_720
+149/515 Test #149: Fraction:WxH_1280_720 ........................................................................................   Passed    0.07 sec
+        Start 150: Fraction:WxH_640_480
+150/515 Test #150: Fraction:WxH_640_480 .........................................................................................   Passed    0.07 sec
+        Start 151: Frame:AddImage_QImage
+151/515 Test #151: Frame:AddImage_QImage ........................................................................................   Passed    0.06 sec
+        Start 152: Frame:Capture_Timestamp_Copies
+152/515 Test #152: Frame:Capture_Timestamp_Copies ...............................................................................   Passed    0.06 sec
+        Start 153: Frame:Convert_Image
+153/515 Test #153: Frame:Convert_Image ..........................................................................................   Passed    0.41 sec
+        Start 154: Frame:Copy_Constructor
+154/515 Test #154: Frame:Copy_Constructor .......................................................................................   Passed    0.06 sec
+        Start 155: Frame:Data_Access
+155/515 Test #155: Frame:Data_Access ............................................................................................   Passed    0.41 sec
+        Start 156: Frame:Default_Constructor
+156/515 Test #156: Frame:Default_Constructor ....................................................................................   Passed    0.06 sec
+        Start 157: Frame:GetSamplesPerFrame invalid rate inputs
+157/515 Test #157: Frame:GetSamplesPerFrame invalid rate inputs .................................................................   Passed    0.06 sec
+        Start 158: Frame:Thumbnail explicit fit scale mode matches legacy behavior
+158/515 Test #158: Frame:Thumbnail explicit fit scale mode matches legacy behavior ..............................................   Passed    0.06 sec
+        Start 159: Frame:Thumbnail preserves legacy fit behavior without scale mode
+159/515 Test #159: Frame:Thumbnail preserves legacy fit behavior without scale mode .............................................   Passed    0.07 sec
+        Start 160: Frame:Thumbnail scale mode supports crop
+160/515 Test #160: Frame:Thumbnail scale mode supports crop .....................................................................   Passed    0.06 sec
+        Start 161: FrameScope:FrameScope Json string parses cleanly
+161/515 Test #161: FrameScope:FrameScope Json string parses cleanly .............................................................   Passed    0.12 sec
+        Start 162: FrameScope:FrameScope analyzes audio waveform and summary data
+162/515 Test #162: FrameScope:FrameScope analyzes audio waveform and summary data ...............................................   Passed    0.10 sec
+        Start 163: FrameScope:FrameScope analyzes video histogram and waveform data
+163/515 Test #163: FrameScope:FrameScope analyzes video histogram and waveform data .............................................   Passed    0.10 sec
+        Start 164: FrameScope:FrameScope exposes typed audio getters
+164/515 Test #164: FrameScope:FrameScope exposes typed audio getters ............................................................   Passed    0.07 sec
+        Start 165: FrameScope:FrameScope exposes typed video getters
+165/515 Test #165: FrameScope:FrameScope exposes typed video getters ............................................................   Passed    0.06 sec
+        Start 166: FrameScope:FrameScope exposes vectorscope bins and configurable size
+166/515 Test #166: FrameScope:FrameScope exposes vectorscope bins and configurable size .........................................   Passed    0.06 sec
+        Start 167: FrameScope:FrameScope reads RGBA8888 pixel byte order correctly
+167/515 Test #167: FrameScope:FrameScope reads RGBA8888 pixel byte order correctly ..............................................   Passed    0.06 sec
+        Start 168: FrameScope:FrameScope returns empty-present flags for missing frame
+168/515 Test #168: FrameScope:FrameScope returns empty-present flags for missing frame ..........................................   Passed    0.07 sec
+        Start 169: FrameScope:FrameScope setting changes only affect matching scope families
+169/515 Test #169: FrameScope:FrameScope setting changes only affect matching scope families ....................................   Passed    0.06 sec
+        Start 170: FrameMapper:24_fps_to_30_fps_Pulldown_Advanced
+170/515 Test #170: FrameMapper:24_fps_to_30_fps_Pulldown_Advanced ...............................................................   Passed    0.32 sec
+        Start 171: FrameMapper:24_fps_to_30_fps_Pulldown_Classic
+171/515 Test #171: FrameMapper:24_fps_to_30_fps_Pulldown_Classic ................................................................   Passed    0.32 sec
+        Start 172: FrameMapper:24_fps_to_30_fps_Pulldown_None
+172/515 Test #172: FrameMapper:24_fps_to_30_fps_Pulldown_None ...................................................................   Passed    0.32 sec
+        Start 173: FrameMapper:30_fps_to_24_fps_Pulldown_Advanced
+173/515 Test #173: FrameMapper:30_fps_to_24_fps_Pulldown_Advanced ...............................................................   Passed    0.31 sec
+        Start 174: FrameMapper:30_fps_to_24_fps_Pulldown_Classic
+174/515 Test #174: FrameMapper:30_fps_to_24_fps_Pulldown_Classic ................................................................   Passed    0.32 sec
+        Start 175: FrameMapper:30_fps_to_24_fps_Pulldown_None
+175/515 Test #175: FrameMapper:30_fps_to_24_fps_Pulldown_None ...................................................................   Passed    0.32 sec
+        Start 176: FrameMapper:Distribute samples
+176/515 Test #176: FrameMapper:Distribute samples ...............................................................................   Passed    2.10 sec
+        Start 177: FrameMapper:Invalid_Frame_Too_Small
+177/515 Test #177: FrameMapper:Invalid_Frame_Too_Small ..........................................................................   Passed    0.32 sec
+        Start 178: FrameMapper:Json
+178/515 Test #178: FrameMapper:Json .............................................................................................   Passed    0.32 sec
+        Start 179: FrameMapper:NoOp_GetMappedFrame
+179/515 Test #179: FrameMapper:NoOp_GetMappedFrame ..............................................................................   Passed    0.31 sec
+        Start 180: FrameMapper:PrintMapping
+180/515 Test #180: FrameMapper:PrintMapping .....................................................................................   Passed    0.32 sec
+        Start 181: FrameMapper:SampleRange
+181/515 Test #181: FrameMapper:SampleRange ......................................................................................   Passed    0.07 sec
+        Start 182: FrameMapper:concurrent_change_mapping_and_getframe_is_safe
+182/515 Test #182: FrameMapper:concurrent_change_mapping_and_getframe_is_safe ...................................................   Passed    0.51 sec
+        Start 183: FrameMapper:redistribute_samples_per_frame
+183/515 Test #183: FrameMapper:redistribute_samples_per_frame ...................................................................   Passed    0.60 sec
+        Start 184: FrameMapper:resample_audio_48000_to_41000
+184/515 Test #184: FrameMapper:resample_audio_48000_to_41000 ....................................................................   Passed    0.52 sec
+        Start 185: FrameMapper:resample_audio_mapper
+185/515 Test #185: FrameMapper:resample_audio_mapper ............................................................................   Passed    0.33 sec
+        Start 186: FrameMapper:zero_sample_source_frame_preserves_mapped_audio_duration
+186/515 Test #186: FrameMapper:zero_sample_source_frame_preserves_mapped_audio_duration .........................................   Passed    0.32 sec
+        Start 187: KeyFrame:AddPoint (1 Point)
+187/515 Test #187: KeyFrame:AddPoint (1 Point) ..................................................................................   Passed    0.07 sec
+        Start 188: KeyFrame:AddPoint (2 Points)
+188/515 Test #188: KeyFrame:AddPoint (2 Points) .................................................................................   Passed    0.07 sec
+        Start 189: KeyFrame:AttachToObject
+189/515 Test #189: KeyFrame:AttachToObject ......................................................................................   Passed    0.37 sec
+        Start 190: KeyFrame:Constant interp, first segment
+190/515 Test #190: KeyFrame:Constant interp, first segment ......................................................................   Passed    0.07 sec
+        Start 191: KeyFrame:GetBoxValues
+191/515 Test #191: KeyFrame:GetBoxValues ........................................................................................   Passed    0.07 sec
+        Start 192: KeyFrame:GetClosestPoint
+192/515 Test #192: KeyFrame:GetClosestPoint .....................................................................................   Passed    0.07 sec
+        Start 193: KeyFrame:GetDelta
+193/515 Test #193: KeyFrame:GetDelta ............................................................................................   Passed    0.07 sec
+        Start 194: KeyFrame:GetLength
+194/515 Test #194: KeyFrame:GetLength ...........................................................................................   Passed    0.07 sec
+        Start 195: KeyFrame:GetMaxPoint
+195/515 Test #195: KeyFrame:GetMaxPoint .........................................................................................   Passed    0.07 sec
+        Start 196: KeyFrame:GetPoint (1 Point)
+196/515 Test #196: KeyFrame:GetPoint (1 Point) ..................................................................................   Passed    0.07 sec
+        Start 197: KeyFrame:GetPoint (no Points)
+197/515 Test #197: KeyFrame:GetPoint (no Points) ................................................................................   Passed    0.07 sec
+        Start 198: KeyFrame:GetPreviousPoint
+198/515 Test #198: KeyFrame:GetPreviousPoint ....................................................................................   Passed    0.08 sec
+        Start 199: KeyFrame:GetValue (Bezier curve, 2 Points)
+199/515 Test #199: KeyFrame:GetValue (Bezier curve, 2 Points) ...................................................................   Passed    0.07 sec
+        Start 200: KeyFrame:GetValue (Bezier, 5 Points, 25% Handle)
+200/515 Test #200: KeyFrame:GetValue (Bezier, 5 Points, 25% Handle) .............................................................   Passed    0.07 sec
+        Start 201: KeyFrame:GetValue (Bezier, 5 Points, 40% handle)
+201/515 Test #201: KeyFrame:GetValue (Bezier, 5 Points, 40% handle) .............................................................   Passed    0.07 sec
+        Start 202: KeyFrame:GetValue (Constant, 3 Points)
+202/515 Test #202: KeyFrame:GetValue (Constant, 3 Points) .......................................................................   Passed    0.07 sec
+        Start 203: KeyFrame:GetValue (Linear, 3 Points)
+203/515 Test #203: KeyFrame:GetValue (Linear, 3 Points) .........................................................................   Passed    0.07 sec
+        Start 204: KeyFrame:IsIncreasing
+204/515 Test #204: KeyFrame:IsIncreasing ........................................................................................   Passed    0.07 sec
+        Start 205: KeyFrame:Keyframe scaling
+205/515 Test #205: KeyFrame:Keyframe scaling ....................................................................................   Passed    0.07 sec
+        Start 206: KeyFrame:PrintPoints
+206/515 Test #206: KeyFrame:PrintPoints .........................................................................................   Passed    0.07 sec
+        Start 207: KeyFrame:PrintValues
+207/515 Test #207: KeyFrame:PrintValues .........................................................................................   Passed    0.07 sec
+        Start 208: KeyFrame:TrackedObjectBBox AddBox and RemoveBox
+208/515 Test #208: KeyFrame:TrackedObjectBBox AddBox and RemoveBox ..............................................................   Passed    0.07 sec
+        Start 209: KeyFrame:TrackedObjectBBox GetVal
+209/515 Test #209: KeyFrame:TrackedObjectBBox GetVal ............................................................................   Passed    0.07 sec
+        Start 210: KeyFrame:TrackedObjectBBox GetVal interpolation
+210/515 Test #210: KeyFrame:TrackedObjectBBox GetVal interpolation ..............................................................   Passed    0.06 sec
+        Start 211: KeyFrame:TrackedObjectBBox SetJson
+211/515 Test #211: KeyFrame:TrackedObjectBBox SetJson ...........................................................................   Passed    0.07 sec
+        Start 212: KeyFrame:TrackedObjectBBox init
+212/515 Test #212: KeyFrame:TrackedObjectBBox init ..............................................................................   Passed    0.06 sec
+        Start 213: KeyFrame:TrackedObjectBBox scaling
+213/515 Test #213: KeyFrame:TrackedObjectBBox scaling ...........................................................................   Passed    0.06 sec
+        Start 214: KeyFrame:Tracker stroke width compensates for preview raster scaling
+214/515 Test #214: KeyFrame:Tracker stroke width compensates for preview raster scaling .........................................   Passed    0.32 sec
+        Start 215: KeyFrame:flip Keyframe
+215/515 Test #215: KeyFrame:flip Keyframe .......................................................................................   Passed    0.07 sec
+        Start 216: KeyFrame:handle large segment
+216/515 Test #216: KeyFrame:handle large segment ................................................................................   Passed    0.06 sec
+        Start 217: KeyFrame:large number values
+217/515 Test #217: KeyFrame:large number values .................................................................................   Passed    0.06 sec
+        Start 218: KeyFrame:remove Point
+218/515 Test #218: KeyFrame:remove Point ........................................................................................   Passed    0.06 sec
+        Start 219: KeyFrame:remove duplicate Point
+219/515 Test #219: KeyFrame:remove duplicate Point ..............................................................................   Passed    0.07 sec
+        Start 220: KeyFrame:std::vector<Point> constructor
+220/515 Test #220: KeyFrame:std::vector<Point> constructor ......................................................................   Passed    0.06 sec
+        Start 221: KeyFrame:use segment end point interpolation
+221/515 Test #221: KeyFrame:use segment end point interpolation .................................................................   Passed    0.06 sec
+        Start 222: Point:Coordinate ctor
+222/515 Test #222: Point:Coordinate ctor ........................................................................................   Passed    0.07 sec
+        Start 223: Point:Coordinate ctor, BEZIER
+223/515 Test #223: Point:Coordinate ctor, BEZIER ................................................................................   Passed    0.07 sec
+        Start 224: Point:Coordinate ctor, BEZIER+AUTO
+224/515 Test #224: Point:Coordinate ctor, BEZIER+AUTO ...........................................................................   Passed    0.07 sec
+        Start 225: Point:Coordinate ctor, BEZIER+MANUAL
+225/515 Test #225: Point:Coordinate ctor, BEZIER+MANUAL .........................................................................   Passed    0.07 sec
+        Start 226: Point:Coordinate ctor, CONSTANT
+226/515 Test #226: Point:Coordinate ctor, CONSTANT ..............................................................................   Passed    0.07 sec
+        Start 227: Point:Coordinate ctor, LINEAR
+227/515 Test #227: Point:Coordinate ctor, LINEAR ................................................................................   Passed    0.07 sec
+        Start 228: Point:Json
+228/515 Test #228: Point:Json ...................................................................................................   Passed    0.07 sec
+        Start 229: Point:Operator ostream
+229/515 Test #229: Point:Operator ostream .......................................................................................   Passed    0.07 sec
+        Start 230: Point:SetJson
+230/515 Test #230: Point:SetJson ................................................................................................   Passed    0.07 sec
+        Start 231: Point:default constructor
+231/515 Test #231: Point:default constructor ....................................................................................   Passed    0.07 sec
+        Start 232: Point:std::pair ctor
+232/515 Test #232: Point:std::pair ctor .........................................................................................   Passed    0.07 sec
+        Start 233: Point:x,y ctor
+233/515 Test #233: Point:x,y ctor ...............................................................................................   Passed    0.07 sec
+        Start 234: Profiles:24 fps names
+234/515 Test #234: Profiles:24 fps names ........................................................................................   Passed    0.07 sec
+        Start 235: Profiles:29.97 fps names
+235/515 Test #235: Profiles:29.97 fps names .....................................................................................   Passed    0.06 sec
+        Start 236: Profiles:compare profiles
+236/515 Test #236: Profiles:compare profiles ....................................................................................   Passed    0.06 sec
+        Start 237: Profiles:constructor with example profiles
+237/515 Test #237: Profiles:constructor with example profiles ...................................................................   Passed    0.06 sec
+        Start 238: Profiles:empty constructor
+238/515 Test #238: Profiles:empty constructor ...................................................................................   Passed    0.06 sec
+        Start 239: Profiles:invalid profile parse message
+239/515 Test #239: Profiles:invalid profile parse message .......................................................................   Passed    0.07 sec
+        Start 240: Profiles:invalid profile path message
+240/515 Test #240: Profiles:invalid profile path message ........................................................................   Passed    0.06 sec
+        Start 241: Profiles:save profiles
+241/515 Test #241: Profiles:save profiles .......................................................................................   Passed    0.06 sec
+        Start 242: Profiles:spherical profiles
+242/515 Test #242: Profiles:spherical profiles ..................................................................................   Passed    0.07 sec
+        Start 243: QtPlayer:QtPlayer_GetRendererQObject_ReturnsVideoRendererAddress
+243/515 Test #243: QtPlayer:QtPlayer_GetRendererQObject_ReturnsVideoRendererAddress .............................................   Passed    0.07 sec
+        Start 244: QtPlayer:QtPlayer_SetQWidget_Overload_ForwardsPointer
+244/515 Test #244: QtPlayer:QtPlayer_SetQWidget_Overload_ForwardsPointer ........................................................   Passed    0.06 sec
+        Start 245: QtImageReader:Check_SVG_Loading
+245/515 Test #245: QtImageReader:Check_SVG_Loading ..............................................................................   Passed    0.36 sec
+        Start 246: QtImageReader:Default_Constructor
+246/515 Test #246: QtImageReader:Default_Constructor ............................................................................   Passed    0.07 sec
+        Start 247: QtImageReader:Duration_And_Length_QtImageReader
+247/515 Test #247: QtImageReader:Duration_And_Length_QtImageReader ..............................................................   Passed    0.07 sec
+        Start 248: QtImageReader:GetFrame_Before_Opening
+248/515 Test #248: QtImageReader:GetFrame_Before_Opening ........................................................................   Passed    0.07 sec
+        Start 249: QtImageReader:Max_Decode_Size_QtImageReader
+249/515 Test #249: QtImageReader:Max_Decode_Size_QtImageReader ..................................................................   Passed    0.07 sec
+        Start 250: QtImageReader:Max_Decode_Size_SVG_QtImageReader
+250/515 Test #250: QtImageReader:Max_Decode_Size_SVG_QtImageReader ..............................................................   Passed    0.07 sec
+        Start 251: ReaderBase:derived class
+251/515 Test #251: ReaderBase:derived class .....................................................................................   Passed    0.06 sec
+        Start 252: Settings:Change settings
+252/515 Test #252: Settings:Change settings .....................................................................................   Passed    0.07 sec
+        Start 253: Settings:Clamp settings to machine limits
+253/515 Test #253: Settings:Clamp settings to machine limits ....................................................................   Passed    0.06 sec
+        Start 254: Settings:Constructor
+254/515 Test #254: Settings:Constructor .........................................................................................   Passed    0.06 sec
+        Start 255: Settings:Debug logging
+255/515 Test #255: Settings:Debug logging .......................................................................................   Passed    0.06 sec
+        Start 256: ScreenCaptureReader:Screen capture auto backend prefers Wayland only when supported
+256/515 Test #256: ScreenCaptureReader:Screen capture auto backend prefers Wayland only when supported ..........................   Passed    0.07 sec
+        Start 257: ScreenCaptureReader:Screen capture backend support follows platform build features
+257/515 Test #257: ScreenCaptureReader:Screen capture backend support follows platform build features ...........................   Passed    0.06 sec
+        Start 258: ScreenCaptureReader:Screen capture default backend follows platform
+258/515 Test #258: ScreenCaptureReader:Screen capture default backend follows platform ..........................................   Passed    0.06 sec
+        Start 259: ScreenCaptureReader:Screen capture reader reports configured video info
+259/515 Test #259: ScreenCaptureReader:Screen capture reader reports configured video info ......................................   Passed    0.06 sec
+        Start 260: ScreenCaptureReader:Screen capture rejects invalid system audio formats
+260/515 Test #260: ScreenCaptureReader:Screen capture rejects invalid system audio formats ......................................   Passed    0.07 sec
+        Start 261: ScreenCaptureReader:Screen capture settings validation
+261/515 Test #261: ScreenCaptureReader:Screen capture settings validation .......................................................   Passed    0.06 sec
+        Start 262: ScreenCaptureReader:Screen capture system audio settings follow backend capability
+262/515 Test #262: ScreenCaptureReader:Screen capture system audio settings follow backend capability ...........................   Passed    0.06 sec
+        Start 263: SphericalMetadata:SphericalMetadata_FullOrientation
+263/515 Test #263: SphericalMetadata:SphericalMetadata_FullOrientation ..........................................................   Passed    0.66 sec
+        Start 264: SphericalMetadata:SphericalMetadata_Test
+264/515 Test #264: SphericalMetadata:SphericalMetadata_Test .....................................................................   Passed    0.66 sec
+        Start 265: Timeline:AddClip replaces stale cached black timeline frames with new clip content
+265/515 Test #265: Timeline:AddClip replaces stale cached black timeline frames with new clip content ...........................   Passed    0.32 sec
+        Start 266: Timeline:ApplyJSONDiff Update Reader Info
+266/515 Test #266: Timeline:ApplyJSONDiff Update Reader Info ....................................................................   Passed    0.33 sec
+        Start 267: Timeline:ApplyJSONDiff alpha updates refresh fixed-frame preview content
+267/515 Test #267: Timeline:ApplyJSONDiff alpha updates refresh fixed-frame preview content .....................................   Passed    0.32 sec
+        Start 268: Timeline:ApplyJSONDiff and FrameMappers
+268/515 Test #268: Timeline:ApplyJSONDiff and FrameMappers ......................................................................   Passed    0.32 sec
+        Start 269: Timeline:ApplyJSONDiff clip Bars effect updates refresh fixed-frame preview content
+269/515 Test #269: Timeline:ApplyJSONDiff clip Bars effect updates refresh fixed-frame preview content ..........................   Passed    0.32 sec
+        Start 270: Timeline:ApplyJSONDiff insert invalidates overlapping timeline cache
+270/515 Test #270: Timeline:ApplyJSONDiff insert invalidates overlapping timeline cache .........................................   Passed    0.32 sec
+        Start 271: Timeline:Clip order
+271/515 Test #271: Timeline:Clip order ..........................................................................................   Passed    0.34 sec
+        Start 272: Timeline:Effect order
+272/515 Test #272: Timeline:Effect order ........................................................................................   Passed    0.32 sec
+        Start 273: Timeline:Effect: Blur
+273/515 Test #273: Timeline:Effect: Blur ........................................................................................   Passed    0.33 sec
+        Start 274: Timeline:Framerate
+274/515 Test #274: Timeline:Framerate ...........................................................................................   Passed    0.32 sec
+        Start 275: Timeline:GetClip by id
+275/515 Test #275: Timeline:GetClip by id .......................................................................................   Passed    0.32 sec
+        Start 276: Timeline:GetClipEffect by id
+276/515 Test #276: Timeline:GetClipEffect by id .................................................................................   Passed    0.32 sec
+        Start 277: Timeline:GetEffect by id
+277/515 Test #277: Timeline:GetEffect by id .....................................................................................   Passed    0.32 sec
+        Start 278: Timeline:GetFrame past-end requests are not cached
+278/515 Test #278: Timeline:GetFrame past-end requests are not cached ...........................................................   Passed    0.31 sec
+        Start 279: Timeline:GetMaxFrame and GetMaxTime
+279/515 Test #279: Timeline:GetMaxFrame and GetMaxTime ..........................................................................   Passed    0.32 sec
+        Start 280: Timeline:GetMaxFrame ignores tiny float overshoot at clip end
+280/515 Test #280: Timeline:GetMaxFrame ignores tiny float overshoot at clip end ................................................   Passed    0.32 sec
+        Start 281: Timeline:GetMaxFrame with 24fps clip mapped to 30fps timeline
+281/515 Test #281: Timeline:GetMaxFrame with 24fps clip mapped to 30fps timeline ................................................   Passed    0.51 sec
+        Start 282: Timeline:GetMinFrame and GetMinTime
+282/515 Test #282: Timeline:GetMinFrame and GetMinTime ..........................................................................   Passed    0.32 sec
+        Start 283: Timeline:Global mask effect source FPS mode follows timeline FPS mapping
+283/515 Test #283: Timeline:Global mask effect source FPS mode follows timeline FPS mapping .....................................   Passed    0.32 sec
+        Start 284: Timeline:Global mask effect start trims source without freezing playback
+284/515 Test #284: Timeline:Global mask effect start trims source without freezing playback .....................................   Passed    0.31 sec
+        Start 285: Timeline:JSON diff insert keeps audio-only clip at stored timeline dimensions
+285/515 Test #285: Timeline:JSON diff insert keeps audio-only clip at stored timeline dimensions ................................   Passed    0.32 sec
+        Start 286: Timeline:Multi-threaded Timeline Add/Remove Effect
+286/515 Test #286: Timeline:Multi-threaded Timeline Add/Remove Effect ...........................................................   Passed    0.49 sec
+        Start 287: Timeline:Multi-threaded Timeline GetFrame
+287/515 Test #287: Timeline:Multi-threaded Timeline GetFrame ....................................................................   Passed    1.36 sec
+        Start 288: Timeline:Parent effect update preserves child effect id
+288/515 Test #288: Timeline:Parent effect update preserves child effect id ......................................................   Passed    0.32 sec
+        Start 289: Timeline:ReaderInfo constructor
+289/515 Test #289: Timeline:ReaderInfo constructor ..............................................................................   Passed    0.32 sec
+        Start 290: Timeline:RemoveEffect basic
+290/515 Test #290: Timeline:RemoveEffect basic ..................................................................................   Passed    0.32 sec
+        Start 291: Timeline:RemoveEffect not present is no-op
+291/515 Test #291: Timeline:RemoveEffect not present is no-op ...................................................................   Passed    0.32 sec
+        Start 292: Timeline:RemoveEffect preserves ordering of remaining effects
+292/515 Test #292: Timeline:RemoveEffect preserves ordering of remaining effects ................................................   Passed    0.32 sec
+        Start 293: Timeline:RemoveEffect while open (active pipeline safety)
+293/515 Test #293: Timeline:RemoveEffect while open (active pipeline safety) ....................................................   Passed    0.33 sec
+        Start 294: Timeline:Set Json and clear clips
+294/515 Test #294: Timeline:Set Json and clear clips ............................................................................   Passed    0.32 sec
+        Start 295: Timeline:Timeline honors Mask fade_audio_hint with equal-power overlapping audio
+295/515 Test #295: Timeline:Timeline honors Mask fade_audio_hint with equal-power overlapping audio .............................   Passed    0.32 sec
+        Start 296: Timeline:Timeline retries opening intersecting clip after transient open failure
+296/515 Test #296: Timeline:Timeline retries opening intersecting clip after transient open failure .............................   Passed    0.32 sec
+        Start 297: Timeline:Timeline uses transition edge proximity for single-clip fade audio
+297/515 Test #297: Timeline:Timeline uses transition edge proximity for single-clip fade audio ..................................   Passed    0.32 sec
+        Start 298: Timeline:TimelineBase
+298/515 Test #298: Timeline:TimelineBase ........................................................................................   Passed    0.33 sec
+        Start 299: Timeline:constructor
+299/515 Test #299: Timeline:constructor .........................................................................................   Passed    0.31 sec
+        Start 300: Timeline:project constructor invalid path message
+300/515 Test #300: Timeline:project constructor invalid path message ............................................................   Passed    0.07 sec
+        Start 301: Timeline:two-track video
+301/515 Test #301: Timeline:two-track video .....................................................................................   Passed    0.65 sec
+        Start 302: Timeline:width and height functions
+302/515 Test #302: Timeline:width and height functions ..........................................................................   Passed    0.32 sec
+        Start 303: VideoCacheThread:NotifyPlaybackPosition: ignored while scrubbing, applied after commit
+303/515 Test #303: VideoCacheThread:NotifyPlaybackPosition: ignored while scrubbing, applied after commit .......................   Passed    0.32 sec
+        Start 304: VideoCacheThread:Seek commit: exits scrub mode and enables preroll when uncached
+304/515 Test #304: VideoCacheThread:Seek commit: exits scrub mode and enables preroll when uncached .............................   Passed    0.32 sec
+        Start 305: VideoCacheThread:Seek commit: paused in-range seek preserves cached window state
+305/515 Test #305: VideoCacheThread:Seek commit: paused in-range seek preserves cached window state .............................   Passed    0.32 sec
+        Start 306: VideoCacheThread:Seek commit: paused out-of-range seek past end enables cache rebuild when end is uncached
+306/515 Test #306: VideoCacheThread:Seek commit: paused out-of-range seek past end enables cache rebuild when end is uncached ...   Passed    0.32 sec
+        Start 307: VideoCacheThread:Seek commit: paused scrub preview then same-frame commit preserves cache
+307/515 Test #307: VideoCacheThread:Seek commit: paused scrub preview then same-frame commit preserves cache ....................   Passed    0.32 sec
+        Start 308: VideoCacheThread:Seek commit: playback click inside active cached window preserves cache
+308/515 Test #308: VideoCacheThread:Seek commit: playback click inside active cached window preserves cache .....................   Passed    0.32 sec
+        Start 309: VideoCacheThread:Seek commit: playback jump to cached frame preserves cache
+309/515 Test #309: VideoCacheThread:Seek commit: playback jump to cached frame preserves cache ..................................   Passed    0.32 sec
+        Start 310: VideoCacheThread:Seek non-preroll: playback uncached target does not force cache rebuild
+310/515 Test #310: VideoCacheThread:Seek non-preroll: playback uncached target does not force cache rebuild .....................   Passed    0.32 sec
+        Start 311: VideoCacheThread:Seek preview: outside cache marks uncached without preroll
+311/515 Test #311: VideoCacheThread:Seek preview: outside cache marks uncached without preroll ..................................   Passed    0.32 sec
+        Start 312: VideoCacheThread:Seek preview: paused out-of-range seek clamps to end and preserves cache
+312/515 Test #312: VideoCacheThread:Seek preview: paused out-of-range seek clamps to end and preserves cache ....................   Passed    0.32 sec
+        Start 313: VideoCacheThread:Seek preview: preserves playhead frame when paused and inside cache
+313/515 Test #313: VideoCacheThread:Seek preview: preserves playhead frame when paused and inside cache .........................   Passed    0.32 sec
+        Start 314: VideoCacheThread:clearCacheIfPaused: clears only when paused and not in cache
+314/515 Test #314: VideoCacheThread:clearCacheIfPaused: clears only when paused and not in cache ................................   Passed    0.32 sec
+        Start 315: VideoCacheThread:clearCacheIfPaused: clears when paused past timeline end and playhead frame is missing
+315/515 Test #315: VideoCacheThread:clearCacheIfPaused: clears when paused past timeline end and playhead frame is missing ......   Passed    0.32 sec
+        Start 316: VideoCacheThread:clearCacheIfPaused: does not clear when paused past timeline end and end frame is cached
+316/515 Test #316: VideoCacheThread:clearCacheIfPaused: does not clear when paused past timeline end and end frame is cached ....   Passed    0.32 sec
+        Start 317: VideoCacheThread:computeDirection: respects speed and last_dir
+317/515 Test #317: VideoCacheThread:computeDirection: respects speed and last_dir ...............................................   Passed    0.07 sec
+        Start 318: VideoCacheThread:computeWindowBounds: forward and backward bounds, clamped
+318/515 Test #318: VideoCacheThread:computeWindowBounds: forward and backward bounds, clamped ...................................   Passed    0.07 sec
+        Start 319: VideoCacheThread:handleUserSeek: sets last_cached_index to playhead - dir
+319/515 Test #319: VideoCacheThread:handleUserSeek: sets last_cached_index to playhead - dir ....................................   Passed    0.07 sec
+        Start 320: VideoCacheThread:handleUserSeekWithPreroll: offsets start by preroll frames
+320/515 Test #320: VideoCacheThread:handleUserSeekWithPreroll: offsets start by preroll frames ..................................   Passed    0.07 sec
+        Start 321: VideoCacheThread:isReady: clamps preroll requirement at timeline boundaries
+321/515 Test #321: VideoCacheThread:isReady: clamps preroll requirement at timeline boundaries ..................................   Passed    0.32 sec
+        Start 322: VideoCacheThread:isReady: requires cached frames ahead of playhead
+322/515 Test #322: VideoCacheThread:isReady: requires cached frames ahead of playhead ...........................................   Passed    0.32 sec
+        Start 323: VideoCacheThread:isReady: treats out-of-range playhead as timeline edge for readiness
+323/515 Test #323: VideoCacheThread:isReady: treats out-of-range playhead as timeline edge for readiness ........................   Passed    0.32 sec
+        Start 324: VideoCacheThread:prefetchWindow: backward caching with FFmpegReader & CacheMemory
+324/515 Test #324: VideoCacheThread:prefetchWindow: backward caching with FFmpegReader & CacheMemory ............................   Passed    0.44 sec
+        Start 325: VideoCacheThread:prefetchWindow: forward caching with FFmpegReader & CacheMemory
+325/515 Test #325: VideoCacheThread:prefetchWindow: forward caching with FFmpegReader & CacheMemory .............................   Passed    0.42 sec
+        Start 326: VideoCacheThread:prefetchWindow: interrupt on userSeeked flag
+326/515 Test #326: VideoCacheThread:prefetchWindow: interrupt on userSeeked flag ................................................   Passed    0.47 sec
+        Start 327: AudioVisualization:AudioVisualization JSON roundtrip preserves visualization controls
+327/515 Test #327: AudioVisualization:AudioVisualization JSON roundtrip preserves visualization controls ........................   Passed    0.07 sec
+        Start 328: AudioVisualization:AudioVisualization differentiates combined and overlay waveform channels
+328/515 Test #328: AudioVisualization:AudioVisualization differentiates combined and overlay waveform channels ..................   Passed    0.07 sec
+        Start 329: AudioVisualization:AudioVisualization exposes normalized frequency controls
+329/515 Test #329: AudioVisualization:AudioVisualization exposes normalized frequency controls ..................................   Passed    0.07 sec
+        Start 330: AudioVisualization:AudioVisualization is registered
+330/515 Test #330: AudioVisualization:AudioVisualization is registered ..........................................................   Passed    0.06 sec
+        Start 331: AudioVisualization:AudioVisualization phase scope supports rainbow color mode
+331/515 Test #331: AudioVisualization:AudioVisualization phase scope supports rainbow color mode ................................   Passed    0.07 sec
+        Start 332: AudioVisualization:AudioVisualization renders transparent visual modes
+332/515 Test #332: AudioVisualization:AudioVisualization renders transparent visual modes .......................................   Passed    0.11 sec
+        Start 333: AudioVisualization:AudioVisualization source background preserves input image
+333/515 Test #333: AudioVisualization:AudioVisualization source background preserves input image ................................   Passed    0.07 sec
+        Start 334: AudioVisualization:AudioVisualization uses timeline canvas for audio-only frames
+334/515 Test #334: AudioVisualization:AudioVisualization uses timeline canvas for audio-only frames .............................   Passed    0.33 sec
+        Start 335: Bars:Bars margins clamp out-of-range values
+335/515 Test #335: Bars:Bars margins clamp out-of-range values ..................................................................   Passed    0.07 sec
+        Start 336: Bars:Bars margins handle full-frame bars
+336/515 Test #336: Bars:Bars margins handle full-frame bars .....................................................................   Passed    0.07 sec
+        Start 337: BeatSync:BeatSync JSON round-trip preserves all properties
+337/515 Test #337: BeatSync:BeatSync JSON round-trip preserves all properties ...................................................   Passed    0.07 sec
+        Start 338: BeatSync:BeatSync PropertiesJSON exposes all expected properties
+338/515 Test #338: BeatSync:BeatSync PropertiesJSON exposes all expected properties .............................................   Passed    0.07 sec
+        Start 339: BeatSync:BeatSync SetJson maps legacy color to high color
+339/515 Test #339: BeatSync:BeatSync SetJson maps legacy color to high color ....................................................   Passed    0.07 sec
+        Start 340: BeatSync:BeatSync SetJson string round-trip works
+340/515 Test #340: BeatSync:BeatSync SetJson string round-trip works ............................................................   Passed    0.07 sec
+        Start 341: BeatSync:BeatSync SetJson throws on invalid JSON
+341/515 Test #341: BeatSync:BeatSync SetJson throws on invalid JSON .............................................................   Passed    0.07 sec
+        Start 342: BeatSync:BeatSync bass band detects low-frequency tone
+342/515 Test #342: BeatSync:BeatSync bass band detects low-frequency tone .......................................................   Passed    0.07 sec
+        Start 343: BeatSync:BeatSync can generate white to black flashes
+343/515 Test #343: BeatSync:BeatSync can generate white to black flashes ........................................................   Passed    0.07 sec
+        Start 344: BeatSync:BeatSync default parameters are sane
+344/515 Test #344: BeatSync:BeatSync default parameters are sane ................................................................   Passed    0.06 sec
+        Start 345: BeatSync:BeatSync envelope decays over silent frames
+345/515 Test #345: BeatSync:BeatSync envelope decays over silent frames .........................................................   Passed    0.07 sec
+        Start 346: BeatSync:BeatSync envelope resets on seek
+346/515 Test #346: BeatSync:BeatSync envelope resets on seek ....................................................................   Passed    0.06 sec
+        Start 347: BeatSync:BeatSync generates high color on loud audio
+347/515 Test #347: BeatSync:BeatSync generates high color on loud audio .........................................................   Passed    0.07 sec
+        Start 348: BeatSync:BeatSync generates low color on silence
+348/515 Test #348: BeatSync:BeatSync generates low color on silence .............................................................   Passed    0.07 sec
+        Start 349: BeatSync:BeatSync high band detects high-frequency tone
+349/515 Test #349: BeatSync:BeatSync high band detects high-frequency tone ......................................................   Passed    0.07 sec
+        Start 350: BeatSync:BeatSync ignores source footage color
+350/515 Test #350: BeatSync:BeatSync ignores source footage color ...............................................................   Passed    0.07 sec
+        Start 351: BeatSync:BeatSync interpolates configured alpha
+351/515 Test #351: BeatSync:BeatSync interpolates configured alpha ..............................................................   Passed    0.07 sec
+        Start 352: BeatSync:BeatSync invert=true applies maximum effect on silence
+352/515 Test #352: BeatSync:BeatSync invert=true applies maximum effect on silence ..............................................   Passed    0.07 sec
+        Start 353: BeatSync:BeatSync invert=true reduces effect on loud audio
+353/515 Test #353: BeatSync:BeatSync invert=true reduces effect on loud audio ...................................................   Passed    0.07 sec
+        Start 354: BeatSync:BeatSync is registered in EffectInfo
+354/515 Test #354: BeatSync:BeatSync is registered in EffectInfo ................................................................   Passed    0.07 sec
+        Start 355: BeatSync:BeatSync louder audio produces more effect than quieter audio
+355/515 Test #355: BeatSync:BeatSync louder audio produces more effect than quieter audio .......................................   Passed    0.07 sec
+        Start 356: BeatSync:BeatSync output matches input frame size
+356/515 Test #356: BeatSync:BeatSync output matches input frame size ............................................................   Passed    0.07 sec
+        Start 357: BeatSync:BeatSync response curve shapes generated color blend
+357/515 Test #357: BeatSync:BeatSync response curve shapes generated color blend ................................................   Passed    0.07 sec
+        Start 358: BeatSync:BeatSync uses timeline canvas when frame image is 1x1
+358/515 Test #358: BeatSync:BeatSync uses timeline canvas when frame image is 1x1 ...............................................   Passed    0.32 sec
+        Start 359: Blur:Blur margin properties serialize
+359/515 Test #359: Blur:Blur margin properties serialize ........................................................................   Passed    0.06 sec
+        Start 360: Blur:Blur margins handle small affected area
+360/515 Test #360: Blur:Blur margins handle small affected area .................................................................   Passed    0.06 sec
+        Start 361: Blur:Blur margins limit affected area
+361/515 Test #361: Blur:Blur margins limit affected area ........................................................................   Passed    0.07 sec
+        Start 362: ColorGrade:Animated curve data brightens matching pixels
+362/515 Test #362: ColorGrade:Animated curve data brightens matching pixels .....................................................   Passed    0.07 sec
+        Start 363: ColorGrade:Animated curve data supports smooth bezier points
+363/515 Test #363: ColorGrade:Animated curve data supports smooth bezier points .................................................   Passed    0.06 sec
+        Start 364: ColorGrade:Animated curve nodes interpolate over time
+364/515 Test #364: ColorGrade:Animated curve nodes interpolate over time ........................................................   Passed    0.07 sec
+        Start 365: ColorGrade:ColorGrade JSON round-trip preserves animated wheels and curves
+365/515 Test #365: ColorGrade:ColorGrade JSON round-trip preserves animated wheels and curves ...................................   Passed    0.07 sec
+        Start 366: ColorGrade:Default ColorGrade leaves image unchanged
+366/515 Test #366: ColorGrade:Default ColorGrade leaves image unchanged .........................................................   Passed    0.06 sec
+        Start 367: ColorGrade:Disabled animated curve renders as identity
+367/515 Test #367: ColorGrade:Disabled animated curve renders as identity .......................................................   Passed    0.07 sec
+        Start 368: ColorGrade:Disabled wheels preserve values but render as identity
+368/515 Test #368: ColorGrade:Disabled wheels preserve values but render as identity ............................................   Passed    0.07 sec
+        Start 369: ColorGrade:Identity ColorGrade preserves semi-transparent pixels
+369/515 Test #369: ColorGrade:Identity ColorGrade preserves semi-transparent pixels .............................................   Passed    0.07 sec
+        Start 370: ColorGrade:LUT path and intensity reuse ColorMap behavior
+370/515 Test #370: ColorGrade:LUT path and intensity reuse ColorMap behavior ....................................................   Passed    0.10 sec
+        Start 371: ColorGrade:PropertiesJSON exposes animated wheels and curve properties
+371/515 Test #371: ColorGrade:PropertiesJSON exposes animated wheels and curve properties .......................................   Passed    0.07 sec
+        Start 372: ColorGrade:Wheel data interpolates over time with native keyframes
+372/515 Test #372: ColorGrade:Wheel data interpolates over time with native keyframes ...........................................   Passed    0.07 sec
+        Start 373: ColorGrade:Wheel data shifts tonal balance
+373/515 Test #373: ColorGrade:Wheel data shifts tonal balance ...................................................................   Passed    0.06 sec
+        Start 374: ColorMap:1D LUT files alter pixel values
+374/515 Test #374: ColorMap:1D LUT files alter pixel values .....................................................................   Passed    0.06 sec
+        Start 375: ColorMap:1D LUT obeys DOMAIN_MIN and DOMAIN_MAX
+375/515 Test #375: ColorMap:1D LUT obeys DOMAIN_MIN and DOMAIN_MAX ..............................................................   Passed    0.07 sec
+        Start 376: ColorMap:3D LUT obeys DOMAIN_MIN and DOMAIN_MAX
+376/515 Test #376: ColorMap:3D LUT obeys DOMAIN_MIN and DOMAIN_MAX ..............................................................   Passed    0.06 sec
+        Start 377: ColorMap:Clearing LUT path via JSON leaves LUT path empty
+377/515 Test #377: ColorMap:Clearing LUT path via JSON leaves LUT path empty ....................................................   Passed    0.11 sec
+        Start 378: ColorMap:Default ColorMap with no LUT path leaves image unchanged
+378/515 Test #378: ColorMap:Default ColorMap with no LUT path leaves image unchanged ............................................   Passed    0.06 sec
+        Start 379: ColorMap:Disabling red channel produces different result than full-intensity
+379/515 Test #379: ColorMap:Disabling red channel produces different result than full-intensity .................................   Passed    0.15 sec
+        Start 380: ColorMap:Full-intensity LUT changes pixel values
+380/515 Test #380: ColorMap:Full-intensity LUT changes pixel values .............................................................   Passed    0.10 sec
+        Start 381: ColorMap:Half-intensity LUT changes pixel values less than full-intensity
+381/515 Test #381: ColorMap:Half-intensity LUT changes pixel values less than full-intensity ....................................   Passed    0.15 sec
+        Start 382: ColorMap:JSON round-trip preserves LUT path and intensity keyframe values
+382/515 Test #382: ColorMap:JSON round-trip preserves LUT path and intensity keyframe values ....................................   Passed    0.11 sec
+        Start 383: ColorMap:Overall intensity = 0 leaves image unchanged even when LUT is set
+383/515 Test #383: ColorMap:Overall intensity = 0 leaves image unchanged even when LUT is set ...................................   Passed    0.10 sec
+        Start 384: ColorMap:PropertiesJSON exposes all four intensity properties
+384/515 Test #384: ColorMap:PropertiesJSON exposes all four intensity properties ................................................   Passed    0.07 sec
+        Start 385: ChromaKey:SetJson string preserves keymethod
+385/515 Test #385: ChromaKey:SetJson string preserves keymethod .................................................................   Passed    0.06 sec
+        Start 386: ChromaKey:basic keying
+386/515 Test #386: ChromaKey:basic keying .......................................................................................   Passed    0.07 sec
+        Start 387: ChromaKey:basic vs basic soft halo behavior
+387/515 Test #387: ChromaKey:basic vs basic soft halo behavior ..................................................................   Passed    0.07 sec
+        Start 388: ChromaKey:default method is basic soft
+388/515 Test #388: ChromaKey:default method is basic soft .......................................................................   Passed    0.06 sec
+        Start 389: ChromaKey:json roundtrip preserves method
+389/515 Test #389: ChromaKey:json roundtrip preserves method ....................................................................   Passed    0.07 sec
+        Start 390: ChromaKey:threshold
+390/515 Test #390: ChromaKey:threshold ..........................................................................................   Passed    0.07 sec
+        Start 391: Crop:basic cropping
+391/515 Test #391: Crop:basic cropping ..........................................................................................   Passed    0.07 sec
+        Start 392: Crop:crop resize scaling helper
+392/515 Test #392: Crop:crop resize scaling helper ..............................................................................   Passed    0.06 sec
+        Start 393: Crop:default constructor
+393/515 Test #393: Crop:default constructor .....................................................................................   Passed    0.07 sec
+        Start 394: Crop:region collapsing
+394/515 Test #394: Crop:region collapsing .......................................................................................   Passed    0.07 sec
+        Start 395: Crop:x/y offsets
+395/515 Test #395: Crop:x/y offsets .............................................................................................   Passed    0.07 sec
+        Start 396: Displace:Displace ProcessFrame uses map source and shared mask together
+396/515 Test #396: Displace:Displace ProcessFrame uses map source and shared mask together ......................................   Passed    0.06 sec
+        Start 397: Displace:Displace serializes map_reader independently from shared mask_reader
+397/515 Test #397: Displace:Displace serializes map_reader independently from shared mask_reader ................................   Passed    0.07 sec
+        Start 398: FilmGrain:FilmGrain JSON and properties expose visible controls
+398/515 Test #398: FilmGrain:FilmGrain JSON and properties expose visible controls ..............................................   Passed    0.07 sec
+        Start 399: FilmGrain:FilmGrain amount zero is identity
+399/515 Test #399: FilmGrain:FilmGrain amount zero is identity ..................................................................   Passed    0.06 sec
+        Start 400: FilmGrain:FilmGrain color controls vary channel correlation
+400/515 Test #400: FilmGrain:FilmGrain color controls vary channel correlation ..................................................   Passed    0.06 sec
+        Start 401: FilmGrain:FilmGrain deterministic for same id and seed
+401/515 Test #401: FilmGrain:FilmGrain deterministic for same id and seed .......................................................   Passed    0.06 sec
+        Start 402: FilmGrain:FilmGrain midtones and highlights can be targeted
+402/515 Test #402: FilmGrain:FilmGrain midtones and highlights can be targeted ..................................................   Passed    0.06 sec
+        Start 403: FilmGrain:FilmGrain modifies frame
+403/515 Test #403: FilmGrain:FilmGrain modifies frame ...........................................................................   Passed    0.06 sec
+        Start 404: FilmGrain:FilmGrain seed alters output
+404/515 Test #404: FilmGrain:FilmGrain seed alters output .......................................................................   Passed    0.07 sec
+        Start 405: FilmGrain:FilmGrain structure controls affect grain identity
+405/515 Test #405: FilmGrain:FilmGrain structure controls affect grain identity .................................................   Passed    0.07 sec
+        Start 406: FilmGrain:FilmGrain temporal controls affect frame-to-frame variation
+406/515 Test #406: FilmGrain:FilmGrain temporal controls affect frame-to-frame variation ........................................   Passed    0.06 sec
+        Start 407: FilmGrain:FilmGrain tonal controls weight selected luma range
+407/515 Test #407: FilmGrain:FilmGrain tonal controls weight selected luma range ................................................   Passed    0.07 sec
+        Start 408: Glow:Glow inner mode tints inner edge without affecting outside
+408/515 Test #408: Glow:Glow inner mode tints inner edge without affecting outside ..............................................   Passed    0.06 sec
+        Start 409: Glow:Glow json round-trip preserves mode and color
+409/515 Test #409: Glow:Glow json round-trip preserves mode and color ...........................................................   Passed    0.07 sec
+        Start 410: Glow:Glow outer mode brightens transparent neighbors
+410/515 Test #410: Glow:Glow outer mode brightens transparent neighbors .........................................................   Passed    0.06 sec
+        Start 411: Glow:Glow spread expands hard-edged shapes before blur
+411/515 Test #411: Glow:Glow spread expands hard-edged shapes before blur .......................................................   Passed    0.07 sec
+        Start 412: LensFlare:LensFlare brightens center pixel
+412/515 Test #412: LensFlare:LensFlare brightens center pixel ...................................................................   Passed    0.06 sec
+        Start 413: LensFlare:LensFlare brightness scales intensity
+413/515 Test #413: LensFlare:LensFlare brightness scales intensity ..............................................................   Passed    0.07 sec
+        Start 414: LensFlare:LensFlare size controls area of effect
+414/515 Test #414: LensFlare:LensFlare size controls area of effect .............................................................   Passed    0.07 sec
+        Start 415: AnalogTape:AnalogTape deterministic per id
+415/515 Test #415: AnalogTape:AnalogTape deterministic per id ...................................................................   Passed    0.12 sec
+        Start 416: AnalogTape:AnalogTape modifies frame
+416/515 Test #416: AnalogTape:AnalogTape modifies frame .........................................................................   Passed    0.08 sec
+        Start 417: AnalogTape:AnalogTape seed offset alters output
+417/515 Test #417: AnalogTape:AnalogTape seed offset alters output ..............................................................   Passed    0.06 sec
+        Start 418: AnalogTape:AnalogTape stripe lifts bottom
+418/515 Test #418: AnalogTape:AnalogTape stripe lifts bottom ....................................................................   Passed    0.06 sec
+        Start 419: BenchmarkArgs:Benchmark args default correctly
+419/515 Test #419: BenchmarkArgs:Benchmark args default correctly ...............................................................   Passed    0.00 sec
+        Start 420: BenchmarkArgs:Benchmark args parse valid values
+420/515 Test #420: BenchmarkArgs:Benchmark args parse valid values ..............................................................   Passed    0.00 sec
+        Start 421: BenchmarkArgs:Benchmark args reject invalid thread values
+421/515 Test #421: BenchmarkArgs:Benchmark args reject invalid thread values ....................................................   Passed    0.00 sec
+        Start 422: BenchmarkArgs:Benchmark args reject missing values and unknown args
+422/515 Test #422: BenchmarkArgs:Benchmark args reject missing values and unknown args ..........................................   Passed    0.00 sec
+        Start 423: BenchmarkArgs:Benchmark usage string includes new thread flags
+423/515 Test #423: BenchmarkArgs:Benchmark usage string includes new thread flags ...............................................   Passed    0.00 sec
+        Start 424: EffectMask:Blur mask mode drive amount differs from post blend
+424/515 Test #424: EffectMask:Blur mask mode drive amount differs from post blend ...............................................   Passed    0.06 sec
+        Start 425: EffectMask:Brightness mask mode vary strength differs from limit-to-area
+425/515 Test #425: EffectMask:Brightness mask mode vary strength differs from limit-to-area .....................................   Passed    0.06 sec
+        Start 426: EffectMask:CVObjectDetection normalizes saved track classes
+426/515 Test #426: EffectMask:CVObjectDetection normalizes saved track classes ..................................................   Passed    0.07 sec
+        Start 427: EffectMask:Clip-attached effects still process every frame while using trimmed mask source
+427/515 Test #427: EffectMask:Clip-attached effects still process every frame while using trimmed mask source ...................   Passed    0.06 sec
+        Start 428: EffectMask:Effect mask_mode roundtrip for supported effects
+428/515 Test #428: EffectMask:Effect mask_mode roundtrip for supported effects ..................................................   Passed    0.07 sec
+        Start 429: EffectMask:EffectBase accepts legacy mask_start and mask_end aliases
+429/515 Test #429: EffectMask:EffectBase accepts legacy mask_start and mask_end aliases .........................................   Passed    0.07 sec
+        Start 430: EffectMask:EffectBase accepts legacy reader key for mask source
+430/515 Test #430: EffectMask:EffectBase accepts legacy reader key for mask source ..............................................   Passed    0.07 sec
+        Start 431: EffectMask:EffectBase can use tracker effect bbox as generated mask source
+431/515 Test #431: EffectMask:EffectBase can use tracker effect bbox as generated mask source ...................................   Passed    0.06 sec
+        Start 432: EffectMask:EffectBase canonical start and end override legacy mask aliases
+432/515 Test #432: EffectMask:EffectBase canonical start and end override legacy mask aliases ...................................   Passed    0.07 sec
+        Start 433: EffectMask:EffectBase common mask blend applies to ProcessFrame
+433/515 Test #433: EffectMask:EffectBase common mask blend applies to ProcessFrame ..............................................   Passed    0.07 sec
+        Start 434: EffectMask:EffectBase defaults mask time mode to source FPS
+434/515 Test #434: EffectMask:EffectBase defaults mask time mode to source FPS ..................................................   Passed    0.06 sec
+        Start 435: EffectMask:EffectBase mask fields serialize and deserialize
+435/515 Test #435: EffectMask:EffectBase mask fields serialize and deserialize ..................................................   Passed    0.07 sec
+        Start 436: EffectMask:EffectBase mask properties use base start and end controls
+436/515 Test #436: EffectMask:EffectBase mask properties use base start and end controls ........................................   Passed    0.06 sec
+        Start 437: EffectMask:EffectBase source FPS mode maps using parent clip FPS
+437/515 Test #437: EffectMask:EffectBase source FPS mode maps using parent clip FPS .............................................   Passed    0.06 sec
+        Start 438: EffectMask:EffectBase timeline mode maps one-to-one with repeat loop
+438/515 Test #438: EffectMask:EffectBase timeline mode maps one-to-one with repeat loop .........................................   Passed    0.08 sec
+        Start 439: EffectMask:EffectBase timeline mode play-once clamps at end
+439/515 Test #439: EffectMask:EffectBase timeline mode play-once clamps at end ..................................................   Passed    0.06 sec
+        Start 440: EffectMask:EffectBase timeline mode supports ping-pong loop
+440/515 Test #440: EffectMask:EffectBase timeline mode supports ping-pong loop ..................................................   Passed    0.06 sec
+        Start 441: EffectMask:EffectBase tracker mask source honors corner radius
+441/515 Test #441: EffectMask:EffectBase tracker mask source honors corner radius ...............................................   Passed    0.06 sec
+        Start 442: EffectMask:EffectBase tracker mask source with no visible bbox preserves original frame
+442/515 Test #442: EffectMask:EffectBase tracker mask source with no visible bbox preserves original frame ......................   Passed    0.07 sec
+        Start 443: EffectMask:EffectBase uses ClipBase start and end for mask source trim
+443/515 Test #443: EffectMask:EffectBase uses ClipBase start and end for mask source trim .......................................   Passed    0.07 sec
+        Start 444: EffectMask:Hue mask mode vary strength differs from limit-to-area
+444/515 Test #444: EffectMask:Hue mask mode vary strength differs from limit-to-area ............................................   Passed    0.08 sec
+        Start 445: EffectMask:ObjectDetection all object mask controls survive style updates
+445/515 Test #445: EffectMask:ObjectDetection all object mask controls survive style updates ....................................   Passed    0.07 sec
+        Start 446: EffectMask:ObjectDetection all object mask controls use any masked object
+446/515 Test #446: EffectMask:ObjectDetection all object mask controls use any masked object ....................................   Passed    0.06 sec
+        Start 447: EffectMask:ObjectDetection all object properties keep explicit all values
+447/515 Test #447: EffectMask:ObjectDetection all object properties keep explicit all values ....................................   Passed    0.06 sec
+        Start 448: EffectMask:ObjectDetection all object selection exposes tracked object properties
+448/515 Test #448: EffectMask:ObjectDetection all object selection exposes tracked object properties ............................   Passed    0.07 sec
+        Start 449: EffectMask:ObjectDetection all object update applies sparse style keys
+449/515 Test #449: EffectMask:ObjectDetection all object update applies sparse style keys .......................................   Passed    0.06 sec
+        Start 450: EffectMask:ObjectDetection individual style overrides all object style
+450/515 Test #450: EffectMask:ObjectDetection individual style overrides all object style .......................................   Passed    0.06 sec
+        Start 451: EffectMask:ObjectDetection object mask overlay does not fill the whole frame
+451/515 Test #451: EffectMask:ObjectDetection object mask overlay does not fill the whole frame .................................   Passed    0.06 sec
+        Start 452: EffectMask:Pixelate mask mode vary strength differs from limit-to-area
+452/515 Test #452: EffectMask:Pixelate mask mode vary strength differs from limit-to-area .......................................   Passed    0.06 sec
+        Start 453: EffectMask:Saturation mask mode drive amount differs from post blend
+453/515 Test #453: EffectMask:Saturation mask mode drive amount differs from post blend .........................................   Passed    0.06 sec
+        Start 454: EffectMask:Sharpen mask mode vary strength differs from limit-to-area
+454/515 Test #454: EffectMask:Sharpen mask mode vary strength differs from limit-to-area ........................................   Passed    0.07 sec
+        Start 455: EffectMask:TrackedObjectBBox reuses nearby masks for short detection gaps
+455/515 Test #455: EffectMask:TrackedObjectBBox reuses nearby masks for short detection gaps ....................................   Passed    0.07 sec
+        Start 456: Mask:Mask ProcessFrame brightness -1.0 keeps output opaque
+456/515 Test #456: Mask:Mask ProcessFrame brightness -1.0 keeps output opaque ...................................................   Passed    0.08 sec
+        Start 457: Mask:Mask ProcessFrame brightness 1.0 fully clears output
+457/515 Test #457: Mask:Mask ProcessFrame brightness 1.0 fully clears output ....................................................   Passed    0.07 sec
+        Start 458: Mask:Mask ProcessFrame brightness 1.0 ignores gray mask and still clears
+458/515 Test #458: Mask:Mask ProcessFrame brightness 1.0 ignores gray mask and still clears .....................................   Passed    0.08 sec
+        Start 459: Mask:Mask ProcessFrame honors invert mask property
+459/515 Test #459: Mask:Mask ProcessFrame honors invert mask property ...........................................................   Passed    0.07 sec
+        Start 460: Mask:Mask accepts legacy reader json field
+460/515 Test #460: Mask:Mask accepts legacy reader json field ...................................................................   Passed    0.07 sec
+        Start 461: Mask:Mask applies alpha from reader source
+461/515 Test #461: Mask:Mask applies alpha from reader source ...................................................................   Passed    0.07 sec
+        Start 462: Mask:Mask fade_audio_hint defaults to false when omitted
+462/515 Test #462: Mask:Mask fade_audio_hint defaults to false when omitted .....................................................   Passed    0.07 sec
+        Start 463: Mask:Mask fade_audio_hint json and properties round-trip
+463/515 Test #463: Mask:Mask fade_audio_hint json and properties round-trip .....................................................   Passed    0.07 sec
+        Start 464: Mask:Mask invert flips reader mask alpha mapping
+464/515 Test #464: Mask:Mask invert flips reader mask alpha mapping .............................................................   Passed    0.07 sec
+        Start 465: Mask:Mask legacy start and end json load into base trim
+465/515 Test #465: Mask:Mask legacy start and end json load into base trim ......................................................   Passed    0.07 sec
+        Start 466: Mask:Mask maximum contrast keeps a narrow transition band
+466/515 Test #466: Mask:Mask maximum contrast keeps a narrow transition band ....................................................   Passed    0.07 sec
+        Start 467: Mask:Mask replace_image emits grayscale values
+467/515 Test #467: Mask:Mask replace_image emits grayscale values ...............................................................   Passed    0.07 sec
+        Start 468: Pixelate:Pixelate margins clamp out-of-range values
+468/515 Test #468: Pixelate:Pixelate margins clamp out-of-range values ..........................................................   Passed    0.07 sec
+        Start 469: Pixelate:Pixelate margins handle collapsed area
+469/515 Test #469: Pixelate:Pixelate margins handle collapsed area ..............................................................   Passed    0.07 sec
+        Start 470: Saturation:Saturation respects padded QImage stride in OpenMP path
+470/515 Test #470: Saturation:Saturation respects padded QImage stride in OpenMP path ...........................................   Passed    0.07 sec
+        Start 471: Sharpen:Chroma-only differs from All on colored image
+471/515 Test #471: Sharpen:Chroma-only differs from All on colored image ........................................................   Passed    0.06 sec
+        Start 472: Sharpen:HighPass vs UnsharpMask produce distinct results on grayscale
+472/515 Test #472: Sharpen:HighPass vs UnsharpMask produce distinct results on grayscale ........................................   Passed    0.07 sec
+        Start 473: Sharpen:Luma-only differs from All on colored image
+473/515 Test #473: Sharpen:Luma-only differs from All on colored image ..........................................................   Passed    0.06 sec
+        Start 474: Sharpen:nonzero radius and threshold sharpens tiny grayscale image
+474/515 Test #474: Sharpen:nonzero radius and threshold sharpens tiny grayscale image ...........................................   Passed    0.06 sec
+        Start 475: Sharpen:zero amount leaves image unchanged
+475/515 Test #475: Sharpen:zero amount leaves image unchanged ...................................................................   Passed    0.07 sec
+        Start 476: Sharpen:zero radius leaves image unchanged
+476/515 Test #476: Sharpen:zero radius leaves image unchanged ...................................................................   Passed    0.07 sec
+        Start 477: Shadow:Shadow blur can still reach the canvas edge after offset
+477/515 Test #477: Shadow:Shadow blur can still reach the canvas edge after offset ..............................................   Passed    0.07 sec
+        Start 478: Shadow:Shadow json round-trip preserves key properties
+478/515 Test #478: Shadow:Shadow json round-trip preserves key properties .......................................................   Passed    0.07 sec
+        Start 479: Shadow:Shadow offsets visible pixels into surrounding area
+479/515 Test #479: Shadow:Shadow offsets visible pixels into surrounding area ...................................................   Passed    0.06 sec
+        Start 480: Shadow:Shadow spread expands hard-edged shapes before blur
+480/515 Test #480: Shadow:Shadow spread expands hard-edged shapes before blur ...................................................   Passed    0.07 sec
+        Start 481: SphericalEffect:changing properties invalidates cache
+481/515 Test #481: SphericalEffect:changing properties invalidates cache ........................................................   Passed    0.08 sec
+        Start 482: SphericalEffect:fisheye input: center pixel invariant under invert
+482/515 Test #482: SphericalEffect:fisheye input: center pixel invariant under invert ...........................................   Passed    0.08 sec
+        Start 483: SphericalEffect:hemisphere mode: invert equals yaw+180 (center pixel)
+483/515 Test #483: SphericalEffect:hemisphere mode: invert equals yaw+180 (center pixel) ........................................   Passed    0.07 sec
+        Start 484: SphericalEffect:input models: checker-plane colored guides are consistent
+484/515 Test #484: SphericalEffect:input models: checker-plane colored guides are consistent ....................................   Passed    0.20 sec
+        Start 485: SphericalEffect:output fisheye modes: center matches rect view, corners outside disk
+485/515 Test #485: SphericalEffect:output fisheye modes: center matches rect view, corners outside disk .........................   Passed    0.28 sec
+        Start 486: SphericalEffect:sphere mode: invert equals yaw+180 (center pixel)
+486/515 Test #486: SphericalEffect:sphere mode: invert equals yaw+180 (center pixel) ............................................   Passed    0.07 sec
+        Start 487: Timer:timer effect
+487/515 Test #487: Timer:timer effect ...........................................................................................   Passed    0.35 sec
+        Start 488: DenoiseImage:DenoiseImage JSON and PropertiesJSON expose V1 controls
+488/515 Test #488: DenoiseImage:DenoiseImage JSON and PropertiesJSON expose V1 controls .........................................   Passed    0.07 sec
+        Start 489: DenoiseImage:DenoiseImage changes native OpenShot frame format through ProcessFrame
+489/515 Test #489: DenoiseImage:DenoiseImage changes native OpenShot frame format through ProcessFrame ..........................   Passed    0.06 sec
+        Start 490: DenoiseImage:DenoiseImage default settings visibly reduce isolated speckles
+490/515 Test #490: DenoiseImage:DenoiseImage default settings visibly reduce isolated speckles ..................................   Passed    0.06 sec
+        Start 491: DenoiseImage:DenoiseImage preserves alpha while reducing color speckles
+491/515 Test #491: DenoiseImage:DenoiseImage preserves alpha while reducing color speckles ......................................   Passed    0.07 sec
+        Start 492: DenoiseImage:DenoiseImage response curve favors shadows
+492/515 Test #492: DenoiseImage:DenoiseImage response curve favors shadows ......................................................   Passed    0.07 sec
+        Start 493: DenoiseImage:DenoiseImage temporal only applies to sequential frames
+493/515 Test #493: DenoiseImage:DenoiseImage temporal only applies to sequential frames .........................................   Passed    0.06 sec
+        Start 494: DenoiseImage:DenoiseImage zero strength leaves pixels unchanged
+494/515 Test #494: DenoiseImage:DenoiseImage zero strength leaves pixels unchanged ..............................................   Passed    0.07 sec
+        Start 495: WaveEffect:Wave uses original pixel buffer
+495/515 Test #495: WaveEffect:Wave uses original pixel buffer ...................................................................   Passed    0.06 sec
+        Start 496: ImageReader:Duration_And_Length_ImageReader
+496/515 Test #496: ImageReader:Duration_And_Length_ImageReader ..................................................................   Passed    0.08 sec
+        Start 497: ImageReader:Invalid_Path_ImageReader
+497/515 Test #497: ImageReader:Invalid_Path_ImageReader .........................................................................   Passed    0.07 sec
+        Start 498: ImageWriter:Gif
+498/515 Test #498: ImageWriter:Gif ..............................................................................................   Passed    3.14 sec
+        Start 499: ImageWriter:conversions
+499/515 Test #499: ImageWriter:conversions ......................................................................................   Passed    0.08 sec
+        Start 500: CVTracker:KalmanTracker smooths class scores
+500/515 Test #500: CVTracker:KalmanTracker smooths class scores .................................................................   Passed    0.06 sec
+        Start 501: CVTracker:SaveLoad_Protobuf
+501/515 Test #501: CVTracker:SaveLoad_Protobuf ..................................................................................   Passed    1.43 sec
+        Start 502: CVTracker:SortTracker does not reacquire a missed track onto a nearby object
+502/515 Test #502: CVTracker:SortTracker does not reacquire a missed track onto a nearby object .................................   Passed    0.06 sec
+        Start 503: CVTracker:SortTracker rejects adjacent-object handoff for active track
+503/515 Test #503: CVTracker:SortTracker rejects adjacent-object handoff for active track .......................................   Passed    0.06 sec
+        Start 504: CVTracker:SortTracker rejects tiny nested detection for vehicle track
+504/515 Test #504: CVTracker:SortTracker rejects tiny nested detection for vehicle track ........................................   Passed    0.06 sec
+        Start 505: CVTracker:Track_BoundingBoxClipping
+505/515 Test #505: CVTracker:Track_BoundingBoxClipping ..........................................................................   Passed    0.32 sec
+        Start 506: CVTracker:Track_FrameSizeChangeDoesNotCrash
+506/515 Test #506: CVTracker:Track_FrameSizeChangeDoesNotCrash ..................................................................   Passed    0.07 sec
+        Start 507: CVTracker:Track_Video
+507/515 Test #507: CVTracker:Track_Video ........................................................................................   Passed    1.43 sec
+        Start 508: CVTracker:initialization
+508/515 Test #508: CVTracker:initialization .....................................................................................   Passed    0.06 sec
+        Start 509: CVStabilizer:SaveLoad_Protobuf
+509/515 Test #509: CVStabilizer:SaveLoad_Protobuf ...............................................................................   Passed    0.47 sec
+        Start 510: CVStabilizer:Stabilize_Video
+510/515 Test #510: CVStabilizer:Stabilize_Video .................................................................................   Passed    0.47 sec
+        Start 511: CVOutline:Outline_Tests
+511/515 Test #511: CVOutline:Outline_Tests ......................................................................................   Passed    0.32 sec
+        Start 512: ObjectMask:CVObjectMask validates a single EfficientSAM ONNX model path
+512/515 Test #512: ObjectMask:CVObjectMask validates a single EfficientSAM ONNX model path ......................................   Passed    0.07 sec
+        Start 513: ObjectMask:ObjectMask effect is registered
+513/515 Test #513: ObjectMask:ObjectMask effect is registered ...................................................................   Passed    0.06 sec
+        Start 514: ObjectMask:ObjectMask loads protobuf masks and exposes style controls
+514/515 Test #514: ObjectMask:ObjectMask loads protobuf masks and exposes style controls ........................................   Passed    0.06 sec
+        Start 515: Settings:Debug logging(enabled)
+515/515 Test #515: Settings:Debug logging(enabled) ..............................................................................   Passed    0.07 sec
+
+100% tests passed out of 515
+
+Label Time Summary:
+AnalogTape             =   0.33 sec*proc (4 tests)
+AnimatedCurve          =   0.27 sec*proc (4 tests)
+AudioDeviceManager     =   0.36 sec*proc (1 test)
+AudioRecorder          =   1.24 sec*proc (7 tests)
+AudioVisualization     =   0.85 sec*proc (8 tests)
+AudioWaveformer        =   5.54 sec*proc (15 tests)
+Bars                   =   0.14 sec*proc (2 tests)
+BeatSync               =   1.72 sec*proc (22 tests)
+BenchmarkArgs          =   0.01 sec*proc (5 tests)
+Blur                   =   0.19 sec*proc (3 tests)
+CVOutline              =   0.32 sec*proc (1 test)
+CVStabilizer           =   0.94 sec*proc (2 tests)
+CVTracker              =   3.57 sec*proc (9 tests)
+CacheDisk              =   0.51 sec*proc (6 tests)
+CacheMemory            =   0.75 sec*proc (11 tests)
+CameraCaptureReader    =   0.20 sec*proc (3 tests)
+Caption                =   0.60 sec*proc (1 test)
+ChromaKey              =   0.40 sec*proc (6 tests)
+Clip                   =  11.32 sec*proc (40 tests)
+Color                  =   0.66 sec*proc (10 tests)
+ColorGrade             =   0.83 sec*proc (12 tests)
+ColorMap               =   1.04 sec*proc (11 tests)
+Coordinate             =   0.34 sec*proc (5 tests)
+Crop                   =   0.34 sec*proc (5 tests)
+DenoiseImage           =   0.46 sec*proc (7 tests)
+Displace               =   0.13 sec*proc (2 tests)
+DummyReader            =   0.42 sec*proc (6 tests)
+EffectMask             =   2.12 sec*proc (32 tests)
+FFmpegReader           =  10.36 sec*proc (24 tests)
+FFmpegWriter           =  18.18 sec*proc (8 tests)
+FilmGrain              =   0.65 sec*proc (10 tests)
+Fraction               =   0.59 sec*proc (9 tests)
+Frame                  =   1.31 sec*proc (10 tests)
+FrameMapper            =   7.62 sec*proc (17 tests)
+FrameScope             =   0.71 sec*proc (9 tests)
+Glow                   =   0.26 sec*proc (4 tests)
+ImageReader            =   0.15 sec*proc (2 tests)
+ImageWriter            =   3.22 sec*proc (2 tests)
+KeyFrame               =   2.89 sec*proc (35 tests)
+LensFlare              =   0.20 sec*proc (3 tests)
+Mask                   =   0.84 sec*proc (12 tests)
+ObjectMask             =   0.19 sec*proc (3 tests)
+Pixelate               =   0.13 sec*proc (2 tests)
+Point                  =   0.81 sec*proc (12 tests)
+Profiles               =   0.58 sec*proc (9 tests)
+QtImageReader          =   0.70 sec*proc (6 tests)
+QtPlayer               =   0.13 sec*proc (2 tests)
+ReaderBase             =   0.06 sec*proc (1 test)
+Saturation             =   0.07 sec*proc (1 test)
+ScreenCaptureReader    =   0.45 sec*proc (7 tests)
+Settings               =   0.32 sec*proc (5 tests)
+Shadow                 =   0.26 sec*proc (4 tests)
+Sharpen                =   0.40 sec*proc (6 tests)
+SphericalEffect        =   0.78 sec*proc (6 tests)
+SphericalMetadata      =   1.33 sec*proc (2 tests)
+Timeline               =  13.67 sec*proc (38 tests)
+Timer                  =   0.35 sec*proc (1 test)
+VideoCacheThread       =   6.99 sec*proc (24 tests)
+WaveEffect             =   0.06 sec*proc (1 test)
+
+Total Test time (real) = 110.05 sec
