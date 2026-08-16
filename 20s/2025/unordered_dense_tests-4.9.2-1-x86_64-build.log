@@ -4,11 +4,11 @@ Wrap abseil-cpp.wrap type file not found: abseil-cpp-20250814.1
 Wrap doctest.wrap    type file not found: doctest-2.5.3
 Wrap fmt.wrap        type file not found: fmt-12.0.0
 
-+ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 unordered_dense build
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 . _build
 The Meson build system
 Version: 1.12.0
 Source dir: /build/unordered_dense_tests/src/unordered_dense
-Build dir: /build/unordered_dense_tests/src/build
+Build dir: /build/unordered_dense_tests/src/unordered_dense/_build
 Build type: native build
 Project name: unordered_dense
 Project version: 4.9.2
@@ -48,105 +48,105 @@ unordered_dense 4.9.2
     wrap_mode         : nodownload
 
 Found ninja-1.13.2 at /usr/bin/ninja
-Generating targets:   0%|          | 0/1 eta ?                                              Writing build.ninja:   0%|          | 0/120 eta ?                                                 ninja: Entering directory `/build/unordered_dense_tests/src/build'
+Generating targets:   0%|          | 0/1 eta ?                                              Writing build.ninja:   0%|          | 0/120 eta ?                                                 ninja: Entering directory `/build/unordered_dense_tests/src/unordered_dense/_build'
 [1/94] Compiling C++ object test/udm-test.p/app_ui_periodic.cpp.o
 [2/94] Compiling C++ object test/udm-test.p/app_ui_progress_bar.cpp.o
-[3/94] Compiling C++ object test/udm-test.p/app_unordered_dense.cpp.o
-[4/94] Compiling C++ object test/udm-test.p/app_stacktrace.cpp.o
+[3/94] Compiling C++ object test/udm-test.p/app_stacktrace.cpp.o
+[4/94] Compiling C++ object test/udm-test.p/app_unordered_dense.cpp.o
 [5/94] Compiling C++ object test/udm-test.p/app_counter.cpp.o
 [6/94] Compiling C++ object test/udm-test.p/unit_array_of_maps.cpp.o
-[7/94] Compiling C++ object test/udm-test.p/bench_swap.cpp.o
-[8/94] Compiling C++ object test/udm-test.p/bench_precomputed_hash.cpp.o
-[9/94] Compiling C++ object test/udm-test.p/bench_replace_key.cpp.o
-[10/94] Compiling C++ object test/udm-test.p/fuzz_run.cpp.o
+[7/94] Compiling C++ object test/udm-test.p/bench_precomputed_hash.cpp.o
+[8/94] Compiling C++ object test/udm-test.p/bench_swap.cpp.o
+[9/94] Compiling C++ object test/udm-test.p/fuzz_run.cpp.o
+[10/94] Compiling C++ object test/udm-test.p/bench_replace_key.cpp.o
 [11/94] Compiling C++ object test/udm-test.p/unit_contains.cpp.o
-[12/94] Compiling C++ object test/udm-test.p/bench_find_random.cpp.o
-[13/94] Compiling C++ object test/udm-test.p/unit_at.cpp.o
-[14/94] Compiling C++ object test/udm-test.p/unit_copy_and_assign_maps.cpp.o
-[15/94] Compiling C++ object test/udm-test.p/unit_assign_to_move.cpp.o
-[16/94] Compiling C++ object test/udm-test.p/bench_copy.cpp.o
-[17/94] Compiling C++ object test/udm-test.p/bench_game_of_life.cpp.o
-[18/94] Compiling C++ object test/udm-test.p/unit_bucket.cpp.o
-[19/94] Compiling C++ object test/udm-test.p/unit_count.cpp.o
-[20/94] Compiling C++ object test/udm-test.p/bench_show_allocations.cpp.o
-[21/94] Compiling C++ object test/udm-test.p/unit_copyassignment.cpp.o
-[22/94] Compiling C++ object test/udm-test.p/unit_avalanching.cpp.o
-[23/94] Compiling C++ object test/udm-test.p/unit_assignment_combinations.cpp.o
-[24/94] Compiling C++ object test/udm-test.p/unit_ctors.cpp.o
-[25/94] Compiling C++ object test/udm-test.p/unit_custom_container.cpp.o
+[12/94] Compiling C++ object test/udm-test.p/unit_at.cpp.o
+[13/94] Compiling C++ object test/udm-test.p/unit_count.cpp.o
+[14/94] Compiling C++ object test/udm-test.p/unit_assign_to_move.cpp.o
+[15/94] Compiling C++ object test/udm-test.p/unit_avalanching.cpp.o
+[16/94] Compiling C++ object test/udm-test.p/bench_game_of_life.cpp.o
+[17/94] Compiling C++ object test/udm-test.p/app_nanobench.cpp.o
+[18/94] Compiling C++ object test/udm-test.p/bench_find_random.cpp.o
+[19/94] Compiling C++ object test/udm-test.p/unit_copyassignment.cpp.o
+[20/94] Compiling C++ object test/udm-test.p/bench_copy.cpp.o
+[21/94] Compiling C++ object test/udm-test.p/unit_ctors.cpp.o
+[22/94] Compiling C++ object test/udm-test.p/unit_assignment_combinations.cpp.o
+[23/94] Compiling C++ object test/udm-test.p/unit_copy_and_assign_maps.cpp.o
+[24/94] Compiling C++ object test/udm-test.p/unit_bucket.cpp.o
+[25/94] Compiling C++ object test/udm-test.p/bench_show_allocations.cpp.o
 [26/94] Compiling C++ object test/udm-test.p/unit_carried_state.cpp.o
 [27/94] Compiling C++ object test/udm-test.p/unit_deduction_guides.cpp.o
-[28/94] Compiling C++ object test/udm-test.p/app_nanobench.cpp.o
-[29/94] Compiling C++ object test/udm-test.p/unit_assignment_exception_safety.cpp.o
-[30/94] Compiling C++ object test/udm-test.p/bench_quick_overall_map.cpp.o
-[31/94] Compiling C++ object test/udm-test.p/unit_diamond.cpp.o
-[32/94] Compiling C++ object test/udm-test.p/unit_erase_throwing_move.cpp.o
+[28/94] Compiling C++ object test/udm-test.p/unit_assignment_exception_safety.cpp.o
+[29/94] Compiling C++ object test/udm-test.p/bench_quick_overall_map.cpp.o
+[30/94] Compiling C++ object test/udm-test.p/unit_custom_container.cpp.o
+[31/94] Compiling C++ object test/udm-test.p/app_doctest.cpp.o
+[32/94] Compiling C++ object test/udm-test.p/unit_diamond.cpp.o
 [33/94] Compiling C++ object test/udm-test.p/unit_include_only.cpp.o
 [34/94] Compiling C++ object test/udm-test.p/unit_custom_hash.cpp.o
-[35/94] Compiling C++ object test/udm-test.p/app_doctest.cpp.o
-[36/94] Compiling C++ object test/udm-test.p/unit_hash_smart_ptr.cpp.o
-[37/94] Compiling C++ object test/udm-test.p/unit_erase_range.cpp.o
+[35/94] Compiling C++ object test/udm-test.p/unit_erase_throwing_move.cpp.o
+[36/94] Compiling C++ object test/udm-test.p/unit_erase_range.cpp.o
+[37/94] Compiling C++ object test/udm-test.p/unit_hash_smart_ptr.cpp.o
 [38/94] Compiling C++ object test/udm-test.p/unit_hash_scalar_types.cpp.o
-[39/94] Compiling C++ object test/udm-test.p/unit_hash.cpp.o
+[39/94] Compiling C++ object test/udm-test.p/unit_explicit.cpp.o
 [40/94] Compiling C++ object test/udm-test.p/unit_empty.cpp.o
-[41/94] Compiling C++ object test/udm-test.p/unit_hash_string_view.cpp.o
-[42/94] Compiling C++ object test/udm-test.p/unit_explicit.cpp.o
-[43/94] Compiling C++ object test/udm-test.p/unit_hash_golden.cpp.o
-[44/94] Compiling C++ object test/udm-test.p/unit_erase_if.cpp.o
+[41/94] Compiling C++ object test/udm-test.p/unit_hash.cpp.o
+[42/94] Compiling C++ object test/udm-test.p/unit_hash_string_view.cpp.o
+[43/94] Compiling C++ object test/udm-test.p/unit_erase_if.cpp.o
+[44/94] Compiling C++ object test/udm-test.p/unit_hash_golden.cpp.o
 [45/94] Compiling C++ object test/udm-test.p/unit_fuzz_insert_erase.cpp.o
 [46/94] Compiling C++ object test/udm-test.p/unit_erase.cpp.o
 [47/94] Compiling C++ object test/udm-test.p/unit_fuzz_replace_map.cpp.o
-[48/94] Compiling C++ object test/udm-test.p/unit_custom_container_boost.cpp.o
+[48/94] Compiling C++ object test/udm-test.p/unit_equal_range.cpp.o
+[49/94] Compiling C++ object test/udm-test.p/unit_custom_container_boost.cpp.o
 In file included from /usr/include/boost/config/header_deprecated.hpp:18,
                  from /usr/include/boost/interprocess/containers/containers_fwd.hpp:31,
                  from /usr/include/boost/interprocess/containers/vector.hpp:24,
-                 from ../unordered_dense/test/unit/custom_container_boost.cpp:14:
+                 from ../test/unit/custom_container_boost.cpp:14:
 /usr/include/boost/interprocess/containers/containers_fwd.hpp:32:1: note: ‘#pragma message: This header is deprecated. Use <boost/container/container_fwd.hpp> instead.’
    32 | BOOST_HEADER_DEPRECATED("<boost/container/container_fwd.hpp>")
       | ^~~~~~~~~~~~~~~~~~~~~~~
 /usr/include/boost/interprocess/containers/vector.hpp:27:1: note: ‘#pragma message: This header is deprecated. Use <boost/container/vector.hpp> instead.’
    27 | BOOST_HEADER_DEPRECATED("<boost/container/vector.hpp>")
       | ^~~~~~~~~~~~~~~~~~~~~~~
-[49/94] Compiling C++ object test/udm-test.p/unit_equal_range.cpp.o
 [50/94] Compiling C++ object test/udm-test.p/unit_fuzz_string.cpp.o
 [51/94] Compiling C++ object test/udm-test.p/unit_iterators_empty.cpp.o
-[52/94] Compiling C++ object test/udm-test.p/unit_extract.cpp.o
-[53/94] Compiling C++ object test/udm-test.p/unit_growth_exception_safety.cpp.o
-[54/94] Compiling C++ object test/udm-test.p/unit_insert.cpp.o
-[55/94] Compiling C++ object test/udm-test.p/unit_namespace.cpp.o
-[56/94] Compiling C++ object test/udm-test.p/unit_noexcept_contract.cpp.o
-[57/94] Compiling C++ object test/udm-test.p/unit_iterators_insert.cpp.o
-[58/94] Compiling C++ object test/udm-test.p/unit_insert_or_assign.cpp.o
-[59/94] Compiling C++ object test/udm-test.p/unit_iterators_conversion.cpp.o
+[52/94] Compiling C++ object test/udm-test.p/unit_growth_exception_safety.cpp.o
+[53/94] Compiling C++ object test/udm-test.p/unit_extract.cpp.o
+[54/94] Compiling C++ object test/udm-test.p/unit_namespace.cpp.o
+[55/94] Compiling C++ object test/udm-test.p/unit_iterators_conversion.cpp.o
+[56/94] Compiling C++ object test/udm-test.p/unit_insert.cpp.o
+[57/94] Compiling C++ object test/udm-test.p/unit_insert_or_assign.cpp.o
+[58/94] Compiling C++ object test/udm-test.p/unit_iterators_insert.cpp.o
+[59/94] Compiling C++ object test/udm-test.p/unit_noexcept_contract.cpp.o
 [60/94] Compiling C++ object test/udm-test.p/unit_max.cpp.o
-[61/94] Compiling C++ object test/udm-test.p/unit_fuzz_api.cpp.o
-[62/94] Compiling C++ object test/udm-test.p/unit_not_moveable.cpp.o
-[63/94] Compiling C++ object test/udm-test.p/unit_move_to_moved.cpp.o
-[64/94] Compiling C++ object test/udm-test.p/unit_reentrant.cpp.o
-[65/94] Compiling C++ object test/udm-test.p/unit_load_factor.cpp.o
-[66/94] Compiling C++ object test/udm-test.p/unit_not_copyable.cpp.o
+[61/94] Compiling C++ object test/udm-test.p/unit_move_to_moved.cpp.o
+[62/94] Compiling C++ object test/udm-test.p/unit_load_factor.cpp.o
+[63/94] Compiling C++ object test/udm-test.p/unit_not_moveable.cpp.o
+[64/94] Compiling C++ object test/udm-test.p/unit_fuzz_api.cpp.o
+[65/94] Compiling C++ object test/udm-test.p/unit_reentrant.cpp.o
+[66/94] Compiling C++ object test/udm-test.p/unit_set_or_map_types.cpp.o
 [67/94] Compiling C++ object test/udm-test.p/unit_initializer_list.cpp.o
-[68/94] Compiling C++ object test/udm-test.p/unit_iterators_erase.cpp.o
-[69/94] Compiling C++ object test/udm-test.p/unit_set_or_map_types.cpp.o
-[70/94] Compiling C++ object test/udm-test.p/unit_multiple_apis.cpp.o
-[71/94] Compiling C++ object test/udm-test.p/unit_pmr.cpp.o
-[72/94] Compiling C++ object test/udm-test.p/unit_pmr_move_with_allocators.cpp.o
-[73/94] Compiling C++ object test/udm-test.p/unit_rehash.cpp.o
+[68/94] Compiling C++ object test/udm-test.p/unit_not_copyable.cpp.o
+[69/94] Compiling C++ object test/udm-test.p/unit_rehash.cpp.o
+[70/94] Compiling C++ object test/udm-test.p/unit_pmr.cpp.o
+[71/94] Compiling C++ object test/udm-test.p/unit_pmr_move_with_allocators.cpp.o
+[72/94] Compiling C++ object test/udm-test.p/unit_iterators_erase.cpp.o
+[73/94] Compiling C++ object test/udm-test.p/unit_multiple_apis.cpp.o
 [74/94] Compiling C++ object test/udm-test.p/unit_reserve.cpp.o
 [75/94] Compiling C++ object test/udm-test.p/unit_std_hash.cpp.o
 [76/94] Compiling C++ object test/udm-test.p/unit_replace.cpp.o
 [77/94] Compiling C++ object test/udm-test.p/unit_segmented_vector_allocators.cpp.o
-[78/94] Compiling C++ object test/udm-test.p/unit_maps_of_maps.cpp.o
-[79/94] Compiling C++ object test/udm-test.p/unit_set.cpp.o
-[80/94] Compiling C++ object test/udm-test.p/unit_swap.cpp.o
-[81/94] Compiling C++ object test/udm-test.p/unit_lazy_bucket_allocation.cpp.o
-[82/94] Compiling C++ object test/udm-test.p/unit_tuple_hash.cpp.o
-[83/94] Compiling C++ object test/udm-test.p/unit_reserve_and_assign.cpp.o
-[84/94] Compiling C++ object test/udm-test.p/unit_windows_include.cpp.o
-[85/94] Compiling C++ object test/udm-test.p/unit_segmented_vector.cpp.o
+[78/94] Compiling C++ object test/udm-test.p/unit_set.cpp.o
+[79/94] Compiling C++ object test/udm-test.p/unit_reserve_and_assign.cpp.o
+[80/94] Compiling C++ object test/udm-test.p/unit_maps_of_maps.cpp.o
+[81/94] Compiling C++ object test/udm-test.p/unit_tuple_hash.cpp.o
+[82/94] Compiling C++ object test/udm-test.p/unit_lazy_bucket_allocation.cpp.o
+[83/94] Compiling C++ object test/udm-test.p/unit_segmented_vector.cpp.o
+[84/94] Compiling C++ object test/udm-test.p/unit_swap.cpp.o
+[85/94] Compiling C++ object test/udm-test.p/unit_windows_include.cpp.o
 [86/94] Compiling C++ object test/udm-test.p/unit_try_emplace.cpp.o
-[87/94] Compiling C++ object test/udm-test.p/unit_vectorofmaps.cpp.o
-[88/94] Compiling C++ object test/udm-test.p/unit_unique_ptr.cpp.o
+[87/94] Compiling C++ object test/udm-test.p/unit_unique_ptr.cpp.o
+[88/94] Compiling C++ object test/udm-test.p/unit_vectorofmaps.cpp.o
 [89/94] Compiling C++ object test/udm-test.p/unit_precomputed_hash.cpp.o
 [90/94] Compiling C++ object test/udm-test.p/unit_unordered_set.cpp.o
 [91/94] Compiling C++ object test/udm-test.p/unit_table_allocators.cpp.o
@@ -154,4 +154,4 @@ In file included from /usr/include/boost/config/header_deprecated.hpp:18,
 [93/94] Compiling C++ object test/udm-test.p/unit_replace_key.cpp.o
 [94/94] Linking target test/udm-test
 INFO: autodetecting backend as ninja
-INFO: calculating backend command to run: /usr/bin/ninja -C /build/unordered_dense_tests/src/build
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/unordered_dense_tests/src/unordered_dense/_build

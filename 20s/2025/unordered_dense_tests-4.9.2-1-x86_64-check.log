@@ -1,53 +1,19 @@
-ninja: Entering directory `/build/unordered_dense_tests/src/build'
+ninja: Entering directory `/build/unordered_dense_tests/src/unordered_dense/_build'
 ninja: no work to do.
 1/1 unordered_dense:unit RUNNING       
->>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MESON_TEST_ITERATION=1 MALLOC_PERTURB_=1 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 /build/unordered_dense_tests/src/build/test/udm-test
+>>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MALLOC_PERTURB_=4 MESON_TEST_ITERATION=1 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 /build/unordered_dense_tests/src/unordered_dense/_build/test/udm-test
 ――――――――――――――――――――――――――――――――――――― ✀  ―――――――――――――――――――――――――――――――――――――
 [doctest] doctest version is "2.5.2"
 [doctest] run with "--help" for options
 ===============================================================================
-../unordered_dense/test/unit/fuzz_api.cpp:286:
-TEST SUITE: fuzz
-TEST CASE:  fuzz_api
-
-../unordered_dense/test/unit/fuzz_api.cpp:286: ERROR: test case THREW exception: could not find corpus base dir :-(
-
-===============================================================================
-../unordered_dense/test/unit/fuzz_insert_erase.cpp:41:
-TEST SUITE: fuzz
-TEST CASE:  fuzz_insert_erase
-
-../unordered_dense/test/unit/fuzz_insert_erase.cpp:41: ERROR: test case THREW exception: could not find corpus base dir :-(
-
-===============================================================================
-../unordered_dense/test/unit/fuzz_replace_map.cpp:61:
-TEST SUITE: fuzz
-TEST CASE:  fuzz_replace_map
-
-../unordered_dense/test/unit/fuzz_replace_map.cpp:61: ERROR: test case THREW exception: could not find corpus base dir :-(
-
-===============================================================================
-../unordered_dense/test/unit/fuzz_string.cpp:51:
-TEST SUITE: fuzz
-TEST CASE:  fuzz_string
-
-../unordered_dense/test/unit/fuzz_string.cpp:51: ERROR: test case THREW exception: could not find corpus base dir :-(
-
-===============================================================================
-[doctest] test cases:     599 |     595 passed | 4 failed | 27 skipped
-[doctest] assertions: 1451282 | 1451282 passed | 0 failed |
-[doctest] Status: FAILURE!
+[doctest] test cases:     599 |     599 passed | 0 failed | 27 skipped
+[doctest] assertions: 5380837 | 5380837 passed | 0 failed |
+[doctest] Status: SUCCESS!
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-1/1 unordered_dense:unit FAIL            0.11s   exit status 1
+1/1 unordered_dense:unit OK              0.69s
 
 
-Summary of Failures:
+Ok:                1   
+Fail:              0   
 
-1/1 unordered_dense:unit FAIL            0.11s   exit status 1
-
-Ok:                0   
-Fail:              1   
-
-Full log written to /build/unordered_dense_tests/src/build/meson-logs/testlog.txt
-[1m[31m==> ERROR:(B[m[1m A failure occurred in check().(B[m
-[1m    Aborting...(B[m
+Full log written to /build/unordered_dense_tests/src/unordered_dense/_build/meson-logs/testlog.txt
