@@ -1,0 +1,859 @@
+Wrote .preconfig
+ocaml -safe-string -strict-sequence -I +unix -I +str build.ml -build OCAML="ocaml"
+No input files
+ocaml '-I' '+str' '-I' '+unix' '/build/omake/src/omake-omake-0.10.7/make.ml' '-C' 'boot' 'Makefile.dep' 'OCAML=ocaml'
+ln -sf ../src/env/omake_ast_lex.mll omake_ast_lex.mll
+ocamllex omake_ast_lex.mll
+143 states, 3100 transitions, table size 13258 bytes
+ln -sf ../src/env/omake_gen_parse.ml omake_gen_parse.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_gen_parse.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -custom -o omake_gen_parse.byte  unix.cma   omake_gen_parse.cmo
+ln -sf omake_gen_parse.byte omake_gen_parse
+ln -sf ../src/env/omake_ast_parse.input omake_ast_parse.input
+./omake_gen_parse -o omake_ast_parse.mly omake_ast_parse.input
+ocamlyacc omake_ast_parse.mly
+ocamlyacc omake_ast_parse.mly
+ln -sf ../src/env/omake_exp_parse.mly omake_exp_parse.mly
+ocamlyacc omake_exp_parse.mly
+ocamlyacc omake_exp_parse.mly
+ln -sf ../src/shell/omake_shell_parse.mly omake_shell_parse.mly
+ocamlyacc omake_shell_parse.mly
+ocamlyacc omake_shell_parse.mly
+ln -sf ../src/shell/omake_shell_sys_unix.ml omake_shell_sys.ml
+ln -sf ../src/clib/lm_channel.c c_lm_channel.c
+ln -sf ../src/clib/lm_printf.c c_lm_printf.c
+ln -sf ../src/clib/lm_ctype.c c_lm_ctype.c
+ln -sf ../src/clib/lm_uname_ext.c c_lm_uname_ext.c
+ln -sf ../src/clib/lm_unix_cutil.c c_lm_unix_cutil.c
+ln -sf ../src/clib/lm_compat_win32.c c_lm_compat_win32.c
+ln -sf ../src/clib/readline.c c_readline.c
+ln -sf ../src/clib/omake_shell_sys.c c_omake_shell_sys.c
+ln -sf ../src/clib/omake_shell_spawn.c c_omake_shell_spawn.c
+ln -sf ../src/clib/fam_win32.c c_fam_win32.c
+ln -sf ../src/clib/fam_kqueue.c c_fam_kqueue.c
+ln -sf ../src/clib/fam_inotify.c c_fam_inotify.c
+ln -sf ../src/clib/lm_notify.c c_lm_notify.c
+ln -sf ../src/clib/lm_termsize.c c_lm_termsize.c
+ln -sf ../src/clib/lm_terminfo.c c_lm_terminfo.c
+ln -sf ../src/clib/lm_fs_case_sensitive.c c_lm_fs_case_sensitive.c
+ln -sf ../src/clib/lm_compat_win32.h lm_compat_win32.h
+ln -sf ../src/libmojave/lm_arg.ml lm_arg.ml
+ln -sf ../src/libmojave/lm_arg.mli lm_arg.mli
+ln -sf ../src/libmojave/lm_array_util.ml lm_array_util.ml
+ln -sf ../src/libmojave/lm_array_util.mli lm_array_util.mli
+ln -sf ../src/libmojave/lm_bitset.ml lm_bitset.ml
+ln -sf ../src/libmojave/lm_bitset.mli lm_bitset.mli
+ln -sf ../src/libmojave/lm_channel.ml lm_channel.ml
+ln -sf ../src/libmojave/lm_channel.mli lm_channel.mli
+ln -sf ../src/libmojave/lm_db.ml lm_db.ml
+ln -sf ../src/libmojave/lm_db.mli lm_db.mli
+ln -sf ../src/libmojave/lm_debug.ml lm_debug.ml
+ln -sf ../src/libmojave/lm_debug.mli lm_debug.mli
+ln -sf ../src/libmojave/lm_filename_util.ml lm_filename_util.ml
+ln -sf ../src/libmojave/lm_filename_util.mli lm_filename_util.mli
+ln -sf ../src/libmojave/lm_fs_case_sensitive.ml lm_fs_case_sensitive.ml
+ln -sf ../src/libmojave/lm_fs_case_sensitive.mli lm_fs_case_sensitive.mli
+ln -sf ../src/libmojave/lm_handle_table.ml lm_handle_table.ml
+ln -sf ../src/libmojave/lm_handle_table.mli lm_handle_table.mli
+ln -sf ../src/libmojave/lm_hash.ml lm_hash.ml
+ln -sf ../src/libmojave/lm_hash.mli lm_hash.mli
+ln -sf ../src/libmojave/lm_hash_code.ml lm_hash_code.ml
+ln -sf ../src/libmojave/lm_hash_code.mli lm_hash_code.mli
+ln -sf ../src/libmojave/lm_heap.ml lm_heap.ml
+ln -sf ../src/libmojave/lm_heap.mli lm_heap.mli
+ln -sf ../src/libmojave/lm_index.ml lm_index.ml
+ln -sf ../src/libmojave/lm_index.mli lm_index.mli
+ln -sf ../src/libmojave/lm_instrument.ml lm_instrument.ml
+ln -sf ../src/libmojave/lm_instrument.mli lm_instrument.mli
+ln -sf ../src/libmojave/lm_int_handle_table.ml lm_int_handle_table.ml
+ln -sf ../src/libmojave/lm_int_handle_table.mli lm_int_handle_table.mli
+ln -sf ../src/libmojave/lm_int_set.ml lm_int_set.ml
+ln -sf ../src/libmojave/lm_int_set.mli lm_int_set.mli
+ln -sf ../src/libmojave/lm_list_util.ml lm_list_util.ml
+ln -sf ../src/libmojave/lm_list_util.mli lm_list_util.mli
+ln -sf ../src/libmojave/lm_location.ml lm_location.ml
+ln -sf ../src/libmojave/lm_location.mli lm_location.mli
+ln -sf ../src/libmojave/lm_map.ml lm_map.ml
+ln -sf ../src/libmojave/lm_map.mli lm_map.mli
+ln -sf ../src/libmojave/lm_map_sig.ml lm_map_sig.ml
+ln -sf ../src/libmojave/lm_marshal.ml lm_marshal.ml
+ln -sf ../src/libmojave/lm_marshal.mli lm_marshal.mli
+ln -sf ../src/libmojave/lm_notify.ml lm_notify.ml
+ln -sf ../src/libmojave/lm_notify.mli lm_notify.mli
+ln -sf ../src/libmojave/lm_position.ml lm_position.ml
+ln -sf ../src/libmojave/lm_position.mli lm_position.mli
+ln -sf ../src/libmojave/lm_printf.ml lm_printf.ml
+ln -sf ../src/libmojave/lm_printf.mli lm_printf.mli
+ln -sf ../src/libmojave/lm_readline.ml lm_readline.ml
+ln -sf ../src/libmojave/lm_readline.mli lm_readline.mli
+ln -sf ../src/libmojave/lm_set.ml lm_set.ml
+ln -sf ../src/libmojave/lm_set.mli lm_set.mli
+ln -sf ../src/libmojave/lm_set_sig.ml lm_set_sig.ml
+ln -sf ../src/libmojave/lm_string_set.ml lm_string_set.ml
+ln -sf ../src/libmojave/lm_string_set.mli lm_string_set.mli
+ln -sf ../src/libmojave/lm_string_util.ml lm_string_util.ml
+ln -sf ../src/libmojave/lm_string_util.mli lm_string_util.mli
+ln -sf ../src/libmojave/lm_symbol.ml lm_symbol.ml
+ln -sf ../src/libmojave/lm_symbol.mli lm_symbol.mli
+ln -sf ../src/libmojave/lm_terminfo.ml lm_terminfo.ml
+ln -sf ../src/libmojave/lm_terminfo.mli lm_terminfo.mli
+ln -sf ../src/libmojave/lm_termsize.ml lm_termsize.ml
+ln -sf ../src/libmojave/lm_termsize.mli lm_termsize.mli
+ln -sf ../src/libmojave/lm_thread.ml lm_thread.ml
+ln -sf ../src/libmojave/lm_thread.mli lm_thread.mli
+ln -sf ../src/libmojave/lm_thread_core.mli lm_thread_core.mli
+ln -sf ../src/libmojave/lm_thread_pool.mli lm_thread_pool.mli
+ln -sf ../src/libmojave/lm_thread_sig.ml lm_thread_sig.ml
+ln -sf ../src/libmojave/lm_uname.ml lm_uname.ml
+ln -sf ../src/libmojave/lm_uname.mli lm_uname.mli
+ln -sf ../src/libmojave/lm_unix_util.ml lm_unix_util.ml
+ln -sf ../src/libmojave/lm_unix_util.mli lm_unix_util.mli
+ln -sf ../src/libmojave/lm_wild.ml lm_wild.ml
+ln -sf ../src/libmojave/lm_wild.mli lm_wild.mli
+ln -sf ../src/libmojave/lm_thread_pool_null.ml lm_thread_pool.ml
+ln -sf ../src/libmojave/lm_thread_core_null.ml lm_thread_core.ml
+ln -sf ../src/front/lm_glob.ml lm_glob.ml
+ln -sf ../src/front/lm_glob.mli lm_glob.mli
+ln -sf ../src/front/lm_hash_cons.ml lm_hash_cons.ml
+ln -sf ../src/front/lm_hash_cons.mli lm_hash_cons.mli
+ln -sf ../src/front/lm_lexer.ml lm_lexer.ml
+ln -sf ../src/front/lm_lexer.mli lm_lexer.mli
+ln -sf ../src/front/lm_parser.ml lm_parser.ml
+ln -sf ../src/front/lm_parser.mli lm_parser.mli
+ln -sf ../src/magic/omake_gen_magic.ml omake_gen_magic.ml
+ln -sf ../src/ir/omake_cache.ml omake_cache.ml
+ln -sf ../src/ir/omake_cache.mli omake_cache.mli
+ln -sf ../src/ir/omake_cache_type.ml omake_cache_type.ml
+ln -sf ../src/ir/omake_command.ml omake_command.ml
+ln -sf ../src/ir/omake_command.mli omake_command.mli
+ln -sf ../src/ir/omake_command_type.ml omake_command_type.ml
+ln -sf ../src/ir/omake_command_type.mli omake_command_type.mli
+ln -sf ../src/ir/omake_install.ml omake_install.ml
+ln -sf ../src/ir/omake_install.mli omake_install.mli
+ln -sf ../src/ir/omake_ir.ml omake_ir.ml
+ln -sf ../src/ir/omake_ir_free_vars.ml omake_ir_free_vars.ml
+ln -sf ../src/ir/omake_ir_free_vars.mli omake_ir_free_vars.mli
+ln -sf ../src/ir/omake_ir_print.ml omake_ir_print.ml
+ln -sf ../src/ir/omake_ir_print.mli omake_ir_print.mli
+ln -sf ../src/ir/omake_ir_util.ml omake_ir_util.ml
+ln -sf ../src/ir/omake_lexer.ml omake_lexer.ml
+ln -sf ../src/ir/omake_node.ml omake_node.ml
+ln -sf ../src/ir/omake_node.mli omake_node.mli
+ln -sf ../src/ir/omake_node_sig.ml omake_node_sig.ml
+ln -sf ../src/ir/omake_node_type.ml omake_node_type.ml
+ln -sf ../src/ir/omake_options.ml omake_options.ml
+ln -sf ../src/ir/omake_options.mli omake_options.mli
+ln -sf ../src/ir/omake_parser.ml omake_parser.ml
+ln -sf ../src/ir/omake_pos.ml omake_pos.ml
+ln -sf ../src/ir/omake_pos.mli omake_pos.mli
+ln -sf ../src/ir/omake_shell_type.ml omake_shell_type.ml
+ln -sf ../src/ir/omake_state.ml omake_state.ml
+ln -sf ../src/ir/omake_state.mli omake_state.mli
+ln -sf ../src/ir/omake_symbol.ml omake_symbol.ml
+ln -sf ../src/ir/omake_value_print.ml omake_value_print.ml
+ln -sf ../src/ir/omake_value_print.mli omake_value_print.mli
+ln -sf ../src/ir/omake_value_type.ml omake_value_type.ml
+ln -sf ../src/ir/omake_value_util.ml omake_value_util.ml
+ln -sf ../src/ir/omake_value_util.mli omake_value_util.mli
+ln -sf ../src/ir/omake_var.ml omake_var.ml
+ln -sf ../src/ir/omake_var.mli omake_var.mli
+ln -sf ../src/exec/omake_exec.ml omake_exec.ml
+ln -sf ../src/exec/omake_exec.mli omake_exec.mli
+ln -sf ../src/exec/omake_exec_id.ml omake_exec_id.ml
+ln -sf ../src/exec/omake_exec_id.mli omake_exec_id.mli
+ln -sf ../src/exec/omake_exec_local.ml omake_exec_local.ml
+ln -sf ../src/exec/omake_exec_local.mli omake_exec_local.mli
+ln -sf ../src/exec/omake_exec_notify.ml omake_exec_notify.ml
+ln -sf ../src/exec/omake_exec_notify.mli omake_exec_notify.mli
+ln -sf ../src/exec/omake_exec_print.ml omake_exec_print.ml
+ln -sf ../src/exec/omake_exec_print.mli omake_exec_print.mli
+ln -sf ../src/exec/omake_exec_remote.ml omake_exec_remote.ml
+ln -sf ../src/exec/omake_exec_remote.mli omake_exec_remote.mli
+ln -sf ../src/exec/omake_exec_type.ml omake_exec_type.ml
+ln -sf ../src/exec/omake_exec_util.ml omake_exec_util.ml
+ln -sf ../src/exec/omake_exec_util.mli omake_exec_util.mli
+ln -sf ../src/ast/omake_ast.ml omake_ast.ml
+ln -sf ../src/ast/omake_ast_print.ml omake_ast_print.ml
+ln -sf ../src/ast/omake_ast_print.mli omake_ast_print.mli
+ln -sf ../src/ast/omake_ast_util.ml omake_ast_util.ml
+ln -sf ../src/ast/omake_ast_util.mli omake_ast_util.mli
+ln -sf ../src/env/omake_ast_lex.mli omake_ast_lex.mli
+ln -sf ../src/env/omake_command_digest.ml omake_command_digest.ml
+ln -sf ../src/env/omake_command_digest.mli omake_command_digest.mli
+ln -sf ../src/env/omake_env.ml omake_env.ml
+ln -sf ../src/env/omake_env.mli omake_env.mli
+ln -sf ../src/env/omake_exn_print.ml omake_exn_print.ml
+ln -sf ../src/env/omake_exn_print.mli omake_exn_print.mli
+ln -sf ../src/env/omake_exp_lex.ml omake_exp_lex.ml
+ln -sf ../src/env/omake_exp_lex.mli omake_exp_lex.mli
+ln -sf ../src/env/omake_ir_ast.ml omake_ir_ast.ml
+ln -sf ../src/env/omake_ir_ast.mli omake_ir_ast.mli
+ln -sf ../src/env/omake_ir_semant.ml omake_ir_semant.ml
+ln -sf ../src/env/omake_ir_semant.mli omake_ir_semant.mli
+ln -sf ../src/shell/omake_shell_completion.ml omake_shell_completion.ml
+ln -sf ../src/shell/omake_shell_completion.mli omake_shell_completion.mli
+ln -sf ../src/shell/omake_shell_job.ml omake_shell_job.ml
+ln -sf ../src/shell/omake_shell_job.mli omake_shell_job.mli
+ln -sf ../src/shell/omake_shell_lex.ml omake_shell_lex.ml
+ln -sf ../src/shell/omake_shell_lex.mli omake_shell_lex.mli
+ln -sf ../src/shell/omake_shell_spawn.ml omake_shell_spawn.ml
+ln -sf ../src/shell/omake_shell_spawn.mli omake_shell_spawn.mli
+ln -sf ../src/shell/omake_shell_sys.mli omake_shell_sys.mli
+ln -sf ../src/shell/omake_shell_sys_type.ml omake_shell_sys_type.ml
+ln -sf ../src/eval/omake_eval.ml omake_eval.ml
+ln -sf ../src/eval/omake_eval.mli omake_eval.mli
+ln -sf ../src/eval/omake_value.ml omake_value.ml
+ln -sf ../src/eval/omake_value.mli omake_value.mli
+ln -sf ../src/build/omake_build.ml omake_build.ml
+ln -sf ../src/build/omake_build.mli omake_build.mli
+ln -sf ../src/build/omake_build_tee.ml omake_build_tee.ml
+ln -sf ../src/build/omake_build_tee.mli omake_build_tee.mli
+ln -sf ../src/build/omake_build_type.ml omake_build_type.ml
+ln -sf ../src/build/omake_build_util.ml omake_build_util.ml
+ln -sf ../src/build/omake_build_util.mli omake_build_util.mli
+ln -sf ../src/build/omake_builtin.ml omake_builtin.ml
+ln -sf ../src/build/omake_builtin.mli omake_builtin.mli
+ln -sf ../src/build/omake_builtin_type.ml omake_builtin_type.ml
+ln -sf ../src/build/omake_rule.ml omake_rule.ml
+ln -sf ../src/build/omake_rule.mli omake_rule.mli
+ln -sf ../src/build/omake_target.ml omake_target.ml
+ln -sf ../src/build/omake_target.mli omake_target.mli
+ln -sf ../src/builtin/omake_builtin_arith.ml omake_builtin_arith.ml
+ln -sf ../src/builtin/omake_builtin_arith.mli omake_builtin_arith.mli
+ln -sf ../src/builtin/omake_builtin_base.ml omake_builtin_base.ml
+ln -sf ../src/builtin/omake_builtin_base.mli omake_builtin_base.mli
+ln -sf ../src/builtin/omake_builtin_file.ml omake_builtin_file.ml
+ln -sf ../src/builtin/omake_builtin_file.mli omake_builtin_file.mli
+ln -sf ../src/builtin/omake_builtin_fun.ml omake_builtin_fun.ml
+ln -sf ../src/builtin/omake_builtin_fun.mli omake_builtin_fun.mli
+ln -sf ../src/builtin/omake_builtin_io.ml omake_builtin_io.ml
+ln -sf ../src/builtin/omake_builtin_io.mli omake_builtin_io.mli
+ln -sf ../src/builtin/omake_builtin_io_fun.ml omake_builtin_io_fun.ml
+ln -sf ../src/builtin/omake_builtin_io_fun.mli omake_builtin_io_fun.mli
+ln -sf ../src/builtin/omake_builtin_object.ml omake_builtin_object.ml
+ln -sf ../src/builtin/omake_builtin_object.mli omake_builtin_object.mli
+ln -sf ../src/builtin/omake_builtin_ocamldep.ml omake_builtin_ocamldep.ml
+ln -sf ../src/builtin/omake_builtin_rule.ml omake_builtin_rule.ml
+ln -sf ../src/builtin/omake_builtin_rule.mli omake_builtin_rule.mli
+ln -sf ../src/builtin/omake_builtin_shell.ml omake_builtin_shell.ml
+ln -sf ../src/builtin/omake_builtin_shell.mli omake_builtin_shell.mli
+ln -sf ../src/builtin/omake_builtin_sys.ml omake_builtin_sys.ml
+ln -sf ../src/builtin/omake_builtin_sys.mli omake_builtin_sys.mli
+ln -sf ../src/builtin/omake_builtin_target.ml omake_builtin_target.ml
+ln -sf ../src/builtin/omake_builtin_target.mli omake_builtin_target.mli
+ln -sf ../src/builtin/omake_builtin_test.ml omake_builtin_test.ml
+ln -sf ../src/builtin/omake_builtin_test.mli omake_builtin_test.mli
+ln -sf ../src/builtin/omake_builtin_util.ml omake_builtin_util.ml
+ln -sf ../src/builtin/omake_builtin_util.mli omake_builtin_util.mli
+ln -sf ../src/builtin/omake_printf.ml omake_printf.ml
+ln -sf ../src/builtin/omake_printf.mli omake_printf.mli
+ln -sf ../src/main/omake_main.ml omake_main.ml
+ln -sf ../src/main/omake_main.mli omake_main.mli
+ln -sf ../src/main/omake_main_util.ml omake_main_util.ml
+ln -sf ../src/main/omake_shell.ml omake_shell.ml
+ln -sf ../src/main/omake_shell.mli omake_shell.mli
+ocamldep  *.ml *.mli > Makefile.dep
+ocaml '-I' '+str' '-I' '+unix' '/build/omake/src/omake-omake-0.10.7/make.ml' '-C' 'boot' 'omake' 'OCAML=ocaml'
+ln -sf ../src/env/omake_ast_lex.mll omake_ast_lex.mll
+ocamllex omake_ast_lex.mll
+143 states, 3100 transitions, table size 13258 bytes
+ln -sf ../src/env/omake_gen_parse.ml omake_gen_parse.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_gen_parse.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -custom -o omake_gen_parse.byte  unix.cma   omake_gen_parse.cmo
+ln -sf omake_gen_parse.byte omake_gen_parse
+ln -sf ../src/env/omake_ast_parse.input omake_ast_parse.input
+./omake_gen_parse -o omake_ast_parse.mly omake_ast_parse.input
+ocamlyacc omake_ast_parse.mly
+ocamlyacc omake_ast_parse.mly
+ln -sf ../src/env/omake_exp_parse.mly omake_exp_parse.mly
+ocamlyacc omake_exp_parse.mly
+ocamlyacc omake_exp_parse.mly
+ln -sf ../src/shell/omake_shell_parse.mly omake_shell_parse.mly
+ocamlyacc omake_shell_parse.mly
+ocamlyacc omake_shell_parse.mly
+ln -sf ../src/shell/omake_shell_sys_unix.ml omake_shell_sys.ml
+ln -sf ../src/clib/lm_channel.c c_lm_channel.c
+ln -sf ../src/clib/lm_printf.c c_lm_printf.c
+ln -sf ../src/clib/lm_ctype.c c_lm_ctype.c
+ln -sf ../src/clib/lm_uname_ext.c c_lm_uname_ext.c
+ln -sf ../src/clib/lm_unix_cutil.c c_lm_unix_cutil.c
+ln -sf ../src/clib/lm_compat_win32.c c_lm_compat_win32.c
+ln -sf ../src/clib/readline.c c_readline.c
+ln -sf ../src/clib/omake_shell_sys.c c_omake_shell_sys.c
+ln -sf ../src/clib/omake_shell_spawn.c c_omake_shell_spawn.c
+ln -sf ../src/clib/fam_win32.c c_fam_win32.c
+ln -sf ../src/clib/fam_kqueue.c c_fam_kqueue.c
+ln -sf ../src/clib/fam_inotify.c c_fam_inotify.c
+ln -sf ../src/clib/lm_notify.c c_lm_notify.c
+ln -sf ../src/clib/lm_termsize.c c_lm_termsize.c
+ln -sf ../src/clib/lm_terminfo.c c_lm_terminfo.c
+ln -sf ../src/clib/lm_fs_case_sensitive.c c_lm_fs_case_sensitive.c
+ln -sf ../src/clib/lm_compat_win32.h lm_compat_win32.h
+ln -sf ../src/libmojave/lm_arg.ml lm_arg.ml
+ln -sf ../src/libmojave/lm_arg.mli lm_arg.mli
+ln -sf ../src/libmojave/lm_array_util.ml lm_array_util.ml
+ln -sf ../src/libmojave/lm_array_util.mli lm_array_util.mli
+ln -sf ../src/libmojave/lm_bitset.ml lm_bitset.ml
+ln -sf ../src/libmojave/lm_bitset.mli lm_bitset.mli
+ln -sf ../src/libmojave/lm_channel.ml lm_channel.ml
+ln -sf ../src/libmojave/lm_channel.mli lm_channel.mli
+ln -sf ../src/libmojave/lm_db.ml lm_db.ml
+ln -sf ../src/libmojave/lm_db.mli lm_db.mli
+ln -sf ../src/libmojave/lm_debug.ml lm_debug.ml
+ln -sf ../src/libmojave/lm_debug.mli lm_debug.mli
+ln -sf ../src/libmojave/lm_filename_util.ml lm_filename_util.ml
+ln -sf ../src/libmojave/lm_filename_util.mli lm_filename_util.mli
+ln -sf ../src/libmojave/lm_fs_case_sensitive.ml lm_fs_case_sensitive.ml
+ln -sf ../src/libmojave/lm_fs_case_sensitive.mli lm_fs_case_sensitive.mli
+ln -sf ../src/libmojave/lm_handle_table.ml lm_handle_table.ml
+ln -sf ../src/libmojave/lm_handle_table.mli lm_handle_table.mli
+ln -sf ../src/libmojave/lm_hash.ml lm_hash.ml
+ln -sf ../src/libmojave/lm_hash.mli lm_hash.mli
+ln -sf ../src/libmojave/lm_hash_code.ml lm_hash_code.ml
+ln -sf ../src/libmojave/lm_hash_code.mli lm_hash_code.mli
+ln -sf ../src/libmojave/lm_heap.ml lm_heap.ml
+ln -sf ../src/libmojave/lm_heap.mli lm_heap.mli
+ln -sf ../src/libmojave/lm_index.ml lm_index.ml
+ln -sf ../src/libmojave/lm_index.mli lm_index.mli
+ln -sf ../src/libmojave/lm_instrument.ml lm_instrument.ml
+ln -sf ../src/libmojave/lm_instrument.mli lm_instrument.mli
+ln -sf ../src/libmojave/lm_int_handle_table.ml lm_int_handle_table.ml
+ln -sf ../src/libmojave/lm_int_handle_table.mli lm_int_handle_table.mli
+ln -sf ../src/libmojave/lm_int_set.ml lm_int_set.ml
+ln -sf ../src/libmojave/lm_int_set.mli lm_int_set.mli
+ln -sf ../src/libmojave/lm_list_util.ml lm_list_util.ml
+ln -sf ../src/libmojave/lm_list_util.mli lm_list_util.mli
+ln -sf ../src/libmojave/lm_location.ml lm_location.ml
+ln -sf ../src/libmojave/lm_location.mli lm_location.mli
+ln -sf ../src/libmojave/lm_map.ml lm_map.ml
+ln -sf ../src/libmojave/lm_map.mli lm_map.mli
+ln -sf ../src/libmojave/lm_map_sig.ml lm_map_sig.ml
+ln -sf ../src/libmojave/lm_marshal.ml lm_marshal.ml
+ln -sf ../src/libmojave/lm_marshal.mli lm_marshal.mli
+ln -sf ../src/libmojave/lm_notify.ml lm_notify.ml
+ln -sf ../src/libmojave/lm_notify.mli lm_notify.mli
+ln -sf ../src/libmojave/lm_position.ml lm_position.ml
+ln -sf ../src/libmojave/lm_position.mli lm_position.mli
+ln -sf ../src/libmojave/lm_printf.ml lm_printf.ml
+ln -sf ../src/libmojave/lm_printf.mli lm_printf.mli
+ln -sf ../src/libmojave/lm_readline.ml lm_readline.ml
+ln -sf ../src/libmojave/lm_readline.mli lm_readline.mli
+ln -sf ../src/libmojave/lm_set.ml lm_set.ml
+ln -sf ../src/libmojave/lm_set.mli lm_set.mli
+ln -sf ../src/libmojave/lm_set_sig.ml lm_set_sig.ml
+ln -sf ../src/libmojave/lm_string_set.ml lm_string_set.ml
+ln -sf ../src/libmojave/lm_string_set.mli lm_string_set.mli
+ln -sf ../src/libmojave/lm_string_util.ml lm_string_util.ml
+ln -sf ../src/libmojave/lm_string_util.mli lm_string_util.mli
+ln -sf ../src/libmojave/lm_symbol.ml lm_symbol.ml
+ln -sf ../src/libmojave/lm_symbol.mli lm_symbol.mli
+ln -sf ../src/libmojave/lm_terminfo.ml lm_terminfo.ml
+ln -sf ../src/libmojave/lm_terminfo.mli lm_terminfo.mli
+ln -sf ../src/libmojave/lm_termsize.ml lm_termsize.ml
+ln -sf ../src/libmojave/lm_termsize.mli lm_termsize.mli
+ln -sf ../src/libmojave/lm_thread.ml lm_thread.ml
+ln -sf ../src/libmojave/lm_thread.mli lm_thread.mli
+ln -sf ../src/libmojave/lm_thread_core.mli lm_thread_core.mli
+ln -sf ../src/libmojave/lm_thread_pool.mli lm_thread_pool.mli
+ln -sf ../src/libmojave/lm_thread_sig.ml lm_thread_sig.ml
+ln -sf ../src/libmojave/lm_uname.ml lm_uname.ml
+ln -sf ../src/libmojave/lm_uname.mli lm_uname.mli
+ln -sf ../src/libmojave/lm_unix_util.ml lm_unix_util.ml
+ln -sf ../src/libmojave/lm_unix_util.mli lm_unix_util.mli
+ln -sf ../src/libmojave/lm_wild.ml lm_wild.ml
+ln -sf ../src/libmojave/lm_wild.mli lm_wild.mli
+ln -sf ../src/libmojave/lm_thread_pool_null.ml lm_thread_pool.ml
+ln -sf ../src/libmojave/lm_thread_core_null.ml lm_thread_core.ml
+ln -sf ../src/front/lm_glob.ml lm_glob.ml
+ln -sf ../src/front/lm_glob.mli lm_glob.mli
+ln -sf ../src/front/lm_hash_cons.ml lm_hash_cons.ml
+ln -sf ../src/front/lm_hash_cons.mli lm_hash_cons.mli
+ln -sf ../src/front/lm_lexer.ml lm_lexer.ml
+ln -sf ../src/front/lm_lexer.mli lm_lexer.mli
+ln -sf ../src/front/lm_parser.ml lm_parser.ml
+ln -sf ../src/front/lm_parser.mli lm_parser.mli
+ln -sf ../src/magic/omake_gen_magic.ml omake_gen_magic.ml
+ln -sf ../src/ir/omake_cache.ml omake_cache.ml
+ln -sf ../src/ir/omake_cache.mli omake_cache.mli
+ln -sf ../src/ir/omake_cache_type.ml omake_cache_type.ml
+ln -sf ../src/ir/omake_command.ml omake_command.ml
+ln -sf ../src/ir/omake_command.mli omake_command.mli
+ln -sf ../src/ir/omake_command_type.ml omake_command_type.ml
+ln -sf ../src/ir/omake_command_type.mli omake_command_type.mli
+ln -sf ../src/ir/omake_install.ml omake_install.ml
+ln -sf ../src/ir/omake_install.mli omake_install.mli
+ln -sf ../src/ir/omake_ir.ml omake_ir.ml
+ln -sf ../src/ir/omake_ir_free_vars.ml omake_ir_free_vars.ml
+ln -sf ../src/ir/omake_ir_free_vars.mli omake_ir_free_vars.mli
+ln -sf ../src/ir/omake_ir_print.ml omake_ir_print.ml
+ln -sf ../src/ir/omake_ir_print.mli omake_ir_print.mli
+ln -sf ../src/ir/omake_ir_util.ml omake_ir_util.ml
+ln -sf ../src/ir/omake_lexer.ml omake_lexer.ml
+ln -sf ../src/ir/omake_node.ml omake_node.ml
+ln -sf ../src/ir/omake_node.mli omake_node.mli
+ln -sf ../src/ir/omake_node_sig.ml omake_node_sig.ml
+ln -sf ../src/ir/omake_node_type.ml omake_node_type.ml
+ln -sf ../src/ir/omake_options.ml omake_options.ml
+ln -sf ../src/ir/omake_options.mli omake_options.mli
+ln -sf ../src/ir/omake_parser.ml omake_parser.ml
+ln -sf ../src/ir/omake_pos.ml omake_pos.ml
+ln -sf ../src/ir/omake_pos.mli omake_pos.mli
+ln -sf ../src/ir/omake_shell_type.ml omake_shell_type.ml
+ln -sf ../src/ir/omake_state.ml omake_state.ml
+ln -sf ../src/ir/omake_state.mli omake_state.mli
+ln -sf ../src/ir/omake_symbol.ml omake_symbol.ml
+ln -sf ../src/ir/omake_value_print.ml omake_value_print.ml
+ln -sf ../src/ir/omake_value_print.mli omake_value_print.mli
+ln -sf ../src/ir/omake_value_type.ml omake_value_type.ml
+ln -sf ../src/ir/omake_value_util.ml omake_value_util.ml
+ln -sf ../src/ir/omake_value_util.mli omake_value_util.mli
+ln -sf ../src/ir/omake_var.ml omake_var.ml
+ln -sf ../src/ir/omake_var.mli omake_var.mli
+ln -sf ../src/exec/omake_exec.ml omake_exec.ml
+ln -sf ../src/exec/omake_exec.mli omake_exec.mli
+ln -sf ../src/exec/omake_exec_id.ml omake_exec_id.ml
+ln -sf ../src/exec/omake_exec_id.mli omake_exec_id.mli
+ln -sf ../src/exec/omake_exec_local.ml omake_exec_local.ml
+ln -sf ../src/exec/omake_exec_local.mli omake_exec_local.mli
+ln -sf ../src/exec/omake_exec_notify.ml omake_exec_notify.ml
+ln -sf ../src/exec/omake_exec_notify.mli omake_exec_notify.mli
+ln -sf ../src/exec/omake_exec_print.ml omake_exec_print.ml
+ln -sf ../src/exec/omake_exec_print.mli omake_exec_print.mli
+ln -sf ../src/exec/omake_exec_remote.ml omake_exec_remote.ml
+ln -sf ../src/exec/omake_exec_remote.mli omake_exec_remote.mli
+ln -sf ../src/exec/omake_exec_type.ml omake_exec_type.ml
+ln -sf ../src/exec/omake_exec_util.ml omake_exec_util.ml
+ln -sf ../src/exec/omake_exec_util.mli omake_exec_util.mli
+ln -sf ../src/ast/omake_ast.ml omake_ast.ml
+ln -sf ../src/ast/omake_ast_print.ml omake_ast_print.ml
+ln -sf ../src/ast/omake_ast_print.mli omake_ast_print.mli
+ln -sf ../src/ast/omake_ast_util.ml omake_ast_util.ml
+ln -sf ../src/ast/omake_ast_util.mli omake_ast_util.mli
+ln -sf ../src/env/omake_ast_lex.mli omake_ast_lex.mli
+ln -sf ../src/env/omake_command_digest.ml omake_command_digest.ml
+ln -sf ../src/env/omake_command_digest.mli omake_command_digest.mli
+ln -sf ../src/env/omake_env.ml omake_env.ml
+ln -sf ../src/env/omake_env.mli omake_env.mli
+ln -sf ../src/env/omake_exn_print.ml omake_exn_print.ml
+ln -sf ../src/env/omake_exn_print.mli omake_exn_print.mli
+ln -sf ../src/env/omake_exp_lex.ml omake_exp_lex.ml
+ln -sf ../src/env/omake_exp_lex.mli omake_exp_lex.mli
+ln -sf ../src/env/omake_ir_ast.ml omake_ir_ast.ml
+ln -sf ../src/env/omake_ir_ast.mli omake_ir_ast.mli
+ln -sf ../src/env/omake_ir_semant.ml omake_ir_semant.ml
+ln -sf ../src/env/omake_ir_semant.mli omake_ir_semant.mli
+ln -sf ../src/shell/omake_shell_completion.ml omake_shell_completion.ml
+ln -sf ../src/shell/omake_shell_completion.mli omake_shell_completion.mli
+ln -sf ../src/shell/omake_shell_job.ml omake_shell_job.ml
+ln -sf ../src/shell/omake_shell_job.mli omake_shell_job.mli
+ln -sf ../src/shell/omake_shell_lex.ml omake_shell_lex.ml
+ln -sf ../src/shell/omake_shell_lex.mli omake_shell_lex.mli
+ln -sf ../src/shell/omake_shell_spawn.ml omake_shell_spawn.ml
+ln -sf ../src/shell/omake_shell_spawn.mli omake_shell_spawn.mli
+ln -sf ../src/shell/omake_shell_sys.mli omake_shell_sys.mli
+ln -sf ../src/shell/omake_shell_sys_type.ml omake_shell_sys_type.ml
+ln -sf ../src/eval/omake_eval.ml omake_eval.ml
+ln -sf ../src/eval/omake_eval.mli omake_eval.mli
+ln -sf ../src/eval/omake_value.ml omake_value.ml
+ln -sf ../src/eval/omake_value.mli omake_value.mli
+ln -sf ../src/build/omake_build.ml omake_build.ml
+ln -sf ../src/build/omake_build.mli omake_build.mli
+ln -sf ../src/build/omake_build_tee.ml omake_build_tee.ml
+ln -sf ../src/build/omake_build_tee.mli omake_build_tee.mli
+ln -sf ../src/build/omake_build_type.ml omake_build_type.ml
+ln -sf ../src/build/omake_build_util.ml omake_build_util.ml
+ln -sf ../src/build/omake_build_util.mli omake_build_util.mli
+ln -sf ../src/build/omake_builtin.ml omake_builtin.ml
+ln -sf ../src/build/omake_builtin.mli omake_builtin.mli
+ln -sf ../src/build/omake_builtin_type.ml omake_builtin_type.ml
+ln -sf ../src/build/omake_rule.ml omake_rule.ml
+ln -sf ../src/build/omake_rule.mli omake_rule.mli
+ln -sf ../src/build/omake_target.ml omake_target.ml
+ln -sf ../src/build/omake_target.mli omake_target.mli
+ln -sf ../src/builtin/omake_builtin_arith.ml omake_builtin_arith.ml
+ln -sf ../src/builtin/omake_builtin_arith.mli omake_builtin_arith.mli
+ln -sf ../src/builtin/omake_builtin_base.ml omake_builtin_base.ml
+ln -sf ../src/builtin/omake_builtin_base.mli omake_builtin_base.mli
+ln -sf ../src/builtin/omake_builtin_file.ml omake_builtin_file.ml
+ln -sf ../src/builtin/omake_builtin_file.mli omake_builtin_file.mli
+ln -sf ../src/builtin/omake_builtin_fun.ml omake_builtin_fun.ml
+ln -sf ../src/builtin/omake_builtin_fun.mli omake_builtin_fun.mli
+ln -sf ../src/builtin/omake_builtin_io.ml omake_builtin_io.ml
+ln -sf ../src/builtin/omake_builtin_io.mli omake_builtin_io.mli
+ln -sf ../src/builtin/omake_builtin_io_fun.ml omake_builtin_io_fun.ml
+ln -sf ../src/builtin/omake_builtin_io_fun.mli omake_builtin_io_fun.mli
+ln -sf ../src/builtin/omake_builtin_object.ml omake_builtin_object.ml
+ln -sf ../src/builtin/omake_builtin_object.mli omake_builtin_object.mli
+ln -sf ../src/builtin/omake_builtin_ocamldep.ml omake_builtin_ocamldep.ml
+ln -sf ../src/builtin/omake_builtin_rule.ml omake_builtin_rule.ml
+ln -sf ../src/builtin/omake_builtin_rule.mli omake_builtin_rule.mli
+ln -sf ../src/builtin/omake_builtin_shell.ml omake_builtin_shell.ml
+ln -sf ../src/builtin/omake_builtin_shell.mli omake_builtin_shell.mli
+ln -sf ../src/builtin/omake_builtin_sys.ml omake_builtin_sys.ml
+ln -sf ../src/builtin/omake_builtin_sys.mli omake_builtin_sys.mli
+ln -sf ../src/builtin/omake_builtin_target.ml omake_builtin_target.ml
+ln -sf ../src/builtin/omake_builtin_target.mli omake_builtin_target.mli
+ln -sf ../src/builtin/omake_builtin_test.ml omake_builtin_test.ml
+ln -sf ../src/builtin/omake_builtin_test.mli omake_builtin_test.mli
+ln -sf ../src/builtin/omake_builtin_util.ml omake_builtin_util.ml
+ln -sf ../src/builtin/omake_builtin_util.mli omake_builtin_util.mli
+ln -sf ../src/builtin/omake_printf.ml omake_printf.ml
+ln -sf ../src/builtin/omake_printf.mli omake_printf.mli
+ln -sf ../src/main/omake_main.ml omake_main.ml
+ln -sf ../src/main/omake_main.mli omake_main.mli
+ln -sf ../src/main/omake_main_util.ml omake_main_util.ml
+ln -sf ../src/main/omake_shell.ml omake_shell.ml
+ln -sf ../src/main/omake_shell.mli omake_shell.mli
+ocamldep  *.ml *.mli > Makefile.dep
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_string_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_gen_magic.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_printf.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_printf.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_debug.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_debug.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_heap.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_heap.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_list_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_list_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_array_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_array_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_set_sig.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_set.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_set.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_map_sig.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_map.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_map.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_int_set.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_int_set.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_termsize.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_termsize.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_terminfo.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_terminfo.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_arg.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_arg.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_index.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_index.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_thread_sig.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_thread_core.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_thread_core.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_thread.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_thread.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_string_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_string_set.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_string_set.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_hash.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_hash.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_hash_code.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_hash_code.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_symbol.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_symbol.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_location.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_location.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_position.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_position.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_filename_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_filename_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_uname.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_uname.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_thread_pool.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_thread_pool.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_channel.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_channel.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_unix_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_unix_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_db.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_db.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_notify.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_notify.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_fs_case_sensitive.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_fs_case_sensitive.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_wild.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_wild.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_readline.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_readline.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_marshal.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_marshal.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_handle_table.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_handle_table.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_int_handle_table.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_int_handle_table.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_bitset.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_bitset.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_instrument.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_instrument.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o lm.cma lm_printf.cmo lm_debug.cmo lm_heap.cmo lm_list_util.cmo lm_array_util.cmo lm_set_sig.cmo lm_set.cmo lm_map_sig.cmo lm_map.cmo lm_int_set.cmo lm_termsize.cmo lm_terminfo.cmo lm_arg.cmo lm_index.cmo lm_thread_sig.cmo lm_thread_core.cmo lm_thread.cmo lm_string_util.cmo lm_string_set.cmo lm_hash.cmo lm_hash_code.cmo lm_symbol.cmo lm_location.cmo lm_position.cmo lm_filename_util.cmo lm_uname.cmo lm_thread_pool.cmo lm_channel.cmo lm_unix_util.cmo lm_db.cmo lm_notify.cmo lm_fs_case_sensitive.cmo lm_wild.cmo lm_readline.cmo lm_marshal.cmo lm_handle_table.cmo lm_int_handle_table.cmo lm_bitset.cmo lm_instrument.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_hash_cons.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_hash_cons.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_lexer.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_lexer.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_parser.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_parser.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_glob.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c lm_glob.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o frt.cma lm_hash_cons.cmo lm_lexer.cmo lm_parser.cmo lm_glob.cmo
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_channel.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_printf.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_ctype.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_uname_ext.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_unix_cutil.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_compat_win32.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_readline.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_omake_shell_sys.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_omake_shell_spawn.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_fam_win32.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_fam_kqueue.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_fam_inotify.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_notify.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_termsize.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_terminfo.c
+gcc -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml"  -c c_lm_fs_case_sensitive.c
+rm -f clib.a
+ar cq clib.a c_lm_channel.o c_lm_printf.o c_lm_ctype.o c_lm_uname_ext.o c_lm_unix_cutil.o c_lm_compat_win32.o c_readline.o c_omake_shell_sys.o c_omake_shell_spawn.o c_fam_win32.o c_fam_kqueue.o c_fam_inotify.o c_lm_notify.o c_lm_termsize.o c_lm_terminfo.o c_lm_fs_case_sensitive.o
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -custom -o omake_gen_magic.byte -cclib clib.a unix.cma  lm.cma frt.cma omake_gen_magic.cmo
+ln -sf omake_gen_magic.byte omake_gen_magic
+./omake_gen_magic -o omake_magic.ml --version version.txt --var "omake_cc=gcc" --var "omake_cflags=-O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -I"/usr/lib/ocaml" -I"/usr/lib/ocaml/caml" "  --var "omake_ccomptype=cc" --magic --cache-files lm_filename_util.ml lm_hash.ml lm_location.ml lm_map.ml lm_position.ml lm_set.ml lm_symbol.ml omake_value_type.ml omake_cache.ml omake_cache_type.ml omake_node.ml omake_command_digest.ml    --omc-files lm_filename_util.ml lm_hash.ml lm_location.ml lm_symbol.ml lm_map.ml lm_set.ml omake_node.ml omake_ir.ml    --omo-files lm_filename_util.ml lm_hash.ml lm_lexer.ml lm_location.ml lm_map.ml lm_parser.ml lm_position.ml lm_set.ml lm_symbol.ml omake_value_type.ml omake_cache_type.ml omake_ir.ml omake_node.ml omake_env.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_magic.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o magic.cma omake_magic.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_node_sig.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_node.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_var.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_symbol.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_lexer.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_parser.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir_free_vars.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ast.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_value_type.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_state.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_type.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_options.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_id.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_command_type.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_type.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_cache_type.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_cache.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_env.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_rule.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_pos.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_remote.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_build_type.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_type.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_main_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_value_print.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_value.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_sys_type.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_sys.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_job.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_completion.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir_ast.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exn_print.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_eval.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ast_print.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ast_lex.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_install.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_io_fun.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_build_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_build.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_main.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_main.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ast_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ast_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ast_print.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o ast.cma omake_ast.cmo omake_ast_util.cmo omake_ast_print.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_options.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_state.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_node_type.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_node.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_install.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_var.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir_print.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir_print.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir_free_vars.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_command_type.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_value_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_value_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_value_print.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_pos.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_command.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_command.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_cache.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o ir.cma omake_options.cmo omake_symbol.cmo omake_state.cmo omake_node_type.cmo omake_node_sig.cmo omake_node.cmo omake_install.cmo omake_ir.cmo omake_var.cmo omake_ir_util.cmo omake_ir_print.cmo omake_ir_free_vars.cmo omake_lexer.cmo omake_parser.cmo omake_value_type.cmo omake_command_type.cmo omake_value_util.cmo omake_value_print.cmo omake_pos.cmo omake_shell_type.cmo omake_command.cmo omake_cache_type.cmo omake_cache.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_env.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exn_print.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ast_parse.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ast_parse.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ast_lex.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exp_parse.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exp_parse.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exp_lex.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exp_lex.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir_ast.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir_semant.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_ir_semant.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_command_digest.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_command_digest.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o env.cma omake_env.cmo omake_exn_print.cmo omake_ast_parse.cmo omake_ast_lex.cmo omake_exp_parse.cmo omake_exp_lex.cmo omake_ir_ast.cmo omake_ir_semant.cmo omake_command_digest.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_id.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_print.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_print.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_local.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_local.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_remote.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_notify.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec_notify.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_exec.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o exec.cma omake_exec_id.cmo omake_exec_type.cmo omake_exec_print.cmo omake_exec_util.cmo omake_exec_local.cmo omake_exec_remote.cmo omake_exec_notify.cmo omake_exec.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_eval.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_value.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o eval.cma omake_eval.cmo omake_value.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_parse.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_parse.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_lex.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_lex.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_spawn.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_spawn.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_sys.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_job.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_shell_completion.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o shell.cma omake_shell_parse.cmo omake_shell_lex.cmo omake_shell_spawn.cmo omake_shell_sys_type.cmo omake_shell_sys.cmo omake_shell_job.cmo omake_shell_completion.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_rule.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_build_tee.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_build_tee.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_build_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_target.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_target.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_build.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix   -a -o build.cma omake_rule.cmo omake_build_type.cmo omake_build_tee.cmo omake_build_util.cmo omake_builtin_type.cmo omake_target.cmo omake_builtin.cmo omake_build.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_printf.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_printf.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_util.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_util.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_base.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_base.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_arith.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_arith.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_file.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_file.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_fun.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_fun.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_io.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_io.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_io_fun.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_sys.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_sys.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_target.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_target.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_shell.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_shell.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_rule.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_rule.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_object.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_object.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_test.mli
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_test.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -c omake_builtin_ocamldep.ml
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -linkall -a -o builtin.cma omake_printf.cmo omake_builtin_util.cmo omake_builtin_base.cmo omake_builtin_arith.cmo omake_builtin_file.cmo omake_builtin_fun.cmo omake_builtin_io.cmo omake_builtin_io_fun.cmo omake_builtin_sys.cmo omake_builtin_target.cmo omake_builtin_shell.cmo omake_builtin_rule.cmo omake_builtin_object.cmo omake_builtin_test.cmo omake_builtin_ocamldep.cmo
+ocamlc -safe-string -strict-sequence -g -w -40 -I +unix  -custom -o omake.byte -cclib clib.a unix.cma  lm.cma frt.cma magic.cma ast.cma ir.cma env.cma exec.cma eval.cma shell.cma build.cma builtin.cma omake_main_util.cmo omake_shell.cmo omake_main.cmo
+ln -sf omake.byte omake
+boot/omake '--dotomake' '.omake' '--force-dotomake' '-j1' 'main' 'OCAML=ocaml'
+*** omake: reading OMakefiles
+--- Checking for ocamlfind... (FAILED - no ocamlfind found)
+--- Checking for ocamlc.opt... (found /usr/bin/ocamlc.opt)
+--- Checking for ocamlopt.opt... (found /usr/bin/ocamlopt.opt)
+--- Checking for ocamldep.opt... (found /usr/bin/ocamldep.opt)
+--- Checking for ocamllex.opt... (found /usr/bin/ocamllex.opt)
+--- Checking whether ocamlc understands the "z" warnings... (NO)
+--- Checking whether ocamlopt can create cmxs plugins... (NO)
+--- Checking for ncurses... --- Checking for gcc... (found /usr/bin/gcc)
+--- Checking for g++... (found /usr/bin/g++)
+--- Checking for gcc... (found /usr/bin/gcc)
+--- Checking for g++... (found /usr/bin/g++)
+--- Checking for gcc... (found /usr/bin/gcc)
+--- Checking for ld... (found /usr/bin/ld)
+--- Checking for as... (found /usr/bin/as)
+(found)
+--- Checking for readline... (found, GNU)
+--- Checking for inotify... (found)
+--- Checking if ocamldep understands -modules... (yes)
+Updating the .config file.
+--- Checking for OCaml library location... (/usr/lib/ocaml)
+--- Checking if ocamlopt was compiled with flambda... (no)
+--- Checking for ncurses... --- Checking for gcc... (found /usr/bin/gcc)
+--- Checking for g++... (found /usr/bin/g++)
+--- Checking for gcc... (found /usr/bin/gcc)
+--- Checking for g++... (found /usr/bin/g++)
+--- Checking for gcc... (found /usr/bin/gcc)
+--- Checking for ld... (found /usr/bin/ld)
+--- Checking for as... (found /usr/bin/as)
+(found)
+--- Checking for readline... (found, GNU)
+--- Checking for inotify... (found)
+--- Checking for function snprintf... (found)
+--- Checking for optimal filesystem case-sensitivity test... (Generic)
+--- Checking for function posix_spawn... (found)
+--- Checking for function moncontrol... (found)
+--- Checking if ocamldep understands -modules... (yes)
+--- Checking for hevea... (FAILED - no hevea found)
+--- *** Hevea not found or Hevea installation is incomplete;
+--- *** will neither be able to build plain text, Info,
+--- *** nor HTML version of OMake documentation
+--- Checking for latex... (FAILED - no latex found)
+--- Checking for date... (found /usr/bin/date)
+--- Checking for date... (found /usr/bin/date)
+*** omake: finished reading OMakefiles (1.16 sec)
+- build src/clib lm_notify.o
++ gcc -g -O2 -Wall -Wno-unused -DREADLINE_ENABLED -DREADLINE_GNU -DNCURSES -DFAM_ENABLED -DFAM_PSEUDO -DFAM_INOTIFY -DHAVE_INOTIFY_H -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -DHAVE_SNPRINTF -DHAVE_POSIX_SPAWN -DHAVE_MONCONTROL -I. -I/usr/lib/ocaml -I. -c -o lm_notify.o lm_notify.c
+In file included from lm_notify.c:49:
+fam_pseudo.h:46:9: warning: ‘NAME_MAX’ redefined
+   46 | #define NAME_MAX                1024
+      |         ^~~~~~~~
+In file included from /usr/include/bits/local_lim.h:38,
+                 from /usr/include/bits/posix1_lim.h:161,
+                 from /usr/include/limits.h:198,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h:212,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/syslimits.h:9,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h:34,
+                 from /usr/lib/ocaml/caml/config.h:48,
+                 from /usr/lib/ocaml/caml/mlvalues.h:19,
+                 from lm_notify.c:33:
+/usr/include/linux/limits.h:12:9: note: this is the location of the previous definition
+   12 | #define NAME_MAX         255    /* # chars in a file name */
+      |         ^~~~~~~~
+*** omake: saved .omakedb
+*** omake: done (24.39 sec, 244/244 scans, 268/429 rules, 728/914 digests)
+src/main/prelim_omake '--dotomake' '.omake' '--force-dotomake' '-j1' 'all' 'OCAML=ocaml'
+*** omake: reading OMakefiles
+*** omake: finished reading OMakefiles (0.03 sec)
+- build src/clib lm_notify.o
++ gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/omake/src=/usr/src/debug/omake -flto=auto -g -O2 -Wall -Wno-unused -DREADLINE_ENABLED -DREADLINE_GNU -DNCURSES -DFAM_ENABLED -DFAM_PSEUDO -DFAM_INOTIFY -DHAVE_INOTIFY_H -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -DHAVE_SNPRINTF -DHAVE_POSIX_SPAWN -DHAVE_MONCONTROL -I. -I/usr/lib/ocaml -I. -c -o lm_notify.o lm_notify.c
+In file included from lm_notify.c:49:
+fam_pseudo.h:46:9: warning: ‘NAME_MAX’ redefined
+   46 | #define NAME_MAX                1024
+      |         ^~~~~~~~
+In file included from /usr/include/bits/local_lim.h:38,
+                 from /usr/include/bits/posix1_lim.h:161,
+                 from /usr/include/limits.h:198,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h:212,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/syslimits.h:9,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h:34,
+                 from /usr/lib/ocaml/caml/config.h:48,
+                 from /usr/lib/ocaml/caml/mlvalues.h:19,
+                 from lm_notify.c:33:
+/usr/include/linux/limits.h:12:9: note: this is the location of the previous definition
+   12 | #define NAME_MAX         255    /* # chars in a file name */
+      |         ^~~~~~~~
+- build src/clib omake_shell_spawn.o
++ gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/omake/src=/usr/src/debug/omake -flto=auto -g -O2 -Wall -Wno-unused -DREADLINE_ENABLED -DREADLINE_GNU -DNCURSES -DFAM_ENABLED -DFAM_PSEUDO -DFAM_INOTIFY -DHAVE_INOTIFY_H -O2 -fno-strict-aliasing -fwrapv -g -fno-omit-frame-pointer -fPIC -pthread -D_FILE_OFFSET_BITS=64 -DHAVE_SNPRINTF -DHAVE_POSIX_SPAWN -DHAVE_MONCONTROL -I. -I/usr/lib/ocaml -I. -c -o omake_shell_spawn.o omake_shell_spawn.c
+omake_shell_spawn.c: In function ‘omake_shell_spawn_compat_nat’:
+omake_shell_spawn.c:462:5: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  462 |     write(ctrl_pipe[1], marshalled_error.buffer, MARSHALLED_ERROR_BUFFER_SIZE);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*** omake: done (9.07 sec, 244/244 scans, 132/469 rules, 223/401 digests)
