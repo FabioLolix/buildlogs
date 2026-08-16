@@ -1,0 +1,126 @@
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CPM: Adding package PackageProject.cmake@1.13.0 (v1.13.0 to /build/atlantis-solver-git/src/atlantis/.cpm-cache/packageproject.cmake/48b3)
+-- Populating packageproject.cmake
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/atlantis-solver-git/src/build/_deps/packageproject.cmake-subbuild
+[ 11%] Creating directories for 'packageproject.cmake-populate'
+[ 22%] Performing download step (git clone) for 'packageproject.cmake-populate'
+Cloning into '48b3'...
+HEAD is now at 738d2ed Add RUNTIME_DESTINATION variable (#45)
+[ 33%] Performing update step for 'packageproject.cmake-populate'
+-- Already at requested tag: v1.13.0
+[ 44%] No patch step for 'packageproject.cmake-populate'
+[ 55%] No configure step for 'packageproject.cmake-populate'
+[ 66%] No build step for 'packageproject.cmake-populate'
+[ 77%] No install step for 'packageproject.cmake-populate'
+[ 88%] No test step for 'packageproject.cmake-populate'
+[100%] Completed 'packageproject.cmake-populate'
+[100%] Built target packageproject.cmake-populate
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+CMake Warning at cmake/FindGecode.cmake:65 (find_package):
+  By not providing "FindMPFR.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "MPFR", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "MPFR" with any of
+  the following names:
+
+    MPFR.cps
+    mpfr.cps
+    MPFRConfig.cmake
+    mpfr-config.cmake
+
+  Add the installation prefix of "MPFR" to CMAKE_PREFIX_PATH or set
+  "MPFR_DIR" to a directory containing one of the above files.  If "MPFR"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:193 (find_package)
+
+
+-- Found Gecode: /usr/include (found suitable version "6.4.0", minimum required is "6.3") found components: Driver Int Kernel Minimodel Search Support
+GECODE_FOUND: TRUE
+GECODE_INCLUDE: /usr/include
+GECODE_VERSION: 6.4.0
+GECODE_INCLUDE_DIRS: /usr/include
+GECODE_LIBRARIES: /usr/lib/libgecodedriver.so;/usr/lib/libgecodeflatzinc.so;/usr/lib/libgecodefloat.so;/usr/lib/libgecodeint.so;/usr/lib/libgecodekernel.so;/usr/lib/libgecodeminimodel.so;/usr/lib/libgecodesearch.so;/usr/lib/libgecodeset.so;/usr/lib/libgecodesupport.so;/usr/lib/libgecodegist.so
+GECODE_TARGETS: 
+-- Populating cxxopts
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/atlantis-solver-git/src/build/_deps/cxxopts-subbuild
+[ 11%] Creating directories for 'cxxopts-populate'
+[ 22%] Performing download step (git clone) for 'cxxopts-populate'
+Cloning into 'cxxopts-src'...
+HEAD is now at 44380e5 Fix and bump to next version
+[ 33%] Performing update step for 'cxxopts-populate'
+-- Already at requested tag: v3.3.1
+[ 44%] No patch step for 'cxxopts-populate'
+[ 55%] No configure step for 'cxxopts-populate'
+[ 66%] No build step for 'cxxopts-populate'
+[ 77%] No install step for 'cxxopts-populate'
+[ 88%] No test step for 'cxxopts-populate'
+[100%] Completed 'cxxopts-populate'
+[100%] Built target cxxopts-populate
+-- Populating fmt
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/atlantis-solver-git/src/build/_deps/fmt-subbuild
+[ 11%] Creating directories for 'fmt-populate'
+[ 22%] Performing download step (git clone) for 'fmt-populate'
+Cloning into 'fmt-src'...
+HEAD is now at 40626af8 Update version
+[ 33%] Performing update step for 'fmt-populate'
+-- Already at requested tag: 11.2.0
+[ 44%] No patch step for 'fmt-populate'
+[ 55%] No configure step for 'fmt-populate'
+[ 66%] No build step for 'fmt-populate'
+[ 77%] No install step for 'fmt-populate'
+[ 88%] No test step for 'fmt-populate'
+[100%] Completed 'fmt-populate'
+[100%] Built target fmt-populate
+-- {fmt} version: 11.2.0
+-- Build type: None
+-- Populating fznparser
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/atlantis-solver-git/src/build/_deps/fznparser-subbuild
+[ 11%] Creating directories for 'fznparser-populate'
+[ 22%] Performing download step (git clone) for 'fznparser-populate'
+Cloning into 'fznparser-src'...
+HEAD is now at c8a27d7 fixed minor CMAKE issue
+[ 33%] Performing update step for 'fznparser-populate'
+-- Already at requested tag: v1.2.4
+[ 44%] No patch step for 'fznparser-populate'
+[ 55%] No configure step for 'fznparser-populate'
+[ 66%] No build step for 'fznparser-populate'
+[ 77%] No install step for 'fznparser-populate'
+[ 88%] No test step for 'fznparser-populate'
+[100%] Completed 'fznparser-populate'
+[100%] Built target fznparser-populate
+-- CPM already included, skipping
+-- [download 100% complete]
+-- [download 0% complete]
+-- [download 100% complete]
+-- [download 0% complete]
+-- [download 100% complete]
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 2% complete]
+-- [download 3% complete]
+-- [download 4% complete]
+-- [download 5% complete]
+-- [download 6% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 9% complete]
+
+[1m[31m==> ERROR:(B[m[1m Aborted by user! Exiting...(B[m
