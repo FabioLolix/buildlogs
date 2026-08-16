@@ -1,0 +1,837 @@
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_VISIBILITY_HIDDEN_FLAG
+-- Performing Test HAVE_VISIBILITY_HIDDEN_FLAG - Success
+-- Performing Test GECODE_ATOMIC_WORKS
+-- Performing Test GECODE_ATOMIC_WORKS - Success
+-- Found MPFR: /usr/lib/libmpfr.so
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found OpenGL: /usr/lib/libGL.so
+-- Performing Test GECODE_GIST_QT_LINKS
+-- Performing Test GECODE_GIST_QT_LINKS - Success
+-- Looking for mmap
+-- Looking for mmap - found
+-- Performing Test HAVE_ALWAYS_INLINE
+-- Performing Test HAVE_ALWAYS_INLINE - Success
+-- Performing Test HAVE_FORCE_INLINE
+-- Performing Test HAVE_FORCE_INLINE - Failed
+-- Performing Test HAVE_POSIX_SPAWN_CLOEXEC_DEFAULT_AND_ADDINHERIT_NP
+-- Performing Test HAVE_POSIX_SPAWN_CLOEXEC_DEFAULT_AND_ADDINHERIT_NP - Failed
+-- Performing Test HAVE_POSIX_SPAWN_ADDCLOSEFROM_NP
+-- Performing Test HAVE_POSIX_SPAWN_ADDCLOSEFROM_NP - Success
+-- Performing Test HAVE_BUILTIN_FFSLL
+-- Performing Test HAVE_BUILTIN_FFSLL - Success
+-- Performing Test HAVE_BUILTIN_POPCOUNTLL
+-- Performing Test HAVE_BUILTIN_POPCOUNTLL - Success
+-- Found Threads: TRUE
+-- Adding example: all-interval
+-- Adding example: alpha
+-- Adding example: archimedean-spiral
+-- Adding example: bacp
+-- Adding example: bibd
+-- Adding example: bin-packing
+-- Adding example: black-hole
+-- Adding example: car-sequencing
+-- Adding example: cartesian-heart
+-- Adding example: colored-matrix
+-- Adding example: crew
+-- Adding example: crossword
+-- Adding example: crowded-chess
+-- Adding example: descartes-folium
+-- Adding example: dominating-queens
+-- Adding example: domino
+-- Adding example: donald
+-- Adding example: efpa
+-- Adding example: eq20
+-- Adding example: golden-spiral
+-- Adding example: golf
+-- Adding example: golomb-ruler
+-- Adding example: graph-color
+-- Adding example: grocery
+-- Adding example: hamming
+-- Adding example: ind-set
+-- Adding example: job-shop
+-- Adding example: kakuro
+-- Adding example: knights
+-- Adding example: langford-number
+-- Adding example: magic-sequence
+-- Adding example: magic-square-partial
+-- Adding example: magic-square
+-- Adding example: minesweeper
+-- Adding example: money
+-- Adding example: multi-bin-packing
+-- Adding example: nonogram
+-- Adding example: open-shop
+-- Adding example: ortho-latin
+-- Adding example: partition
+-- Adding example: pentominoes
+-- Adding example: perfect-square
+-- Adding example: photo
+-- Adding example: qcp
+-- Adding example: queen-armies
+-- Adding example: queens
+-- Adding example: radiotherapy
+-- Adding example: sat
+-- Adding example: schurs-lemma
+-- Adding example: sports-league
+-- Adding example: steel-mill
+-- Adding example: steiner
+-- Adding example: sudoku-advanced
+-- Adding example: sudoku
+-- Adding example: tsp
+-- Adding example: warehouses
+-- Adding example: word-square
+-- Configuring done (7.9s)
+-- Generating done (0.3s)
+-- Build files have been written to: /build/gecode-git/src/build
+[  0%] Built target gecode-varimp-gen
+[  1%] Building CXX object CMakeFiles/gecode-test-blackbox-exec.dir/test/flatzinc/blackbox-exec.cpp.o
+[  1%] Building CXX object CMakeFiles/gecode-test-blackbox-dll.dir/test/flatzinc/blackbox-dll.cpp.o
+[  1%] Building CXX object CMakeFiles/gecodesupport_shared.dir/gecode/support/exception.cpp.o
+[  1%] Building CXX object CMakeFiles/gecodesupport_shared.dir/gecode/support/allocator.cpp.o
+[  3%] Building CXX object CMakeFiles/gecodesupport_shared.dir/gecode/support/heap.cpp.o
+[  3%] Building CXX object CMakeFiles/gecodesupport_shared.dir/gecode/support/hw-rnd.cpp.o
+[  3%] Building CXX object CMakeFiles/gecodesupport_shared.dir/gecode/support/thread/thread.cpp.o
+/build/gecode-git/src/gecode/test/flatzinc/blackbox-exec.cpp: In function ‘int main(int, char**)’:
+/build/gecode-git/src/gecode/test/flatzinc/blackbox-exec.cpp:242:22: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  242 |           (void)write(ready[1], &started, 1);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+[  3%] Linking CXX executable bin/gecode-test-blackbox-exec
+[  3%] Linking CXX shared library libgecode-test-blackbox-dll.so
+[  3%] Built target gecode-test-blackbox-dll
+[  3%] Linking CXX shared library libgecodesupport.so
+[  3%] Built target gecode-test-blackbox-exec
+[  3%] Built target gecodesupport_shared
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/branch/afc.cpp.o
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/archive.cpp.o
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/branch/chb.cpp.o
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/branch/action.cpp.o
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/core.cpp.o
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/data/rnd.cpp.o
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/branch/function.cpp.o
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/data/array.cpp.o
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/gpi.cpp.o
+[  4%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/memory/manager.cpp.o
+[  6%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/exception.cpp.o
+[  6%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/trace/tracer.cpp.o
+[  6%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/memory/region.cpp.o
+[  6%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/trace/filter.cpp.o
+[  7%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/trace/general.cpp.o
+[  7%] Building CXX object CMakeFiles/gecodekernel_shared.dir/gecode/kernel/trace/recorder.cpp.o
+[  7%] Linking CXX shared library libgecodekernel.so
+[  7%] Built target gecodekernel_shared
+[  7%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/arithmetic.cpp.o
+[  7%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/bab.cpp.o
+[  7%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/cpprofiler/tracer.cpp.o
+[  9%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/cutoff.cpp.o
+[ 10%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/arithmetic/mult.cpp.o
+[ 10%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/array.cpp.o
+[ 10%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/bin-packing.cpp.o
+[ 10%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/bin-packing/conflict-graph.cpp.o
+[ 10%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/bin-packing/propagate.cpp.o
+[ 12%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/bool.cpp.o
+[ 12%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/branch/val-sel-commit.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/nogoods.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/lds.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/bool/eqv.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/engine.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/branch.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/dfs.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/branch/chb.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/branch/action.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/exception.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/options.cpp.o
+[ 13%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/par/pbs.cpp.o
+In file included from /build/gecode-git/src/gecode/gecode/search/par/engine.hh:208,
+                 from /build/gecode-git/src/gecode/gecode/search/par/dfs.hh:37,
+                 from /build/gecode-git/src/gecode/gecode/search/dfs.cpp:39:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::idle()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:160:5: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  160 |     n_busy--;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::busy()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:171:5: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  171 |     n_busy++;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘virtual void Gecode::Search::Par::Engine<Tracer>::terminated()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:195:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  195 |     n = --_n_not_terminated;
+      |           ^~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::ack_terminate()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:207:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  207 |     if (--_n_term_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_start()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:242:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  242 |     if (--_n_reset_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_stop()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:251:11: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  251 |     if (++_n_reset_not_ack == workers())
+      |           ^~~~~~~~~~~~~~~~
+[ 13%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/pbs.cpp.o
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::terminated() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:192:3:   required from here
+  192 |   Engine<Tracer>::terminated(void) {
+      |   ^~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:195:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  195 |     n = --_n_not_terminated;
+      |           ^~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::terminated() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:192:3:   required from here
+  192 |   Engine<Tracer>::terminated(void) {
+      |   ^~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:195:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  195 |     n = --_n_not_terminated;
+      |           ^~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_terminate() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:186:31:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  186 |         engine().ack_terminate();
+      |         ~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:207:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  207 |     if (--_n_term_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_start() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:193:33:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  193 |         engine().ack_reset_start();
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:242:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  242 |     if (--_n_reset_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_stop() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:197:32:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  197 |         engine().ack_reset_stop();
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:251:11: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  251 |     if (++_n_reset_not_ack == workers())
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::idle() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:291:26:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  291 |             engine().idle();
+      |             ~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:160:5: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  160 |     n_busy--;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_terminate() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:186:31:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  186 |         engine().ack_terminate();
+      |         ~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:207:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  207 |     if (--_n_term_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~
+[ 13%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/rbs.cpp.o
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_start() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:193:33:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  193 |         engine().ack_reset_start();
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:242:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  242 |     if (--_n_reset_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_stop() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:197:32:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  197 |         engine().ack_reset_stop();
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:251:11: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  251 |     if (++_n_reset_not_ack == workers())
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::idle() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:291:26:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  291 |             engine().idle();
+      |             ~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:160:5: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  160 |     n_busy--;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::busy() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:283:20:   required from ‘Gecode::Space* Gecode::Search::Par::Engine<Tracer>::Worker::steal(long unsigned int&, Tracer&, Tracer&) [with Tracer = Gecode::Search::NoTraceRecorder]’
+  283 |       engine().busy();
+      |       ~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:127:31:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::find() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  127 |       if (Space* s = wi->steal(r_d,wi->tracer,tracer)) {
+      |                      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:206:13:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  206 |             find();
+      |             ^~~~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:171:5: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  171 |     n_busy++;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::busy() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:283:20:   required from ‘Gecode::Space* Gecode::Search::Par::Engine<Tracer>::Worker::steal(long unsigned int&, Tracer&, Tracer&) [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  283 |       engine().busy();
+      |       ~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:127:31:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::find() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  127 |       if (Space* s = wi->steal(r_d,wi->tracer,tracer)) {
+      |                      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:206:13:   required from ‘void Gecode::Search::Par::DFS<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  206 |             find();
+      |             ^~~~
+/build/gecode-git/src/gecode/gecode/search/par/dfs.hpp:162:3:   required from here
+  162 |   DFS<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:171:5: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  171 |     n_busy++;
+      |     ^~~~~~
+[ 15%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/branch/view-sel.cpp.o
+[ 15%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/branch/view-values.cpp.o
+In file included from /build/gecode-git/src/gecode/gecode/search/par/engine.hh:208,
+                 from /build/gecode-git/src/gecode/gecode/search/par/bab.hh:37,
+                 from /build/gecode-git/src/gecode/gecode/search/bab.cpp:39:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::idle()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:160:5: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  160 |     n_busy--;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::busy()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:171:5: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  171 |     n_busy++;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘virtual void Gecode::Search::Par::Engine<Tracer>::terminated()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:195:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  195 |     n = --_n_not_terminated;
+      |           ^~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::ack_terminate()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:207:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  207 |     if (--_n_term_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_start()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:242:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  242 |     if (--_n_reset_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In member function ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_stop()’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:251:11: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  251 |     if (++_n_reset_not_ack == workers())
+      |           ^~~~~~~~~~~~~~~~
+[ 16%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/seq/dead.cpp.o
+[ 16%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/seq/pbs.cpp.o
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::terminated() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:192:3:   required from here
+  192 |   Engine<Tracer>::terminated(void) {
+      |   ^~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:195:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  195 |     n = --_n_not_terminated;
+      |           ^~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::terminated() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:192:3:   required from here
+  192 |   Engine<Tracer>::terminated(void) {
+      |   ^~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:195:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  195 |     n = --_n_not_terminated;
+      |           ^~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_terminate() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:242:31:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  242 |         engine().ack_terminate();
+      |         ~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:207:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  207 |     if (--_n_term_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_start() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:249:33:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  249 |         engine().ack_reset_start();
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:242:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  242 |     if (--_n_reset_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_stop() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:253:32:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  253 |         engine().ack_reset_stop();
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:251:11: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  251 |     if (++_n_reset_not_ack == workers())
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::idle() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:347:26:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  347 |             engine().idle();
+      |             ~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:160:5: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  160 |     n_busy--;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_terminate() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:242:31:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  242 |         engine().ack_terminate();
+      |         ~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:207:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  207 |     if (--_n_term_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_start() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:249:33:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  249 |         engine().ack_reset_start();
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:242:11: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  242 |     if (--_n_reset_not_ack == 0)
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::ack_reset_stop() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:253:32:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  253 |         engine().ack_reset_stop();
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:251:11: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  251 |     if (++_n_reset_not_ack == workers())
+      |           ^~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::idle() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:347:26:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  347 |             engine().idle();
+      |             ~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:160:5: warning: ‘--’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  160 |     n_busy--;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::busy() [with Tracer = Gecode::Search::NoTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:283:20:   required from ‘Gecode::Space* Gecode::Search::Par::Engine<Tracer>::Worker::steal(long unsigned int&, Tracer&, Tracer&) [with Tracer = Gecode::Search::NoTraceRecorder]’
+  283 |       engine().busy();
+      |       ~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:157:31:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::find() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  157 |       if (Space* s = wi->steal(r_d,wi->tracer,tracer)) {
+      |                      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:262:13:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::NoTraceRecorder]’
+  262 |             find();
+      |             ^~~~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:171:5: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  171 |     n_busy++;
+      |     ^~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp: In instantiation of ‘void Gecode::Search::Par::Engine<Tracer>::busy() [with Tracer = Gecode::Search::EdgeTraceRecorder]’:
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:283:20:   required from ‘Gecode::Space* Gecode::Search::Par::Engine<Tracer>::Worker::steal(long unsigned int&, Tracer&, Tracer&) [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  283 |       engine().busy();
+      |       ~~~~~~~~~~~~~^~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:157:31:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::find() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  157 |       if (Space* s = wi->steal(r_d,wi->tracer,tracer)) {
+      |                      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:262:13:   required from ‘void Gecode::Search::Par::BAB<Tracer>::Worker::run() [with Tracer = Gecode::Search::EdgeTraceRecorder]’
+  262 |             find();
+      |             ^~~~
+/build/gecode-git/src/gecode/gecode/search/par/bab.hpp:213:3:   required from here
+  213 |   BAB<Tracer>::Worker::run(void) {
+      |   ^~~~~~~~~~~
+/build/gecode-git/src/gecode/gecode/search/par/engine.hpp:171:5: warning: ‘++’ expression of ‘volatile’-qualified type is deprecated [-Wvolatile]
+  171 |     n_busy++;
+      |     ^~~~~~
+[ 16%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/seq/rbs.cpp.o
+[ 16%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/stop.cpp.o
+[ 16%] Building CXX object CMakeFiles/gecodesearch_shared.dir/gecode/search/tracer.cpp.o
+[ 16%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/channel.cpp.o
+[ 16%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/channel/link-multi.cpp.o
+[ 16%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/channel/link-single.cpp.o
+[ 18%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/circuit.cpp.o
+[ 18%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/count.cpp.o
+[ 18%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/cumulative.cpp.o
+[ 18%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/cumulatives.cpp.o
+[ 18%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/distinct.cpp.o
+[ 20%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/distinct/cbs.cpp.o
+[ 20%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/distinct/eqite.cpp.o
+[ 20%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/dom.cpp.o
+[ 20%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/element.cpp.o
+[ 20%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/element/pair.cpp.o
+[ 21%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/exception.cpp.o
+[ 21%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/exec.cpp.o
+[ 21%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/exec/when.cpp.o
+[ 21%] Linking CXX shared library libgecodesearch.so
+[ 21%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/extensional-regular.cpp.o
+[ 21%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/extensional-tuple-set.cpp.o
+[ 21%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/extensional/dfa.cpp.o
+[ 23%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/extensional/tuple-set.cpp.o
+[ 23%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/gcc.cpp.o
+[ 23%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/int-set.cpp.o
+[ 23%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/ldsb.cpp.o
+[ 23%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/ldsb/sym-imp.cpp.o
+[ 24%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/ldsb/sym-obj.cpp.o
+[ 24%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/linear-bool.cpp.o
+[ 24%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/linear-int.cpp.o
+[ 24%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/linear/bool-post.cpp.o
+[ 24%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/linear/int-post.cpp.o
+[ 24%] Built target gecodesearch_shared
+[ 26%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/member.cpp.o
+[ 26%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/no-overlap.cpp.o
+[ 26%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/nvalues.cpp.o
+[ 26%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/order.cpp.o
+[ 26%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/order/propagate.cpp.o
+[ 26%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/precede.cpp.o
+[ 27%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/rel.cpp.o
+[ 27%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/relax.cpp.o
+[ 27%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/sequence.cpp.o
+[ 27%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/sorted.cpp.o
+[ 27%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/trace.cpp.o
+[ 29%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/trace/tracer.cpp.o
+[ 29%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/unary.cpp.o
+[ 29%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/unshare.cpp.o
+[ 29%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/var-imp/bool.cpp.o
+[ 29%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/var-imp/int.cpp.o
+[ 30%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/var/bool.cpp.o
+[ 30%] Building CXX object CMakeFiles/gecodeint_shared.dir/gecode/int/var/int.cpp.o
+[ 30%] Linking CXX shared library libgecodeint.so
+[ 30%] Built target gecodeint_shared
+[ 30%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/array.cpp.o
+[ 30%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/branch.cpp.o
+[ 30%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/bool.cpp.o
+[ 32%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/array.cpp.o
+[ 32%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/branch.cpp.o
+[ 32%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/branch/val-sel-commit.cpp.o
+[ 32%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/branch/val-sel-commit.cpp.o
+[ 33%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/exception.cpp.o
+[ 33%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/branch/chb.cpp.o
+[ 35%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/channel.cpp.o
+[ 35%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/branch/action.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/branch/chb.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/arithmetic.cpp.o
+[ 35%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/branch/view-sel.cpp.o
+[ 35%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/bool.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/branch/view-sel.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/branch/ngl.cpp.o
+[ 35%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/branch/action.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/cardinality.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/dom.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/exec.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/linear.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/linear/post.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/rel.cpp.o
+[ 38%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/channel.cpp.o
+[ 40%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/convex.cpp.o
+[ 40%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/relax.cpp.o
+[ 40%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/convex/conv.cpp.o
+[ 40%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/convex/hull.cpp.o
+[ 41%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/rounding.cpp.o
+[ 41%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/trace.cpp.o
+[ 41%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/distinct.cpp.o
+[ 41%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/distinct/atmostOne.cpp.o
+[ 41%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/trace/tracer.cpp.o
+[ 41%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/transcendental.cpp.o
+[ 41%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/dom.cpp.o
+[ 41%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/trigonometric.cpp.o
+[ 43%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/var-imp/float.cpp.o
+[ 43%] Building CXX object CMakeFiles/gecodefloat_shared.dir/gecode/float/var/float.cpp.o
+[ 44%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/element.cpp.o
+[ 44%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/exception.cpp.o
+[ 44%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/exec.cpp.o
+[ 44%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/int.cpp.o
+[ 44%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/ldsb.cpp.o
+[ 46%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/ldsb/sym-imp.cpp.o
+[ 46%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/precede.cpp.o
+[ 46%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op-const-cvc.cpp.o
+[ 46%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op-const-cvv.cpp.o
+[ 46%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op-const-vcc.cpp.o
+[ 47%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op-const-vcv.cpp.o
+[ 47%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op-const-vvc.cpp.o
+[ 47%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op-singleton.cpp.o
+[ 47%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op-ternary.cpp.o
+[ 47%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op.cpp.o
+[ 49%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op/post-compl-cvc.cpp.o
+[ 49%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op/post-compl-cvv.cpp.o
+[ 49%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op/post-compl-vvc.cpp.o
+[ 49%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op/post-compl.cpp.o
+[ 49%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op/post-nocompl-cvc.cpp.o
+[ 49%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op/post-nocompl-cvv.cpp.o
+[ 49%] Linking CXX shared library libgecodefloat.so
+[ 50%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op/post-nocompl-vvc.cpp.o
+[ 50%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel-op/post-nocompl.cpp.o
+[ 50%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/rel.cpp.o
+[ 50%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/relax.cpp.o
+[ 50%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/sequence.cpp.o
+[ 52%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/sequence/seq-u.cpp.o
+[ 52%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/sequence/seq.cpp.o
+[ 52%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/trace.cpp.o
+[ 52%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/trace/tracer.cpp.o
+[ 52%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/var-imp/integerset.cpp.o
+[ 53%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/var-imp/set.cpp.o
+[ 53%] Building CXX object CMakeFiles/gecodeset_shared.dir/gecode/set/var/set.cpp.o
+[ 53%] Linking CXX shared library libgecodeset.so
+[ 53%] Built target gecodefloat_shared
+[ 53%] Built target gecodeset_shared
+[ 53%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/exception.cpp.o
+[ 53%] Built target gecodegist_shared_autogen_timestamp_deps
+[ 55%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/int-arith.cpp.o
+[ 55%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/bool-expr.cpp.o
+[ 55%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/float-arith.cpp.o
+[ 55%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/float-rel.cpp.o
+[ 56%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/dom.cpp.o
+[ 56%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/int-rel.cpp.o
+[ 56%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/ipl.cpp.o
+[ 56%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/reg.cpp.o
+[ 56%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/int-expr.cpp.o
+[ 56%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/float-expr.cpp.o
+[ 56%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/optimize.cpp.o
+[ 56%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/set-rel.cpp.o
+[ 58%] Building CXX object CMakeFiles/gecodeminimodel_shared.dir/gecode/minimodel/set-expr.cpp.o
+[ 58%] Automatic MOC for target gecodegist_shared
+[ 58%] Built target gecodegist_shared_autogen
+[ 58%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/gist.cpp.o
+[ 58%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/drawingcursor.cpp.o
+[ 58%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/node.cpp.o
+[ 58%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecodegist_shared_autogen/mocs_compilation.cpp.o
+[ 58%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/mainwindow.cpp.o
+[ 60%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/gecodelogo.cpp.o
+[ 60%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/nodestats.cpp.o
+/build/gecode-git/src/gecode/gecode/minimodel/bool-expr.cpp:290:44: warning: ‘visibility’ attribute ignored [-Wattributes]
+  290 |                 const IntPropLevels& ipls) const;
+      |                                            ^~~~~
+/build/gecode-git/src/gecode/gecode/minimodel/bool-expr.cpp:293:58: warning: ‘visibility’ attribute ignored [-Wattributes]
+  293 |       BoolVar expr(Home home, const IntPropLevels& ipls) const;
+      |                                                          ^~~~~
+/build/gecode-git/src/gecode/gecode/minimodel/bool-expr.cpp:296:54: warning: ‘visibility’ attribute ignored [-Wattributes]
+  296 |       void rel(Home home, const IntPropLevels& ipls) const;
+      |                                                      ^~~~~
+[ 60%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/nodewidget.cpp.o
+[ 61%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/preferences.cpp.o
+[ 61%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/qtgist.cpp.o
+[ 61%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/spacenode.cpp.o
+[ 61%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/stopbrancher.cpp.o
+[ 61%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/textoutput.cpp.o
+[ 63%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/treecanvas.cpp.o
+[ 63%] Building CXX object CMakeFiles/gecodegist_shared.dir/gecode/gist/visualnode.cpp.o
+[ 63%] Linking CXX shared library libgecodeminimodel.so
+[ 63%] Built target gecodeminimodel_shared
+[ 63%] Linking CXX shared library libgecodegist.so
+[ 63%] Built target gecodegist_shared
+[ 63%] Building CXX object CMakeFiles/gecodedriver_shared.dir/gecode/driver/options.cpp.o
+[ 63%] Building CXX object CMakeFiles/gecodedriver_shared.dir/gecode/driver/script.cpp.o
+[ 63%] Linking CXX shared library libgecodedriver.so
+[ 63%] Built target gecodedriver_shared
+[ 64%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/blackbox-backend.cpp.o
+[ 64%] Building CXX object examples/CMakeFiles/archimedean-spiral.dir/archimedean-spiral.cpp.o
+[ 64%] Building CXX object examples/CMakeFiles/bacp.dir/bacp.cpp.o
+[ 64%] Building CXX object examples/CMakeFiles/black-hole.dir/black-hole.cpp.o
+[ 64%] Building CXX object examples/CMakeFiles/alpha.dir/alpha.cpp.o
+[ 64%] Building CXX object examples/CMakeFiles/bibd.dir/bibd.cpp.o
+[ 66%] Building CXX object examples/CMakeFiles/bin-packing.dir/bin-packing.cpp.o
+[ 66%] Building CXX object examples/CMakeFiles/all-interval.dir/all-interval.cpp.o
+[ 66%] Building CXX object examples/CMakeFiles/dominating-queens.dir/dominating-queens.cpp.o
+[ 66%] Building CXX object examples/CMakeFiles/car-sequencing.dir/car-sequencing.cpp.o
+[ 66%] Building CXX object examples/CMakeFiles/crew.dir/crew.cpp.o
+[ 66%] Building CXX object examples/CMakeFiles/crossword.dir/crossword.cpp.o
+[ 67%] Building CXX object examples/CMakeFiles/eq20.dir/eq20.cpp.o
+[ 67%] Building CXX object examples/CMakeFiles/cartesian-heart.dir/cartesian-heart.cpp.o
+[ 67%] Building CXX object examples/CMakeFiles/colored-matrix.dir/colored-matrix.cpp.o
+[ 67%] Building CXX object examples/CMakeFiles/efpa.dir/efpa.cpp.o
+[ 69%] Building CXX object examples/CMakeFiles/descartes-folium.dir/descartes-folium.cpp.o
+[ 69%] Building CXX object examples/CMakeFiles/crowded-chess.dir/crowded-chess.cpp.o
+[ 69%] Building CXX object examples/CMakeFiles/donald.dir/donald.cpp.o
+[ 69%] Building CXX object examples/CMakeFiles/domino.dir/domino.cpp.o
+[ 69%] Linking CXX executable ../bin/donald
+[ 70%] Linking CXX executable ../bin/archimedean-spiral
+[ 70%] Linking CXX executable ../bin/efpa
+[ 72%] Linking CXX executable ../bin/domino
+[ 72%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/blackbox-process-none.cpp.o
+[ 72%] Linking CXX executable ../bin/black-hole
+[ 72%] Linking CXX executable ../bin/colored-matrix
+[ 72%] Linking CXX executable ../bin/descartes-folium
+[ 73%] Linking CXX executable ../bin/car-sequencing
+[ 73%] Linking CXX executable ../bin/bin-packing
+[ 73%] Linking CXX executable ../bin/bibd
+[ 73%] Linking CXX executable ../bin/eq20
+[ 73%] Linking CXX executable ../bin/all-interval
+[ 73%] Linking CXX executable ../bin/crowded-chess
+[ 75%] Linking CXX executable ../bin/crew
+[ 75%] Linking CXX executable ../bin/bacp
+[ 75%] Linking CXX executable ../bin/alpha
+[ 75%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/blackbox-process-posix.cpp.o
+[ 75%] Linking CXX executable ../bin/dominating-queens
+[ 75%] Built target archimedean-spiral
+[ 75%] Built target donald
+[ 75%] Building CXX object examples/CMakeFiles/golden-spiral.dir/golden-spiral.cpp.o
+[ 75%] Linking CXX executable ../bin/cartesian-heart
+[ 75%] Built target efpa
+[ 75%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/blackbox-process-windows.cpp.o
+[ 75%] Linking CXX executable ../bin/crossword
+[ 75%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/blackbox-propagator.cpp.o
+[ 75%] Built target all-interval
+[ 76%] Building CXX object examples/CMakeFiles/golf.dir/golf.cpp.o
+[ 76%] Built target domino
+[ 76%] Built target bibd
+[ 76%] Building CXX object examples/CMakeFiles/golomb-ruler.dir/golomb-ruler.cpp.o
+[ 76%] Building CXX object examples/CMakeFiles/graph-color.dir/graph-color.cpp.o
+[ 76%] Built target crew
+[ 76%] Building CXX object examples/CMakeFiles/grocery.dir/grocery.cpp.o
+[ 76%] Built target black-hole
+[ 76%] Building CXX object examples/CMakeFiles/hamming.dir/hamming.cpp.o
+[ 76%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/branch.cpp.o
+[ 76%] Built target car-sequencing
+[ 78%] Building CXX object examples/CMakeFiles/ind-set.dir/ind-set.cpp.o
+[ 78%] Built target dominating-queens
+[ 80%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/flatzinc.cpp.o
+[ 80%] Built target crowded-chess
+[ 80%] Building CXX object examples/CMakeFiles/job-shop.dir/job-shop.cpp.o
+[ 80%] Built target bacp
+[ 80%] Building CXX object examples/CMakeFiles/kakuro.dir/kakuro.cpp.o
+[ 80%] Linking CXX executable ../bin/golden-spiral
+[ 80%] Built target bin-packing
+[ 81%] Building CXX object examples/CMakeFiles/knights.dir/knights.cpp.o
+[ 81%] Built target descartes-folium
+[ 81%] Building CXX object examples/CMakeFiles/langford-number.dir/langford-number.cpp.o
+[ 81%] Built target colored-matrix
+[ 81%] Building CXX object examples/CMakeFiles/magic-sequence.dir/magic-sequence.cpp.o
+[ 81%] Built target eq20
+[ 81%] Building CXX object examples/CMakeFiles/magic-square-partial.dir/magic-square-partial.cpp.o
+[ 81%] Built target cartesian-heart
+[ 81%] Building CXX object examples/CMakeFiles/magic-square.dir/magic-square.cpp.o
+[ 81%] Built target alpha
+[ 81%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/lexer.yy.cpp.o
+[ 81%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/parser.tab.cpp.o
+[ 81%] Linking CXX executable ../bin/golf
+[ 81%] Linking CXX executable ../bin/golomb-ruler
+[ 81%] Built target golden-spiral
+[ 83%] Building CXX object examples/CMakeFiles/minesweeper.dir/minesweeper.cpp.o
+[ 83%] Linking CXX executable ../bin/ind-set
+[ 83%] Building CXX object CMakeFiles/gecodeflatzinc_shared.dir/gecode/flatzinc/registry.cpp.o
+[ 84%] Linking CXX executable ../bin/graph-color
+[ 84%] Building CXX object examples/CMakeFiles/money.dir/money.cpp.o
+[ 84%] Linking CXX executable ../bin/kakuro
+[ 84%] Linking CXX executable ../bin/hamming
+[ 84%] Linking CXX executable ../bin/grocery
+[ 86%] Linking CXX executable ../bin/magic-sequence
+[ 86%] Linking CXX executable ../bin/langford-number
+[ 86%] Built target crossword
+[ 86%] Building CXX object examples/CMakeFiles/multi-bin-packing.dir/multi-bin-packing.cpp.o
+[ 86%] Built target golomb-ruler
+[ 86%] Building CXX object examples/CMakeFiles/nonogram.dir/nonogram.cpp.o
+[ 86%] Linking CXX executable ../bin/magic-square
+[ 86%] Built target ind-set
+[ 86%] Built target golf
+[ 86%] Building CXX object examples/CMakeFiles/open-shop.dir/open-shop.cpp.o
+[ 86%] Building CXX object examples/CMakeFiles/ortho-latin.dir/ortho-latin.cpp.o
+[ 86%] Linking CXX executable ../bin/magic-square-partial
+[ 86%] Building CXX object examples/CMakeFiles/partition.dir/partition.cpp.o
+[ 86%] Linking CXX executable ../bin/minesweeper
+[ 86%] Built target hamming
+[ 86%] Building CXX object examples/CMakeFiles/pentominoes.dir/pentominoes.cpp.o
+[ 86%] Built target graph-color
+[ 87%] Building CXX object examples/CMakeFiles/perfect-square.dir/perfect-square.cpp.o
+[ 87%] Linking CXX executable ../bin/money
+[ 87%] Built target kakuro
+[ 87%] Building CXX object examples/CMakeFiles/photo.dir/photo.cpp.o
+[ 87%] Built target grocery
+[ 87%] Building CXX object examples/CMakeFiles/qcp.dir/qcp.cpp.o
+[ 87%] Built target magic-sequence
+[ 87%] Building CXX object examples/CMakeFiles/queen-armies.dir/queen-armies.cpp.o
+[ 87%] Built target langford-number
+[ 87%] Building CXX object examples/CMakeFiles/queens.dir/queens.cpp.o
+[ 89%] Building CXX object examples/CMakeFiles/radiotherapy.dir/radiotherapy.cpp.o
+[ 89%] Built target magic-square
+[ 89%] Building CXX object examples/CMakeFiles/sat.dir/sat.cpp.o
+[ 89%] Built target minesweeper
+[ 89%] Building CXX object examples/CMakeFiles/schurs-lemma.dir/schurs-lemma.cpp.o
+[ 89%] Built target magic-square-partial
+[ 90%] Building CXX object examples/CMakeFiles/sports-league.dir/sports-league.cpp.o
+[ 90%] Linking CXX executable ../bin/nonogram
+[ 90%] Building CXX object examples/CMakeFiles/steel-mill.dir/steel-mill.cpp.o
+[ 92%] Linking CXX executable ../bin/ortho-latin
+[ 92%] Linking CXX executable ../bin/partition
+[ 92%] Linking CXX executable ../bin/open-shop
+[ 92%] Linking CXX executable ../bin/job-shop
+[ 93%] Linking CXX executable ../bin/multi-bin-packing
+[ 93%] Built target money
+[ 93%] Building CXX object examples/CMakeFiles/steiner.dir/steiner.cpp.o
+[ 93%] Linking CXX executable ../bin/perfect-square
+[ 93%] Linking CXX executable ../bin/pentominoes
+[ 93%] Linking CXX executable ../bin/knights
+[ 95%] Linking CXX executable ../bin/qcp
+[ 95%] Linking CXX executable ../bin/photo
+[ 95%] Linking CXX executable ../bin/queen-armies
+[ 95%] Linking CXX shared library libgecodeflatzinc.so
+[ 95%] Built target nonogram
+[ 95%] Building CXX object examples/CMakeFiles/sudoku-advanced.dir/sudoku-advanced.cpp.o
+/usr/src/debug/gecode-git/gecode/gecode/flatzinc/blackbox-process.hh:25:7: warning: type ‘struct BlackBoxProcessSession’ violates the C++ One Definition Rule [-Wodr]
+/usr/src/debug/gecode-git/gecode/gecode/flatzinc/blackbox-process.hh:25:7: note: a different type is defined in another translation unit
+/usr/src/debug/gecode-git/gecode/gecode/flatzinc/blackbox-process.hh:28:19: note: the first difference of corresponding definitions is field ‘owner’
+/usr/src/debug/gecode-git/gecode/gecode/flatzinc/blackbox-process.hh:25:7: note: a type with different number of fields is defined in another translation unit
+[ 95%] Linking CXX executable ../bin/radiotherapy
+[ 95%] Built target ortho-latin
+[ 95%] Building CXX object examples/CMakeFiles/sudoku.dir/sudoku.cpp.o
+[ 95%] Linking CXX executable ../bin/schurs-lemma
+[ 95%] Linking CXX executable ../bin/sat
+[ 95%] Linking CXX executable ../bin/sports-league
+[ 95%] Built target partition
+[ 96%] Building CXX object examples/CMakeFiles/tsp.dir/tsp.cpp.o
+[ 96%] Built target open-shop
+[ 96%] Linking CXX executable ../bin/steel-mill
+[ 96%] Building CXX object examples/CMakeFiles/warehouses.dir/warehouses.cpp.o
+[ 96%] Built target multi-bin-packing
+[ 96%] Built target perfect-square
+[ 96%] Built target pentominoes
+[ 96%] Building CXX object examples/CMakeFiles/word-square.dir/word-square.cpp.o
+[ 98%] Linking CXX executable ../bin/steiner
+[ 98%] Built target qcp
+[ 98%] Built target job-shop
+[ 98%] Built target photo
+[ 98%] Built target queen-armies
+[ 98%] Built target knights
+[ 98%] Built target schurs-lemma
+[ 98%] Built target sat
+[ 98%] Built target sports-league
+[ 98%] Linking CXX executable ../bin/sudoku
+[ 98%] Linking CXX executable ../bin/tsp
+[ 98%] Built target radiotherapy
+[ 98%] Linking CXX executable ../bin/sudoku-advanced
+[ 98%] Built target steel-mill
+[ 98%] Built target steiner
+[ 98%] Linking CXX executable ../bin/warehouses
+[100%] Linking CXX executable ../bin/word-square
+[100%] Built target sudoku
+[100%] Linking CXX executable ../bin/queens
+[100%] Built target tsp
+[100%] Built target sudoku-advanced
+[100%] Built target warehouses
+[100%] Built target gecodeflatzinc_shared
+[100%] Building CXX object CMakeFiles/fzn-gecode.dir/tools/flatzinc/fzn-gecode.cpp.o
+[100%] Built target word-square
+[100%] Built target queens
+[100%] Linking CXX executable bin/fzn-gecode
+[100%] Built target fzn-gecode
