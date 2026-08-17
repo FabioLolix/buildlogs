@@ -1,5 +1,5 @@
--- The C compiler identification is GNU 16.1.1
--- The CXX compiler identification is GNU 16.1.1
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -21,7 +21,7 @@
 -- Found WrapVulkanHeaders: /usr/include
 -- Found Cups: /usr/lib/libcups.so (found version "2.4.19")
 -- A release build (non-debug). Debugging outputs are silently ignored.
--- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.3")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.5")
 -- Checking for module 'exiv2>=0.27'
 --   Found exiv2, version 0.28.8
 -- exiv2 version by pkg-config: 0.28.8
@@ -50,69 +50,54 @@ you may install a compatible version with scripts/build-linuxdeploy.sh
 --  nomacs tests ................................................. YES
 --  nomacs benchmarks ............................................ NO
 -- ----------------------------------------------------------------------------------
--- Configuring done (1.4s)
+-- Configuring done (1.7s)
 -- Generating done (0.1s)
 -- Build files have been written to: /build/nomacs/src/build
-[  0%] Built target nomacsCore_autogen_timestamp_deps
-[  0%] Built target copy_css_files
-[  1%] Automatic MOC for target nomacsCore
-[  1%] Built target nomacsCore_autogen
-[  2%] Generating qrc_nomacs.cpp
-[  3%] Building CXX object CMakeFiles/nomacsCore.dir/nomacsCore_autogen/mocs_compilation.cpp.o
-[  4%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBatch.cpp.o
-[  5%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBaseWidgets.cpp.o
-[  6%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkControlWidget.cpp.o
-[  7%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkConnection.cpp.o
-[  7%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkCentralWidget.cpp.o
-[  7%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkManipulatorWidgets.cpp.o
-[  8%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMetaDataWidgets.cpp.o
-[ 10%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDockWidgets.cpp.o
-[ 10%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkLogWidget.cpp.o
-[ 10%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNoMacs.cpp.o
-[ 10%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o
-[ 11%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMenu.cpp.o
-[ 12%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNetwork.cpp.o
-[ 13%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPong.cpp.o
-[ 14%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPreferenceWidgets.cpp.o
-[ 14%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkQuickAccess.cpp.o
-[ 15%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkSettingsWidget.cpp.o
-[ 15%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkThumbsWidgets.cpp.o
-[ 16%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkShortcuts.cpp.o
-[ 17%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkToolbars.cpp.o
-[ 18%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkViewPort.cpp.o
-[ 20%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkWidgets.cpp.o
-[ 20%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkActionManager.cpp.o
-[ 21%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBaseViewPort.cpp.o
-[ 22%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicLoader.cpp.o
-[ 22%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicWidgets.cpp.o
-[ 23%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBatchInfo.cpp.o
-[ 24%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkCachedThumb.cpp.o
-[ 25%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkDependencyResolver.cpp.o
-[ 25%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkFileInfo.cpp.o
-[ 26%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkImageContainer.cpp.o
-[ 27%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkImageLoader.cpp.o
-[ 27%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkImageStorage.cpp.o
-[ 28%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkManipulators.cpp.o
-[ 29%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkManipulatorsIpl.cpp.o
-[ 29%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkMath.cpp.o
-[ 30%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkMessageBox.cpp.o
-[ 31%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkMetaData.cpp.o
-[ 32%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkNativeImage.cpp.o
-[ 32%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkPluginManager.cpp.o
-[ 33%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkProcess.cpp.o
-[ 34%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkSaveDialog.cpp.o
-[ 34%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkSettings.cpp.o
-[ 35%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkStatusBar.cpp.o
-[ 36%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkThemeManager.cpp.o
-[ 36%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkThumbs.cpp.o
-[ 37%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkTimer.cpp.o
-[ 38%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkUpdater.cpp.o
-[ 40%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkUtils.cpp.o
-[ 40%] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkVersion.cpp.o
-[ 41%] Building CXX object CMakeFiles/nomacsCore.dir/qrc_nomacs.cpp.o
-[ 42%] Building CXX object CMakeFiles/nomacsCore.dir/3rdparty/libqpsd/qpsdhandler.cpp.o
-[ 42%] Building CXX object CMakeFiles/nomacsCore.dir/3rdparty/libqpsd/qpsdhandler_p.cpp.o
-[ 43%] Building CXX object CMakeFiles/nomacsCore.dir/3rdparty/libqpsd/qpsdplugin.cpp.o
+[1/134] cd /build/nomacs/src/build && /usr/bin/cmake -E make_directory /build/nomacs/src/build/themes/ && /usr/bin/cmake -E copy_if_different /build/nomacs/src/nomacs/ImageLounge/src/themes/Dark-Theme.css /build/nomacs/src/nomacs/ImageLounge/src/themes/Light-Theme.css /build/nomacs/src/nomacs/ImageLounge/src/themes/System.css /build/nomacs/src/build/themes/
+[2/134] Automatic MOC for target nomacsCore
+[3/134] Generating qrc_nomacs.cpp
+[4/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkConnection.cpp.o
+[5/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBaseWidgets.cpp.o
+[6/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMenu.cpp.o
+[7/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkLogWidget.cpp.o
+[8/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkShortcuts.cpp.o
+[9/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBaseViewPort.cpp.o
+[10/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkSettingsWidget.cpp.o
+[11/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkQuickAccess.cpp.o
+[12/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNetwork.cpp.o
+[13/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkManipulatorWidgets.cpp.o
+[14/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPong.cpp.o
+[15/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDockWidgets.cpp.o
+[16/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBatchInfo.cpp.o
+[17/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkDependencyResolver.cpp.o
+[18/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkToolbars.cpp.o
+[19/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkControlWidget.cpp.o
+[20/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkActionManager.cpp.o
+[21/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicLoader.cpp.o
+[22/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPreferenceWidgets.cpp.o
+[23/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMetaDataWidgets.cpp.o
+[24/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkFileInfo.cpp.o
+[25/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkWidgets.cpp.o
+[26/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicWidgets.cpp.o
+[27/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkCachedThumb.cpp.o
+[28/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkManipulatorsIpl.cpp.o
+[29/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkMath.cpp.o
+[30/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkVersion.cpp.o
+[31/134] Building CXX object CMakeFiles/nomacsCore.dir/qrc_nomacs.cpp.o
+[32/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkMessageBox.cpp.o
+[33/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkManipulators.cpp.o
+[34/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkCentralWidget.cpp.o
+[35/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkNativeImage.cpp.o
+[36/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNoMacs.cpp.o
+[37/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkThumbsWidgets.cpp.o
+[38/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkViewPort.cpp.o
+[39/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkTimer.cpp.o
+[40/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o
+[41/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkImageContainer.cpp.o
+[42/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBatch.cpp.o
+[43/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkStatusBar.cpp.o
+[44/134] Building CXX object CMakeFiles/nomacsCore.dir/3rdparty/libqpsd/qpsdhandler_p.cpp.o
+[45/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkMetaData.cpp.o
 /build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkMetaData.cpp: In static member function ‘static void nmc::DkMetaDataHelper::initialize()’:
 /build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkMetaData.cpp:2032:26: warning: ‘bool Exiv2::enableBMFF(bool)’ is deprecated [-Wdeprecated-declarations]
  2032 |     if (Exiv2::enableBMFF(true)) {
@@ -123,92 +108,92 @@ In file included from /usr/include/exiv2/exiv2.hpp:9,
 /usr/include/exiv2/bmffimage.hpp:16:30: note: declared here
    16 | [[deprecated]] EXIV2API bool enableBMFF(bool enable = true);
       |                              ^~~~~~~~~~
-[ 44%] Linking CXX shared library libnomacsCore.so
-[ 44%] Built target nomacsCore
-[ 44%] Built target paintPlugin_autogen_timestamp_deps
-[ 44%] Built target fakeMiniaturesPlugin_autogen_timestamp_deps
-[ 44%] Built target CompositePlugin_autogen_timestamp_deps
-[ 44%] Built target nomacs_autogen_timestamp_deps
-[ 44%] Built target pageExtractionPlugin_autogen_timestamp_deps
-[ 44%] Built target affineTransformPlugin_autogen_timestamp_deps
-[ 45%] Automatic MOC for target paintPlugin
-[ 46%] Automatic MOC for target CompositePlugin
-[ 47%] Automatic MOC for target fakeMiniaturesPlugin
-[ 47%] Automatic MOC for target nomacs
-[ 49%] Automatic MOC for target pageExtractionPlugin
-[ 49%] Automatic MOC for target affineTransformPlugin
-[ 49%] Built target nomacs_autogen
-[ 54%] Generating nomacs_el.qm
-[ 54%] Generating nomacs_hr.qm
-[ 54%] Generating nomacs_de.qm
-[ 54%] Generating nomacs_fr.qm
-[ 54%] Generating nomacs_ca.qm
-[ 54%] Generating nomacs_bg.qm
-[ 55%] Generating nomacs_bs.qm
-[ 55%] Generating nomacs_es.qm
-[ 55%] Generating nomacs_ar.qm
-[ 57%] Generating nomacs_cs.qm
-[ 57%] Generating nomacs_zh_TW.qm
-[ 57%] Generating nomacs_et.qm
-[ 58%] Generating nomacs_hu.qm
-[ 60%] Generating nomacs_id.qm
-[ 61%] Generating nomacs_fi.qm
-[ 65%] Generating nomacs_ko.qm
-[ 65%] Generating nomacs_ja.qm
-[ 65%] Generating nomacs_pt_BR.qm
-[ 65%] Generating nomacs_pt.qm
-[ 65%] Generating nomacs_pl.qm
-[ 65%] Generating nomacs_it.qm
-[ 65%] Generating nomacs_sk.qm
-[ 67%] Generating nomacs_nl.qm
-[ 67%] Generating nomacs_ru.qm
-[ 68%] Generating nomacs_sv.qm
-[ 68%] Generating nomacs_sl.qm
-[ 69%] Generating nomacs_tr.qm
-[ 70%] Generating nomacs_sr.qm
-[ 70%] Generating nomacs_zh_CN.qm
-[ 71%] Generating nomacs_uk.qm
-[ 71%] Building CXX object CMakeFiles/nomacs.dir/src/main.cpp.o
-[ 72%] Building CXX object CMakeFiles/nomacs.dir/nomacs_autogen/mocs_compilation.cpp.o
-[ 72%] Built target paintPlugin_autogen
-[ 72%] Generating qrc_nomacsPlugin.cpp
-[ 72%] Built target fakeMiniaturesPlugin_autogen
-[ 72%] Built target pageExtractionPlugin_autogen
-[ 72%] Built target CompositePlugin_autogen
-[ 72%] Built target affineTransformPlugin_autogen
-[ 73%] Generating qrc_nomacsPlugin.cpp
-[ 74%] Generating qrc_nomacsPlugin.cpp
-[ 74%] Generating qrc_nomacsPlugin.cpp
-[ 75%] Generating qrc_nomacsPlugin.cpp
-[ 77%] Building CXX object nomacs-plugins/PaintPlugin/CMakeFiles/paintPlugin.dir/src/DkPaintPlugin.cpp.o
-[ 77%] Building CXX object nomacs-plugins/PaintPlugin/CMakeFiles/paintPlugin.dir/qrc_nomacsPlugin.cpp.o
-[ 77%] Building CXX object nomacs-plugins/PaintPlugin/CMakeFiles/paintPlugin.dir/paintPlugin_autogen/mocs_compilation.cpp.o
-[ 80%] Building CXX object nomacs-plugins/CompositePlugin/CMakeFiles/CompositePlugin.dir/src/SbCompositePlugin.cpp.o
-[ 80%] Building CXX object nomacs-plugins/CompositePlugin/CMakeFiles/CompositePlugin.dir/qrc_nomacsPlugin.cpp.o
-[ 80%] Building CXX object nomacs-plugins/AffineTransformations/CMakeFiles/affineTransformPlugin.dir/affineTransformPlugin_autogen/mocs_compilation.cpp.o
-[ 81%] Building CXX object nomacs-plugins/CompositePlugin/CMakeFiles/CompositePlugin.dir/CompositePlugin_autogen/mocs_compilation.cpp.o
-[ 81%] Building CXX object nomacs-plugins/CompositePlugin/CMakeFiles/CompositePlugin.dir/src/SbChannelWidget.cpp.o
-[ 82%] Building CXX object nomacs-plugins/AffineTransformations/CMakeFiles/affineTransformPlugin.dir/src/DkImgTransformationsPlugin.cpp.o
-[ 82%] Building CXX object nomacs-plugins/AffineTransformations/CMakeFiles/affineTransformPlugin.dir/qrc_nomacsPlugin.cpp.o
-[ 83%] Building CXX object nomacs-plugins/FakeMiniaturesPlugin/CMakeFiles/fakeMiniaturesPlugin.dir/fakeMiniaturesPlugin_autogen/mocs_compilation.cpp.o
-[ 83%] Building CXX object nomacs-plugins/FakeMiniaturesPlugin/CMakeFiles/fakeMiniaturesPlugin.dir/src/DkFakeMiniaturesDialog.cpp.o
-[ 84%] Building CXX object nomacs-plugins/AffineTransformations/CMakeFiles/affineTransformPlugin.dir/src/DkSkewEstimator.cpp.o
-[ 85%] Building CXX object nomacs-plugins/FakeMiniaturesPlugin/CMakeFiles/fakeMiniaturesPlugin.dir/qrc_nomacsPlugin.cpp.o
-[ 86%] Building CXX object nomacs-plugins/FakeMiniaturesPlugin/CMakeFiles/fakeMiniaturesPlugin.dir/src/DkFakeMiniaturesPlugin.cpp.o
-[ 87%] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/src/DkPageSegmentationUtils.cpp.o
-[ 87%] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/qrc_nomacsPlugin.cpp.o
-[ 88%] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/src/DkPageExtractionPlugin.cpp.o
-[ 89%] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/src/DkPageSegmentation.cpp.o
-[ 89%] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/pageExtractionPlugin_autogen/mocs_compilation.cpp.o
-[ 90%] Linking CXX shared library ../libpageExtractionPlugin.so
-[ 90%] Linking CXX shared library ../libfakeMiniaturesPlugin.so
-[ 90%] Linking CXX shared library ../libCompositePlugin.so
-[ 91%] Linking CXX shared library ../libpaintPlugin.so
-[ 92%] Linking CXX executable nomacs
-[ 93%] Built target fakeMiniaturesPlugin
-[ 94%] Linking CXX shared library ../libaffineTransformPlugin.so
-[ 95%] Built target CompositePlugin
-[ 96%] Built target nomacs
-[ 97%] Built target pageExtractionPlugin
-[ 98%] Built target paintPlugin
-[100%] Built target affineTransformPlugin
+[46/134] Building CXX object CMakeFiles/nomacsCore.dir/3rdparty/libqpsd/qpsdhandler.cpp.o
+[47/134] Building CXX object CMakeFiles/nomacsCore.dir/3rdparty/libqpsd/qpsdplugin.cpp.o
+[48/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkThemeManager.cpp.o
+[49/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkImageLoader.cpp.o
+[50/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkSaveDialog.cpp.o
+[51/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkUpdater.cpp.o
+[52/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkSettings.cpp.o
+[53/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkImageStorage.cpp.o
+[54/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkThumbs.cpp.o
+[55/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkPluginManager.cpp.o
+[56/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkProcess.cpp.o
+[57/134] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkUtils.cpp.o
+[58/134] Building CXX object CMakeFiles/nomacsCore.dir/nomacsCore_autogen/mocs_compilation.cpp.o
+[59/134] Linking CXX shared library libnomacsCore.so.3.23.3
+[60/134] Creating library symlink libnomacsCore.so.3 libnomacsCore.so
+[61/134] Automatic MOC for target nomacs
+[62/134] Generating nomacs_hr.qm
+[63/134] Generating nomacs_el.qm
+[64/134] Generating nomacs_bg.qm
+[65/134] Generating nomacs_et.qm
+[66/134] Generating nomacs_fi.qm
+[67/134] Generating nomacs_ar.qm
+[68/134] Generating nomacs_bs.qm
+[69/134] Generating nomacs_hu.qm
+[70/134] Generating nomacs_cs.qm
+[71/134] Generating nomacs_fr.qm
+[72/134] Generating nomacs_id.qm
+[73/134] Generating nomacs_ko.qm
+[74/134] Generating nomacs_nl.qm
+[75/134] Generating nomacs_pl.qm
+[76/134] Generating nomacs_it.qm
+[77/134] Generating nomacs_ja.qm
+[78/134] Generating nomacs_ca.qm
+[79/134] Generating nomacs_de.qm
+[80/134] Generating nomacs_pt.qm
+[81/134] Generating nomacs_pt_BR.qm
+[82/134] Generating nomacs_sr.qm
+[83/134] Generating nomacs_sl.qm
+[84/134] Generating nomacs_sk.qm
+[85/134] Generating nomacs_ru.qm
+[86/134] Generating nomacs_tr.qm
+[87/134] Generating nomacs_es.qm
+[88/134] Generating nomacs_sv.qm
+[89/134] Generating nomacs_uk.qm
+[90/134] Generating nomacs_zh_CN.qm
+[91/134] Generating nomacs_zh_TW.qm
+[92/134] Building CXX object CMakeFiles/nomacs.dir/nomacs_autogen/mocs_compilation.cpp.o
+[93/134] Automatic MOC for target pageExtractionPlugin
+[94/134] Automatic MOC for target paintPlugin
+[95/134] Generating qrc_nomacsPlugin.cpp
+[96/134] Generating qrc_nomacsPlugin.cpp
+[97/134] Automatic MOC for target CompositePlugin
+[98/134] Building CXX object nomacs-plugins/PaintPlugin/CMakeFiles/paintPlugin.dir/qrc_nomacsPlugin.cpp.o
+[99/134] Generating qrc_nomacsPlugin.cpp
+[100/134] Automatic MOC for target fakeMiniaturesPlugin
+[101/134] Automatic MOC for target affineTransformPlugin
+[102/134] Building CXX object nomacs-plugins/CompositePlugin/CMakeFiles/CompositePlugin.dir/qrc_nomacsPlugin.cpp.o
+[103/134] Generating qrc_nomacsPlugin.cpp
+[104/134] Generating qrc_nomacsPlugin.cpp
+[105/134] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/qrc_nomacsPlugin.cpp.o
+[106/134] Building CXX object nomacs-plugins/AffineTransformations/CMakeFiles/affineTransformPlugin.dir/qrc_nomacsPlugin.cpp.o
+[107/134] Building CXX object nomacs-plugins/FakeMiniaturesPlugin/CMakeFiles/fakeMiniaturesPlugin.dir/qrc_nomacsPlugin.cpp.o
+[108/134] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/pageExtractionPlugin_autogen/mocs_compilation.cpp.o
+[109/134] Building CXX object nomacs-plugins/FakeMiniaturesPlugin/CMakeFiles/fakeMiniaturesPlugin.dir/src/DkFakeMiniaturesDialog.cpp.o
+[110/134] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/src/DkPageSegmentationUtils.cpp.o
+[111/134] Building CXX object nomacs-plugins/FakeMiniaturesPlugin/CMakeFiles/fakeMiniaturesPlugin.dir/src/DkFakeMiniaturesPlugin.cpp.o
+[112/134] Building CXX object nomacs-plugins/CompositePlugin/CMakeFiles/CompositePlugin.dir/src/SbCompositePlugin.cpp.o
+[113/134] Building CXX object nomacs-plugins/AffineTransformations/CMakeFiles/affineTransformPlugin.dir/src/DkSkewEstimator.cpp.o
+[114/134] Building CXX object nomacs-plugins/CompositePlugin/CMakeFiles/CompositePlugin.dir/src/SbChannelWidget.cpp.o
+[115/134] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/src/DkPageSegmentation.cpp.o
+[116/134] Building CXX object nomacs-plugins/PaintPlugin/CMakeFiles/paintPlugin.dir/paintPlugin_autogen/mocs_compilation.cpp.o
+[117/134] Building CXX object nomacs-plugins/PageExtractionPlugin/CMakeFiles/pageExtractionPlugin.dir/src/DkPageExtractionPlugin.cpp.o
+[118/134] Building CXX object nomacs-plugins/FakeMiniaturesPlugin/CMakeFiles/fakeMiniaturesPlugin.dir/fakeMiniaturesPlugin_autogen/mocs_compilation.cpp.o
+[119/134] Building CXX object nomacs-plugins/AffineTransformations/CMakeFiles/affineTransformPlugin.dir/affineTransformPlugin_autogen/mocs_compilation.cpp.o
+[120/134] Building CXX object nomacs-plugins/CompositePlugin/CMakeFiles/CompositePlugin.dir/CompositePlugin_autogen/mocs_compilation.cpp.o
+[121/134] Building CXX object nomacs-plugins/PaintPlugin/CMakeFiles/paintPlugin.dir/src/DkPaintPlugin.cpp.o
+[122/134] Building CXX object nomacs-plugins/AffineTransformations/CMakeFiles/affineTransformPlugin.dir/src/DkImgTransformationsPlugin.cpp.o
+[123/134] Building CXX object CMakeFiles/nomacs.dir/src/main.cpp.o
+[124/134] Linking CXX shared library nomacs-plugins/libfakeMiniaturesPlugin.so.3.23.3
+[125/134] Creating library symlink nomacs-plugins/libfakeMiniaturesPlugin.so.3 nomacs-plugins/libfakeMiniaturesPlugin.so
+[126/134] Linking CXX shared library nomacs-plugins/libCompositePlugin.so.3.23.3
+[127/134] Creating library symlink nomacs-plugins/libCompositePlugin.so.3 nomacs-plugins/libCompositePlugin.so
+[128/134] Linking CXX executable nomacs
+[129/134] Linking CXX shared library nomacs-plugins/libpageExtractionPlugin.so.3.23.3
+[130/134] Creating library symlink nomacs-plugins/libpageExtractionPlugin.so.3 nomacs-plugins/libpageExtractionPlugin.so
+[131/134] Linking CXX shared library nomacs-plugins/libpaintPlugin.so.3.23.3
+[132/134] Creating library symlink nomacs-plugins/libpaintPlugin.so.3 nomacs-plugins/libpaintPlugin.so
+[133/134] Linking CXX shared library nomacs-plugins/libaffineTransformPlugin.so.3.23.3
+[134/134] Creating library symlink nomacs-plugins/libaffineTransformPlugin.so.3 nomacs-plugins/libaffineTransformPlugin.so
