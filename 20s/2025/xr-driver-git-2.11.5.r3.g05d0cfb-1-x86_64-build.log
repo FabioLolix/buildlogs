@@ -1,0 +1,78 @@
+-- The C compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.5")
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- !!! UA_API_SECRET is NOT set
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.30
+-- Checking for module 'libevdev'
+--   Found libevdev, version 1.13.7
+-- Checking for module 'openssl'
+--   Found openssl, version 3.6.3
+-- Checking for module 'json-c'
+--   Found json-c, version 0.19
+-- Checking for module 'libcurl'
+--   Found libcurl, version 8.21.0
+-- Checking for module 'wayland-client'
+--   Found wayland-client, version 1.26.0
+Submodule 'modules/xrDeviceKit' (git@github.com:wheaney/xrDeviceKit.git) registered for path 'modules/xrDeviceKit'
+Submodule 'modules/xrealAirDeviceKit' (git@github.com:wheaney/xrealAirDeviceKit.git) registered for path 'modules/xrealAirDeviceKit'
+Submodule 'modules/xrealInterfaceLibrary' (https://gitlab.com/wheaney/nrealAirLinuxDriver.git) registered for path 'modules/xrealInterfaceLibrary'
+Submodule 'modules/xrealOneDeviceKit' (git@github.com:wheaney/xrealOneDeviceKit.git) registered for path 'modules/xrealOneDeviceKit'
+Cloning into '/build/xr-driver-git/src/XRLinuxDriver/modules/xrDeviceKit'...
+error: cannot run ssh: No such file or directory
+fatal: unable to fork
+fatal: clone of 'git@github.com:wheaney/xrDeviceKit.git' into submodule path '/build/xr-driver-git/src/XRLinuxDriver/modules/xrDeviceKit' failed
+Failed to clone 'modules/xrDeviceKit'. Retry scheduled
+Cloning into '/build/xr-driver-git/src/XRLinuxDriver/modules/xrealAirDeviceKit'...
+error: cannot run ssh: No such file or directory
+fatal: unable to fork
+fatal: clone of 'git@github.com:wheaney/xrealAirDeviceKit.git' into submodule path '/build/xr-driver-git/src/XRLinuxDriver/modules/xrealAirDeviceKit' failed
+Failed to clone 'modules/xrealAirDeviceKit'. Retry scheduled
+Cloning into '/build/xr-driver-git/src/XRLinuxDriver/modules/xrealInterfaceLibrary'...
+Cloning into '/build/xr-driver-git/src/XRLinuxDriver/modules/xrealOneDeviceKit'...
+error: cannot run ssh: No such file or directory
+fatal: unable to fork
+fatal: clone of 'git@github.com:wheaney/xrealOneDeviceKit.git' into submodule path '/build/xr-driver-git/src/XRLinuxDriver/modules/xrealOneDeviceKit' failed
+Failed to clone 'modules/xrealOneDeviceKit'. Retry scheduled
+Cloning into '/build/xr-driver-git/src/XRLinuxDriver/modules/xrDeviceKit'...
+error: cannot run ssh: No such file or directory
+fatal: unable to fork
+fatal: clone of 'git@github.com:wheaney/xrDeviceKit.git' into submodule path '/build/xr-driver-git/src/XRLinuxDriver/modules/xrDeviceKit' failed
+Failed to clone 'modules/xrDeviceKit' a second time, aborting
+error: pathspec 'interface_lib/modules/hidapi' did not match any file(s) known to git
+error: pathspec 'modules/Fusion' did not match any file(s) known to git
+error: pathspec 'modules/xreal_one_driver' did not match any file(s) known to git
+CMake Error at CMakeLists.txt:70 (add_subdirectory):
+  The source directory
+
+    /build/xr-driver-git/src/XRLinuxDriver/modules/xrealAirDeviceKit
+
+  does not contain a CMakeLists.txt file.
+
+
+CMake Error at CMakeLists.txt:71 (add_subdirectory):
+  The source directory
+
+    /build/xr-driver-git/src/XRLinuxDriver/modules/xrealOneDeviceKit
+
+  does not contain a CMakeLists.txt file.
+
+
+-- LIB_DIR: /build/xr-driver-git/src/XRLinuxDriver/lib/x86_64
+-- VITURE_LIB_DIR: /build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture
+-- STATIC_LIBS: 
+-- SHARED_LIBS: /build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/libGlassSDK.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libcarina_vio.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libglasses.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libopencv_calib3d.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libopencv_core.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libopencv_features2d.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libopencv_flann.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libopencv_highgui.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libopencv_imgcodecs.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libopencv_imgproc.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libopencv_video.so;/build/xr-driver-git/src/XRLinuxDriver/lib/x86_64/viture/libopencv_videoio.so
+-- GlassSDK support enabled, added src/devices/rokid.c
+-- VITURE support enabled, added src/devices/viture.c
+-- RayNeo support enabled, added src/devices/rayneo.c
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m

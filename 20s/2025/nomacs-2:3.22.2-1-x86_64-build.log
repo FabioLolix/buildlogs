@@ -1,0 +1,105 @@
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Cups: /usr/lib/libcups.so (found version "2.4.19")
+-- A release build (non-debug). Debugging outputs are silently ignored.
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.5")
+-- Checking for module 'exiv2>=0.27'
+--   Found exiv2, version 0.28.8
+-- exiv2 version by pkg-config: 0.28.8
+-- exiv2 contains exiv2.hpp, using it
+-- Found OpenCV: /usr (found version "5.0.0") found components: core imgproc
+-- Checking for module 'libraw>=0.12.0'
+--   Found libraw, version 0.22.2
+-- Found TIFF: /usr/lib/cmake/tiff (found version "4.7.2")
+-- QUAZIP: QuaZip-1 for Qt6 found
+-- revision is 3f795e52, 2026-08-26, custom
+linuxdeploy is not available or working, required for AppImage
+you may install a compatible version with scripts/build-linuxdeploy.sh
+-- nomacs version is 3.22.2
+-- using plugin directory: /build/nomacs/src/nomacs/ImageLounge/plugins
+-- Found GTest: /usr/lib/cmake/GTest/GTestConfig.cmake (found version "1.17.0")
+-- 
+-- ----------------------------------------------------------------------------------
+--  nomacs - Image Lounge 3.22  <https://nomacs.org>
+--  Qt version: 6.11.2
+--  nomacs will be compiled with OPENCV support .................. YES
+--  nomacs will be compiled with LIBRAW support .................. YES
+--  nomacs will be compiled with extended TIFF support ........... YES
+--  nomacs will be compiled with plugin support .................. YES
+--  nomacs will be compiled with Translations .................... YES
+--  nomacs will be compiled with QuaZip support .................. YES
+--  nomacs tests ................................................. YES
+--  nomacs benchmarks ............................................ NO
+-- ----------------------------------------------------------------------------------
+-- Configuring done (1.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: /build/nomacs/src/build
+[1/131] cd /build/nomacs/src/build && /usr/bin/cmake -E make_directory /build/nomacs/src/build/themes/ && /usr/bin/cmake -E copy_if_different /build/nomacs/src/nomacs/ImageLounge/src/themes/Dark-Theme.css /build/nomacs/src/nomacs/ImageLounge/src/themes/Light-Theme.css /build/nomacs/src/nomacs/ImageLounge/src/themes/System.css /build/nomacs/src/build/themes/
+[2/131] Automatic MOC for target nomacsCore
+[3/131] Generating qrc_nomacs.cpp
+[4/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o
+FAILED: [code=1] CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o 
+/usr/bin/c++ -DHAVE_EXIV2_HPP -DNDEBUG -DNOMACS_VERSION=\"3.22\" -DQT_CONCURRENT_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_NO_DEBUG_OUTPUT -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DWITH_LIBRAW -DWITH_LIBTIFF -DWITH_OPENCV -DWITH_PLUGINS -DWITH_QUAZIP -DnomacsCore_EXPORTS -I/build/nomacs/src/build/nomacsCore_autogen/include -I/build/nomacs/src/build -I/build/nomacs/src/nomacs/ImageLounge/src -I/build/nomacs/src/nomacs/ImageLounge/src/DkCore -I/build/nomacs/src/nomacs/ImageLounge/src/DkGui -I/build/nomacs/src/nomacs/ImageLounge/3rdparty/libqpsd -I/build/nomacs/src/nomacs/ImageLounge/3rdparty/drif -isystem /usr/include/opencv5 -isystem /usr/include/QuaZip-Qt6-1.7.2 -isystem /usr/include/QuaZip-Qt6-1.7.2/quazip -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtCore5Compat -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtPrintSupport -isystem /usr/include/qt6/QtConcurrent -isystem /usr/include/qt6/QtSvg -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nomacs/src=/usr/src/debug/nomacs -flto=auto -Wall -Wextra -Wpedantic -Wformat -Wformat-nonliteral -Wshadow -O3 -DNDEBUG -std=gnu++17 -fPIC -DDK_CORE_DLL_EXPORT -DNOMINMAX -mno-direct-extern-access -MD -MT CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o -MF CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o.d -o CMakeFiles/nomacsCore.dir/src/DkGui/DkDialog.cpp.o -c /build/nomacs/src/nomacs/ImageLounge/src/DkGui/DkDialog.cpp
+/build/nomacs/src/nomacs/ImageLounge/src/DkGui/DkDialog.cpp:95:10: fatal error: opencv2/imgproc/imgproc_c.h: No such file or directory
+   95 | #include "opencv2/imgproc/imgproc_c.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[5/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkViewPort.cpp.o
+FAILED: [code=1] CMakeFiles/nomacsCore.dir/src/DkGui/DkViewPort.cpp.o 
+/usr/bin/c++ -DHAVE_EXIV2_HPP -DNDEBUG -DNOMACS_VERSION=\"3.22\" -DQT_CONCURRENT_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_NO_DEBUG_OUTPUT -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DWITH_LIBRAW -DWITH_LIBTIFF -DWITH_OPENCV -DWITH_PLUGINS -DWITH_QUAZIP -DnomacsCore_EXPORTS -I/build/nomacs/src/build/nomacsCore_autogen/include -I/build/nomacs/src/build -I/build/nomacs/src/nomacs/ImageLounge/src -I/build/nomacs/src/nomacs/ImageLounge/src/DkCore -I/build/nomacs/src/nomacs/ImageLounge/src/DkGui -I/build/nomacs/src/nomacs/ImageLounge/3rdparty/libqpsd -I/build/nomacs/src/nomacs/ImageLounge/3rdparty/drif -isystem /usr/include/opencv5 -isystem /usr/include/QuaZip-Qt6-1.7.2 -isystem /usr/include/QuaZip-Qt6-1.7.2/quazip -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtCore5Compat -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtPrintSupport -isystem /usr/include/qt6/QtConcurrent -isystem /usr/include/qt6/QtSvg -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nomacs/src=/usr/src/debug/nomacs -flto=auto -Wall -Wextra -Wpedantic -Wformat -Wformat-nonliteral -Wshadow -O3 -DNDEBUG -std=gnu++17 -fPIC -DDK_CORE_DLL_EXPORT -DNOMINMAX -mno-direct-extern-access -MD -MT CMakeFiles/nomacsCore.dir/src/DkGui/DkViewPort.cpp.o -MF CMakeFiles/nomacsCore.dir/src/DkGui/DkViewPort.cpp.o.d -o CMakeFiles/nomacsCore.dir/src/DkGui/DkViewPort.cpp.o -c /build/nomacs/src/nomacs/ImageLounge/src/DkGui/DkViewPort.cpp
+/build/nomacs/src/nomacs/ImageLounge/src/DkGui/DkViewPort.cpp:63:10: fatal error: opencv2/imgproc/imgproc_c.h: No such file or directory
+   63 | #include "opencv2/imgproc/imgproc_c.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[6/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicLoader.cpp.o
+FAILED: [code=1] CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicLoader.cpp.o 
+/usr/bin/c++ -DHAVE_EXIV2_HPP -DNDEBUG -DNOMACS_VERSION=\"3.22\" -DQT_CONCURRENT_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_NO_DEBUG_OUTPUT -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DWITH_LIBRAW -DWITH_LIBTIFF -DWITH_OPENCV -DWITH_PLUGINS -DWITH_QUAZIP -DnomacsCore_EXPORTS -I/build/nomacs/src/build/nomacsCore_autogen/include -I/build/nomacs/src/build -I/build/nomacs/src/nomacs/ImageLounge/src -I/build/nomacs/src/nomacs/ImageLounge/src/DkCore -I/build/nomacs/src/nomacs/ImageLounge/src/DkGui -I/build/nomacs/src/nomacs/ImageLounge/3rdparty/libqpsd -I/build/nomacs/src/nomacs/ImageLounge/3rdparty/drif -isystem /usr/include/opencv5 -isystem /usr/include/QuaZip-Qt6-1.7.2 -isystem /usr/include/QuaZip-Qt6-1.7.2/quazip -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtCore5Compat -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtPrintSupport -isystem /usr/include/qt6/QtConcurrent -isystem /usr/include/qt6/QtSvg -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/nomacs/src=/usr/src/debug/nomacs -flto=auto -Wall -Wextra -Wpedantic -Wformat -Wformat-nonliteral -Wshadow -O3 -DNDEBUG -std=gnu++17 -fPIC -DDK_CORE_DLL_EXPORT -DNOMINMAX -mno-direct-extern-access -MD -MT CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicLoader.cpp.o -MF CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicLoader.cpp.o.d -o CMakeFiles/nomacsCore.dir/src/DkCore/DkBasicLoader.cpp.o -c /build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkBasicLoader.cpp
+/build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkBasicLoader.cpp:53:10: fatal error: opencv2/imgproc/imgproc_c.h: No such file or directory
+   53 | #include "opencv2/imgproc/imgproc_c.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[7/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkConnection.cpp.o
+[8/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMenu.cpp.o
+[9/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBaseWidgets.cpp.o
+[10/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkShortcuts.cpp.o
+[11/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkLogWidget.cpp.o
+[12/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNetwork.cpp.o
+[13/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPong.cpp.o
+[14/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkSettingsWidget.cpp.o
+[15/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkDockWidgets.cpp.o
+[16/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkQuickAccess.cpp.o
+[17/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkBaseViewPort.cpp.o
+[18/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkManipulatorWidgets.cpp.o
+[19/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkToolbars.cpp.o
+[20/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkMetaDataWidgets.cpp.o
+[21/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkControlWidget.cpp.o
+[22/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkCore/DkActionManager.cpp.o
+[23/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkPreferenceWidgets.cpp.o
+[24/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkCentralWidget.cpp.o
+[25/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkWidgets.cpp.o
+[26/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkNoMacs.cpp.o
+[27/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkBatch.cpp.o
+[28/131] Building CXX object CMakeFiles/nomacsCore.dir/src/DkGui/DkThumbsWidgets.cpp.o
+[29/131] Building CXX object CMakeFiles/nomacsCore.dir/nomacsCore_autogen/mocs_compilation.cpp.o
+ninja: build stopped: subcommand failed.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
