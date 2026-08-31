@@ -59,24 +59,28 @@ Generating build files for OpenShot with CMake 4.4.3
 -- Found ZeroMQ: /usr/lib/libzmq.so (found version "4.3.5")
 -- Found babl: /usr/include/babl-0.1 (found version "0.1.128")
 CMake Warning at src/CMakeLists.txt:556 (find_package):
-  Could not find a configuration file for package "OpenCV" that is compatible
-  with requested version "4".
+  By not providing "FindOpenCV.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "OpenCV", but
+  CMake did not find one.
 
-  The following configuration files were considered but not accepted:
+  Could not find a package configuration file provided by "OpenCV" (requested
+  version 4) with any of the following names:
 
-    /usr/lib/cmake/opencv5/OpenCVConfig.cmake, version: 5.0.0
-      The version found is not compatible with the version requested.
-    /lib/cmake/opencv5/OpenCVConfig.cmake, version: 5.0.0
-      The version found is not compatible with the version requested.
+    OpenCV.cps
+    opencv.cps
+    OpenCVConfig.cmake
+    opencv-config.cmake
 
+  Add the installation prefix of "OpenCV" to CMAKE_PREFIX_PATH or set
+  "OpenCV_DIR" to a directory containing one of the above files.  If "OpenCV"
+  provides a separate development package or SDK, be sure it has been
+  installed.
 
 
 -- Found SWIG: /usr/bin/swig (found suitable version "4.5.0", minimum required is "3.0")
 -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.14.7", minimum required is "3")
 -- Found PythonLibs: /usr/lib/libpython3.14.so (found suitable version "3.14.7", minimum required is "3")
 -- PYTHON_MODULE_PATH: /usr/lib/python3.14/site-packages
--- Found Ruby: /usr/bin/ruby (found version "3.4.10") found components: Interpreter Development
--- RUBY_MODULE_PATH: /usr/lib/ruby/vendor_ruby/3.4.0/x86_64-linux
 -- Found Doxygen: /usr/bin/doxygen (found version "1.18.0") found components: doxygen missing components: dot
 -- Doxygen found, enabling libopenshot documentation target
 -- libopenshot Build configuration:
@@ -100,7 +104,6 @@ CMake Warning at src/CMakeLists.txt:556 (find_package):
  * PkgConfig
  * babl
  * OpenGL
- * Vulkan
  * WrapVulkanHeaders
  * Qt6GuiTools (required version >= 6.11.2)
  * Qt6CoreTools (required version >= 6.11.2)
@@ -108,7 +111,6 @@ CMake Warning at src/CMakeLists.txt:556 (find_package):
  * Qt6Gui
  * PythonInterp (required version >= 3)
  * PythonLibs (required version >= 3)
- * Ruby
  * Doxygen
  * Catch2
 
@@ -131,73 +133,67 @@ CMake Warning at src/CMakeLists.txt:556 (find_package):
 -- The following OPTIONAL packages have not been found:
 
  * OpenCV (required version >= 4)
+ * Vulkan
 
--- Configuring done (4.8s)
--- Generating done (0.4s)
+-- Configuring done (2.0s)
+-- Generating done (0.3s)
 -- Build files have been written to: /build/libopenshot-qt6-git/src/build
 [  0%] Built target openshot_autogen_timestamp_deps
 [  0%] Automatic MOC for target openshot
 [  0%] Built target openshot_autogen
-[  1%] Building CXX object src/CMakeFiles/openshot.dir/openshot_autogen/mocs_compilation.cpp.o
-[  2%] Building CXX object src/CMakeFiles/openshot.dir/AnimatedCurve.cpp.o
-[  2%] Building CXX object src/CMakeFiles/openshot.dir/AudioBufferSource.cpp.o
-[  2%] Building CXX object src/CMakeFiles/openshot.dir/AudioRecorder.cpp.o
-[  2%] Building CXX object src/CMakeFiles/openshot.dir/AudioDevices.cpp.o
-[  2%] Building CXX object src/CMakeFiles/openshot.dir/AudioReaderSource.cpp.o
-[  3%] Building CXX object src/CMakeFiles/openshot.dir/AudioResampler.cpp.o
+[  0%] Building CXX object src/CMakeFiles/openshot.dir/AudioResampler.cpp.o
+[  1%] Building CXX object src/CMakeFiles/openshot.dir/AnimatedCurve.cpp.o
+[  1%] Building CXX object src/CMakeFiles/openshot.dir/CameraCaptureReader.cpp.o
+[  1%] Building CXX object src/CMakeFiles/openshot.dir/AudioDevices.cpp.o
+[  1%] Building CXX object src/CMakeFiles/openshot.dir/AudioWaveformer.cpp.o
+[  1%] Building CXX object src/CMakeFiles/openshot.dir/AudioBufferSource.cpp.o
+[  2%] Building CXX object src/CMakeFiles/openshot.dir/CacheMemory.cpp.o
+[  3%] Building CXX object src/CMakeFiles/openshot.dir/AudioReaderSource.cpp.o
+[  3%] Building CXX object src/CMakeFiles/openshot.dir/ChunkReader.cpp.o
 [  3%] Building CXX object src/CMakeFiles/openshot.dir/ChunkWriter.cpp.o
 [  3%] Building CXX object src/CMakeFiles/openshot.dir/CacheDisk.cpp.o
-[  3%] Building CXX object src/CMakeFiles/openshot.dir/AudioWaveformer.cpp.o
-[  4%] Building CXX object src/CMakeFiles/openshot.dir/Coordinate.cpp.o
-[  4%] Building CXX object src/CMakeFiles/openshot.dir/DummyReader.cpp.o
-[  6%] Building CXX object src/CMakeFiles/openshot.dir/CacheBase.cpp.o
-[  6%] Building CXX object src/CMakeFiles/openshot.dir/Clip.cpp.o
-[  6%] Building CXX object src/CMakeFiles/openshot.dir/CrashHandler.cpp.o
-[  6%] Building CXX object src/CMakeFiles/openshot.dir/ClipBase.cpp.o
-[  6%] Building CXX object src/CMakeFiles/openshot.dir/CacheMemory.cpp.o
-[  7%] Building CXX object src/CMakeFiles/openshot.dir/Color.cpp.o
-[  8%] Building CXX object src/CMakeFiles/openshot.dir/ChunkReader.cpp.o
-[  8%] Building CXX object src/CMakeFiles/openshot.dir/CameraCaptureReader.cpp.o
-[  9%] Building CXX object src/CMakeFiles/openshot.dir/ReaderBase.cpp.o
-[  9%] Building CXX object src/CMakeFiles/openshot.dir/RendererBase.cpp.o
-[  9%] Building CXX object src/CMakeFiles/openshot.dir/ScreenCaptureReader.cpp.o
-[ 11%] Building CXX object src/CMakeFiles/openshot.dir/WriterBase.cpp.o
-[ 11%] Building CXX object src/CMakeFiles/openshot.dir/EffectBase.cpp.o
+[  3%] Building CXX object src/CMakeFiles/openshot.dir/openshot_autogen/mocs_compilation.cpp.o
+[  5%] Building CXX object src/CMakeFiles/openshot.dir/AudioRecorder.cpp.o
+[  5%] Building CXX object src/CMakeFiles/openshot.dir/CacheBase.cpp.o
+[  6%] Building CXX object src/CMakeFiles/openshot.dir/Color.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/ClipBase.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/Coordinate.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/Clip.cpp.o
+[  7%] Building CXX object src/CMakeFiles/openshot.dir/CrashHandler.cpp.o
+[  8%] Building CXX object src/CMakeFiles/openshot.dir/DummyReader.cpp.o
+[  8%] Building CXX object src/CMakeFiles/openshot.dir/ReaderBase.cpp.o
+[  8%] Building CXX object src/CMakeFiles/openshot.dir/RendererBase.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/openshot.dir/ScreenCaptureReader.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/openshot.dir/WriterBase.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/openshot.dir/EffectBase.cpp.o
 [ 11%] Building CXX object src/CMakeFiles/openshot.dir/EffectInfo.cpp.o
-[ 12%] Building CXX object src/CMakeFiles/openshot.dir/FFmpegReader.cpp.o
-[ 12%] Building CXX object src/CMakeFiles/openshot.dir/FFmpegWriter.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/openshot.dir/FFmpegReader.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/openshot.dir/FFmpegWriter.cpp.o
 [ 12%] Building CXX object src/CMakeFiles/openshot.dir/Fraction.cpp.o
-[ 13%] Building CXX object src/CMakeFiles/openshot.dir/Frame.cpp.o
-[ 13%] Building CXX object src/CMakeFiles/openshot.dir/FrameScope.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/openshot.dir/Frame.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/openshot.dir/FrameScope.cpp.o
 [ 13%] Building CXX object src/CMakeFiles/openshot.dir/FrameMapper.cpp.o
-[ 14%] Building CXX object src/CMakeFiles/openshot.dir/MemoryTrim.cpp.o
-[ 14%] Building CXX object src/CMakeFiles/openshot.dir/Json.cpp.o
-[ 14%] Building CXX object src/CMakeFiles/openshot.dir/KeyFrame.cpp.o
-[ 16%] Building CXX object src/CMakeFiles/openshot.dir/OpenShotVersion.cpp.o
-[ 16%] Building CXX object src/CMakeFiles/openshot.dir/PlayerBase.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/openshot.dir/MemoryTrim.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/openshot.dir/Json.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/openshot.dir/KeyFrame.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/openshot.dir/OpenShotVersion.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/openshot.dir/PlayerBase.cpp.o
 [ 16%] Building CXX object src/CMakeFiles/openshot.dir/Point.cpp.o
-[ 17%] Building CXX object src/CMakeFiles/openshot.dir/Profiles.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/openshot.dir/Profiles.cpp.o
 [ 17%] Building CXX object src/CMakeFiles/openshot.dir/QtHtmlReader.cpp.o
-[ 18%] Building CXX object src/CMakeFiles/openshot.dir/QtImageReader.cpp.o
-[ 18%] Building CXX object src/CMakeFiles/openshot.dir/QtPlayer.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/openshot.dir/QtImageReader.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/openshot.dir/QtPlayer.cpp.o
 [ 18%] Building CXX object src/CMakeFiles/openshot.dir/QtTextReader.cpp.o
-[ 19%] Building CXX object src/CMakeFiles/openshot.dir/Settings.cpp.o
-[ 19%] Building CXX object src/CMakeFiles/openshot.dir/TimelineBase.cpp.o
-[ 19%] Building CXX object src/CMakeFiles/openshot.dir/Timeline.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/openshot.dir/Settings.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/openshot.dir/TimelineBase.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/openshot.dir/Timeline.cpp.o
 [ 20%] Building CXX object src/CMakeFiles/openshot.dir/TrackedObjectBase.cpp.o
 [ 20%] Building CXX object src/CMakeFiles/openshot.dir/ZmqLogger.cpp.o
-[ 20%] Building CXX object src/CMakeFiles/openshot.dir/effects/AudioVisualization.cpp.o
-[ 22%] Building CXX object src/CMakeFiles/openshot.dir/effects/Bars.cpp.o
-[ 22%] Building CXX object src/CMakeFiles/openshot.dir/effects/BeatSync.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/openshot.dir/effects/AudioVisualization.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/openshot.dir/effects/Bars.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/openshot.dir/effects/BeatSync.cpp.o
 [ 22%] Building CXX object src/CMakeFiles/openshot.dir/effects/Blur.cpp.o
-[ 23%] Building CXX object src/CMakeFiles/openshot.dir/effects/Brightness.cpp.o
-[ 23%] Building CXX object src/CMakeFiles/openshot.dir/effects/Caption.cpp.o
-[ 23%] Building CXX object src/CMakeFiles/openshot.dir/effects/ChromaKey.cpp.o
-[ 24%] Building CXX object src/CMakeFiles/openshot.dir/effects/ColorGrade.cpp.o
-[ 24%] Building CXX object src/CMakeFiles/openshot.dir/effects/ColorMap.cpp.o
-[ 24%] Building CXX object src/CMakeFiles/openshot.dir/effects/ColorShift.cpp.o
-[ 25%] Building CXX object src/CMakeFiles/openshot.dir/effects/Crop.cpp.o
-[ 25%] Building CXX object src/CMakeFiles/openshot.dir/effects/CropHelpers.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/openshot.dir/effects/Brightness.cpp.o
 /build/libopenshot-qt6-git/src/libopenshot/src/Timeline.cpp: In constructor ‘openshot::Timeline::Timeline(const std::string&, bool)’:
 /build/libopenshot-qt6-git/src/libopenshot/src/Timeline.cpp:131:25: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
   131 |         projectFile.open(QFile::ReadOnly);
@@ -209,197 +205,208 @@ In file included from /usr/include/qt6/QtCore/qdir.h:11,
 /usr/include/qt6/QtCore/qfile.h:264:32: note: declared here
   264 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
       |                                ^~~~
-[ 25%] Building CXX object src/CMakeFiles/openshot.dir/effects/Deinterlace.cpp.o
-[ 27%] Building CXX object src/CMakeFiles/openshot.dir/effects/Displace.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/openshot.dir/effects/Caption.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/openshot.dir/effects/ChromaKey.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/openshot.dir/effects/ColorGrade.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/openshot.dir/effects/ColorMap.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/openshot.dir/effects/ColorShift.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/openshot.dir/effects/Crop.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/openshot.dir/effects/CropHelpers.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/openshot.dir/effects/Deinterlace.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/openshot.dir/effects/Displace.cpp.o
 [ 27%] Building CXX object src/CMakeFiles/openshot.dir/effects/FilmGrain.cpp.o
-[ 28%] Building CXX object src/CMakeFiles/openshot.dir/effects/Glow.cpp.o
-[ 28%] Building CXX object src/CMakeFiles/openshot.dir/effects/Hue.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/openshot.dir/effects/Glow.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/openshot.dir/effects/Hue.cpp.o
 [ 28%] Building CXX object src/CMakeFiles/openshot.dir/effects/LensFlare.cpp.o
-[ 29%] Building CXX object src/CMakeFiles/openshot.dir/effects/AnalogTape.cpp.o
-[ 29%] Building CXX object src/CMakeFiles/openshot.dir/effects/Mask.cpp.o
-[ 29%] Building CXX object src/CMakeFiles/openshot.dir/effects/Negate.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/openshot.dir/effects/AnalogTape.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/openshot.dir/effects/Mask.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/openshot.dir/effects/Negate.cpp.o
 [ 30%] Building CXX object src/CMakeFiles/openshot.dir/effects/Pixelate.cpp.o
 [ 30%] Building CXX object src/CMakeFiles/openshot.dir/effects/Saturation.cpp.o
-[ 30%] Building CXX object src/CMakeFiles/openshot.dir/effects/Sharpen.cpp.o
-[ 32%] Building CXX object src/CMakeFiles/openshot.dir/effects/Shadow.cpp.o
-[ 32%] Building CXX object src/CMakeFiles/openshot.dir/effects/Shift.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/openshot.dir/effects/Sharpen.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/openshot.dir/effects/Shadow.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/openshot.dir/effects/Shift.cpp.o
 [ 32%] Building CXX object src/CMakeFiles/openshot.dir/effects/SphericalProjection.cpp.o
-[ 33%] Building CXX object src/CMakeFiles/openshot.dir/effects/Timer.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/openshot.dir/effects/Timer.cpp.o
 [ 33%] Building CXX object src/CMakeFiles/openshot.dir/effects/DenoiseImage.cpp.o
 [ 33%] Building CXX object src/CMakeFiles/openshot.dir/effects/Wave.cpp.o
-[ 34%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/STFT.cpp.o
-[ 34%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Noise.cpp.o
-[ 34%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Delay.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/STFT.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Noise.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Delay.cpp.o
 [ 35%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Echo.cpp.o
-[ 35%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Distortion.cpp.o
-[ 35%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/ParametricEQ.cpp.o
-[ 37%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Compressor.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Distortion.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/ParametricEQ.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Compressor.cpp.o
 [ 37%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Expander.cpp.o
-[ 38%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Robotization.cpp.o
-[ 38%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Whisperization.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Robotization.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/openshot.dir/audio_effects/Whisperization.cpp.o
 [ 38%] Building CXX object src/CMakeFiles/openshot.dir/Qt/AudioPlaybackThread.cpp.o
-[ 39%] Building CXX object src/CMakeFiles/openshot.dir/Qt/PlayerDemo.cpp.o
-[ 39%] Building CXX object src/CMakeFiles/openshot.dir/Qt/PlayerPrivate.cpp.o
-[ 39%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoCacheThread.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/openshot.dir/Qt/PlayerDemo.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/openshot.dir/Qt/PlayerPrivate.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoCacheThread.cpp.o
 [ 40%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoPlaybackThread.cpp.o
 [ 40%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoRenderer.cpp.o
-[ 40%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoRenderWidget.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/openshot.dir/Qt/VideoRenderWidget.cpp.o
 [ 41%] Building CXX object src/CMakeFiles/openshot.dir/MagickUtilities.cpp.o
-[ 41%] Building CXX object src/CMakeFiles/openshot.dir/ImageReader.cpp.o
-[ 41%] Building CXX object src/CMakeFiles/openshot.dir/ImageWriter.cpp.o
-[ 43%] Building CXX object src/CMakeFiles/openshot.dir/TextReader.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/openshot.dir/ImageReader.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/openshot.dir/ImageWriter.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/openshot.dir/TextReader.cpp.o
 [ 43%] Linking CXX shared library libopenshot.so
 [ 43%] Built target openshot
-[ 45%] Swig compile openshot.i for ruby
 [ 45%] Swig compile openshot.i for python
-[ 45%] Building CXX object tests/CMakeFiles/openshot-AudioRecorder-test.dir/AudioRecorder.cpp.o
-[ 45%] Building CXX object tests/CMakeFiles/openshot-benchmark.dir/Benchmark.cpp.o
-[ 45%] Building CXX object examples/CMakeFiles/openshot-example.dir/Example.cpp.o
-[ 46%] Building CXX object src/CMakeFiles/openshot-wayland-capture.dir/WaylandScreenCaptureReader.cpp.o
-[ 48%] Building CXX object tests/CMakeFiles/openshot-DummyReader-test.dir/DummyReader.cpp.o
-[ 49%] Building CXX object tests/CMakeFiles/openshot-AudioWaveformer-test.dir/AudioWaveformer.cpp.o
-[ 49%] Building CXX object tests/CMakeFiles/openshot-AnimatedCurve-test.dir/AnimatedCurve.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/openshot-CacheDisk-test.dir/CacheDisk.cpp.o
-[ 51%] Building CXX object tests/CMakeFiles/openshot-CameraCaptureReader-test.dir/CameraCaptureReader.cpp.o
+[ 47%] Building CXX object examples/CMakeFiles/openshot-html-example.dir/ExampleHtml.cpp.o
+[ 47%] Building CXX object tests/CMakeFiles/openshot-Coordinate-test.dir/Coordinate.cpp.o
+[ 48%] Built target openshot-player_autogen_timestamp_deps
+[ 48%] Building CXX object tests/CMakeFiles/openshot-AnimatedCurve-test.dir/AnimatedCurve.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/openshot-wayland-capture.dir/WaylandScreenCaptureReader.cpp.o
+[ 51%] Building CXX object tests/CMakeFiles/openshot-CacheMemory-test.dir/CacheMemory.cpp.o
+[ 51%] Building CXX object tests/CMakeFiles/openshot-AudioWaveformer-test.dir/AudioWaveformer.cpp.o
 [ 51%] Building CXX object tests/CMakeFiles/openshot-AudioDeviceManager-test.dir/AudioDeviceManager.cpp.o
-[ 53%] Building CXX object examples/CMakeFiles/openshot-html-example.dir/ExampleHtml.cpp.o
-[ 53%] Building CXX object tests/CMakeFiles/openshot-Clip-test.dir/Clip.cpp.o
-[ 53%] Building CXX object tests/CMakeFiles/openshot-CacheMemory-test.dir/CacheMemory.cpp.o
-[ 53%] Building CXX object tests/CMakeFiles/openshot-FFmpegReader-test.dir/FFmpegReader.cpp.o
-[ 53%] Building CXX object tests/CMakeFiles/openshot-Coordinate-test.dir/Coordinate.cpp.o
-[ 54%] Built target openshot-player_autogen_timestamp_deps
-[ 54%] Building CXX object tests/CMakeFiles/openshot-Color-test.dir/Color.cpp.o
-[ 55%] Building CXX object tests/CMakeFiles/openshot-Caption-test.dir/Caption.cpp.o
+[ 51%] Building CXX object tests/CMakeFiles/openshot-Clip-test.dir/Clip.cpp.o
+[ 50%] Building CXX object tests/CMakeFiles/openshot-AudioRecorder-test.dir/AudioRecorder.cpp.o
+[ 52%] Building CXX object tests/CMakeFiles/openshot-CameraCaptureReader-test.dir/CameraCaptureReader.cpp.o
+[ 52%] Building CXX object tests/CMakeFiles/openshot-DummyReader-test.dir/DummyReader.cpp.o
+[ 52%] Building CXX object tests/CMakeFiles/openshot-CacheDisk-test.dir/CacheDisk.cpp.o
+[ 52%] Building CXX object tests/CMakeFiles/openshot-benchmark.dir/Benchmark.cpp.o
+[ 52%] Building CXX object examples/CMakeFiles/openshot-example.dir/Example.cpp.o
+[ 52%] Building CXX object tests/CMakeFiles/openshot-Caption-test.dir/Caption.cpp.o
+[ 53%] Building CXX object tests/CMakeFiles/openshot-Color-test.dir/Color.cpp.o
 [ 56%] Building CXX object tests/CMakeFiles/openshot-FFmpegWriter-test.dir/FFmpegWriter.cpp.o
+[ 56%] Building CXX object tests/CMakeFiles/openshot-FFmpegReader-test.dir/FFmpegReader.cpp.o
+[ 56%] Building CXX object tests/CMakeFiles/openshot-Fraction-test.dir/Fraction.cpp.o
 [ 56%] Linking CXX executable openshot-Coordinate-test
 [ 56%] Linking CXX executable openshot-AnimatedCurve-test
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
-[ 56%] Linking CXX executable openshot-example
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-Coordinate-test.dir/build.make:125: tests/openshot-Coordinate-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:4163: tests/CMakeFiles/openshot-Coordinate-test.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:4107: tests/CMakeFiles/openshot-Coordinate-test.dir/all] Error 2
 make[1]: *** Waiting for unfinished jobs....
 [ 56%] Building CXX object tests/CMakeFiles/openshot-benchmark.dir/BenchmarkOptions.cpp.o
-[ 56%] Building CXX object bindings/ruby/CMakeFiles/rbopenshot.dir/CMakeFiles/rbopenshot.dir/openshotRUBY_wrap.cxx.o
+[ 56%] Linking CXX executable openshot-example
+[ 56%] Linking CXX executable openshot-Fraction-test
 [ 56%] Linking CXX executable openshot-Color-test
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-AnimatedCurve-test.dir/build.make:125: tests/openshot-AnimatedCurve-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:3907: tests/CMakeFiles/openshot-AnimatedCurve-test.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:3851: tests/CMakeFiles/openshot-AnimatedCurve-test.dir/all] Error 2
+[ 57%] Linking CXX executable openshot-DummyReader-test
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
+[ 57%] Linking CXX executable openshot-html-example
+collect2: error: ld returned 1 exit status
+make[2]: *** [examples/CMakeFiles/openshot-example.dir/build.make:123: examples/openshot-example] Error 1
+make[1]: *** [CMakeFiles/Makefile2:3561: examples/CMakeFiles/openshot-example.dir/all] Error 2
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
-make[2]: *** [examples/CMakeFiles/openshot-example.dir/build.make:123: examples/openshot-example] Error 1
-make[1]: *** [CMakeFiles/Makefile2:3585: examples/CMakeFiles/openshot-example.dir/all] Error 2
-[ 56%] Linking CXX executable openshot-DummyReader-test
-[ 56%] Linking CXX executable openshot-CameraCaptureReader-test
-[ 56%] Linking CXX executable openshot-html-example
+make[2]: *** [tests/CMakeFiles/openshot-Fraction-test.dir/build.make:125: tests/openshot-Fraction-test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4235: tests/CMakeFiles/openshot-Fraction-test.dir/all] Error 2
+[ 57%] Building CXX object bindings/python/CMakeFiles/pyopenshot.dir/CMakeFiles/pyopenshot.dir/openshotPYTHON_wrap.cxx.o
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
-[ 56%] Building CXX object bindings/python/CMakeFiles/pyopenshot.dir/CMakeFiles/pyopenshot.dir/openshotPYTHON_wrap.cxx.o
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-Color-test.dir/build.make:125: tests/openshot-Color-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:4131: tests/CMakeFiles/openshot-Color-test.dir/all] Error 2
-[ 56%] Linking CXX executable openshot-FFmpegWriter-test
+make[1]: *** [CMakeFiles/Makefile2:4075: tests/CMakeFiles/openshot-Color-test.dir/all] Error 2
+[ 58%] Linking CXX executable openshot-CacheDisk-test
+[ 60%] Linking CXX executable openshot-Caption-test
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-DummyReader-test.dir/build.make:125: tests/openshot-DummyReader-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:4195: tests/CMakeFiles/openshot-DummyReader-test.dir/all] Error 2
-collect2: error: ld returned 1 exit status
-make[2]: *** [tests/CMakeFiles/openshot-CameraCaptureReader-test.dir/build.make:125: tests/openshot-CameraCaptureReader-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:3971: tests/CMakeFiles/openshot-CameraCaptureReader-test.dir/all] Error 2
-[ 56%] Linking CXX executable openshot-Caption-test
+make[1]: *** [CMakeFiles/Makefile2:4139: tests/CMakeFiles/openshot-DummyReader-test.dir/all] Error 2
+[ 60%] Linking CXX executable openshot-FFmpegWriter-test
+[ 60%] Linking CXX executable openshot-CameraCaptureReader-test
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
-[ 56%] Linking CXX executable openshot-CacheDisk-test
 collect2: error: ld returned 1 exit status
 make[2]: *** [examples/CMakeFiles/openshot-html-example.dir/build.make:127: examples/openshot-html-example] Error 1
-make[1]: *** [CMakeFiles/Makefile2:3617: examples/CMakeFiles/openshot-html-example.dir/all] Error 2
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
-collect2: error: ld returned 1 exit status
-make[2]: *** [tests/CMakeFiles/openshot-FFmpegWriter-test.dir/build.make:125: tests/openshot-FFmpegWriter-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:4259: tests/CMakeFiles/openshot-FFmpegWriter-test.dir/all] Error 2
-[ 58%] Linking CXX executable openshot-CacheMemory-test
+make[1]: *** [CMakeFiles/Makefile2:3593: examples/CMakeFiles/openshot-html-example.dir/all] Error 2
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-CacheDisk-test.dir/build.make:125: tests/openshot-CacheDisk-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:4003: tests/CMakeFiles/openshot-CacheDisk-test.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:3947: tests/CMakeFiles/openshot-CacheDisk-test.dir/all] Error 2
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-Caption-test.dir/build.make:125: tests/openshot-Caption-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:4067: tests/CMakeFiles/openshot-Caption-test.dir/all] Error 2
-[ 59%] Linking CXX executable openshot-AudioRecorder-test
-[ 59%] Linking CXX executable openshot-AudioDeviceManager-test
-[ 59%] Linking CXX executable openshot-AudioWaveformer-test
+make[1]: *** [CMakeFiles/Makefile2:4011: tests/CMakeFiles/openshot-Caption-test.dir/all] Error 2
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
+collect2: error: ld returned 1 exit status
+make[2]: *** [tests/CMakeFiles/openshot-CameraCaptureReader-test.dir/build.make:125: tests/openshot-CameraCaptureReader-test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:3915: tests/CMakeFiles/openshot-CameraCaptureReader-test.dir/all] Error 2
+collect2: error: ld returned 1 exit status
+make[2]: *** [tests/CMakeFiles/openshot-FFmpegWriter-test.dir/build.make:125: tests/openshot-FFmpegWriter-test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4203: tests/CMakeFiles/openshot-FFmpegWriter-test.dir/all] Error 2
+[ 60%] Linking CXX executable openshot-CacheMemory-test
+[ 61%] Linking CXX executable openshot-AudioDeviceManager-test
+[ 61%] Linking CXX executable openshot-FFmpegReader-test
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-CacheMemory-test.dir/build.make:125: tests/openshot-CacheMemory-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:4035: tests/CMakeFiles/openshot-CacheMemory-test.dir/all] Error 2
-[ 59%] Linking CXX executable openshot-FFmpegReader-test
-[ 59%] Linking CXX shared module libopenshot-wayland-capture.so
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
-[ 59%] Built target openshot-wayland-capture
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
+make[1]: *** [CMakeFiles/Makefile2:3979: tests/CMakeFiles/openshot-CacheMemory-test.dir/all] Error 2
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-AudioDeviceManager-test.dir/build.make:125: tests/openshot-AudioDeviceManager-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:3843: tests/CMakeFiles/openshot-AudioDeviceManager-test.dir/all] Error 2
-collect2: error: ld returned 1 exit status
-make[2]: *** [tests/CMakeFiles/openshot-AudioRecorder-test.dir/build.make:125: tests/openshot-AudioRecorder-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:3875: tests/CMakeFiles/openshot-AudioRecorder-test.dir/all] Error 2
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
-/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
-collect2: error: ld returned 1 exit status
-make[2]: *** [tests/CMakeFiles/openshot-AudioWaveformer-test.dir/build.make:125: tests/openshot-AudioWaveformer-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:3939: tests/CMakeFiles/openshot-AudioWaveformer-test.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:3787: tests/CMakeFiles/openshot-AudioDeviceManager-test.dir/all] Error 2
+[ 62%] Linking CXX executable openshot-AudioWaveformer-test
+[ 62%] Linking CXX executable openshot-AudioRecorder-test
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-FFmpegReader-test.dir/build.make:125: tests/openshot-FFmpegReader-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:4227: tests/CMakeFiles/openshot-FFmpegReader-test.dir/all] Error 2
-[ 60%] Linking CXX executable openshot-benchmark
+make[1]: *** [CMakeFiles/Makefile2:4171: tests/CMakeFiles/openshot-FFmpegReader-test.dir/all] Error 2
+[ 62%] Linking CXX shared module libopenshot-wayland-capture.so
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
+/usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
+collect2: error: ld returned 1 exit status
+make[2]: *** [tests/CMakeFiles/openshot-AudioWaveformer-test.dir/build.make:125: tests/openshot-AudioWaveformer-test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:3883: tests/CMakeFiles/openshot-AudioWaveformer-test.dir/all] Error 2
+collect2: error: ld returned 1 exit status
+make[2]: *** [tests/CMakeFiles/openshot-AudioRecorder-test.dir/build.make:125: tests/openshot-AudioRecorder-test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:3819: tests/CMakeFiles/openshot-AudioRecorder-test.dir/all] Error 2
+[ 62%] Built target openshot-wayland-capture
+[ 63%] Linking CXX executable openshot-benchmark
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-benchmark.dir/build.make:139: tests/openshot-benchmark] Error 1
-make[1]: *** [CMakeFiles/Makefile2:3811: tests/CMakeFiles/openshot-benchmark.dir/all] Error 2
-[ 60%] Linking CXX executable openshot-Clip-test
+make[1]: *** [CMakeFiles/Makefile2:3755: tests/CMakeFiles/openshot-benchmark.dir/all] Error 2
+[ 63%] Linking CXX executable openshot-Clip-test
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::Contains(long) const'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `openshot::TrackedObjectBBox::GetBox(long)'
 /usr/bin/ld: ../src/libopenshot.so.1.0.0: undefined reference to `typeinfo for openshot::TrackedObjectBBox'
 collect2: error: ld returned 1 exit status
 make[2]: *** [tests/CMakeFiles/openshot-Clip-test.dir/build.make:125: tests/openshot-Clip-test] Error 1
-make[1]: *** [CMakeFiles/Makefile2:4099: tests/CMakeFiles/openshot-Clip-test.dir/all] Error 2
-[ 61%] Linking CXX shared module openshot.so
-[ 61%] Built target rbopenshot
-[ 61%] Linking CXX shared module _openshot.so
-[ 61%] Built target pyopenshot
+make[1]: *** [CMakeFiles/Makefile2:4043: tests/CMakeFiles/openshot-Clip-test.dir/all] Error 2
+[ 65%] Linking CXX shared module _openshot.so
+[ 65%] Built target pyopenshot
 make: *** [Makefile:166: all] Error 2
 [1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
 [1m    Aborting...(B[m
