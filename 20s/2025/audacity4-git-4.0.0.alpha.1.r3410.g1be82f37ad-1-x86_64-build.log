@@ -79,20 +79,25 @@ to suppress it.
 -- [picojson] patch patch/0001-deterministic-number-serialization.patch
 -- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.6")
 -- Checking for module 'pugixml'
---   Package 'pugixml' not found
-CMake Error at /usr/share/cmake/Modules/FindPkgConfig.cmake:1093 (message):
-  The following required packages were not found:
+--   Found pugixml, version 1.16
+CMake Error at muse_deps/recipes/utfcpp/meta.cmake:10 (find_package):
+  Could not find a package configuration file provided by "utf8cpp" with any
+  of the following names:
 
-   - pugixml
+    utf8cpp.cps
+    utf8cppConfig.cmake
+    utf8cpp-config.cmake
 
+  Add the installation prefix of "utf8cpp" to CMAKE_PREFIX_PATH or set
+  "utf8cpp_DIR" to a directory containing one of the above files.  If
+  "utf8cpp" provides a separate development package or SDK, be sure it has
+  been installed.
 Call Stack (most recent call first):
-  /usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)
-  muse_deps/recipes/pugixml/meta.cmake:11 (pkg_check_modules)
-  muse_deps/buildtools/resolve.cmake:525 (pugixml_post_resolve)
+  muse_deps/buildtools/resolve.cmake:525 (utfcpp_post_resolve)
   muse_deps/buildtools/resolve.cmake:525 (cmake_language)
   muse_deps/buildtools/manifest.cmake:109 (extdeps_resolve)
   muse_deps/buildtools/manifest.cmake:240 (_extdeps_run)
-  muse/buildscripts/cmake/ExtDepsManifest.cmake:54 (require_source_dep)
+  muse/buildscripts/cmake/ExtDepsManifest.cmake:55 (require_source_dep)
   buildscripts/cmake/SetupDependencies.cmake:16 (include)
   CMakeLists.txt:195 (include)
 
