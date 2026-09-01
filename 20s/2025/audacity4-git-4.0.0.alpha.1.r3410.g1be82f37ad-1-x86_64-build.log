@@ -1,0 +1,102 @@
+CMake Warning (deprecated) at CMakeLists.txt:9 (cmake_policy):
+  The OLD behavior for policy CMP0091 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detected CPU Architecture: x86_64
+-- MUSE_APP_VERSION 4.0.0
+-- AU4_BUILD_CONFIGURATION: app
+-- AU4_BUILD_MODE: release
+-- AU4_BUILD_NUMBER: 
+-- Using Compiler GCC 16.2.1
+-- Setup development environment
+-- No compiler cache program found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found Cups: /usr/lib/libcups.so (found version "2.4.19")
+-- Qt version: 6.11.2
+-- Setup dependencies
+-- [nyquist] patch patch/0001-132173badf-cppcheck-fix-2-reports.patch
+-- [nyquist] patch patch/0002-016919a53b-bug1223-correction-fix-new-potential-cra.patch
+-- [nyquist] patch patch/0003-ecc2138c5c-comment-out-extra-tokens-at-end-of-endif.patch
+-- [nyquist] patch patch/0004-e6d069787b-fix-mistake-in-commit-a1dc830-and-add-a-.patch
+-- [nyquist] patch patch/0005-6b2a219e26-changes-to-make-xlisp-h-usable-in-c-code.patch
+-- [nyquist] patch patch/0006-2fec472ba2-lib-src-libnyquist-eliminate-register-lo.patch
+-- [nyquist] patch patch/0007-a3afdf80d0-lib-src-libnyquist-fix-warning-about-alw.patch
+-- [nyquist] patch patch/0008-5955dbc752-possible-fix-for-bug-590.patch
+-- [nyquist] patch patch/0009-5aa70545d5-use-casts-with-function-pointers-to-quie.patch
+-- [nyquist] patch patch/0010-5ba6072bbb-workaround-for-bug-2264.patch
+-- [nyquist] patch patch/0011-3dfc9d6dec-fix-build-on-cygwin-557.patch
+-- [nyquist] patch patch/0012-6181f406fd-fix-error-build-with-mingw-and-cygwin-55.patch
+-- [nyquist] patch patch/0013-29d35e46e9-misc-changes-to-get-new-nyquist-to-build.patch
+-- [nyquist] patch patch/0014-14b767b9eb-fix-bad-line-break-in-error-directive.patch
+-- [nyquist] patch patch/0015-ff60f598f3-fixes-2-bugs-in-nyquist-1-bug-2706-proba.patch
+-- [nyquist] patch patch/0016-0a085daa92-fix-build.patch
+-- [nyquist] patch patch/0017-91a557d838-this-fixes-a-problem-with-nyquist-s-trig.patch
+-- [nyquist] patch patch/0018-c216f46435-fix-bug-379.patch
+-- [nyquist] patch patch/0019-72d72d120d-issue-1642-fix-by-rdb-1672.patch
+-- [nyquist] patch patch/0020-91d64c4ed8-issue2372-nyquist-can-hang.patch
+-- [nyquist] patch patch/0021-91850989a0-adds-a-set-of-patches-to-better-support-.patch
+-- [nyquist] patch patch/0022-f5ac7bb104-typo-in-alpassvc-alg.patch
+-- [nyquist] patch patch/0023-3c42a58fba-typos-in-alpassvv-c.patch
+-- [nyquist] patch patch/0024-357aac03bc-typos-in-alpassvc-c.patch
+-- [nyquist] patch patch/0025-56807d780b-typo-in-alpassvv-alg.patch
+-- [nyquist] patch patch/0026-377e592e84-use-cstdint-instead-of-manually-defining.patch
+-- [nyquist] patch patch/0027-95a2dd95a8-add-a-set-of-patches-to-better-support-o.patch
+-- [nyquist] patch patch/0028-c4e391cfc4-move-debug-defines-after-including-stand.patch
+-- [nyquist] patch patch/0029-4191cfb837-freebsd-compilation-fixes.patch
+-- [nyquist] patch patch/0030-d881c57712-rename-swap-functions-to-not-conflict-wi.patch
+-- [pffft] patch patch/0001-audacity-fork.patch
+-- [sqlite] patch patch/0001-unused-parameter-warnings.patch
+-- [soxr] patch patch/0001-audacity-fixes.patch
+-- [sbsms] patch patch/0001-arm64-and-warning-fixes.patch
+-- [picojson] patch patch/0001-deterministic-number-serialization.patch
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.6")
+-- Checking for module 'pugixml'
+--   Package 'pugixml' not found
+CMake Error at /usr/share/cmake/Modules/FindPkgConfig.cmake:1093 (message):
+  The following required packages were not found:
+
+   - pugixml
+
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)
+  muse_deps/recipes/pugixml/meta.cmake:11 (pkg_check_modules)
+  muse_deps/buildtools/resolve.cmake:525 (pugixml_post_resolve)
+  muse_deps/buildtools/resolve.cmake:525 (cmake_language)
+  muse_deps/buildtools/manifest.cmake:109 (extdeps_resolve)
+  muse_deps/buildtools/manifest.cmake:240 (_extdeps_run)
+  muse/buildscripts/cmake/ExtDepsManifest.cmake:54 (require_source_dep)
+  buildscripts/cmake/SetupDependencies.cmake:16 (include)
+  CMakeLists.txt:195 (include)
+
+
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
