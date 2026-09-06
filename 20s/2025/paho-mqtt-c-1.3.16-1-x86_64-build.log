@@ -1,0 +1,126 @@
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMake version: 4.4.3
+-- CMake system name: Linux
+-- Timestamp is 2026-09-06T08:17:28Z
+-- Found OpenSSL: /usr/lib/libcrypto.so (found version "3.6.4")
+-- Using OpenSSL with headers at /usr/include
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/paho-mqtt-c/src/paho.mqtt.c/build
+[  2%] Building C object src/CMakeFiles/common_obj.dir/utf-8.c.o
+[  2%] Building C object src/CMakeFiles/common_obj.dir/MQTTPacket.c.o
+[  3%] Building C object src/CMakeFiles/common_ssl_obj.dir/Clients.c.o
+[  4%] Building C object src/CMakeFiles/common_obj.dir/MQTTTime.c.o
+[  6%] Building C object src/CMakeFiles/common_obj.dir/MQTTProtocolClient.c.o
+[  8%] Building C object src/CMakeFiles/common_ssl_obj.dir/MQTTTime.c.o
+[  8%] Building C object src/CMakeFiles/common_obj.dir/MQTTPersistence.c.o
+[ 10%] Building C object src/CMakeFiles/common_ssl_obj.dir/MQTTProtocolClient.c.o
+[ 10%] Building C object src/CMakeFiles/common_obj.dir/Clients.c.o
+[ 11%] Building C object src/CMakeFiles/common_obj.dir/Tree.c.o
+[ 15%] Building C object src/CMakeFiles/common_obj.dir/MQTTPacketOut.c.o
+[ 15%] Building C object src/CMakeFiles/common_ssl_obj.dir/utf-8.c.o
+[ 15%] Building C object src/CMakeFiles/common_obj.dir/Messages.c.o
+[ 17%] Building C object src/CMakeFiles/common_ssl_obj.dir/MQTTPacketOut.c.o
+[ 17%] Building C object src/CMakeFiles/common_ssl_obj.dir/MQTTPacket.c.o
+[ 19%] Building C object src/CMakeFiles/common_ssl_obj.dir/Messages.c.o
+[ 19%] Building C object src/CMakeFiles/common_obj.dir/Socket.c.o
+[ 20%] Building C object src/CMakeFiles/common_obj.dir/Log.c.o
+[ 23%] Building C object src/CMakeFiles/common_ssl_obj.dir/Socket.c.o
+[ 23%] Building C object src/CMakeFiles/common_ssl_obj.dir/Tree.c.o
+[ 24%] Building C object src/CMakeFiles/common_obj.dir/Thread.c.o
+[ 25%] Building C object src/CMakeFiles/common_ssl_obj.dir/Log.c.o
+[ 26%] Building C object src/CMakeFiles/common_ssl_obj.dir/MQTTPersistence.c.o
+[ 27%] Building C object src/CMakeFiles/common_obj.dir/MQTTProtocolOut.c.o
+[ 30%] Building C object src/CMakeFiles/common_obj.dir/SocketBuffer.c.o
+[ 30%] Building C object src/CMakeFiles/common_obj.dir/MQTTPersistenceDefault.c.o
+[ 31%] Building C object src/CMakeFiles/common_obj.dir/LinkedList.c.o
+[ 32%] Building C object src/CMakeFiles/common_obj.dir/MQTTProperties.c.o
+[ 33%] Building C object src/CMakeFiles/common_obj.dir/MQTTReasonCodes.c.o
+[ 34%] Building C object src/CMakeFiles/common_obj.dir/Base64.c.o
+[ 36%] Building C object src/CMakeFiles/common_obj.dir/SHA1.c.o
+[ 37%] Building C object src/CMakeFiles/common_obj.dir/WebSocket.c.o
+/build/paho-mqtt-c/src/paho.mqtt.c/src/MQTTProtocolOut.c: In function ‘MQTTProtocol_addressPort’:
+/build/paho-mqtt-c/src/paho.mqtt.c/src/MQTTProtocolOut.c:64:19: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   64 |         colon_pos = strrchr(uri, ':'); /* reverse find to allow for ':' in IPv6 addresses */
+      |                   ^
+[ 39%] Building C object src/CMakeFiles/common_obj.dir/Proxy.c.o
+[ 39%] Building C object src/CMakeFiles/common_ssl_obj.dir/Thread.c.o
+[ 40%] Building C object src/CMakeFiles/common_obj.dir/StackTrace.c.o
+[ 41%] Building C object src/CMakeFiles/common_obj.dir/Heap.c.o
+[ 43%] Building C object src/CMakeFiles/common_ssl_obj.dir/MQTTProtocolOut.c.o
+[ 44%] Building C object src/CMakeFiles/common_ssl_obj.dir/MQTTPersistenceDefault.c.o
+[ 45%] Building C object src/CMakeFiles/common_ssl_obj.dir/LinkedList.c.o
+[ 46%] Building C object src/CMakeFiles/common_ssl_obj.dir/SocketBuffer.c.o
+[ 47%] Building C object src/CMakeFiles/common_ssl_obj.dir/MQTTProperties.c.o
+[ 48%] Building C object src/CMakeFiles/common_ssl_obj.dir/MQTTReasonCodes.c.o
+[ 50%] Building C object src/CMakeFiles/common_ssl_obj.dir/Base64.c.o
+[ 51%] Building C object src/CMakeFiles/common_ssl_obj.dir/SHA1.c.o
+[ 52%] Building C object src/CMakeFiles/common_ssl_obj.dir/WebSocket.c.o
+[ 53%] Building C object src/CMakeFiles/common_ssl_obj.dir/Proxy.c.o
+[ 54%] Building C object src/CMakeFiles/common_ssl_obj.dir/StackTrace.c.o
+[ 55%] Building C object src/CMakeFiles/common_ssl_obj.dir/Heap.c.o
+[ 55%] Built target common_obj
+/build/paho-mqtt-c/src/paho.mqtt.c/src/MQTTProtocolOut.c: In function ‘MQTTProtocol_addressPort’:
+/build/paho-mqtt-c/src/paho.mqtt.c/src/MQTTProtocolOut.c:64:19: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   64 |         colon_pos = strrchr(uri, ':'); /* reverse find to allow for ':' in IPv6 addresses */
+      |                   ^
+[ 58%] Building C object src/CMakeFiles/paho-mqtt3a.dir/MQTTAsync.c.o
+[ 58%] Building C object src/CMakeFiles/paho-mqtt3c.dir/MQTTClient.c.o
+[ 59%] Building C object src/CMakeFiles/paho-mqtt3a.dir/MQTTAsyncUtils.c.o
+[ 59%] Built target common_ssl_obj
+[ 60%] Building C object src/CMakeFiles/paho-mqtt3as.dir/MQTTAsync.c.o
+[ 62%] Building C object src/CMakeFiles/paho-mqtt3cs.dir/SSLSocket.c.o
+[ 62%] Building C object src/CMakeFiles/paho-mqtt3as.dir/SSLSocket.c.o
+[ 63%] Building C object src/CMakeFiles/paho-mqtt3as.dir/MQTTAsyncUtils.c.o
+[ 65%] Building C object src/CMakeFiles/paho-mqtt3cs.dir/MQTTClient.c.o
+[ 66%] Linking C shared library libpaho-mqtt3c.so
+[ 67%] Linking C shared library libpaho-mqtt3a.so
+[ 68%] Linking C shared library libpaho-mqtt3cs.so
+[ 69%] Linking C shared library libpaho-mqtt3as.so
+[ 69%] Built target paho-mqtt3c
+[ 69%] Built target paho-mqtt3a
+[ 70%] Building C object src/samples/CMakeFiles/MQTTClient_subscribe.dir/MQTTClient_subscribe.c.o
+[ 72%] Building C object src/samples/CMakeFiles/MQTTClient_publish_async.dir/MQTTClient_publish_async.c.o
+[ 73%] Building C object src/samples/CMakeFiles/MQTTClient_publish.dir/MQTTClient_publish.c.o
+[ 73%] Built target paho-mqtt3as
+[ 74%] Building C object src/samples/CMakeFiles/MQTTAsync_subscribe.dir/MQTTAsync_subscribe.c.o
+[ 75%] Building C object src/samples/CMakeFiles/MQTTAsync_publish_time.dir/MQTTAsync_publish_time.c.o
+[ 76%] Building C object src/CMakeFiles/MQTTVersion.dir/MQTTVersion.c.o
+[ 77%] Building C object src/samples/CMakeFiles/MQTTAsync_publish.dir/MQTTAsync_publish.c.o
+[ 80%] Building C object src/samples/CMakeFiles/paho_c_pub.dir/paho_c_pub.c.o
+[ 80%] Building C object src/samples/CMakeFiles/paho_c_pub.dir/pubsub_opts.c.o
+[ 81%] Building C object src/samples/CMakeFiles/paho_c_sub.dir/paho_c_sub.c.o
+[ 82%] Building C object src/samples/CMakeFiles/paho_c_sub.dir/pubsub_opts.c.o
+[ 83%] Linking C executable MQTTClient_subscribe
+[ 84%] Linking C executable MQTTClient_publish
+[ 86%] Linking C executable MQTTClient_publish_async
+[ 87%] Linking C executable MQTTAsync_publish_time
+[ 88%] Linking C executable MQTTAsync_subscribe
+[ 89%] Linking C executable MQTTAsync_publish
+[ 90%] Linking C executable MQTTVersion
+[ 91%] Linking C executable paho_c_pub
+[ 93%] Linking C executable paho_c_sub
+[ 93%] Built target MQTTClient_publish
+[ 93%] Built target MQTTClient_subscribe
+[ 93%] Built target MQTTClient_publish_async
+[ 93%] Built target MQTTAsync_publish_time
+[ 93%] Built target MQTTAsync_subscribe
+[ 93%] Built target MQTTVersion
+[ 93%] Built target MQTTAsync_publish
+[ 93%] Built target paho-mqtt3cs
+[ 94%] Building C object src/samples/CMakeFiles/paho_cs_pub.dir/paho_cs_pub.c.o
+[ 95%] Building C object src/samples/CMakeFiles/paho_cs_sub.dir/pubsub_opts.c.o
+[ 96%] Building C object src/samples/CMakeFiles/paho_cs_pub.dir/pubsub_opts.c.o
+[ 97%] Building C object src/samples/CMakeFiles/paho_cs_sub.dir/paho_cs_sub.c.o
+[ 98%] Linking C executable paho_cs_sub
+[100%] Linking C executable paho_cs_pub
+[100%] Built target paho_c_sub
+[100%] Built target paho_c_pub
+[100%] Built target paho_cs_sub
+[100%] Built target paho_cs_pub

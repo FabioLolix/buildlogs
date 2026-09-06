@@ -1,0 +1,473 @@
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: no obvious need to run autopoint
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: no need to run autopoint (confirmed)
+autoreconf: running: aclocal --force -I m4
+autoreconf: running: /usr/bin/autoconf --force
+configure.ac:371: warning: AC_CHECK_HEADERS(${boringssl_dir}/include/openssl/opensslconf.h): you should use literals
+./lib/autoconf/headers.m4:218: AC_CHECK_HEADERS is expanded from...
+lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+configure.ac:371: the top level
+autoreconf: configure.ac: not running autoheader: no config headers
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:12: installing './compile'
+configure.ac:17: installing './config.guess'
+configure.ac:17: installing './config.sub'
+configure.ac:9: installing './install-sh'
+configure.ac:9: installing './missing'
+Makefile.am:53: warning: EXTRA_DIST multiply defined in condition TRUE ...
+Makefile.am:10: ... 'EXTRA_DIST' previously defined here
+src/Makefile.am: installing './depcomp'
+autoreconf: './config.sub' is updated
+autoreconf: './config.guess' is updated
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C23 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for "glib-2.0 >= 2.34
+                    gio-2.0 >= 2.34
+                    libconfig
+                    nice
+                    jansson >= 2.5
+                    libssl >= 1.0.1
+                    libcrypto
+                    zlib"... yes
+checking for library containing tls_config_set_ca_mem... no
+checking for nice_agent_set_port_range in -lnice... yes
+checking for nice_address_equal_no_port in -lnice... yes
+checking for nice_agent_close_async in -lnice... yes
+checking for nice_agent_new_full in -lnice... yes
+checking for nice_agent_consent_lost in -lnice... yes
+checking for dlopen in -ldl... yes
+checking for libsrtp2... yes
+checking for usrsctp_finish in -lusrsctp... yes
+checking for libcurl... yes
+checking for doxygen... no
+checking for dot... no
+checking for
+                    glib-2.0 >= 2.34
+                    jansson >= 2.5
+                  ... yes
+checking for libmicrohttpd >= 0.9.59... yes
+checking for lws_create_vhost in -lwebsockets... yes
+checking for lws_get_peer_simple in -lwebsockets... yes
+checking for amqp_error_string2 in -lrabbitmq... yes
+checking for rabbitmq-c/amqp.h... yes
+checking for MQTTAsync_create in -lpaho-mqtt3a... yes
+checking for nn_socket in -lnanomsg... yes
+checking for
+                    glib-2.0 >= 2.34
+                    jansson >= 2.5
+                  ... yes
+checking for sofia-sip-ua... yes
+checking for
+                   opus
+                  ... yes
+checking for ogg... yes
+checking for rnnoise... no
+checking for lua... yes
+checking for duktape... yes
+checking for
+                    glib-2.0 >= 2.34
+                    jansson >= 2.5
+                  ... yes
+checking for
+                    glib-2.0 >= 2.34
+                    jansson >= 2.5
+                  ... yes
+checking for npm... no
+checking for
+                           glib-2.0 >= 2.34
+                           jansson >= 2.5
+                           libssl >= 1.0.1
+                           libcrypto
+                           libavutil
+                           libavcodec
+                           libavformat
+                           ogg
+                           zlib
+                         ... yes
+checking for libpcap... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating html/Makefile
+config.status: creating docs/Makefile
+config.status: creating janus-gateway.pc
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Compiler:                  gcc
+libsrtp version:           2.x
+SSL/crypto library:        OpenSSL
+DTLS set-timeout:          not available
+Mutex implementation:      GMutex (native futex on Linux)
+DataChannels support:      yes
+Recordings post-processor: yes
+TURN REST API client:      yes
+Doxygen documentation:     no
+Transports:
+    REST (HTTP/HTTPS):     yes
+    WebSockets:            yes
+    RabbitMQ:              yes
+    MQTT:                  yes
+    Unix Sockets:          yes
+    Nanomsg:               yes
+Plugins:
+    Echo Test:             yes
+    Streaming:             yes
+    Video Call:            yes
+    SIP Gateway:           yes
+    NoSIP (RTP Bridge):    yes
+    Audio Bridge:          yes
+    Video Room:            yes
+    Record&Play:           yes
+    Text Room:             yes
+    Lua Interpreter:       yes
+    Duktape Interpreter:   yes
+Event handlers:
+    Sample event handler:  yes
+    WebSocket ev. handler: yes
+    RabbitMQ event handler:yes
+    MQTT event handler:    yes
+    Nanomsg event handler: yes
+    GELF event handler:    yes
+External loggers:
+    JSON file logger:      yes
+JavaScript modules:        no
+
+If this configuration is ok for you, do a 'make' to start building Janus. A 'make install' will install Janus and its plugins to the specified prefix. Finally, a 'make configs' will install some sample configuration files too (something you'll only want to do the first time, though).
+
+Making all in src
+make[1]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+echo "not-a-git-repo" | awk 'BEGIN {print "#include \"version.h\""} {print "const char *janus_build_git_sha = \"" $0"\";"} END {}' > version.c
+echo "Sun Sep  6 08:19:33 UTC 2026" | awk 'BEGIN {} {print "const char *janus_build_git_time = \""$0"\";"} END {} ' >> version.c
+echo "1401" | awk 'BEGIN {} {print "int janus_version = "$0";"} END {} ' >> version.c
+echo "1.4.1" | awk 'BEGIN {} {print "const char *janus_version_string = \""$0"\";"} END {} ' >> version.c
+PKG_CONFIG_PATH="" "/usr/bin/pkg-config" --modversion nice | awk 'BEGIN {} {print "const char *libnice_version_string = \""$0"\";"} END {} ' >> version.c
+make  all-am
+make[2]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+  CC       janus-apierror.o
+  CC       janus-auth.o
+  CC       janus-config.o
+  CC       janus-dtls.o
+  CC       janus-dtls-bio.o
+  CC       janus-events.o
+  CC       janus-ice.o
+  CC       janus-log.o
+  CC       janus-options.o
+  CC       janus-janus.o
+  CC       janus-record.o
+  CC       janus-rtcp.o
+  CC       janus-rtp.o
+  CC       janus-rtpfwd.o
+  CC       janus-sctp.o
+  CC       janus-sdp.o
+  CC       janus-sdp-utils.o
+  CC       janus-ip-utils.o
+  CC       janus-turnrest.o
+  CC       janus-utils.o
+echo "not-a-git-repo" | awk 'BEGIN {print "#include \"version.h\""} {print "const char *janus_build_git_sha = \"" $0"\";"} END {}' > version.c
+  CC       janus-text2pcap.o
+  CC       janus_cfgconv-janus-cfgconv.o
+  CC       janus_cfgconv-config.o
+  CC       janus_cfgconv-log.o
+  CC       janus_cfgconv-utils.o
+utils.c: In function ‘janus_get_codec_pt’:
+utils.c:427:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  427 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+utils.c: In function ‘janus_get_codec_from_pt’:
+utils.c:469:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  469 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+  CC       janus_pp_rec-log.o
+  CC       janus_pp_rec-utils.o
+  CC       postprocessing/mjr2pcap-mjr2pcap.o
+  CC       mjr2pcap-log.o
+rtp.c: In function ‘janus_rtp_header_extension_get_id’:
+rtp.c:72:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   72 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+rtp.c: In function ‘janus_rtp_header_extension_get_from_id’:
+rtp.c:101:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  101 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+  CC       mjr2pcap-utils.o
+  CC       plugins/libjanus_audiobridge_la-janus_audiobridge.lo
+  CC       plugins/libjanus_echotest_la-janus_echotest.lo
+  CC       plugins/libjanus_recordplay_la-janus_recordplay.lo
+utils.c: In function ‘janus_get_codec_pt’:
+utils.c:427:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  427 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+utils.c: In function ‘janus_get_codec_from_pt’:
+utils.c:469:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  469 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+  CC       plugins/libjanus_sip_la-janus_sip.lo
+  CC       plugins/libjanus_nosip_la-janus_nosip.lo
+utils.c: In function ‘janus_get_codec_pt’:
+utils.c:427:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  427 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+utils.c: In function ‘janus_get_codec_from_pt’:
+utils.c:469:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  469 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+  CC       plugins/libjanus_streaming_la-janus_streaming.lo
+  CC       plugins/libjanus_videocall_la-janus_videocall.lo
+  CC       plugins/libjanus_videoroom_la-janus_videoroom.lo
+  CC       plugins/libjanus_textroom_la-janus_textroom.lo
+  CC       plugins/libjanus_lua_la-janus_lua.lo
+  CC       plugins/libjanus_lua_la-janus_lua_extra.lo
+ice.c: In function ‘janus_ice_setup_local’:
+ice.c:3698:24: warning: variable ‘n’ set but not used [-Wunused-but-set-variable=]
+ 3698 |         int family, s, n;
+      |                        ^
+utils.c: In function ‘janus_get_codec_pt’:
+utils.c:427:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  427 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+utils.c: In function ‘janus_get_codec_from_pt’:
+utils.c:469:30: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  469 |                 char *next = strchr(line, '\n');
+      |                              ^~~~~~
+janus.c: In function ‘main’:
+janus.c:4892:34: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 4892 |                 char *stunport = strrchr(options.stun_server, ':');
+      |                                  ^~~~~~~
+janus.c:5140:33: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 5140 |                 char *maxport = strrchr(item->value, '-');
+      |                                 ^~~~~~~
+  CC       plugins/libjanus_duktape_la-janus_duktape.lo
+  CC       plugins/libjanus_duktape_la-janus_duktape_extra.lo
+  CC       transports/libjanus_http_la-janus_http.lo
+  CC       transports/libjanus_websockets_la-janus_websockets.lo
+  CC       transports/libjanus_rabbitmq_la-janus_rabbitmq.lo
+  CC       transports/libjanus_mqtt_la-janus_mqtt.lo
+plugins/janus_audiobridge.c: In function 'janus_audiobridge_init':
+plugins/janus_audiobridge.c:2615:41: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2615 |                         char *maxport = strrchr(rpr->value, '-');
+      |                                         ^~~~~~~
+  CC       transports/libjanus_pfunix_la-janus_pfunix.lo
+plugins/janus_nosip.c: In function 'janus_nosip_init':
+plugins/janus_nosip.c:972:41: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  972 |                         char *maxport = strrchr(item->value, '-');
+      |                                         ^~~~~~~
+plugins/janus_sip.c: In function 'janus_sip_init':
+plugins/janus_sip.c:2308:41: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2308 |                         char *maxport = strrchr(item->value, '-');
+      |                                         ^~~~~~~
+  CC       transports/libjanus_nanomsg_la-janus_nanomsg.lo
+plugins/janus_streaming.c: In function 'janus_streaming_init':
+plugins/janus_streaming.c:2115:41: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2115 |                         char *maxport = strrchr(range->value, '-');
+      |                                         ^~~~~~~
+/usr/bin/mkdir -p ../conf
+transports/janus_http.c: In function 'janus_http_create_daemon':
+transports/janus_http.c:443:40: warning: variable 'n' set but not used [-Wunused-but-set-variable=]
+  443 |                 int family = 0, s = 0, n = 0;
+      |                                        ^
+  GEN      ../conf/janus.plugin.recordplay.jcfg.sample
+/usr/bin/mkdir -p ../conf
+  GEN      ../conf/janus.plugin.streaming.jcfg.sample
+/usr/bin/mkdir -p ../conf
+/usr/bin/mkdir -p ../conf
+  GEN      ../conf/janus.plugin.lua.jcfg.sample
+  GEN      ../conf/janus.plugin.duktape.jcfg.sample
+echo "Sun Sep  6 08:19:33 UTC 2026" | awk 'BEGIN {} {print "const char *janus_build_git_time = \""$0"\";"} END {} ' >> version.c
+  CC       plugins/janus-plugin.o
+echo "1401" | awk 'BEGIN {} {print "int janus_version = "$0";"} END {} ' >> version.c
+echo "1.4.1" | awk 'BEGIN {} {print "const char *janus_version_string = \""$0"\";"} END {} ' >> version.c
+PKG_CONFIG_PATH="" "/usr/bin/pkg-config" --modversion nice | awk 'BEGIN {} {print "const char *libnice_version_string = \""$0"\";"} END {} ' >> version.c
+  CC       transports/janus-transport.o
+  CC       janus_cfgconv-version.o
+  CC       postprocessing/janus_pp_rec-pp-g711.o
+plugins/janus_streaming.c: In function 'janus_streaming_rtsp_parse_sdp':
+plugins/janus_streaming.c:8286:19: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 8286 |         char *m = strstr(buffer, pattern);
+      |                   ^~~~~~
+plugins/janus_streaming.c:8333:19: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 8333 |                 c = strstr(buffer, "c=IN IP4");
+      |                   ^
+  CC       postprocessing/janus_pp_rec-pp-g722.o
+  CC       postprocessing/janus_pp_rec-pp-l16.o
+  CC       postprocessing/janus_pp_rec-pp-h264.o
+  CC       postprocessing/janus_pp_rec-pp-av1.o
+  CC       postprocessing/janus_pp_rec-pp-avformat.o
+  CC       postprocessing/janus_pp_rec-pp-h265.o
+  CC       postprocessing/janus_pp_rec-pp-opus.o
+  CC       postprocessing/janus_pp_rec-pp-options.o
+  CC       postprocessing/janus_pp_rec-pp-srt.o
+  CC       postprocessing/janus_pp_rec-pp-binary.o
+  CC       postprocessing/janus_pp_rec-pp-webm.o
+  CC       postprocessing/janus_pp_rec-janus-pp-rec.o
+  CC       janus_pp_rec-version.o
+  CC       mjr2pcap-version.o
+  CC       events/libjanus_sampleevh_la-janus_sampleevh.lo
+  CC       events/libjanus_wsevh_la-janus_wsevh.lo
+  CC       events/libjanus_rabbitmqevh_la-janus_rabbitmqevh.lo
+  CC       events/libjanus_mqttevh_la-janus_mqttevh.lo
+  CC       events/libjanus_nanomsgevh_la-janus_nanomsgevh.lo
+  CC       events/libjanus_gelfevh_la-janus_gelfevh.lo
+  CC       loggers/libjanus_jsonlog_la-janus_jsonlog.lo
+  CC       plugins/audiobridge-deps/libjanus_audiobridge_la-jitter.lo
+  CC       plugins/audiobridge-deps/libjanus_audiobridge_la-resample.lo
+  CCLD     plugins/libjanus_echotest.la
+  CCLD     plugins/libjanus_recordplay.la
+  CCLD     plugins/libjanus_videocall.la
+  CCLD     plugins/libjanus_nosip.la
+  CCLD     plugins/libjanus_lua.la
+  CC       plugins/duktape-deps/libjanus_duktape_la-duk_module_duktape.lo
+  CC       plugins/duktape-deps/libjanus_duktape_la-duk_console.lo
+  CCLD     transports/libjanus_http.la
+  CCLD     transports/libjanus_websockets.la
+  CCLD     transports/libjanus_rabbitmq.la
+  CCLD     transports/libjanus_mqtt.la
+  CCLD     transports/libjanus_pfunix.la
+  CCLD     transports/libjanus_nanomsg.la
+  CC       janus-version.o
+  CCLD     janus-cfgconv
+  CCLD     janus-pp-rec
+  CCLD     mjr2pcap
+  CCLD     events/libjanus_sampleevh.la
+  CCLD     events/libjanus_wsevh.la
+  CCLD     events/libjanus_rabbitmqevh.la
+  CCLD     events/libjanus_mqttevh.la
+  CCLD     events/libjanus_nanomsgevh.la
+  CCLD     events/libjanus_gelfevh.la
+  CCLD     loggers/libjanus_jsonlog.la
+  CCLD     plugins/libjanus_sip.la
+  CCLD     plugins/libjanus_streaming.la
+  CCLD     plugins/libjanus_textroom.la
+  CCLD     plugins/libjanus_duktape.la
+  CCLD     janus
+  CCLD     plugins/libjanus_audiobridge.la
+plugins/janus_streaming.c: In function 'janus_streaming_rtsp_connect_to_server':
+plugins/janus_streaming.c:8389:9: warning: call to 'Wcurl_easy_setopt_err_long' declared with attribute warning: curl_easy_setopt expects a long argument [-Wattribute-warning]
+ 8389 |         curl_easy_setopt(curl, CURLOPT_TIMEOUT, source->rtsp_timeout);
+      |         ^
+plugins/janus_streaming.c:8390:9: warning: call to 'Wcurl_easy_setopt_err_long' declared with attribute warning: curl_easy_setopt expects a long argument [-Wattribute-warning]
+ 8390 |         curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, source->rtsp_conn_timeout);
+      |         ^
+  CCLD     plugins/libjanus_videoroom.la
+turnrest.c: In function 'janus_turnrest_request':
+turnrest.c:173:9: warning: call to 'Wcurl_easy_setopt_err_long' declared with attribute warning: curl_easy_setopt expects a long argument [-Wattribute-warning]
+  173 |         curl_easy_setopt(curl, CURLOPT_TIMEOUT, api_timeout);
+      |         ^
+make[2]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+make[1]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+Making all in html
+make[1]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1/html'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1/html'
+make[1]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1'
+/usr/bin/mkdir -p conf
+  GEN      conf/janus.jcfg.sample
+make[1]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1'

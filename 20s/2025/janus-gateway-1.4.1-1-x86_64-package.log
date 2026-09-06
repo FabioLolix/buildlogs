@@ -1,0 +1,213 @@
+/usr/bin/mkdir -p /build/janus-gateway/pkg/janus-gateway/etc/janus
+cp "/build/janus-gateway/src/janus-gateway-1.4.1/conf/janus.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.jcfg";
+make -C src configs
+Making install in src
+make[1]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+/usr/bin/mkdir -p /build/janus-gateway/pkg/janus-gateway/etc/janus
+make[1]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+echo "not-a-git-repo" | awk 'BEGIN {print "#include \"version.h\""} {print "const char *janus_build_git_sha = \"" $0"\";"} END {}' > version.c
+cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.transport.http.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.transport.http.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.transport.websockets.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.transport.websockets.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.transport.rabbitmq.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.transport.rabbitmq.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.transport.mqtt.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.transport.mqtt.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.transport.pfunix.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.transport.pfunix.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.transport.nanomsg.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.transport.nanomsg.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.eventhandler.sampleevh.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.eventhandler.sampleevh.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.eventhandler.wsevh.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.eventhandler.wsevh.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.eventhandler.rabbitmqevh.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.eventhandler.rabbitmqevh.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.eventhandler.mqttevh.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.eventhandler.mqttevh.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.eventhandler.nanomsgevh.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.eventhandler.nanomsgevh.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.eventhandler.gelfevh.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.eventhandler.gelfevh.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.logger.jsonlog.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.logger.jsonlog.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.audiobridge.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.audiobridge.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.echotest.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.echotest.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.recordplay.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.recordplay.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.sip.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.sip.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.nosip.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.nosip.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.streaming.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.streaming.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.videocall.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.videocall.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.videoroom.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.videoroom.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.textroom.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.textroom.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.lua.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.lua.jcfg"; cp "/build/janus-gateway/src/janus-gateway-1.4.1/src/../conf/janus.plugin.duktape.jcfg.sample" "/build/janus-gateway/pkg/janus-gateway/etc/janus/janus.plugin.duktape.jcfg";
+echo "Sun Sep  6 08:19:33 UTC 2026" | awk 'BEGIN {} {print "const char *janus_build_git_time = \""$0"\";"} END {} ' >> version.c
+echo "1401" | awk 'BEGIN {} {print "int janus_version = "$0";"} END {} ' >> version.c
+echo "1.4.1" | awk 'BEGIN {} {print "const char *janus_version_string = \""$0"\";"} END {} ' >> version.c
+PKG_CONFIG_PATH="" "/usr/bin/pkg-config" --modversion nice | awk 'BEGIN {} {print "const char *libnice_version_string = \""$0"\";"} END {} ' >> version.c
+make  install-am
+make[1]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+make[2]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+echo "not-a-git-repo" | awk 'BEGIN {print "#include \"version.h\""} {print "const char *janus_build_git_sha = \"" $0"\";"} END {}' > version.c
+echo "Sun Sep  6 08:19:33 UTC 2026" | awk 'BEGIN {} {print "const char *janus_build_git_time = \""$0"\";"} END {} ' >> version.c
+echo "1401" | awk 'BEGIN {} {print "int janus_version = "$0";"} END {} ' >> version.c
+echo "1.4.1" | awk 'BEGIN {} {print "const char *janus_version_string = \""$0"\";"} END {} ' >> version.c
+PKG_CONFIG_PATH="" "/usr/bin/pkg-config" --modversion nice | awk 'BEGIN {} {print "const char *libnice_version_string = \""$0"\";"} END {} ' >> version.c
+  CC       janus-version.o
+  CC       janus_cfgconv-version.o
+  CC       janus_pp_rec-version.o
+  CC       mjr2pcap-version.o
+  CCLD     mjr2pcap
+  CCLD     janus-pp-rec
+  CCLD     janus
+  CCLD     janus-cfgconv
+turnrest.c: In function 'janus_turnrest_request':
+turnrest.c:173:9: warning: call to 'Wcurl_easy_setopt_err_long' declared with attribute warning: curl_easy_setopt expects a long argument [-Wattribute-warning]
+  173 |         curl_easy_setopt(curl, CURLOPT_TIMEOUT, api_timeout);
+      |         ^
+make[3]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+echo "not-a-git-repo" | awk 'BEGIN {print "#include \"version.h\""} {print "const char *janus_build_git_sha = \"" $0"\";"} END {}' > version.c
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/duktape'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/etc/janus'
+ /usr/bin/install -c -m 644 plugins/duktape/echotest.js plugins/duktape/janus-sdp.js '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/duktape'
+ /usr/bin/install -c -m 644 ../conf/janus.transport.http.jcfg.sample ../conf/janus.transport.websockets.jcfg.sample ../conf/janus.transport.rabbitmq.jcfg.sample ../conf/janus.transport.mqtt.jcfg.sample ../conf/janus.transport.pfunix.jcfg.sample ../conf/janus.transport.nanomsg.jcfg.sample ../conf/janus.eventhandler.sampleevh.jcfg.sample ../conf/janus.eventhandler.wsevh.jcfg.sample ../conf/janus.eventhandler.rabbitmqevh.jcfg.sample ../conf/janus.eventhandler.mqttevh.jcfg.sample ../conf/janus.eventhandler.nanomsgevh.jcfg.sample ../conf/janus.eventhandler.gelfevh.jcfg.sample ../conf/janus.logger.jsonlog.jcfg.sample ../conf/janus.plugin.audiobridge.jcfg.sample ../conf/janus.plugin.echotest.jcfg.sample ../conf/janus.plugin.recordplay.jcfg.sample ../conf/janus.plugin.sip.jcfg.sample ../conf/janus.plugin.nosip.jcfg.sample ../conf/janus.plugin.streaming.jcfg.sample ../conf/janus.plugin.videocall.jcfg.sample ../conf/janus.plugin.videoroom.jcfg.sample ../conf/janus.plugin.textroom.jcfg.sample ../conf/janus.plugin.lua.jcfg.sample ../conf/janus.plugin.duktape.jcfg.sample '/build/janus-gateway/pkg/janus-gateway/etc/janus'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/include/janus/events'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/include/janus'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/lib/janus/loggers'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/include/janus/loggers'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   events/libjanus_sampleevh.la events/libjanus_wsevh.la events/libjanus_rabbitmqevh.la events/libjanus_mqttevh.la events/libjanus_nanomsgevh.la events/libjanus_gelfevh.la '/build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/lua'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   loggers/libjanus_jsonlog.la '/build/janus-gateway/pkg/janus-gateway/usr/lib/janus/loggers'
+ /usr/bin/install -c -m 644 events/eventhandler.h '/build/janus-gateway/pkg/janus-gateway/usr/include/janus/events'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/share/man/man1'
+ /usr/bin/install -c -m 644 loggers/logger.h '/build/janus-gateway/pkg/janus-gateway/usr/include/janus/loggers'
+ /usr/bin/install -c -m 644 apierror.h config.h log.h debug.h mutex.h record.h rtcp.h rtp.h rtpsrtp.h sdp-utils.h ip-utils.h utils.h refcount.h text2pcap.h '/build/janus-gateway/pkg/janus-gateway/usr/include/janus'
+ /usr/bin/install -c -m 644 plugins/lua/echotest.lua plugins/lua/videoroom.lua plugins/lua/janus-logger.lua plugins/lua/janus-sdp.lua '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/lua'
+ /usr/bin/install -c -m 644 janus.1 janus-cfgconv.1 postprocessing/janus-pp-rec.1 postprocessing/mjr2pcap.1 '/build/janus-gateway/pkg/janus-gateway/usr/share/man/man1'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/include/janus/plugins'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/recordings'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   plugins/libjanus_audiobridge.la plugins/libjanus_echotest.la plugins/libjanus_recordplay.la plugins/libjanus_sip.la plugins/libjanus_nosip.la plugins/libjanus_streaming.la plugins/libjanus_videocall.la plugins/libjanus_videoroom.la plugins/libjanus_textroom.la plugins/libjanus_lua.la plugins/libjanus_duktape.la '/build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/streams'
+ /usr/bin/install -c -m 644 plugins/plugin.h '/build/janus-gateway/pkg/janus-gateway/usr/include/janus/plugins'
+ /usr/bin/install -c -m 644 plugins/recordings/1234.nfo plugins/recordings/rec-sample-audio.mjr plugins/recordings/rec-sample-video.mjr '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/recordings'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/include/janus/transports'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports'
+ /usr/bin/install -c -m 644 plugins/streams/radio.alaw plugins/streams/remembrance.opus plugins/streams/test_gstreamer.sh plugins/streams/test_gstreamer1.sh plugins/streams/test_gstreamer_multistream.sh plugins/streams/test_gstreamer1_multistream.sh '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/streams'
+echo "Sun Sep  6 08:19:33 UTC 2026" | awk 'BEGIN {} {print "const char *janus_build_git_time = \""$0"\";"} END {} ' >> version.c
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   transports/libjanus_http.la transports/libjanus_websockets.la transports/libjanus_rabbitmq.la transports/libjanus_mqtt.la transports/libjanus_pfunix.la transports/libjanus_nanomsg.la '/build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports'
+ /usr/bin/install -c -m 644 transports/transport.h '/build/janus-gateway/pkg/janus-gateway/usr/include/janus/transports'
+echo "1401" | awk 'BEGIN {} {print "int janus_version = "$0";"} END {} ' >> version.c
+echo "1.4.1" | awk 'BEGIN {} {print "const char *janus_version_string = \""$0"\";"} END {} ' >> version.c
+PKG_CONFIG_PATH="" "/usr/bin/pkg-config" --modversion nice | awk 'BEGIN {} {print "const char *libnice_version_string = \""$0"\";"} END {} ' >> version.c
+libtool: install: /usr/bin/install -c loggers/.libs/libjanus_jsonlog.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/loggers/libjanus_jsonlog.so.2.0.10
+libtool: install: /usr/bin/install -c events/.libs/libjanus_sampleevh.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_sampleevh.so.2.0.10
+  CC       janus-version.o
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/loggers && { ln -s -f libjanus_jsonlog.so.2.0.10 libjanus_jsonlog.so.2 || { rm -f libjanus_jsonlog.so.2 && ln -s libjanus_jsonlog.so.2.0.10 libjanus_jsonlog.so.2; }; })
+  CC       janus_cfgconv-version.o
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_sampleevh.so.2.0.10 libjanus_sampleevh.so.2 || { rm -f libjanus_sampleevh.so.2 && ln -s libjanus_sampleevh.so.2.0.10 libjanus_sampleevh.so.2; }; })
+  CC       janus_pp_rec-version.o
+  CC       mjr2pcap-version.o
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_sampleevh.so.2.0.10 libjanus_sampleevh.so || { rm -f libjanus_sampleevh.so && ln -s libjanus_sampleevh.so.2.0.10 libjanus_sampleevh.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/loggers && { ln -s -f libjanus_jsonlog.so.2.0.10 libjanus_jsonlog.so || { rm -f libjanus_jsonlog.so && ln -s libjanus_jsonlog.so.2.0.10 libjanus_jsonlog.so; }; })
+libtool: install: /usr/bin/install -c events/.libs/libjanus_sampleevh.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_sampleevh.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_audiobridge.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_audiobridge.so.2.0.10
+libtool: install: /usr/bin/install -c loggers/.libs/libjanus_jsonlog.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/loggers/libjanus_jsonlog.la
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_http.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_http.so.2.0.10
+libtool: install: /usr/bin/install -c events/.libs/libjanus_wsevh.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_wsevh.so.2.0.10
+libtool: warning: remember to run 'libtool --finish /usr/lib/janus/loggers'
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_audiobridge.so.2.0.10 libjanus_audiobridge.so.2 || { rm -f libjanus_audiobridge.so.2 && ln -s libjanus_audiobridge.so.2.0.10 libjanus_audiobridge.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_http.so.2.0.10 libjanus_http.so.2 || { rm -f libjanus_http.so.2 && ln -s libjanus_http.so.2.0.10 libjanus_http.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_wsevh.so.2.0.10 libjanus_wsevh.so.2 || { rm -f libjanus_wsevh.so.2 && ln -s libjanus_wsevh.so.2.0.10 libjanus_wsevh.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_audiobridge.so.2.0.10 libjanus_audiobridge.so || { rm -f libjanus_audiobridge.so && ln -s libjanus_audiobridge.so.2.0.10 libjanus_audiobridge.so; }; })
+  CCLD     janus
+  CCLD     janus-cfgconv
+  CCLD     janus-pp-rec
+  CCLD     mjr2pcap
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_http.so.2.0.10 libjanus_http.so || { rm -f libjanus_http.so && ln -s libjanus_http.so.2.0.10 libjanus_http.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_wsevh.so.2.0.10 libjanus_wsevh.so || { rm -f libjanus_wsevh.so && ln -s libjanus_wsevh.so.2.0.10 libjanus_wsevh.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_audiobridge.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_audiobridge.la
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_http.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_http.la
+libtool: install: /usr/bin/install -c events/.libs/libjanus_wsevh.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_wsevh.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_echotest.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_echotest.so.2.0.10
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_websockets.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_websockets.so.2.0.10
+libtool: install: /usr/bin/install -c events/.libs/libjanus_rabbitmqevh.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_rabbitmqevh.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_echotest.so.2.0.10 libjanus_echotest.so.2 || { rm -f libjanus_echotest.so.2 && ln -s libjanus_echotest.so.2.0.10 libjanus_echotest.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_websockets.so.2.0.10 libjanus_websockets.so.2 || { rm -f libjanus_websockets.so.2 && ln -s libjanus_websockets.so.2.0.10 libjanus_websockets.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_rabbitmqevh.so.2.0.10 libjanus_rabbitmqevh.so.2 || { rm -f libjanus_rabbitmqevh.so.2 && ln -s libjanus_rabbitmqevh.so.2.0.10 libjanus_rabbitmqevh.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_echotest.so.2.0.10 libjanus_echotest.so || { rm -f libjanus_echotest.so && ln -s libjanus_echotest.so.2.0.10 libjanus_echotest.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_websockets.so.2.0.10 libjanus_websockets.so || { rm -f libjanus_websockets.so && ln -s libjanus_websockets.so.2.0.10 libjanus_websockets.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_rabbitmqevh.so.2.0.10 libjanus_rabbitmqevh.so || { rm -f libjanus_rabbitmqevh.so && ln -s libjanus_rabbitmqevh.so.2.0.10 libjanus_rabbitmqevh.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_echotest.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_echotest.la
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_websockets.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_websockets.la
+libtool: install: /usr/bin/install -c events/.libs/libjanus_rabbitmqevh.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_rabbitmqevh.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_recordplay.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_recordplay.so.2.0.10
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_rabbitmq.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_rabbitmq.so.2.0.10
+libtool: install: /usr/bin/install -c events/.libs/libjanus_mqttevh.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_mqttevh.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_recordplay.so.2.0.10 libjanus_recordplay.so.2 || { rm -f libjanus_recordplay.so.2 && ln -s libjanus_recordplay.so.2.0.10 libjanus_recordplay.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_rabbitmq.so.2.0.10 libjanus_rabbitmq.so.2 || { rm -f libjanus_rabbitmq.so.2 && ln -s libjanus_rabbitmq.so.2.0.10 libjanus_rabbitmq.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_mqttevh.so.2.0.10 libjanus_mqttevh.so.2 || { rm -f libjanus_mqttevh.so.2 && ln -s libjanus_mqttevh.so.2.0.10 libjanus_mqttevh.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_recordplay.so.2.0.10 libjanus_recordplay.so || { rm -f libjanus_recordplay.so && ln -s libjanus_recordplay.so.2.0.10 libjanus_recordplay.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_rabbitmq.so.2.0.10 libjanus_rabbitmq.so || { rm -f libjanus_rabbitmq.so && ln -s libjanus_rabbitmq.so.2.0.10 libjanus_rabbitmq.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_mqttevh.so.2.0.10 libjanus_mqttevh.so || { rm -f libjanus_mqttevh.so && ln -s libjanus_mqttevh.so.2.0.10 libjanus_mqttevh.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_recordplay.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_recordplay.la
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_rabbitmq.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_rabbitmq.la
+libtool: install: /usr/bin/install -c events/.libs/libjanus_mqttevh.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_mqttevh.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_sip.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_sip.so.2.0.10
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_mqtt.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_mqtt.so.2.0.10
+libtool: install: /usr/bin/install -c events/.libs/libjanus_nanomsgevh.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_nanomsgevh.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_sip.so.2.0.10 libjanus_sip.so.2 || { rm -f libjanus_sip.so.2 && ln -s libjanus_sip.so.2.0.10 libjanus_sip.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_nanomsgevh.so.2.0.10 libjanus_nanomsgevh.so.2 || { rm -f libjanus_nanomsgevh.so.2 && ln -s libjanus_nanomsgevh.so.2.0.10 libjanus_nanomsgevh.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_mqtt.so.2.0.10 libjanus_mqtt.so.2 || { rm -f libjanus_mqtt.so.2 && ln -s libjanus_mqtt.so.2.0.10 libjanus_mqtt.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_sip.so.2.0.10 libjanus_sip.so || { rm -f libjanus_sip.so && ln -s libjanus_sip.so.2.0.10 libjanus_sip.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_nanomsgevh.so.2.0.10 libjanus_nanomsgevh.so || { rm -f libjanus_nanomsgevh.so && ln -s libjanus_nanomsgevh.so.2.0.10 libjanus_nanomsgevh.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_mqtt.so.2.0.10 libjanus_mqtt.so || { rm -f libjanus_mqtt.so && ln -s libjanus_mqtt.so.2.0.10 libjanus_mqtt.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_sip.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_sip.la
+libtool: install: /usr/bin/install -c events/.libs/libjanus_nanomsgevh.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_nanomsgevh.la
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_mqtt.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_mqtt.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_nosip.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_nosip.so.2.0.10
+libtool: install: /usr/bin/install -c events/.libs/libjanus_gelfevh.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_gelfevh.so.2.0.10
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_pfunix.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_pfunix.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_gelfevh.so.2.0.10 libjanus_gelfevh.so.2 || { rm -f libjanus_gelfevh.so.2 && ln -s libjanus_gelfevh.so.2.0.10 libjanus_gelfevh.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_nosip.so.2.0.10 libjanus_nosip.so.2 || { rm -f libjanus_nosip.so.2 && ln -s libjanus_nosip.so.2.0.10 libjanus_nosip.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_pfunix.so.2.0.10 libjanus_pfunix.so.2 || { rm -f libjanus_pfunix.so.2 && ln -s libjanus_pfunix.so.2.0.10 libjanus_pfunix.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events && { ln -s -f libjanus_gelfevh.so.2.0.10 libjanus_gelfevh.so || { rm -f libjanus_gelfevh.so && ln -s libjanus_gelfevh.so.2.0.10 libjanus_gelfevh.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_nosip.so.2.0.10 libjanus_nosip.so || { rm -f libjanus_nosip.so && ln -s libjanus_nosip.so.2.0.10 libjanus_nosip.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_pfunix.so.2.0.10 libjanus_pfunix.so || { rm -f libjanus_pfunix.so && ln -s libjanus_pfunix.so.2.0.10 libjanus_pfunix.so; }; })
+libtool: install: /usr/bin/install -c events/.libs/libjanus_gelfevh.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/events/libjanus_gelfevh.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_nosip.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_nosip.la
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_pfunix.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_pfunix.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/janus/events'
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_streaming.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_streaming.so.2.0.10
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_nanomsg.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_nanomsg.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_nanomsg.so.2.0.10 libjanus_nanomsg.so.2 || { rm -f libjanus_nanomsg.so.2 && ln -s libjanus_nanomsg.so.2.0.10 libjanus_nanomsg.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_streaming.so.2.0.10 libjanus_streaming.so.2 || { rm -f libjanus_streaming.so.2 && ln -s libjanus_streaming.so.2.0.10 libjanus_streaming.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports && { ln -s -f libjanus_nanomsg.so.2.0.10 libjanus_nanomsg.so || { rm -f libjanus_nanomsg.so && ln -s libjanus_nanomsg.so.2.0.10 libjanus_nanomsg.so; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_streaming.so.2.0.10 libjanus_streaming.so || { rm -f libjanus_streaming.so && ln -s libjanus_streaming.so.2.0.10 libjanus_streaming.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_streaming.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_streaming.la
+libtool: install: /usr/bin/install -c transports/.libs/libjanus_nanomsg.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/transports/libjanus_nanomsg.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/janus/transports'
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_videocall.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_videocall.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_videocall.so.2.0.10 libjanus_videocall.so.2 || { rm -f libjanus_videocall.so.2 && ln -s libjanus_videocall.so.2.0.10 libjanus_videocall.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_videocall.so.2.0.10 libjanus_videocall.so || { rm -f libjanus_videocall.so && ln -s libjanus_videocall.so.2.0.10 libjanus_videocall.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_videocall.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_videocall.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_videoroom.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_videoroom.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_videoroom.so.2.0.10 libjanus_videoroom.so.2 || { rm -f libjanus_videoroom.so.2 && ln -s libjanus_videoroom.so.2.0.10 libjanus_videoroom.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_videoroom.so.2.0.10 libjanus_videoroom.so || { rm -f libjanus_videoroom.so && ln -s libjanus_videoroom.so.2.0.10 libjanus_videoroom.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_videoroom.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_videoroom.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_textroom.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_textroom.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_textroom.so.2.0.10 libjanus_textroom.so.2 || { rm -f libjanus_textroom.so.2 && ln -s libjanus_textroom.so.2.0.10 libjanus_textroom.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_textroom.so.2.0.10 libjanus_textroom.so || { rm -f libjanus_textroom.so && ln -s libjanus_textroom.so.2.0.10 libjanus_textroom.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_textroom.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_textroom.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_lua.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_lua.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_lua.so.2.0.10 libjanus_lua.so.2 || { rm -f libjanus_lua.so.2 && ln -s libjanus_lua.so.2.0.10 libjanus_lua.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_lua.so.2.0.10 libjanus_lua.so || { rm -f libjanus_lua.so && ln -s libjanus_lua.so.2.0.10 libjanus_lua.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_lua.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_lua.la
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_duktape.so.2.0.10 /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_duktape.so.2.0.10
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_duktape.so.2.0.10 libjanus_duktape.so.2 || { rm -f libjanus_duktape.so.2 && ln -s libjanus_duktape.so.2.0.10 libjanus_duktape.so.2; }; })
+libtool: install: (cd /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins && { ln -s -f libjanus_duktape.so.2.0.10 libjanus_duktape.so || { rm -f libjanus_duktape.so && ln -s libjanus_duktape.so.2.0.10 libjanus_duktape.so; }; })
+libtool: install: /usr/bin/install -c plugins/.libs/libjanus_duktape.lai /build/janus-gateway/pkg/janus-gateway/usr/lib/janus/plugins/libjanus_duktape.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/janus/plugins'
+turnrest.c: In function 'janus_turnrest_request':
+turnrest.c:173:9: warning: call to 'Wcurl_easy_setopt_err_long' declared with attribute warning: curl_easy_setopt expects a long argument [-Wattribute-warning]
+  173 |         curl_easy_setopt(curl, CURLOPT_TIMEOUT, api_timeout);
+      |         ^
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c janus janus-cfgconv janus-pp-rec mjr2pcap '/build/janus-gateway/pkg/janus-gateway/usr/bin'
+libtool: install: /usr/bin/install -c janus /build/janus-gateway/pkg/janus-gateway/usr/bin/janus
+libtool: install: /usr/bin/install -c janus-cfgconv /build/janus-gateway/pkg/janus-gateway/usr/bin/janus-cfgconv
+libtool: install: /usr/bin/install -c janus-pp-rec /build/janus-gateway/pkg/janus-gateway/usr/bin/janus-pp-rec
+libtool: install: /usr/bin/install -c mjr2pcap /build/janus-gateway/pkg/janus-gateway/usr/bin/mjr2pcap
+make[3]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+make[2]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+make[1]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1/src'
+Making install in html
+make[1]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1/html'
+make[2]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1/html'
+make[2]: Nothing to be done for 'install-exec-am'.
+true
+/usr/bin/mkdir -p /build/janus-gateway/pkg/janus-gateway/usr/share/janus/html
+cp -r * /build/janus-gateway/pkg/janus-gateway/usr/share/janus/html
+rm -f /build/janus-gateway/pkg/janus-gateway/usr/share/janus/html/Makefile*
+make[2]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1/html'
+make[1]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1/html'
+make[1]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1'
+make[2]: Entering directory '/build/janus-gateway/src/janus-gateway-1.4.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/etc/janus'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/share/doc/janus-gateway'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/javascript'
+ /usr/bin/mkdir -p '/build/janus-gateway/pkg/janus-gateway/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 conf/janus.jcfg.sample '/build/janus-gateway/pkg/janus-gateway/etc/janus'
+ /usr/bin/install -c -m 644 README.md '/build/janus-gateway/pkg/janus-gateway/usr/share/doc/janus-gateway'
+ /usr/bin/install -c -m 644 html/demos/janus.js '/build/janus-gateway/pkg/janus-gateway/usr/share/janus/javascript'
+ /usr/bin/install -c -m 644 janus-gateway.pc '/build/janus-gateway/pkg/janus-gateway/usr/lib/pkgconfig'
+make[2]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1'
+make[1]: Leaving directory '/build/janus-gateway/src/janus-gateway-1.4.1'

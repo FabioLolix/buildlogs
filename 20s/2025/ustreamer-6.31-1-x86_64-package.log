@@ -1,0 +1,37 @@
+make apps
+make[1]: Entering directory '/build/ustreamer/src/ustreamer-build'
+make -C src
+make[2]: Entering directory '/build/ustreamer/src/ustreamer-build/src'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/ustreamer/src/ustreamer-build/src'
+for i in src/*.bin; do \
+	test ! -x $i || ln -sf $i `basename $i .bin`; \
+done
+make[1]: Leaving directory '/build/ustreamer/src/ustreamer-build'
+make python
+make[1]: Entering directory '/build/ustreamer/src/ustreamer-build'
+make -C python
+make[2]: Entering directory '/build/ustreamer/src/ustreamer-build/python'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/ustreamer/src/ustreamer-build/python'
+make[1]: Leaving directory '/build/ustreamer/src/ustreamer-build'
+make -C src install
+make[1]: Entering directory '/build/ustreamer/src/ustreamer-build/src'
+mkdir -p /build/ustreamer/pkg/ustreamer/usr/bin
+for i in ustreamer ustreamer-dump; do \
+	install -m755 $i.bin /build/ustreamer/pkg/ustreamer/usr/bin/$i; \
+done
+make[1]: Leaving directory '/build/ustreamer/src/ustreamer-build/src'
+make -C python install
+make[1]: Entering directory '/build/ustreamer/src/ustreamer-build/python'
+python3 -m pip install dist/*.whl --ignore-installed --prefix=/usr --root=/build/ustreamer/pkg/ustreamer
+Processing ./dist/ustreamer-6.31-cp314-cp314-linux_x86_64.whl
+Installing collected packages: ustreamer
+Successfully installed ustreamer-6.31
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+make[1]: Leaving directory '/build/ustreamer/src/ustreamer-build/python'
+mkdir -p /build/ustreamer/pkg/ustreamer/usr/share/man/man1
+for man in ustreamer-dump.1 ustreamer.1; do \
+	install -m644 man/$man /build/ustreamer/pkg/ustreamer/usr/share/man/man1/$man; \
+	gzip -f /build/ustreamer/pkg/ustreamer/usr/share/man/man1/$man; \
+done
