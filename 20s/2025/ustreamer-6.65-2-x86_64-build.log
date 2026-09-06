@@ -1,0 +1,91 @@
+make apps
+make[1]: Entering directory '/build/ustreamer/src/ustreamer-build'
+make -C src
+make[2]: Entering directory '/build/ustreamer/src/ustreamer-build/src'
+-- CC libs/base64.c
+-- CC libs/capture.c
+-- CC libs/chip.c
+-- CC libs/controls.c
+-- CC libs/fpsi.c
+-- CC libs/frame.c
+-- CC libs/frametext.c
+-- CC libs/frametext_font.c
+-- CC libs/logging.c
+-- CC libs/media.c
+-- CC libs/memsink.c
+-- CC libs/memsinksh.c
+-- CC libs/options.c
+-- CC libs/queue.c
+-- CC libs/ring.c
+-- CC libs/signal.c
+-- CC libs/unjpeg.c
+-- CC ustreamer/blank.c
+-- CC ustreamer/data/favicon_ico.c
+-- CC ustreamer/data/index_html.c
+-- CC ustreamer/encoder.c
+-- CC ustreamer/encoders/cpu/encoder.c
+-- CC ustreamer/encoders/hw/encoder.c
+-- CC ustreamer/http/mime.c
+-- CC ustreamer/http/path.c
+-- CC ustreamer/http/server.c
+-- CC ustreamer/http/static.c
+-- CC ustreamer/http/tools.c
+-- CC ustreamer/m2m.c
+-- CC ustreamer/main.c
+-- CC ustreamer/options.c
+-- CC ustreamer/stream.c
+-- CC ustreamer/workers.c
+-- CC ustreamer/gpio/gpio.c
+-- CC ustreamer/http/systemd/systemd.c
+-- CC dump/file.c
+-- CC dump/main.c
+== LD ustreamer.bin
+== LD ustreamer-dump.bin
+make[2]: Leaving directory '/build/ustreamer/src/ustreamer-build/src'
+for i in src/*.bin; do \
+	test ! -x $i || ln -sf $i `basename $i .bin`; \
+done
+make[1]: Leaving directory '/build/ustreamer/src/ustreamer-build'
+make python
+make[1]: Entering directory '/build/ustreamer/src/ustreamer-build'
+make -C python
+make[2]: Entering directory '/build/ustreamer/src/ustreamer-build/python'
+== PY_BUILD ustreamer-*.so
+rm -rf root
+* Building wheel...
+running bdist_wheel
+running build
+running build_ext
+building 'ustreamer' extension
+gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ustreamer/src=/usr/src/debug/ustreamer -flto=auto -fPIC -UNDEBUG -I/usr/include/python3.14 -c src/uslibs/frame.c -o build/temp.linux-x86_64-cpython-314/src/uslibs/frame.o -std=c17 -D_GNU_SOURCE "-DUS_FEATURES=\"WITH_GPIO=1 WITH_JANUS=0 WITH_PDEATHSIG=1 WITH_PTHREAD_NP=1 WITH_PYTHON=1 WITH_SETPROCTITLE=1 WITH_SYSTEMD=1 WITH_V4P=0\""
+gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ustreamer/src=/usr/src/debug/ustreamer -flto=auto -fPIC -UNDEBUG -I/usr/include/python3.14 -c src/uslibs/memsinksh.c -o build/temp.linux-x86_64-cpython-314/src/uslibs/memsinksh.o -std=c17 -D_GNU_SOURCE "-DUS_FEATURES=\"WITH_GPIO=1 WITH_JANUS=0 WITH_PDEATHSIG=1 WITH_PTHREAD_NP=1 WITH_PYTHON=1 WITH_SETPROCTITLE=1 WITH_SYSTEMD=1 WITH_V4P=0\""
+gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ustreamer/src=/usr/src/debug/ustreamer -flto=auto -fPIC -UNDEBUG -I/usr/include/python3.14 -c src/ustreamer.c -o build/temp.linux-x86_64-cpython-314/src/ustreamer.o -std=c17 -D_GNU_SOURCE "-DUS_FEATURES=\"WITH_GPIO=1 WITH_JANUS=0 WITH_PDEATHSIG=1 WITH_PTHREAD_NP=1 WITH_PYTHON=1 WITH_SETPROCTITLE=1 WITH_SYSTEMD=1 WITH_V4P=0\""
+gcc -shared -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/ustreamer/src=/usr/src/debug/ustreamer -flto=auto build/temp.linux-x86_64-cpython-314/src/uslibs/frame.o build/temp.linux-x86_64-cpython-314/src/uslibs/memsinksh.o build/temp.linux-x86_64-cpython-314/src/ustreamer.o -L/usr/lib -lrt -lm -lpthread -o build/lib.linux-x86_64-cpython-314/ustreamer.cpython-314-x86_64-linux-gnu.so
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+copying build/lib.linux-x86_64-cpython-314/ustreamer.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/.
+running install_egg_info
+running egg_info
+creating ustreamer.egg-info
+writing ustreamer.egg-info/PKG-INFO
+writing dependency_links to ustreamer.egg-info/dependency_links.txt
+writing top-level names to ustreamer.egg-info/top_level.txt
+writing manifest file 'ustreamer.egg-info/SOURCES.txt'
+reading manifest file 'ustreamer.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'ustreamer.egg-info/SOURCES.txt'
+Copying ustreamer.egg-info to build/bdist.linux-x86_64/wheel/./ustreamer-6.65-py3.14.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/ustreamer-6.65.dist-info/WHEEL
+creating '/build/ustreamer/src/ustreamer-build/python/dist/.tmp-6x339fuv/ustreamer-6.65-cp314-cp314-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'ustreamer.cpython-314-x86_64-linux-gnu.so'
+adding 'ustreamer-6.65.dist-info/METADATA'
+adding 'ustreamer-6.65.dist-info/WHEEL'
+adding 'ustreamer-6.65.dist-info/top_level.txt'
+adding 'ustreamer-6.65.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built ustreamer-6.65-cp314-cp314-linux_x86_64.whl
+make[2]: Leaving directory '/build/ustreamer/src/ustreamer-build/python'
+make[1]: Leaving directory '/build/ustreamer/src/ustreamer-build'
