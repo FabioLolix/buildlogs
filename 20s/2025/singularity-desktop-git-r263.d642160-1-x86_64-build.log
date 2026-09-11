@@ -83,11 +83,22 @@ singularity-gestures| C++ compiler for the host machine: c++ (gcc 16.2.1 "c++ (G
 singularity-gestures| C++ linker for the host machine: c++ ld.bfd 2.47
 singularity-gestures| Run-time dependency sdl2 found: YES 2.32.72
 singularity-gestures| Run-time dependency gl found: YES 1.2
-singularity-gestures| Did not find CMake 'cmake'
-singularity-gestures| Found CMake: NO
-singularity-gestures| Run-time dependency glu found: NO  (tried pkg-config)
+singularity-gestures| Run-time dependency glu found: YES 9.0.3
+singularity-gestures| Run-time dependency gstreamer-1.0 found: YES 1.28.7
+singularity-gestures| Run-time dependency gstreamer-app-1.0 found: YES 1.28.7
+singularity-gestures| Run-time dependency gstreamer-video-1.0 found: YES 1.28.7
+singularity-gestures| Dependency cairo for host machine found: YES 1.18.4 (cached)
+singularity-gestures| Dependency pangocairo for host machine found: YES 1.58.2 (cached)
+singularity-gestures| Run-time dependency x11 found: YES 1.8.13
+singularity-gestures| Dependency gtk4 for host machine found: YES 4.22.5 (cached)
+singularity-gestures| Dependency gio-2.0 for host machine found: YES 2.88.3 (cached)
+singularity-gestures| Dependency gtk4-layer-shell-0 for host machine found: YES 1.3.0 (cached)
+singularity-gestures| Dependency wayland-client for host machine found: YES 1.26.0 (cached)
+singularity-gestures| Run-time dependency xkbcommon found: YES 1.13.2
+singularity-gestures| Run-time dependency threads found: YES
+singularity-gestures| Library dl found: YES
 
-subprojects/singularity-gestures/meson.build:15:10: ERROR: Dependency "glu" not found (tried pkg-config)
+subprojects/singularity-gestures/meson.build:30:6: ERROR: Include dir runtime/include does not exist.
 
 A full log can be found at /build/singularity-desktop-git/src/singularity-desktop/build/meson-logs/meson-log.txt
 [1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
