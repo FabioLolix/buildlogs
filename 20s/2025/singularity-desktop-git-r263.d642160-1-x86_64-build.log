@@ -81,12 +81,13 @@ singularity-gestures| C compiler for the host machine: cc (gcc 16.2.1 "cc (GCC) 
 singularity-gestures| C linker for the host machine: cc ld.bfd 2.47
 singularity-gestures| C++ compiler for the host machine: c++ (gcc 16.2.1 "c++ (GCC) 16.2.1 20260810")
 singularity-gestures| C++ linker for the host machine: c++ ld.bfd 2.47
-singularity-gestures| sdl2-config found: NO
+singularity-gestures| Run-time dependency sdl2 found: YES 2.32.72
+singularity-gestures| Run-time dependency gl found: YES 1.2
 singularity-gestures| Did not find CMake 'cmake'
 singularity-gestures| Found CMake: NO
-singularity-gestures| Run-time dependency sdl2 found: NO  (tried pkg-config and config-tool)
+singularity-gestures| Run-time dependency glu found: NO  (tried pkg-config)
 
-subprojects/singularity-gestures/meson.build:13:10: ERROR: Dependency "sdl2" not found (tried pkg-config and config-tool)
+subprojects/singularity-gestures/meson.build:15:10: ERROR: Dependency "glu" not found (tried pkg-config)
 
 A full log can be found at /build/singularity-desktop-git/src/singularity-desktop/build/meson-logs/meson-log.txt
 [1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
