@@ -12,26 +12,353 @@
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
-CMake Error at CMakeLists.txt:19 (find_package):
-  By not providing "FindKF6FrameworkIntegration.cmake" in CMAKE_MODULE_PATH
-  this project has asked CMake to find a package configuration file provided
-  by "KF6FrameworkIntegration", but CMake did not find one.
+-- Found WrapVulkanHeaders: /usr/include
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_BINDIR got its value from CMAKE_INSTALL_BINDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_BINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_BINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:255 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
 
-  Could not find a package configuration file provided by
-  "KF6FrameworkIntegration" with any of the following names:
 
-    KF6FrameworkIntegration.cps
-    kf6frameworkintegration.cps
-    KF6FrameworkIntegrationConfig.cmake
-    kf6frameworkintegration-config.cmake
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SBINDIR got its value from CMAKE_INSTALL_SBINDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SBINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SBINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:258 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
 
-  Add the installation prefix of "KF6FrameworkIntegration" to
-  CMAKE_PREFIX_PATH or set "KF6FrameworkIntegration_DIR" to a directory
-  containing one of the above files.  If "KF6FrameworkIntegration" provides a
-  separate development package or SDK, be sure it has been installed.
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBDIR got its value from CMAKE_INSTALL_LIBDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:261 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
 
 
--- Configuring incomplete, errors occurred!
-[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
-[1m    Aborting...(B[m
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INCLUDEDIR got its value from CMAKE_INSTALL_INCLUDEDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INCLUDEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INCLUDEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:279 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALSTATEDIR got its value from CMAKE_INSTALL_LOCALSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_LOCALSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_LOCALSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:288 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SHAREDSTATEDIR got its value from CMAKE_INSTALL_SHAREDSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_SHAREDSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_SHAREDSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:291 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATAROOTDIR got its value from CMAKE_INSTALL_DATAROOTDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATAROOTDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATAROOTDIR instead to suppress this
+  message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:299 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATADIR got its value from CMAKE_INSTALL_DATADIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATADIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATADIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:304 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALEDIR got its value from CMAKE_INSTALL_LOCALEDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LOCALEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LOCALEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:332 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_MANDIR got its value from CMAKE_INSTALL_MANDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_MANDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_MANDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:357 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INFODIR got its value from CMAKE_INSTALL_INFODIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INFODIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INFODIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:360 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SYSCONFDIR got its value from CMAKE_INSTALL_SYSCONFDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SYSCONFDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SYSCONFDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:387 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  src/AeroQt/private/CMakeLists.txt:5 (include)
+
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- The C compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Could not set up the appstream test. appstreamcli is missing.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found KF6XmlGui: /usr/lib/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.30.0")
+-- Found KF6: success (found version "6.30.0") found components: XmlGui
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Checking for module 'gio-2.0'
+--   Found gio-2.0, version 2.88.3
+-- Could not set up the appstream test. appstreamcli is missing.
+-- Configuring done (3.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /build/libaero-qt-git/src/build
+[1/47] cd /build/libaero-qt-git/src/build/src/kcm && /usr/lib/kf6/kcmdesktopfilegenerator /build/libaero-qt-git/src/libaero-qt-git/src/kcm/kcm_aerotheme.json /build/libaero-qt-git/src/build/src/kcm/kcm_aerotheme.desktop
+[2/47] Generating aerothemesettings_gen.h, aerothemesettings_gen.cpp
+[3/47] Automatic MOC and UIC for target AeroQtPrivateSettings
+[4/47] Building CXX object src/AeroQt/private/CMakeFiles/AeroQtPrivateSettings.dir/AeroQtPrivateSettings_autogen/mocs_compilation.cpp.o
+[5/47] Building CXX object src/AeroQt/private/CMakeFiles/AeroQtPrivateSettings.dir/aerothemesettings_gen.cpp.o
+[6/47] Automatic MOC and UIC for target AeroQt
+[7/47] Running AUTOMOC file extraction for target AeroQt
+[8/47] Running moc --collect-json for target AeroQt
+[9/47] Automatic RCC for src/resources/res.qrc
+[10/47] Building CXX object CMakeFiles/AeroQt.dir/AeroQt_autogen/F4FAE6NH3Q/qrc_res.cpp.o
+[11/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/util/props.cpp.o
+[12/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/stylesheet.cpp.o
+[13/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/page.cpp.o
+[14/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/util/objecteventlistener.cpp.o
+[15/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/util/image9.cpp.o
+[16/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/private/aerothemesettings.cpp.o
+[17/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/private/themewatcher.cpp.o
+[18/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/usericon.cpp.o
+[19/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/browser.cpp.o
+[20/47] Building CXX object CMakeFiles/AeroQt.dir/AeroQt_autogen/mocs_compilation.cpp.o
+[21/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/branding.cpp.o
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/branding.cpp: In function ‘QVariant Aero::Branding::custom(const char*)’:
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/branding.cpp:28:26: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   28 |                 file.open(QIODevice::ReadOnly);
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/QtCore:92,
+                 from /build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/branding.cpp:4:
+/usr/include/qt6/QtCore/qfile.h:264:32: note: declared here
+  264 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[22/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/private/imagebutton.cpp.o
+[23/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/util/flowlayout.cpp.o
+[24/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/wizard.cpp.o
+[25/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/navbuttons.cpp.o
+[26/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/infostrip.cpp.o
+[27/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/insetwindow.cpp.o
+[28/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/actionpgph.cpp.o
+[29/47] Building CXX object CMakeFiles/AeroQt.dir/src/AeroQt/private/customqstyle.cpp.o
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/private/customqstyle.cpp: In static member function ‘static void Aero::Private::CustomQStyle::applyQss(QWidget*)’:
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/private/customqstyle.cpp:206:15: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  206 |         f.open(QFile::ReadOnly | QFile::Text);
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/QtCore:92,
+                 from /usr/include/qt6/QtWidgets/QtWidgetsDepends:3,
+                 from /usr/include/qt6/QtWidgets/QtWidgets:3,
+                 from /build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/private/customqstyle.cpp:8:
+/usr/include/qt6/QtCore/qfile.h:264:32: note: declared here
+  264 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[30/47] Linking CXX shared library libAeroQt.so.6.0.1
+[31/47] Creating library symlink libAeroQt.so.0 libAeroQt.so
+[32/47] Automatic MOC and UIC for target AeroQt-Kvantum
+[33/47] Automatic MOC and UIC for target FlatpakManager
+[34/47] Automatic MOC and UIC for target kcm_aerotheme
+[35/47] Building CXX object demos/flatpak-manager/CMakeFiles/FlatpakManager.dir/FlatpakManager_autogen/mocs_compilation.cpp.o
+[36/47] Building CXX object src/theme-plugin/CMakeFiles/AeroQt-Kvantum.dir/AeroQt-Kvantum_autogen/mocs_compilation.cpp.o
+[37/47] Building CXX object src/theme-plugin/CMakeFiles/AeroQt-Kvantum.dir/customqstyleplugin.cpp.o
+[38/47] Building CXX object demos/flatpak-manager/CMakeFiles/FlatpakManager.dir/installwizard_qt.cpp.o
+[39/47] Linking CXX shared module src/theme-plugin/libAeroQt-Kvantum.so
+[40/47] Building CXX object src/kcm/CMakeFiles/kcm_aerotheme.dir/toolbarruleeditor.cpp.o
+In file included from /build/libaero-qt-git/src/libaero-qt-git/src/kcm/toolbarruleeditor.cpp:5:
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/util/scopefn.h:72:1: warning: multi-line comment [-Wcomment]
+   72 | // [&](auto& obj) {                                                                                      \
+      | ^
+[41/47] Building CXX object demos/flatpak-manager/CMakeFiles/FlatpakManager.dir/mainwindow.cpp.o
+In file included from /build/libaero-qt-git/src/libaero-qt-git/demos/flatpak-manager/mainwindow.cpp:9:
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/util/scopefn.h:72:1: warning: multi-line comment [-Wcomment]
+   72 | // [&](auto& obj) {                                                                                      \
+      | ^
+/build/libaero-qt-git/src/libaero-qt-git/demos/flatpak-manager/mainwindow.cpp: In instantiation of ‘MainWindow::MainWindow(QWidget*)::<lambda(auto:75&)> [with auto:75 = QAction*]’:
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/util/scopefn.h:41:11:   required from ‘Type operator+(Type, AlsoType<Fn>) [with Type = QAction*; Fn = MainWindow::MainWindow(QWidget*)::<lambda(auto:75&)>]’
+   41 |         b.closure(a);
+      |         ~~~~~~~~~^~~
+/build/libaero-qt-git/src/libaero-qt-git/demos/flatpak-manager/mainwindow.cpp:75:5:   required from here
+   75 |     });
+      |     ^
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/util/scopefn.h:36:34: warning: unused parameter ‘it’ [-Wunused-parameter]
+   36 | #define also alsoTag->*[&](auto& it)
+      |                            ~~~~~~^~
+/build/libaero-qt-git/src/libaero-qt-git/demos/flatpak-manager/mainwindow.cpp:73:43: note: in expansion of macro ‘also’
+   73 |     ui->ap->setTitleAction(ui->aActions + also {
+      |                                           ^~~~
+[42/47] Building CXX object src/kcm/CMakeFiles/kcm_aerotheme.dir/brandingoverrideseditor.cpp.o
+In file included from /build/libaero-qt-git/src/libaero-qt-git/src/kcm/brandingoverrideseditor.cpp:8:
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/util/scopefn.h:72:1: warning: multi-line comment [-Wcomment]
+   72 | // [&](auto& obj) {                                                                                      \
+      | ^
+/build/libaero-qt-git/src/libaero-qt-git/src/kcm/brandingoverrideseditor.cpp: In member function ‘void BrandingOverridesEditor::load(QString)’:
+/build/libaero-qt-git/src/libaero-qt-git/src/kcm/brandingoverrideseditor.cpp:96:18: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   96 |         file.open(QIODevice::ReadOnly);
+      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/QtCore:92,
+                 from /usr/include/qt6/QtWidgets/QtWidgetsDepends:3,
+                 from /usr/include/qt6/QtWidgets/QtWidgets:3,
+                 from /build/libaero-qt-git/src/libaero-qt-git/src/kcm/qvariantstuff.h:4,
+                 from /build/libaero-qt-git/src/libaero-qt-git/src/kcm/brandingoverrideseditor.cpp:4:
+/usr/include/qt6/QtCore/qfile.h:264:32: note: declared here
+  264 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/build/libaero-qt-git/src/libaero-qt-git/src/kcm/brandingoverrideseditor.cpp: In member function ‘void BrandingOverridesEditor::save(QString)’:
+/build/libaero-qt-git/src/libaero-qt-git/src/kcm/brandingoverrideseditor.cpp:125:18: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  125 |         file.open(QIODevice::WriteOnly);
+      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:264:32: note: declared here
+  264 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[43/47] Building CXX object src/kcm/CMakeFiles/kcm_aerotheme.dir/kcm_aerotheme_autogen/mocs_compilation.cpp.o
+[44/47] Building CXX object src/kcm/CMakeFiles/kcm_aerotheme.dir/qvariantstuff.cpp.o
+In file included from /build/libaero-qt-git/src/libaero-qt-git/src/kcm/qvariantstuff.cpp:3:
+/build/libaero-qt-git/src/libaero-qt-git/src/AeroQt/util/scopefn.h:72:1: warning: multi-line comment [-Wcomment]
+   72 | // [&](auto& obj) {                                                                                      \
+      | ^
+/build/libaero-qt-git/src/libaero-qt-git/src/kcm/qvariantstuff.cpp: In member function ‘virtual void CustomTypeDelegate::updateEditorGeometry(QWidget*, const QStyleOptionViewItem&, const QModelIndex&) const’:
+/build/libaero-qt-git/src/libaero-qt-git/src/kcm/qvariantstuff.cpp:207:119: warning: unused parameter ‘index’ [-Wunused-parameter]
+  207 | void CustomTypeDelegate::updateEditorGeometry(QWidget *editor, const QStyleOptionViewItem &option, const QModelIndex &index) const {
+      |                                                                                                    ~~~~~~~~~~~~~~~~~~~^~~~~
+[45/47] Building CXX object src/kcm/CMakeFiles/kcm_aerotheme.dir/aerothemekcm.cpp.o
+[46/47] Linking CXX executable bin/FlatpakManager
+[47/47] Linking CXX shared module src/kcm/kcm_aerotheme.so
