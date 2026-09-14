@@ -1,0 +1,77 @@
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /build/linux-explorer/src/build
+[1/38] Automatic MOC and UIC for target explorer
+[2/38] Automatic RCC for src/ui/win7ui.qrc
+[3/38] Building CXX object CMakeFiles/explorer.dir/src/aero/icons.cpp.o
+[4/38] Building CXX object CMakeFiles/explorer.dir/src/aero/sounds.cpp.o
+[5/38] Building CXX object CMakeFiles/explorer.dir/src/aero/capacitybar.cpp.o
+[6/38] Building CXX object CMakeFiles/explorer.dir/src/data/Settings.cpp.o
+[7/38] Building CXX object CMakeFiles/explorer.dir/src/aero/artwork.cpp.o
+[8/38] Building CXX object CMakeFiles/explorer.dir/src/data/AutoMount.cpp.o
+[9/38] Building CXX object CMakeFiles/explorer.dir/src/aero/taskdialog.cpp.o
+[10/38] Building CXX object CMakeFiles/explorer.dir/src/model/DriveLabel.cpp.o
+[11/38] Building CXX object CMakeFiles/explorer.dir/src/ui/MainWindow.cpp.o
+FAILED: [code=1] CMakeFiles/explorer.dir/src/ui/MainWindow.cpp.o 
+/usr/bin/c++ -DKCOREADDONS_LIB -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_XML_LIB -I/build/linux-explorer/src/build/explorer_autogen/include -I/build/linux-explorer/src/linux-explorer-0.1/src/data -I/build/linux-explorer/src/linux-explorer-0.1/src/model -I/build/linux-explorer/src/linux-explorer-0.1/src/ui -I/build/linux-explorer/src/linux-explorer-0.1/src -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtConcurrent -isystem /usr/include/qt6/QtMultimedia -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/KF6/KIOCore -isystem /usr/include/KF6/KIO -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KIOGui -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigCore -isystem /usr/include/KF6/KService -isystem /usr/include/KF6/KIOWidgets -isystem /usr/include/KF6/KJobWidgets -isystem /usr/include/KF6/KCompletion -isystem /usr/include/KF6/KWidgetsAddons -isystem /usr/include/KF6/KIOFileWidgets -isystem /usr/include/KF6/KBookmarks -isystem /usr/include/qt6/QtXml -isystem /usr/include/KF6/KItemViews -isystem /usr/include/KF6/Solid -isystem /usr/include/KF6/KWindowSystem -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/linux-explorer/src=/usr/src/debug/linux-explorer -flto=auto -O3 -DNDEBUG -std=gnu++17 -mno-direct-extern-access -MD -MT CMakeFiles/explorer.dir/src/ui/MainWindow.cpp.o -MF CMakeFiles/explorer.dir/src/ui/MainWindow.cpp.o.d -o CMakeFiles/explorer.dir/src/ui/MainWindow.cpp.o -c /build/linux-explorer/src/linux-explorer-0.1/src/ui/MainWindow.cpp
+/build/linux-explorer/src/linux-explorer-0.1/src/ui/MainWindow.cpp:42:10: fatal error: AeroQt/notifystrip.h: No such file or directory
+   42 | #include <AeroQt/notifystrip.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[12/38] Building CXX object CMakeFiles/explorer.dir/src/ui/AboutDialog.cpp.o
+[13/38] Building CXX object CMakeFiles/explorer.dir/src/data/Branding.cpp.o
+[14/38] Building CXX object CMakeFiles/explorer.dir/src/aero/listview.cpp.o
+[15/38] Building CXX object CMakeFiles/explorer.dir/src/aero/arrows.cpp.o
+[16/38] Building CXX object CMakeFiles/explorer.dir/src/aero/strips.cpp.o
+[17/38] Building CXX object CMakeFiles/explorer.dir/src/aero/text.cpp.o
+[18/38] Building CXX object CMakeFiles/explorer.dir/src/aero/buttons.cpp.o
+[19/38] Building CXX object CMakeFiles/explorer.dir/src/model/Archives.cpp.o
+[20/38] Building CXX object CMakeFiles/explorer.dir/src/ui/AccessDialogs.cpp.o
+[21/38] Building CXX object CMakeFiles/explorer.dir/src/data/FileManagerService.cpp.o
+[22/38] Building CXX object CMakeFiles/explorer.dir/src/ui/FileProgressDialog.cpp.o
+[23/38] Building CXX object CMakeFiles/explorer.dir/src/main.cpp.o
+[24/38] Building CXX object CMakeFiles/explorer.dir/src/model/ComputerModel.cpp.o
+[25/38] Building CXX object CMakeFiles/explorer.dir/src/model/GroupingProxy.cpp.o
+[26/38] Building CXX object CMakeFiles/explorer.dir/src/ui/ComputerView.cpp.o
+[27/38] Building CXX object CMakeFiles/explorer.dir/src/model/FileOps.cpp.o
+[28/38] Building CXX object CMakeFiles/explorer.dir/src/model/DirectoryModel.cpp.o
+[29/38] Building CXX object CMakeFiles/explorer.dir/explorer_autogen/mocs_compilation.cpp.o
+[30/38] Building CXX object CMakeFiles/explorer.dir/src/ui/MapDriveDialog.cpp.o
+[31/38] Building CXX object CMakeFiles/explorer.dir/src/ui/OptionsDialog.cpp.o
+[32/38] Building CXX object CMakeFiles/explorer.dir/src/ui/DetailsPane.cpp.o
+[33/38] Building CXX object CMakeFiles/explorer.dir/src/ui/PreviewPane.cpp.o
+[34/38] Building CXX object CMakeFiles/explorer.dir/src/ui/MountDialog.cpp.o
+[35/38] Building CXX object CMakeFiles/explorer.dir/src/ui/FileView.cpp.o
+[36/38] Building CXX object CMakeFiles/explorer.dir/src/ui/NavigationPane.cpp.o
+ninja: build stopped: subcommand failed.
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
