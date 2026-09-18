@@ -2,6 +2,7 @@ Lockfile is up to date, resolution step is skipped
 Packages: +1373
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Progress: resolved 0, reused 0, downloaded 1, added 0
+Progress: resolved 0, reused 0, downloaded 70, added 57
 
    ╭─────────────────────────────────────────╮
    │                                         │
@@ -11,18 +12,25 @@ Progress: resolved 0, reused 0, downloaded 1, added 0
    │                                         │
    ╰─────────────────────────────────────────╯
 
-Progress: resolved 0, reused 0, downloaded 106, added 81
-Progress: resolved 0, reused 0, downloaded 214, added 226
- WARN  Tarball download average speed 17 KiB/s (size 18 KiB) is below 50 KiB/s: https://registry.npmjs.org/cosmiconfig/-/cosmiconfig-8.3.6.tgz (GET)
-Progress: resolved 0, reused 0, downloaded 356, added 363
-Progress: resolved 0, reused 0, downloaded 541, added 572
-Progress: resolved 0, reused 0, downloaded 674, added 740
-Progress: resolved 0, reused 0, downloaded 888, added 979
-Progress: resolved 0, reused 0, downloaded 1139, added 1249
-Progress: resolved 0, reused 0, downloaded 1243, added 1358
-Progress: resolved 0, reused 0, downloaded 1250, added 1366
-Progress: resolved 0, reused 0, downloaded 1251, added 1366
-Progress: resolved 0, reused 0, downloaded 1251, added 1367
+ WARN  Tarball download average speed 45 KiB/s (size 49 KiB) is below 50 KiB/s: https://registry.npmjs.org/json5/-/json5-2.2.3.tgz (GET)
+Progress: resolved 0, reused 0, downloaded 159, added 138
+Progress: resolved 0, reused 0, downloaded 257, added 261
+Progress: resolved 0, reused 0, downloaded 410, added 421
+Progress: resolved 0, reused 0, downloaded 552, added 588
+ WARN  Tarball download average speed 8 KiB/s (size 15 KiB) is below 50 KiB/s: https://registry.npmjs.org/@eslint/core/-/core-0.14.0.tgz (GET)
+ WARN  Tarball download average speed 41 KiB/s (size 59 KiB) is below 50 KiB/s: https://registry.npmjs.org/jackspeak/-/jackspeak-3.4.3.tgz (GET)
+Progress: resolved 0, reused 0, downloaded 622, added 680
+ WARN  Tarball download average speed 29 KiB/s (size 29 KiB) is below 50 KiB/s: https://registry.npmjs.org/global-agent/-/global-agent-3.0.0.tgz (GET)
+ WARN  Tarball download average speed 9 KiB/s (size 14 KiB) is below 50 KiB/s: https://registry.npmjs.org/minimatch/-/minimatch-5.1.9.tgz (GET)
+Progress: resolved 0, reused 0, downloaded 732, added 807
+Progress: resolved 0, reused 0, downloaded 853, added 933
+ WARN  Tarball download average speed 18 KiB/s (size 27 KiB) is below 50 KiB/s: https://registry.npmjs.org/jest-haste-map/-/jest-haste-map-29.7.0.tgz (GET)
+Progress: resolved 0, reused 0, downloaded 1065, added 1162
+ WARN  Tarball download average speed 12 KiB/s (size 36 KiB) is below 50 KiB/s: https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.27.1.tgz (GET)
+Progress: resolved 0, reused 0, downloaded 1239, added 1354
+ WARN  Tarball download average speed 23 KiB/s (size 29 KiB) is below 50 KiB/s: https://registry.npmjs.org/type-fest/-/type-fest-0.13.1.tgz (GET)
+Progress: resolved 0, reused 0, downloaded 1245, added 1360
+Progress: resolved 0, reused 0, downloaded 1249, added 1365
 Progress: resolved 0, reused 0, downloaded 1252, added 1368
 Progress: resolved 0, reused 0, downloaded 1253, added 1369
 Progress: resolved 0, reused 0, downloaded 1254, added 1369
@@ -31,28 +39,10 @@ Progress: resolved 0, reused 0, downloaded 1255, added 1370
 Progress: resolved 0, reused 0, downloaded 1255, added 1372
 Progress: resolved 0, reused 0, downloaded 1256, added 1372
 Progress: resolved 0, reused 0, downloaded 1256, added 1373, done
-node_modules/@swc/core postinstall$ node postinstall.js
-node_modules/esbuild postinstall$ node install.js
-node_modules/@swc/core postinstall: Done
-node_modules/vite/node_modules/esbuild postinstall$ node install.js
-node_modules/unrs-resolver postinstall$ napi-postinstall unrs-resolver 1.9.1 check
-node_modules/esbuild postinstall: Done
-node_modules/vite/node_modules/esbuild postinstall: Done
-node_modules/unrs-resolver postinstall: Done
 
-. prepare$ husky install
-. prepare: husky - Git hooks installed
-. prepare: Done
-╭ Warning ─────────────────────────────────────────────────────────────────────╮
-│                                                                              │
-│   Ignored build scripts: @parcel/watcher@2.5.1.                              │
-│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
-│   to run scripts.                                                            │
-│                                                                              │
-╰──────────────────────────────────────────────────────────────────────────────╯
-Done in 25.3s using pnpm v10.28.0
+Done in 33.8s using pnpm v10.28.0
 
-> heroic@2.22.3 download-helper-binaries /build/heroic-games-launcher/src/HeroicGamesLauncher
+> heroic@2.22.3 download-helper-binaries /build/heroic-games-launcher-git/src/HeroicGamesLauncher
 > esbuild --bundle --platform=node --target=node21 meta/downloadHelperBinaries.ts | node
 
 Downloading: [ 'legendary', 'gogdl', 'nile', 'comet', 'epic-integration' ]
@@ -85,27 +75,39 @@ Done downloading GalaxyCommunication for win32 x64
 Done downloading EpicGamesLauncher for win32 x64
 Done downloading gogdl for linux x64
 Done downloading gogdl for linux arm64
-Done downloading legendary for linux arm64
 Done downloading legendary for linux x64
-Done downloading nile for darwin x64
+Done downloading legendary for linux arm64
 Done downloading nile for darwin arm64
 Done downloading gogdl for darwin arm64
-Done downloading nile for linux x64
-Done downloading nile for linux arm64
-Done downloading gogdl for darwin x64
 Done downloading comet for linux arm64
+Done downloading nile for darwin x64
+Done downloading nile for linux x64
 Done downloading comet for darwin arm64
+Done downloading nile for linux arm64
 Done downloading comet for win32 arm64
+Done downloading comet for linux x64
+Done downloading comet for darwin x64
+Done downloading gogdl for darwin x64
 Done downloading comet for win32 x64
 Done downloading gogdl for win32 x64
-Done downloading comet for darwin x64
 Done downloading gogdl for win32 arm64
 Done downloading nile for win32 x64
-Done downloading comet for linux x64
-Done downloading legendary for darwin x64
-Done downloading legendary for win32 x64
 Done downloading legendary for darwin arm64
+Done downloading legendary for darwin x64
 Done downloading legendary for win32 arm64
+Done downloading legendary for win32 x64
+
+> heroic@2.22.3 dist:linux /build/heroic-games-launcher-git/src/HeroicGamesLauncher
+> pnpm run build && electron-builder --linux --dir --x64 -c.electronDist=/usr/lib/electron43/ -c.electronVersion=43.7.1
+
+
+> heroic@2.22.3 prebuild /build/heroic-games-launcher-git/src/HeroicGamesLauncher
+> rm -rf build
+
+
+> heroic@2.22.3 build /build/heroic-games-launcher-git/src/HeroicGamesLauncher
+> electron-vite build
+
 vite v6.3.5 building SSR bundle for production...
 transforming...
 ✓ 942 modules transformed.
@@ -122,14 +124,14 @@ build/main/chunks/windows4.js       9.31 kB │ map:     4.30 kB
 build/main/chunks/windows.js       10.59 kB │ map:     4.87 kB
 build/main/chunks/index.js        764.92 kB │ map:   418.06 kB
 build/main/main.js             13,221.07 kB │ map: 7,067.67 kB
-✓ built in 5.10s
+✓ built in 5.67s
 vite v6.3.5 building SSR bundle for production...
 transforming...
 ✓ 13 modules transformed.
 rendering chunks...
 build/preload/webviewPreload.js   3.07 kB
 build/preload/index.js           11.07 kB
-✓ built in 28ms
+✓ built in 60ms
 vite v6.3.5 building for production...
 transforming...
 ✓ 13042 modules transformed.
@@ -211,16 +213,16 @@ build/assets/App.js                               1,067.08 kB
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 11.08s
+✓ built in 11.36s
   • electron-builder  version=26.8.1 os=7.2.4-arch1-2
-  • loaded configuration  file=/build/heroic-games-launcher/src/HeroicGamesLauncher/electron-builder.yml
-  • detected workspace root for project using packageManager field  pm=pnpm config=pnpm@10.28.0 resolved=/build/heroic-games-launcher/src/HeroicGamesLauncher projectDir=/build/heroic-games-launcher/src/HeroicGamesLauncher
-  • executing @electron/rebuild  electronVersion=43.7.1 arch=x64 buildFromSource=false workspaceRoot=/build/heroic-games-launcher/src/HeroicGamesLauncher projectDir=./ appDir=./
+  • loaded configuration  file=/build/heroic-games-launcher-git/src/HeroicGamesLauncher/electron-builder.yml
+  • detected workspace root for project using packageManager field  pm=pnpm config=pnpm@10.28.0 resolved=/build/heroic-games-launcher-git/src/HeroicGamesLauncher projectDir=/build/heroic-games-launcher-git/src/HeroicGamesLauncher
+  • executing @electron/rebuild  electronVersion=43.7.1 arch=x64 buildFromSource=false workspaceRoot=/build/heroic-games-launcher-git/src/HeroicGamesLauncher projectDir=./ appDir=./
   • installing native dependencies  arch=x64
   • completed installing native dependencies
   • packaging       platform=linux arch=x64 electron=43.7.1 appOutDir=dist/linux-unpacked
   • using custom unpacked Electron distribution  electronDist=/usr/lib/electron43/
-  • copying unpacked Electron  source=/usr/lib/electron43 destination=/build/heroic-games-launcher/src/HeroicGamesLauncher/dist/linux-unpacked
-  • searching for node modules  pm=pnpm searchDir=/build/heroic-games-launcher/src/HeroicGamesLauncher
-(node:1883) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+  • copying unpacked Electron  source=/usr/lib/electron43 destination=/build/heroic-games-launcher-git/src/HeroicGamesLauncher/dist/linux-unpacked
+  • searching for node modules  pm=pnpm searchDir=/build/heroic-games-launcher-git/src/HeroicGamesLauncher
+(node:1855) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
