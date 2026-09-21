@@ -1,0 +1,29 @@
+ninja: Entering directory `/build/unordered_dense/src/unordered_dense/_build'
+ninja: no work to do.
+1/2 unordered_dense:unit            RUNNING       
+>>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MESON_TEST_ITERATION=1 MALLOC_PERTURB_=227 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 /build/unordered_dense/src/unordered_dense/_build/test/udm-test
+
+2/2 unordered_dense:lldb_formatters RUNNING       
+>>> MSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 MESON_TEST_ITERATION=1 ASAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1 MALLOC_PERTURB_=79 UBSAN_OPTIONS=halt_on_error=1:abort_on_error=1:print_summary=1:print_stacktrace=1 /usr/bin/python /build/unordered_dense/src/unordered_dense/test/../scripts/test_lldb_formatters.py
+
+2/2 unordered_dense:lldb_formatters SKIP             0.05s   exit status 77
+――――――――――――――――――――――――――――――――――――― ✀  ―――――――――――――――――――――――――――――――――――――
+SKIP: no lldb found
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+1/2 unordered_dense:unit            OK               1.92s
+――――――――――――――――――――――――――――――――――――― ✀  ―――――――――――――――――――――――――――――――――――――
+[doctest] doctest version is "2.5.3"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      839 |      839 passed | 0 failed | 27 skipped
+[doctest] assertions: 17835414 | 17835414 passed | 0 failed |
+[doctest] Status: SUCCESS!
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+Ok:                1   
+Fail:              0   
+Skipped:           1   
+
+Full log written to /build/unordered_dense/src/unordered_dense/_build/meson-logs/testlog.txt
