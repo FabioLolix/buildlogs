@@ -1,0 +1,71 @@
+Upscaler has no wrap files
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 Upscaler build
+The Meson build system
+Version: 1.12.0
+Source dir: /build/upscaler/src/Upscaler
+Build dir: /build/upscaler/src/build
+Build type: native build
+Project name: upscaler
+Project version: 1.6.5
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Configuring io.gitlab.theevilskeleton.Upscaler.desktop.in using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Configuring io.gitlab.theevilskeleton.Upscaler.metainfo.xml.in using configuration
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program blueprint-compiler found: YES (/usr/bin/blueprint-compiler)
+Program python3 found: YES (/usr/bin/python3)
+Configuring upscaler using configuration
+Configuring __init__.py using configuration
+Configuring upscaler.gresource.xml using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.7
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.7
+Run-time dependency gio-2.0 found: YES 2.88.3
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 for host machine found: YES 2.88.3 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 23
+
+upscaler 1.6.5
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+Generating targets:   0%|          | 0/23 eta ?                                               Writing build.ninja:   0%|          | 0/51 eta ?                                                ninja: Entering directory `/build/upscaler/src/build'
+[1/20] Building translation po/bg/LC_MESSAGES/upscaler-bg.mo
+[2/20] Building translation po/de/LC_MESSAGES/upscaler-de.mo
+[3/20] Building translation po/el/LC_MESSAGES/upscaler-el.mo
+[4/20] Building translation po/es/LC_MESSAGES/upscaler-es.mo
+[5/20] Building translation po/fa_IR/LC_MESSAGES/upscaler-fa_IR.mo
+[6/20] Building translation po/fr/LC_MESSAGES/upscaler-fr.mo
+[7/20] Building translation po/id/LC_MESSAGES/upscaler-id.mo
+[8/20] Building translation po/it/LC_MESSAGES/upscaler-it.mo
+[9/20] Building translation po/kw/LC_MESSAGES/upscaler-kw.mo
+[10/20] Building translation po/nl/LC_MESSAGES/upscaler-nl.mo
+[11/20] Building translation po/ru/LC_MESSAGES/upscaler-ru.mo
+[12/20] Building translation po/tr/LC_MESSAGES/upscaler-tr.mo
+[13/20] Building translation po/uk/LC_MESSAGES/upscaler-uk.mo
+[14/20] Building translation po/pt_BR/LC_MESSAGES/upscaler-pt_BR.mo
+[15/20] Building translation po/vi/LC_MESSAGES/upscaler-vi.mo
+[16/20] Building translation po/sv/LC_MESSAGES/upscaler-sv.mo
+[17/20] Merging translations for data/io.gitlab.theevilskeleton.Upscaler.desktop
+[18/20] Merging translations for data/io.gitlab.theevilskeleton.Upscaler.metainfo.xml
+[19/20] Generating upscaler/blueprints with a custom command
+[20/20] Generating upscaler/upscaler_gresource with a custom command
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /build/upscaler/src/build
