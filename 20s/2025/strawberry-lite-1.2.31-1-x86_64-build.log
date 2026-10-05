@@ -1,0 +1,78 @@
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Strawberry Version:
+-- Display:  1.2.31
+-- Package:  1.2.31
+-- RPM:      1.2.31-1
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for backtrace
+-- Looking for backtrace - found
+-- backtrace facility detected in default set of libraries
+-- Found Backtrace: /usr/include
+-- Found ICU: /usr/include (found version "78.3") found components: uc i18n
+-- Found ALSA: /usr/lib/libasound.so (found version "1.2.16.1")
+-- Found X11: /usr/include  found components: X11_xcb
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Checking for module 'glib-2.0'
+--   Found glib-2.0, version 2.88.3
+-- Checking for module 'gobject-2.0'
+--   Found gobject-2.0, version 2.88.3
+-- Checking for module 'gio-2.0'
+--   Found gio-2.0, version 2.88.3
+-- Checking for module 'gio-unix-2.0'
+--   Found gio-unix-2.0, version 2.88.3
+-- Checking for module 'libcdio'
+--   Found libcdio, version 2.4.0
+-- Checking for module 'gstreamer-1.0'
+--   Found gstreamer-1.0, version 1.28.7
+-- Checking for module 'gstreamer-base-1.0'
+--   Found gstreamer-base-1.0, version 1.28.7
+-- Checking for module 'gstreamer-audio-1.0'
+--   Found gstreamer-audio-1.0, version 1.28.7
+-- Checking for module 'gstreamer-app-1.0'
+--   Found gstreamer-app-1.0, version 1.28.7
+-- Checking for module 'gstreamer-tag-1.0'
+--   Found gstreamer-tag-1.0, version 1.28.7
+-- Checking for module 'gstreamer-pbutils-1.0'
+--   Found gstreamer-pbutils-1.0, version 1.28.7
+-- Checking for module 'sqlite3>=3.9'
+--   Found sqlite3, version 3.53.4
+-- Checking for module 'uchardet'
+--   Package 'uchardet' not found
+CMake Error at /usr/share/cmake/Modules/FindPkgConfig.cmake:1093 (message):
+  The following required packages were not found:
+
+   - uchardet
+
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)
+  CMakeLists.txt:202 (pkg_check_modules)
+
+
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
