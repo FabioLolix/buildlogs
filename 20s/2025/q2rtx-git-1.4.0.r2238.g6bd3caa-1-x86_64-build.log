@@ -407,6 +407,7 @@
 -- Performing Test HAVE_RPI - Failed
 -- dynamic libX11 -> libX11.so.6
 -- dynamic libXext -> libXext.so.6
+-- dynamic libXrender -> libXrender.so.1
 -- Looking for shmat
 -- Looking for shmat - found
 -- Performing Test HAVE_XGENERICEVENT
@@ -442,7 +443,12 @@
 -- dynamic libwayland-cursor -> libwayland-cursor.so.0
 -- dynamic libxkbcommon -> libxkbcommon.so.0
 -- Checking for module 'libdecor-0'
---   Package 'libdecor-0' not found
+--   Found libdecor-0, version 0.2.5
+-- dynamic libdecor-0 -> libdecor-0.so.0
+-- Looking for libdecor_frame_get_max_content_size
+-- Looking for libdecor_frame_get_max_content_size - found
+-- Looking for libdecor_frame_get_min_content_size
+-- Looking for libdecor_frame_get_min_content_size - found
 -- Performing Test HAVE_VIVANTE_VDK
 -- Performing Test HAVE_VIVANTE_VDK - Failed
 -- Performing Test HAVE_VIVANTE_EGL_FB
@@ -594,8 +600,8 @@
 --   SDL_VULKAN                  (Wanted: ON): ON
 --   SDL_WASAPI                  (Wanted: OFF): OFF
 --   SDL_WAYLAND                 (Wanted: ON): ON
---   SDL_WAYLAND_LIBDECOR        (Wanted: ON): OFF
---   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: ON): OFF
+--   SDL_WAYLAND_LIBDECOR        (Wanted: ON): ON
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: ON): ON
 --   SDL_WAYLAND_QT_TOUCH        (Wanted: ON): ON
 --   SDL_WAYLAND_SHARED          (Wanted: ON): ON
 --   SDL_X11                     (Wanted: ON): ON
@@ -999,207 +1005,211 @@
 -- Performing Test C__WSTRICT_PROTOTYPES_FOUND - Success
 -- Performing Test C__FMS_EXTENSIONS_FOUND
 -- Performing Test C__FMS_EXTENSIONS_FOUND - Success
--- Configuring done (42.0s)
+-- Configuring done (43.6s)
 -- Generating done (0.2s)
 -- Build files have been written to: /build/q2rtx-git/src/build
 [  0%] Generating default_hrtf.txt
+[  0%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang-default-resource-limits.dir/ResourceLimits/resource_limits_c.cpp.o
+[  0%] Building CXX object extern/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/__/__/stub.cpp.o
 [  0%] Building CXX object extern/glslang/glslang/CMakeFiles/MachineIndependent.dir/stub.cpp.o
-[  0%] Building C object extern/zlib/CMakeFiles/zlib.dir/adler32.c.o
-[  0%] Building CXX object extern/glslang/SPIRV/CMakeFiles/SPIRV.dir/__/glslang/stub.cpp.o
+[  1%] Generating wayland-generated-protocols/idle-inhibit-unstable-v1-client-protocol.h
 [  1%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/adler32.c.o
-[  1%] Building C object extern/zlib/CMakeFiles/zlib.dir/deflate.c.o
+[  1%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang-default-resource-limits.dir/ResourceLimits/ResourceLimits.cpp.o
+[  1%] Generating wayland-generated-protocols/cursor-shape-v1-client-protocol.h
+[  1%] Generating wayland-generated-protocols/fractional-scale-v1-client-protocol.h
+[  1%] Building C object extern/zlib/CMakeFiles/zlib.dir/adler32.c.o
 [  1%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/compress.c.o
 [  1%] Building CXX object extern/glslang/glslang/CMakeFiles/GenericCodeGen.dir/stub.cpp.o
+[  1%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/crc32.c.o
+[  1%] Building CXX object extern/glslang/SPIRV/CMakeFiles/SPIRV.dir/__/glslang/stub.cpp.o
 [  1%] Building C object extern/zlib/CMakeFiles/zlib.dir/crc32.c.o
-[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/deflate.c.o
-[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/crc32.c.o
+[  1%] Generating wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-client-protocol.h
+[  1%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/CInterface/glslang_c_interface.cpp.o
 [  2%] Building C object extern/zlib/CMakeFiles/zlib.dir/compress.c.o
-[  2%] Building CXX object extern/glslang/glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/__/__/stub.cpp.o
-[  2%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang-default-resource-limits.dir/ResourceLimits/ResourceLimits.cpp.o
-[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/gzclose.c.o
-[  2%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/CInterface/glslang_c_interface.cpp.o
-[  2%] Generating wayland-generated-protocols/cursor-shape-v1-client-protocol.h
-[  2%] Building C object extern/zlib/CMakeFiles/zlib.dir/gzclose.c.o
-[  2%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/altsvc.c.o
 [  2%] Generating CURLINFO_ACTIVESOCKET.3
-[  2%] Generating wayland-generated-protocols/fractional-scale-v1-client-protocol.h
-[  2%] Linking CXX static library libGenericCodeGen.a
+[  2%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/altsvc.c.o
+[  2%] Generating wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h
+[  2%] Generating wayland-generated-protocols/primary-selection-unstable-v1-client-protocol.h
+[  2%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/amigaos.c.o
+[  2%] Generating CURLINFO_APPCONNECT_TIME.3
 [  2%] Linking CXX static library libOSDependent.a
+[  2%] Linking CXX static library libGenericCodeGen.a
 [  2%] Linking CXX static library libSPIRV.a
 [  2%] Linking CXX static library libMachineIndependent.a
-[  2%] Generating wayland-generated-protocols/idle-inhibit-unstable-v1-client-protocol.h
-[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/gzlib.c.o
-[  2%] Generating CURLINFO_APPCONNECT_TIME.3
-[  2%] Generating CURLINFO_APPCONNECT_TIME_T.3
-[  2%] Generating wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-client-protocol.h
-[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/gzread.c.o
-[  2%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang-default-resource-limits.dir/ResourceLimits/resource_limits_c.cpp.o
-[  2%] Generating wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h
-[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/gzwrite.c.o
 [  2%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/GenericCodeGen/CodeGen.cpp.o
-[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/inflate.c.o
-[  2%] Generating CURLINFO_CAINFO.3
-[  2%] Generating wayland-generated-protocols/primary-selection-unstable-v1-client-protocol.h
-[  2%] Generating CURLINFO_CAPATH.3
-[  2%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/GenericCodeGen/Link.cpp.o
 [  2%] Generating wayland-generated-protocols/relative-pointer-unstable-v1-client-protocol.h
-[  2%] Built target GenericCodeGen
-[  2%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/OSDependent/Unix/ossource.cpp.o
-[  2%] Built target OSDependent
-[  2%] Built target MachineIndependent
-[  2%] Built target SPIRV
+[  2%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/GenericCodeGen/Link.cpp.o
 [  2%] Generating wayland-generated-protocols/tablet-unstable-v2-client-protocol.h
-[  3%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/glslang_tab.cpp.o
-[  3%] Generating CURLINFO_CERTINFO.3
-[  3%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/amigaos.c.o
-[  3%] Generating CURLINFO_CONDITION_UNMET.3
-[  3%] Building C object extern/zlib/CMakeFiles/zlib.dir/gzlib.c.o
-[  3%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/attribute.cpp.o
-[  3%] Generating wayland-generated-protocols/text-input-unstable-v3-client-protocol.h
-[  3%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/iomapper.cpp.o
-[  3%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/Constant.cpp.o
-[  3%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/infback.c.o
-[  3%] Generating CURLINFO_CONNECT_TIME.3
-[  3%] Generating wayland-generated-protocols/viewporter-client-protocol.h
-[  3%] Generating wayland-generated-protocols/wayland-client-protocol.h
-[  3%] Generating wayland-generated-protocols/xdg-activation-v1-client-protocol.h
-[  3%] Generating wayland-generated-protocols/xdg-decoration-unstable-v1-client-protocol.h
+[  2%] Generating CURLINFO_APPCONNECT_TIME_T.3
+[  2%] Building C object extern/zlib/CMakeFiles/zlib.dir/deflate.c.o
+[  2%] Building C object extern/zlib/CMakeFiles/zlib.dir/gzclose.c.o
+[  2%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/OSDependent/Unix/ossource.cpp.o
+[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/deflate.c.o
+[  2%] Generating wayland-generated-protocols/text-input-unstable-v3-client-protocol.h
+[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/gzclose.c.o
+[  2%] Generating CURLINFO_CAINFO.3
+[  2%] Building C object extern/zlib/CMakeFiles/zlib.dir/gzread.c.o
+[  2%] Building C object extern/zlib/CMakeFiles/zlib.dir/gzlib.c.o
+[  2%] Generating wayland-generated-protocols/viewporter-client-protocol.h
+[  2%] Built target MachineIndependent
+[  2%] Built target GenericCodeGen
+[  2%] Built target OSDependent
+[  2%] Built target SPIRV
+[  2%] Building C object extern/zlib/CMakeFiles/zlib.dir/gzwrite.c.o
+[  2%] Generating wayland-generated-protocols/wayland-client-protocol.h
+[  2%] Generating CURLINFO_CAPATH.3
+[  2%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/gzlib.c.o
+[  2%] Generating CURLINFO_CERTINFO.3
+[  3%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/asyn-thread.c.o
 [  3%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o
-[  3%] Generating wayland-generated-protocols/xdg-output-unstable-v1-client-protocol.h
-[  3%] Building C object extern/zlib/CMakeFiles/zlib.dir/gzread.c.o
-[  3%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/InfoSink.cpp.o
-[  4%] Generating CURLINFO_CONN_ID.3
-[  4%] Generating CURLINFO_CONNECT_TIME_T.3
-[  4%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/inftrees.c.o
+[  3%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/gzread.c.o
+[  3%] Generating wayland-generated-protocols/xdg-activation-v1-client-protocol.h
+[  3%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/gzwrite.c.o
+[  3%] Building C object extern/zlib/CMakeFiles/zlib.dir/inflate.c.o
+[  3%] Generating CURLINFO_CONDITION_UNMET.3
+[  4%] Generating wayland-generated-protocols/xdg-decoration-unstable-v1-client-protocol.h
+[  4%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/glslang_tab.cpp.o
+[  4%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/base64.c.o
+[  4%] Building C object extern/zlib/CMakeFiles/zlib.dir/infback.c.o
+[  4%] Generating wayland-generated-protocols/xdg-output-unstable-v1-client-protocol.h
+[  4%] Generating CURLINFO_CONNECT_TIME.3
+[  4%] Building C object extern/zlib/CMakeFiles/zlib.dir/inftrees.c.o
 [  5%] Generating wayland-generated-protocols/xdg-shell-client-protocol.h
-[  5%] Building C object extern/zlib/CMakeFiles/zlib.dir/gzwrite.c.o
 [  5%] Generating wayland-generated-protocols/xdg-toplevel-icon-v1-client-protocol.h
-[  5%] Building C object extern/zlib/CMakeFiles/zlib.dir/inflate.c.o
-[  5%] Generating CURLINFO_CONTENT_LENGTH_DOWNLOAD.3
+[  5%] Generating CURLINFO_CONNECT_TIME_T.3
 [  5%] Generating include/SDL2/SDL.h
-[  5%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/inffast.c.o
-[  6%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/asyn-thread.c.o
-[  6%] Building C object extern/zlib/CMakeFiles/zlib.dir/infback.c.o
-[  6%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/alassert.cpp.o
-[  6%] Generating CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3
-[  6%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/trees.c.o
-[  6%] Generating include/SDL2/SDL_assert.h
-[  6%] Generating CURLINFO_CONTENT_LENGTH_UPLOAD.3
-[  6%] Generating include/SDL2/SDL_atomic.h
-[  6%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/base64.c.o
-[  6%] Generating CURLINFO_CONTENT_TYPE.3
-[  6%] Generating CURLINFO_CONTENT_LENGTH_UPLOAD_T.3
-[  6%] Generating CURLINFO_COOKIELIST.3
-[  6%] Generating include/SDL2/SDL_audio.h
-[  6%] Building C object extern/zlib/CMakeFiles/zlib.dir/inftrees.c.o
-[  6%] Generating include/SDL2/SDL_bits.h
-[  6%] Generating CURLINFO_EFFECTIVE_METHOD.3
-[  6%] Generating include/SDL2/SDL_blendmode.h
-[  6%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/alcomplex.cpp.o
-[  6%] Generating include/SDL2/SDL_clipboard.h
+[  5%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/attribute.cpp.o
+[  6%] Generating CURLINFO_CONN_ID.3
 [  6%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/bufq.c.o
-[  6%] Generating include/SDL2/SDL_copying.h
-[  6%] Building C object extern/zlib/CMakeFiles/zlib.dir/inffast.c.o
-[  6%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/uncompr.c.o
-[  6%] Building C object extern/zlib/CMakeFiles/zlib.dir/trees.c.o
-[  6%] Generating include/SDL2/SDL_cpuinfo.h
-[  6%] Generating CURLINFO_EFFECTIVE_URL.3
-[  6%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/zutil.c.o
-[  6%] Generating CURLINFO_FILETIME.3
+[  6%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/Constant.cpp.o
+[  6%] Generating include/SDL2/SDL_assert.h
+[  6%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/alcomplex.cpp.o
+[  6%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/inflate.c.o
+[  6%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/alassert.cpp.o
+[  6%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/iomapper.cpp.o
+[  6%] Generating CURLINFO_CONTENT_LENGTH_DOWNLOAD.3
+[  6%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/infback.c.o
+[  6%] Generating include/SDL2/SDL_atomic.h
+[  6%] Generating CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3
+[  6%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/InfoSink.cpp.o
 [  6%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/bufref.c.o
-[  6%] Generating include/SDL2/SDL_egl.h
-[  6%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o
+[  6%] Generating include/SDL2/SDL_audio.h
+[  6%] Building C object extern/zlib/CMakeFiles/zlib.dir/inffast.c.o
+[  6%] Generating CURLINFO_CONTENT_LENGTH_UPLOAD.3
 [  6%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/c-hyper.c.o
-[  6%] Generating CURLINFO_FILETIME_T.3
+[  6%] Generating include/SDL2/SDL_bits.h
+[  6%] Generating CURLINFO_CONTENT_LENGTH_UPLOAD_T.3
+[  6%] Generating CURLINFO_CONTENT_TYPE.3
+[  6%] Generating CURLINFO_COOKIELIST.3
+[  6%] Generating include/SDL2/SDL_blendmode.h
+[  6%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o
+[  6%] Generating include/SDL2/SDL_clipboard.h
+[  6%] Building C object extern/zlib/CMakeFiles/zlib.dir/trees.c.o
+[  6%] Generating include/SDL2/SDL_copying.h
+[  6%] Generating CURLINFO_EFFECTIVE_METHOD.3
+[  6%] Generating CURLINFO_EFFECTIVE_URL.3
+[  6%] Generating include/SDL2/SDL_cpuinfo.h
+[  6%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/inftrees.c.o
+[  6%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/inffast.c.o
+[  6%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/Initialize.cpp.o
+[  6%] Generating include/SDL2/SDL_egl.h
+[  6%] Generating CURLINFO_FILETIME.3
+[  6%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/trees.c.o
+[  6%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/uncompr.c.o
 [  6%] Generating include/SDL2/SDL_endian.h
+[  6%] Generating CURLINFO_FILETIME_T.3
 [  6%] Generating include/SDL2/SDL_error.h
-[  7%] Linking C static library libz.a
-[  7%] Generating CURLINFO_FTP_ENTRY_PATH.3
+[  6%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/alsem.cpp.o
+[  6%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o
+[  6%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/IntermTraverse.cpp.o
+[  6%] Generating include/SDL2/SDL_events.h
+[  6%] Generating CURLINFO_FTP_ENTRY_PATH.3
+[  7%] Generating include/SDL2/SDL_filesystem.h
 [  7%] Building C object extern/zlib/CMakeFiles/zlib.dir/uncompr.c.o
-[  7%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/Initialize.cpp.o
-[  7%] Generating include/SDL2/SDL_events.h
 [  7%] Generating CURLINFO_HEADER_SIZE.3
+[  7%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o
+[  7%] Generating include/SDL2/SDL_gamecontroller.h
 [  7%] Generating CURLINFO_HTTP_CONNECTCODE.3
+[  7%] Building C object extern/zlib/CMakeFiles/zlibstatic.dir/zutil.c.o
+[  7%] Generating include/SDL2/SDL_gesture.h
+[  7%] Generating CURLINFO_HTTP_VERSION.3
 [  7%] Building C object extern/zlib/CMakeFiles/zlib.dir/zutil.c.o
-[  8%] Generating include/SDL2/SDL_filesystem.h
-[  8%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/alsem.cpp.o
-[  8%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/alstring.cpp.o
-[  8%] Generating CURLINFO_HTTP_VERSION.3
-[  8%] Generating include/SDL2/SDL_gamecontroller.h
-[  8%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/IntermTraverse.cpp.o
-[  8%] Built target zlibstatic
-[  8%] Generating include/SDL2/SDL_gesture.h
-[  8%] Generating CURLINFO_HTTPAUTH_AVAIL.3
-[  8%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o
-[  8%] Linking C shared library ../../Bin/libz.so
-[  8%] Generating include/SDL2/SDL_guid.h
-[  8%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o
+[  7%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o
+[  7%] Generating include/SDL2/SDL_guid.h
+[  7%] Generating CURLINFO_HTTPAUTH_AVAIL.3
+[  7%] Generating include/SDL2/SDL_haptic.h
+[  7%] Linking C shared library ../../Bin/libz.so
+[  8%] Linking C static library libz.a
 [  9%] Generating CURLINFO_LASTSOCKET.3
-[  9%] Generating include/SDL2/SDL_haptic.h
 [  9%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/Intermediate.cpp.o
-[  9%] Generating CURLINFO_LOCAL_IP.3
-[  9%] Linking CXX static library libglslang-default-resource-limits.a
 [  9%] Generating include/SDL2/SDL_hidapi.h
-[  9%] Generating CURLINFO_LOCAL_PORT.3
+[  9%] Generating CURLINFO_LOCAL_IP.3
 [  9%] Generating include/SDL2/SDL_hints.h
+[  9%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o
+[  9%] Generating CURLINFO_LOCAL_PORT.3
+[  9%] Linking CXX static library libglslang-default-resource-limits.a
 [  9%] Generating include/SDL2/SDL_joystick.h
 [  9%] Generating CURLINFO_NAMELOOKUP_TIME.3
+[  9%] Built target zlibstatic
 [  9%] Generating CURLINFO_NAMELOOKUP_TIME_T.3
-[  9%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o
-[  9%] Built target glslang-default-resource-limits
 [  9%] Generating include/SDL2/SDL_keyboard.h
-[  9%] Generating CURLINFO_NUM_CONNECTS.3
 [  9%] Generating include/SDL2/SDL_keycode.h
+[  9%] Generating CURLINFO_NUM_CONNECTS.3
+[  9%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/althrd_setname.cpp.o
+[  9%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/alstring.cpp.o
 [  9%] Generating include/SDL2/SDL_loadso.h
 [  9%] Generating CURLINFO_OS_ERRNO.3
-[  9%] Generating CURLINFO_PRETRANSFER_TIME.3
+[  9%] Built target glslang-default-resource-limits
 [  9%] Generating include/SDL2/SDL_locale.h
-[  9%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/althrd_setname.cpp.o
+[  9%] Generating CURLINFO_PRETRANSFER_TIME.3
 [  9%] Generating include/SDL2/SDL_log.h
-[  9%] Generating CURLINFO_PRETRANSFER_TIME_T.3
-[  9%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o
 [  9%] Generating include/SDL2/SDL_main.h
-[  9%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cfilters.c.o
-[  9%] Generating CURLINFO_PRIMARY_IP.3
+[  9%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/ParseContextBase.cpp.o
+[  9%] Generating CURLINFO_PRETRANSFER_TIME_T.3
 [  9%] Generating include/SDL2/SDL_messagebox.h
+[  9%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cfilters.c.o
 [  9%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/conncache.c.o
-[  9%] Generating CURLINFO_PRIMARY_PORT.3
+[  9%] Generating CURLINFO_PRIMARY_IP.3
 [  9%] Generating include/SDL2/SDL_metal.h
-[  9%] Generating CURLINFO_PRIVATE.3
+[  9%] Generating CURLINFO_PRIMARY_PORT.3
+[  9%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/ParseHelper.cpp.o
 [ 10%] Generating include/SDL2/SDL_misc.h
+[ 10%] Generating CURLINFO_PRIVATE.3
 [ 10%] Generating include/SDL2/SDL_mouse.h
-[ 10%] Generating CURLINFO_PROTOCOL.3
 [ 10%] Generating include/SDL2/SDL_mutex.h
-[ 10%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/dynload.cpp.o
-[ 10%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/connect.c.o
+[ 10%] Generating CURLINFO_PROTOCOL.3
 [ 10%] Generating include/SDL2/SDL_name.h
-[ 10%] Generating CURLINFO_PROXY_ERROR.3
-[ 10%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/pffft.cpp.o
-[ 10%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o
 [ 10%] Generating include/SDL2/SDL_opengl.h
+[ 10%] Generating CURLINFO_PROXY_ERROR.3
+[ 10%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/connect.c.o
+[ 10%] Generating include/SDL2/SDL_opengl_glext.h
 [ 11%] Generating CURLINFO_PROXY_SSL_VERIFYRESULT.3
-[ 11%] Generating include/SDL2/SDL_opengl_glext.h
-[ 11%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/ParseContextBase.cpp.o
+[ 11%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/PoolAlloc.cpp.o
 [ 11%] Generating include/SDL2/SDL_opengles.h
 [ 11%] Generating CURLINFO_PROXYAUTH_AVAIL.3
 [ 11%] Generating include/SDL2/SDL_opengles2.h
 [ 11%] Generating CURLINFO_QUEUE_TIME_T.3
-[ 11%] Generating CURLINFO_REDIRECT_COUNT.3
 [ 11%] Generating include/SDL2/SDL_opengles2_gl2.h
-[ 11%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/ParseHelper.cpp.o
+[ 11%] Generating CURLINFO_REDIRECT_COUNT.3
 [ 11%] Generating include/SDL2/SDL_opengles2_gl2ext.h
 [ 11%] Generating CURLINFO_REDIRECT_TIME.3
 [ 11%] Generating include/SDL2/SDL_opengles2_gl2platform.h
-[ 11%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/PoolAlloc.cpp.o
 [ 11%] Generating CURLINFO_REDIRECT_TIME_T.3
 [ 11%] Generating include/SDL2/SDL_opengles2_khrplatform.h
-[ 11%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cookie.c.o
-[ 11%] Generating CURLINFO_REDIRECT_URL.3
 [ 11%] Generating include/SDL2/SDL_pixels.h
+[ 11%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o
+[ 11%] Generating CURLINFO_REDIRECT_URL.3
 [ 11%] Generating include/SDL2/SDL_platform.h
+[ 11%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cookie.c.o
 [ 11%] Generating CURLINFO_REFERER.3
-[ 11%] Generating include/SDL2/SDL_power.h
 [ 11%] Generating CURLINFO_REQUEST_SIZE.3
+[ 11%] Generating include/SDL2/SDL_power.h
+[ 12%] Generating include/SDL2/SDL_quit.h
+[ 12%] Generating include/SDL2/SDL_rect.h
+[ 12%] Generating CURLINFO_RESPONSE_CODE.3
+[ 12%] Generating include/SDL2/SDL_render.h
+[ 12%] Generating include/SDL2/SDL_rwops.h
+[ 12%] Generating include/SDL2/SDL_scancode.h
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/cookie.c: In function ‘Curl_cookie_add’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/cookie.c:813:22: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   813 |       char *queryp = strchr(path, '?');
@@ -1213,289 +1223,324 @@
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/cookie.c:879:9: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   879 |     ptr = strchr(lineptr, '\n');
       |         ^
-[ 12%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/RemoveTree.cpp.o
-[ 12%] Generating include/SDL2/SDL_quit.h
-[ 12%] Generating CURLINFO_RESPONSE_CODE.3
+[ 12%] Generating CURLINFO_RETRY_AFTER.3
+[ 12%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/dynload.cpp.o
+[ 12%] Generating include/SDL2/SDL_sensor.h
+[ 12%] Generating CURLINFO_RTSP_CLIENT_CSEQ.3
+[ 12%] Building C object src/CMakeFiles/game.dir/game/g_ai.c.o
+[ 12%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/pffft.cpp.o
+[ 12%] Generating include/SDL2/SDL_stdinc.h
+[ 12%] Generating include/SDL2/SDL_shape.h
+[ 12%] Building C object src/CMakeFiles/game.dir/game/g_chase.c.o
+[ 12%] Generating CURLINFO_RTSP_CSEQ_RECV.3
 [ 13%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o
-[ 13%] Generating include/SDL2/SDL_rect.h
-[ 13%] Generating CURLINFO_RETRY_AFTER.3
-[ 13%] Generating include/SDL2/SDL_render.h
-[ 13%] Generating CURLINFO_RTSP_CLIENT_CSEQ.3
-[ 13%] Generating include/SDL2/SDL_rwops.h
-[ 13%] Building C object src/CMakeFiles/game.dir/game/g_ai.c.o
-[ 13%] Generating include/SDL2/SDL_scancode.h
-[ 13%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_des.c.o
-[ 13%] Generating CURLINFO_RTSP_CSEQ_RECV.3
-[ 13%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o
-[ 13%] Generating include/SDL2/SDL_sensor.h
-[ 13%] Generating CURLINFO_RTSP_SERVER_CSEQ.3
-[ 13%] Generating include/SDL2/SDL_shape.h
-[ 13%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o
-[ 13%] Generating CURLINFO_RTSP_SESSION_ID.3
-[ 13%] Generating include/SDL2/SDL_stdinc.h
-[ 13%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/polyphase_resampler.cpp.o
-[ 13%] Generating CURLINFO_SCHEME.3
 [ 13%] Generating include/SDL2/SDL_surface.h
+[ 13%] Generating CURLINFO_RTSP_SERVER_CSEQ.3
 [ 13%] Generating include/SDL2/SDL_system.h
-[ 13%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o
-[ 13%] Generating CURLINFO_SIZE_DOWNLOAD.3
+[ 13%] Generating CURLINFO_RTSP_SESSION_ID.3
+[ 13%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/polyphase_resampler.cpp.o
+[ 13%] Building C object src/CMakeFiles/server.dir/common/bsp.c.o
 [ 13%] Generating include/SDL2/SDL_syswm.h
+[ 13%] Generating CURLINFO_SCHEME.3
+[ 13%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_des.c.o
+[ 13%] Generating include/SDL2/SDL_test.h
+[ 13%] Generating include/SDL2/SDL_test_assert.h
+[ 13%] Building C object src/CMakeFiles/game.dir/game/g_cmds.c.o
+[ 13%] Generating CURLINFO_SIZE_DOWNLOAD.3
+[ 13%] Building C object src/CMakeFiles/game.dir/game/g_combat.c.o
+[ 13%] Generating include/SDL2/SDL_test_common.h
+[ 13%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o
 [ 14%] Generating CURLINFO_SIZE_DOWNLOAD_T.3
-[ 14%] Building C object src/CMakeFiles/game.dir/game/g_chase.c.o
-[ 14%] Generating include/SDL2/SDL_test.h
-[ 14%] Generating include/SDL2/SDL_test_assert.h
+[ 14%] Generating include/SDL2/SDL_test_compare.h
+[ 14%] Generating include/SDL2/SDL_test_crc32.h
 [ 14%] Generating CURLINFO_SIZE_UPLOAD.3
-[ 14%] Generating include/SDL2/SDL_test_common.h
-[ 14%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o
+[ 15%] Generating include/SDL2/SDL_test_font.h
+[ 15%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o
+[ 15%] Generating include/SDL2/SDL_test_fuzzer.h
+[ 15%] Generating CURLINFO_SIZE_UPLOAD_T.3
+[ 15%] Building C object src/CMakeFiles/server.dir/common/cmd.c.o
+[ 15%] Building C object src/CMakeFiles/game.dir/game/g_func.c.o
+[ 15%] Building C object src/CMakeFiles/server.dir/common/cmodel.c.o
+[ 15%] Generating include/SDL2/SDL_test_harness.h
+[ 15%] Generating CURLINFO_SPEED_DOWNLOAD.3
+[ 15%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o
+[ 15%] Generating include/SDL2/SDL_test_images.h
+[ 15%] Generating CURLINFO_SPEED_DOWNLOAD_T.3
+[ 15%] Generating include/SDL2/SDL_test_log.h
+[ 15%] Generating CURLINFO_SPEED_UPLOAD.3
+[ 15%] Generating include/SDL2/SDL_test_md5.h
+[ 15%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o
+[ 15%] Generating include/SDL2/SDL_test_memory.h
+[ 15%] Generating CURLINFO_SPEED_UPLOAD_T.3
+[ 15%] Generating include/SDL2/SDL_test_random.h
+[ 15%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/RemoveTree.cpp.o
+[ 15%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o
+[ 16%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/ringbuffer.cpp.o
+[ 16%] Generating CURLINFO_SSL_ENGINES.3
+[ 16%] Generating include/SDL2/SDL_thread.h
+[ 16%] Generating CURLINFO_SSL_VERIFYRESULT.3
+[ 16%] Generating include/SDL2/SDL_timer.h
+[ 16%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o
+[ 16%] Generating include/SDL2/SDL_touch.h
+[ 16%] Building C object src/CMakeFiles/game.dir/game/g_items.c.o
+[ 16%] Generating include/SDL2/SDL_types.h
+[ 16%] Building C object src/CMakeFiles/server.dir/common/common.c.o
+[ 16%] Generating CURLINFO_STARTTRANSFER_TIME.3
+[ 16%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_multibyte.c.o
+[ 16%] Generating include/SDL2/SDL_version.h
+[ 16%] Generating CURLINFO_STARTTRANSFER_TIME_T.3
+[ 16%] Generating include/SDL2/SDL_video.h
+[ 16%] Generating include/SDL2/SDL_vulkan.h
+[ 16%] Generating CURLINFO_TLS_SESSION.3
+[ 16%] Building C object src/CMakeFiles/server.dir/common/cvar.c.o
+[ 16%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o
+[ 17%] Generating include/SDL2/begin_code.h
+[ 17%] Generating CURLINFO_TLS_SSL_PTR.3
+[ 17%] Generating include/SDL2/close_code.h
+[ 17%] Building C object src/CMakeFiles/game.dir/game/g_main.c.o
+[ 17%] Generating CURLINFO_TOTAL_TIME.3
+[ 17%] Built target sdl_headers_copy
+[ 17%] Building C object src/CMakeFiles/server.dir/common/error.c.o
+[ 17%] Generating CURLINFO_TOTAL_TIME_T.3
+[ 18%] Generating CURLINFO_USED_PROXY.3
 /build/q2rtx-git/src/Q2RTX-res2k/extern/openal-soft/common/pffft.cpp:1470:18: warning: ignoring attributes on template argument ‘{anonymous}::v4sf’ {aka ‘__m128’} [-Wignored-attributes]
  1470 |     al::span<v4sf> e; /* N/4*3 elements */
       |                  ^
-[ 14%] Generating CURLINFO_SIZE_UPLOAD_T.3
-[ 14%] Generating include/SDL2/SDL_test_compare.h
-[ 14%] Generating include/SDL2/SDL_test_crc32.h
-[ 14%] Generating CURLINFO_SPEED_DOWNLOAD.3
-[ 15%] Generating include/SDL2/SDL_test_font.h
-[ 15%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o
-[ 15%] Generating include/SDL2/SDL_test_fuzzer.h
-[ 15%] Building C object src/CMakeFiles/game.dir/game/g_cmds.c.o
-[ 15%] Generating CURLINFO_SPEED_DOWNLOAD_T.3
-[ 15%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/Scan.cpp.o
-[ 15%] Generating include/SDL2/SDL_test_harness.h
-[ 15%] Generating CURLINFO_SPEED_UPLOAD.3
-[ 15%] Generating include/SDL2/SDL_test_images.h
-[ 15%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o
-[ 15%] Generating CURLINFO_SPEED_UPLOAD_T.3
-[ 15%] Generating include/SDL2/SDL_test_log.h
-[ 15%] Generating include/SDL2/SDL_test_md5.h
-[ 15%] Generating CURLINFO_SSL_ENGINES.3
-[ 16%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/ringbuffer.cpp.o
-[ 16%] Generating include/SDL2/SDL_test_memory.h
-[ 16%] Generating CURLINFO_SSL_VERIFYRESULT.3
-[ 16%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_multibyte.c.o
-[ 16%] Generating include/SDL2/SDL_test_random.h
-[ 16%] Building C object src/CMakeFiles/game.dir/game/g_combat.c.o
-[ 16%] Generating CURLINFO_STARTTRANSFER_TIME.3
-[ 16%] Generating include/SDL2/SDL_thread.h
-[ 16%] Generating include/SDL2/SDL_timer.h
-[ 16%] Generating CURLINFO_STARTTRANSFER_TIME_T.3
-[ 16%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o
-[ 16%] Generating include/SDL2/SDL_touch.h
-[ 16%] Generating CURLINFO_TLS_SESSION.3
-[ 16%] Generating include/SDL2/SDL_types.h
-[ 16%] Generating CURLINFO_TLS_SSL_PTR.3
-[ 16%] Generating include/SDL2/SDL_version.h
-[ 16%] Building C object src/CMakeFiles/game.dir/game/g_func.c.o
-[ 16%] Generating CURLINFO_TOTAL_TIME.3
-[ 16%] Generating include/SDL2/SDL_video.h
-[ 16%] Generating include/SDL2/SDL_vulkan.h
-[ 16%] Generating CURLINFO_TOTAL_TIME_T.3
-[ 16%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_ntlm_wb.c.o
-[ 17%] Generating include/SDL2/begin_code.h
-[ 18%] Generating CURLINFO_USED_PROXY.3
-[ 18%] Generating include/SDL2/close_code.h
-cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensions’ may have been intended to silence earlier diagnostics
-[ 18%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_path.c.o
 [ 18%] Generating CURLINFO_XFER_ID.3
-[ 18%] Building C object src/CMakeFiles/game.dir/game/g_items.c.o
-[ 18%] Building C object src/CMakeFiles/server.dir/common/bsp.c.o
-[ 18%] Built target sdl_headers_copy
-[ 18%] Building C object src/CMakeFiles/server.dir/common/cmd.c.o
+[ 18%] Building C object src/CMakeFiles/server.dir/common/field.c.o
 [ 18%] Generating CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3
+[ 18%] Building C object src/CMakeFiles/game.dir/game/g_misc.c.o
+[ 18%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_ntlm_wb.c.o
 [ 18%] Generating CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3
 [ 18%] Generating CURLMOPT_MAX_CONCURRENT_STREAMS.3
-[ 18%] Building C object src/CMakeFiles/server.dir/common/cmodel.c.o
-[ 18%] Generating CURLMOPT_MAX_HOST_CONNECTIONS.3
-[ 18%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_range.c.o
+[ 18%] Building C object src/CMakeFiles/game.dir/game/g_monster.c.o
 [ 18%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/common/strutils.cpp.o
+[ 18%] Generating CURLMOPT_MAX_HOST_CONNECTIONS.3
+[ 18%] Building C object src/CMakeFiles/server.dir/common/fifo.c.o
+[ 18%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_path.c.o
 [ 18%] Generating CURLMOPT_MAX_PIPELINE_LENGTH.3
-[ 18%] Building C object src/CMakeFiles/game.dir/game/g_main.c.o
 [ 18%] Generating CURLMOPT_MAX_TOTAL_CONNECTIONS.3
-[ 18%] Building C object src/CMakeFiles/server.dir/common/common.c.o
+[ 18%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/auxeffectslot.cpp.o
 [ 18%] Generating CURLMOPT_MAXCONNECTS.3
-[ 18%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o
-[ 18%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o
+[ 18%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/Scan.cpp.o
+[ 18%] Building C object src/CMakeFiles/server.dir/common/files.c.o
 [ 18%] Generating CURLMOPT_PIPELINING.3
-[ 18%] Generating CURLMOPT_PIPELINING_SERVER_BL.3
-[ 18%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o
-[ 18%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/ShaderLang.cpp.o
-[ 18%] Building C object src/CMakeFiles/game.dir/game/g_misc.c.o
-[ 19%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o
+[ 18%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_range.c.o
+[ 19%] Building C object src/CMakeFiles/game.dir/game/g_phys.c.o
+[ 19%] Generating CURLMOPT_PIPELINING_SERVER_BL.3
 [ 19%] Generating CURLMOPT_PIPELINING_SITE_BL.3
 [ 19%] Generating CURLMOPT_PUSHDATA.3
-[ 19%] Building C object src/CMakeFiles/server.dir/common/cvar.c.o
-[ 19%] Building C object src/CMakeFiles/server.dir/common/error.c.o
-[ 19%] Building C object src/CMakeFiles/server.dir/common/field.c.o
+[ 19%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o
 [ 19%] Generating CURLMOPT_PUSHFUNCTION.3
-[ 19%] Building C object src/CMakeFiles/server.dir/common/fifo.c.o
+[ 19%] Building C object src/CMakeFiles/server.dir/common/math.c.o
+[ 19%] Generating CURLMOPT_SOCKETDATA.3
+[ 19%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o
+[ 19%] Building C object src/CMakeFiles/game.dir/game/g_ptrs.c.o
+cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensions’ may have been intended to silence earlier diagnostics
+[ 19%] Generating CURLMOPT_SOCKETFUNCTION.3
+[ 19%] Building C object src/CMakeFiles/server.dir/common/mdfour.c.o
+[ 19%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o
 [ 20%] Generating CURLMOPT_TIMERDATA.3
-[ 20%] Generating CURLMOPT_SOCKETDATA.3
-[ 20%] Generating CURLMOPT_SOCKETFUNCTION.3
-[ 20%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o
-[ 20%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/auxeffectslot.cpp.o
-[ 20%] Generating CURLMOPT_TIMERFUNCTION.3
-[ 20%] Building C object src/CMakeFiles/server.dir/common/files.c.o
-[ 20%] Building C object extern/SDL2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o
-[ 20%] Generating CURLOPT_ABSTRACT_UNIX_SOCKET.3
-[ 20%] Generating CURLOPT_ACCEPT_ENCODING.3
-[ 20%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o
-[ 20%] Generating wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c
-[ 20%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/buffer.cpp.o
-[ 20%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cw-out.c.o
-[ 20%] Building C object src/CMakeFiles/server.dir/common/math.c.o
-[ 20%] Building C object src/CMakeFiles/game.dir/game/g_monster.c.o
-[ 20%] Generating wayland-generated-protocols/cursor-shape-v1-protocol.c
-[ 20%] Generating CURLOPT_ACCEPTTIMEOUT_MS.3
-[ 20%] Generating wayland-generated-protocols/fractional-scale-v1-protocol.c
-[ 20%] Generating wayland-generated-protocols/idle-inhibit-unstable-v1-protocol.c
-[ 20%] Generating CURLOPT_ADDRESS_SCOPE.3
-[ 20%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/SpirvIntrinsics.cpp.o
-[ 20%] Generating wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c
-[ 20%] Linking C static library libSDL2main.a
-[ 20%] Generating wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c
-[ 20%] Generating CURLOPT_ALTSVC.3
-[ 20%] Generating CURLOPT_ALTSVC_CTRL.3
-[ 20%] Generating wayland-generated-protocols/primary-selection-unstable-v1-protocol.c
-[ 20%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/dict.c.o
-[ 20%] Generating wayland-generated-protocols/tablet-unstable-v2-protocol.c
-[ 20%] Generating wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c
-[ 20%] Generating CURLOPT_APPEND.3
-[ 20%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/debug.cpp.o
-[ 20%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/doh.c.o
-[ 20%] Generating wayland-generated-protocols/text-input-unstable-v3-protocol.c
-[ 20%] Built target SDL2main
-[ 21%] Building C object src/CMakeFiles/game.dir/game/g_phys.c.o
+[ 21%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o
+[ 21%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/buffer.cpp.o
+[ 21%] Building C object extern/SDL2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o
+[ 21%] Generating CURLMOPT_TIMERFUNCTION.3
+[ 21%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/debug.cpp.o
+[ 21%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effect.cpp.o
+[ 21%] Building C object src/CMakeFiles/game.dir/game/g_ptrs_compat_v2.c.o
+[ 21%] Generating CURLOPT_ABSTRACT_UNIX_SOCKET.3
+[ 21%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/autowah.cpp.o
+[ 21%] Building C object src/CMakeFiles/server.dir/common/msg.c.o
+[ 21%] Generating CURLOPT_ACCEPT_ENCODING.3
+[ 21%] Building C object src/CMakeFiles/game.dir/game/g_save.c.o
+[ 21%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o
+[ 21%] Generating CURLOPT_ACCEPTTIMEOUT_MS.3
+[ 21%] Linking C static library libSDL2main.a
+[ 21%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/ShaderLang.cpp.o
+[ 21%] Generating CURLOPT_ADDRESS_SCOPE.3
+[ 21%] Generating CURLOPT_ALTSVC.3
+[ 21%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o
+[ 21%] Built target SDL2main
+[ 21%] Generating CURLOPT_ALTSVC_CTRL.3
+[ 21%] Generating wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c
+[ 21%] Building C object src/CMakeFiles/game.dir/game/g_spawn.c.o
+[ 21%] Generating wayland-generated-protocols/cursor-shape-v1-protocol.c
+[ 21%] Generating CURLOPT_APPEND.3
+[ 21%] Generating wayland-generated-protocols/fractional-scale-v1-protocol.c
+[ 21%] Generating wayland-generated-protocols/idle-inhibit-unstable-v1-protocol.c
 [ 21%] Generating CURLOPT_AUTOREFERER.3
-[ 21%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/SymbolTable.cpp.o
+[ 21%] Generating wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c
+[ 21%] Building C object src/CMakeFiles/server.dir/common/pmove.c.o
+[ 21%] Generating CURLOPT_AWS_SIGV4.3
+[ 21%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/cw-out.c.o
+[ 21%] Generating wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c
+[ 21%] Generating wayland-generated-protocols/primary-selection-unstable-v1-protocol.c
+[ 21%] Building C object src/CMakeFiles/game.dir/game/g_svcmds.c.o
+[ 21%] Generating CURLOPT_BUFFERSIZE.3
+[ 21%] Generating wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c
+[ 21%] Generating CURLOPT_CAINFO.3
+[ 21%] Generating wayland-generated-protocols/tablet-unstable-v2-protocol.c
+[ 21%] Generating wayland-generated-protocols/text-input-unstable-v3-protocol.c
+[ 21%] Generating CURLOPT_CAINFO_BLOB.3
+[ 21%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/dict.c.o
 [ 21%] Generating wayland-generated-protocols/viewporter-protocol.c
 [ 21%] Generating wayland-generated-protocols/wayland-protocol.c
-[ 21%] Generating CURLOPT_AWS_SIGV4.3
-[ 22%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/Versions.cpp.o
+[ 21%] Generating CURLOPT_CAPATH.3
+[ 22%] Building C object src/CMakeFiles/server.dir/common/prompt.c.o
+[ 22%] Building C object src/CMakeFiles/game.dir/game/g_target.c.o
 [ 22%] Generating wayland-generated-protocols/xdg-activation-v1-protocol.c
-[ 22%] Generating CURLOPT_BUFFERSIZE.3
-[ 22%] Generating wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c
+[ 23%] Generating CURLOPT_CA_CACHE_TIMEOUT.3
+[ 24%] Generating wayland-generated-protocols/xdg-output-unstable-v1-protocol.c
+[ 24%] Generating wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c
+[ 24%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/doh.c.o
+[ 24%] Generating wayland-generated-protocols/xdg-shell-protocol.c
+[ 24%] Building C object src/CMakeFiles/game.dir/game/g_trigger.c.o
+[ 24%] Generating CURLOPT_CERTINFO.3
+[ 24%] Generating CURLOPT_CHUNK_BGN_FUNCTION.3
+[ 24%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL.c.o
+[ 24%] Generating CURLOPT_CHUNK_DATA.3
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/doh.c: In function ‘doh_encode’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/doh.c:141:17: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   141 |     char *dot = strchr(hostp, '.');
       |                 ^~~~~~
-[ 23%] Generating wayland-generated-protocols/xdg-output-unstable-v1-protocol.c
-[ 23%] Generating CURLOPT_CAINFO.3
-[ 23%] Generating wayland-generated-protocols/xdg-shell-protocol.c
-[ 23%] Building C object src/CMakeFiles/server.dir/common/mdfour.c.o
-[ 23%] Generating CURLOPT_CAINFO_BLOB.3
-[ 23%] Building C object src/CMakeFiles/game.dir/game/g_ptrs.c.o
-[ 23%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL.c.o
-[ 23%] Generating CURLOPT_CAPATH.3
-[ 24%] Generating CURLOPT_CA_CACHE_TIMEOUT.3
-[ 24%] Building C object src/CMakeFiles/server.dir/common/msg.c.o
-[ 24%] Generating CURLOPT_CERTINFO.3
-[ 24%] Building C object src/CMakeFiles/game.dir/game/g_ptrs_compat_v2.c.o
-[ 24%] Generating CURLOPT_CHUNK_BGN_FUNCTION.3
-[ 24%] Building C object src/CMakeFiles/game.dir/game/g_save.c.o
-[ 24%] Generating CURLOPT_CHUNK_DATA.3
-[ 24%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/dynbuf.c.o
+[ 24%] Building C object src/CMakeFiles/game.dir/game/g_turret.c.o
+[ 24%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/chorus.cpp.o
 [ 24%] Generating CURLOPT_CHUNK_END_FUNCTION.3
+[ 24%] Building C object src/CMakeFiles/server.dir/common/sizebuf.c.o
 [ 24%] Generating CURLOPT_CLOSESOCKETDATA.3
-[ 24%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/dynhds.c.o
-[ 24%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/intermOut.cpp.o
+[ 24%] Building C object src/CMakeFiles/server.dir/common/utils.c.o
 [ 24%] Generating CURLOPT_CLOSESOCKETFUNCTION.3
 [ 24%] Generating CURLOPT_CONNECT_ONLY.3
-[ 24%] Building C object src/CMakeFiles/game.dir/game/g_spawn.c.o
 [ 24%] Generating CURLOPT_CONNECT_TO.3
-[ 24%] Building C object src/CMakeFiles/server.dir/common/pmove.c.o
-[ 24%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/easy.c.o
+[ 24%] Building C object src/CMakeFiles/game.dir/game/g_utils.c.o
+[ 24%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/dynbuf.c.o
 [ 24%] Generating CURLOPT_CONNECTTIMEOUT.3
+[ 24%] Building C object src/CMakeFiles/server.dir/common/zone.c.o
+[ 24%] Building C object src/CMakeFiles/server.dir/common/net/chan.c.o
 [ 24%] Generating CURLOPT_CONNECTTIMEOUT_MS.3
+[ 24%] Building C object src/CMakeFiles/server.dir/common/net/net.c.o
 [ 24%] Generating CURLOPT_CONV_FROM_NETWORK_FUNCTION.3
+[ 24%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/dynhds.c.o
 [ 24%] Generating CURLOPT_CONV_FROM_UTF8_FUNCTION.3
-[ 24%] Building C object src/CMakeFiles/game.dir/game/g_svcmds.c.o
+[ 24%] Building C object src/CMakeFiles/game.dir/game/g_weapon.c.o
 [ 24%] Generating CURLOPT_CONV_TO_NETWORK_FUNCTION.3
-[ 25%] Building C object src/CMakeFiles/server.dir/common/prompt.c.o
-[ 25%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o
-[ 25%] Generating CURLOPT_COOKIE.3
-[ 25%] Generating CURLOPT_COOKIEFILE.3
-[ 25%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o
-[ 25%] Building C object src/CMakeFiles/game.dir/game/g_target.c.o
-[ 26%] Generating CURLOPT_COOKIEJAR.3
-[ 26%] Built target zlib
-[ 26%] Building C object src/CMakeFiles/server.dir/common/sizebuf.c.o
-[ 26%] Building C object src/CMakeFiles/server.dir/common/utils.c.o
+[ 24%] Generating CURLOPT_COOKIE.3
+[ 24%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/SpirvIntrinsics.cpp.o
+[ 24%] Built target zlib
+[ 24%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/easy.c.o
+[ 24%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o
+[ 24%] Generating CURLOPT_COOKIEFILE.3
+[ 24%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/SymbolTable.cpp.o
+[ 25%] Generating CURLOPT_COOKIEJAR.3
 [ 26%] Generating CURLOPT_COOKIELIST.3
+[ 26%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/Versions.cpp.o
+[ 26%] Building C object src/CMakeFiles/server.dir/shared/m_flash.c.o
+[ 26%] Building C object src/CMakeFiles/game.dir/game/m_actor.c.o
 [ 26%] Generating CURLOPT_COOKIESESSION.3
-[ 26%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/escape.c.o
 [ 26%] Generating CURLOPT_COPYPOSTFIELDS.3
+[ 26%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o
 [ 26%] Generating CURLOPT_CRLF.3
-[ 26%] Building C object src/CMakeFiles/server.dir/common/zone.c.o
-[ 26%] Building C object src/CMakeFiles/game.dir/game/g_trigger.c.o
-[ 26%] Building C object src/CMakeFiles/server.dir/common/net/chan.c.o
-[ 26%] Generating CURLOPT_CRLFILE.3
-[ 26%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/file.c.o
-[ 26%] Generating CURLOPT_CURLU.3
-[ 26%] Generating CURLOPT_CUSTOMREQUEST.3
+[ 26%] Building C object src/CMakeFiles/server.dir/shared/shared.c.o
+[ 26%] Building C object src/CMakeFiles/game.dir/game/m_berserk.c.o
 [ 26%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_assert.c.o
-[ 26%] Building C object src/CMakeFiles/server.dir/common/net/net.c.o
-[ 26%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o
-[ 26%] Generating CURLOPT_DEBUGDATA.3
-[ 26%] Building C object src/CMakeFiles/game.dir/game/g_turret.c.o
-[ 26%] Generating CURLOPT_DEBUGFUNCTION.3
-[ 26%] Building C object extern/zlib/CMakeFiles/example.dir/test/example.c.o
-[ 26%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/fopen.c.o
-[ 26%] Generating CURLOPT_DEFAULT_PROTOCOL.3
-[ 26%] Generating CURLOPT_DIRLISTONLY.3
-[ 26%] Generating CURLOPT_DISALLOW_USERNAME_IN_URL.3
-[ 26%] Building C object src/CMakeFiles/game.dir/game/g_weapon.c.o
-[ 26%] Building C object src/CMakeFiles/game.dir/game/g_utils.c.o
-[ 26%] Linking C executable ../../Bin/example
-[ 27%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/formdata.c.o
-[ 27%] Generating CURLOPT_DNS_CACHE_TIMEOUT.3
-[ 27%] Generating CURLOPT_DNS_INTERFACE.3
-[ 27%] Building C object src/CMakeFiles/server.dir/shared/m_flash.c.o
-[ 28%] Generating CURLOPT_DNS_LOCAL_IP4.3
-[ 28%] Generating CURLOPT_DNS_LOCAL_IP6.3
-[ 28%] Building C object src/CMakeFiles/server.dir/shared/shared.c.o
-[ 28%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/ftp.c.o
-[ 28%] Generating CURLOPT_DNS_SERVERS.3
-[ 28%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o
-[ 28%] Building C object src/CMakeFiles/game.dir/game/m_actor.c.o
-[ 28%] Generating CURLOPT_DNS_SHUFFLE_ADDRESSES.3
+[ 26%] Generating CURLOPT_CRLFILE.3
+[ 26%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/escape.c.o
+[ 26%] Generating CURLOPT_CURLU.3
 /build/q2rtx-git/src/Q2RTX-res2k/src/shared/shared.c: In function ‘Q_strnlen’:
 /build/q2rtx-git/src/Q2RTX-res2k/src/shared/shared.c:862:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   862 |     char *p = memchr(s, 0, maxlen);
       |               ^~~~~~
-[ 28%] Building C object src/CMakeFiles/game.dir/game/m_berserk.c.o
-[ 28%] Generating CURLOPT_DNS_USE_GLOBAL_CACHE.3
-[ 28%] Built target example
-[ 28%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/getenv.c.o
-[ 28%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/getinfo.c.o
-[ 28%] Generating CURLOPT_DOH_SSL_VERIFYHOST.3
-[ 28%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/limits.cpp.o
-[ 28%] Generating CURLOPT_DOH_SSL_VERIFYPEER.3
-[ 28%] Building C object src/CMakeFiles/server.dir/unix/hunk.c.o
-[ 28%] Building C object src/CMakeFiles/server.dir/unix/system.c.o
-[ 28%] Building C object src/CMakeFiles/game.dir/game/m_boss2.c.o
-[ 28%] Generating CURLOPT_DOH_SSL_VERIFYSTATUS.3
-[ 28%] Building C object src/CMakeFiles/server.dir/unix/tty.c.o
-[ 28%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_dataqueue.c.o
-[ 28%] Building C object src/CMakeFiles/game.dir/game/m_boss3.c.o
-[ 28%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_error.c.o
-[ 28%] Generating CURLOPT_DOH_URL.3
-[ 28%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/gopher.c.o
-[ 28%] Generating CURLOPT_EGDSOCKET.3
+[ 26%] Generating CURLOPT_CUSTOMREQUEST.3
+[ 26%] Generating CURLOPT_DEBUGDATA.3
+[ 26%] Building C object src/CMakeFiles/game.dir/game/m_boss2.c.o
+[ 26%] Building C object src/CMakeFiles/game.dir/game/m_boss3.c.o
+[ 26%] Generating CURLOPT_DEBUGFUNCTION.3
+[ 26%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/file.c.o
+[ 26%] Building C object src/CMakeFiles/server.dir/unix/hunk.c.o
+[ 26%] Generating CURLOPT_DEFAULT_PROTOCOL.3
+[ 26%] Generating CURLOPT_DIRLISTONLY.3
+[ 26%] Generating CURLOPT_DISALLOW_USERNAME_IN_URL.3
+[ 26%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o
+[ 26%] Generating CURLOPT_DNS_CACHE_TIMEOUT.3
+[ 26%] Building C object extern/zlib/CMakeFiles/example.dir/test/example.c.o
+[ 26%] Building C object src/CMakeFiles/server.dir/unix/system.c.o
+[ 26%] Building C object extern/zlib/CMakeFiles/minigzip.dir/test/minigzip.c.o
+[ 27%] Generating CURLOPT_DNS_INTERFACE.3
+[ 27%] Building C object src/CMakeFiles/game.dir/game/m_boss31.c.o
+[ 28%] Generating CURLOPT_DNS_LOCAL_IP4.3
+[ 28%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/fopen.c.o
+[ 28%] Generating CURLOPT_DNS_LOCAL_IP6.3
+[ 28%] Linking C executable ../../Bin/example
+[ 28%] Building C object extern/zlib/CMakeFiles/example64.dir/test/example.c.o
+[ 28%] Linking C executable ../../Bin/minigzip
+[ 28%] Generating CURLOPT_DNS_SERVERS.3
 /build/q2rtx-git/src/Q2RTX-res2k/src/unix/system.c: In function ‘Sys_Init’:
 /build/q2rtx-git/src/Q2RTX-res2k/src/unix/system.c:223:9: warning: ignoring return value of ‘getcwd’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
   223 |         getcwd(baseDirectory, PATH_MAX);
       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[ 28%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hash.c.o
-[ 28%] Generating CURLOPT_ERRORBUFFER.3
-[ 28%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/linkValidate.cpp.o
-[ 28%] Building C object src/CMakeFiles/server.dir/server/commands.c.o
-[ 28%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/headers.c.o
-[ 28%] Generating CURLOPT_EXPECT_100_TIMEOUT_MS.3
-[ 29%] Building C object src/CMakeFiles/game.dir/game/m_boss31.c.o
+[ 28%] Generating CURLOPT_DNS_SHUFFLE_ADDRESSES.3
+[ 28%] Generating CURLOPT_DNS_USE_GLOBAL_CACHE.3
+[ 29%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/formdata.c.o
+[ 29%] Building C object src/CMakeFiles/server.dir/unix/tty.c.o
 [ 29%] Building C object src/CMakeFiles/game.dir/game/m_boss32.c.o
+[ 29%] Linking C executable ../../Bin/example64
+[ 29%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_dataqueue.c.o
+[ 29%] Generating CURLOPT_DOH_SSL_VERIFYHOST.3
+[ 29%] Generating CURLOPT_DOH_SSL_VERIFYPEER.3
+[ 29%] Generating CURLOPT_DOH_SSL_VERIFYSTATUS.3
+[ 29%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/ftp.c.o
+[ 29%] Built target minigzip
+[ 29%] Generating CURLOPT_DOH_URL.3
 [ 29%] Building C object src/CMakeFiles/game.dir/game/m_brain.c.o
+[ 29%] Building C object src/CMakeFiles/server.dir/server/commands.c.o
+[ 29%] Generating CURLOPT_EGDSOCKET.3
+[ 29%] Built target example
+[ 29%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o
+[ 29%] Generating CURLOPT_ERRORBUFFER.3
+[ 29%] Building C object extern/zlib/CMakeFiles/minigzip64.dir/test/minigzip.c.o
+[ 29%] Generating CURLOPT_EXPECT_100_TIMEOUT_MS.3
+[ 29%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/getenv.c.o
 [ 29%] Generating CURLOPT_FAILONERROR.3
 [ 29%] Generating CURLOPT_FILETIME.3
-[ 29%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hmac.c.o
+[ 29%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_error.c.o
+[ 29%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/getinfo.c.o
+[ 29%] Built target example64
+[ 29%] Linking C executable ../../Bin/minigzip64
+[ 29%] Generating CURLOPT_FNMATCH_DATA.3
+[ 29%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_guid.c.o
+[ 29%] Building C object src/CMakeFiles/game.dir/game/m_chick.c.o
+[ 29%] Building C object src/CMakeFiles/game.dir/game/m_flipper.c.o
+[ 29%] Generating CURLOPT_FNMATCH_FUNCTION.3
+[ 29%] Building C object src/CMakeFiles/server.dir/server/entities.c.o
+[ 30%] Generating CURLOPT_FOLLOWLOCATION.3
+[ 30%] Generating CURLOPT_FORBID_REUSE.3
+[ 30%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/intermOut.cpp.o
+[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/gopher.c.o
+[ 30%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_hints.c.o
+[ 30%] Generating CURLOPT_FRESH_CONNECT.3
+[ 30%] Generating CURLOPT_FTP_ACCOUNT.3
+[ 30%] Building C object src/CMakeFiles/game.dir/game/m_float.c.o
+[ 30%] Building C object src/CMakeFiles/server.dir/server/game.c.o
+[ 30%] Generating CURLOPT_FTP_ALTERNATIVE_TO_USER.3
+[ 30%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/compressor.cpp.o
+[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hash.c.o
+[ 30%] Generating CURLOPT_FTP_CREATE_MISSING_DIRS.3
+[ 30%] Built target minigzip64
+[ 30%] Generating CURLOPT_FTP_FILEMETHOD.3
+[ 30%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/convolution.cpp.o
+[ 30%] Building C object src/CMakeFiles/server.dir/server/init.c.o
+[ 30%] Generating CURLOPT_FTP_SKIP_PASV_IP.3
+[ 30%] Generating CURLOPT_FTP_SSL_CCC.3
+[ 30%] Building C object src/CMakeFiles/game.dir/game/m_flyer.c.o
+[ 30%] Building C object src/CMakeFiles/game.dir/game/m_gladiator.c.o
+[ 30%] Generating CURLOPT_FTP_USE_EPRT.3
+[ 30%] Generating CURLOPT_FTP_USE_EPSV.3
+[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/headers.c.o
+[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hmac.c.o
+[ 30%] Generating CURLOPT_FTP_USE_PRET.3
+[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostasyn.c.o
+[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostip.c.o
+[ 30%] Generating CURLOPT_FTPPORT.3
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/headers.c: In function ‘Curl_headers_push’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/headers.c:292:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   292 |   end = strchr(header, '\r');
@@ -1503,62 +1548,47 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/headers.c:294:9: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   294 |     end = strchr(header, '\n');
       |         ^
-[ 29%] Generating CURLOPT_FNMATCH_DATA.3
-[ 29%] Building C object src/CMakeFiles/game.dir/game/m_chick.c.o
-[ 29%] Generating CURLOPT_FNMATCH_FUNCTION.3
-[ 29%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_guid.c.o
-[ 30%] Generating CURLOPT_FOLLOWLOCATION.3
-[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostasyn.c.o
-[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostip.c.o
-[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostip4.c.o
-[ 30%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effect.cpp.o
-[ 30%] Generating CURLOPT_FORBID_REUSE.3
-[ 30%] Generating CURLOPT_FRESH_CONNECT.3
-[ 30%] Generating CURLOPT_FTP_ACCOUNT.3
-[ 30%] Generating CURLOPT_FTP_ALTERNATIVE_TO_USER.3
-[ 30%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_hints.c.o
-[ 30%] Building C object src/CMakeFiles/server.dir/server/entities.c.o
-[ 30%] Building C object src/CMakeFiles/server.dir/server/game.c.o
-[ 30%] Building C object src/CMakeFiles/game.dir/game/m_flipper.c.o
-[ 30%] Building C object src/CMakeFiles/server.dir/server/init.c.o
-[ 30%] Generating CURLOPT_FTP_CREATE_MISSING_DIRS.3
-[ 30%] Building C object extern/zlib/CMakeFiles/minigzip.dir/test/minigzip.c.o
-[ 30%] Generating CURLOPT_FTP_FILEMETHOD.3
-[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostip6.c.o
-[ 30%] Generating CURLOPT_FTP_SKIP_PASV_IP.3
-[ 30%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_list.c.o
-[ 30%] Linking C executable ../../Bin/minigzip
-[ 30%] Building C object src/CMakeFiles/game.dir/game/m_float.c.o
-[ 30%] Generating CURLOPT_FTP_SSL_CCC.3
-[ 30%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/parseConst.cpp.o
+[ 30%] Building C object src/CMakeFiles/game.dir/game/m_gunner.c.o
 [ 30%] Building C object src/CMakeFiles/server.dir/server/main.c.o
-[ 31%] Building C object src/CMakeFiles/server.dir/server/mvd.c.o
-[ 31%] Generating CURLOPT_FTP_USE_EPRT.3
-[ 31%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostsyn.c.o
-[ 31%] Generating CURLOPT_FTP_USE_EPSV.3
-[ 31%] Generating CURLOPT_FTP_USE_PRET.3
-[ 31%] Building C object src/CMakeFiles/game.dir/game/m_flyer.c.o
-[ 31%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hsts.c.o
-[ 31%] Generating CURLOPT_FTPPORT.3
-[ 31%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/reflection.cpp.o
-[ 31%] Built target minigzip
-[ 31%] Generating CURLOPT_FTPSSLAUTH.3
-[ 31%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/Pp.cpp.o
-[ 31%] Generating CURLOPT_GSSAPI_DELEGATION.3
-[ 31%] Building C object src/CMakeFiles/server.dir/server/send.c.o
-[ 31%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/autowah.cpp.o
-[ 32%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http.c.o
-[ 32%] Generating CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3
-[ 32%] Building C object src/CMakeFiles/game.dir/game/m_gladiator.c.o
-[ 32%] Generating CURLOPT_HAPROXYPROTOCOL.3
-[ 32%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_log.c.o
+[ 30%] Generating CURLOPT_FTPSSLAUTH.3
+[ 30%] Building C object src/CMakeFiles/game.dir/game/m_hover.c.o
+[ 30%] Generating CURLOPT_GSSAPI_DELEGATION.3
+[ 30%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostip4.c.o
+[ 30%] Building C object src/CMakeFiles/game.dir/game/m_infantry.c.o
+[ 31%] Generating CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3
+[ 31%] Building C object src/CMakeFiles/game.dir/game/m_insane.c.o
+[ 31%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_list.c.o
+[ 31%] Generating CURLOPT_HAPROXYPROTOCOL.3
+[ 31%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/dedicated.cpp.o
+[ 32%] Building C object src/CMakeFiles/server.dir/server/mvd.c.o
 [ 32%] Generating CURLOPT_HAPROXY_CLIENT_IP.3
 [ 32%] Generating CURLOPT_HEADER.3
+[ 32%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_log.c.o
+[ 32%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostip6.c.o
+[ 32%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_utils.c.o
 [ 32%] Generating CURLOPT_HEADERDATA.3
+[ 32%] Building C object src/CMakeFiles/game.dir/game/m_medic.c.o
+[ 32%] Generating CURLOPT_HEADERFUNCTION.3
+[ 32%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/atomic/SDL_atomic.c.o
+[ 32%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hostsyn.c.o
+[ 32%] Generating CURLOPT_HEADEROPT.3
+[ 32%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/hsts.c.o
+[ 32%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/limits.cpp.o
+[ 32%] Generating CURLOPT_HSTS.3
+[ 32%] Building C object src/CMakeFiles/server.dir/server/send.c.o
+[ 32%] Generating CURLOPT_HSTS_CTRL.3
+[ 32%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/distortion.cpp.o
+[ 32%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http.c.o
+[ 32%] Building C object src/CMakeFiles/game.dir/game/m_move.c.o
+[ 33%] Generating CURLOPT_HSTSREADDATA.3
+[ 33%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http1.c.o
+[ 33%] Generating CURLOPT_HSTSREADFUNCTION.3
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/http.c: In function ‘Curl_http_target’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/http.c:1896:22: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
  1896 |         char *type = strstr(path, ";type=");
       |                      ^~~~~~
+[ 33%] Generating CURLOPT_HSTSWRITEDATA.3
+[ 33%] Generating CURLOPT_HSTSWRITEFUNCTION.3
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/http.c: In function ‘verify_header’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/http.c:3320:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
  3320 |   char *ptr = memchr(header, 0x00, hlen);
@@ -1570,35 +1600,28 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/http.c:3672:13: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
  3672 |     end_ptr = memchr(buf, 0x0a, blen);
       |             ^
-[ 32%] Generating CURLOPT_HEADERFUNCTION.3
-[ 32%] Building C object src/CMakeFiles/game.dir/game/m_gunner.c.o
-[ 32%] Generating CURLOPT_HEADEROPT.3
-[ 32%] Building C object src/CMakeFiles/server.dir/server/user.c.o
-[ 32%] Building C object src/CMakeFiles/server.dir/server/world.c.o
-[ 32%] Generating CURLOPT_HSTS.3
-[ 32%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpAtom.cpp.o
-[ 32%] Generating CURLOPT_HSTS_CTRL.3
-[ 32%] Generating CURLOPT_HSTSREADDATA.3
-[ 32%] Building C object src/CMakeFiles/game.dir/game/m_hover.c.o
-[ 32%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/chorus.cpp.o
-[ 32%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/SDL_utils.c.o
-[ 32%] Generating CURLOPT_HSTSREADFUNCTION.3
-[ 33%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http1.c.o
-[ 33%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http2.c.o
-[ 33%] Generating CURLOPT_HSTSWRITEDATA.3
-[ 33%] Building C object src/CMakeFiles/server.dir/server/mvd/client.c.o
-[ 33%] Generating CURLOPT_HSTSWRITEFUNCTION.3
-[ 33%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/atomic/SDL_atomic.c.o
-[ 33%] Building C object src/CMakeFiles/game.dir/game/m_infantry.c.o
-[ 33%] Building C object extern/zlib/CMakeFiles/example64.dir/test/example.c.o
-[ 33%] Building C object src/CMakeFiles/game.dir/game/m_insane.c.o
 [ 33%] Generating CURLOPT_HTTP09_ALLOWED.3
-[ 33%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o
-[ 33%] Generating CURLOPT_HTTP200ALIASES.3
-[ 33%] Generating CURLOPT_HTTP_CONTENT_DECODING.3
-[ 33%] Linking C executable ../../Bin/example64
 [ 33%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/atomic/SDL_spinlock.c.o
+[ 33%] Building C object src/CMakeFiles/server.dir/server/user.c.o
+[ 33%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/linkValidate.cpp.o
+[ 33%] Generating CURLOPT_HTTP200ALIASES.3
+[ 33%] Building C object src/CMakeFiles/game.dir/game/m_mutant.c.o
+[ 33%] Building C object src/CMakeFiles/server.dir/server/world.c.o
+[ 33%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http2.c.o
+[ 33%] Generating CURLOPT_HTTP_CONTENT_DECODING.3
 [ 33%] Generating CURLOPT_HTTP_TRANSFER_DECODING.3
+[ 33%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audio.c.o
+[ 33%] Building C object src/CMakeFiles/game.dir/game/m_parasite.c.o
+[ 33%] Generating CURLOPT_HTTP_VERSION.3
+[ 34%] Building C object src/CMakeFiles/game.dir/game/m_soldier.c.o
+[ 34%] Generating CURLOPT_HTTPAUTH.3
+[ 34%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o
+[ 34%] Building C object src/CMakeFiles/server.dir/server/mvd/client.c.o
+[ 35%] Generating CURLOPT_HTTPGET.3
+[ 35%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/parseConst.cpp.o
+[ 35%] Building C object src/CMakeFiles/server.dir/server/mvd/parse.c.o
+[ 35%] Generating CURLOPT_HTTPHEADER.3
+[ 35%] Building C object src/CMakeFiles/game.dir/game/m_supertank.c.o
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/http_aws_sigv4.c: In function ‘canon_query’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/http_aws_sigv4.c:446:9: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   446 |     amp = strchr(p, '&');
@@ -1607,118 +1630,101 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/http_aws_sigv4.c:605:21: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   605 |     char *hostdot = strchr(hostname, '.');
       |                     ^~~~~~
-[ 33%] Building C object src/CMakeFiles/game.dir/game/m_medic.c.o
-[ 33%] Generating CURLOPT_HTTP_VERSION.3
-[ 33%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpContext.cpp.o
-[ 33%] Building C object extern/zlib/CMakeFiles/minigzip64.dir/test/minigzip.c.o
-[ 33%] Generating CURLOPT_HTTPAUTH.3
-[ 33%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o
-[ 34%] Generating CURLOPT_HTTPGET.3
-[ 34%] Building C object src/CMakeFiles/server.dir/server/mvd/parse.c.o
-[ 34%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audio.c.o
-[ 34%] Generating CURLOPT_HTTPHEADER.3
-[ 34%] Linking C executable ../../Bin/minigzip64
-[ 34%] Building C object src/CMakeFiles/game.dir/game/m_move.c.o
-[ 34%] Generating CURLOPT_HTTPPOST.3
-[ 34%] Generating CURLOPT_HTTPPROXYTUNNEL.3
-[ 34%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_digest.c.o
-[ 34%] Generating CURLOPT_IGNORE_CONTENT_LENGTH.3
-[ 34%] Generating CURLOPT_INFILESIZE.3
-[ 34%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpScanner.cpp.o
-[ 34%] Built target example64
-[ 34%] Building C object src/CMakeFiles/server.dir/server/mvd/game.c.o
-[ 34%] Generating CURLOPT_INFILESIZE_LARGE.3
-[ 34%] Building C object src/CMakeFiles/server.dir/server/save.c.o
-[ 34%] Generating CURLOPT_INTERFACE.3
-[ 34%] Building C object src/CMakeFiles/game.dir/game/m_mutant.c.o
-[ 35%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiocvt.c.o
-[ 35%] Generating CURLOPT_INTERLEAVEDATA.3
-[ 35%] Built target minigzip64
-[ 35%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o
-[ 35%] Generating CURLOPT_INTERLEAVEFUNCTION.3
-[ 35%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o
-[ 35%] Generating CURLOPT_IOCTLDATA.3
-[ 35%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o
-[ 35%] Generating CURLOPT_IOCTLFUNCTION.3
-[ 35%] Building C object src/CMakeFiles/server.dir/server/ac.c.o
-[ 35%] Building C object src/CMakeFiles/game.dir/game/m_parasite.c.o
-[ 35%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/compressor.cpp.o
-[ 36%] Generating CURLOPT_IPRESOLVE.3
-[ 36%] Generating CURLOPT_ISSUERCERT.3
-[ 36%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpTokens.cpp.o
-[ 36%] Generating CURLOPT_ISSUERCERT_BLOB.3
-[ 36%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/idn.c.o
-[ 36%] Generating CURLOPT_KEEP_SENDING_ON_ERROR.3
+[ 35%] Generating CURLOPT_HTTPPOST.3
+[ 36%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiocvt.c.o
+[ 36%] Generating CURLOPT_HTTPPROXYTUNNEL.3
+[ 36%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o
+[ 36%] Generating CURLOPT_IGNORE_CONTENT_LENGTH.3
+[ 36%] Generating CURLOPT_INFILESIZE.3
+[ 36%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/echo.cpp.o
+[ 36%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/effects.cpp.o
+[ 36%] Generating CURLOPT_INFILESIZE_LARGE.3
+[ 36%] Building C object src/CMakeFiles/game.dir/game/m_tank.c.o
+[ 36%] Building C object src/CMakeFiles/game.dir/game/p_client.c.o
+[ 36%] Generating CURLOPT_INTERFACE.3
+[ 36%] Generating CURLOPT_INTERLEAVEDATA.3
+[ 36%] Generating CURLOPT_INTERLEAVEFUNCTION.3
+[ 36%] Building C object src/CMakeFiles/server.dir/server/mvd/game.c.o
+[ 36%] Building C object src/CMakeFiles/server.dir/server/save.c.o
+[ 36%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_digest.c.o
+[ 36%] Generating CURLOPT_IOCTLDATA.3
 [ 36%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiodev.c.o
-[ 37%] Building C object src/CMakeFiles/game.dir/game/m_soldier.c.o
-[ 37%] Building C object src/CMakeFiles/server.dir/client/null.c.o
+[ 36%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiotypecvt.c.o
+[ 36%] Generating CURLOPT_IOCTLFUNCTION.3
+[ 37%] Generating CURLOPT_IPRESOLVE.3
+[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o
+[ 37%] Generating CURLOPT_ISSUERCERT.3
+[ 37%] Generating CURLOPT_ISSUERCERT_BLOB.3
+[ 37%] Building C object src/CMakeFiles/game.dir/game/p_hud.c.o
+[ 37%] Generating CURLOPT_KEEP_SENDING_ON_ERROR.3
+[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o
+[ 37%] Building C object src/CMakeFiles/game.dir/game/p_trail.c.o
 [ 37%] Generating CURLOPT_KEYPASSWD.3
+[ 37%] Building C object src/CMakeFiles/server.dir/server/ac.c.o
 [ 37%] Generating CURLOPT_KRBLEVEL.3
-[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/if2ip.c.o
 [ 37%] Generating CURLOPT_LOCALPORT.3
-[ 37%] Linking C executable /build/q2rtx-git/src/Q2RTX-res2k/q2rtxded
+[ 37%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/equalizer.cpp.o
+[ 37%] Building C object src/CMakeFiles/game.dir/game/p_view.c.o
 [ 37%] Generating CURLOPT_LOCALPORTRANGE.3
-[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/imap.c.o
-[ 37%] Building C object src/CMakeFiles/game.dir/game/m_supertank.c.o
 [ 37%] Generating CURLOPT_LOGIN_OPTIONS.3
+[ 37%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_mixer.c.o
+[ 37%] Building C object src/CMakeFiles/server.dir/client/null.c.o
 [ 37%] Generating CURLOPT_LOW_SPEED_LIMIT.3
-[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/inet_ntop.c.o
-[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/inet_pton.c.o
+[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o
 [ 37%] Generating CURLOPT_LOW_SPEED_TIME.3
 [ 37%] Generating CURLOPT_MAIL_AUTH.3
-[ 37%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/convolution.cpp.o
-[ 37%] Building C object src/CMakeFiles/game.dir/game/m_tank.c.o
-[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/krb5.c.o
+[ 37%] Building C object src/CMakeFiles/game.dir/game/p_weapon.c.o
 [ 37%] Generating CURLOPT_MAIL_FROM.3
+[ 37%] Linking C executable /build/q2rtx-git/src/Q2RTX-res2k/q2rtxded
+[ 37%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/reflection.cpp.o
 [ 37%] Generating CURLOPT_MAIL_RCPT.3
-[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/ldap.c.o
-[ 37%] Generating CURLOPT_MAIL_RCPT_ALLOWFAILS.3
 [ 37%] Generating CURLOPT_MAX_RECV_SPEED_LARGE.3
-[ 37%] Building C object src/CMakeFiles/game.dir/game/p_client.c.o
-[ 38%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/llist.c.o
-[ 38%] Generating CURLOPT_MAX_SEND_SPEED_LARGE.3
-[ 38%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/macos.c.o
-[ 38%] Generating CURLOPT_MAXAGE_CONN.3
-[ 38%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/md4.c.o
-[ 39%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiotypecvt.c.o
-[ 39%] Building C object src/CMakeFiles/game.dir/game/p_hud.c.o
+[ 37%] Generating CURLOPT_MAIL_RCPT_ALLOWFAILS.3
+[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/idn.c.o
+[ 37%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_wave.c.o
+[ 37%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/Pp.cpp.o
+[ 37%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/if2ip.c.o
+[ 37%] Generating CURLOPT_MAX_SEND_SPEED_LARGE.3
+[ 37%] Generating CURLOPT_MAXAGE_CONN.3
+[ 37%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/cpuinfo/SDL_cpuinfo.c.o
+[ 38%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/fshifter.cpp.o
 [ 39%] Generating CURLOPT_MAXCONNECTS.3
+[ 39%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/imap.c.o
 [ 39%] Generating CURLOPT_MAXFILESIZE.3
-[ 39%] Building C object src/CMakeFiles/game.dir/game/p_trail.c.o
+[ 39%] Building C object src/CMakeFiles/game.dir/shared/m_flash.c.o
 [ 39%] Generating CURLOPT_MAXFILESIZE_LARGE.3
-[ 39%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/md5.c.o
-[ 39%] Building C object src/CMakeFiles/game.dir/game/p_view.c.o
-[ 39%] Generating CURLOPT_MAXLIFETIME_CONN.3
-[ 39%] Building C object src/CMakeFiles/game.dir/game/p_weapon.c.o
+[ 39%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/inet_ntop.c.o
 [ 39%] Generating CURLOPT_MAXREDIRS.3
-[ 39%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/propagateNoContraction.cpp.o
+[ 39%] Generating CURLOPT_MAXLIFETIME_CONN.3
 [ 39%] Generating CURLOPT_MIME_OPTIONS.3
 [ 39%] Generating CURLOPT_MIMEPOST.3
-[ 39%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/memdebug.c.o
+[ 39%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/modulator.cpp.o
+[ 39%] Building C object src/CMakeFiles/game.dir/shared/shared.c.o
+[ 39%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/inet_pton.c.o
+[ 39%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/dynapi/SDL_dynapi.c.o
 [ 39%] Generating CURLOPT_NETRC.3
-[ 39%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/mime.c.o
+[ 39%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/null.cpp.o
 [ 39%] Generating CURLOPT_NETRC_FILE.3
-[ 39%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_mixer.c.o
-[ 39%] Generating CURLOPT_NEW_DIRECTORY_PERMS.3
-[ 39%] Building C object src/CMakeFiles/game.dir/shared/m_flash.c.o
-[ 39%] Generating CURLOPT_NEW_FILE_PERMS.3
-[ 39%] Generating CURLOPT_NOBODY.3
-[ 39%] Generating CURLOPT_NOPROGRESS.3
-[ 40%] Generating CURLOPT_NOPROXY.3
-[ 40%] Building C object src/CMakeFiles/game.dir/shared/shared.c.o
-[ 40%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/mprintf.c.o
-[ 40%] Generating CURLOPT_NOSIGNAL.3
+[ 39%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/krb5.c.o
 /build/q2rtx-git/src/Q2RTX-res2k/src/shared/shared.c: In function ‘Q_strnlen’:
 /build/q2rtx-git/src/Q2RTX-res2k/src/shared/shared.c:862:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   862 |     char *p = memchr(s, 0, maxlen);
       |               ^~~~~~
-[ 40%] Generating CURLOPT_OPENSOCKETDATA.3
-[ 40%] Generating CURLOPT_OPENSOCKETFUNCTION.3
-[ 40%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/dedicated.cpp.o
-[ 40%] Linking C shared library /build/q2rtx-git/src/Q2RTX-res2k/baseq2/gamex86_64.so
-[ 40%] Generating CURLOPT_PASSWORD.3
-[ 40%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/mqtt.c.o
-[ 40%] Generating CURLOPT_PATH_AS_IS.3
+[ 39%] Generating CURLOPT_NEW_DIRECTORY_PERMS.3
+[ 39%] Generating CURLOPT_NEW_FILE_PERMS.3
+[ 39%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpAtom.cpp.o
+[ 39%] Generating CURLOPT_NOBODY.3
+[ 39%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/ldap.c.o
+[ 39%] Generating CURLOPT_NOPROGRESS.3
+[ 39%] Linking C shared library /build/q2rtx-git/src/Q2RTX-res2k/baseq2/gamex86_64.so
+[ 39%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_clipboardevents.c.o
+[ 40%] Generating CURLOPT_NOPROXY.3
+[ 41%] Generating CURLOPT_NOSIGNAL.3
+[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/llist.c.o
+[ 41%] Generating CURLOPT_OPENSOCKETDATA.3
+[ 41%] Generating CURLOPT_OPENSOCKETFUNCTION.3
+[ 41%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpContext.cpp.o
+[ 41%] Generating CURLOPT_PASSWORD.3
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/g_ptrs_compat_v2.c:329:13: warning: type of ‘mutant_checkattack’ does not match original declaration [-Wlto-type-mismatch]
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_mutant.c:409:6: note: return value type mismatch
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_mutant.c:409:6: note: type ‘_Bool’ should match type ‘void’
@@ -2194,7 +2200,6 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_supertank.c:179:15: note: ‘supertank_move_forward’ was previously declared here
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/g_ptrs_compat_v2.c:246:12: warning: type of ‘supertank_move_end_attack1’ does not match original declaration [-Wlto-type-mismatch]
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_supertank.c:416:15: note: type ‘const struct mmove_t’ should match type ‘int’
-[ 40%] Generating CURLOPT_PINNEDPUBLICKEY.3
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_supertank.c:416:15: note: ‘supertank_move_end_attack1’ was previously declared here
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/g_ptrs_compat_v2.c:244:12: warning: type of ‘supertank_move_death’ does not match original declaration [-Wlto-type-mismatch]
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_supertank.c:293:15: note: type ‘const struct mmove_t’ should match type ‘int’
@@ -2794,6 +2799,7 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_brain.c:316:15: note: type ‘const struct mmove_t’ should match type ‘int’
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_brain.c:316:15: note: ‘brain_move_death1’ was previously declared here
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/g_ptrs_compat_v2.c:36:12: warning: type of ‘brain_move_attack2’ does not match original declaration [-Wlto-type-mismatch]
+[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/macos.c.o
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_brain.c:412:15: note: type ‘const struct mmove_t’ should match type ‘int’
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/m_brain.c:412:15: note: ‘brain_move_attack2’ was previously declared here
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/g_ptrs_compat_v2.c:35:12: warning: type of ‘brain_move_attack1’ does not match original declaration [-Wlto-type-mismatch]
@@ -3541,33 +3547,59 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/g_ai.c:542:6: note: return value type mismatch
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/g_ai.c:542:6: note: type ‘_Bool’ should match type ‘void’
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/game/g_ai.c:542:6: note: ‘M_CheckAttack’ was previously declared here
-[ 40%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/multi.c.o
-[ 40%] Generating CURLOPT_PIPEWAIT.3
-[ 40%] Generating CURLOPT_PORT.3
-[ 40%] Generating CURLOPT_POST.3
-[ 40%] Generating CURLOPT_POSTFIELDS.3
-[ 40%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_wave.c.o
-[ 40%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/distortion.cpp.o
-[ 40%] Generating CURLOPT_POSTFIELDSIZE.3
-[ 40%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/cpuinfo/SDL_cpuinfo.c.o
-[ 40%] Generating CURLOPT_POSTFIELDSIZE_LARGE.3
-[ 40%] Generating CURLOPT_POSTQUOTE.3
-[ 40%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/echo.cpp.o
-[ 40%] Generating CURLOPT_POSTREDIR.3
-[ 40%] Generating CURLOPT_PRE_PROXY.3
-[ 40%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/netrc.c.o
-[ 40%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/dynapi/SDL_dynapi.c.o
-[ 40%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/effects.cpp.o
-[ 40%] Generating CURLOPT_PREQUOTE.3
-[ 41%] Generating CURLOPT_PREREQDATA.3
-[ 41%] Generating CURLOPT_PREREQFUNCTION.3
-[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/nonblock.c.o
-[ 41%] Generating CURLOPT_PRIVATE.3
-[ 41%] Generating CURLOPT_PROGRESSDATA.3
-[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/noproxy.c.o
-[ 41%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_clipboardevents.c.o
-[ 41%] Generating CURLOPT_PROGRESSFUNCTION.3
-[ 41%] Generating CURLOPT_PROTOCOLS.3
+[ 41%] Generating CURLOPT_PATH_AS_IS.3
+[ 41%] Generating CURLOPT_PINNEDPUBLICKEY.3
+[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/md4.c.o
+[ 41%] Generating CURLOPT_PIPEWAIT.3
+[ 41%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_displayevents.c.o
+[ 41%] Generating CURLOPT_PORT.3
+[ 41%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_dropevents.c.o
+[ 41%] Generating CURLOPT_POST.3
+[ 41%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/pshifter.cpp.o
+[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/md5.c.o
+[ 41%] Generating CURLOPT_POSTFIELDS.3
+[ 41%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpScanner.cpp.o
+[ 41%] Generating CURLOPT_POSTFIELDSIZE.3
+[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/memdebug.c.o
+[ 41%] Generating CURLOPT_POSTFIELDSIZE_LARGE.3
+[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/mime.c.o
+[ 41%] Generating CURLOPT_POSTQUOTE.3
+[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/mprintf.c.o
+[ 41%] Generating CURLOPT_POSTREDIR.3
+[ 41%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpTokens.cpp.o
+[ 41%] Generating CURLOPT_PRE_PROXY.3
+[ 41%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/reverb.cpp.o
+[ 41%] Generating CURLOPT_PREQUOTE.3
+[ 42%] Generating CURLOPT_PREREQDATA.3
+[ 42%] Generating CURLOPT_PREREQFUNCTION.3
+[ 42%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/vmorpher.cpp.o
+[ 42%] Generating CURLOPT_PRIVATE.3
+[ 42%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/mqtt.c.o
+[ 42%] Generating CURLOPT_PROGRESSDATA.3
+[ 42%] Generating CURLOPT_PROGRESSFUNCTION.3
+[ 42%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/multi.c.o
+[ 42%] Generating CURLOPT_PROTOCOLS.3
+[ 42%] Generating CURLOPT_PROTOCOLS_STR.3
+[ 42%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_events.c.o
+[ 42%] Generating CURLOPT_PROXY.3
+[ 42%] Generating CURLOPT_PROXY_CAINFO.3
+[ 42%] Generating CURLOPT_PROXY_CAINFO_BLOB.3
+[ 42%] Generating CURLOPT_PROXY_CAPATH.3
+[ 42%] Generating CURLOPT_PROXY_CRLFILE.3
+[ 42%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/error.cpp.o
+[ 42%] Generating CURLOPT_PROXY_ISSUERCERT.3
+[ 42%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/netrc.c.o
+[ 42%] Generating CURLOPT_PROXY_ISSUERCERT_BLOB.3
+[ 42%] Generating CURLOPT_PROXY_KEYPASSWD.3
+[ 42%] Generating CURLOPT_PROXY_PINNEDPUBLICKEY.3
+[ 42%] Generating CURLOPT_PROXY_SERVICE_NAME.3
+[ 42%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/nonblock.c.o
+[ 42%] Generating CURLOPT_PROXY_SSL_CIPHER_LIST.3
+[ 42%] Generating CURLOPT_PROXY_SSL_OPTIONS.3
+[ 42%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/noproxy.c.o
+[ 42%] Generating CURLOPT_PROXY_SSL_VERIFYHOST.3
+[ 42%] Generating CURLOPT_PROXY_SSL_VERIFYPEER.3
+[ 42%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_gesture.c.o
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/noproxy.c: In function ‘Curl_check_noproxy’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/noproxy.c:151:14: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   151 |       endptr = strchr(name, ']');
@@ -3575,33 +3607,54 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/noproxy.c:232:17: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   232 |           slash = strchr(check, '/');
       |                 ^
-[ 41%] Generating CURLOPT_PROTOCOLS_STR.3
-[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/openldap.c.o
-[ 41%] Generating CURLOPT_PROXY.3
-[ 41%] Generating CURLOPT_PROXY_CAINFO.3
-[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/parsedate.c.o
-[ 41%] Generating CURLOPT_PROXY_CAINFO_BLOB.3
-[ 41%] Generating CURLOPT_PROXY_CAPATH.3
-[ 41%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/equalizer.cpp.o
-[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/pingpong.c.o
-[ 41%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/GlslangToSpv.cpp.o
-[ 41%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/pop3.c.o
-[ 41%] Generating CURLOPT_PROXY_CRLFILE.3
-[ 42%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/progress.c.o
-[ 42%] Generating CURLOPT_PROXY_ISSUERCERT_BLOB.3
-[ 42%] Generating CURLOPT_PROXY_ISSUERCERT.3
-[ 43%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/psl.c.o
-[ 43%] Generating CURLOPT_PROXY_KEYPASSWD.3
-[ 43%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/fshifter.cpp.o
-[ 43%] Generating CURLOPT_PROXY_PINNEDPUBLICKEY.3
-[ 43%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/rand.c.o
-[ 43%] Generating CURLOPT_PROXY_SERVICE_NAME.3
-[ 43%] Generating CURLOPT_PROXY_SSL_CIPHER_LIST.3
-[ 43%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/rename.c.o
-[ 43%] Generating CURLOPT_PROXY_SSL_OPTIONS.3
-[ 43%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/InReadableOrder.cpp.o
-[ 43%] Generating CURLOPT_PROXY_SSL_VERIFYHOST.3
-[ 43%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/request.c.o
+[ 42%] Generating CURLOPT_PROXY_SSLCERT.3
+[ 42%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/openldap.c.o
+[ 42%] Generating CURLOPT_PROXY_SSLCERT_BLOB.3
+[ 42%] Generating CURLOPT_PROXY_SSLCERTTYPE.3
+[ 42%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/parsedate.c.o
+[ 42%] Generating CURLOPT_PROXY_SSLKEY.3
+[ 42%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/pingpong.c.o
+[ 42%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/MachineIndependent/propagateNoContraction.cpp.o
+[ 42%] Generating CURLOPT_PROXY_SSLKEY_BLOB.3
+[ 42%] Generating CURLOPT_PROXY_SSLKEYTYPE.3
+[ 43%] Generating CURLOPT_PROXY_SSLVERSION.3
+[ 43%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/pop3.c.o
+[ 43%] Generating CURLOPT_PROXY_TLS13_CIPHERS.3
+[ 43%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/GlslangToSpv.cpp.o
+[ 43%] Generating CURLOPT_PROXY_TLSAUTH_PASSWORD.3
+[ 44%] Generating CURLOPT_PROXY_TLSAUTH_TYPE.3
+[ 44%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/progress.c.o
+[ 44%] Generating CURLOPT_PROXY_TLSAUTH_USERNAME.3
+[ 44%] Generating CURLOPT_PROXY_TRANSFER_MODE.3
+[ 44%] Generating CURLOPT_PROXYAUTH.3
+[ 44%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_keyboard.c.o
+[ 44%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/psl.c.o
+[ 44%] Generating CURLOPT_PROXYHEADER.3
+[ 44%] Generating CURLOPT_PROXYPASSWORD.3
+[ 44%] Generating CURLOPT_PROXYPORT.3
+[ 44%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/rand.c.o
+[ 44%] Generating CURLOPT_PROXYTYPE.3
+[ 44%] Generating CURLOPT_PROXYUSERNAME.3
+[ 45%] Generating CURLOPT_PROXYUSERPWD.3
+[ 45%] Generating CURLOPT_PUT.3
+[ 45%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/rename.c.o
+[ 45%] Generating CURLOPT_QUICK_EXIT.3
+[ 45%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_keysym_to_scancode.c.o
+[ 45%] Generating CURLOPT_QUOTE.3
+[ 45%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/request.c.o
+[ 45%] Generating CURLOPT_RANDOM_FILE.3
+[ 45%] Generating CURLOPT_RANGE.3
+[ 46%] Generating CURLOPT_READDATA.3
+[ 46%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_mouse.c.o
+[ 46%] Generating CURLOPT_READFUNCTION.3
+[ 46%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_quit.c.o
+[ 46%] Generating CURLOPT_REDIR_PROTOCOLS.3
+[ 46%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/rtsp.c.o
+[ 46%] Generating CURLOPT_REDIR_PROTOCOLS_STR.3
+[ 46%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/event.cpp.o
+[ 46%] Generating CURLOPT_REQUEST_TARGET.3
+[ 46%] Generating CURLOPT_REFERER.3
+[ 46%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/select.c.o
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/common/bsp.c: In function ‘BSP_Load’:
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/common/bsp.c:1076:2: warning: ‘__builtin___strncat_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
 In function ‘BSP_GetPatchedPVSFileName’,
@@ -3609,136 +3662,149 @@ In function ‘BSP_GetPatchedPVSFileName’,
     inlined from ‘BSP_LoadPatchedPVS’ at /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/common/bsp.c:1087:7,
     inlined from ‘BSP_Load’ at /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/common/bsp.c:1474:7:
 /usr/src/debug/q2rtx-git/Q2RTX-res2k/src/common/bsp.c:1076:30: note: length computed here
-[ 43%] Generating CURLOPT_PROXY_SSL_VERIFYPEER.3
-[ 43%] Generating CURLOPT_PROXY_SSLCERT.3
-[ 43%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/modulator.cpp.o
-[ 43%] Generating CURLOPT_PROXY_SSLCERT_BLOB.3
-[ 43%] Generating CURLOPT_PROXY_SSLCERTTYPE.3
-[ 43%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/rtsp.c.o
-[ 43%] Generating CURLOPT_PROXY_SSLKEY.3
-[ 43%] Generating CURLOPT_PROXY_SSLKEY_BLOB.3
-[ 43%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/null.cpp.o
-[ 43%] Generating CURLOPT_PROXY_SSLKEYTYPE.3
-[ 43%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/select.c.o
-[ 43%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/sendf.c.o
-[ 44%] Generating CURLOPT_PROXY_SSLVERSION.3
-[ 44%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/pshifter.cpp.o
-[ 44%] Generating CURLOPT_PROXY_TLS13_CIPHERS.3
-[ 44%] Generating CURLOPT_PROXY_TLSAUTH_PASSWORD.3
-[ 44%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/reverb.cpp.o
-[ 44%] Generating CURLOPT_PROXY_TLSAUTH_TYPE.3
-[ 44%] Generating CURLOPT_PROXY_TLSAUTH_USERNAME.3
-[ 44%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/Logger.cpp.o
-[ 44%] Generating CURLOPT_PROXY_TRANSFER_MODE.3
-[ 44%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/setopt.c.o
-[ 44%] Generating CURLOPT_PROXYAUTH.3
-[ 44%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/sha256.c.o
-[ 44%] Generating CURLOPT_PROXYHEADER.3
-[ 44%] Generating CURLOPT_PROXYPASSWORD.3
-[ 44%] Generating CURLOPT_PROXYPORT.3
-[ 44%] Generating CURLOPT_PROXYTYPE.3
-[ 44%] Generating CURLOPT_PROXYUSERNAME.3
-[ 45%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/share.c.o
-[ 45%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/SpvBuilder.cpp.o
-[ 45%] Generating CURLOPT_PUT.3
-[ 46%] Generating CURLOPT_PROXYUSERPWD.3
-[ 46%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_displayevents.c.o
-[ 46%] Generating CURLOPT_QUICK_EXIT.3
-[ 46%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_dropevents.c.o
-[ 46%] Generating CURLOPT_QUOTE.3
-[ 46%] Generating CURLOPT_RANDOM_FILE.3
-[ 46%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/effects/vmorpher.cpp.o
-[ 46%] Generating CURLOPT_RANGE.3
-[ 46%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/slist.c.o
-[ 47%] Generating CURLOPT_READDATA.3
-[ 47%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/smb.c.o
-[ 47%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/error.cpp.o
-[ 47%] Generating CURLOPT_READFUNCTION.3
-[ 47%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/event.cpp.o
-[ 47%] Generating CURLOPT_REDIR_PROTOCOLS.3
-[ 47%] Generating CURLOPT_REDIR_PROTOCOLS_STR.3
-[ 47%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/smtp.c.o
-[ 47%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/socketpair.c.o
-[ 47%] Generating CURLOPT_REFERER.3
-[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/socks.c.o
-[ 48%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_events.c.o
-[ 48%] Generating CURLOPT_REQUEST_TARGET.3
-[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o
-[ 48%] Generating CURLOPT_RESOLVE.3
-[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o
-[ 48%] Generating CURLOPT_RESOLVER_START_DATA.3
-[ 48%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/SpvPostProcess.cpp.o
-[ 48%] Generating CURLOPT_RESOLVER_START_FUNCTION.3
-[ 48%] Generating CURLOPT_RESUME_FROM.3
-[ 48%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_gesture.c.o
-[ 48%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/extension.cpp.o
-[ 48%] Generating CURLOPT_RESUME_FROM_LARGE.3
-[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o
-[ 48%] Generating CURLOPT_RTSP_CLIENT_CSEQ.3
-[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/splay.c.o
-[ 48%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_keyboard.c.o
-[ 48%] Generating CURLOPT_RTSP_REQUEST.3
-[ 48%] Generating CURLOPT_RTSP_SERVER_CSEQ.3
-[ 48%] Generating CURLOPT_RTSP_SESSION_ID.3
-[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strcase.c.o
-[ 48%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/filter.cpp.o
-[ 48%] Generating CURLOPT_RTSP_STREAM_URI.3
-[ 49%] Generating CURLOPT_RTSP_TRANSPORT.3
-[ 49%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strdup.c.o
-[ 49%] Generating CURLOPT_SASL_AUTHZID.3
-[ 49%] Generating CURLOPT_SASL_IR.3
-[ 49%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strerror.c.o
-[ 49%] Generating CURLOPT_SEEKDATA.3
-[ 49%] Generating CURLOPT_SEEKFUNCTION.3
-[ 49%] Generating CURLOPT_SERVER_RESPONSE_TIMEOUT.3
-[ 49%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strtok.c.o
-[ 49%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/listener.cpp.o
-[ 49%] Generating CURLOPT_SERVER_RESPONSE_TIMEOUT_MS.3
-[ 49%] Generating CURLOPT_SERVICE_NAME.3
-[ 49%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/source.cpp.o
-[ 49%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strtoofft.c.o
-[ 49%] Generating CURLOPT_SHARE.3
-[ 49%] Generating CURLOPT_SOCKOPTFUNCTION.3
-[ 49%] Generating CURLOPT_SOCKOPTDATA.3
-[ 49%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/telnet.c.o
-[ 49%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/system_win32.c.o
-[ 49%] Generating CURLOPT_SOCKS5_AUTH.3
+[ 46%] Generating CURLOPT_RESOLVE.3
+[ 46%] Generating CURLOPT_RESOLVER_START_DATA.3
+[ 46%] Generating CURLOPT_RESOLVER_START_FUNCTION.3
+[ 46%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/sendf.c.o
+[ 46%] Generating CURLOPT_RESUME_FROM.3
+[ 47%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_scancode_tables.c.o
+[ 47%] Generating CURLOPT_RESUME_FROM_LARGE.3
+[ 47%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/InReadableOrder.cpp.o
+[ 47%] Generating CURLOPT_RTSP_CLIENT_CSEQ.3
+[ 47%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_touch.c.o
+[ 47%] Generating CURLOPT_RTSP_REQUEST.3
+[ 47%] Generating CURLOPT_RTSP_SERVER_CSEQ.3
+[ 47%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_windowevents.c.o
+[ 47%] Generating CURLOPT_RTSP_SESSION_ID.3
+[ 47%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/setopt.c.o
+[ 47%] Generating CURLOPT_RTSP_STREAM_URI.3
+[ 48%] Generating CURLOPT_RTSP_TRANSPORT.3
+[ 48%] Generating CURLOPT_SASL_AUTHZID.3
+[ 48%] Generating CURLOPT_SASL_IR.3
+[ 48%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/imKStoUCS.c.o
+[ 48%] Generating CURLOPT_SEEKDATA.3
+[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/sha256.c.o
+[ 48%] Generating CURLOPT_SEEKFUNCTION.3
+[ 48%] Generating CURLOPT_SERVER_RESPONSE_TIMEOUT.3
+[ 48%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/file/SDL_rwops.c.o
+[ 48%] Generating CURLOPT_SERVER_RESPONSE_TIMEOUT_MS.3
+[ 48%] Generating CURLOPT_SERVICE_NAME.3
+[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/share.c.o
+[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/slist.c.o
+[ 48%] Generating CURLOPT_SHARE.3
+[ 48%] Generating CURLOPT_SOCKOPTDATA.3
+[ 48%] Generating CURLOPT_SOCKOPTFUNCTION.3
+[ 48%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/smb.c.o
+[ 48%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/Logger.cpp.o
+[ 48%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/haptic/SDL_haptic.c.o
+[ 48%] Generating CURLOPT_SOCKS5_AUTH.3
+[ 49%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/SpvPostProcess.cpp.o
+[ 49%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/SpvBuilder.cpp.o
+[ 49%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/smtp.c.o
 [ 49%] Generating CURLOPT_SOCKS5_GSSAPI_NEC.3
-[ 49%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/doc.cpp.o
+[ 49%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/extension.cpp.o
+[ 49%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/hidapi/SDL_hidapi.c.o
 [ 49%] Generating CURLOPT_SOCKS5_GSSAPI_SERVICE.3
-[ 49%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/tftp.c.o
+[ 49%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/socketpair.c.o
 [ 49%] Generating CURLOPT_SSH_AUTH_TYPES.3
 [ 50%] Generating CURLOPT_SSH_COMPRESSION.3
-[ 50%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/timediff.c.o
+[ 50%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/SDL_gamecontroller.c.o
 [ 50%] Generating CURLOPT_SSH_HOSTKEYDATA.3
-[ 50%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_mouse.c.o
-[ 50%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_keysym_to_scancode.c.o
-[ 50%] Generating CURLOPT_SSH_HOSTKEYFUNCTION.3
-[ 50%] Generating CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3
-[ 50%] Generating CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256.3
-[ 50%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/timeval.c.o
-[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/transfer.c.o
+[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/socks.c.o
+[ 51%] Generating CURLOPT_SSH_HOSTKEYFUNCTION.3
+[ 51%] Generating CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3
+[ 51%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/doc.cpp.o
+[ 51%] Generating CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256.3
+[ 51%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/SDL_joystick.c.o
+[ 51%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/SDL_steam_virtual_gamepad.c.o
+[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o
 [ 51%] Generating CURLOPT_SSH_KEYDATA.3
 [ 51%] Generating CURLOPT_SSH_KEYFUNCTION.3
+[ 51%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/controller_type.c.o
 [ 51%] Generating CURLOPT_SSH_KNOWNHOSTS.3
-[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/url.c.o
+[ 51%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/filter.cpp.o
+[ 51%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_atan2.c.o
 [ 51%] Generating CURLOPT_SSH_PRIVATE_KEYFILE.3
-[ 51%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/state.cpp.o
+[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o
 [ 51%] Generating CURLOPT_SSH_PUBLIC_KEYFILE.3
 [ 51%] Generating CURLOPT_SSL_CIPHER_LIST.3
+[ 51%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/SpvTools.cpp.o
+[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o
 [ 51%] Generating CURLOPT_SSL_CTX_DATA.3
 [ 51%] Generating CURLOPT_SSL_CTX_FUNCTION.3
 [ 51%] Generating CURLOPT_SSL_EC_CURVES.3
+[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/splay.c.o
+[ 51%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/listener.cpp.o
+[ 51%] Generating CURLOPT_SSL_ENABLE_ALPN.3
+[ 51%] Generating CURLOPT_SSL_ENABLE_NPN.3
+[ 51%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_exp.c.o
+[ 51%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/source.cpp.o
+[ 51%] Generating CURLOPT_SSL_FALSESTART.3
+[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strcase.c.o
+[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strdup.c.o
+[ 51%] Generating CURLOPT_SSL_OPTIONS.3
+[ 51%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_fmod.c.o
+[ 51%] Generating CURLOPT_SSL_SESSIONID_CACHE.3
+[ 51%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_log.c.o
+[ 51%] Generating CURLOPT_SSL_VERIFYHOST.3
+[ 51%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/disassemble.cpp.o
+[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strerror.c.o
+[ 51%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/al/state.cpp.o
+[ 51%] Generating CURLOPT_SSL_VERIFYPEER.3
+[ 51%] Generating CURLOPT_SSL_VERIFYSTATUS.3
+[ 52%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_log10.c.o
+[ 52%] Generating CURLOPT_SSLCERT.3
+[ 52%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strtok.c.o
+[ 52%] Generating CURLOPT_SSLCERT_BLOB.3
+[ 52%] Generating CURLOPT_SSLCERTTYPE.3
+[ 52%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/strtoofft.c.o
+[ 52%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/system_win32.c.o
+[ 52%] Generating CURLOPT_SSLENGINE.3
+[ 52%] Generating CURLOPT_SSLENGINE_DEFAULT.3
+[ 52%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/telnet.c.o
+[ 52%] Generating CURLOPT_SSLKEY.3
+[ 52%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/tftp.c.o
+[ 52%] Generating CURLOPT_SSLKEY_BLOB.3
+[ 53%] Generating CURLOPT_SSLVERSION.3
+[ 53%] Generating CURLOPT_SSLKEYTYPE.3
+[ 53%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/timediff.c.o
+[ 53%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/CInterface/spirv_c_interface.cpp.o
+[ 54%] Generating CURLOPT_STDERR.3
+[ 54%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/alc.cpp.o
+[ 54%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_pow.c.o
+[ 54%] Generating CURLOPT_STREAM_DEPENDS.3
+[ 54%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/timeval.c.o
+[ 54%] Generating CURLOPT_STREAM_DEPENDS_E.3
+[ 54%] Generating CURLOPT_STREAM_WEIGHT.3
+[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/transfer.c.o
+[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_sqrt.c.o
+[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_rem_pio2.c.o
+[ 55%] Generating CURLOPT_SUPPRESS_CONNECT_HEADERS.3
+[ 55%] Generating CURLOPT_TCP_FASTOPEN.3
+[ 55%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/alu.cpp.o
+[ 55%] Generating CURLOPT_TCP_KEEPALIVE.3
+[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/k_cos.c.o
+[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/k_rem_pio2.c.o
+[ 55%] Generating CURLOPT_TCP_KEEPIDLE.3
+[ 55%] Generating CURLOPT_TCP_KEEPINTVL.3
+[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/url.c.o
+[ 55%] Generating CURLOPT_TCP_NODELAY.3
+[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/k_sin.c.o
+[ 55%] Generating CURLOPT_TELNETOPTIONS.3
+[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/k_tan.c.o
+[ 55%] Generating CURLOPT_TFTP_BLKSIZE.3
+[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/urlapi.c.o
+[ 55%] Built target server
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/url.c: In function ‘parse_connect_to_string’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/url.c:3001:24: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
  3001 |       char *ptr_next = strchr(ptr, ':');
       |                        ^~~~~~
-[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/urlapi.c.o
-[ 51%] Generating CURLOPT_SSL_ENABLE_ALPN.3
-[ 51%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_quit.c.o
-[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/version.c.o
-[ 51%] Generating CURLOPT_SSL_ENABLE_NPN.3
-[ 51%] Generating CURLOPT_SSL_FALSESTART.3
+[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/version.c.o
+[ 55%] Generating CURLOPT_TFTP_NO_OPTIONS.3
+[ 55%] Generating CURLOPT_TIMECONDITION.3
+[ 55%] Generating CURLOPT_TIMEOUT.3
+[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_atan.c.o
+[ 55%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/alconfig.cpp.o
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/urlapi.c: In function ‘parse_hostname_login’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/urlapi.c:449:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   449 |   ptr = memchr(login, '@', len);
@@ -3747,7 +3813,6 @@ In function ‘BSP_GetPatchedPVSFileName’,
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/urlapi.c:773:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   773 |   per = strchr(hostname, '%');
       |       ^
-[ 51%] Generating CURLOPT_SSL_OPTIONS.3
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/urlapi.c: In function ‘parseurl’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/urlapi.c:1242:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
  1242 |   fragment = strchr(path, '#');
@@ -3755,158 +3820,153 @@ In function ‘BSP_GetPatchedPVSFileName’,
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/urlapi.c:1267:9: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
  1267 |   query = memchr(path, '?', pathlen);
       |         ^
-[ 51%] Generating CURLOPT_SSL_SESSIONID_CACHE.3
-[ 51%] Generating CURLOPT_SSL_VERIFYHOST.3
-[ 51%] Generating CURLOPT_SSL_VERIFYPEER.3
-[ 51%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/alc.cpp.o
-[ 51%] Generating CURLOPT_SSL_VERIFYSTATUS.3
-[ 51%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/alu.cpp.o
-[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/version_win32.c.o
-[ 51%] Generating CURLOPT_SSLCERT.3
-[ 51%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/SpvTools.cpp.o
-[ 51%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/disassemble.cpp.o
-[ 51%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/warnless.c.o
-[ 51%] Generating CURLOPT_SSLCERT_BLOB.3
-[ 52%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_scancode_tables.c.o
-[ 52%] Generating CURLOPT_SSLCERTTYPE.3
-[ 52%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/alconfig.cpp.o
-[ 52%] Generating CURLOPT_SSLENGINE.3
-[ 52%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/ws.c.o
-[ 52%] Generating CURLOPT_SSLENGINE_DEFAULT.3
-[ 52%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_touch.c.o
-[ 52%] Generating CURLOPT_SSLKEY.3
-[ 52%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o
-[ 52%] Generating CURLOPT_SSLKEY_BLOB.3
-[ 52%] Building CXX object extern/glslang/glslang/CMakeFiles/glslang.dir/__/SPIRV/CInterface/spirv_c_interface.cpp.o
-[ 53%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o
-[ 53%] Generating CURLOPT_SSLKEYTYPE.3
-[ 53%] Generating CURLOPT_SSLVERSION.3
-[ 54%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/context.cpp.o
-[ 55%] Generating CURLOPT_STDERR.3
-[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o
-[ 55%] Generating CURLOPT_STREAM_DEPENDS.3
-[ 55%] Generating CURLOPT_STREAM_DEPENDS_E.3
-[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/SDL_windowevents.c.o
-[ 55%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/device.cpp.o
-[ 55%] Generating CURLOPT_STREAM_WEIGHT.3
+[ 56%] Generating CURLOPT_TIMEOUT_MS.3
+[ 56%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/context.cpp.o
+[ 57%] Generating CURLOPT_TIMEVALUE.3
+[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_copysign.c.o
+[ 57%] Generating CURLOPT_TIMEVALUE_LARGE.3
+[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/version_win32.c.o
+[ 57%] Generating CURLOPT_TLS13_CIPHERS.3
+[ 57%] Generating CURLOPT_TLSAUTH_PASSWORD.3
+[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_cos.c.o
+[ 57%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/device.cpp.o
+[ 57%] Generating CURLOPT_TLSAUTH_TYPE.3
+[ 57%] Generating CURLOPT_TLSAUTH_USERNAME.3
+[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/warnless.c.o
+[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_fabs.c.o
+[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_floor.c.o
+[ 57%] Generating CURLOPT_TRAILERDATA.3
+[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_scalbn.c.o
+[ 57%] Generating CURLOPT_TRAILERFUNCTION.3
+[ 57%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/autowah.cpp.o
+[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/ws.c.o
+[ 57%] Generating CURLOPT_TRANSFER_ENCODING.3
+[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_sin.c.o
+[ 57%] Generating CURLOPT_TRANSFERTEXT.3
+[ 57%] Generating CURLOPT_UNIX_SOCKET_PATH.3
+[ 57%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/chorus.cpp.o
+[ 57%] Generating CURLOPT_UNRESTRICTED_AUTH.3
+[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o
+[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o
+[ 57%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/compressor.cpp.o
+[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_tan.c.o
+[ 57%] Generating CURLOPT_UPKEEP_INTERVAL_MS.3
+[ 58%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/locale/SDL_locale.c.o
+[ 58%] Generating CURLOPT_UPLOAD.3
+[ 58%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o
+[ 58%] Generating CURLOPT_UPLOAD_BUFFERSIZE.3
+[ 58%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o
+[ 59%] Generating CURLOPT_URL.3
+[ 59%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/convolution.cpp.o
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/vauth/digest.c: In function ‘auth_digest_get_key_value’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/vauth/digest.c:207:12: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   207 |   find_pos = strstr(chlg, key);
       |            ^
-[ 55%] Generating CURLOPT_SUPPRESS_CONNECT_HEADERS.3
-[ 55%] Generating CURLOPT_TCP_FASTOPEN.3
-[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o
-[ 55%] Generating CURLOPT_TCP_KEEPALIVE.3
-[ 55%] Generating CURLOPT_TCP_KEEPIDLE.3
-[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o
-[ 55%] Generating CURLOPT_TCP_KEEPINTVL.3
-[ 55%] Generating CURLOPT_TCP_NODELAY.3
-[ 55%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/autowah.cpp.o
-[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o
-[ 55%] Generating CURLOPT_TELNETOPTIONS.3
-[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/events/imKStoUCS.c.o
-[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o
-[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/file/SDL_rwops.c.o
-[ 55%] Generating CURLOPT_TFTP_BLKSIZE.3
-[ 55%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/haptic/SDL_haptic.c.o
-[ 55%] Generating CURLOPT_TFTP_NO_OPTIONS.3
-[ 55%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o
-[ 55%] Generating CURLOPT_TIMECONDITION.3
-[ 55%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/chorus.cpp.o
-[ 55%] Generating CURLOPT_TIMEOUT.3
-[ 55%] Generating CURLOPT_TIMEOUT_MS.3
-[ 56%] Generating CURLOPT_TIMEVALUE.3
-[ 56%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o
-[ 56%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/hidapi/SDL_hidapi.c.o
-[ 56%] Generating CURLOPT_TIMEVALUE_LARGE.3
-[ 56%] Built target server
-[ 56%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/compressor.cpp.o
-[ 56%] Generating CURLOPT_TLS13_CIPHERS.3
-[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o
-[ 57%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/convolution.cpp.o
-[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o
-[ 57%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/dedicated.cpp.o
-[ 57%] Generating CURLOPT_TLSAUTH_PASSWORD.3
-[ 57%] Generating CURLOPT_TLSAUTH_TYPE.3
-[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o
-[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o
-[ 57%] Generating CURLOPT_TLSAUTH_USERNAME.3
-[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/SDL_gamecontroller.c.o
-[ 57%] Generating CURLOPT_TRAILERDATA.3
-[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o
-[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/bearssl.c.o
-[ 57%] Generating CURLOPT_TRAILERFUNCTION.3
+[ 59%] Generating CURLOPT_USE_SSL.3
+[ 59%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/misc/SDL_url.c.o
+[ 59%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/power/SDL_power.c.o
+[ 59%] Generating CURLOPT_USERAGENT.3
+[ 59%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o
+[ 59%] Generating CURLOPT_USERNAME.3
+[ 59%] Generating CURLOPT_USERPWD.3
+[ 59%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/dedicated.cpp.o
+[ 59%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/SDL_d3dmath.c.o
+[ 59%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o
+[ 59%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/distortion.cpp.o
+[ 59%] Generating CURLOPT_VERBOSE.3
+[ 59%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o
+[ 59%] Generating CURLOPT_WILDCARDMATCH.3
+[ 59%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/echo.cpp.o
+[ 59%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/equalizer.cpp.o
+[ 59%] Generating CURLOPT_WRITEDATA.3
+[ 59%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o
+[ 59%] Generating CURLOPT_WRITEFUNCTION.3
+[ 59%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/SDL_render.c.o
+[ 59%] Generating CURLOPT_WS_OPTIONS.3
+[ 59%] Generating CURLOPT_XFERINFODATA.3
+[ 59%] Generating CURLOPT_XFERINFOFUNCTION.3
+[ 59%] Generating CURLOPT_XOAUTH2_BEARER.3
+[ 59%] Built target game
+[ 59%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/SDL_yuv_sw.c.o
+[ 59%] Generating CURLSHOPT_LOCKFUNC.3
+[ 59%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o
+[ 59%] Generating CURLSHOPT_SHARE.3
+[ 60%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o
+[ 60%] Generating CURLSHOPT_UNLOCKFUNC.3
+[ 61%] Generating CURLSHOPT_UNSHARE.3
+[ 61%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o
+[ 61%] Generating CURLSHOPT_USERDATA.3
+[ 61%] Built target opts-man
+[ 61%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/fshifter.cpp.o
+[ 61%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o
+[ 61%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o
+[ 61%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/bearssl.c.o
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/vauth/vauth.c: In function ‘Curl_auth_user_contains_domain’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/vauth/vauth.c:135:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   135 |     char *p = strpbrk(user, "\\/@");
       |               ^~~~~~~
-[ 57%] Generating CURLOPT_TRANSFER_ENCODING.3
-[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o
-[ 57%] Generating CURLOPT_TRANSFERTEXT.3
-[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/SDL_joystick.c.o
-[ 57%] Generating CURLOPT_UNIX_SOCKET_PATH.3
-[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/SDL_steam_virtual_gamepad.c.o
-[ 57%] Generating CURLOPT_UNRESTRICTED_AUTH.3
-[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o
-[ 57%] Generating CURLOPT_UPKEEP_INTERVAL_MS.3
-[ 57%] Generating CURLOPT_UPLOAD.3
-[ 57%] Generating CURLOPT_UPLOAD_BUFFERSIZE.3
-[ 57%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o
-[ 57%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/controller_type.c.o
-[ 58%] Generating CURLOPT_URL.3
-[ 58%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/distortion.cpp.o
-[ 58%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/echo.cpp.o
-[ 58%] Built target game
-[ 58%] Generating CURLOPT_USE_SSL.3
-[ 58%] Generating CURLOPT_USERAGENT.3
-[ 58%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o
-[ 58%] Generating CURLOPT_USERNAME.3
-[ 58%] Generating CURLOPT_USERPWD.3
-[ 58%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o
-[ 58%] Generating CURLOPT_VERBOSE.3
-[ 58%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/equalizer.cpp.o
-[ 58%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o
-[ 58%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/fshifter.cpp.o
-[ 58%] Generating CURLOPT_WILDCARDMATCH.3
-[ 58%] Generating CURLOPT_WRITEDATA.3
-[ 58%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/modulator.cpp.o
-[ 58%] Generating CURLOPT_WRITEFUNCTION.3
-[ 58%] Generating CURLOPT_WS_OPTIONS.3
-[ 58%] Generating CURLOPT_XFERINFODATA.3
-[ 58%] Generating CURLOPT_XFERINFOFUNCTION.3
-[ 58%] Generating CURLOPT_XOAUTH2_BEARER.3
-[ 58%] Generating CURLSHOPT_LOCKFUNC.3
-[ 58%] Generating CURLSHOPT_SHARE.3
-[ 58%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o
-[ 58%] Generating CURLSHOPT_UNLOCKFUNC.3
-[ 58%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_atan2.c.o
-[ 59%] Generating CURLSHOPT_UNSHARE.3
-[ 59%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o
-[ 59%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/null.cpp.o
-[ 59%] Generating CURLSHOPT_USERDATA.3
-[ 59%] Built target opts-man
-[ 59%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_exp.c.o
-[ 59%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/pshifter.cpp.o
-[ 59%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/sectransp.c.o
-[ 59%] Generating curl_easy_cleanup.3
-[ 59%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/reverb.cpp.o
-[ 59%] Generating curl_easy_duphandle.3
-[ 59%] Generating curl_easy_escape.3
-[ 60%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o
-[ 60%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_fmod.c.o
-[ 61%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/vmorpher.cpp.o
+[ 61%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o
+[ 61%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o
+[ 61%] Generating curl_easy_cleanup.3
+[ 61%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o
+[ 61%] Generating curl_easy_duphandle.3
+[ 61%] Generating curl_easy_escape.3
+[ 61%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_render_d3d.c.o
+[ 61%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/modulator.cpp.o
+[ 61%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o
+[ 61%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/null.cpp.o
+[ 61%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_shaders_d3d.c.o
 [ 62%] Generating curl_easy_getinfo.3
-[ 62%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/events.cpp.o
 [ 62%] Generating curl_easy_header.3
-[ 62%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o
+[ 62%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o
+[ 62%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o
 [ 62%] Generating curl_easy_init.3
-[ 62%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o
-[ 62%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/panning.cpp.o
 [ 62%] Generating curl_easy_nextheader.3
+[ 62%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_render_d3d11.c.o
 [ 62%] Generating curl_easy_option_by_id.3
 [ 62%] Generating curl_easy_option_by_name.3
 [ 62%] Generating curl_easy_option_next.3
-[ 62%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/curl_msh3.c.o
+[ 62%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/pshifter.cpp.o
+[ 62%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o
+[ 62%] Generating curl_easy_pause.3
+[ 62%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/reverb.cpp.o
+[ 62%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o
+[ 62%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d12/SDL_render_d3d12.c.o
+[ 62%] Generating curl_easy_perform.3
+[ 63%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/effects/vmorpher.cpp.o
+[ 63%] Generating curl_easy_recv.3
+[ 63%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o
+[ 63%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d12/SDL_shaders_d3d12.c.o
+[ 63%] Generating curl_easy_reset.3
+[ 63%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_render_gl.c.o
+[ 63%] Generating curl_easy_send.3
+[ 63%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o
+[ 63%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/events.cpp.o
+[ 63%] Generating curl_easy_setopt.3
+[ 63%] Generating curl_easy_strerror.3
+[ 63%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_shaders_gl.c.o
+[ 63%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/sectransp.c.o
+[ 63%] Generating curl_easy_unescape.3
+[ 64%] Generating curl_easy_upkeep.3
+[ 64%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/panning.cpp.o
+[ 64%] Generating curl_escape.3
+[ 64%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengles/SDL_render_gles.c.o
+[ 65%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o
+[ 65%] Generating curl_formadd.3
+[ 65%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/base.cpp.o
+[ 66%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_render_gles2.c.o
+[ 66%] Generating curl_formfree.3
+[ 66%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/loopback.cpp.o
+[ 66%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o
+[ 66%] Generating curl_formget.3
+[ 66%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o
+[ 66%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_shaders_gles2.c.o
+[ 66%] Generating curl_free.3
+[ 66%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/curl_msh3.c.o
+[ 66%] Generating curl_getdate.3
+[ 66%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o
+[ 66%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/null.cpp.o
+[ 66%] Generating curl_getenv.3
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/vtls/vtls.c: In function ‘pubkey_pem_to_der’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/vtls/vtls.c:935:13: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   935 |   begin_pos = strstr(pem, "-----BEGIN PUBLIC KEY-----");
@@ -3914,84 +3974,68 @@ In function ‘BSP_GetPatchedPVSFileName’,
 /build/q2rtx-git/src/Q2RTX-res2k/extern/curl/lib/vtls/vtls.c:948:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   948 |   end_pos = strstr(pem + pem_count, "\n-----END PUBLIC KEY-----");
       |           ^
-[ 62%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_log.c.o
-[ 62%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/base.cpp.o
-[ 62%] Generating curl_easy_pause.3
-[ 62%] Generating curl_easy_perform.3
-[ 63%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_log10.c.o
-[ 63%] Generating curl_easy_recv.3
-[ 63%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o
-[ 63%] Generating curl_easy_reset.3
-[ 63%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/loopback.cpp.o
-[ 63%] Generating curl_easy_send.3
-[ 63%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_pow.c.o
-[ 63%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o
-[ 63%] Generating curl_easy_setopt.3
-[ 63%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/null.cpp.o
-[ 63%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/pipewire.cpp.o
-[ 63%] Generating curl_easy_strerror.3
-[ 63%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/pulseaudio.cpp.o
-[ 63%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o
-[ 63%] Generating curl_easy_unescape.3
-[ 63%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_rem_pio2.c.o
-[ 64%] Generating curl_easy_upkeep.3
-[ 64%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o
-[ 64%] Generating curl_escape.3
-[ 64%] Generating curl_formadd.3
-[ 64%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/e_sqrt.c.o
-[ 64%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o
-[ 64%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/k_cos.c.o
-[ 64%] Generating curl_formfree.3
-[ 64%] Generating curl_formget.3
-[ 64%] Generating curl_free.3
-[ 64%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o
-[ 64%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/k_rem_pio2.c.o
-[ 64%] Generating curl_getdate.3
-[ 64%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/k_sin.c.o
-[ 64%] Generating curl_getenv.3
-[ 64%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o
-[ 64%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o
-[ 64%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/alsa.cpp.o
-[ 64%] Generating curl_global_cleanup.3
-[ 64%] Generating curl_global_init.3
-[ 64%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/k_tan.c.o
-[ 64%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/oss.cpp.o
-[ 64%] Generating curl_global_init_mem.3
-[ 64%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_atan.c.o
-[ 64%] Generating curl_global_trace.3
-[ 64%] Generating curl_global_sslset.3
-[ 64%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_copysign.c.o
-[ 64%] Generating curl_mime_addpart.3
-[ 64%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_cos.c.o
-[ 64%] Generating curl_mime_data.3
-[ 64%] Generating curl_mime_data_cb.3
-[ 64%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/jack.cpp.o
-[ 64%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/portaudio.cpp.o
-[ 65%] Generating curl_mime_encoder.3
-[ 65%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_fabs.c.o
-[ 65%] Generating curl_mime_filedata.3
-[ 65%] Generating curl_mime_filename.3
-[ 65%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/wave.cpp.o
-[ 65%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_floor.c.o
-[ 65%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/ambdec.cpp.o
-[ 65%] Linking C static library libcurl.a
-[ 65%] Generating curl_mime_free.3
-[ 65%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/ambidefs.cpp.o
-[ 65%] Generating curl_mime_headers.3
-[ 65%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_scalbn.c.o
-[ 65%] Generating curl_mime_init.3
-[ 65%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_sin.c.o
-[ 65%] Generating curl_mime_name.3
-[ 65%] Generating curl_mime_subparts.3
-[ 65%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/bformatdec.cpp.o
-[ 66%] Generating curl_mime_type.3
-[ 66%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/bs2b.cpp.o
-[ 66%] Generating curl_mprintf.3
-[ 66%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/libm/s_tan.c.o
-[ 66%] Built target libcurl_static
-[ 66%] Generating curl_multi_add_handle.3
-[ 66%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/bsinc_tables.cpp.o
-[ 66%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/buffer_storage.cpp.o
+[ 66%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o
+[ 66%] Generating curl_global_cleanup.3
+[ 66%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/ps2/SDL_render_ps2.c.o
+[ 66%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/pipewire.cpp.o
+[ 66%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/psp/SDL_render_psp.c.o
+[ 66%] Generating curl_global_init.3
+[ 66%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/pulseaudio.cpp.o
+[ 66%] Generating curl_global_init_mem.3
+[ 66%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o
+[ 66%] Generating curl_global_trace.3
+[ 66%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendfillrect.c.o
+[ 66%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendline.c.o
+[ 66%] Generating curl_global_sslset.3
+[ 66%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o
+[ 66%] Generating curl_mime_addpart.3
+[ 66%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/alsa.cpp.o
+[ 66%] Generating curl_mime_data.3
+[ 66%] Generating curl_mime_data_cb.3
+[ 66%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/oss.cpp.o
+[ 67%] Generating curl_mime_encoder.3
+[ 67%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o
+[ 67%] Generating curl_mime_filedata.3
+[ 67%] Generating curl_mime_filename.3
+[ 67%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o
+[ 67%] Generating curl_mime_free.3
+[ 67%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o
+[ 67%] Generating curl_mime_headers.3
+[ 67%] Generating curl_mime_init.3
+[ 67%] Generating curl_mime_name.3
+[ 67%] Generating curl_mime_subparts.3
+[ 67%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/jack.cpp.o
+[ 67%] Generating curl_mime_type.3
+[ 67%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/portaudio.cpp.o
+[ 67%] Generating curl_mprintf.3
+[ 67%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/alc/backends/wave.cpp.o
+[ 67%] Generating curl_multi_add_handle.3
+[ 67%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/ambdec.cpp.o
+[ 67%] Generating curl_multi_assign.3
+[ 67%] Building C object extern/curl/lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o
+[ 67%] Generating curl_multi_cleanup.3
+[ 67%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/ambidefs.cpp.o
+[ 67%] Generating curl_multi_fdset.3
+[ 67%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/bformatdec.cpp.o
+[ 67%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendpoint.c.o
+[ 67%] Linking C static library libcurl.a
+[ 67%] Generating curl_multi_get_handles.3
+[ 68%] Generating curl_multi_info_read.3
+[ 68%] Generating curl_multi_init.3
+[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/bs2b.cpp.o
+[ 69%] Generating curl_multi_perform.3
+[ 69%] Generating curl_multi_poll.3
+[ 69%] Generating curl_multi_remove_handle.3
+[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawline.c.o
+[ 69%] Generating curl_multi_setopt.3
+[ 69%] Generating curl_multi_socket.3
+[ 69%] Built target libcurl_static
+[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawpoint.c.o
+[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/bsinc_tables.cpp.o
+[ 69%] Generating curl_multi_socket_action.3
+[ 69%] Generating curl_multi_socket_all.3
+[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_render_sw.c.o
+[ 69%] Generating curl_multi_strerror.3
 In file included from /build/q2rtx-git/src/Q2RTX-res2k/extern/openal-soft/alc/backends/pipewire.cpp:83:
 /usr/include/spa-0.2/spa/utils/json.h: In function ‘int spa_json_object_find(spa_json*, const char*, const char**)’:
 /usr/include/spa-0.2/spa/utils/json.h:161:14: warning: ISO C++ forbids variable length array ‘k’ [-Wvla]
@@ -4013,155 +4057,117 @@ In file included from /usr/include/pipewire-0.3/pipewire/utils.h:19,
 /build/q2rtx-git/src/Q2RTX-res2k/extern/openal-soft/alc/backends/pipewire.cpp:122:10: note: in expansion of macro ‘SPA_POD_ARRAY_VALUE_TYPE’
   122 | { return SPA_POD_ARRAY_VALUE_TYPE(pod); }
       |          ^~~~~~~~~~~~~~~~~~~~~~~~
-[ 66%] Generating curl_multi_assign.3
-[ 67%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/misc/SDL_url.c.o
-[ 67%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/locale/SDL_locale.c.o
-[ 67%] Generating curl_multi_cleanup.3
-[ 67%] Generating curl_multi_fdset.3
-[ 67%] Generating curl_multi_get_handles.3
-[ 67%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/power/SDL_power.c.o
-[ 67%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/SDL_d3dmath.c.o
-[ 68%] Generating curl_multi_info_read.3
-[ 68%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/context.cpp.o
-[ 68%] Generating curl_multi_init.3
-[ 68%] Generating curl_multi_perform.3
-[ 68%] Generating curl_multi_poll.3
-[ 68%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/SDL_render.c.o
-[ 68%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/converter.cpp.o
-[ 68%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/SDL_yuv_sw.c.o
-[ 68%] Generating curl_multi_remove_handle.3
-[ 68%] Generating curl_multi_setopt.3
-[ 68%] Generating curl_multi_socket.3
-[ 68%] Generating curl_multi_socket_action.3
-[ 68%] Generating curl_multi_socket_all.3
-[ 68%] Generating curl_multi_strerror.3
-[ 68%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_render_d3d.c.o
-[ 68%] Generating curl_multi_timeout.3
-[ 68%] Generating curl_multi_wakeup.3
-[ 68%] Generating curl_multi_wait.3
-[ 68%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/cpu_caps.cpp.o
-[ 68%] Generating curl_pushheader_bynum.3
-[ 68%] Generating curl_pushheader_byname.3
-[ 68%] Generating curl_share_cleanup.3
-[ 69%] Generating curl_share_init.3
-[ 69%] Generating curl_share_setopt.3
-[ 69%] Generating curl_share_strerror.3
-[ 69%] Generating curl_slist_append.3
-[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/cubic_tables.cpp.o
-[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/devformat.cpp.o
-[ 69%] Generating curl_slist_free_all.3
-[ 69%] Generating curl_strequal.3
-[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_shaders_d3d.c.o
-[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/device.cpp.o
-[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/effectslot.cpp.o
-[ 69%] Generating curl_strnequal.3
-[ 69%] Generating curl_unescape.3
-[ 69%] Generating curl_url.3
-[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_render_d3d11.c.o
-[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o
-[ 69%] Generating curl_url_cleanup.3
+[ 69%] Generating curl_multi_timeout.3
+[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/buffer_storage.cpp.o
+[ 69%] Generating curl_multi_wakeup.3
+[ 69%] Generating curl_multi_wait.3
+[ 69%] Generating curl_pushheader_bynum.3
+[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_rotate.c.o
+[ 69%] Generating curl_pushheader_byname.3
+[ 69%] Generating curl_share_cleanup.3
+[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_triangle.c.o
+[ 70%] Generating curl_share_init.3
+[ 70%] Generating curl_share_setopt.3
+[ 70%] Generating curl_share_strerror.3
+[ 70%] Generating curl_slist_append.3
+[ 70%] Generating curl_slist_free_all.3
+[ 70%] Generating curl_strequal.3
+[ 70%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/context.cpp.o
+[ 70%] Generating curl_strnequal.3
+[ 70%] Generating curl_unescape.3
+[ 70%] Generating curl_url.3
+[ 70%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o
+[ 70%] Generating curl_url_cleanup.3
+[ 70%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/converter.cpp.o
+[ 70%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o
+[ 70%] Generating curl_url_dup.3
+[ 70%] Linking CXX static library libglslang.a
+[ 70%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o
+[ 70%] Generating curl_url_get.3
+[ 70%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/sensor/SDL_sensor.c.o
+[ 70%] Generating curl_url_set.3
+[ 70%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/cpu_caps.cpp.o
+[ 70%] Generating curl_url_strerror.3
+[ 70%] Generating curl_version.3
+[ 71%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_crc16.c.o
+[ 72%] Generating curl_version_info.3
+[ 72%] Generating curl_ws_meta.3
+[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_crc32.c.o
+[ 72%] Generating curl_ws_recv.3
+[ 72%] Generating curl_ws_send.3
+[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/devformat.cpp.o
+[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/cubic_tables.cpp.o
+[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_getenv.c.o
+[ 72%] Generating libcurl-easy.3
+[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_iconv.c.o
+[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/device.cpp.o
 In file included from /usr/include/spa-0.2/spa/param/audio/format-utils.h:9,
                  from /build/q2rtx-git/src/Q2RTX-res2k/extern/openal-soft/alc/backends/pipewire.cpp:78:
 /usr/include/spa-0.2/spa/pod/builder.h: In function ‘spa_pod_builder_add’:
 /usr/include/spa-0.2/spa/pod/builder.h:685:25: warning: function ‘spa_pod_builder_add’ can never be inlined because it uses variable argument lists [-Winline]
   685 | SPA_API_POD_BUILDER int spa_pod_builder_add(struct spa_pod_builder *builder, ...)
       |                         ^~~~~~~~~~~~~~~~~~~
-[ 69%] Generating curl_url_dup.3
-[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d12/SDL_render_d3d12.c.o
-[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/except.cpp.o
-[ 69%] Generating curl_url_get.3
-[ 69%] Generating curl_url_set.3
-[ 69%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/direct3d12/SDL_shaders_d3d12.c.o
-[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/filters/biquad.cpp.o
-[ 69%] Generating curl_url_strerror.3
-[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/filters/nfc.cpp.o
-[ 69%] Generating curl_version.3
-[ 69%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/filters/splitter.cpp.o
-[ 70%] Generating curl_version_info.3
-[ 70%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_render_gl.c.o
-[ 70%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/fmt_traits.cpp.o
-[ 70%] Generating curl_ws_meta.3
-[ 70%] Generating curl_ws_recv.3
-[ 70%] Linking CXX static library libglslang.a
-[ 70%] Generating curl_ws_send.3
-[ 70%] Generating libcurl-easy.3
-[ 70%] Generating libcurl-env.3
-[ 70%] Generating libcurl-env-dbg.3
-[ 71%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/fpu_ctrl.cpp.o
-[ 71%] Generating libcurl-errors.3
-[ 71%] Generating libcurl-multi.3
-[ 71%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_shaders_gl.c.o
-[ 71%] Generating libcurl-security.3
-[ 71%] Generating libcurl-share.3
-[ 71%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengles/SDL_render_gles.c.o
-[ 71%] Generating libcurl-symbols.md
-[ 71%] Generating libcurl-thread.3
-[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_render_gles2.c.o
-[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_shaders_gles2.c.o
-[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/helpers.cpp.o
-[ 72%] Generating libcurl-tutorial.3
-[ 72%] Generating libcurl-url.3
-[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/hrtf.cpp.o
-[ 72%] Generating libcurl-ws.3
-[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/logging.cpp.o
-[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/ps2/SDL_render_ps2.c.o
-[ 73%] Generating libcurl.3
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mastering.cpp.o
-[ 73%] Generating libcurl-symbols.3
-[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/psp/SDL_render_psp.c.o
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer.cpp.o
-[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendfillrect.c.o
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/storage_formats.cpp.o
-[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendline.c.o
-[ 73%] Built target man
-[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendpoint.c.o
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/uhjfilter.cpp.o
-At top level:
-cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensions’ may have been intended to silence earlier diagnostics
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/uiddefs.cpp.o
-[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawline.c.o
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/voice.cpp.o
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/dbus_wrap.cpp.o
-[ 73%] Built target glslang
-[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawpoint.c.o
-[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_render_sw.c.o
-[ 73%] Generating /build/q2rtx-git/src/build/include/glslang/glsl_intrinsic_header.h
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/rtkit.cpp.o
-[ 73%] Building CXX object extern/glslang/StandAlone/CMakeFiles/glslang-standalone.dir/StandAlone.cpp.o
-[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_rotate.c.o
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse.cpp.o
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_c.cpp.o
-[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_triangle.c.o
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse3.cpp.o
-[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse2.cpp.o
-[ 74%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse41.cpp.o
-[ 74%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o
-[ 74%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o
-[ 74%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o
-[ 74%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/sensor/SDL_sensor.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_crc16.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_crc32.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_iconv.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_getenv.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_malloc.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_mslibc.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_qsort.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_stdlib.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_string.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_strtokr.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/thread/SDL_thread.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/timer/SDL_timer.c.o
+[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/effectslot.cpp.o
+[ 72%] Generating libcurl-env.3
+[ 72%] Generating libcurl-env-dbg.3
+[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_malloc.c.o
+[ 72%] Generating libcurl-errors.3
+[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_mslibc.c.o
+[ 72%] Generating libcurl-multi.3
+[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/except.cpp.o
+[ 72%] Generating libcurl-security.3
+[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_qsort.c.o
+[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/filters/biquad.cpp.o
+[ 72%] Generating libcurl-share.3
+[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/filters/splitter.cpp.o
+[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/filters/nfc.cpp.o
+[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_stdlib.c.o
+[ 72%] Generating libcurl-symbols.md
+[ 72%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/fmt_traits.cpp.o
+[ 72%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_string.c.o
+[ 72%] Generating libcurl-thread.3
 /build/q2rtx-git/src/Q2RTX-res2k/extern/SDL2/src/stdlib/SDL_qsort.c: In function ‘SDL_bsearch_REAL’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/SDL2/src/stdlib/SDL_qsort.c:549:12: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   549 |     return bsearch(key, base, nmemb, size, compare);
       |            ^~~~~~~
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_RLEaccel.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit.c.o
-[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_0.c.o
-[ 76%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_1.c.o
-[ 76%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_A.c.o
+[ 72%] Generating libcurl-tutorial.3
+[ 72%] Generating libcurl-url.3
+[ 72%] Built target glslang
+[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/fpu_ctrl.cpp.o
+[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_strtokr.c.o
+[ 73%] Generating /build/q2rtx-git/src/build/include/glslang/glsl_intrinsic_header.h
+[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/helpers.cpp.o
+[ 73%] Generating libcurl-ws.3
+[ 73%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/hrtf.cpp.o
+[ 73%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/thread/SDL_thread.c.o
+[ 74%] Generating libcurl.3
+[ 74%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/timer/SDL_timer.c.o
+[ 74%] Building CXX object extern/glslang/StandAlone/CMakeFiles/glslang-standalone.dir/StandAlone.cpp.o
+[ 74%] Generating libcurl-symbols.3
+[ 74%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/logging.cpp.o
+[ 74%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mastering.cpp.o
+[ 74%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_RLEaccel.c.o
+[ 74%] Built target man
+[ 74%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer.cpp.o
+[ 74%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/storage_formats.cpp.o
+[ 74%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit.c.o
+[ 74%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/uhjfilter.cpp.o
+At top level:
+cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensions’ may have been intended to silence earlier diagnostics
+[ 74%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_0.c.o
+[ 74%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/uiddefs.cpp.o
+[ 74%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/voice.cpp.o
+[ 74%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/dbus_wrap.cpp.o
+[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_1.c.o
+[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_A.c.o
+[ 75%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/rtkit.cpp.o
+[ 75%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_c.cpp.o
+[ 75%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse.cpp.o
+[ 75%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_N.c.o
+[ 75%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse2.cpp.o
+[ 75%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse3.cpp.o
 [ 76%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_auto.c.o
-[ 76%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_N.c.o
+[ 76%] Building CXX object extern/openal-soft/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse41.cpp.o
 [ 76%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_copy.c.o
 [ 76%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_slow.c.o
 [ 76%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/SDL_bmp.c.o
@@ -4182,18 +4188,17 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 [ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/dummy/SDL_dummyaudio.c.o
 [ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/disk/SDL_diskaudio.c.o
 [ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/loadso/dlopen/SDL_sysloadso.c.o
-[ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullevents.c.o
 [ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/virtual/SDL_virtualjoystick.c.o
+[ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullevents.c.o
 [ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullframebuffer.c.o
 [ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullvideo.c.o
-[ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenevents.c.o
 [ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenframebuffer.c.o
+[ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenevents.c.o
 [ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenopengles.c.o
+[ 77%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenwindow.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenvideo.c.o
-[ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenwindow.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/dsp/SDL_dspaudio.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/alsa/SDL_alsa_audio.c.o
-[ 78%] Linking CXX static library libopenal.a
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/jack/SDL_jackaudio.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/pipewire/SDL_pipewire.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o
@@ -4202,34 +4207,34 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11dyn.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11events.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11framebuffer.c.o
-[ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11messagebox.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11keyboard.c.o
+[ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11messagebox.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11modes.c.o
 [ 78%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11mouse.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11opengl.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11opengles.c.o
+[ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11video.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11shape.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11touch.c.o
-[ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11video.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11vulkan.c.o
-[ 79%] Built target OpenAL
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11window.c.o
-[ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/edid-parse.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11xfixes.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11xinput2.c.o
+[ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/x11/edid-parse.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/kmsdrm/SDL_kmsdrmdyn.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/kmsdrm/SDL_kmsdrmevents.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/kmsdrm/SDL_kmsdrmmouse.c.o
-[ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/kmsdrm/SDL_kmsdrmopengles.c.o
 [ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/kmsdrm/SDL_kmsdrmvideo.c.o
+[ 79%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/kmsdrm/SDL_kmsdrmopengles.c.o
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/kmsdrm/SDL_kmsdrmvulkan.c.o
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandclipboard.c.o
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylanddatamanager.c.o
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylanddyn.c.o
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandevents.c.o
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandkeyboard.c.o
-[ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandmouse.c.o
+[ 80%] Linking CXX static library libopenal.a
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandmessagebox.c.o
+[ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandmouse.c.o
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandopengles.c.o
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandshmbuffer.c.o
 [ 80%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandtouch.c.o
@@ -4243,27 +4248,29 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/primary-selection-unstable-v1-protocol.c.o
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c.o
-[ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/text-input-unstable-v3-protocol.c.o
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/tablet-unstable-v2-protocol.c.o
+[ 81%] Linking CXX executable ../../../Bin/glslang
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/viewporter-protocol.c.o
+[ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/text-input-unstable-v3-protocol.c.o
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/wayland-protocol.c.o
-[ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-activation-v1-protocol.c.o
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c.o
+[ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-activation-v1-protocol.c.o
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-output-unstable-v1-protocol.c.o
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-shell-protocol.c.o
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c.o
 [ 81%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/unix/SDL_poll.c.o
-[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/haptic/linux/SDL_syshaptic.c.o
-[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_ime.c.o
 [ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_dbus.c.o
+[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/haptic/linux/SDL_syshaptic.c.o
+[ 82%] Built target OpenAL
+[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_ime.c.o
 [ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_fcitx.c.o
-[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_udev.c.o
 [ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev.c.o
-[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev_kbd.c.o
+[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_udev.c.o
 [ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev_capabilities.c.o
+[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev_kbd.c.o
 [ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_threadprio.c.o
-[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_sandbox.c.o
 [ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_combined.c.o
+[ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_sandbox.c.o
 [ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_gamecube.c.o
 [ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_luna.c.o
 [ 82%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_ps3.c.o
@@ -4274,48 +4281,47 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_stadia.c.o
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_steam.c.o
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_steamdeck.c.o
-[ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_wii.c.o
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_switch.c.o
+[ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_wii.c.o
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c.o
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.o
-[ 83%] Linking CXX executable ../../../Bin/glslang
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapijoystick.c.o
+[ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/linux/SDL_sysjoystick.c.o
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/steam/SDL_steamcontroller.c.o
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_systhread.c.o
-[ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/joystick/linux/SDL_sysjoystick.c.o
 [ 83%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_sysmutex.c.o
 [ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_syscond.c.o
 [ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_systls.c.o
 [ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_syssem.c.o
 [ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/misc/unix/SDL_sysurl.c.o
-[ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/locale/unix/SDL_syslocale.c.o
 [ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/power/linux/SDL_syspower.c.o
+[ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/locale/unix/SDL_syslocale.c.o
 [ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/filesystem/unix/SDL_sysfilesystem.c.o
 [ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/timer/unix/SDL_systimer.c.o
 [ 84%] Building C object extern/SDL2/CMakeFiles/SDL2-static.dir/src/sensor/dummy/SDL_dummysensor.c.o
 [ 84%] Linking C static library libSDL2.a
 [ 85%] Built target SDL2-static
 [ 85%] Built target glslang-standalone
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_atrous.comp.spv
 [ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_gradient_reproject.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/animate_materials.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_temporal.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_gradient_atrous.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/bloom_downscale.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_gradient_img.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/bloom_composite.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/bloom_blur.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/checkerboard_interleave.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/direct_lighting.rgen.pipeline.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/debug_line.vert.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/debug_line.frag.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_lf.comp.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/final_blit.frag.spv
-[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/direct_lighting.rgen.query.spv
 [ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_taau.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/animate_materials.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_atrous.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_gradient_img.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/checkerboard_interleave.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_temporal.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_lf.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/bloom_composite.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/asvgf_gradient_atrous.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/bloom_blur.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/debug_line.vert.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/bloom_downscale.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/debug_line.frag.spv
 [ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/compositing.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/direct_lighting.rgen.query.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/final_blit.frag.spv
 [ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/fsr_easu_fp16.comp.spv
+[ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/direct_lighting.rgen.pipeline.spv
 [ 86%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/final_blit.vert.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/fsr_easu_fp32.comp.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/fsr_rcas_fp16.comp.spv
@@ -4323,51 +4329,58 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/god_rays.comp.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/god_rays_filter.comp.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/indirect_lighting.rgen.pipeline.spv
-[ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/indirect_lighting.rgen.query.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/instance_geometry.comp.spv
+[ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/indirect_lighting.rgen.query.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/normalize_normal_map.comp.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer.rchit.pipeline.spv
-[ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer_beam.rint.pipeline.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer_beam.rahit.pipeline.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer.rmiss.pipeline.spv
-[ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer_masked.rahit.pipeline.spv
+[ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer_beam.rint.pipeline.spv
 [ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer_explosion.rahit.pipeline.spv
+[ 87%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer_masked.rahit.pipeline.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer_particle.rahit.pipeline.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/path_tracer_sprite.rahit.pipeline.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/physical_sky.comp.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/physical_sky_space.comp.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/primary_rays.rgen.pipeline.spv
-[ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/primary_rays.rgen.query.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/reflect_refract.rgen.pipeline.spv
+[ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/primary_rays.rgen.query.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/reflect_refract.rgen.query.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/shadow_map.vert.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/sky_buffer_resolve.comp.spv
-[ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/stretch_pic.frag.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/tone_mapping_apply.comp.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/stretch_pic.vert.spv
-[ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/tone_mapping_histogram.comp.spv
+[ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/stretch_pic.frag.spv
 [ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/tone_mapping_curve.comp.spv
+[ 88%] Generating /build/q2rtx-git/src/Q2RTX-res2k/baseq2/shader_vkpt/tone_mapping_histogram.comp.spv
 [ 88%] Built target shaders
 [ 88%] Building C object src/CMakeFiles/client.dir/client/console.c.o
-[ 88%] Building C object src/CMakeFiles/client.dir/client/demo.c.o
-[ 88%] Building C object src/CMakeFiles/client.dir/client/cin.c.o
-[ 88%] Building C object src/CMakeFiles/client.dir/client/ascii.c.o
-[ 88%] Building C object src/CMakeFiles/client.dir/client/locs.c.o
-[ 88%] Building C object src/CMakeFiles/client.dir/client/crc.c.o
-[ 88%] Building C object src/CMakeFiles/client.dir/client/effects.c.o
 [ 88%] Building C object src/CMakeFiles/client.dir/client/gtv.c.o
-[ 88%] Building C object src/CMakeFiles/client.dir/client/entities.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/demo.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/crc.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/ascii.c.o
 [ 88%] Building C object src/CMakeFiles/client.dir/client/keys.c.o
 [ 88%] Building C object src/CMakeFiles/client.dir/client/download.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/cin.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/entities.c.o
 [ 88%] Building C object src/CMakeFiles/client.dir/client/input.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/main.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/effects.c.o
 [ 88%] Building C object src/CMakeFiles/client.dir/client/newfx.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/precache.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/refresh.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/predict.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/locs.c.o
+[ 88%] Building C object src/CMakeFiles/client.dir/client/tent.c.o
 [ 89%] Building C object src/CMakeFiles/client.dir/client/parse.c.o
-[ 89%] Building C object src/CMakeFiles/client.dir/client/precache.c.o
 [ 89%] Building C object src/CMakeFiles/client.dir/client/screen.c.o
-[ 89%] Building C object src/CMakeFiles/client.dir/client/tent.c.o
-[ 89%] Building C object src/CMakeFiles/client.dir/client/main.c.o
-[ 89%] Building C object src/CMakeFiles/client.dir/client/refresh.c.o
-[ 89%] Building C object src/CMakeFiles/client.dir/client/predict.c.o
+/build/q2rtx-git/src/Q2RTX-res2k/src/client/input.c: In function ‘CL_SendBatchedCmd’:
+/build/q2rtx-git/src/Q2RTX-res2k/src/client/input.c:959:20: warning: variable ‘totalMsec’ set but not used [-Wunused-but-set-variable=]
+  959 |     int totalCmds, totalMsec;
+      |                    ^~~~~~~~~
+/build/q2rtx-git/src/Q2RTX-res2k/src/client/input.c:959:9: warning: variable ‘totalCmds’ set but not used [-Wunused-but-set-variable=]
+  959 |     int totalCmds, totalMsec;
+      |         ^~~~~~~~~
 /build/q2rtx-git/src/Q2RTX-res2k/src/client/precache.c: In function ‘CL_ParsePlayerSkin’:
 /build/q2rtx-git/src/Q2RTX-res2k/src/client/precache.c:43:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
    43 |     t = strchr(s, '\\');
@@ -4376,14 +4389,13 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 /build/q2rtx-git/src/Q2RTX-res2k/src/client/screen.c:149:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   149 |         p = strchr(s, '\n');
       |           ^
-/build/q2rtx-git/src/Q2RTX-res2k/src/client/input.c: In function ‘CL_SendBatchedCmd’:
-/build/q2rtx-git/src/Q2RTX-res2k/src/client/input.c:959:20: warning: variable ‘totalMsec’ set but not used [-Wunused-but-set-variable=]
-  959 |     int totalCmds, totalMsec;
-      |                    ^~~~~~~~~
-/build/q2rtx-git/src/Q2RTX-res2k/src/client/input.c:959:9: warning: variable ‘totalCmds’ set but not used [-Wunused-but-set-variable=]
-  959 |     int totalCmds, totalMsec;
-      |         ^~~~~~~~~
+/build/q2rtx-git/src/Q2RTX-res2k/src/client/parse.c: In function ‘CL_CheckForVersion’:
+/build/q2rtx-git/src/Q2RTX-res2k/src/client/parse.c:945:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  945 |     p = strstr(s, ": ");
+      |       ^
 [ 89%] Building C object src/CMakeFiles/client.dir/client/view.c.o
+[ 89%] Building C object src/CMakeFiles/client.dir/client/ui/menu.c.o
+[ 89%] Building C object src/CMakeFiles/client.dir/client/ui/demos.c.o
 /build/q2rtx-git/src/Q2RTX-res2k/src/client/main.c: In function ‘CL_LoadFilterList’:
 /build/q2rtx-git/src/Q2RTX-res2k/src/client/main.c:1748:14: warning: variable ‘count’ set but not used [-Wunused-but-set-variable=]
  1748 |     int len, count, line;
@@ -4392,59 +4404,53 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 /build/q2rtx-git/src/Q2RTX-res2k/src/client/main.c:1986:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
  1986 |         char *p = strstr(s + 1, "] ");
       |                   ^~~~~~
-[ 89%] Building C object src/CMakeFiles/client.dir/client/ui/demos.c.o
-/build/q2rtx-git/src/Q2RTX-res2k/src/client/parse.c: In function ‘CL_CheckForVersion’:
-/build/q2rtx-git/src/Q2RTX-res2k/src/client/parse.c:945:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-  945 |     p = strstr(s, ": ");
-      |       ^
-[ 89%] Building C object src/CMakeFiles/client.dir/client/ui/playermodels.c.o
-[ 89%] Building C object src/CMakeFiles/client.dir/client/ui/menu.c.o
 [ 89%] Building C object src/CMakeFiles/client.dir/client/ui/playerconfig.c.o
+[ 89%] Building C object src/CMakeFiles/client.dir/client/ui/playermodels.c.o
 [ 89%] Building C object src/CMakeFiles/client.dir/client/ui/script.c.o
 [ 89%] Building C object src/CMakeFiles/client.dir/client/ui/servers.c.o
-[ 89%] Building C object src/CMakeFiles/client.dir/client/ui/ui.c.o
 [ 89%] Building C object src/CMakeFiles/client.dir/client/sound/dma.c.o
-[ 89%] Building C object src/CMakeFiles/client.dir/client/sound/main.c.o
+[ 89%] Building C object src/CMakeFiles/client.dir/client/ui/ui.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/client/sound/al.c.o
-[ 90%] Building C object src/CMakeFiles/client.dir/client/sound/ogg.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/client/sound/mem.c.o
+[ 90%] Building C object src/CMakeFiles/client.dir/client/sound/main.c.o
+[ 90%] Building C object src/CMakeFiles/client.dir/client/sound/ogg.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/client/sound/qal/fixed.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/common/async.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/common/bsp.c.o
-[ 90%] Building C object src/CMakeFiles/client.dir/common/cmodel.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/common/cmd.c.o
+[ 90%] Building C object src/CMakeFiles/client.dir/common/cmodel.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/common/common.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/common/cvar.c.o
-[ 90%] Building C object src/CMakeFiles/client.dir/common/error.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/common/field.c.o
+[ 90%] Building C object src/CMakeFiles/client.dir/common/error.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/common/fifo.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/common/files.c.o
 [ 90%] Building C object src/CMakeFiles/client.dir/common/math.c.o
-[ 91%] Building C object src/CMakeFiles/client.dir/common/mdfour.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/common/msg.c.o
-[ 91%] Building C object src/CMakeFiles/client.dir/common/pmove.c.o
+[ 91%] Building C object src/CMakeFiles/client.dir/common/mdfour.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/common/prompt.c.o
+[ 91%] Building C object src/CMakeFiles/client.dir/common/pmove.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/common/sizebuf.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/common/utils.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/common/zone.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/common/net/chan.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/common/net/net.c.o
-[ 91%] Building C object src/CMakeFiles/client.dir/refresh/debug.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/refresh/debug_text.c.o
-[ 91%] Building C object src/CMakeFiles/client.dir/refresh/models.c.o
+[ 91%] Building C object src/CMakeFiles/client.dir/refresh/debug.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/refresh/images.c.o
+[ 91%] Building C object src/CMakeFiles/client.dir/refresh/models.c.o
+[ 91%] Building C object src/CMakeFiles/client.dir/refresh/stb/stb.c.o
 [ 91%] Building C object src/CMakeFiles/client.dir/refresh/model_iqm.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/shared/m_flash.c.o
-[ 92%] Building C object src/CMakeFiles/client.dir/refresh/stb/stb.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/unix/hunk.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/shared/shared.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/unix/system.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/unix/tty.c.o
-[ 92%] Building C object src/CMakeFiles/client.dir/unix/video/sdl.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/unix/sound/sdl.c.o
+[ 92%] Building C object src/CMakeFiles/client.dir/unix/video/sdl.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/server/commands.c.o
-[ 92%] Building C object src/CMakeFiles/client.dir/server/game.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/server/entities.c.o
+[ 92%] Building C object src/CMakeFiles/client.dir/server/game.c.o
 /build/q2rtx-git/src/Q2RTX-res2k/src/shared/shared.c: In function ‘Q_strnlen’:
 /build/q2rtx-git/src/Q2RTX-res2k/src/shared/shared.c:862:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
   862 |     char *p = memchr(s, 0, maxlen);
@@ -4453,22 +4459,22 @@ cc1plus: note: unrecognized command-line option ‘-Wno-c++20-attribute-extensio
 [ 92%] Building C object src/CMakeFiles/client.dir/server/main.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/server/mvd.c.o
 [ 92%] Building C object src/CMakeFiles/client.dir/server/send.c.o
-[ 92%] Building C object src/CMakeFiles/client.dir/server/user.c.o
-[ 92%] Building C object src/CMakeFiles/client.dir/server/world.c.o
-[ 93%] Building C object src/CMakeFiles/client.dir/server/mvd/client.c.o
 In file included from /build/q2rtx-git/src/Q2RTX-res2k/src/refresh/stb/stb.c:30:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/stb/stb_image.h: In function ‘stbi__parse_png_file’:
 /build/q2rtx-git/src/Q2RTX-res2k/extern/stb/stb_image.h:5247:28: warning: variable ‘invalid_chunk’ set but not used [-Wunused-but-set-variable=]
  5247 |                static char invalid_chunk[] = "XXXX PNG chunk not known";
       |                            ^~~~~~~~~~~~~
+[ 92%] Building C object src/CMakeFiles/client.dir/server/user.c.o
+[ 93%] Building C object src/CMakeFiles/client.dir/server/mvd/client.c.o
+[ 93%] Building C object src/CMakeFiles/client.dir/server/world.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/server/mvd/parse.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/server/mvd/game.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/server/save.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/client/http.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/refresh/gl/draw.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/refresh/gl/hq2x.c.o
-[ 93%] Building C object src/CMakeFiles/client.dir/refresh/gl/main.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/refresh/gl/texture.c.o
+[ 93%] Building C object src/CMakeFiles/client.dir/refresh/gl/main.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/refresh/gl/mesh.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/refresh/gl/models.c.o
 [ 93%] Building C object src/CMakeFiles/client.dir/refresh/gl/sky.c.o
@@ -4477,8 +4483,8 @@ In file included from /build/q2rtx-git/src/Q2RTX-res2k/src/refresh/stb/stb.c:30:
 [ 93%] Building C object src/CMakeFiles/client.dir/refresh/gl/tess.c.o
 [ 94%] Building C object src/CMakeFiles/client.dir/refresh/gl/world.c.o
 [ 94%] Building C object src/CMakeFiles/client.dir/refresh/gl/qgl.c.o
-[ 94%] Building C object src/CMakeFiles/client.dir/refresh/gl/legacy.c.o
 [ 94%] Building C object src/CMakeFiles/client.dir/refresh/gl/shader.c.o
+[ 94%] Building C object src/CMakeFiles/client.dir/refresh/gl/legacy.c.o
 [ 94%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/asvgf.c.o
 [ 94%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/bloom.c.o
 [ 94%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/bsp_mesh.c.o
@@ -4491,27 +4497,19 @@ In file included from /build/q2rtx-git/src/Q2RTX-res2k/src/refresh/stb/stb.c:30:
 [ 94%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/main.c.o
 [ 94%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/material.c.o
 [ 94%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/matrix.c.o
-[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/mgpu.c.o
 [ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/models.c.o
+[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/mgpu.c.o
 [ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/path_tracer.c.o
-[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/physical_sky.c.o
 /build/q2rtx-git/src/Q2RTX-res2k/src/unix/system.c: In function ‘Sys_Init’:
 /build/q2rtx-git/src/Q2RTX-res2k/src/unix/system.c:223:9: warning: ignoring return value of ‘getcwd’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
   223 |         getcwd(baseDirectory, PATH_MAX);
       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/physical_sky.c.o
 [ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/precomputed_sky.c.o
 [ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/profiler.c.o
 [ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/shadow_map.c.o
 [ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/textures.c.o
 [ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/tone_mapping.c.o
-[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/transparency.c.o
-[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/uniform_buffer.c.o
-[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/vertex_buffer.c.o
-[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/vk_util.c.o
-/build/q2rtx-git/src/Q2RTX-res2k/src/refresh/vkpt/material.c: In function ‘set_material_attribute’:
-/build/q2rtx-git/src/Q2RTX-res2k/src/refresh/vkpt/material.c:394:34: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-  394 |                 char* asterisk = strchr(value, '*');
-      |                                  ^~~~~~
 /build/q2rtx-git/src/Q2RTX-res2k/src/refresh/vkpt/main.c: In function ‘add_dlights’:
 /build/q2rtx-git/src/Q2RTX-res2k/src/refresh/vkpt/main.c:1868:60: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
  1868 |                         light_entity_ids[(*num_lights)] = *(uint32_t*)&hash;
@@ -4524,6 +4522,14 @@ In file included from /build/q2rtx-git/src/Q2RTX-res2k/src/refresh/stb/stb.c:30:
 /build/q2rtx-git/src/Q2RTX-res2k/src/refresh/vkpt/main.c:3007:39: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
  3007 |                 entity_hash_t hash = *(entity_hash_t*)&light_entity_ids[entity_frame_num][i];
       |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/transparency.c.o
+[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/uniform_buffer.c.o
+[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/vertex_buffer.c.o
+/build/q2rtx-git/src/Q2RTX-res2k/src/refresh/vkpt/material.c: In function ‘set_material_attribute’:
+/build/q2rtx-git/src/Q2RTX-res2k/src/refresh/vkpt/material.c:394:34: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  394 |                 char* asterisk = strchr(value, '*');
+      |                                  ^~~~~~
+[ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/vk_util.c.o
 [ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/buddy_allocator.c.o
 [ 95%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/device_memory_allocator.c.o
 [ 96%] Building C object src/CMakeFiles/client.dir/refresh/vkpt/god_rays.c.o
