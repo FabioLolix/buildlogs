@@ -44,81 +44,81 @@ running build_ext
 running build_rust
     Updating crates.io index
  Downloading crates ...
-  Downloaded r-efi v5.3.0
-  Downloaded wasm-bindgen-macro v0.2.126
-  Downloaded same-file v1.0.6
+  Downloaded quote v1.0.47
+  Downloaded target-lexicon v0.13.5
+  Downloaded unicode-ident v1.0.24
   Downloaded version_check v0.9.5
   Downloaded wasm-bindgen-shared v0.2.126
-  Downloaded winapi-util v0.1.11
-  Downloaded alloca v0.4.0
-  Downloaded cast v0.3.0
   Downloaded cfg-if v1.0.4
-  Downloaded ciborium-io v0.2.2
+  Downloaded alloca v0.4.0
   Downloaded crunchy v0.2.4
-  Downloaded futures-core v0.3.33
-  Downloaded ciborium-ll v0.2.2
-  Downloaded plotters-svg v0.3.7
-  Downloaded plotters-backend v0.3.7
-  Downloaded quote v1.0.47
-  Downloaded page_size v0.6.0
-  Downloaded itoa v1.0.18
+  Downloaded ciborium-io v0.2.2
+  Downloaded wasm-bindgen-macro v0.2.126
   Downloaded windows-link v0.2.1
   Downloaded futures-task v0.3.33
-  Downloaded clap_lex v1.1.0
-  Downloaded rustversion v1.0.23
-  Downloaded shlex v2.0.1
-  Downloaded target-lexicon v0.13.5
-  Downloaded walkdir v2.5.0
-  Downloaded slab v0.4.12
+  Downloaded itoa v1.0.18
+  Downloaded futures-core v0.3.33
+  Downloaded page_size v0.6.0
   Downloaded tinytemplate v1.2.1
-  Downloaded autocfg v1.5.1
-  Downloaded pyo3-ffi v0.29.3
-  Downloaded pin-project-lite v0.2.17
-  Downloaded either v1.16.0
-  Downloaded find-msvc-tools v0.1.9
+  Downloaded winapi-util v0.1.11
+  Downloaded shlex v2.0.1
+  Downloaded rustversion v1.0.23
+  Downloaded same-file v1.0.6
+  Downloaded ciborium-ll v0.2.2
+  Downloaded plotters-backend v0.3.7
+  Downloaded clap_lex v1.1.0
+  Downloaded plotters-svg v0.3.7
+  Downloaded slab v0.4.12
   Downloaded crossbeam-deque v0.8.7
   Downloaded criterion-plot v0.8.2
-  Downloaded anstyle v1.0.14
+  Downloaded find-msvc-tools v0.1.9
   Downloaded zmij v1.0.23
-  Downloaded anes v0.1.6
+  Downloaded autocfg v1.5.1
+  Downloaded walkdir v2.5.0
+  Downloaded oorandom v11.1.5
+  Downloaded pin-project-lite v0.2.17
+  Downloaded either v1.16.0
   Downloaded ahash v0.8.12
+  Downloaded anstyle v1.0.14
+  Downloaded pyo3-build-config v0.29.3
+  Downloaded anes v0.1.6
+  Downloaded crossbeam-epoch v0.9.20
+  Downloaded cast v0.3.0
+  Downloaded crossbeam-utils v0.8.22
   Downloaded once_cell v1.21.4
   Downloaded ciborium v0.2.2
-  Downloaded pyo3-build-config v0.29.3
-  Downloaded crossbeam-utils v0.8.22
-  Downloaded crossbeam-epoch v0.9.20
-  Downloaded serde_derive v1.0.229
-  Downloaded serde_core v1.0.229
-  Downloaded unicode-ident v1.0.24
-  Downloaded proc-macro2 v1.0.107
-  Downloaded half v2.7.1
-  Downloaded oorandom v11.1.5
-  Downloaded num-traits v0.2.19
   Downloaded getrandom v0.3.4
-  Downloaded rayon-core v1.13.0
-  Downloaded wasm-bindgen v0.2.126
-  Downloaded wasm-bindgen-macro-support v0.2.126
-  Downloaded wit-bindgen v0.57.1
+  Downloaded r-efi v5.3.0
+  Downloaded serde_core v1.0.229
   Downloaded clap v4.6.2
+  Downloaded half v2.7.1
+  Downloaded num-traits v0.2.19
+  Downloaded serde_derive v1.0.229
+  Downloaded wit-bindgen v0.57.1
+  Downloaded wasm-bindgen v0.2.126
   Downloaded serde v1.0.229
-  Downloaded memchr v2.8.3
-  Downloaded js-sys v0.3.103
+  Downloaded pyo3-ffi v0.29.3
+  Downloaded proc-macro2 v1.0.107
+  Downloaded wasm-bindgen-macro-support v0.2.126
+  Downloaded cc v1.3.0
   Downloaded bumpalo v3.20.3
   Downloaded zerocopy-derive v0.8.54
-  Downloaded cc v1.3.0
+  Downloaded js-sys v0.3.103
+  Downloaded rayon-core v1.13.0
+  Downloaded memchr v2.8.3
   Downloaded criterion v0.8.2
-  Downloaded wasip2 v1.0.4+wasi-0.2.12
   Downloaded itertools v0.13.0
-  Downloaded serde_json v1.0.150
   Downloaded plotters v0.3.7
   Downloaded rayon v1.12.0
+  Downloaded serde_json v1.0.150
   Downloaded regex v1.13.1
-  Downloaded futures-util v0.3.33
+  Downloaded wasip2 v1.0.4+wasi-0.2.12
   Downloaded clap_builder v4.6.2
   Downloaded aho-corasick v1.1.4
+  Downloaded futures-util v0.3.33
+  Downloaded syn v3.0.0
   Downloaded zerocopy v0.8.54
   Downloaded syn v2.0.119
-  Downloaded syn v3.0.0
   Downloaded regex-syntax v0.8.11
   Downloaded regex-automata v0.4.16
   Downloaded web-sys v0.3.103
@@ -130,21 +130,21 @@ running build_rust
 cargo rustc --lib --message-format=json-render-diagnostics --manifest-path Cargo.toml --release -v --crate-type cdylib
    Compiling target-lexicon v0.13.5
    Compiling libc v0.2.186
+   Compiling version_check v0.9.5
    Compiling getrandom v0.3.4
    Compiling zerocopy v0.8.54
-   Compiling version_check v0.9.5
    Compiling cfg-if v1.0.4
    Compiling once_cell v1.21.4
      Running `rustc --crate-name build_script_build --edition=2018 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/target-lexicon-0.13.5/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arch_z80", "arch_zkasm", "default", "serde", "serde_support", "std"))' -C metadata=7b2a95f850cd0ad3 -C extra-filename=-ec813c06982eb8b9 --out-dir /build/python-whenever-git/src/python-whenever/target/release/build/target-lexicon-ec813c06982eb8b9 -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git`
      Running `rustc --crate-name build_script_build --edition=2021 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("align", "const-extern-fn", "default", "extra_traits", "rustc-dep-of-std", "rustc-std-workspace-core", "std", "use_std"))' -C metadata=f82a55330dfdee2c -C extra-filename=-acfb8819b44a7245 --out-dir /build/python-whenever-git/src/python-whenever/target/release/build/libc-acfb8819b44a7245 -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git`
+     Running `rustc --crate-name version_check --edition=2015 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.5/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=4a6666ec180ceb54 -C extra-filename=-d98a395b587b8028 --out-dir /build/python-whenever-git/src/python-whenever/target/release/deps -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git`
      Running `rustc --crate-name build_script_build --edition=2021 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.3.4/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("std", "wasm_js"))' -C metadata=f57abb149450618c -C extra-filename=-44deb9ce9804a9d4 --out-dir /build/python-whenever-git/src/python-whenever/target/release/build/getrandom-44deb9ce9804a9d4 -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git`
      Running `rustc --crate-name build_script_build --edition=2021 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.8.54/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="simd"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("__internal_use_only_features_that_work_on_stable", "alloc", "derive", "float-nightly", "simd", "simd-nightly", "std", "zerocopy-derive"))' -C metadata=d6a0c2c8a9ac6b14 -C extra-filename=-aea05271c3ef8e1a --out-dir /build/python-whenever-git/src/python-whenever/target/release/build/zerocopy-aea05271c3ef8e1a -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git`
-     Running `rustc --crate-name version_check --edition=2015 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.5/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=4a6666ec180ceb54 -C extra-filename=-d98a395b587b8028 --out-dir /build/python-whenever-git/src/python-whenever/target/release/deps -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git`
      Running `rustc --crate-name cfg_if --edition=2018 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cfg-if-1.0.4/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C linker-plugin-lto -C codegen-units=1 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("core", "rustc-dep-of-std"))' -C metadata=3008c7c251a487f2 -C extra-filename=-84665b867ab4cdec --out-dir /build/python-whenever-git/src/python-whenever/target/release/deps -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git`
      Running `rustc --crate-name once_cell --edition=2021 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/once_cell-1.21.4/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C linker-plugin-lto -C codegen-units=1 --cfg 'feature="alloc"' --cfg 'feature="race"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("alloc", "atomic-polyfill", "critical-section", "default", "parking_lot", "portable-atomic", "race", "std", "unstable"))' -C metadata=c61c1c0e5f0e9bce -C extra-filename=-935d4efea4e4648b --out-dir /build/python-whenever-git/src/python-whenever/target/release/deps -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git`
+     Running `/build/python-whenever-git/src/python-whenever/target/release/build/getrandom-44deb9ce9804a9d4/build-script-build`
    Compiling ahash v0.8.12
      Running `rustc --crate-name build_script_build --edition=2018 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ahash-0.8.12/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="getrandom"' --cfg 'feature="runtime-rng"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("atomic-polyfill", "compile-time-rng", "const-random", "default", "getrandom", "nightly-arm-aes", "no-rng", "runtime-rng", "serde", "std"))' -C metadata=163aaaaa4ae42b54 -C extra-filename=-02fc47b7ba307410 --out-dir /build/python-whenever-git/src/python-whenever/target/release/build/ahash-02fc47b7ba307410 -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --extern version_check=/build/python-whenever-git/src/python-whenever/target/release/deps/libversion_check-d98a395b587b8028.rlib --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git`
-     Running `/build/python-whenever-git/src/python-whenever/target/release/build/getrandom-44deb9ce9804a9d4/build-script-build`
      Running `/build/python-whenever-git/src/python-whenever/target/release/build/libc-acfb8819b44a7245/build-script-build`
      Running `/build/python-whenever-git/src/python-whenever/target/release/build/zerocopy-aea05271c3ef8e1a/build-script-build`
      Running `rustc --crate-name libc --edition=2021 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C linker-plugin-lto -C codegen-units=1 --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("align", "const-extern-fn", "default", "extra_traits", "rustc-dep-of-std", "rustc-std-workspace-core", "std", "use_std"))' -C metadata=203c5b23ffa653aa -C extra-filename=-5df752a620d14e29 --out-dir /build/python-whenever-git/src/python-whenever/target/release/deps -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git --cfg freebsd12 --check-cfg 'cfg(emscripten_old_stat_abi)' --check-cfg 'cfg(espidf_picolibc)' --check-cfg 'cfg(espidf_time32)' --check-cfg 'cfg(freebsd10)' --check-cfg 'cfg(freebsd11)' --check-cfg 'cfg(freebsd12)' --check-cfg 'cfg(freebsd13)' --check-cfg 'cfg(freebsd14)' --check-cfg 'cfg(freebsd15)' --check-cfg 'cfg(gnu_file_offset_bits64)' --check-cfg 'cfg(gnu_time_bits64)' --check-cfg 'cfg(libc_deny_warnings)' --check-cfg 'cfg(linux_time_bits64)' --check-cfg 'cfg(musl_v1_2_3)' --check-cfg 'cfg(musl32_time64)' --check-cfg 'cfg(musl_redir_time64)' --check-cfg 'cfg(vxworks_lt_25_09)' --check-cfg 'cfg(target_os,values("switch","aix","ohos","hurd","rtems","visionos","nuttx","cygwin","qurt"))' --check-cfg 'cfg(target_env,values("illumos","wasi","aix","ohos","nto71_iosock","nto80"))' --check-cfg 'cfg(target_arch,values("loongarch64","mips32r6","mips64r6","csky"))'`
@@ -164,7 +164,7 @@ cargo rustc --lib --message-format=json-render-diagnostics --manifest-path Cargo
      Running `rustc --crate-name pyo3_ffi --edition=2021 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-ffi-0.29.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C linker-plugin-lto -C codegen-units=1 --cfg 'feature="extension-module"' --cfg 'feature="generate-import-lib"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("abi3", "abi3-py310", "abi3-py311", "abi3-py312", "abi3-py313", "abi3-py314", "abi3-py315", "abi3-py38", "abi3-py39", "abi3t", "abi3t-py315", "default", "extension-module", "generate-import-lib"))' -C metadata=a16a95eff5b8b674 -C extra-filename=-0dfbabd7d76159f6 --out-dir /build/python-whenever-git/src/python-whenever/target/release/deps -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --extern libc=/build/python-whenever-git/src/python-whenever/target/release/deps/liblibc-5df752a620d14e29.rmeta --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git --cfg Py_3_8 --cfg Py_3_9 --cfg Py_3_10 --cfg Py_3_11 --cfg Py_3_12 --cfg Py_3_13 --cfg Py_3_14 --cfg const_is_null --cfg fn_ptr_eq --cfg from_bytes_with_nul_error --cfg cfg_select --check-cfg 'cfg(Py_LIMITED_API)' --check-cfg 'cfg(Py_GIL_DISABLED)' --check-cfg 'cfg(PyPy)' --check-cfg 'cfg(GraalPy)' --check-cfg 'cfg(RustPython)' --check-cfg 'cfg(py_sys_config, values("Py_DEBUG", "Py_REF_DEBUG", "Py_TRACE_REFS", "COUNT_ALLOCS"))' --check-cfg 'cfg(Py_3_8)' --check-cfg 'cfg(Py_3_9)' --check-cfg 'cfg(Py_3_10)' --check-cfg 'cfg(Py_3_11)' --check-cfg 'cfg(Py_3_12)' --check-cfg 'cfg(Py_3_13)' --check-cfg 'cfg(Py_3_14)' --check-cfg 'cfg(Py_3_15)' --check-cfg 'cfg(Py_3_16)' --check-cfg 'cfg(const_is_null)' --check-cfg 'cfg(fn_ptr_eq)' --check-cfg 'cfg(from_bytes_with_nul_error)' --check-cfg 'cfg(cfg_select)'`
      Running `rustc --crate-name ahash --edition=2018 /build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ahash-0.8.12/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C linker-plugin-lto -C codegen-units=1 --cfg 'feature="default"' --cfg 'feature="getrandom"' --cfg 'feature="runtime-rng"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("atomic-polyfill", "compile-time-rng", "const-random", "default", "getrandom", "nightly-arm-aes", "no-rng", "runtime-rng", "serde", "std"))' -C metadata=a8b92e777bf209d9 -C extra-filename=-d5ce80ffd01f398e --out-dir /build/python-whenever-git/src/python-whenever/target/release/deps -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --extern cfg_if=/build/python-whenever-git/src/python-whenever/target/release/deps/libcfg_if-84665b867ab4cdec.rmeta --extern getrandom=/build/python-whenever-git/src/python-whenever/target/release/deps/libgetrandom-68b8185d52261da5.rmeta --extern once_cell=/build/python-whenever-git/src/python-whenever/target/release/deps/libonce_cell-935d4efea4e4648b.rmeta --extern zerocopy=/build/python-whenever-git/src/python-whenever/target/release/deps/libzerocopy-707a0ed9f7a6310e.rmeta --cap-lints allow -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git --cfg folded_multiply --check-cfg 'cfg(specialize)' --check-cfg 'cfg(folded_multiply)'`
      Running `rustc --crate-name _whenever --edition=2024 src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type cdylib --emit=dep-info,link -C opt-level=3 -C lto=fat -C codegen-units=1 --warn=unexpected_cfgs --check-cfg 'cfg(Py_3_9)' --check-cfg 'cfg(Py_3_10)' --check-cfg 'cfg(Py_3_11)' --check-cfg 'cfg(Py_3_12)' --check-cfg 'cfg(Py_3_13)' --check-cfg 'cfg(Py_GIL_DISABLED)' --check-cfg 'cfg(PyPy)' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=fcb84ce1433414bc --out-dir /build/python-whenever-git/src/python-whenever/target/release/deps -C strip=symbols -L dependency=/build/python-whenever-git/src/python-whenever/target/release/deps --extern ahash=/build/python-whenever-git/src/python-whenever/target/release/deps/libahash-d5ce80ffd01f398e.rlib --extern pyo3_ffi=/build/python-whenever-git/src/python-whenever/target/release/deps/libpyo3_ffi-0dfbabd7d76159f6.rlib -C force-frame-pointers=yes -C link-arg=-Wl,--icf=safe -C debuginfo=2 -C strip=none --remap-path-prefix=/build/python-whenever-git/src=/usr/src/debug/python-whenever-git --cfg Py_3_8 --cfg Py_3_9 --cfg Py_3_10 --cfg Py_3_11 --cfg Py_3_12 --cfg Py_3_13 --cfg Py_3_14`
-    Finished `release` profile [optimized] target(s) in 25.03s
+    Finished `release` profile [optimized] target(s) in 25.20s
 Copying rust artifact from target/release/lib_whenever.so to build/lib.linux-x86_64-cpython-314/whenever/_whenever.cpython-314-x86_64-linux-gnu.so
 installing to build/bdist.linux-x86_64/wheel
 running install
@@ -198,7 +198,7 @@ running install_egg_info
 Copying pysrc/whenever.egg-info to build/bdist.linux-x86_64/wheel/./whenever-0.11.0-py3.14.egg-info
 running install_scripts
 creating build/bdist.linux-x86_64/wheel/whenever-0.11.0.dist-info/WHEEL
-creating '/build/python-whenever-git/src/python-whenever/dist/.tmp-367glu9u/whenever-0.11.0-cp314-cp314-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/build/python-whenever-git/src/python-whenever/dist/.tmp-8zitetr6/whenever-0.11.0-cp314-cp314-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'whenever/__init__.py'
 adding 'whenever/__init__.pyi'
 adding 'whenever/_common.py'
