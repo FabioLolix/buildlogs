@@ -1,0 +1,44 @@
+Warning: prerequisite Test::NoWarnings 0 not found.
+
+Image::Scale will be built with:
+
+  JPEG support:     yes (/usr/include, libjpeg version 80)
+  PNG support:      yes (/usr/include, libpng version 1.6.59)
+  GIF support:      yes (/usr/include, giflib version 6.1)
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Image::Scale
+Writing MYMETA.yml and MYMETA.json
+Running Mkbootstrap for Scale ()
+"/usr/bin/perl" "/usr/share/perl5/core_perl/ExtUtils/xsubpp" -noprototypes -typemap '/usr/share/perl5/core_perl/ExtUtils/typemap' -typemap '/build/perl-image-scale/src/Image-Scale-0.14/typemap'  Scale.xs > Scale.xsc
+chmod 644 "Scale.bs"
+"/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Scale.bs blib/arch/auto/Image/Scale/Scale.bs 644
+cp lib/Image/Scale.pm blib/lib/Image/Scale.pm
+mv Scale.xsc Scale.c
+cc -c  -I. -I.. -Isrc -Iinclude -I/usr/include -I/usr/include -I/usr/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/include/db5.3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/perl/src=/usr/src/debug/perl -flto=auto   -DVERSION=\"0.14\" -DXS_VERSION=\"0.14\" -fPIC "-I/usr/lib/perl5/5.44/core_perl/CORE"  -O2 -Wall -Wno-unused-value -Wno-format-security -Winline -ffast-math -DHAVE_JPEG -DJPEG_VERSION=80 -DHAVE_PNG -DPNG_VERSION=1.6.59 -DHAVE_GIF -DGIF_VERSION=6.1 -DGIFLIB_API_51 -DGIFLIB_API_50 Scale.c
+In file included from src/image.c:20,
+                 from Scale.xs:18:
+src/bmp.c: In function ‘image_bmp_read_header’:
+src/bmp.c:25:7: warning: variable ‘offset’ set but not used [-Wunused-but-set-variable=]
+   25 |   int offset, palette_colors;
+      |       ^~~~~~
+In file included from src/image.c:28:
+src/gif.c: In function ‘image_gif_load’:
+src/gif.c:89:7: warning: variable ‘BackGround’ set but not used [-Wunused-but-set-variable=]
+   89 |   int BackGround = 0;
+      |       ^~~~~~~~~~
+src/gif.c:88:14: warning: variable ‘temp_save’ set but not used [-Wunused-but-set-variable=]
+   88 |   SavedImage temp_save;
+      |              ^~~~~~~~~
+Scale.c: In function ‘XS_Image__Scale___cleanup’:
+Scale.c:714:17: warning: variable ‘self’ set but not used [-Wunused-but-set-variable=]
+  714 |         HV *    self;
+      |                 ^~~~
+rm -f blib/arch/auto/Image/Scale/Scale.so
+LD_RUN_PATH="/usr/lib" cc  -shared -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -L/usr/lib/db5.3 -fstack-protector-strong  Scale.o  -o blib/arch/auto/Image/Scale/Scale.so  \
+   -L/usr/local/lib -ljpeg -lpng -lz -lgif   \
+  
+chmod 755 blib/arch/auto/Image/Scale/Scale.so
+Manifying 1 pod document
