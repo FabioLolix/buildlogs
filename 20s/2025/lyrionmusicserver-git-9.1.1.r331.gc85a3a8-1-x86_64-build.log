@@ -15,8 +15,8 @@ Looks good
 Generating a Unix-style Makefile
 Writing Makefile for Sub::Uplevel
 Writing MYMETA.yml and MYMETA.json
-cp lib/Sub/Uplevel.pod blib/lib/Sub/Uplevel.pod
 cp lib/Sub/Uplevel.pm blib/lib/Sub/Uplevel.pm
+cp lib/Sub/Uplevel.pod blib/lib/Sub/Uplevel.pod
 Manifying 2 pod documents
 Manifying 2 pod documents
 Appending installation info to /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/5.44/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
@@ -439,9 +439,9 @@ cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack
 cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/include/db5.3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -Wall -W   -DVERSION=\"1.18\" -DXS_VERSION=\"1.18\" -fPIC "-I/usr/lib/perl5/5.44/core_perl/CORE"   cxsa_memory.c
 chmod 644 "XSAccessor.bs"
 "/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- XSAccessor.bs blib/arch/auto/Class/XSAccessor/XSAccessor.bs 644
+cp lib/Class/XSAccessor.pm blib/lib/Class/XSAccessor.pm
 cp lib/Class/XSAccessor/Heavy.pm blib/lib/Class/XSAccessor/Heavy.pm
 cp lib/Class/XSAccessor/Array.pm blib/lib/Class/XSAccessor/Array.pm
-cp lib/Class/XSAccessor.pm blib/lib/Class/XSAccessor.pm
 mv XSAccessor.xsc XSAccessor.c
 cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/include/db5.3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -Wall -W   -DVERSION=\"1.18\" -DXS_VERSION=\"1.18\" -fPIC "-I/usr/lib/perl5/5.44/core_perl/CORE"   XSAccessor.c
 In file included from cxsa_hash_table.c:17:
@@ -680,73 +680,73 @@ rm -f blib/lib/DBI/Changes.pm
 cp Changes blib/lib/DBI/Changes.pm
 chmod 644 "DBI.bs"
 "/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- DBI.bs blib/arch/auto/DBI/DBI.bs 644
-cp lib/DBI/DBD/SqlEngine/Developers.pod blib/lib/DBI/DBD/SqlEngine/Developers.pod
-cp lib/DBD/Gofer/Transport/pipeone.pm blib/lib/DBD/Gofer/Transport/pipeone.pm
-cp lib/DBI/Const/GetInfo/ODBC.pm blib/lib/DBI/Const/GetInfo/ODBC.pm
-cp lib/DBD/Gofer/Policy/Base.pm blib/lib/DBD/Gofer/Policy/Base.pm
-cp dbixs_rev.h blib/arch/auto/DBI/dbixs_rev.h
-cp lib/DBD/Gofer/Transport/corostream.pm blib/lib/DBD/Gofer/Transport/corostream.pm
-cp dbivport.h blib/arch/auto/DBI/dbivport.h
-cp lib/DBI/Const/GetInfoReturn.pm blib/lib/DBI/Const/GetInfoReturn.pm
-cp lib/DBD/File/Roadmap.pod blib/lib/DBD/File/Roadmap.pod
-cp lib/DBD/NullP.pm blib/lib/DBD/NullP.pm
-cp lib/DBD/Gofer.pm blib/lib/DBD/Gofer.pm
-cp lib/DBD/File/Developers.pod blib/lib/DBD/File/Developers.pod
-cp lib/DBI/Const/GetInfo/ANSI.pm blib/lib/DBI/Const/GetInfo/ANSI.pm
-cp lib/DBD/Gofer/Policy/classic.pm blib/lib/DBD/Gofer/Policy/classic.pm
-cp dbi_sql.h blib/arch/auto/DBI/dbi_sql.h
-cp lib/DBD/File.pm blib/lib/DBD/File.pm
-cp Driver.xst blib/arch/auto/DBI/Driver.xst
-cp lib/DBD/Gofer/Transport/stream.pm blib/lib/DBD/Gofer/Transport/stream.pm
-cp lib/DBD/Gofer/Transport/Base.pm blib/lib/DBD/Gofer/Transport/Base.pm
-cp lib/Bundle/DBI.pm blib/lib/Bundle/DBI.pm
-cp lib/DBI/DBD.pm blib/lib/DBI/DBD.pm
-cp lib/DBD/Sponge.pm blib/lib/DBD/Sponge.pm
-cp lib/DBD/DBM.pm blib/lib/DBD/DBM.pm
-cp lib/DBD/Gofer/Policy/rush.pm blib/lib/DBD/Gofer/Policy/rush.pm
-cp Driver_xst.h blib/arch/auto/DBI/Driver_xst.h
-cp dbd_xsh.h blib/arch/auto/DBI/dbd_xsh.h
-cp dbipport.h blib/arch/auto/DBI/dbipport.h
-cp lib/DBD/File/HowTo.pod blib/lib/DBD/File/HowTo.pod
-cp lib/DBI/Const/GetInfoType.pm blib/lib/DBI/Const/GetInfoType.pm
-cp lib/DBD/ExampleP.pm blib/lib/DBD/ExampleP.pm
-cp lib/DBD/Proxy.pm blib/lib/DBD/Proxy.pm
-cp dbixs_rev.pl blib/lib/dbixs_rev.pl
 cp lib/DBD/Gofer/Policy/pedantic.pm blib/lib/DBD/Gofer/Policy/pedantic.pm
-cp lib/DBI/DBD/SqlEngine.pm blib/lib/DBI/DBD/SqlEngine.pm
-cp DBI.pm blib/lib/DBI.pm
+cp lib/DBD/Gofer/Policy/rush.pm blib/lib/DBD/Gofer/Policy/rush.pm
+cp lib/DBD/Gofer/Policy/Base.pm blib/lib/DBD/Gofer/Policy/Base.pm
 cp lib/DBI/DBD/Metadata.pm blib/lib/DBI/DBD/Metadata.pm
+cp lib/DBI/Const/GetInfo/ODBC.pm blib/lib/DBI/Const/GetInfo/ODBC.pm
+cp lib/DBD/Gofer/Transport/corostream.pm blib/lib/DBD/Gofer/Transport/corostream.pm
+cp dbd_xsh.h blib/arch/auto/DBI/dbd_xsh.h
+cp lib/DBD/File/Roadmap.pod blib/lib/DBD/File/Roadmap.pod
+cp DBI.pm blib/lib/DBI.pm
+cp lib/DBD/Gofer/Policy/classic.pm blib/lib/DBD/Gofer/Policy/classic.pm
 cp DBIXS.h blib/arch/auto/DBI/DBIXS.h
-cp lib/DBD/Gofer/Transport/null.pm blib/lib/DBD/Gofer/Transport/null.pm
+cp lib/DBI/DBD/SqlEngine.pm blib/lib/DBI/DBD/SqlEngine.pm
+cp lib/DBD/Gofer.pm blib/lib/DBD/Gofer.pm
+cp lib/DBI/DBD.pm blib/lib/DBI/DBD.pm
+cp dbi_sql.h blib/arch/auto/DBI/dbi_sql.h
+cp dbixs_rev.pl blib/lib/dbixs_rev.pl
+cp lib/DBD/Proxy.pm blib/lib/DBD/Proxy.pm
+cp lib/Bundle/DBI.pm blib/lib/Bundle/DBI.pm
+cp lib/DBI/Const/GetInfoReturn.pm blib/lib/DBI/Const/GetInfoReturn.pm
+cp lib/DBD/Gofer/Transport/Base.pm blib/lib/DBD/Gofer/Transport/Base.pm
 cp lib/DBI/DBD/SqlEngine/HowTo.pod blib/lib/DBI/DBD/SqlEngine/HowTo.pod
-cp lib/DBI/W32ODBC.pm blib/lib/DBI/W32ODBC.pm
-cp lib/DBI/ProxyServer.pm blib/lib/DBI/ProxyServer.pm
-cp lib/DBI/Gofer/Transport/stream.pm blib/lib/DBI/Gofer/Transport/stream.pm
-cp lib/DBI/Gofer/Serializer/DataDumper.pm blib/lib/DBI/Gofer/Serializer/DataDumper.pm
-cp lib/DBI/Util/_accessor.pm blib/lib/DBI/Util/_accessor.pm
-cp lib/DBI/ProfileDumper.pm blib/lib/DBI/ProfileDumper.pm
-cp lib/DBI/ProfileSubs.pm blib/lib/DBI/ProfileSubs.pm
-cp lib/DBI/Gofer/Response.pm blib/lib/DBI/Gofer/Response.pm
-cp lib/DBI/Gofer/Request.pm blib/lib/DBI/Gofer/Request.pm
-cp lib/DBI/Gofer/Serializer/Storable.pm blib/lib/DBI/Gofer/Serializer/Storable.pm
-cp lib/DBI/FAQ.pm blib/lib/DBI/FAQ.pm
-cp lib/DBI/Gofer/Execute.pm blib/lib/DBI/Gofer/Execute.pm
-cp lib/DBI/ProfileData.pm blib/lib/DBI/ProfileData.pm
-cp lib/DBI/ProfileDumper/Apache.pm blib/lib/DBI/ProfileDumper/Apache.pm
-cp lib/Win32/DBIODBC.pm blib/lib/Win32/DBIODBC.pm
-cp lib/DBI/Gofer/Serializer/Base.pm blib/lib/DBI/Gofer/Serializer/Base.pm
-cp lib/DBI/Profile.pm blib/lib/DBI/Profile.pm
-cp lib/DBI/PurePerl.pm blib/lib/DBI/PurePerl.pm
-cp lib/DBI/SQL/Nano.pm blib/lib/DBI/SQL/Nano.pm
-cp lib/DBI/Gofer/Transport/Base.pm blib/lib/DBI/Gofer/Transport/Base.pm
-cp lib/DBI/Util/CacheMemory.pm blib/lib/DBI/Util/CacheMemory.pm
+cp lib/DBD/Gofer/Transport/null.pm blib/lib/DBD/Gofer/Transport/null.pm
+cp lib/DBD/NullP.pm blib/lib/DBD/NullP.pm
+cp lib/DBD/File/Developers.pod blib/lib/DBD/File/Developers.pod
+cp lib/DBD/File.pm blib/lib/DBD/File.pm
+cp Driver_xst.h blib/arch/auto/DBI/Driver_xst.h
+cp lib/DBD/ExampleP.pm blib/lib/DBD/ExampleP.pm
+cp lib/DBI/Const/GetInfo/ANSI.pm blib/lib/DBI/Const/GetInfo/ANSI.pm
+cp lib/DBI/DBD/SqlEngine/Developers.pod blib/lib/DBI/DBD/SqlEngine/Developers.pod
+cp lib/DBI/Const/GetInfoType.pm blib/lib/DBI/Const/GetInfoType.pm
+cp dbivport.h blib/arch/auto/DBI/dbivport.h
+cp dbixs_rev.h blib/arch/auto/DBI/dbixs_rev.h
+cp lib/DBD/Gofer/Transport/pipeone.pm blib/lib/DBD/Gofer/Transport/pipeone.pm
+cp lib/DBD/Gofer/Transport/stream.pm blib/lib/DBD/Gofer/Transport/stream.pm
+cp dbipport.h blib/arch/auto/DBI/dbipport.h
+cp Driver.xst blib/arch/auto/DBI/Driver.xst
+cp lib/DBD/DBM.pm blib/lib/DBD/DBM.pm
+cp lib/DBD/File/HowTo.pod blib/lib/DBD/File/HowTo.pod
+cp lib/DBD/Sponge.pm blib/lib/DBD/Sponge.pm
 cp lib/DBI/Gofer/Transport/pipeone.pm blib/lib/DBI/Gofer/Transport/pipeone.pm
+cp lib/DBI/ProxyServer.pm blib/lib/DBI/ProxyServer.pm
+cp lib/DBI/Gofer/Serializer/Base.pm blib/lib/DBI/Gofer/Serializer/Base.pm
+cp lib/DBI/Gofer/Transport/stream.pm blib/lib/DBI/Gofer/Transport/stream.pm
+cp lib/DBI/Gofer/Transport/Base.pm blib/lib/DBI/Gofer/Transport/Base.pm
+cp lib/DBI/Gofer/Serializer/DataDumper.pm blib/lib/DBI/Gofer/Serializer/DataDumper.pm
+cp lib/DBI/ProfileDumper/Apache.pm blib/lib/DBI/ProfileDumper/Apache.pm
+cp lib/DBI/Gofer/Serializer/Storable.pm blib/lib/DBI/Gofer/Serializer/Storable.pm
+cp lib/DBI/SQL/Nano.pm blib/lib/DBI/SQL/Nano.pm
+cp lib/DBI/ProfileData.pm blib/lib/DBI/ProfileData.pm
+cp lib/DBI/Util/CacheMemory.pm blib/lib/DBI/Util/CacheMemory.pm
+cp lib/DBI/Gofer/Request.pm blib/lib/DBI/Gofer/Request.pm
+cp lib/DBI/FAQ.pm blib/lib/DBI/FAQ.pm
+cp lib/DBI/ProfileSubs.pm blib/lib/DBI/ProfileSubs.pm
+cp lib/DBI/W32ODBC.pm blib/lib/DBI/W32ODBC.pm
+cp lib/DBI/PurePerl.pm blib/lib/DBI/PurePerl.pm
+cp lib/DBI/Gofer/Execute.pm blib/lib/DBI/Gofer/Execute.pm
+cp lib/DBI/Util/_accessor.pm blib/lib/DBI/Util/_accessor.pm
+cp lib/DBI/Profile.pm blib/lib/DBI/Profile.pm
+cp lib/DBI/Gofer/Response.pm blib/lib/DBI/Gofer/Response.pm
+cp lib/Win32/DBIODBC.pm blib/lib/Win32/DBIODBC.pm
+cp lib/DBI/ProfileDumper.pm blib/lib/DBI/ProfileDumper.pm
 "/usr/bin/perl" "-Iblib/arch" "-Iblib/lib" dbilogstrip.PL dbilogstrip 
 "/usr/bin/perl" "-Iblib/arch" "-Iblib/lib" dbiprof.PL dbiprof 
 "/usr/bin/perl" "-Iblib/arch" "-Iblib/lib" dbiproxy.PL dbiproxy 
+Extracted dbilogstrip from dbilogstrip.PL with variable substitutions.
 Extracted dbiprof from dbiprof.PL with variable substitutions.
 Extracted dbiproxy from dbiproxy.PL with variable substitutions.
-Extracted dbilogstrip from dbilogstrip.PL with variable substitutions.
 mv Perl.xsc Perl.c
 cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/include/db5.3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/perl/src=/usr/src/debug/perl -flto=auto   -DVERSION=\"1.628\" -DXS_VERSION=\"1.628\" -fPIC "-I/usr/lib/perl5/5.44/core_perl/CORE"  -W -Wall -Wpointer-arith -Wbad-function-cast -Wno-comment -Wno-sign-compare -Wno-cast-qual Perl.c
 In file included from /usr/lib/perl5/5.44/core_perl/CORE/perl.h:3259,
@@ -1543,9 +1543,9 @@ LC_ALL=C sed -f ./config/make2sh.sed < ./config/Makefile.inc | grep -v '#M#' | u
 mkdir lib
 mkdir bin
 LC_ALL=C sed -f ./config/make2sh.sed < ./config/mh-linux | grep -v '#M#' | uniq >> config/icu-config
-config/icu-i18n.pc updated.
 config/icu-uc.pc updated.
 /usr/bin/make[0]: Making `all' in `stubdata'
+config/icu-i18n.pc updated.
 config/icu-io.pc updated.
 cat ./config/icu-config-bottom >> config/icu-config
 make[1]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/stubdata'
@@ -1575,12 +1575,12 @@ generating ../common/svchook.mk
    (deps)	 uinit.cpp
    (deps)	 uobject.cpp
    (deps)	 cmemory.c
+   (deps)	 charstr.cpp
    (deps)	 cstr.cpp
    (deps)	 udata.cpp
-   (deps)	 charstr.cpp
    (deps)	 ucmndata.c
-   (deps)	 umapfile.c
    (deps)	 udatamem.c
+   (deps)	 umapfile.c
    (deps)	 udataswp.c
    (deps)	 ucol_swp.cpp
    (deps)	 utrace.c
@@ -1611,12 +1611,12 @@ generating ../common/svchook.mk
    (deps)	 ucnvhz.c
    (deps)	 ucnv_lmb.c
    (deps)	 ucnvisci.c
+   (deps)	 ucnvdisp.c
    (deps)	 ucnv_set.c
    (deps)	 ucnv_ct.c
-   (deps)	 ucnvdisp.c
    (deps)	 resource.cpp
-   (deps)	 uresbund.cpp
    (deps)	 ures_cnv.c
+   (deps)	 uresbund.cpp
    (deps)	 uresdata.cpp
    (deps)	 resbund.cpp
    (deps)	 resbund_cnv.cpp
@@ -1678,8 +1678,8 @@ generating ../common/svchook.mk
    (deps)	 uprops.cpp
    (deps)	 ucase.cpp
    (deps)	 propname.cpp
-   (deps)	 ubidi_props.c
    (deps)	 ubidi.c
+   (deps)	 ubidi_props.c
    (deps)	 ubidiwrt.c
    (deps)	 ubidiln.c
    (deps)	 ushape.cpp
@@ -1747,17 +1747,17 @@ generating ../common/svchook.mk
    (deps)	 unifiedcache.cpp
    (deps)	 uloc_keytype.cpp
    (deps)	 ubiditransform.c
+   (deps)	 pluralmap.cpp
 cd .. \
  && CONFIG_FILES=common/Makefile CONFIG_HEADERS= /bin/sh ./config.status
-   (deps)	 pluralmap.cpp
 config.status: creating common/Makefile
    g++	 ...  errorcode.cpp
-   gcc	 ...  umath.c
    g++	 ...  putil.cpp
+   gcc	 ...  umath.c
    gcc	 ...  utypes.c
    gcc	 ...  uinvchar.c
-   g++	 ...  umutex.cpp
    g++	 ...  ucln_cmn.cpp
+   g++	 ...  umutex.cpp
    g++	 ...  uinit.cpp
    g++	 ...  uobject.cpp
    gcc	 ...  cmemory.c
@@ -1797,19 +1797,7 @@ config.status: creating common/Makefile
    gcc	 ...  ucnvhz.c
    gcc	 ...  ucnv_lmb.c
    gcc	 ...  ucnvisci.c
-ucnv_ext.cpp: In function ‘void ucnv_extWriteFromU(UConverter*, const int32_t*, uint32_t, char**, const char*, int32_t**, int32_t, UErrorCode*)’:
-ucnv_ext.cpp:694:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  694 |             *p++=(uint8_t)(value>>16);
-      |             ~~~~^~~~~~~~~~~~~~~~~~~~~
-ucnv_ext.cpp:696:9: note: here
-  696 |         case 2:
-      |         ^~~~
-ucnv_ext.cpp:697:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  697 |             *p++=(uint8_t)(value>>8);
-      |             ~~~~^~~~~~~~~~~~~~~~~~~~
-ucnv_ext.cpp:699:9: note: here
-  699 |         case 1:
-      |         ^~~~
+   gcc	 ...  ucnvdisp.c
 ucnvbocu.cpp: In function ‘void _Bocu1FromUnicodeWithOffsets(UConverterFromUnicodeArgs*, UErrorCode*)’:
 ucnvbocu.cpp:553:35: warning: this statement may fall through [-Wimplicit-fallthrough=]
   553 |                         *offsets++=sourceIndex;
@@ -1878,7 +1866,8 @@ ucnvbocu.cpp:841:34: warning: this statement may fall through [-Wimplicit-fallth
 ucnvbocu.cpp:843:21: note: here
   843 |                     case 1:
       |                     ^~~~
-   gcc	 ...  ucnvdisp.c
+   gcc	 ...  ucnv_set.c
+   gcc	 ...  ucnv_ct.c
 In file included from putil.cpp:54:
 In function ‘const char* getCodepageFromPOSIXID(const char*, char*, int32_t)’,
     inlined from ‘const char* int_getDefaultCodepage()’ at putil.cpp:1970:34,
@@ -1888,38 +1877,21 @@ cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ specif
 putil.cpp:1880:16: note: in expansion of macro ‘uprv_strncpy’
  1880 |         name = uprv_strncpy(buffer, name+1, buffCapacity);
       |                ^~~~~~~~~~~~
-   gcc	 ...  ucnv_set.c
-   gcc	 ...  ucnv_ct.c
    g++	 ...  resource.cpp
    g++	 ...  uresbund.cpp
-   gcc	 ...  ures_cnv.c
-   g++	 ...  uresdata.cpp
-In file included from cstring.h:31,
-                 from ucnv2022.cpp:44:
-ucnv2022.cpp: In function ‘void UConverter_toUnicode_ISO_2022_CN_OFFSETS_LOGIC(UConverterToUnicodeArgs*, UErrorCode*)’:
-cmemory.h:72:72: warning: this statement may fall through [-Wimplicit-fallthrough=]
-   72 | #define uprv_memset(buffer, mark, size) U_STANDARD_CPP_NAMESPACE memset(buffer, mark, size)
-ucnv2022.cpp:3357:17: note: in expansion of macro ‘uprv_memset’
- 3357 |                 uprv_memset(pToU2022State, 0, sizeof(ISO2022State));
-      |                 ^~~~~~~~~~~
-ucnv2022.cpp:3359:13: note: here
- 3359 |             default:
-      |             ^~~~~~~
-ucnv2022.cpp: In function ‘void changeState_2022(UConverter*, const char**, const char*, Variant2022, UErrorCode*)’:
-ucnv2022.cpp:981:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  981 |                     if(myData2022->version==0) {
-      |                     ^~
-ucnv2022.cpp:986:17: note: here
-  986 |                 case GB2312_1:
-      |                 ^~~~
-ucnv2022.cpp: In function ‘void UConverter_toUnicode_ISO_2022_JP_OFFSETS_LOGIC(UConverterToUnicodeArgs*, UErrorCode*)’:
-ucnv2022.cpp:2180:34: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2180 |                 pToU2022State->g = 0;
-      |                 ~~~~~~~~~~~~~~~~~^~~
-ucnv2022.cpp:2182:13: note: here
- 2182 |             default:
-      |             ^~~~~~~
-   g++	 ...  resbund.cpp
+ucnv_ext.cpp: In function ‘void ucnv_extWriteFromU(UConverter*, const int32_t*, uint32_t, char**, const char*, int32_t**, int32_t, UErrorCode*)’:
+ucnv_ext.cpp:694:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  694 |             *p++=(uint8_t)(value>>16);
+      |             ~~~~^~~~~~~~~~~~~~~~~~~~~
+ucnv_ext.cpp:696:9: note: here
+  696 |         case 2:
+      |         ^~~~
+ucnv_ext.cpp:697:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  697 |             *p++=(uint8_t)(value>>8);
+      |             ~~~~^~~~~~~~~~~~~~~~~~~~
+ucnv_ext.cpp:699:9: note: here
+  699 |         case 1:
+      |         ^~~~
 ucnvmbcs.cpp: In function ‘void ucnv_MBCSGetFilteredUnicodeSetForUnicode_58(const UConverterSharedData*, const USetAdder*, UConverterUnicodeSet, UConverterSetFilter, UErrorCode*)’:
 ucnvmbcs.cpp:968:42: warning: this statement may fall through [-Wimplicit-fallthrough=]
   968 |                                         b|=*stage3++;
@@ -1958,7 +1930,6 @@ ucnvmbcs.cpp:4666:35: warning: this statement may fall through [-Wimplicit-fallt
 ucnvmbcs.cpp:4668:21: note: here
  4668 |                     case 3:
       |                     ^~~~
-   g++	 ...  resbund_cnv.cpp
 ucnvmbcs.cpp:4670:35: warning: this statement may fall through [-Wimplicit-fallthrough=]
  4670 |                         *offsets++=sourceIndex;
       |                         ~~~~~~~~~~^~~~~~~~~~~~
@@ -1995,6 +1966,35 @@ ucnvmbcs.cpp:4727:21: warning: this statement may fall through [-Wimplicit-fallt
 ucnvmbcs.cpp:4731:17: note: here
  4731 |                 case 1:
       |                 ^~~~
+In file included from cstring.h:31,
+                 from ucnv2022.cpp:44:
+ucnv2022.cpp: In function ‘void UConverter_toUnicode_ISO_2022_CN_OFFSETS_LOGIC(UConverterToUnicodeArgs*, UErrorCode*)’:
+cmemory.h:72:72: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   72 | #define uprv_memset(buffer, mark, size) U_STANDARD_CPP_NAMESPACE memset(buffer, mark, size)
+ucnv2022.cpp:3357:17: note: in expansion of macro ‘uprv_memset’
+ 3357 |                 uprv_memset(pToU2022State, 0, sizeof(ISO2022State));
+      |                 ^~~~~~~~~~~
+ucnv2022.cpp:3359:13: note: here
+ 3359 |             default:
+      |             ^~~~~~~
+ucnv2022.cpp: In function ‘void changeState_2022(UConverter*, const char**, const char*, Variant2022, UErrorCode*)’:
+ucnv2022.cpp:981:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  981 |                     if(myData2022->version==0) {
+      |                     ^~
+ucnv2022.cpp:986:17: note: here
+  986 |                 case GB2312_1:
+      |                 ^~~~
+ucnv2022.cpp: In function ‘void UConverter_toUnicode_ISO_2022_JP_OFFSETS_LOGIC(UConverterToUnicodeArgs*, UErrorCode*)’:
+ucnv2022.cpp:2180:34: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2180 |                 pToU2022State->g = 0;
+      |                 ~~~~~~~~~~~~~~~~~^~~
+ucnv2022.cpp:2182:13: note: here
+ 2182 |             default:
+      |             ^~~~~~~
+   gcc	 ...  ures_cnv.c
+   g++	 ...  uresdata.cpp
+   g++	 ...  resbund.cpp
+   g++	 ...  resbund_cnv.cpp
    g++	 ...  ucurr.cpp
    g++	 ...  messagepattern.cpp
    gcc	 ...  ucat.c
@@ -2005,6 +2005,8 @@ ucnvmbcs.cpp:4731:17: note: here
    g++	 ...  locavailable.cpp
    g++	 ...  locdispnames.cpp
    g++	 ...  locdspnm.cpp
+   g++	 ...  loclikely.cpp
+   g++	 ...  locresdata.cpp
 uresbund.cpp: In function ‘const UChar* ures_getNextString_58(UResourceBundle*, int32_t*, const char**, UErrorCode*)’:
 uresbund.cpp:1489:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
  1489 |         *status = U_RESOURCE_TYPE_MISMATCH;
@@ -2012,8 +2014,9 @@ uresbund.cpp:1489:17: warning: this statement may fall through [-Wimplicit-fallt
 uresbund.cpp:1491:5: note: here
  1491 |     default:
       |     ^~~~~~~
-   g++	 ...  loclikely.cpp
-   g++	 ...  locresdata.cpp
+   g++	 ...  bytestream.cpp
+   g++	 ...  stringpiece.cpp
+   g++	 ...  stringtriebuilder.cpp
 In file included from uresdata.cpp:26:
 uresdata.cpp: In function ‘void ures_swapResource(const UDataSwapper*, const Resource*, Resource*, Resource, const char*, TempTable*, UErrorCode*)’:
 cmemory.h:59:68: warning: ‘void* memcpy(void*, const void*, size_t)’ specified bound between 18446744071562067968 and 18446744073709551612 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
@@ -2021,25 +2024,37 @@ cmemory.h:59:68: warning: ‘void* memcpy(void*, const void*, size_t)’ specifi
 uresdata.cpp:1236:21: note: in expansion of macro ‘uprv_memcpy’
  1236 |                     uprv_memcpy(qKey32, rKey32, 4*count);
       |                     ^~~~~~~~~~~
-   g++	 ...  bytestream.cpp
-   g++	 ...  stringpiece.cpp
+   g++	 ...  bytestriebuilder.cpp
 locid.cpp: In constructor ‘icu_58::Locale::Locale(const char*, const char*, const char*, const char*)’:
 locid.cpp:296:17: warning: variable ‘size’ set but not used [-Wunused-but-set-variable=]
   296 |         int32_t size = 0;
       |                 ^~~~
-   g++	 ...  stringtriebuilder.cpp
-   g++	 ...  bytestriebuilder.cpp
    g++	 ...  bytestrie.cpp
-   g++	 ...  bytestrieiterator.cpp
-   g++	 ...  ucharstrie.cpp
 locdispnames.cpp: In function ‘int32_t uloc_getDisplayName_58(const char*, const char*, UChar*, int32_t, UErrorCode*)’:
 locdispnames.cpp:642:54: warning: this statement may fall through [-Wimplicit-fallthrough=]
   642 |                             kenum = uloc_openKeywords(locale, pErrorCode);
 locdispnames.cpp:644:25: note: here
   644 |                         default: {
       |                         ^~~~~~~
-   g++	 ...  ucharstriebuilder.cpp
-   g++	 ...  ucharstrieiterator.cpp
+   g++	 ...  bytestrieiterator.cpp
+In file included from loclikely.cpp:28:
+In function ‘void appendTag(const char*, int32_t, char*, int32_t*)’,
+    inlined from ‘int32_t createTagStringWithAlternates(const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, char*, int32_t, UErrorCode*)’ at loclikely.cpp:247:22:
+cmemory.h:60:70: warning: ‘void* __builtin_memcpy(void*, const void*, long unsigned int)’ offset [-2147483648, -1] is out of the bounds [0, 157] of object ‘tagBuffer’ with type ‘char [157]’ [-Warray-bounds=]
+   60 | #define uprv_memmove(dst, src, size) U_STANDARD_CPP_NAMESPACE memmove(dst, src, size)
+loclikely.cpp:105:5: note: in expansion of macro ‘uprv_memmove’
+  105 |     uprv_memmove(
+      |     ^~~~~~~~~~~~
+loclikely.cpp: In function ‘int32_t createTagStringWithAlternates(const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, char*, int32_t, UErrorCode*)’:
+loclikely.cpp:186:14: note: ‘tagBuffer’ declared here
+  186 |         char tagBuffer[ULOC_FULLNAME_CAPACITY];
+      |              ^~~~~~~~~
+ucnv2022.cpp: In function ‘void _ISO2022Open(UConverter*, UConverterLoadArgs*, UErrorCode*)’:
+cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 6 equals destination size [-Wstringop-truncation]
+   59 | #define uprv_strncpy(dst, src, size) U_STANDARD_CPP_NAMESPACE strncpy(dst, src, size)
+ucnv2022.cpp:496:13: note: in expansion of macro ‘uprv_strncpy’
+  496 |             uprv_strncpy(myLocale, pArgs->locale, sizeof(myLocale));
+      |             ^~~~~~~~~~~~
 In file included from ucurr.cpp:21:
 In constructor ‘CReg::CReg(const UChar*, const char*)’,
     inlined from ‘static const void* CReg::reg(const UChar*, const char*, UErrorCode*)’ at ucurr.cpp:426:41,
@@ -2054,24 +2069,9 @@ cstring.h:37:57: note: length computed here
 ucurr.cpp:413:32: note: in expansion of macro ‘uprv_strlen’
   413 |         int32_t len = (int32_t)uprv_strlen(_id);
       |                                ^~~~~~~~~~~
-ucnv2022.cpp: In function ‘void _ISO2022Open(UConverter*, UConverterLoadArgs*, UErrorCode*)’:
-cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 6 equals destination size [-Wstringop-truncation]
-   59 | #define uprv_strncpy(dst, src, size) U_STANDARD_CPP_NAMESPACE strncpy(dst, src, size)
-ucnv2022.cpp:496:13: note: in expansion of macro ‘uprv_strncpy’
-  496 |             uprv_strncpy(myLocale, pArgs->locale, sizeof(myLocale));
-      |             ^~~~~~~~~~~~
-In file included from loclikely.cpp:28:
-In function ‘void appendTag(const char*, int32_t, char*, int32_t*)’,
-    inlined from ‘int32_t createTagStringWithAlternates(const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, char*, int32_t, UErrorCode*)’ at loclikely.cpp:247:22:
-cmemory.h:60:70: warning: ‘void* __builtin_memcpy(void*, const void*, long unsigned int)’ offset [-2147483648, -1] is out of the bounds [0, 157] of object ‘tagBuffer’ with type ‘char [157]’ [-Warray-bounds=]
-   60 | #define uprv_memmove(dst, src, size) U_STANDARD_CPP_NAMESPACE memmove(dst, src, size)
-loclikely.cpp:105:5: note: in expansion of macro ‘uprv_memmove’
-  105 |     uprv_memmove(
-      |     ^~~~~~~~~~~~
-loclikely.cpp: In function ‘int32_t createTagStringWithAlternates(const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, char*, int32_t, UErrorCode*)’:
-loclikely.cpp:186:14: note: ‘tagBuffer’ declared here
-  186 |         char tagBuffer[ULOC_FULLNAME_CAPACITY];
-      |              ^~~~~~~~~
+   g++	 ...  ucharstrie.cpp
+   g++	 ...  ucharstriebuilder.cpp
+   g++	 ...  ucharstrieiterator.cpp
    g++	 ...  dictionarydata.cpp
    g++	 ...  appendable.cpp
    g++	 ...  ustr_cnv.cpp
@@ -2083,74 +2083,6 @@ loclikely.cpp:186:14: note: ‘tagBuffer’ declared here
    g++	 ...  ustring.cpp
    g++	 ...  ustrcase.cpp
    g++	 ...  ucasemap.cpp
-   g++	 ...  ucasemap_titlecase_brkiter.cpp
-   gcc	 ...  cstring.c
-   gcc	 ...  ustrfmt.c
-unistr.cpp: In member function ‘icu_58::UnicodeString& icu_58::UnicodeString::copyFrom(const icu_58::UnicodeString&, UBool)’:
-unistr.cpp:539:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  539 |     if(fastCopy) {
-      |     ^~
-unistr.cpp:552:3: note: here
-  552 |   case kWritableAlias: {
-      |   ^~~~
-unistr.cpp:562:3: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  562 |   }
-      |   ^
-unistr.cpp:563:3: note: here
-  563 |   default:
-      |   ^~~~~~~
-   g++	 ...  ustrtrns.cpp
-   g++	 ...  ustr_wcs.cpp
-   g++	 ...  utext.cpp
-In file included from uloc.cpp:41:
-uloc.cpp: In function ‘int32_t _ZL13_canonicalizePKcPcijP10UErrorCode.part.0(const char*, char*, int32_t, uint32_t, UErrorCode*)’:
-cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
-   59 | #define uprv_strncpy(dst, src, size) U_STANDARD_CPP_NAMESPACE strncpy(dst, src, size)
-uloc.cpp:1688:13: note: in expansion of macro ‘uprv_strncpy’
- 1688 |             uprv_strncpy(name, d, len);
-      |             ^~~~~~~~~~~~
-cstring.h:37:57: note: length computed here
-   37 | #define uprv_strlen(str) U_STANDARD_CPP_NAMESPACE strlen(str)
-uloc.cpp:1685:24: note: in expansion of macro ‘uprv_strlen’
- 1685 |         len = (int32_t)uprv_strlen(d);
-      |                        ^~~~~~~~~~~
-   g++	 ...  unistr_case_locale.cpp
-   g++	 ...  ustrcase_locale.cpp
-   g++	 ...  unistr_titlecase_brkiter.cpp
-   g++	 ...  ustr_titlecase_brkiter.cpp
-   g++	 ...  normalizer2impl.cpp
-ustrtrns.cpp: In function ‘UChar32 utf8_nextCharSafeBodyTerminated(const uint8_t**, UChar32)’:
-ustrtrns.cpp:291:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  291 |         if(trail>0x3f || c>=0x110) {
-      |         ^~
-ustrtrns.cpp:297:5: note: here
-  297 |     case 2:
-      |     ^~~~
-ustrtrns.cpp:304:10: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  304 |         c=(c<<6)|trail;
-      |         ~^~~~~~~~~~~~~
-ustrtrns.cpp:306:5: note: here
-  306 |     case 1:
-      |     ^~~~
-ustrtrns.cpp: In function ‘UChar32 utf8_nextCharSafeBodyPointer(const uint8_t**, const uint8_t*, UChar32)’:
-ustrtrns.cpp:362:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  362 |             if(c<0x110) {
-      |             ^~
-ustrtrns.cpp:370:9: note: here
-  370 |         case 2:
-      |         ^~~~
-ustrtrns.cpp:373:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  373 |             illegal|=(trail&0xc0)^0x80;
-      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~
-ustrtrns.cpp:375:9: note: here
-  375 |         case 1:
-      |         ^~~~
-   g++	 ...  normalizer2.cpp
-   g++	 ...  filterednormalizer2.cpp
-   g++	 ...  normlzr.cpp
-   g++	 ...  unorm.cpp
-   g++	 ...  unormcmp.cpp
-   g++	 ...  loadednormalizer2impl.cpp
 ucnvmbcs.cpp: In function ‘UChar32 ucnv_MBCSGetNextUChar(UConverterToUnicodeArgs*, UErrorCode*)’:
 ucnvmbcs.cpp:3151:25: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
  3151 |                 *bytes++=*lastSource++;
@@ -2209,6 +2141,74 @@ ucnv_bld.h:190:13: note: at offset 22 into destination object ‘UConverter::toU
       |             ^~~~~~~~
 ucnv_bld.h:190:13: note: at offset 22 into destination object ‘UConverter::toUBytes’ of size 7
 ucnv_bld.h:190:13: note: at offset [6, 7] into destination object ‘UConverter::toUBytes’ of size 7
+   g++	 ...  ucasemap_titlecase_brkiter.cpp
+   gcc	 ...  cstring.c
+   gcc	 ...  ustrfmt.c
+   g++	 ...  ustrtrns.cpp
+   g++	 ...  ustr_wcs.cpp
+   g++	 ...  utext.cpp
+   g++	 ...  unistr_case_locale.cpp
+In file included from uloc.cpp:41:
+uloc.cpp: In function ‘int32_t _ZL13_canonicalizePKcPcijP10UErrorCode.part.0(const char*, char*, int32_t, uint32_t, UErrorCode*)’:
+cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+   59 | #define uprv_strncpy(dst, src, size) U_STANDARD_CPP_NAMESPACE strncpy(dst, src, size)
+uloc.cpp:1688:13: note: in expansion of macro ‘uprv_strncpy’
+ 1688 |             uprv_strncpy(name, d, len);
+      |             ^~~~~~~~~~~~
+cstring.h:37:57: note: length computed here
+   37 | #define uprv_strlen(str) U_STANDARD_CPP_NAMESPACE strlen(str)
+uloc.cpp:1685:24: note: in expansion of macro ‘uprv_strlen’
+ 1685 |         len = (int32_t)uprv_strlen(d);
+      |                        ^~~~~~~~~~~
+   g++	 ...  ustrcase_locale.cpp
+unistr.cpp: In member function ‘icu_58::UnicodeString& icu_58::UnicodeString::copyFrom(const icu_58::UnicodeString&, UBool)’:
+unistr.cpp:539:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  539 |     if(fastCopy) {
+      |     ^~
+unistr.cpp:552:3: note: here
+  552 |   case kWritableAlias: {
+      |   ^~~~
+   g++	 ...  unistr_titlecase_brkiter.cpp
+unistr.cpp:562:3: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  562 |   }
+      |   ^
+unistr.cpp:563:3: note: here
+  563 |   default:
+      |   ^~~~~~~
+   g++	 ...  ustr_titlecase_brkiter.cpp
+ustrtrns.cpp: In function ‘UChar32 utf8_nextCharSafeBodyTerminated(const uint8_t**, UChar32)’:
+ustrtrns.cpp:291:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  291 |         if(trail>0x3f || c>=0x110) {
+      |         ^~
+ustrtrns.cpp:297:5: note: here
+  297 |     case 2:
+      |     ^~~~
+ustrtrns.cpp:304:10: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  304 |         c=(c<<6)|trail;
+      |         ~^~~~~~~~~~~~~
+ustrtrns.cpp:306:5: note: here
+  306 |     case 1:
+      |     ^~~~
+ustrtrns.cpp: In function ‘UChar32 utf8_nextCharSafeBodyPointer(const uint8_t**, const uint8_t*, UChar32)’:
+ustrtrns.cpp:362:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  362 |             if(c<0x110) {
+      |             ^~
+ustrtrns.cpp:370:9: note: here
+  370 |         case 2:
+      |         ^~~~
+ustrtrns.cpp:373:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  373 |             illegal|=(trail&0xc0)^0x80;
+      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~
+ustrtrns.cpp:375:9: note: here
+  375 |         case 1:
+      |         ^~~~
+   g++	 ...  normalizer2impl.cpp
+   g++	 ...  normalizer2.cpp
+   g++	 ...  filterednormalizer2.cpp
+   g++	 ...  normlzr.cpp
+   g++	 ...  unorm.cpp
+   g++	 ...  unormcmp.cpp
+   g++	 ...  loadednormalizer2impl.cpp
    g++	 ...  chariter.cpp
    g++	 ...  schriter.cpp
    g++	 ...  uchriter.cpp
@@ -2278,6 +2278,12 @@ ucnv_bld.h:190:13: note: at offset [6, 7] into destination object ‘UConverter:
    gcc	 ...  propsvec.c
    gcc	 ...  ulist.c
    gcc	 ...  uloc_tag.c
+   gcc	 ...  icudataver.c
+   g++	 ...  icuplug.cpp
+   g++	 ...  listformatter.cpp
+   g++	 ...  ulistformatter.cpp
+   g++	 ...  sharedobject.cpp
+   g++	 ...  simpleformatter.cpp
 util_props.cpp: In static member function ‘static int32_t icu_58::ICU_Utility::parsePattern(const icu_58::UnicodeString&, int32_t, int32_t, const icu_58::UnicodeString&, int32_t*)’:
 util_props.cpp:102:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
   102 |             if (!PatternProps::isWhiteSpace(c)) {
@@ -2285,22 +2291,16 @@ util_props.cpp:102:13: warning: this statement may fall through [-Wimplicit-fall
 util_props.cpp:107:9: note: here
   107 |         case 126 /*'~'*/:
       |         ^~~~
-   gcc	 ...  icudataver.c
-   g++	 ...  icuplug.cpp
-   g++	 ...  listformatter.cpp
-   g++	 ...  ulistformatter.cpp
-   g++	 ...  sharedobject.cpp
-   g++	 ...  simpleformatter.cpp
    g++	 ...  unifiedcache.cpp
    g++	 ...  uloc_keytype.cpp
    gcc	 ...  ubiditransform.c
    g++	 ...  pluralmap.cpp
-   g++	 ...  errorcode.cpp
-   g++	 ...  putil.cpp
 ubiditransform.c: In function ‘ubiditransform_transform_58’:
 ubiditransform.c:500:17: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘action + 8’ must not be NULL [-Waddress]
   500 |             if (action + 1) {
       |                 ^~~~~~
+   g++	 ...  errorcode.cpp
+   g++	 ...  putil.cpp
    gcc	 ...  umath.c
    gcc	 ...  utypes.c
    gcc	 ...  uinvchar.c
@@ -2319,11 +2319,6 @@ ubiditransform.c:500:17: warning: the comparison will always evaluate as ‘true
    g++	 ...  ucol_swp.cpp
    gcc	 ...  utrace.c
    gcc	 ...  uhash.c
-   g++	 ...  uhash_us.cpp
-   gcc	 ...  uenum.c
-   g++	 ...  ustrenum.cpp
-   g++	 ...  uvector.cpp
-   g++	 ...  ustack.cpp
 In function ‘_appendKeywordsToLanguageTag’,
     inlined from ‘uloc_toLanguageTag_58’ at uloc_tag.c:2403:15:
 uloc_tag.c:1083:22: warning: ‘bcpKey’ may be used uninitialized [-Wmaybe-uninitialized]
@@ -2342,6 +2337,11 @@ uloc_tag.c: In function ‘uloc_toLanguageTag_58’:
 uloc_tag.c:926:30: note: ‘bcpValue’ was declared here
   926 |         const char *bcpKey, *bcpValue;
       |                              ^~~~~~~~
+   g++	 ...  uhash_us.cpp
+   gcc	 ...  uenum.c
+   g++	 ...  ustrenum.cpp
+   g++	 ...  uvector.cpp
+   g++	 ...  ustack.cpp
    g++	 ...  uvectr32.cpp
    g++	 ...  uvectr64.cpp
    gcc	 ...  ucnv.c
@@ -2357,6 +2357,7 @@ uloc_tag.c:926:30: note: ‘bcpValue’ was declared here
    gcc	 ...  ucnv_u32.c
    gcc	 ...  ucnvscsu.c
    g++	 ...  ucnvbocu.cpp
+   g++	 ...  ucnv_ext.cpp
 In file included from putil.cpp:54:
 In function ‘const char* getCodepageFromPOSIXID(const char*, char*, int32_t)’,
     inlined from ‘const char* int_getDefaultCodepage()’ at putil.cpp:1970:34,
@@ -2366,26 +2367,13 @@ cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ specif
 putil.cpp:1880:16: note: in expansion of macro ‘uprv_strncpy’
  1880 |         name = uprv_strncpy(buffer, name+1, buffCapacity);
       |                ^~~~~~~~~~~~
-   g++	 ...  ucnv_ext.cpp
    g++	 ...  ucnvmbcs.cpp
    g++	 ...  ucnv2022.cpp
    gcc	 ...  ucnvhz.c
    gcc	 ...  ucnv_lmb.c
    gcc	 ...  ucnvisci.c
    gcc	 ...  ucnvdisp.c
-ucnv_ext.cpp: In function ‘void ucnv_extWriteFromU(UConverter*, const int32_t*, uint32_t, char**, const char*, int32_t**, int32_t, UErrorCode*)’:
-ucnv_ext.cpp:694:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  694 |             *p++=(uint8_t)(value>>16);
-      |             ~~~~^~~~~~~~~~~~~~~~~~~~~
-ucnv_ext.cpp:696:9: note: here
-  696 |         case 2:
-      |         ^~~~
-ucnv_ext.cpp:697:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  697 |             *p++=(uint8_t)(value>>8);
-      |             ~~~~^~~~~~~~~~~~~~~~~~~~
-ucnv_ext.cpp:699:9: note: here
-  699 |         case 1:
-      |         ^~~~
+   gcc	 ...  ucnv_set.c
 ucnvbocu.cpp: In function ‘void _Bocu1FromUnicodeWithOffsets(UConverterFromUnicodeArgs*, UErrorCode*)’:
 ucnvbocu.cpp:553:35: warning: this statement may fall through [-Wimplicit-fallthrough=]
   553 |                         *offsets++=sourceIndex;
@@ -2454,11 +2442,21 @@ ucnvbocu.cpp:841:34: warning: this statement may fall through [-Wimplicit-fallth
 ucnvbocu.cpp:843:21: note: here
   843 |                     case 1:
       |                     ^~~~
-   gcc	 ...  ucnv_set.c
+ucnv_ext.cpp: In function ‘void ucnv_extWriteFromU(UConverter*, const int32_t*, uint32_t, char**, const char*, int32_t**, int32_t, UErrorCode*)’:
+ucnv_ext.cpp:694:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  694 |             *p++=(uint8_t)(value>>16);
+      |             ~~~~^~~~~~~~~~~~~~~~~~~~~
+ucnv_ext.cpp:696:9: note: here
+  696 |         case 2:
+      |         ^~~~
+ucnv_ext.cpp:697:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  697 |             *p++=(uint8_t)(value>>8);
+      |             ~~~~^~~~~~~~~~~~~~~~~~~~
+ucnv_ext.cpp:699:9: note: here
+  699 |         case 1:
+      |         ^~~~
    gcc	 ...  ucnv_ct.c
    g++	 ...  resource.cpp
-   g++	 ...  uresbund.cpp
-   gcc	 ...  ures_cnv.c
 In file included from cstring.h:31,
                  from ucnv2022.cpp:44:
 ucnv2022.cpp: In function ‘void UConverter_toUnicode_ISO_2022_CN_OFFSETS_LOGIC(UConverterToUnicodeArgs*, UErrorCode*)’:
@@ -2477,6 +2475,7 @@ ucnv2022.cpp:981:21: warning: this statement may fall through [-Wimplicit-fallth
 ucnv2022.cpp:986:17: note: here
   986 |                 case GB2312_1:
       |                 ^~~~
+   g++	 ...  uresbund.cpp
 ucnv2022.cpp: In function ‘void UConverter_toUnicode_ISO_2022_JP_OFFSETS_LOGIC(UConverterToUnicodeArgs*, UErrorCode*)’:
 ucnv2022.cpp:2180:34: warning: this statement may fall through [-Wimplicit-fallthrough=]
  2180 |                 pToU2022State->g = 0;
@@ -2484,6 +2483,7 @@ ucnv2022.cpp:2180:34: warning: this statement may fall through [-Wimplicit-fallt
 ucnv2022.cpp:2182:13: note: here
  2182 |             default:
       |             ^~~~~~~
+   gcc	 ...  ures_cnv.c
    g++	 ...  uresdata.cpp
    g++	 ...  resbund.cpp
    g++	 ...  resbund_cnv.cpp
@@ -2500,7 +2500,6 @@ ucnvmbcs.cpp:971:42: warning: this statement may fall through [-Wimplicit-fallth
 ucnvmbcs.cpp:973:37: note: here
   973 |                                     case 2:
       |                                     ^~~~
-   g++	 ...  ucurr.cpp
 ucnvmbcs.cpp: In function ‘void ucnv_MBCSFromUnicodeWithOffsets_58(UConverterFromUnicodeArgs*, UErrorCode*)’:
 ucnvmbcs.cpp:4646:34: warning: this statement may fall through [-Wimplicit-fallthrough=]
  4646 |                         *target++=(uint8_t)(value>>24);
@@ -2562,6 +2561,7 @@ ucnvmbcs.cpp:4727:21: warning: this statement may fall through [-Wimplicit-fallt
 ucnvmbcs.cpp:4731:17: note: here
  4731 |                 case 1:
       |                 ^~~~
+   g++	 ...  ucurr.cpp
    g++	 ...  messagepattern.cpp
    gcc	 ...  ucat.c
    gcc	 ...  locmap.c
@@ -2571,23 +2571,6 @@ ucnvmbcs.cpp:4731:17: note: here
    g++	 ...  locavailable.cpp
    g++	 ...  locdispnames.cpp
    g++	 ...  locdspnm.cpp
-   g++	 ...  loclikely.cpp
-   g++	 ...  locresdata.cpp
-   g++	 ...  bytestream.cpp
-uresbund.cpp: In function ‘const UChar* ures_getNextString_58(UResourceBundle*, int32_t*, const char**, UErrorCode*)’:
-uresbund.cpp:1489:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 1489 |         *status = U_RESOURCE_TYPE_MISMATCH;
-      |         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
-uresbund.cpp:1491:5: note: here
- 1491 |     default:
-      |     ^~~~~~~
-   g++	 ...  stringpiece.cpp
-   g++	 ...  stringtriebuilder.cpp
-   g++	 ...  bytestriebuilder.cpp
-locid.cpp: In constructor ‘icu_58::Locale::Locale(const char*, const char*, const char*, const char*)’:
-locid.cpp:296:17: warning: variable ‘size’ set but not used [-Wunused-but-set-variable=]
-  296 |         int32_t size = 0;
-      |                 ^~~~
 In file included from uresdata.cpp:26:
 uresdata.cpp: In function ‘void ures_swapResource(const UDataSwapper*, const Resource*, Resource*, Resource, const char*, TempTable*, UErrorCode*)’:
 cmemory.h:59:68: warning: ‘void* memcpy(void*, const void*, size_t)’ specified bound between 18446744071562067968 and 18446744073709551612 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
@@ -2595,7 +2578,23 @@ cmemory.h:59:68: warning: ‘void* memcpy(void*, const void*, size_t)’ specifi
 uresdata.cpp:1236:21: note: in expansion of macro ‘uprv_memcpy’
  1236 |                     uprv_memcpy(qKey32, rKey32, 4*count);
       |                     ^~~~~~~~~~~
-   g++	 ...  bytestrie.cpp
+   g++	 ...  loclikely.cpp
+   g++	 ...  locresdata.cpp
+uresbund.cpp: In function ‘const UChar* ures_getNextString_58(UResourceBundle*, int32_t*, const char**, UErrorCode*)’:
+uresbund.cpp:1489:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1489 |         *status = U_RESOURCE_TYPE_MISMATCH;
+      |         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+uresbund.cpp:1491:5: note: here
+ 1491 |     default:
+      |     ^~~~~~~
+   g++	 ...  bytestream.cpp
+   g++	 ...  stringpiece.cpp
+   g++	 ...  stringtriebuilder.cpp
+locid.cpp: In constructor ‘icu_58::Locale::Locale(const char*, const char*, const char*, const char*)’:
+locid.cpp:296:17: warning: variable ‘size’ set but not used [-Wunused-but-set-variable=]
+  296 |         int32_t size = 0;
+      |                 ^~~~
+   g++	 ...  bytestriebuilder.cpp
 ucnv2022.cpp: In function ‘void _ISO2022Open(UConverter*, UConverterLoadArgs*, UErrorCode*)’:
 cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 6 equals destination size [-Wstringop-truncation]
    59 | #define uprv_strncpy(dst, src, size) U_STANDARD_CPP_NAMESPACE strncpy(dst, src, size)
@@ -2608,6 +2607,24 @@ locdispnames.cpp:642:54: warning: this statement may fall through [-Wimplicit-fa
 locdispnames.cpp:644:25: note: here
   644 |                         default: {
       |                         ^~~~~~~
+   g++	 ...  bytestrie.cpp
+   g++	 ...  bytestrieiterator.cpp
+   g++	 ...  ucharstrie.cpp
+In file included from loclikely.cpp:28:
+In function ‘void appendTag(const char*, int32_t, char*, int32_t*)’,
+    inlined from ‘int32_t createTagStringWithAlternates(const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, char*, int32_t, UErrorCode*)’ at loclikely.cpp:247:22:
+cmemory.h:60:70: warning: ‘void* __builtin_memcpy(void*, const void*, long unsigned int)’ offset [-2147483648, -1] is out of the bounds [0, 157] of object ‘tagBuffer’ with type ‘char [157]’ [-Warray-bounds=]
+   60 | #define uprv_memmove(dst, src, size) U_STANDARD_CPP_NAMESPACE memmove(dst, src, size)
+loclikely.cpp:105:5: note: in expansion of macro ‘uprv_memmove’
+  105 |     uprv_memmove(
+      |     ^~~~~~~~~~~~
+loclikely.cpp: In function ‘int32_t createTagStringWithAlternates(const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, char*, int32_t, UErrorCode*)’:
+loclikely.cpp:186:14: note: ‘tagBuffer’ declared here
+  186 |         char tagBuffer[ULOC_FULLNAME_CAPACITY];
+      |              ^~~~~~~~~
+   g++	 ...  ucharstriebuilder.cpp
+   g++	 ...  ucharstrieiterator.cpp
+   g++	 ...  dictionarydata.cpp
 In file included from ucurr.cpp:21:
 In constructor ‘CReg::CReg(const UChar*, const char*)’,
     inlined from ‘static const void* CReg::reg(const UChar*, const char*, UErrorCode*)’ at ucurr.cpp:426:41,
@@ -2622,23 +2639,6 @@ cstring.h:37:57: note: length computed here
 ucurr.cpp:413:32: note: in expansion of macro ‘uprv_strlen’
   413 |         int32_t len = (int32_t)uprv_strlen(_id);
       |                                ^~~~~~~~~~~
-   g++	 ...  bytestrieiterator.cpp
-   g++	 ...  ucharstrie.cpp
-   g++	 ...  ucharstriebuilder.cpp
-   g++	 ...  ucharstrieiterator.cpp
-In file included from loclikely.cpp:28:
-In function ‘void appendTag(const char*, int32_t, char*, int32_t*)’,
-    inlined from ‘int32_t createTagStringWithAlternates(const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, char*, int32_t, UErrorCode*)’ at loclikely.cpp:247:22:
-cmemory.h:60:70: warning: ‘void* __builtin_memcpy(void*, const void*, long unsigned int)’ offset [-2147483648, -1] is out of the bounds [0, 157] of object ‘tagBuffer’ with type ‘char [157]’ [-Warray-bounds=]
-   60 | #define uprv_memmove(dst, src, size) U_STANDARD_CPP_NAMESPACE memmove(dst, src, size)
-loclikely.cpp:105:5: note: in expansion of macro ‘uprv_memmove’
-  105 |     uprv_memmove(
-      |     ^~~~~~~~~~~~
-loclikely.cpp: In function ‘int32_t createTagStringWithAlternates(const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, int32_t, const char*, char*, int32_t, UErrorCode*)’:
-loclikely.cpp:186:14: note: ‘tagBuffer’ declared here
-  186 |         char tagBuffer[ULOC_FULLNAME_CAPACITY];
-      |              ^~~~~~~~~
-   g++	 ...  dictionarydata.cpp
    g++	 ...  appendable.cpp
    g++	 ...  ustr_cnv.cpp
    g++	 ...  unistr_cnv.cpp
@@ -2650,6 +2650,18 @@ loclikely.cpp:186:14: note: ‘tagBuffer’ declared here
    g++	 ...  ustrcase.cpp
    g++	 ...  ucasemap.cpp
    g++	 ...  ucasemap_titlecase_brkiter.cpp
+In file included from uloc.cpp:41:
+uloc.cpp: In function ‘int32_t _ZL13_canonicalizePKcPcijP10UErrorCode.part.0(const char*, char*, int32_t, uint32_t, UErrorCode*)’:
+cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+   59 | #define uprv_strncpy(dst, src, size) U_STANDARD_CPP_NAMESPACE strncpy(dst, src, size)
+uloc.cpp:1688:13: note: in expansion of macro ‘uprv_strncpy’
+ 1688 |             uprv_strncpy(name, d, len);
+      |             ^~~~~~~~~~~~
+cstring.h:37:57: note: length computed here
+   37 | #define uprv_strlen(str) U_STANDARD_CPP_NAMESPACE strlen(str)
+uloc.cpp:1685:24: note: in expansion of macro ‘uprv_strlen’
+ 1685 |         len = (int32_t)uprv_strlen(d);
+      |                        ^~~~~~~~~~~
    gcc	 ...  cstring.c
    gcc	 ...  ustrfmt.c
    g++	 ...  ustrtrns.cpp
@@ -2658,8 +2670,22 @@ loclikely.cpp:186:14: note: ‘tagBuffer’ declared here
    g++	 ...  unistr_case_locale.cpp
    g++	 ...  ustrcase_locale.cpp
    g++	 ...  unistr_titlecase_brkiter.cpp
+unistr.cpp: In member function ‘icu_58::UnicodeString& icu_58::UnicodeString::copyFrom(const icu_58::UnicodeString&, UBool)’:
+unistr.cpp:539:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  539 |     if(fastCopy) {
+      |     ^~
+unistr.cpp:552:3: note: here
+  552 |   case kWritableAlias: {
+      |   ^~~~
+unistr.cpp:562:3: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  562 |   }
+      |   ^
+unistr.cpp:563:3: note: here
+  563 |   default:
+      |   ^~~~~~~
    g++	 ...  ustr_titlecase_brkiter.cpp
    g++	 ...  normalizer2impl.cpp
+   g++	 ...  normalizer2.cpp
 ustrtrns.cpp: In function ‘UChar32 utf8_nextCharSafeBodyTerminated(const uint8_t**, UChar32)’:
 ustrtrns.cpp:291:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
   291 |         if(trail>0x3f || c>=0x110) {
@@ -2686,37 +2712,9 @@ ustrtrns.cpp:373:20: warning: this statement may fall through [-Wimplicit-fallth
 ustrtrns.cpp:375:9: note: here
   375 |         case 1:
       |         ^~~~
-   g++	 ...  normalizer2.cpp
    g++	 ...  filterednormalizer2.cpp
-In file included from uloc.cpp:41:
-uloc.cpp: In function ‘int32_t _ZL13_canonicalizePKcPcijP10UErrorCode.part.0(const char*, char*, int32_t, uint32_t, UErrorCode*)’:
-cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
-   59 | #define uprv_strncpy(dst, src, size) U_STANDARD_CPP_NAMESPACE strncpy(dst, src, size)
-uloc.cpp:1688:13: note: in expansion of macro ‘uprv_strncpy’
- 1688 |             uprv_strncpy(name, d, len);
-      |             ^~~~~~~~~~~~
-cstring.h:37:57: note: length computed here
-   37 | #define uprv_strlen(str) U_STANDARD_CPP_NAMESPACE strlen(str)
-uloc.cpp:1685:24: note: in expansion of macro ‘uprv_strlen’
- 1685 |         len = (int32_t)uprv_strlen(d);
-      |                        ^~~~~~~~~~~
    g++	 ...  normlzr.cpp
-unistr.cpp: In member function ‘icu_58::UnicodeString& icu_58::UnicodeString::copyFrom(const icu_58::UnicodeString&, UBool)’:
-unistr.cpp:539:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  539 |     if(fastCopy) {
-      |     ^~
-unistr.cpp:552:3: note: here
-  552 |   case kWritableAlias: {
-      |   ^~~~
-unistr.cpp:562:3: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  562 |   }
-      |   ^
-unistr.cpp:563:3: note: here
-  563 |   default:
-      |   ^~~~~~~
    g++	 ...  unorm.cpp
-   g++	 ...  unormcmp.cpp
-   g++	 ...  loadednormalizer2impl.cpp
 ucnvmbcs.cpp: In function ‘UChar32 ucnv_MBCSGetNextUChar(UConverterToUnicodeArgs*, UErrorCode*)’:
 ucnvmbcs.cpp:3151:25: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
  3151 |                 *bytes++=*lastSource++;
@@ -2775,6 +2773,8 @@ ucnv_bld.h:190:13: note: at offset 22 into destination object ‘UConverter::toU
       |             ^~~~~~~~
 ucnv_bld.h:190:13: note: at offset 22 into destination object ‘UConverter::toUBytes’ of size 7
 ucnv_bld.h:190:13: note: at offset [6, 7] into destination object ‘UConverter::toUBytes’ of size 7
+   g++	 ...  unormcmp.cpp
+   g++	 ...  loadednormalizer2impl.cpp
    g++	 ...  chariter.cpp
    g++	 ...  schriter.cpp
    g++	 ...  uchriter.cpp
@@ -2784,8 +2784,8 @@ ucnv_bld.h:190:13: note: at offset [6, 7] into destination object ‘UConverter:
    g++	 ...  uprops.cpp
    g++	 ...  ucase.cpp
    g++	 ...  propname.cpp
-   gcc	 ...  ubidi_props.c
    gcc	 ...  ubidi.c
+   gcc	 ...  ubidi_props.c
    gcc	 ...  ubidiwrt.c
    gcc	 ...  ubidiln.c
    g++	 ...  ushape.cpp
@@ -2814,8 +2814,8 @@ ucnv_bld.h:190:13: note: at offset [6, 7] into destination object ‘UConverter:
    g++	 ...  brkeng.cpp
    g++	 ...  dictbe.cpp
    g++	 ...  filteredbrk.cpp
-   g++	 ...  rbbidata.cpp
    g++	 ...  rbbi.cpp
+   g++	 ...  rbbidata.cpp
    g++	 ...  rbbinode.cpp
    g++	 ...  rbbirb.cpp
    g++	 ...  rbbiscan.cpp
@@ -2845,12 +2845,6 @@ ucnv_bld.h:190:13: note: at offset [6, 7] into destination object ‘UConverter:
    gcc	 ...  ulist.c
    gcc	 ...  uloc_tag.c
    gcc	 ...  icudataver.c
-   g++	 ...  icuplug.cpp
-   g++	 ...  listformatter.cpp
-   g++	 ...  ulistformatter.cpp
-   g++	 ...  sharedobject.cpp
-   g++	 ...  simpleformatter.cpp
-   g++	 ...  unifiedcache.cpp
 util_props.cpp: In static member function ‘static int32_t icu_58::ICU_Utility::parsePattern(const icu_58::UnicodeString&, int32_t, int32_t, const icu_58::UnicodeString&, int32_t*)’:
 util_props.cpp:102:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
   102 |             if (!PatternProps::isWhiteSpace(c)) {
@@ -2858,15 +2852,21 @@ util_props.cpp:102:13: warning: this statement may fall through [-Wimplicit-fall
 util_props.cpp:107:9: note: here
   107 |         case 126 /*'~'*/:
       |         ^~~~
+   g++	 ...  icuplug.cpp
+   g++	 ...  listformatter.cpp
+   g++	 ...  ulistformatter.cpp
+   g++	 ...  sharedobject.cpp
+   g++	 ...  simpleformatter.cpp
+   g++	 ...  unifiedcache.cpp
    g++	 ...  uloc_keytype.cpp
-   g++	 ...  pluralmap.cpp
    gcc	 ...  ubiditransform.c
+ar r ../lib/libicuuc.a errorcode.ao putil.ao umath.ao utypes.ao uinvchar.ao umutex.ao ucln_cmn.ao uinit.ao uobject.ao cmemory.ao charstr.ao cstr.ao udata.ao ucmndata.ao udatamem.ao umapfile.ao udataswp.ao ucol_swp.ao utrace.ao uhash.ao uhash_us.ao uenum.ao ustrenum.ao uvector.ao ustack.ao uvectr32.ao uvectr64.ao ucnv.ao ucnv_bld.ao ucnv_cnv.ao ucnv_io.ao ucnv_cb.ao ucnv_err.ao ucnvlat1.ao ucnv_u7.ao ucnv_u8.ao ucnv_u16.ao ucnv_u32.ao ucnvscsu.ao ucnvbocu.ao ucnv_ext.ao ucnvmbcs.ao ucnv2022.ao ucnvhz.ao ucnv_lmb.ao ucnvisci.ao ucnvdisp.ao ucnv_set.ao ucnv_ct.ao resource.ao uresbund.ao ures_cnv.ao uresdata.ao resbund.ao resbund_cnv.ao ucurr.ao messagepattern.ao ucat.ao locmap.ao uloc.ao locid.ao locutil.ao locavailable.ao locdispnames.ao locdspnm.ao loclikely.ao locresdata.ao bytestream.ao stringpiece.ao stringtriebuilder.ao bytestriebuilder.ao bytestrie.ao bytestrieiterator.ao ucharstrie.ao ucharstriebuilder.ao ucharstrieiterator.ao dictionarydata.ao appendable.ao ustr_cnv.ao unistr_cnv.ao unistr.ao unistr_case.ao unistr_props.ao utf_impl.ao ustring.ao ustrcase.ao ucasemap.ao ucasemap_titlecase_brkiter.ao cstring.ao ustrfmt.ao ustrtrns.ao ustr_wcs.ao utext.ao unistr_case_locale.ao ustrcase_locale.ao unistr_titlecase_brkiter.ao ustr_titlecase_brkiter.ao normalizer2impl.ao normalizer2.ao filterednormalizer2.ao normlzr.ao unorm.ao unormcmp.ao loadednormalizer2impl.ao chariter.ao schriter.ao uchriter.ao uiter.ao patternprops.ao uchar.ao uprops.ao ucase.ao propname.ao ubidi_props.ao ubidi.ao ubidiwrt.ao ubidiln.ao ushape.ao uscript.ao uscript_props.ao usc_impl.ao unames.ao utrie.ao utrie2.ao utrie2_builder.ao bmpset.ao unisetspan.ao uset_props.ao uniset_props.ao uniset_closure.ao uset.ao uniset.ao usetiter.ao ruleiter.ao caniter.ao unifilt.ao unifunct.ao uarrsort.ao brkiter.ao ubrk.ao brkeng.ao dictbe.ao filteredbrk.ao rbbi.ao rbbidata.ao rbbinode.ao rbbirb.ao rbbiscan.ao rbbisetb.ao rbbistbl.ao rbbitblb.ao serv.ao servnotf.ao servls.ao servlk.ao servlkf.ao servrbf.ao servslkf.ao uidna.ao usprep.ao uts46.ao punycode.ao util.ao util_props.ao parsepos.ao locbased.ao cwchar.ao wintz.ao dtintrv.ao ucnvsel.ao propsvec.ao ulist.ao uloc_tag.ao icudataver.ao icuplug.ao listformatter.ao ulistformatter.ao sharedobject.ao simpleformatter.ao unifiedcache.ao uloc_keytype.ao ubiditransform.ao pluralmap.ao
+   g++	 ...  pluralmap.cpp
+ar: creating ../lib/libicuuc.a
 ubiditransform.c: In function ‘ubiditransform_transform_58’:
 ubiditransform.c:500:17: warning: the comparison will always evaluate as ‘true’ for the pointer operand in ‘action + 8’ must not be NULL [-Waddress]
   500 |             if (action + 1) {
       |                 ^~~~~~
-ar r ../lib/libicuuc.a errorcode.ao putil.ao umath.ao utypes.ao uinvchar.ao umutex.ao ucln_cmn.ao uinit.ao uobject.ao cmemory.ao charstr.ao cstr.ao udata.ao ucmndata.ao udatamem.ao umapfile.ao udataswp.ao ucol_swp.ao utrace.ao uhash.ao uhash_us.ao uenum.ao ustrenum.ao uvector.ao ustack.ao uvectr32.ao uvectr64.ao ucnv.ao ucnv_bld.ao ucnv_cnv.ao ucnv_io.ao ucnv_cb.ao ucnv_err.ao ucnvlat1.ao ucnv_u7.ao ucnv_u8.ao ucnv_u16.ao ucnv_u32.ao ucnvscsu.ao ucnvbocu.ao ucnv_ext.ao ucnvmbcs.ao ucnv2022.ao ucnvhz.ao ucnv_lmb.ao ucnvisci.ao ucnvdisp.ao ucnv_set.ao ucnv_ct.ao resource.ao uresbund.ao ures_cnv.ao uresdata.ao resbund.ao resbund_cnv.ao ucurr.ao messagepattern.ao ucat.ao locmap.ao uloc.ao locid.ao locutil.ao locavailable.ao locdispnames.ao locdspnm.ao loclikely.ao locresdata.ao bytestream.ao stringpiece.ao stringtriebuilder.ao bytestriebuilder.ao bytestrie.ao bytestrieiterator.ao ucharstrie.ao ucharstriebuilder.ao ucharstrieiterator.ao dictionarydata.ao appendable.ao ustr_cnv.ao unistr_cnv.ao unistr.ao unistr_case.ao unistr_props.ao utf_impl.ao ustring.ao ustrcase.ao ucasemap.ao ucasemap_titlecase_brkiter.ao cstring.ao ustrfmt.ao ustrtrns.ao ustr_wcs.ao utext.ao unistr_case_locale.ao ustrcase_locale.ao unistr_titlecase_brkiter.ao ustr_titlecase_brkiter.ao normalizer2impl.ao normalizer2.ao filterednormalizer2.ao normlzr.ao unorm.ao unormcmp.ao loadednormalizer2impl.ao chariter.ao schriter.ao uchriter.ao uiter.ao patternprops.ao uchar.ao uprops.ao ucase.ao propname.ao ubidi_props.ao ubidi.ao ubidiwrt.ao ubidiln.ao ushape.ao uscript.ao uscript_props.ao usc_impl.ao unames.ao utrie.ao utrie2.ao utrie2_builder.ao bmpset.ao unisetspan.ao uset_props.ao uniset_props.ao uniset_closure.ao uset.ao uniset.ao usetiter.ao ruleiter.ao caniter.ao unifilt.ao unifunct.ao uarrsort.ao brkiter.ao ubrk.ao brkeng.ao dictbe.ao filteredbrk.ao rbbi.ao rbbidata.ao rbbinode.ao rbbirb.ao rbbiscan.ao rbbisetb.ao rbbistbl.ao rbbitblb.ao serv.ao servnotf.ao servls.ao servlk.ao servlkf.ao servrbf.ao servslkf.ao uidna.ao usprep.ao uts46.ao punycode.ao util.ao util_props.ao parsepos.ao locbased.ao cwchar.ao wintz.ao dtintrv.ao ucnvsel.ao propsvec.ao ulist.ao uloc_tag.ao icudataver.ao icuplug.ao listformatter.ao ulistformatter.ao sharedobject.ao simpleformatter.ao unifiedcache.ao uloc_keytype.ao ubiditransform.ao pluralmap.ao
-ar: creating ../lib/libicuuc.a
 ranlib ../lib/libicuuc.a
 In function ‘_appendKeywordsToLanguageTag’,
     inlined from ‘uloc_toLanguageTag_58’ at uloc_tag.c:2403:15:
@@ -2892,11 +2892,11 @@ rm -f ../lib/libicuuc.so && ln -s libicuuc.so.58.2 ../lib/libicuuc.so
 make[1]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/common'
 /usr/bin/make[0]: Making `all' in `i18n'
 make[1]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/i18n'
-   (deps)	 ucln_in.cpp
    (deps)	 fmtable.cpp
+   (deps)	 ucln_in.cpp
+   (deps)	 format.cpp
    (deps)	 msgfmt.cpp
    (deps)	 umsg.cpp
-   (deps)	 format.cpp
    (deps)	 numfmt.cpp
    (deps)	 unum.cpp
    (deps)	 decimfmt.cpp
@@ -2904,8 +2904,8 @@ make[1]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    (deps)	 dcfmtsym.cpp
    (deps)	 digitlst.cpp
    (deps)	 fmtable_cnv.cpp
-   (deps)	 choicfmt.cpp
    (deps)	 datefmt.cpp
+   (deps)	 choicfmt.cpp
    (deps)	 smpdtfmt.cpp
    (deps)	 reldtfmt.cpp
    (deps)	 dtfmtsym.cpp
@@ -3090,19 +3090,19 @@ make[1]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    (deps)	 dayperiodrules.cpp
    g++	 ...  ucln_in.cpp
    g++	 ...  fmtable.cpp
+   g++	 ...  format.cpp
    g++	 ...  msgfmt.cpp
    g++	 ...  umsg.cpp
-   g++	 ...  format.cpp
    g++	 ...  numfmt.cpp
    g++	 ...  unum.cpp
    g++	 ...  decimfmt.cpp
    g++	 ...  decimalformatpattern.cpp
-   g++	 ...  digitlst.cpp
    g++	 ...  dcfmtsym.cpp
-   g++	 ...  fmtable_cnv.cpp
+   g++	 ...  digitlst.cpp
    g++	 ...  choicfmt.cpp
-   g++	 ...  datefmt.cpp
+   g++	 ...  fmtable_cnv.cpp
    g++	 ...  smpdtfmt.cpp
+   g++	 ...  datefmt.cpp
    g++	 ...  reldtfmt.cpp
    g++	 ...  dtfmtsym.cpp
    g++	 ...  udat.cpp
@@ -3110,6 +3110,7 @@ make[1]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    g++	 ...  udatpg.cpp
    g++	 ...  nfrs.cpp
    g++	 ...  nfrule.cpp
+   g++	 ...  nfsubs.cpp
 decimfmt.cpp: In member function ‘UBool icu_58::DecimalFormat::subparse(const icu_58::UnicodeString&, const icu_58::UnicodeString*, const icu_58::UnicodeString*, const icu_58::UnicodeString*, const icu_58::UnicodeString*, UBool, int8_t, icu_58::ParsePosition&, icu_58::DigitList&, UBool*, UChar*) const’:
 decimfmt.cpp:1470:17: warning: variable ‘integerDigitCount’ set but not used [-Wunused-but-set-variable=]
  1470 |         int32_t integerDigitCount = 0;
@@ -3135,9 +3136,6 @@ fmtable.cpp:515:9: warning: this statement may fall through [-Wimplicit-fallthro
 fmtable.cpp:520:5: note: here
   520 |     default:
       |     ^~~~~~~
-   g++	 ...  nfsubs.cpp
-   g++	 ...  rbnf.cpp
-   g++	 ...  numsys.cpp
 dtptngen.cpp: In member function ‘icu_58::StringEnumeration* icu_58::DateTimePatternGenerator::getRedundants(UErrorCode&)’:
 dtptngen.cpp:1520:28: warning: implicitly-declared ‘icu_58::DateTimeMatcher& icu_58::DateTimeMatcher::operator=(const icu_58::DateTimeMatcher&)’ is deprecated [-Wdeprecated-copy]
  1520 |             *skipMatcher = current;
@@ -3157,7 +3155,7 @@ dtptngen.cpp: In member function ‘icu_58::StringEnumeration* icu_58::DateTimeP
 dtptngen.cpp:1520:28: note: synthesized method ‘icu_58::DateTimeMatcher& icu_58::DateTimeMatcher::operator=(const icu_58::DateTimeMatcher&)’ first required here
  1520 |             *skipMatcher = current;
       |                            ^~~~~~~
-   g++	 ...  unumsys.cpp
+   g++	 ...  rbnf.cpp
 smpdtfmt.cpp: In member function ‘void icu_58::SimpleDateFormat::processOverrideString(const icu_58::Locale&, const icu_58::UnicodeString&, int8_t, UErrorCode&)’:
 smpdtfmt.cpp:1368:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
  1368 |                 }
@@ -3203,11 +3201,19 @@ smpdtfmt.cpp:3317:9: warning: this statement may fall through [-Wimplicit-fallth
 smpdtfmt.cpp:3322:5: note: here
  3322 |     case UDAT_HOUR0_FIELD:
       |     ^~~~
+   g++	 ...  numsys.cpp
+   g++	 ...  unumsys.cpp
    g++	 ...  ucsdet.cpp
+   g++	 ...  ucal.cpp
+   g++	 ...  calendar.cpp
 nfsubs.cpp: In member function ‘virtual UBool icu_58::NumeratorSubstitution::doParse(const icu_58::UnicodeString&, icu_58::ParsePosition&, double, double, UBool, icu_58::Formattable&) const’:
 nfsubs.cpp:1292:17: warning: variable ‘pow’ set but not used [-Wunused-but-set-variable=]
  1292 |         int32_t pow = 0;
       |                 ^~~
+   g++	 ...  gregocal.cpp
+   g++	 ...  timezone.cpp
+   g++	 ...  simpletz.cpp
+   g++	 ...  olsontz.cpp
 numsys.cpp: In copy constructor ‘icu_58::NumberingSystem::NumberingSystem(const icu_58::NumberingSystem&)’:
 numsys.cpp:74:11: warning: implicitly-declared ‘icu_58::NumberingSystem& icu_58::NumberingSystem::operator=(const icu_58::NumberingSystem&)’ is deprecated [-Wdeprecated-copy]
    74 |     *this=other;
@@ -3215,8 +3221,6 @@ numsys.cpp:74:11: warning: implicitly-declared ‘icu_58::NumberingSystem& icu_5
 numsys.cpp:72:1: note: because ‘icu_58::NumberingSystem’ has user-provided ‘icu_58::NumberingSystem::NumberingSystem(const icu_58::NumberingSystem&)’
    72 | NumberingSystem::NumberingSystem(const NumberingSystem& other)
       | ^~~~~~~~~~~~~~~
-   g++	 ...  ucal.cpp
-   g++	 ...  calendar.cpp
 rbnf.cpp: In member function ‘UBool icu_58::LocDataParser::inList(UChar, const UChar*) const’:
 rbnf.cpp:323:9: warning: this ‘while’ clause does not guard... [-Wmisleading-indentation]
   323 |         while (*list && *list != c) ++list; return *list == c;
@@ -3224,17 +3228,19 @@ rbnf.cpp:323:9: warning: this ‘while’ clause does not guard... [-Wmisleading
 rbnf.cpp:323:45: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
   323 |         while (*list && *list != c) ++list; return *list == c;
       |                                             ^~~~~~
-   g++	 ...  gregocal.cpp
-   g++	 ...  timezone.cpp
-   g++	 ...  simpletz.cpp
-   g++	 ...  olsontz.cpp
    g++	 ...  astro.cpp
    g++	 ...  taiwncal.cpp
    g++	 ...  buddhcal.cpp
    g++	 ...  persncal.cpp
    g++	 ...  islamcal.cpp
    g++	 ...  japancal.cpp
-   g++	 ...  gregoimp.cpp
+In file included from ucal.cpp:26:
+ucal.cpp: In function ‘void** ucal_open_58(const UChar*, int32_t, const char*, UCalendarType, UErrorCode*)’:
+../common/cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 258 equals destination size [-Wstringop-truncation]
+   59 | #define uprv_strncpy(dst, src, size) U_STANDARD_CPP_NAMESPACE strncpy(dst, src, size)
+ucal.cpp:155:7: note: in expansion of macro ‘uprv_strncpy’
+  155 |       uprv_strncpy(localeBuf, locale, ULOC_LOCALE_IDENTIFIER_CAPACITY);
+      |       ^~~~~~~~~~~~
 calendar.cpp: In member function ‘virtual void icu_58::Calendar::add(UCalendarDateFields, int32_t, UErrorCode&)’:
 calendar.cpp:2130:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
  2130 |       }
@@ -3249,14 +3255,8 @@ calendar.cpp:3647:12: warning: this statement may fall through [-Wimplicit-fallt
 calendar.cpp:3649:5: note: here
  3649 |     case UCAL_MONTH:
       |     ^~~~
+   g++	 ...  gregoimp.cpp
    g++	 ...  hebrwcal.cpp
-In file included from ucal.cpp:26:
-ucal.cpp: In function ‘void** ucal_open_58(const UChar*, int32_t, const char*, UCalendarType, UErrorCode*)’:
-../common/cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 258 equals destination size [-Wstringop-truncation]
-   59 | #define uprv_strncpy(dst, src, size) U_STANDARD_CPP_NAMESPACE strncpy(dst, src, size)
-ucal.cpp:155:7: note: in expansion of macro ‘uprv_strncpy’
-  155 |       uprv_strncpy(localeBuf, locale, ULOC_LOCALE_IDENTIFIER_CAPACITY);
-      |       ^~~~~~~~~~~~
    g++	 ...  indiancal.cpp
    g++	 ...  chnsecal.cpp
    g++	 ...  cecal.cpp
@@ -3271,13 +3271,6 @@ ucal.cpp:155:7: note: in expansion of macro ‘uprv_strncpy’
    g++	 ...  ucol.cpp
    g++	 ...  ucol_res.cpp
    g++	 ...  ucol_sit.cpp
-   g++	 ...  collation.cpp
-   g++	 ...  collationsettings.cpp
-   g++	 ...  collationdata.cpp
-   g++	 ...  collationtailoring.cpp
-   g++	 ...  collationdatareader.cpp
-   g++	 ...  collationdatawriter.cpp
-   g++	 ...  collationfcd.cpp
 dangical.cpp: In constructor ‘icu_58::DangiCalendar::DangiCalendar(const icu_58::Locale&, UErrorCode&)’:
 dangical.cpp:55:83: warning: ‘<unknown>’ may be used uninitialized [-Wmaybe-uninitialized]
    55 | :   ChineseCalendar(aLocale, DANGI_EPOCH_YEAR, getDangiCalZoneAstroCalc(), success)
@@ -3285,9 +3278,13 @@ dangical.cpp:55:83: warning: ‘<unknown>’ may be used uninitialized [-Wmaybe-
 dangical.cpp:130:17: note: by argument 1 of type ‘const icu_58::DangiCalendar*’ to ‘const icu_58::TimeZone* icu_58::DangiCalendar::getDangiCalZoneAstroCalc() const’ declared here
   130 | const TimeZone* DangiCalendar::getDangiCalZoneAstroCalc(void) const {
       |                 ^~~~~~~~~~~~~
-   g++	 ...  collationiterator.cpp
-   g++	 ...  utf16collationiterator.cpp
-   g++	 ...  utf8collationiterator.cpp
+   g++	 ...  collation.cpp
+   g++	 ...  collationsettings.cpp
+   g++	 ...  collationdata.cpp
+   g++	 ...  collationtailoring.cpp
+   g++	 ...  collationdatareader.cpp
+   g++	 ...  collationdatawriter.cpp
+   g++	 ...  collationfcd.cpp
 ucoleitr.cpp: In member function ‘uint64_t icu_58::UCollationPCE::processCE(uint32_t)’:
 ucoleitr.cpp:226:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
   226 |         tertiary = ucol_tertiaryOrder(ce);
@@ -3301,10 +3298,12 @@ ucoleitr.cpp:230:19: warning: this statement may fall through [-Wimplicit-fallth
 ucoleitr.cpp:233:5: note: here
   233 |     case UCOL_PRIMARY:
       |     ^~~~
+   g++	 ...  collationiterator.cpp
+   g++	 ...  utf16collationiterator.cpp
+   g++	 ...  utf8collationiterator.cpp
    g++	 ...  uitercollationiterator.cpp
    g++	 ...  collationsets.cpp
    g++	 ...  collationcompare.cpp
-   g++	 ...  collationfastlatin.cpp
 In file included from ucol_sit.cpp:24:
 ucol_sit.cpp: In function ‘void _ZL29ucol_sit_calculateWholeLocaleP12CollatorSpec.part.0(CollatorSpec*)’:
 ../common/cstring.h:39:62: warning: ‘char* strcat(char*, const char*)’ accessing 193 or more bytes at offsets 192 and 0 may overlap 1 byte at offset 192 [-Wrestrict]
@@ -3312,6 +3311,7 @@ ucol_sit.cpp: In function ‘void _ZL29ucol_sit_calculateWholeLocaleP12CollatorS
 ucol_sit.cpp:395:9: note: in expansion of macro ‘uprv_strcat’
   395 |         uprv_strcat(s->locale, s->locElements[UCOL_SIT_LANGUAGE]);
       |         ^~~~~~~~~~~
+   g++	 ...  collationfastlatin.cpp
    g++	 ...  collationkeys.cpp
    g++	 ...  rulebasedcollator.cpp
    g++	 ...  collationroot.cpp
@@ -3333,10 +3333,6 @@ ucol_sit.cpp:395:9: note: in expansion of macro ‘uprv_strcat’
    g++	 ...  strrepl.cpp
    g++	 ...  tridpars.cpp
    g++	 ...  cpdtrans.cpp
-unesctrn.cpp: In member function ‘virtual void icu_58::UnescapeTransliterator::handleTransliterate(icu_58::Replaceable&, UTransPosition&, UBool) const’:
-unesctrn.cpp:178:16: warning: variable ‘j’ set but not used [-Wunused-but-set-variable=]
-  178 |     int32_t i, j, ipat;
-      |                ^
 In file included from collationdatabuilder.cpp:33:
 In constructor ‘icu_58::CollationIterator::CollationIterator(const icu_58::CollationData*, UBool)’,
     inlined from ‘icu_58::DataBuilderCollationIterator::DataBuilderCollationIterator(icu_58::CollationDataBuilder&)’ at collationdatabuilder.cpp:157:25:
@@ -3346,6 +3342,10 @@ collationiterator.h:88:23: warning: ‘((const icu_58::CollationData*)((char*)th
    g++	 ...  rbt.cpp
    g++	 ...  rbt_data.cpp
    g++	 ...  rbt_pars.cpp
+unesctrn.cpp: In member function ‘virtual void icu_58::UnescapeTransliterator::handleTransliterate(icu_58::Replaceable&, UTransPosition&, UBool) const’:
+unesctrn.cpp:178:16: warning: variable ‘j’ set but not used [-Wunused-but-set-variable=]
+  178 |     int32_t i, j, ipat;
+      |                ^
    g++	 ...  rbt_rule.cpp
    g++	 ...  rbt_set.cpp
    g++	 ...  nultrans.cpp
@@ -3361,8 +3361,8 @@ collationiterator.h:88:23: warning: ‘((const icu_58::CollationData*)((char*)th
    g++	 ...  quant.cpp
    g++	 ...  transreg.cpp
    g++	 ...  brktrans.cpp
-   g++	 ...  regexcmp.cpp
    g++	 ...  rematch.cpp
+   g++	 ...  regexcmp.cpp
    g++	 ...  repattrn.cpp
    g++	 ...  regexst.cpp
    g++	 ...  regextxt.cpp
@@ -3371,19 +3371,15 @@ collationiterator.h:88:23: warning: ‘((const icu_58::CollationData*)((char*)th
    g++	 ...  uregexc.cpp
    gcc	 ...  ulocdata.c
    g++	 ...  measfmt.cpp
+   g++	 ...  currfmt.cpp
+   g++	 ...  curramt.cpp
+   g++	 ...  currunit.cpp
 transreg.cpp: In member function ‘icu_58::Transliterator* icu_58::TransliteratorAlias::create(UParseError&, UErrorCode&)’:
 transreg.cpp:126:21: warning: variable ‘transCount’ set but not used [-Wunused-but-set-variable=]
   126 |             int32_t transCount = anonymousRBTs * 2 + 1;
       |                     ^~~~~~~~~~
-   g++	 ...  currfmt.cpp
-   g++	 ...  curramt.cpp
-   g++	 ...  currunit.cpp
    g++	 ...  measure.cpp
    gcc	 ...  utmscale.c
-   g++	 ...  csdetect.cpp
-   g++	 ...  csmatch.cpp
-   g++	 ...  csr2022.cpp
-   g++	 ...  csrecog.cpp
 regexcmp.cpp: In member function ‘void icu_58::RegexCompile::matchStartType()’:
 regexcmp.cpp:2904:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
  2904 |             loc++;             // Except for extra operand on URX_JMPX, same as URX_JMP.
@@ -3398,15 +3394,19 @@ regexcmp.cpp:3266:16: warning: this statement may fall through [-Wimplicit-fallt
 regexcmp.cpp:3269:9: note: here
  3269 |         case URX_JMP:
       |         ^~~~
+   g++	 ...  csdetect.cpp
+   g++	 ...  csmatch.cpp
+   g++	 ...  csr2022.cpp
+   g++	 ...  csrecog.cpp
    g++	 ...  csrmbcs.cpp
    g++	 ...  csrsbcs.cpp
    g++	 ...  csrucode.cpp
    g++	 ...  csrutf8.cpp
-   g++	 ...  inputext.cpp
 csrmbcs.cpp: In member function ‘int32_t icu_58::CharsetRecog_mbcs::match_mbcs(icu_58::InputText*, const uint16_t*, int32_t) const’:
 csrmbcs.cpp:149:13: warning: variable ‘singleByteCharCount’ set but not used [-Wunused-but-set-variable=]
   149 |     int32_t singleByteCharCount = 0;
       |             ^~~~~~~~~~~~~~~~~~~
+   g++	 ...  inputext.cpp
    g++	 ...  wintzimpl.cpp
    g++	 ...  windtfmt.cpp
    g++	 ...  winnmfmt.cpp
@@ -3425,8 +3425,6 @@ csrmbcs.cpp:149:13: warning: variable ‘singleByteCharCount’ set but not used
    g++	 ...  dtitvfmt.cpp
    g++	 ...  dtitvinf.cpp
    g++	 ...  udateintervalformat.cpp
-   g++	 ...  tmunit.cpp
-   g++	 ...  tmutamt.cpp
 vtzone.cpp: In member function ‘icu_58::VTimeZone& icu_58::VTimeZone::operator=(const icu_58::VTimeZone&)’:
 vtzone.cpp:1004:33: warning: implicitly-declared ‘icu_58::BasicTimeZone& icu_58::BasicTimeZone::operator=(const icu_58::BasicTimeZone&)’ is deprecated [-Wdeprecated-copy]
  1004 |         BasicTimeZone::operator=(right);
@@ -3445,6 +3443,8 @@ In file included from unicode/rbtz.h:21,
 ./unicode/basictz.h:197:5: note: because ‘icu_58::BasicTimeZone’ has user-provided ‘icu_58::BasicTimeZone::BasicTimeZone(const icu_58::BasicTimeZone&)’
   197 |     BasicTimeZone(const BasicTimeZone& source);
       |     ^~~~~~~~~~~~~
+   g++	 ...  tmunit.cpp
+   g++	 ...  tmutamt.cpp
    g++	 ...  tmutfmt.cpp
    g++	 ...  currpinf.cpp
    g++	 ...  uspoof.cpp
@@ -3463,19 +3463,19 @@ plurrule.cpp:498:9: note: here
    g++	 ...  zrule.cpp
    g++	 ...  vzone.cpp
    g++	 ...  fphdlimp.cpp
-uspoof_conf.cpp: In member function ‘void icu_58::ConfusabledataBuilder::outputData(UErrorCode&)’:
-uspoof_conf.cpp:395:13: warning: variable ‘previousCodePoint’ set but not used [-Wunused-but-set-variable=]
-  395 |     UChar32 previousCodePoint = 0;
-      |             ^~~~~~~~~~~~~~~~~
    g++	 ...  fpositer.cpp
-   g++	 ...  ufieldpositer.cpp
-   gcc	 ...  decNumber.c
-   gcc	 ...  decContext.c
 uspoof_impl.cpp: In function ‘int32_t uspoof_swap_58(const UDataSwapper*, const void*, int32_t, void*, UErrorCode*)’:
 uspoof_impl.cpp:931:34: warning: comparison between two arrays [-Warray-compare]
   931 |     if (outputDH->fFormatVersion != spoofDH->fFormatVersion) {
       |         ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
 uspoof_impl.cpp:931:34: note: use unary ‘+’ which decays operands to pointers or ‘&(outputDH->icu_58::SpoofDataHeader::fFormatVersion)[0] != &(spoofDH->icu_58::SpoofDataHeader::fFormatVersion)[0]’ to compare the addresses
+   g++	 ...  ufieldpositer.cpp
+   gcc	 ...  decNumber.c
+uspoof_conf.cpp: In member function ‘void icu_58::ConfusabledataBuilder::outputData(UErrorCode&)’:
+uspoof_conf.cpp:395:13: warning: variable ‘previousCodePoint’ set but not used [-Wunused-but-set-variable=]
+  395 |     UChar32 previousCodePoint = 0;
+      |             ^~~~~~~~~~~~~~~~~
+   gcc	 ...  decContext.c
    g++	 ...  alphaindex.cpp
    g++	 ...  tznames.cpp
    g++	 ...  tznames_impl.cpp
@@ -3546,18 +3546,14 @@ fmtable.cpp:520:5: note: here
       |     ^~~~~~~
    g++	 ...  choicfmt.cpp
    g++	 ...  datefmt.cpp
+   g++	 ...  smpdtfmt.cpp
 decimfmt.cpp: In member function ‘UBool icu_58::DecimalFormat::subparse(const icu_58::UnicodeString&, const icu_58::UnicodeString*, const icu_58::UnicodeString*, const icu_58::UnicodeString*, const icu_58::UnicodeString*, UBool, int8_t, icu_58::ParsePosition&, icu_58::DigitList&, UBool*, UChar*) const’:
 decimfmt.cpp:1470:17: warning: variable ‘integerDigitCount’ set but not used [-Wunused-but-set-variable=]
  1470 |         int32_t integerDigitCount = 0;
       |                 ^~~~~~~~~~~~~~~~~
-   g++	 ...  smpdtfmt.cpp
    g++	 ...  reldtfmt.cpp
    g++	 ...  dtfmtsym.cpp
    g++	 ...  udat.cpp
-   g++	 ...  dtptngen.cpp
-   g++	 ...  udatpg.cpp
-   g++	 ...  nfrs.cpp
-   g++	 ...  nfrule.cpp
 decNumber.c: In function ‘uprv_decNumberSquareRoot_58’:
 decNumber.c:2972:28: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
  2972 |         t->lsu[0]=9; t->lsu[1]=5; t->lsu[2]=2;
@@ -3572,28 +3568,12 @@ decNumber.c:2972:41: warning: writing 1 byte into a region of size 0 [-Wstringop
 decNumber.h:89:19: note: at offset 2 into destination object ‘lsu’ of size 1
    89 |     decNumberUnit lsu[DECNUMUNITS];
       |                   ^~~
+   g++	 ...  dtptngen.cpp
+   g++	 ...  udatpg.cpp
+   g++	 ...  nfrs.cpp
+   g++	 ...  nfrule.cpp
    g++	 ...  nfsubs.cpp
    g++	 ...  rbnf.cpp
-   g++	 ...  numsys.cpp
-dtptngen.cpp: In member function ‘icu_58::StringEnumeration* icu_58::DateTimePatternGenerator::getRedundants(UErrorCode&)’:
-dtptngen.cpp:1520:28: warning: implicitly-declared ‘icu_58::DateTimeMatcher& icu_58::DateTimeMatcher::operator=(const icu_58::DateTimeMatcher&)’ is deprecated [-Wdeprecated-copy]
- 1520 |             *skipMatcher = current;
-      |                            ^~~~~~~
-In file included from dtptngen.cpp:39:
-dtptngen_impl.h:237:5: note: because ‘icu_58::DateTimeMatcher’ has user-provided ‘icu_58::DateTimeMatcher::DateTimeMatcher(const icu_58::DateTimeMatcher&)’
-  237 |     DateTimeMatcher(const DateTimeMatcher& other);
-      |     ^~~~~~~~~~~~~~~
-dtptngen_impl.h: In member function ‘icu_58::DateTimeMatcher& icu_58::DateTimeMatcher::operator=(const icu_58::DateTimeMatcher&)’:
-dtptngen_impl.h:223:7: warning: implicitly-declared ‘icu_58::PtnSkeleton& icu_58::PtnSkeleton::operator=(const icu_58::PtnSkeleton&)’ is deprecated [-Wdeprecated-copy]
-  223 | class DateTimeMatcher: public UMemory {
-      |       ^~~~~~~~~~~~~~~
-dtptngen_impl.h:157:5: note: because ‘icu_58::PtnSkeleton’ has user-provided ‘icu_58::PtnSkeleton::PtnSkeleton(const icu_58::PtnSkeleton&)’
-  157 |     PtnSkeleton(const PtnSkeleton& other);
-      |     ^~~~~~~~~~~
-dtptngen.cpp: In member function ‘icu_58::StringEnumeration* icu_58::DateTimePatternGenerator::getRedundants(UErrorCode&)’:
-dtptngen.cpp:1520:28: note: synthesized method ‘icu_58::DateTimeMatcher& icu_58::DateTimeMatcher::operator=(const icu_58::DateTimeMatcher&)’ first required here
- 1520 |             *skipMatcher = current;
-      |                            ^~~~~~~
 smpdtfmt.cpp: In member function ‘void icu_58::SimpleDateFormat::processOverrideString(const icu_58::Locale&, const icu_58::UnicodeString&, int8_t, UErrorCode&)’:
 smpdtfmt.cpp:1368:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
  1368 |                 }
@@ -3614,6 +3594,7 @@ smpdtfmt.cpp:1595:9: warning: this statement may fall through [-Wimplicit-fallth
 smpdtfmt.cpp:1600:5: note: here
  1600 |     case UDAT_DAY_OF_WEEK_FIELD:
       |     ^~~~
+   g++	 ...  numsys.cpp
 smpdtfmt.cpp: In member function ‘int32_t icu_58::SimpleDateFormat::subParse(const icu_58::UnicodeString&, int32_t&, UChar, int32_t, UBool, UBool, UBool*, int32_t&, icu_58::Calendar&, int32_t, icu_58::MessageFormat*, UTimeZoneFormatTimeType*, icu_58::SimpleDateFormatMutableNFs&, int32_t*) const’:
 smpdtfmt.cpp:2999:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
  2999 |             if (value < 0 || value > 24) {
@@ -3640,13 +3621,25 @@ smpdtfmt.cpp:3322:5: note: here
  3322 |     case UDAT_HOUR0_FIELD:
       |     ^~~~
    g++	 ...  unumsys.cpp
-   g++	 ...  ucsdet.cpp
-   g++	 ...  ucal.cpp
-nfsubs.cpp: In member function ‘virtual UBool icu_58::NumeratorSubstitution::doParse(const icu_58::UnicodeString&, icu_58::ParsePosition&, double, double, UBool, icu_58::Formattable&) const’:
-nfsubs.cpp:1292:17: warning: variable ‘pow’ set but not used [-Wunused-but-set-variable=]
- 1292 |         int32_t pow = 0;
-      |                 ^~~
-   g++	 ...  calendar.cpp
+dtptngen.cpp: In member function ‘icu_58::StringEnumeration* icu_58::DateTimePatternGenerator::getRedundants(UErrorCode&)’:
+dtptngen.cpp:1520:28: warning: implicitly-declared ‘icu_58::DateTimeMatcher& icu_58::DateTimeMatcher::operator=(const icu_58::DateTimeMatcher&)’ is deprecated [-Wdeprecated-copy]
+ 1520 |             *skipMatcher = current;
+      |                            ^~~~~~~
+In file included from dtptngen.cpp:39:
+dtptngen_impl.h:237:5: note: because ‘icu_58::DateTimeMatcher’ has user-provided ‘icu_58::DateTimeMatcher::DateTimeMatcher(const icu_58::DateTimeMatcher&)’
+  237 |     DateTimeMatcher(const DateTimeMatcher& other);
+      |     ^~~~~~~~~~~~~~~
+dtptngen_impl.h: In member function ‘icu_58::DateTimeMatcher& icu_58::DateTimeMatcher::operator=(const icu_58::DateTimeMatcher&)’:
+dtptngen_impl.h:223:7: warning: implicitly-declared ‘icu_58::PtnSkeleton& icu_58::PtnSkeleton::operator=(const icu_58::PtnSkeleton&)’ is deprecated [-Wdeprecated-copy]
+  223 | class DateTimeMatcher: public UMemory {
+      |       ^~~~~~~~~~~~~~~
+dtptngen_impl.h:157:5: note: because ‘icu_58::PtnSkeleton’ has user-provided ‘icu_58::PtnSkeleton::PtnSkeleton(const icu_58::PtnSkeleton&)’
+  157 |     PtnSkeleton(const PtnSkeleton& other);
+      |     ^~~~~~~~~~~
+dtptngen.cpp: In member function ‘icu_58::StringEnumeration* icu_58::DateTimePatternGenerator::getRedundants(UErrorCode&)’:
+dtptngen.cpp:1520:28: note: synthesized method ‘icu_58::DateTimeMatcher& icu_58::DateTimeMatcher::operator=(const icu_58::DateTimeMatcher&)’ first required here
+ 1520 |             *skipMatcher = current;
+      |                            ^~~~~~~
 decimfmtimpl.cpp: In member function ‘icu_58::UnicodeString& icu_58::DecimalFormatImpl::toNumberPattern(UBool, int32_t, icu_58::UnicodeString&) const’:
 decimfmtimpl.cpp:1479:43: warning: ‘sigMin’ may be used uninitialized [-Wmaybe-uninitialized]
  1479 |             if (i >= sigMax || i < sigMax - sigMin) {
@@ -3660,7 +3653,13 @@ decimfmtimpl.cpp:1479:13: warning: ‘sigMax’ may be used uninitialized [-Wmay
 decimfmtimpl.cpp:1386:13: note: ‘sigMax’ was declared here
  1386 |     int32_t sigMax;
       |             ^~~~~~
-   g++	 ...  gregocal.cpp
+   g++	 ...  ucsdet.cpp
+nfsubs.cpp: In member function ‘virtual UBool icu_58::NumeratorSubstitution::doParse(const icu_58::UnicodeString&, icu_58::ParsePosition&, double, double, UBool, icu_58::Formattable&) const’:
+nfsubs.cpp:1292:17: warning: variable ‘pow’ set but not used [-Wunused-but-set-variable=]
+ 1292 |         int32_t pow = 0;
+      |                 ^~~
+   g++	 ...  ucal.cpp
+   g++	 ...  calendar.cpp
 numsys.cpp: In copy constructor ‘icu_58::NumberingSystem::NumberingSystem(const icu_58::NumberingSystem&)’:
 numsys.cpp:74:11: warning: implicitly-declared ‘icu_58::NumberingSystem& icu_58::NumberingSystem::operator=(const icu_58::NumberingSystem&)’ is deprecated [-Wdeprecated-copy]
    74 |     *this=other;
@@ -3675,12 +3674,16 @@ rbnf.cpp:323:9: warning: this ‘while’ clause does not guard... [-Wmisleading
 rbnf.cpp:323:45: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
   323 |         while (*list && *list != c) ++list; return *list == c;
       |                                             ^~~~~~
+   g++	 ...  gregocal.cpp
    g++	 ...  timezone.cpp
    g++	 ...  simpletz.cpp
    g++	 ...  olsontz.cpp
    g++	 ...  astro.cpp
    g++	 ...  taiwncal.cpp
    g++	 ...  buddhcal.cpp
+   g++	 ...  persncal.cpp
+   g++	 ...  islamcal.cpp
+   g++	 ...  japancal.cpp
 In file included from ucal.cpp:26:
 ucal.cpp: In function ‘void** ucal_open_58(const UChar*, int32_t, const char*, UCalendarType, UErrorCode*)’:
 ../common/cstring.h:59:70: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 258 equals destination size [-Wstringop-truncation]
@@ -3688,9 +3691,6 @@ ucal.cpp: In function ‘void** ucal_open_58(const UChar*, int32_t, const char*,
 ucal.cpp:155:7: note: in expansion of macro ‘uprv_strncpy’
   155 |       uprv_strncpy(localeBuf, locale, ULOC_LOCALE_IDENTIFIER_CAPACITY);
       |       ^~~~~~~~~~~~
-   g++	 ...  persncal.cpp
-   g++	 ...  islamcal.cpp
-   g++	 ...  japancal.cpp
 calendar.cpp: In member function ‘virtual void icu_58::Calendar::add(UCalendarDateFields, int32_t, UErrorCode&)’:
 calendar.cpp:2130:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
  2130 |       }
@@ -3698,7 +3698,6 @@ calendar.cpp:2130:7: warning: this statement may fall through [-Wimplicit-fallth
 calendar.cpp:2133:5: note: here
  2133 |     case UCAL_EXTENDED_YEAR:
       |     ^~~~
-   g++	 ...  gregoimp.cpp
 calendar.cpp: In member function ‘virtual void icu_58::Calendar::prepareGetActual(UCalendarDateFields, UBool, UErrorCode&)’:
 calendar.cpp:3647:12: warning: this statement may fall through [-Wimplicit-fallthrough=]
  3647 |         set(UCAL_WEEK_OF_YEAR, getGreatestMinimum(UCAL_WEEK_OF_YEAR));
@@ -3706,6 +3705,7 @@ calendar.cpp:3647:12: warning: this statement may fall through [-Wimplicit-fallt
 calendar.cpp:3649:5: note: here
  3649 |     case UCAL_MONTH:
       |     ^~~~
+   g++	 ...  gregoimp.cpp
    g++	 ...  hebrwcal.cpp
    g++	 ...  indiancal.cpp
    g++	 ...  chnsecal.cpp
@@ -3721,7 +3721,6 @@ calendar.cpp:3649:5: note: here
    g++	 ...  ucol.cpp
    g++	 ...  ucol_res.cpp
    g++	 ...  ucol_sit.cpp
-   g++	 ...  collation.cpp
 dangical.cpp: In constructor ‘icu_58::DangiCalendar::DangiCalendar(const icu_58::Locale&, UErrorCode&)’:
 dangical.cpp:55:83: warning: ‘<unknown>’ may be used uninitialized [-Wmaybe-uninitialized]
    55 | :   ChineseCalendar(aLocale, DANGI_EPOCH_YEAR, getDangiCalZoneAstroCalc(), success)
@@ -3729,13 +3728,11 @@ dangical.cpp:55:83: warning: ‘<unknown>’ may be used uninitialized [-Wmaybe-
 dangical.cpp:130:17: note: by argument 1 of type ‘const icu_58::DangiCalendar*’ to ‘const icu_58::TimeZone* icu_58::DangiCalendar::getDangiCalZoneAstroCalc() const’ declared here
   130 | const TimeZone* DangiCalendar::getDangiCalZoneAstroCalc(void) const {
       |                 ^~~~~~~~~~~~~
+   g++	 ...  collation.cpp
    g++	 ...  collationsettings.cpp
    g++	 ...  collationdata.cpp
    g++	 ...  collationtailoring.cpp
    g++	 ...  collationdatareader.cpp
-   g++	 ...  collationdatawriter.cpp
-   g++	 ...  collationfcd.cpp
-   g++	 ...  collationiterator.cpp
 ucoleitr.cpp: In member function ‘uint64_t icu_58::UCollationPCE::processCE(uint32_t)’:
 ucoleitr.cpp:226:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
   226 |         tertiary = ucol_tertiaryOrder(ce);
@@ -3749,13 +3746,15 @@ ucoleitr.cpp:230:19: warning: this statement may fall through [-Wimplicit-fallth
 ucoleitr.cpp:233:5: note: here
   233 |     case UCOL_PRIMARY:
       |     ^~~~
+   g++	 ...  collationdatawriter.cpp
+   g++	 ...  collationfcd.cpp
+   g++	 ...  collationiterator.cpp
    g++	 ...  utf16collationiterator.cpp
    g++	 ...  utf8collationiterator.cpp
    g++	 ...  uitercollationiterator.cpp
    g++	 ...  collationsets.cpp
    g++	 ...  collationcompare.cpp
    g++	 ...  collationfastlatin.cpp
-   g++	 ...  collationkeys.cpp
 In file included from ucol_sit.cpp:24:
 ucol_sit.cpp: In function ‘void _ZL29ucol_sit_calculateWholeLocaleP12CollatorSpec.part.0(CollatorSpec*)’:
 ../common/cstring.h:39:62: warning: ‘char* strcat(char*, const char*)’ accessing 193 or more bytes at offsets 192 and 0 may overlap 1 byte at offset 192 [-Wrestrict]
@@ -3763,6 +3762,7 @@ ucol_sit.cpp: In function ‘void _ZL29ucol_sit_calculateWholeLocaleP12CollatorS
 ucol_sit.cpp:395:9: note: in expansion of macro ‘uprv_strcat’
   395 |         uprv_strcat(s->locale, s->locElements[UCOL_SIT_LANGUAGE]);
       |         ^~~~~~~~~~~
+   g++	 ...  collationkeys.cpp
    g++	 ...  rulebasedcollator.cpp
    g++	 ...  collationroot.cpp
    g++	 ...  collationrootelements.cpp
@@ -3781,19 +3781,19 @@ ucol_sit.cpp:395:9: note: in expansion of macro ‘uprv_strcat’
    g++	 ...  unesctrn.cpp
    g++	 ...  funcrepl.cpp
    g++	 ...  strrepl.cpp
-   g++	 ...  tridpars.cpp
-   g++	 ...  cpdtrans.cpp
-unesctrn.cpp: In member function ‘virtual void icu_58::UnescapeTransliterator::handleTransliterate(icu_58::Replaceable&, UTransPosition&, UBool) const’:
-unesctrn.cpp:178:16: warning: variable ‘j’ set but not used [-Wunused-but-set-variable=]
-  178 |     int32_t i, j, ipat;
-      |                ^
 In file included from collationdatabuilder.cpp:33:
 In constructor ‘icu_58::CollationIterator::CollationIterator(const icu_58::CollationData*, UBool)’,
     inlined from ‘icu_58::DataBuilderCollationIterator::DataBuilderCollationIterator(icu_58::CollationDataBuilder&)’ at collationdatabuilder.cpp:157:25:
 collationiterator.h:88:23: warning: ‘((const icu_58::CollationData*)((char*)this + 112))[2].icu_58::CollationData::trie’ is used uninitialized [-Wuninitialized]
    88 |             : trie(d->trie),
       |                    ~~~^~~~
+   g++	 ...  tridpars.cpp
+   g++	 ...  cpdtrans.cpp
    g++	 ...  rbt.cpp
+unesctrn.cpp: In member function ‘virtual void icu_58::UnescapeTransliterator::handleTransliterate(icu_58::Replaceable&, UTransPosition&, UBool) const’:
+unesctrn.cpp:178:16: warning: variable ‘j’ set but not used [-Wunused-but-set-variable=]
+  178 |     int32_t i, j, ipat;
+      |                ^
    g++	 ...  rbt_data.cpp
    g++	 ...  rbt_pars.cpp
    g++	 ...  rbt_rule.cpp
@@ -3822,16 +3822,14 @@ collationiterator.h:88:23: warning: ‘((const icu_58::CollationData*)((char*)th
    gcc	 ...  ulocdata.c
    g++	 ...  measfmt.cpp
    g++	 ...  currfmt.cpp
-   g++	 ...  curramt.cpp
 transreg.cpp: In member function ‘icu_58::Transliterator* icu_58::TransliteratorAlias::create(UParseError&, UErrorCode&)’:
 transreg.cpp:126:21: warning: variable ‘transCount’ set but not used [-Wunused-but-set-variable=]
   126 |             int32_t transCount = anonymousRBTs * 2 + 1;
       |                     ^~~~~~~~~~
+   g++	 ...  curramt.cpp
    g++	 ...  currunit.cpp
    g++	 ...  measure.cpp
    gcc	 ...  utmscale.c
-   g++	 ...  csdetect.cpp
-   g++	 ...  csmatch.cpp
 regexcmp.cpp: In member function ‘void icu_58::RegexCompile::matchStartType()’:
 regexcmp.cpp:2904:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
  2904 |             loc++;             // Except for extra operand on URX_JMPX, same as URX_JMP.
@@ -3846,16 +3844,18 @@ regexcmp.cpp:3266:16: warning: this statement may fall through [-Wimplicit-fallt
 regexcmp.cpp:3269:9: note: here
  3269 |         case URX_JMP:
       |         ^~~~
+   g++	 ...  csdetect.cpp
+   g++	 ...  csmatch.cpp
    g++	 ...  csr2022.cpp
    g++	 ...  csrecog.cpp
    g++	 ...  csrmbcs.cpp
    g++	 ...  csrsbcs.cpp
    g++	 ...  csrucode.cpp
+   g++	 ...  csrutf8.cpp
 csrmbcs.cpp: In member function ‘int32_t icu_58::CharsetRecog_mbcs::match_mbcs(icu_58::InputText*, const uint16_t*, int32_t) const’:
 csrmbcs.cpp:149:13: warning: variable ‘singleByteCharCount’ set but not used [-Wunused-but-set-variable=]
   149 |     int32_t singleByteCharCount = 0;
       |             ^~~~~~~~~~~~~~~~~~~
-   g++	 ...  csrutf8.cpp
    g++	 ...  inputext.cpp
    g++	 ...  wintzimpl.cpp
    g++	 ...  windtfmt.cpp
@@ -3873,16 +3873,6 @@ csrmbcs.cpp:149:13: warning: variable ‘singleByteCharCount’ set but not used
    g++	 ...  plurfmt.cpp
    g++	 ...  selfmt.cpp
    g++	 ...  dtitvfmt.cpp
-   g++	 ...  dtitvinf.cpp
-vtzone.cpp: In member function ‘icu_58::VTimeZone& icu_58::VTimeZone::operator=(const icu_58::VTimeZone&)’:
-vtzone.cpp:1004:33: warning: implicitly-declared ‘icu_58::BasicTimeZone& icu_58::BasicTimeZone::operator=(const icu_58::BasicTimeZone&)’ is deprecated [-Wdeprecated-copy]
- 1004 |         BasicTimeZone::operator=(right);
-      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
-In file included from unicode/vtzone.h:21,
-                 from vtzone.cpp:16:
-./unicode/basictz.h:197:5: note: because ‘icu_58::BasicTimeZone’ has user-provided ‘icu_58::BasicTimeZone::BasicTimeZone(const icu_58::BasicTimeZone&)’
-  197 |     BasicTimeZone(const BasicTimeZone& source);
-      |     ^~~~~~~~~~~~~
 rbtz.cpp: In member function ‘icu_58::RuleBasedTimeZone& icu_58::RuleBasedTimeZone::operator=(const icu_58::RuleBasedTimeZone&)’:
 rbtz.cpp:80:33: warning: implicitly-declared ‘icu_58::BasicTimeZone& icu_58::BasicTimeZone::operator=(const icu_58::BasicTimeZone&)’ is deprecated [-Wdeprecated-copy]
    80 |         BasicTimeZone::operator=(right);
@@ -3892,43 +3882,53 @@ In file included from unicode/rbtz.h:21,
 ./unicode/basictz.h:197:5: note: because ‘icu_58::BasicTimeZone’ has user-provided ‘icu_58::BasicTimeZone::BasicTimeZone(const icu_58::BasicTimeZone&)’
   197 |     BasicTimeZone(const BasicTimeZone& source);
       |     ^~~~~~~~~~~~~
+   g++	 ...  dtitvinf.cpp
    g++	 ...  udateintervalformat.cpp
+vtzone.cpp: In member function ‘icu_58::VTimeZone& icu_58::VTimeZone::operator=(const icu_58::VTimeZone&)’:
+vtzone.cpp:1004:33: warning: implicitly-declared ‘icu_58::BasicTimeZone& icu_58::BasicTimeZone::operator=(const icu_58::BasicTimeZone&)’ is deprecated [-Wdeprecated-copy]
+ 1004 |         BasicTimeZone::operator=(right);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from unicode/vtzone.h:21,
+                 from vtzone.cpp:16:
+./unicode/basictz.h:197:5: note: because ‘icu_58::BasicTimeZone’ has user-provided ‘icu_58::BasicTimeZone::BasicTimeZone(const icu_58::BasicTimeZone&)’
+  197 |     BasicTimeZone(const BasicTimeZone& source);
+      |     ^~~~~~~~~~~~~
    g++	 ...  tmunit.cpp
    g++	 ...  tmutamt.cpp
    g++	 ...  tmutfmt.cpp
    g++	 ...  currpinf.cpp
-   g++	 ...  uspoof.cpp
-   g++	 ...  uspoof_impl.cpp
-   g++	 ...  uspoof_build.cpp
-   g++	 ...  uspoof_conf.cpp
 plurrule.cpp: In member function ‘void icu_58::PluralRuleParser::parse(const icu_58::UnicodeString&, icu_58::PluralRules*, UErrorCode&)’:
 plurrule.cpp:496:38: warning: this statement may fall through [-Wimplicit-fallthrough=]
   496 |             curAndConstraint->negated=TRUE;
 plurrule.cpp:498:9: note: here
   498 |         case tIn:
       |         ^~~~
+   g++	 ...  uspoof.cpp
+   g++	 ...  uspoof_impl.cpp
+   g++	 ...  uspoof_build.cpp
+   g++	 ...  uspoof_conf.cpp
    g++	 ...  decfmtst.cpp
    g++	 ...  smpdtfst.cpp
    g++	 ...  ztrans.cpp
    g++	 ...  zrule.cpp
    g++	 ...  vzone.cpp
    g++	 ...  fphdlimp.cpp
+   g++	 ...  fpositer.cpp
 uspoof_impl.cpp: In function ‘int32_t uspoof_swap_58(const UDataSwapper*, const void*, int32_t, void*, UErrorCode*)’:
 uspoof_impl.cpp:931:34: warning: comparison between two arrays [-Warray-compare]
   931 |     if (outputDH->fFormatVersion != spoofDH->fFormatVersion) {
       |         ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
 uspoof_impl.cpp:931:34: note: use unary ‘+’ which decays operands to pointers or ‘&(outputDH->icu_58::SpoofDataHeader::fFormatVersion)[0] != &(spoofDH->icu_58::SpoofDataHeader::fFormatVersion)[0]’ to compare the addresses
-   g++	 ...  fpositer.cpp
    g++	 ...  ufieldpositer.cpp
-uspoof_conf.cpp: In member function ‘void icu_58::ConfusabledataBuilder::outputData(UErrorCode&)’:
-uspoof_conf.cpp:395:13: warning: variable ‘previousCodePoint’ set but not used [-Wunused-but-set-variable=]
-  395 |     UChar32 previousCodePoint = 0;
-      |             ^~~~~~~~~~~~~~~~~
    gcc	 ...  decNumber.c
    gcc	 ...  decContext.c
    g++	 ...  alphaindex.cpp
    g++	 ...  tznames.cpp
    g++	 ...  tznames_impl.cpp
+uspoof_conf.cpp: In member function ‘void icu_58::ConfusabledataBuilder::outputData(UErrorCode&)’:
+uspoof_conf.cpp:395:13: warning: variable ‘previousCodePoint’ set but not used [-Wunused-but-set-variable=]
+  395 |     UChar32 previousCodePoint = 0;
+      |             ^~~~~~~~~~~~~~~~~
    g++	 ...  tzgnames.cpp
    g++	 ...  tzfmt.cpp
    g++	 ...  compactdecimalformat.cpp
@@ -3954,8 +3954,6 @@ uspoof_conf.cpp:395:13: warning: variable ‘previousCodePoint’ set but not us
    g++	 ...  decimfmtimpl.cpp
    g++	 ...  visibledigits.cpp
    g++	 ...  dayperiodrules.cpp
-ar r ../lib/libicui18n.a ucln_in.ao fmtable.ao format.ao msgfmt.ao umsg.ao numfmt.ao unum.ao decimfmt.ao decimalformatpattern.ao dcfmtsym.ao digitlst.ao fmtable_cnv.ao choicfmt.ao datefmt.ao smpdtfmt.ao reldtfmt.ao dtfmtsym.ao udat.ao dtptngen.ao udatpg.ao nfrs.ao nfrule.ao nfsubs.ao rbnf.ao numsys.ao unumsys.ao ucsdet.ao ucal.ao calendar.ao gregocal.ao timezone.ao simpletz.ao olsontz.ao astro.ao taiwncal.ao buddhcal.ao persncal.ao islamcal.ao japancal.ao gregoimp.ao hebrwcal.ao indiancal.ao chnsecal.ao cecal.ao coptccal.ao dangical.ao ethpccal.ao coleitr.ao coll.ao sortkey.ao bocsu.ao ucoleitr.ao ucol.ao ucol_res.ao ucol_sit.ao collation.ao collationsettings.ao collationdata.ao collationtailoring.ao collationdatareader.ao collationdatawriter.ao collationfcd.ao collationiterator.ao utf16collationiterator.ao utf8collationiterator.ao uitercollationiterator.ao collationsets.ao collationcompare.ao collationfastlatin.ao collationkeys.ao rulebasedcollator.ao collationroot.ao collationrootelements.ao collationdatabuilder.ao collationweights.ao collationruleparser.ao collationbuilder.ao collationfastlatinbuilder.ao strmatch.ao usearch.ao search.ao stsearch.ao translit.ao utrans.ao esctrn.ao unesctrn.ao funcrepl.ao strrepl.ao tridpars.ao cpdtrans.ao rbt.ao rbt_data.ao rbt_pars.ao rbt_rule.ao rbt_set.ao nultrans.ao remtrans.ao casetrn.ao titletrn.ao tolowtrn.ao toupptrn.ao anytrans.ao name2uni.ao uni2name.ao nortrans.ao quant.ao transreg.ao brktrans.ao regexcmp.ao rematch.ao repattrn.ao regexst.ao regextxt.ao regeximp.ao uregex.ao uregexc.ao ulocdata.ao measfmt.ao currfmt.ao curramt.ao currunit.ao measure.ao utmscale.ao csdetect.ao csmatch.ao csr2022.ao csrecog.ao csrmbcs.ao csrsbcs.ao csrucode.ao csrutf8.ao inputext.ao wintzimpl.ao windtfmt.ao winnmfmt.ao basictz.ao dtrule.ao rbtz.ao tzrule.ao tztrans.ao vtzone.ao zonemeta.ao standardplural.ao upluralrules.ao plurrule.ao plurfmt.ao selfmt.ao dtitvfmt.ao dtitvinf.ao udateintervalformat.ao tmunit.ao tmutamt.ao tmutfmt.ao currpinf.ao uspoof.ao uspoof_impl.ao uspoof_build.ao uspoof_conf.ao decfmtst.ao smpdtfst.ao ztrans.ao zrule.ao vzone.ao fphdlimp.ao fpositer.ao ufieldpositer.ao decNumber.ao decContext.ao alphaindex.ao tznames.ao tznames_impl.ao tzgnames.ao tzfmt.ao compactdecimalformat.ao gender.ao region.ao scriptset.ao uregion.ao reldatefmt.ao quantityformatter.ao measunit.ao sharedbreakiterator.ao scientificnumberformatter.ao digitgrouping.ao digitinterval.ao digitformatter.ao digitaffix.ao valueformatter.ao digitaffixesandpadding.ao pluralaffix.ao precision.ao affixpatternparser.ao smallintformatter.ao decimfmtimpl.ao visibledigits.ao dayperiodrules.ao
-ar: creating ../lib/libicui18n.a
 digitformatter.cpp: In member function ‘icu_58::UnicodeString& icu_58::DigitFormatter::format(const icu_58::VisibleDigits&, const icu_58::DigitGrouping&, const icu_58::DigitFormatterOptions&, icu_58::FieldPositionHandler&, icu_58::UnicodeString&) const’:
 digitformatter.cpp:236:29: warning: ‘fracBegin’ may be used uninitialized [-Wmaybe-uninitialized]
   236 |         handler.addAttribute(UNUM_FRACTION_FIELD, fracBegin, appendTo.length());
@@ -3963,6 +3961,8 @@ digitformatter.cpp:236:29: warning: ‘fracBegin’ may be used uninitialized [-
 digitformatter.cpp:180:13: note: ‘fracBegin’ was declared here
   180 |     int32_t fracBegin;
       |             ^~~~~~~~~
+ar r ../lib/libicui18n.a ucln_in.ao fmtable.ao format.ao msgfmt.ao umsg.ao numfmt.ao unum.ao decimfmt.ao decimalformatpattern.ao dcfmtsym.ao digitlst.ao fmtable_cnv.ao choicfmt.ao datefmt.ao smpdtfmt.ao reldtfmt.ao dtfmtsym.ao udat.ao dtptngen.ao udatpg.ao nfrs.ao nfrule.ao nfsubs.ao rbnf.ao numsys.ao unumsys.ao ucsdet.ao ucal.ao calendar.ao gregocal.ao timezone.ao simpletz.ao olsontz.ao astro.ao taiwncal.ao buddhcal.ao persncal.ao islamcal.ao japancal.ao gregoimp.ao hebrwcal.ao indiancal.ao chnsecal.ao cecal.ao coptccal.ao dangical.ao ethpccal.ao coleitr.ao coll.ao sortkey.ao bocsu.ao ucoleitr.ao ucol.ao ucol_res.ao ucol_sit.ao collation.ao collationsettings.ao collationdata.ao collationtailoring.ao collationdatareader.ao collationdatawriter.ao collationfcd.ao collationiterator.ao utf16collationiterator.ao utf8collationiterator.ao uitercollationiterator.ao collationsets.ao collationcompare.ao collationfastlatin.ao collationkeys.ao rulebasedcollator.ao collationroot.ao collationrootelements.ao collationdatabuilder.ao collationweights.ao collationruleparser.ao collationbuilder.ao collationfastlatinbuilder.ao strmatch.ao usearch.ao search.ao stsearch.ao translit.ao utrans.ao esctrn.ao unesctrn.ao funcrepl.ao strrepl.ao tridpars.ao cpdtrans.ao rbt.ao rbt_data.ao rbt_pars.ao rbt_rule.ao rbt_set.ao nultrans.ao remtrans.ao casetrn.ao titletrn.ao tolowtrn.ao toupptrn.ao anytrans.ao name2uni.ao uni2name.ao nortrans.ao quant.ao transreg.ao brktrans.ao regexcmp.ao rematch.ao repattrn.ao regexst.ao regextxt.ao regeximp.ao uregex.ao uregexc.ao ulocdata.ao measfmt.ao currfmt.ao curramt.ao currunit.ao measure.ao utmscale.ao csdetect.ao csmatch.ao csr2022.ao csrecog.ao csrmbcs.ao csrsbcs.ao csrucode.ao csrutf8.ao inputext.ao wintzimpl.ao windtfmt.ao winnmfmt.ao basictz.ao dtrule.ao rbtz.ao tzrule.ao tztrans.ao vtzone.ao zonemeta.ao standardplural.ao upluralrules.ao plurrule.ao plurfmt.ao selfmt.ao dtitvfmt.ao dtitvinf.ao udateintervalformat.ao tmunit.ao tmutamt.ao tmutfmt.ao currpinf.ao uspoof.ao uspoof_impl.ao uspoof_build.ao uspoof_conf.ao decfmtst.ao smpdtfst.ao ztrans.ao zrule.ao vzone.ao fphdlimp.ao fpositer.ao ufieldpositer.ao decNumber.ao decContext.ao alphaindex.ao tznames.ao tznames_impl.ao tzgnames.ao tzfmt.ao compactdecimalformat.ao gender.ao region.ao scriptset.ao uregion.ao reldatefmt.ao quantityformatter.ao measunit.ao sharedbreakiterator.ao scientificnumberformatter.ao digitgrouping.ao digitinterval.ao digitformatter.ao digitaffix.ao valueformatter.ao digitaffixesandpadding.ao pluralaffix.ao precision.ao affixpatternparser.ao smallintformatter.ao decimfmtimpl.ao visibledigits.ao dayperiodrules.ao
+ar: creating ../lib/libicui18n.a
 ranlib ../lib/libicui18n.a
 decNumber.c: In function ‘uprv_decNumberSquareRoot_58’:
 decNumber.c:2972:28: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
@@ -4003,17 +4003,17 @@ make[1]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    (deps)	 uprintf.cpp
    (deps)	 uprntf_p.c
    (deps)	 uscanf.c
-   (deps)	 ustdio.c
    (deps)	 uscanf_p.c
+   (deps)	 ustdio.c
    (deps)	 sprintf.c
    (deps)	 sscanf.c
    (deps)	 ustream.cpp
    (deps)	 ucln_io.cpp
    g++	 ...  locbund.cpp
    gcc	 ...  ufile.c
-   g++	 ...  uprintf.cpp
-   gcc	 ...  uprntf_p.c
    gcc	 ...  ufmt_cmn.c
+   gcc	 ...  uprntf_p.c
+   g++	 ...  uprintf.cpp
    gcc	 ...  uscanf.c
    gcc	 ...  uscanf_p.c
    gcc	 ...  ustdio.c
@@ -4021,8 +4021,8 @@ make[1]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    gcc	 ...  sscanf.c
    g++	 ...  ustream.cpp
    g++	 ...  ucln_io.cpp
-   g++	 ...  locbund.cpp
    gcc	 ...  ufile.c
+   g++	 ...  locbund.cpp
    gcc	 ...  ufmt_cmn.c
    g++	 ...  uprintf.cpp
    gcc	 ...  uprntf_p.c
@@ -4047,17 +4047,17 @@ make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    (deps)	 filestrm.c
    (deps)	 package.cpp
    (deps)	 swapimpl.cpp
-   (deps)	 pkgitems.cpp
    (deps)	 toolutil.cpp
-   (deps)	 unewdata.c
+   (deps)	 pkgitems.cpp
    (deps)	 collationinfo.cpp
+   (deps)	 unewdata.c
    (deps)	 denseranges.cpp
    (deps)	 ucm.c
    (deps)	 ucmstate.c
    (deps)	 uoptions.c
    (deps)	 uparse.c
-   (deps)	 ucbuf.cpp
    (deps)	 xmlparser.cpp
+   (deps)	 ucbuf.cpp
    (deps)	 writesrc.c
    (deps)	 pkg_icu.cpp
    (deps)	 pkg_genc.c
@@ -4073,19 +4073,19 @@ make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    g++	 ...  pkgitems.cpp
    g++	 ...  swapimpl.cpp
    g++	 ...  toolutil.cpp
-   gcc	 ...  unewdata.c
    g++	 ...  collationinfo.cpp
+   gcc	 ...  unewdata.c
    g++	 ...  denseranges.cpp
-   gcc	 ...  ucm.c
    gcc	 ...  ucmstate.c
    gcc	 ...  uoptions.c
+   gcc	 ...  ucm.c
    gcc	 ...  uparse.c
-   g++	 ...  xmlparser.cpp
    g++	 ...  ucbuf.cpp
+   g++	 ...  xmlparser.cpp
    g++	 ...  pkg_icu.cpp
    gcc	 ...  writesrc.c
-   gcc	 ...  pkg_gencmn.c
    gcc	 ...  pkg_genc.c
+   gcc	 ...  pkg_gencmn.c
    g++	 ...  ppucd.cpp
    gcc	 ...  flagparser.c
    g++	 ...  filetools.cpp
@@ -4107,8 +4107,8 @@ make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    g++	 ...  ucbuf.cpp
    g++	 ...  xmlparser.cpp
    gcc	 ...  writesrc.c
-   g++	 ...  pkg_icu.cpp
    gcc	 ...  pkg_genc.c
+   g++	 ...  pkg_icu.cpp
    gcc	 ...  pkg_gencmn.c
    g++	 ...  ppucd.cpp
    gcc	 ...  flagparser.c
@@ -4125,20 +4125,20 @@ rm -f ../../lib/libicutu.so && ln -s libicutu.so.58.2 ../../lib/libicutu.so
 make[2]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/tools/toolutil'
 /usr/bin/make[1]: Making `all' in `ctestfw'
 make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/tools/ctestfw'
-   (deps)	 ctest.c
    (deps)	 tstdtmod.cpp
+   (deps)	 ctest.c
    (deps)	 testdata.cpp
    (deps)	 datamap.cpp
    (deps)	 uperf.cpp
    (deps)	 ucln_ct.c
    gcc	 ...  ctest.c
    g++	 ...  tstdtmod.cpp
-   g++	 ...  datamap.cpp
-   g++	 ...  uperf.cpp
    g++	 ...  testdata.cpp
+   g++	 ...  uperf.cpp
+   g++	 ...  datamap.cpp
    gcc	 ...  ucln_ct.c
-   gcc	 ...  ctest.c
    g++	 ...  tstdtmod.cpp
+   gcc	 ...  ctest.c
    g++	 ...  testdata.cpp
    g++	 ...  datamap.cpp
    g++	 ...  uperf.cpp
@@ -4149,19 +4149,6 @@ ctest.c:182:5: warning: ‘strncpy’ destination unchanged after copying no byt
   182 |     strncpy( newNode->name, name, nameLen );
       |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘createTestNode’,
-    inlined from ‘addTestNode’ at ctest.c:254:34,
-    inlined from ‘addTest’ at ctest.c:214:15:
-ctest.c:182:5: warning: ‘strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
-  182 |     strncpy( newNode->name, name, nameLen );
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In function ‘getNextLevel’,
-    inlined from ‘getNextLevel’ at ctest.c:151:13,
-    inlined from ‘addTestNode’ at ctest.c:251:17,
-    inlined from ‘addTest’ at ctest.c:214:15:
-ctest.c:168:25: note: length computed here
-  168 |         *nameLen = (int)strlen(name);
-      |                         ^~~~~~~~~~~~
-In function ‘createTestNode’,
     inlined from ‘addTest’ at ctest.c:212:17:
 ctest.c:182:5: warning: ‘strncpy’ destination unchanged after copying no bytes [-Wstringop-truncation]
   182 |     strncpy( newNode->name, name, nameLen );
@@ -4179,8 +4166,21 @@ In function ‘getNextLevel’,
 ctest.c:168:25: note: length computed here
   168 |         *nameLen = (int)strlen(name);
       |                         ^~~~~~~~~~~~
-/usr/bin/g++ -O3 -fPIC -DU_USING_ICU_NAMESPACE=0 -W -Wall -pedantic -Wpointer-arith -Wwrite-strings -Wno-long-long --std=c++0x    -fPIC     -shared -Wl,-Bsymbolic -Wl,-soname -Wl,libicutest.so.58 -o libicutest.so.58.2 ctest.o tstdtmod.o testdata.o datamap.o uperf.o ucln_ct.o -L../../lib -licutu -L../../lib -licui18n -L../../lib -licuuc -L../../stubdata -licudata -lpthread -lm 
+In function ‘createTestNode’,
+    inlined from ‘addTestNode’ at ctest.c:254:34,
+    inlined from ‘addTest’ at ctest.c:214:15:
+ctest.c:182:5: warning: ‘strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  182 |     strncpy( newNode->name, name, nameLen );
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘getNextLevel’,
+    inlined from ‘getNextLevel’ at ctest.c:151:13,
+    inlined from ‘addTestNode’ at ctest.c:251:17,
+    inlined from ‘addTest’ at ctest.c:214:15:
+ctest.c:168:25: note: length computed here
+  168 |         *nameLen = (int)strlen(name);
+      |                         ^~~~~~~~~~~~
 ar r libicutest.a ctest.ao tstdtmod.ao testdata.ao datamap.ao uperf.ao ucln_ct.ao
+/usr/bin/g++ -O3 -fPIC -DU_USING_ICU_NAMESPACE=0 -W -Wall -pedantic -Wpointer-arith -Wwrite-strings -Wno-long-long --std=c++0x    -fPIC     -shared -Wl,-Bsymbolic -Wl,-soname -Wl,libicutest.so.58 -o libicutest.so.58.2 ctest.o tstdtmod.o testdata.o datamap.o uperf.o ucln_ct.o -L../../lib -licutu -L../../lib -licui18n -L../../lib -licuuc -L../../stubdata -licudata -lpthread -lm 
 ar: creating libicutest.a
 ranlib libicutest.a
 rm -f libicutest.so.58 && ln -s libicutest.so.58.2 libicutest.so.58
@@ -7537,10 +7537,10 @@ make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    gcc	 ...  read.c
    g++	 ...  reslist.cpp
    gcc	 ...  ustr.c
-   g++	 ...  wrtjava.cpp
-   gcc	 ...  rbutil.c
 cd ../.. \
  && CONFIG_FILES=tools/genrb/derb.1 CONFIG_HEADERS= /bin/sh ./config.status
+   gcc	 ...  rbutil.c
+   g++	 ...  wrtjava.cpp
    gcc	 ...  rle.c
    g++	 ...  wrtxml.cpp
    g++	 ...  prscmnts.cpp
@@ -7553,10 +7553,6 @@ config.status: creating tools/genrb/derb.1
 cd ../.. \
  && CONFIG_FILES=tools/genrb/genrb.1 CONFIG_HEADERS= /bin/sh ./config.status
 config.status: creating tools/genrb/genrb.1
-wrtxml.cpp: In function ‘void table_write_xml(TableResource*, const char*, const char*, UBool, UErrorCode*)’:
-wrtxml.cpp:922:15: warning: variable ‘i’ set but not used [-Wunused-but-set-variable=]
-  922 |     uint32_t  i         = 0;
-      |               ^
 wrtjava.cpp: In function ‘void array_write_java(const ArrayResource*, UErrorCode*)’:
 wrtjava.cpp:319:15: warning: variable ‘i’ set but not used [-Wunused-but-set-variable=]
   319 |     uint32_t  i         = 0;
@@ -7568,6 +7564,10 @@ derb.cpp:346:23: warning: this statement may fall through [-Wimplicit-fallthroug
 derb.cpp:348:13: note: here
   348 |             default:
       |             ^~~~~~~
+wrtxml.cpp: In function ‘void table_write_xml(TableResource*, const char*, const char*, UBool, UErrorCode*)’:
+wrtxml.cpp:922:15: warning: variable ‘i’ set but not used [-Wunused-but-set-variable=]
+  922 |     uint32_t  i         = 0;
+      |               ^
 /usr/bin/g++ -O3 -fPIC -DU_USING_ICU_NAMESPACE=0 -W -Wall -pedantic -Wpointer-arith -Wwrite-strings -Wno-long-long --std=c++0x   -fPIC     -o ../../bin/derb derb.o -L../../lib -licuio -L../../lib -licutu -L../../lib -licui18n -L../../lib -licuuc -L../../stubdata -licudata -lpthread -lm  
 /usr/bin/g++ -O3 -fPIC -DU_USING_ICU_NAMESPACE=0 -W -Wall -pedantic -Wpointer-arith -Wwrite-strings -Wno-long-long --std=c++0x   -fPIC     -o ../../bin/genrb errmsg.o genrb.o parse.o read.o reslist.o ustr.o rbutil.o wrtjava.o rle.o wrtxml.o prscmnts.o -L../../lib -licutu -L../../lib -licui18n -L../../lib -licuuc -L../../stubdata -licudata -lpthread -lm  
 make[2]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/tools/genrb'
@@ -7595,8 +7595,8 @@ make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
    (deps)	 store.c
 cd ../.. \
  && CONFIG_FILES=tools/gensprep/gensprep.8 CONFIG_HEADERS= /bin/sh ./config.status
-   gcc	 ...  store.c
    gcc	 ...  gensprep.c
+   gcc	 ...  store.c
 config.status: creating tools/gensprep/gensprep.8
 /usr/bin/g++ -O3 -fPIC -DU_USING_ICU_NAMESPACE=0 -W -Wall -pedantic -Wpointer-arith -Wwrite-strings -Wno-long-long --std=c++0x   -fPIC     -o ../../bin/gensprep gensprep.o store.o -L../../lib -licutu -L../../lib -licui18n -L../../lib -licuuc -L../../stubdata -licudata -lpthread -lm   
 make[2]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/tools/gensprep'
@@ -7635,8 +7635,8 @@ config.status: creating tools/icupkg/icupkg.8
 make[2]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/tools/icupkg'
 /usr/bin/make[1]: Making `all' in `pkgdata'
 make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/tools/pkgdata'
-   (deps)	 pkgdata.cpp
    (deps)	 pkgtypes.c
+   (deps)	 pkgdata.cpp
 cd ../.. \
  && CONFIG_FILES=tools/pkgdata/pkgdata.1 CONFIG_HEADERS= /bin/sh ./config.status
    g++	 ...  pkgdata.cpp
@@ -7954,8 +7954,8 @@ make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
 make[2]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/samples/date'
 /usr/bin/make[1]: Making `all' in `cal'
 make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/samples/cal'
-   (deps)	 uprint.c
    (deps)	 cal.c
+   (deps)	 uprint.c
    gcc	 ...  uprint.c
    gcc	 ...  cal.c
 /usr/bin/g++ -O3 -fPIC -DU_USING_ICU_NAMESPACE=0 -W -Wall -pedantic -Wpointer-arith -Wwrite-strings -Wno-long-long --std=c++0x   -fPIC     -o icucal uprint.o cal.o -L../../lib -licui18n -L../../lib -licuuc -L../../stubdata -licudata -lpthread -lm  
@@ -7976,9 +7976,9 @@ cd . \
 /usr/bin/make[0]: Making `install' in `stubdata'
 mkdir /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share
 mkdir /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/icu
+mkdir /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/icu/58.2
 make[1]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/icu/source/stubdata'
 /bin/sh ../mkinstalldirs /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-mkdir /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/icu/58.2
 mkdir /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/icu/58.2/config
 mkdir /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 /usr/bin/install -c libicudata.a /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
@@ -8037,8 +8037,8 @@ config.status: creating ./config/icu-config.1
 /usr/bin/install -c -m 644 ./unicode/locid.h /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/unicode
 /usr/bin/install -c -m 644 ./unicode/messagepattern.h /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/unicode
 mkdir /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/man
-mkdir /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/man/man1
 /usr/bin/install -c -m 644 ./unicode/normalizer2.h /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/unicode
+mkdir /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/man/man1
 /usr/bin/install -c -m 644 ./unicode/normlzr.h /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/unicode
 /usr/bin/install -c -m 644 config/icu-config.1 /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/man/man1
 /usr/bin/install -c -m 644 ./unicode/parseerr.h /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/unicode
@@ -8414,12 +8414,12 @@ cc -c  -I. -I/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/5.44/
 chmod 644 "SQLite.bs"
 "/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SQLite.bs blib/arch/auto/DBD/SQLite/SQLite.bs 644
 cp lib/DBD/SQLite/Fulltext_search.pod blib/lib/DBD/SQLite/Fulltext_search.pod
-cp lib/DBD/SQLite/Constants.pm blib/lib/DBD/SQLite/Constants.pm
-cp lib/DBD/SQLite.pm blib/lib/DBD/SQLite.pm
-cp lib/DBD/SQLite/VirtualTable.pm blib/lib/DBD/SQLite/VirtualTable.pm
 cp lib/DBD/SQLite/GetInfo.pm blib/lib/DBD/SQLite/GetInfo.pm
 cp lib/DBD/SQLite/Cookbook.pod blib/lib/DBD/SQLite/Cookbook.pod
 cp lib/DBD/SQLite/VirtualTable/FileContent.pm blib/lib/DBD/SQLite/VirtualTable/FileContent.pm
+cp lib/DBD/SQLite/VirtualTable.pm blib/lib/DBD/SQLite/VirtualTable.pm
+cp lib/DBD/SQLite.pm blib/lib/DBD/SQLite.pm
+cp lib/DBD/SQLite/Constants.pm blib/lib/DBD/SQLite/Constants.pm
 cp lib/DBD/SQLite/VirtualTable/PerlData.pm blib/lib/DBD/SQLite/VirtualTable/PerlData.pm
 Warning: ignoring 'static' type modifier: only valid with an XSUB name which includes a class in SQLite.xs, line 48
 Warning: ignoring 'static' type modifier: only valid with an XSUB name which includes a class in SQLite.xs, line 66
@@ -8798,11 +8798,11 @@ Writing MYMETA.yml and MYMETA.json
 Running Mkbootstrap for EV ()
 chmod 644 "EV.bs"
 "/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- EV.bs blib/arch/auto/EV/EV.bs 644
-cp EV/EVAPI.h blib/lib/EV/EVAPI.h
-cp EV.pm blib/lib/EV.pm
-cp libev/ev.pod blib/lib/EV/libev.pod
 cp EV/MakeMaker.pm blib/lib/EV/MakeMaker.pm
+cp libev/ev.pod blib/lib/EV/libev.pod
 cp libev/ev.h blib/lib/EV/ev.h
+cp EV.pm blib/lib/EV.pm
+cp EV/EVAPI.h blib/lib/EV/EVAPI.h
 mv EV.xsc EV.c
 cc -c  -Ilibev -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/include/db5.3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/perl/src=/usr/src/debug/perl -flto=auto   -DVERSION=\"4.03\" -DXS_VERSION=\"4.03\" -fPIC "-I/usr/lib/perl5/5.44/core_perl/CORE"  -DEV_USE_MONOTONIC=1 -DEV_USE_REALTIME=0 -DEV_USE_SELECT=1 -DEV_USE_POLL=1 -DEV_USE_EPOLL=1 -DEV_USE_KQUEUE=0 -DEV_USE_PORT=0 -DEV_USE_INOTIFY=1 -DEV_USE_EVENTFD=1 -DEV_USE_SIGNALFD=1  EV.c
 EV.xs: In function ‘boot_EV’:
@@ -8875,10 +8875,10 @@ Looks good
 Generating a Unix-style Makefile
 Writing Makefile for Data::Dump
 Writing MYMETA.yml and MYMETA.json
-cp lib/Data/Dump/Filtered.pm blib/lib/Data/Dump/Filtered.pm
-cp lib/Data/Dump.pm blib/lib/Data/Dump.pm
 cp lib/Data/Dump/FilterContext.pm blib/lib/Data/Dump/FilterContext.pm
+cp lib/Data/Dump/Filtered.pm blib/lib/Data/Dump/Filtered.pm
 cp lib/Data/Dump/Trace.pm blib/lib/Data/Dump/Trace.pm
+cp lib/Data/Dump.pm blib/lib/Data/Dump.pm
 Manifying 3 pod documents
 Manifying 3 pod documents
 Appending installation info to /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/5.44/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
@@ -8917,16 +8917,16 @@ Looks good
 Generating a Unix-style Makefile
 Writing Makefile for ExtUtils::CBuilder
 Writing MYMETA.yml and MYMETA.json
-cp lib/ExtUtils/CBuilder.pm blib/lib/ExtUtils/CBuilder.pm
-cp lib/ExtUtils/CBuilder/Platform/aix.pm blib/lib/ExtUtils/CBuilder/Platform/aix.pm
-cp lib/ExtUtils/CBuilder/Platform/VMS.pm blib/lib/ExtUtils/CBuilder/Platform/VMS.pm
-cp lib/ExtUtils/CBuilder/Platform/os2.pm blib/lib/ExtUtils/CBuilder/Platform/os2.pm
-cp lib/ExtUtils/CBuilder/Platform/Unix.pm blib/lib/ExtUtils/CBuilder/Platform/Unix.pm
-cp lib/ExtUtils/CBuilder/Platform/Windows.pm blib/lib/ExtUtils/CBuilder/Platform/Windows.pm
-cp lib/ExtUtils/CBuilder/Platform/cygwin.pm blib/lib/ExtUtils/CBuilder/Platform/cygwin.pm
 cp lib/ExtUtils/CBuilder/Platform/darwin.pm blib/lib/ExtUtils/CBuilder/Platform/darwin.pm
-cp lib/ExtUtils/CBuilder/Platform/dec_osf.pm blib/lib/ExtUtils/CBuilder/Platform/dec_osf.pm
+cp lib/ExtUtils/CBuilder/Platform/VMS.pm blib/lib/ExtUtils/CBuilder/Platform/VMS.pm
+cp lib/ExtUtils/CBuilder/Platform/Unix.pm blib/lib/ExtUtils/CBuilder/Platform/Unix.pm
+cp lib/ExtUtils/CBuilder.pm blib/lib/ExtUtils/CBuilder.pm
 cp lib/ExtUtils/CBuilder/Base.pm blib/lib/ExtUtils/CBuilder/Base.pm
+cp lib/ExtUtils/CBuilder/Platform/aix.pm blib/lib/ExtUtils/CBuilder/Platform/aix.pm
+cp lib/ExtUtils/CBuilder/Platform/Windows.pm blib/lib/ExtUtils/CBuilder/Platform/Windows.pm
+cp lib/ExtUtils/CBuilder/Platform/os2.pm blib/lib/ExtUtils/CBuilder/Platform/os2.pm
+cp lib/ExtUtils/CBuilder/Platform/dec_osf.pm blib/lib/ExtUtils/CBuilder/Platform/dec_osf.pm
+cp lib/ExtUtils/CBuilder/Platform/cygwin.pm blib/lib/ExtUtils/CBuilder/Platform/cygwin.pm
 Manifying 2 pod documents
 Manifying 2 pod documents
 Appending installation info to /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/5.44/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
@@ -8980,70 +8980,70 @@ Looks good
 
 Checking prerequisites...
 Checking features:
+  HTML_support.......enabled
+  manpage_support....enabled
   YAML_support.......disabled
   C_support..........enabled
-  manpage_support....enabled
-  HTML_support.......enabled
 Creating new 'Build' script for 'Module-Build' version '0.35'
 /usr/bin/perl Build --makefile_env_macros 1
 Redundant argument in printf at lib/Module/Build/Notes.pm line 198.
-Copying lib/Module/Build/PPMMaker.pm -> blib/lib/Module/Build/PPMMaker.pm
-Copying lib/Module/Build/Platform/MacOS.pm -> blib/lib/Module/Build/Platform/MacOS.pm
-Copying lib/Module/Build/Platform/aix.pm -> blib/lib/Module/Build/Platform/aix.pm
-Copying lib/Module/Build/Platform/EBCDIC.pm -> blib/lib/Module/Build/Platform/EBCDIC.pm
-Copying lib/Module/Build/Platform/Unix.pm -> blib/lib/Module/Build/Platform/Unix.pm
-Copying lib/Module/Build/Platform/os2.pm -> blib/lib/Module/Build/Platform/os2.pm
-Copying lib/Module/Build/Platform/MPEiX.pm -> blib/lib/Module/Build/Platform/MPEiX.pm
-Copying lib/Module/Build/Platform/cygwin.pm -> blib/lib/Module/Build/Platform/cygwin.pm
-Copying lib/Module/Build/Dumper.pm -> blib/lib/Module/Build/Dumper.pm
-Copying lib/Module/Build/Platform/Default.pm -> blib/lib/Module/Build/Platform/Default.pm
-Copying lib/Module/Build/YAML.pm -> blib/lib/Module/Build/YAML.pm
-Copying lib/Module/Build/Platform/darwin.pm -> blib/lib/Module/Build/Platform/darwin.pm
-Copying lib/Module/Build/Config.pm -> blib/lib/Module/Build/Config.pm
-Copying lib/Module/Build/Cookbook.pm -> blib/lib/Module/Build/Cookbook.pm
+Copying lib/Module/Build/Platform/VMS.pm -> blib/lib/Module/Build/Platform/VMS.pm
 Copying lib/Module/Build/Compat.pm -> blib/lib/Module/Build/Compat.pm
-Copying lib/Module/Build/Version.pm -> blib/lib/Module/Build/Version.pm
-Copying lib/Module/Build/PodParser.pm -> blib/lib/Module/Build/PodParser.pm
-Copying lib/Module/Build/Platform/RiscOS.pm -> blib/lib/Module/Build/Platform/RiscOS.pm
+Copying lib/Module/Build/Notes.pm -> blib/lib/Module/Build/Notes.pm
+Copying lib/Module/Build/Platform/Unix.pm -> blib/lib/Module/Build/Platform/Unix.pm
+Copying lib/Module/Build/Dumper.pm -> blib/lib/Module/Build/Dumper.pm
 Copying lib/Module/Build/Platform/VOS.pm -> blib/lib/Module/Build/Platform/VOS.pm
+Copying lib/Module/Build/Cookbook.pm -> blib/lib/Module/Build/Cookbook.pm
+Copying lib/Module/Build/Platform/Default.pm -> blib/lib/Module/Build/Platform/Default.pm
 Copying lib/Module/Build/Platform/Windows.pm -> blib/lib/Module/Build/Platform/Windows.pm
 Copying lib/Module/Build.pm -> blib/lib/Module/Build.pm
-Copying lib/Module/Build/Platform/VMS.pm -> blib/lib/Module/Build/Platform/VMS.pm
-Copying lib/Module/Build/Notes.pm -> blib/lib/Module/Build/Notes.pm
+Copying lib/Module/Build/Platform/EBCDIC.pm -> blib/lib/Module/Build/Platform/EBCDIC.pm
+Copying lib/Module/Build/Version.pm -> blib/lib/Module/Build/Version.pm
+Copying lib/Module/Build/Platform/RiscOS.pm -> blib/lib/Module/Build/Platform/RiscOS.pm
+Copying lib/Module/Build/YAML.pm -> blib/lib/Module/Build/YAML.pm
+Copying lib/Module/Build/Platform/cygwin.pm -> blib/lib/Module/Build/Platform/cygwin.pm
+Copying lib/Module/Build/PPMMaker.pm -> blib/lib/Module/Build/PPMMaker.pm
+Copying lib/Module/Build/PodParser.pm -> blib/lib/Module/Build/PodParser.pm
 Copying lib/Module/Build/ModuleInfo.pm -> blib/lib/Module/Build/ModuleInfo.pm
+Copying lib/Module/Build/Platform/os2.pm -> blib/lib/Module/Build/Platform/os2.pm
 Copying lib/Module/Build/Base.pm -> blib/lib/Module/Build/Base.pm
+Copying lib/Module/Build/Platform/MacOS.pm -> blib/lib/Module/Build/Platform/MacOS.pm
 Copying lib/Module/Build/Platform/Amiga.pm -> blib/lib/Module/Build/Platform/Amiga.pm
-Copying lib/Module/Build/Authoring.pod -> blib/lib/Module/Build/Authoring.pod
+Copying lib/Module/Build/Config.pm -> blib/lib/Module/Build/Config.pm
+Copying lib/Module/Build/Platform/darwin.pm -> blib/lib/Module/Build/Platform/darwin.pm
+Copying lib/Module/Build/Platform/aix.pm -> blib/lib/Module/Build/Platform/aix.pm
+Copying lib/Module/Build/Platform/MPEiX.pm -> blib/lib/Module/Build/Platform/MPEiX.pm
 Copying lib/Module/Build/API.pod -> blib/lib/Module/Build/API.pod
+Copying lib/Module/Build/Authoring.pod -> blib/lib/Module/Build/Authoring.pod
 Copying scripts/config_data -> blib/script/config_data
 Deleting blib/script/config_data.bak
 Writing config notes to blib/lib/Module/Build/ConfigData.pm
 Manifying blib/script/config_data -> blib/bindoc/config_data.1p
-Manifying blib/lib/Module/Build/ConfigData.pm -> blib/libdoc/Module::Build::ConfigData.3pm
-Manifying blib/lib/Module/Build/Platform/VOS.pm -> blib/libdoc/Module::Build::Platform::VOS.3pm
-Manifying blib/lib/Module/Build/YAML.pm -> blib/libdoc/Module::Build::YAML.3pm
-Manifying blib/lib/Module/Build/Authoring.pod -> blib/libdoc/Module::Build::Authoring.3pm
-Manifying blib/lib/Module/Build/Platform/cygwin.pm -> blib/libdoc/Module::Build::Platform::cygwin.3pm
-Manifying blib/lib/Module/Build.pm -> blib/libdoc/Module::Build.3pm
-Manifying blib/lib/Module/Build/Platform/EBCDIC.pm -> blib/libdoc/Module::Build::Platform::EBCDIC.3pm
-Manifying blib/lib/Module/Build/Platform/os2.pm -> blib/libdoc/Module::Build::Platform::os2.3pm
-Manifying blib/lib/Module/Build/Platform/MacOS.pm -> blib/libdoc/Module::Build::Platform::MacOS.3pm
-Manifying blib/lib/Module/Build/API.pod -> blib/libdoc/Module::Build::API.3pm
 Manifying blib/lib/Module/Build/Cookbook.pm -> blib/libdoc/Module::Build::Cookbook.3pm
-Manifying blib/lib/Module/Build/Platform/MPEiX.pm -> blib/libdoc/Module::Build::Platform::MPEiX.3pm
+Manifying blib/lib/Module/Build/API.pod -> blib/libdoc/Module::Build::API.3pm
+Manifying blib/lib/Module/Build/YAML.pm -> blib/libdoc/Module::Build::YAML.3pm
+Manifying blib/lib/Module/Build/Platform/Amiga.pm -> blib/libdoc/Module::Build::Platform::Amiga.3pm
+Manifying blib/lib/Module/Build/Platform/VMS.pm -> blib/libdoc/Module::Build::Platform::VMS.3pm
 Manifying blib/lib/Module/Build/Base.pm -> blib/libdoc/Module::Build::Base.3pm
 Manifying blib/lib/Module/Build/Platform/aix.pm -> blib/libdoc/Module::Build::Platform::aix.3pm
-Manifying blib/lib/Module/Build/Platform/VMS.pm -> blib/libdoc/Module::Build::Platform::VMS.3pm
-Manifying blib/lib/Module/Build/Compat.pm -> blib/libdoc/Module::Build::Compat.3pm
-Manifying blib/lib/Module/Build/Platform/Windows.pm -> blib/libdoc/Module::Build::Platform::Windows.3pm
-Manifying blib/lib/Module/Build/ModuleInfo.pm -> blib/libdoc/Module::Build::ModuleInfo.3pm
-Manifying blib/lib/Module/Build/Platform/Unix.pm -> blib/libdoc/Module::Build::Platform::Unix.3pm
+Manifying blib/lib/Module/Build/PPMMaker.pm -> blib/libdoc/Module::Build::PPMMaker.3pm
+Manifying blib/lib/Module/Build/ConfigData.pm -> blib/libdoc/Module::Build::ConfigData.3pm
+Manifying blib/lib/Module/Build.pm -> blib/libdoc/Module::Build.3pm
 Manifying blib/lib/Module/Build/Notes.pm -> blib/libdoc/Module::Build::Notes.3pm
 Manifying blib/lib/Module/Build/Platform/RiscOS.pm -> blib/libdoc/Module::Build::Platform::RiscOS.3pm
-Manifying blib/lib/Module/Build/PPMMaker.pm -> blib/libdoc/Module::Build::PPMMaker.3pm
-Manifying blib/lib/Module/Build/Platform/Amiga.pm -> blib/libdoc/Module::Build::Platform::Amiga.3pm
+Manifying blib/lib/Module/Build/Platform/MPEiX.pm -> blib/libdoc/Module::Build::Platform::MPEiX.3pm
+Manifying blib/lib/Module/Build/Platform/EBCDIC.pm -> blib/libdoc/Module::Build::Platform::EBCDIC.3pm
+Manifying blib/lib/Module/Build/Platform/Windows.pm -> blib/libdoc/Module::Build::Platform::Windows.3pm
+Manifying blib/lib/Module/Build/Authoring.pod -> blib/libdoc/Module::Build::Authoring.3pm
+Manifying blib/lib/Module/Build/Platform/cygwin.pm -> blib/libdoc/Module::Build::Platform::cygwin.3pm
 Manifying blib/lib/Module/Build/Platform/darwin.pm -> blib/libdoc/Module::Build::Platform::darwin.3pm
+Manifying blib/lib/Module/Build/Compat.pm -> blib/libdoc/Module::Build::Compat.3pm
+Manifying blib/lib/Module/Build/Platform/MacOS.pm -> blib/libdoc/Module::Build::Platform::MacOS.3pm
+Manifying blib/lib/Module/Build/Platform/VOS.pm -> blib/libdoc/Module::Build::Platform::VOS.3pm
+Manifying blib/lib/Module/Build/Platform/os2.pm -> blib/libdoc/Module::Build::Platform::os2.3pm
 Manifying blib/lib/Module/Build/Platform/Default.pm -> blib/libdoc/Module::Build::Platform::Default.3pm
+Manifying blib/lib/Module/Build/Platform/Unix.pm -> blib/libdoc/Module::Build::Platform::Unix.3pm
+Manifying blib/lib/Module/Build/ModuleInfo.pm -> blib/libdoc/Module::Build::ModuleInfo.3pm
 /usr/bin/perl Build --makefile_env_macros 1 install
 Installing /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/5.44/man/man1/config_data.1p
 Installing /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/5.44/lib/perl5/Module/Build.pm
@@ -9146,7 +9146,7 @@ Copying Detector.pm -> blib/lib/Encode/Detect/Detector.pm
 Copying Detect.pm -> blib/lib/Encode/Detect.pm
 Copying Detector.xs -> lib/Encode/Detect/Detector.xs
 lib/Encode/Detect/Detector.xs -> lib/Encode/Detect/Detector.c
-cc -Isrc -I/usr/lib/perl5/5.44/core_perl/CORE -DXS_VERSION="1.00" -DVERSION="1.00" -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/include/db5.3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/perl/src=/usr/src/debug/perl -flto=auto -o lib/Encode/Detect/Detector.o lib/Encode/Detect/Detector.c
+cc -Isrc -I/usr/lib/perl5/5.44/core_perl/CORE -DVERSION="1.00" -DXS_VERSION="1.00" -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/include/db5.3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/perl/src=/usr/src/debug/perl -flto=auto -o lib/Encode/Detect/Detector.o lib/Encode/Detect/Detector.c
 ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Encode/Detect/Detector/Detector.bs')
 cc -shared -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -L/usr/lib/db5.3 -fstack-protector-strong -o blib/arch/auto/Encode/Detect/Detector/Detector.so lib/Encode/Detect/Detector.o src/nsMBCSSM.o src/LangCyrillicModel.o src/CharDistribution.o src/nsEUCTWProber.o src/nsMBCSGroupProber.o src/JpCntx.o src/LangBulgarianModel.o src/LangHungarianModel.o src/nsUTF8Prober.o src/nsEscSM.o src/LangGreekModel.o src/nsEUCKRProber.o src/nsUniversalDetector.o src/nsSJISProber.o src/nsSBCSGroupProber.o src/nsBig5Prober.o src/LangHebrewModel.o src/nsEUCJPProber.o src/nsHebrewProber.o src/nsEscCharsetProber.o src/nsGB2312Prober.o src/nsLatin1Prober.o src/nsSBCharSetProber.o src/nsCharSetProber.o src/LangThaiModel.o -lstdc++
 Manifying blib/lib/Encode/Detect.pm -> blib/libdoc/Encode::Detect.3pm
@@ -9161,36 +9161,36 @@ Installing /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/5.44/ma
 Installing /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/5.44/man/man3/Encode::Detect.3pm
 Writing /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/5.44/lib/perl5/x86_64-linux-thread-multi/auto/Encode/Detect/.packlist
 /usr/bin/perl Build --makefile_env_macros 1 clean
-Deleting src/nsEUCJPProber.o
-Deleting src/LangHungarianModel.o
-Deleting src/LangBulgarianModel.o
-Deleting src/nsEscSM.o
-Deleting blib/arch/auto/Encode/Detect/Detector/Detector.so
-Deleting src/nsMBCSGroupProber.o
-Deleting src/CharDistribution.o
-Deleting src/nsEscCharsetProber.o
-Deleting lib/Encode/Detect/Detector.c
-Deleting src/nsSJISProber.o
-Deleting src/LangHebrewModel.o
-Deleting src/LangGreekModel.o
-Deleting src/nsSBCSGroupProber.o
-Deleting src/nsEUCKRProber.o
-Deleting blib
-Deleting src/nsLatin1Prober.o
-Deleting src/nsCharSetProber.o
-Deleting src/nsHebrewProber.o
 Deleting src/LangThaiModel.o
-Deleting src/LangCyrillicModel.o
-Deleting src/nsBig5Prober.o
-Deleting src/nsEUCTWProber.o
-Deleting src/nsGB2312Prober.o
-Deleting lib/Encode/Detect/Detector.o
-Deleting src/nsUniversalDetector.o
-Deleting lib/Encode/Detect/Detector.xs
-Deleting src/nsUTF8Prober.o
+Deleting blib/arch/auto/Encode/Detect/Detector/Detector.so
+Deleting blib
 Deleting src/nsSBCharSetProber.o
-Deleting src/JpCntx.o
 Deleting src/nsMBCSSM.o
+Deleting src/nsSJISProber.o
+Deleting src/nsCharSetProber.o
+Deleting src/nsEUCTWProber.o
+Deleting src/LangCyrillicModel.o
+Deleting src/CharDistribution.o
+Deleting lib/Encode/Detect/Detector.c
+Deleting src/nsEUCKRProber.o
+Deleting src/nsUTF8Prober.o
+Deleting src/JpCntx.o
+Deleting src/LangBulgarianModel.o
+Deleting src/LangHebrewModel.o
+Deleting src/nsUniversalDetector.o
+Deleting src/LangGreekModel.o
+Deleting src/nsEscSM.o
+Deleting src/nsHebrewProber.o
+Deleting src/nsSBCSGroupProber.o
+Deleting lib/Encode/Detect/Detector.xs
+Deleting src/nsBig5Prober.o
+Deleting src/nsLatin1Prober.o
+Deleting src/nsGB2312Prober.o
+Deleting src/nsMBCSGroupProber.o
+Deleting lib/Encode/Detect/Detector.o
+Deleting src/nsEUCJPProber.o
+Deleting src/nsEscCharsetProber.o
+Deleting src/LangHungarianModel.o
 build_module run tests:0 clean:1 hints 1 HTML-Tagset-3.20 
 tar zxf HTML-Tagset-3.20.tar.gz
 tar done
@@ -9234,18 +9234,18 @@ Generating a Unix-style Makefile
 Writing Makefile for HTML::Parser
 Writing MYMETA.yml and MYMETA.json
 "/usr/bin/perl" "/usr/share/perl5/core_perl/ExtUtils/xsubpp" -noprototypes -typemap '/usr/share/perl5/core_perl/ExtUtils/typemap' -typemap '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/HTML-Parser-3.68/typemap'  Parser.xs > Parser.xsc
-Running Mkbootstrap for Parser ()
 "/usr/bin/perl" mkhctype >hctype.h
+Running Mkbootstrap for Parser ()
 "/usr/bin/perl" mkpfunc >pfunc.h
 chmod 644 "Parser.bs"
 "/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Parser.bs blib/arch/auto/HTML/Parser/Parser.bs 644
-cp lib/HTML/LinkExtor.pm blib/lib/HTML/LinkExtor.pm
-cp lib/HTML/Filter.pm blib/lib/HTML/Filter.pm
 cp lib/HTML/Entities.pm blib/lib/HTML/Entities.pm
 cp lib/HTML/TokeParser.pm blib/lib/HTML/TokeParser.pm
-cp lib/HTML/PullParser.pm blib/lib/HTML/PullParser.pm
 cp lib/HTML/HeadParser.pm blib/lib/HTML/HeadParser.pm
 cp Parser.pm blib/lib/HTML/Parser.pm
+cp lib/HTML/LinkExtor.pm blib/lib/HTML/LinkExtor.pm
+cp lib/HTML/PullParser.pm blib/lib/HTML/PullParser.pm
+cp lib/HTML/Filter.pm blib/lib/HTML/Filter.pm
 mv Parser.xsc Parser.c
 cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/include/db5.3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/perl/src=/usr/src/debug/perl -flto=auto   -DVERSION=\"3.68\" -DXS_VERSION=\"3.68\" -fPIC "-I/usr/lib/perl5/5.44/core_perl/CORE"  -DMARKED_SECTION Parser.c
 In file included from Parser.xs:117:
@@ -9486,11 +9486,11 @@ make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
 make[3]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/libjpeg-turbo-1.5.3/simd'
   CC       jsimd_x86_64.lo
   GEN      jfdctflt-sse-64.lo
+  GEN      jccolor-sse2-64.lo
   GEN      jcgray-sse2-64.lo
   GEN      jchuff-sse2-64.lo
-  GEN      jccolor-sse2-64.lo
-  GEN      jcsample-sse2-64.lo
   GEN      jdcolor-sse2-64.lo
+  GEN      jcsample-sse2-64.lo
   GEN      jdmerge-sse2-64.lo
   GEN      jdsample-sse2-64.lo
   GEN      jfdctfst-sse2-64.lo
@@ -9498,9 +9498,9 @@ make[3]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
   GEN      jidctflt-sse2-64.lo
   GEN      jidctfst-sse2-64.lo
   GEN      jidctint-sse2-64.lo
-  GEN      jidctred-sse2-64.lo
   GEN      jquantf-sse2-64.lo
   GEN      jquanti-sse2-64.lo
+  GEN      jidctred-sse2-64.lo
 libtool:   error: ignoring unknown tag NASM
 libtool:   error: ignoring unknown tag NASM
 libtool:   error: ignoring unknown tag NASM
@@ -9550,15 +9550,15 @@ md5.c:237:1: warning: old-style function definition [-Wold-style-definition]
 make[2]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/libjpeg-turbo-1.5.3/md5'
 make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/libjpeg-turbo-1.5.3'
   CC       jcapimin.lo
-  CC       jccoefct.lo
   CC       jcapistd.lo
+  CC       jccoefct.lo
   CC       jccolor.lo
   CC       jcdctmgr.lo
   CC       jchuff.lo
+  CC       jcmainct.lo
   CC       jcinit.lo
   CC       jcmarker.lo
   CC       jcmaster.lo
-  CC       jcmainct.lo
   CC       jcomapi.lo
   CC       jcparam.lo
   CC       jcphuff.lo
@@ -9603,8 +9603,8 @@ jcsample.c:476:11: warning: variable ‘smoothok’ set but not used [-Wunused-b
   CC       jcarith.lo
   CC       jdarith.lo
   CC       libturbojpeg_la-jcapimin.lo
-  CC       libturbojpeg_la-jcapistd.lo
   CC       libturbojpeg_la-jccoefct.lo
+  CC       libturbojpeg_la-jcapistd.lo
   CC       libturbojpeg_la-jccolor.lo
   CC       libturbojpeg_la-jcdctmgr.lo
   CC       libturbojpeg_la-jchuff.lo
@@ -9622,13 +9622,13 @@ jcsample.c:476:11: warning: variable ‘smoothok’ set but not used [-Wunused-b
   CC       libturbojpeg_la-jdapistd.lo
   CC       libturbojpeg_la-jdatadst.lo
   CC       libturbojpeg_la-jdatasrc.lo
+  CC       libturbojpeg_la-jdcoefct.lo
+  CC       libturbojpeg_la-jddctmgr.lo
+  CC       libturbojpeg_la-jdcolor.lo
 jcsample.c: In function ‘jinit_downsampler’:
 jcsample.c:476:11: warning: variable ‘smoothok’ set but not used [-Wunused-but-set-variable=]
   476 |   boolean smoothok = TRUE;
       |           ^~~~~~~~
-  CC       libturbojpeg_la-jdcoefct.lo
-  CC       libturbojpeg_la-jdcolor.lo
-  CC       libturbojpeg_la-jddctmgr.lo
   CC       libturbojpeg_la-jdhuff.lo
   CC       libturbojpeg_la-jdinput.lo
   CC       libturbojpeg_la-jdmainct.lo
@@ -9652,8 +9652,8 @@ jcsample.c:476:11: warning: variable ‘smoothok’ set but not used [-Wunused-b
   CC       libturbojpeg_la-jutils.lo
   CC       libturbojpeg_la-jmemmgr.lo
   CC       libturbojpeg_la-jmemnobs.lo
-  CC       libturbojpeg_la-jaricom.lo
   CC       libturbojpeg_la-jcarith.lo
+  CC       libturbojpeg_la-jaricom.lo
   CC       libturbojpeg_la-jdarith.lo
   CC       libturbojpeg_la-turbojpeg.lo
   CC       libturbojpeg_la-transupp.lo
@@ -9663,6 +9663,9 @@ jcsample.c:476:11: warning: variable ‘smoothok’ set but not used [-Wunused-b
   CC       cjpeg-cjpeg.o
   CC       cjpeg-rdgif.o
   CC       cjpeg-rdppm.o
+  CC       cjpeg-rdswitch.o
+  CC       cjpeg-rdbmp.o
+  CC       cjpeg-rdtarga.o
 cjpeg.c: In function ‘parse_switches’:
 cjpeg.c:230:9: warning: unused variable ‘scansarg’ [-Wunused-variable]
   230 |   char *scansarg = NULL;        /* saves -scans parm if any */
@@ -9670,9 +9673,6 @@ cjpeg.c:230:9: warning: unused variable ‘scansarg’ [-Wunused-variable]
 cjpeg.c:225:11: warning: variable ‘simple_progressive’ set but not used [-Wunused-but-set-variable=]
   225 |   boolean simple_progressive;
       |           ^~~~~~~~~~~~~~~~~~
-  CC       cjpeg-rdswitch.o
-  CC       cjpeg-rdbmp.o
-  CC       cjpeg-rdtarga.o
   CC       djpeg-cdjpeg.o
   CC       djpeg-djpeg.o
   CC       djpeg-rdcolmap.o
@@ -9686,8 +9686,6 @@ cjpeg.c:225:11: warning: variable ‘simple_progressive’ set but not used [-Wu
   CC       cdjpeg.o
   CC       transupp.o
   CC       rdjpgcom.o
-  CC       wrjpgcom.o
-  CC       tjbench-tjbench.o
 jpegtran.c: In function ‘parse_switches’:
 jpegtran.c:137:9: warning: unused variable ‘scansarg’ [-Wunused-variable]
   137 |   char *scansarg = NULL;        /* saves -scans parm if any */
@@ -9695,6 +9693,8 @@ jpegtran.c:137:9: warning: unused variable ‘scansarg’ [-Wunused-variable]
 jpegtran.c:136:11: warning: variable ‘simple_progressive’ set but not used [-Wunused-but-set-variable=]
   136 |   boolean simple_progressive;
       |           ^~~~~~~~~~~~~~~~~~
+  CC       wrjpgcom.o
+  CC       tjbench-tjbench.o
   CC       tjbench-bmp.o
   CC       tjbench-tjutil.o
   CC       tjbench-rdbmp.o
@@ -9719,13 +9719,13 @@ ar: `u' modifier ignored since `D' is the default (see `U')
   CCLD     cjpeg
   CCLD     djpeg
   CCLD     jpegtran
+  CCLD     jcstest
   CCLD     rdjpgcom
   CCLD     wrjpgcom
-  CCLD     jcstest
   CCLD     libturbojpeg.la
 ar: `u' modifier ignored since `D' is the default (see `U')
-  CCLD     tjbench
   CCLD     tjunittest
+  CCLD     tjbench
 make[2]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/libjpeg-turbo-1.5.3'
 make[1]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/libjpeg-turbo-1.5.3'
 Making install in java
@@ -9966,69 +9966,69 @@ test -d scripts || mkdir scripts || test -d scripts
 /bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o pngwtran.lo pngwtran.c
 /bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o pngwutil.lo pngwutil.c
 gawk -f "./scripts/dfn.awk" out="scripts/vers.tf2" scripts/vers.tf1 1>&2
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngread.c  -fPIC -DPIC -o .libs/pngread.o
-rm -f scripts/vers.tf1
-mv scripts/vers.tf2 scripts/vers.out
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngget.c  -fPIC -DPIC -o .libs/pngget.o
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c png.c  -fPIC -DPIC -o .libs/png.o
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngpread.c  -fPIC -DPIC -o .libs/pngpread.o
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwrite.c  -fPIC -DPIC -o .libs/pngwrite.o
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngrio.c  -fPIC -DPIC -o .libs/pngrio.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngget.c  -fPIC -DPIC -o .libs/pngget.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngread.c  -fPIC -DPIC -o .libs/pngread.o
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngerror.c  -fPIC -DPIC -o .libs/pngerror.o
-/bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o mips/mips_init.lo mips/mips_init.c
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngmem.c  -fPIC -DPIC -o .libs/pngmem.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngpread.c  -fPIC -DPIC -o .libs/pngpread.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngrio.c  -fPIC -DPIC -o .libs/pngrio.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwutil.c  -fPIC -DPIC -o .libs/pngwutil.o
+rm -f scripts/vers.tf1
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngtrans.c  -fPIC -DPIC -o .libs/pngtrans.o
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwio.c  -fPIC -DPIC -o .libs/pngwio.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngrtran.c  -fPIC -DPIC -o .libs/pngrtran.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngset.c  -fPIC -DPIC -o .libs/pngset.o
+mv scripts/vers.tf2 scripts/vers.out
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngrutil.c  -fPIC -DPIC -o .libs/pngrutil.o
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwtran.c  -fPIC -DPIC -o .libs/pngwtran.o
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngtrans.c  -fPIC -DPIC -o .libs/pngtrans.o
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwutil.c  -fPIC -DPIC -o .libs/pngwutil.o
+/bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o mips/mips_init.lo mips/mips_init.c
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwrite.c  -fPIC -DPIC -o .libs/pngwrite.o
 /bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o mips/filter_msa_intrinsics.lo mips/filter_msa_intrinsics.c
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngrtran.c  -fPIC -DPIC -o .libs/pngrtran.o
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngmem.c  -fPIC -DPIC -o .libs/pngmem.o
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngset.c  -fPIC -DPIC -o .libs/pngset.o
 /bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o intel/intel_init.lo intel/intel_init.c
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c mips/filter_msa_intrinsics.c  -fPIC -DPIC -o mips/.libs/filter_msa_intrinsics.o
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c mips/mips_init.c  -fPIC -DPIC -o mips/.libs/mips_init.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c mips/filter_msa_intrinsics.c  -fPIC -DPIC -o mips/.libs/filter_msa_intrinsics.o
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c intel/intel_init.c  -fPIC -DPIC -o intel/.libs/intel_init.o
 /bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o intel/filter_sse2_intrinsics.lo intel/filter_sse2_intrinsics.c
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwio.c -o pngwio.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngrio.c -o pngrio.o >/dev/null 2>&1
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c mips/mips_init.c -o mips/mips_init.o >/dev/null 2>&1
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwio.c -o pngwio.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c intel/filter_sse2_intrinsics.c  -fPIC -DPIC -o intel/.libs/filter_sse2_intrinsics.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c mips/mips_init.c -o mips/mips_init.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c intel/intel_init.c -o intel/intel_init.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c mips/filter_msa_intrinsics.c -o mips/filter_msa_intrinsics.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngmem.c -o pngmem.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o powerpc/powerpc_init.lo powerpc/powerpc_init.c
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c intel/filter_sse2_intrinsics.c -o intel/filter_sse2_intrinsics.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o powerpc/powerpc_init.lo powerpc/powerpc_init.c
 /bin/sh ./libtool  --tag=CC   --mode=compile /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o powerpc/filter_vsx_intrinsics.lo powerpc/filter_vsx_intrinsics.c
 rm -f libpng.vers
 cp scripts/vers.out libpng.vers
 /bin/sh ./libtool  --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3  -fPIC   -O3 -o png-fix-itxt contrib/tools/png-fix-itxt.o  -lm -lz -lm 
 /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o contrib/libtests/pngunknown.o contrib/libtests/pngunknown.c
 /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o contrib/libtests/pngstest.o contrib/libtests/pngstest.c
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c powerpc/powerpc_init.c  -fPIC -DPIC -o powerpc/.libs/powerpc_init.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngget.c -o pngget.o >/dev/null 2>&1
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngread.c -o pngread.o >/dev/null 2>&1
 /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o contrib/libtests/pngvalid.o contrib/libtests/pngvalid.c
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c powerpc/filter_vsx_intrinsics.c  -fPIC -DPIC -o powerpc/.libs/filter_vsx_intrinsics.o
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c powerpc/powerpc_init.c  -fPIC -DPIC -o powerpc/.libs/powerpc_init.o
 In file included from /usr/include/signal.h:25,
                  from contrib/libtests/pngvalid.c:26:
 /usr/include/features.h:205:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
   205 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
       |   ^~~~~~~
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c powerpc/powerpc_init.c -o powerpc/powerpc_init.o >/dev/null 2>&1
 /usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o contrib/libtests/pngimage.o contrib/libtests/pngimage.c
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngerror.c -o pngerror.o >/dev/null 2>&1
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngget.c -o pngget.o >/dev/null 2>&1
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngset.c -o pngset.o >/dev/null 2>&1
-/usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o contrib/libtests/timepng.o contrib/libtests/timepng.c
 libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o png-fix-itxt contrib/tools/png-fix-itxt.o  -lz -lm
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngread.c -o pngread.o >/dev/null 2>&1
+/usr/bin/gcc -DHAVE_CONFIG_H -I.     -fPIC   -O3 -c -o contrib/libtests/timepng.o contrib/libtests/timepng.c
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c powerpc/powerpc_init.c -o powerpc/powerpc_init.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c powerpc/filter_vsx_intrinsics.c -o powerpc/filter_vsx_intrinsics.o >/dev/null 2>&1
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngset.c -o pngset.o >/dev/null 2>&1
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngerror.c -o pngerror.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwrite.c -o pngwrite.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngpread.c -o pngpread.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngtrans.c -o pngtrans.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwtran.c -o pngwtran.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c png.c -o png.o >/dev/null 2>&1
-libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwutil.c -o pngwutil.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngrutil.c -o pngrutil.o >/dev/null 2>&1
+libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngwutil.c -o pngwutil.o >/dev/null 2>&1
 libtool: compile:  /usr/bin/gcc -DHAVE_CONFIG_H -I. -fPIC -O3 -c pngrtran.c -o pngrtran.o >/dev/null 2>&1
 /bin/sh ./libtool  --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -no-undefined -export-dynamic -version-number 16:37:0  -Wl,--version-script=libpng.vers  -fPIC   -O3 -o libpng16.la -rpath /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib png.lo pngerror.lo pngget.lo pngmem.lo pngpread.lo pngread.lo pngrio.lo pngrtran.lo pngrutil.lo pngset.lo pngtrans.lo pngwio.lo pngwrite.lo pngwtran.lo pngwutil.lo  mips/mips_init.lo mips/filter_msa_intrinsics.lo intel/intel_init.lo intel/filter_sse2_intrinsics.lo powerpc/powerpc_init.lo powerpc/filter_vsx_intrinsics.lo   -lm -lz -lm 
 libtool: link: /usr/bin/gcc -shared  -fPIC -DPIC  .libs/png.o .libs/pngerror.o .libs/pngget.o .libs/pngmem.o .libs/pngpread.o .libs/pngread.o .libs/pngrio.o .libs/pngrtran.o .libs/pngrutil.o .libs/pngset.o .libs/pngtrans.o .libs/pngwio.o .libs/pngwrite.o .libs/pngwtran.o .libs/pngwutil.o mips/.libs/mips_init.o mips/.libs/filter_msa_intrinsics.o intel/.libs/intel_init.o intel/.libs/filter_sse2_intrinsics.o powerpc/.libs/powerpc_init.o powerpc/.libs/filter_vsx_intrinsics.o   -lz -lm  -O3 -Wl,--version-script=libpng.vers -O3   -Wl,-soname -Wl,libpng16.so.16 -o .libs/libpng16.so.16.37.0
@@ -10045,13 +10045,13 @@ libtool: link: ( cd ".libs" && rm -f "libpng16.la" && ln -s "../libpng16.la" "li
 /bin/sh ./libtool  --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3  -fPIC   -O3 -o pngimage contrib/libtests/pngimage.o libpng16.la -lm -lz -lm 
 /bin/sh ./libtool  --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3  -fPIC   -O3 -o pngcp contrib/tools/pngcp.o libpng16.la -lm -lz -lm 
 /bin/sh ./libtool  --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3  -fPIC   -O3 -o timepng contrib/libtests/timepng.o libpng16.la -lm -lz -lm 
-libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/pngtest pngtest.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/pngimage contrib/libtests/pngimage.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/pngfix contrib/tools/pngfix.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/timepng contrib/libtests/timepng.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/pngunknown contrib/libtests/pngunknown.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/pngstest contrib/libtests/pngstest.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/pngtest pngtest.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/pngfix contrib/tools/pngfix.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/pngcp contrib/tools/pngcp.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/timepng contrib/libtests/timepng.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 /bin/sh ./libtool  --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3  -fPIC   -O3 -o pngvalid contrib/libtests/pngvalid.o libpng16.la -lm -lz -lm 
 libtool: link: /usr/bin/gcc -fPIC -O3 -fPIC -O3 -o .libs/pngvalid contrib/libtests/pngvalid.o  ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 make[1]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/libpng-1.6.37'
@@ -10084,30 +10084,30 @@ make[3]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
 SKIP: tests/pngtest
 SKIP: tests/pngstest-1.8
 SKIP: tests/pngstest-1.8-alpha
-SKIP: tests/pngstest-linear-alpha
 SKIP: tests/pngstest-linear
+SKIP: tests/pngstest-linear-alpha
 SKIP: tests/pngstest-none
 SKIP: tests/pngunknown-IDAT
 SKIP: tests/pngstest-none-alpha
-SKIP: tests/pngstest-sRGB
 SKIP: tests/pngstest-sRGB-alpha
+SKIP: tests/pngstest-sRGB
 SKIP: tests/pngunknown-discard
-SKIP: tests/pngunknown-if-safe
-SKIP: tests/pngunknown-sTER
 SKIP: tests/pngunknown-sAPI
+SKIP: tests/pngunknown-if-safe
 SKIP: tests/pngunknown-save
+SKIP: tests/pngunknown-sTER
 SKIP: tests/pngtest-badpngs
 SKIP: tests/pngunknown-vpAg
 SKIP: tests/pngimage-quick
 SKIP: tests/pngimage-full
+PASS: tests/pngvalid-gamma-alpha-mode
 PASS: tests/pngvalid-gamma-expand16-alpha-mode
 PASS: tests/pngvalid-gamma-threshold
-PASS: tests/pngvalid-gamma-transform
 PASS: tests/pngvalid-gamma-sbit
+PASS: tests/pngvalid-gamma-expand16-transform
 PASS: tests/pngvalid-gamma-expand16-background
 PASS: tests/pngvalid-gamma-16-to-8
-PASS: tests/pngvalid-gamma-expand16-transform
-PASS: tests/pngvalid-gamma-alpha-mode
+PASS: tests/pngvalid-gamma-transform
 PASS: tests/pngvalid-gamma-background
 PASS: tests/pngvalid-standard
 PASS: tests/pngvalid-progressive-interlace-standard
@@ -10134,17 +10134,17 @@ make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
  /usr/bin/mkdir -p '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib'
  /usr/bin/mkdir -p '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/bin'
  /usr/bin/mkdir -p '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/libpng16'
- /bin/sh ./libtool   --mode=install /usr/bin/install -c   libpng16.la '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib'
- /usr/bin/mkdir -p '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib/pkgconfig'
  /usr/bin/mkdir -p '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/man/man3'
+ /usr/bin/mkdir -p '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib/pkgconfig'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libpng16.la '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib'
  /usr/bin/mkdir -p '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/libpng16'
  /usr/bin/mkdir -p '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/man/man5'
  /usr/bin/install -c -m 644 pnglibconf.h '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/libpng16'
- /usr/bin/install -c -m 644 png.h pngconf.h '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/libpng16'
  /usr/bin/install -c -m 644 libpng16.pc '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib/pkgconfig'
  /usr/bin/install -c libpng16-config '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/bin'
- /usr/bin/install -c -m 644 png.5 '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/man/man5'
+ /usr/bin/install -c -m 644 png.h pngconf.h '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include/libpng16'
  /usr/bin/install -c -m 644 libpng.3 libpngpf.3 '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/man/man3'
+ /usr/bin/install -c -m 644 png.5 '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/share/man/man5'
 /usr/bin/make  install-data-hook
 make[3]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/libpng-1.6.37'
 + cd /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/include
@@ -10157,11 +10157,11 @@ make[3]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
 + for f in pnglibconf.h png.h pngconf.h
 + rm -f png.h
 + ln -s libpng16/png.h png.h
-libtool: install: /usr/bin/install -c .libs/libpng16.so.16.37.0 /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib/libpng16.so.16.37.0
 + for f in pnglibconf.h png.h pngconf.h
 + rm -f pngconf.h
-libtool: install: (cd /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib && { ln -s -f libpng16.so.16.37.0 libpng16.so.16 || { rm -f libpng16.so.16 && ln -s libpng16.so.16.37.0 libpng16.so.16; }; })
+libtool: install: /usr/bin/install -c .libs/libpng16.so.16.37.0 /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib/libpng16.so.16.37.0
 + ln -s libpng16/pngconf.h pngconf.h
+libtool: install: (cd /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib && { ln -s -f libpng16.so.16.37.0 libpng16.so.16 || { rm -f libpng16.so.16 && ln -s libpng16.so.16.37.0 libpng16.so.16; }; })
 make[3]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/libpng-1.6.37'
 libtool: install: (cd /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib && { ln -s -f libpng16.so.16.37.0 libpng16.so || { rm -f libpng16.so && ln -s libpng16.so.16.37.0 libpng16.so; }; })
 libtool: install: /usr/bin/install -c .libs/libpng16.lai /build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib/libpng16.la
@@ -10394,15 +10394,15 @@ make[2]: Entering directory '/build/lyrionmusicserver-git/src/slimserver-vendor/
 mkdir .libs
 mkdir .libs
 mkdir: cannot create directory '.libs': File exists
- /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c dev2gif.c  -fPIC -DPIC -o .libs/dev2gif.o
- /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gif_err.c  -fPIC -DPIC -o .libs/gif_err.o
- /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c dgif_lib.c  -fPIC -DPIC -o .libs/dgif_lib.o
  /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c egif_lib.c  -fPIC -DPIC -o .libs/egif_lib.o
+ /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c dgif_lib.c  -fPIC -DPIC -o .libs/dgif_lib.o
  /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gif_hash.c  -fPIC -DPIC -o .libs/gif_hash.o
- /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c quantize.c  -fPIC -DPIC -o .libs/quantize.o
- /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gifalloc.c  -fPIC -DPIC -o .libs/gifalloc.o
  /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c qprintf.c  -fPIC -DPIC -o .libs/qprintf.o
+ /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gif_err.c  -fPIC -DPIC -o .libs/gif_err.o
+ /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c quantize.c  -fPIC -DPIC -o .libs/quantize.o
+ /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c dev2gif.c  -fPIC -DPIC -o .libs/dev2gif.o
  /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gif_font.c  -fPIC -DPIC -o .libs/gif_font.o
+ /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gifalloc.c  -fPIC -DPIC -o .libs/gifalloc.o
 dev2gif.c: In function 'DumpScreen2Gif':
 dev2gif.c:94:15: warning: unused variable 'k' [-Wunused-variable]
    94 |     int i, j, k;
@@ -10445,8 +10445,8 @@ egif_lib.c:1036:9: warning: 'strncpy' output truncated before terminating nul co
  1036 |         strncpy(GifVersionPrefix, GIF87_STAMP, GIF_STAMP_LEN);
       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c qprintf.c -o qprintf.o >/dev/null 2>&1
- /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c dev2gif.c -o dev2gif.o >/dev/null 2>&1
  /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gif_err.c -o gif_err.o >/dev/null 2>&1
+ /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c dev2gif.c -o dev2gif.o >/dev/null 2>&1
  /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gif_hash.c -o gif_hash.o >/dev/null 2>&1
  /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gif_font.c -o gif_font.o >/dev/null 2>&1
  /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -fPIC -O3 -Wno-implicit-function-declaration -Wall -c gifalloc.c -o gifalloc.o >/dev/null 2>&1
@@ -10520,89 +10520,89 @@ gifcomb.c:113:34: warning: self-comparison always evaluates to false [-Wtautolog
 /usr/bin/gcc -DHAVE_CONFIG_H -I. -I..  -I. -I../lib   -fPIC   -O3 -Wno-implicit-function-declaration -Wall -c gifinfo.c
 /usr/bin/gcc -DHAVE_CONFIG_H -I. -I..  -I. -I../lib   -fPIC   -O3 -Wno-implicit-function-declaration -Wall -c gifclrmp.c
 /usr/bin/gcc -DHAVE_CONFIG_H -I. -I..  -I. -I../lib   -fPIC   -O3 -Wno-implicit-function-declaration -Wall -c gifrotat.c
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gif2rgb gif2rgb.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifcomb gifcomb.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o giffix giffix.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifinter gifinter.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifinto gifinto.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifovly gifovly.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifpos gifpos.o ../lib/libgif.la ../lib/libgetarg.a 
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifrsize gifrsize.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifwedge gifwedge.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o raw2gif raw2gif.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o rgb2gif rgb2gif.o ../lib/libgif.la ../lib/libgetarg.a 
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o text2gif text2gif.o ../lib/libgif.la ../lib/libgetarg.a 
 mkdir .libs
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifspnge gifspnge.o ../lib/libgif.la ../lib/libgetarg.a 
 /bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o giffiltr giffiltr.o ../lib/libgif.la ../lib/libgetarg.a 
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gif2ps gif2ps.o ../lib/libgif.la ../lib/libgetarg.a 
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gif2rgb gif2rgb.o ../lib/libgif.la ../lib/libgetarg.a 
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifasm gifasm.o ../lib/libgif.la ../lib/libgetarg.a 
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/giffix giffix.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 /usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifcomb gifcomb.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifinter gifinter.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifinto gifinto.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifclip gifclip.o ../lib/libgif.la ../lib/libgetarg.a 
-/usr/bin/ld: gifinto.o: in function `/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifflip gifflip.o ../lib/libgif.la ../lib/libgetarg.a 
-main':
-gifinto.c:(.text.startup+0x12f): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
-creating giffix
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifovly gifovly.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifpos gifpos.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifhisto gifhisto.o ../lib/libgif.la ../lib/libgetarg.a 
-creating gifcomb
-creating gifinter
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifwedge gifwedge.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/raw2gif raw2gif.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-creating gifinto
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/rgb2gif rgb2gif.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifrsize gifrsize.o ../lib/libgif.la ../lib/libgetarg.a 
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o giftext giftext.o ../lib/libgif.la ../lib/libgetarg.a 
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o text2gif text2gif.o ../lib/libgif.la ../lib/libgetarg.a 
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifcolor gifcolor.o ../lib/libgif.la ../lib/libgetarg.a 
-creating gifovly
-creating gifpos
-creating gifwedge
-creating raw2gif
-creating rgb2gif
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifspnge gifspnge.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifinfo gifinfo.o ../lib/libgif.la ../lib/libgetarg.a 
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifrotat gifrotat.o ../lib/libgif.la ../lib/libgetarg.a  -lm 
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifbg gifbg.o ../lib/libgif.la ../lib/libgetarg.a 
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifclrmp gifclrmp.o ../lib/libgif.la ../lib/libgetarg.a  -lm 
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/giffiltr giffiltr.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gif2ps gif2ps.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 /usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gif2rgb gif2rgb.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-creating gifspnge
-creating gif2ps
-creating giffiltr
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifasm gifasm.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifinter gifinter.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/giffix giffix.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifinto gifinto.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifinfo gifinfo.o ../lib/libgif.la ../lib/libgetarg.a 
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifovly gifovly.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/ld: gifinto.o: in function `main':
+gifinto.c:(.text.startup+0x12f): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gif2ps gif2ps.o ../lib/libgif.la ../lib/libgetarg.a 
+creating gifcomb
 creating gif2rgb
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifclip gifclip.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-creating gifasm
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifflip gifflip.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o icon2gif icon2gif.o ../lib/libgif.la ../lib/libgetarg.a 
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifhisto gifhisto.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-creating gifclip
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifasm gifasm.o ../lib/libgif.la ../lib/libgetarg.a 
+creating gifinter
+creating gifinto
+creating giffix
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifpos gifpos.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 /usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifrsize gifrsize.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+creating gifovly
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifbg gifbg.o ../lib/libgif.la ../lib/libgetarg.a 
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifclip gifclip.o ../lib/libgif.la ../lib/libgetarg.a 
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifflip gifflip.o ../lib/libgif.la ../lib/libgetarg.a 
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/raw2gif raw2gif.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifwedge gifwedge.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifhisto gifhisto.o ../lib/libgif.la ../lib/libgetarg.a 
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/rgb2gif rgb2gif.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o giftext giftext.o ../lib/libgif.la ../lib/libgetarg.a 
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifcolor gifcolor.o ../lib/libgif.la ../lib/libgetarg.a 
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifclrmp gifclrmp.o ../lib/libgif.la ../lib/libgetarg.a  -lm 
 /usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/text2gif text2gif.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gif2epsn gif2epsn.o ../lib/libgif.la ../lib/libgetarg.a 
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/giftext giftext.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-creating gifflip
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifcolor gifcolor.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-creating gifhisto
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifinfo gifinfo.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-creating text2gif
+creating gifpos
 creating gifrsize
-creating giftext
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifbg gifbg.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-creating gifcolor
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifrotat gifrotat.o  ../lib/.libs/libgif.so ../lib/libgetarg.a -lm  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifclrmp gifclrmp.o  ../lib/.libs/libgif.so ../lib/libgetarg.a -lm  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+creating raw2gif
+creating gifwedge
+creating rgb2gif
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gifrotat gifrotat.o ../lib/libgif.la ../lib/libgetarg.a  -lm 
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifspnge gifspnge.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+creating text2gif
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/giffiltr giffiltr.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+creating gifspnge
+creating giffiltr
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifinfo gifinfo.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gif2ps gif2ps.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifasm gifasm.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 creating gifinfo
+creating gif2ps
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o icon2gif icon2gif.o ../lib/libgif.la ../lib/libgetarg.a 
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifbg gifbg.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifclip gifclip.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifflip gifflip.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/giftext giftext.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifcolor gifcolor.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifhisto gifhisto.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+creating gifasm
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifclrmp gifclrmp.o  ../lib/.libs/libgif.so ../lib/libgetarg.a -lm  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 creating gifbg
+creating gifflip
+creating gifclip
+creating gifhisto
+creating gifcolor
+creating giftext
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gifrotat gifrotat.o  ../lib/.libs/libgif.so ../lib/libgetarg.a -lm  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc  -fPIC   -O3 -Wno-implicit-function-declaration -Wall  -fPIC   -O3 -Wno-implicit-function-declaration -o gif2epsn gif2epsn.o ../lib/libgif.la ../lib/libgetarg.a 
 creating gifclrmp
 creating gifrotat
 /usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/icon2gif icon2gif.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
-/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gif2epsn gif2epsn.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 creating icon2gif
+/usr/bin/gcc -fPIC -O3 -Wno-implicit-function-declaration -Wall -fPIC -O3 -Wno-implicit-function-declaration -o .libs/gif2epsn gif2epsn.o  ../lib/.libs/libgif.so ../lib/libgetarg.a  -Wl,--rpath -Wl,/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/build/lib
 creating gif2epsn
 make[2]: Leaving directory '/build/lyrionmusicserver-git/src/slimserver-vendor/CPAN/giflib-4.1.6/util'
 Making all in doc
