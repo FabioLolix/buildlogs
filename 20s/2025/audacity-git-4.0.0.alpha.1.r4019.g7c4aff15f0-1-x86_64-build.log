@@ -1,0 +1,57 @@
+CMake Warning (deprecated) at CMakeLists.txt:9 (cmake_policy):
+  The OLD behavior for policy CMP0091 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detected CPU Architecture: x86_64
+-- MUSE_APP_VERSION 4.0.0
+-- AU4_BUILD_CONFIGURATION: app
+-- AU4_BUILD_MODE: release
+-- AU4_BUILD_NUMBER: 
+-- Using Compiler GCC 16.2.1
+-- Setup development environment
+-- No compiler cache program found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Cups: /usr/lib/libcups.so (found version "2.4.20")
+-- Qt version: 6.12.0
+-- Setup dependencies
+CMake Error at muse_deps/buildtools/resolve.cmake:176 (message):
+  [libid3tag] system header 'id3tag.h' not found (USE_SYSTEM)
+Call Stack (most recent call first):
+  muse_deps/buildtools/resolve.cmake:477 (_extdeps_resolve_system)
+  muse_deps/buildtools/manifest.cmake:109 (extdeps_resolve)
+  muse_deps/buildtools/manifest.cmake:177 (_extdeps_run)
+  buildscripts/cmake/DependencyManifest.cmake:27 (require_dep)
+  buildscripts/cmake/SetupDependencies.cmake:15 (include)
+  CMakeLists.txt:198 (include)
+
+
+-- Configuring incomplete, errors occurred!
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
