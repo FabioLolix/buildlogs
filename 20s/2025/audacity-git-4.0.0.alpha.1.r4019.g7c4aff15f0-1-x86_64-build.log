@@ -41,9 +41,10 @@ to suppress it.
 -- Found Cups: /usr/lib/libcups.so (found version "2.4.20")
 -- Qt version: 6.12.0
 -- Setup dependencies
-CMake Error at muse_deps/buildtools/resolve.cmake:176 (message):
-  [libid3tag] system header 'id3tag.h' not found (USE_SYSTEM)
+CMake Error at muse_deps/buildtools/resolve.cmake:165 (message):
+  [libid3tag] system lib 'libid3tag' not found (USE_SYSTEM)
 Call Stack (most recent call first):
+  muse_deps/buildtools/resolve.cmake:187 (_extdeps_find_system_libs)
   muse_deps/buildtools/resolve.cmake:477 (_extdeps_resolve_system)
   muse_deps/buildtools/manifest.cmake:109 (extdeps_resolve)
   muse_deps/buildtools/manifest.cmake:177 (_extdeps_run)
