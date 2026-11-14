@@ -1,0 +1,37 @@
+gnome-disk-utility has no wrap files
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 gnome-disk-utility build
+The Meson build system
+Version: 1.12.1
+Source dir: /build/gnome-disk-utility-git/src/gnome-disk-utility
+Build dir: /build/gnome-disk-utility-git/src/build
+Build type: native build
+Project name: gnome-disk-utility
+Project version: 51.beta
+C compiler for the host machine: cc (gcc 16.2.1 "cc (GCC) 16.2.1 20260810")
+C linker for the host machine: cc ld.bfd 2.47
+Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+Rust linker for the host machine:  ld.bfd 2.47
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency dvdread found: YES 7.1.1
+Run-time dependency gio-unix-2.0 found: YES 2.90.1
+Run-time dependency gmodule-2.0 found: YES 2.90.1
+Run-time dependency gtk4 found: YES 4.24.1
+Run-time dependency libadwaita-1 found: YES 1.10.0
+Run-time dependency liblzma found: YES 5.8.4
+Run-time dependency libnotify found: YES 0.8.9
+Run-time dependency libsecret-1 found: YES 0.21.8.2
+Run-time dependency pwquality found: YES 1.4.5
+Run-time dependency udisks2 found: YES 2.11.2
+Library m found: YES
+Run-time dependency libsystemd found: YES 262
+Run-time dependency systemd found: YES 262
+Program cargo found: YES (/build/gnome-disk-utility-git/src/cargo)
+Program blueprint-compiler found: NO
+
+gnome-disk-utility/meson.build:117:16: ERROR: Program 'blueprint-compiler' not found or not executable
+
+A full log can be found at /build/gnome-disk-utility-git/src/build/meson-logs/meson-log.txt
+[1m[31m==> ERROR:(B[m[1m A failure occurred in build().(B[m
+[1m    Aborting...(B[m
