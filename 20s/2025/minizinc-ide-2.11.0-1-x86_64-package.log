@@ -1,0 +1,8 @@
+cd MiniZincIDE/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /build/minizinc-ide/src/MiniZincIDE/MiniZincIDE/MiniZincIDE.pro ) && make -f Makefile install
+cd tests/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /build/minizinc-ide/src/MiniZincIDE/tests/tests.pro ) && make -f Makefile install
+make[1]: Entering directory '/build/minizinc-ide/src/MiniZincIDE/tests'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/build/minizinc-ide/src/MiniZincIDE/tests'
+make[1]: Entering directory '/build/minizinc-ide/src/MiniZincIDE/MiniZincIDE'
+/usr/bin/qmake6 -install qinstall -exe MiniZincIDE /build/minizinc-ide/pkg/minizinc-ide/usr/bin/MiniZincIDE
+make[1]: Leaving directory '/build/minizinc-ide/src/MiniZincIDE/MiniZincIDE'
