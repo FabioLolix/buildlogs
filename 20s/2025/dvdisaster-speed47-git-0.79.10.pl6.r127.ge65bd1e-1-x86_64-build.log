@@ -1,0 +1,346 @@
+Bash based configure V0.60
+
+Build environment: Linux, using settings: linux-std
+
+Configuring package dvdisaster, version 0.79.10.
+
+Checking for gmake: yes
+Checking for gcc: yes (/usr/bin/gcc)
+Source directory:  /build/dvdisaster-speed47-git/src/dvdisaster
+Package name:  dvdisaster
+Installation prefix:  /usr
+Binary directory:  /usr/bin
+Man page directory:  /usr/share/man
+Documentation directory:  /usr/share/doc
+Documentation sub directory:  dvdisaster
+Locale directory:  /usr/share/locale
+Build root: none (this is what you normally want)
+Build tmp:  /build/dvdisaster-speed47-git/src/dvdisaster/build (created)
+
+Determining build flavor:
+ with gui: yes
+
+Looking for includes and libraries:
+GLib 2.36.0 is required... 
+ pkg-config... works
+ test compile... works
+ Checking for GLIB version >= 2.36.0. Found version 2.90.1. Okay.
+
+Gtk+ 3.4.0 is required...
+ pkg-config... works
+ test preprocessing... works
+ Checking for GTK+ version >= 3.4.0. Found version 3.24.52. Okay.
+Checking for locale.h: yes
+Checking for libintl.h: yes
+Checking for cpuid.h: yes
+Checking for libintl: no
+Checking for libcam: no
+
+Checking for functions and symbols...
+ mmap: yes
+ getopt_long: yes
+ gettext: yes
+ round: yes
+ O_LARGEFILE in fcntl.h: yes
+
+Checking byte order... little endian
+Checking bitness... 64bit
+Checking for SSE2... yes
+Checking for AVX2 intrinsics and runtime detection... yes
+Checking for GFNI intrinsics and runtime detection... yes
+Checking for AltiVec... no
+Checking for AArch64 NEON encoder intrinsics... no
+Checking for Linux AArch64 CRC32 intrinsics and runtime detection... no
+
+Checking for additional tools...
+ xgettext: present
+ msgmerge: present
+ msgfmt: present
+ gdk_pixbuf_csource: present
+
+Additional configuration options:
+ with nls: yes
+ with embedded-src-path: yes
+
+Debugging options (do not use in production system):
+ with memdebug: no
+ with debug-printf-format: no
+ with werror: no
+ with debug: no
+ with efence: no
+
+Collecting source files:
+ /build/dvdisaster-speed47-git/src/dvdisaster/build/inlined-icons src/bitmap src/build src/cacheprobe src/closure src/crc32 src/crcbuf src/curve src/debug src/ds-marker src/dvdisaster src/ecc-rs01 src/ecc-rs02 src/ecc-rs03 src/endian src/galois src/help-dialogs src/heuristic-lec src/image src/l-ec src/large-io src/logfile src/main-window src/maintenance src/md5 src/medium-info src/memtrack src/menubar src/method src/misc-gui src/misc src/preferences src/print-sense src/random src/raw-editor src/raw-sector-cache src/read-adaptive-window src/read-adaptive src/read-linear-window src/read-linear src/recover-raw src/report src/rs-decoder src/rs-encoder-altivec src/rs-encoder-avx2 src/rs-encoder-neon src/rs-encoder-sse2 src/rs-encoder src/rs01-common src/rs01-create src/rs01-fix src/rs01-verify src/rs01-window src/rs02-common src/rs02-create src/rs02-fix src/rs02-recognize src/rs02-verify src/rs02-window src/rs03-common src/rs03-create src/rs03-fix src/rs03-preferences src/rs03-recognize src/rs03-verify src/rs03-window src/scsi-darwin src/scsi-freebsd src/scsi-layer src/scsi-linux src/scsi-netbsd src/scsi-simulated src/scsi-unknown src/scsi-win32 src/show-manual src/smart-lec src/spiral src/udf src/welcome-window src/xorriso-md5
+
+Collecting methods:
+ rs01 rs02 rs03
+
+Configuration is complete.
+Type 'make show' to verify the settings,
+or enter 'make' to start the build immediately.
+
+* Note that your $CFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/dvdisaster-speed47-git/src=/usr/src/debug/dvdisaster-speed47-git -flto=auto
+* have been included into the configuration.
+* It is recommended not to specify additional $CFLAGS,
+* but feel free to continue at your own risk.
+
+* Note that your $LDFLAGS=-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto
+* have been included into the configuration.
+* It is recommended not to specify additional $LDFLAGS,
+* but feel free to continue at your own risk.
+
+Compiling: src/method-link.c
+Generating: /build/dvdisaster-speed47-git/src/dvdisaster/build/inlined-icons.c
+Compiling: src/bitmap.c
+Updating: src/build.h
+Compiling: src/cacheprobe.c
+Compiling: src/crc32.c
+Compiling: src/crcbuf.c
+Compiling: src/curve.c
+Compiling: src/debug.c
+Compiling: src/ds-marker.c
+Compiling: src/dvdisaster.c
+Compiling: src/ecc-rs01.c
+Compiling: src/ecc-rs02.c
+Compiling: src/ecc-rs03.c
+Compiling: src/endian.c
+Compiling: src/galois.c
+Compiling: src/heuristic-lec.c
+Compiling: src/help-dialogs.c
+Compiling: src/image.c
+Compiling: src/l-ec.c
+Compiling: src/large-io.c
+Compiling: src/logfile.c
+Compiling: src/main-window.c
+Compiling: src/maintenance.c
+Compiling: src/md5.c
+Compiling: src/medium-info.c
+Compiling: src/memtrack.c
+Compiling: src/menubar.c
+Compiling: src/method.c
+Compiling: src/misc-gui.c
+Compiling: src/misc.c
+Compiling: src/preferences.c
+Compiling: src/print-sense.c
+Compiling: src/random.c
+Compiling: src/raw-editor.c
+Compiling: src/raw-sector-cache.c
+Compiling: src/read-adaptive-window.c
+Compiling: src/read-adaptive.c
+Compiling: src/read-linear-window.c
+Compiling: src/read-linear.c
+Compiling: src/recover-raw.c
+Compiling: src/report.c
+Compiling: src/rs-decoder.c
+Compiling: src/rs-encoder-altivec.c
+Compiling: src/rs-encoder-avx2.c
+Compiling: src/rs-encoder-neon.c
+Compiling: src/rs-encoder-sse2.c
+Compiling: src/rs-encoder.c
+Compiling: src/rs01-common.c
+Compiling: src/rs01-create.c
+Compiling: src/rs01-fix.c
+Compiling: src/rs01-verify.c
+Compiling: src/rs01-window.c
+Compiling: src/rs02-create.c
+Compiling: src/rs02-common.c
+Compiling: src/rs02-fix.c
+Compiling: src/rs02-recognize.c
+Compiling: src/rs02-verify.c
+Compiling: src/rs02-window.c
+Compiling: src/rs03-common.c
+Compiling: src/rs03-create.c
+Compiling: src/rs03-fix.c
+Compiling: src/rs03-preferences.c
+Compiling: src/rs03-recognize.c
+Compiling: src/rs03-verify.c
+Compiling: src/rs03-window.c
+src/rs01-verify.c: In function ‘ResetRS01VerifyWindow’:
+src/rs01-verify.c:42:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   42 |    GuiSetLabelText(wl->cmpImageResult, "");
+      |                                        ^~
+src/rs01-verify.c:43:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   43 |    GuiSetLabelText(wl->cmpXorrisoTags, "");
+      |                                        ^~
+src/rs01-verify.c:46:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   46 |    GuiSetLabelText(wl->cmpEccEmptyMsg, "");
+      |                                        ^~
+src/rs01-verify.c:48:38: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   48 |    GuiSetLabelText(wl->cmpEccMethod, "");
+      |                                      ^~
+src/rs01-verify.c:49:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   49 |    GuiSetLabelText(wl->cmpEccRequires, "");
+      |                                        ^~
+src/rs01-verify.c:50:45: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   50 |    GuiSetLabelText(wl->cmpEccMediumSectors, "");
+      |                                             ^~
+src/rs01-verify.c:51:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   51 |    GuiSetLabelText(wl->cmpEccImgMd5Sum, "");
+      |                                         ^~
+src/rs01-verify.c:53:38: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   53 |    GuiSetLabelText(wl->cmpEccBlocks, "");
+      |                                      ^~
+src/rs01-verify.c:54:38: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   54 |    GuiSetLabelText(wl->cmpEccMd5Sum, "");
+      |                                      ^~
+src/rs01-verify.c:55:38: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   55 |    GuiSetLabelText(wl->cmpEccResult, "");
+      |                                      ^~
+Compiling: src/scsi-darwin.c
+Compiling: src/scsi-freebsd.c
+Compiling: src/scsi-layer.c
+Compiling: src/scsi-linux.c
+Compiling: src/scsi-netbsd.c
+src/rs02-verify.c: In function ‘ResetRS02VerifyWindow’:
+src/rs02-verify.c:38:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   38 |    GuiSetLabelText(wl->cmpImageSectors, "");
+      |                                         ^~
+src/rs02-verify.c:39:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   39 |    GuiSetLabelText(wl->cmpImageMd5Sum, "");
+      |                                        ^~
+src/rs02-verify.c:40:39: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   40 |    GuiSetLabelText(wl->cmpEccHeaders, "");
+      |                                       ^~
+src/rs02-verify.c:41:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   41 |    GuiSetLabelText(wl->cmpDataSection, "");
+      |                                        ^~
+src/rs02-verify.c:42:39: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   42 |    GuiSetLabelText(wl->cmpCrcSection, "");
+      |                                       ^~
+src/rs02-verify.c:43:39: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   43 |    GuiSetLabelText(wl->cmpEccSection, "");
+      |                                       ^~
+src/rs02-verify.c:44:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   44 |    GuiSetLabelText(wl->cmpImageResult, "");
+      |                                        ^~
+src/rs02-verify.c:45:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   45 |    GuiSetLabelText(wl->cmpXorrisoTags, "");
+      |                                        ^~
+src/rs02-verify.c:48:38: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   48 |    GuiSetLabelText(wl->cmpEccMethod, "");
+      |                                      ^~
+src/rs02-verify.c:49:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   49 |    GuiSetLabelText(wl->cmpEccRequires, "");
+      |                                        ^~
+src/rs02-verify.c:50:45: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   50 |    GuiSetLabelText(wl->cmpEccMediumSectors, "");
+      |                                             ^~
+src/rs02-verify.c:54:36: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   54 |    GuiSetLabelText(wl->cmpEcc1Msg, "");
+      |                                    ^~
+src/rs02-verify.c:55:36: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   55 |    GuiSetLabelText(wl->cmpEcc2Msg, "");
+      |                                    ^~
+src/rs02-verify.c:56:36: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   56 |    GuiSetLabelText(wl->cmpEcc3Msg, "");
+      |                                    ^~
+Compiling: src/scsi-simulated.c
+Compiling: src/scsi-unknown.c
+Compiling: src/scsi-win32.c
+Compiling: src/show-manual.c
+Compiling: src/smart-lec.c
+src/rs03-create.c: In function ‘create_reed_solomon’:
+src/rs03-create.c:1172:47: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+ 1172 |       GuiSetLabelText(ec->wl->encPerformance, "");
+      |                                               ^~
+src/rs03-create.c:1173:46: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+ 1173 |       GuiSetLabelText(ec->wl->encBottleneck, "");
+      |                                              ^~
+Compiling: src/spiral.c
+Compiling: src/udf.c
+Compiling: src/welcome-window.c
+Compiling: src/xorriso-md5.c
+/usr/bin/gcc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/build/dvdisaster-speed47-git/src=/usr/src/debug/dvdisaster-speed47-git -flto=auto -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -I. -pipe  -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cloudproviders -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/atk-1.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread -Wno-format-security -O2 -fomit-frame-pointer   -c -o /build/dvdisaster-speed47-git/src/dvdisaster/build/inlined-icons.o /build/dvdisaster-speed47-git/src/dvdisaster/build/inlined-icons.c
+src/rs03-verify.c: In function ‘ResetRS03VerifyWindow’:
+src/rs03-verify.c:38:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   38 |    GuiSetLabelText(wl->cmpImageSectors, "");
+      |                                         ^~
+src/rs03-verify.c:39:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   39 |    GuiSetLabelText(wl->cmpImageMd5Sum, "");
+      |                                        ^~
+src/rs03-verify.c:40:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   40 |    GuiSetLabelText(wl->cmpDataSection, "");
+      |                                        ^~
+src/rs03-verify.c:41:39: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   41 |    GuiSetLabelText(wl->cmpCrcSection, "");
+      |                                       ^~
+src/rs03-verify.c:42:39: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   42 |    GuiSetLabelText(wl->cmpEccSection, "");
+      |                                       ^~
+src/rs03-verify.c:43:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   43 |    GuiSetLabelText(wl->cmpImageErasure, "");
+      |                                         ^~
+src/rs03-verify.c:44:43: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   44 |    GuiSetLabelText(wl->cmpImagePrognosis, "");
+      |                                           ^~
+src/rs03-verify.c:45:44: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   45 |    GuiSetLabelText(wl->cmpImageErasureCnt, "");
+      |                                            ^~
+src/rs03-verify.c:46:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   46 |    GuiSetLabelText(wl->cmpImageMargin, "");
+      |                                        ^~
+src/rs03-verify.c:47:43: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   47 |    GuiSetLabelText(wl->cmpImageMarginMsg, "");
+      |                                           ^~
+src/rs03-verify.c:48:46: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   48 |    GuiSetLabelText(wl->cmpImagePrognosisMsg, "");
+      |                                              ^~
+src/rs03-verify.c:49:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   49 |    GuiSetLabelText(wl->cmpImageResult, "");
+      |                                        ^~
+src/rs03-verify.c:50:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   50 |    GuiSetLabelText(wl->cmpXorrisoTags, "");
+      |                                        ^~
+src/rs03-verify.c:54:38: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   54 |    GuiSetLabelText(wl->cmpEccMethod, "");
+      |                                      ^~
+src/rs03-verify.c:55:36: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   55 |    GuiSetLabelText(wl->cmpEccType, "");
+      |                                    ^~
+src/rs03-verify.c:56:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   56 |    GuiSetLabelText(wl->cmpEccRequires, "");
+      |                                        ^~
+src/rs03-verify.c:58:42: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   58 |    GuiSetLabelText(wl->cmpEccDataCrcVal, "");
+      |                                          ^~
+src/rs03-verify.c:60:38: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   60 |    GuiSetLabelText(wl->cmpEccResult, "");
+      |                                      ^~
+Compiling: src/build.o
+src/rs03-verify.c:61:40: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   61 |    GuiSetLabelText(wl->cmpEccSynLabel, "");
+      |                                        ^~
+src/rs03-verify.c:62:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   62 |    GuiSetLabelText(wl->cmpEccSyndromes, "");
+      |                                         ^~
+src/rs03-verify.c: In function ‘RS03Verify’:
+src/rs03-verify.c:1337:41: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+ 1337 |    GuiSetLabelText(wl->cmpEccSyndromes, "");
+      |                                         ^~
+Compiling: src/closure.c
+src/scsi-layer.c: In function ‘TestUnitReady’:
+src/scsi-layer.c:2269:43: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+ 2269 |          GuiSetLabelText(Closure->status, "");
+      |                                           ^~
+src/scsi-layer.c:2298:37: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+ 2298 |    GuiSetLabelText(Closure->status, "");
+      |                                     ^~
+src/scsi-layer.c: In function ‘pause_after_read_error’:
+src/scsi-layer.c:2542:37: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+ 2542 |    GuiSetLabelText(Closure->status, "");
+      |                                     ^~
+Linking  : dvdisaster
+src/help-dialogs.c:777: warning: Message contains an embedded email address.  Better move it out of the translatable string, see https://www.gnu.org/software/gettext/manual/html_node/No-embedded-URLs.html
+src/help-dialogs.c:793: warning: Message contains an embedded email address.  Better move it out of the translatable string, see https://www.gnu.org/software/gettext/manual/html_node/No-embedded-URLs.html
+Updating cs.po
+Updating de.po
+Updating it.po
+Updating ru.po
+Updating sv.po
+Updating pt_BR.po
+Updating it.mo
+Updating pt_BR.mo
+Updating sv.mo
+Updating cs.mo
+Updating de.mo
+Updating ru.mo
