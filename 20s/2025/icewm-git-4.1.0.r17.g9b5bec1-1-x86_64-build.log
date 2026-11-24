@@ -249,9 +249,9 @@ make[2]: Entering directory '/build/icewm-git/src/icewm/src'
   CXX      ydialog.o
   CXX      yurl.o
   CXX      wmsession.o
+  CXX      wmwinlist.o
   CXX      wmtaskbar.o
   CXX      wmwinmenu.o
-  CXX      wmwinlist.o
   CXX      wmdialog.o
   CXX      wmabout.o
   CXX      wmswitch.o
@@ -354,11 +354,10 @@ make[2]: Entering directory '/build/icewm-git/src/icewm/src'
   CXXLD    libitk.la
   CXXLD    icewm-session
   CXXLD    icewmhint
-  CXXLD    icewmbg
   CXXLD    icesound
+  CXXLD    icewmbg
   CXXLD    icehelp
   CXXLD    icewm
-  CXXLD    genpref
 fdomenu.cc: In member function ‘std::string AppEntry::TransWithSfx()’:
 fdomenu.cc:613:17: warning: ‘template<class _Codecvt, class _Elem, class _Wide_alloc, class _Byte_alloc> class std::__cxx11::wstring_convert’ is deprecated [-Wdeprecated-declarations]
   613 |                 wstring_convert<codecvt_utf8_utf16<char16_t>, char16_t>{}
@@ -377,6 +376,7 @@ fdomenu.cc:617:23: warning: ‘template<class _Codecvt, class _Elem, class _Wide
 /usr/include/c++/16/bits/locale_conv.h:265:33: note: declared here
   265 |     class _GLIBCXX17_DEPRECATED wstring_convert
       |                                 ^~~~~~~~~~~~~~~
+  CXXLD    genpref
   CXXLD    icesh
   CXXLD    icewm-menu-fdo
   GEN      preferences
@@ -495,8 +495,8 @@ make[2]: Entering directory '/build/icewm-git/src/icewm/man'
   GEN      icewmhint.man
   GEN      icewm.man
   GEN      icewm-menu-xrandr.man
-  GEN      icewm-session.man
   GEN      icewm-set-gnomewm.man
+  GEN      icewm-session.man
   GEN      icesound.man
   GEN      icewm-menu-fdo.man
   GEN      icewm-env.man
@@ -515,20 +515,20 @@ make[2]: Entering directory '/build/icewm-git/src/icewm/man'
   GEN      icesh.1.html
   GEN      icewmbg.1.html
   GEN      icewmhint.1.html
-  GEN      icewm.1.html
   GEN      icewm-menu-xrandr.1.html
+  GEN      icewm.1.html
   GEN      icewm-session.1.html
   GEN      icewm-set-gnomewm.1.html
   GEN      icesound.1.html
   GEN      icewm-menu-fdo.1.html
   GEN      icewm-env.5.html
+  GEN      icewm-focus_mode.5.html
   GEN      icewm-keys.5.html
   GEN      icewm-menu.5.html
-  GEN      icewm-focus_mode.5.html
   GEN      icewm-preferences.5.html
   GEN      icewm-prefoverride.5.html
-  GEN      icewm-shutdown.5.html
   GEN      icewm-programs.5.html
+  GEN      icewm-shutdown.5.html
   GEN      icewm-startup.5.html
   GEN      icewm-theme.5.html
   GEN      icewm-toolbar.5.html
