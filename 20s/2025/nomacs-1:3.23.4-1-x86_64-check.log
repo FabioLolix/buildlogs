@@ -1,0 +1,68 @@
+ninja: Entering directory `build'
+[1/12] Automatic MOC for target test_shortcutsmodel
+[2/12] Automatic MOC for target tests_core
+[3/12] Building CXX object tests/integration/CMakeFiles/test_shortcutsmodel.dir/test_shortcutsmodel_autogen/mocs_compilation.cpp.o
+[4/12] Building CXX object tests/unit/CMakeFiles/tests_core.dir/tests_core_autogen/mocs_compilation.cpp.o
+[5/12] Building CXX object tests/unit/CMakeFiles/tests_core.dir/DkUtils_test.cpp.o
+[6/12] Building CXX object tests/unit/CMakeFiles/tests_core.dir/DkNativeImage_test.cpp.o
+In file included from /build/nomacs/src/nomacs/ImageLounge/tests/unit/DkNativeImage_test.cpp:1:
+/build/nomacs/src/nomacs/ImageLounge/src/DkCore/DkImageProc.h:236:23: warning: ‘QImage::Format nmc::nativeFormatToQtFormat(ImgFmt)’ defined but not used [-Wunused-function]
+  236 | static QImage::Format nativeFormatToQtFormat(ImgFmt fmt)
+      |                       ^~~~~~~~~~~~~~~~~~~~~~
+[7/12] Building CXX object tests/unit/CMakeFiles/tests_core.dir/DkMetaData_test.cpp.o
+[8/12] Building CXX object tests/unit/CMakeFiles/tests_core.dir/DkBaseViewPort_test.cpp.o
+[9/12] Building CXX object tests/integration/CMakeFiles/test_shortcutsmodel.dir/DkShortcutsModel_test.cpp.o
+[10/12] Linking CXX executable tests/integration/test_shortcutsmodel
+[11/12] Linking CXX executable tests/unit/tests_core
+[12/12] cd /build/nomacs/src/build && /usr/bin/ctest --output-on-failure
+Test project /build/nomacs/src/build
+      Start  1: DkMetadata.SetExifValueOnEmptyMetadata
+ 1/21 Test  #1: DkMetadata.SetExifValueOnEmptyMetadata ........................................................   Passed    0.03 sec
+      Start  2: DkMetaData.RatingInitializesAndClearsEmptyMetadata
+ 2/21 Test  #2: DkMetaData.RatingInitializesAndClearsEmptyMetadata ............................................   Passed    0.04 sec
+      Start  3: DkMetaData.ClearExifStateResetsDirtyFlagAfterRatingChange
+ 3/21 Test  #3: DkMetaData.ClearExifStateResetsDirtyFlagAfterRatingChange .....................................   Passed    0.04 sec
+      Start  4: ImageToMat.Default
+ 4/21 Test  #4: ImageToMat.Default ............................................................................   Passed    0.04 sec
+      Start  5: ImageToMat.Mapped
+ 5/21 Test  #5: ImageToMat.Mapped .............................................................................   Passed    0.04 sec
+      Start  6: ImageToMat.ChannelOrder
+ 6/21 Test  #6: ImageToMat.ChannelOrder .......................................................................   Passed    0.04 sec
+      Start  7: ImageToMat.AllocateLike
+ 7/21 Test  #7: ImageToMat.AllocateLike .......................................................................   Passed    0.04 sec
+      Start  8: ImageToMat.Scaled
+ 8/21 Test  #8: ImageToMat.Scaled .............................................................................   Passed    0.13 sec
+      Start  9: ImageFilter.Chained
+ 9/21 Test  #9: ImageFilter.Chained ...........................................................................   Passed    0.05 sec
+      Start 10: MatToImage.Default
+10/21 Test #10: MatToImage.Default ............................................................................   Passed    0.03 sec
+      Start 11: LinkedVersionTest.Test
+11/21 Test #11: LinkedVersionTest.Test ........................................................................   Passed    0.04 sec
+      Start 12: DkFileNameConverterTest.Test
+12/21 Test #12: DkFileNameConverterTest.Test ..................................................................   Passed    0.03 sec
+      Start 13: DkFileNameConverterTest.OldIndex
+13/21 Test #13: DkFileNameConverterTest.OldIndex ..............................................................   Passed    0.04 sec
+      Start 14: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(200, 150)
+14/21 Test #14: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(200, 150) .....   Passed    0.03 sec
+      Start 15: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(200, 100)
+15/21 Test #15: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(200, 100) .....   Passed    0.04 sec
+      Start 16: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(200, 200)
+16/21 Test #16: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(200, 200) .....   Passed    0.04 sec
+      Start 17: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(800, 600)
+17/21 Test #17: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(800, 600) .....   Passed    0.03 sec
+      Start 18: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(700, 600)
+18/21 Test #18: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(700, 600) .....   Passed    0.03 sec
+      Start 19: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(800, 700)
+19/21 Test #19: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(400, 300) , tgt: QSizeF(800, 700) .....   Passed    0.03 sec
+      Start 20: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(1024, 2048) , tgt: QSizeF(553, 339)
+20/21 Test #20: Test/ScaleKeepAspectRatioAndCenterTest.Test/src: QSizeF(1024, 2048) , tgt: QSizeF(553, 339) ...   Passed    0.04 sec
+      Start 21: ShortcutsModel.Init
+21/21 Test #21: ShortcutsModel.Init ...........................................................................   Passed    0.06 sec
+
+100% tests passed out of 21
+
+Label Time Summary:
+integration    =   0.06 sec*proc (1 test)
+unit           =   0.84 sec*proc (20 tests)
+
+Total Test time (real) =   0.99 sec
